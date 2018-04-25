@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name="org.hl7.spec.jira" basedir=".." default="process-files">
+  <target name="process-files" description="Generates files based on commits">
+    <mkdir dir="tools/temp"/>
+    <concat destfile="tools/temp/combinedSpecs.xml">
+      <header filtering="no">&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;files&gt;</header>
+      <footer filtering="no">&lt;/files&gt;</footer>
+      <filterchain>
+        <linecontains negate="true">
+          <contains value="&lt;?xml"/>
+        </linecontains>
+      </filterchain>
+      <fileset dir="tools/.." includes="SPECS-*.xml"/>
+    </concat>
+    <xslt in="tools/temp/combinedSpecs.xml" out="SPECS.xml" style="tools/buildCombinedSpecs.xslt"/>
+    <xslt in="workgroups.xml" out="schemas/workgroups.xsd" style="tools/buildWGschema.xslt"/>
+  </target>
+</project>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="workgroups.xsd"/>
+  <xs:element name="specification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="artifactPageExtension" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="value" type="xs:NMTOKEN" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="artifacts" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="key" type="xs:NMTOKEN" use="required"/>
+            <xs:attribute name="name" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="[^\s]*([\s]+[^\s]+)*"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="workgroup" type="WorkGroup" use="optional"/>
+            <xs:attribute name="deprecated" type="xs:boolean" default="false"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="pages" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="otherPages" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="url" type="xs:NMTOKEN" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="key" type="xs:NMTOKEN" use="required"/>
+            <xs:attribute name="name" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="[^\s]*([\s]+[^\s]+)*"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="workgroup" type="WorkGroup" use="optional"/>
+            <xs:attribute name="deprecated" type="xs:boolean" default="false"/>
+            <xs:attribute name="url" type="xs:NMTOKEN" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="url" type="xs:anyURI" use="optional"/>
+      <xs:attribute name="ciUrl" type="xs:anyURI" use="optional"/>
+      <xs:attribute name="ballotUrl" type="xs:anyURI" use="optional"/>
+      <xs:attribute name="defaultWorkgroup" type="WorkGroup" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="website">
+    <xs:restriction base="xs:anyURI">
+      <xs:pattern value="http(.)+[^\\/^\\s]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
