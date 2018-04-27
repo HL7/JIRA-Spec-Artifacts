@@ -6,7 +6,7 @@
       <xs:simpleType name="WorkGroup">
         <xs:restriction base="xs:NMTOKEN">
           <xsl:for-each select="workgroups/workgroup">
-            <xs:enumeration value="brr"/>
+            <xs:enumeration value="{@key}"/>
           </xsl:for-each>
         </xs:restriction>
       </xs:simpleType>

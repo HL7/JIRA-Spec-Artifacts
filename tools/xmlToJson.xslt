@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" exclude-result-prefixes="xsi">
+	<xsl:output method="text" encoding="UTF-8"/>
+	<xsl:template match="workgroups">
+    <xsl:call-template name="doArray">
+      <xsl:with-param name="name" select="'workgroup'"/>
+    </xsl:call-template>
+	</xsl:template>
+	<xsl:template match="specifications">
+    <xsl:text>{</xsl:text>
+    <xsl:call-template name="doAttributes"/>
+    <xsl:call-template name="doNamedArray">
+      <xsl:with-param name="name" select="'specification'"/>
+    </xsl:call-template>
+    <xsl:text>}</xsl:text>
+	</xsl:template>
+	<xsl:template match="/specification">
+    <xsl:text>{</xsl:text>
+    <xsl:call-template name="doAttributes"/>
+    <xsl:if test="artifactPageExtension">
+      <xsl:call-template name="doNamedArray">
+        <xsl:with-param name="name" select="'artifactPageExtension'"/>
+      </xsl:call-template>
+      <xsl:text>,</xsl:text>
+    </xsl:if>
+    <xsl:if test="artifactPageExtension">
+      <xsl:call-template name="doNamedArray">
+        <xsl:with-param name="name" select="'pages'"/>
+      </xsl:call-template>
+      <xsl:text>,</xsl:text>
+    </xsl:if>
+    <xsl:call-template name="doNamedArray">
+      <xsl:with-param name="name" select="'artifacts'"/>
+    </xsl:call-template>
+    <xsl:text>}</xsl:text>
+	</xsl:template>
+	<xsl:template match="artifacts">
+    <xsl:text>{</xsl:text>
+    <xsl:call-template name="doAttributes"/>
+    <xsl:if test="otherPages">
+      <xsl:call-template name="doNamedArray">
+        <xsl:with-param name="name" select="'otherPages'"/>
+      </xsl:call-template>
+      <xsl:text>,</xsl:text>
+    </xsl:if>
+    <xsl:text>}</xsl:text>	
+	</xsl:template>
+	<xsl:template match="pages">
+    <xsl:text>{</xsl:text>
+    <xsl:call-template name="doAttributes"/>
+    <xsl:if test="otherPages">
+      <xsl:call-template name="doNamedArray">
+        <xsl:with-param name="name" select="'otherPages'"/>
+      </xsl:call-template>
+    </xsl:if>
+    <xsl:text>}</xsl:text>	
+	</xsl:template>
+	<xsl:template match="artifactPageExtension">
+    <xsl:value-of select="concat('&quot;', @value, '&quot;')"/>
+	</xsl:template>
+	<xsl:template match="*">
+    <xsl:text>{</xsl:text>
+    <xsl:call-template name="doAttributes"/>
+    <xsl:text>}</xsl:text>	
+	</xsl:template>
+	<xsl:template name="doAttributes">
+    <xsl:for-each select="@*[not(contains(name(.), ':'))]">
+      <xsl:value-of select="concat('&quot;', local-name(.), '&quot;:&quot;', ., '&quot;')"/>
+      <xsl:if test="position()!=last() or parent::*/*">,</xsl:if>
+    </xsl:for-each>
+	</xsl:template>
+  <xsl:template name="doNamedArray">
+    <xsl:param name="name"/>
+    <xsl:value-of select="concat('&quot;', $name, '&quot;:')"/>
+    <xsl:call-template name="doArray">
+      <xsl:with-param name="name" select="$name"/>
+    </xsl:call-template>
+  </xsl:template>
+	<xsl:template name="doArray">
+    <xsl:param name="name"/>
+    <xsl:text>[</xsl:text>
+    <xsl:for-each select="*[local-name(.)=$name]">
+      <xsl:apply-templates select="."/>
+      <xsl:if test="position()!=last()">,</xsl:if>
+    </xsl:for-each>
+    <xsl:text>]</xsl:text>
+	</xsl:template>
+</xsl:stylesheet>
