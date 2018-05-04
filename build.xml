@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project name="org.hl7.spec.jira" basedir="." default="test">
+<project name="org.hl7.spec.jira" basedir="." default="genJson">
   <path id="saxon.path">
     <fileset dir="tools/saxon" includes="*.jar"/>
   </path>
-  <!--
-    - Note: the target name is 'test' because that's the default for Travis Ant
-    -->
-  <target name="test" description="Validates files, then generates json files for JIRA and comparison XML file">
-    <mkdir dir="tools/temp"/>
-    <mkdir dir="json"/>
+  <target name="validate" description="Validates files, includinging generating workgroup schema">
     <!-- Check that the workgroups file is valid and if so generate a schema for it to use in subsequent validation -->
     <schemavalidate noNamespaceFile="schemas/workgroupList.xsd" file="xml/_workgroups.xml"/>
     <dependset>
@@ -24,6 +19,10 @@
     <schemavalidate noNamespaceFile="schemas/specification.xsd">
       <fileset dir="xml" includes="*.xml" excludes="SPECS-*.xml,_workgroups.xml,_families.xml"/>
     </schemavalidate>
+  </target>
+  <target name="genJson" depends="validate" description="Generates json files for JIRA and comparison XML file">
+    <mkdir dir="tools/temp"/>
+    <mkdir dir="json"/>
     <!-- Generate JSON files and comparison XML file -->
     <dependset>
       <srcfilelist dir="tools" files="xmlToJson.xslt"/>
