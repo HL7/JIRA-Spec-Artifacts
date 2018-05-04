@@ -2,59 +2,147 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:include schemaLocation="workgroups.xsd"/>
   <xs:element name="specification">
+    <xs:annotation>
+      <xs:documentation>All content related to a single HL7 specification.</xs:documentation>
+    </xs:annotation>
     <xs:complexType>
       <xs:sequence>
         <xs:element name="artifactPageExtension" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>Indicates suffixes that might be associated with pages generated for artifacts.  Used for checking/populating artifacts based on URLs entered for the tracker</xs:documentation>
+          </xs:annotation>
           <xs:complexType>
             <xs:attribute name="value" type="xs:NMTOKEN" use="required"/>
           </xs:complexType>
         </xs:element>
-        <xs:element name="artifacts" minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="artifact" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>A formal artifact that can be referenced as part of feedback on a specification</xs:documentation>
+          </xs:annotation>
           <xs:complexType>
-            <xs:attribute name="key" type="xs:NMTOKEN" use="required"/>
-            <xs:attribute name="name" use="required">
-              <xs:simpleType>
-                <xs:restriction base="xs:string">
-                  <xs:pattern value="[^\s]*([\s]+[^\s]+)*"/>
-                </xs:restriction>
-              </xs:simpleType>
+            <xs:attribute name="key" type="xs:NMTOKEN" use="required">
+              <xs:annotation>
+                <xs:documentation>The key used inside Jira to identify the artifact.  This key must not be renamed and cannot be removed if it appears in any tracker item.</xs:documentation>
+              </xs:annotation>
             </xs:attribute>
-            <xs:attribute name="workgroup" type="WorkGroup" use="optional"/>
-            <xs:attribute name="deprecated" type="xs:boolean" default="false"/>
+            <xs:attribute name="name" type="Name" use="required">
+              <xs:annotation>
+                <xs:documentation>The name to display to users for the artifact.  This can change if the artifact is renamed</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="workgroup" type="WorkGroup" use="optional">
+              <xs:annotation>
+                <xs:documentation>The work group typically responsible for issues relating to this artifact</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="deprecated" type="xs:boolean" default="false">
+              <xs:annotation>
+                <xs:documentation>If true, indicates that the artifact can no longer be associated with newly raised issues, but it can still appear on old issues and be used in search</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
           </xs:complexType>
         </xs:element>
-        <xs:element name="pages" maxOccurs="unbounded">
+        <xs:element name="page" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>Indicates a documentation page that's not tightly associated with an artifact</xs:documentation>
+          </xs:annotation>
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="otherPages" minOccurs="0" maxOccurs="unbounded">
+              <xs:element name="otherpage" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Additional page URLs that should be treated as part of this page for categorization purposes (used to infer/validate pages based on URL)</xs:documentation>
+                </xs:annotation>
                 <xs:complexType>
                   <xs:attribute name="url" type="xs:NMTOKEN" use="required"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
-            <xs:attribute name="key" type="xs:NMTOKEN" use="required"/>
-            <xs:attribute name="name" use="required">
-              <xs:simpleType>
-                <xs:restriction base="xs:string">
-                  <xs:pattern value="[^\s]*([\s]+[^\s]+)*"/>
-                </xs:restriction>
-              </xs:simpleType>
+            <xs:attribute name="key" type="xs:NMTOKEN" use="required">
+              <xs:annotation>
+                <xs:documentation>The key used inside Jira to identify the page  This key must not be renamed and cannot be removed if it appears in any tracker item.</xs:documentation>
+              </xs:annotation>
             </xs:attribute>
-            <xs:attribute name="workgroup" type="WorkGroup" use="optional"/>
-            <xs:attribute name="deprecated" type="xs:boolean" default="false"/>
-            <xs:attribute name="url" type="xs:NMTOKEN" use="optional"/>
+            <xs:attribute name="name" type="Name" use="required">
+              <xs:annotation>
+                <xs:documentation>The name to display to users for the page.  This can change if the page is renamed</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="workgroup" type="WorkGroup" use="optional">
+              <xs:annotation>
+                <xs:documentation>The work group typically responsible for issues relating to this page</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="deprecated" type="xs:boolean" default="false">
+              <xs:annotation>
+                <xs:documentation>If true, indicates that the page can no longer be associated with newly raised issues, but it can still appear on old issues and be used in search</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="url" type="xs:NMTOKEN" use="optional">
+              <xs:annotation>
+                <xs:documentation>The primary url associated with this page (this may initially be the same as the key, but will change if the url changes)</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
-      <xs:attribute name="url" type="xs:anyURI" use="optional"/>
-      <xs:attribute name="ciUrl" type="xs:anyURI" use="optional"/>
-      <xs:attribute name="ballotUrl" type="xs:anyURI" use="optional"/>
-      <xs:attribute name="defaultWorkgroup" type="WorkGroup" use="optional"/>
+      <xs:attribute name="url" type="xs:anyURI" use="optional">
+        <xs:annotation>
+          <xs:documentation>The official URL for this specification.  Used when validating URLs</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="ciUrl" type="xs:anyURI" use="optional">
+        <xs:annotation>
+          <xs:documentation>The continuous integration build URL for this specification.  Used when validating URLs</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="ballotUrl" type="xs:anyURI" use="optional">
+        <xs:annotation>
+          <xs:documentation>The URL for the current/most recent ballot of this specification.  Used when validating URLs</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="defaultWorkgroup" type="WorkGroup" use="optional">
+        <xs:annotation>
+          <xs:documentation>The work group typically associated with issues raised against this specification if a more specific work group isn't determined based on pages or artifacts</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
     </xs:complexType>
+    <xs:unique name="artifactPageExtension-value-unique">
+      <xs:selector xpath="artifactPageExtension"/>
+      <xs:field xpath="@value"/>
+    </xs:unique>
+    <xs:unique name="artifact-key-unique">
+      <xs:selector xpath="artifact"/>
+      <xs:field xpath="@key"/>
+    </xs:unique>
+    <xs:unique name="artifact-name-unique">
+      <xs:selector xpath="artifact"/>
+      <xs:field xpath="@name"/>
+    </xs:unique>
+    <xs:unique name="page-key-unique">
+      <xs:selector xpath="page"/>
+      <xs:field xpath="@key"/>
+    </xs:unique>
+    <xs:unique name="page-name-unique">
+      <xs:selector xpath="page"/>
+      <xs:field xpath="@name"/>
+    </xs:unique>
+    <xs:unique name="page-url-unique">
+      <xs:selector xpath="page"/>
+      <xs:field xpath="@url"/>
+    </xs:unique>
+    <xs:unique name="page-otherpage-url-unique">
+      <xs:selector xpath="page/otherpage"/>
+      <xs:field xpath="@url"/>
+    </xs:unique>
   </xs:element>
   <xs:simpleType name="website">
     <xs:restriction base="xs:anyURI">
       <xs:pattern value="http(.)+[^\\/^\\s]"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Name">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[^\s]+([\s][^\s]+)*"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>

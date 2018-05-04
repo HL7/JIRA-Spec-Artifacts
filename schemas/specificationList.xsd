@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>Validates files listing all specifications for a single product family</xs:documentation>
+  </xs:annotation>
   <xs:element name="specifications">
+    <xs:annotation>
+      <xs:documentation>A grouper for all specifications for the family</xs:documentation>
+    </xs:annotation>
     <xs:complexType>
       <xs:sequence>
         <xs:element name="specification" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>A single specification (core spec, implementation guide, etc.) that Jira feedback can be raised about</xs:documentation>
+          </xs:annotation>
           <xs:complexType>
             <xs:attribute name="key" use="required">
+              <xs:annotation>
+                <xs:documentation>The internal key used within Jira trackers.  This should never change or be removed</xs:documentation>
+              </xs:annotation>
               <xs:simpleType>
                 <xs:restriction base="xs:NMTOKEN">
                   <xs:pattern value="[a-z\-]+"/>
@@ -13,23 +25,31 @@
               </xs:simpleType>
             </xs:attribute>
             <xs:attribute name="name" use="required">
+              <xs:annotation>
+                <xs:documentation>The name to display when a user is looking at the tracker or selecting a specification for searching.  This can change if the specification is renamed</xs:documentation>
+              </xs:annotation>
               <xs:simpleType>
                 <xs:restriction base="xs:string">
-                  <xs:pattern value="[A-Z][^\s]*([\s]+[^\s]+)*"/>
+                  <xs:pattern value="[A-Z][^\s]+([\s][^\s]+)*"/>
                 </xs:restriction>
               </xs:simpleType>
             </xs:attribute>
-            <xs:attribute name="deprecated" type="xs:boolean" default="false"/>
+            <xs:attribute name="deprecated" type="xs:boolean" default="false">
+              <xs:annotation>
+                <xs:documentation>If true, indicates that new feedback cannot be submitted against the specification any longer, however existing trackers referencing the specification can still be searched and displayed.</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
-      <xs:attribute name="familyPrefix" use="optional">
-        <xs:simpleType>
-          <xs:restriction base="xs:NMTOKEN">
-            <xs:pattern value="[A-Z]+\-"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:attribute>
     </xs:complexType>
+    <xs:unique name="spec-key-unique">
+      <xs:selector xpath="specification"/>
+      <xs:field xpath="@key"/>
+    </xs:unique>
+    <xs:unique name="spec-name-unique">
+      <xs:selector xpath="specification"/>
+      <xs:field xpath="@name"/>
+    </xs:unique>
   </xs:element>
 </xs:schema>

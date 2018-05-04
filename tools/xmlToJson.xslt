@@ -7,14 +7,11 @@
     </xsl:call-template>
 	</xsl:template>
 	<xsl:template match="specifications">
-    <xsl:text>{</xsl:text>
-    <xsl:call-template name="doAttributes"/>
-    <xsl:call-template name="doNamedArray">
+    <xsl:call-template name="doArray">
       <xsl:with-param name="name" select="'specification'"/>
     </xsl:call-template>
-    <xsl:text>}</xsl:text>
 	</xsl:template>
-	<xsl:template match="/specification">
+	<xsl:template match="specification">
     <xsl:text>{</xsl:text>
     <xsl:call-template name="doAttributes"/>
     <xsl:if test="artifactPageExtension">
@@ -25,32 +22,32 @@
     </xsl:if>
     <xsl:if test="artifactPageExtension">
       <xsl:call-template name="doNamedArray">
-        <xsl:with-param name="name" select="'pages'"/>
+        <xsl:with-param name="name" select="'page'"/>
       </xsl:call-template>
       <xsl:text>,</xsl:text>
     </xsl:if>
     <xsl:call-template name="doNamedArray">
-      <xsl:with-param name="name" select="'artifacts'"/>
+      <xsl:with-param name="name" select="'artifact'"/>
     </xsl:call-template>
     <xsl:text>}</xsl:text>
 	</xsl:template>
-	<xsl:template match="artifacts">
+	<xsl:template match="artifact">
     <xsl:text>{</xsl:text>
     <xsl:call-template name="doAttributes"/>
-    <xsl:if test="otherPages">
+    <xsl:if test="otherpage">
       <xsl:call-template name="doNamedArray">
-        <xsl:with-param name="name" select="'otherPages'"/>
+        <xsl:with-param name="name" select="'otherpage'"/>
       </xsl:call-template>
       <xsl:text>,</xsl:text>
     </xsl:if>
     <xsl:text>}</xsl:text>	
 	</xsl:template>
-	<xsl:template match="pages">
+	<xsl:template match="page">
     <xsl:text>{</xsl:text>
     <xsl:call-template name="doAttributes"/>
-    <xsl:if test="otherPages">
+    <xsl:if test="otherpage">
       <xsl:call-template name="doNamedArray">
-        <xsl:with-param name="name" select="'otherPages'"/>
+        <xsl:with-param name="name" select="'otherpage'"/>
       </xsl:call-template>
     </xsl:if>
     <xsl:text>}</xsl:text>	

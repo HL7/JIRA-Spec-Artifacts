@@ -11,7 +11,12 @@
 	</xsl:template>
 	<xsl:template match="specification/@key">
     <xsl:attribute name="key">
-      <xsl:value-of select="concat(ancestor::specifications/@familyPrefix, .)"/>
+      <xsl:value-of select="concat(ancestor::specifications/@familyPrefix, '-', .)"/>
+    </xsl:attribute>
+	</xsl:template>
+	<xsl:template match="specification/@name">
+    <xsl:attribute name="key">
+      <xsl:value-of select="concat(., ' (', ancestor::specifications/@familyPrefix, ')')"/>
     </xsl:attribute>
 	</xsl:template>
 	<xsl:template match="@*|node()">
