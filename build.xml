@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project name="org.hl7.spec.jira" basedir="." default="genJson">
+<project name="org.hl7.spec.jira" basedir="." default="test">
   <path id="saxon.path">
     <fileset dir="tools/saxon" includes="*.jar"/>
   </path>
@@ -39,4 +39,5 @@
     <!-- Copy comparison XML file out of temp directory (we have to create a temp file because we can't read from and write to the same file in a single transform) -->
     <copy file="tools/temp/SPECS.xml" todir="json"/>
   </target>
+  <target name="test" depends="genJson" description="Default task Travis looks for"/>
 </project>
