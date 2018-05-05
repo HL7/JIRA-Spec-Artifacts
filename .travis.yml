@@ -1,6 +1,7 @@
 language: java
 before_install:
 - openssl aes-256-cbc -K $encrypted_64752b9d9dbc_key -iv $encrypted_64752b9d9dbc_iv -in deploy_key.enc -out ~/deploy_key -d
+- chmod 600 ~/deploy_key
 after_success:
 - git config --global user.email "gh-pages@travis-ci.org"
 - git config --global user.name "FHIR Build"
