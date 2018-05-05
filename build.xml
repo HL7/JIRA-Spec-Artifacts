@@ -31,7 +31,7 @@
     <xslt in="xml/_workgroups.xml" out="json/workgroups.json" style="tools/xmlToJson.xslt"/>
     <dependset>
       <srcfileset dir="xml" includes="*.xml" excludes="_workgroups.xml,_families.xml"/>
-      <targetfilelist dir="json" files="SPECS*.json"/>
+      <targetfileset dir="json" includes="SPECS*.json"/>
     </dependset>
     <xslt in="xml/_families.xml" out="json/SPECS.json" style="tools/buildSpecJSON.xslt" classpathref="saxon.path">
       <factory name="net.sf.saxon.TransformerFactoryImpl"/>
