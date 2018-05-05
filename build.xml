@@ -29,7 +29,7 @@
       <targetfilelist dir="json" files="workgroups.json"/>
     </dependset>
     <xslt in="xml/_workgroups.xml" out="json/workgroups.json" style="tools/xmlToJson.xslt"/>
-    <get src="https://hl7.github.io/JIRA-Spec-Artifacts/SPECS.xml" dest="tools/temp/SPECS.xml" usetimestamp="true" tryGzipEncoding="true"/>
+    <get src="https://hl7.github.io/JIRA-Spec-Artifacts/SPECS.xml" dest="tools/temp/SPECS.xml" usetimestamp="true"/>
     <dependset>
       <srcfilelist dir="tools/temp" files="SPECS.xml"/>
       <srcfileset dir="xml" includes="*.xml" excludes="_workgroups.xml,_families.xml"/>
