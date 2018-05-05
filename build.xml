@@ -37,7 +37,7 @@
       <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
     <!-- Copy comparison XML file out of temp directory (we have to create a temp file because we can't read from and write to the same file in a single transform) -->
-    <copy file="tools/temp/SPECS.xml" todir="json"/>
+    <copy file="tools/temp/SPECS.xml" todir="tools"/>
   </target>
   <target name="test" depends="genJson" description="Default task Travis looks for"/>
 </project>

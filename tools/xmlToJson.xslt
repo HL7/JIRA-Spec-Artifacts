@@ -62,7 +62,14 @@
 	</xsl:template>
 	<xsl:template name="doAttributes">
     <xsl:for-each select="@*[not(contains(name(.), ':'))]">
-      <xsl:value-of select="concat('&quot;', local-name(.), '&quot;:&quot;', ., '&quot;')"/>
+      <xsl:choose>
+        <xsl:when test="local-name(.)=('deprecated')">
+          <xsl:value-of select="concat('&quot;', local-name(.), '&quot;:', .)"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="concat('&quot;', local-name(.), '&quot;:&quot;', ., '&quot;')"/>
+        </xsl:otherwise>
+      </xsl:choose>
       <xsl:if test="position()!=last() or parent::*/*">,</xsl:if>
     </xsl:for-each>
 	</xsl:template>
