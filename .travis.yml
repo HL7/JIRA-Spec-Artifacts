@@ -1,1 +1,14 @@
 language: java
+before_install:
+- openssl aes-256-cbc -K $encrypted_64752b9d9dbc_key -iv $encrypted_64752b9d9dbc_iv -in deploy_key.enc -out deploy_key -d
+after_success:
+- git config --global user.email "gh-pages@travis-ci.org"
+- git config --global user.name "FHIR Build"
+- echo -e "Host github.com\n  IdentityFile ~/deploy_key" > ~/.ssh/config
+- echo "github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==" > ~/.ssh/known_hosts
+- git clone -b gh-pages git@github.com:HL7/JIRA-Spec-Artifacts.git gh-pages
+- cd gh-pages
+- cp -r ../json/* .
+- git add -A .
+- git commit -m "Travis json build"
+- git push origin gh-pages
