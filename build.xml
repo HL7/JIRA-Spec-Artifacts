@@ -21,23 +21,23 @@
     </schemavalidate>
   </target>
   <target name="genJson" depends="validate" description="Generates json files for JIRA and comparison XML file">
-    <mkdir dir="tools/temp"/>
     <mkdir dir="json"/>
+    <mkdir dir="tools/temp"/>
     <!-- Generate JSON files and comparison XML file -->
     <dependset>
       <srcfilelist dir="tools" files="xmlToJson.xslt"/>
       <targetfilelist dir="json" files="workgroups.json"/>
     </dependset>
     <xslt in="xml/_workgroups.xml" out="json/workgroups.json" style="tools/xmlToJson.xslt"/>
+    <get src="https://hl7.github.io/JIRA-Spec-Artifacts/SPECS.xml" dest="tools/temp/SPECS.xml" usetimestamp="true"/>
     <dependset>
+      <srcfilelist dir="tools/temp" files="SPECS.xml"/>
       <srcfileset dir="xml" includes="*.xml" excludes="_workgroups.xml,_families.xml"/>
       <targetfileset dir="json" includes="SPECS*.json"/>
     </dependset>
     <xslt in="xml/_families.xml" out="json/SPECS.json" style="tools/buildSpecJSON.xslt" classpathref="saxon.path">
       <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
-    <!-- Copy comparison XML file out of temp directory (we have to create a temp file because we can't read from and write to the same file in a single transform) -->
-    <copy file="tools/temp/SPECS.xml" todir="tools"/>
   </target>
   <target name="test" depends="genJson" description="Default task Travis looks for"/>
 </project>

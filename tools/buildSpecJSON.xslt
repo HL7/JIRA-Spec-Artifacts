@@ -7,7 +7,7 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" exclude-result-prefixes="xsi">
 	<xsl:include href="xmlToJson.xslt"/>
 	<!-- We use the oldspecs file to check that keys aven't been renamed or removed -->
-	<xsl:variable name="oldSpecs" select="document('../tools/SPECS.xml', .)/specifications" as="element(specifications)"/>
+	<xsl:variable name="oldSpecs" select="document('../tools/temp/SPECS.xml', .)/specifications" as="element(specifications)"/>
 	<!--
     - First, we go through all of the families and create a single XML file of all specifications for each
     -->
@@ -108,7 +108,7 @@
       </xsl:result-document>
     </xsl:for-each>
     <!-- Capture the full ballot XML file for use in subsequent comparisons to check for key loss -->
-    <xsl:result-document href="../tools/temp/SPECS.xml" method="xml" version="1.0" indent="yes" encoding="UTF-8" exclude-result-prefixes="xsi">
+    <xsl:result-document href="../json/SPECS.xml" method="xml" version="1.0" indent="yes" encoding="UTF-8" exclude-result-prefixes="xsi">
       <xsl:copy-of select="$ballotSpecs"/>
     </xsl:result-document>
     <!-- Spit out the JSON file for the full ballot specs -->
