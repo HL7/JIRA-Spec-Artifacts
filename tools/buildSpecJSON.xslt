@@ -34,6 +34,10 @@
     </xsl:copy>
 	</xsl:template>
 	<xsl:template mode="familySpecs" match="@xsi:*"/>
+	<xsl:template mode="familySpecs" match="specification/@key">
+    <xsl:param name="prefix" tunnel="yes"/>
+    <xsl:attribute name="key" select="concat($prefix, '-', .)"/>
+	</xsl:template>
 	<xsl:template mode="familySpecs" match="@workgroup">
     <!-- This trims the file a little bit - no need to declare a workgroup if it's the same as the default -->
     <xsl:if test="not(ancestor::specification/@defaultWorkgroup=current())">
@@ -67,9 +71,6 @@
 	<!--
     - The ballot specs provide an integrated version listing all specs from all families.  (Keys and names get the family added to keep them unique)
     -->
-	<xsl:template mode="ballotSpecs" match="specification/@key">
-    <xsl:attribute name="key" select="concat(ancestor::specifications/@familyPrefix, '-', .)"/>
-	</xsl:template>
 	<xsl:template mode="ballotSpecs" match="specification/@name">
     <xsl:attribute name="name" select="concat(., ' (', ancestor::specifications/@familyPrefix, ')')"/>
 	</xsl:template>
@@ -83,7 +84,7 @@
     -->
 	<xsl:template match="/">
     <!-- Check to see if any keys have been removed or changed -->
-    <xsl:for-each select="$oldSpecs/specification">
+<!--    <xsl:for-each select="$oldSpecs/specification">
       <xsl:variable name="newSpec" select="$ballotSpecs/specification[@key=current()/@key]" as="element(specification)?"/>
       <xsl:if test="not($newSpec)">
         <xsl:message terminate="yes" select="concat('Specification with effective key ', @key, ' has been removed or changed.  Keys should never change - just change the name.  Keys should also not usually be removed.  Instead, set the ''deprecated'' flag to true.  Keys can only be removed if no JIRA tracker references that specification.  If this is the case and the key should really be removed, please coordinate with an administrator.')"/>
@@ -106,7 +107,7 @@
           <xsl:message terminate="yes" select="concat('Page with key ', @key, ' in specification ', parent::specification/@key, ' has been removed or changed.  Keys should never change - just change the name.  Keys should also not usually be removed.  Instead, set the ''deprecated'' flag to true.  Keys can only be removed if no JIRA tracker references that page.  If this is the case and the key should really be removed, please coordinate with an administrator.')"/>
         </xsl:if>
       </xsl:for-each>
-    </xsl:for-each>
+    </xsl:for-each>-->
     <!-- Create a JSON file for each family -->
     <xsl:for-each select="$familySpecs">
       <xsl:result-document href="SPECS-{@familyPrefix}.json" method="text" encoding="UTF-8">
