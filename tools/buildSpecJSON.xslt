@@ -84,7 +84,7 @@
     -->
 	<xsl:template match="/">
     <!-- Check to see if any keys have been removed or changed -->
-<!--    <xsl:for-each select="$oldSpecs/specification">
+    <xsl:for-each select="$oldSpecs/specification">
       <xsl:variable name="newSpec" select="$ballotSpecs/specification[@key=current()/@key]" as="element(specification)?"/>
       <xsl:if test="not($newSpec)">
         <xsl:message terminate="yes" select="concat('Specification with effective key ', @key, ' has been removed or changed.  Keys should never change - just change the name.  Keys should also not usually be removed.  Instead, set the ''deprecated'' flag to true.  Keys can only be removed if no JIRA tracker references that specification.  If this is the case and the key should really be removed, please coordinate with an administrator.')"/>
@@ -107,7 +107,7 @@
           <xsl:message terminate="yes" select="concat('Page with key ', @key, ' in specification ', parent::specification/@key, ' has been removed or changed.  Keys should never change - just change the name.  Keys should also not usually be removed.  Instead, set the ''deprecated'' flag to true.  Keys can only be removed if no JIRA tracker references that page.  If this is the case and the key should really be removed, please coordinate with an administrator.')"/>
         </xsl:if>
       </xsl:for-each>
-    </xsl:for-each>-->
+    </xsl:for-each>
     <!-- Create a JSON file for each family -->
     <xsl:for-each select="$familySpecs">
       <xsl:result-document href="SPECS-{@familyPrefix}.json" method="text" encoding="UTF-8">
