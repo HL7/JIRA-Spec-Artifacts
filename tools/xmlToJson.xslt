@@ -20,16 +20,23 @@
       </xsl:call-template>
       <xsl:text>,</xsl:text>
     </xsl:if>
-    <xsl:if test="artifactPageExtension">
-      <xsl:call-template name="doNamedArray">
-        <xsl:with-param name="name" select="'page'"/>
-      </xsl:call-template>
-      <xsl:text>,</xsl:text>
-    </xsl:if>
+    <xsl:call-template name="doNamedArray">
+      <xsl:with-param name="name" select="'version'"/>
+    </xsl:call-template>
+    <xsl:text>,</xsl:text>
+    <xsl:call-template name="doNamedArray">
+      <xsl:with-param name="name" select="'page'"/>
+    </xsl:call-template>
+    <xsl:text>,</xsl:text>
     <xsl:call-template name="doNamedArray">
       <xsl:with-param name="name" select="'artifact'"/>
     </xsl:call-template>
     <xsl:text>}</xsl:text>
+	</xsl:template>
+	<xsl:template match="version">
+    <xsl:text>{</xsl:text>
+    <xsl:call-template name="doAttributes"/>
+    <xsl:text>}</xsl:text>	
 	</xsl:template>
 	<xsl:template match="artifact">
     <xsl:text>{</xsl:text>

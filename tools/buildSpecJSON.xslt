@@ -88,6 +88,12 @@
       <xsl:if test="not($newSpec)">
         <xsl:message terminate="yes" select="concat('Specification with effective key ', @key, ' has been removed or changed.  Keys should never change - just change the name.  Keys should also not usually be removed.  Instead, set the ''deprecated'' flag to true.  Keys can only be removed if no JIRA tracker references that specification.  If this is the case and the key should really be removed, please coordinate with an administrator.')"/>
       </xsl:if>
+      <xsl:for-each select="version">
+        <xsl:variable name="newVersion" select="$newSpec/version[@code=current()/@code]" as="element(version)?"/>
+        <xsl:if test="not($newVersion)">
+          <xsl:message terminate="yes" select="concat('Version with code ', @code, ' in specification ', parent::specification/@key, ' has been removed or changed.  Versions should never change.  Keys should also not be removed.  Versions can only be removed if no JIRA tracker references that version.  If this is the case and the version should really be removed, please coordinate with an administrator.')"/>
+        </xsl:if>
+      </xsl:for-each>
       <xsl:for-each select="artifact">
         <xsl:variable name="newArtifact" select="$newSpec/artifact[@key=current()/@key]" as="element(artifact)?"/>
         <xsl:if test="not($newArtifact)">
