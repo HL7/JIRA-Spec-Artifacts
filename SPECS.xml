@@ -3,7 +3,11 @@
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="CDA-core"
                   name="Clinical Document Architecture (CDA) Core (CDA)"
-                  defaultWorkgroup="sd">
+                  defaultWorkgroup="sd"
+                  defaultVersion="R2">
+      <version code="R1"/>
+      <version code="R2"/>
+      <version code="R2.1"/>
       <artifact name="SomeClass" key="someclass"/>
       <artifact name="SomeOtherClass6" key="someotherclass"/>
       <page name="(NA)" key="NA"/>
@@ -15,7 +19,9 @@
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="CDA-someig"
                   name="Some CDA IG (CDA)"
-                  defaultWorkgroup="sd">
+                  defaultWorkgroup="sd"
+                  defaultVersion="1.0">
+      <version code="1.0"/>
       <artifact name="SomeClass" key="someclass"/>
       <artifact name="SomeOtherClass" key="someotherclass"/>
       <page name="(NA)" key="NA"/>
@@ -29,7 +35,13 @@
                   name="FHIR Core (FHIR)"
                   url="http://hl7.org/fhir"
                   ciUrl="http://build.fhir.org"
-                  defaultWorkgroup="fhir-i">
+                  defaultWorkgroup="fhir-i"
+                  defaultVersion="R4">
+      <version code="DSTU1"/>
+      <version code="DSTU2"/>
+      <version code="STU3"/>
+      <version code="R4"/>
+      <version code="R5"/>
 	     <artifactPageExtension value="-definitions"/>
 	     <artifactPageExtension value="-examples"/>
 	     <artifactPageExtension value="-mappings"/>
@@ -607,7 +619,9 @@
                   name="FHIRPath (FHIR)"
                   url="http://hl7.org/fhirpath"
                   ciUrl="https://github.com/FHIR/fluentpath/blob/master/spec/index.adoc"
-                  defaultWorkgroup="its">
+                  defaultWorkgroup="its"
+                  defaultVersion="1.0">
+      <version code="1.0"/>
       <page name="(NA)" key="NA"/>
       <page name="Documentation"
             key="documentation"
@@ -624,7 +638,9 @@
                   name="SMART on FHIR (FHIR)"
                   url="http://www.hl7.org/fhir/smart-app-launch"
                   ciUrl="http://hl7.github.io/smart-app-launch"
-                  defaultWorkgroup="fhir-i">
+                  defaultWorkgroup="fhir-i"
+                  defaultVersion="1.0">
+      <version code="1.0"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -637,7 +653,9 @@
                   name="Electronic Case Reporting (FHIR)"
                   url="http://hl7.org/fhir/uv/ecr"
                   ciUrl="http://build.fhir.org/ig/HL7/case-reporting"
-                  defaultWorkgroup="pher">
+                  defaultWorkgroup="pher"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -662,7 +680,9 @@
                   name="Genomics Reporting (FHIR)"
                   url="http://hl7.org/fhir/uv/genomics-reporting"
                   ciUrl="http://build.fhir.org/ig/HL7/genomics-reporting"
-                  defaultWorkgroup="cg">
+                  defaultWorkgroup="cg"
+                  defaultVersion="1.0">
+      <version code="1.0"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -677,7 +697,9 @@
                   name="CDS Immunization Forecast (FHIR)"
                   url="http://hl7.org/fhir/uv/immds"
                   ciUrl="http://build.fhir.org/ig/HL7/ImmunizationFHIRDS"
-                  defaultWorkgroup="pher">
+                  defaultWorkgroup="pher"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -695,7 +717,9 @@
                   name="International Patient Summary (FHIR)"
                   url="http://hl7.org/fhir/uv/ips"
                   ciUrl="http://build.fhir.org/ig/HL7/fhir-ips"
-                  defaultWorkgroup="pa">
+                  defaultWorkgroup="pa"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -708,7 +732,9 @@
                   key="FHIR-phd"
                   name="Personal Healthcare Devices (FHIR)"
                   url="http://hl7.org/fhir/uv/phd"
-                  defaultWorkgroup="dev">
+                  defaultWorkgroup="dev"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -722,7 +748,9 @@
                   key="FHIR-pocd"
                   name="Point of Care Devices (FHIR)"
                   url="http://hl7.org/fhir/uv/pocd"
-                  defaultWorkgroup="dev">
+                  defaultWorkgroup="dev"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -739,7 +767,10 @@
                   name="Structured Data Capture (SDC) (FHIR)"
                   url="http://hl7.org/fhir/us/sdc"
                   ciUrl="https://build.fhir.org/ig/HL7/sdc"
-                  defaultWorkgroup="fhir-i">
+                  defaultWorkgroup="fhir-i"
+                  defaultVersion="2.0">
+      <version code="1.0"/>
+      <version code="2.0"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -768,7 +799,9 @@
                   name="Structured Data Capture (SDC-DE) (FHIR)"
                   url="http://hl7.org/fhir/us/sdcde"
                   ciUrl="http://build.fhir.org/ig/HL7/sdc-de"
-                  defaultWorkgroup="fhir-i">
+                  defaultWorkgroup="fhir-i"
+                  defaultVersion="1.0">
+      <version code="1.0"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -788,7 +821,9 @@
                   name="Validated Healthcare Directory (FHIR)"
                   url="http://hl7.org/fhir/uv/vhdir"
                   ciUrl="http://build.fhir.org/ig/HL7/VhDir"
-                  defaultWorkgroup="pa">
+                  defaultWorkgroup="pa"
+                  defaultVersion="1.0">
+      <version code="1.0"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -806,7 +841,9 @@
                   name="US Core (FHIR)"
                   url="http://hl7.org/fhir/us/core"
                   ciUrl="http://build.fhir.org/ig/HL7/US-Core"
-                  defaultWorkgroup="us-realm">
+                  defaultWorkgroup="us-realm"
+                  defaultVersion="1.0">
+      <version code="1.0"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -873,7 +910,9 @@
                   name="US Breast Cancer (FHIR)"
                   url="http://hl7.org/fhir/us/breastcancer"
                   ciUrl="https://build.fhir.org/ig/HL7/us-breastcancer"
-                  defaultWorkgroup="cic">
+                  defaultWorkgroup="cic"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -887,7 +926,9 @@
                   name="US C-CDA on FHIR (FHIR)"
                   url="http://hl7.org/fhir/us/ccda"
                   ciUrl="https://build.fhir.org/ig/HL7/ccda-on-fhir"
-                  defaultWorkgroup="sd">
+                  defaultWorkgroup="sd"
+                  defaultVersion="1.0">
+      <version code="1.0"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -912,7 +953,9 @@
                   name="US DAF Research (FHIR)"
                   url="http://hl7.org/fhir/us/daf"
                   ciUrl="https://build.fhir.org/ig/HL7/daf-research"
-                  defaultWorkgroup="fhir-i">
+                  defaultWorkgroup="fhir-i"
+                  defaultVersion="2.0">
+      <version code="2.0"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -927,7 +970,9 @@
                   name="US Healthcare Associated Infections (FHIR)"
                   url="http://hl7.org/fhir/us/hai"
                   ciUrl="http://build.fhir.org/ig/HL7/HAI"
-                  defaultWorkgroup="pher">
+                  defaultWorkgroup="pher"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -940,7 +985,10 @@
                   name="US Pharmacy (FHIR)"
                   url="http://hl7.org/fhir/us/meds"
                   ciUrl="https://build.fhir.org/ig/HL7/FHIR-ONC-Meds"
-                  defaultWorkgroup="pharm">
+                  defaultWorkgroup="pharm"
+                  defaultVersion="1.1">
+      <version code="1.0"/>
+      <version code="1.1"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -953,7 +1001,9 @@
                   name="US QI Core (FHIR)"
                   url="http://hl7.org/fhir/us/qicore"
                   ciUrl="https://build.fhir.org/ig/cqframework/qi-core"
-                  defaultWorkgroup="cqi">
+                  defaultWorkgroup="cqi"
+                  defaultVersion="2.0">
+      <version code="2.0"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -974,7 +1024,9 @@
                   key="FHIR-cqif"
                   name="Clinical Quality Information Framework (CQIF) (FHIR)"
                   deprecated="true"
-                  defaultWorkgroup="cds">
+                  defaultWorkgroup="cds"
+                  defaultVersion="1.0">
+      <version code="1.0"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -1030,7 +1082,9 @@
                   key="FHIR-gao"
                   name="Guideline Appropriate Ordering (GAO) (FHIR)"
                   deprecated="true"
-                  defaultWorkgroup="hsi">
+                  defaultWorkgroup="hsi"
+                  defaultVersion="1.0">
+      <version code="1.0"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -1045,7 +1099,9 @@
                   deprecated="true"
                   url="http://www.fhir.org/guides/argonaut"
                   ciUrl="https://build.fhir.org/ig/argonautproject/data-query"
-                  defaultWorkgroup="us-realm">
+                  defaultWorkgroup="us-realm"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -1064,7 +1120,9 @@
                   key="FHIR-us-lab"
                   name="US Lab (FHIR)"
                   deprecated="true"
-                  defaultWorkgroup="oo">
+                  defaultWorkgroup="oo"
+                  defaultVersion="na">
+      <version code="na"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
