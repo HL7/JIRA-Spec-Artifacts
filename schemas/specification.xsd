@@ -7,6 +7,18 @@
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
+        <xs:element name="version" minOccurs="1" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>Indicates an official major published release version.  (Technical correction releases are not tracked.)  Used to identify list of allowed versions when tracking version issue is raised in and fixed in.</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:attribute name="code" type="xs:NMTOKEN" use="required">
+              <xs:annotation>
+                <xs:documentation>The code to display for the version</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
         <xs:element name="artifactPageExtension" minOccurs="0" maxOccurs="unbounded">
           <xs:annotation>
             <xs:documentation>Indicates suffixes that might be associated with pages generated for artifacts.  Used for checking/populating artifacts based on URLs entered for the tracker</xs:documentation>
@@ -105,7 +117,20 @@
           <xs:documentation>The work group typically associated with issues raised against this specification if a more specific work group isn't determined based on pages or artifacts</xs:documentation>
         </xs:annotation>
       </xs:attribute>
+      <xs:attribute name="defaultVersion" type="xs:NMTOKEN" use="required">
+        <xs:annotation>
+          <xs:documentation>The version to identify as the 'raised' version for an issue if not overridden by the submitter</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
     </xs:complexType>
+    <xs:key name="version-code">
+      <xs:selector xpath="version"/>
+      <xs:field xpath="@code"/>
+    </xs:key>
+    <xs:keyref name="version-code-default" refer="version-code">
+      <xs:selector xpath="."/>
+      <xs:field xpath="@defaultVersion"/>
+    </xs:keyref>
     <xs:unique name="artifactPageExtension-value-unique">
       <xs:selector xpath="artifactPageExtension"/>
       <xs:field xpath="@value"/>
