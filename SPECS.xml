@@ -179,6 +179,9 @@
 	     <artifact name="MedicinalProductDeviceSpec"
                 key="MedicinalProductDeviceSpec"
                 workgroup="brr"/>
+	     <artifact name="MedicinalProductIngredient"
+                key="MedicinalProductIngredient"
+                workgroup="brr"/>
 	     <artifact name="MedicinalProductPackaged"
                 key="MedicinalProductPackaged"
                 workgroup="brr"/>
@@ -192,6 +195,9 @@
                 key="NutritionRequest"
                 workgroup="oo"/>
 	     <artifact name="Observation" key="Observation" workgroup="oo"/>
+	     <artifact name="ObservationDefinition"
+                key="ObservationDefinition"
+                workgroup="oo"/>
 	     <artifact name="OccupationalData" key="OccupationalData" workgroup="pher"/>
 	     <artifact name="OperationDefinition" key="OperationDefinition"/>
 	     <artifact name="OperationOutcome" key="OperationOutcome"/>
@@ -613,6 +619,20 @@
 	     <page name="Workflow Module" key="workflow-module" url="workflow-module"/>
 	     <page name="W5 Report" key="w5" url="w5"/>
 	     <page name="XML" key="xml" url="xml" workgroup="its"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-cds-hooks"
+                  name="CDS Hooks (FHIR)"
+                  url="http://cds-hooks.hl7.org"
+                  defaultWorkgroup="cds"
+                  defaultVersion="1.0">
+      <version code="1.0"/>
+      <page name="(NA)" key="NA"/>
+      <page name="Documentation"
+            key="documentation"
+            url="documentation"
+            deprecated="true"/>
+      <page name="Home (index)" key="index" url="index" deprecated="true"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-fhirpath"
