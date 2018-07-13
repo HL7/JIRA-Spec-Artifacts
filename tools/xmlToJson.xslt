@@ -15,24 +15,25 @@
     <xsl:text>{</xsl:text>
     <xsl:call-template name="doAttributes"/>
     <xsl:if test="artifactPageExtension">
+      <xsl:text>,</xsl:text>
       <xsl:call-template name="doNamedArray">
         <xsl:with-param name="name" select="'artifactPageExtension'"/>
       </xsl:call-template>
-      <xsl:text>,</xsl:text>
     </xsl:if>
     <xsl:if test="version">
+      <xsl:text>,</xsl:text>
       <xsl:call-template name="doNamedArray">
         <xsl:with-param name="name" select="'version'"/>
       </xsl:call-template>
-      <xsl:text>,</xsl:text>
     </xsl:if>
     <xsl:if test="page">
+      <xsl:text>,</xsl:text>
       <xsl:call-template name="doNamedArray">
         <xsl:with-param name="name" select="'page'"/>
       </xsl:call-template>
-      <xsl:text>,</xsl:text>
     </xsl:if>
     <xsl:if test="artifact">
+      <xsl:text>,</xsl:text>
       <xsl:call-template name="doNamedArray">
         <xsl:with-param name="name" select="'artifact'"/>
       </xsl:call-template>
@@ -48,10 +49,10 @@
     <xsl:text>{</xsl:text>
     <xsl:call-template name="doAttributes"/>
     <xsl:if test="otherpage">
+      <xsl:text>,</xsl:text>
       <xsl:call-template name="doNamedArray">
         <xsl:with-param name="name" select="'otherpage'"/>
       </xsl:call-template>
-      <xsl:text>,</xsl:text>
     </xsl:if>
     <xsl:text>}</xsl:text>	
 	</xsl:template>
@@ -59,6 +60,7 @@
     <xsl:text>{</xsl:text>
     <xsl:call-template name="doAttributes"/>
     <xsl:if test="otherpage">
+      <xsl:text>,</xsl:text>
       <xsl:call-template name="doNamedArray">
         <xsl:with-param name="name" select="'otherpage'"/>
       </xsl:call-template>
@@ -83,7 +85,7 @@
           <xsl:value-of select="concat('&quot;', local-name(.), '&quot;:&quot;', ., '&quot;')"/>
         </xsl:otherwise>
       </xsl:choose>
-      <xsl:if test="position()!=last() or parent::*/*">,</xsl:if>
+      <xsl:if test="position()!=last()">,</xsl:if>
     </xsl:for-each>
 	</xsl:template>
   <xsl:template name="doNamedArray">
