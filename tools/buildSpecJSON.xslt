@@ -28,6 +28,20 @@
       <xsl:apply-templates mode="ballotSpecs" select="$familySpecs/specification"/>
     </specifications>
 	</xsl:variable>
+	<xsl:variable name="ballotSummary" as="element(specifications)">
+    <xsl:apply-templates mode="ballotSummary" select="$ballotSpecs"/>
+	</xsl:variable>
+	<xsl:template mode="ballotSummary" match="@*|node()">
+    <xsl:copy>
+      <xsl:apply-templates mode="ballotSummary" select="@*|node()"/>
+    </xsl:copy>
+	</xsl:template>
+	<xsl:template mode="ballotSummary" match="specification">
+    <xsl:copy>
+      <xsl:copy-of select="@*"/>
+      <xsl:attribute name="prefix" select="substring-before(@key, '-')"/>
+    </xsl:copy>
+	</xsl:template>
 	<xsl:template mode="familySpecs" match="@*|node()">
     <xsl:copy>
       <xsl:apply-templates mode="familySpecs" select="@*|node()"/>
@@ -117,6 +131,9 @@
     <!-- Capture the full ballot XML file for use in subsequent comparisons to check for key loss -->
     <xsl:result-document href="../json/SPECS.xml" method="xml" version="1.0" indent="yes" encoding="UTF-8" exclude-result-prefixes="xsi">
       <xsl:copy-of select="$ballotSpecs"/>
+    </xsl:result-document>
+    <xsl:result-document href="SPECS-summary.json" method="text" encoding="UTF-8">
+      <xsl:apply-templates select="$ballotSummary"/>
     </xsl:result-document>
     <!-- Spit out the JSON file for the full ballot specs -->
     <xsl:apply-templates select="$ballotSpecs"/>
