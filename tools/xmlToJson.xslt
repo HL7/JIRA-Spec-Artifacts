@@ -41,7 +41,7 @@
     <xsl:text>}</xsl:text>
 	</xsl:template>
 	<xsl:template match="version">
-    <xsl:value-of select="concat('{&quot;key&quot;:&quot;', @code, '&quot;,&quot;name&quot;:&quot;', @code, '&quot;}')"/>
+    <xsl:value-of select="concat('{&quot;name&quot;:&quot;', @code, '&quot;,&quot;key&quot;:&quot;', @code, '&quot;,&quot;foo&quot;:[{&quot;bar&quot;:&quot;n/a&quot;}]}')"/>
     <xsl:if test="position()!=last()">,</xsl:if>
 	</xsl:template>
 	<xsl:template match="artifact">
