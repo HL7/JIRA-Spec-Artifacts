@@ -6,6 +6,11 @@
       <xsl:with-param name="name" select="'workgroup'"/>
     </xsl:call-template>
 	</xsl:template>
+	<xsl:template match="families">
+    <xsl:call-template name="doArray">
+      <xsl:with-param name="name" select="'family'"/>
+    </xsl:call-template>
+	</xsl:template>
 	<xsl:template match="specifications">
     <xsl:call-template name="doArray">
       <xsl:with-param name="name" select="'specification'"/>
