@@ -31,6 +31,15 @@
       <page name="Intro" key="intro"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="EHRFM-core"
+                  name="EHR Functional Model (EHRFM)"
+                  defaultWorkgroup="ehr"
+                  defaultVersion="R1">
+      <version code="R1"/>
+      <artifact name="SomeClass" key="someclass"/>
+      <page name="(NA)" key="NA"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-core"
                   name="FHIR Core (FHIR)"
                   url="http://hl7.org/fhir"
@@ -1156,5 +1165,33 @@
       <page name="Terminologies - Systems"
             key="terminologies-systems"
             url="terminologies-systems"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="V2-core"
+                  name="V2 Message Specification (V2)"
+                  defaultWorkgroup="inm"
+                  defaultVersion="2.9">
+      <version code="2.1.3"/>
+      <version code="2.9"/>
+      <artifact name="MSH" key="MSH"/>
+      <page name="(NA)" key="NA"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="V3-core"
+                  name="Version 3 Normative Edition (V3)"
+                  defaultWorkgroup="mnm"
+                  defaultVersion="2018">
+      <version code="2018"/>
+      <artifact name="RIM" key="RIM"/>
+      <page name="(NA)" key="NA"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="OTHER-somedam"
+                  name="Some DAM (OTHER)"
+                  defaultWorkgroup="mnm"
+                  defaultVersion="2018">
+      <version code="2018"/>
+      <artifact name="dunno" key="dunno"/>
+      <page name="(NA)" key="NA"/>
    </specification>
 </specifications>
