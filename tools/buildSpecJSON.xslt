@@ -74,12 +74,25 @@
       <xsl:apply-templates mode="familySpecs" select="@*"/>
       <xsl:variable name="filename" select="concat($prefix, '-', @key, '.xml')"/>
       <xsl:variable name="spec" select="document($filename, .)/specification" as="element(specification)?"/>
+      <xsl:variable name="specKey" select="@key"/>
       <xsl:if test="not($spec)">
         <xsl:message terminate="yes" select="concat('Unable to find specification ', @name, ' - looking for file ', $filename)"/>
       </xsl:if>
       <xsl:for-each select="$spec">
-        <xsl:apply-templates mode="familySpecs" select="@*|node()"/>
+        <xsl:apply-templates mode="familySpecs" select="@*|node()">
+          <xsl:with-param name="spec" tunnel="yes" select="$specKey"/>
+        </xsl:apply-templates>
       </xsl:for-each>
+    </xsl:copy>
+	</xsl:template>
+	<xsl:template mode="familySpecs" match="artifact|page">
+    <xsl:param name="prefix" tunnel="yes"/>
+    <xsl:param name="spec" tunnel="yes"/>
+    <xsl:copy>
+      <xsl:apply-templates mode="familySpecs" select="@*"/>
+      <xsl:attribute name="key" select="concat($prefix, '-', $spec, '-', @key)"/>
+      <xsl:attribute name="spec" select="$spec"/>
+      <xsl:apply-templates mode="familySpecs" select="node()"/>
     </xsl:copy>
 	</xsl:template>
 	<!--
