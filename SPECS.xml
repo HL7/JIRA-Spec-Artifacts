@@ -8,13 +8,13 @@
       <version code="R1"/>
       <version code="R2"/>
       <version code="R2.1"/>
-      <artifact name="SomeClass" key="someclass"/>
-      <artifact name="SomeOtherClass6" key="someotherclass"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(methodology)" key="methodology"/>
-      <page name="(profiles)" key="profiles"/>
-      <page name="Intro" key="intro"/>
+      <artifact name="SomeClass" key="CDA-core-someclass" spec="core"/>
+      <artifact name="SomeOtherClass6" key="CDA-core-someotherclass" spec="core"/>
+      <page name="(NA)" key="CDA-core-NA" spec="core"/>
+      <page name="(many)" key="CDA-core-many" spec="core"/>
+      <page name="(methodology)" key="CDA-core-methodology" spec="core"/>
+      <page name="(profiles)" key="CDA-core-profiles" spec="core"/>
+      <page name="Intro" key="CDA-core-intro" spec="core"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="CDA-someig"
@@ -22,13 +22,13 @@
                   defaultWorkgroup="sd"
                   defaultVersion="1.0">
       <version code="1.0"/>
-      <artifact name="SomeClass" key="someclass"/>
-      <artifact name="SomeOtherClass" key="someotherclass"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(methodology)" key="methodology"/>
-      <page name="(profiles)" key="profiles"/>
-      <page name="Intro" key="intro"/>
+      <artifact name="SomeClass" key="CDA-someig-someclass" spec="someig"/>
+      <artifact name="SomeOtherClass" key="CDA-someig-someotherclass" spec="someig"/>
+      <page name="(NA)" key="CDA-someig-NA" spec="someig"/>
+      <page name="(many)" key="CDA-someig-many" spec="someig"/>
+      <page name="(methodology)" key="CDA-someig-methodology" spec="someig"/>
+      <page name="(profiles)" key="CDA-someig-profiles" spec="someig"/>
+      <page name="Intro" key="CDA-someig-intro" spec="someig"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="EHRFM-core"
@@ -36,8 +36,8 @@
                   defaultWorkgroup="ehr"
                   defaultVersion="R1">
       <version code="R1"/>
-      <artifact name="SomeClass" key="someclass"/>
-      <page name="(NA)" key="NA"/>
+      <artifact name="SomeClass" key="EHRFM-core-someclass" spec="core"/>
+      <page name="(NA)" key="EHRFM-core-NA" spec="core"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-core"
@@ -55,326 +55,651 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="DomainResource" key="DomainResource"/>
-      <artifact name="BaseResource" key="BaseResource"/>
-      <artifact name="MetadataResource" key="MetadataResource"/>
-      <artifact name="Account" key="Account" workgroup="pa"/>
-      <artifact name="ActivityDefinition" key="ActivityDefinition" workgroup="cds"/>
+      <artifact name="DomainResource" key="FHIR-core-DomainResource" spec="core"/>
+      <artifact name="BaseResource" key="FHIR-core-BaseResource" spec="core"/>
+      <artifact name="MetadataResource"
+                key="FHIR-core-MetadataResource"
+                spec="core"/>
+      <artifact name="Account"
+                key="FHIR-core-Account"
+                workgroup="pa"
+                spec="core"/>
+      <artifact name="ActivityDefinition"
+                key="FHIR-core-ActivityDefinition"
+                workgroup="cds"
+                spec="core"/>
       <artifact name="AdverseReaction (see AdverseEvent)"
-                key="AdverseReaction"
+                key="FHIR-core-AdverseReaction"
                 workgroup="pc"
-                deprecated="true"/>
-      <artifact name="AdverseEvent" key="AdverseEvent" workgroup="pc"/>
-      <artifact name="AllergyIntolerance" key="AllergyIntolerance" workgroup="pc"/>
-      <artifact name="Appointment" key="Appointment" workgroup="pa"/>
-      <artifact name="AppointmentResponse" key="AppointmentResponse" workgroup="pa"/>
-      <artifact name="AuditEvent" key="AuditEvent" workgroup="security"/>
-      <artifact name="Basic" key="Basic"/>
-      <artifact name="Binary" key="Binary"/>
+                deprecated="true"
+                spec="core"/>
+      <artifact name="AdverseEvent"
+                key="FHIR-core-AdverseEvent"
+                workgroup="pc"
+                spec="core"/>
+      <artifact name="AllergyIntolerance"
+                key="FHIR-core-AllergyIntolerance"
+                workgroup="pc"
+                spec="core"/>
+      <artifact name="Appointment"
+                key="FHIR-core-Appointment"
+                workgroup="pa"
+                spec="core"/>
+      <artifact name="AppointmentResponse"
+                key="FHIR-core-AppointmentResponse"
+                workgroup="pa"
+                spec="core"/>
+      <artifact name="AuditEvent"
+                key="FHIR-core-AuditEvent"
+                workgroup="security"
+                spec="core"/>
+      <artifact name="Basic" key="FHIR-core-Basic" spec="core"/>
+      <artifact name="Binary" key="FHIR-core-Binary" spec="core"/>
       <artifact name="BiologicallyDerivedProduct"
-                key="BiologicallyDerivedProduct"
-                workgroup="brr"/>
-      <artifact name="BodyStructure" key="BodySite" workgroup="oo"/>
-      <artifact name="Bundle" key="Feed"/>
-      <artifact name="CapabilityStatement (Conformance)" key="Conformance"/>
-      <artifact name="CarePlan" key="CarePlan" workgroup="pc"/>
-      <artifact name="CareTeam" key="CareTeam" workgroup="pc"/>
-      <artifact name="CatalogEntry" key="EntryDefinition" workgroup="oo"/>
-      <artifact name="ChargeItem" key="ChargeItem" workgroup="pa"/>
+                key="FHIR-core-BiologicallyDerivedProduct"
+                workgroup="brr"
+                spec="core"/>
+      <artifact name="BodyStructure"
+                key="FHIR-core-BodySite"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="Bundle" key="FHIR-core-Feed" spec="core"/>
+      <artifact name="CapabilityStatement (Conformance)"
+                key="FHIR-core-Conformance"
+                spec="core"/>
+      <artifact name="CarePlan"
+                key="FHIR-core-CarePlan"
+                workgroup="pc"
+                spec="core"/>
+      <artifact name="CareTeam"
+                key="FHIR-core-CareTeam"
+                workgroup="pc"
+                spec="core"/>
+      <artifact name="CatalogEntry"
+                key="FHIR-core-EntryDefinition"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="ChargeItem"
+                key="FHIR-core-ChargeItem"
+                workgroup="pa"
+                spec="core"/>
       <artifact name="ChargeItemDefinition"
-                key="ChargeItemDefinition"
-                workgroup="pa"/>
-      <artifact name="Claim" key="Claim" workgroup="fm"/>
-      <artifact name="ClaimResponse" key="ClaimResponse" workgroup="fm"/>
-      <artifact name="ClinicalImpression" key="ClinicalImpression" workgroup="pc"/>
-      <artifact name="CodeSystem" key="CodeSystem" workgroup="vocab"/>
-      <artifact name="Communication" key="Communication" workgroup="pc"/>
-      <artifact name="CommunicationRequest"
-                key="CommunicationRequest"
-                workgroup="pc"/>
-      <artifact name="CompartmentDefinition" key="CompartmentDefinition"/>
-      <artifact name="Composition" key="Composition" workgroup="sd"/>
-      <artifact name="ConceptMap" key="ConceptMap" workgroup="vocab"/>
-      <artifact name="Condition" key="Condition" workgroup="pc"/>
-      <artifact name="Consent" key="Consent" workgroup="cbcc"/>
-      <artifact name="Contract" key="Contract" workgroup="fm"/>
-      <artifact name="Coverage" key="Coverage" workgroup="fm"/>
-      <artifact name="CoverageEligibilityRequest"
-                key="EligibilityRequest"
-                workgroup="fm"/>
-      <artifact name="CoverageEligibilityResponse"
-                key="EligibilityResponse"
-                workgroup="fm"/>
-      <artifact name="DataElement (see StructureDefinition)"
-                key="DataElement"
-                workgroup="oo"
-                deprecated="true"/>
-      <artifact name="DecisionSupportServiceModule"
-                key="DecisionSupportServiceModule"
-                workgroup="cds"
-                deprecated="true"/>
-      <artifact name="DetectedIssue" key="Alert" workgroup="cds"/>
-      <artifact name="Device" key="Device" workgroup="oo"/>
-      <artifact name="DeviceComponent"
-                key="DeviceComponent"
-                workgroup="dev"
-                deprecated="true"/>
-      <artifact name="DeviceDefinition" key="DeviceDefinition" workgroup="oo"/>
-      <artifact name="DeviceMetric" key="DeviceMetric" workgroup="dev"/>
-      <artifact name="DeviceObservationReport"
-                key="DeviceObservationReport"
-                workgroup="dev"
-                deprecated="true"/>
-      <artifact name="DeviceRequest (was DeviceUseRequest)"
-                key="DeviceUseRequest"
-                workgroup="oo"/>
-      <artifact name="DeviceUseStatement" key="DeviceUseStatement" workgroup="oo"/>
-      <artifact name="DiagnosticReport" key="DiagnosticReport" workgroup="oo"/>
-      <artifact name="DiagnosticRequest (see ServiceRequest)"
-                key="DiagnosticRequest"
-                workgroup="oo"
-                deprecated="true"/>
-      <artifact name="DocumentManifest" key="DocumentManifest" workgroup="sd"/>
-      <artifact name="DocumentReference" key="DocumentReference" workgroup="sd"/>
-      <artifact name="Encounter" key="Encounter" workgroup="pa"/>
-      <artifact name="EndPoint" key="EndPoint" workgroup="pa"/>
-      <artifact name="EnrollmentRequest" key="EnrollmentRequest" workgroup="fm"/>
-      <artifact name="EnrollmentResponse" key="EnrollmentResponse" workgroup="fm"/>
-      <artifact name="EpisodeOfCare" key="EpisodeOfCare" workgroup="pc"/>
-      <artifact name="EventDefinition" key="EventDefinition"/>
-      <artifact name="ExampleScenario" key="ExampleScenario"/>
-      <artifact name="ExpansionProfile"
-                key="ExpansionProfile"
+                key="FHIR-core-ChargeItemDefinition"
+                workgroup="pa"
+                spec="core"/>
+      <artifact name="Claim" key="FHIR-core-Claim" workgroup="fm" spec="core"/>
+      <artifact name="ClaimResponse"
+                key="FHIR-core-ClaimResponse"
+                workgroup="fm"
+                spec="core"/>
+      <artifact name="ClinicalImpression"
+                key="FHIR-core-ClinicalImpression"
+                workgroup="pc"
+                spec="core"/>
+      <artifact name="CodeSystem"
+                key="FHIR-core-CodeSystem"
                 workgroup="vocab"
-                deprecated="true"/>
-      <artifact name="ExplanationOfBenefit"
-                key="ExplanationOfBenefit"
-                workgroup="fm"/>
-      <artifact name="ExtensionDefinition (see StructureDefinition)"
-                key="ExtensionDefinition"
-                deprecated="true"/>
-      <artifact name="FamilyMemberHistory" key="FamilyHistory" workgroup="pc"/>
-      <artifact name="Flag" key="Flag" workgroup="pc"/>
-      <artifact name="Goal" key="Goal" workgroup="pc"/>
-      <artifact name="GraphDefinition" key="GraphDefinition"/>
-      <artifact name="Group" key="Group" workgroup="pa"/>
-      <artifact name="GuidanceResponse" key="GuidanceResponse" workgroup="cds"/>
-      <artifact name="HealthcareService" key="HealthcareService" workgroup="pa"/>
-      <artifact name="ImagingManifest"
-                key="ImagingManifest"
-                workgroup="ii"
-                deprecated="true"/>
-      <artifact name="ImagingStudy" key="ImagingStudy" workgroup="ii"/>
-      <artifact name="Immunization" key="Immunization" workgroup="pher"/>
-      <artifact name="ImmunizationEvaluation"
-                key="ImmunizationEvaluation"
-                workgroup="pher"/>
-      <artifact name="ImmunizationRecommendation"
-                key="ImmunizationRecommendation"
-                workgroup="pher"/>
-      <artifact name="ImplementationGuide" key="ImplementationGuide"/>
-      <artifact name="InsurancePlan" key="ProductPlan" workgroup="pa"/>
-      <artifact name="Invoice" key="Invoice" workgroup="fm"/>
-      <artifact name="ItemInstance" key="ItemInstance" workgroup="oo"/>
-      <artifact name="Library" key="Library" workgroup="cds"/>
-      <artifact name="Linkage" key="Linkage"/>
-      <artifact name="List" key="List"/>
-      <artifact name="Location" key="Location" workgroup="pa"/>
-      <artifact name="Measure" key="Measure" workgroup="cqi"/>
-      <artifact name="MeasureReport" key="MeasureReport" workgroup="cqi"/>
-      <artifact name="Media" key="Media" workgroup="oo"/>
-      <artifact name="Medication" key="Medication" workgroup="pharm"/>
-      <artifact name="MedicationAdministration"
-                key="MedicationAdministration"
-                workgroup="pharm"/>
-      <artifact name="MedicationDispense"
-                key="MedicationDispense"
-                workgroup="pharm"/>
-      <artifact name="MedicationKnowledge"
-                key="MedicationKnowledge"
-                workgroup="pharm"/>
-      <artifact name="MedicationRequest"
-                key="MedicationPrescription"
-                workgroup="pharm"/>
-      <artifact name="MedicationStatement"
-                key="MedicationStatement"
-                workgroup="pharm"/>
-      <artifact name="MedicinalProduct" key="MedicinalProduct" workgroup="brr"/>
-      <artifact name="MedicinalProductAuthorization"
-                key="MedicinalProductAuthorization"
-                workgroup="brr"/>
-      <artifact name="MedicinalProductClinicals"
-                key="MedicinalProductClinicals"
-                workgroup="brr"/>
-      <artifact name="MedicinalProductContraindication"
-                key="MedicinalProductContraindication"
-                workgroup="brr"/>
-      <artifact name="MedicinalProductDeviceSpec"
-                key="MedicinalProductDeviceSpec"
-                workgroup="brr"/>
-      <artifact name="MedicinalProductIndication"
-                key="MedicinalProductIndication"
-                workgroup="brr"/>
-      <artifact name="MedicinalProductIngredient"
-                key="MedicinalProductIngredient"
-                workgroup="brr"/>
-      <artifact name="MedicinalProductInteraction"
-                key="MedicinalProductInteraction"
-                workgroup="brr"/>
-      <artifact name="MedicinalProductManufactured"
-                key="MedicinalProductManufactured"
-                workgroup="brr"/>
-      <artifact name="MedicinalProductPackaged"
-                key="MedicinalProductPackaged"
-                workgroup="brr"/>
-      <artifact name="MedicinalProductPharmaceutical"
-                key="MedicinalProductPharmaceutical"
-                workgroup="brr"/>
-      <artifact name="MedicinalProductUndesireableEffect"
-                key="MedicinalProductUndesireableEffect"
-                workgroup="brr"/>
-      <artifact name="MessageDefinition" key="MessageDefinition"/>
-      <artifact name="MessageHeader" key="MessageHeader"/>
-      <artifact name="MolecularSequence" key="Sequence" workgroup="cg"/>
-      <artifact name="NamingSystem" key="NamingSystem"/>
-      <artifact name="NutritionOrder (was NutritionRequest)"
-                key="NutritionRequest"
-                workgroup="oo"/>
-      <artifact name="Observation" key="Observation" workgroup="oo"/>
-      <artifact name="ObservationDefinition"
-                key="ObservationDefinition"
-                workgroup="oo"/>
-      <artifact name="OccupationalData"
-                key="OccupationalData"
-                workgroup="pher"
-                deprecated="true"/>
-      <artifact name="OperationDefinition" key="OperationDefinition"/>
-      <artifact name="OperationOutcome" key="OperationOutcome"/>
-      <artifact name="Order (see Task)"
-                key="Order"
-                workgroup="oo"
-                deprecated="true"/>
-      <artifact name="OrderResponse (see Task)"
-                key="OrderResponse"
-                workgroup="oo"
-                deprecated="true"/>
-      <artifact name="Organization" key="Organization" workgroup="pa"/>
-      <artifact name="OrganizationAffiliation (was OrganizationRole)"
-                key="OrganizationRole"
-                workgroup="pa"/>
-      <artifact name="Parameters" key="Parameters"/>
-      <artifact name="Patient" key="Patient" workgroup="pa"/>
-      <artifact name="PaymentNotice" key="PaymentNotice" workgroup="fm"/>
-      <artifact name="PaymentReconciliation"
-                key="PaymentReconciliation"
-                workgroup="fm"/>
-      <artifact name="PendedRequest"
-                key="PendedRequest"
-                workgroup="fm"
-                deprecated="true"/>
-      <artifact name="Person" key="Person" workgroup="pa"/>
-      <artifact name="PlanDefinition" key="PlanDefinition" workgroup="cds"/>
-      <artifact name="Practitioner" key="Practitioner" workgroup="pa"/>
-      <artifact name="PractitionerRole" key="PractitionerRole" workgroup="pa"/>
-      <artifact name="Procedure" key="Procedure" workgroup="pc"/>
-      <artifact name="ProcedureRequest (see ServiceRequest)"
-                key="ProcedureRequest"
+                spec="core"/>
+      <artifact name="Communication"
+                key="FHIR-core-Communication"
                 workgroup="pc"
-                deprecated="true"/>
-      <artifact name="ProcessRequest"
-                key="ProcessRequest"
-                workgroup="fm"
-                deprecated="true"/>
-      <artifact name="ProcessResponse"
-                key="ProcessResponse"
-                workgroup="fm"
-                deprecated="true"/>
-      <artifact name="Provenance" key="Provenance" workgroup="security"/>
-      <artifact name="Query (see OperationDefinition)"
-                key="Query"
-                deprecated="true"/>
-      <artifact name="Questionnaire" key="Questionnaire"/>
-      <artifact name="QuestionnaireResponse" key="QuestionnaireAnswers"/>
-      <artifact name="ReferralRequest (see ServiceRequest)"
-                key="ReferrralRequest"
+                spec="core"/>
+      <artifact name="CommunicationRequest"
+                key="FHIR-core-CommunicationRequest"
                 workgroup="pc"
-                deprecated="true"/>
-      <artifact name="RelatedPerson" key="RelatedPerson" workgroup="pa"/>
-      <artifact name="RequestGroup" key="RequestGroup" workgroup="cds"/>
-      <artifact name="ResearchStudy" key="ResearchStudy" workgroup="brr"/>
-      <artifact name="ResearchSubject" key="ResearchSubject" workgroup="brr"/>
-      <artifact name="Reversal" key="Reversal" workgroup="fm" deprecated="true"/>
-      <artifact name="RiskAssessment" key="RiskAssessment" workgroup="pc"/>
-      <artifact name="Schedule" key="Schedule" workgroup="pa"/>
-      <artifact name="SearchParameter" key="SearchParameter"/>
-      <artifact name="ServiceDefinition"
-                key="ServiceDefinition"
+                spec="core"/>
+      <artifact name="CompartmentDefinition"
+                key="FHIR-core-CompartmentDefinition"
+                spec="core"/>
+      <artifact name="Composition"
+                key="FHIR-core-Composition"
+                workgroup="sd"
+                spec="core"/>
+      <artifact name="ConceptMap"
+                key="FHIR-core-ConceptMap"
+                workgroup="vocab"
+                spec="core"/>
+      <artifact name="Condition"
+                key="FHIR-core-Condition"
+                workgroup="pc"
+                spec="core"/>
+      <artifact name="Consent"
+                key="FHIR-core-Consent"
+                workgroup="cbcc"
+                spec="core"/>
+      <artifact name="Contract"
+                key="FHIR-core-Contract"
+                workgroup="fm"
+                spec="core"/>
+      <artifact name="Coverage"
+                key="FHIR-core-Coverage"
+                workgroup="fm"
+                spec="core"/>
+      <artifact name="CoverageEligibilityRequest"
+                key="FHIR-core-EligibilityRequest"
+                workgroup="fm"
+                spec="core"/>
+      <artifact name="CoverageEligibilityResponse"
+                key="FHIR-core-EligibilityResponse"
+                workgroup="fm"
+                spec="core"/>
+      <artifact name="DataElement (see StructureDefinition)"
+                key="FHIR-core-DataElement"
+                workgroup="oo"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="DecisionSupportServiceModule"
+                key="FHIR-core-DecisionSupportServiceModule"
                 workgroup="cds"
-                deprecated="true"/>
-      <artifact name="ServiceRequest (Diagnostic/Procedure/ReferralRequest)"
-                key="ServiceRequest"
-                workgroup="oo"/>
-      <artifact name="Slot" key="Slot" workgroup="pa"/>
-      <artifact name="Specimen" key="Specimen" workgroup="oo"/>
-      <artifact name="SpecimenDefinition" key="SpecimenDefinition" workgroup="oo"/>
-      <artifact name="StructureDefinition" key="StructureDefinition"/>
-      <artifact name="StructureMap" key="StructureMap"/>
-      <artifact name="Subscription" key="Subscription"/>
-      <artifact name="Substance" key="Substance" workgroup="oo"/>
-      <artifact name="SubstancePolymer" key="SubstancePolymer" workgroup="oo"/>
-      <artifact name="SubstanceReferenceInformation"
-                key="SubstanceReferenceInformation"
-                workgroup="oo"/>
-      <artifact name="SubstanceSpecification"
-                key="SubstanceSpecification"
-                workgroup="oo"/>
-      <artifact name="SupplyDelivery (was Supply)" key="Supply" workgroup="oo"/>
-      <artifact name="SupplyRequest" key="SupplyRequest" workgroup="oo"/>
-      <artifact name="SupportingDocumentation"
-                key="SupportingDocumentation"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="DetectedIssue"
+                key="FHIR-core-Alert"
+                workgroup="cds"
+                spec="core"/>
+      <artifact name="Device" key="FHIR-core-Device" workgroup="oo" spec="core"/>
+      <artifact name="DeviceComponent"
+                key="FHIR-core-DeviceComponent"
+                workgroup="dev"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="DeviceDefinition"
+                key="FHIR-core-DeviceDefinition"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="DeviceMetric"
+                key="FHIR-core-DeviceMetric"
+                workgroup="dev"
+                spec="core"/>
+      <artifact name="DeviceObservationReport"
+                key="FHIR-core-DeviceObservationReport"
+                workgroup="dev"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="DeviceRequest (was DeviceUseRequest)"
+                key="FHIR-core-DeviceUseRequest"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="DeviceUseStatement"
+                key="FHIR-core-DeviceUseStatement"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="DiagnosticReport"
+                key="FHIR-core-DiagnosticReport"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="DiagnosticRequest (see ServiceRequest)"
+                key="FHIR-core-DiagnosticRequest"
+                workgroup="oo"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="DocumentManifest"
+                key="FHIR-core-DocumentManifest"
+                workgroup="sd"
+                spec="core"/>
+      <artifact name="DocumentReference"
+                key="FHIR-core-DocumentReference"
+                workgroup="sd"
+                spec="core"/>
+      <artifact name="Encounter"
+                key="FHIR-core-Encounter"
+                workgroup="pa"
+                spec="core"/>
+      <artifact name="EndPoint"
+                key="FHIR-core-EndPoint"
+                workgroup="pa"
+                spec="core"/>
+      <artifact name="EnrollmentRequest"
+                key="FHIR-core-EnrollmentRequest"
                 workgroup="fm"
-                deprecated="true"/>
-      <artifact name="Task" key="Task" workgroup="oo"/>
+                spec="core"/>
+      <artifact name="EnrollmentResponse"
+                key="FHIR-core-EnrollmentResponse"
+                workgroup="fm"
+                spec="core"/>
+      <artifact name="EpisodeOfCare"
+                key="FHIR-core-EpisodeOfCare"
+                workgroup="pc"
+                spec="core"/>
+      <artifact name="EventDefinition" key="FHIR-core-EventDefinition" spec="core"/>
+      <artifact name="ExampleScenario" key="FHIR-core-ExampleScenario" spec="core"/>
+      <artifact name="ExpansionProfile"
+                key="FHIR-core-ExpansionProfile"
+                workgroup="vocab"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="ExplanationOfBenefit"
+                key="FHIR-core-ExplanationOfBenefit"
+                workgroup="fm"
+                spec="core"/>
+      <artifact name="ExtensionDefinition (see StructureDefinition)"
+                key="FHIR-core-ExtensionDefinition"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="FamilyMemberHistory"
+                key="FHIR-core-FamilyHistory"
+                workgroup="pc"
+                spec="core"/>
+      <artifact name="Flag" key="FHIR-core-Flag" workgroup="pc" spec="core"/>
+      <artifact name="Goal" key="FHIR-core-Goal" workgroup="pc" spec="core"/>
+      <artifact name="GraphDefinition" key="FHIR-core-GraphDefinition" spec="core"/>
+      <artifact name="Group" key="FHIR-core-Group" workgroup="pa" spec="core"/>
+      <artifact name="GuidanceResponse"
+                key="FHIR-core-GuidanceResponse"
+                workgroup="cds"
+                spec="core"/>
+      <artifact name="HealthcareService"
+                key="FHIR-core-HealthcareService"
+                workgroup="pa"
+                spec="core"/>
+      <artifact name="ImagingManifest"
+                key="FHIR-core-ImagingManifest"
+                workgroup="ii"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="ImagingStudy"
+                key="FHIR-core-ImagingStudy"
+                workgroup="ii"
+                spec="core"/>
+      <artifact name="Immunization"
+                key="FHIR-core-Immunization"
+                workgroup="pher"
+                spec="core"/>
+      <artifact name="ImmunizationEvaluation"
+                key="FHIR-core-ImmunizationEvaluation"
+                workgroup="pher"
+                spec="core"/>
+      <artifact name="ImmunizationRecommendation"
+                key="FHIR-core-ImmunizationRecommendation"
+                workgroup="pher"
+                spec="core"/>
+      <artifact name="ImplementationGuide"
+                key="FHIR-core-ImplementationGuide"
+                spec="core"/>
+      <artifact name="InsurancePlan"
+                key="FHIR-core-ProductPlan"
+                workgroup="pa"
+                spec="core"/>
+      <artifact name="Invoice"
+                key="FHIR-core-Invoice"
+                workgroup="fm"
+                spec="core"/>
+      <artifact name="ItemInstance"
+                key="FHIR-core-ItemInstance"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="Library"
+                key="FHIR-core-Library"
+                workgroup="cds"
+                spec="core"/>
+      <artifact name="Linkage" key="FHIR-core-Linkage" spec="core"/>
+      <artifact name="List" key="FHIR-core-List" spec="core"/>
+      <artifact name="Location"
+                key="FHIR-core-Location"
+                workgroup="pa"
+                spec="core"/>
+      <artifact name="Measure"
+                key="FHIR-core-Measure"
+                workgroup="cqi"
+                spec="core"/>
+      <artifact name="MeasureReport"
+                key="FHIR-core-MeasureReport"
+                workgroup="cqi"
+                spec="core"/>
+      <artifact name="Media" key="FHIR-core-Media" workgroup="oo" spec="core"/>
+      <artifact name="Medication"
+                key="FHIR-core-Medication"
+                workgroup="pharm"
+                spec="core"/>
+      <artifact name="MedicationAdministration"
+                key="FHIR-core-MedicationAdministration"
+                workgroup="pharm"
+                spec="core"/>
+      <artifact name="MedicationDispense"
+                key="FHIR-core-MedicationDispense"
+                workgroup="pharm"
+                spec="core"/>
+      <artifact name="MedicationKnowledge"
+                key="FHIR-core-MedicationKnowledge"
+                workgroup="pharm"
+                spec="core"/>
+      <artifact name="MedicationRequest"
+                key="FHIR-core-MedicationPrescription"
+                workgroup="pharm"
+                spec="core"/>
+      <artifact name="MedicationStatement"
+                key="FHIR-core-MedicationStatement"
+                workgroup="pharm"
+                spec="core"/>
+      <artifact name="MedicinalProduct"
+                key="FHIR-core-MedicinalProduct"
+                workgroup="brr"
+                spec="core"/>
+      <artifact name="MedicinalProductAuthorization"
+                key="FHIR-core-MedicinalProductAuthorization"
+                workgroup="brr"
+                spec="core"/>
+      <artifact name="MedicinalProductClinicals"
+                key="FHIR-core-MedicinalProductClinicals"
+                workgroup="brr"
+                spec="core"/>
+      <artifact name="MedicinalProductContraindication"
+                key="FHIR-core-MedicinalProductContraindication"
+                workgroup="brr"
+                spec="core"/>
+      <artifact name="MedicinalProductDeviceSpec"
+                key="FHIR-core-MedicinalProductDeviceSpec"
+                workgroup="brr"
+                spec="core"/>
+      <artifact name="MedicinalProductIndication"
+                key="FHIR-core-MedicinalProductIndication"
+                workgroup="brr"
+                spec="core"/>
+      <artifact name="MedicinalProductIngredient"
+                key="FHIR-core-MedicinalProductIngredient"
+                workgroup="brr"
+                spec="core"/>
+      <artifact name="MedicinalProductInteraction"
+                key="FHIR-core-MedicinalProductInteraction"
+                workgroup="brr"
+                spec="core"/>
+      <artifact name="MedicinalProductManufactured"
+                key="FHIR-core-MedicinalProductManufactured"
+                workgroup="brr"
+                spec="core"/>
+      <artifact name="MedicinalProductPackaged"
+                key="FHIR-core-MedicinalProductPackaged"
+                workgroup="brr"
+                spec="core"/>
+      <artifact name="MedicinalProductPharmaceutical"
+                key="FHIR-core-MedicinalProductPharmaceutical"
+                workgroup="brr"
+                spec="core"/>
+      <artifact name="MedicinalProductUndesireableEffect"
+                key="FHIR-core-MedicinalProductUndesireableEffect"
+                workgroup="brr"
+                spec="core"/>
+      <artifact name="MessageDefinition"
+                key="FHIR-core-MessageDefinition"
+                spec="core"/>
+      <artifact name="MessageHeader" key="FHIR-core-MessageHeader" spec="core"/>
+      <artifact name="MolecularSequence"
+                key="FHIR-core-Sequence"
+                workgroup="cg"
+                spec="core"/>
+      <artifact name="NamingSystem" key="FHIR-core-NamingSystem" spec="core"/>
+      <artifact name="NutritionOrder (was NutritionRequest)"
+                key="FHIR-core-NutritionRequest"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="Observation"
+                key="FHIR-core-Observation"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="ObservationDefinition"
+                key="FHIR-core-ObservationDefinition"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="OccupationalData"
+                key="FHIR-core-OccupationalData"
+                workgroup="pher"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="OperationDefinition"
+                key="FHIR-core-OperationDefinition"
+                spec="core"/>
+      <artifact name="OperationOutcome"
+                key="FHIR-core-OperationOutcome"
+                spec="core"/>
+      <artifact name="Order (see Task)"
+                key="FHIR-core-Order"
+                workgroup="oo"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="OrderResponse (see Task)"
+                key="FHIR-core-OrderResponse"
+                workgroup="oo"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="Organization"
+                key="FHIR-core-Organization"
+                workgroup="pa"
+                spec="core"/>
+      <artifact name="OrganizationAffiliation (was OrganizationRole)"
+                key="FHIR-core-OrganizationRole"
+                workgroup="pa"
+                spec="core"/>
+      <artifact name="Parameters" key="FHIR-core-Parameters" spec="core"/>
+      <artifact name="Patient"
+                key="FHIR-core-Patient"
+                workgroup="pa"
+                spec="core"/>
+      <artifact name="PaymentNotice"
+                key="FHIR-core-PaymentNotice"
+                workgroup="fm"
+                spec="core"/>
+      <artifact name="PaymentReconciliation"
+                key="FHIR-core-PaymentReconciliation"
+                workgroup="fm"
+                spec="core"/>
+      <artifact name="PendedRequest"
+                key="FHIR-core-PendedRequest"
+                workgroup="fm"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="Person" key="FHIR-core-Person" workgroup="pa" spec="core"/>
+      <artifact name="PlanDefinition"
+                key="FHIR-core-PlanDefinition"
+                workgroup="cds"
+                spec="core"/>
+      <artifact name="Practitioner"
+                key="FHIR-core-Practitioner"
+                workgroup="pa"
+                spec="core"/>
+      <artifact name="PractitionerRole"
+                key="FHIR-core-PractitionerRole"
+                workgroup="pa"
+                spec="core"/>
+      <artifact name="Procedure"
+                key="FHIR-core-Procedure"
+                workgroup="pc"
+                spec="core"/>
+      <artifact name="ProcedureRequest (see ServiceRequest)"
+                key="FHIR-core-ProcedureRequest"
+                workgroup="pc"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="ProcessRequest"
+                key="FHIR-core-ProcessRequest"
+                workgroup="fm"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="ProcessResponse"
+                key="FHIR-core-ProcessResponse"
+                workgroup="fm"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="Provenance"
+                key="FHIR-core-Provenance"
+                workgroup="security"
+                spec="core"/>
+      <artifact name="Query (see OperationDefinition)"
+                key="FHIR-core-Query"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="Questionnaire" key="FHIR-core-Questionnaire" spec="core"/>
+      <artifact name="QuestionnaireResponse"
+                key="FHIR-core-QuestionnaireAnswers"
+                spec="core"/>
+      <artifact name="ReferralRequest (see ServiceRequest)"
+                key="FHIR-core-ReferrralRequest"
+                workgroup="pc"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="RelatedPerson"
+                key="FHIR-core-RelatedPerson"
+                workgroup="pa"
+                spec="core"/>
+      <artifact name="RequestGroup"
+                key="FHIR-core-RequestGroup"
+                workgroup="cds"
+                spec="core"/>
+      <artifact name="ResearchStudy"
+                key="FHIR-core-ResearchStudy"
+                workgroup="brr"
+                spec="core"/>
+      <artifact name="ResearchSubject"
+                key="FHIR-core-ResearchSubject"
+                workgroup="brr"
+                spec="core"/>
+      <artifact name="Reversal"
+                key="FHIR-core-Reversal"
+                workgroup="fm"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="RiskAssessment"
+                key="FHIR-core-RiskAssessment"
+                workgroup="pc"
+                spec="core"/>
+      <artifact name="Schedule"
+                key="FHIR-core-Schedule"
+                workgroup="pa"
+                spec="core"/>
+      <artifact name="SearchParameter" key="FHIR-core-SearchParameter" spec="core"/>
+      <artifact name="ServiceDefinition"
+                key="FHIR-core-ServiceDefinition"
+                workgroup="cds"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="ServiceRequest (Diagnostic/Procedure/ReferralRequest)"
+                key="FHIR-core-ServiceRequest"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="Slot" key="FHIR-core-Slot" workgroup="pa" spec="core"/>
+      <artifact name="Specimen"
+                key="FHIR-core-Specimen"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="SpecimenDefinition"
+                key="FHIR-core-SpecimenDefinition"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="StructureDefinition"
+                key="FHIR-core-StructureDefinition"
+                spec="core"/>
+      <artifact name="StructureMap" key="FHIR-core-StructureMap" spec="core"/>
+      <artifact name="Subscription" key="FHIR-core-Subscription" spec="core"/>
+      <artifact name="Substance"
+                key="FHIR-core-Substance"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="SubstancePolymer"
+                key="FHIR-core-SubstancePolymer"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="SubstanceReferenceInformation"
+                key="FHIR-core-SubstanceReferenceInformation"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="SubstanceSpecification"
+                key="FHIR-core-SubstanceSpecification"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="SupplyDelivery (was Supply)"
+                key="FHIR-core-Supply"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="SupplyRequest"
+                key="FHIR-core-SupplyRequest"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="SupportingDocumentation"
+                key="FHIR-core-SupportingDocumentation"
+                workgroup="fm"
+                deprecated="true"
+                spec="core"/>
+      <artifact name="Task" key="FHIR-core-Task" workgroup="oo" spec="core"/>
       <artifact name="TerminologyCapabilities"
-                key="TerminologyCapabilities"
-                workgroup="vocab"/>
-      <artifact name="TestReport" key="TestReport"/>
-      <artifact name="TestScript" key="TestScript"/>
-      <artifact name="UserSession" key="UserSession" workgroup="security"/>
-      <artifact name="ValueSet" key="ValueSet" workgroup="vocab"/>
-      <artifact name="VerificationResult" key="VerificationResult" workgroup="pa"/>
-      <artifact name="VisionPrescription" key="VisionPrescription" workgroup="fm"/>
-      <artifact name="Definition Pattern" key="_Definition"/>
-      <artifact name="Event Pattern" key="_Event"/>
-      <artifact name="Request Pattern" key="_Request"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(methodology)" key="methodology" workgroup="mnm"/>
-      <page name="(profiles)" key="profiles"/>
-      <page name="Schemas &amp; Schematrons" key="schemas-schematrons"/>
+                key="FHIR-core-TerminologyCapabilities"
+                workgroup="vocab"
+                spec="core"/>
+      <artifact name="TestReport" key="FHIR-core-TestReport" spec="core"/>
+      <artifact name="TestScript" key="FHIR-core-TestScript" spec="core"/>
+      <artifact name="UserSession"
+                key="FHIR-core-UserSession"
+                workgroup="security"
+                spec="core"/>
+      <artifact name="ValueSet"
+                key="FHIR-core-ValueSet"
+                workgroup="vocab"
+                spec="core"/>
+      <artifact name="VerificationResult"
+                key="FHIR-core-VerificationResult"
+                workgroup="pa"
+                spec="core"/>
+      <artifact name="VisionPrescription"
+                key="FHIR-core-VisionPrescription"
+                workgroup="fm"
+                spec="core"/>
+      <artifact name="Definition Pattern" key="FHIR-core-_Definition" spec="core"/>
+      <artifact name="Event Pattern" key="FHIR-core-_Event" spec="core"/>
+      <artifact name="Request Pattern" key="FHIR-core-_Request" spec="core"/>
+      <page name="(NA)" key="FHIR-core-NA" spec="core"/>
+      <page name="(many)" key="FHIR-core-many" spec="core"/>
+      <page name="(methodology)"
+            key="FHIR-core-methodology"
+            workgroup="mnm"
+            spec="core"/>
+      <page name="(profiles)" key="FHIR-core-profiles" spec="core"/>
+      <page name="Schemas &amp; Schematrons"
+            key="FHIR-core-schemas-schematrons"
+            spec="core"/>
       <page name="Administration Module"
-            key="administration-module"
+            key="FHIR-core-administration-module"
             url="administration-module"
-            workgroup="pa"/>
+            workgroup="pa"
+            spec="core"/>
       <page name="Argnonauts"
-            key="argonauts"
+            key="FHIR-core-argonauts"
             url="argnonauts"
             workgroup="us-realm"
-            deprecated="true"/>
-      <page name="Asynchronous API (async)" key="async" url="async"/>
-      <page name="Backbone Element" key="backboneelement" url="backboneelement"/>
-      <page name="Ballot Intro" key="ballot-intro" url="ballot-intro"/>
+            deprecated="true"
+            spec="core"/>
+      <page name="Asynchronous API (async)"
+            key="FHIR-core-async"
+            url="async"
+            spec="core"/>
+      <page name="Backbone Element"
+            key="FHIR-core-backboneelement"
+            url="backboneelement"
+            spec="core"/>
+      <page name="Ballot Intro"
+            key="FHIR-core-ballot-intro"
+            url="ballot-intro"
+            spec="core"/>
       <page name="base-definitions"
-            key="base-definitions"
+            key="FHIR-core-base-definitions"
             url="base-definitions"
-            deprecated="true"/>
-      <page name="Best Practices" key="best-practices" url="best-practices"/>
-      <page name="CDA Intro" key="cda-intro" url="cda-intro" workgroup="sd"/>
-      <page name="Coming Challenges (change)" key="change" url="change"/>
+            deprecated="true"
+            spec="core"/>
+      <page name="Best Practices"
+            key="FHIR-core-best-practices"
+            url="best-practices"
+            spec="core"/>
+      <page name="CDA Intro"
+            key="FHIR-core-cda-intro"
+            url="cda-intro"
+            workgroup="sd"
+            spec="core"/>
+      <page name="Coming Challenges (change)"
+            key="FHIR-core-change"
+            url="change"
+            spec="core"/>
       <page name="Clinical Reasoning Module"
-            key="clinicalreasoning-module"
+            key="FHIR-core-clinicalreasoning-module"
             url="clinicalreasoning-module"
-            workgroup="cds">
+            workgroup="cds"
+            spec="core">
          <otherpage url="clinicalreasoning-cds-on-fhir"/>
          <otherpage url="clinicalreasoning-knowledge-artifact-distribution"/>
          <otherpage url="clinicalreasoning-knowledge-artifact-representation"/>
@@ -384,242 +709,395 @@
          <otherpage url="clinicalreasoning-topics-using-expressions"/>
       </page>
       <page name="Clinical Summary Module"
-            key="clinicalsummary-module"
+            key="FHIR-core-clinicalsummary-module"
             url="clinicalsummary-module"
-            workgroup="pc"/>
-      <page name="Comparison" key="comparison" url="comparison">
+            workgroup="pc"
+            spec="core"/>
+      <page name="Comparison"
+            key="FHIR-core-comparison"
+            url="comparison"
+            spec="core">
          <otherpage url="comparison-cda"/>
          <otherpage url="comparison-other"/>
          <otherpage url="comparison-v2"/>
          <otherpage url="comparison-v3"/>
       </page>
       <page name="Compartments (see CompartmentDefinition)"
-            key="compartments"
+            key="FHIR-core-compartments"
             url="compartments"
-            deprecated="true"/>
+            deprecated="true"
+            spec="core"/>
       <page name="Conformance Module"
-            key="conformance-module"
-            url="conformance-module"/>
+            key="FHIR-core-conformance-module"
+            url="conformance-module"
+            spec="core"/>
       <page name="Conformance Rules"
-            key="conformance-rules"
-            url="conformance-rules"/>
+            key="FHIR-core-conformance-rules"
+            url="conformance-rules"
+            spec="core"/>
       <page name="cqif-cds-on-fhir"
-            key="cqif-cds-on-fhir"
+            key="FHIR-core-cqif-cds-on-fhir"
             url="cqif-cds-on-fhir"
-            workgroup="cds"/>
+            workgroup="cds"
+            spec="core"/>
       <page name="cqif-knowledge-artifact-distribution"
-            key="cqif-knowledge-artifact-distribution"
+            key="FHIR-core-cqif-knowledge-artifact-distribution"
             url="cqif-knowledge-artifact-distribution"
-            workgroup="cds"/>
+            workgroup="cds"
+            spec="core"/>
       <page name="cqif-knowledge-artifact-representation"
-            key="cqif-knowledge-artifact-representation"
+            key="FHIR-core-cqif-knowledge-artifact-representation"
             url="cqif-knowledge-artifact-representation"
-            workgroup="cds"/>
+            workgroup="cds"
+            spec="core"/>
       <page name="cqif-quality-reporting"
-            key="cqif-quality-reporting"
+            key="FHIR-core-cqif-quality-reporting"
             url="cqif-quality-reporting"
-            workgroup="cds"/>
+            workgroup="cds"
+            spec="core"/>
       <page name="cqif-topics-definitional-resources"
-            key="cqif-topics-definitional-resources"
+            key="FHIR-core-cqif-topics-definitional-resources"
             url="cqif-topics-definitional-resources"
-            workgroup="cds"/>
+            workgroup="cds"
+            spec="core"/>
       <page name="cqif-topics-using-expressions"
-            key="cqif-topics-using-expressions"
+            key="FHIR-core-cqif-topics-using-expressions"
             url="cqif-topics-using-expressions"
-            workgroup="cds"/>
-      <page name="Credits" key="credits" url="credits"/>
+            workgroup="cds"
+            spec="core"/>
+      <page name="Credits"
+            key="FHIR-core-credits"
+            url="credits"
+            spec="core"/>
       <page name="Datatypes"
-            key="datatypes"
+            key="FHIR-core-datatypes"
             url="datatypes"
-            workgroup="mnm">
+            workgroup="mnm"
+            spec="core">
          <otherpage url="datatypes-version-maps"/>
          <otherpage url="datatypes-extras"/>
       </page>
       <page name="Defining Extensions"
-            key="defining-extensions"
-            url="defining-extensions"/>
+            key="FHIR-core-defining-extensions"
+            url="defining-extensions"
+            spec="core"/>
       <page name="Diagnostics Module"
-            key="diagnostics-module"
+            key="FHIR-core-diagnostics-module"
             url="diagnostics-module"
-            workgroup="oo"/>
-      <page name="Differences from DSTU 2" key="diff" url="diff"/>
+            workgroup="oo"
+            spec="core"/>
+      <page name="Differences from DSTU 2"
+            key="FHIR-core-diff"
+            url="diff"
+            spec="core"/>
       <page name="Directory of Published Versions"
-            key="directory"
-            url="directory"/>
-      <page name="Documentation" key="documentation" url="documentation"/>
-      <page name="Documents" key="documents" url="documents" workgroup="sd"/>
-      <page name="Dosage" key="dosage" url="dosage" workgroup="pharm"/>
-      <page name="Downloads" key="downloads" url="downloads"/>
+            key="FHIR-core-directory"
+            url="directory"
+            spec="core"/>
+      <page name="Documentation"
+            key="FHIR-core-documentation"
+            url="documentation"
+            spec="core"/>
+      <page name="Documents"
+            key="FHIR-core-documents"
+            url="documents"
+            workgroup="sd"
+            spec="core"/>
+      <page name="Dosage"
+            key="FHIR-core-dosage"
+            url="dosage"
+            workgroup="pharm"
+            spec="core"/>
+      <page name="Downloads"
+            key="FHIR-core-downloads"
+            url="downloads"
+            spec="core"/>
       <page name="EHR Functional Model (ehr-fm)"
-            key="ehr-fm"
+            key="FHIR-core-ehr-fm"
             url="ehr-fm"
-            workgroup="ehr"/>
-      <page name="Element" key="element" url="element"/>
+            workgroup="ehr"
+            spec="core"/>
+      <page name="Element"
+            key="FHIR-core-element"
+            url="element"
+            spec="core"/>
       <page name="ElementDefinition"
-            key="elementdefinition"
-            url="elementdefinition"/>
-      <page name="Exchange Module" key="exchange-module" url="exchange-module"/>
-      <page name="Extensibility" key="extensibility" url="extensibility"/>
+            key="FHIR-core-elementdefinition"
+            url="elementdefinition"
+            spec="core"/>
+      <page name="Exchange Module"
+            key="FHIR-core-exchange-module"
+            url="exchange-module"
+            spec="core"/>
+      <page name="Extensibility"
+            key="FHIR-core-extensibility"
+            url="extensibility"
+            spec="core"/>
       <page name="Extension Registry"
-            key="extensibility-registry"
-            url="extensibility-registry"/>
+            key="FHIR-core-extensibility-registry"
+            url="extensibility-registry"
+            spec="core"/>
       <page name="Tags, Bundles, Compartments &amp; Binary (now split)"
-            key="extras"
+            key="FHIR-core-extras"
             url="extras"
-            deprecated="true"/>
+            deprecated="true"
+            spec="core"/>
       <page name="FHIRPath (fluentpath)"
-            key="fluentpath"
+            key="FHIR-core-fluentpath"
             url="fhirpath"
-            workgroup="its"/>
+            workgroup="its"
+            spec="core"/>
       <page name="Financial Module"
-            key="financial-module"
+            key="FHIR-core-financial-module"
             url="financial-module"
-            workgroup="fm"/>
+            workgroup="fm"
+            spec="core"/>
       <page name="Resource Formats"
-            key="formats"
+            key="FHIR-core-formats"
             url="formats"
-            workgroup="its"/>
+            workgroup="its"
+            spec="core"/>
       <page name="Foundation Module"
-            key="foundation-module"
-            url="foundation-module"/>
+            key="FHIR-core-foundation-module"
+            url="foundation-module"
+            spec="core"/>
       <page name="Genomics Implementation Guidance"
-            key="genomics"
-            url="genomics"/>
-      <page name="Glossary" key="glossary" url="glossary"/>
-      <page name="GraphQL" key="graphql" url="graphql"/>
-      <page name="Help" key="help" url="help"/>
-      <page name="Version History" key="history" url="history"/>
-      <page name="REST (http)" key="http" url="http">
+            key="FHIR-core-genomics"
+            url="genomics"
+            spec="core"/>
+      <page name="Glossary"
+            key="FHIR-core-glossary"
+            url="glossary"
+            spec="core"/>
+      <page name="GraphQL"
+            key="FHIR-core-graphql"
+            url="graphql"
+            spec="core"/>
+      <page name="Help" key="FHIR-core-help" url="help" spec="core"/>
+      <page name="Version History"
+            key="FHIR-core-history"
+            url="history"
+            spec="core"/>
+      <page name="REST (http)" key="FHIR-core-http" url="http" spec="core">
          <otherpage url="fhirpatch"/>
       </page>
       <page name="Identifier Registry"
-            key="identifer-registry"
-            url="identifer-registry"/>
+            key="FHIR-core-identifer-registry"
+            url="identifer-registry"
+            spec="core"/>
       <page name="Implementation (see Documentation)"
-            key="implementation"
+            key="FHIR-core-implementation"
             url="implementation"
-            deprecated="true"/>
+            deprecated="true"
+            spec="core"/>
       <page name="Implementation Support Module"
-            key="implsupport-module"
-            url="implsupport-module"/>
-      <page name="Home (index)" key="index" url="index"/>
+            key="FHIR-core-implsupport-module"
+            url="implsupport-module"
+            spec="core"/>
+      <page name="Home (index)"
+            key="FHIR-core-index"
+            url="index"
+            spec="core"/>
       <page name="Infrastructure"
-            key="infrastructure"
+            key="FHIR-core-infrastructure"
             url="infrastructure"
-            deprecated="true"/>
+            deprecated="true"
+            spec="core"/>
       <page name="Integrated Examples"
-            key="integrated-examples"
-            url="integrated-examples"/>
-      <page name="JSON" key="json" url="json" workgroup="its"/>
+            key="FHIR-core-integrated-examples"
+            url="integrated-examples"
+            spec="core"/>
+      <page name="JSON"
+            key="FHIR-core-json"
+            url="json"
+            workgroup="its"
+            spec="core"/>
       <page name="Multi-Language Support (languages)"
-            key="languages"
-            url="languages"/>
+            key="FHIR-core-languages"
+            url="languages"
+            spec="core"/>
       <page name="License and Legal Terms (license)"
-            key="license"
-            url="license"/>
-      <page name="Life Cycle" key="lifecycle" url="lifecycle"/>
+            key="FHIR-core-license"
+            url="license"
+            spec="core"/>
+      <page name="Life Cycle"
+            key="FHIR-core-lifecycle"
+            url="lifecycle"
+            spec="core"/>
       <page name="Linked Data Module (ontology)"
-            key="ontology-module"
+            key="FHIR-core-ontology-module"
             url="linked-data-module"
             workgroup="its"
-            deprecated="true"/>
+            deprecated="true"
+            spec="core"/>
       <page name="Managing Resource Identity (managing)"
-            key="managing"
-            url="managing"/>
+            key="FHIR-core-managing"
+            url="managing"
+            spec="core"/>
       <page name="Mapping Language"
-            key="mapping-language"
-            url="mapping-language">
+            key="FHIR-core-mapping-language"
+            url="mapping-language"
+            spec="core">
          <otherpage url="mapping-tutorial"/>
       </page>
       <page name="Mappings to Other Standards (mappings)"
-            key="mappings"
-            url="mappings"/>
+            key="FHIR-core-mappings"
+            url="mappings"
+            spec="core"/>
       <page name="Medications Module"
-            key="medications-module"
+            key="FHIR-core-medications-module"
             url="medications-module"
-            workgroup="pharm"/>
-      <page name="Messaging" key="messaging" url="messaging"/>
-      <page name="Metadata Types" key="metadatatypes" url="metadatatypes"/>
-      <page name="Modules" key="modules" url="modules"/>
-      <page name="Narrative" key="narrative" url="narrative"/>
-      <page name="ND-JSON" key="nd-json" url="nd-json" workgroup="its"/>
-      <page name="Namespaces (ns)" key="ns" url="ns"/>
-      <page name="operations" key="operations" url="operations">
+            workgroup="pharm"
+            spec="core"/>
+      <page name="Messaging"
+            key="FHIR-core-messaging"
+            url="messaging"
+            spec="core"/>
+      <page name="Metadata Types"
+            key="FHIR-core-metadatatypes"
+            url="metadatatypes"
+            spec="core"/>
+      <page name="Modules"
+            key="FHIR-core-modules"
+            url="modules"
+            spec="core"/>
+      <page name="Narrative"
+            key="FHIR-core-narrative"
+            url="narrative"
+            spec="core"/>
+      <page name="ND-JSON"
+            key="FHIR-core-nd-json"
+            url="nd-json"
+            workgroup="its"
+            spec="core"/>
+      <page name="Namespaces (ns)" key="FHIR-core-ns" url="ns" spec="core"/>
+      <page name="operations"
+            key="FHIR-core-operations"
+            url="operations"
+            spec="core">
          <otherpage url="op-example-request"/>
       </page>
-      <page name="Operations List" key="operationslist" url="operationslist"/>
-      <page name="Overview" key="overview" url="overview">
+      <page name="Operations List"
+            key="FHIR-core-operationslist"
+            url="operationslist"
+            spec="core"/>
+      <page name="Overview"
+            key="FHIR-core-overview"
+            url="overview"
+            spec="core">
          <otherpage url="overview-arch"/>
          <otherpage url="overview-clinical"/>
          <otherpage url="overview-dev"/>
       </page>
-      <page name="Profile List" key="profilelist" url="profilelist"/>
-      <page name="Profiling" key="profiling" url="profiling"/>
+      <page name="Profile List"
+            key="FHIR-core-profilelist"
+            url="profilelist"
+            spec="core"/>
+      <page name="Profiling"
+            key="FHIR-core-profiling"
+            url="profiling"
+            spec="core"/>
       <page name="Managing Push and Pull (pushpull)"
-            key="pushpull"
-            url="pushpull"/>
-      <page name="QA Report (qa)" key="qa" url="qa"/>
+            key="FHIR-core-pushpull"
+            url="pushpull"
+            spec="core"/>
+      <page name="QA Report (qa)" key="FHIR-core-qa" url="qa" spec="core"/>
       <page name="Transforms between DSTU2 and STU3 (r2maps)"
-            key="r2maps"
-            url="r2maps"/>
+            key="FHIR-core-r2maps"
+            url="r2maps"
+            spec="core"/>
       <page name="Transforms between STU3 and R4 (r3maps)"
-            key="r3maps"
-            url="r3maps"/>
+            key="FHIR-core-r3maps"
+            url="r3maps"
+            spec="core"/>
       <page name="Resource Description Framework (RDF)"
-            key="rdf"
+            key="FHIR-core-rdf"
             url="rdf"
-            workgroup="its"/>
+            workgroup="its"
+            spec="core"/>
       <page name="Implementation Registry (registry/iglist)"
-            key="iglist"
-            url="registry"/>
-      <page name="References" key="references" url="references"/>
+            key="FHIR-core-iglist"
+            url="registry"
+            spec="core"/>
+      <page name="References"
+            key="FHIR-core-references"
+            url="references"
+            spec="core"/>
       <page name="Guide to Resources (resourceguide)"
-            key="resourceguide"
-            url="resourceguide"/>
-      <page name="Resource List" key="resourcelist" url="resourcelist"/>
+            key="FHIR-core-resourceguide"
+            url="resourceguide"
+            spec="core"/>
+      <page name="Resource List"
+            key="FHIR-core-resourcelist"
+            url="resourcelist"
+            spec="core"/>
       <page name="Resources (see BaseResource)"
-            key="resources"
+            key="FHIR-core-resources"
             url="resources"
-            deprecated="true"/>
-      <page name="Clinical Safety (safety)" key="safety" url="safety"/>
-      <page name="Status Codes Grid (sc)" key="sc" url="sc"/>
-      <page name="Search" key="search" url="search">
+            deprecated="true"
+            spec="core"/>
+      <page name="Clinical Safety (safety)"
+            key="FHIR-core-safety"
+            url="safety"
+            spec="core"/>
+      <page name="Status Codes Grid (sc)"
+            key="FHIR-core-sc"
+            url="sc"
+            spec="core"/>
+      <page name="Search" key="FHIR-core-search" url="search" spec="core">
          <otherpage url="search_filter"/>
       </page>
       <page name="Search Parameter Registry"
-            key="searchparameter-registry"
-            url="searchparameter-registry"/>
+            key="FHIR-core-searchparameter-registry"
+            url="searchparameter-registry"
+            spec="core"/>
       <page name="Security &amp; Privacy Module (secpriv-module)"
-            key="secpriv-module"
+            key="FHIR-core-secpriv-module"
             url="secpriv-module"
-            workgroup="security"/>
+            workgroup="security"
+            spec="core"/>
       <page name="Security"
-            key="security"
+            key="FHIR-core-security"
             url="security"
-            workgroup="security"/>
+            workgroup="security"
+            spec="core"/>
       <page name="Security Labels"
-            key="security-labels"
+            key="FHIR-core-security-labels"
             url="security-labels"
-            workgroup="security"/>
-      <page name="Services" key="services" url="services"/>
+            workgroup="security"
+            spec="core"/>
+      <page name="Services"
+            key="FHIR-core-services"
+            url="services"
+            spec="core"/>
       <page name="Signatures"
-            key="signatures"
+            key="FHIR-core-signatures"
             url="signatures"
-            workgroup="security"/>
+            workgroup="security"
+            spec="core"/>
       <page name="SMART App Launch"
-            key="smart-app-launch"
-            url="smart-app-launch"/>
+            key="FHIR-core-smart-app-launch"
+            url="smart-app-launch"
+            spec="core"/>
       <page name="SOA (see Services)"
-            key="soa"
+            key="FHIR-core-soa"
             url="soa"
             workgroup="soa"
-            deprecated="true"/>
-      <page name="Persistant Storage" key="storage" url="storage"/>
-      <page name="Summary" key="summary" url="summary"/>
+            deprecated="true"
+            spec="core"/>
+      <page name="Persistant Storage"
+            key="FHIR-core-storage"
+            url="storage"
+            spec="core"/>
+      <page name="Summary"
+            key="FHIR-core-summary"
+            url="summary"
+            spec="core"/>
       <page name="Terminologies"
-            key="terminologies"
+            key="FHIR-core-terminologies"
             url="terminologies"
-            workgroup="vocab">
+            workgroup="vocab"
+            spec="core">
          <otherpage url="cpt"/>
          <otherpage url="cvx"/>
          <otherpage url="icd"/>
@@ -635,64 +1113,109 @@
          <otherpage url="unii"/>
       </page>
       <page name="Terminologies - Concept Maps"
-            key="terminologies-conceptmaps"
+            key="FHIR-core-terminologies-conceptmaps"
             url="terminologies-conceptmaps"
-            workgroup="vocab"/>
+            workgroup="vocab"
+            spec="core"/>
       <page name="Terminologies - Systems"
-            key="terminologies-systems"
+            key="FHIR-core-terminologies-systems"
             url="terminologies-systems"
-            workgroup="vocab"/>
+            workgroup="vocab"
+            spec="core"/>
       <page name="Terminologies - v2"
-            key="terminologies-v2"
+            key="FHIR-core-terminologies-v2"
             url="terminologies-v2"
-            workgroup="vocab"/>
+            workgroup="vocab"
+            spec="core"/>
       <page name="Terminologies - v3"
-            key="terminologies-v3"
+            key="FHIR-core-terminologies-v3"
             url="terminologies-v3"
-            workgroup="vocab"/>
+            workgroup="vocab"
+            spec="core"/>
       <page name="Terminologies - Valuesets"
-            key="terminologies-valuesets"
+            key="FHIR-core-terminologies-valuesets"
             url="terminologies-valuesets"
-            workgroup="vocab"/>
+            workgroup="vocab"
+            spec="core"/>
       <page name="Terminology Module"
-            key="terminology-module"
+            key="FHIR-core-terminology-module"
             url="terminology-module"
-            workgroup="vocab"/>
+            workgroup="vocab"
+            spec="core"/>
       <page name="Terminology Service"
-            key="terminology-service"
+            key="FHIR-core-terminology-service"
             url="terminology-service"
-            workgroup="vocab"/>
-      <page name="Testing FHIR" key="testing" url="testing"/>
+            workgroup="vocab"
+            spec="core"/>
+      <page name="Testing FHIR"
+            key="FHIR-core-testing"
+            url="testing"
+            spec="core"/>
       <page name="Timelines (see versions)"
-            key="timelines"
+            key="FHIR-core-timelines"
             url="timelines"
-            deprecated="true"/>
-      <page name="Table of Contents (toc)" key="toc" url="toc"/>
-      <page name="Outstanding Issues (todo)" key="todo" url="todo"/>
-      <page name="Update Rules (updates)" key="updates" url="updates"/>
+            deprecated="true"
+            spec="core"/>
+      <page name="Table of Contents (toc)"
+            key="FHIR-core-toc"
+            url="toc"
+            spec="core"/>
+      <page name="Outstanding Issues (todo)"
+            key="FHIR-core-todo"
+            url="todo"
+            spec="core"/>
+      <page name="Update Rules (updates)"
+            key="FHIR-core-updates"
+            url="updates"
+            spec="core"/>
       <page name="UsageContext (see Metadata Types)"
-            key="usagecontext"
+            key="FHIR-core-usagecontext"
             url="usagecontext"
-            deprecated="true"/>
+            deprecated="true"
+            spec="core"/>
       <page name="Using Resources (use)"
-            key="use"
+            key="FHIR-core-use"
             url="use"
-            deprecated="true"/>
-      <page name="Common Usages (usecases)" key="usecases" url="usecases"/>
-      <page name="Validation" key="validation" url="validation"/>
-      <page name="Managing Multiple Versions" key="versioning" url="versioning"/>
+            deprecated="true"
+            spec="core"/>
+      <page name="Common Usages (usecases)"
+            key="FHIR-core-usecases"
+            url="usecases"
+            spec="core"/>
+      <page name="Validation"
+            key="FHIR-core-validation"
+            url="validation"
+            spec="core"/>
+      <page name="Managing Multiple Versions"
+            key="FHIR-core-versioning"
+            url="versioning"
+            spec="core"/>
       <page name="Change Management &amp; Versioning (versions/compatibility)"
-            key="compatibility"
-            url="versions"/>
-      <page name="WorkGroup List (wglist)" key="wglist" url="wglist"/>
-      <page name="Workflow" key="workflow" url="workflow">
+            key="FHIR-core-compatibility"
+            url="versions"
+            spec="core"/>
+      <page name="WorkGroup List (wglist)"
+            key="FHIR-core-wglist"
+            url="wglist"
+            spec="core"/>
+      <page name="Workflow"
+            key="FHIR-core-workflow"
+            url="workflow"
+            spec="core">
          <otherpage url="workflow-communications"/>
          <otherpage url="workflow-ad-hoc"/>
          <otherpage url="workflow-management"/>
       </page>
-      <page name="Workflow Module" key="workflow-module" url="workflow-module"/>
-      <page name="W5 Report" key="w5" url="w5"/>
-      <page name="XML" key="xml" url="xml" workgroup="its"/>
+      <page name="Workflow Module"
+            key="FHIR-core-workflow-module"
+            url="workflow-module"
+            spec="core"/>
+      <page name="W5 Report" key="FHIR-core-w5" url="w5" spec="core"/>
+      <page name="XML"
+            key="FHIR-core-xml"
+            url="xml"
+            workgroup="its"
+            spec="core"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-cds-hooks"
@@ -702,12 +1225,21 @@
                   defaultWorkgroup="cds"
                   defaultVersion="1.0">
       <version code="1.0"/>
-      <artifact name="Conformance" key="Conformance" deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
-      <page name="documentation" key="documentation" deprecated="true"/>
-      <page name="index" key="index" deprecated="true"/>
+      <artifact name="Conformance"
+                key="FHIR-cds-hooks-Conformance"
+                deprecated="true"
+                spec="cds-hooks"/>
+      <page name="(NA)" key="FHIR-cds-hooks-NA" spec="cds-hooks"/>
+      <page name="(many)" key="FHIR-cds-hooks-many" spec="cds-hooks"/>
+      <page name="(profiles)" key="FHIR-cds-hooks-profiles" spec="cds-hooks"/>
+      <page name="documentation"
+            key="FHIR-cds-hooks-documentation"
+            deprecated="true"
+            spec="cds-hooks"/>
+      <page name="index"
+            key="FHIR-cds-hooks-index"
+            deprecated="true"
+            spec="cds-hooks"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-fhirpath"
@@ -717,13 +1249,15 @@
                   defaultWorkgroup="its"
                   defaultVersion="1.0">
       <version code="1.0"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
-      <page name="documentation" key="documentation"/>
-      <page name="fluentpath" key="fluentpath"/>
-      <page name="index" key="index"/>
-      <page name="narrative" key="narrative"/>
+      <page name="(NA)" key="FHIR-fhirpath-NA" spec="fhirpath"/>
+      <page name="(many)" key="FHIR-fhirpath-many" spec="fhirpath"/>
+      <page name="(profiles)" key="FHIR-fhirpath-profiles" spec="fhirpath"/>
+      <page name="documentation"
+            key="FHIR-fhirpath-documentation"
+            spec="fhirpath"/>
+      <page name="fluentpath" key="FHIR-fhirpath-fluentpath" spec="fhirpath"/>
+      <page name="index" key="FHIR-fhirpath-index" spec="fhirpath"/>
+      <page name="narrative" key="FHIR-fhirpath-narrative" spec="fhirpath"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-smart"
@@ -736,9 +1270,9 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
+      <page name="(NA)" key="FHIR-smart-NA" spec="smart"/>
+      <page name="(many)" key="FHIR-smart-many" spec="smart"/>
+      <page name="(profiles)" key="FHIR-smart-profiles" spec="smart"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-ecr"
@@ -751,27 +1285,40 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="CodeSystem" key="CodeSystem" deprecated="true"/>
-      <artifact name="Composition" key="Composition" deprecated="true"/>
-      <artifact name="Encounter" key="Encounter" deprecated="true"/>
+      <artifact name="CodeSystem"
+                key="FHIR-ecr-CodeSystem"
+                deprecated="true"
+                spec="ecr"/>
+      <artifact name="Composition"
+                key="FHIR-ecr-Composition"
+                deprecated="true"
+                spec="ecr"/>
+      <artifact name="Encounter"
+                key="FHIR-ecr-Encounter"
+                deprecated="true"
+                spec="ecr"/>
       <artifact name="StructureDefinition"
-                key="StructureDefinition"
-                deprecated="true"/>
-      <artifact name="ValueSet" key="ValueSet" deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
-      <page name="ballot-intro" key="ballot-intro"/>
-      <page name="cda-intro" key="cda-intro"/>
-      <page name="downloads" key="downloads"/>
-      <page name="element" key="element"/>
-      <page name="index" key="index"/>
-      <page name="mappings" key="mappings"/>
-      <page name="summary" key="summary"/>
-      <page name="terminologies" key="terminologies"/>
-      <page name="todo" key="todo"/>
-      <page name="updates" key="updates"/>
-      <page name="xml" key="xml"/>
+                key="FHIR-ecr-StructureDefinition"
+                deprecated="true"
+                spec="ecr"/>
+      <artifact name="ValueSet"
+                key="FHIR-ecr-ValueSet"
+                deprecated="true"
+                spec="ecr"/>
+      <page name="(NA)" key="FHIR-ecr-NA" spec="ecr"/>
+      <page name="(many)" key="FHIR-ecr-many" spec="ecr"/>
+      <page name="(profiles)" key="FHIR-ecr-profiles" spec="ecr"/>
+      <page name="ballot-intro" key="FHIR-ecr-ballot-intro" spec="ecr"/>
+      <page name="cda-intro" key="FHIR-ecr-cda-intro" spec="ecr"/>
+      <page name="downloads" key="FHIR-ecr-downloads" spec="ecr"/>
+      <page name="element" key="FHIR-ecr-element" spec="ecr"/>
+      <page name="index" key="FHIR-ecr-index" spec="ecr"/>
+      <page name="mappings" key="FHIR-ecr-mappings" spec="ecr"/>
+      <page name="summary" key="FHIR-ecr-summary" spec="ecr"/>
+      <page name="terminologies" key="FHIR-ecr-terminologies" spec="ecr"/>
+      <page name="todo" key="FHIR-ecr-todo" spec="ecr"/>
+      <page name="updates" key="FHIR-ecr-updates" spec="ecr"/>
+      <page name="xml" key="FHIR-ecr-xml" spec="ecr"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-genomics-reporting"
@@ -784,19 +1331,44 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="DiagnosticReport" key="DiagnosticReport" deprecated="true"/>
-      <artifact name="Feed" key="Feed" deprecated="true"/>
+      <artifact name="DiagnosticReport"
+                key="FHIR-genomics-reporting-DiagnosticReport"
+                deprecated="true"
+                spec="genomics-reporting"/>
+      <artifact name="Bundle"
+                key="FHIR-genomics-reporting-Feed"
+                deprecated="true"
+                spec="genomics-reporting"/>
       <artifact name="ImplementationGuide"
-                key="ImplementationGuide"
-                deprecated="true"/>
-      <artifact name="Observation" key="Observation" deprecated="true"/>
-      <artifact name="Sequence" key="Sequence" deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
-      <page name="documentation" key="documentation"/>
-      <page name="genomics" key="genomics"/>
-      <page name="usecases" key="usecases"/>
+                key="FHIR-genomics-reporting-ImplementationGuide"
+                deprecated="true"
+                spec="genomics-reporting"/>
+      <artifact name="Observation"
+                key="FHIR-genomics-reporting-Observation"
+                deprecated="true"
+                spec="genomics-reporting"/>
+      <artifact name="MolecularSequence"
+                key="FHIR-genomics-reporting-Sequence"
+                deprecated="true"
+                spec="genomics-reporting"/>
+      <page name="(NA)"
+            key="FHIR-genomics-reporting-NA"
+            spec="genomics-reporting"/>
+      <page name="(many)"
+            key="FHIR-genomics-reporting-many"
+            spec="genomics-reporting"/>
+      <page name="(profiles)"
+            key="FHIR-genomics-reporting-profiles"
+            spec="genomics-reporting"/>
+      <page name="documentation"
+            key="FHIR-genomics-reporting-documentation"
+            spec="genomics-reporting"/>
+      <page name="genomics"
+            key="FHIR-genomics-reporting-genomics"
+            spec="genomics-reporting"/>
+      <page name="usecases"
+            key="FHIR-genomics-reporting-usecases"
+            spec="genomics-reporting"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-immds"
@@ -809,14 +1381,21 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="Immunization" key="Immunization" deprecated="true"/>
+      <artifact name="Immunization"
+                key="FHIR-immds-Immunization"
+                deprecated="true"
+                spec="immds"/>
       <artifact name="ImmunizationRecommendation"
-                key="ImmunizationRecommendation"
-                deprecated="true"/>
-      <artifact name="Patient" key="Patient" deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
+                key="FHIR-immds-ImmunizationRecommendation"
+                deprecated="true"
+                spec="immds"/>
+      <artifact name="Patient"
+                key="FHIR-immds-Patient"
+                deprecated="true"
+                spec="immds"/>
+      <page name="(NA)" key="FHIR-immds-NA" spec="immds"/>
+      <page name="(many)" key="FHIR-immds-many" spec="immds"/>
+      <page name="(profiles)" key="FHIR-immds-profiles" spec="immds"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-ips"
@@ -830,37 +1409,82 @@
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
       <artifact name="AllergyIntolerance"
-                key="AllergyIntolerance"
-                deprecated="true"/>
-      <artifact name="Composition" key="Composition" deprecated="true"/>
-      <artifact name="Condition" key="Condition" deprecated="true"/>
-      <artifact name="Device" key="Device" deprecated="true"/>
+                key="FHIR-ips-AllergyIntolerance"
+                deprecated="true"
+                spec="ips"/>
+      <artifact name="Composition"
+                key="FHIR-ips-Composition"
+                deprecated="true"
+                spec="ips"/>
+      <artifact name="Condition"
+                key="FHIR-ips-Condition"
+                deprecated="true"
+                spec="ips"/>
+      <artifact name="Device"
+                key="FHIR-ips-Device"
+                deprecated="true"
+                spec="ips"/>
       <artifact name="DeviceUseStatement"
-                key="DeviceUseStatement"
-                deprecated="true"/>
-      <artifact name="Feed" key="Feed" deprecated="true"/>
-      <artifact name="ImagingStudy" key="ImagingStudy" deprecated="true"/>
-      <artifact name="Immunization" key="Immunization" deprecated="true"/>
+                key="FHIR-ips-DeviceUseStatement"
+                deprecated="true"
+                spec="ips"/>
+      <artifact name="Feed" key="FHIR-ips-Feed" deprecated="true" spec="ips"/>
+      <artifact name="ImagingStudy"
+                key="FHIR-ips-ImagingStudy"
+                deprecated="true"
+                spec="ips"/>
+      <artifact name="Immunization"
+                key="FHIR-ips-Immunization"
+                deprecated="true"
+                spec="ips"/>
       <artifact name="ImplementationGuide"
-                key="ImplementationGuide"
-                deprecated="true"/>
-      <artifact name="Medication" key="Medication" deprecated="true"/>
+                key="FHIR-ips-ImplementationGuide"
+                deprecated="true"
+                spec="ips"/>
+      <artifact name="Medication"
+                key="FHIR-ips-Medication"
+                deprecated="true"
+                spec="ips"/>
       <artifact name="MedicationStatement"
-                key="MedicationStatement"
-                deprecated="true"/>
-      <artifact name="Observation" key="Observation" deprecated="true"/>
-      <artifact name="Organization" key="Organization" deprecated="true"/>
-      <artifact name="Patient" key="Patient" deprecated="true"/>
-      <artifact name="Practitioner" key="Practitioner" deprecated="true"/>
-      <artifact name="Procedure" key="Procedure" deprecated="true"/>
-      <artifact name="Specimen" key="Specimen" deprecated="true"/>
-      <artifact name="ValueSet" key="ValueSet" deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
-      <page name="downloads" key="downloads"/>
-      <page name="methodology" key="methodology"/>
-      <page name="terminologies-valuesets" key="terminologies-valuesets"/>
+                key="FHIR-ips-MedicationStatement"
+                deprecated="true"
+                spec="ips"/>
+      <artifact name="Observation"
+                key="FHIR-ips-Observation"
+                deprecated="true"
+                spec="ips"/>
+      <artifact name="Organization"
+                key="FHIR-ips-Organization"
+                deprecated="true"
+                spec="ips"/>
+      <artifact name="Patient"
+                key="FHIR-ips-Patient"
+                deprecated="true"
+                spec="ips"/>
+      <artifact name="Practitioner"
+                key="FHIR-ips-Practitioner"
+                deprecated="true"
+                spec="ips"/>
+      <artifact name="Procedure"
+                key="FHIR-ips-Procedure"
+                deprecated="true"
+                spec="ips"/>
+      <artifact name="Specimen"
+                key="FHIR-ips-Specimen"
+                deprecated="true"
+                spec="ips"/>
+      <artifact name="ValueSet"
+                key="FHIR-ips-ValueSet"
+                deprecated="true"
+                spec="ips"/>
+      <page name="(NA)" key="FHIR-ips-NA" spec="ips"/>
+      <page name="(many)" key="FHIR-ips-many" spec="ips"/>
+      <page name="(profiles)" key="FHIR-ips-profiles" spec="ips"/>
+      <page name="downloads" key="FHIR-ips-downloads" spec="ips"/>
+      <page name="methodology" key="FHIR-ips-methodology" spec="ips"/>
+      <page name="terminologies-valuesets"
+            key="FHIR-ips-terminologies-valuesets"
+            spec="ips"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-pddi"
@@ -873,9 +1497,9 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
+      <page name="(NA)" key="FHIR-pddi-NA" spec="pddi"/>
+      <page name="(many)" key="FHIR-pddi-many" spec="pddi"/>
+      <page name="(profiles)" key="FHIR-pddi-profiles" spec="pddi"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-phd"
@@ -887,11 +1511,17 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="Device" key="Device" deprecated="true"/>
-      <artifact name="Observation" key="Observation" deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
+      <artifact name="Device"
+                key="FHIR-phd-Device"
+                deprecated="true"
+                spec="phd"/>
+      <artifact name="Observation"
+                key="FHIR-phd-Observation"
+                deprecated="true"
+                spec="phd"/>
+      <page name="(NA)" key="FHIR-phd-NA" spec="phd"/>
+      <page name="(many)" key="FHIR-phd-many" spec="phd"/>
+      <page name="(profiles)" key="FHIR-phd-profiles" spec="phd"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-pocd"
@@ -903,13 +1533,25 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="Device" key="Device" deprecated="true"/>
-      <artifact name="DeviceComponent" key="DeviceComponent" deprecated="true"/>
-      <artifact name="DeviceMetric" key="DeviceMetric" deprecated="true"/>
-      <artifact name="Observation" key="Observation" deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
+      <artifact name="Device"
+                key="FHIR-pocd-Device"
+                deprecated="true"
+                spec="pocd"/>
+      <artifact name="DeviceComponent"
+                key="FHIR-pocd-DeviceComponent"
+                deprecated="true"
+                spec="pocd"/>
+      <artifact name="DeviceMetric"
+                key="FHIR-pocd-DeviceMetric"
+                deprecated="true"
+                spec="pocd"/>
+      <artifact name="Observation"
+                key="FHIR-pocd-Observation"
+                deprecated="true"
+                spec="pocd"/>
+      <page name="(NA)" key="FHIR-pocd-NA" spec="pocd"/>
+      <page name="(many)" key="FHIR-pocd-many" spec="pocd"/>
+      <page name="(profiles)" key="FHIR-pocd-profiles" spec="pocd"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-sdc"
@@ -923,20 +1565,33 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="Conformance" key="Conformance" deprecated="true"/>
-      <artifact name="DataElement" key="DataElement" deprecated="true"/>
-      <artifact name="Questionnaire" key="Questionnaire" deprecated="true"/>
+      <artifact name="Conformance"
+                key="FHIR-sdc-Conformance"
+                deprecated="true"
+                spec="sdc"/>
+      <artifact name="DataElement"
+                key="FHIR-sdc-DataElement"
+                deprecated="true"
+                spec="sdc"/>
+      <artifact name="Questionnaire"
+                key="FHIR-sdc-Questionnaire"
+                deprecated="true"
+                spec="sdc"/>
       <artifact name="QuestionnaireAnswers"
-                key="QuestionnaireAnswers"
-                deprecated="true"/>
-      <artifact name="ValueSet" key="ValueSet" deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
-      <page name="iglist" key="iglist"/>
-      <page name="index" key="index"/>
-      <page name="methodology" key="methodology"/>
-      <page name="workflow" key="workflow"/>
+                key="FHIR-sdc-QuestionnaireAnswers"
+                deprecated="true"
+                spec="sdc"/>
+      <artifact name="ValueSet"
+                key="FHIR-sdc-ValueSet"
+                deprecated="true"
+                spec="sdc"/>
+      <page name="(NA)" key="FHIR-sdc-NA" spec="sdc"/>
+      <page name="(many)" key="FHIR-sdc-many" spec="sdc"/>
+      <page name="(profiles)" key="FHIR-sdc-profiles" spec="sdc"/>
+      <page name="iglist" key="FHIR-sdc-iglist" spec="sdc"/>
+      <page name="index" key="FHIR-sdc-index" spec="sdc"/>
+      <page name="methodology" key="FHIR-sdc-methodology" spec="sdc"/>
+      <page name="workflow" key="FHIR-sdc-workflow" spec="sdc"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-sdc-de"
@@ -950,15 +1605,17 @@
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
       <artifact name="DataElement (see StructureDefinition)"
-                key="DataElement"
-                deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
+                key="FHIR-sdc-de-DataElement"
+                deprecated="true"
+                spec="sdc-de"/>
+      <page name="(NA)" key="FHIR-sdc-de-NA" spec="sdc-de"/>
+      <page name="(many)" key="FHIR-sdc-de-many" spec="sdc-de"/>
+      <page name="(profiles)" key="FHIR-sdc-de-profiles" spec="sdc-de"/>
       <page name="ElementDefinition"
-            key="elementdefinition"
+            key="FHIR-sdc-de-elementdefinition"
             url="elementdefinition"
-            deprecated="true"/>
+            deprecated="true"
+            spec="sdc-de"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-vhdir"
@@ -971,21 +1628,49 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="CareTeam" key="CareTeam" deprecated="true"/>
-      <artifact name="EndPoint" key="EndPoint" deprecated="true"/>
-      <artifact name="HealthcareService" key="HealthcareService" deprecated="true"/>
-      <artifact name="Location" key="Location" deprecated="true"/>
-      <artifact name="Organization" key="Organization" deprecated="true"/>
+      <artifact name="CareTeam"
+                key="FHIR-vhdir-CareTeam"
+                deprecated="true"
+                spec="vhdir"/>
+      <artifact name="EndPoint"
+                key="FHIR-vhdir-EndPoint"
+                deprecated="true"
+                spec="vhdir"/>
+      <artifact name="HealthcareService"
+                key="FHIR-vhdir-HealthcareService"
+                deprecated="true"
+                spec="vhdir"/>
+      <artifact name="Location"
+                key="FHIR-vhdir-Location"
+                deprecated="true"
+                spec="vhdir"/>
+      <artifact name="Organization"
+                key="FHIR-vhdir-Organization"
+                deprecated="true"
+                spec="vhdir"/>
       <artifact name="OrganizationAffiliation"
-                key="OrganizationRole"
-                deprecated="true"/>
-      <artifact name="Practitioner" key="Practitioner" deprecated="true"/>
-      <artifact name="PractitionerRole" key="PractitionerRole" deprecated="true"/>
-      <artifact name="InsurancePlan" key="ProductPlan" deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
-      <page name="Home (index)" key="index" url="index"/>
+                key="FHIR-vhdir-OrganizationRole"
+                deprecated="true"
+                spec="vhdir"/>
+      <artifact name="Practitioner"
+                key="FHIR-vhdir-Practitioner"
+                deprecated="true"
+                spec="vhdir"/>
+      <artifact name="PractitionerRole"
+                key="FHIR-vhdir-PractitionerRole"
+                deprecated="true"
+                spec="vhdir"/>
+      <artifact name="InsurancePlan"
+                key="FHIR-vhdir-ProductPlan"
+                deprecated="true"
+                spec="vhdir"/>
+      <page name="(NA)" key="FHIR-vhdir-NA" spec="vhdir"/>
+      <page name="(many)" key="FHIR-vhdir-many" spec="vhdir"/>
+      <page name="(profiles)" key="FHIR-vhdir-profiles" spec="vhdir"/>
+      <page name="Home (index)"
+            key="FHIR-vhdir-index"
+            url="index"
+            spec="vhdir"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-core"
@@ -999,71 +1684,161 @@
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
       <artifact name="AllergyIntolerance"
-                key="AllergyIntolerance"
-                deprecated="true"/>
-      <artifact name="AuditEvent" key="AuditEvent" deprecated="true"/>
-      <artifact name="Binary" key="Binary" deprecated="true"/>
-      <artifact name="CarePlan" key="CarePlan" deprecated="true"/>
-      <artifact name="CareTeam" key="CareTeam" deprecated="true"/>
-      <artifact name="Composition" key="Composition" deprecated="true"/>
-      <artifact name="Condition" key="Condition" deprecated="true"/>
-      <artifact name="Device" key="Device" deprecated="true"/>
+                key="FHIR-us-core-AllergyIntolerance"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="AuditEvent"
+                key="FHIR-us-core-AuditEvent"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Binary"
+                key="FHIR-us-core-Binary"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="CarePlan"
+                key="FHIR-us-core-CarePlan"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="CareTeam"
+                key="FHIR-us-core-CareTeam"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Composition"
+                key="FHIR-us-core-Composition"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Condition"
+                key="FHIR-us-core-Condition"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Device"
+                key="FHIR-us-core-Device"
+                deprecated="true"
+                spec="us-core"/>
       <artifact name="DiagnosticRequest (see ServiceRequest)"
-                key="DiagnosticRequest"
-                deprecated="true"/>
-      <artifact name="DiagnosticReport" key="DiagnosticReport" deprecated="true"/>
-      <artifact name="DocumentReference" key="DocumentReference" deprecated="true"/>
-      <artifact name="Encounter" key="Encounter" deprecated="true"/>
-      <artifact name="FamilyMemberHistory" key="FamilyHistory" deprecated="true"/>
-      <artifact name="Goal" key="Goal" deprecated="true"/>
-      <artifact name="Immunization" key="Immunization" deprecated="true"/>
-      <artifact name="List" key="List" deprecated="true"/>
-      <artifact name="Location" key="Location" deprecated="true"/>
-      <artifact name="Measure" key="Measure" deprecated="true"/>
+                key="FHIR-us-core-DiagnosticRequest"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="DiagnosticReport"
+                key="FHIR-us-core-DiagnosticReport"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="DocumentReference"
+                key="FHIR-us-core-DocumentReference"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Encounter"
+                key="FHIR-us-core-Encounter"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="FamilyMemberHistory"
+                key="FHIR-us-core-FamilyHistory"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Goal"
+                key="FHIR-us-core-Goal"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Immunization"
+                key="FHIR-us-core-Immunization"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="List"
+                key="FHIR-us-core-List"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Location"
+                key="FHIR-us-core-Location"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Measure"
+                key="FHIR-us-core-Measure"
+                deprecated="true"
+                spec="us-core"/>
       <artifact name="MedicationAdministration"
-                key="MedicationAdministration"
-                deprecated="true"/>
+                key="FHIR-us-core-MedicationAdministration"
+                deprecated="true"
+                spec="us-core"/>
       <artifact name="MedicationDispense"
-                key="MedicationDispense"
-                deprecated="true"/>
+                key="FHIR-us-core-MedicationDispense"
+                deprecated="true"
+                spec="us-core"/>
       <artifact name="MedicationRequest"
-                key="MedicationPrescription"
-                deprecated="true"/>
+                key="FHIR-us-core-MedicationPrescription"
+                deprecated="true"
+                spec="us-core"/>
       <artifact name="MedicationStatement"
-                key="MedicationStatement"
-                deprecated="true"/>
-      <artifact name="Observation" key="Observation" deprecated="true"/>
-      <artifact name="Organization" key="Organization" deprecated="true"/>
-      <artifact name="Patient" key="Patient" deprecated="true"/>
-      <artifact name="Practitioner" key="Practitioner" deprecated="true"/>
-      <artifact name="PractitionerRole" key="PractitionerRole" deprecated="true"/>
-      <artifact name="Procedure" key="Procedure" deprecated="true"/>
-      <artifact name="Provenance" key="Provenance" deprecated="true"/>
-      <artifact name="Specimen" key="Specimen" deprecated="true"/>
+                key="FHIR-us-core-MedicationStatement"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Observation"
+                key="FHIR-us-core-Observation"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Organization"
+                key="FHIR-us-core-Organization"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Patient"
+                key="FHIR-us-core-Patient"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Practitioner"
+                key="FHIR-us-core-Practitioner"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="PractitionerRole"
+                key="FHIR-us-core-PractitionerRole"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Procedure"
+                key="FHIR-us-core-Procedure"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Provenance"
+                key="FHIR-us-core-Provenance"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Specimen"
+                key="FHIR-us-core-Specimen"
+                deprecated="true"
+                spec="us-core"/>
       <artifact name="StructureDefinition"
-                key="StructureDefinition"
-                deprecated="true"/>
-      <artifact name="ValueSet" key="ValueSet" deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(methodology)" key="methodology"/>
-      <page name="(profiles)" key="profiles"/>
+                key="FHIR-us-core-StructureDefinition"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="ValueSet"
+                key="FHIR-us-core-ValueSet"
+                deprecated="true"
+                spec="us-core"/>
+      <page name="(NA)" key="FHIR-us-core-NA" spec="us-core"/>
+      <page name="(many)" key="FHIR-us-core-many" spec="us-core"/>
+      <page name="(methodology)" key="FHIR-us-core-methodology" spec="us-core"/>
+      <page name="(profiles)" key="FHIR-us-core-profiles" spec="us-core"/>
       <page name="Schemas &amp; Schematrons"
-            key="schemas-schematrons"
-            deprecated="true"/>
+            key="FHIR-us-core-schemas-schematrons"
+            deprecated="true"
+            spec="us-core"/>
       <page name="Argnonauts"
-            key="argonauts"
+            key="FHIR-us-core-argonauts"
             url="argnonauts"
-            deprecated="true"/>
-      <page name="Home (index)" key="index" url="index" deprecated="true"/>
+            deprecated="true"
+            spec="us-core"/>
+      <page name="Home (index)"
+            key="FHIR-us-core-index"
+            url="index"
+            deprecated="true"
+            spec="us-core"/>
       <page name="Implementation Registry (registry/iglist)"
-            key="iglist"
+            key="FHIR-us-core-iglist"
             url="registry"
-            deprecated="true"/>
+            deprecated="true"
+            spec="us-core"/>
       <page name="Terminologies - Systems"
-            key="terminologies-systems"
+            key="FHIR-us-core-terminologies-systems"
             url="terminologies-systems"
-            deprecated="true"/>
+            deprecated="true"
+            spec="us-core"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-bser"
@@ -1075,9 +1850,9 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
+      <page name="(NA)" key="FHIR-us-bser-NA" spec="us-bser"/>
+      <page name="(many)" key="FHIR-us-bser-many" spec="us-bser"/>
+      <page name="(profiles)" key="FHIR-us-bser-profiles" spec="us-bser"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-breastcancer"
@@ -1090,19 +1865,35 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="BodySite" key="BodySite" deprecated="true"/>
+      <artifact name="BodySite"
+                key="FHIR-us-breastcancer-BodySite"
+                deprecated="true"
+                spec="us-breastcancer"/>
       <artifact name="ImplementationGuide"
-                key="ImplementationGuide"
-                deprecated="true"/>
-      <artifact name="Observation" key="Observation" deprecated="true"/>
+                key="FHIR-us-breastcancer-ImplementationGuide"
+                deprecated="true"
+                spec="us-breastcancer"/>
+      <artifact name="Observation"
+                key="FHIR-us-breastcancer-Observation"
+                deprecated="true"
+                spec="us-breastcancer"/>
       <artifact name="StructureDefinition"
-                key="StructureDefinition"
-                deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
-      <page name="documentation" key="documentation"/>
-      <page name="terminologies" key="terminologies"/>
+                key="FHIR-us-breastcancer-StructureDefinition"
+                deprecated="true"
+                spec="us-breastcancer"/>
+      <page name="(NA)" key="FHIR-us-breastcancer-NA" spec="us-breastcancer"/>
+      <page name="(many)"
+            key="FHIR-us-breastcancer-many"
+            spec="us-breastcancer"/>
+      <page name="(profiles)"
+            key="FHIR-us-breastcancer-profiles"
+            spec="us-breastcancer"/>
+      <page name="documentation"
+            key="FHIR-us-breastcancer-documentation"
+            spec="us-breastcancer"/>
+      <page name="terminologies"
+            key="FHIR-us-breastcancer-terminologies"
+            spec="us-breastcancer"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-ccda"
@@ -1115,21 +1906,35 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="AuditEvent" key="AuditEvent" deprecated="true"/>
-      <artifact name="Composition" key="Composition" deprecated="true"/>
-      <artifact name="Provenance" key="Provenance" deprecated="true"/>
+      <artifact name="AuditEvent"
+                key="FHIR-us-ccda-AuditEvent"
+                deprecated="true"
+                spec="us-ccda"/>
+      <artifact name="Composition"
+                key="FHIR-us-ccda-Composition"
+                deprecated="true"
+                spec="us-ccda"/>
+      <artifact name="Provenance"
+                key="FHIR-us-ccda-Provenance"
+                deprecated="true"
+                spec="us-ccda"/>
       <artifact name="StructureDefinition"
-                key="StructureDefinition"
-                deprecated="true"/>
-      <artifact name="ValueSet" key="ValueSet" deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(methodology)" key="methodology"/>
-      <page name="(profiles)" key="profiles"/>
+                key="FHIR-us-ccda-StructureDefinition"
+                deprecated="true"
+                spec="us-ccda"/>
+      <artifact name="ValueSet"
+                key="FHIR-us-ccda-ValueSet"
+                deprecated="true"
+                spec="us-ccda"/>
+      <page name="(NA)" key="FHIR-us-ccda-NA" spec="us-ccda"/>
+      <page name="(many)" key="FHIR-us-ccda-many" spec="us-ccda"/>
+      <page name="(methodology)" key="FHIR-us-ccda-methodology" spec="us-ccda"/>
+      <page name="(profiles)" key="FHIR-us-ccda-profiles" spec="us-ccda"/>
       <page name="Implementation (see Documentation)"
-            key="implementation"
+            key="FHIR-us-ccda-implementation"
             url="implementation"
-            deprecated="true"/>
+            deprecated="true"
+            spec="us-ccda"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-crn"
@@ -1142,12 +1947,18 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="Device" key="Device" deprecated="true"/>
-      <artifact name="Procedure" key="Procedure" deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
-      <page name="index" key="index"/>
+      <artifact name="Device"
+                key="FHIR-us-crn-Device"
+                deprecated="true"
+                spec="us-crn"/>
+      <artifact name="Procedure"
+                key="FHIR-us-crn-Procedure"
+                deprecated="true"
+                spec="us-crn"/>
+      <page name="(NA)" key="FHIR-us-crn-NA" spec="us-crn"/>
+      <page name="(many)" key="FHIR-us-crn-many" spec="us-crn"/>
+      <page name="(profiles)" key="FHIR-us-crn-profiles" spec="us-crn"/>
+      <page name="index" key="FHIR-us-crn-index" spec="us-crn"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-daf-research"
@@ -1160,11 +1971,19 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="Patient" key="Patient"/>
-      <artifact name="ResearchStudy" key="ResearchStudy"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
+      <artifact name="Patient"
+                key="FHIR-us-daf-research-Patient"
+                spec="us-daf-research"/>
+      <artifact name="ResearchStudy"
+                key="FHIR-us-daf-research-ResearchStudy"
+                spec="us-daf-research"/>
+      <page name="(NA)" key="FHIR-us-daf-research-NA" spec="us-daf-research"/>
+      <page name="(many)"
+            key="FHIR-us-daf-research-many"
+            spec="us-daf-research"/>
+      <page name="(profiles)"
+            key="FHIR-us-daf-research-profiles"
+            spec="us-daf-research"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-davinci-crd"
@@ -1177,9 +1996,11 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
+      <page name="(NA)" key="FHIR-us-davinci-crd-NA" spec="us-davinci-crd"/>
+      <page name="(many)" key="FHIR-us-davinci-crd-many" spec="us-davinci-crd"/>
+      <page name="(profiles)"
+            key="FHIR-us-davinci-crd-profiles"
+            spec="us-davinci-crd"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-davinci-deqm"
@@ -1192,12 +2013,24 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="Organization" key="Organization" deprecated="true"/>
-      <artifact name="Practitioner" key="Practitioner" deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
-      <page name="history" key="history"/>
+      <artifact name="Organization"
+                key="FHIR-us-davinci-deqm-Organization"
+                deprecated="true"
+                spec="us-davinci-deqm"/>
+      <artifact name="Practitioner"
+                key="FHIR-us-davinci-deqm-Practitioner"
+                deprecated="true"
+                spec="us-davinci-deqm"/>
+      <page name="(NA)" key="FHIR-us-davinci-deqm-NA" spec="us-davinci-deqm"/>
+      <page name="(many)"
+            key="FHIR-us-davinci-deqm-many"
+            spec="us-davinci-deqm"/>
+      <page name="(profiles)"
+            key="FHIR-us-davinci-deqm-profiles"
+            spec="us-davinci-deqm"/>
+      <page name="history"
+            key="FHIR-us-davinci-deqm-history"
+            spec="us-davinci-deqm"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-hai"
@@ -1211,12 +2044,13 @@
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
       <artifact name="ImplementationGuide"
-                key="ImplementationGuide"
-                deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
-      <page name="index" key="index"/>
+                key="FHIR-us-hai-ImplementationGuide"
+                deprecated="true"
+                spec="us-hai"/>
+      <page name="(NA)" key="FHIR-us-hai-NA" spec="us-hai"/>
+      <page name="(many)" key="FHIR-us-hai-many" spec="us-hai"/>
+      <page name="(profiles)" key="FHIR-us-hai-profiles" spec="us-hai"/>
+      <page name="index" key="FHIR-us-hai-index" spec="us-hai"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-livd"
@@ -1230,11 +2064,12 @@
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
       <artifact name="ObservationDefinition"
-                key="ObservationDefinition"
-                deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
+                key="FHIR-us-livd-ObservationDefinition"
+                deprecated="true"
+                spec="us-livd"/>
+      <page name="(NA)" key="FHIR-us-livd-NA" spec="us-livd"/>
+      <page name="(many)" key="FHIR-us-livd-many" spec="us-livd"/>
+      <page name="(profiles)" key="FHIR-us-livd-profiles" spec="us-livd"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-ohd"
@@ -1247,10 +2082,13 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="OccupationalData" key="OccupationalData" deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
+      <artifact name="OccupationalData"
+                key="FHIR-us-ohd-OccupationalData"
+                deprecated="true"
+                spec="us-ohd"/>
+      <page name="(NA)" key="FHIR-us-ohd-NA" spec="us-ohd"/>
+      <page name="(many)" key="FHIR-us-ohd-many" spec="us-ohd"/>
+      <page name="(profiles)" key="FHIR-us-ohd-profiles" spec="us-ohd"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-pharmacy"
@@ -1265,15 +2103,22 @@
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
       <artifact name="ImplementationGuide"
-                key="ImplementationGuide"
-                deprecated="true"/>
-      <artifact name="Medication" key="Medication" deprecated="true"/>
+                key="FHIR-us-pharmacy-ImplementationGuide"
+                deprecated="true"
+                spec="us-pharmacy"/>
+      <artifact name="Medication"
+                key="FHIR-us-pharmacy-Medication"
+                deprecated="true"
+                spec="us-pharmacy"/>
       <artifact name="MedicationStatement"
-                key="MedicationStatement"
-                deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
+                key="FHIR-us-pharmacy-MedicationStatement"
+                deprecated="true"
+                spec="us-pharmacy"/>
+      <page name="(NA)" key="FHIR-us-pharmacy-NA" spec="us-pharmacy"/>
+      <page name="(many)" key="FHIR-us-pharmacy-many" spec="us-pharmacy"/>
+      <page name="(profiles)"
+            key="FHIR-us-pharmacy-profiles"
+            spec="us-pharmacy"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-pro"
@@ -1286,11 +2131,14 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="Questionnaire" key="Questionnaire" deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
-      <page name="index" key="index"/>
+      <artifact name="Questionnaire"
+                key="FHIR-us-pro-Questionnaire"
+                deprecated="true"
+                spec="us-pro"/>
+      <page name="(NA)" key="FHIR-us-pro-NA" spec="us-pro"/>
+      <page name="(many)" key="FHIR-us-pro-many" spec="us-pro"/>
+      <page name="(profiles)" key="FHIR-us-pro-profiles" spec="us-pro"/>
+      <page name="index" key="FHIR-us-pro-index" spec="us-pro"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-qicore"
@@ -1303,18 +2151,29 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="AllergyIntolerance" key="AllergyIntolerance"/>
-      <artifact name="Condition" key="Condition"/>
-      <artifact name="Encounter" key="Encounter"/>
-      <artifact name="Goal" key="Goal"/>
-      <artifact name="ImagingStudy" key="ImagingStudy"/>
-      <artifact name="MedicationRequest" key="MedicationPrescription"/>
-      <artifact name="Patient" key="Patient"/>
-      <artifact name="StructureDefinition" key="StructureDefinition"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
-      <page name="Home (index)" key="index" url="index"/>
+      <artifact name="AllergyIntolerance"
+                key="FHIR-us-qicore-AllergyIntolerance"
+                spec="us-qicore"/>
+      <artifact name="Condition" key="FHIR-us-qicore-Condition" spec="us-qicore"/>
+      <artifact name="Encounter" key="FHIR-us-qicore-Encounter" spec="us-qicore"/>
+      <artifact name="Goal" key="FHIR-us-qicore-Goal" spec="us-qicore"/>
+      <artifact name="ImagingStudy"
+                key="FHIR-us-qicore-ImagingStudy"
+                spec="us-qicore"/>
+      <artifact name="MedicationRequest"
+                key="FHIR-us-qicore-MedicationPrescription"
+                spec="us-qicore"/>
+      <artifact name="Patient" key="FHIR-us-qicore-Patient" spec="us-qicore"/>
+      <artifact name="StructureDefinition"
+                key="FHIR-us-qicore-StructureDefinition"
+                spec="us-qicore"/>
+      <page name="(NA)" key="FHIR-us-qicore-NA" spec="us-qicore"/>
+      <page name="(many)" key="FHIR-us-qicore-many" spec="us-qicore"/>
+      <page name="(profiles)" key="FHIR-us-qicore-profiles" spec="us-qicore"/>
+      <page name="Home (index)"
+            key="FHIR-us-qicore-index"
+            url="index"
+            spec="us-qicore"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-cqif"
@@ -1327,52 +2186,86 @@
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
       <artifact name="ActivityDefinition"
-                key="ActivityDefinition"
-                deprecated="true"/>
+                key="FHIR-cqif-ActivityDefinition"
+                deprecated="true"
+                spec="cqif"/>
       <artifact name="DecisionSupportServiceModule"
-                key="DecisionSupportServiceModule"
-                deprecated="true"/>
-      <artifact name="GuidanceResponse" key="GuidanceResponse" deprecated="true"/>
-      <artifact name="Library" key="Library" deprecated="true"/>
-      <artifact name="Measure" key="Measure" deprecated="true"/>
-      <artifact name="MeasureReport" key="MeasureReport" deprecated="true"/>
-      <artifact name="PlanDefinition" key="PlanDefinition" deprecated="true"/>
-      <artifact name="Questionnaire" key="Questionnaire" deprecated="true"/>
+                key="FHIR-cqif-DecisionSupportServiceModule"
+                deprecated="true"
+                spec="cqif"/>
+      <artifact name="GuidanceResponse"
+                key="FHIR-cqif-GuidanceResponse"
+                deprecated="true"
+                spec="cqif"/>
+      <artifact name="Library"
+                key="FHIR-cqif-Library"
+                deprecated="true"
+                spec="cqif"/>
+      <artifact name="Measure"
+                key="FHIR-cqif-Measure"
+                deprecated="true"
+                spec="cqif"/>
+      <artifact name="MeasureReport"
+                key="FHIR-cqif-MeasureReport"
+                deprecated="true"
+                spec="cqif"/>
+      <artifact name="PlanDefinition"
+                key="FHIR-cqif-PlanDefinition"
+                deprecated="true"
+                spec="cqif"/>
+      <artifact name="Questionnaire"
+                key="FHIR-cqif-Questionnaire"
+                deprecated="true"
+                spec="cqif"/>
       <artifact name="QuestionnaireResponse"
-                key="QuestionnaireAnswers"
-                deprecated="true"/>
-      <artifact name="ValueSet" key="ValueSet" deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(profiles)" key="profiles"/>
+                key="FHIR-cqif-QuestionnaireAnswers"
+                deprecated="true"
+                spec="cqif"/>
+      <artifact name="ValueSet"
+                key="FHIR-cqif-ValueSet"
+                deprecated="true"
+                spec="cqif"/>
+      <page name="(NA)" key="FHIR-cqif-NA" spec="cqif"/>
+      <page name="(profiles)" key="FHIR-cqif-profiles" spec="cqif"/>
       <page name="Clinical Reasoning Module"
-            key="clinicalreasoning-module"
+            key="FHIR-cqif-clinicalreasoning-module"
             url="clinicalreasoning-module"
-            deprecated="true"/>
+            deprecated="true"
+            spec="cqif"/>
       <page name="cqif-cds-on-fhir"
-            key="cqif-cds-on-fhir"
+            key="FHIR-cqif-cqif-cds-on-fhir"
             url="cqif-cds-on-fhir"
-            deprecated="true"/>
+            deprecated="true"
+            spec="cqif"/>
       <page name="cqif-knowledge-artifact-distribution"
-            key="cqif-knowledge-artifact-distribution"
+            key="FHIR-cqif-cqif-knowledge-artifact-distribution"
             url="cqif-knowledge-artifact-distribution"
-            deprecated="true"/>
+            deprecated="true"
+            spec="cqif"/>
       <page name="cqif-knowledge-artifact-representation"
-            key="cqif-knowledge-artifact-representation"
+            key="FHIR-cqif-cqif-knowledge-artifact-representation"
             url="cqif-knowledge-artifact-representation"
-            deprecated="true"/>
+            deprecated="true"
+            spec="cqif"/>
       <page name="cqif-quality-reporting"
-            key="cqif-quality-reporting"
+            key="FHIR-cqif-cqif-quality-reporting"
             url="cqif-quality-reporting"
-            deprecated="true"/>
+            deprecated="true"
+            spec="cqif"/>
       <page name="cqif-topics-definitional-resources"
-            key="cqif-topics-definitional-resources"
+            key="FHIR-cqif-cqif-topics-definitional-resources"
             url="cqif-topics-definitional-resources"
-            deprecated="true"/>
+            deprecated="true"
+            spec="cqif"/>
       <page name="cqif-topics-using-expressions"
-            key="cqif-topics-using-expressions"
+            key="FHIR-cqif-cqif-topics-using-expressions"
             url="cqif-topics-using-expressions"
-            deprecated="true"/>
-      <page name="Home (index)" key="index" url="index"/>
+            deprecated="true"
+            spec="cqif"/>
+      <page name="Home (index)"
+            key="FHIR-cqif-index"
+            url="index"
+            spec="cqif"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-gao"
@@ -1385,11 +2278,12 @@
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
       <artifact name="DecisionSupportServiceModule"
-                key="DecisionSupportServiceModule"
-                deprecated="true"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
+                key="FHIR-gao-DecisionSupportServiceModule"
+                deprecated="true"
+                spec="gao"/>
+      <page name="(NA)" key="FHIR-gao-NA" spec="gao"/>
+      <page name="(many)" key="FHIR-gao-many" spec="gao"/>
+      <page name="(profiles)" key="FHIR-gao-profiles" spec="gao"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-argonaut"
@@ -1403,17 +2297,29 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="AuditEvent" key="AuditEvent"/>
-      <artifact name="Goal" key="Goal" deprecated="true"/>
-      <artifact name="Provenance" key="Provenance"/>
-      <artifact name="StructureDefinition" key="StructureDefinition"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
+      <artifact name="AuditEvent"
+                key="FHIR-us-argonaut-AuditEvent"
+                spec="us-argonaut"/>
+      <artifact name="Goal"
+                key="FHIR-us-argonaut-Goal"
+                deprecated="true"
+                spec="us-argonaut"/>
+      <artifact name="Provenance"
+                key="FHIR-us-argonaut-Provenance"
+                spec="us-argonaut"/>
+      <artifact name="StructureDefinition"
+                key="FHIR-us-argonaut-StructureDefinition"
+                spec="us-argonaut"/>
+      <page name="(NA)" key="FHIR-us-argonaut-NA" spec="us-argonaut"/>
+      <page name="(many)" key="FHIR-us-argonaut-many" spec="us-argonaut"/>
+      <page name="(profiles)"
+            key="FHIR-us-argonaut-profiles"
+            spec="us-argonaut"/>
       <page name="Argnonauts"
-            key="argonauts"
+            key="FHIR-us-argonaut-argonauts"
             url="argnonauts"
-            deprecated="true"/>
+            deprecated="true"
+            spec="us-argonaut"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-lab"
@@ -1425,14 +2331,15 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="Observation" key="Observation"/>
-      <artifact name="ValueSet" key="ValueSet"/>
-      <page name="(NA)" key="NA"/>
-      <page name="(many)" key="many"/>
-      <page name="(profiles)" key="profiles"/>
+      <artifact name="Observation" key="FHIR-us-lab-Observation" spec="us-lab"/>
+      <artifact name="ValueSet" key="FHIR-us-lab-ValueSet" spec="us-lab"/>
+      <page name="(NA)" key="FHIR-us-lab-NA" spec="us-lab"/>
+      <page name="(many)" key="FHIR-us-lab-many" spec="us-lab"/>
+      <page name="(profiles)" key="FHIR-us-lab-profiles" spec="us-lab"/>
       <page name="Terminologies - Systems"
-            key="terminologies-systems"
-            url="terminologies-systems"/>
+            key="FHIR-us-lab-terminologies-systems"
+            url="terminologies-systems"
+            spec="us-lab"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="V2-core"
@@ -1441,8 +2348,8 @@
                   defaultVersion="2.9">
       <version code="2.1.3"/>
       <version code="2.9"/>
-      <artifact name="MSH" key="MSH"/>
-      <page name="(NA)" key="NA"/>
+      <artifact name="MSH" key="V2-core-MSH" spec="core"/>
+      <page name="(NA)" key="V2-core-NA" spec="core"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="V3-core"
@@ -1450,8 +2357,8 @@
                   defaultWorkgroup="mnm"
                   defaultVersion="2018">
       <version code="2018"/>
-      <artifact name="RIM" key="RIM"/>
-      <page name="(NA)" key="NA"/>
+      <artifact name="RIM" key="V3-core-RIM" spec="core"/>
+      <page name="(NA)" key="V3-core-NA" spec="core"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="OTHER-somedam"
@@ -1459,7 +2366,7 @@
                   defaultWorkgroup="mnm"
                   defaultVersion="2018">
       <version code="2018"/>
-      <artifact name="dunno" key="dunno"/>
-      <page name="(NA)" key="NA"/>
+      <artifact name="dunno" key="OTHER-somedam-dunno" spec="somedam"/>
+      <page name="(NA)" key="OTHER-somedam-NA" spec="somedam"/>
    </specification>
 </specifications>
