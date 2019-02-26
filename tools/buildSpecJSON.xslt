@@ -148,6 +148,15 @@
     <xsl:result-document href="SPECS-summary.json" method="text" encoding="UTF-8">
       <xsl:apply-templates select="$ballotSummary"/>
     </xsl:result-document>
+    <xsl:result-document href="versions.json" method="text" encoding="UTF-8">
+      <xsl:text>[</xsl:text>
+      <xsl:for-each select="distinct-values($ballotSpecs/specification/version/@code)">
+        <xsl:sort select="."/>
+        <xsl:if test="position()!=1">,</xsl:if>
+        <xsl:value-of select="concat('{&quot;key&quot;:&quot;', ., '&quot;,&quot;name&quot;:&quot;', ., '&quot;}')"/>
+      </xsl:for-each>
+      <xsl:text>]</xsl:text>
+    </xsl:result-document>
     <!-- Spit out the JSON file for the full ballot specs -->
     <xsl:apply-templates select="$ballotSpecs"/>
 	</xsl:template>
