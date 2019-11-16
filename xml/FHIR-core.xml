@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2014 rel. 2 sp1 (x64) (http://www.altova.com) by Lloyd McKenzie (private) -->
 <specification url="http://hl7.org/fhir" ciUrl="http://build.fhir.org" defaultWorkgroup="fhir-i" defaultVersion="R4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="Initial_Draft"/>
-  <version code="DSTU1"/>
-  <version code="DSTU2"/>
-  <version code="STU3"/>
-  <version code="R4"/>
   <version code="R5"/>
+  <version code="R4"/>
+  <version code="STU3"/>
+  <version code="DSTU2"/>
+  <version code="DSTU1"/>
+  <version code="Initial_Draft"/>
   <artifactPageExtension value="-definitions"/>
   <artifactPageExtension value="-examples"/>
   <artifactPageExtension value="-mappings"/>
@@ -67,6 +67,8 @@
   <artifact name="EnrollmentResponse" key="EnrollmentResponse" workgroup="fm"/>
   <artifact name="EpisodeOfCare" key="EpisodeOfCare" workgroup="pc"/>
   <artifact name="EventDefinition" key="EventDefinition"/>
+  <artifact name="Evidence" key="Evidence" workgroup="cds"/>
+  <artifact name="EvidenceVariable" key="EvidenceVariable" workgroup="cds"/>
   <artifact name="ExampleScenario" key="ExampleScenario" workgroup="fhir-i"/>
   <artifact name="ExpansionProfile" key="ExpansionProfile" workgroup="vocab" deprecated="true"/>
   <artifact name="ExplanationOfBenefit" key="ExplanationOfBenefit" workgroup="fm"/>
@@ -99,7 +101,7 @@
   <artifact name="MedicationDispense" key="MedicationDispense" workgroup="pharm"/>
   <artifact name="MedicationKnowledge" key="MedicationKnowledge" workgroup="pharm"/>
   <artifact name="MedicationRequest" key="MedicationPrescription" workgroup="pharm"/>
-  <artifact name="MedicationStatement" key="MedicationStatement" workgroup="pharm"/>
+  <artifact name="MedicationUsage (MedicationStatement)" key="MedicationStatement" workgroup="pharm"/>
   <artifact name="MedicinalProduct" key="MedicinalProduct" workgroup="brr"/>
   <artifact name="MedicinalProductAuthorization" key="MedicinalProductAuthorization" workgroup="brr"/>
   <artifact name="MedicinalProductClinicals" key="MedicinalProductClinicals" workgroup="brr"/>
@@ -114,7 +116,7 @@
   <artifact name="MedicinalProductUndesireableEffect" key="MedicinalProductUndesireableEffect" workgroup="brr"/>
   <artifact name="MessageDefinition" key="MessageDefinition" workgroup="fhir-i"/>
   <artifact name="MessageHeader" key="MessageHeader" workgroup="fhir-i"/>
-  <artifact name="MolecularSequence" key="Sequence" workgroup="cg"/>
+  <artifact name="MolecularSequence (was Sequence)" key="Sequence" workgroup="cg"/>
   <artifact name="NamingSystem" key="NamingSystem" workgroup="fhir-i"/>
   <artifact name="NutritionOrder (was NutritionRequest)" key="NutritionRequest" workgroup="oo"/>
   <artifact name="Observation" key="Observation" workgroup="oo"/>
@@ -171,6 +173,7 @@
   <artifact name="TerminologyCapabilities" key="TerminologyCapabilities" workgroup="vocab"/>
   <artifact name="TestReport" key="TestReport" workgroup="fhir-i"/>
   <artifact name="TestScript" key="TestScript" workgroup="fhir-i"/>
+  <artifact name="Topic" key="Topic" workgroup="fhir-i"/>
   <artifact name="UserSession" key="UserSession" workgroup="security"/>
   <artifact name="ValueSet" key="ValueSet" workgroup="vocab"/>
   <artifact name="VerificationResult" key="VerificationResult" workgroup="pa"/>
