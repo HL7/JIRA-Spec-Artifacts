@@ -46,12 +46,12 @@
                   ciUrl="http://build.fhir.org"
                   defaultWorkgroup="fhir-i"
                   defaultVersion="R4">
-      <version code="Initial_Draft"/>
-      <version code="DSTU1"/>
-      <version code="DSTU2"/>
-      <version code="STU3"/>
-      <version code="R4"/>
       <version code="R5"/>
+      <version code="R4"/>
+      <version code="STU3"/>
+      <version code="DSTU2"/>
+      <version code="DSTU1"/>
+      <version code="Initial_Draft"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -262,6 +262,14 @@
                 workgroup="pc"
                 spec="core"/>
       <artifact name="EventDefinition" key="FHIR-core-EventDefinition" spec="core"/>
+      <artifact name="Evidence"
+                key="FHIR-core-Evidence"
+                workgroup="cds"
+                spec="core"/>
+      <artifact name="EvidenceVariable"
+                key="FHIR-core-EvidenceVariable"
+                workgroup="cds"
+                spec="core"/>
       <artifact name="ExampleScenario" key="FHIR-core-ExampleScenario" spec="core"/>
       <artifact name="ExpansionProfile"
                 key="FHIR-core-ExpansionProfile"
@@ -367,7 +375,7 @@
                 key="FHIR-core-MedicationPrescription"
                 workgroup="pharm"
                 spec="core"/>
-      <artifact name="MedicationStatement"
+      <artifact name="MedicationUsage (MedicationStatement)"
                 key="FHIR-core-MedicationStatement"
                 workgroup="pharm"
                 spec="core"/>
@@ -423,7 +431,7 @@
                 key="FHIR-core-MessageDefinition"
                 spec="core"/>
       <artifact name="MessageHeader" key="FHIR-core-MessageHeader" spec="core"/>
-      <artifact name="MolecularSequence"
+      <artifact name="MolecularSequence (was Sequence)"
                 key="FHIR-core-Sequence"
                 workgroup="cg"
                 spec="core"/>
@@ -625,6 +633,7 @@
                 spec="core"/>
       <artifact name="TestReport" key="FHIR-core-TestReport" spec="core"/>
       <artifact name="TestScript" key="FHIR-core-TestScript" spec="core"/>
+      <artifact name="Topic" key="FHIR-core-Topic" spec="core"/>
       <artifact name="UserSession"
                 key="FHIR-core-UserSession"
                 workgroup="security"
@@ -1218,6 +1227,42 @@
             spec="core"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-fhircast"
+                  name="FHIRCast (FHIR)"
+                  url="http://hl7.org/fhir/uv/fhircast"
+                  defaultWorkgroup="ii"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <page name="(NA)" key="FHIR-fhircast-NA" spec="fhircast"/>
+      <page name="(many)" key="FHIR-fhircast-many" spec="fhircast"/>
+      <page name="(profiles)" key="FHIR-fhircast-profiles" spec="fhircast"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-fhirpath"
+                  name="FHIRPath (FHIR)"
+                  url="http://hl7.org/fhirpath"
+                  ciUrl="https://github.com/FHIR/fluentpath/blob/master/spec/index.adoc"
+                  defaultWorkgroup="its"
+                  defaultVersion="1.0">
+      <version code="1.0"/>
+      <artifact key="FHIR-fhirpath-Observation"
+                name="Observation"
+                deprecated="true"
+                spec="fhirpath"/>
+      <page name="(NA)" key="FHIR-fhirpath-NA" spec="fhirpath"/>
+      <page name="(many)" key="FHIR-fhirpath-many" spec="fhirpath"/>
+      <page name="(profiles)" key="FHIR-fhirpath-profiles" spec="fhirpath"/>
+      <page name="documentation"
+            key="FHIR-fhirpath-documentation"
+            spec="fhirpath"/>
+      <page name="fluentpath" key="FHIR-fhirpath-fluentpath" spec="fhirpath"/>
+      <page name="index" key="FHIR-fhirpath-index" spec="fhirpath"/>
+      <page name="narrative" key="FHIR-fhirpath-narrative" spec="fhirpath"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-cds-hooks"
                   name="CDS Hooks (FHIR)"
                   url="http://cds-hooks.hl7.org"
@@ -1242,24 +1287,6 @@
             spec="cds-hooks"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                  key="FHIR-fhirpath"
-                  name="FHIRPath (FHIR)"
-                  url="http://hl7.org/fhirpath"
-                  ciUrl="https://github.com/FHIR/fluentpath/blob/master/spec/index.adoc"
-                  defaultWorkgroup="its"
-                  defaultVersion="1.0">
-      <version code="1.0"/>
-      <page name="(NA)" key="FHIR-fhirpath-NA" spec="fhirpath"/>
-      <page name="(many)" key="FHIR-fhirpath-many" spec="fhirpath"/>
-      <page name="(profiles)" key="FHIR-fhirpath-profiles" spec="fhirpath"/>
-      <page name="documentation"
-            key="FHIR-fhirpath-documentation"
-            spec="fhirpath"/>
-      <page name="fluentpath" key="FHIR-fhirpath-fluentpath" spec="fhirpath"/>
-      <page name="index" key="FHIR-fhirpath-index" spec="fhirpath"/>
-      <page name="narrative" key="FHIR-fhirpath-narrative" spec="fhirpath"/>
-   </specification>
-   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-smart"
                   name="SMART on FHIR (FHIR)"
                   url="http://www.hl7.org/fhir/smart-app-launch"
@@ -1273,6 +1300,56 @@
       <page name="(NA)" key="FHIR-smart-NA" spec="smart"/>
       <page name="(many)" key="FHIR-smart-many" spec="smart"/>
       <page name="(profiles)" key="FHIR-smart-profiles" spec="smart"/>
+      <page name="smart-app-launch"
+            key="FHIR-smart-smart-app-launch"
+            url="smart-app-launch"
+            deprecated="true"
+            spec="smart"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-bulkdata"
+                  name="Bulk Data (FHIR)"
+                  url="http://hl7.org/fhir/uv/bulkdata"
+                  defaultWorkgroup="fhir-i"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <page name="(NA)" key="FHIR-bulkdata-NA" spec="bulkdata"/>
+      <page name="(many)" key="FHIR-bulkdata-many" spec="bulkdata"/>
+      <page name="(profiles)" key="FHIR-bulkdata-profiles" spec="bulkdata"/>
+      <page name="index" key="FHIR-bulkdata-index" spec="bulkdata"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-cdisc-lab"
+                  name="CDISC Lab (FHIR)"
+                  url="http://hl7.org/fhir/uv/cdisc-lab"
+                  defaultWorkgroup="brr"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <page name="(NA)" key="FHIR-cdisc-lab-NA" spec="cdisc-lab"/>
+      <page name="(many)" key="FHIR-cdisc-lab-many" spec="cdisc-lab"/>
+      <page name="(profiles)" key="FHIR-cdisc-lab-profiles" spec="cdisc-lab"/>
+      <page name="overview" key="FHIR-cdisc-lab-overview" spec="cdisc-lab"/>
+      <page name="usecases" key="FHIR-cdisc-lab-usecases" spec="cdisc-lab"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-cpg"
+                  name="Clinical Guidelines (FHIR)"
+                  url="http://hl7.org/fhir/uv/cpg"
+                  defaultWorkgroup="cds"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <page name="(NA)" key="FHIR-cpg-NA" spec="cpg"/>
+      <page name="(many)" key="FHIR-cpg-many" spec="cpg"/>
+      <page name="(profiles)" key="FHIR-cpg-profiles" spec="cpg"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-ecr"
@@ -1351,6 +1428,10 @@
                 key="FHIR-genomics-reporting-Sequence"
                 deprecated="true"
                 spec="genomics-reporting"/>
+      <artifact name="Task"
+                key="FHIR-genomics-reporting-Task"
+                deprecated="true"
+                spec="genomics-reporting"/>
       <page name="(NA)"
             key="FHIR-genomics-reporting-NA"
             spec="genomics-reporting"/>
@@ -1372,7 +1453,7 @@
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-immds"
-                  name="CDS Immunization Forecast (FHIR)"
+                  name="Immunization Forecast CDS (FHIR)"
                   url="http://hl7.org/fhir/uv/immds"
                   ciUrl="http://build.fhir.org/ig/HL7/ImmunizationFHIRDS"
                   defaultWorkgroup="pher"
@@ -1383,6 +1464,10 @@
       <artifactPageExtension value="-mappings"/>
       <artifact name="Immunization"
                 key="FHIR-immds-Immunization"
+                deprecated="true"
+                spec="immds"/>
+      <artifact name="ImmunizationEvaluation"
+                key="FHIR-immds-ImmunizationEvaluation"
                 deprecated="true"
                 spec="immds"/>
       <artifact name="ImmunizationRecommendation"
@@ -1396,6 +1481,16 @@
       <page name="(NA)" key="FHIR-immds-NA" spec="immds"/>
       <page name="(many)" key="FHIR-immds-many" spec="immds"/>
       <page name="(profiles)" key="FHIR-immds-profiles" spec="immds"/>
+      <page name="profiling"
+            key="FHIR-immds-profiling"
+            url="profiling"
+            deprecated="true"
+            spec="immds"/>
+      <page name="usecases"
+            key="FHIR-immds-usecases"
+            url="usecases"
+            deprecated="true"
+            spec="immds"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-ips"
@@ -1445,7 +1540,7 @@
                 key="FHIR-ips-Medication"
                 deprecated="true"
                 spec="ips"/>
-      <artifact name="MedicationStatement"
+      <artifact name="MedicationUsage (MedicationStatement)"
                 key="FHIR-ips-MedicationStatement"
                 deprecated="true"
                 spec="ips"/>
@@ -1487,21 +1582,6 @@
             spec="ips"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                  key="FHIR-pddi"
-                  name="Potential Drug-Drug Interaction (PDDI) (FHIR)"
-                  url="http://hl7.org/fhir/uv/pddi"
-                  ciUrl="https://build.fhir.org/ig/HL7/PDDI-CDS"
-                  defaultWorkgroup="pharm"
-                  defaultVersion="0.1">
-      <version code="0.1"/>
-      <artifactPageExtension value="-definitions"/>
-      <artifactPageExtension value="-examples"/>
-      <artifactPageExtension value="-mappings"/>
-      <page name="(NA)" key="FHIR-pddi-NA" spec="pddi"/>
-      <page name="(many)" key="FHIR-pddi-many" spec="pddi"/>
-      <page name="(profiles)" key="FHIR-pddi-profiles" spec="pddi"/>
-   </specification>
-   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-phd"
                   name="Personal Healthcare Devices (FHIR)"
                   url="http://hl7.org/fhir/uv/phd"
@@ -1519,9 +1599,18 @@
                 key="FHIR-phd-Observation"
                 deprecated="true"
                 spec="phd"/>
+      <artifact name="StructureDefinition"
+                key="FHIR-phd-StructureDefinition"
+                deprecated="true"
+                spec="phd"/>
       <page name="(NA)" key="FHIR-phd-NA" spec="phd"/>
       <page name="(many)" key="FHIR-phd-many" spec="phd"/>
       <page name="(profiles)" key="FHIR-phd-profiles" spec="phd"/>
+      <page name="languages"
+            key="FHIR-phd-languages"
+            url="languages"
+            deprecated="true"
+            spec="phd"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-pocd"
@@ -1554,14 +1643,29 @@
       <page name="(profiles)" key="FHIR-pocd-profiles" spec="pocd"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-pddi"
+                  name="Potential Drug-Drug Interaction (PDDI) (FHIR)"
+                  url="http://hl7.org/fhir/uv/pddi"
+                  ciUrl="https://build.fhir.org/ig/HL7/PDDI-CDS"
+                  defaultWorkgroup="pharm"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <page name="(NA)" key="FHIR-pddi-NA" spec="pddi"/>
+      <page name="(many)" key="FHIR-pddi-many" spec="pddi"/>
+      <page name="(profiles)" key="FHIR-pddi-profiles" spec="pddi"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-sdc"
                   name="Structured Data Capture (SDC) (FHIR)"
                   url="http://hl7.org/fhir/us/sdc"
                   ciUrl="https://build.fhir.org/ig/HL7/sdc"
                   defaultWorkgroup="fhir-i"
                   defaultVersion="2.0">
-      <version code="1.0"/>
       <version code="2.0"/>
+      <version code="1.0"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -1573,6 +1677,7 @@
                 key="FHIR-sdc-DataElement"
                 deprecated="true"
                 spec="sdc"/>
+      <artifact name="Query" key="FHIR-sdc-Query" deprecated="true" spec="sdc"/>
       <artifact name="Questionnaire"
                 key="FHIR-sdc-Questionnaire"
                 deprecated="true"
@@ -1652,6 +1757,10 @@
                 key="FHIR-vhdir-OrganizationRole"
                 deprecated="true"
                 spec="vhdir"/>
+      <artifact name="Parameters"
+                key="FHIR-vhdir-Parameters"
+                deprecated="true"
+                spec="vhdir"/>
       <artifact name="Practitioner"
                 key="FHIR-vhdir-Practitioner"
                 deprecated="true"
@@ -1670,6 +1779,11 @@
       <page name="Home (index)"
             key="FHIR-vhdir-index"
             url="index"
+            spec="vhdir"/>
+      <page name="documentation"
+            key="FHIR-vhdir-documentation"
+            url="documentation"
+            deprecated="true"
             spec="vhdir"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -1709,6 +1823,14 @@
                 spec="us-core"/>
       <artifact name="Condition"
                 key="FHIR-us-core-Condition"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Conformance"
+                key="FHIR-us-core-Conformance"
+                deprecated="true"
+                spec="us-core"/>
+      <artifact name="Coverage"
+                key="FHIR-us-core-Coverage"
                 deprecated="true"
                 spec="us-core"/>
       <artifact name="Device"
@@ -1755,6 +1877,10 @@
                 key="FHIR-us-core-Measure"
                 deprecated="true"
                 spec="us-core"/>
+      <artifact name="Medication"
+                key="FHIR-us-core-Medication"
+                deprecated="true"
+                spec="us-core"/>
       <artifact name="MedicationAdministration"
                 key="FHIR-us-core-MedicationAdministration"
                 deprecated="true"
@@ -1767,7 +1893,7 @@
                 key="FHIR-us-core-MedicationPrescription"
                 deprecated="true"
                 spec="us-core"/>
-      <artifact name="MedicationStatement"
+      <artifact name="MedicationUsage (MedicationStatement)"
                 key="FHIR-us-core-MedicationStatement"
                 deprecated="true"
                 spec="us-core"/>
@@ -1839,20 +1965,16 @@
             url="terminologies-systems"
             deprecated="true"
             spec="us-core"/>
-   </specification>
-   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                  key="FHIR-us-bser"
-                  name="US Bidirectional Services eReferrals (BSeR) (FHIR)"
-                  url="http://hl7.org/fhir/us/bser"
-                  defaultWorkgroup="pher"
-                  defaultVersion="0.1">
-      <version code="0.1"/>
-      <artifactPageExtension value="-definitions"/>
-      <artifactPageExtension value="-examples"/>
-      <artifactPageExtension value="-mappings"/>
-      <page name="(NA)" key="FHIR-us-bser-NA" spec="us-bser"/>
-      <page name="(many)" key="FHIR-us-bser-many" spec="us-bser"/>
-      <page name="(profiles)" key="FHIR-us-bser-profiles" spec="us-bser"/>
+      <page name="implementation"
+            key="FHIR-us-core-implementation"
+            url="implementation"
+            deprecated="true"
+            spec="us-core"/>
+      <page name="terminologies"
+            key="FHIR-us-core-terminologies"
+            url="terminologies"
+            deprecated="true"
+            spec="us-core"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-breastcancer"
@@ -1869,6 +1991,14 @@
                 key="FHIR-us-breastcancer-BodySite"
                 deprecated="true"
                 spec="us-breastcancer"/>
+      <artifact name="Composition"
+                key="FHIR-us-breastcancer-Composition"
+                deprecated="true"
+                spec="us-breastcancer"/>
+      <artifact name="DiagnosticReport"
+                key="FHIR-us-breastcancer-DiagnosticReport"
+                deprecated="true"
+                spec="us-breastcancer"/>
       <artifact name="ImplementationGuide"
                 key="FHIR-us-breastcancer-ImplementationGuide"
                 deprecated="true"
@@ -1881,6 +2011,10 @@
                 key="FHIR-us-breastcancer-StructureDefinition"
                 deprecated="true"
                 spec="us-breastcancer"/>
+      <artifact name="ValueSet"
+                key="FHIR-us-breastcancer-ValueSet"
+                deprecated="true"
+                spec="us-breastcancer"/>
       <page name="(NA)" key="FHIR-us-breastcancer-NA" spec="us-breastcancer"/>
       <page name="(many)"
             key="FHIR-us-breastcancer-many"
@@ -1888,12 +2022,101 @@
       <page name="(profiles)"
             key="FHIR-us-breastcancer-profiles"
             spec="us-breastcancer"/>
+      <page name="ballot-intro"
+            key="FHIR-us-breastcancer-ballot-intro"
+            url="ballot-intro"
+            deprecated="true"
+            spec="us-breastcancer"/>
       <page name="documentation"
             key="FHIR-us-breastcancer-documentation"
+            url="documentation"
+            deprecated="true"
             spec="us-breastcancer"/>
       <page name="terminologies"
             key="FHIR-us-breastcancer-terminologies"
+            deprecated="true"
             spec="us-breastcancer"/>
+      <page name="schemas-schematrons"
+            key="FHIR-us-breastcancer-schemas-schematrons"
+            url="schemas-schematrons"
+            deprecated="true"
+            spec="us-breastcancer"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-us-bser"
+                  name="US Bidirectional Services eReferrals (BSeR) (FHIR)"
+                  url="http://hl7.org/fhir/us/bser"
+                  defaultWorkgroup="pher"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <artifact name="Composition"
+                key="FHIR-us-bser-Composition"
+                deprecated="true"
+                spec="us-bser"/>
+      <artifact name="Consent"
+                key="FHIR-us-bser-Consent"
+                deprecated="true"
+                spec="us-bser"/>
+      <artifact name="Feed"
+                key="FHIR-us-bser-Feed"
+                deprecated="true"
+                spec="us-bser"/>
+      <artifact name="ImplementationGuide"
+                key="FHIR-us-bser-ImplementationGuide"
+                deprecated="true"
+                spec="us-bser"/>
+      <artifact name="MessageHeader"
+                key="FHIR-us-bser-MessageHeader"
+                deprecated="true"
+                spec="us-bser"/>
+      <artifact name="Observation"
+                key="FHIR-us-bser-Observation"
+                deprecated="true"
+                spec="us-bser"/>
+      <artifact name="Patient"
+                key="FHIR-us-bser-Patient"
+                deprecated="true"
+                spec="us-bser"/>
+      <artifact name="ServiceRequest"
+                key="FHIR-us-bser-ServiceRequest"
+                deprecated="true"
+                spec="us-bser"/>
+      <artifact name="Task"
+                key="FHIR-us-bser-Task"
+                deprecated="true"
+                spec="us-bser"/>
+      <page name="(NA)" key="FHIR-us-bser-NA" spec="us-bser"/>
+      <page name="(many)" key="FHIR-us-bser-many" spec="us-bser"/>
+      <page name="(profiles)" key="FHIR-us-bser-profiles" spec="us-bser"/>
+      <page name="documentation"
+            key="FHIR-us-bser-documentation"
+            url="documentation"
+            deprecated="true"
+            spec="us-bser"/>
+      <page name="extensibility"
+            key="FHIR-us-bser-extensibility"
+            url="extensibility"
+            deprecated="true"
+            spec="us-bser"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-us-carin-bb"
+                  name="US CARIN Blue Button (FHIR)"
+                  url="http://hl7.org/fhir/us/carin-bb"
+                  defaultWorkgroup="fm"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <page name="(NA)" key="FHIR-us-carin-bb-NA" spec="us-carin-bb"/>
+      <page name="(many)" key="FHIR-us-carin-bb-many" spec="us-carin-bb"/>
+      <page name="(profiles)"
+            key="FHIR-us-carin-bb-profiles"
+            spec="us-carin-bb"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-ccda"
@@ -1937,6 +2160,28 @@
             spec="us-ccda"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-us-cdmh"
+                  name="US Common Data Model Harmonization for Research (CDMH) (FHIR)"
+                  url="http://hl7.org/fhir/us/cdmh"
+                  defaultWorkgroup="brr"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <page name="(NA)" key="FHIR-us-cdmh-NA" spec="us-cdmh"/>
+      <page name="(many)" key="FHIR-us-cdmh-many" spec="us-cdmh"/>
+      <page name="(profiles)" key="FHIR-us-cdmh-profiles" spec="us-cdmh"/>
+      <page name="documentation"
+            key="FHIR-us-cdmh-documentation"
+            spec="us-cdmh"/>
+      <page name="index" key="FHIR-us-cdmh-index" spec="us-cdmh"/>
+      <page name="overview" key="FHIR-us-cdmh-overview" spec="us-cdmh"/>
+      <page name="terminologies"
+            key="FHIR-us-cdmh-terminologies"
+            spec="us-cdmh"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-crn"
                   name="US Coordinated Registry Network (CRN) (FHIR)"
                   url="http://hl7.org/fhir/us/womens-health-registries"
@@ -1959,6 +2204,16 @@
       <page name="(many)" key="FHIR-us-crn-many" spec="us-crn"/>
       <page name="(profiles)" key="FHIR-us-crn-profiles" spec="us-crn"/>
       <page name="index" key="FHIR-us-crn-index" spec="us-crn"/>
+      <page name="overview"
+            key="FHIR-us-crn-overview"
+            url="overview"
+            deprecated="true"
+            spec="us-crn"/>
+      <page name="schemas-schematrons"
+            key="FHIR-us-crn-schemas-schematrons"
+            url="schemas-schematrons"
+            deprecated="true"
+            spec="us-crn"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-daf-research"
@@ -1986,6 +2241,28 @@
             spec="us-daf-research"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-us-davinci-cdex"
+                  name="US Da Vinci CDex (FHIR)"
+                  url="http://hl7.org/fhir/us/davinci-cdex"
+                  defaultWorkgroup="pc"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <page name="(NA)" key="FHIR-us-davinci-cdex-NA" spec="us-davinci-cdex"/>
+      <page name="(many)"
+            key="FHIR-us-davinci-cdex-many"
+            spec="us-davinci-cdex"/>
+      <page name="(profiles)"
+            key="FHIR-us-davinci-cdex-profiles"
+            spec="us-davinci-cdex"/>
+      <page name="downloads"
+            key="FHIR-us-davinci-cdex-downloads"
+            spec="us-davinci-cdex"/>
+      <page name="toc" key="FHIR-us-davinci-cdex-toc" spec="us-davinci-cdex"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-davinci-crd"
                   name="US Da Vinci CRD (FHIR)"
                   url="http://hl7.org/fhir/us/davinci-crd"
@@ -1996,10 +2273,20 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
+      <artifact name="SupplyRequest"
+                key="FHIR-us-davinci-crd-SupplyRequest"
+                deprecated="true"
+                spec="us-davinci-crd"/>
       <page name="(NA)" key="FHIR-us-davinci-crd-NA" spec="us-davinci-crd"/>
       <page name="(many)" key="FHIR-us-davinci-crd-many" spec="us-davinci-crd"/>
       <page name="(profiles)"
             key="FHIR-us-davinci-crd-profiles"
+            spec="us-davinci-crd"/>
+      <page name="index" key="FHIR-us-davinci-crd-index" spec="us-davinci-crd"/>
+      <page name="usecases"
+            key="FHIR-us-davinci-crd-usecases"
+            url="usecases"
+            deprecated="true"
             spec="us-davinci-crd"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -2013,6 +2300,14 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
+      <artifact name="ExampleScenario"
+                key="FHIR-us-davinci-deqm-ExampleScenario"
+                deprecated="true"
+                spec="us-davinci-deqm"/>
+      <artifact name="MeasureReport"
+                key="FHIR-us-davinci-deqm-MeasureReport"
+                deprecated="true"
+                spec="us-davinci-deqm"/>
       <artifact name="Organization"
                 key="FHIR-us-davinci-deqm-Organization"
                 deprecated="true"
@@ -2033,6 +2328,173 @@
             spec="us-davinci-deqm"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-us-davinci-df"
+                  name="US Da Vinci Drug Formulary (FHIR)"
+                  url="http://hl7.org/fhir/us/davinci-df"
+                  defaultWorkgroup="pharm"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <page name="(NA)" key="FHIR-us-davinci-df-NA" spec="us-davinci-df"/>
+      <page name="(many)" key="FHIR-us-davinci-df-many" spec="us-davinci-df"/>
+      <page name="(profiles)"
+            key="FHIR-us-davinci-df-profiles"
+            spec="us-davinci-df"/>
+      <page name="downloads"
+            key="FHIR-us-davinci-df-downloads"
+            spec="us-davinci-df"/>
+      <page name="methodology"
+            key="FHIR-us-davinci-df-methodology"
+            spec="us-davinci-df"/>
+      <page name="toc" key="FHIR-us-davinci-df-toc" spec="us-davinci-df"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-us-davinci-dtr"
+                  name="US Da Vinci DTR (FHIR)"
+                  url="http://hl7.org/fhir/us/davinci-dtr"
+                  defaultWorkgroup="cds"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <page name="(NA)" key="FHIR-us-davinci-dtr-NA" spec="us-davinci-dtr"/>
+      <page name="(many)" key="FHIR-us-davinci-dtr-many" spec="us-davinci-dtr"/>
+      <page name="(profiles)"
+            key="FHIR-us-davinci-dtr-profiles"
+            spec="us-davinci-dtr"/>
+      <page name="administration-module"
+            key="FHIR-us-davinci-dtr-administration-module"
+            spec="us-davinci-dtr"/>
+      <page name="index" key="FHIR-us-davinci-dtr-index" spec="us-davinci-dtr"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-us-davinci-hrex"
+                  name="US Da Vinci HRex (FHIR)"
+                  url="http://hl7.org/fhir/us/davinci-hrex"
+                  defaultWorkgroup="pc"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <page name="(NA)" key="FHIR-us-davinci-hrex-NA" spec="us-davinci-hrex"/>
+      <page name="(many)"
+            key="FHIR-us-davinci-hrex-many"
+            spec="us-davinci-hrex"/>
+      <page name="(profiles)"
+            key="FHIR-us-davinci-hrex-profiles"
+            spec="us-davinci-hrex"/>
+      <page name="downloads"
+            key="FHIR-us-davinci-hrex-downloads"
+            spec="us-davinci-hrex"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-us-davinci-pas"
+                  name="US Da Vinci PAS (FHIR)"
+                  url="http://hl7.org/fhir/us/davinci-pas"
+                  defaultWorkgroup="fm"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <artifact name="ClaimResponse"
+                key="FHIR-us-davinci-pas-ClaimResponse"
+                deprecated="true"
+                spec="us-davinci-pas"/>
+      <page name="(NA)" key="FHIR-us-davinci-pas-NA" spec="us-davinci-pas"/>
+      <page name="(many)" key="FHIR-us-davinci-pas-many" spec="us-davinci-pas"/>
+      <page name="(profiles)"
+            key="FHIR-us-davinci-pas-profiles"
+            spec="us-davinci-pas"/>
+      <page name="methodology"
+            key="FHIR-us-davinci-pas-methodology"
+            spec="us-davinci-pas"/>
+      <page name="usecases"
+            key="FHIR-us-davinci-pas-usecases"
+            spec="us-davinci-pas"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-us-davinci-pcde"
+                  name="US Da Vinci PCDE (FHIR)"
+                  url="http://hl7.org/fhir/us/davinci-pcde"
+                  defaultWorkgroup="fm"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <page name="(NA)" key="FHIR-us-davinci-pcde-NA" spec="us-davinci-pcde"/>
+      <page name="(many)"
+            key="FHIR-us-davinci-pcde-many"
+            spec="us-davinci-pcde"/>
+      <page name="(profiles)"
+            key="FHIR-us-davinci-pcde-profiles"
+            spec="us-davinci-pcde"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-us-davinci-pdex"
+                  name="US Da Vinci PDex (FHIR)"
+                  url="http://hl7.org/fhir/us/davinci-pdex"
+                  defaultWorkgroup="fm"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <artifact name="AppointmentResponse"
+                key="FHIR-us-davinci-pdex-AppointmentResponse"
+                deprecated="true"
+                spec="us-davinci-pdex"/>
+      <artifact name="Patient"
+                key="FHIR-us-davinci-pdex-Patient"
+                deprecated="true"
+                spec="us-davinci-pdex"/>
+      <artifact name="Provenance"
+                key="FHIR-us-davinci-pdex-Provenance"
+                deprecated="true"
+                spec="us-davinci-pdex"/>
+      <page name="(NA)" key="FHIR-us-davinci-pdex-NA" spec="us-davinci-pdex"/>
+      <page name="(many)"
+            key="FHIR-us-davinci-pdex-many"
+            spec="us-davinci-pdex"/>
+      <page name="(profiles)"
+            key="FHIR-us-davinci-pdex-profiles"
+            spec="us-davinci-pdex"/>
+      <page name="downloads"
+            key="FHIR-us-davinci-pdex-downloads"
+            spec="us-davinci-pdex"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-us-eltss"
+                  name="US Electronic Long-Term Services &amp; Supports (ELTSS) (FHIR)"
+                  url="http://hl7.org/fhir/us/eltss"
+                  defaultWorkgroup="cbcc"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <artifact name="CarePlan"
+                key="FHIR-us-eltss-CarePlan"
+                deprecated="true"
+                spec="us-eltss"/>
+      <artifact name="Claim"
+                key="FHIR-us-eltss-Claim"
+                deprecated="true"
+                spec="us-eltss"/>
+      <artifact name="ServiceRequest"
+                key="FHIR-us-eltss-ServiceRequest"
+                deprecated="true"
+                spec="us-eltss"/>
+      <page name="(NA)" key="FHIR-us-eltss-NA" spec="us-eltss"/>
+      <page name="(many)" key="FHIR-us-eltss-many" spec="us-eltss"/>
+      <page name="(profiles)" key="FHIR-us-eltss-profiles" spec="us-eltss"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-hai"
                   name="US Healthcare Associated Infections (FHIR)"
                   url="http://hl7.org/fhir/us/hai"
@@ -2047,10 +2509,47 @@
                 key="FHIR-us-hai-ImplementationGuide"
                 deprecated="true"
                 spec="us-hai"/>
+      <artifact name="Questionnaire"
+                key="FHIR-us-hai-Questionnaire"
+                deprecated="true"
+                spec="us-hai"/>
       <page name="(NA)" key="FHIR-us-hai-NA" spec="us-hai"/>
       <page name="(many)" key="FHIR-us-hai-many" spec="us-hai"/>
       <page name="(profiles)" key="FHIR-us-hai-profiles" spec="us-hai"/>
-      <page name="index" key="FHIR-us-hai-index" spec="us-hai"/>
+      <page name="index" key="FHIR-us-hai-index" url="index" spec="us-hai"/>
+      <page name="terminologies-valuesets"
+            key="FHIR-us-hai-terminologies-valuesets"
+            url="terminologies-valuesets"
+            deprecated="true"
+            spec="us-hai"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-us-hai-ltcf"
+                  name="US Healthcare Associated Infection Reports Long Term Care Facilities (HAI-LTCF) (FHIR)"
+                  url="http://hl7.org/fhir/us/hai-ltcf"
+                  defaultWorkgroup="pher"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <artifact name="Questionnaire"
+                key="FHIR-us-hai-ltcf-Questionnaire"
+                deprecated="true"
+                spec="us-hai-ltcf"/>
+      <artifact name="QuestionnaireAnswers"
+                key="FHIR-us-hai-ltcf-QuestionnaireAnswers"
+                deprecated="true"
+                spec="us-hai-ltcf"/>
+      <page name="(NA)" key="FHIR-us-hai-ltcf-NA" spec="us-hai-ltcf"/>
+      <page name="(many)" key="FHIR-us-hai-ltcf-many" spec="us-hai-ltcf"/>
+      <page name="(profiles)"
+            key="FHIR-us-hai-ltcf-profiles"
+            spec="us-hai-ltcf"/>
+      <page name="mappings" key="FHIR-us-hai-ltcf-mappings" spec="us-hai-ltcf"/>
+      <page name="terminologies"
+            key="FHIR-us-hai-ltcf-terminologies"
+            spec="us-hai-ltcf"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-livd"
@@ -2070,6 +2569,32 @@
       <page name="(NA)" key="FHIR-us-livd-NA" spec="us-livd"/>
       <page name="(many)" key="FHIR-us-livd-many" spec="us-livd"/>
       <page name="(profiles)" key="FHIR-us-livd-profiles" spec="us-livd"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-us-mcode"
+                  name="US Minimal Common Oncology Data Elements (mCODE) (FHIR)"
+                  url="http://hl7.org/fhir/us/mcode"
+                  defaultWorkgroup="cic"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <artifact name="Observation"
+                key="FHIR-us-mcode-Observation"
+                deprecated="true"
+                spec="us-mcode"/>
+      <artifact name="Procedure"
+                key="FHIR-us-mcode-Procedure"
+                deprecated="true"
+                spec="us-mcode"/>
+      <artifact name="ValueSet"
+                key="FHIR-us-mcode-ValueSet"
+                deprecated="true"
+                spec="us-mcode"/>
+      <page name="(NA)" key="FHIR-us-mcode-NA" spec="us-mcode"/>
+      <page name="(many)" key="FHIR-us-mcode-many" spec="us-mcode"/>
+      <page name="(profiles)" key="FHIR-us-mcode-profiles" spec="us-mcode"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-ohd"
@@ -2097,8 +2622,8 @@
                   ciUrl="https://build.fhir.org/ig/HL7/FHIR-ONC-Meds"
                   defaultWorkgroup="pharm"
                   defaultVersion="1.1">
-      <version code="1.0"/>
       <version code="1.1"/>
+      <version code="1.0"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -2110,7 +2635,7 @@
                 key="FHIR-us-pharmacy-Medication"
                 deprecated="true"
                 spec="us-pharmacy"/>
-      <artifact name="MedicationStatement"
+      <artifact name="MedicationUsage (MedicationStatement)"
                 key="FHIR-us-pharmacy-MedicationStatement"
                 deprecated="true"
                 spec="us-pharmacy"/>
@@ -2119,6 +2644,20 @@
       <page name="(profiles)"
             key="FHIR-us-pharmacy-profiles"
             spec="us-pharmacy"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-us-pharmcp"
+                  name="US Pharmacist Care Plan Document (FHIR)"
+                  url="http://hl7.org/fhir/us/pharmcp"
+                  defaultWorkgroup="pharm"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <page name="(NA)" key="FHIR-us-pharmcp-NA" spec="us-pharmcp"/>
+      <page name="(many)" key="FHIR-us-pharmcp-many" spec="us-pharmcp"/>
+      <page name="(profiles)" key="FHIR-us-pharmcp-profiles" spec="us-pharmcp"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-pro"
@@ -2139,6 +2678,26 @@
       <page name="(many)" key="FHIR-us-pro-many" spec="us-pro"/>
       <page name="(profiles)" key="FHIR-us-pro-profiles" spec="us-pro"/>
       <page name="index" key="FHIR-us-pro-index" spec="us-pro"/>
+      <page name="documentation"
+            key="FHIR-us-pro-documentation"
+            url="documentation"
+            deprecated="true"
+            spec="us-pro"/>
+      <page name="downloads"
+            key="FHIR-us-pro-downloads"
+            url="downloads"
+            deprecated="true"
+            spec="us-pro"/>
+      <page name="overview"
+            key="FHIR-us-pro-overview"
+            url="overview"
+            deprecated="true"
+            spec="us-pro"/>
+      <page name="terminologies"
+            key="FHIR-us-pro-terminologies"
+            url="terminologies"
+            deprecated="true"
+            spec="us-pro"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-qicore"
@@ -2151,22 +2710,72 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
+      <artifact name="AdverseEvent"
+                key="FHIR-us-qicore-AdverseEvent"
+                spec="us-qicore"/>
       <artifact name="AllergyIntolerance"
                 key="FHIR-us-qicore-AllergyIntolerance"
                 spec="us-qicore"/>
+      <artifact name="Communication"
+                key="FHIR-us-qicore-Communication"
+                spec="us-qicore"/>
       <artifact name="Condition" key="FHIR-us-qicore-Condition" spec="us-qicore"/>
+      <artifact name="Coverage" key="FHIR-us-qicore-Coverage" spec="us-qicore"/>
+      <artifact name="DeviceUseRequest"
+                key="FHIR-us-qicore-DeviceUseRequest"
+                spec="us-qicore"/>
+      <artifact name="DeviceUseStatement"
+                key="FHIR-us-qicore-DeviceUseStatement"
+                spec="us-qicore"/>
       <artifact name="Encounter" key="FHIR-us-qicore-Encounter" spec="us-qicore"/>
+      <artifact name="FamilyHistory"
+                key="FHIR-us-qicore-FamilyHistory"
+                spec="us-qicore"/>
       <artifact name="Goal" key="FHIR-us-qicore-Goal" spec="us-qicore"/>
       <artifact name="ImagingStudy"
                 key="FHIR-us-qicore-ImagingStudy"
                 spec="us-qicore"/>
+      <artifact name="Immunization"
+                key="FHIR-us-qicore-Immunization"
+                spec="us-qicore"/>
+      <artifact name="Medication" key="FHIR-us-qicore-Medication" spec="us-qicore"/>
+      <artifact name="MedicationAdministration"
+                key="FHIR-us-qicore-MedicationAdministration"
+                spec="us-qicore"/>
+      <artifact name="MedicationDispense"
+                key="FHIR-us-qicore-MedicationDispense"
+                spec="us-qicore"/>
       <artifact name="MedicationRequest"
                 key="FHIR-us-qicore-MedicationPrescription"
                 spec="us-qicore"/>
+      <artifact name="NutritionRequest"
+                key="FHIR-us-qicore-NutritionRequest"
+                spec="us-qicore"/>
+      <artifact name="Observation"
+                key="FHIR-us-qicore-Observation"
+                spec="us-qicore"/>
+      <artifact name="Organization"
+                key="FHIR-us-qicore-Organization"
+                spec="us-qicore"/>
       <artifact name="Patient" key="FHIR-us-qicore-Patient" spec="us-qicore"/>
+      <artifact name="Practitioner"
+                key="FHIR-us-qicore-Practitioner"
+                spec="us-qicore"/>
+      <artifact name="PractitionerRole"
+                key="FHIR-us-qicore-PractitionerRole"
+                spec="us-qicore"/>
+      <artifact name="Procedure" key="FHIR-us-qicore-Procedure" spec="us-qicore"/>
+      <artifact name="Provenance" key="FHIR-us-qicore-Provenance" spec="us-qicore"/>
+      <artifact name="RelatedPerson"
+                key="FHIR-us-qicore-RelatedPerson"
+                spec="us-qicore"/>
+      <artifact name="ServiceRequest"
+                key="FHIR-us-qicore-ServiceRequest"
+                spec="us-qicore"/>
       <artifact name="StructureDefinition"
                 key="FHIR-us-qicore-StructureDefinition"
                 spec="us-qicore"/>
+      <artifact name="Substance" key="FHIR-us-qicore-Substance" spec="us-qicore"/>
       <page name="(NA)" key="FHIR-us-qicore-NA" spec="us-qicore"/>
       <page name="(many)" key="FHIR-us-qicore-many" spec="us-qicore"/>
       <page name="(profiles)" key="FHIR-us-qicore-profiles" spec="us-qicore"/>
@@ -2174,6 +2783,94 @@
             key="FHIR-us-qicore-index"
             url="index"
             spec="us-qicore"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-us-qm"
+                  name="US Quality Measures (FHIR)"
+                  url="http://hl7.org/fhir/us/qm"
+                  defaultWorkgroup="cqi"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <artifact name="ImplementationGuide"
+                key="FHIR-us-qm-ImplementationGuide"
+                deprecated="true"
+                spec="us-qm"/>
+      <artifact name="Measure"
+                key="FHIR-us-qm-Measure"
+                deprecated="true"
+                spec="us-qm"/>
+      <artifact name="StructureDefinition"
+                key="FHIR-us-qm-StructureDefinition"
+                deprecated="true"
+                spec="us-qm"/>
+      <page name="(NA)" key="FHIR-us-qm-NA" spec="us-qm"/>
+      <page name="(many)" key="FHIR-us-qm-many" spec="us-qm"/>
+      <page name="(profiles)" key="FHIR-us-qm-profiles" spec="us-qm"/>
+      <page name="history" key="FHIR-us-qm-history" spec="us-qm"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-us-vrdr"
+                  name="US Vital Records Mortality and Morbidity Reporting (FHIR)"
+                  url="http://hl7.org/fhir/us/vrdr"
+                  defaultWorkgroup="pher"
+                  defaultVersion="0.1">
+      <version code="0.1"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <artifact name="Condition"
+                key="FHIR-us-vrdr-Condition"
+                deprecated="true"
+                spec="us-vrdr"/>
+      <artifact name="DocumentReference"
+                key="FHIR-us-vrdr-DocumentReference"
+                deprecated="true"
+                spec="us-vrdr"/>
+      <artifact name="List"
+                key="FHIR-us-vrdr-List"
+                deprecated="true"
+                spec="us-vrdr"/>
+      <artifact name="Location"
+                key="FHIR-us-vrdr-Location"
+                deprecated="true"
+                spec="us-vrdr"/>
+      <artifact name="Observation"
+                key="FHIR-us-vrdr-Observation"
+                deprecated="true"
+                spec="us-vrdr"/>
+      <artifact name="Organization"
+                key="FHIR-us-vrdr-Organization"
+                deprecated="true"
+                spec="us-vrdr"/>
+      <artifact name="Patient"
+                key="FHIR-us-vrdr-Patient"
+                deprecated="true"
+                spec="us-vrdr"/>
+      <artifact name="Practitioner"
+                key="FHIR-us-vrdr-Practitioner"
+                deprecated="true"
+                spec="us-vrdr"/>
+      <artifact name="PractitionerRole"
+                key="FHIR-us-vrdr-PractitionerRole"
+                deprecated="true"
+                spec="us-vrdr"/>
+      <artifact name="Procedure"
+                key="FHIR-us-vrdr-Procedure"
+                deprecated="true"
+                spec="us-vrdr"/>
+      <artifact name="RelatedPerson"
+                key="FHIR-us-vrdr-RelatedPerson"
+                deprecated="true"
+                spec="us-vrdr"/>
+      <page name="(NA)" key="FHIR-us-vrdr-NA" spec="us-vrdr"/>
+      <page name="(many)" key="FHIR-us-vrdr-many" spec="us-vrdr"/>
+      <page name="(profiles)" key="FHIR-us-vrdr-profiles" spec="us-vrdr"/>
+      <page name="documentation"
+            key="FHIR-us-vrdr-documentation"
+            spec="us-vrdr"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-cqif"
