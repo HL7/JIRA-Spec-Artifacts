@@ -17,6 +17,16 @@
                 <xs:documentation>The code to display for the version</xs:documentation>
               </xs:annotation>
             </xs:attribute>
+            <xs:attribute name="url" type="xs:anyURI" use="optional">
+              <xs:annotation>
+                <xs:documentation>The persistant URL associated with this version of the specification.  Used in URL validation.</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="deprecated" type="xs:boolean" default="false">
+              <xs:annotation>
+                <xs:documentation>If true, indicates that the version will not be available for selection as a 'reported version' when submitting new issues.</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
           </xs:complexType>
         </xs:element>
         <xs:element name="artifactPageExtension" minOccurs="0" maxOccurs="unbounded">
