@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification url="http://hl7.org/fhir/us/core" ciUrl="http://build.fhir.org/ig/HL7/US-Core" defaultWorkgroup="us-realm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultVersion="1.0" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="1.0"/>
+<specification
+  url="http://hl7.org/fhir/us/core"
+  ciUrl="http://build.fhir.org/ig/HL7/US-Core"
+  defaultWorkgroup="us-realm"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  defaultVersion="1.0"
+  xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
+  <version code="3.1.0"/>
+  <version code="3.0.1"/>
+  <version code="2.1.0"/>
+  <version code="2.0.0"/>
+  <version code="1.1.0"/>
+  <version code="1.0.1"/>
+  <version code="1.0.0"/>
   <artifactPageExtension value="-definitions"/>
   <artifactPageExtension value="-examples"/>
   <artifactPageExtension value="-mappings"/>
@@ -46,6 +58,163 @@
   <page name="Schemas &amp; Schematrons" key="schemas-schematrons" deprecated="true"/>
   <page name="Argnonauts" key="argonauts" url="argnonauts" deprecated="true"/>
   <page name="Home (index)" key="index" url="index" deprecated="true"/>
+  <page name="Guidance" key="guidance" url="guidance" deprecated="true"/>
+  <page name="General Guidance" key="general-guidance" url="general-guidance" deprecated="true"/>
+  <page name="Clinical Notes Guidance" key="clinical-notes-guidance" url="clinical-notes-guidance" deprecated="true"/>
+  <page name="Medication List Guidance" key="all-meds" url="all-meds" deprecated="true"/>
+  <page name="Basic Provenance" key="basic-provenance" url="basic-provenance" deprecated="true"/>
+  <page name="DSTU2 to R4 Conversion" key="r2-r4-guidance" url="r2-r4-guidance" deprecated="true"/>
+  <page name="Future of US Core" key="future-of-us-core" url="future-of-us-core" deprecated="true"/>
+  <page name="Profiles and Extensions" key="profiles" url="profiles" deprecated="true"/>
+  <page name="StructureDefinition US Core Immunization" key="StructureDefinition-us-core-immunization" url="StructureDefinition-us-core-immunization" deprecated="true"/>
+  <page name="StructureDefinition US Core PractitionerRole" key="StructureDefinition-us-core-practitionerrole" url="StructureDefinition-us-core-practitionerrole" deprecated="true"/>
+  <page name="StructureDefinition US Core Observation Lab" key="StructureDefinition-us-core-observation-lab" url="StructureDefinition-us-core-observation-lab" deprecated="true"/>
+  <page name="StructureDefinition Pediatric Bmi For Age" key="StructureDefinition-pediatric-bmi-for-age" url="StructureDefinition-pediatric-bmi-for-age" deprecated="true"/>
+  <page name="StructureDefinition US Core AllergyIntolerance" key="StructureDefinition-us-core-allergyintolerance" url="StructureDefinition-us-core-allergyintolerance" deprecated="true"/>
+  <page name="StructureDefinition US Core Practitioner" key="StructureDefinition-us-core-practitioner" url="StructureDefinition-us-core-practitioner" deprecated="true"/>
+  <page name="StructureDefinition US Core DiagnosticReport Note" key="StructureDefinition-us-core-diagnosticreport-note" url="StructureDefinition-us-core-diagnosticreport-note" deprecated="true"/>
+  <page name="StructureDefinition US Core Provenance" key="StructureDefinition-us-core-provenance" url="StructureDefinition-us-core-provenance" deprecated="true"/>
+  <page name="StructureDefinition US Core Birthsex" key="StructureDefinition-us-core-birthsex" url="StructureDefinition-us-core-birthsex" deprecated="true"/>
+  <page name="StructureDefinition US Core Encounter" key="StructureDefinition-us-core-encounter" url="StructureDefinition-us-core-encounter" deprecated="true"/>
+  <page name="StructureDefinition US Core Patient" key="StructureDefinition-us-core-patient" url="StructureDefinition-us-core-patient" deprecated="true"/>
+  <page name="StructureDefinition US Core Pulse Oximetry" key="StructureDefinition-us-core-pulse-oximetry" url="StructureDefinition-us-core-pulse-oximetry" deprecated="true"/>
+  <page name="StructureDefinition US Core Location" key="StructureDefinition-us-core-location" url="StructureDefinition-us-core-location" deprecated="true"/>
+  <page name="StructureDefinition US Core Procedure" key="StructureDefinition-us-core-procedure" url="StructureDefinition-us-core-procedure" deprecated="true"/>
+  <page name="StructureDefinition US Core Medication" key="StructureDefinition-us-core-medication" url="StructureDefinition-us-core-medication" deprecated="true"/>
+  <page name="StructureDefinition US Core DocumentReference" key="StructureDefinition-us-core-documentreference" url="StructureDefinition-us-core-documentreference" deprecated="true"/>
+  <page name="StructureDefinition US Core Direct" key="StructureDefinition-us-core-direct" url="StructureDefinition-us-core-direct" deprecated="true"/>
+  <page name="StructureDefinition US Core CareTeam" key="StructureDefinition-us-core-careteam" url="StructureDefinition-us-core-careteam" deprecated="true"/>
+  <page name="StructureDefinition US Core Ethnicity" key="StructureDefinition-us-core-ethnicity" url="StructureDefinition-us-core-ethnicity" deprecated="true"/>
+  <page name="StructureDefinition US Core CarePlan" key="StructureDefinition-us-core-careplan" url="StructureDefinition-us-core-careplan" deprecated="true"/>
+  <page name="StructureDefinition US Core Smokingstatus" key="StructureDefinition-us-core-smokingstatus" url="StructureDefinition-us-core-smokingstatus" deprecated="true"/>
+  <page name="StructureDefinition US Core Race" key="StructureDefinition-us-core-race" url="StructureDefinition-us-core-race" deprecated="true"/>
+  <page name="StructureDefinition US Core Organization" key="StructureDefinition-us-core-organization" url="StructureDefinition-us-core-organization" deprecated="true"/>
+  <page name="StructureDefinition US Core DiagnosticReport Lab" key="StructureDefinition-us-core-diagnosticreport-lab" url="StructureDefinition-us-core-diagnosticreport-lab" deprecated="true"/>
+  <page name="StructureDefinition US Core Condition" key="StructureDefinition-us-core-condition" url="StructureDefinition-us-core-condition" deprecated="true"/>
+  <page name="StructureDefinition Pediatric Weight For Height" key="StructureDefinition-pediatric-weight-for-height" url="StructureDefinition-pediatric-weight-for-height" deprecated="true"/>
+  <page name="StructureDefinition US Core Goal" key="StructureDefinition-us-core-goal" url="StructureDefinition-us-core-goal" deprecated="true"/>
+  <page name="StructureDefinition US Core MedicationRequest" key="StructureDefinition-us-core-medicationrequest" url="StructureDefinition-us-core-medicationrequest" deprecated="true"/>
+  <page name="StructureDefinition US Core Implantable Device" key="StructureDefinition-us-core-implantable-device" url="StructureDefinition-us-core-implantable-device" deprecated="true"/>
+  <page name="Operations" key="operations" url="operations" deprecated="true"/>
+  <page name="OperationDefinition Docref" key="OperationDefinition-docref" url="OperationDefinition-docref" deprecated="true"/>
+  <page name="Terminology" key="terminology" url="terminology" deprecated="true"/>
+  <page name="ValueSet US Core Medication Codes" key="ValueSet-us-core-medication-codes" url="ValueSet-us-core-medication-codes" deprecated="true"/>
+  <page name="ValueSet US Core Observation Smokingstatus" key="ValueSet-us-core-observation-smokingstatus" url="ValueSet-us-core-observation-smokingstatus" deprecated="true"/>
+  <page name="ValueSet Omb Race Category" key="ValueSet-omb-race-category" url="ValueSet-omb-race-category" deprecated="true"/>
+  <page name="ValueSet US Core Allergy Substance" key="ValueSet-us-core-allergy-substance" url="ValueSet-us-core-allergy-substance" deprecated="true"/>
+  <page name="ValueSet US Core Narrative Status" key="ValueSet-us-core-narrative-status" url="ValueSet-us-core-narrative-status" deprecated="true"/>
+  <page name="ValueSet US Core DocumentReference Type" key="ValueSet-us-core-documentreference-type" url="ValueSet-us-core-documentreference-type" deprecated="true"/>
+  <page name="ValueSet Omb Ethnicity Category" key="ValueSet-omb-ethnicity-category" url="ValueSet-omb-ethnicity-category" deprecated="true"/>
+  <page name="ValueSet US Core Condition Category" key="ValueSet-us-core-condition-category" url="ValueSet-us-core-condition-category" deprecated="true"/>
+  <page name="ValueSet Detailed Ethnicity" key="ValueSet-detailed-ethnicity" url="ValueSet-detailed-ethnicity" deprecated="true"/>
+  <page name="ValueSet US Core Ndc Vaccine Codes" key="ValueSet-us-core-ndc-vaccine-codes" url="ValueSet-us-core-ndc-vaccine-codes" deprecated="true"/>
+  <page name="ValueSet US Core Procedure Icd10pcs" key="ValueSet-us-core-procedure-icd10pcs" url="ValueSet-us-core-procedure-icd10pcs" deprecated="true"/>
+  <page name="ValueSet US Core Provider Specialty" key="ValueSet-us-core-provider-specialty" url="ValueSet-us-core-provider-specialty" deprecated="true"/>
+  <page name="ValueSet US Core Vaccines Cvx" key="ValueSet-us-core-vaccines-cvx" url="ValueSet-us-core-vaccines-cvx" deprecated="true"/>
+  <page name="ValueSet US Core Observation Smoking Status Status" key="ValueSet-us-core-observation-smoking-status-status" url="ValueSet-us-core-observation-smoking-status-status" deprecated="true"/>
+  <page name="ValueSet US Core Usps State" key="ValueSet-us-core-usps-state" url="ValueSet-us-core-usps-state" deprecated="true"/>
+  <page name="ValueSet US Core Encounter Type" key="ValueSet-us-core-encounter-type" url="ValueSet-us-core-encounter-type" deprecated="true"/>
+  <page name="ValueSet US Core Condition Code" key="ValueSet-us-core-condition-code" url="ValueSet-us-core-condition-code" deprecated="true"/>
+  <page name="ValueSet Birthsex" key="ValueSet-birthsex" url="ValueSet-birthsex" deprecated="true"/>
+  <page name="ValueSet US Core DiagnosticReport Report And Note Codes" key="ValueSet-us-core-diagnosticreport-report-and-note-codes" url="ValueSet-us-core-diagnosticreport-report-and-note-codes" deprecated="true"/>
+  <page name="ValueSet US Core Provider Role" key="ValueSet-us-core-provider-role" url="ValueSet-us-core-provider-role" deprecated="true"/>
+  <page name="ValueSet US Core Smoking Status Observation Codes" key="ValueSet-us-core-smoking-status-observation-codes" url="ValueSet-us-core-smoking-status-observation-codes" deprecated="true"/>
+  <page name="ValueSet US Core CareTeam Provider Roles" key="ValueSet-us-core-careteam-provider-roles" url="ValueSet-us-core-careteam-provider-roles" deprecated="true"/>
+  <page name="ValueSet US Core DiagnosticReport Category" key="ValueSet-us-core-diagnosticreport-category" url="ValueSet-us-core-diagnosticreport-category" deprecated="true"/>
+  <page name="ValueSet US Core Clinical Note Type" key="ValueSet-us-core-clinical-note-type" url="ValueSet-us-core-clinical-note-type" deprecated="true"/>
+  <page name="ValueSet US Core DocumentReference Category" key="ValueSet-us-core-documentreference-category" url="ValueSet-us-core-documentreference-category" deprecated="true"/>
+  <page name="ValueSet US Core Procedure Code" key="ValueSet-us-core-procedure-code" url="ValueSet-us-core-procedure-code" deprecated="true"/>
+  <page name="ValueSet Simple Language" key="ValueSet-simple-language" url="ValueSet-simple-language" deprecated="true"/>
+  <page name="ValueSet US Core Observation Value Codes" key="ValueSet-us-core-observation-value-codes" url="ValueSet-us-core-observation-value-codes" deprecated="true"/>
+  <page name="ValueSet US Core DiagnosticReport Lab Codes" key="ValueSet-us-core-diagnosticreport-lab-codes" url="ValueSet-us-core-diagnosticreport-lab-codes" deprecated="true"/>
+  <page name="ValueSet Detailed Race" key="ValueSet-detailed-race" url="ValueSet-detailed-race" deprecated="true"/>
+  <page name="CodeSystem Cdcrec" key="CodeSystem-cdcrec" url="CodeSystem-cdcrec" deprecated="true"/>
+  <page name="CodeSystem Condition Category" key="CodeSystem-condition-category" url="CodeSystem-condition-category" deprecated="true"/>
+  <page name="CodeSystem US Core DocumentReference Category" key="CodeSystem-us-core-documentreference-category" url="CodeSystem-us-core-documentreference-category" deprecated="true"/>
+  <page name="CodeSystem CarePlan Category" key="CodeSystem-careplan-category" url="CodeSystem-careplan-category" deprecated="true"/>
+  <page name="ConceptMap Ndc Cvx" key="ConceptMap-ndc-cvx" url="ConceptMap-ndc-cvx" deprecated="true"/>
+  <page name="Search Parameters" key="searchparameters" url="searchparameters" deprecated="true"/>
+  <page name="SearchParameter US Core Location Address State" key="SearchParameter-us-core-location-address-state" url="SearchParameter-us-core-location-address-state" deprecated="true"/>
+  <page name="SearchParameter US Core PractitionerRole Practitioner" key="SearchParameter-us-core-practitionerrole-practitioner" url="SearchParameter-us-core-practitionerrole-practitioner" deprecated="true"/>
+  <page name="SearchParameter US Core Organization Name" key="SearchParameter-us-core-organization-name" url="SearchParameter-us-core-organization-name" deprecated="true"/>
+  <page name="SearchParameter US Core DiagnosticReport Code" key="SearchParameter-us-core-diagnosticreport-code" url="SearchParameter-us-core-diagnosticreport-code" deprecated="true"/>
+  <page name="SearchParameter US Core Goal Lifecycle Status" key="SearchParameter-us-core-goal-lifecycle-status" url="SearchParameter-us-core-goal-lifecycle-status" deprecated="true"/>
+  <page name="SearchParameter US Core Procedure Code" key="SearchParameter-us-core-procedure-code" url="SearchParameter-us-core-procedure-code" deprecated="true"/>
+  <page name="SearchParameter US Core Patient Gender" key="SearchParameter-us-core-patient-gender" url="SearchParameter-us-core-patient-gender" deprecated="true"/>
+  <page name="SearchParameter US Core Condition Clinical Status" key="SearchParameter-us-core-condition-clinical-status" url="SearchParameter-us-core-condition-clinical-status" deprecated="true"/>
+  <page name="SearchParameter US Core DocumentReference Id" key="SearchParameter-us-core-documentreference-id" url="SearchParameter-us-core-documentreference-id" deprecated="true"/>
+  <page name="SearchParameter US Core CarePlan Category" key="SearchParameter-us-core-careplan-category" url="SearchParameter-us-core-careplan-category" deprecated="true"/>
+  <page name="SearchParameter US Core Encounter Class" key="SearchParameter-us-core-encounter-class" url="SearchParameter-us-core-encounter-class" deprecated="true"/>
+  <page name="SearchParameter US Core MedicationRequest Patient" key="SearchParameter-us-core-medicationrequest-patient" url="SearchParameter-us-core-medicationrequest-patient" deprecated="true"/>
+  <page name="SearchParameter US Core DocumentReference Patient" key="SearchParameter-us-core-documentreference-patient" url="SearchParameter-us-core-documentreference-patient" deprecated="true"/>
+  <page name="SearchParameter US Core DiagnosticReport Date" key="SearchParameter-us-core-diagnosticreport-date" url="SearchParameter-us-core-diagnosticreport-date" deprecated="true"/>
+  <page name="SearchParameter US Core Procedure Date" key="SearchParameter-us-core-procedure-date" url="SearchParameter-us-core-procedure-date" deprecated="true"/>
+  <page name="SearchParameter US Core AllergyIntolerance Clinical Status" key="SearchParameter-us-core-allergyintolerance-clinical-status" url="SearchParameter-us-core-allergyintolerance-clinical-status" deprecated="true"/>
+  <page name="SearchParameter US Core DocumentReference Date" key="SearchParameter-us-core-documentreference-date" url="SearchParameter-us-core-documentreference-date" deprecated="true"/>
+  <page name="SearchParameter US Core MedicationRequest Intent" key="SearchParameter-us-core-medicationrequest-intent" url="SearchParameter-us-core-medicationrequest-intent" deprecated="true"/>
+  <page name="SearchParameter US Core Location Address" key="SearchParameter-us-core-location-address" url="SearchParameter-us-core-location-address" deprecated="true"/>
+  <page name="SearchParameter US Core Practitioner Name" key="SearchParameter-us-core-practitioner-name" url="SearchParameter-us-core-practitioner-name" deprecated="true"/>
+  <page name="SearchParameter US Core DocumentReference Period" key="SearchParameter-us-core-documentreference-period" url="SearchParameter-us-core-documentreference-period" deprecated="true"/>
+  <page name="SearchParameter US Core Observation Code" key="SearchParameter-us-core-observation-code" url="SearchParameter-us-core-observation-code" deprecated="true"/>
+  <page name="SearchParameter US Core Location Name" key="SearchParameter-us-core-location-name" url="SearchParameter-us-core-location-name" deprecated="true"/>
+  <page name="SearchParameter US Core Condition Onset Date" key="SearchParameter-us-core-condition-onset-date" url="SearchParameter-us-core-condition-onset-date" deprecated="true"/>
+  <page name="SearchParameter US Core Patient Given" key="SearchParameter-us-core-patient-given" url="SearchParameter-us-core-patient-given" deprecated="true"/>
+  <page name="SearchParameter US Core Encounter Type" key="SearchParameter-us-core-encounter-type" url="SearchParameter-us-core-encounter-type" deprecated="true"/>
+  <page name="SearchParameter US Core MedicationRequest Encounter" key="SearchParameter-us-core-medicationrequest-encounter" url="SearchParameter-us-core-medicationrequest-encounter" deprecated="true"/>
+  <page name="SearchParameter US Core Encounter Patient" key="SearchParameter-us-core-encounter-patient" url="SearchParameter-us-core-encounter-patient" deprecated="true"/>
+  <page name="SearchParameter US Core Organization Address" key="SearchParameter-us-core-organization-address" url="SearchParameter-us-core-organization-address" deprecated="true"/>
+  <page name="SearchParameter US Core Observation Category" key="SearchParameter-us-core-observation-category" url="SearchParameter-us-core-observation-category" deprecated="true"/>
+  <page name="SearchParameter US Core DiagnosticReport Status" key="SearchParameter-us-core-diagnosticreport-status" url="SearchParameter-us-core-diagnosticreport-status" deprecated="true"/>
+  <page name="SearchParameter US Core Observation Date" key="SearchParameter-us-core-observation-date" url="SearchParameter-us-core-observation-date" deprecated="true"/>
+  <page name="SearchParameter US Core DiagnosticReport Category" key="SearchParameter-us-core-diagnosticreport-category" url="SearchParameter-us-core-diagnosticreport-category" deprecated="true"/>
+  <page name="SearchParameter US Core Observation Status" key="SearchParameter-us-core-observation-status" url="SearchParameter-us-core-observation-status" deprecated="true"/>
+  <page name="SearchParameter US Core Ethnicity" key="SearchParameter-us-core-ethnicity" url="SearchParameter-us-core-ethnicity" deprecated="true"/>
+  <page name="SearchParameter US Core DocumentReference Type" key="SearchParameter-us-core-documentreference-type" url="SearchParameter-us-core-documentreference-type" deprecated="true"/>
+  <page name="SearchParameter US Core Encounter Date" key="SearchParameter-us-core-encounter-date" url="SearchParameter-us-core-encounter-date" deprecated="true"/>
+  <page name="SearchParameter US Core Patient Birthdate" key="SearchParameter-us-core-patient-birthdate" url="SearchParameter-us-core-patient-birthdate" deprecated="true"/>
+  <page name="SearchParameter US Core Procedure Status" key="SearchParameter-us-core-procedure-status" url="SearchParameter-us-core-procedure-status" deprecated="true"/>
+  <page name="SearchParameter US Core Encounter Status" key="SearchParameter-us-core-encounter-status" url="SearchParameter-us-core-encounter-status" deprecated="true"/>
+  <page name="SearchParameter US Core CarePlan Status" key="SearchParameter-us-core-careplan-status" url="SearchParameter-us-core-careplan-status" deprecated="true"/>
+  <page name="SearchParameter US Core Condition Patient" key="SearchParameter-us-core-condition-patient" url="SearchParameter-us-core-condition-patient" deprecated="true"/>
+  <page name="SearchParameter US Core AllergyIntolerance Patient" key="SearchParameter-us-core-allergyintolerance-patient" url="SearchParameter-us-core-allergyintolerance-patient" deprecated="true"/>
+  <page name="SearchParameter US Core Device Patient" key="SearchParameter-us-core-device-patient" url="SearchParameter-us-core-device-patient" deprecated="true"/>
+  <page name="SearchParameter US Core Condition Code" key="SearchParameter-us-core-condition-code" url="SearchParameter-us-core-condition-code" deprecated="true"/>
+  <page name="SearchParameter US Core Observation Patient" key="SearchParameter-us-core-observation-patient" url="SearchParameter-us-core-observation-patient" deprecated="true"/>
+  <page name="SearchParameter US Core Race" key="SearchParameter-us-core-race" url="SearchParameter-us-core-race" deprecated="true"/>
+  <page name="SearchParameter US Core CarePlan Patient" key="SearchParameter-us-core-careplan-patient" url="SearchParameter-us-core-careplan-patient" deprecated="true"/>
+  <page name="SearchParameter US Core Patient Family" key="SearchParameter-us-core-patient-family" url="SearchParameter-us-core-patient-family" deprecated="true"/>
+  <page name="SearchParameter US Core MedicationRequest Status" key="SearchParameter-us-core-medicationrequest-status" url="SearchParameter-us-core-medicationrequest-status" deprecated="true"/>
+  <page name="SearchParameter US Core Location Address Postalcode" key="SearchParameter-us-core-location-address-postalcode" url="SearchParameter-us-core-location-address-postalcode" deprecated="true"/>
+  <page name="SearchParameter US Core Encounter Id" key="SearchParameter-us-core-encounter-id" url="SearchParameter-us-core-encounter-id" deprecated="true"/>
+  <page name="SearchParameter US Core MedicationRequest Authoredon" key="SearchParameter-us-core-medicationrequest-authoredon" url="SearchParameter-us-core-medicationrequest-authoredon" deprecated="true"/>
+  <page name="SearchParameter US Core DocumentReference Status" key="SearchParameter-us-core-documentreference-status" url="SearchParameter-us-core-documentreference-status" deprecated="true"/>
+  <page name="SearchParameter US Core Procedure Patient" key="SearchParameter-us-core-procedure-patient" url="SearchParameter-us-core-procedure-patient" deprecated="true"/>
+  <page name="SearchParameter US Core Goal Target Date" key="SearchParameter-us-core-goal-target-date" url="SearchParameter-us-core-goal-target-date" deprecated="true"/>
+  <page name="SearchParameter US Core DiagnosticReport Patient" key="SearchParameter-us-core-diagnosticreport-patient" url="SearchParameter-us-core-diagnosticreport-patient" deprecated="true"/>
+  <page name="SearchParameter US Core CarePlan Date" key="SearchParameter-us-core-careplan-date" url="SearchParameter-us-core-careplan-date" deprecated="true"/>
+  <page name="SearchParameter US Core CareTeam Patient" key="SearchParameter-us-core-careteam-patient" url="SearchParameter-us-core-careteam-patient" deprecated="true"/>
+  <page name="SearchParameter US Core Immunization Date" key="SearchParameter-us-core-immunization-date" url="SearchParameter-us-core-immunization-date" deprecated="true"/>
+  <page name="SearchParameter US Core Encounter Identifier" key="SearchParameter-us-core-encounter-identifier" url="SearchParameter-us-core-encounter-identifier" deprecated="true"/>
+  <page name="SearchParameter US Core PractitionerRole Specialty" key="SearchParameter-us-core-practitionerrole-specialty" url="SearchParameter-us-core-practitionerrole-specialty" deprecated="true"/>
+  <page name="SearchParameter US Core Patient Name" key="SearchParameter-us-core-patient-name" url="SearchParameter-us-core-patient-name" deprecated="true"/>
+  <page name="SearchParameter US Core Device Type" key="SearchParameter-us-core-device-type" url="SearchParameter-us-core-device-type" deprecated="true"/>
+  <page name="SearchParameter US Core Goal Patient" key="SearchParameter-us-core-goal-patient" url="SearchParameter-us-core-goal-patient" deprecated="true"/>
+  <page name="SearchParameter US Core Immunization Patient" key="SearchParameter-us-core-immunization-patient" url="SearchParameter-us-core-immunization-patient" deprecated="true"/>
+  <page name="SearchParameter US Core Patient Id" key="SearchParameter-us-core-patient-id" url="SearchParameter-us-core-patient-id" deprecated="true"/>
+  <page name="SearchParameter US Core Location Address City" key="SearchParameter-us-core-location-address-city" url="SearchParameter-us-core-location-address-city" deprecated="true"/>
+  <page name="SearchParameter US Core CareTeam Status" key="SearchParameter-us-core-careteam-status" url="SearchParameter-us-core-careteam-status" deprecated="true"/>
+  <page name="SearchParameter US Core DocumentReference Category" key="SearchParameter-us-core-documentreference-category" url="SearchParameter-us-core-documentreference-category" deprecated="true"/>
+  <page name="SearchParameter US Core Practitioner Identifier" key="SearchParameter-us-core-practitioner-identifier" url="SearchParameter-us-core-practitioner-identifier" deprecated="true"/>
+  <page name="SearchParameter US Core Patient Identifier" key="SearchParameter-us-core-patient-identifier" url="SearchParameter-us-core-patient-identifier" deprecated="true"/>
+  <page name="SearchParameter US Core Condition Category" key="SearchParameter-us-core-condition-category" url="SearchParameter-us-core-condition-category" deprecated="true"/>
+  <page name="SearchParameter US Core Immunization Status" key="SearchParameter-us-core-immunization-status" url="SearchParameter-us-core-immunization-status" deprecated="true"/>
+  <page name="Capability Statements" key="capstatements" url="capstatements" deprecated="true"/>
+  <page name="CapabilityStatement US Core Server" key="CapabilityStatement-us-core-server" url="CapabilityStatement-us-core-server" deprecated="true"/>
+  <page name="CapabilityStatement US Core Client" key="CapabilityStatement-us-core-client" url="CapabilityStatement-us-core-client" deprecated="true"/>
+  <page name="Security" key="security" url="security" deprecated="true"/>
+  <page name="Downloads" key="downloads" url="downloads" deprecated="true"/>
+  <page name="All Examples" key="all-examples" url="all-examples" deprecated="true"/>
+  <page name="Table of Contents" key="toc" url="toc" deprecated="true"/>
   <page name="Implementation Registry (registry/iglist)" key="iglist" url="registry" deprecated="true"/>
   <page name="Terminologies - Systems" key="terminologies-systems" url="terminologies-systems" deprecated="true"/>
   <page name="implementation" key="implementation" url="implementation" deprecated="true"/>
