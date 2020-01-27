@@ -88,9 +88,22 @@
 	<xsl:template mode="familySpecs" match="artifact|page">
     <xsl:param name="prefix" tunnel="yes"/>
     <xsl:param name="spec" tunnel="yes"/>
+    <xsl:variable name="key" select="concat($prefix, '-', $spec, '-', @key)"/>
+    <xsl:choose>
+      <xsl:when test="@deprecated='true' or self::page"/>
+      <xsl:when test="not(@id)">
+        <xsl:message terminate="yes" select="concat('id attribute is mandatory for artifacts that are not deprecated - ', $key)"/>
+      </xsl:when>
+      <xsl:when test="contains($prefix, 'FHIR') and not(matches(string(@id), '^([A-Z][a-z]+)+/[A-Za-z0-9\-\.]{1,64}$'))">
+        <xsl:message terminate="yes" select="concat('In FHIR artifact ', $key, ', id value of ', @id, ' does not follow the pattern ResourceName/id')"/>
+      </xsl:when>
+      <xsl:when test="contains($prefix, 'CDA') and not(matches(@id, '^[0-2](\.(0|[1-9][0-9]*))+$'))">
+        <xsl:message terminate="yes" select="concat('In CDA artifact ', $key, ', id value of ', @id, ' is not an OID', matches(@id, '^[0-2](\\.(0|[1-9][0-9]*))+$'))"/>
+      </xsl:when>
+    </xsl:choose>    
     <xsl:copy>
       <xsl:apply-templates mode="familySpecs" select="@*"/>
-      <xsl:attribute name="key" select="concat($prefix, '-', $spec, '-', @key)"/>
+      <xsl:attribute name="key" select="$key"/>
       <xsl:attribute name="spec" select="$spec"/>
       <xsl:apply-templates mode="familySpecs" select="node()"/>
     </xsl:copy>

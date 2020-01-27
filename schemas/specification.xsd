@@ -52,6 +52,11 @@
                 <xs:documentation>The name to display to users for the artifact.  This can change if the artifact is renamed</xs:documentation>
               </xs:annotation>
             </xs:attribute>
+            <xs:attribute name="id" type="NonEmptyString" use="optional">
+              <xs:annotation>
+                <xs:documentation>The formal identifier associated with the artifact (if there is one).  OID for CDA templates, ResourceType/id for FHIR, etc.</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
             <xs:attribute name="workgroup" type="WorkGroup" use="optional">
               <xs:annotation>
                 <xs:documentation>The work group typically responsible for issues relating to this artifact</xs:documentation>
@@ -153,6 +158,10 @@
       <xs:selector xpath="artifact"/>
       <xs:field xpath="@name"/>
     </xs:unique>
+    <xs:unique name="artifact-id-unique">
+      <xs:selector xpath="artifact"/>
+      <xs:field xpath="@id"/>
+    </xs:unique>
     <xs:unique name="page-key-unique">
       <xs:selector xpath="page"/>
       <xs:field xpath="@key"/>
@@ -178,6 +187,11 @@
   <xs:simpleType name="Name">
     <xs:restriction base="xs:string">
       <xs:pattern value="[^\s]+([\s][^\s]+)*"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="NonEmptyString">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[^\s]+"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>
