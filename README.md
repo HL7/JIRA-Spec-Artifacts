@@ -21,3 +21,35 @@ None of these files should be manipulated directly as they'll be overwritten.
 An additional file called SPECS.xml is used to help ensure that keys aren't accidentally deleted or changed
 
 NOTE: any key used by any Jira tracker items must NEVER be removed or changed.  Removal of other keys should be handled by an administrator
+
+## Building
+This JSON artifacts of this project can be built manually on the command line like this:
+```sh
+bash $> java -jar ./tools/ant/ant-launcher.jar
+Buildfile: ~/code/JIRA-Spec-Artifacts/build.xml
+
+validate:
+     [xslt] Processing ~/code/JIRA-Spec-Artifacts/xml/_workgroups.xml to ~/code/JIRA-Spec-Artifacts/schemas/workgroups.xsd
+     [xslt] Loading stylesheet ~/code/JIRA-Spec-Artifacts/tools/buildWGschema.xslt
+
+genJson:
+    [mkdir] Created dir: ~/code/JIRA-Spec-Artifacts/json
+    [mkdir] Created dir: ~/code/JIRA-Spec-Artifacts/tools/temp
+     [xslt] Processing ~/code/JIRA-Spec-Artifacts/xml/_families.xml to ~/code/JIRA-Spec-Artifacts/json/families.json
+     [xslt] Loading stylesheet ~/code/JIRA-Spec-Artifacts/tools/xmlToJson.xslt
+     [xslt] Processing ~/code/JIRA-Spec-Artifacts/xml/_workgroups.xml to ~/code/JIRA-Spec-Artifacts/json/workgroups.json
+     [xslt] Loading stylesheet ~/code/JIRA-Spec-Artifacts/tools/xmlToJson.xslt
+      [get] Getting: https://hl7.github.io/JIRA-Spec-Artifacts/SPECS.xml
+      [get] To: ~/code/JIRA-Spec-Artifacts/tools/temp/SPECS.xml
+     [xslt] Processing ~/code/JIRA-Spec-Artifacts/xml/_families.xml to ~/code/JIRA-Spec-Artifacts/json/SPECS.json
+     [xslt] Loading stylesheet ~/code/JIRA-Spec-Artifacts/tools/buildSpecJSON.xslt
+
+test:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+bash $> 
+```
+
+## Automatic Deployments
+There is a GitHub Action defined to automatically build and deploy the JSON files from the `master` repo into the `gh-pages` branch upon every commit to the `master` branch.  For this to work, a deployment ssh key has been defined and added to the repository settings.  You must be an admin of the repo to make changes to this key.
