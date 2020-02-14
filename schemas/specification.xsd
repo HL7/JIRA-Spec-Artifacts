@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  When this schema is changed, the following code must be updated to align:
+  - Scriptrunner REST Endpoints: uploadBallotSpreadsheet
+  - BALDEF Workflow (2 classes x 2 locations)
+  - SPEC Workflow (1 class)
+-->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:include schemaLocation="workgroups.xsd"/>
   <xs:element name="specification">
@@ -42,6 +48,20 @@
             <xs:documentation>A formal artifact that can be referenced as part of feedback on a specification</xs:documentation>
           </xs:annotation>
           <xs:complexType>
+            <xs:sequence>
+              <xs:element name="otherArtifact" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Indicates additional artifacts whose issues should be reported under the parent artifact</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:attribute name="id" type="NonEmptyString" use="required">
+                    <xs:annotation>
+                      <xs:documentation>The formal identifier for the artifact whose issues are to be reported under the parent artifact</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
             <xs:attribute name="key" type="xs:NMTOKEN" use="required">
               <xs:annotation>
                 <xs:documentation>The key used inside Jira to identify the artifact.  This key must not be renamed and cannot be removed if it appears in any tracker item.</xs:documentation>
