@@ -1,48 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/fhir-security-label-ds4p" 
-    url="http://hl7.org/fhir/uv/security-label-ds4p/" 
-    ciUrl="http://build.fhir.org/ig/HL7/fhir-security-label-ds4p" 
-    ballotUrl="http://hl7.org/fhir/uv/security-label-ds4p/2020May/" 
-    defaultWorkgroup="security" 
-    defaultVersion="0.1" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-    <version code="0.1"/>
-    <artifactPageExtension value="-definitions"/>
-
-    <artifact name="extension-must-display" key="extension-must-display"
-        id="StructureDefinition/extension-must-display" deprecated="false" workgroup="security"/>
-    <artifact name="extension-sec-label-basis" key="extension-sec-label-basis" 
-        id="StructureDefinition/extension-sec-label-basis" deprecated="false" workgroup="security"/>
-    <artifact name="extension-sec-label-classifier" key="extension-sec-label-classifier" 
-        id="StructureDefinition/extension-sec-label-classifier" deprecated="false" workgroup="security"/>
-    <artifact name="extension-sec-label-related-artifact" key="extension-sec-label-related-artifact" 
-        id="StructureDefinition/extension-sec-label-related-artifact" deprecated="false" workgroup="security"/>
-    <artifact name="valueset-sec-label-contributor-type" key="valueset-sec-label-contributor-type" 
-        id="ValueSet/valueset-sec-label-contributor-type" deprecated="false" workgroup="security"/>
-    <artifact name="valueset-security-label-mark" key="valueset-security-label-mark" 
-        id="ValueSet/valueset-security-label-mark" deprecated="false" workgroup="security"/>
-    <artifact name="valueset-cui-mark" key="valueset-cui-mark" 
-        id="ValueSet/valueset-cui-mark" deprecated="false" workgroup="security"/>
-    <artifact name="valueset-privacy-policy" key="valueset-privacy-policy" 
-        id="ValueSet/valueset-privacy-policy" deprecated="false" workgroup="security"/>
-    <artifact name="valueset-security-authorization" key="valueset-security-authorization" 
-        id="ValueSet/valueset-security-authorization" deprecated="false" workgroup="security"/>
-    <artifact name="valueset-provenance" key="valueset-provenance" 
-        id="ValueSet/valueset-provenance" deprecated="false" workgroup="security"/>
-    <artifact name="valueset-integrity" key="valueset-integrity" 
-        id="ValueSet/valueset-integrity" deprecated="false" workgroup="security"/>
-    <artifact name="valueset-trust" key="valueset-trust" 
-        id="ValueSet/valueset-trust" deprecated="false" workgroup="security"/>
-    <artifact name="example-extension-must-display" key="example-extension-must-display" 
-        id="Observation/example-extension-must-display" deprecated="false" workgroup="security"/>
-    <artifact name="example-extension-sec-label-basis" key="example-extension-sec-label-basis" 
-        id="Observation/example-extension-sec-label-basis" deprecated="false" workgroup="security"/>
-    <artifact name="example-extension-sec-label-classifier" key="example-extension-sec-label-classifier" 
-        id="Observation/example-extension-sec-label-classifier" deprecated="false" workgroup="security"/>
-    <artifact name="example-extension-sec-label-related-artifact" key="example-extension-sec-label-related-artifact" 
-        id="Observation/example-extension-sec-label-related-artifact" deprecated="false" workgroup="security"/>
-    <page name="index" key="index" url="index" deprecated="false" workgroup="security"/>
-    <page name="background" key="background" url="background" deprecated="false" workgroup="security"/>
-    <page name="specification" key="specification" url="specification" deprecated="false" workgroup="security"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               url="http://hl7.org/fhir/uv/security-label-ds4p"
+               ciUrl="http://hl7.org/fhir/ig/HL7/security-label-ds4p"
+               defaultWorkgroup="security"
+               defaultVersion="current"
+               xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
+               ballotUrl="http://hl7.org/fhir/uv/security-label-ds4p/2020May">
+   <version code="current" url="http://hl7.org/fhir/ig/HL7/security-label-ds4p"/>
+   <version code="0.1.0" url="http://hl7.org/fhir/uv/security-label-ds4p/2020May"/>
+   <artifactPageExtension value="-definitions"/>
+   <artifactPageExtension value="-examples"/>
+   <artifactPageExtension value="-mappings"/>
+   <artifact name="Value set definition for Security Label Contributor Type"
+             key="ValueSet-valueset-sec-label-contributor-type"
+             id="ValueSet/valueset-sec-label-contributor-type"/>
+   <artifact name="Value set definition for Security Label Mark"
+             key="ValueSet-valueset-security-label-mark"
+             id="ValueSet/valueset-security-label-mark"/>
+   <artifact name="Value set definition for CUI Mark"
+             key="ValueSet-valueset-cui-mark"
+             id="ValueSet/valueset-cui-mark"/>
+   <artifact name="Value set definition for Privacy Policy"
+             key="ValueSet-valueset-privacy-policy"
+             id="ValueSet/valueset-privacy-policy"/>
+   <artifact name="Value set definition for Security Authorization"
+             key="ValueSet-valueset-security-authorization"
+             id="ValueSet/valueset-security-authorization"/>
+   <artifact name="Value set definition for Provenance"
+             key="ValueSet-valueset-provenance"
+             id="ValueSet/valueset-provenance"/>
+   <artifact name="Value set definition for Integrity"
+             key="ValueSet-valueset-integrity"
+             id="ValueSet/valueset-integrity"/>
+   <artifact name="Value set definition for Trust"
+             key="ValueSet-valueset-trust"
+             id="ValueSet/valueset-trust"/>
+   <artifact name="Structure definition for the must-display extension"
+             key="StructureDefinition-extension-must-display"
+             id="StructureDefinition/extension-must-display"/>
+   <artifact name="Structure definition for the extension-sec-label-basis extension"
+             key="StructureDefinition-extension-sec-label-basis"
+             id="StructureDefinition/extension-sec-label-basis"/>
+   <artifact name="Structure definition for the extension-sec-label-classifier extension"
+             key="StructureDefinition-extension-sec-label-classifier"
+             id="StructureDefinition/extension-sec-label-classifier"/>
+   <artifact name="Structure definition for the extension-sec-label-related-artifact extension"
+             key="StructureDefinition-extension-sec-label-related-artifact"
+             id="StructureDefinition/extension-sec-label-related-artifact"/>
+   <artifact name="Simple use of the must-display extension"
+             key="Observation-example-extension-must-display"
+             id="Observation/example-extension-must-display"/>
+   <artifact name="Simple use of the must-display extension"
+             key="Patient-P001"
+             id="Patient/P001"/>
+   <artifact name="Simple use of the sec-label-basis extension"
+             key="Observation-example-extension-sec-label-basis"
+             id="Observation/example-extension-sec-label-basis"/>
+   <artifact name="Simple use of the sec-label-related-artifact extension"
+             key="Observation-example-extension-sec-label-related-artifact-consent"
+             id="Observation/example-extension-sec-label-related-artifact-consent"/>
+   <artifact name="Simple use of the sec-label-related-artifact extension"
+             key="Observation-example-extension-sec-label-related-artifact-provenance"
+             id="Observation/example-extension-sec-label-related-artifact-provenance"/>
+   <artifact name="Simple use of the sec-label-classifier extension"
+             key="Observation-example-extension-sec-label-classifier"
+             id="Observation/example-extension-sec-label-classifier"/>
+   <page name="(NA)" key="NA"/>
+   <page name="(many)" key="many"/>
+   <page name="Table of Contents" key="toc"/>
+   <page name="Security Label DS4P Home Page" key="index"/>
+   <page name="Background" key="background"/>
+   <page name="Detailed Specification" key="spec"/>
+   <page name="Useful Downloads" key="downloads"/>
+   <page name="IG Change History" key="changes"/>
+   <page name="Artifacts Summary" key="artifacts"/>
 </specification>
