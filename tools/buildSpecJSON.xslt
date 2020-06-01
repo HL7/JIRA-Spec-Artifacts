@@ -2,7 +2,7 @@
 <!--
   - This transform is executed on the _families.xml file.  It then loads the SPECS-???.xml for each family and all of the specification files referenced in the
   - specs file to produce both the family-specific and the comprehensive ballot JSON files for use by Jira.  (JSON conversion is handled by the imported xmlToJson
-  - transform.)
+  - transform.)  It also performs validation against various general and some product-family-specific checks.
   -->
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" exclude-result-prefixes="xsi">
 	<xsl:include href="xmlToJson.xslt"/>
