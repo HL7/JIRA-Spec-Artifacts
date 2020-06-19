@@ -1,33 +1,250 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/carin-rtpbc" url="http://hl7.org/fhir/us/carin-rtpbc" ciUrl="http://build.fhir.org/ig/HL7/carin-rtpbc" defaultWorkgroup="pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultVersion="0.1.0" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="0.1.0"/>
-  <artifactPageExtension value="-definitions"/>
-  <artifactPageExtension value="-examples"/>
-  <artifactPageExtension value="-mappings"/>
-  <artifact name="RTPBC Request Profile (Claim)" key="StructureDefinition-carin-rtpbc-request-claim" id="StructureDefinition/carin-rtpbc-request-claim"/>
-  <artifact name="RTPBC Response Profile (ClaimResponse)" key="StructureDefinition-carin-rtpbc-response-claimresponse" id="StructureDefinition/carin-rtpbc-response-claimresponse"/>
-  <artifact name="RTPBC Patient Profile" key="StructureDefinition-carin-rtpbc-patient" id="StructureDefinition/carin-rtpbc-patient"/>
-  <artifact name="RTPBC Medication Request Profile" key="StructureDefinition-carin-rtpbc-medicationrequest" id="StructureDefinition/carin-rtpbc-medicationrequest"/>
-  <artifact name="RTPBC Practitioner Profile" key="StructureDefinition-carin-rtpbc-practitioner" id="StructureDefinition/carin-rtpbc-practitioner"/>
-  <artifact name="RTPBC Pharmacy Profile (Organization)" key="StructureDefinition-carin-rtpbc-pharmacy-organization" id="StructureDefinition/carin-rtpbc-pharmacy-organization"/>
-  <artifact name="RTPBC Coverage Profile" key="StructureDefinition-carin-rtpbc-coverage" id="StructureDefinition/carin-rtpbc-coverage"/>
-  <artifact name="RTPBC Request Message Header Profile" key="StructureDefinition-carin-rtpbc-request-messageheader" id="StructureDefinition/carin-rtpbc-request-messageheader"/>
-  <artifact name="RTPBC Resonse Message Header Profile" key="StructureDefinition-carin-rtpbc-response-messageheader" id="StructureDefinition/carin-rtpbc-response-messageheader"/>
-  <artifact name="RTPBC Request Bundle Profile" key="StructureDefinition-carin-rtpbc-reqeust-bundle" id="StructureDefinition/carin-rtpbc-reqeust-bundle"/>
-  <artifact name="RTPBC Response Bundle Profile" key="StructureDefinition-carin-rtpbc-response-bundle" id="StructureDefinition/carin-rtpbc-response-bundle"/>
-  <artifact name="RTPBC CarinRtpbcExtensionIsAlternative Profile" key="StructureDefinition-carin-rtpbc-extension-isAlternative" id="StructureDefinition/carin-rtpbc-extension-isAlternative"/>
-  <artifact name="RTPBC CarinRtpbcRequestMessageDefinition Profile" key="MessageDefinition-carin-rtpbc-request-message-definition" id="MessageDefinition/carin-rtpbc-request-message-definition"/>
-  <artifact name="RTPBC CarinRtpbcResponseMessageDefinition Profile" key="MessageDefinition-carin-rtpbc-response-message-definition" id="MessageDefinition/carin-rtpbc-response-message-definition"/>
-  <page name="Use cases" key="use_cases" url="usecases"/>
-  <page name="Information content and FHIR resources" key="information" url="Information_content_and_FHIR_resources"/>
-  <page name="Submission method" key="submission" url="Submission_method"/>
-  <page name="Error handling" key="error" url="Error_handing"/>
-  <page name="Security" key="security" url="Security"/>
-  <page name="Consumer vs provider RTPBC" key="cosumer-vs-provider" url="Consumer_vs_provider_RTPBC"/>
-  <page name="Table of Contents" key="toc" url="toc"/>
-  <page name="Profiles &amp; Extensions" key="profiles" url="profiles"/>
-  <page name="Terminology" key="terminology" url="terminology"/>
-  <page name="Capability Statements" key="capstatements" url="capstatements"/>
-  <page name="Examples" key="examples" url="examples"/>
-  <page name="Downloads" key="downloads" url="downloads"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               url="http://hl7.org/fhir/us/carin"
+               ciUrl="http://build.fhir.org/ig/HL7/carin-rtpbc"
+               defaultWorkgroup="pharm"
+               defaultVersion="current"
+               xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
+               ballotUrl="http://hl7.org/fhir/us/carin-rtpbc/2020Feb">
+   <version code="current" url="http://build.fhir.org/ig/HL7/carin-rtpbc"/>
+   <version code="0.1.0" url="http://hl7.org/fhir/us/carin-rtpbc/2020Feb"/>
+   <artifactPageExtension value="-definitions"/>
+   <artifactPageExtension value="-examples"/>
+   <artifactPageExtension value="-mappings"/>
+   <artifact name="RtpbcRequestClaim"
+             key="StructureDefinition-rtpbc-request-claim"
+             id="StructureDefinition/rtpbc-request-claim"/>
+   <artifact name="RtpbcResponseClaimResponse"
+             key="StructureDefinition-rtpbc-response-claimresponse"
+             id="StructureDefinition/rtpbc-response-claimresponse"/>
+   <artifact name="RtpbcPatient"
+             key="StructureDefinition-rtpbc-patient"
+             id="StructureDefinition/rtpbc-patient"/>
+   <artifact name="RtpbcCoverage"
+             key="StructureDefinition-rtpbc-coverage"
+             id="StructureDefinition/rtpbc-coverage"/>
+   <artifact name="RtpbcMedicationRequest"
+             key="StructureDefinition-rtpbc-medicationrequest"
+             id="StructureDefinition/rtpbc-medicationrequest"/>
+   <artifact name="RtpbcPharmacy"
+             key="StructureDefinition-rtpbc-pharmacy-organization"
+             id="StructureDefinition/rtpbc-pharmacy-organization"/>
+   <artifact name="RtpbcRequestMessageHeader"
+             key="StructureDefinition-rtpbc-request-messageheader"
+             id="StructureDefinition/rtpbc-request-messageheader"/>
+   <artifact name="RtpbcResponseMessageHeader"
+             key="StructureDefinition-rtpbc-response-messageheader"
+             id="StructureDefinition/rtpbc-response-messageheader"/>
+   <artifact name="RtpbcRequestBundle"
+             key="StructureDefinition-rtpbc-request-bundle"
+             id="StructureDefinition/rtpbc-request-bundle"/>
+   <artifact name="RtpbcResponseBundle"
+             key="StructureDefinition-rtpbc-response-bundle"
+             id="StructureDefinition/rtpbc-response-bundle"/>
+   <artifact name="RtpbcPrescribableProductCodeValueSet"
+             key="ValueSet-rtpbc-prescribable-product-code"
+             id="ValueSet/rtpbc-prescribable-product-code"/>
+   <artifact name="RtpbcBenefitRestrictionCodeSystem"
+             key="CodeSystem-rtpbc-benefit-restriction"
+             id="CodeSystem/rtpbc-benefit-restriction"/>
+   <artifact name="RtpbcEventTypeCodeSystem"
+             key="CodeSystem-rtpbc-event-type"
+             id="CodeSystem/rtpbc-event-type"/>
+   <artifact name="RtpbcPatientPayTypeCodeSystem"
+             key="CodeSystem-rtpbc-patient-pay-type"
+             id="CodeSystem/rtpbc-patient-pay-type"/>
+   <artifact name="RtpbcNamingSystemCanadaPostProvinceCode"
+             key="NamingSystem-rtpbc-NamingSystem-canada-post-province-code"
+             id="NamingSystem/rtpbc-NamingSystem-canada-post-province-code"/>
+   <artifact name="RtpbcNamingSystemNcpdpPharmacyType"
+             key="NamingSystem-rtpbc-NamingSystem-ncpdp-pharmacy-type"
+             id="NamingSystem/rtpbc-NamingSystem-ncpdp-pharmacy-type"/>
+   <artifact name="RtpbcNamingSystemNcpdpId"
+             key="NamingSystem-rtpbc-NamingSystem-ncpdp-provider-id"
+             id="NamingSystem/rtpbc-NamingSystem-ncpdp-provider-id"/>
+   <artifact name="RtpbcNamingSystemNcpdpRejectCode"
+             key="NamingSystem-rtpbc-NamingSystem-ncpdp-reject-code"
+             id="NamingSystem/rtpbc-NamingSystem-ncpdp-reject-code"/>
+   <artifact name="RtbpcBillingUnitValueSet"
+             key="ValueSet-rtpbc-billing-unit"
+             id="ValueSet/rtpbc-billing-unit"/>
+   <artifact name="RtpbcErrorCodeValueSet"
+             key="ValueSet-rtpbc-error-code"
+             id="ValueSet/rtpbc-error-code"/>
+   <artifact name="RtbpcEventTypeValueSet"
+             key="ValueSet-rtpbc-event-type"
+             id="ValueSet/rtpbc-event-type"/>
+   <artifact name="RtpbcCountryCodeValueSet"
+             key="ValueSet-rtpbc-country-code"
+             id="ValueSet/rtpbc-country-code"/>
+   <artifact name="RtbpcBenefitRestrictionValueSet"
+             key="ValueSet-rtpbc-benefit-restriction"
+             id="ValueSet/rtpbc-benefit-restriction"/>
+   <artifact name="RtbpcPatientPayTypeValueSet"
+             key="ValueSet-rtpbc-patient-pay-type"
+             id="ValueSet/rtpbc-patient-pay-type"/>
+   <artifact name="RtbpcPharmacyTypeValueSet"
+             key="ValueSet-rtpbc-pharmacy-type"
+             id="ValueSet/rtpbc-pharmacy-type"/>
+   <artifact name="RtbpcStateAndProvinceCodeValueSet"
+             key="ValueSet-rtpbc-state-and-province-code"
+             id="ValueSet/rtpbc-state-and-province-code"/>
+   <artifact name="RtpbcIsAlternativeExtension"
+             key="StructureDefinition-rtpbc-isAlternative"
+             id="StructureDefinition/rtpbc-isAlternative"/>
+   <artifact name="RtpbcBenefitRestrictionExtension"
+             key="StructureDefinition-rtpbc-benefitRestriction"
+             id="StructureDefinition/rtpbc-benefitRestriction"/>
+   <artifact name="RtpbcRequestMessageDefinition"
+             key="MessageDefinition-rtpbc-request"
+             id="MessageDefinition/rtpbc-request"/>
+   <artifact name="RtpbcResponseMessageDefinition"
+             key="MessageDefinition-rtpbc-response"
+             id="MessageDefinition/rtpbc-response"/>
+   <artifact name="RtpbcRequesterCapabilityStatement"
+             key="CapabilityStatement-rtpbc-requester"
+             id="CapabilityStatement/rtpbc-requester"/>
+   <artifact name="RtpbcResponderCapabilityStatement"
+             key="CapabilityStatement-rtpbc-responder"
+             id="CapabilityStatement/rtpbc-responder"/>
+   <artifact name="Example RTPBC Request (Claim)"
+             key="Claim-rtpbc-claim-03"
+             id="Claim/rtpbc-claim-03"/>
+   <artifact name="RTPBC Request to a Pricing Source"
+             key="Claim-rtpbc-claim-03-price-source"
+             id="Claim/rtpbc-claim-03-price-source"/>
+   <artifact name="Example RTPBC Response (ClaimResponse)"
+             key="ClaimResponse-rtpbc-claim-response-03"
+             id="ClaimResponse/rtpbc-claim-response-03"/>
+   <artifact name="RTPBC Response from a pricing source"
+             key="ClaimResponse-rtpbc-claim-response-03-price-source"
+             id="ClaimResponse/rtpbc-claim-response-03-price-source"/>
+   <artifact name="Example RTPBC Patient"
+             key="Patient-rtpbc-patient-03"
+             id="Patient/rtpbc-patient-03"/>
+   <artifact name="Example RTPBC Coverage"
+             key="Coverage-rtpbc-coverage-03"
+             id="Coverage/rtpbc-coverage-03"/>
+   <artifact name="Example RTPBC MedicationRequest"
+             key="MedicationRequest-rtpbc-medicationrequest-03"
+             id="MedicationRequest/rtpbc-medicationrequest-03"/>
+   <artifact name="Example RTPBC Pharmacy Organization - Hometown Drug"
+             key="Organization-rtpbc-organization-03"
+             id="Organization/rtpbc-organization-03"/>
+   <artifact name="Example RTPBC Pharmacy Organization - My Mail Service Pharmacy"
+             key="Organization-rtpbc-organization-03m"
+             id="Organization/rtpbc-organization-03m"/>
+   <artifact name="Example US Core Practitioner as used in RTPBC"
+             key="Practitioner-rtpbc-practitioner-03"
+             id="Practitioner/rtpbc-practitioner-03"/>
+   <artifact name="Example RTPBC Request MessageHeader"
+             key="MessageHeader-rtpbc-request-message-header-01"
+             id="MessageHeader/rtpbc-request-message-header-01"/>
+   <artifact name="Example RTPBC Response MessageHeader"
+             key="MessageHeader-rtpbc-response-message-header-01"
+             id="MessageHeader/rtpbc-response-message-header-01"/>
+   <artifact name="Example RTPBC Request Bundle"
+             key="Bundle-rtpbc-bundle-request-03-w-header"
+             id="Bundle/rtpbc-bundle-request-03-w-header"/>
+   <artifact name="RTPBC Request Bundle submitted to a pricing source"
+             key="Bundle-rtpbc-bundle-request-03-price-source"
+             id="Bundle/rtpbc-bundle-request-03-price-source"/>
+   <artifact name="Example RTPBC Response Bundle"
+             key="Bundle-rtpbc-bundle-response-03-w-header"
+             id="Bundle/rtpbc-bundle-response-03-w-header"/>
+   <artifact name="RTPBC Response Bundle returned by a pricing source"
+             key="Bundle-rtpbc-bundle-response-03-price-source"
+             id="Bundle/rtpbc-bundle-response-03-price-source"/>
+   <artifact name="RTPBC Request Profile (Claim)"
+             key="StructureDefinition-carin-rtpbc-request-claim"
+             id="StructureDefinition/carin-rtpbc-request-claim"
+             deprecated="true"/>
+   <artifact name="RTPBC Response Profile (ClaimResponse)"
+             key="StructureDefinition-carin-rtpbc-response-claimresponse"
+             id="StructureDefinition/carin-rtpbc-response-claimresponse"
+             deprecated="true"/>
+   <artifact name="RTPBC Patient Profile"
+             key="StructureDefinition-carin-rtpbc-patient"
+             id="StructureDefinition/carin-rtpbc-patient"
+             deprecated="true"/>
+   <artifact name="RTPBC Medication Request Profile"
+             key="StructureDefinition-carin-rtpbc-medicationrequest"
+             id="StructureDefinition/carin-rtpbc-medicationrequest"
+             deprecated="true"/>
+   <artifact name="RTPBC Practitioner Profile"
+             key="StructureDefinition-carin-rtpbc-practitioner"
+             id="StructureDefinition/carin-rtpbc-practitioner"
+             deprecated="true"/>
+   <artifact name="RTPBC Pharmacy Profile (Organization)"
+             key="StructureDefinition-carin-rtpbc-pharmacy-organization"
+             id="StructureDefinition/carin-rtpbc-pharmacy-organization"
+             deprecated="true"/>
+   <artifact name="RTPBC Coverage Profile"
+             key="StructureDefinition-carin-rtpbc-coverage"
+             id="StructureDefinition/carin-rtpbc-coverage"
+             deprecated="true"/>
+   <artifact name="RTPBC Request Message Header Profile"
+             key="StructureDefinition-carin-rtpbc-request-messageheader"
+             id="StructureDefinition/carin-rtpbc-request-messageheader"
+             deprecated="true"/>
+   <artifact name="RTPBC Resonse Message Header Profile"
+             key="StructureDefinition-carin-rtpbc-response-messageheader"
+             id="StructureDefinition/carin-rtpbc-response-messageheader"
+             deprecated="true"/>
+   <artifact name="RTPBC Request Bundle Profile"
+             key="StructureDefinition-carin-rtpbc-reqeust-bundle"
+             id="StructureDefinition/carin-rtpbc-reqeust-bundle"
+             deprecated="true"/>
+   <artifact name="RTPBC Response Bundle Profile"
+             key="StructureDefinition-carin-rtpbc-response-bundle"
+             id="StructureDefinition/carin-rtpbc-response-bundle"
+             deprecated="true"/>
+   <artifact name="RTPBC CarinRtpbcExtensionIsAlternative Profile"
+             key="StructureDefinition-carin-rtpbc-extension-isAlternative"
+             id="StructureDefinition/carin-rtpbc-extension-isAlternative"
+             deprecated="true"/>
+   <artifact name="RTPBC CarinRtpbcRequestMessageDefinition Profile"
+             key="MessageDefinition-carin-rtpbc-request-message-definition"
+             id="MessageDefinition/carin-rtpbc-request-message-definition"
+             deprecated="true"/>
+   <artifact name="RTPBC CarinRtpbcResponseMessageDefinition Profile"
+             key="MessageDefinition-carin-rtpbc-response-message-definition"
+             id="MessageDefinition/carin-rtpbc-response-message-definition"
+             deprecated="true"/>
+   <page name="(NA)" key="NA"/>
+   <page name="(many)" key="many"/>
+   <page name="Table of Contents" key="toc" url="toc"/>
+   <page name="IG Home Page" key="index"/>
+   <page name="Use Cases" key="use_cases"/>
+   <page name="Information Content and FHIR Resources"
+         key="information_content_and_fhir_resources"/>
+   <page name="Business Rules" key="business_rules"/>
+   <page name="Submission Method" key="submission_method"/>
+   <page name="Error Handling" key="error_handling"/>
+   <page name="Security" key="security" url="Security"/>
+   <page name="Consumer vs Provider RTPBC" key="consumer_vs_provider_rtpbc"/>
+   <page name="Profiles and Extensions" key="profiles"/>
+   <page name="Terminology" key="terminology" url="terminology"/>
+   <page name="Capability Statements"
+         key="capstatements"
+         url="capstatements"/>
+   <page name="Examples" key="examples" url="examples"/>
+   <page name="Downloads" key="downloads" url="downloads"/>
+   <page name="Artifacts Summary" key="artifacts"/>
+   <page name="Information content and FHIR resources"
+         key="information"
+         url="Information_content_and_FHIR_resources"
+         deprecated="true"/>
+   <page name="Submission method"
+         key="submission"
+         url="Submission_method"
+         deprecated="true"/>
+   <page name="Error handling"
+         key="error"
+         url="Error_handing"
+         deprecated="true"/>
+   <page name="Consumer vs provider RTPBC"
+         key="cosumer-vs-provider"
+         url="Consumer_vs_provider_RTPBC"
+         deprecated="true"/>
 </specification>
