@@ -1811,6 +1811,54 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
+      <artifact name="ImmDS Patient"
+                key="FHIR-immds-patprofile"
+                id="Patient/immds-patient"
+                spec="immds"/>
+      <artifact name="ImmDS Immunization"
+                key="FHIR-immds-immprofile"
+                id="Immunization/immds-immunization"
+                spec="immds"/>
+      <artifact name="ImmDS ImmunizationEvaluation"
+                key="FHIR-immds-immevalprofile"
+                id="ImmunizationEvaluation/immds-immunizationevaluation"
+                spec="immds"/>
+      <artifact name="ImmDS ImmunizationRecommendation"
+                key="FHIR-immds-immrecprofile"
+                id="ImmunizationRecommendation/immds-immunizationrecommendation"
+                spec="immds"/>
+      <artifact name="ImmDS Operation"
+                key="FHIR-immds-forecastoperation"
+                id="OperationDefinition/ImmDSForecastOperation"
+                spec="immds"/>
+      <artifact name="Forecast Reason Code System"
+                key="FHIR-immds-forecastreasoncs"
+                id="CodeSystem/ForecastReason"
+                spec="immds"/>
+      <artifact name="Forecast Reason Value Set"
+                key="FHIR-immds-forecastreasonvs"
+                id="ValueSet/ForecastReason"
+                spec="immds"/>
+      <artifact name="Forecast Status Code System"
+                key="FHIR-immds-forecaststatuscs"
+                id="CodeSystem/ForecastStatus"
+                spec="immds"/>
+      <artifact name="Forecast Status Value Set"
+                key="FHIR-immds-forecaststatusvs"
+                id="ValueSet/ForecastStatus"
+                spec="immds"/>
+      <artifact name="Evaluation Status Reason Code System"
+                key="FHIR-immds-evalstatusreasoncs"
+                id="CodeSystem/StatusReason"
+                spec="immds"/>
+      <artifact name="Evaluation Status Reason Value Set"
+                key="FHIR-immds-evalstatusreasonvs"
+                id="ValueSet/StatusReason"
+                spec="immds"/>
+      <artifact name="Vaccine Target Disease Value Set"
+                key="FHIR-immds-targetdiseasevs"
+                id="ValueSet/targetdisease"
+                spec="immds"/>
       <artifact name="Immunization"
                 key="FHIR-immds-Immunization"
                 deprecated="true"
@@ -1830,6 +1878,16 @@
       <page name="(NA)" key="FHIR-immds-NA" spec="immds"/>
       <page name="(many)" key="FHIR-immds-many" spec="immds"/>
       <page name="(profiles)" key="FHIR-immds-profiles" spec="immds"/>
+      <page name="Home" key="FHIR-immds-home" url="index" spec="immds"/>
+      <page name="Guidance"
+            key="FHIR-immds-guidance"
+            url="Guidance"
+            spec="immds"/>
+      <page name="Use Cases"
+            key="FHIR-immds-usecase"
+            url="UseCases"
+            spec="immds"/>
+      <page name="Examples" key="FHIR-immds-examples" spec="immds"/>
       <page name="profiling"
             key="FHIR-immds-profiling"
             url="profiling"
