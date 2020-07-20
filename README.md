@@ -68,6 +68,8 @@ Once your files are added to your branch, please also confirm that your new arti
 
 ![screenshot](images/check-build-log.png)
 
+Finally, when you have built your IG using the publisher locally, it may emit a generated artifact `xml` file for you to add to this repo.  So, if you have that file in your `build` directory, you can add your generated xml to this repo without having to write one manually.
+
 ## Building
 This JSON artifacts of this project can be built manually on the command line like this:
 ```sh
