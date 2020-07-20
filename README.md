@@ -1,26 +1,72 @@
 # JIRA-Spec-Artifacts
-This project manages the artifacts, pages and other lists associated with all HL7 projects managed through JIRA feedback projects
+This project manages the artifacts, pages, and other lists associated with all HL7 projects managed through JIRA feedback projects.
 
-Source content is found in the 'xml' folder:
-* The ''_workgroups.xml'' file maintains the lists of all work groups that can take responsibility for JIRA feedback items
-* The ''_families.xml'' file maintains the list of product families.  The 'key' attribute must match the JIRA project prefix for that family
-* The ''SPECS_???.xml'' files list what specifications are part of a product family.  
-** This file should only be edited by the product director responsible the family
-** The ??? portion of the filename must match one of the keys specified in ''_families.xml'' - and one of these files MUST exist for each family
-* The remaining files (e.g. ''FHIR-core.xml'') document the artifacts and pages associated with each specification
-** The filenames have the format [family key]-[specification-key].xml
-** These files should be maintained in a manner consistent with the artifacts and pages defined in the specification.
-** For some specifications, alignment will be checked as part of the specification publication process
-** Specification files are maintained independently rather than as part of the SPECS files to allow independent maintenance
+Source content is found in the `xml` folder:
+* [`xml/_workgroups.xml`](xml/_workgroups.xml) - maintains the lists of all work groups that can take responsibility for JIRA feedback items.
+* [`xml/_families.xml`](xml/_families.xml) - maintains the list of product families.
+    * Note: The 'key' attribute must match the JIRA project prefix for that family.
+* `xml/SPECS_???.xml` - lists what specifications are part of a product family.
+    * This file should only be edited by the product director responsible the family.
+    * The `???` portion of the filename must match one of the keys specified in [`xml/_families.xml`](xml/_families.xml) - and one of these files MUST exist for each family!
+* The remaining files (e.g. [`xml/FHIR-core.xml`](xml/FHIR-core.xml)) document the artifacts and pages associated with each specification.
+    * The filenames have the format `[family key]-[specification-key].xml`.
+    * These files should be maintained in a manner consistent with the artifacts and pages defined in the specification.
+    * For some specifications, alignment will be checked as part of the specification publication process.
+    * Specification files are maintained independently (rather than as part of the SPECS files) to allow independent maintenance.
 
-Each type of XML file has a corresponding schema in the ''schemas'' folder.  The ''_workgroups.xml'' file is also converted to a schema to aid validation
+Each type of XML file has a corresponding schema in the [`schemas`](shemas) folder.  The [`xml/_workgroups.xml`](xml/_workgroups.xml) file is also converted to a schema to aid validation.
 
-The json files used by the Jira nFeed plugin to manage dropdowns are auto-generated into the json folder.
+The json files used by the [Jira Elements Connect (formerly nFeed) plugin](https://marketplace.atlassian.com/apps/23337/elements-connect-formerly-nfeed) to manage dropdowns are auto-generated into the json folder.
 There is one file for each product family plus a single "combined" file that covers all specifications and is used by the ballot projects
 None of these files should be manipulated directly as they'll be overwritten.
-An additional file called SPECS.xml is used to help ensure that keys aren't accidentally deleted or changed
+An additional file called [`tools/SPECS.xml`](tools/SPECS.xml) is used to help ensure that keys aren't accidentally deleted or changed.
 
-NOTE: any key used by any Jira tracker items must NEVER be removed or changed.  Removal of other keys should be handled by an administrator
+NOTE: any key used by any Jira tracker items must NEVER be removed or changed.  Removal of other keys should be handled by an administrator.
+
+## Adding a New Spec Artifact
+
+When building a new IG, you may encounter a `warning` in your `qa.html` that looks like this:
+```
+The jira specification file appears to be out of date with the versions, artifacts and pages 
+currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, 
+submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.
+```
+
+To address this, you must make sure that:
+* You have an entry defined in the proper `xml/SPECS-???.xml` file.
+    * For example, if you are adding the `foo` spec to `FHIR`, you would add an entry in the [`xml/SPECS-FHIR.xml`](xml/SPECS-FHIR.xml) file that looked like this:
+        ```xml
+        <specification key="foo" name="The Foo FHIR Project"/>
+        ```
+* Your spec file appears in the [`xml`](xml) folder.
+    * For example, if you are adding the `foo` FHIR spec, you would create `xml/FHIR-foo.xml` and populate it with something like this:
+        ```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+        <specification
+            gitUrl="https://github.com/HL7/foo"
+            url="http://hl7.org/fhir/foo"
+            ciUrl="http://build.fhir.org/ig/HL7/foo"
+            defaultWorkgroup="fhir-i"
+            defaultVersion="1.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
+        >
+          <version code="1.0"/>
+          <artifactPageExtension value="-definitions"/>
+          <artifactPageExtension value="-examples"/>
+          <artifactPageExtension value="-mappings"/>
+          <page name="(NA)" key="NA"/>
+          <page name="(many)" key="many"/>
+          <page name="(profiles)" key="profiles"/>
+          <page name="foo" key="foo" url="foo"/>
+        </specification>
+        ```
+
+It is recommended that you create a new branch (in this example, you might call it `add-foo`).
+
+Once your files are added to your branch, please also confirm that your new artifacts are not causing any new build errors or warnings.  A workflow will run against you branch for each commit and the output will be available here (update your branch name in the link): <https://github.com/HL7/JIRA-Spec-Artifacts/actions?query=branch%3Aadd-foo>
+
+![screenshot](images/check-build-log.png)
 
 ## Building
 This JSON artifacts of this project can be built manually on the command line like this:
