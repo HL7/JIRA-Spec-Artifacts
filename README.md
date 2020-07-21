@@ -47,18 +47,22 @@ To address this, you must make sure that:
             url="http://hl7.org/fhir/foo"
             ciUrl="http://build.fhir.org/ig/HL7/foo"
             defaultWorkgroup="fhir-i"
-            defaultVersion="1.0"
+            defaultVersion="1.0.0"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
         >
-          <version code="1.0"/>
+          <version code="1.0.0"/>
           <artifactPageExtension value="-definitions"/>
           <artifactPageExtension value="-examples"/>
           <artifactPageExtension value="-mappings"/>
+          <artifact name="Example" key="Foo-example" id="Foo/example"/>
           <page name="(NA)" key="NA"/>
           <page name="(many)" key="many"/>
-          <page name="(profiles)" key="profiles"/>
-          <page name="foo" key="foo" url="foo"/>
+          <page name="Table of Contents" key="toc"/>
+          <page name="Home" key="index"/>
+          <page name="Artifacts Summary" key="artifacts"/>
+          <page name="(profiles)" key="profiles" deprecated="true"/>
+          <page name="The Foo FHIR Project" key="foo" url="foo" deprecated="true"/>
         </specification>
         ```
 
