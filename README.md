@@ -1,6 +1,8 @@
 # JIRA-Spec-Artifacts
 This project manages the artifacts, pages, and other lists associated with all HL7 projects managed through JIRA feedback projects.
 
+Read more about it here: <https://confluence.hl7.org/display/HL7/Configuring+Specification+Feedback>
+
 Source content is found in the `xml` folder:
 * [`xml/_workgroups.xml`](xml/_workgroups.xml) - maintains the lists of all work groups that can take responsibility for JIRA feedback items.
 * [`xml/_families.xml`](xml/_families.xml) - maintains the list of product families.
