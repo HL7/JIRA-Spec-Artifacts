@@ -1,6 +1,8 @@
 # JIRA-Spec-Artifacts
 This project manages the artifacts, pages, and other lists associated with all HL7 projects managed through JIRA feedback projects.
 
+Read more about it here: <https://confluence.hl7.org/display/HL7/Configuring+Specification+Feedback>
+
 Source content is found in the `xml` folder:
 * [`xml/_workgroups.xml`](xml/_workgroups.xml) - maintains the lists of all work groups that can take responsibility for JIRA feedback items.
 * [`xml/_families.xml`](xml/_families.xml) - maintains the list of product families.
@@ -47,18 +49,22 @@ To address this, you must make sure that:
             url="http://hl7.org/fhir/foo"
             ciUrl="http://build.fhir.org/ig/HL7/foo"
             defaultWorkgroup="fhir-i"
-            defaultVersion="1.0"
+            defaultVersion="1.0.0"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
         >
-          <version code="1.0"/>
+          <version code="1.0.0"/>
           <artifactPageExtension value="-definitions"/>
           <artifactPageExtension value="-examples"/>
           <artifactPageExtension value="-mappings"/>
+          <artifact name="Example" key="Foo-example" id="Foo/example"/>
           <page name="(NA)" key="NA"/>
           <page name="(many)" key="many"/>
-          <page name="(profiles)" key="profiles"/>
-          <page name="foo" key="foo" url="foo"/>
+          <page name="Table of Contents" key="toc"/>
+          <page name="Home" key="index"/>
+          <page name="Artifacts Summary" key="artifacts"/>
+          <page name="(profiles)" key="profiles" deprecated="true"/>
+          <page name="The Foo FHIR Project" key="foo" url="foo" deprecated="true"/>
         </specification>
         ```
 
@@ -67,6 +73,8 @@ It is recommended that you create a new branch (in this example, you might call 
 Once your files are added to your branch, please also confirm that your new artifacts are not causing any new build errors or warnings.  A workflow will run against you branch for each commit and the output will be available here (update your branch name in the link): <https://github.com/HL7/JIRA-Spec-Artifacts/actions?query=branch%3Aadd-foo>
 
 ![screenshot](images/check-build-log.png)
+
+Finally, when you have built your IG using the publisher locally, it may emit a generated artifact `xml` file for you to add to this repo.  So, if you have that file in your `build` directory, you can add your generated xml to this repo without having to write one manually.
 
 ## Building
 This JSON artifacts of this project can be built manually on the command line like this:
