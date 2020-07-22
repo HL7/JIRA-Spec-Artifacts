@@ -1583,11 +1583,17 @@
                   url="http://hl7.org/fhir/smart-web-messaging"
                   ciUrl="http://build.fhir.org/ig/HL7/smart-web-messaging"
                   defaultWorkgroup="fhir-i"
-                  defaultVersion="1.0">
-      <version code="1.0"/>
+                  defaultVersion="1.0.0">
+      <version code="current" url="https://build.fhir.org/ig/HL7/smart-web-messaging"/>
+      <version code="1.0.0" url="https://hl7.org/fhir/smart-web-messaging/STU1"/>
+      <version code="1.0" deprecated="true"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
+      <artifact name="Ignore"
+                key="FHIR-smart-web-messaging-Patient-example"
+                id="Patient/example"
+                spec="smart-web-messaging"/>
       <page name="(NA)"
             key="FHIR-smart-web-messaging-NA"
             spec="smart-web-messaging"/>
@@ -1596,10 +1602,27 @@
             spec="smart-web-messaging"/>
       <page name="(profiles)"
             key="FHIR-smart-web-messaging-profiles"
+            deprecated="true"
+            spec="smart-web-messaging"/>
+      <page name="Table of Contents"
+            key="FHIR-smart-web-messaging-toc"
+            spec="smart-web-messaging"/>
+      <page name="Home"
+            key="FHIR-smart-web-messaging-index"
+            spec="smart-web-messaging"/>
+      <page name="Activity Catalog"
+            key="FHIR-smart-web-messaging-activity-catalog"
+            spec="smart-web-messaging"/>
+      <page name="Alternatives Considered"
+            key="FHIR-smart-web-messaging-alternatives-considered"
+            spec="smart-web-messaging"/>
+      <page name="Artifacts Summary"
+            key="FHIR-smart-web-messaging-artifacts"
             spec="smart-web-messaging"/>
       <page name="smart-web-messaging"
             key="FHIR-smart-web-messaging-smart-web-messaging"
             url="smart-web-messaging"
+            deprecated="true"
             spec="smart-web-messaging"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
