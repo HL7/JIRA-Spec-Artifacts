@@ -4,6 +4,18 @@
   <artifactPageExtension value="-definitions"/>
   <artifactPageExtension value="-examples"/>
   <artifactPageExtension value="-mappings"/>
+  <artifact name="ImmDS Patient" key="patprofile"  id="Patient/immds-patient" workgroup="pher"/>
+  <artifact name="ImmDS Immunization" key="immprofile"  id="Immunization/immds-immunization" workgroup="pher"/>
+  <artifact name="ImmDS ImmunizationEvaluation" key="immevalprofile"  id="ImmunizationEvaluation/immds-immunizationevaluation" workgroup="pher"/>
+  <artifact name="ImmDS ImmunizationRecommendation" key="immrecprofile"  id="ImmunizationRecommendation/immds-immunizationrecommendation" workgroup="pher"/>
+  <artifact name="ImmDS Operation" key="forecastoperation" id="OperationDefinition/ImmDSForecastOperation" workgroup="pher"/>
+  <artifact name="Forecast Reason Code System" key="forecastreasoncs"  id="CodeSystem/ForecastReason" workgroup="pher"/>
+  <artifact name="Forecast Reason Value Set" key="forecastreasonvs"  id="ValueSet/ForecastReason" workgroup="pher"/>
+  <artifact name="Forecast Status Code System" key="forecaststatuscs"  id="CodeSystem/ForecastStatus" workgroup="pher"/>
+  <artifact name="Forecast Status Value Set" key="forecaststatusvs"  id="ValueSet/ForecastStatus" workgroup="pher"/>
+  <artifact name="Evaluation Status Reason Code System" key="evalstatusreasoncs"  id="CodeSystem/StatusReason" workgroup="pher"/>
+  <artifact name="Evaluation Status Reason Value Set" key="evalstatusreasonvs"  id="ValueSet/StatusReason" workgroup="pher"/>
+  <artifact name="Vaccine Target Disease Value Set" key="targetdiseasevs"  id="ValueSet/targetdisease" workgroup="pher"/>
   <artifact name="Immunization" key="Immunization" deprecated="true"/>
   <artifact name="ImmunizationEvaluation" key="ImmunizationEvaluation" deprecated="true"/>
   <artifact name="ImmunizationRecommendation" key="ImmunizationRecommendation" deprecated="true"/>
@@ -11,6 +23,10 @@
   <page name="(NA)" key="NA"/>
   <page name="(many)" key="many"/>
   <page name="(profiles)" key="profiles"/>
+  <page name="Home" key="home" url="index" workgroup="pher"/>
+  <page name="Guidance" key="guidance" url="Guidance" workgroup="pher"/>
+  <page name="Use Cases" key="usecase" url="UseCases" workgroup="pher"/>
+  <page name="Examples" key="examples" workgroup="pher"/>
   <page name="profiling" key="profiling" url="profiling" deprecated="true"/>
   <page name="usecases" key="usecases" url="usecases" deprecated="true"/>
 </specification>
