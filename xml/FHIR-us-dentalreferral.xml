@@ -1,12 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/dental-data-exchange" url="http://hl7.org/fhir/us/dentalreferral" ciUrl="http://build.fhir.org/ig/HL7/dentalreferral" defaultWorkgroup="pie" defaultVersion="0.0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  gitUrl="https://github.com/HL7/dental-data-exchange" 
+  url="http://hl7.org/fhir/us/dentalreferral"
+  ciUrl="http://build.fhir.org/ig/HL7/dentalreferral" 
+  defaultWorkgroup="pie" 
+  defaultVersion="0.0.1" 
+  xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" >
 	<version code="0.0.1"/>
 	<artifactPageExtension value="-definitions"/>
 	<artifactPageExtension value="-examples"/>
 	<artifactPageExtension value="-mappings"/>
+  <artifact name="Dental Communication Profile" key="StructureDefinition-dental-communication" id="StructureDefinition/dental-communication"/>
+  <artifact name="Dental Consult Note" key="StructureDefinition-dental-consult" id="StructureDefinition/dental-consult"/>
+  <artifact name="Dental Referral Note Profile" key="StructureDefinition-dental-referralnote" id="StructureDefinition/dental-referralnote"/>
+  <artifact name="Dental Service Request Profile" key="StructureDefinition-dental-servicerequest" id="StructureDefinition/dental-servicerequest"/>
+  <artifact name="Dental Findings Profile" key="Observation-dental-findings" id="StructureDefinition/dental-findings"/>
+  <artifact name="Capability Statement - Dental" id="CapabilityStatement/capabilitystatement-dental" key="CapabilityStatement-capabilitystatement-dental" />
+  <artifact name="Oral Cavity Area ValueSet" id="ValueSet/oral-cavity-area" key="ValueSet-oral-cavity-area" />
+  <artifact name="Dental Observation Codes ValueSet" id="ValueSet/dental-observation-codes" key="ValueSet-dental-observation-codes" />
+  <artifact name="DentalUniversalNumberingSystem" id="ValueSet/dental-universal-numbering-system" key="ValueSet-dental-universal-numbering-system" />
+  <artifact name="Dental Reason For Referral" id="ValueSet/dental-reason-for-referral" key="ValueSet-dental-reason-for-referral" />
+  <artifact name="Dental Anatomy" id="ValueSet/dental-anatomy" key="ValueSet-dental-anatomy" />
+  <artifact name="Allergy example (example)" id="AllergyIntolerance/Allergy-example-dental" key="AllergyIntolerance-Allergy-example-dental" />
+  <artifact name="Medication1 (example)" id="Medication/tylenol-dental" key="Medication-tylenol-dental" />
+  <artifact name="Mediation2 (example)" id="Medication/ibuprofen-med-example-2" key="Medication-ibuprofen-med-example-2" />
+  <artifact name="Mediation3 (example)" id="Medication/erythromycin-med-example" key="Medication-erythromycin-med-example" />
+  <artifact name="Mediation4 (example)" id="Medication/Acetaminophen-med-example-2" key="Medication-Acetaminophen-med-example-2" />
+  <artifact name="Medication Statement4 (example)" id="MedicationRequest/Acetaminophen-medreq-2" key="MedicationRequest-Acetaminophen-medreq-2" />
+  <artifact name="Medication Statement3 (example)" id="MedicationRequest/erythromycin-medreq-2" key="MedicationRequest-erythromycin-medreq-2" />
+  <artifact name="Medication Statement2 (example)" id="MedicationRequest/Ibuprofen-medreq-2" key="MedicationRequest-Ibuprofen-medreq-2" />
+  <artifact name="Occupation (example)" id="Observation/Present-job-example-dental" key="Observation-Present-job-example-dental" />
+  <artifact name="Smoking Status (example)" id="Observation/Smoker-obs-example-dental" key="Observation-Smoker-obs-example-dental" />
+  <artifact name="Education level (example)" id="Observation/Education-level-example-dental" key="Observation-Education-level-example-dental" /> 
+  <artifact name="Patient A (example)" id="Patient/example-dental" key="Patient-example-dental" />
+  <artifact name="Practitioner Dentist (example)" id="Practitioner/practitioner-D" key="Practitioner-practitioner-D" /> 
+  <artifact name="Practitioner Medical (example)" id="Practitioner/practitioner-M" key="Practitioner-practitioner-M" /> 
+  <artifact name="PractitionerRole Medical (example)" id="PractitionerRole/PractitionerRole-M" key="PractitionerRole-PractitionerRole-M" />
+  <artifact name="PractitionerRole Dentist (example)" id="PractitionerRole/PractitionerRole-D" key="PractitionerRole-PractitionerRole-D" />
+  <artifact name="Flouride Treatment (example)" id="Procedure/Dental-flouride-tx-example" key="Procedure-Dental-flouride-tx-example" />
+  <artifact name="Incisor Restoration (example)" id="Procedure/Dental-incisor-restoration-example" key="Procedure-Dental-incisor-restoration-example" />
+  <artifact name="Dental Referral ServiceRequest (example)" id="ServiceRequest/example-dental-referral-1" key="ServiceRequest-example-dental-referral-1" />
+  <artifact name="Medical to Dental Referral Note (example)" id="Composition/Med-2-Dental-Referral" key="Composition-Med-2-Dental-Referral" />
+  <artifact name="Dental Consultation Note (example)" id="Composition/Dental-2-Med-Consult" key="Composition-Dental-2-Med-Consult" />
+  <artifact name="Dental followup - prophylaxis (example)" id="Encounter/Dentist-followup-prophylaxis" key="Encounter-Dentist-followup-prophylaxis" />
+  <artifact name="Medical Encounter (example)" id="Encounter/Med-visit-1" key="Encounter-Med-visit-1" />
+  <artifact name="Dental Encounter (example)" id="Encounter/Dental-encounter" key="Encounter-Dental-encounter" />
+  <artifact name="Good Health Clinic (example)" id="Organization/GHC-organization" key="Organization-GHC-organization" />
+  <artifact name="Good Oral Health Clinic (example)" id="Organization/GOHC-organization" key="Organization-GOHC-organization" />
+  <artifact name="Good Endodontics Health Clinic (example)" id="Organization/GEHC-organization" key="Organization-GEHC-organization" />
+  <artifact name="Coverage (example)" id="Coverage/Dental-Aetna" key="Coverage-Dental-Aetna" />
+  <artifact name="Aetna Insurance (example)" id="Organization/Aetna-organization" key="Organization-Aetna-organization" />
+  <artifact name="Pt education (example)" id="Communication/dental-education" key="Communication-dental-education" />
+  <artifact name="Permanent Mandibular 7 (example)" id="Condition/Maxillary-perm7-example" key="Condition-Maxillary-perm7-example" />
+  <artifact name="Diabetes (example)" id="Condition/DM1-example" key="Condition-DM1-example" />
+  <artifact name="Left Lower Quadrant Pain (example)" id="Condition/LLQP-example" key="Condition-LLQP-example" />
+  <artifact name="Swollen gums (example)" id="Condition/Swollen-gums-example" key="Condition-Swollen-gums-example" />
+  <artifact name="Permanent Mandibular 30 (example)" id="Condition/Mandibular-perm30-example" key="Condition-Mandibular-perm30-example" />
+  <artifact name="Hypertension (example)" id="Condition/HTN-example" key="Condition-HTN-example" />
+  <artifact name="Pulpitis (example)" id="Condition/Pulpitis-example-4" key="Condition-Pulpitis-example-4" />
+  <artifact name="Plaque (example)" id="Condition/Dental-plaque-example" key="Condition-Dental-plaque-example" />
+  <artifact name="Tootheache (example)" id="Condition/toothache-example" key="Condition-toothache-example" />
+  <artifact name="Permanent Mandibular 18 (example)" id="Condition/Mandibular-perm18-example" key="Condition-Mandibular-perm18-example" />
+  <artifact name="Bleeding gums (example)" id="Condition/Bleeding-gums-example" key="Condition-Bleeding-gums-example" />
+  <artifact name="Caries risk (example)" id="Condition/Caries-risk" key="Condition-Caries-risk" />
+  <artifact name="Periodontitis (example)" id="Condition/Chronic-periodontitis-example" key="Condition-Chronic-periodontitis-example" />
+  <artifact name="Caries condition (example)" id="Condition/Dental-caries-example" key="Condition-Dental-caries-example" />
+  <artifact name="Immunization (example)" id="Immunization/imm-1" key="Immunization-imm-1" />
+  <artifact name="Lisinporil Medication (example)" id="Medication/Lisinopril-med-example" key="Medication-Lisinopril-med-example" />
+  <artifact name="Lisinopril MedicationRequest (example)" id="MedicationRequest/Lisinopril-medreq" key="MedicationRequest-Lisinopril-medreq" />
+  <artifact name="Respiratory Rate (example)" id="Observation/respiratory-rate" key="Observation-respiratory-rate" />
+  <artifact name="Vital signs panel (example)" id="Observation/vitals-panel" key="Observation-vitals-panel" />
+  <artifact name="Body temperature (example)" id="Observation/body-temperature" key="Observation-body-temperature" />
+  <artifact name="Heart rate (example)" id="Observation/heart-rate" key="Observation-heart-rate" />
+  <artifact name="Blood pressure (example)" id="Observation/blood-pressure" key="Observation-blood-pressure" />
+  <artifact name="Practitioner with unknown name2 (example)" id="Practitioner/practitioner-UNK2" key="Practitioner-practitioner-UNK2" />
+  <artifact name="Practitioner with unknown name (example)" id="Practitioner/practitioner-UNK" key="Practitioner-practitioner-UNK" />
+  <artifact name="Insulin pump insertion (example)" id="Procedure/Insulin-pump-insertion" key="Procedure-Insulin-pump-insertion" />
+  <artifact name="Oral evaluation (example)" id="Procedure/Oral-eval-example" key="Procedure-Oral-eval-example" />
+  <artifact name="Patient Education (example)" id="Communication/dental-education2" key="Communication-dental-education2" />
+  <artifact name="Dental Caries (example)" id="Condition/Dental-caries" key="Condition-Dental-caries" />
+  <artifact name="Unable to Chew (example)" id="Condition/no-chew" key="Condition-no-chew" />
+  <artifact name="Tooth infection (example)" id="Condition/Tooth-infection" key="Condition-Tooth-infection" />
+  <artifact name="Tooth infection18 (example)" id="Condition/Tooth-infection18" key="Condition-Tooth-infection18" />
+  <artifact name="Comprehensive Oral Eval (example)" id="Encounter/Comp-oral-eval" key="Encounter-Comp-oral-eval" />
+  <artifact name="Overjet (example)" id="Observation/Overjet" key="Observation-Overjet" />
+  <artifact name="Self Management Goals" id="Media/SelfManagmentGoalsDQ" key="Media-SelfManagmentGoalsDQ" />
+  <artifact name="DoD Summary Exchange Process" id="Media/DoDSummaryExchangeProcess" key="Media-DoDSummaryExchangeProcess" />
+  <artifact name="DentaQuest Current State" id="Media/DQCurrentState" key="Media-DQCurrentState" />
+  <artifact name="DentaQuest Ideal State" id="Media/DQIdealState" key="Media-DQIdealState" />
+  <artifact name="Dental Data Exchange image" id="Media/DnetalDataExchange" key="Media-DnetalDataExchange" />
+  <artifact name="Tylenol Medication (example)" id="MedicationRequest/Tylenol-med-dental" key="MedicationRequest-Tylenol-med-dental" />
+  <artifact name="MORECare Referral Form" id="Media/MORECareReferralForm" key="Media-MORECareReferralForm" />
+  <artifact name="MORECare Treatment Report" id="Media/MORECareTreatmentReport" key="Media-MORECareTreatmentReport" />
+  <artifact name="Extraction (example)" id="ServiceRequest/Dental-extraction-example" key="ServiceRequest-Dental-extraction-example" />
+  <artifact name="Full Mouth Radiography imaging survey (example)" id="ServiceRequest/Radiograph-survey" key="ServiceRequest-Radiograph-survey" />
+  <artifact name="Resin Restoration (example)" id="ServiceRequest/Resin-restore-example" key="ServiceRequest-Resin-restore-example" /> 
 	<page name="(NA)" key="NA"/>
 	<page name="(many)" key="many"/>
-	<page name="(profiles)" key="profiles"/>
-	<page name="index" key="index" url="index"/>
-	<page name="terminologies-valuesets" key="terminologies-valuesets" url="terminologies-valuesets" deprecated="true"/>
+	<page name="Home" key="index"/>
+  <page name="(profiles)" key="profiles"/>
+  <page name="Depedencies" key="dependencies"/>
+  <page name="Scope" key="scope"/>
+  <page name="DentaQuest Partnership" key="dentaquest-partnership"/>
+  <page name="Best Practice Recommendations" key="best-practice-recommendations"/>
+  <page name="Proper Use of Dental Findings Section" key="proper-use-of-dental-findings-section"/>
+  <page name="Incorporating SNODENT Concepts" key="incorporating-snodent-concepts"/>
+  <page name="Planned Procedures and Encounters using CDT and SNODENT" key="planned-procedures-encounters-cdt-snodent"/>
+  <page name="Dental Images as Results" key="dental-images-as-results"/>
+  <page name="Reason for Referral Indication" key="reason-for-referral-indication"/>
+  <page name="Referral Identifiers in the Consult Note" key="referral-identifiers-in-consult-note"/>
+  <page name="Periodontal Findings" key="periodontal-findings"/>
+  <page name="Content Inclusion" key="content-inclusion"/>
+  <page name="Patient Self-Management Goals" key="patient-self-management-goals"/>
+  <page name="Caries Risk Assessment" key="caries-risk-assessment"/>
+  <page name="Value Set Discrepencies" key="valueset-discrepencies"/>
+  <page name="Dental Use Case Scenarios" key="dental-use-case-scenarios"/>
+  <page name="Scenario 1 Medical to Dental Referral" key="medical-2-dental-referral"/>
+  <page name="Scenario 2 Dental to Medical Consult Note" key="dental-2-medical-consult"/>
+  <page name="Scenario 3 Dental to Dental (Endodontist) Referral" key="dental-2-dental-referral"/>
+  <page name="Scenario 4 Dental (Endodontist) to Dental (General Dentist) Referral Result" key="dental-2-dental-consult"/>
+  <page name="Dental Data Exchange Project Team" key="project-team"/>
+  <page name="Acknowledgements" key="acknowledgements"/>
+  <page name="Imaging Results Example Appendix A" key="imaging-results-appendix"/>
+  <page name="DentaQuest MORE Care Referral" key="dq-referral"/>
+  <page name="DentaQuest MORE Care Dental Treatment" key="dq-treatment"/>
+  <page name="terminologies-valuesets" key="terminologies-valuesets" deprecated="true"/>
 </specification>
