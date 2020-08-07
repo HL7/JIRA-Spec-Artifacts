@@ -4,10 +4,11 @@
                url="http://hl7.org/fhir/us/davinci-deqm"
                ciUrl="http://build.fhir.org/ig/HL7/davinci-deqm"
                defaultWorkgroup="cqi"
-               defaultVersion="2.0.0"
+               defaultVersion="2.1.0"
                xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
-               ballotUrl="http://hl7.org/fhir/us/davinci-deqm/2020Feb">
+               ballotUrl="http://hl7.org/fhir/us/davinci-deqm/2020Sept">
    <version code="current" url="http://build.fhir.org/ig/HL7/davinci-deqm"/>
+   <version code="2.1.0" url="http://hl7.org/fhir/us/davinci-deqm/2020Sept"/>
    <version code="2.0.0" url="http://hl7.org/fhir/us/davinci-deqm/STU2"/>
    <version code="1.1.0" url="http://hl7.org/fhir/us/davinci-deqm/2020Feb"/>
    <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-deqm/STU1"/>
@@ -162,6 +163,87 @@
    <artifact name="Coverage03"
              key="Coverage-coverage03"
              id="Coverage/coverage03"/>
+   <artifact name="Gaps Individual MeasureReport01"
+             key="MeasureReport-gaps-indv-measurereport01"
+             id="MeasureReport/gaps-indv-measurereport01"/>
+   <artifact name="Gaps Individual MeasureReport02"
+             key="MeasureReport-gaps-indv-measurereport02"
+             id="MeasureReport/gaps-indv-measurereport02"/>
+   <artifact name="Gaps Individual MeasureReport03"
+             key="MeasureReport-gaps-indv-measurereport03"
+             id="MeasureReport/gaps-indv-measurereport03"/>
+   <artifact name="Gaps Individual MeasureReport04"
+             key="MeasureReport-gaps-indv-measurereport04"
+             id="MeasureReport/gaps-indv-measurereport04"/>
+   <artifact name="Gaps Patient01"
+             key="Patient-gaps-patient01"
+             id="Patient/gaps-patient01"/>
+   <artifact name="Gaps Patient02"
+             key="Patient-gaps-patient02"
+             id="Patient/gaps-patient02"/>
+   <artifact name="Gaps Encounter01"
+             key="Encounter-gaps-encounter01"
+             id="Encounter/gaps-encounter01"/>
+   <artifact name="Gaps Encounter02"
+             key="Encounter-gaps-encounter02"
+             id="Encounter/gaps-encounter02"/>
+   <artifact name="Gaps Encounter03"
+             key="Encounter-gaps-encounter03"
+             id="Encounter/gaps-encounter03"/>
+   <artifact name="Gaps Procedure01"
+             key="Procedure-gaps-procedure01"
+             id="Procedure/gaps-procedure01"/>
+   <artifact name="Gaps Procedure02"
+             key="Procedure-gaps-procedure02"
+             id="Procedure/gaps-procedure02"/>
+   <artifact name="Gaps Reporting Vendor Organization"
+             key="Organization-gaps-organization-reportingvendor"
+             id="Organization/gaps-organization-reportingvendor"/>
+   <artifact name="Gaps Composition01"
+             key="Composition-gaps-composition01"
+             id="Composition/gaps-composition01"/>
+   <artifact name="Gaps Composition02"
+             key="Composition-gaps-composition02"
+             id="Composition/gaps-composition02"/>
+   <artifact name="Gaps Composition03"
+             key="Composition-gaps-composition03"
+             id="Composition/gaps-composition03"/>
+   <artifact name="Gaps DetectedIssue01"
+             key="DetectedIssue-gaps-detectedissue01"
+             id="DetectedIssue/gaps-detectedissue01"/>
+   <artifact name="Gaps DetectedIssue02"
+             key="DetectedIssue-gaps-detectedissue02"
+             id="DetectedIssue/gaps-detectedissue02"/>
+   <artifact name="Gaps Group01 subject"
+             key="Group-gaps-subject-group01"
+             id="Group/gaps-subject-group01"/>
+   <artifact name="Gaps Bundle Open Individual MeasureReports"
+             key="Bundle-single-gaps-open-indv-report01"
+             id="Bundle/single-gaps-open-indv-report01"/>
+   <artifact name="Gaps Bundle Closed Individual MeasureReport01"
+             key="Bundle-single-gaps-closed-indv-report01"
+             id="Bundle/single-gaps-closed-indv-report01"/>
+   <artifact name="Gaps Bundle Closed Individual MeasureReport02"
+             key="Bundle-single-gaps-closed-indv-report02"
+             id="Bundle/single-gaps-closed-indv-report02"/>
+   <artifact name="Gaps Multiple Bundles Individual MeasureReports01"
+             key="Parameters-multiple-gaps-indv-report01"
+             id="Parameters/multiple-gaps-indv-report01"/>
+   <artifact name="Gaps Multiple Bundles Individual MeasureReports02"
+             key="Parameters-multiple-gaps-indv-report02"
+             id="Parameters/multiple-gaps-indv-report02"/>
+   <artifact name="Measure Colorectal Cancer Screening (EXM130)"
+             key="Measure-measure-exm130-example"
+             id="Measure/measure-exm130-example"/>
+   <artifact name="Measure Cervical Cancer Screening (EXM124)"
+             key="Measure-measure-exm124-example"
+             id="Measure/measure-exm124-example"/>
+   <artifact name="Library Colorectal Cancer Screening (EXM130)"
+             key="Library-library-exm130-example"
+             id="Library/library-exm130-example"/>
+   <artifact name="Library Cervical Cancer Screening (EXM124)"
+             key="Library-library-exm124-example"
+             id="Library/library-exm124-example"/>
    <artifact name="Patient01" key="Patient-patient01" id="Patient/patient01"/>
    <artifact name="DEQM Measure Scoring Extension"
              key="StructureDefinition-extension-measureScoring"
@@ -205,6 +287,9 @@
    <artifact name="DEQM Certification Identifier Extension"
              key="StructureDefinition-extension-certificationIdentifier"
              id="StructureDefinition/extension-certificationIdentifier"/>
+   <artifact name="DEQM Population Reference Extension"
+             key="StructureDefinition-extension-populationReference"
+             id="StructureDefinition/extension-populationReference"/>
    <artifact name="DEQM Submit Data Update Type Extension"
              key="StructureDefinition-extension-submitDataUpdateType"
              id="StructureDefinition/extension-submitDataUpdateType"/>
@@ -226,6 +311,39 @@
    <artifact name="DEQM MedicationAdministration Profile"
              key="StructureDefinition-medicationadministration-deqm"
              id="StructureDefinition/medicationadministration-deqm"/>
+   <artifact name="Gaps In Care Client CapabilityStatement"
+             key="CapabilityStatement-gic-client"
+             id="CapabilityStatement/gic-client"/>
+   <artifact name="Gaps In Care Server CapabilityStatement"
+             key="CapabilityStatement-gic-server"
+             id="CapabilityStatement/gic-server"/>
+   <artifact name="DEQM Gaps In Care Document Type Code System"
+             key="CodeSystem-gaps-doc-type"
+             id="CodeSystem/gaps-doc-type"/>
+   <artifact name="DEQM Gaps In Care Gap Status Code System"
+             key="CodeSystem-gaps-status"
+             id="CodeSystem/gaps-status"/>
+   <artifact name="Care Gaps Operation"
+             key="OperationDefinition-care-gaps"
+             id="OperationDefinition/care-gaps"/>
+   <artifact name="DEQM Gaps In Care Individual MeasureReport Profile"
+             key="StructureDefinition-gaps-indv-measurereport-deqm"
+             id="StructureDefinition/gaps-indv-measurereport-deqm"/>
+   <artifact name="DEQM Gaps In Care Bundle Profile"
+             key="StructureDefinition-gaps-bundle-deqm"
+             id="StructureDefinition/gaps-bundle-deqm"/>
+   <artifact name="DEQM Gaps In Care Composition Profile"
+             key="StructureDefinition-gaps-composition-deqm"
+             id="StructureDefinition/gaps-composition-deqm"/>
+   <artifact name="DEQM Gaps In Care Detected Issue Profile"
+             key="StructureDefinition-gaps-detectedissue-deqm"
+             id="StructureDefinition/gaps-detectedissue-deqm"/>
+   <artifact name="DEQM Gaps In Care Group Profile"
+             key="StructureDefinition-gaps-group-deqm"
+             id="StructureDefinition/gaps-group-deqm"/>
+   <artifact name="DEQM Gaps In Care Gaps Status Value Set"
+             key="ValueSet-gaps-status"
+             id="ValueSet/gaps-status"/>   
    <artifact name="ExampleScenario" key="ExampleScenario" deprecated="true"/>
    <artifact name="MeasureReport" key="MeasureReport" deprecated="true"/>
    <artifact name="Organization" key="Organization" deprecated="true"/>
@@ -239,11 +357,14 @@
    <page name="Data Exchange" key="datax"/>
    <page name="Individual Reporting" key="indv-reporting"/>
    <page name="Summary Reporting" key="summary-reporting"/>
+   <page name="Gaps in Care Reporting" key="gaps-in-care-reporting"/>
    <page name="Example Use Cases" key="usecases"/>
    <page name="Medication Reconciliation Post-Discharge (MRP)" key="mrp"/>
    <page name="Colorectal Cancer Screening (COL)" key="col"/>
    <page name="Venous Thromboembolism Prophylaxis (VTE-1)" key="vte1"/>
+   <page name="Gaps in Care Example Use Cases" key="gaps-examples"/>
    <page name="Profiles and Extensions" key="profiles"/>
+   <page name="Operations" key="operations"/>
    <page name="Terminology" key="terminology"/>
    <page name="Capability Statements" key="capstatements"/>
    <page name="All Examples" key="all-examples"/>
