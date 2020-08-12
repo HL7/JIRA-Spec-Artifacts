@@ -1,11 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/davinci-ehrx" url="http://hl7.org/fhir/us/davinci-hrex" ciUrl="http://build.fhir.org/ig/HL7/davinci-ehrx" defaultWorkgroup="pc" defaultVersion="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="0.1"/>
-  <artifactPageExtension value="-definitions"/>
-  <artifactPageExtension value="-examples"/>
-  <artifactPageExtension value="-mappings"/>
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="(profiles)" key="profiles"/>
-  <page name="downloads" key="downloads"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-hrex/2020Sep" ciUrl="http://build.fhir.org/ig/HL7/davinci-ehrx" defaultVersion="current" defaultWorkgroup="cic" gitUrl="https://github.com/HL7/deavinci-ehrx" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" url="http://hl7.org/fhir/us/davinci-hrex"><version code="current" url="http://build.fhir.org/ig/HL7/davinci-ehrx"/>
+<version code="0.2.0" url="http://hl7.org/fhir/us/davinci-hrex/2020Sep"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-hrex/2019Jun"/>
+<version code="0.1" deprecated="true"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="Parameters/member-match-in" key="Parameters-member-match-in" name="$member-match example request"/>
+<artifact id="Parameters/member-match-out" key="Parameters-member-match-out" name="$member-match example response"/>
+<artifact id="SearchParameter/hrex-coverage-identifier" key="SearchParameter-hrex-coverage-identifier" name="Coverage identifier Search Parameter"/>
+<artifact id="SearchParameter/hrex-coverage-patient" key="SearchParameter-hrex-coverage-patient" name="Coverage patient Search Parameter"/>
+<artifact id="SearchParameter/hrex-coverage-payor" key="SearchParameter-hrex-coverage-payor" name="Coverage payor Search Parameter"/>
+<artifact id="SearchParameter/hrex-coverage-subscriber" key="SearchParameter-hrex-coverage-subscriber" name="Coverage subscriber Search Parameter"/>
+<artifact id="SearchParameter/hrex-coverage-subscriberId" key="SearchParameter-hrex-coverage-subscriberId" name="Coverage subscriberId Search Parameter"/>
+<artifact id="StructureDefinition/hrex-coverage" key="StructureDefinition-hrex-coverage" name="HRex Coverage Profile"/>
+<artifact id="Coverage/full" key="Coverage-full" name="HRex Coverage full example"/>
+<artifact id="Coverage/min" key="Coverage-min" name="HRex Coverage minimal example"/>
+<artifact id="OperationDefinition/member-match" key="OperationDefinition-member-match" name="HRex Member Match Operation"/>
+<artifact id="StructureDefinition/hrex-organization" key="StructureDefinition-hrex-organization" name="HRex Organization Profile"/>
+<artifact id="Organization/full" key="Organization-full" name="HRex Organization full example"/>
+<artifact id="Organization/min" key="Organization-min" name="HRex Organization minimal example"/>
+<artifact id="StructureDefinition/hrex-parameters-member-match-in" key="StructureDefinition-hrex-parameters-member-match-in" name="HRex Parameters - Member Match Request Profile"/>
+<artifact id="StructureDefinition/hrex-parameters-member-match-out" key="StructureDefinition-hrex-parameters-member-match-out" name="HRex Parameters - Member Match Response Profile"/>
+<artifact id="StructureDefinition/hrex-practitioner" key="StructureDefinition-hrex-practitioner" name="HRex Practitioner Profile"/>
+<artifact id="Practitioner/full" key="Practitioner-full" name="HRex Practitioner full example"/>
+<artifact id="Practitioner/min" key="Practitioner-min" name="HRex Practitioner minimal example"/>
+<artifact id="StructureDefinition/hrex-practitionerrole" key="StructureDefinition-hrex-practitionerrole" name="HRex PractitionerRole Profile"/>
+<artifact id="PractitionerRole/full" key="PractitionerRole-full" name="HRex PractitionerRole full example"/>
+<artifact id="PractitionerRole/min" key="PractitionerRole-min" name="HRex PractitionerRole min example"/>
+<artifact id="StructureDefinition/hrex-provenance" key="StructureDefinition-hrex-provenance" name="HRex Provenance Profile"/>
+<artifact id="Provenance/full" key="Provenance-full" name="HRex Provenance full example"/>
+<artifact id="Provenance/min" key="Provenance-min" name="HRex Provenance min example"/>
+<artifact id="Task/document-complete" key="Task-document-complete" name="HRex Task Data Request - completed document example"/>
+<artifact id="Task/query-complete" key="Task-query-complete" name="HRex Task Data Request - completed query example"/>
+<artifact id="Task/query-initial" key="Task-query-initial" name="HRex Task Data Request - initial query example"/>
+<artifact id="Task/query-status" key="Task-query-status" name="HRex Task Data Request - status query example"/>
+<artifact id="StructureDefinition/hrex-task-data-request" key="StructureDefinition-hrex-task-data-request" name="HRex Task Data Request Profile"/>
+<artifact id="ValueSet/hrex-task-status" key="ValueSet-hrex-task-status" name="HRex Task Status ValueSet"/>
+<artifact id="Task/min" key="Task-min" name="HRex Task minimal example"/>
+<artifact id="CodeSystem/hrex-temp" key="CodeSystem-hrex-temp" name="HRex Temporary Code System"/>
+<artifact id="SearchParameter/hrex-provenance-target" key="SearchParameter-hrex-provenance-target" name="Provenance target Search Parameter"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="exchanging" name="Approaches to Exchanging FHIR Data"/>
+<page key="artifacts" name="Artifact List"/>
+<page key="conformance" name="Conformance Expectations"/>
+<page key="downloads" name="Downloads"/>
+<page key="smart-app-reg" name="Dynamic Registration for SMART Apps"/>
+<page key="exchanging-rest" name="Exchanging with FHIR REST"/>
+<page key="exchanging-operation" name="Exchanging with FHIR operations"/>
+<page key="exchanging-search" name="Exchanging with FHIR search"/>
+<page key="exchanging-subscription" name="Exchanging with FHIR subscription"/>
+<page key="exchanging-request" name="Exchanging with human intervention"/>
+<page key="exchanging-messaging" name="Exchanging with messaging"/>
+<page key="exchanging-polling" name="Exchanging with polling"/>
+<page key="fhir" name="FHIR Introduction"/>
+<page key="index" name="Home"/>
+<page key="profiles" name="Profile overview"/>
+<page key="searchparameters" name="Search Parameters overview"/>
+<page key="security" name="Security and Privacy"/>
+<page key="toc" name="Table of Contents"/>
+<page key="tools" name="Tooling and Support"/>
 </specification>
