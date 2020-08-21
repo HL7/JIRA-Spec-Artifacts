@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification url="http://hl7.org/fhir/us/davinci-pdex" defaultWorkgroup="fm" defaultVersion="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
+<specification gitUrl="https://github.com/HL7/davinci-pdex-plan-net" url="http://hl7.org/fhir/us/davinci-pdex-plan-net" ciUrl="http://build.fhir.org/ig/HL7/davinci-pdex-plan-net" defaultWorkgroup="fm" defaultVersion="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
   <version code="0.1"/>
   <artifactPageExtension value="-definitions"/>
   <artifactPageExtension value="-examples"/>
   <artifactPageExtension value="-mappings"/>
-  <artifact name="Endpoint" key="Endpoint"/>
-  <artifact name="HealthcareService" key="HealthCareService"/>
-  <artifact name="InsurancePlan" key="InsurancePlan"/>
-  <artifact name="Location" key="Location"/>
-  <artifact name="Network" key="Network"/>
-  <artifact name="Organization" key="Organization"/>
-  <artifact name="OrganizationAffiliation" key="OrganizationAffiliation"/>
-  <artifact name="Practitioner" key="Practitioner"/>
-  <artifact name="PractitionerRole" key="PractitionerRole"/>
-  <artifact name="AcceptingPatients" key="AcceptingPatients"/>
-  <artifact name="CViaIntermediary" key="CViaIntermediary"/>
-  <artifact name="FromNetwork" key="FromNetwork"/>
-  <artifact name="LocationReference" key="LocationReference"/>
-  <artifact name="NewPatients" key="NewPatients"/>
-  <artifact name="ParticipatingNetwork" key="ParticipatingNetwork"/>
+  <artifact name="Endpoint" key="Endpoint" id="StructureDefinition/plannet-Endpoint"/>
+  <artifact name="HealthcareService" key="HealthCareService" id="StructureDefinition/plannet-HealthcareService"/>
+  <artifact name="InsurancePlan" key="InsurancePlan" id="StructureDefinition/plannet-InsurancePlan"/>
+  <artifact name="Location" key="Location" id="StructureDefinition/plannet-Location"/>
+  <artifact name="Network" key="Network" id="StructureDefinition/plannet-Network"/>
+  <artifact name="Organization" key="Organization" id="StructureDefinition/plannet-Organization"/>
+  <artifact name="OrganizationAffiliation" key="OrganizationAffiliation" id="StructureDefinition/plannet-OrganizationAffiliation"/>
+  <artifact name="Practitioner" key="Practitioner" id="StructureDefinition/plannet-Practitioner"/>
+  <artifact name="PractitionerRole" key="PractitionerRole" id="StructureDefinition/plannet-PractitionerRole"/>
+  <artifact name="Via Intermediary" key="CViaIntermediary" id="StructureDefinition/plannet-ViaIntermediary-extension"/>
+  <artifact name="Netowrk - reference" key="FromNetwork" id="StructureDefinition/plannet-Network-reference-extension"/>
+  <artifact name="Location- reference" key="LocationReference" id="StructureDefinition/plannet-Location-reference-extension"/>
+  <artifact name="New Patients" key="NewPatients" id="StructureDefinition/plannet-NewPatients-extension"/>
+  <artifact name="Endpoint Use Case" key="EndpointUseCase" id="StructureDefinition/plannet-EndpointUseCase-extension"/>
+  <artifact name="AcceptingPatients" key="AcceptingPatients" deprecated="true"/>
+  <artifact name="ParticipatingNetwork" key="ParticipatingNetwork" deprecated="true"/>
   <page name="(NA)" key="NA"/>
   <page name="(many)" key="many"/>
   <page name="index" key="index"/>

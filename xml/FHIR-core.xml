@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2014 rel. 2 sp1 (x64) (http://www.altova.com) by Lloyd McKenzie (private) -->
-<specification url="http://hl7.org/fhir" ciUrl="http://build.fhir.org" defaultWorkgroup="fhir-i" defaultVersion="R4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
+<specification gitUrl="https://github.com/HL7/fhir" url="http://hl7.org/fhir" ciUrl="http://build.fhir.org" defaultWorkgroup="fhir-i" defaultVersion="R4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
   <version code="R5"/>
   <version code="R4"/>
   <version code="STU3"/>
@@ -10,177 +10,177 @@
   <artifactPageExtension value="-definitions"/>
   <artifactPageExtension value="-examples"/>
   <artifactPageExtension value="-mappings"/>
-  <artifact name="DomainResource" key="DomainResource" workgroup="fhir-i"/>
-  <artifact name="BaseResource" key="BaseResource" workgroup="fhir-i"/>
-  <artifact name="MetadataResource" key="MetadataResource" workgroup="fhir-i"/>
-  <artifact name="Account" key="Account" workgroup="pa"/>
-  <artifact name="ActivityDefinition" key="ActivityDefinition" workgroup="cds"/>
-  <artifact name="AdverseReaction (see AdverseEvent)" key="AdverseReaction" workgroup="pc" deprecated="true"/>
-  <artifact name="AdverseEvent" key="AdverseEvent" workgroup="pc"/>
-  <artifact name="AllergyIntolerance" key="AllergyIntolerance" workgroup="pc"/>
-  <artifact name="Appointment" key="Appointment" workgroup="pa"/>
-  <artifact name="AppointmentResponse" key="AppointmentResponse" workgroup="pa"/>
-  <artifact name="AuditEvent" key="AuditEvent" workgroup="security"/>
-  <artifact name="Basic" key="Basic" workgroup="fhir-i"/>
-  <artifact name="Binary" key="Binary" workgroup="fhir-i"/>
-  <artifact name="BiologicallyDerivedProduct" key="BiologicallyDerivedProduct" workgroup="brr"/>
-  <artifact name="BodyStructure" key="BodySite" workgroup="oo"/>
-  <artifact name="Bundle" key="Feed" workgroup="fhir-i"/>
-  <artifact name="CapabilityStatement (Conformance)" key="Conformance" workgroup="fhir-i"/>
-  <artifact name="CarePlan" key="CarePlan" workgroup="pc"/>
-  <artifact name="CareTeam" key="CareTeam" workgroup="pc"/>
-  <artifact name="CatalogEntry" key="EntryDefinition" workgroup="oo"/>
-  <artifact name="ChargeItem" key="ChargeItem" workgroup="pa"/>
-  <artifact name="ChargeItemDefinition" key="ChargeItemDefinition" workgroup="pa"/>
-  <artifact name="Claim" key="Claim" workgroup="fm"/>
-  <artifact name="ClaimResponse" key="ClaimResponse" workgroup="fm"/>
-  <artifact name="ClinicalImpression" key="ClinicalImpression" workgroup="pc"/>
-  <artifact name="CodeSystem" key="CodeSystem" workgroup="vocab"/>
-  <artifact name="Communication" key="Communication" workgroup="pc"/>
-  <artifact name="CommunicationRequest" key="CommunicationRequest" workgroup="pc"/>
-  <artifact name="CompartmentDefinition" key="CompartmentDefinition" workgroup="fhir-i"/>
-  <artifact name="Composition" key="Composition" workgroup="sd"/>
-  <artifact name="ConceptMap" key="ConceptMap" workgroup="vocab"/>
-  <artifact name="Condition" key="Condition" workgroup="pc"/>
-  <artifact name="Consent" key="Consent" workgroup="cbcc"/>
-  <artifact name="Contract" key="Contract" workgroup="fm"/>
-  <artifact name="Coverage" key="Coverage" workgroup="fm"/>
-  <artifact name="CoverageEligibilityRequest" key="EligibilityRequest" workgroup="fm"/>
-  <artifact name="CoverageEligibilityResponse" key="EligibilityResponse" workgroup="fm"/>
-  <artifact name="DataElement (see StructureDefinition)" key="DataElement" workgroup="oo" deprecated="true"/>
-  <artifact name="DecisionSupportServiceModule" key="DecisionSupportServiceModule" workgroup="cds" deprecated="true"/>
-  <artifact name="DetectedIssue" key="Alert" workgroup="cds"/>
-  <artifact name="Device" key="Device" workgroup="oo"/>
-  <artifact name="DeviceComponent" key="DeviceComponent" workgroup="dev" deprecated="true"/>
-  <artifact name="DeviceDefinition" key="DeviceDefinition" workgroup="oo"/>
-  <artifact name="DeviceMetric" key="DeviceMetric" workgroup="dev"/>
-  <artifact name="DeviceObservationReport" key="DeviceObservationReport" workgroup="dev" deprecated="true"/>
-  <artifact name="DeviceRequest (was DeviceUseRequest)" key="DeviceUseRequest" workgroup="oo"/>
-  <artifact name="DeviceUseStatement" key="DeviceUseStatement" workgroup="oo"/>
-  <artifact name="DiagnosticReport" key="DiagnosticReport" workgroup="oo"/>
-  <artifact name="DiagnosticRequest (see ServiceRequest)" key="DiagnosticRequest" workgroup="oo" deprecated="true"/>
-  <artifact name="DocumentManifest" key="DocumentManifest" workgroup="sd"/>
-  <artifact name="DocumentReference" key="DocumentReference" workgroup="sd"/>
-  <artifact name="Encounter" key="Encounter" workgroup="pa"/>
-  <artifact name="EndPoint" key="EndPoint" workgroup="pa"/>
-  <artifact name="EnrollmentRequest" key="EnrollmentRequest" workgroup="fm"/>
-  <artifact name="EnrollmentResponse" key="EnrollmentResponse" workgroup="fm"/>
-  <artifact name="EpisodeOfCare" key="EpisodeOfCare" workgroup="pc"/>
-  <artifact name="EventDefinition" key="EventDefinition"/>
-  <artifact name="Evidence" key="Evidence" workgroup="cds"/>
-  <artifact name="EvidenceVariable" key="EvidenceVariable" workgroup="cds"/>
-  <artifact name="ExampleScenario" key="ExampleScenario" workgroup="fhir-i"/>
-  <artifact name="ExpansionProfile" key="ExpansionProfile" workgroup="vocab" deprecated="true"/>
-  <artifact name="ExplanationOfBenefit" key="ExplanationOfBenefit" workgroup="fm"/>
-  <artifact name="ExtensionDefinition (see StructureDefinition)" key="ExtensionDefinition" workgroup="fhir-i" deprecated="true"/>
-  <artifact name="FamilyMemberHistory" key="FamilyHistory" workgroup="pc"/>
-  <artifact name="Flag" key="Flag" workgroup="pc"/>
-  <artifact name="Goal" key="Goal" workgroup="pc"/>
-  <artifact name="GraphDefinition" key="GraphDefinition" workgroup="fhir-i"/>
-  <artifact name="Group" key="Group" workgroup="pa"/>
-  <artifact name="GuidanceResponse" key="GuidanceResponse" workgroup="cds"/>
-  <artifact name="HealthcareService" key="HealthcareService" workgroup="pa"/>
-  <artifact name="ImagingManifest" key="ImagingManifest" workgroup="ii" deprecated="true"/>
-  <artifact name="ImagingStudy" key="ImagingStudy" workgroup="ii"/>
-  <artifact name="Immunization" key="Immunization" workgroup="pher"/>
-  <artifact name="ImmunizationEvaluation" key="ImmunizationEvaluation" workgroup="pher"/>
-  <artifact name="ImmunizationRecommendation" key="ImmunizationRecommendation" workgroup="pher"/>
-  <artifact name="ImplementationGuide" key="ImplementationGuide" workgroup="fhir-i"/>
-  <artifact name="InsurancePlan" key="ProductPlan" workgroup="pa"/>
-  <artifact name="Invoice" key="Invoice" workgroup="fm"/>
-  <artifact name="ItemInstance" key="ItemInstance" workgroup="oo"/>
-  <artifact name="Library" key="Library" workgroup="cds"/>
-  <artifact name="Linkage" key="Linkage" workgroup="fhir-i"/>
-  <artifact name="List" key="List" workgroup="fhir-i"/>
-  <artifact name="Location" key="Location" workgroup="pa"/>
-  <artifact name="Measure" key="Measure" workgroup="cqi"/>
-  <artifact name="MeasureReport" key="MeasureReport" workgroup="cqi"/>
-  <artifact name="Media" key="Media" workgroup="oo"/>
-  <artifact name="Medication" key="Medication" workgroup="pharm"/>
-  <artifact name="MedicationAdministration" key="MedicationAdministration" workgroup="pharm"/>
-  <artifact name="MedicationDispense" key="MedicationDispense" workgroup="pharm"/>
-  <artifact name="MedicationKnowledge" key="MedicationKnowledge" workgroup="pharm"/>
-  <artifact name="MedicationRequest" key="MedicationPrescription" workgroup="pharm"/>
-  <artifact name="MedicationUsage (MedicationStatement)" key="MedicationStatement" workgroup="pharm"/>
-  <artifact name="MedicinalProduct" key="MedicinalProduct" workgroup="brr"/>
-  <artifact name="MedicinalProductAuthorization" key="MedicinalProductAuthorization" workgroup="brr"/>
-  <artifact name="MedicinalProductClinicals" key="MedicinalProductClinicals" workgroup="brr"/>
-  <artifact name="MedicinalProductContraindication" key="MedicinalProductContraindication" workgroup="brr"/>
-  <artifact name="MedicinalProductDeviceSpec" key="MedicinalProductDeviceSpec" workgroup="brr"/>
-  <artifact name="MedicinalProductIndication" key="MedicinalProductIndication" workgroup="brr"/>
-  <artifact name="MedicinalProductIngredient" key="MedicinalProductIngredient" workgroup="brr"/>
-  <artifact name="MedicinalProductInteraction" key="MedicinalProductInteraction" workgroup="brr"/>
-  <artifact name="MedicinalProductManufactured" key="MedicinalProductManufactured" workgroup="brr"/>
-  <artifact name="MedicinalProductPackaged" key="MedicinalProductPackaged" workgroup="brr"/>
-  <artifact name="MedicinalProductPharmaceutical" key="MedicinalProductPharmaceutical" workgroup="brr"/>
-  <artifact name="MedicinalProductUndesireableEffect" key="MedicinalProductUndesireableEffect" workgroup="brr"/>
-  <artifact name="MessageDefinition" key="MessageDefinition" workgroup="fhir-i"/>
-  <artifact name="MessageHeader" key="MessageHeader" workgroup="fhir-i"/>
-  <artifact name="MolecularSequence (was Sequence)" key="Sequence" workgroup="cg"/>
-  <artifact name="NamingSystem" key="NamingSystem" workgroup="fhir-i"/>
-  <artifact name="NutritionOrder (was NutritionRequest)" key="NutritionRequest" workgroup="oo"/>
-  <artifact name="Observation" key="Observation" workgroup="oo"/>
-  <artifact name="ObservationDefinition" key="ObservationDefinition" workgroup="oo"/>
-  <artifact name="OccupationalData" key="OccupationalData" workgroup="pher" deprecated="true"/>
-  <artifact name="OperationDefinition" key="OperationDefinition" workgroup="fhir-i"/>
-  <artifact name="OperationOutcome" key="OperationOutcome" workgroup="fhir-i"/>
-  <artifact name="Order (see Task)" key="Order" workgroup="oo" deprecated="true"/>
-  <artifact name="OrderResponse (see Task)" key="OrderResponse" workgroup="oo" deprecated="true"/>
-  <artifact name="Organization" key="Organization" workgroup="pa"/>
-  <artifact name="OrganizationAffiliation (was OrganizationRole)" key="OrganizationRole" workgroup="pa"/>
-  <artifact name="Parameters" key="Parameters" workgroup="fhir-i"/>
-  <artifact name="Patient" key="Patient" workgroup="pa"/>
-  <artifact name="PaymentNotice" key="PaymentNotice" workgroup="fm"/>
-  <artifact name="PaymentReconciliation" key="PaymentReconciliation" workgroup="fm"/>
-  <artifact name="PendedRequest" key="PendedRequest" workgroup="fm" deprecated="true"/>
-  <artifact name="Person" key="Person" workgroup="pa"/>
-  <artifact name="PlanDefinition" key="PlanDefinition" workgroup="cds"/>
-  <artifact name="Practitioner" key="Practitioner" workgroup="pa"/>
-  <artifact name="PractitionerRole" key="PractitionerRole" workgroup="pa"/>
-  <artifact name="Procedure" key="Procedure" workgroup="pc"/>
-  <artifact name="ProcedureRequest (see ServiceRequest)" key="ProcedureRequest" workgroup="pc" deprecated="true"/>
-  <artifact name="ProcessRequest" key="ProcessRequest" workgroup="fm" deprecated="true"/>
-  <artifact name="ProcessResponse" key="ProcessResponse" workgroup="fm" deprecated="true"/>
-  <artifact name="Provenance" key="Provenance" workgroup="security"/>
-  <artifact name="Query (see OperationDefinition)" key="Query" workgroup="fhir-i" deprecated="true"/>
-  <artifact name="Questionnaire" key="Questionnaire" workgroup="fhir-i"/>
-  <artifact name="QuestionnaireResponse" key="QuestionnaireAnswers" workgroup="fhir-i"/>
-  <artifact name="ReferralRequest (see ServiceRequest)" key="ReferrralRequest" workgroup="pc" deprecated="true"/>
-  <artifact name="RelatedPerson" key="RelatedPerson" workgroup="pa"/>
-  <artifact name="RequestGroup" key="RequestGroup" workgroup="cds"/>
-  <artifact name="ResearchStudy" key="ResearchStudy" workgroup="brr"/>
-  <artifact name="ResearchSubject" key="ResearchSubject" workgroup="brr"/>
-  <artifact name="Reversal" key="Reversal" workgroup="fm" deprecated="true"/>
-  <artifact name="RiskAssessment" key="RiskAssessment" workgroup="pc"/>
-  <artifact name="Schedule" key="Schedule" workgroup="pa"/>
-  <artifact name="SearchParameter" key="SearchParameter" workgroup="fhir-i"/>
-  <artifact name="ServiceDefinition" key="ServiceDefinition" workgroup="cds" deprecated="true"/>
-  <artifact name="ServiceRequest (Diagnostic/Procedure/ReferralRequest)" key="ServiceRequest" workgroup="oo"/>
-  <artifact name="Slot" key="Slot" workgroup="pa"/>
-  <artifact name="Specimen" key="Specimen" workgroup="oo"/>
-  <artifact name="SpecimenDefinition" key="SpecimenDefinition" workgroup="oo"/>
-  <artifact name="StructureDefinition" key="StructureDefinition" workgroup="fhir-i"/>
-  <artifact name="StructureMap" key="StructureMap" workgroup="fhir-i"/>
-  <artifact name="Subscription" key="Subscription" workgroup="fhir-i"/>
-  <artifact name="Substance" key="Substance" workgroup="oo"/>
-  <artifact name="SubstancePolymer" key="SubstancePolymer" workgroup="oo"/>
-  <artifact name="SubstanceReferenceInformation" key="SubstanceReferenceInformation" workgroup="oo"/>
-  <artifact name="SubstanceSpecification" key="SubstanceSpecification" workgroup="oo"/>
-  <artifact name="SupplyDelivery (was Supply)" key="Supply" workgroup="oo"/>
-  <artifact name="SupplyRequest" key="SupplyRequest" workgroup="oo"/>
-  <artifact name="SupportingDocumentation" key="SupportingDocumentation" workgroup="fm" deprecated="true"/>
-  <artifact name="Task" key="Task" workgroup="oo"/>
-  <artifact name="TerminologyCapabilities" key="TerminologyCapabilities" workgroup="vocab"/>
-  <artifact name="TestReport" key="TestReport" workgroup="fhir-i"/>
-  <artifact name="TestScript" key="TestScript" workgroup="fhir-i"/>
-  <artifact name="Topic" key="Topic" workgroup="fhir-i"/>
-  <artifact name="UserSession" key="UserSession" workgroup="security"/>
-  <artifact name="ValueSet" key="ValueSet" workgroup="vocab"/>
-  <artifact name="VerificationResult" key="VerificationResult" workgroup="pa"/>
-  <artifact name="VisionPrescription" key="VisionPrescription" workgroup="fm"/>
-  <artifact name="Definition Pattern" key="_Definition" workgroup="fhir-i"/>
-  <artifact name="Event Pattern" key="_Event" workgroup="fhir-i"/>
-  <artifact name="Request Pattern" key="_Request" workgroup="fhir-i"/>
+  <artifact name="DomainResource" key="DomainResource" id="StructureDefinition/DomainResource" workgroup="fhir-i"/>
+  <artifact name="BaseResource" key="BaseResource" id="StructureDefinition/Resource" workgroup="fhir-i"/>
+  <artifact name="MetadataResource" key="MetadataResource" id="StructureDefinition/MetadataResource" workgroup="fhir-i"/>
+  <artifact name="Account" key="Account" id="StructureDefinition/Account" workgroup="pa"/>
+  <artifact name="ActivityDefinition" key="ActivityDefinition" id="StructureDefinition/ActivityDefinition" workgroup="cds"/>
+  <artifact name="AdverseReaction (see AdverseEvent)" key="AdverseReaction" id="StructureDefinition/AdverseReaction" workgroup="pc" deprecated="true"/>
+  <artifact name="AdverseEvent" key="AdverseEvent" id="StructureDefinition/AdverseEvent" workgroup="pc"/>
+  <artifact name="AllergyIntolerance" key="AllergyIntolerance" id="StructureDefinition/AllergyIntolerance" workgroup="pc"/>
+  <artifact name="Appointment" key="Appointment" id="StructureDefinition/Appointment" workgroup="pa"/>
+  <artifact name="AppointmentResponse" key="AppointmentResponse" id="StructureDefinition/AppointmentResponse" workgroup="pa"/>
+  <artifact name="AuditEvent" key="AuditEvent" id="StructureDefinition/AuditEvent" workgroup="security"/>
+  <artifact name="Basic" key="Basic" id="StructureDefinition/Basic" workgroup="fhir-i"/>
+  <artifact name="Binary" key="Binary" id="StructureDefinition/Binary" workgroup="fhir-i"/>
+  <artifact name="BiologicallyDerivedProduct" key="BiologicallyDerivedProduct" id="StructureDefinition/BiologicallyDerivedProduct" workgroup="brr"/>
+  <artifact name="BodyStructure" key="BodySite" id="StructureDefinition/BodySite" workgroup="oo"/>
+  <artifact name="Bundle" key="Feed" id="StructureDefinition/Feed" workgroup="fhir-i"/>
+  <artifact name="CapabilityStatement (Conformance)" key="Conformance" id="StructureDefinition/Conformance" workgroup="fhir-i"/>
+  <artifact name="CarePlan" key="CarePlan" id="StructureDefinition/CarePlan" workgroup="pc"/>
+  <artifact name="CareTeam" key="CareTeam" id="StructureDefinition/CareTeam" workgroup="pc"/>
+  <artifact name="CatalogEntry" key="EntryDefinition" id="StructureDefinition/EntryDefinition" workgroup="oo"/>
+  <artifact name="ChargeItem" key="ChargeItem" id="StructureDefinition/ChargeItem" workgroup="pa"/>
+  <artifact name="ChargeItemDefinition" key="ChargeItemDefinition" id="StructureDefinition/ChargeItemDefinition" workgroup="pa"/>
+  <artifact name="Claim" key="Claim" id="StructureDefinition/Claim" workgroup="fm"/>
+  <artifact name="ClaimResponse" key="ClaimResponse" id="StructureDefinition/ClaimResponse" workgroup="fm"/>
+  <artifact name="ClinicalImpression" key="ClinicalImpression" id="StructureDefinition/ClinicalImpression" workgroup="pc"/>
+  <artifact name="CodeSystem" key="CodeSystem" id="StructureDefinition/CodeSystem" workgroup="vocab"/>
+  <artifact name="Communication" key="Communication" id="StructureDefinition/Communication" workgroup="pc"/>
+  <artifact name="CommunicationRequest" key="CommunicationRequest" id="StructureDefinition/CommunicationRequest" workgroup="pc"/>
+  <artifact name="CompartmentDefinition" key="CompartmentDefinition" id="StructureDefinition/CompartmentDefinition" workgroup="fhir-i"/>
+  <artifact name="Composition" key="Composition" id="StructureDefinition/Composition" workgroup="sd"/>
+  <artifact name="ConceptMap" key="ConceptMap" id="StructureDefinition/ConceptMap" workgroup="vocab"/>
+  <artifact name="Condition" key="Condition" id="StructureDefinition/Condition" workgroup="pc"/>
+  <artifact name="Consent" key="Consent" id="StructureDefinition/Consent" workgroup="cbcc"/>
+  <artifact name="Contract" key="Contract" id="StructureDefinition/Contract" workgroup="fm"/>
+  <artifact name="Coverage" key="Coverage" id="StructureDefinition/Coverage" workgroup="fm"/>
+  <artifact name="CoverageEligibilityRequest" key="EligibilityRequest" id="StructureDefinition/EligibilityRequest" workgroup="fm"/>
+  <artifact name="CoverageEligibilityResponse" key="EligibilityResponse" id="StructureDefinition/EligibilityResponse" workgroup="fm"/>
+  <artifact name="DataElement (see StructureDefinition)" key="DataElement" id="StructureDefinition/DataElement" workgroup="oo" deprecated="true"/>
+  <artifact name="DecisionSupportServiceModule" key="DecisionSupportServiceModule" id="StructureDefinition/DecisionSupportServiceModule" workgroup="cds" deprecated="true"/>
+  <artifact name="DetectedIssue" key="Alert" id="StructureDefinition/Alert" workgroup="cds"/>
+  <artifact name="Device" key="Device" id="StructureDefinition/Device" workgroup="oo"/>
+  <artifact name="DeviceComponent" key="DeviceComponent" id="StructureDefinition/DeviceComponent" workgroup="dev" deprecated="true"/>
+  <artifact name="DeviceDefinition" key="DeviceDefinition" id="StructureDefinition/DeviceDefinition" workgroup="oo"/>
+  <artifact name="DeviceMetric" key="DeviceMetric" id="StructureDefinition/DeviceMetric" workgroup="dev"/>
+  <artifact name="DeviceObservationReport" key="DeviceObservationReport" id="StructureDefinition/DeviceObservationReport" workgroup="dev" deprecated="true"/>
+  <artifact name="DeviceRequest (was DeviceUseRequest)" key="DeviceUseRequest" id="StructureDefinition/DeviceUseRequest" workgroup="oo"/>
+  <artifact name="DeviceUseStatement" key="DeviceUseStatement" id="StructureDefinition/DeviceUseStatement" workgroup="oo"/>
+  <artifact name="DiagnosticReport" key="DiagnosticReport" id="StructureDefinition/DiagnosticReport" workgroup="oo"/>
+  <artifact name="DiagnosticRequest (see ServiceRequest)" key="DiagnosticRequest" id="StructureDefinition/DiagnosticRequest" workgroup="oo" deprecated="true"/>
+  <artifact name="DocumentManifest" key="DocumentManifest" id="StructureDefinition/DocumentManifest" workgroup="sd"/>
+  <artifact name="DocumentReference" key="DocumentReference" id="StructureDefinition/DocumentReference" workgroup="sd"/>
+  <artifact name="Encounter" key="Encounter" id="StructureDefinition/Encounter" workgroup="pa"/>
+  <artifact name="EndPoint" key="EndPoint" id="StructureDefinition/EndPoint" workgroup="pa"/>
+  <artifact name="EnrollmentRequest" key="EnrollmentRequest" id="StructureDefinition/EnrollmentRequest" workgroup="fm"/>
+  <artifact name="EnrollmentResponse" key="EnrollmentResponse" id="StructureDefinition/EnrollmentResponse" workgroup="fm"/>
+  <artifact name="EpisodeOfCare" key="EpisodeOfCare" id="StructureDefinition/EpisodeOfCare" workgroup="pc"/>
+  <artifact name="EventDefinition" key="EventDefinition" id="StructureDefinition/EventDefinition"/>
+  <artifact name="Evidence" key="Evidence" id="StructureDefinition/Evidence" workgroup="cds"/>
+  <artifact name="EvidenceVariable" key="EvidenceVariable" id="StructureDefinition/EvidenceVariable" workgroup="cds"/>
+  <artifact name="ExampleScenario" key="ExampleScenario" id="StructureDefinition/ExampleScenario" workgroup="fhir-i"/>
+  <artifact name="ExpansionProfile" key="ExpansionProfile" id="StructureDefinition/ExpansionProfile" workgroup="vocab" deprecated="true"/>
+  <artifact name="ExplanationOfBenefit" key="ExplanationOfBenefit" id="StructureDefinition/ExplanationOfBenefit" workgroup="fm"/>
+  <artifact name="ExtensionDefinition (see StructureDefinition)" key="ExtensionDefinition" id="StructureDefinition/ExtensionDefinition" workgroup="fhir-i" deprecated="true"/>
+  <artifact name="FamilyMemberHistory" key="FamilyHistory" id="StructureDefinition/FamilyHistory" workgroup="pc"/>
+  <artifact name="Flag" key="Flag" id="StructureDefinition/Flag" workgroup="pc"/>
+  <artifact name="Goal" key="Goal" id="StructureDefinition/Goal" workgroup="pc"/>
+  <artifact name="GraphDefinition" key="GraphDefinition" id="StructureDefinition/GraphDefinition" workgroup="fhir-i"/>
+  <artifact name="Group" key="Group" id="StructureDefinition/Group" workgroup="pa"/>
+  <artifact name="GuidanceResponse" key="GuidanceResponse" id="StructureDefinition/GuidanceResponse" workgroup="cds"/>
+  <artifact name="HealthcareService" key="HealthcareService" id="StructureDefinition/HealthcareService" workgroup="pa"/>
+  <artifact name="ImagingManifest" key="ImagingManifest" id="StructureDefinition/ImagingManifest" workgroup="ii" deprecated="true"/>
+  <artifact name="ImagingStudy" key="ImagingStudy" id="StructureDefinition/ImagingStudy" workgroup="ii"/>
+  <artifact name="Immunization" key="Immunization" id="StructureDefinition/Immunization" workgroup="pher"/>
+  <artifact name="ImmunizationEvaluation" key="ImmunizationEvaluation" id="StructureDefinition/ImmunizationEvaluation" workgroup="pher"/>
+  <artifact name="ImmunizationRecommendation" key="ImmunizationRecommendation" id="StructureDefinition/ImmunizationRecommendation" workgroup="pher"/>
+  <artifact name="ImplementationGuide" key="ImplementationGuide" id="StructureDefinition/ImplementationGuide" workgroup="fhir-i"/>
+  <artifact name="InsurancePlan" key="ProductPlan" id="StructureDefinition/ProductPlan" workgroup="pa"/>
+  <artifact name="Invoice" key="Invoice" id="StructureDefinition/Invoice" workgroup="fm"/>
+  <artifact name="ItemInstance" key="ItemInstance" id="StructureDefinition/ItemInstance" workgroup="oo"/>
+  <artifact name="Library" key="Library" id="StructureDefinition/Library" workgroup="cds"/>
+  <artifact name="Linkage" key="Linkage" id="StructureDefinition/Linkage" workgroup="fhir-i"/>
+  <artifact name="List" key="List" id="StructureDefinition/List" workgroup="fhir-i"/>
+  <artifact name="Location" key="Location" id="StructureDefinition/Location" workgroup="pa"/>
+  <artifact name="Measure" key="Measure" id="StructureDefinition/Measure" workgroup="cqi"/>
+  <artifact name="MeasureReport" key="MeasureReport" id="StructureDefinition/MeasureReport" workgroup="cqi"/>
+  <artifact name="Media" key="Media" id="StructureDefinition/Media" workgroup="oo"/>
+  <artifact name="Medication" key="Medication" id="StructureDefinition/Medication" workgroup="pharm"/>
+  <artifact name="MedicationAdministration" key="MedicationAdministration" id="StructureDefinition/MedicationAdministration" workgroup="pharm"/>
+  <artifact name="MedicationDispense" key="MedicationDispense" id="StructureDefinition/MedicationDispense" workgroup="pharm"/>
+  <artifact name="MedicationKnowledge" key="MedicationKnowledge" id="StructureDefinition/MedicationKnowledge" workgroup="pharm"/>
+  <artifact name="MedicationRequest" key="MedicationPrescription" id="StructureDefinition/MedicationPrescription" workgroup="pharm"/>
+  <artifact name="MedicationUsage (MedicationStatement)" key="MedicationStatement" id="StructureDefinition/MedicationStatement" workgroup="pharm"/>
+  <artifact name="MedicinalProduct" key="MedicinalProduct" id="StructureDefinition/MedicinalProduct" workgroup="brr"/>
+  <artifact name="MedicinalProductAuthorization" key="MedicinalProductAuthorization" id="StructureDefinition/MedicinalProductAuthorization" workgroup="brr"/>
+  <artifact name="MedicinalProductClinicals" key="MedicinalProductClinicals" id="StructureDefinition/MedicinalProductClinicals" workgroup="brr"/>
+  <artifact name="MedicinalProductContraindication" key="MedicinalProductContraindication" id="StructureDefinition/MedicinalProductContraindication" workgroup="brr"/>
+  <artifact name="MedicinalProductDeviceSpec" key="MedicinalProductDeviceSpec" id="StructureDefinition/MedicinalProductDeviceSpec" workgroup="brr"/>
+  <artifact name="MedicinalProductIndication" key="MedicinalProductIndication" id="StructureDefinition/MedicinalProductIndication" workgroup="brr"/>
+  <artifact name="MedicinalProductIngredient" key="MedicinalProductIngredient" id="StructureDefinition/MedicinalProductIngredient" workgroup="brr"/>
+  <artifact name="MedicinalProductInteraction" key="MedicinalProductInteraction" id="StructureDefinition/MedicinalProductInteraction" workgroup="brr"/>
+  <artifact name="MedicinalProductManufactured" key="MedicinalProductManufactured" id="StructureDefinition/MedicinalProductManufactured" workgroup="brr"/>
+  <artifact name="MedicinalProductPackaged" key="MedicinalProductPackaged" id="StructureDefinition/MedicinalProductPackaged" workgroup="brr"/>
+  <artifact name="MedicinalProductPharmaceutical" key="MedicinalProductPharmaceutical" id="StructureDefinition/MedicinalProductPharmaceutical" workgroup="brr"/>
+  <artifact name="MedicinalProductUndesireableEffect" key="MedicinalProductUndesireableEffect" id="StructureDefinition/MedicinalProductUndesireableEffect" workgroup="brr"/>
+  <artifact name="MessageDefinition" key="MessageDefinition" id="StructureDefinition/MessageDefinition" workgroup="fhir-i"/>
+  <artifact name="MessageHeader" key="MessageHeader" id="StructureDefinition/MessageHeader" workgroup="fhir-i"/>
+  <artifact name="MolecularSequence (was Sequence)" key="Sequence" id="StructureDefinition/Sequence" workgroup="cg"/>
+  <artifact name="NamingSystem" key="NamingSystem" id="StructureDefinition/NamingSystem" workgroup="fhir-i"/>
+  <artifact name="NutritionOrder (was NutritionRequest)" key="NutritionRequest" id="StructureDefinition/NutritionRequest" workgroup="oo"/>
+  <artifact name="Observation" key="Observation" id="StructureDefinition/Observation" workgroup="oo"/>
+  <artifact name="ObservationDefinition" key="ObservationDefinition" id="StructureDefinition/ObservationDefinition" workgroup="oo"/>
+  <artifact name="OccupationalData" key="OccupationalData" id="StructureDefinition/OccupationalData" workgroup="pher" deprecated="true"/>
+  <artifact name="OperationDefinition" key="OperationDefinition" id="StructureDefinition/OperationDefinition" workgroup="fhir-i"/>
+  <artifact name="OperationOutcome" key="OperationOutcome" id="StructureDefinition/OperationOutcome" workgroup="fhir-i"/>
+  <artifact name="Order (see Task)" key="Order" id="StructureDefinition/Order" workgroup="oo" deprecated="true"/>
+  <artifact name="OrderResponse (see Task)" key="OrderResponse" id="StructureDefinition/OrderResponse" workgroup="oo" deprecated="true"/>
+  <artifact name="Organization" key="Organization" id="StructureDefinition/Organization" workgroup="pa"/>
+  <artifact name="OrganizationAffiliation (was OrganizationRole)" key="OrganizationRole" id="StructureDefinition/OrganizationRole" workgroup="pa"/>
+  <artifact name="Parameters" key="Parameters" id="StructureDefinition/Parameters" workgroup="fhir-i"/>
+  <artifact name="Patient" key="Patient" id="StructureDefinition/Patient" workgroup="pa"/>
+  <artifact name="PaymentNotice" key="PaymentNotice" id="StructureDefinition/PaymentNotice" workgroup="fm"/>
+  <artifact name="PaymentReconciliation" key="PaymentReconciliation" id="StructureDefinition/PaymentReconciliation" workgroup="fm"/>
+  <artifact name="PendedRequest" key="PendedRequest" id="StructureDefinition/PendedRequest" workgroup="fm" deprecated="true"/>
+  <artifact name="Person" key="Person" id="StructureDefinition/Person" workgroup="pa"/>
+  <artifact name="PlanDefinition" key="PlanDefinition" id="StructureDefinition/PlanDefinition" workgroup="cds"/>
+  <artifact name="Practitioner" key="Practitioner" id="StructureDefinition/Practitioner" workgroup="pa"/>
+  <artifact name="PractitionerRole" key="PractitionerRole" id="StructureDefinition/PractitionerRole" workgroup="pa"/>
+  <artifact name="Procedure" key="Procedure" id="StructureDefinition/Procedure" workgroup="pc"/>
+  <artifact name="ProcedureRequest (see ServiceRequest)" key="ProcedureRequest" id="StructureDefinition/ProcedureRequest" workgroup="pc" deprecated="true"/>
+  <artifact name="ProcessRequest" key="ProcessRequest" id="StructureDefinition/ProcessRequest" workgroup="fm" deprecated="true"/>
+  <artifact name="ProcessResponse" key="ProcessResponse" id="StructureDefinition/ProcessResponse" workgroup="fm" deprecated="true"/>
+  <artifact name="Provenance" key="Provenance" id="StructureDefinition/Provenance" workgroup="security"/>
+  <artifact name="Query (see OperationDefinition)" key="Query" id="StructureDefinition/Query" workgroup="fhir-i" deprecated="true"/>
+  <artifact name="Questionnaire" key="Questionnaire" id="StructureDefinition/Questionnaire" workgroup="fhir-i"/>
+  <artifact name="QuestionnaireResponse" key="QuestionnaireAnswers" id="StructureDefinition/QuestionnaireAnswers" workgroup="fhir-i"/>
+  <artifact name="ReferralRequest (see ServiceRequest)" key="ReferrralRequest" id="StructureDefinition/ReferrralRequest" workgroup="pc" deprecated="true"/>
+  <artifact name="RelatedPerson" key="RelatedPerson" id="StructureDefinition/RelatedPerson" workgroup="pa"/>
+  <artifact name="RequestGroup" key="RequestGroup" id="StructureDefinition/RequestGroup" workgroup="cds"/>
+  <artifact name="ResearchStudy" key="ResearchStudy" id="StructureDefinition/ResearchStudy" workgroup="brr"/>
+  <artifact name="ResearchSubject" key="ResearchSubject" id="StructureDefinition/ResearchSubject" workgroup="brr"/>
+  <artifact name="Reversal" key="Reversal" id="StructureDefinition/Reversal" workgroup="fm" deprecated="true"/>
+  <artifact name="RiskAssessment" key="RiskAssessment" id="StructureDefinition/RiskAssessment" workgroup="pc"/>
+  <artifact name="Schedule" key="Schedule" id="StructureDefinition/Schedule" workgroup="pa"/>
+  <artifact name="SearchParameter" key="SearchParameter" id="StructureDefinition/SearchParameter" workgroup="fhir-i"/>
+  <artifact name="ServiceDefinition" key="ServiceDefinition" id="StructureDefinition/ServiceDefinition" workgroup="cds" deprecated="true"/>
+  <artifact name="ServiceRequest (Diagnostic/Procedure/ReferralRequest)" key="ServiceRequest" id="StructureDefinition/ServiceRequest" workgroup="oo"/>
+  <artifact name="Slot" key="Slot" id="StructureDefinition/Slot" workgroup="pa"/>
+  <artifact name="Specimen" key="Specimen" id="StructureDefinition/Specimen" workgroup="oo"/>
+  <artifact name="SpecimenDefinition" key="SpecimenDefinition" id="StructureDefinition/SpecimenDefinition" workgroup="oo"/>
+  <artifact name="StructureDefinition" key="StructureDefinition" id="StructureDefinition/StructureDefinition" workgroup="fhir-i"/>
+  <artifact name="StructureMap" key="StructureMap" id="StructureDefinition/StructureMap" workgroup="fhir-i"/>
+  <artifact name="Subscription" key="Subscription" id="StructureDefinition/Subscription" workgroup="fhir-i"/>
+  <artifact name="Substance" key="Substance" id="StructureDefinition/Substance" workgroup="oo"/>
+  <artifact name="SubstancePolymer" key="SubstancePolymer" id="StructureDefinition/SubstancePolymer" workgroup="oo"/>
+  <artifact name="SubstanceReferenceInformation" key="SubstanceReferenceInformation" id="StructureDefinition/SubstanceReferenceInformation" workgroup="oo"/>
+  <artifact name="SubstanceSpecification" key="SubstanceSpecification" id="StructureDefinition/SubstanceSpecification" workgroup="oo"/>
+  <artifact name="SupplyDelivery (was Supply)" key="Supply" id="StructureDefinition/Supply" workgroup="oo"/>
+  <artifact name="SupplyRequest" key="SupplyRequest" id="StructureDefinition/SupplyRequest" workgroup="oo"/>
+  <artifact name="SupportingDocumentation" key="SupportingDocumentation" id="StructureDefinition/SupportingDocumentation" workgroup="fm" deprecated="true"/>
+  <artifact name="Task" key="Task" id="StructureDefinition/Task" workgroup="oo"/>
+  <artifact name="TerminologyCapabilities" key="TerminologyCapabilities" id="StructureDefinition/TerminologyCapabilities" workgroup="vocab"/>
+  <artifact name="TestReport" key="TestReport" id="StructureDefinition/TestReport" workgroup="fhir-i"/>
+  <artifact name="TestScript" key="TestScript" id="StructureDefinition/TestScript" workgroup="fhir-i"/>
+  <artifact name="Topic" key="Topic" id="StructureDefinition/Topic" workgroup="fhir-i"/>
+  <artifact name="UserSession" key="UserSession" id="StructureDefinition/UserSession" workgroup="security"/>
+  <artifact name="ValueSet" key="ValueSet" id="StructureDefinition/ValueSet" workgroup="vocab"/>
+  <artifact name="VerificationResult" key="VerificationResult" id="StructureDefinition/VerificationResult" workgroup="pa"/>
+  <artifact name="VisionPrescription" key="VisionPrescription" id="StructureDefinition/VisionPrescription" workgroup="fm"/>
+  <artifact name="Definition Pattern" key="_Definition" id="StructureDefinition/Definition" workgroup="fhir-i"/>
+  <artifact name="Event Pattern" key="_Event" id="StructureDefinition/Event" workgroup="fhir-i"/>
+  <artifact name="Request Pattern" key="_Request" id="StructureDefinition/Request" workgroup="fhir-i"/>
   <page name="(NA)" key="NA"/>
   <page name="(many)" key="many"/>
   <page name="(methodology)" key="methodology" workgroup="mnm"/>

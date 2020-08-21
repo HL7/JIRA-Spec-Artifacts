@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  When this schema is changed, the following code must be updated to align:
+  - Scriptrunner REST Endpoints: uploadBallotSpreadsheet
+  - BALDEF Workflow (1 class)
+  -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="workgroups">
     <xs:annotation>
@@ -17,7 +22,17 @@
               </xs:annotation>
               <xs:simpleType>
                 <xs:restriction base="xs:NMTOKEN">
-                  <xs:pattern value="[a-z\-]+"/>
+                  <xs:pattern value="[a-z][a-z0-9\-]+"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="webcode" use="optional">
+              <xs:annotation>
+                <xs:documentation>The code used for the work group on the HL7 website.</xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:NMTOKEN">
+                  <xs:pattern value="[a-z][a-z0-9\-]+"/>
                 </xs:restriction>
               </xs:simpleType>
             </xs:attribute>

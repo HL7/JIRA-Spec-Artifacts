@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  When this schema is changed, the following code must be updated to align:
+  - Scriptrunner REST Endpoints: uploadBallotSpreadsheet
+  - BALDEF Workflow (2 classes x 2 locations)
+  - SPEC Workflow (1 class)
+-->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:include schemaLocation="workgroups.xsd"/>
   <xs:element name="specification">
@@ -17,7 +23,7 @@
                 <xs:documentation>The code to display for the version</xs:documentation>
               </xs:annotation>
             </xs:attribute>
-            <xs:attribute name="url" type="xs:anyURI" use="optional">
+            <xs:attribute name="url" type="website" use="optional">
               <xs:annotation>
                 <xs:documentation>The persistant URL associated with this version of the specification.  Used in URL validation.</xs:documentation>
               </xs:annotation>
@@ -42,6 +48,20 @@
             <xs:documentation>A formal artifact that can be referenced as part of feedback on a specification</xs:documentation>
           </xs:annotation>
           <xs:complexType>
+            <xs:sequence>
+              <xs:element name="otherArtifact" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>Indicates additional artifacts whose issues should be reported under the parent artifact</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:attribute name="id" type="NonEmptyString" use="required">
+                    <xs:annotation>
+                      <xs:documentation>The formal identifier for the artifact whose issues are to be reported under the parent artifact</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
             <xs:attribute name="key" type="xs:NMTOKEN" use="required">
               <xs:annotation>
                 <xs:documentation>The key used inside Jira to identify the artifact.  This key must not be renamed and cannot be removed if it appears in any tracker item.</xs:documentation>
@@ -50,6 +70,11 @@
             <xs:attribute name="name" type="Name" use="required">
               <xs:annotation>
                 <xs:documentation>The name to display to users for the artifact.  This can change if the artifact is renamed</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="id" type="NonEmptyString" use="optional">
+              <xs:annotation>
+                <xs:documentation>The formal identifier associated with the artifact (if there is one).  OID for CDA templates, ResourceType/id for FHIR, etc.</xs:documentation>
               </xs:annotation>
             </xs:attribute>
             <xs:attribute name="workgroup" type="WorkGroup" use="optional">
@@ -107,19 +132,24 @@
           </xs:complexType>
         </xs:element>
       </xs:sequence>
-      <xs:attribute name="url" type="xs:anyURI" use="optional">
+      <xs:attribute name="url" type="website" use="optional">
         <xs:annotation>
           <xs:documentation>The official URL for this specification.  Used when validating URLs</xs:documentation>
         </xs:annotation>
       </xs:attribute>
-      <xs:attribute name="ciUrl" type="xs:anyURI" use="optional">
+      <xs:attribute name="ciUrl" type="website" use="optional">
         <xs:annotation>
           <xs:documentation>The continuous integration build URL for this specification.  Used when validating URLs</xs:documentation>
         </xs:annotation>
       </xs:attribute>
-      <xs:attribute name="ballotUrl" type="xs:anyURI" use="optional">
+      <xs:attribute name="ballotUrl" type="website" use="optional">
         <xs:annotation>
           <xs:documentation>The URL for the current/most recent ballot of this specification.  Used when validating URLs</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="gitUrl" type="website" use="optional">
+        <xs:annotation>
+          <xs:documentation>The base URL for the repository in which the source material for this specificaiton is maintained.</xs:documentation>
         </xs:annotation>
       </xs:attribute>
       <xs:attribute name="defaultWorkgroup" type="WorkGroup" use="optional">
@@ -153,6 +183,10 @@
       <xs:selector xpath="artifact"/>
       <xs:field xpath="@name"/>
     </xs:unique>
+    <xs:unique name="artifact-id-unique">
+      <xs:selector xpath="artifact"/>
+      <xs:field xpath="@id"/>
+    </xs:unique>
     <xs:unique name="page-key-unique">
       <xs:selector xpath="page"/>
       <xs:field xpath="@key"/>
@@ -172,12 +206,17 @@
   </xs:element>
   <xs:simpleType name="website">
     <xs:restriction base="xs:anyURI">
-      <xs:pattern value="http(.)+[^\\/^\\s]"/>
+      <xs:pattern value="http(s)?://(\S)+[^/]"/>
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="Name">
     <xs:restriction base="xs:string">
       <xs:pattern value="[^\s]+([\s][^\s]+)*"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="NonEmptyString">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[^\s]+"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>
