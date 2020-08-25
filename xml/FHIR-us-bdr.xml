@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification gitUrl="https://github.com/HL7/fhir-birthdefectsreporting-ig" ciUrl="http://build.fhir.org/ig/HL7/fhir-birthdefectsreporting-ig" defaultWorkgroup="pher" defaultVersion="current" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
+  <version code="current"/>
+  <artifactPageExtension value="-definitions"/>
+  <artifactPageExtension value="-examples"/>
+  <artifactPageExtension value="-mappings"/>
+  <artifact name="Confirmatory Test" key="StructureDefinition-bdr-confirmatorytest" id="StructureDefinition/bdr-confirmatorytest"/>
+  <artifact name="Message Bundle" key="StructureDefinition-bdr-bundle" id="StructureDefinition/bdr-bundle"/>
+  <artifact name="Message Header" key="StructureDefinition-bdr-messageheader" id="StructureDefinition/bdr-messageheader"/>
+  <artifact name="Newborn Procedure" key="StructureDefinition-bdr-newbornprocedure" id="StructureDefinition/bdr-newbornprocedure"/>
+  <artifact name="Submitting Organization" key="StructureDefinition-bdr-organization" id="StructureDefinition/bdr-organization"/>
+  <artifact name="Responsible Party" key="StructureDefinition-bdr-relatedpersonresponsibleparty" id="StructureDefinition/bdr-relatedpersonresponsibleparty"/>
+  <artifact name="Reportable Diagnosis" key="StructureDefinition-bdr-reportablediagnosis" id="StructureDefinition/bdr-reportablediagnosis"/>
+  <artifact name="Admission to NICU (Observation)" key="StructureDefinition-observation-admission-to-nicu" id="StructureDefinition/observation-admission-to-nicu"/>
+  <artifact name="Birth Head Circumference (Observation)" key="StructureDefinition-observation-birth-head-circumference" id="StructureDefinition/observation-birth-head-circumference"/>
+  <artifact name="Birth Height (Observation)" key="StructureDefinition-observation-birth-height" id="StructureDefinition/observation-birth-height"/>
+  <artifact name="Cause of Death (Observation)" key="StructureDefinition-observation-cause-of-death" id="StructureDefinition/observation-cause-of-death"/>
+  <artifact name="Location of Death (Observation)" key="StructureDefinition-observation-location-of-death" id="StructureDefinition/observation-location-of-death"/>
+  <artifact name="Mother's Alcohol Use (Observation)" key="StructureDefinition-observation-mother-alcohol-use" id="StructureDefinition/observation-mother-alcohol-use"/>
+  <artifact name="Mother's Drug Use (Observation)" key="StructureDefinition-observation-mother-drug-use" id="StructureDefinition/observation-mother-drug-use"/>
+  <artifact name="Mother's Exposure (Observation)" key="StructureDefinition-observation-mother-exposure" id="StructureDefinition/observation-mother-exposure"/>
+  <artifact name="Mother's Primary Insurance (Observation)" key="StructureDefinition-observation-mother-insurance" id="StructureDefinition/observation-mother-insurance"/>
+  <artifact name="Mother's Labor Onset (Observation)" key="StructureDefinition-observation-mother-labor-onset" id="StructureDefinition/observation-mother-labor-onset"/>
+  <artifact name="Pregnancy Outcome (Observation)" key="StructureDefinition-observation-pregnancy-outcome" id="StructureDefinition/observation-pregnancy-outcome"/>
+  <artifact name="Previous Preterm Births (Observation)" key="StructureDefinition-observation-previous-preterm-births" id="StructureDefinition/observation-previous-preterm-births"/>
+  <artifact name="Total Pregnancies (Observation)" key="StructureDefinition-observation-total-pregnancies" id="StructureDefinition/observation-total-pregnancies"/>
+  <artifact name="Birth Defect Reporting Event Types Value Set" key="ValueSet-bdr-eventtypes" id="ValueSet/bdr-eventtypes"/>
+  <artifact name="Newborn Procedure Value Set" key="ValueSet-bdr-procedurelist" id="ValueSet/bdr-procedurelist"/>
+  <artifact name="Admission To NICU Example" key="Observation-AdmissionToNicuExample" id="Observation/AdmissionToNicuExample"/>
+  <artifact name="APGAR Five Minute Example" key="Observation-ApgarFiveMinuteExample" id="Observation/ApgarFiveMinuteExample"/>
+  <artifact name="APGAR Ten Minute Example" key="Observation-ApgarTenMinuteExample" id="Observation/ApgarTenMinuteExample"/>
+  <artifact name="Autopsy Performed Example" key="Observation-AutopsyPerformedExample" id="Observation/AutopsyPerformedExample"/>
+  <artifact name="Birthing Message Bundle Example" key="Bundle-BDRMessageBundleBirthingExample" id="Bundle/BDRMessageBundleBirthingExample"/>
+  <artifact name="Message Bundle Example" key="Bundle-BDRMessageBundleExample" id="Bundle/BDRMessageBundleExample"/>
+  <artifact name="Stillborn Message Bundle Example" key="Bundle-BDRMessageBundleStillbornExample" id="Bundle/BDRMessageBundleStillbornExample"/>
+  <artifact name="Birthing Message Header Example" key="MessageHeader-BDRMessageHeaderBirthingExample" id="MessageHeader/BDRMessageHeaderBirthingExample"/>
+  <artifact name="Message Header Example" key="MessageHeader-BDRMessageHeaderExample" id="MessageHeader/BDRMessageHeaderExample"/>
+  <artifact name="Stillborn Message Header Example" key="MessageHeader-BDRMessageHeaderExampleStillborn" id="MessageHeader/BDRMessageHeaderExampleStillborn"/>
+  <artifact name="Birth Head Circumference Example" key="Observation-BirthHeadCircumferenceExample" id="Observation/BirthHeadCircumferenceExample"/>
+  <artifact name="Birth Height Example" key="Observation-BirthHeightExample" id="Observation/BirthHeightExample"/>
+  <artifact name="Birth Weight Example" key="Observation-BirthWeightExample" id="Observation/BirthWeightExample"/>
+  <artifact name="Births Now Dead Example" key="Observation-BirthsNowDeadExample" id="Observation/BirthsNowDeadExample"/>
+  <artifact name="Births Now Living Example" key="Observation-BirthsNowLivingExample" id="Observation/BirthsNowLivingExample"/>
+  <artifact name="Cause Of Death Example" key="Observation-CauseOfDeathExample" id="Observation/CauseOfDeathExample"/>
+  <artifact name="Clinic Submittter Example" key="Organization-ClinicSubmittterExample" id="Organization/ClinicSubmittterExample"/>
+  <artifact name="Confirmatory Test Example (WES)" key="Procedure-ConfirmatoryTestExampleWES" id="Procedure/ConfirmatoryTestExampleWES"/>
+  <artifact name="Father Education Birthing Example" key="Observation-FatherEducationBirthingExample" id="Observation/FatherEducationBirthingExample"/>
+  <artifact name="Father Education Example" key="Observation-FatherEducationExample" id="Observation/FatherEducationExample"/>
+  <artifact name="Father Related Person Birthing Example" key="RelatedPerson-FatherRelatedPersonBirthingExample" id="RelatedPerson/FatherRelatedPersonBirthingExample"/>
+  <artifact name="Father Related Person Example" key="RelatedPerson-FatherRelatedPersonExample" id="RelatedPerson/FatherRelatedPersonExample"/>
+  <artifact name="Number of Fetal Deaths Example" key="Observation-FetalDeathsExample" id="Observation/FetalDeathsExample"/>
+  <artifact name="Fetus Procedure Example" key="Procedure-FetusProcedureExample" id="Procedure/FetusProcedureExample"/>
+  <artifact name="Gestational Age Example" key="Observation-GestationalAgeExample" id="Observation/GestationalAgeExample"/>
+  <artifact name="Hospital Submittter Example" key="Organization-HospitalSubmittterExample" id="Organization/HospitalSubmittterExample"/>
+  <artifact name="Infant Living Birthing Example" key="Observation-InfantLivingBirthingExample" id="Observation/InfantLivingBirthingExample"/>
+  <artifact name="Infant Living Fetus Example" key="Observation-InfantLivingFetusExample" id="Observation/InfantLivingFetusExample"/>
+  <artifact name="LMP Example" key="Observation-LMPExample" id="Observation/LMPExample"/>
+  <artifact name="Labor Onset Example" key="Observation-LaborOnsetExample" id="Observation/LaborOnsetExample"/>
+  <artifact name="Live Births This Pregnancy Example" key="Observation-LiveBirthsThisPregnancyExample" id="Observation/LiveBirthsThisPregnancyExample"/>
+  <artifact name="Location Of Death Example" key="Observation-LocationOfDeathExample" id="Observation/LocationOfDeathExample"/>
+  <artifact name="Mother Alcohol Use Birthing Example" key="Observation-MotherAlcoholUseBirthingExample" id="Observation/MotherAlcoholUseBirthingExample"/>
+  <artifact name="Mother Alcohol Use Example" key="Observation-MotherAlcoholUseExample" id="Observation/MotherAlcoholUseExample"/>
+  <artifact name="Mother Delivery Weight Example" key="Observation-MotherDeliveryWeightExample" id="Observation/MotherDeliveryWeightExample"/>
+  <artifact name="Mother Education Birthing Example" key="Observation-MotherEducationBirthingExample" id="Observation/MotherEducationBirthingExample"/>
+  <artifact name="Mother Education Example" key="Observation-MotherEducationExample" id="Observation/MotherEducationExample"/>
+  <artifact name="Mother Drug Use Birthing Example" key="Observation-MotherDrugUseBirthingExample" id="Observation/MotherDrugUseBirthingExample"/>
+  <artifact name="Mother Exposure Birthing Example" key="Observation-MotherExposureBirthingExample" id="Observation/MotherExposureBirthingExample"/>
+  <artifact name="Mother Height Example" key="Observation-MotherHeightExample" id="Observation/MotherHeightExample"/>
+  <artifact name="Mother Patient Example" key="Patient-MotherPatientExample" id="Patient/MotherPatientExample"/>
+  <artifact name="Mother Prepregnancy Weight Example" key="Observation-MotherPrepregnancyWeightExample" id="Observation/MotherPrepregnancyWeightExample"/>
+  <artifact name="Mother Related Person Birthing Example" key="RelatedPerson-MotherRelatedPersonBirthingExample" id="RelatedPerson/MotherRelatedPersonBirthingExample"/>
+  <artifact name="Mother Related Person Example" key="RelatedPerson-MotherRelatedPersonExample" id="RelatedPerson/MotherRelatedPersonExample"/>
+  <artifact name="Mother Related Person Stillborn Example" key="RelatedPerson-MotherRelatedPersonStillbornExample" id="RelatedPerson/MotherRelatedPersonStillbornExample"/>
+  <artifact name="Other Outcomes Example" key="Observation-OtherOutcomesExample" id="Observation/OtherOutcomesExample"/>
+  <artifact name="Patient Child Example" key="Patient-PatientChildExample" id="Patient/PatientChildExample"/>
+  <artifact name="Patient Decedent Fetus Example" key="Patient-PatientDecedentFetusExample" id="Patient/PatientDecedentFetusExample"/>
+  <artifact name="Patient Newborn Example" key="Patient-PatientNewbornExample" id="Patient/PatientNewbornExample"/>
+  <artifact name="Place Of Birth Example" key="Observation-PlaceOfBirthExample" id="Observation/PlaceOfBirthExample"/>
+  <artifact name="Plurality Example" key="Observation-PluralityExample" id="Observation/PluralityExample"/>
+  <artifact name="Pregnancy Outcome Example" key="Observation-PregnancyOutcomeExample" id="Observation/PregnancyOutcomeExample"/>
+  <artifact name="Prenatal Visits Example" key="Observation-PrenatalVisitsExample" id="Observation/PrenatalVisitsExample"/>
+  <artifact name="Previous Cesareans Example" key="Observation-PreviousCesareansExample" id="Observation/PreviousCesareansExample"/>
+  <artifact name="Previous Preterm Births Example" key="Observation-PreviousPretermBirthsExample" id="Observation/PreviousPretermBirthsExample"/>
+  <artifact name="Primary Insurance Example" key="Observation-PrimaryInsuranceExample" id="Observation/PrimaryInsuranceExample"/>
+  <artifact name="Reportable Diagnosis Birthing Example" key="Condition-ReportableDiagnosisBirthingExample" id="Condition/ReportableDiagnosisBirthingExample"/>
+  <artifact name="Reportable Diagnosis Example" key="Condition-ReportableDiagnosisExample" id="Condition/ReportableDiagnosisExample"/>
+  <artifact name="Reportable Diagnosis Fetus Example" key="Condition-ReportableDiagnosisFetusExample" id="Condition/ReportableDiagnosisFetusExample"/>
+  <artifact name="Responsible Party Example" key="RelatedPerson-ResponsiblePartyExample" id="RelatedPerson/ResponsiblePartyExample"/>
+  <artifact name="Total Pregnancies Example" key="Observation-TotalPregnanciesExample" id="Observation/TotalPregnanciesExample"/>		 
+  <page name="(NA)" key="NA"/>
+  <page name="(many)" key="many"/>
+  <page name="Table of Contents" key="toc"/>
+  <page name="BDR Home Page" key="index"/>
+  <page name="Scope" key="scope"/>
+  <page name="Use Cases" key="usecases"/>
+  <page name="Examples" key="examples"/>
+  <page name="Must Support Definition" key="msdefinition"/>
+  <page name="Downloads" key="downloads"/>
+</specification>
