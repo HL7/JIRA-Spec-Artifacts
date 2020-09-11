@@ -147,6 +147,11 @@
           <xs:documentation>The URL for the current/most recent ballot of this specification.  Used when validating URLs</xs:documentation>
         </xs:annotation>
       </xs:attribute>
+      <xs:attribute name="gitUrl" type="website" use="optional">
+        <xs:annotation>
+          <xs:documentation>The base URL for the repository in which the source material for this specificaiton is maintained.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
       <xs:attribute name="defaultWorkgroup" type="WorkGroup" use="optional">
         <xs:annotation>
           <xs:documentation>The work group typically associated with issues raised against this specification if a more specific work group isn't determined based on pages or artifacts</xs:documentation>
@@ -201,7 +206,7 @@
   </xs:element>
   <xs:simpleType name="website">
     <xs:restriction base="xs:anyURI">
-      <xs:pattern value="http(s)?://(\S)+"/>
+      <xs:pattern value="http(s)?://(\S)+[^/]"/>
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="Name">
