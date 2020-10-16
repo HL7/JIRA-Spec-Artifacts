@@ -1,10 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/fhir-pacio-functional-status" url="http://hl7.org/fhir/us/pacio-fs" ciUrl="http://build.fhir.org/ig/HL7/fhir-pacio-functional-status" defaultWorkgroup="pc" defaultVersion="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="0.1" url="http://hl7.org/fhir/us/pacio-fs"/>
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="(profiles)" key="profiles"/>
-  <page name="index" key="index"/>
-  <page name="toc" key="toc"/>
-  <page name="usecases" key="usecases"/>
-</specification> 
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               url="http://hl7.org/fhir/us/pacio-fs"
+               ciUrl="http://build.fhir.org/ig/HL7/fhir-pacio-functional-status"
+               defaultWorkgroup="pc"
+               defaultVersion="current"
+               xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
+               gitUrl="https://github.com/HL7/fhir-pacio-functional-status"
+               ballotUrl="http://hl7.org/fhir/us/pacio-fs">
+   <version code="current" url="http://build.fhir.org/ig/example/example-ig"/>
+   <version code="0.0.1" url="http://example.org/fhir/STU1"/>
+   <version code="0.1" deprecated="true"/>
+   <artifactPageExtension value="-definitions"/>
+   <artifactPageExtension value="-examples"/>
+   <artifactPageExtension value="-mappings"/>
+   <artifact name="Bundled Functional Status"
+             key="StructureDefinition-pacio-bfs"
+             id="StructureDefinition/pacio-bfs"/>
+   <artifact name="Functional Status"
+             key="StructureDefinition-pacio-fs"
+             id="StructureDefinition/pacio-fs"/>
+   <artifact name="PACIO Questionnaire Response"
+             key="StructureDefinition-pacio-functional-qr"
+             id="StructureDefinition/pacio-functional-qr"/>
+   <artifact name="Prior Level Of Function"
+             key="StructureDefinition-pacio-plf"
+             id="StructureDefinition/pacio-plf"/>
+   <artifact name="UseOfDevice"
+             key="StructureDefinition-pacio-dev"
+             id="StructureDefinition/pacio-dev"/>
+   <artifact name="AssistanceRequired"
+             key="StructureDefinition-assistance-required"
+             id="StructureDefinition/assistance-required"/>
+   <artifact name="DevicePatientUsed"
+             key="StructureDefinition-device-patient-used"
+             id="StructureDefinition/device-patient-used"/>
+   <artifact name="BFS-Hospital-Discharge-Mobility-1"
+             key="Observation-BFS-Hospital-Discharge-Mobility-1"
+             id="Observation/BFS-Hospital-Discharge-Mobility-1"/>
+   <artifact name="BFS-Hospital-Discharge-Mobility-1-Ob-Question-56"
+             key="Observation-BFS-Hospital-Discharge-Mobility-1-Ob-Question-56"
+             id="Observation/BFS-Hospital-Discharge-Mobility-1-Ob-Question-56"/>
+   <artifact name="BFS-Hospital-Discharge-Mobility-1-UseOfDevice-1"
+             key="DeviceUseStatement-BFS-Hospital-Discharge-Mobility-1-UseOfDevice-1"
+             id="DeviceUseStatement/BFS-Hospital-Discharge-Mobility-1-UseOfDevice-1"/>
+   <artifact name="BFS-Hospital-Discharge-Mobility-1-UseOfDevice-2"
+             key="DeviceUseStatement-BFS-Hospital-Discharge-Mobility-1-UseOfDevice-2"
+             id="DeviceUseStatement/BFS-Hospital-Discharge-Mobility-1-UseOfDevice-2"/>
+   <artifact name="BFS-Hospital-Discharge-Mobility-1-UseOfDevice-3"
+             key="DeviceUseStatement-BFS-Hospital-Discharge-Mobility-1-UseOfDevice-3"
+             id="DeviceUseStatement/BFS-Hospital-Discharge-Mobility-1-UseOfDevice-3"/>
+   <artifact name="BFS-Hospital-Discharge-Mobility-1-UseOfDevice-4"
+             key="DeviceUseStatement-BFS-Hospital-Discharge-Mobility-1-UseOfDevice-4"
+             id="DeviceUseStatement/BFS-Hospital-Discharge-Mobility-1-UseOfDevice-4"/>
+   <artifact name="BFS-Hospital-Discharge-Mobility-1-UseOfDevice-5"
+             key="DeviceUseStatement-BFS-Hospital-Discharge-Mobility-1-UseOfDevice-5"
+             id="DeviceUseStatement/BFS-Hospital-Discharge-Mobility-1-UseOfDevice-5"/>
+   <artifact name="BSJ-Diagnosis1"
+             key="Condition-BSJ-Diagnosis1"
+             id="Condition/BSJ-Diagnosis1"/>
+   <artifact name="BSJ-Diagnosis2"
+             key="Condition-BSJ-Diagnosis2"
+             id="Condition/BSJ-Diagnosis2"/>
+   <artifact name="BSJ-Diagnosis3"
+             key="Condition-BSJ-Diagnosis3"
+             id="Condition/BSJ-Diagnosis3"/>
+   <artifact name="BSJ-Diagnosis4"
+             key="Condition-BSJ-Diagnosis4"
+             id="Condition/BSJ-Diagnosis4"/>
+   <artifact name="BSJ-Diagnosis5"
+             key="Condition-BSJ-Diagnosis5"
+             id="Condition/BSJ-Diagnosis5"/>
+   <artifact name="BSJ-Diagnosis6"
+             key="Condition-BSJ-Diagnosis6"
+             id="Condition/BSJ-Diagnosis6"/>
+   <artifact name="BSJ-Diagnosis7"
+             key="Condition-BSJ-Diagnosis7"
+             id="Condition/BSJ-Diagnosis7"/>
+   <artifact name="BSJ-Diagnosis8"
+             key="Condition-BSJ-Diagnosis8"
+             id="Condition/BSJ-Diagnosis8"/>
+   <artifact name="BSJ-Diagnosis9"
+             key="Condition-BSJ-Diagnosis9"
+             id="Condition/BSJ-Diagnosis9"/>
+   <artifact name="BSJ-Prior-Level-Of-Function-1"
+             key="Observation-BSJ-Prior-Level-Of-Function-1"
+             id="Observation/BSJ-Prior-Level-Of-Function-1"/>
+   <artifact name="CMS-Device-1"
+             key="Device-CMS-Device-1"
+             id="Device/CMS-Device-1"/>
+   <artifact name="CMS-Device-2"
+             key="Device-CMS-Device-2"
+             id="Device/CMS-Device-2"/>
+   <artifact name="CMS-Device-3"
+             key="Device-CMS-Device-3"
+             id="Device/CMS-Device-3"/>
+   <artifact name="CMS-Device-4"
+             key="Device-CMS-Device-4"
+             id="Device/CMS-Device-4"/>
+   <artifact name="CMS-Device-5"
+             key="Device-CMS-Device-5"
+             id="Device/CMS-Device-5"/>
+   <artifact name="CMS-Device-6"
+             key="Device-CMS-Device-6"
+             id="Device/CMS-Device-6"/>
+   <artifact name="CMS-Device-7"
+             key="Device-CMS-Device-7"
+             id="Device/CMS-Device-7"/>
+   <artifact name="Org-01" key="Organization-Org-01" id="Organization/Org-01"/>
+   <artifact name="Org-02" key="Organization-Org-02" id="Organization/Org-02"/>
+   <artifact name="Org-03" key="Organization-Org-03" id="Organization/Org-03"/>
+   <artifact name="Org-Loc-01"
+             key="Location-Org-Loc-01"
+             id="Location/Org-Loc-01"/>
+   <artifact name="Org-Loc-02"
+             key="Location-Org-Loc-02"
+             id="Location/Org-Loc-02"/>
+   <artifact name="Org-Loc-03"
+             key="Location-Org-Loc-03"
+             id="Location/Org-Loc-03"/>
+   <artifact name="Practitioner-DanielGranger"
+             key="Practitioner-Practitioner-DanielGranger"
+             id="Practitioner/Practitioner-DanielGranger"/>
+   <artifact name="Practitioner-HoneyJones"
+             key="Practitioner-Practitioner-HoneyJones"
+             id="Practitioner/Practitioner-HoneyJones"/>
+   <artifact name="Practitioner-JenCadbury"
+             key="Practitioner-Practitioner-JenCadbury"
+             id="Practitioner/Practitioner-JenCadbury"/>
+   <artifact name="Practitioner-JennyGlass"
+             key="Practitioner-Practitioner-JennyGlass"
+             id="Practitioner/Practitioner-JennyGlass"/>
+   <artifact name="Practitioner-JohnSmith"
+             key="Practitioner-Practitioner-JohnSmith"
+             id="Practitioner/Practitioner-JohnSmith"/>
+   <artifact name="Practitioner-LunaBaskins"
+             key="Practitioner-Practitioner-LunaBaskins"
+             id="Practitioner/Practitioner-LunaBaskins"/>
+   <artifact name="Practitioner-NoraOlogist"
+             key="Practitioner-Practitioner-NoraOlogist"
+             id="Practitioner/Practitioner-NoraOlogist"/>
+   <artifact name="Practitioner-RonBurgendy"
+             key="Practitioner-Practitioner-RonBurgendy"
+             id="Practitioner/Practitioner-RonBurgendy"/>
+   <artifact name="Practitioner-RonMarble"
+             key="Practitioner-Practitioner-RonMarble"
+             id="Practitioner/Practitioner-RonMarble"/>
+   <artifact name="Practitioner-SallySmith"
+             key="Practitioner-Practitioner-SallySmith"
+             id="Practitioner/Practitioner-SallySmith"/>
+   <artifact name="Practitioner-ScottDumble"
+             key="Practitioner-Practitioner-ScottDumble"
+             id="Practitioner/Practitioner-ScottDumble"/>
+   <artifact name="QResponse-Hospital-Discharge-Mobility-1"
+             key="QuestionnaireResponse-QResponse-Hospital-Discharge-Mobility-1"
+             id="QuestionnaireResponse/QResponse-Hospital-Discharge-Mobility-1"/>
+   <artifact name="Role-OT"
+             key="PractitionerRole-Role-OT"
+             id="PractitionerRole/Role-OT"/>
+   <artifact name="Role-PT"
+             key="PractitionerRole-Role-PT"
+             id="PractitionerRole/Role-PT"/>
+   <artifact name="Role-RN"
+             key="PractitionerRole-Role-RN"
+             id="PractitionerRole/Role-RN"/>
+   <artifact name="patientBSJ1"
+             key="Patient-patientBSJ1"
+             id="Patient/patientBSJ1"/>
+   <artifact name="provider-org-01"
+             key="Organization-provider-org-01"
+             id="Organization/provider-org-01"/>
+   <artifact name="provider-org-loc-01"
+             key="Location-provider-org-loc-01"
+             id="Location/provider-org-loc-01"/>
+   <artifact name="provider-role-pcp"
+             key="PractitionerRole-provider-role-pcp"
+             id="PractitionerRole/provider-role-pcp"/>
+   <artifact name="PACIO Functional Status Capability Statement"
+             key="CapabilityStatement-pacio-fs"
+             id="CapabilityStatement/pacio-fs"/>
+   <page name="(NA)" key="NA"/>
+   <page name="(many)" key="many"/>
+   <page name="Table of Contents" key="toc"/>
+   <page name="Home" key="index"/>
+   <page name="Functional Status Use Case" key="functional_status_use_case"/>
+   <page name="Profile Highlights and Guidance"
+         key="profile_highlights_and_guidance"/>
+   <page name="Security and Data Sharing" key="security_and_data_sharing"/>
+   <page name="Underlying Technologies" key="underlying_technologies"/>
+   <page name="Artifacts Summary" key="artifacts"/>
+   <page name="(profiles)" key="profiles" deprecated="true"/>
+   <page name="usecases" key="usecases" deprecated="true"/>
+</specification>
