@@ -13907,14 +13907,17 @@
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-pharmacy"
-                  name="US Pharmacy (FHIR)"
+                  name="US Medication FHIR Implementation Guide (FHIR)"
                   gitUrl="https://github.com/HL7/FHIR-ONC-Meds"
                   url="http://hl7.org/fhir/us/meds"
                   ciUrl="http://build.fhir.org/ig/HL7/FHIR-ONC-Meds"
                   defaultWorkgroup="pharm"
-                  defaultVersion="1.1">
-      <version code="1.1"/>
-      <version code="1.0"/>
+                  defaultVersion="1.2.0">
+      <version code="1.2.0"/>
+      <version code="1.1" deprecated="true"/>
+      <version code="1.1.0" deprecated="true"/>
+      <version code="1.0" deprecated="true"/>
+      <version code="1.0.0" deprecated="true"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -13930,11 +13933,46 @@
                 key="FHIR-us-pharmacy-MedicationStatement"
                 deprecated="true"
                 spec="us-pharmacy"/>
+      <artifact name="medicationadministration"
+                id="StructureDefinition/medicationadministration"
+                key="FHIR-us-pharmacy-StructureDefinition-medicationadministration"
+                spec="us-pharmacy"/> 
+      <artifact name="medicationdispense"
+                id="StructureDefinition/medicationdispense"
+                key="FHIR-us-pharmacy-StructureDefinition-medicationdispense"
+                spec="us-pharmacy"/>
+   
+      <artifact name="header-timestamp-extension"
+                id="StructureDefinition/header-timestamp-extension"
+                key="FHIR-us-pharmacy-StructureDefinition-header-timestamp-extension"
+                spec="us-pharmacy"/>
+      <artifact name="response-prescription-period-extension"
+                id="StructureDefinition/response-prescription-period-extension"
+                key="FHIR-us-pharmacy-StructureDefinition-response-prescription-period-extension"
+                spec="us-pharmacy"/>
+      <artifact name="refill-number-extension"
+                id="StructureDefinition/refill-number-extension"
+                key="FHIR-us-pharmacy-StructureDefinition-refill-number-extension"
+                spec="us-pharmacy"/>
+
       <page name="(NA)" key="FHIR-us-pharmacy-NA" spec="us-pharmacy"/>
       <page name="(many)" key="FHIR-us-pharmacy-many" spec="us-pharmacy"/>
-      <page name="(profiles)"
+      <page name="Home" key="FHIR-us-pharmacy-index" spec="us-pharmacy"/>
+      <page name="General Guidance"
+            key="FHIR-us-pharmacy-guidance"
+            spec="us-pharmacy"/>
+      <page name="Profiles and Extensions"
             key="FHIR-us-pharmacy-profiles"
             spec="us-pharmacy"/>
+      <page name="PDMP" key="FHIR-us-pharmacy-pdmp" spec="us-pharmacy"/>   
+      <page name="Capability Statements"
+            key="FHIR-us-pharmacy-capstatements"
+            spec="us-pharmacy"/>
+      <page name="Downloads"
+            key="FHIR-us-pharmacy-downloads"
+            spec="us-pharmacy"/>
+  
+
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-pharmcp"
