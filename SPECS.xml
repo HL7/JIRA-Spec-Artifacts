@@ -6081,16 +6081,58 @@
                   name="Potential Drug-Drug Interaction (PDDI) (FHIR)"
                   gitUrl="https://github.com/HL7/PDDI-CDS"
                   url="http://hl7.org/fhir/uv/pddi"
+                  ballotUrl="http://hl7.org/fhir/uv/pddi/2020SEP"
                   ciUrl="http://build.fhir.org/ig/HL7/PDDI-CDS"
                   defaultWorkgroup="pharm"
-                  defaultVersion="0.1">
-      <version code="0.1"/>
+                  defaultVersion="0.2.0">
+      <version code="0.1" url="http://build.fhir.org/ig/HL7/PDDI-CDS"/>
+      <version code="0.2.0" url="http://hl7.org/fhir/uv/pddi/2020SEP"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
+      <artifact name="PDDIValueSet"
+                key="FHIR-pddi-PDDIValueSet"
+                id="StructureDefinition/PDDICDS-valueset"
+                spec="pddi"/>
+      <artifact name="PDDIRequestGroupActionIndicator"
+                key="FHIR-pddi-PDDIRequestGroupActionIndicator"
+                id="StructureDefinition/PDDICDS-requestgroup-action-indicator"
+                spec="pddi"/>
+      <artifact name="PDDICDSIndicator"
+                key="FHIR-pddi-PDDICDSIndicator"
+                id="CodeSystem/PDDICDS-indicator"
+                spec="pddi"/>
       <page name="(NA)" key="FHIR-pddi-NA" spec="pddi"/>
       <page name="(many)" key="FHIR-pddi-many" spec="pddi"/>
-      <page name="(profiles)" key="FHIR-pddi-profiles" spec="pddi"/>
+      <page name="CDS Service Spec"
+            key="FHIR-pddi-cds-service-spec"
+            url="cds-service-spec"
+            spec="pddi"/>
+      <page name="Knowledge artifacts"
+            key="FHIR-pddi-artifacts"
+            url="artifacts"
+            spec="pddi"/>
+      <page name="Downloads"
+            key="FHIR-pddi-downloads"
+            url="downloads"
+            spec="pddi"/>
+      <page name="Home" key="FHIR-pddi-home" url="index" spec="pddi"/>
+      <page name="Profiles"
+            key="FHIR-pddi-profiles"
+            url="profiles"
+            spec="pddi"/>
+      <page name="Test data"
+            key="FHIR-pddi-test-data"
+            url="test-data"
+            spec="pddi"/>
+      <page name="Terminology"
+            key="FHIR-pddi-terminology"
+            url="terminology"
+            spec="pddi"/>
+      <page name="Use Case"
+            key="FHIR-pddi-use-case"
+            url="use-cases"
+            spec="pddi"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-saner"
