@@ -1,13 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/davinci-crd" url="http://hl7.org/fhir/us/davinci-crd" ciUrl="http://build.fhir.org/ig/HL7/davinci-crd" defaultWorkgroup="fm" defaultVersion="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="0.1"/>
-  <artifactPageExtension value="-definitions"/>
-  <artifactPageExtension value="-examples"/>
-  <artifactPageExtension value="-mappings"/>
-  <artifact name="SupplyRequest" key="SupplyRequest" deprecated="true"/>
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="(profiles)" key="profiles"/>
-  <page name="index" key="index"/>
-  <page name="usecases" key="usecases" url="usecases" deprecated="true"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-crd/2019May" ciUrl="https://build.fhir.org/ig/HL7/davinci-crd" defaultVersion="current" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-crd" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" url="http://hl7.org/fhir/us/davinci-crd"><version code="current" url="https://build.fhir.org/ig/HL7/davinci-crd"/>
+<version code="0.3.0" url="http://hl7.org/fhir/us/davinci-crd/2019May"/>
+<version code="0.1" deprecated="true"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/profile-appointment" key="StructureDefinition-profile-appointment" name="Appointment"/>
+<artifact id="SearchParameter/appointment-insurance" key="SearchParameter-appointment-insurance" name="Appointment Insurance Search Parameter"/>
+<artifact id="Appointment/example" key="Appointment-example" name="Appointment example"/>
+<artifact id="ValueSet/afterCompletionCode" key="ValueSet-afterCompletionCode" name="CRD After Completion Code"/>
+<artifact id="ValueSet/coverageClass" key="ValueSet-coverageClass" name="CRD Coverage Classes"/>
+<artifact id="ValueSet/locationAddressType" key="ValueSet-locationAddressType" name="CRD Location Address Types"/>
+<artifact id="ValueSet/taskReasonCode" key="ValueSet-taskReasonCode" name="CRD Reason Codes"/>
+<artifact id="ValueSet/serviceRequestCodes" key="ValueSet-serviceRequestCodes" name="CRD Service Request Codes"/>
+<artifact id="CodeSystem/temp" key="CodeSystem-temp" name="CRD Temporary Codes"/>
+<artifact id="StructureDefinition/profile-claimresponse" key="StructureDefinition-profile-claimresponse" name="ClaimResponse"/>
+<artifact id="StructureDefinition/profile-communicationrequest" key="StructureDefinition-profile-communicationrequest" name="CommunicationRequest"/>
+<artifact id="SearchParameter/communicationrequest-insurance" key="SearchParameter-communicationrequest-insurance" name="CommunicationRequest Insurance Search Parameter"/>
+<artifact id="CommunicationRequest/example" key="CommunicationRequest-example" name="CommunicationRequest example"/>
+<artifact id="StructureDefinition/profile-coverage" key="StructureDefinition-profile-coverage" name="Coverage"/>
+<artifact id="Coverage/example" key="Coverage-example" name="Coverage example"/>
+<artifact id="StructureDefinition/profile-coverage-deident" key="StructureDefinition-profile-coverage-deident" name="CoverageDeident"/>
+<artifact id="Coverage/deident-example" key="Coverage-deident-example" name="De-identified Coverage example"/>
+<artifact id="Patient/deident-example" key="Patient-deident-example" name="De-identified Patient example"/>
+<artifact id="StructureDefinition/profile-device" key="StructureDefinition-profile-device" name="Device"/>
+<artifact id="Device/example" key="Device-example" name="Device example"/>
+<artifact id="StructureDefinition/profile-devicerequest" key="StructureDefinition-profile-devicerequest" name="DeviceRequest"/>
+<artifact id="SearchParameter/devicerequest-insurance" key="SearchParameter-devicerequest-insurance" name="DeviceRequest Insurance Search Parameter"/>
+<artifact id="DeviceRequest/example" key="DeviceRequest-example" name="DeviceRequest example"/>
+<artifact id="StructureDefinition/profile-encounter" key="StructureDefinition-profile-encounter" name="Encounter"/>
+<artifact id="SearchParameter/encounter-insurance" key="SearchParameter-encounter-insurance" name="Encounter Insurance Search Parameter"/>
+<artifact id="Encounter/example" key="Encounter-example" name="Encounter example"/>
+<artifact id="StructureDefinition/ext-insurance" key="StructureDefinition-ext-insurance" name="InsuranceExtension"/>
+<artifact id="StructureDefinition/profile-location" key="StructureDefinition-profile-location" name="Location"/>
+<artifact id="Location/example" key="Location-example" name="Location example"/>
+<artifact id="StructureDefinition/profile-medicationrequest" key="StructureDefinition-profile-medicationrequest" name="MedicationRequest"/>
+<artifact id="SearchParameter/medicationrequest-insurance" key="SearchParameter-medicationrequest-insurance" name="MedicationRequest Insurance Search Parameter"/>
+<artifact id="MedicationRequest/example" key="MedicationRequest-example" name="MedicationRequest example"/>
+<artifact id="NutritionOrder/example" key="NutritionOrder-example" name="NutritionOder example"/>
+<artifact id="StructureDefinition/profile-nutritionorder" key="StructureDefinition-profile-nutritionorder" name="NutritionOrder"/>
+<artifact id="SearchParameter/nutritionorder-insurance" key="SearchParameter-nutritionorder-insurance" name="NutritionOrder Insurance Search Parameter"/>
+<artifact id="StructureDefinition/profile-organization" key="StructureDefinition-profile-organization" name="Organization"/>
+<artifact id="Organization/example" key="Organization-example" name="Organization example"/>
+<artifact id="StructureDefinition/profile-patient" key="StructureDefinition-profile-patient" name="Patient"/>
+<artifact id="Patient/example" key="Patient-example" name="Patient example"/>
+<artifact id="StructureDefinition/profile-patient-deident" key="StructureDefinition-profile-patient-deident" name="PatientDident"/>
+<artifact id="StructureDefinition/profile-practitioner" key="StructureDefinition-profile-practitioner" name="Practitioner"/>
+<artifact id="Practitioner/example" key="Practitioner-example" name="Practitioner example"/>
+<artifact id="ClaimResponse/priorauth-example" key="ClaimResponse-priorauth-example" name="Prior Authorization example"/>
+<artifact id="Task/questionnaire-example" key="Task-questionnaire-example" name="Questionnaire Task example"/>
+<artifact id="StructureDefinition/profile-servicerequest" key="StructureDefinition-profile-servicerequest" name="ServiceRequest"/>
+<artifact id="SearchParameter/servicerequest-insurance" key="SearchParameter-servicerequest-insurance" name="ServiceRequest Insurance Search Parameter"/>
+<artifact id="ServiceRequest/example" key="ServiceRequest-example" name="ServiceRequest example"/>
+<artifact deprecated="true" key="SupplyRequest" name="SupplyRequest"/>
+<artifact id="StructureDefinition/profile-taskquestionnaire" key="StructureDefinition-profile-taskquestionnaire" name="TaskQuestionnaire"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page deprecated="true" key="profiles" name="(profiles)"/>
+<page key="artifacts" name="Artifact List"/>
+<page key="index" name="CRD IG Home Page"/>
+<page key="credits" name="Credits"/>
+<page key="downloads" name="Downloads"/>
+<page key="allartifacts" name="FHIR Artifacts"/>
+<page key="hooks" name="Formal Specification"/>
+<page key="toc" name="Table of Contents"/>
+<page key="background" name="Technical Background"/>
+<page key="usecases" name="Use Cases and Overview"/>
 </specification>
