@@ -14,12 +14,11 @@ url="http://hl7.org/fhir/us/davinci-pdex-plan-net">
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact deprecated= "true" id="ValueSet/AccessibilityVS" key="ValueSet-AccessibilityVS" name="Accessibility ValueSet"/>
 <artifact id="ValueSet/AcceptingPatientsVS" key="ValueSet-AcceptingPatientsVS" name="Accepting Patients CodesVS"/>
 <artifact id="CodeSystem/AcceptingPatientsCS" key="CodeSystem-AcceptingPatientsCS" name="Accepting Patients CodesCS"/>
-<artifact deprecated="true" key="AcceptingPatients" name="AcceptingPatients"/>
 <artifact id="StructureDefinition/accessibility" key="StructureDefinition-accessibility" name="Accessibility"/>
-<artifact id="ValueSet/AccessibilityVS" key="ValueSet-accessibility" name="AccessibilityVS"/>
-<artifact id="CodeSystem/AccessibilityCS" key="CodeSystem-accessibility" name="AccessibilityCS"/>
+<artifact  id="CodeSystem/AccessibilityCS" key="CodeSystem-AccessibilityCS" name="AccessibilityCS"/>
 <artifact id="Organization/Acme" key="Organization-Acme" name="Acme"/>
 <artifact id="Endpoint/AcmeOfCTPortalEndpoint" key="Endpoint-AcmeOfCTPortalEndpoint" name="AcmeOfCTPortalEndpoint"/>
 <artifact id="InsurancePlan/AcmeQHPBronze" key="InsurancePlan-AcmeQHPBronze" name="AcmeQHPBronze"/>
@@ -103,15 +102,15 @@ url="http://hl7.org/fhir/us/davinci-pdex-plan-net">
 <artifact id="Location/PharmLoc3" key="Location-PharmLoc3" name="PharmLoc3"/>
 <artifact id="Location/PharmLoc4" key="Location-PharmLoc4" name="PharmLoc4"/>
 <artifact id="CapabilityStatement/plan-net" key="CapabilityStatement-plan-net" name="Plan-Net CapabilityStatement"/>
-<artifact id="StructureDefinition/plannet-Endpoint" key="StructureDefinition-plannet-Endpoint_" name="Plan-Net Endpoint"/>
+<artifact id="StructureDefinition/plannet-Endpoint" key="StructureDefinition-plannet-Endpoint" name="Plan-Net Endpoint"/>
 <artifact id="StructureDefinition/plannet-HealthcareService" key="StructureDefinition-plannet-HealthcareService_" name="Plan-Net HealthcareService"/>
-<artifact id="StructureDefinition/plannet-InsurancePlan" key="StructureDefinition-plannet-InsurancePlan_" name="Plan-Net InsurancePlan"/>
-<artifact id="StructureDefinition/plannet-Location" key="StructureDefinition-plannet-Location_" name="Plan-Net Location"/>
-<artifact id="StructureDefinition/plannet-Network" key="StructureDefinition-plannet-Network_" name="Plan-Net Network"/>
-<artifact id="StructureDefinition/plannet-Organization" key="StructureDefinition-plannet-Organization_" name="Plan-Net Organization"/>
-<artifact id="StructureDefinition/plannet-OrganizationAffiliation" key="StructureDefinition-plannet-OrganizationAffiliation_" name="Plan-Net OrganizationAffiliation"/>
-<artifact id="StructureDefinition/plannet-Practitioner" key="StructureDefinition-plannet-Practitioner_" name="Plan-Net Practitioner"/>
-<artifact id="StructureDefinition/plannet-PractitionerRole" key="StructureDefinition-plannet-PractitionerRole_" name="Plan-Net PractitionerRole"/>
+<artifact id="StructureDefinition/plannet-InsurancePlan" key="StructureDefinition-plannet-InsurancePlan" name="Plan-Net InsurancePlan"/>
+<artifact id="StructureDefinition/plannet-Location" key="StructureDefinition-plannet-Location" name="Plan-Net Location"/>
+<artifact id="StructureDefinition/plannet-Network" key="StructureDefinition-plannet-Network" name="Plan-Net Network"/>
+<artifact id="StructureDefinition/plannet-Organization" key="StructureDefinition-plannet-Organization" name="Plan-Net Organization"/>
+<artifact id="StructureDefinition/plannet-OrganizationAffiliation" key="StructureDefinition-plannet-OrganizationAffiliation" name="Plan-Net OrganizationAffiliation"/>
+<artifact id="StructureDefinition/plannet-Practitioner" key="StructureDefinition-plannet-Practitioner" name="Plan-Net Practitioner"/>
+<artifact id="StructureDefinition/plannet-PractitionerRole" key="StructureDefinition-plannet-PractitionerRole" name="Plan-Net PractitionerRole"/>
 <artifact id="SearchParameter/endpoint-organization" key="SearchParameter-endpoint-organization" name="Plannet_sp_endpoint_organization"/>
 <artifact id="SearchParameter/healthcareservice-service-category" key="SearchParameter-healthcareservice-service-category" name="Plannet_sp_healthcareservice_category"/>
 <artifact id="SearchParameter/healthcareservice-coverage-area" key="SearchParameter-healthcareservice-coverage-area" name="Plannet_sp_healthcareservice_coverage_area"/>
@@ -173,7 +172,8 @@ url="http://hl7.org/fhir/us/davinci-pdex-plan-net">
 <artifact id="ValueSet/VirtualModalitiesVS" key="CodeSystem-VirtualModalitiesVS" name="Virtual Modalities VS"/>
 <artifact id="CodeSystem/VirtualModalitiesCS" key="CodeSystem-VirtualModalitiesCS" name="Virtual Modalities CS"/>
 <artifact id="HealthcareService/VirtualCounselService" key="HealthcareService-VirtualCounselService" name="VirtualCounselService"/>
-<page key="NA" name="(NA)"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-Location-reference-extension" key="LocationReference" name="Location- reference"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-Network-reference-extension" key="FromNetwork" name="Netowrk - reference"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="downloads" name="Downloads"/>
