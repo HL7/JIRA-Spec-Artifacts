@@ -1,14 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/davinci-epdx" url="http://hl7.org/fhir/us/davinci-pdex" ciUrl="http://build.fhir.org/ig/HL7/davinci-epdx" defaultWorkgroup="fm" defaultVersion="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="0.1"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://example.org/fhir/STU1" ciUrl="http://build.fhir.org/ig/HL7/davinci-epdx" defaultVersion="current" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-epdx" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" url="http://hl7.org/fhir/us/davinci-pdex"><version code="current" url="http://build.fhir.org/ig/HL7/davinci-epdx"/>
+  <version code="0.0.1" url="http://example.org/fhir/STU1"/>
+  <version code="0.1" deprecated="true"/>
   <artifactPageExtension value="-definitions"/>
   <artifactPageExtension value="-examples"/>
   <artifactPageExtension value="-mappings"/>
-  <artifact name="AppointmentResponse" key="AppointmentResponse" deprecated="true"/>
-  <artifact name="Patient" key="Patient" deprecated="true"/>
-  <artifact name="Provenance" key="Provenance" deprecated="true"/>
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="(profiles)" key="profiles"/>
-  <page name="downloads" key="downloads"/>
+  <artifact id="StructureDefinition/ProvenanceSourceFrom" key="StructureDefinition-ProvenanceSourceFrom" name="An attribute to describe the data source a resource was constructed from"/>
+  <artifact id="StructureDefinition/DispenseRefill" key="StructureDefinition-DispenseRefill" name="An attribute to express the refill number of a prescription"/>
+  <artifact deprecated="true" key="AppointmentResponse" name="AppointmentResponse"/>
+  <artifact id="Bundle/3000002" key="Bundle-3000002" name="BundleWithProvenance"/>
+  <artifact id="Bundle/2000002" key="Bundle-2000002" name="ExampleBundle1"/>
+  <artifact id="Coverage/883210" key="Coverage-883210" name="ExampleCoverage"/>
+  <artifact id="Device/543210" key="Device-543210" name="ExampleDevice"/>
+  <artifact id="Provenance/1000006" key="Provenance-1000006" name="ExampleDocRefProvenance"/>
+  <artifact id="DocumentReference/123456" key="DocumentReference-123456" name="ExampleDocumentReference"/>
+  <artifact id="Encounter/6" key="Encounter-6" name="ExampleEncounter1"/>
+  <artifact id="Encounter/7" key="Encounter-7" name="ExampleEncounter2"/>
+  <artifact id="Location/5" key="Location-5" name="ExampleLocation"/>
+  <artifact id="MedicationDispense/1000001" key="MedicationDispense-1000001" name="ExampleMedicationDispenseClaim"/>
+  <artifact id="Practitioner/4" key="Practitioner-4" name="ExamplePractitioner"/>
+  <artifact id="Provenance/1000002" key="Provenance-1000002" name="ExampleProvenanceAuthor"/>
+  <artifact id="Provenance/1000017" key="Provenance-1000017" name="ExampleProvenanceBundleTransmitter"/>
+  <artifact id="Provenance/1000005" key="Provenance-1000005" name="ExampleProvenancePayerModified"/>
+  <artifact id="Provenance/1000004" key="Provenance-1000004" name="ExampleProvenancePayerSource"/>
+  <artifact id="Provenance/1000003" key="Provenance-1000003" name="ExampleProvenanceSoloPractitioner"/>
+  <artifact id="Provenance/1000001" key="Provenance-1000001" name="ExampleProvenanceTransmitter"/>
+  <artifact id="ValueSet/FDANationalDrugCode" key="ValueSet-FDANationalDrugCode" name="FDA National Drug Code (NDC)"/>
+  <artifact id="StructureDefinition/hrex-coverage" key="StructureDefinition-hrex-coverage" name="HRex Coverage Profile"/>
+  <artifact id="CodeSystem/IdentifierTypeCS" key="CodeSystem-IdentifierTypeCS" name="Identifier Type"/>
+  <artifact id="Organization/2" key="Organization-2" name="OrganizationPayer1"/>
+  <artifact id="Organization/3" key="Organization-3" name="OrganizationProvider1"/>
+  <artifact id="CapabilityStatement/pdex-server" key="CapabilityStatement-pdex-server" name="PDEX Server CapabilityStatement"/>
+  <artifact id="StructureDefinition/pdex-device" key="StructureDefinition-pdex-device" name="PDex Device"/>
+  <artifact id="StructureDefinition/pdex-medicationdispense" key="StructureDefinition-pdex-medicationdispense" name="PDex MedicationDispense"/>
+  <artifact id="StructureDefinition/pdex-provenance" key="StructureDefinition-pdex-provenance" name="PDex Provenance"/>
+  <artifact deprecated="true" key="Patient" name="Patient"/>
+  <artifact id="Patient/1" key="Patient-1" name="Patient1"/>
+  <artifact id="ValueSet/ProvenancePayerSourceFormat" key="ValueSet-ProvenancePayerSourceFormat" name="Payer source of data"/>
+  <artifact id="SearchParameter/pdex-medicationdispense-patient" key="SearchParameter-pdex-medicationdispense-patient" name="PdexMedicationDispensePatient"/>
+  <artifact id="SearchParameter/pdex-medicationdispense-status" key="SearchParameter-pdex-medicationdispense-status" name="PdexMedicationDispenseStatus"/>
+  <artifact id="CapabilityStatement/PdexServerCapabilityStatement" key="CapabilityStatement-PdexServerCapabilityStatement" name="PdexServerCapabilityStatement"/>
+  <artifact deprecated="true" key="Provenance" name="Provenance"/>
+  <artifact id="ValueSet/ProvenanceAgentType" key="ValueSet-ProvenanceAgentType" name="Provenance Agent Type"/>
+  <artifact id="CodeSystem/ProvenancePayerDataSource" key="CodeSystem-ProvenancePayerDataSource" name="Provenance Payer Data Source Format"/>
+  <artifact id="CodeSystem/ProvenanceAgentRoleType" key="CodeSystem-ProvenanceAgentRoleType" name="Provenance Roles"/>
+  <page key="NA" name="(NA)"/>
+  <page key="many" name="(many)"/>
+  <page deprecated="true" key="profiles" name="(profiles)"/>
+  <page key="artifacts" name="Artifacts Summary"/>
+  <page key="CDS-Hooks" name="CDS Hooks"/>
+  <page key="Coverage" name="Coverage"/>
+  <page key="Credits" name="Credits"/>
+  <page key="DataMapping" name="Data Mapping"/>
+  <page key="Downloads" name="Downloads"/>
+  <page key="HandlingDataProvenance" name="Handling Data Provenance"/>
+  <page key="index" name="Home"/>
+  <page key="Introduction" name="Introduction"/>
+  <page key="Member-AuthorizedOAuth2Exchange" name="Member-Authorized OAuth2.0 Exchange"/>
+  <page key="Overview" name="Overview"/>
+  <page key="PdexDevice" name="PDex Device"/>
+  <page key="PDexImplementationActorsInteractionsDataPayloadsandMethods" name="PDex Implementation, Actors, Interactions, Data Payloads and Methods"/>
+  <page key="PDexMedicationDispense" name="PDex MedicationDispense"/>
+  <page key="PDexProvenance" name="PDex Provenance"/>
+  <page key="PayerToPayerExchange" name="Payer-to-Payer Exchange"/>
+  <page key="Provider-controlledInformationRequestsandFiltering" name="Provider-controlled Information Requests and Filtering"/>
+  <page key="toc" name="Table of Contents"/>
+  <page key="USCoreAllergyIntolerance" name="US Core AllergyIntolerance"/>
+  <page key="USCoreCarePlan" name="US Core CarePlan"/>
+  <page key="USCoreCareTeam" name="US Core CareTeam"/>
+  <page key="USCoreCondition" name="US Core Condition"/>
+  <page key="USCoreDiagnosticReportforLaboratoryResultsReporting" name="US Core DiagnosticReport for Laboratory Results Reporting"/>
+  <page key="USCoreDiagnosticReportforReportandNoteExchange" name="US Core DiagnosticReport for Report and Note Exchange"/>
+  <page key="USCoreDocumentReference" name="US Core DocumentReference"/>
+  <page key="USCoreEncounter" name="US Core Encounter"/>
+  <page key="USCoreGoal" name="US Core Goal"/>
+  <page key="USCoreImmunization" name="US Core Immunization"/>
+  <page key="USCoreImplantableDevice" name="US Core ImplantableDevice"/>
+  <page key="USCoreLaboratoryResultObservation" name="US Core Laboratory Result Observation"/>
+  <page key="USCoreLocation" name="US Core Location"/>
+  <page key="USCoreMedication" name="US Core Medication"/>
+  <page key="USCoreMedicationRequest" name="US Core MedicationRequest"/>
+  <page key="USCoreOrganization" name="US Core Organization"/>
+  <page key="USCorePatient" name="US Core Patient"/>
+  <page key="USCorePediatricBMIforAgeObservation" name="US Core Pediatric BMI for Age Observation"/>
+  <page key="USCorePediatricHeadOccipital" name="US Core Pediatric Head Occipital-frontal Circumference Observation"/>
+  <page key="USCorePediatricWeightforHeightObservation" name="US Core Pediatric Weight for Height Observation"/>
+  <page key="USCorePractitioner" name="US Core Practitioner"/>
+  <page key="USCorePractitionerRole" name="US Core PractitionerRole"/>
+  <page key="USCoreProcedure" name="US Core Procedure"/>
+  <page key="USCoreProvenance" name="US Core Provenance"/>
+  <page key="USCorePulseOximetry" name="US Core Pulse Oximetry"/>
+  <page key="USCoreSmokingStatusObservation" name="US Core Smoking Status Observation"/>
+  <page key="UseCaseScenarios" name="Use Case Scenarios"/>
+  <page key="VitalSigns" name="VitalSigns"/>
+  <page key="WorkflowExamples" name="Workflow Examples"/>
+  <page deprecated="true" key="downloads" name="downloads"/>
 </specification>
