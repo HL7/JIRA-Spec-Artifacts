@@ -4616,20 +4616,53 @@
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-cdisc-mapping"
                   name="CDISC Mappings (FHIR)"
-                  gitUrl="https://github.com/HL7/fhir-cdisc-map"
-                  url="http://hl7.org/fhir/uv/cdisc-mapping"
-                  ciUrl="http://build.fhir.org/ig/HL7/fhir-cdisc-map"
+                  ballotUrl="http://hl7.org/fhir/uv/cdisc-mapping/2021Jan"
+                  ciUrl="http://build.fhir.org/ig/HL7/cdisc-map"
+                  defaultVersion="current"
                   defaultWorkgroup="brr"
-                  defaultVersion="0.1.0">
-      <version code="0.1.0"/>
+                  gitUrl="https://github.com/HL7/fhir-cdisc-map"
+                  url="http://hl7.org/fhir/uv/myig">
+      <version code="current" url="http://build.fhir.org/ig/HL7/cdisc-map"/>
+      <version code="0.1.0" url="http://hl7.org/fhir/uv/cdisc-mapping/2021Jan"/>
+      <version code="0.1" deprecated="true"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <page name="(NA)" key="FHIR-cdisc-mapping-NA" spec="cdisc-mapping"/>
-      <page name="(many)" key="FHIR-cdisc-mapping-many" spec="cdisc-mapping"/>
-      <page name="overview"
-            key="FHIR-cdisc-mapping-overview"
+      <page key="FHIR-cdisc-mapping-NA" name="(NA)" spec="cdisc-mapping"/>
+      <page key="FHIR-cdisc-mapping-many" name="(many)" spec="cdisc-mapping"/>
+      <page key="FHIR-cdisc-mapping-ae"
+            name="Adverse Events"
             spec="cdisc-mapping"/>
+      <page key="FHIR-cdisc-mapping-artifacts"
+            name="Artifacts Summary"
+            spec="cdisc-mapping"/>
+      <page key="FHIR-cdisc-mapping-cm"
+            name="Concomitant Medications"
+            spec="cdisc-mapping"/>
+      <page key="FHIR-cdisc-mapping-dm"
+            name="Demographics"
+            spec="cdisc-mapping"/>
+      <page key="FHIR-cdisc-mapping-changes"
+            name="IG Change History"
+            spec="cdisc-mapping"/>
+      <page key="FHIR-cdisc-mapping-index"
+            name="IG Home Page"
+            spec="cdisc-mapping"/>
+      <page key="FHIR-cdisc-mapping-lb" name="Laboratory" spec="cdisc-mapping"/>
+      <page key="FHIR-cdisc-mapping-overview"
+            name="Mapping Overview"
+            spec="cdisc-mapping"/>
+      <page key="FHIR-cdisc-mapping-mh"
+            name="Medical History"
+            spec="cdisc-mapping"/>
+      <page key="FHIR-cdisc-mapping-pr" name="Procedures" spec="cdisc-mapping"/>
+      <page key="FHIR-cdisc-mapping-toc"
+            name="Table of Contents"
+            spec="cdisc-mapping"/>
+      <page key="FHIR-cdisc-mapping-downloads"
+            name="Useful Downloads"
+            spec="cdisc-mapping"/>
+      <page key="FHIR-cdisc-mapping-vs" name="Vital Signs" spec="cdisc-mapping"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-cpg"
