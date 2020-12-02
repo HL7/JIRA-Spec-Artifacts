@@ -18568,6 +18568,7 @@
       <artifact name="Bundle - Message Birth and Fetal Death"
                 key="FHIR-us-bfdr-StructureDefinition-Bundle-message-bfdr"
                 id="StructureDefinition/Bundle-message-bfdr"
+                deprecated="true"
                 spec="us-bfdr"/>
       <artifact name="Bundle - Provider Facility Fetal Death Report (Fetus Not Named)"
                 key="FHIR-us-bfdr-Bundle-bundle-provider-facility-fetal-death-not-named"
@@ -18857,6 +18858,7 @@
       <artifact name="MessageHeader - Birth and Fetal Death"
                 key="FHIR-us-bfdr-StructureDefinition-MessageHeader-bfdr"
                 id="StructureDefinition/MessageHeader-bfdr"
+                deprecated="true"
                 spec="us-bfdr"/>
       <artifact name="Observation - Mother Married During Pregnancy (Jada Ann Quinn)"
                 key="FHIR-us-bfdr-Observation-observation-mother-married-during-pregnancy-jada-ann-quinn"
@@ -18990,13 +18992,13 @@
                 key="FHIR-us-bfdr-StructureDefinition-Observation-edit-flag-birthweight"
                 id="StructureDefinition/Observation-edit-flag-birthweight"
                 spec="us-bfdr"/>
-      <artifact name="Observation - Edit Flag Estimate of Gestation"
-                key="FHIR-us-bfdr-StructureDefinition-Observation-edit-flag-estimate-of-gestation"
-                id="StructureDefinition/Observation-edit-flag-estimate-of-gestation"
-                spec="us-bfdr"/>
       <artifact name="Observation - Edit Flag Father's Date of Birth"
                 key="FHIR-us-bfdr-StructureDefinition-Observation-edit-flag-fathers-date-of-birth"
                 id="StructureDefinition/Observation-edit-flag-fathers-date-of-birth"
+                spec="us-bfdr"/>
+      <artifact name="Observation - Edit Flag Estimate of Gestation"
+                key="FHIR-us-bfdr-StructureDefinition-Observation-edit-flag-estimate-of-gestation"
+                id="StructureDefinition/Observation-edit-flag-estimate-of-gestation"
                 spec="us-bfdr"/>
       <artifact name="Observation - Edit Flag Father's Education"
                 key="FHIR-us-bfdr-StructureDefinition-Observation-edit-flag-fathers-education"
@@ -19037,10 +19039,12 @@
       <artifact name="Observation - Estimated Fetal Death Time Point"
                 key="FHIR-us-bfdr-StructureDefinition-Observation-estimated-fetal-death-time-point"
                 id="StructureDefinition/Observation-estimated-fetal-death-time-point"
+                deprecated="true"
                 spec="us-bfdr"/>
       <artifact name="Observation - Estimated Fetal Death Time Point (Fetus Not Named)"
                 key="FHIR-us-bfdr-Observation-observation-estimated-fetal-death-time-point-not-named"
                 id="Observation/observation-estimated-fetal-death-time-point-not-named"
+                deprecated="true"
                 spec="us-bfdr"/>
       <artifact name="Observation - Gestational Age at Delivery (Baby G Quinn)"
                 key="FHIR-us-bfdr-Observation-observation-gestational-age-at-delivery-babyg-quinn"
@@ -19329,6 +19333,7 @@
       <artifact name="Task - Birth and Fetal Death"
                 key="FHIR-us-bfdr-StructureDefinition-Task-bfdr"
                 id="StructureDefinition/Task-bfdr"
+                deprecated="true"
                 spec="us-bfdr"/>
       <artifact name="Value Set - Cigarette Smoking Before and During Pregnancy"
                 key="FHIR-us-bfdr-ValueSet-ValueSet-cigarette-smoking-before-during-pregnancy"
@@ -19337,6 +19342,7 @@
       <artifact name="ValueSet - MessageHeader Event Birth and Fetal Death"
                 key="FHIR-us-bfdr-ValueSet-ValueSet-messageheader-event-bfdr"
                 id="ValueSet/ValueSet-messageheader-event-bfdr"
+                deprecated="true"
                 spec="us-bfdr"/>
       <artifact name="Void fetal death report Document"
                 key="FHIR-us-bfdr-Composition-composition-void-fetal-death-not-named"
@@ -19349,6 +19355,30 @@
       <artifact name="CapabilityStatement - Birth and Fetal Death Reporting"
                 key="FHIR-us-bfdr-CapabilityStatement-CapabilityStatement-bfdr"
                 id="CapabilityStatement/CapabilityStatement-bfdr"
+                spec="us-bfdr"/>
+      <artifact name="Tabulated Ethnicity Example (Jada Ann Quinn)"
+                key="FHIR-us-bfdr-Observation-observation-tabulated-ethnicity-jada-ann-quinn"
+                id="Observation/observation-tabulated-ethnicity-jada-ann-quinn"
+                spec="us-bfdr"/>
+      <artifact name="Bridged Race Example (Jada Ann Quinn)"
+                key="FHIR-us-bfdr-Observation-observation-bridged-race-jada-ann-quinn"
+                id="Observation/observation-bridged-race-jada-ann-quinn"
+                spec="us-bfdr"/>
+      <artifact name="Composition Coded Cause of Fetal Death Example (Not Named)"
+                key="FHIR-us-bfdr-Composition-composition-coded-cause-of-fetal-death-not-named"
+                id="Composition/composition-coded-cause-of-fetal-death-not-named"
+                spec="us-bfdr"/>
+      <artifact name="US Core Organization Example (National Center for Health Statistics (NCHS))"
+                key="FHIR-us-bfdr-Organization-organization-nchs"
+                id="Organization/organization-nchs"
+                spec="us-bfdr"/>
+      <artifact name="US Core Organization Example (Jurisdictional Vital Records Office)"
+                key="FHIR-us-bfdr-Organization-organization-jurisdictional-vital-records-office"
+                id="Organization/organization-jurisdictional-vital-records-office"
+                spec="us-bfdr"/>
+      <artifact name="Coded Race and Ethnicity Example (Not Named)"
+                key="FHIR-us-bfdr-Composition-composition-coded-race-and-ethnicity-not-named"
+                id="Composition/composition-coded-race-and-ethnicity-not-named"
                 spec="us-bfdr"/>
       <artifact name="RelatedPerson - Father (James Brandon Quinn)"
                 key="FHIR-us-bfdr-RelatedPerson-relatedperson-father-james-brandon-quinn"
@@ -19370,7 +19400,10 @@
             key="FHIR-us-bfdr-notice_to_ballot_commenters"
             spec="us-bfdr"/>
       <page name="Use Cases" key="FHIR-us-bfdr-use_cases" spec="us-bfdr"/>
-      <page name="Transport" key="FHIR-us-bfdr-transport" spec="us-bfdr"/>
+      <page name="Transport"
+            key="FHIR-us-bfdr-transport"
+            deprecated="true"
+            spec="us-bfdr"/>
       <page name="Appendices" key="FHIR-us-bfdr-appendices" spec="us-bfdr"/>
       <page name="Appendix A - Example Facility Worksheet for the Live Birth Certificate"
             key="FHIR-us-bfdr-appendix_a__example_facility_worksheet_for_the_live_birth_certificate"
@@ -19384,6 +19417,7 @@
       <page name="Appendix D - Example Fetal Death Report"
             key="FHIR-us-bfdr-appendix_d__example_fetal_death_report"
             spec="us-bfdr"/>
+      <page name="Downloads" key="FHIR-us-bfdr-downloads" spec="us-bfdr"/>
       <page name="Provider Facility Live Birth Report"
             key="FHIR-us-bfdr-provider_facility_live_birth_report"
             deprecated="true"
@@ -19449,7 +19483,6 @@
             key="FHIR-us-bfdr-examples_for_jurisdiction_live_birth_report"
             deprecated="true"
             spec="us-bfdr"/>
-      <page name="Downloads" key="FHIR-us-bfdr-downloads" spec="us-bfdr"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="V2-core"
