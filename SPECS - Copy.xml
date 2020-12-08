@@ -1,6 +1,941 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <specifications>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-ccda"
+                  deprecated="false"
+                  name="C-CDA (HL7 CDA® R2 Implementation Guide: Consolidated CDA Templates for Clinical Notes - US Realm) (CDA)"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=492"
+                  defaultVersion="2.1.0.6">
+	     <version code="2.1.0.6"/>
+	     <page key="CDA-ccda-NA" name="(NA)" spec="ccda"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-vrdr"
+                  deprecated="false"
+                  name="HL7 CDA® R2 Implementation Guide: Vital Records Death Reporting, Release 1 STU 2.1 - US Realm (CDA)"
+                  defaultWorkgroup="pher"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=386"
+                  defaultVersion="1.2.1">
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=386"
+               deprecated="true"
+               code="1.1.0"/>
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=386"
+               deprecated="true"
+               code="1.2.0"/>
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=386"
+               deprecated="false"
+               code="1.2.1"/>
+	     <page key="CDA-vrdr-NA" name="(NA)" spec="vrdr"/>
+	     <page key="CDA-vrdr-many" name="(many)" spec="vrdr"/>
+	     <page key="CDA-vrdr-profiles" name="(profiles)" spec="vrdr"/>
+	     <page key="CDA-vrdr-overview" name="Overview" spec="vrdr"/>
+	     <page key="CDA-vrdr-usecases" name="Use Cases" spec="vrdr"/>
+	     <page key="CDA-vrdr-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="vrdr"/>
+	     <page key="CDA-vrdr-index" name="Index" deprecated="true" spec="vrdr"/>
+	     <page key="CDA-vrdr-narratives" name="Narrative Guidance" spec="vrdr"/>
+	     <page key="CDA-vrdr-templates" name="Templates" spec="vrdr"/>
+	     <page key="CDA-vrdr-figures" name="Figures and Examples" spec="vrdr"/>
+	     <page key="CDA-vrdr-valuesets" name="Value sets" spec="vrdr"/>
+	     <page key="CDA-vrdr-samplefiles" name="Sample Files" spec="vrdr"/>
+	     <page key="CDA-vrdr-validationfiles" name="Validation Files" spec="vrdr"/>
+	     <page key="CDA-vrdr-schematron" name="Schematron" spec="vrdr"/>
+	     <page key="CDA-vrdr-webpage"
+            name="Webpage"
+            deprecated="false"
+            url="http:www.hl7.orgimplementstandardsproduct_brief.cfmproduct_id386"
+            spec="vrdr"/>
+	     <page key="CDA-vrdr-vrdr-1"
+            name="HL7 Implementation Guide for CDA® Release 2: Vital Records Death Report, Release 1 - US Realm"
+            deprecated="true"
+            url="http:www.hl7.orgimplementstandardsla.cfmfiledocumentcenterpublicstandardsdstuCDAR2_IG_EHR2VRDRPT_R1_DSTU_2015FEB.zip"
+            spec="vrdr"/>
+	     <page key="CDA-vrdr-vrdr-2"
+            name="HL7 CDA® R2 Implementation Guide: Vital Records Death Report, Release 1 STU 2 - US Realm"
+            deprecated="true"
+            url="http:www.hl7.orgimplementstandardsla.cfmfiledocumentcenterpublicstandardsdstuCDAR2_IG_EHR2VRDRPT_R1_STU2_2017SEP.zip"
+            spec="vrdr"/>
+	     <page key="CDA-vrdr-vrdr-2.1"
+            name="HL7 CDA® R2 Implementation Guide: Vital Records Death Reporting, Release 1 STU 2.1 - US Realm"
+            deprecated="false"
+            url="http:www.hl7.orgimplementstandardsla.cfmfiledocumentcenterpublicstandardsdstuCDAR2_IG_EHR2VRDRPT_R1_STU2.1_2019JAN.zip"
+            spec="vrdr"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-provenance"
+                  deprecated="false"
+                  name="HL7 Guidance: Basic Provenance for C-CDA and FHIR, Release 1 - US Realm (CDA)"
+                  defaultWorkgroup="cbcc"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=531"
+                  defaultVersion="1.1.0">
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=531"
+               deprecated="false"
+               code="1.1.0"/>
+	     <page key="CDA-provenance-NA" name="(NA)" spec="provenance"/>
+	     <page key="CDA-provenance-many" name="(many)" spec="provenance"/>
+	     <page key="CDA-provenance-profiles" name="(profiles)" spec="provenance"/>
+	     <page key="CDA-provenance-overview" name="Overview" spec="provenance"/>
+	     <page key="CDA-provenance-usecases" name="Use Cases" spec="provenance"/>
+	     <page key="CDA-provenance-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="provenance"/>
+	     <page key="CDA-provenance-index"
+            name="Index"
+            deprecated="true"
+            spec="provenance"/>
+	     <page key="CDA-provenance-narratives"
+            name="Narrative Guidance"
+            spec="provenance"/>
+	     <page key="CDA-provenance-templates" name="Templates" spec="provenance"/>
+	     <page key="CDA-provenance-figures"
+            name="Figures and Examples"
+            spec="provenance"/>
+	     <page key="CDA-provenance-valuesets" name="Value sets" spec="provenance"/>
+	     <page key="CDA-provenance-samplefiles"
+            name="Sample Files"
+            spec="provenance"/>
+	     <page key="CDA-provenance-validationfiles"
+            name="Validation Files"
+            spec="provenance"/>
+	     <page key="CDA-provenance-schematron" name="Schematron" spec="provenance"/>
+	     <page key="CDA-provenance-webpage"
+            name="Webpage"
+            url="http:www.hl7.orgimplementstandardsproduct_brief.cfmproduct_id531"
+            deprecated="true"
+            spec="provenance"/>
+	     <page key="CDA-provenance-provenance"
+            name="HL7 Guidance: Basic Provenance for C-CDA and FHIR, Release 1 - US Realm"
+            workgroup="security"
+            url="http:www.hl7.orgimplementstandardsla.cfmfiledocumentcenterprivatestandardsHL7_PROVENANCE_CCDA_FHIR_R1_INFORM_2020JUN.pdf"
+            deprecated="false"
+            spec="provenance"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-ips"
+                  deprecated="false"
+                  name="HL7 CDA® R2 Implementation Guide International Patient Summary, Release 1 (CDA)"
+                  defaultWorkgroup="pc"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=483"
+                  defaultVersion="1.0">
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=483"
+               deprecated="false"
+               code="1.1.0"/>
+	     <page key="CDA-ips-NA" name="(NA)" spec="ips"/>
+	     <page key="CDA-ips-many" name="(many)" spec="ips"/>
+	     <page key="CDA-ips-profiles" name="(profiles)" spec="ips"/>
+	     <page key="CDA-ips-overview" name="Overview" spec="ips"/>
+	     <page key="CDA-ips-usecases" name="Use Cases" spec="ips"/>
+	     <page key="CDA-ips-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="ips"/>
+	     <page key="CDA-ips-index" name="Index" deprecated="true" spec="ips"/>
+	     <page key="CDA-ips-narratives" name="Narrative Guidance" spec="ips"/>
+	     <page key="CDA-ips-templates" name="Templates" spec="ips"/>
+	     <page key="CDA-ips-figures" name="Figures and Examples" spec="ips"/>
+	     <page key="CDA-ips-valuesets" name="Value sets" spec="ips"/>
+	     <page key="CDA-ips-samplefiles" name="Sample Files" spec="ips"/>
+	     <page key="CDA-ips-validationfiles" name="Validation Files" spec="ips"/>
+	     <page key="CDA-ips-schematron" name="Schematron" spec="ips"/>
+	     <page key="CDA-ips-webpage"
+            url="http:www.hl7.orgimplementstandardsproduct_brief.cfmproduct_id483"
+            name="Webpage"
+            deprecated="false"
+            spec="ips"/>
+	     <page key="CDA-ips-ips"
+            url="http:www.hl7.orgimplementstandardsla.cfmfiledocumentcenterpublicstandardsdstuCDAR2_INTLPATSUMMARY_STU_R1_2018OCT.zip"
+            name="HL7 CDA® R2 Implementation Guide International Patient Summary, Release 1"
+            deprecated="false"
+            spec="ips"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-cotps"
+                  deprecated="false"
+                  name="HL7 CDA® R2 Implementation Guide: Clinical Oncology Treatment Plan and Summary, Release 1 - US Realm (CDA)"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=327"
+                  defaultWorkgroup="sd"
+                  defaultVersion="1.3.0">
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=327"
+               deprecated="true"
+               code="1.1.0"/>
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=327"
+               deprecated="true"
+               code="1.2.0"/>
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=327"
+               deprecated="true"
+               code="1.2.1"/>
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=327"
+               deprecated="true"
+               code="1.3.0"/>
+	     <page key="CDA-cotps-NA" name="(NA)" spec="cotps"/>
+	     <page key="CDA-cotps-many" name="(many)" spec="cotps"/>
+	     <page key="CDA-cotps-profiles" name="(profiles)" spec="cotps"/>
+	     <page key="CDA-cotps-overview" name="Overview" spec="cotps"/>
+	     <page key="CDA-cotps-usecases" name="Use Cases" spec="cotps"/>
+	     <page key="CDA-cotps-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="cotps"/>
+	     <page key="CDA-cotps-index"
+            name="Index"
+            deprecated="true"
+            spec="cotps"/>
+	     <page key="CDA-cotps-narratives" name="Narrative Guidance" spec="cotps"/>
+	     <page key="CDA-cotps-templates" name="Templates" spec="cotps"/>
+	     <page key="CDA-cotps-figures" name="Figures and Examples" spec="cotps"/>
+	     <page key="CDA-cotps-valuesets" name="Value sets" spec="cotps"/>
+	     <page key="CDA-cotps-samplefiles" name="Sample Files" spec="cotps"/>
+	     <page key="CDA-cotps-validationfiles"
+            name="Validation Files"
+            spec="cotps"/>
+	     <page key="CDA-cotps-schematron" name="Schematron" spec="cotps"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-digsig"
+                  deprecated="false"
+                  name="HL7 Implementation Guide for CDA® Release 2: Digital Signatures and Delegation of Rights, Release 1 (CDA)"
+                  defaultWorkgroup="sd"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=375"
+                  defaultVersion="1.1.0">
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=375"
+               deprecated="true"
+               code="1.1.0"/>
+	     <page key="CDA-digsig-NA" name="(NA)" spec="digsig"/>
+	     <page key="CDA-digsig-many" name="(many)" spec="digsig"/>
+	     <page key="CDA-digsig-profiles" name="(profiles)" spec="digsig"/>
+	     <page key="CDA-digsig-overview" name="Overview" spec="digsig"/>
+	     <page key="CDA-digsig-usecases" name="Use Cases" spec="digsig"/>
+	     <page key="CDA-digsig-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="digsig"/>
+	     <page key="CDA-digsig-index"
+            name="Index"
+            deprecated="true"
+            spec="digsig"/>
+	     <page key="CDA-digsig-narratives" name="Narrative Guidance" spec="digsig"/>
+	     <page key="CDA-digsig-templates" name="Templates" spec="digsig"/>
+	     <page key="CDA-digsig-figures" name="Figures and Examples" spec="digsig"/>
+	     <page key="CDA-digsig-valuesets" name="Value sets" spec="digsig"/>
+	     <page key="CDA-digsig-samplefiles" name="Sample Files" spec="digsig"/>
+	     <page key="CDA-digsig-validationfiles"
+            name="Validation Files"
+            spec="digsig"/>
+	     <page key="CDA-digsig-schematron" name="Schematron" spec="digsig"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-ccda-payers"
+                  deprecated="false"
+                  name="HL7 CDA® R2 Attachment Implementation Guide: Exchange of C-CDA Based Documents, Release 1 (CDA)"
+                  defaultVersion="1.1.0"
+                  defaultWorkgroup="pie">
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=464"
+               deprecated="true"
+               code="1.1.0"/>
+	     <page key="CDA-ccda-payers-NA" name="(NA)" spec="ccda-payers"/>
+	     <page key="CDA-ccda-payers-many" name="(many)" spec="ccda-payers"/>
+	     <page key="CDA-ccda-payers-profiles" name="(profiles)" spec="ccda-payers"/>
+	     <page key="CDA-ccda-payers-overview" name="Overview" spec="ccda-payers"/>
+	     <page key="CDA-ccda-payers-usecases" name="Use Cases" spec="ccda-payers"/>
+	     <page key="CDA-ccda-payers-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="ccda-payers"/>
+	     <page key="CDA-ccda-payers-index"
+            name="Index"
+            deprecated="true"
+            spec="ccda-payers"/>
+	     <page key="CDA-ccda-payers-narratives"
+            name="Narrative Guidance"
+            spec="ccda-payers"/>
+	     <page key="CDA-ccda-payers-templates" name="Templates" spec="ccda-payers"/>
+	     <page key="CDA-ccda-payers-figures"
+            name="Figures and Examples"
+            spec="ccda-payers"/>
+	     <page key="CDA-ccda-payers-valuesets"
+            name="Value sets"
+            spec="ccda-payers"/>
+	     <page key="CDA-ccda-payers-samplefiles"
+            name="Sample Files"
+            spec="ccda-payers"/>
+	     <page key="CDA-ccda-payers-validationfiles"
+            name="Validation Files"
+            spec="ccda-payers"/>
+	     <page key="CDA-ccda-payers-schematron"
+            name="Schematron"
+            spec="ccda-payers"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-phr"
+                  deprecated="false"
+                  name="HL7 Implementation Guide for CDA® R2: Plan-to-Plan Personal Health Record (PHR) Data Transfer, Release 1 (CDA)"
+                  defaultWorkgroup="sd"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=135"
+                  defaultVersion="1.1.0">
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=135"
+               deprecated="true"
+               code="1.1.0"/>
+	     <page key="CDA-phr-NA" name="(NA)" spec="phr"/>
+	     <page key="CDA-phr-many" name="(many)" spec="phr"/>
+	     <page key="CDA-phr-profiles" name="(profiles)" spec="phr"/>
+	     <page key="CDA-phr-overview" name="Overview" spec="phr"/>
+	     <page key="CDA-phr-usecases" name="Use Cases" spec="phr"/>
+	     <page key="CDA-phr-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="phr"/>
+	     <page key="CDA-phr-index" name="Index" deprecated="true" spec="phr"/>
+	     <page key="CDA-phr-narratives" name="Narrative Guidance" spec="phr"/>
+	     <page key="CDA-phr-templates" name="Templates" spec="phr"/>
+	     <page key="CDA-phr-figures" name="Figures and Examples" spec="phr"/>
+	     <page key="CDA-phr-valuesets" name="Value sets" spec="phr"/>
+	     <page key="CDA-phr-samplefiles" name="Sample Files" spec="phr"/>
+	     <page key="CDA-phr-validationfiles" name="Validation Files" spec="phr"/>
+	     <page key="CDA-phr-schematron" name="Schematron" spec="phr"/>
+	     <page key="CDA-phr-webpage"
+            name="Webpage"
+            url="http:www.hl7.orgimplementstandardsproduct_brief.cfmproduct_id135"
+            deprecated="true"
+            spec="phr"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-ectsdpn"
+                  deprecated="false"
+                  name="HL7 Implementation Guide for CDA® Release 2: Exchange of Clinical Trial Subject Data; Patient Narratives, Release 1 - US Realm (CDA)"
+                  defaultWorkgroup="brr"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=297"
+                  defaultVersion="1.1.0">
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=297"
+               deprecated="true"
+               code="1.1.0"/>
+	     <page key="CDA-ectsdpn-NA" name="(NA)" spec="ectsdpn"/>
+	     <page key="CDA-ectsdpn-many" name="(many)" spec="ectsdpn"/>
+	     <page key="CDA-ectsdpn-profiles" name="(profiles)" spec="ectsdpn"/>
+	     <page key="CDA-ectsdpn-overview" name="Overview" spec="ectsdpn"/>
+	     <page key="CDA-ectsdpn-usecases" name="Use Cases" spec="ectsdpn"/>
+	     <page key="CDA-ectsdpn-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="ectsdpn"/>
+	     <page key="CDA-ectsdpn-index"
+            name="Index"
+            deprecated="true"
+            spec="ectsdpn"/>
+	     <page key="CDA-ectsdpn-narratives"
+            name="Narrative Guidance"
+            spec="ectsdpn"/>
+	     <page key="CDA-ectsdpn-templates" name="Templates" spec="ectsdpn"/>
+	     <page key="CDA-ectsdpn-figures"
+            name="Figures and Examples"
+            spec="ectsdpn"/>
+	     <page key="CDA-ectsdpn-valuesets" name="Value sets" spec="ectsdpn"/>
+	     <page key="CDA-ectsdpn-samplefiles" name="Sample Files" spec="ectsdpn"/>
+	     <page key="CDA-ectsdpn-validationfiles"
+            name="Validation Files"
+            spec="ectsdpn"/>
+	     <page key="CDA-ectsdpn-schematron" name="Schematron" spec="ectsdpn"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-peridontal"
+                  deprecated="false"
+                  name="HL7 CDA® R2 Implementation Guide: Exchange of C-CDA Based Documents; Periodontal Attachment, Release 1 - US Realm (CDA)"
+                  defaultWorkgroup="pie"
+                  url="http://www.hl7.org/dstucomments/showdetail.cfm?dstuid=213"
+                  defaultVersion="1.1.0">
+	     <version url="http://www.hl7.org/dstucomments/showdetail.cfm?dstuid=213"
+               deprecated="false"
+               code="1.1.0"/>
+	     <page key="CDA-peridontal-NA" name="(NA)" spec="peridontal"/>
+	     <page key="CDA-peridontal-many" name="(many)" spec="peridontal"/>
+	     <page key="CDA-peridontal-profiles" name="(profiles)" spec="peridontal"/>
+	     <page key="CDA-peridontal-overview" name="Overview" spec="peridontal"/>
+	     <page key="CDA-peridontal-usecases" name="Use Cases" spec="peridontal"/>
+	     <page key="CDA-peridontal-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="peridontal"/>
+	     <page key="CDA-peridontal-index"
+            name="Index"
+            deprecated="true"
+            spec="peridontal"/>
+	     <page key="CDA-peridontal-narratives"
+            name="Narrative Guidance"
+            spec="peridontal"/>
+	     <page key="CDA-peridontal-templates" name="Templates" spec="peridontal"/>
+	     <page key="CDA-peridontal-figures"
+            name="Figures and Examples"
+            spec="peridontal"/>
+	     <page key="CDA-peridontal-valuesets" name="Value sets" spec="peridontal"/>
+	     <page key="CDA-peridontal-samplefiles"
+            name="Sample Files"
+            spec="peridontal"/>
+	     <page key="CDA-peridontal-validationfiles"
+            name="Validation Files"
+            spec="peridontal"/>
+	     <page key="CDA-peridontal-schematron" name="Schematron" spec="peridontal"/>
+	     <page key="CDA-peridontal-webpage"
+            name="Webpage"
+            url="http:www.hl7.orgdstucommentsshowdetail.cfmdstuid213"
+            deprecated="false"
+            spec="peridontal"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-orthodontic"
+                  deprecated="false"
+                  name="HL7 CDA® R2 Implementation Guide: Orthodontic Attachment, Release 1 - US Realm (CDA)"
+                  defaultWorkgroup="pie"
+                  url="http://www.hl7.org/dstucomments/showdetail.cfm?dstuid=286"
+                  defaultVersion="1.1.0">
+	     <version url="http://www.hl7.org/dstucomments/showdetail.cfm?dstuid=286"
+               deprecated="false"
+               code="1.1.0"/>
+	     <page key="CDA-orthodontic-NA" name="(NA)" spec="orthodontic"/>
+	     <page key="CDA-orthodontic-many" name="(many)" spec="orthodontic"/>
+	     <page key="CDA-orthodontic-profiles" name="(profiles)" spec="orthodontic"/>
+	     <page key="CDA-orthodontic-overview" name="Overview" spec="orthodontic"/>
+	     <page key="CDA-orthodontic-usecases" name="Use Cases" spec="orthodontic"/>
+	     <page key="CDA-orthodontic-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="orthodontic"/>
+	     <page key="CDA-orthodontic-index"
+            name="Index"
+            deprecated="true"
+            spec="orthodontic"/>
+	     <page key="CDA-orthodontic-narratives"
+            name="Narrative Guidance"
+            spec="orthodontic"/>
+	     <page key="CDA-orthodontic-templates" name="Templates" spec="orthodontic"/>
+	     <page key="CDA-orthodontic-figures"
+            name="Figures and Examples"
+            spec="orthodontic"/>
+	     <page key="CDA-orthodontic-valuesets"
+            name="Value sets"
+            spec="orthodontic"/>
+	     <page key="CDA-orthodontic-samplefiles"
+            name="Sample Files"
+            spec="orthodontic"/>
+	     <page key="CDA-orthodontic-validationfiles"
+            name="Validation Files"
+            spec="orthodontic"/>
+	     <page key="CDA-orthodontic-schematron"
+            name="Schematron"
+            spec="orthodontic"/>
+	     <page key="CDA-orthodontic-webpage"
+            name="Webpage"
+            url="http:www.hl7.orgdstucommentsshowdetail.cfmdstuid286"
+            deprecated="false"
+            spec="orthodontic"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-emspcr"
+                  deprecated="false"
+                  name="HL7 CDA® R2 Implementation Guide: Emergency Medical Services; Patient Care Report, Release 1 – US Realm (CDA)"
+                  defaultWorkgroup="cic"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=276"
+                  defaultVersion="2.1.0">
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=276"
+               deprecated="true"
+               code="2.1.0"/>
+	     <page key="CDA-emspcr-NA" name="(NA)" spec="emspcr"/>
+	     <page key="CDA-emspcr-many" name="(many)" spec="emspcr"/>
+	     <page key="CDA-emspcr-profiles" name="(profiles)" spec="emspcr"/>
+	     <page key="CDA-emspcr-overview" name="Overview" spec="emspcr"/>
+	     <page key="CDA-emspcr-usecases" name="Use Cases" spec="emspcr"/>
+	     <page key="CDA-emspcr-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="emspcr"/>
+	     <page key="CDA-emspcr-index"
+            name="Index"
+            deprecated="true"
+            spec="emspcr"/>
+	     <page key="CDA-emspcr-narratives" name="Narrative Guidance" spec="emspcr"/>
+	     <page key="CDA-emspcr-templates" name="Templates" spec="emspcr"/>
+	     <page key="CDA-emspcr-figures" name="Figures and Examples" spec="emspcr"/>
+	     <page key="CDA-emspcr-valuesets" name="Value sets" spec="emspcr"/>
+	     <page key="CDA-emspcr-samplefiles" name="Sample Files" spec="emspcr"/>
+	     <page key="CDA-emspcr-validationfiles"
+            name="Validation Files"
+            spec="emspcr"/>
+	     <page key="CDA-emspcr-schematron" name="Schematron" spec="emspcr"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-hivsr"
+                  deprecated="false"
+                  name="HL7 Implementation Guide for CDA® Release 2: HIV/AIDS Services Report, Release 1 - US Realm (CDA)"
+                  defaultWorkgroup="sd"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=332"
+                  defaultVersion="1.1.0">
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=332"
+               deprecated="true"
+               code="1.1.0"/>
+	     <page key="CDA-hivsr-NA" name="(NA)" spec="hivsr"/>
+	     <page key="CDA-hivsr-many" name="(many)" spec="hivsr"/>
+	     <page key="CDA-hivsr-profiles" name="(profiles)" spec="hivsr"/>
+	     <page key="CDA-hivsr-overview" name="Overview" spec="hivsr"/>
+	     <page key="CDA-hivsr-usecases" name="Use Cases" spec="hivsr"/>
+	     <page key="CDA-hivsr-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="hivsr"/>
+	     <page key="CDA-hivsr-index"
+            name="Index"
+            deprecated="true"
+            spec="hivsr"/>
+	     <page key="CDA-hivsr-narratives" name="Narrative Guidance" spec="hivsr"/>
+	     <page key="CDA-hivsr-templates" name="Templates" spec="hivsr"/>
+	     <page key="CDA-hivsr-figures" name="Figures and Examples" spec="hivsr"/>
+	     <page key="CDA-hivsr-valuesets" name="Value sets" spec="hivsr"/>
+	     <page key="CDA-hivsr-samplefiles" name="Sample Files" spec="hivsr"/>
+	     <page key="CDA-hivsr-validationfiles"
+            name="Validation Files"
+            spec="hivsr"/>
+	     <page key="CDA-hivsr-schematron" name="Schematron" spec="hivsr"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-mtm"
+                  deprecated="false"
+                  name="HL7 CDA® R2 Implementation Guide: Medication Therapy Management (MTM) Templates, Release 1 - US Realm (CDA)"
+                  defaultWorkgroup="pharm"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=414"
+                  defaultVersion="1.1.0">
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=414"
+               deprecated="true"
+               code="1.1.0"/>
+	     <page key="CDA-mtm-NA" name="(NA)" spec="mtm"/>
+	     <page key="CDA-mtm-many" name="(many)" spec="mtm"/>
+	     <page key="CDA-mtm-profiles" name="(profiles)" spec="mtm"/>
+	     <page key="CDA-mtm-overview" name="Overview" spec="mtm"/>
+	     <page key="CDA-mtm-usecases" name="Use Cases" spec="mtm"/>
+	     <page key="CDA-mtm-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="mtm"/>
+	     <page key="CDA-mtm-index" name="Index" deprecated="true" spec="mtm"/>
+	     <page key="CDA-mtm-narratives" name="Narrative Guidance" spec="mtm"/>
+	     <page key="CDA-mtm-templates" name="Templates" spec="mtm"/>
+	     <page key="CDA-mtm-figures" name="Figures and Examples" spec="mtm"/>
+	     <page key="CDA-mtm-valuesets" name="Value sets" spec="mtm"/>
+	     <page key="CDA-mtm-samplefiles" name="Sample Files" spec="mtm"/>
+	     <page key="CDA-mtm-validationfiles" name="Validation Files" spec="mtm"/>
+	     <page key="CDA-mtm-schematron" name="Schematron" spec="mtm"/>
+	     <page key="CDA-mtm-webpage"
+            name="Webpage"
+            url="http:www.hl7.orgimplementstandardsproduct_brief.cfmproduct_id414"
+            deprecated="true"
+            spec="mtm"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-cmhaff"
+                  deprecated="false"
+                  name="HL7 Consumer Mobile Health Application Functional Framework (cMHAFF), Release 1 (CDA)"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=476"
+                  defaultVersion="1.1.0">
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=476"
+               deprecated="false"
+               code="1.1.0"/>
+	     <page key="CDA-cmhaff-NA" name="(NA)" spec="cmhaff"/>
+	     <page key="CDA-cmhaff-many" name="(many)" spec="cmhaff"/>
+	     <page key="CDA-cmhaff-profiles" name="(profiles)" spec="cmhaff"/>
+	     <page key="CDA-cmhaff-overview" name="Overview" spec="cmhaff"/>
+	     <page key="CDA-cmhaff-usecases" name="Use Cases" spec="cmhaff"/>
+	     <page key="CDA-cmhaff-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="cmhaff"/>
+	     <page key="CDA-cmhaff-index"
+            name="Index"
+            deprecated="true"
+            spec="cmhaff"/>
+	     <page key="CDA-cmhaff-narratives" name="Narrative Guidance" spec="cmhaff"/>
+	     <page key="CDA-cmhaff-templates" name="Templates" spec="cmhaff"/>
+	     <page key="CDA-cmhaff-figures" name="Figures and Examples" spec="cmhaff"/>
+	     <page key="CDA-cmhaff-valuesets" name="Value sets" spec="cmhaff"/>
+	     <page key="CDA-cmhaff-samplefiles" name="Sample Files" spec="cmhaff"/>
+	     <page key="CDA-cmhaff-validationfiles"
+            name="Validation Files"
+            spec="cmhaff"/>
+	     <page key="CDA-cmhaff-schematron" name="Schematron" spec="cmhaff"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-nhcs"
+                  deprecated="false"
+                  name="HL7 CDA® R2 Implementation Guide: National Health Care Surveys (NHCS), R1 STU Release 3 - US Realm (CDA)"
+                  defaultWorkgroup="pher"
+                  url="http://www.hl7.org/dstucomments/showdetail.cfm?dstuid=282"
+                  defaultVersion="1.3.0">
+	     <version code="1.1.0"
+               url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=385"
+               deprecated="true"/>
+	     <version code="1.1.1"
+               url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=385"
+               deprecated="true"/>
+	     <version code="1.1.2"
+               url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=385"
+               deprecated="false"/>
+	     <version code="1.2.0"
+               url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=385"
+               deprecated="false"/>
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=385"
+               deprecated="false"
+               code="1.3.0"/>
+	     <page key="CDA-nhcs-NA" name="(NA)" spec="nhcs"/>
+	     <page key="CDA-nhcs-many" name="(many)" spec="nhcs"/>
+	     <page key="CDA-nhcs-profiles" name="(profiles)" spec="nhcs"/>
+	     <page key="CDA-nhcs-overview" name="Overview" spec="nhcs"/>
+	     <page key="CDA-nhcs-usecases" name="Use Cases" spec="nhcs"/>
+	     <page key="CDA-nhcs-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="nhcs"/>
+	     <page key="CDA-nhcs-index" name="Index" deprecated="true" spec="nhcs"/>
+	     <page key="CDA-nhcs-narratives" name="Narrative Guidance" spec="nhcs"/>
+	     <page key="CDA-nhcs-templates" name="Templates" spec="nhcs"/>
+	     <page key="CDA-nhcs-figures" name="Figures and Examples" spec="nhcs"/>
+	     <page key="CDA-nhcs-valuesets" name="Value sets" spec="nhcs"/>
+	     <page key="CDA-nhcs-samplefiles" name="Sample Files" spec="nhcs"/>
+	     <page key="CDA-nhcs-validationfiles" name="Validation Files" spec="nhcs"/>
+	     <page key="CDA-nhcs-schematron" name="Schematron" spec="nhcs"/>
+	     <page key="CDA-nhcs-nhcs3"
+            name="HL7 CDA® R2 Implementation Guide: National Health Care Surveys (NHCS), Release 1, STU Release 3 – US Realm"
+            url="http:www.hl7.orgimplementstandardsla.cfmfiledocumentcenterpublicstandardsdstuCDAR2_IG_NHCS_R1_STU3_2020FEB.zip"
+            deprecated="false"
+            spec="nhcs"/>
+	     <page key="CDA-nhcs-nhcs2"
+            name="HL7 CDA® R2 Implementation Guide: National Health Care Surveys (NHCS), Release 1, STU Release 2 – US Realm"
+            url="http:www.hl7.orgimplementstandardsla.cfmfiledocumentcenterpublicstandardsdstuCDAR2_IG_NHCS_R1_STU2_2019OCT.zip"
+            deprecated="false"
+            spec="nhcs"/>
+	     <page key="CDA-nhcs-nhcs1.2"
+            name="HL7 CDA® R2 Implementation Guide: National Health Care Surveys (NHCS), Release 1, DSTU Release 1.2 – US Realm"
+            url="http:www.hl7.orgimplementstandardsla.cfmfiledocumentcenterpublicstandardsdstuCDAR2_IG_NHCS_R1_DSTU1.2_2016AUG.zip"
+            deprecated="false"
+            spec="nhcs"/>
+	     <page key="CDA-nhcs-nhcs1.1"
+            name="HL7 CDA® R2 Implementation Guide: National Health Care Surveys (NHCS), Release 1, DSTU Release 1.1 – US Realm"
+            url="http:www.hl7.orgimplementstandardsla.cfmfiledocumentcenterpublicstandardsdstuCDAR2_IG_NHCS_R1_DSTU1.1_2015NOV.zip"
+            deprecated="true"
+            spec="nhcs"/>
+	     <page key="CDA-nhcs-nhcs1.0"
+            name="HL7 Implementation Guide for CDA® Release 2: National Health Care Surveys (NHCS), Release 1 - US Realm"
+            url="http:www.hl7.orgimplementstandardsla.cfmfiledocumentcenterpublicstandardsdstuCDAR2_IG_NAMCS_DSTU_R1_2014DEC_Errata2016JUN.zip"
+            deprecated="true"
+            spec="nhcs"/>
+	     <page key="CDA-nhcs-webpage"
+            name="Webpage"
+            url="http:www.hl7.orgdstucommentsshowdetail.cfmdstuid282"
+            deprecated="false"
+            spec="nhcs"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-ncr"
+                  deprecated="false"
+                  name="HL7 Version 3 Implementation Guide for CDA® R2 L3: Neonatal Care Reports (NCR), R1 (CDA)"
+                  defaultWorkgroup="sd"
+                  url="http://www.hl7.org/dstucomments/ex_showdetail.cfm?dstuid=56"
+                  defaultVersion="1.1.0">
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=90 "
+               deprecated="true"
+               code="1.1.0"/>
+	     <page key="CDA-ncr-download"
+            name="Download file"
+            url="http:www.hl7.orgdstucommentsex_showdetail.cfmdstuid56"
+            deprecated="true"
+            spec="ncr"/>
+	     <page key="CDA-ncr-webpage"
+            name="HL7 Version 3 Implementation Guide for CDA® R2 L3: Neonatal Care Reports (NCR), R1 - webpage"
+            url="http:www.hl7.orgimplementstandardsproduct_brief.cfmproduct_id90"
+            deprecated="true"
+            spec="ncr"/>
+	     <page key="CDA-ncr-NA" name="(NA)" spec="ncr"/>
+	     <page key="CDA-ncr-many" name="(many)" spec="ncr"/>
+	     <page key="CDA-ncr-profiles" name="(profiles)" spec="ncr"/>
+	     <page key="CDA-ncr-overview" name="Overview" spec="ncr"/>
+	     <page key="CDA-ncr-usecases" name="Use Cases" spec="ncr"/>
+	     <page key="CDA-ncr-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="ncr"/>
+	     <page key="CDA-ncr-index" name="Index" deprecated="true" spec="ncr"/>
+	     <page key="CDA-ncr-narratives" name="Narrative Guidance" spec="ncr"/>
+	     <page key="CDA-ncr-templates" name="Templates" spec="ncr"/>
+	     <page key="CDA-ncr-figures" name="Figures and Examples" spec="ncr"/>
+	     <page key="CDA-ncr-valuesets" name="Value sets" spec="ncr"/>
+	     <page key="CDA-ncr-samplefiles" name="Sample Files" spec="ncr"/>
+	     <page key="CDA-ncr-validationfiles" name="Validation Files" spec="ncr"/>
+	     <page key="CDA-ncr-schematron" name="Schematron" spec="ncr"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-pacp"
+                  deprecated="false"
+                  name="HL7 CDA® R2 Implementation Guide: Personal Advance Care Plan (PACP) Document, Release 1 - US Realm STU Release 2 (CDA)"
+                  defaultWorkgroup="sd"
+                  url="http://www.hl7.org/dstucomments/ex_showdetail.cfm?dstuid=190"
+                  defaultVersion="1.1.0">
+	     <version url="http://www.hl7.org/dstucomments/ex_showdetail.cfm?dstuid=190"
+               deprecated="false"
+               code="1.1.0"/>
+	     <page key="CDA-pacp-NA" name="(NA)" spec="pacp"/>
+	     <page key="CDA-pacp-many" name="(many)" spec="pacp"/>
+	     <page key="CDA-pacp-profiles" name="(profiles)" spec="pacp"/>
+	     <page key="CDA-pacp-overview" name="Overview" spec="pacp"/>
+	     <page key="CDA-pacp-usecases" name="Use Cases" spec="pacp"/>
+	     <page key="CDA-pacp-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="pacp"/>
+	     <page key="CDA-pacp-index" name="Index" deprecated="true" spec="pacp"/>
+	     <page key="CDA-pacp-narratives" name="Narrative Guidance" spec="pacp"/>
+	     <page key="CDA-pacp-templates" name="Templates" spec="pacp"/>
+	     <page key="CDA-pacp-figures" name="Figures and Examples" spec="pacp"/>
+	     <page key="CDA-pacp-valuesets" name="Value sets" spec="pacp"/>
+	     <page key="CDA-pacp-samplefiles" name="Sample Files" spec="pacp"/>
+	     <page key="CDA-pacp-validationfiles" name="Validation Files" spec="pacp"/>
+	     <page key="CDA-pacp-schematron" name="Schematron" spec="pacp"/>
+	     <page key="CDA-pacp-webpage"
+            name="Webpage"
+            url="http:www.hl7.orgdstucommentsex_showdetail.cfmdstuid190"
+            deprecated="true"
+            spec="pacp"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-phmr"
+                  deprecated="false"
+                  name="HL7 CDA® R2 Implementation Guide: Personal Healthcare Monitoring Report, Release 1 (CDA)"
+                  defaultWorkgroup="sd"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=33"
+                  defaultVersion="1.1.0">
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=33"
+               deprecated="true"
+               code="1.1.0"/>
+	     <page key="CDA-phmr-NA" name="(NA)" spec="phmr"/>
+	     <page key="CDA-phmr-many" name="(many)" spec="phmr"/>
+	     <page key="CDA-phmr-profiles" name="(profiles)" spec="phmr"/>
+	     <page key="CDA-phmr-overview" name="Overview" spec="phmr"/>
+	     <page key="CDA-phmr-usecases" name="Use Cases" spec="phmr"/>
+	     <page key="CDA-phmr-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="phmr"/>
+	     <page key="CDA-phmr-index" name="Index" deprecated="true" spec="phmr"/>
+	     <page key="CDA-phmr-narratives" name="Narrative Guidance" spec="phmr"/>
+	     <page key="CDA-phmr-templates" name="Templates" spec="phmr"/>
+	     <page key="CDA-phmr-figures" name="Figures and Examples" spec="phmr"/>
+	     <page key="CDA-phmr-valuesets" name="Value sets" spec="phmr"/>
+	     <page key="CDA-phmr-samplefiles" name="Sample Files" spec="phmr"/>
+	     <page key="CDA-phmr-validationfiles" name="Validation Files" spec="phmr"/>
+	     <page key="CDA-phmr-schematron" name="Schematron" spec="phmr"/>
+	     <page key="CDA-phmr-webpage"
+            name="Webpage"
+            deprecated="true"
+            url="http:www.hl7.orgimplementstandardsproduct_brief.cfmproduct_id33"
+            spec="phmr"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-pcd"
+                  deprecated="false"
+                  name="HL7 CDA® R2 Implementation Guide: Privacy Consent Directives, Release 1 (CDA)"
+                  defaultWorkgroup="cbcc"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=280"
+                  defaultVersion="1.1.0">
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=280"
+               deprecated="true"
+               code="1.1.0"/>
+	     <page key="CDA-pcd-NA" name="(NA)" spec="pcd"/>
+	     <page key="CDA-pcd-many" name="(many)" spec="pcd"/>
+	     <page key="CDA-pcd-profiles" name="(profiles)" spec="pcd"/>
+	     <page key="CDA-pcd-overview" name="Overview" spec="pcd"/>
+	     <page key="CDA-pcd-usecases" name="Use Cases" spec="pcd"/>
+	     <page key="CDA-pcd-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="pcd"/>
+	     <page key="CDA-pcd-index" name="Index" deprecated="true" spec="pcd"/>
+	     <page key="CDA-pcd-narratives" name="Narrative Guidance" spec="pcd"/>
+	     <page key="CDA-pcd-templates" name="Templates" spec="pcd"/>
+	     <page key="CDA-pcd-figures" name="Figures and Examples" spec="pcd"/>
+	     <page key="CDA-pcd-valuesets" name="Value sets" spec="pcd"/>
+	     <page key="CDA-pcd-samplefiles" name="Sample Files" spec="pcd"/>
+	     <page key="CDA-pcd-validationfiles" name="Validation Files" spec="pcd"/>
+	     <page key="CDA-pcd-schematron" name="Schematron" spec="pcd"/>
+	     <page key="CDA-pcd-webpage"
+            name="Webpage"
+            url="http:www.hl7.orgimplementstandardsproduct_brief.cfmproduct_id280"
+            deprecated="true"
+            spec="pcd"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-ahprbdr"
+                  deprecated="false"
+                  name="HL7 CDA® R2 Implementation Guide: Ambulatory and Hospital Healthcare Provider Reporting to Birth Defect Registries Release 1 , STU 2 -US Realm (CDA)"
+                  defaultVersion="1.2.0"
+                  defaultWorkgroup="pher">
+	     <version code="1.1.0"
+               url="https://www.hl7.org/dstucomments/showdetail.cfm?dstuid=271"
+               deprecated="true"/>
+	     <version code="1.2.0"
+               url="https://www.hl7.org/dstucomments/showdetail.cfm?dstuid=271"
+               deprecated="false"/>
+	     <page key="CDA-ahprbdr-NA" name="(NA)" spec="ahprbdr"/>
+	     <page key="CDA-ahprbdr-many" name="(many)" spec="ahprbdr"/>
+	     <page key="CDA-ahprbdr-profiles" name="(profiles)" spec="ahprbdr"/>
+	     <page key="CDA-ahprbdr-overview" name="Overview" spec="ahprbdr"/>
+	     <page key="CDA-ahprbdr-usecases" name="Use Cases" spec="ahprbdr"/>
+	     <page key="CDA-ahprbdr-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="ahprbdr"/>
+	     <page key="CDA-ahprbdr-index"
+            name="Index"
+            deprecated="true"
+            spec="ahprbdr"/>
+	     <page key="CDA-ahprbdr-narratives"
+            name="Narrative Guidance"
+            spec="ahprbdr"/>
+	     <page key="CDA-ahprbdr-templates" name="Templates" spec="ahprbdr"/>
+	     <page key="CDA-ahprbdr-figures"
+            name="Figures and Examples"
+            spec="ahprbdr"/>
+	     <page key="CDA-ahprbdr-valuesets" name="Value sets" spec="ahprbdr"/>
+	     <page key="CDA-ahprbdr-samplefiles" name="Sample Files" spec="ahprbdr"/>
+	     <page key="CDA-ahprbdr-validationfiles"
+            name="Validation Files"
+            spec="ahprbdr"/>
+	     <page key="CDA-ahprbdr-schematron" name="Schematron" spec="ahprbdr"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-represp"
+                  deprecated="false"
+                  name="HL7 CDA® R2 Implementation Guide: Reportability Response, Release 1, STU Release 1.0 - US Realm (CDA)"
+                  defaultWorkgroup="pc"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=470"
+                  defaultVersion="1.1.0">
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=470"
+               deprecated="true"
+               code="1.1.0"/>
+	     <page key="CDA-represp-NA" name="(NA)" spec="represp"/>
+	     <page key="CDA-represp-many" name="(many)" spec="represp"/>
+	     <page key="CDA-represp-profiles" name="(profiles)" spec="represp"/>
+	     <page key="CDA-represp-overview" name="Overview" spec="represp"/>
+	     <page key="CDA-represp-usecases" name="Use Cases" spec="represp"/>
+	     <page key="CDA-represp-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="represp"/>
+	     <page key="CDA-represp-index"
+            name="Index"
+            deprecated="true"
+            spec="represp"/>
+	     <page key="CDA-represp-narratives"
+            name="Narrative Guidance"
+            spec="represp"/>
+	     <page key="CDA-represp-templates" name="Templates" spec="represp"/>
+	     <page key="CDA-represp-figures"
+            name="Figures and Examples"
+            spec="represp"/>
+	     <page key="CDA-represp-valuesets" name="Value sets" spec="represp"/>
+	     <page key="CDA-represp-samplefiles" name="Sample Files" spec="represp"/>
+	     <page key="CDA-represp-validationfiles"
+            name="Validation Files"
+            spec="represp"/>
+	     <page key="CDA-represp-schematron" name="Schematron" spec="represp"/>
+	     <page key="CDA-represp-webpage"
+            name="Webpage"
+            deprecated="true"
+            url="http:www.hl7.orgimplementstandardsproduct_brief.cfmproduct_id470"
+            spec="represp"/>
+	     <page key="CDA-represp-represp-1"
+            name="HL7 CDA® R2 Implementation Guide: Reportability Response, Release 1 STU Release 1.0- US Realm"
+            deprecated="true"
+            url="http:www.hl7.orgimplementstandardsla.cfmfiledocumentcenterpublicstandardsdstuCDAR2_IG_PHCR_R2_RR_D1_2018JAN.zip"
+            spec="represp"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-trds"
+                  deprecated="false"
+                  name="HL7 CDA® R2 Implementation Guide: Trauma Registry Data Submission, Release 1 - US Realm (CDA)"
+                  defaultWorkgroup="pher"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=488"
+                  defaultVersion="2.1.0">
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=488"
+               deprecated="false"
+               code="2.1.0"/>
+	     <version url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=355"
+               deprecated="false"
+               code="1.1.0"/>
+	     <page key="CDA-trds-NA" name="(NA)" spec="trds"/>
+	     <page key="CDA-trds-many" name="(many)" spec="trds"/>
+	     <page key="CDA-trds-profiles" name="(profiles)" spec="trds"/>
+	     <page key="CDA-trds-overview" name="Overview" spec="trds"/>
+	     <page key="CDA-trds-usecases" name="Use Cases" spec="trds"/>
+	     <page key="CDA-trds-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="trds"/>
+	     <page key="CDA-trds-index" name="Index" deprecated="true" spec="trds"/>
+	     <page key="CDA-trds-narratives" name="Narrative Guidance" spec="trds"/>
+	     <page key="CDA-trds-templates" name="Templates" spec="trds"/>
+	     <page key="CDA-trds-figures" name="Figures and Examples" spec="trds"/>
+	     <page key="CDA-trds-valuesets" name="Value sets" spec="trds"/>
+	     <page key="CDA-trds-samplefiles" name="Sample Files" spec="trds"/>
+	     <page key="CDA-trds-validationfiles" name="Validation Files" spec="trds"/>
+	     <page key="CDA-trds-schematron" name="Schematron" spec="trds"/>
+	     <page key="CDA-trds-webpage2"
+            name="Webpage2"
+            deprecated="false"
+            url="http:www.hl7.orgimplementstandardsproduct_brief.cfmproduct_id488"
+            spec="trds"/>
+	     <page key="CDA-trds-webpage"
+            name="Webpage"
+            deprecated="false"
+            url="http:www.hl7.orgimplementstandardsproduct_brief.cfmproduct_id355"
+            spec="trds"/>
+	     <page key="CDA-trds-trds-1"
+            name="HL7 CDA® R2 Implementation Guide: Trauma Registry Data Submission, Release 1 - US Realm"
+            deprecated="false"
+            url="http:www.hl7.orgimplementstandardsla.cfmfiledocumentcenterprivatestandardscdaCDAR2_IG_TRAUMAREG_R1_2016AUG.pdf"
+            spec="trds"/>
+	     <page key="CDA-trds-trds-2"
+            name="HL7 CDA® R2 Implementation Guide: Trauma Registry Data Submission, Release 2 - US Realm"
+            deprecated="false"
+            url="http:www.hl7.orgimplementstandardsla.cfmfiledocumentcenterprivatestandardsCDAR2_IG_TRAUMAREG_R2_2019JAN.zip"
+            spec="trds"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="CDA-bfdr"
+                  deprecated="false"
+                  name="HL7 CDA® R2 Implementation Guide: Birth and Fetal Death Reporting, Release 1, STU Release 2 - US Realm (CDA)"
+                  defaultVersion="1.2.0"
+                  defaultWorkgroup="pher">
+	     <version url="http://www.hl7.org/dstucomments/showdetail.cfm?dstuid=255"
+               deprecated="false"
+               code="1.2.0"/>
+	     <version url="http://www.hl7.org/dstucomments/ex_showdetail.cfm?dstuid=141"
+               deprecated="true"
+               code="1.1.0"/>
+	     <page key="CDA-bfdr-NA" name="(NA)" spec="bfdr"/>
+	     <page key="CDA-bfdr-many" name="(many)" spec="bfdr"/>
+	     <page key="CDA-bfdr-profiles" name="(profiles)" spec="bfdr"/>
+	     <page key="CDA-bfdr-overview" name="Overview" spec="bfdr"/>
+	     <page key="CDA-bfdr-usecases" name="Use Cases" spec="bfdr"/>
+	     <page key="CDA-bfdr-documentation"
+            name="Documentation"
+            deprecated="true"
+            spec="bfdr"/>
+	     <page key="CDA-bfdr-index" name="Index" deprecated="true" spec="bfdr"/>
+	     <page key="CDA-bfdr-narratives" name="Narrative Guidance" spec="bfdr"/>
+	     <page key="CDA-bfdr-templates" name="Templates" spec="bfdr"/>
+	     <page key="CDA-bfdr-figures" name="Figures and Examples" spec="bfdr"/>
+	     <page key="CDA-bfdr-valuesets" name="Value sets" spec="bfdr"/>
+	     <page key="CDA-bfdr-samplefiles" name="Sample Files" spec="bfdr"/>
+	     <page key="CDA-bfdr-validationfiles" name="Validation Files" spec="bfdr"/>
+	     <page key="CDA-bfdr-schematron" name="Schematron" spec="bfdr"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-core"
                   name="FHIR Core (FHIR)"
                   gitUrl="https://github.com/HL7/fhir"
