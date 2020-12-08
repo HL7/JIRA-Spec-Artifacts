@@ -4,11 +4,11 @@
   url="http://hl7.org/fhir/uv/subscription-backport-ig"
   ciUrl="http://build.fhir.org/ig/HL7/fhir-subscription-backport-ig"
   defaultWorkgroup="fhir-i"
-  defaultVersion="current"
+  defaultVersion="0.0.1"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
   >
-  <version code="current" url="http://build.fhir.org/ig/HL7/fhir-subscription-backport-ig"/>
+  <version code="0.0.1" url="http://build.fhir.org/ig/HL7/fhir-subscription-backport-ig"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
@@ -22,7 +22,9 @@
 <artifact id="OperationDefinition/Backport-subscriptiontopic-list" key="OperationDefinition-Backport-subscriptiontopic-list" name="Backport Subscription Topic List Operation"/>
 <artifact id="Bundle/notification-empty" key="Bundle-notification-empty" name="Backported Notification: Empty"/>
 <artifact id="Bundle/notification-error" key="Bundle-notification-error" name="Backported Notification: Error"/>
+<artifact id="Bundle/notification-full-resource" key="Bundle-notification-full-resource" name="Backported Notification: Full Resource"/>
 <artifact id="Bundle/notification-id-only" key="Bundle-notification-id-only" name="Backported Notification: Id Only"/>
+<artifact id="Bundle/notification-multi-resource" key="Bundle-notification-multi-resource" name="Backported Notification: Multiple Resources"/>
 <artifact id="Parameters/notification-status" key="Parameters-notification-status" name="Backported Notification: Status"/>
 <artifact id="StructureDefinition/backport-additional-criteria" key="StructureDefinition-backport-additional-criteria" name="Backported R5 Additional Criteria"/>
 <artifact id="StructureDefinition/backport-subscription" key="StructureDefinition-backport-subscription" name="Backported R5 Subscription"/>
@@ -37,6 +39,8 @@
 <artifact id="Parameters/topic-list-single" key="Parameters-topic-list-single" name="Backported Subscription Topic List"/>
 <artifact id="Subscription/subscription-admission" key="Subscription-subscription-admission" name="Backported Subscription: Admission"/>
 <artifact id="Subscription/subscription-multi-resource" key="Subscription-subscription-multi-resource" name="Backported Subscription: Multi-Resource"/>
+<artifact id="CodeSystem/backport-notification-error-code-system" key="CodeSystem-backport-notification-error-code-system" name="R5 Subscription Error Code System"/>
+<artifact id="ValueSet/backport-notification-error-value-set" key="ValueSet-backport-notification-error-value-set" name="R5 Subscription Error Codes Value Set"/>
 <artifact id="CodeSystem/backport-notification-type-code-system" key="CodeSystem-backport-notification-type-code-system" name="R5 Subscription Notification Type Code System"/>
 <artifact id="ValueSet/backport-notification-type-value-set" key="ValueSet-backport-notification-type-value-set" name="R5 Subscription Notification Type Value Set"/>
 <page key="NA" name="(NA)"/>
@@ -56,4 +60,5 @@
 <page key="safety_security" name="Safety Security"/>
 <page key="toc" name="Table of Contents"/>
 <page key="workflow" name="Workflow"/>
+<page key="workflow-diagrams" name="Workflow Diagrams"/>
 </specification>
