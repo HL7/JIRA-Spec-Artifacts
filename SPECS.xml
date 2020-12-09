@@ -7676,9 +7676,12 @@
                   url="http://hl7.org/fhir/uv/subscription-backport-ig"
                   ciUrl="http://build.fhir.org/ig/HL7/fhir-subscription-backport-ig"
                   defaultWorkgroup="fhir-i"
-                  defaultVersion="current">
+                  defaultVersion="0.0.1">
       <version code="current"
                url="http://build.fhir.org/ig/HL7/fhir-subscription-backport-ig"/>
+      <version code="0.1.0"
+               url="http://build.fhir.org/ig/HL7/fhir-subscription-backport-ig"/>
+      <version code="0.0.1" deprecated="true"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -7722,9 +7725,17 @@
                 key="FHIR-subscriptions-backport-Bundle-notification-error"
                 name="Backported Notification: Error"
                 spec="subscriptions-backport"/>
+      <artifact id="Bundle/notification-full-resource"
+                key="FHIR-subscriptions-backport-Bundle-notification-full-resource"
+                name="Backported Notification: Full Resource"
+                spec="subscriptions-backport"/>
       <artifact id="Bundle/notification-id-only"
                 key="FHIR-subscriptions-backport-Bundle-notification-id-only"
                 name="Backported Notification: Id Only"
+                spec="subscriptions-backport"/>
+      <artifact id="Bundle/notification-multi-resource"
+                key="FHIR-subscriptions-backport-Bundle-notification-multi-resource"
+                name="Backported Notification: Multiple Resources"
                 spec="subscriptions-backport"/>
       <artifact id="Parameters/notification-status"
                 key="FHIR-subscriptions-backport-Parameters-notification-status"
@@ -7781,6 +7792,14 @@
       <artifact id="Subscription/subscription-multi-resource"
                 key="FHIR-subscriptions-backport-Subscription-subscription-multi-resource"
                 name="Backported Subscription: Multi-Resource"
+                spec="subscriptions-backport"/>
+      <artifact id="CodeSystem/backport-notification-error-code-system"
+                key="FHIR-subscriptions-backport-CodeSystem-backport-notification-error-code-system"
+                name="R5 Subscription Error Code System"
+                spec="subscriptions-backport"/>
+      <artifact id="ValueSet/backport-notification-error-value-set"
+                key="FHIR-subscriptions-backport-ValueSet-backport-notification-error-value-set"
+                name="R5 Subscription Error Codes Value Set"
                 spec="subscriptions-backport"/>
       <artifact id="CodeSystem/backport-notification-type-code-system"
                 key="FHIR-subscriptions-backport-CodeSystem-backport-notification-type-code-system"
@@ -7841,6 +7860,9 @@
             spec="subscriptions-backport"/>
       <page key="FHIR-subscriptions-backport-workflow"
             name="Workflow"
+            spec="subscriptions-backport"/>
+      <page key="FHIR-subscriptions-backport-workflow-diagrams"
+            name="Workflow Diagrams"
             spec="subscriptions-backport"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
