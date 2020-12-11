@@ -13714,22 +13714,125 @@
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-livd"
                   name="US LOINC – IVD Test Code (LIVD) (FHIR)"
-                  gitUrl="https://github.com/HL7/livd"
-                  url="http://hl7.org/fhir/uv/livd"
-                  ciUrl="http://build.fhir.org/ig/HL7/livd"
+                  ballotUrl="http://hl7.org/fhir/uv/livd/2021Jan"
+                  ciUrl="https://build.fhir.org/ig/HL7/livd"
+                  defaultVersion="current"
                   defaultWorkgroup="oo"
-                  defaultVersion="0.1">
-      <version code="0.1"/>
+                  gitUrl="https://github.com/HL7/livd"
+                  url="http://hl7.org/fhir/uv/livd">
+      <version code="current" url="https://build.fhir.org/ig/HL7/livd"/>
+      <version code="0.3.0" url="http://hl7.org/fhir/uv/livd/2021Jan"/>
+      <version code="0.2.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/uv/livd/2019Sep"/>
+      <version code="0.1.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/uv/livd/2018Sep"/>
+      <version code="0.1" deprecated="true"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="ObservationDefinition"
-                key="FHIR-us-livd-ObservationDefinition"
-                deprecated="true"
+      <artifact id="Bundle/livd-example-abbott-architect"
+                key="FHIR-us-livd-Bundle-livd-example-abbott-architect"
+                name="Abbott ARCHITECT LIVD example bundle"
                 spec="us-livd"/>
-      <page name="(NA)" key="FHIR-us-livd-NA" spec="us-livd"/>
-      <page name="(many)" key="FHIR-us-livd-many" spec="us-livd"/>
-      <page name="(profiles)" key="FHIR-us-livd-profiles" spec="us-livd"/>
+      <artifact id="StructureDefinition/bundle-uv-livd"
+                key="FHIR-us-livd-StructureDefinition-bundle-uv-livd"
+                name="LIVD Bundle"
+                spec="us-livd"/>
+      <artifact id="StructureDefinition/catalog-uv-livd"
+                key="FHIR-us-livd-StructureDefinition-catalog-uv-livd"
+                name="LIVD Catalog"
+                spec="us-livd"/>
+      <artifact id="StructureDefinition/conceptmap-uv-livd"
+                key="FHIR-us-livd-StructureDefinition-conceptmap-uv-livd"
+                name="LIVD ConceptMap"
+                spec="us-livd"/>
+      <artifact id="StructureDefinition/ext-device"
+                key="FHIR-us-livd-StructureDefinition-ext-device"
+                name="LIVD Device"
+                spec="us-livd"/>
+      <artifact id="StructureDefinition/devicedefinition-uv-livd"
+                key="FHIR-us-livd-StructureDefinition-devicedefinition-uv-livd"
+                name="LIVD DeviceDefinition"
+                spec="us-livd"/>
+      <artifact id="StructureDefinition/codesystem-loinc-frag-uv-livd"
+                key="FHIR-us-livd-StructureDefinition-codesystem-loinc-frag-uv-livd"
+                name="LIVD LOINC Fragment CodeSystem"
+                spec="us-livd"/>
+      <artifact id="ValueSet/loinc-livd"
+                key="FHIR-us-livd-ValueSet-loinc-livd"
+                name="LIVD LOINC value set"
+                spec="us-livd"/>
+      <artifact id="StructureDefinition/observationdefinition-uv-livd"
+                key="FHIR-us-livd-ObservationDefinition"
+                name="LIVD ObservationDefinition"
+                spec="us-livd"/>
+      <artifact id="StructureDefinition/ext-capability"
+                key="FHIR-us-livd-StructureDefinition-ext-capability"
+                name="LIVD Test Capability"
+                spec="us-livd"/>
+      <artifact id="StructureDefinition/ext-vendorReferenceIdentifier"
+                key="FHIR-us-livd-StructureDefinition-ext-vendorReferenceIdentifier"
+                name="LIVD Vendor Reference Identifier"
+                spec="us-livd"/>
+      <artifact id="ValueSet/livd-bundle-type"
+                key="FHIR-us-livd-ValueSet-livd-bundle-type"
+                name="LIVD bundle type value set"
+                spec="us-livd"/>
+      <artifact id="Bundle/livd-example"
+                key="FHIR-us-livd-Bundle-livd-example"
+                name="LIVD example bundle"
+                spec="us-livd"/>
+      <artifact id="CodeSystem/livd-section-type"
+                key="FHIR-us-livd-CodeSystem-livd-section-type"
+                name="LIVD section type code system"
+                spec="us-livd"/>
+      <artifact id="ValueSet/livd-section-type"
+                key="FHIR-us-livd-ValueSet-livd-section-type"
+                name="LIVD section type value set"
+                spec="us-livd"/>
+      <artifact id="CodeSystem/loinc-fragment-livd"
+                key="FHIR-us-livd-CodeSystem-loinc-fragment-livd"
+                name="LOINC Code System fragment for LIVD"
+                spec="us-livd"/>
+      <artifact id="Bundle/livd-example-roche-qual"
+                key="FHIR-us-livd-Bundle-livd-example-roche-qual"
+                name="Roche qualitative LIVD example bundle"
+                spec="us-livd"/>
+      <artifact id="Bundle/livd-example-roche-quant"
+                key="FHIR-us-livd-Bundle-livd-example-roche-quant"
+                name="Roche quantitative LIVD example bundle"
+                spec="us-livd"/>
+      <page key="FHIR-us-livd-NA" name="(NA)" spec="us-livd"/>
+      <page key="FHIR-us-livd-many" name="(many)" spec="us-livd"/>
+      <page deprecated="true"
+            key="FHIR-us-livd-profiles"
+            name="(profiles)"
+            spec="us-livd"/>
+      <page key="FHIR-us-livd-acknowledgements"
+            name="Acknowledgements"
+            spec="us-livd"/>
+      <page key="FHIR-us-livd-artifacts" name="Artifact List" spec="us-livd"/>
+      <page key="FHIR-us-livd-downloads" name="Downloads" spec="us-livd"/>
+      <page key="FHIR-us-livd-glossary" name="Glossary" spec="us-livd"/>
+      <page key="FHIR-us-livd-general-implementation"
+            name="Implementation Considerations"
+            spec="us-livd"/>
+      <page key="FHIR-us-livd-general-concepts"
+            name="LIVD Concepts"
+            spec="us-livd"/>
+      <page key="FHIR-us-livd-general-definitions"
+            name="LIVD Data Definitions"
+            spec="us-livd"/>
+      <page key="FHIR-us-livd-general-mapping"
+            name="LIVD Data Mapping to FHIR"
+            spec="us-livd"/>
+      <page key="FHIR-us-livd-index" name="LIVD Introduction" spec="us-livd"/>
+      <page key="FHIR-us-livd-general-summary"
+            name="LOINC Mapping Summary"
+            spec="us-livd"/>
+      <page key="FHIR-us-livd-toc" name="Table of Contents" spec="us-livd"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-mcode"
