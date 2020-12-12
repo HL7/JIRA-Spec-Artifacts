@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification ballotUrl="http://hl7.org/fhir/us/bfdr/2021JAN"
+<specification ballotUrl="http://hl7.org/fhir/us/bfdr/2021Jan"
   gitUrl="https://github.com/HL7/fhir-bfdr" url="http://hl7.org/fhir/us/bfdr"
-  ciUrl="https://build.fhir.org/ig/HL7/fhir-bfdr" defaultWorkgroup="pher" defaultVersion="0.1.0"
+  ciUrl="https://build.fhir.org/ig/HL7/bfdr" defaultWorkgroup="pher" defaultVersion="0.1.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <version code="0.1.0" />
+  <version code="current" url="http://build.fhir.org/ig/HL7/bfdr"/>
+  <version code="0.1.0" url="http://hl7.org/fhir/us/bfdr/2021Jan"/>
+  <version code="0.1" deprecated="true"/>
   <artifactPageExtension value="-definitions" />
   <artifactPageExtension value="-examples" />
   <artifactPageExtension value="-mappings" />
@@ -631,6 +633,8 @@
     key="StructureDefinition-Condition-coded-other-significant-fetal-death-cause-or-condition"
     id="StructureDefinition/Condition-coded-other-significant-fetal-death-cause-or-condition"
     deprecated="true" />
+  <page key="NA" name="(NA)"/>
+  <page key="many" name="(many)"/>
   <page name="Home Page" key="index" />
   <page name="Notice to Ballot Commenters" key="notice_to_ballot_commenters" />
   <page name="Use Cases" key="use_cases" />
@@ -643,6 +647,7 @@
   <page name="Appendix C - Example Facility Worksheet for the Fetal Death Report"
     key="appendix_c__example_facility_worksheet_for_the_fetal_death_report" />
   <page name="Appendix D - Example Fetal Death Report" key="appendix_d__example_fetal_death_report" />
+  <page key="artifacts" name="Artifacts Summary"/>
   <page name="Downloads" key="downloads" />
   <page name="Provider Facility Live Birth Report" key="provider_facility_live_birth_report"
     deprecated="true" />
@@ -660,6 +665,7 @@
   <page name="Void Certificate Report" key="void_certificate_report" deprecated="true" />
   <page name="Coded Race and Ethnicity" key="coded_race_and_ethnicity" deprecated="true" />
   <page name="Coded Cause of Fetal Death" key="coded_cause_of_fetal_death" deprecated="true" />
+  <page key="toc" name="Table of Contents"/>
   <page name="The Specification" key="the_specification" deprecated="true" />
   <page name="Examples" key="examples" deprecated="true" />
   <page name="Examples for Provider Facility Live Birth Report"
