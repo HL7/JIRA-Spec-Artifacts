@@ -14236,7 +14236,7 @@
                 spec="us-medmorph"/>
       <artifact id="Communication/communication-example-cancer-pha-response"
                 key="FHIR-us-medmorph-Communication-communication-example-cancer-pha-response"
-                name="Communication example from PHA to Healthcare in response to a receieved cancer report"
+                name="Communication example from PHA to Healthcare in response to a received cancer report"
                 spec="us-medmorph"/>
       <artifact id="StructureDefinition/ext-dataEncrypted"
                 key="FHIR-us-medmorph-StructureDefinition-ext-dataEncrypted"
@@ -14256,7 +14256,7 @@
                 spec="us-medmorph"/>
       <artifact id="Bundle/specification-bundle-example"
                 key="FHIR-us-medmorph-Bundle-specification-bundle-example"
-                name="Example of a Specification Bundle for a Knolwedge Artifact containing a Plan Definition and Value Set"
+                name="Example of a Specification Bundle for a Knowledge Artifact containing a PlanDefinition and ValueSet"
                 spec="us-medmorph"/>
       <artifact id="StructureDefinition/ext-expectedResponseTime"
                 key="FHIR-us-medmorph-StructureDefinition-ext-expectedResponseTime"
@@ -14270,7 +14270,7 @@
                 key="FHIR-us-medmorph-OperationDefinition-Bundle-de-identify"
                 name="Generate De-Identified Bundle"
                 spec="us-medmorph"/>
-      <artifact id="OperationDefinition/Bundle-psuedonymize"
+      <artifact id="OperationDefinition/Bundle-pseudonymize"
                 key="FHIR-us-medmorph-OperationDefinition-Bundle-psuedonymize"
                 name="Generate Pseudonymized Bundle"
                 spec="us-medmorph"/>
@@ -14306,9 +14306,14 @@
                 key="FHIR-us-medmorph-CapabilityStatement-medmorph-knowledge-artifact-repository"
                 name="MedMorph Knowledge Artifact Repository"
                 spec="us-medmorph"/>
-      <artifact id="CapabilityStatement/medmorph-public-health-agency"
+      <artifact deprecated="true"
+                id="CapabilityStatement/medmorph-public-health-agency"
                 key="FHIR-us-medmorph-CapabilityStatement-medmorph-public-health-agency"
                 name="MedMorph Public Health Agency"
+                spec="us-medmorph"/>
+      <artifact id="CapabilityStatement/medmorph-public-health-authority"
+                key="FHIR-us-medmorph-CapabilityStatement-medmorph-public-health-authority"
+                name="MedMorph Public Health Authority"
                 spec="us-medmorph"/>
       <artifact id="CapabilityStatement/medmorph-trust-service-provider"
                 key="FHIR-us-medmorph-CapabilityStatement-medmorph-trust-service-provider"
@@ -14467,7 +14472,8 @@
       <page key="FHIR-us-medmorph-provisioning"
             name="Provisioning Workflow Specification"
             spec="us-medmorph"/>
-      <page key="FHIR-us-medmorph-reportgeneration"
+      <page deprecated="true"
+            key="FHIR-us-medmorph-reportgeneration"
             name="Report Generation"
             spec="us-medmorph"/>
       <page key="FHIR-us-medmorph-reportsubmission"
