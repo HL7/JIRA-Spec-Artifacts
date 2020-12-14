@@ -15360,6 +15360,7 @@
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-sdoh-cc"
                   name="US SDOH Clinical Care (FHIR)"
+                  ballotUrl="http://hl7.org/fhir/us/sdoh-clinicalcare/2021Jan"
                   ciUrl="http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare"
                   defaultVersion="0.1.0"
                   defaultWorkgroup="pc"
@@ -15367,19 +15368,19 @@
                   url="http://hl7.org/fhir/us/sdoh-clinicalcare">
       <version code="current"
                url="http://build.fhir.org/ig/HL7/fhir-sdoh-clinicalcare"/>
+      <version code="0.1.0" url="http://hl7.org/fhir/us/sdoh-clinicalcare/2021Jan"/>
       <version code="0.0.4" deprecated="true"/>
       <version code="0.1" deprecated="true"/>
-      <version code="0.1.0"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
+      <artifact id="Group/R101"
+                key="FHIR-us-sdoh-cc-Group-R101"
+                name="John's Pantry Example"
+                spec="us-sdoh-cc"/>
       <artifact id="Patient/pat-53234"
                 key="FHIR-us-sdoh-cc-Patient-pat-53234"
                 name="Patient Colin Abbas"
-                spec="us-sdoh-cc"/>
-      <artifact id="StructureDefinition/SDOHCC-Group"
-                key="FHIR-us-sdoh-cc-StructureDefinition-SDOHCC-Group"
-                name="SDOCHCC Group"
                 spec="us-sdoh-cc"/>
       <artifact id="CodeSystem/sdohcc-temporary-codes"
                 key="FHIR-us-sdoh-cc-CodeSystem-sdohcc-temporary-codes"
@@ -15397,6 +15398,10 @@
                 key="FHIR-us-sdoh-cc-StructureDefinition-SDOHCC-Consent"
                 name="SDOHCC Consent"
                 spec="us-sdoh-cc"/>
+      <artifact id="Consent/consent-to-share-example"
+                key="FHIR-us-sdoh-cc-Consent-consent-to-share-example"
+                name="SDOHCC Consent Example"
+                spec="us-sdoh-cc"/>
       <artifact id="StructureDefinition/SDOHCC-Goal-Base-1"
                 key="FHIR-us-sdoh-cc-StructureDefinition-SDOHCC-Goal-Base-1"
                 name="SDOHCC Goal Base 1"
@@ -15404,6 +15409,10 @@
       <artifact id="Goal/SDOHCC-Goal-HungerVitalSign-Example-1"
                 key="FHIR-us-sdoh-cc-Goal-SDOHCC-Goal-HungerVitalSign-Example-1"
                 name="SDOHCC Goal HungerVitalSign Example 1"
+                spec="us-sdoh-cc"/>
+      <artifact id="StructureDefinition/SDOHCC-Group"
+                key="FHIR-us-sdoh-cc-StructureDefinition-SDOHCC-Group"
+                name="SDOHCC Group"
                 spec="us-sdoh-cc"/>
       <artifact id="Observation/SDOHCC-Observation-HungerVitalSign-Example-1"
                 key="FHIR-us-sdoh-cc-Observation-SDOHCC-Observation-HungerVitalSign-Example-1"
@@ -15480,12 +15489,21 @@
             spec="us-sdoh-cc"/>
       <page key="FHIR-us-sdoh-cc-credits" name="Credits" spec="us-sdoh-cc"/>
       <page key="FHIR-us-sdoh-cc-downloads" name="Downloads" spec="us-sdoh-cc"/>
+      <page key="FHIR-us-sdoh-cc-exchange_workflow"
+            name="Exchange Workflow"
+            spec="us-sdoh-cc"/>
+      <page key="FHIR-us-sdoh-cc-fhir_artifacts_overview"
+            name="FHIR Artifacts Overview"
+            spec="us-sdoh-cc"/>
       <page key="FHIR-us-sdoh-cc-gravity_background"
             name="Gravity Background"
             spec="us-sdoh-cc"/>
       <page key="FHIR-us-sdoh-cc-homePage" name="Home Page" spec="us-sdoh-cc"/>
       <page key="FHIR-us-sdoh-cc-mapping_instructions"
             name="Mapping Instructions"
+            spec="us-sdoh-cc"/>
+      <page key="FHIR-us-sdoh-cc-mustsupport_and_missing_data"
+            name="MustSupport and Missing Data"
             spec="us-sdoh-cc"/>
       <page key="FHIR-us-sdoh-cc-patient_story_1"
             name="Patient Story 1"
@@ -15496,11 +15514,23 @@
       <page key="FHIR-us-sdoh-cc-personas_and_patient_stories"
             name="Personas and Patient Stories"
             spec="us-sdoh-cc"/>
+      <page key="FHIR-us-sdoh-cc-privacy_and_security"
+            name="Privacy and Security"
+            spec="us-sdoh-cc"/>
       <page key="FHIR-us-sdoh-cc-sdoh_clinical_care_scope"
             name="SDOH Clinical Care Scope"
             spec="us-sdoh-cc"/>
+      <page key="FHIR-us-sdoh-cc-support_for_multiple_domains"
+            name="Support for Multiple Domains"
+            spec="us-sdoh-cc"/>
+      <page key="FHIR-us-sdoh-cc-survey_instrument_support"
+            name="Survey Instrument Support"
+            spec="us-sdoh-cc"/>
       <page key="FHIR-us-sdoh-cc-toc"
             name="Table of Contents"
+            spec="us-sdoh-cc"/>
+      <page key="FHIR-us-sdoh-cc-technical_background"
+            name="Technical Background"
             spec="us-sdoh-cc"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
