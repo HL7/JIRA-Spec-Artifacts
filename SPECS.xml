@@ -18834,10 +18834,10 @@
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="V2-core"
-                  name="V2 Message Specification (V2)"
+                  name="V2.x Message Specification (V2)"
                   defaultWorkgroup="inm"
                   defaultVersion="V2.9">
-      <version code="V2.10"/>
+      <version code="V2.10" deprecated="true"/>
       <version code="V2.9"/>
       <version code="V2.8.2"/>
       <version code="V2.8.1"/>
@@ -20406,7 +20406,9 @@
             key="V2-core-conformance"
             workgroup="cgit"
             spec="core"/>
-      <page name="Code Tables (Chapter 2C" key="V2-core-codetables" spec="core"/>
+      <page name="Code Tables (Chapter 2C)"
+            key="V2-core-codetables"
+            spec="core"/>
       <page name="Patient Administration (Chapter 3)"
             key="V2-core-patadmin"
             workgroup="pa"
@@ -20478,6 +20480,33 @@
       <page name="Glossary (Appendix D)" key="V2-core-glossary" spec="core"/>
       <page name="Index (Appendix E)" key="V2-core-index" spec="core"/>
       <page name="Other" key="V2-core-other" workgroup="v2mg" spec="core"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="V2-vtwoplus"
+                  name="V2+ Message Specification (V2)"
+                  defaultWorkgroup="inm"
+                  defaultVersion="Initial_Draft">
+      <version code="Initial_Draft"/>
+      <page name="(NA)"
+            key="V2-vtwoplus-NA"
+            deprecated="true"
+            spec="vtwoplus"/>
+      <page name="Home" key="V2-vtwoplus-home" spec="vtwoplus"/>
+      <page name="Domains" key="V2-vtwoplus-domains" spec="vtwoplus"/>
+      <page name="Message Structures"
+            key="V2-vtwoplus-messages"
+            spec="vtwoplus"/>
+      <page name="Segments" key="V2-vtwoplus-segments" spec="vtwoplus"/>
+      <page name="Data Types" key="V2-vtwoplus-datatypes" spec="vtwoplus"/>
+      <page name="Vocabulary" key="V2-vtwoplus-vocabulary" spec="vtwoplus"/>
+      <page name="Control" key="V2-vtwoplus-control" spec="vtwoplus"/>
+      <page name="Conformance" key="V2-vtwoplus-conformance" spec="vtwoplus"/>
+      <page name="Encoding" key="V2-vtwoplus-encoding" spec="vtwoplus"/>
+      <page name="Transport" key="V2-vtwoplus-transport" spec="vtwoplus"/>
+      <page name="Other"
+            key="V2-vtwoplus-other"
+            workgroup="v2mg"
+            spec="vtwoplus"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="V2-conformance"
