@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/medmorph/2021Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-medmorph" defaultVersion="0.1.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-medmorph" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" url="http://hl7.org/fhir/us/medmorph"><version code="current" url="http://build.fhir.org/ig/HL7/fhir-medmorph"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/medmorph/2021Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-medmorph" defaultVersion="0.1.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-medmorph" url="http://hl7.org/fhir/us/medmorph">
+<version code="current" url="http://build.fhir.org/ig/HL7/fhir-medmorph"/>
 <version code="0.1.0" url="http://hl7.org/fhir/us/medmorph/2021Jan"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
@@ -7,16 +8,16 @@
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/ext-asyncIndicator" key="StructureDefinition-ext-asyncIndicator" name="AsyncIndicator"/>
 <artifact id="StructureDefinition/ext-authorSignature" key="StructureDefinition-ext-authorSignature" name="AuthorSignature"/>
-<artifact id="Communication/communication-example-cancer-pha-response" key="Communication-communication-example-cancer-pha-response" name="Communication example from PHA to Healthcare in response to a receieved cancer report"/>
+<artifact id="Communication/communication-example-cancer-pha-response" key="Communication-communication-example-cancer-pha-response" name="Communication example from PHA to Healthcare in response to a received cancer report"/>
 <artifact id="StructureDefinition/ext-dataEncrypted" key="StructureDefinition-ext-dataEncrypted" name="DataEncrypted"/>
 <artifact id="Bundle/content-bundle-example" key="Bundle-content-bundle-example" name="Example of a Content Bundle containing Patient Data"/>
 <artifact id="Bundle/reporting-bundle-example" key="Bundle-reporting-bundle-example" name="Example of a Reporting Bundle containing Message Header and Content Bundle"/>
 <artifact id="Bundle/response-bundle-example" key="Bundle-response-bundle-example" name="Example of a Response Bundle for a submitted message containing a communication resource."/>
-<artifact id="Bundle/specification-bundle-example" key="Bundle-specification-bundle-example" name="Example of a Specification Bundle for a Knolwedge Artifact containing a Plan Definition and Value Set"/>
+<artifact id="Bundle/specification-bundle-example" key="Bundle-specification-bundle-example" name="Example of a Specification Bundle for a Knowledge Artifact containing a PlanDefinition and ValueSet"/>
 <artifact id="StructureDefinition/ext-expectedResponseTime" key="StructureDefinition-ext-expectedResponseTime" name="ExpectedResponseTime"/>
 <artifact id="OperationDefinition/Bundle-anonymize" key="OperationDefinition-Bundle-anonymize" name="Generate Anonymized Bundle"/>
 <artifact id="OperationDefinition/Bundle-de-identify" key="OperationDefinition-Bundle-de-identify" name="Generate De-Identified Bundle"/>
-<artifact id="OperationDefinition/Bundle-psuedonymize" key="OperationDefinition-Bundle-psuedonymize" name="Generate Pseudonymized Bundle"/>
+<artifact id="OperationDefinition/Bundle-pseudonymize" key="OperationDefinition-Bundle-psuedonymize" name="Generate Pseudonymized Bundle"/>
 <artifact id="OperationDefinition/Bundle-re-identify" key="OperationDefinition-Bundle-re-identify" name="Generate Re-Identified Bundle"/>
 <artifact id="Group/group-example-survey" key="Group-group-example-survey" name="Group example showing Providers participating in healthcare surveys"/>
 <artifact id="Group/group-example-research" key="Group-group-example-research" name="Group example showing patients participating in research at a healthcare organization"/>
@@ -25,7 +26,8 @@
 <artifact id="CapabilityStatement/medmorph-backend-service-app" key="CapabilityStatement-medmorph-backend-service-app" name="MedMorph Backend Service App"/>
 <artifact id="CapabilityStatement/medmorph-ehr" key="CapabilityStatement-medmorph-ehr" name="MedMorph EHR"/>
 <artifact id="CapabilityStatement/medmorph-knowledge-artifact-repository" key="CapabilityStatement-medmorph-knowledge-artifact-repository" name="MedMorph Knowledge Artifact Repository"/>
-<artifact id="CapabilityStatement/medmorph-public-health-agency" key="CapabilityStatement-medmorph-public-health-agency" name="MedMorph Public Health Agency"/>
+<artifact deprecated="true" id="CapabilityStatement/medmorph-public-health-agency" key="CapabilityStatement-medmorph-public-health-agency" name="MedMorph Public Health Agency"/>
+<artifact id="CapabilityStatement/medmorph-public-health-authority" key="CapabilityStatement-medmorph-public-health-authority" name="MedMorph Public Health Authority"/>
 <artifact id="CapabilityStatement/medmorph-trust-service-provider" key="CapabilityStatement-medmorph-trust-service-provider" name="MedMorph Trust Service Provider"/>
 <artifact id="CapabilityStatement/medmorph-trusted-third-party" key="CapabilityStatement-medmorph-trusted-third-party" name="MedMorph Trusted Third Party"/>
 <artifact id="MessageHeader/messageheader-example-reportheader" key="MessageHeader-messageheader-example-reportheader" name="MessageHeader example used in the Cancer Reporting Bundle sent from Healthcare org to PHA"/>
@@ -69,7 +71,7 @@
 <page key="changes" name="IG Change History"/>
 <page key="index" name="MedMorph Home Page"/>
 <page key="provisioning" name="Provisioning Workflow Specification"/>
-<page key="reportgeneration" name="Report Generation"/>
+<page deprecated="true" key="reportgeneration" name="Report Generation"/>
 <page key="reportsubmission" name="Report Submission"/>
 <page key="researchdataextraction" name="Research Data Extraction"/>
 <page key="researchdataquery" name="Research Data Query"/>
