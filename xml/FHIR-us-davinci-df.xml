@@ -1,23 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification 
-               gitUrl="https://github.com/HL7/davinci-pdex-formulary" 
-               url="http://hl7.org/fhir/us/davinci-pdex-formulary"
-               ciUrl="http://build.fhir.org/ig/HL7/davinci-pdex-formulary"
-               defaultWorkgroup="pharm"
-               defaultVersion="current"
-               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
-               ballotUrl="http://hl7.org/fhir/us/davinci-pdex-formulary">
-   <version code="0.1" deprecated="true"/>
-   <version code="current" url="http://hl7.org/fhir/us/davinci-pdex-formulary"/>
-   <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-pdex-formulary"/>
-  <artifactPageExtension value="-definitions"/>
-  <artifactPageExtension value="-examples"/>
-  <artifactPageExtension value="-mappings"/>
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="(profiles)" key="profiles"/>
-  <page name="downloads" key="downloads"/>
-  <page name="methodology" key="methodology"/>
-  <page name="toc" key="toc"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               ballotUrl="http://hl7.org/fhir/us/davinci-drug-formulary/STU1" 
+              ciUrl="http://build.fhir.org/ig/HL7/davinci-pdex-formulary" 
+              defaultVersion="current" 
+              defaultWorkgroup="pharm" 
+              gitUrl="https://github.com/HL7/davinci-pdex-formulary" 
+              xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" 
+              url="http://hl7.org/fhir/us/davinci-drug-formulary">
+<version code="current" url="http://build.fhir.org/ig/HL7/davinci-pdex-formulary"/>
+<version code="1.0.1" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU1.01"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU1"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-drug-formulary/Jun2019"/>
+<version code="0.1" deprecated="true"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="CodeSystem/usdf-CoinsuranceOptionCS" key="CodeSystem-usdf-CoinsuranceOptionCS" name="Code for qualifier for coinsurance rate"/>
+<artifact id="CodeSystem/usdf-DrugTierCS" key="CodeSystem-usdf-DrugTierCS" name="Codes for medication drug tiers in health plans"/>
+<artifact id="CodeSystem/usdf-CopayOptionCS" key="CodeSystem-usdf-CopayOptionCS" name="Codes for qualifier of copay amount"/>
+<artifact id="CodeSystem/usdf-PharmacyTypeCS" key="CodeSystem-usdf-PharmacyTypeCS" name="Codes for types of pharmacies"/>
+<artifact id="List/covplanV1002" key="List-covplanV1002" name="Coverage Plan V1002"/>
+<artifact id="List/CoveragePlanV3001" key="List-CoveragePlanV3001" name="Coverage Plan V3001"/>
+<artifact id="List/CoveragePlanV3002" key="List-CoveragePlanV3002" name="Coverage Plan V3002"/>
+<artifact id="List/CoveragePlanV3004t" key="List-CoveragePlanV3004t" name="Coverage Plan V3004t"/>
+<artifact id="StructureDefinition/usdf-DrugAlternatives-extension" key="StructureDefinition-usdf-DrugAlternatives-extension" name="Drug Alternatives"/>
+<artifact id="StructureDefinition/usdf-DrugTierDefinition-extension" key="StructureDefinition-usdf-DrugTierDefinition-extension" name="Drug Tier Definition"/>
+<artifact id="StructureDefinition/usdf-DrugTierID-extension" key="StructureDefinition-usdf-DrugTierID-extension" name="Drug Tier ID"/>
+<artifact id="ValueSet/DrugTierVS" key="ValueSet-DrugTierVS" name="Drug tier of medication in health plan"/>
+<artifact id="SearchParameter/DrugName" key="SearchParameter-DrugName" name="DrugName"/>
+<artifact id="SearchParameter/DrugPlan" key="SearchParameter-DrugPlan" name="DrugPlan"/>
+<artifact id="SearchParameter/DrugTier" key="SearchParameter-DrugTier" name="DrugTier"/>
+<artifact id="StructureDefinition/usdf-EmailPlanContact-extension" key="StructureDefinition-usdf-EmailPlanContact-extension" name="Email Plan Contact"/>
+<artifact id="StructureDefinition/usdf-CoveragePlan" key="StructureDefinition-usdf-CoveragePlan" name="Formulary Coverage Plan"/>
+<artifact id="StructureDefinition/usdf-FormularyDrug" key="StructureDefinition-usdf-FormularyDrug" name="Formulary Drug"/>
+<artifact id="MedicationKnowledge/formularydrugV1002" key="MedicationKnowledge-formularydrugV1002" name="Formulary Drug V1002"/>
+<artifact id="MedicationKnowledge/FormularyDrugV3001" key="MedicationKnowledge-FormularyDrugV3001" name="Formulary Drug V3001"/>
+<artifact id="MedicationKnowledge/FormularyDrugV3002" key="MedicationKnowledge-FormularyDrugV3002" name="Formulary Drug V3002"/>
+<artifact id="MedicationKnowledge/cmsip9" key="MedicationKnowledge-cmsip9" name="Formulary Drug cmsip9"/>
+<artifact id="StructureDefinition/usdf-FormularyURL-extension" key="StructureDefinition-usdf-FormularyURL-extension" name="Formulary URL"/>
+<artifact id="StructureDefinition/usdf-MarketingURL-extension" key="StructureDefinition-usdf-MarketingURL-extension" name="Marketing URL"/>
+<artifact id="StructureDefinition/usdf-Network-extension" key="StructureDefinition-usdf-Network-extension" name="Network"/>
+<artifact id="StructureDefinition/usdf-PlanID-extension" key="StructureDefinition-usdf-PlanID-extension" name="Plan ID"/>
+<artifact id="StructureDefinition/usdf-PlanIDType-extension" key="StructureDefinition-usdf-PlanIDType-extension" name="Plan ID Type"/>
+<artifact id="StructureDefinition/usdf-PriorAuthorization-extension" key="StructureDefinition-usdf-PriorAuthorization-extension" name="Prior Authorization"/>
+<artifact id="ValueSet/CoinsuranceOptionVS" key="ValueSet-CoinsuranceOptionVS" name="Qualifier for coinsurance rate"/>
+<artifact id="ValueSet/CopayOptionVS" key="ValueSet-CopayOptionVS" name="Qualifier of copay amount"/>
+<artifact id="StructureDefinition/usdf-QuantityLimit-extension" key="StructureDefinition-usdf-QuantityLimit-extension" name="Quantity Limit"/>
+<artifact id="StructureDefinition/usdf-StepTherapyLimit-extension" key="StructureDefinition-usdf-StepTherapyLimit-extension" name="Step Therapy Limit"/>
+<artifact id="StructureDefinition/usdf-SummaryURL-extension" key="StructureDefinition-usdf-SummaryURL-extension" name="Summary URL"/>
+<artifact id="ValueSet/PharmacyTypeVS" key="ValueSet-PharmacyTypeVS" name="Type of pharmacies"/>
+<artifact id="CapabilityStatement/usdf-server" key="CapabilityStatement-usdf-server" name="US Drug Formulary Server Capability Statement"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="downloads" name="Downloads"/>
+<page key="examples" name="Examples"/>
+<page key="index" name="Home"/>
+<page key="profiles" name="Profiles"/>
+<page key="toc" name="Table of Contents"/>
+<page deprecated="true" key="methodology" name="methodology"/>
 </specification>

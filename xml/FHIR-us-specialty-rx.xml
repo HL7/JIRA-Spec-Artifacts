@@ -1,231 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               url="http://hl7.org/fhir/us/specialty-rx"
-               ciUrl="http://build.fhir.org/ig/HL7/fhir-specialty-rx"
-               defaultWorkgroup="pharm"
-               gitUrl="https://github.com/HL7/fhir-specialty-rx"
-               defaultVersion="current"
-               xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-   <version code="current" url="http://build.fhir.org/ig/HL7/fhir-specialty-rx"/>
-   <version code="0.1.00" url="http://build.fhir.org/ig/HL7/fhir-specialty-rx"/>
-   <artifactPageExtension value="-definitions"/>
-   <artifactPageExtension value="-examples"/>
-   <artifactPageExtension value="-mappings"/>
-   <artifact name="Specialty Rx AllergyIntolerance"
-             key="StructureDefinition-specialty-rx-allergyintolerance"
-             id="StructureDefinition/specialty-rx-allergyintolerance"/>
-   <artifact name="Specialty Rx Bundle - Error Message"
-             key="StructureDefinition-specialty-rx-bundle-error"
-             id="StructureDefinition/specialty-rx-bundle-error"/>
-   <artifact name="Specialty Rx Bundle - Query Message"
-             key="StructureDefinition-specialty-rx-bundle-query"
-             id="StructureDefinition/specialty-rx-bundle-query"/>
-   <artifact name="Specialty Rx Bundle - Query Response Message"
-             key="StructureDefinition-specialty-rx-bundle-query-response"
-             id="StructureDefinition/specialty-rx-bundle-query-response"/>
-   <artifact name="Specialty Rx Bundle - Query Response - Unsolicited Message"
-             key="StructureDefinition-specialty-rx-bundle-query-response-unsolicited"
-             id="StructureDefinition/specialty-rx-bundle-query-response-unsolicited"/>
-   <artifact name="Specialty Rx Bundle - Questionnaire Message"
-             key="StructureDefinition-specialty-rx-bundle-questionnaire"
-             id="StructureDefinition/specialty-rx-bundle-questionnaire"/>
-   <artifact name="Specialty Rx Bundle - Questionnaire Response Message"
-             key="StructureDefinition-specialty-rx-bundle-questionnaire-response"
-             id="StructureDefinition/specialty-rx-bundle-questionnaire-response"/>
-   <artifact name="Specialty Rx Bundle - Search Result"
-             key="StructureDefinition-specialty-rx-bundle-search-result"
-             id="StructureDefinition/specialty-rx-bundle-search-result"/>
-   <artifact name="Specialty Rx CareTeam"
-             key="StructureDefinition-specialty-rx-careteam"
-             id="StructureDefinition/specialty-rx-careteam"/>
-   <artifact name="Specialty Rx Condition"
-             key="StructureDefinition-specialty-rx-condition"
-             id="StructureDefinition/specialty-rx-condition"/>
-   <artifact name="Specialty Rx Coverage"
-             key="StructureDefinition-specialty-rx-coverage"
-             id="StructureDefinition/specialty-rx-coverage"/>
-   <artifact name="Specialty Rx Endpoint - Direct"
-             key="StructureDefinition-specialty-rx-endpoint-direct"
-             id="StructureDefinition/specialty-rx-endpoint-direct"/>
-   <artifact name="Specialty Rx Location"
-             key="StructureDefinition-specialty-rx-location"
-             id="StructureDefinition/specialty-rx-location"/>
-   <artifact name="Specialty Rx Medication Request"
-             key="StructureDefinition-specialty-rx-medicationrequest"
-             id="StructureDefinition/specialty-rx-medicationrequest"/>
-   <artifact name="Specialty Rx MessageDefinition - Error"
-             key="MessageDefinition-specialty-rx-error"
-             id="MessageDefinition/specialty-rx-error"/>
-   <artifact name="Specialty Rx MessageDefinition - Query"
-             key="MessageDefinition-specialty-rx-query"
-             id="MessageDefinition/specialty-rx-query"/>
-   <artifact name="Specialty Rx MessageDefinition - Query Response"
-             key="MessageDefinition-specialty-rx-query-response"
-             id="MessageDefinition/specialty-rx-query-response"/>
-   <artifact name="Specialty Rx MessageDefinition - Query Response - Unsolicited"
-             key="MessageDefinition-specialty-rx-query-response-unsolicited"
-             id="MessageDefinition/specialty-rx-query-response-unsolicited"/>
-   <artifact name="Specialty Rx MessageDefinition - Questionnaire"
-             key="MessageDefinition-specialty-rx-questionnaire"
-             id="MessageDefinition/specialty-rx-questionnaire"/>
-   <artifact name="Specialty Rx MessageDefinition - Questionnaire Response"
-             key="MessageDefinition-specialty-rx-questionnaire-response"
-             id="MessageDefinition/specialty-rx-questionnaire-response"/>
-   <artifact name="Specialty Rx MessageHeader - Query"
-             key="StructureDefinition-specialty-rx-messageheader-query"
-             id="StructureDefinition/specialty-rx-messageheader-query"/>
-   <artifact name="Specialty Rx MessageHeader - Query Response"
-             key="StructureDefinition-specialty-rx-messageheader-query-response"
-             id="StructureDefinition/specialty-rx-messageheader-query-response"/>
-   <artifact name="Specialty Rx MessageHeader - Error"
-             key="StructureDefinition-specialty-rx-messageheader-error"
-             id="StructureDefinition/specialty-rx-messageheader-error"/>
-   <artifact name="Specialty Rx MessageHeader - Query Response - Unsolicited"
-             key="StructureDefinition-specialty-rx-messageheader-query-response-unsolicited"
-             id="StructureDefinition/specialty-rx-messageheader-query-response-unsolicited"/>
-   <artifact name="Specialty Rx MessageHeader - Questionnaire"
-             key="StructureDefinition-specialty-rx-messageheader-questionnaire"
-             id="StructureDefinition/specialty-rx-messageheader-questionnaire"/>
-   <artifact name="Specialty Rx MessageHeader - Questionnaire Response"
-             key="StructureDefinition-specialty-rx-messageheader-questionnaire-response"
-             id="StructureDefinition/specialty-rx-messageheader-questionnaire-response"/>
-   <artifact name="Specialty Rx Observation - Lab"
-             key="StructureDefinition-specialty-rx-observation-lab"
-             id="StructureDefinition/specialty-rx-observation-lab"/>
-   <artifact name="Specialty Rx Organization - Payer"
-             key="StructureDefinition-specialty-rx-organization-payer"
-             id="StructureDefinition/specialty-rx-organization-payer"/>
-   <artifact name="Specialty Rx Organization - Pharmacy"
-             key="StructureDefinition-specialty-rx-organization-pharmacy"
-             id="StructureDefinition/specialty-rx-organization-pharmacy"/>
-   <artifact name="Specialty Rx Organization - Provider"
-             key="StructureDefinition-specialty-rx-organization-provider"
-             id="StructureDefinition/specialty-rx-organization-provider"/>
-   <artifact name="Specialty Rx Parameters - Query"
-             key="StructureDefinition-specialty-rx-parameters-query"
-             id="StructureDefinition/specialty-rx-parameters-query"/>
-   <artifact name="Specialty Rx Parameters - Query Response"
-             key="StructureDefinition-specialty-rx-parameters-query-response"
-             id="StructureDefinition/specialty-rx-parameters-query-response"/>
-   <artifact name="Specialty Rx Parameters - Questionnaire"
-             key="StructureDefinition-specialty-rx-parameters-questionnaire"
-             id="StructureDefinition/specialty-rx-parameters-questionnaire"/>
-   <artifact name="Specialty Rx Parameters - Questionnaire Response"
-             key="StructureDefinition-specialty-rx-parameters-questionnaire-response"
-             id="StructureDefinition/specialty-rx-parameters-questionnaire-response"/>
-   <artifact name="Specialty Rx Parameters - Query Response - Unsolicited"
-             key="StructureDefinition-specialty-rx-parameters-query-response-unsolicited"
-             id="StructureDefinition/specialty-rx-parameters-query-response-unsolicited"/>
-   <artifact name="Specialty Rx Patient"
-             key="StructureDefinition-specialty-rx-patient"
-             id="StructureDefinition/specialty-rx-patient"/>
-   <artifact name="Specialty Rx Practitioner"
-             key="StructureDefinition-specialty-rx-practitioner"
-             id="StructureDefinition/specialty-rx-practitioner"/>
-   <artifact name="Specialty Rx PractitionerRole"
-             key="StructureDefinition-specialty-rx-practitionerrole"
-             id="StructureDefinition/specialty-rx-practitionerrole"/>
-   <artifact name="Specialty Rx RelatedPerson"
-             key="StructureDefinition-specialty-rx-relatedperson"
-             id="StructureDefinition/specialty-rx-relatedperson"/>
-   <artifact name="Specialty Rx ValueSet - Condition Code"
-             key="ValueSet-specialty-rx-condition-code"
-             id="ValueSet/specialty-rx-condition-code"/>
-   <artifact name="Specialty Rx CodeSystem - Event Type"
-             key="CodeSystem-specialty-rx-event-type"
-             id="CodeSystem/specialty-rx-event-type"/>
-   <artifact name="Specialty Rx ValueSet - Event Type"
-             key="ValueSet-specialty-rx-event-type"
-             id="ValueSet/specialty-rx-event-type"/>
-   <artifact name="Specialty Rx CapabilityStatement - Data Source"
-             key="CapabilityStatement-specialty-rx-data-source"
-             id="CapabilityStatement/specialty-rx-data-source"/>
-   <artifact name="Specialty Rx CapabilityStatement - Data Recipient"
-             key="CapabilityStatement-specialty-rx-data-recipient"
-             id="CapabilityStatement/specialty-rx-data-recipient"/>
-   <artifact name="Specialty Rx NamingSystem - NCPDP Provider ID"
-             key="NamingSystem-specialty-rx-ncpdp-provider-id"
-             id="NamingSystem/specialty-rx-ncpdp-provider-id"/>
-   <artifact name="Specialty Rx AllergyIntolerance - 1"
-             key="AllergyIntolerance-specialty-rx-allergyintolerance-1"
-             id="AllergyIntolerance/specialty-rx-allergyintolerance-1"/>
-   <artifact name="Specialty Rx CareTeam 1"
-             key="CareTeam-specialty-rx-careteam-1"
-             id="CareTeam/specialty-rx-careteam-1"/>
-   <artifact name="Specialty Rx Condition 1"
-             key="Condition-specialty-rx-condition-1"
-             id="Condition/specialty-rx-condition-1"/>
-   <artifact name="Specialty Rx Coverage 1"
-             key="Coverage-specialty-rx-coverage-1"
-             id="Coverage/specialty-rx-coverage-1"/>
-   <artifact name="Specialty Rx Endpoint - Direct 1"
-             key="Endpoint-specialty-rx-endpoint-direct-1"
-             id="Endpoint/specialty-rx-endpoint-direct-1"/>
-   <artifact name="Specialty Rx Error 1"
-             key="Bundle-specialty-rx-error-1"
-             id="Bundle/specialty-rx-error-1"/>
-   <artifact name="Specialty Rx Location 1"
-             key="Location-specialty-rx-location-1"
-             id="Location/specialty-rx-location-1"/>
-   <artifact name="Specialty Rx MedicationRequest 1"
-             key="MedicationRequest-specialty-rx-medicationrequest-1"
-             id="MedicationRequest/specialty-rx-medicationrequest-1"/>
-   <artifact name="Specialty Rx Observation - Lab 1"
-             key="Observation-specialty-rx-observation-lab-1"
-             id="Observation/specialty-rx-observation-lab-1"/>
-   <artifact name="Specialty Rx Organization - Payer 1"
-             key="Organization-specialty-rx-organization-payer-1"
-             id="Organization/specialty-rx-organization-payer-1"/>
-   <artifact name="Specialty Rx Organization - Pharmacy 1"
-             key="Organization-specialty-rx-organization-pharmacy-1"
-             id="Organization/specialty-rx-organization-pharmacy-1"/>
-   <artifact name="Specialty Rx Organization - Provider 1"
-             key="Organization-specialty-rx-organization-provider-1"
-             id="Organization/specialty-rx-organization-provider-1"/>
-   <artifact name="Specialty Rx Patient 1"
-             key="Patient-specialty-rx-patient-1"
-             id="Patient/specialty-rx-patient-1"/>
-   <artifact name="Specialty Rx Practitioner 1"
-             key="Practitioner-specialty-rx-practitioner-1"
-             id="Practitioner/specialty-rx-practitioner-1"/>
-   <artifact name="Specialty Rx PractitionerRole 1"
-             key="PractitionerRole-specialty-rx-practitionerrole-1"
-             id="PractitionerRole/specialty-rx-practitionerrole-1"/>
-   <artifact name="Specialty Rx Query 1"
-             key="Bundle-specialty-rx-query-1"
-             id="Bundle/specialty-rx-query-1"/>
-   <artifact name="Specialty Rx Query Response 1"
-             key="Bundle-specialty-rx-query-response-1"
-             id="Bundle/specialty-rx-query-response-1"/>
-   <artifact name="Specialty Rx Query Response 2"
-             key="Bundle-specialty-rx-query-response-2"
-             id="Bundle/specialty-rx-query-response-2"/>
-   <artifact name="Specialty Rx Query Response 3 with operation outcome"
-             key="Bundle-specialty-rx-query-response-3-w-op-outcome"
-             id="Bundle/specialty-rx-query-response-3-w-op-outcome"/>
-   <artifact name="Specialty Rx Query Response - Unsolicited 1"
-             key="Bundle-specialty-rx-query-response-unsolicited-1"
-             id="Bundle/specialty-rx-query-response-unsolicited-1"/>
-   <artifact name="Specialty Rx Questionnaire 1"
-             key="Bundle-specialty-rx-questionnaire-1"
-             id="Bundle/specialty-rx-questionnaire-1"/>
-   <artifact name="Specialty Rx Questionnaire Response 1"
-             key="Bundle-specialty-rx-questionnaire-response-1"
-             id="Bundle/specialty-rx-questionnaire-response-1"/>
-   <artifact name="Specialty Rx RelatedPerson 1"
-             key="RelatedPerson-specialty-rx-relatedperson-1"
-             id="RelatedPerson/specialty-rx-relatedperson-1"/>
-   <page name="(NA)" key="NA"/>
-   <page name="(many)" key="many"/>
-   <page name="Table of Contents" key="toc"/>
-   <page name="IG Home Page" key="index"/>
-   <page name="Workflow Scenarios" key="workflow"/>
-   <page name="Message Structures" key="message-structure"/>
-   <page name="Patient Matching and Processing Detail" key="patient-matching"/>
-   <page name="Search conventions" key="request-queries"/>
-   <page name="Terminology" key="terminology"/>
-   <page name="Downloads" key="downloads"/>
-   <page name="Message submission" key="message-submission"/>
-   <page name="Error handling" key="error-handling"/>
-   <page name="Artifacts Summary" key="artifacts"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/specialty-rx/2021Jan" ciUrl="http://build.fhir.org/ig/HL7/specialty-rx" defaultVersion="0.1.0" defaultWorkgroup="pharm" gitUrl="https://github.com/HL7/fhir-specialty-rx" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" url="http://hl7.org/fhir/us/specialty-rx"><version code="current" url="http://build.fhir.org/ig/HL7/specialty-rx"/>
+<version code="0.1.0" url="http://hl7.org/fhir/us/specialty-rx/2021Jan"/>
+<version code="0.1" deprecated="true"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact deprecated="true" id="StructureDefinition/specialty-rx-allergyintolerance" key="StructureDefinition-specialty-rx-allergyintolerance" name="Specialty Rx AllergyIntolerance"/>
+<artifact deprecated="true" id="AllergyIntolerance/specialty-rx-allergyintolerance-1" key="AllergyIntolerance-specialty-rx-allergyintolerance-1" name="Specialty Rx AllergyIntolerance - 1"/>
+<artifact id="StructureDefinition/specialty-rx-bundle-error" key="StructureDefinition-specialty-rx-bundle-error" name="Specialty Rx Bundle - Error Message"/>
+<artifact id="StructureDefinition/specialty-rx-bundle-query" key="StructureDefinition-specialty-rx-bundle-query" name="Specialty Rx Bundle - Query Message"/>
+<artifact id="StructureDefinition/specialty-rx-bundle-query-response-unsolicited" key="StructureDefinition-specialty-rx-bundle-query-response-unsolicited" name="Specialty Rx Bundle - Query Response - Unsolicited Message"/>
+<artifact id="StructureDefinition/specialty-rx-bundle-query-response" key="StructureDefinition-specialty-rx-bundle-query-response" name="Specialty Rx Bundle - Query Response Message"/>
+<artifact deprecated="true" id="StructureDefinition/specialty-rx-bundle-questionnaire" key="StructureDefinition-specialty-rx-bundle-questionnaire" name="Specialty Rx Bundle - Questionnaire Message"/>
+<artifact deprecated="true" id="StructureDefinition/specialty-rx-bundle-questionnaire-response" key="StructureDefinition-specialty-rx-bundle-questionnaire-response" name="Specialty Rx Bundle - Questionnaire Response Message"/>
+<artifact id="StructureDefinition/specialty-rx-bundle-search-result" key="StructureDefinition-specialty-rx-bundle-search-result" name="Specialty Rx Bundle - Search Result"/>
+<artifact deprecated="true" id="CapabilityStatement/specialty-rx-data-recipient" key="CapabilityStatement-specialty-rx-data-recipient" name="Specialty Rx CapabilityStatement - Data Recipient"/>
+<artifact id="CapabilityStatement/specialty-rx-data-recipient-messaging" key="CapabilityStatement-specialty-rx-data-recipient-messaging" name="Specialty Rx CapabilityStatement - Data Recipient - Messaging"/>
+<artifact id="CapabilityStatement/specialty-rx-data-recipient-restful" key="CapabilityStatement-specialty-rx-data-recipient-restful" name="Specialty Rx CapabilityStatement - Data Recipient - RESTful"/>
+<artifact deprecated="true" id="CapabilityStatement/specialty-rx-data-source" key="CapabilityStatement-specialty-rx-data-source" name="Specialty Rx CapabilityStatement - Data Source"/>
+<artifact id="CapabilityStatement/specialty-rx-data-source-messaging" key="CapabilityStatement-specialty-rx-data-source-messaging" name="Specialty Rx CapabilityStatement - Data Source - Messaging"/>
+<artifact id="CapabilityStatement/specialty-rx-data-source-restful" key="CapabilityStatement-specialty-rx-data-source-restful" name="Specialty Rx CapabilityStatement - Data Source - RESTful"/>
+<artifact deprecated="true" id="StructureDefinition/specialty-rx-careteam" key="StructureDefinition-specialty-rx-careteam" name="Specialty Rx CareTeam"/>
+<artifact deprecated="true" id="CareTeam/specialty-rx-careteam-1" key="CareTeam-specialty-rx-careteam-1" name="Specialty Rx CareTeam 1"/>
+<artifact id="CodeSystem/specialty-rx-event-type" key="CodeSystem-specialty-rx-event-type" name="Specialty Rx CodeSystem - Event Type"/>
+<artifact id="CodeSystem/specialty-rx-task-identifier-type" key="CodeSystem-specialty-rx-task-identifier-type" name="Specialty Rx CodeSystem - Task Identifier Type"/>
+<artifact id="CodeSystem/specialty-rx-task-input-type" key="CodeSystem-specialty-rx-task-input-type" name="Specialty Rx CodeSystem - Task Input Type"/>
+<artifact id="CodeSystem/specialty-rx-task-type" key="CodeSystem-specialty-rx-task-type" name="Specialty Rx CodeSystem - Task Type"/>
+<artifact deprecated="true" id="StructureDefinition/specialty-rx-condition" key="StructureDefinition-specialty-rx-condition" name="Specialty Rx Condition"/>
+<artifact deprecated="true" id="Condition/specialty-rx-condition-1" key="Condition-specialty-rx-condition-1" name="Specialty Rx Condition 1"/>
+<artifact id="StructureDefinition/specialty-rx-coverage" key="StructureDefinition-specialty-rx-coverage" name="Specialty Rx Coverage"/>
+<artifact id="Coverage/specialty-rx-coverage-1" key="Coverage-specialty-rx-coverage-1" name="Specialty Rx Coverage 1"/>
+<artifact deprecated="true" id="StructureDefinition/specialty-rx-endpoint-direct" key="StructureDefinition-specialty-rx-endpoint-direct" name="Specialty Rx Endpoint - Direct"/>
+<artifact deprecated="true" id="Endpoint/specialty-rx-endpoint-direct-1" key="Endpoint-specialty-rx-endpoint-direct-1" name="Specialty Rx Endpoint - Direct 1"/>
+<artifact id="Bundle/specialty-rx-error-1" key="Bundle-specialty-rx-error-1" name="Specialty Rx Error 1"/>
+<artifact deprecated="true" id="StructureDefinition/specialty-rx-location" key="StructureDefinition-specialty-rx-location" name="Specialty Rx Location"/>
+<artifact deprecated="true" id="Location/specialty-rx-location-1" key="Location-specialty-rx-location-1" name="Specialty Rx Location 1"/>
+<artifact id="StructureDefinition/specialty-rx-medicationrequest" key="StructureDefinition-specialty-rx-medicationrequest" name="Specialty Rx Medication Request"/>
+<artifact id="MedicationRequest/specialty-rx-medicationrequest-1" key="MedicationRequest-specialty-rx-medicationrequest-1" name="Specialty Rx MedicationRequest 1"/>
+<artifact id="MessageDefinition/specialty-rx-error" key="MessageDefinition-specialty-rx-error" name="Specialty Rx MessageDefinition - Error"/>
+<artifact id="MessageDefinition/specialty-rx-query" key="MessageDefinition-specialty-rx-query" name="Specialty Rx MessageDefinition - Query"/>
+<artifact id="MessageDefinition/specialty-rx-query-response" key="MessageDefinition-specialty-rx-query-response" name="Specialty Rx MessageDefinition - Query Response"/>
+<artifact id="MessageDefinition/specialty-rx-query-response-unsolicited" key="MessageDefinition-specialty-rx-query-response-unsolicited" name="Specialty Rx MessageDefinition - Query Response - Unsolicited"/>
+<artifact deprecated="true" id="MessageDefinition/specialty-rx-questionnaire" key="MessageDefinition-specialty-rx-questionnaire" name="Specialty Rx MessageDefinition - Questionnaire"/>
+<artifact deprecated="true" id="MessageDefinition/specialty-rx-questionnaire-response" key="MessageDefinition-specialty-rx-questionnaire-response" name="Specialty Rx MessageDefinition - Questionnaire Response"/>
+<artifact id="StructureDefinition/specialty-rx-messageheader-error" key="StructureDefinition-specialty-rx-messageheader-error" name="Specialty Rx MessageHeader - Error"/>
+<artifact id="StructureDefinition/specialty-rx-messageheader-query" key="StructureDefinition-specialty-rx-messageheader-query" name="Specialty Rx MessageHeader - Query"/>
+<artifact id="StructureDefinition/specialty-rx-messageheader-query-response" key="StructureDefinition-specialty-rx-messageheader-query-response" name="Specialty Rx MessageHeader - Query Response"/>
+<artifact id="StructureDefinition/specialty-rx-messageheader-query-response-unsolicited" key="StructureDefinition-specialty-rx-messageheader-query-response-unsolicited" name="Specialty Rx MessageHeader - Query Response - Unsolicited"/>
+<artifact deprecated="true" id="StructureDefinition/specialty-rx-messageheader-questionnaire" key="StructureDefinition-specialty-rx-messageheader-questionnaire" name="Specialty Rx MessageHeader - Questionnaire"/>
+<artifact deprecated="true" id="StructureDefinition/specialty-rx-messageheader-questionnaire-response" key="StructureDefinition-specialty-rx-messageheader-questionnaire-response" name="Specialty Rx MessageHeader - Questionnaire Response"/>
+<artifact deprecated="true" id="NamingSystem/specialty-rx-ncpdp-provider-id" key="NamingSystem-specialty-rx-ncpdp-provider-id" name="Specialty Rx NamingSystem - NCPDP Provider ID"/>
+<artifact deprecated="true" id="StructureDefinition/specialty-rx-observation-lab" key="StructureDefinition-specialty-rx-observation-lab" name="Specialty Rx Observation - Lab"/>
+<artifact deprecated="true" id="Observation/specialty-rx-observation-lab-1" key="Observation-specialty-rx-observation-lab-1" name="Specialty Rx Observation - Lab 1"/>
+<artifact deprecated="true" id="StructureDefinition/specialty-rx-organization-payer" key="StructureDefinition-specialty-rx-organization-payer" name="Specialty Rx Organization - Payer"/>
+<artifact deprecated="true" id="Organization/specialty-rx-organization-payer-1" key="Organization-specialty-rx-organization-payer-1" name="Specialty Rx Organization - Payer 1"/>
+<artifact id="StructureDefinition/specialty-rx-organization-pharmacy" key="StructureDefinition-specialty-rx-organization-pharmacy" name="Specialty Rx Organization - Pharmacy"/>
+<artifact id="Organization/specialty-rx-organization-pharmacy-1" key="Organization-specialty-rx-organization-pharmacy-1" name="Specialty Rx Organization - Pharmacy 1"/>
+<artifact id="Organization/specialty-rx-organization-pharmacy-2-unknown-telecom" key="Organization-specialty-rx-organization-pharmacy-2-unknown-telecom" name="Specialty Rx Organization - Pharmacy 2 - Unknown Telecom"/>
+<artifact deprecated="true" id="StructureDefinition/specialty-rx-organization-provider" key="StructureDefinition-specialty-rx-organization-provider" name="Specialty Rx Organization - Provider"/>
+<artifact deprecated="true" id="Organization/specialty-rx-organization-provider-1" key="Organization-specialty-rx-organization-provider-1" name="Specialty Rx Organization - Provider 1"/>
+<artifact id="StructureDefinition/specialty-rx-parameters-query" key="StructureDefinition-specialty-rx-parameters-query" name="Specialty Rx Parameters - Query"/>
+<artifact id="StructureDefinition/specialty-rx-parameters-query-response" key="StructureDefinition-specialty-rx-parameters-query-response" name="Specialty Rx Parameters - Query Response"/>
+<artifact id="StructureDefinition/specialty-rx-parameters-query-response-unsolicited" key="StructureDefinition-specialty-rx-parameters-query-response-unsolicited" name="Specialty Rx Parameters - Query Response - Unsolicited"/>
+<artifact deprecated="true" id="StructureDefinition/specialty-rx-parameters-questionnaire" key="StructureDefinition-specialty-rx-parameters-questionnaire" name="Specialty Rx Parameters - Questionnaire"/>
+<artifact deprecated="true" id="StructureDefinition/specialty-rx-parameters-questionnaire-response" key="StructureDefinition-specialty-rx-parameters-questionnaire-response" name="Specialty Rx Parameters - Questionnaire Response"/>
+<artifact id="StructureDefinition/specialty-rx-patient" key="StructureDefinition-specialty-rx-patient" name="Specialty Rx Patient"/>
+<artifact id="Patient/specialty-rx-patient-1" key="Patient-specialty-rx-patient-1" name="Specialty Rx Patient 1"/>
+<artifact id="StructureDefinition/specialty-rx-practitioner" key="StructureDefinition-specialty-rx-practitioner" name="Specialty Rx Practitioner"/>
+<artifact id="Practitioner/specialty-rx-practitioner-1" key="Practitioner-specialty-rx-practitioner-1" name="Specialty Rx Practitioner 1"/>
+<artifact deprecated="true" id="StructureDefinition/specialty-rx-practitionerrole" key="StructureDefinition-specialty-rx-practitionerrole" name="Specialty Rx PractitionerRole"/>
+<artifact deprecated="true" id="PractitionerRole/specialty-rx-practitionerrole-1" key="PractitionerRole-specialty-rx-practitionerrole-1" name="Specialty Rx PractitionerRole 1"/>
+<artifact id="Bundle/specialty-rx-query-1" key="Bundle-specialty-rx-query-1" name="Specialty Rx Query 1"/>
+<artifact id="Bundle/specialty-rx-query-response-unsolicited-1" key="Bundle-specialty-rx-query-response-unsolicited-1" name="Specialty Rx Query Response - Unsolicited 1"/>
+<artifact id="Bundle/specialty-rx-query-response-1" key="Bundle-specialty-rx-query-response-1" name="Specialty Rx Query Response 1"/>
+<artifact id="Bundle/specialty-rx-query-response-2" key="Bundle-specialty-rx-query-response-2" name="Specialty Rx Query Response 2"/>
+<artifact id="Bundle/specialty-rx-query-response-3-w-op-outcome" key="Bundle-specialty-rx-query-response-3-w-op-outcome" name="Specialty Rx Query Response 3 with operation outcome"/>
+<artifact deprecated="true" id="Bundle/specialty-rx-questionnaire-1" key="Bundle-specialty-rx-questionnaire-1" name="Specialty Rx Questionnaire 1"/>
+<artifact deprecated="true" id="Bundle/specialty-rx-questionnaire-response-1" key="Bundle-specialty-rx-questionnaire-response-1" name="Specialty Rx Questionnaire Response 1"/>
+<artifact deprecated="true" id="StructureDefinition/specialty-rx-relatedperson" key="StructureDefinition-specialty-rx-relatedperson" name="Specialty Rx RelatedPerson"/>
+<artifact deprecated="true" id="RelatedPerson/specialty-rx-relatedperson-1" key="RelatedPerson-specialty-rx-relatedperson-1" name="Specialty Rx RelatedPerson 1"/>
+<artifact id="StructureDefinition/specialty-rx-task-smart-launch" key="StructureDefinition-specialty-rx-task-smart-launch" name="Specialty Rx Task - SMART Launch"/>
+<artifact id="Task/specialty-rx-task-smart-launch-1" key="Task-specialty-rx-task-smart-launch-1" name="Specialty Rx Task - SMART Launch 1"/>
+<artifact id="Task/specialty-rx-task-smart-launch-2-ids" key="Task-specialty-rx-task-smart-launch-2-ids" name="Specialty Rx Task - SMART Launch 2 with IDs"/>
+<artifact deprecated="true" id="ValueSet/specialty-rx-condition-code" key="ValueSet-specialty-rx-condition-code" name="Specialty Rx ValueSet - Condition Code"/>
+<artifact id="ValueSet/specialty-rx-event-type" key="ValueSet-specialty-rx-event-type" name="Specialty Rx ValueSet - Event Type"/>
+<artifact id="ValueSet/specialty-rx-task-type" key="ValueSet-specialty-rx-task-type" name="Specialty Rx ValueSet - Task Type"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="capability-statements" name="Capability Statements"/>
+<page key="missing-data" name="Conformance Expectations"/>
+<page key="downloads" name="Downloads"/>
+<page key="error-handling" name="Error handling"/>
+<page key="index" name="IG Home Page"/>
+<page key="human-interaction" name="Information Flows Requiring Human Interaction"/>
+<page key="intermediary" name="Intermediary Facilitation"/>
+<page key="message-structure" name="Message Structures"/>
+<page key="message-submission" name="Message submission"/>
+<page key="patient-matching" name="Patient Matching"/>
+<page key="request-queries" name="Search Conventions"/>
+<page key="security" name="Security"/>
+<page key="systematic-queries" name="Systematic Query Workflows"/>
+<page key="toc" name="Table of Contents"/>
+<page deprecated="true" key="terminology" name="Terminology"/>
+<page key="us-core-profiles" name="US Core Profiles"/>
+<page key="roles" name="Use Cases and Roles"/>
+<page deprecated="true" key="workflow" name="Workflow Scenarios"/>
 </specification>
