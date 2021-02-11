@@ -8993,6 +8993,7 @@
                   gitUrl="https://github.com/HL7/carin-bb"
                   url="http://hl7.org/fhir/us/carin-bb">
               <version code="current" url="http://build.fhir.org/ig/HL7/carin-bb"/>
+              <version code="1.0.1" url="http://hl7.org/fhir/us/carin-bb/STU1.0.1"/>
               <version code="1.0.0" url="http://hl7.org/fhir/us/carin-bb/STU1"/>
               <version code="0.1.0" url="http://hl7.org/fhir/us/carin-bb/2020Feb"/>
               <version code="0.1" deprecated="true"/>
@@ -9199,6 +9200,10 @@
                 key="FHIR-us-carin-bb-SearchParameter-coverage-payor"
                 name="Coverage_Payor"
                 spec="us-carin-bb"/>
+      <artifact id="ValueSet/C4BBEOBInstitutionalProcedureCodes"
+                key="FHIR-us-carin-bb-ValueSet-C4BBEOBInstitutionalProcedureCodes"
+                name="Institutional Procedure Codes (CPT, HCPCS, HIPPS)"
+                spec="us-carin-bb"/>
       <artifact id="ExplanationOfBenefit/EOBInpatientInstitutionalEx1"
                 key="FHIR-us-carin-bb-ExplanationOfBenefit-EOBInpatientInstitutionalEx1"
                 name="EOB Inpatient Institutional - Example 1"
@@ -9266,6 +9271,10 @@
       <artifact id="SearchParameter/explanationofbenefit-type"
                 key="FHIR-us-carin-bb-SearchParameter-explanationofbenefit-type"
                 name="ExplanationOfBenefit_Type"
+                spec="us-carin-bb"/>
+      <artifact id="CodeSystem/CMSHIPPSCodes"
+                key="FHIR-us-carin-bb-CodeSystem-CMSHIPPSCodes"
+                name="Health Insurance Prospective Payment System Codes"
                 spec="us-carin-bb"/>
       <artifact id="CodeSystem/CMSHCPCSCodes"
                 key="FHIR-us-carin-bb-CodeSystem-CMSHCPCSCodes"
@@ -9350,6 +9359,10 @@
       <artifact id="CodeSystem/AHANUBCPointOfOriginForAdmissionOrVisit"
                 key="FHIR-us-carin-bb-CodeSystem-AHANUBCPointOfOriginForAdmissionOrVisit"
                 name="NUBC Point Of Origin CS"
+                spec="us-carin-bb"/>
+      <artifact id="CodeSystem/AHANUBCPointOfOriginForAdmissionOrVisitNewborn"
+                key="FHIR-us-carin-bb-CodeSystem-AHANUBCPointOfOriginForAdmissionOrVisitNewborn"
+                name="NUBC Point Of Origin - Newborn"
                 spec="us-carin-bb"/>
       <artifact id="ValueSet/AHANUBCPresentOnAdmission"
                 key="FHIR-us-carin-bb-ValueSet-AHANUBCPresentOnAdmission"
@@ -9476,7 +9489,10 @@
       <page key="FHIR-us-carin-bb-downloads"
             name="Downloads"
             spec="us-carin-bb"/>
-      <page key="FHIR-us-carin-bb-Examples" name="Examples" spec="us-carin-bb"/>
+      <page deprecated="true"
+            key="FHIR-us-carin-bb-Examples"
+            name="Examples"
+            spec="us-carin-bb"/>
       <page key="FHIR-us-carin-bb-General_Guidance"
             name="General Guidance"
             spec="us-carin-bb"/>
@@ -9487,10 +9503,15 @@
       <page key="FHIR-us-carin-bb-toc"
             name="Table of Contents"
             spec="us-carin-bb"/>
-      <page key="FHIR-us-carin-bb-Terminology"
+      <page deprecated="true"
+            key="FHIR-us-carin-bb-Terminology"
             name="Terminology"
             spec="us-carin-bb"/>
+      <page key="FHIR-us-carin-bb-5_Terminology_Licensure"
+            name="Terminology Licensure"
+            spec="us-carin-bb"/>
       <page key="FHIR-us-carin-bb-Use_Case" name="Use Case" spec="us-carin-bb"/>
+
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-carin-rtpbc"
