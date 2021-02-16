@@ -8,6 +8,7 @@
               xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" 
               url="http://hl7.org/fhir/us/carin-bb">
               <version code="current" url="http://build.fhir.org/ig/HL7/carin-bb"/>
+              <version code="1.0.1" url="http://hl7.org/fhir/us/carin-bb/STU1.0.1"/>
               <version code="1.0.0" url="http://hl7.org/fhir/us/carin-bb/STU1"/>
               <version code="0.1.0" url="http://hl7.org/fhir/us/carin-bb/2020Feb"/>
               <version code="0.1" deprecated="true"/>
@@ -64,6 +65,7 @@
 <artifact id="Coverage/CoverageEx2" key="Coverage-CoverageEx2" name="Coverage Example 2"/>
 <artifact id="Coverage/Coverage1" key="Coverage-Coverage1" name="Coverage1"/>
 <artifact id="SearchParameter/coverage-payor" key="SearchParameter-coverage-payor" name="Coverage_Payor"/>
+<artifact id="ValueSet/C4BBEOBInstitutionalProcedureCodes" key="ValueSet-C4BBEOBInstitutionalProcedureCodes" name="Institutional Procedure Codes (CPT, HCPCS, HIPPS)"/>
 <artifact id="ExplanationOfBenefit/EOBInpatientInstitutionalEx1" key="ExplanationOfBenefit-EOBInpatientInstitutionalEx1" name="EOB Inpatient Institutional - Example 1"/>
 <artifact id="ExplanationOfBenefit/EOBOutpatientInstitutionalEx1" key="ExplanationOfBenefit-EOBOutpatientInstitutionalEx1" name="EOB Outpatient Institutional - Example 1"/>
 <artifact id="ExplanationOfBenefit/EOBProfessionalEx1" key="ExplanationOfBenefit-EOBProfessionalEx1" name="EOB Professional - Example 1"/>
@@ -81,6 +83,7 @@
 <artifact id="SearchParameter/explanationofbenefit-provider" key="SearchParameter-explanationofbenefit-provider" name="ExplanationOfBenefit_Provider"/>
 <artifact id="SearchParameter/explanationofbenefit-service-date" key="SearchParameter-explanationofbenefit-service-date" name="ExplanationOfBenefit_ServiceDate"/>
 <artifact id="SearchParameter/explanationofbenefit-type" key="SearchParameter-explanationofbenefit-type" name="ExplanationOfBenefit_Type"/>
+<artifact id="CodeSystem/CMSHIPPSCodes" key="CodeSystem-CMSHIPPSCodes" name="Health Insurance Prospective Payment System Codes"/>
 <artifact id="CodeSystem/CMSHCPCSCodes" key="CodeSystem-CMSHCPCSCodes" name="Healthcare Common Procedure Coding System (HCPCS) level II alphanumeric codes"/>
 <artifact id="CodeSystem/ICD10PCS" key="CodeSystem-ICD10PCS" name="ICD-10 Procedure Coding System"/>
 <artifact id="ValueSet/CMSICD910PCSProcedureCodes" key="ValueSet-CMSICD910PCSProcedureCodes" name="ICD-9 Procedure Codes - ICD-10 Procedure Coding System"/>
@@ -102,6 +105,7 @@
 <artifact id="CodeSystem/AHANUBCPatientDischargeStatus" key="CodeSystem-AHANUBCPatientDischargeStatus" name="NUBC Patient Discharge Status Codes CS"/>
 <artifact id="ValueSet/AHANUBCPointOfOriginForAdmissionOrVisit" key="ValueSet-AHANUBCPointOfOriginForAdmissionOrVisit" name="NUBC Point Of Origin"/>
 <artifact id="CodeSystem/AHANUBCPointOfOriginForAdmissionOrVisit" key="CodeSystem-AHANUBCPointOfOriginForAdmissionOrVisit" name="NUBC Point Of Origin CS"/>
+<artifact id="CodeSystem/AHANUBCPointOfOriginForAdmissionOrVisitNewborn" key="CodeSystem-AHANUBCPointOfOriginForAdmissionOrVisitNewborn" name="NUBC Point Of Origin - Newborn"/>
 <artifact id="ValueSet/AHANUBCPresentOnAdmission" key="ValueSet-AHANUBCPresentOnAdmission" name="NUBC Present On Admission Indicator Codes"/>
 <artifact id="CodeSystem/AHANUBCPresentOnAdmission" key="CodeSystem-AHANUBCPresentOnAdmission" name="NUBC Present On Admission Indicator Codes CS"/>
 <artifact id="ValueSet/AHANUBCPriorityTypeOfAdmissionOrVisit" key="ValueSet-AHANUBCPriorityTypeOfAdmissionOrVisit" name="NUBC Priority (Type) of Admission or Visit"/>
@@ -136,11 +140,13 @@
 <page key="Background" name="Background"/>
 <page key="Common_Payer_Consumer_Data_Set" name="Common Payer Consumer Data Set"/>
 <page key="downloads" name="Downloads"/>
-<page key="Examples" name="Examples"/>
+<page deprecated="true" key="Examples" name="Examples"/>
 <page key="General_Guidance" name="General Guidance"/>
 <page key="index" name="Home"/>
 <page key="searchparameters" name="Searchparameters"/>
 <page key="toc" name="Table of Contents"/>
-<page key="Terminology" name="Terminology"/>
+<page deprecated="true" key="Terminology" name="Terminology"/>
+<page key="5_Terminology_Licensure" name="Terminology Licensure"/>
 <page key="Use_Case" name="Use Case"/>
+
 </specification>
