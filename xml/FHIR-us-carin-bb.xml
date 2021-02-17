@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-              ballotUrl="http://hl7.org/fhir/us/carin-bb/2020Feb" 
-              ciUrl="http://build.fhir.org/ig/HL7/carin-bb" 
-              defaultVersion="current" 
-              defaultWorkgroup="fm" 
-              gitUrl="https://github.com/HL7/carin-bb" 
-              xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" 
-              url="http://hl7.org/fhir/us/carin-bb">
-              <version code="current" url="http://build.fhir.org/ig/HL7/carin-bb"/>
-              <version code="1.0.1" url="http://hl7.org/fhir/us/carin-bb/STU1.0.1"/>
-              <version code="1.0.0" url="http://hl7.org/fhir/us/carin-bb/STU1"/>
-              <version code="0.1.0" url="http://hl7.org/fhir/us/carin-bb/2020Feb"/>
-              <version code="0.1" deprecated="true"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/carin-bb/2020Feb" ciUrl="http://build.fhir.org/ig/HL7/carin-bb" defaultVersion="current" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/carin-bb" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" url="http://hl7.org/fhir/us/carin-bb">
+<version code="current" url="http://build.fhir.org/ig/HL7/carin-bb"/>
+<version code="1.0.1" url="http://hl7.org/fhir/us/carin-bb/STU1.0.1"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/carin-bb/STU1"/>
+<version code="0.1.0" url="http://hl7.org/fhir/us/carin-bb/2020Feb"/>
+<version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="CodeSystem/AMACPTCodes" key="CodeSystem-AMACPTCodes" name="AMA CPT Codes"/>
-<artifact id="CodeSystem/THREEMAPDRG" key="CodeSystem-THREEMAPDRG" name="AP DRG"/>
-<artifact id="CodeSystem/THREEMAPRDRG" key="CodeSystem-THREEMAPRDRG" name="APR DRG"/>
-<artifact id="ValueSet/C4BBAdjudication" key="ValueSet-C4BBAdjudication" name="C4BB AdjudicationVS"/>
-<artifact id="CodeSystem/C4BBAdjudication" key="CodeSystem-C4BBAdjudication" name="C4BB AdjudicationCS"/>
+<artifact deprecated="true" id="CodeSystem/AMACPTCodes" key="CodeSystem-AMACPTCodes" name="AMA CPT Codes"/>
+<artifact id="CodeSystem/THREEMAPDRG" key="CodeSystem-THREEMAPDRG" name="All Patient Diagnosis Related Groups (AP-DRGs)"/>
+<artifact id="CodeSystem/THREEMAPRDRG" key="CodeSystem-THREEMAPRDRG" name="All Patient Refined Diagnosis Related Groups (APR-DRGs)"/>
+<artifact id="ValueSet/C4BBAdjudication" key="ValueSet-C4BBAdjudication" name="C4BB Adjudication VS"/>
+<artifact id="CodeSystem/C4BBAdjudication" key="CodeSystem-C4BBAdjudication" name="C4BB Adjudication CS"/>
+<artifact id="ValueSet/C4BBAdjudicationCategoryDiscriminator" key="ValueSet-C4BBAdjudicationCategoryDiscriminator" name="C4BB Adjudication Category Discriminator"/>
 <artifact id="CodeSystem/C4BBAdjudicationDiscriminator" key="CodeSystem-C4BBAdjudicationDiscriminator" name="C4BB Adjudication Discriminator"/>
 <artifact id="CapabilityStatement/c4bb" key="CapabilityStatement-c4bb" name="C4BB CapabilityStatement"/>
 <artifact id="CodeSystem/C4BBClaimCareTeamRole" key="CodeSystem-C4BBClaimCareTeamRole" name="C4BB Claim Care Team Role"/>
@@ -57,18 +51,17 @@
 <artifact id="CodeSystem/C4BBRelatedClaimRelationshipCodes" key="CodeSystem-C4BBRelatedClaimRelationshipCodes" name="C4BB Related Claim Relationship Codes CS"/>
 <artifact id="CodeSystem/C4BBSupportingInfoType" key="CodeSystem-C4BBSupportingInfoType" name="C4BB Supporting Info Type CS"/>
 <artifact id="ValueSet/C4BBSupportingInfoType" key="ValueSet-C4BBSupportingInfoType" name="C4BB SupportingInfo Type"/>
+<artifact id="ValueSet/C4BBTotalCategoryDiscriminator" key="ValueSet-C4BBTotalCategoryDiscriminator" name="C4BB Total Category Discriminator"/>
 <artifact id="ValueSet/CMSPlaceofServiceCodes" key="ValueSet-CMSPlaceofServiceCodes" name="CMS Place of Service Codes (POS)"/>
 <artifact id="CodeSystem/CMSPlaceofServiceCodes" key="CodeSystem-CMSPlaceofServiceCodes" name="CMS Place of Service Codes (POS) CS"/>
-<artifact id="ValueSet/AMACPTCMSHCPCSModifiers" key="ValueSet-AMACPTCMSHCPCSModifiers" name="CPT HCPCS Modifiers"/>
-<artifact id="ValueSet/AMACPTCMSHCPCSProcedureCodes" key="ValueSet-AMACPTCMSHCPCSProcedureCodes" name="CPT HCPCS Procedure Codes"/>
 <artifact id="Coverage/CoverageEx1" key="Coverage-CoverageEx1" name="Coverage Example 1"/>
 <artifact id="Coverage/CoverageEx2" key="Coverage-CoverageEx2" name="Coverage Example 2"/>
 <artifact id="Coverage/Coverage1" key="Coverage-Coverage1" name="Coverage1"/>
 <artifact id="SearchParameter/coverage-payor" key="SearchParameter-coverage-payor" name="Coverage_Payor"/>
-<artifact id="ValueSet/C4BBEOBInstitutionalProcedureCodes" key="ValueSet-C4BBEOBInstitutionalProcedureCodes" name="Institutional Procedure Codes (CPT, HCPCS, HIPPS)"/>
-<artifact id="ExplanationOfBenefit/EOBInpatientInstitutionalEx1" key="ExplanationOfBenefit-EOBInpatientInstitutionalEx1" name="EOB Inpatient Institutional - Example 1"/>
-<artifact id="ExplanationOfBenefit/EOBOutpatientInstitutionalEx1" key="ExplanationOfBenefit-EOBOutpatientInstitutionalEx1" name="EOB Outpatient Institutional - Example 1"/>
-<artifact id="ExplanationOfBenefit/EOBProfessionalEx1" key="ExplanationOfBenefit-EOBProfessionalEx1" name="EOB Professional - Example 1"/>
+<artifact id="ValueSet/CDCICD910CMDiagnosisCodes" key="ValueSet-CDCICD910CMDiagnosisCodes" name="Diagnosis Codes - International Classification of Diseases, Clinical Modification (ICD-9-CM, ICD-10-CM)"/>
+<artifact id="ExplanationOfBenefit/InpatientEOBExample1" key="ExplanationOfBenefit-EOBInpatientInstitutionalEx1" name="EOB Inpatient Institutional - Example 1"/>
+<artifact id="ExplanationOfBenefit/OutpatientEOBExample1" key="ExplanationOfBenefit-EOBOutpatientInstitutionalEx1" name="EOB Outpatient Institutional - Example 1"/>
+<artifact id="ExplanationOfBenefit/ProfessionalEOBExample1" key="ExplanationOfBenefit-EOBProfessionalEx1" name="EOB Professional - Example 1"/>
 <artifact id="ExplanationOfBenefit/EOBInpatient1" key="ExplanationOfBenefit-EOBInpatient1" name="EOBInpatient1"/>
 <artifact id="ExplanationOfBenefit/EOBOutpatientInstitutional1" key="ExplanationOfBenefit-EOBOutpatientInstitutional1" name="EOBOutpatientInstitutional1"/>
 <artifact id="ExplanationOfBenefit/EOBPharmacy1" key="ExplanationOfBenefit-EOBPharmacy1" name="EOBPharmacy1"/>
@@ -85,11 +78,9 @@
 <artifact id="SearchParameter/explanationofbenefit-type" key="SearchParameter-explanationofbenefit-type" name="ExplanationOfBenefit_Type"/>
 <artifact id="CodeSystem/CMSHIPPSCodes" key="CodeSystem-CMSHIPPSCodes" name="Health Insurance Prospective Payment System Codes"/>
 <artifact id="CodeSystem/CMSHCPCSCodes" key="CodeSystem-CMSHCPCSCodes" name="Healthcare Common Procedure Coding System (HCPCS) level II alphanumeric codes"/>
-<artifact id="CodeSystem/ICD10PCS" key="CodeSystem-ICD10PCS" name="ICD-10 Procedure Coding System"/>
-<artifact id="ValueSet/CMSICD910PCSProcedureCodes" key="ValueSet-CMSICD910PCSProcedureCodes" name="ICD-9 Procedure Codes - ICD-10 Procedure Coding System"/>
-<artifact id="ValueSet/CDCICD910CMDiagnosisCodes" key="ValueSet-CDCICD910CMDiagnosisCodes" name="ICD-9-10-CM Diagnosis Codes"/>
-<artifact id="CodeSystem/CMSMSDRG" key="CodeSystem-CMSMSDRG" name="MS DRG"/>
+<artifact deprecated="true" id="CodeSystem/ICD10PCS" key="CodeSystem-ICD10PCS" name="ICD-10 Procedure Coding System"/>
 <artifact id="ValueSet/CMSMS3MAPAPRDRG" key="ValueSet-CMSMS3MAPAPRDRG" name="MS-DRGs - AP-DRGs - APR-DRGs"/>
+<artifact id="CodeSystem/CMSMSDRG" key="CodeSystem-CMSMSDRG" name="Medicare Severity Diagnosis Related Groups (MS-DRGs)"/>
 <artifact id="ValueSet/NCPDPBrandGenericCode" key="ValueSet-NCPDPBrandGenericCode" name="NCPDP Brand Generic Code"/>
 <artifact id="CodeSystem/NCPDPBrandGenericIndicator" key="CodeSystem-NCPDPBrandGenericIndicator" name="NCPDP Brand Generic Indicator"/>
 <artifact id="ValueSet/NCPDPCompoundCode" key="ValueSet-NCPDPCompoundCode" name="NCPDP Compound Code CS"/>
@@ -117,18 +108,22 @@
 <artifact id="ValueSet/FDANationalDrugCode" key="ValueSet-FDANationalDrugCode" name="National Drug Code (NDC)"/>
 <artifact id="Organization/Payer1" key="Organization-Payer1" name="OrganizationPayer1"/>
 <artifact id="Organization/OrganizationProvider1" key="Organization-OrganizationProvider1" name="OrganizationProvider1"/>
-<artifact id="Patient/PatientEx1" key="Patient-PatientEx1" name="Patient Example 1"/>
+<artifact id="Patient/ExamplePatient1" key="Patient-PatientEx1" name="Patient Example 1"/>
 <artifact id="Patient/Patient1" key="Patient-Patient1" name="Patient1"/>
-<artifact id="Organization/PayerOrgEx1" key="Organization-PayerOrgEx1" name="Payer Organization Example 1"/>
-<artifact id="Practitioner/PractitionerEx1" key="Practitioner-PractitionerEx1" name="Practitioner Example 1"/>
-<artifact id="Practitioner/PractitionerEx2" key="Practitioner-PractitionerEx2" name="Practitioner Example 2"/>
-<artifact id="Practitioner/PractitionerEx3" key="Practitioner-PractitionerEx3" name="Practitioner Example 3"/>
-<artifact id="Organization/ProviderOrganizationEx1" key="Organization-ProviderOrganizationEx1" name="Provider Organizaiton Example 1"/>
-<artifact id="Organization/ProviderOrganizationEx2" key="Organization-ProviderOrganizationEx2" name="Provider Organizaiton Example 2"/>
-<artifact id="Organization/ProviderOrganizationEx3" key="Organization-ProviderOrganizationEx3" name="Provider Organizaiton Example 3"/>
-<artifact id="Organization/ProviderOrganizationEx4" key="Organization-ProviderOrganizationEx4" name="Provider Organizaiton Example 4"/>
-<artifact id="Organization/ProviderOrganizationEx5" key="Organization-ProviderOrganizationEx5" name="Provider Organizaiton Example 5"/>
-<artifact id="Organization/ProviderOrganizationEx6" key="Organization-ProviderOrganizationEx6" name="Provider Organizaiton Example 6"/>
+<artifact id="Organization/PayerOrganizationExample1" key="Organization-PayerOrgEx1" name="Payer Organization Example 1"/>
+<artifact id="Practitioner/Practitioner1" key="Practitioner-PractitionerEx1" name="Practitioner Example 1"/>
+<artifact id="Practitioner/Practitioner2" key="Practitioner-PractitionerEx2" name="Practitioner Example 2"/>
+<artifact id="Practitioner/Practitioner3" key="Practitioner-PractitionerEx3" name="Practitioner Example 3"/>
+<artifact id="ValueSet/AMACPTCMSHCPCSProcedureCodes" key="ValueSet-AMACPTCMSHCPCSProcedureCodes" name="Procedure Codes - AMA CPT - CMS HCPCS"/>
+<artifact id="ValueSet/C4BBEOBInstitutionalProcedureCodes" key="ValueSet-C4BBEOBInstitutionalProcedureCodes" name="Procedure Codes - AMA CPT - CMS HCPCS - CMS HIPPS"/>
+<artifact id="ValueSet/CMSICD910PCSProcedureCodes" key="ValueSet-CMSICD910PCSProcedureCodes" name="Procedure Codes - International Classification of Diseases, Ninth Revision, Clinical Modification (ICD-9-CM) - ICD-10 Procedure Coding System"/>
+<artifact id="ValueSet/AMACPTCMSHCPCSModifiers" key="ValueSet-AMACPTCMSHCPCSModifiers" name="Procedure Modifier Codes - AMA CPT - CMS HCPCS"/>
+<artifact id="Organization/ProviderOrganization1" key="Organization-ProviderOrganizationEx1" name="Provider Organizaiton Example 1"/>
+<artifact deprecated="true" id="Organization/ProviderOrganizationEx2" key="Organization-ProviderOrganizationEx2" name="Provider Organizaiton Example 2"/>
+<artifact id="Organization/ProviderOrganization3" key="Organization-ProviderOrganizationEx3" name="Provider Organizaiton Example 3"/>
+<artifact id="Organization/ProviderOrganization4" key="Organization-ProviderOrganizationEx4" name="Provider Organizaiton Example 4"/>
+<artifact id="Organization/ProviderOrganization5" key="Organization-ProviderOrganizationEx5" name="Provider Organizaiton Example 5"/>
+<artifact id="Organization/ProviderOrganization6" key="Organization-ProviderOrganizationEx6" name="Provider Organizaiton Example 6"/>
 <artifact id="CodeSystem/X12ClaimAdjustmentReasonCodes" key="CodeSystem-X12ClaimAdjustmentReasonCodes" name="X12 Claim Adjustment Reason Codes"/>
 <artifact id="ValueSet/X12ClaimAdjustmentReasonCodesCMSRemittanceAdviceRemarkCodes" key="ValueSet-X12ClaimAdjustmentReasonCodesCMSRemittanceAdviceRemarkCodes" name="X12 Claim Adjustment Reason Codes - Remittance Advice Remark Codes"/>
 <artifact id="CodeSystem/CMSRemittanceAdviceRemarkCodes" key="CodeSystem-CMSRemittanceAdviceRemarkCodes" name="X12 Remittance Advice Remark Codes"/>
@@ -148,5 +143,4 @@
 <page deprecated="true" key="Terminology" name="Terminology"/>
 <page key="5_Terminology_Licensure" name="Terminology Licensure"/>
 <page key="Use_Case" name="Use Case"/>
-
 </specification>
