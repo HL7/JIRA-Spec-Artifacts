@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/case-reporting"
-  url="http://hl7.org/fhir/us/ecr" ciUrl="https://build.fhir.org/ig/HL7/case-reporting" defaultWorkgroup="pher"
-  defaultVersion="3.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="3.0.0" />
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" ballotUrl="http://hl7.org/fhir/us/ecr/2021Jan" gitUrl="https://github.com/HL7/case-reporting" url="http://hl7.org/fhir/us/ecr" ciUrl="https://build.fhir.org/ig/HL7/case-reporting" defaultWorkgroup="pher" defaultVersion="1.0.0">
+  <version code="current" url="https://build.fhir.org/ig/HL7/case-reporting"/>
+  <version code="1.1.0" url="http://hl7.org/fhir/us/ecr/2021Jan"/>
+  <version code="1.0.0" url="http://hl7.org/fhir/us/ecr/STU2"/>
+  <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/us/ecr/2018Sep"/>
+  <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/uv/ecr/2018Jan"/>
+  <version code="0.1" deprecated="true"/>
   <artifactPageExtension value="-definitions"/>
   <artifactPageExtension value="-examples"/>
   <artifactPageExtension value="-mappings"/>
@@ -42,7 +44,7 @@
   <artifact name="eICR Trigger Code Flag Extension" key="StructureDefinition-eicr-trigger-code-flag-extension" id="StructureDefinition/eicr-trigger-code-flag-extension"/>
   <artifact name="Endpoint Example: endpoint-ecr-salem-medical-center" key="Endpoint-endpoint-ecr-salem-medical-center" id="Endpoint/endpoint-ecr-salem-medical-center"/>
   <artifact name="Endpoint Example: endpoint-ecr-ymca" key="Endpoint-endpoint-ecr-ymca" id="Endpoint/endpoint-ecr-ymca"/>
-  <artifact name="eRSD Bundle Example: bundle-eRSD" key="Bundle-bundle-eRSD" id="Bundle/bundle-eRSD" deprecated="true" />
+  <artifact name="eRSD Bundle Example: bundle-eRSD" key="Bundle-bundle-eRSD" id="Bundle/bundle-eRSD" deprecated="true"/>
   <artifact name="eRSD Client CapabilityStatement" key="CapabilityStatement-capabilitystatement-ersd-client" id="CapabilityStatement/capabilitystatement-ersd-client"/>
   <artifact name="eRSD Endpoint Connection Type" key="CodeSystem-ersd-endpoint-connection-type" id="CodeSystem/ersd-endpoint-connection-type"/>
   <artifact name="eRSD Endpoint Connection Type Codes" key="ValueSet-valueset-ersd-endpoint-connection-type" id="ValueSet/valueset-ersd-endpoint-connection-type"/>
@@ -83,7 +85,7 @@
   <artifact name="Pregnancy Status" key="ValueSet-pregnancy-status" id="ValueSet/pregnancy-status"/>
   <artifact name="Pregnancy Status Observation" key="StructureDefinition-pregnancy-status-observation" id="StructureDefinition/pregnancy-status-observation"/>
   <artifact name="Pregnancy Status Observation Example: Eve Everywoman" key="Observation-observation-pregnancy-status-eve-everywoman" id="Observation/observation-pregnancy-status-eve-everywoman"/>
-  <artifact name="Race, Ethnicity, Language, and Disability (REAL D) Race and Ethnicity Extension" key="StructureDefinition-real-d-race-ethnicity-extension" id="StructureDefinition/real-d-race-ethnicity-extension" deprecated="true" />
+  <artifact name="Race, Ethnicity, Language, and Disability (REAL D) Race and Ethnicity Extension" key="StructureDefinition-real-d-race-ethnicity-extension" id="StructureDefinition/real-d-race-ethnicity-extension" deprecated="true"/>
   <artifact name="Relates To Extension" key="StructureDefinition-relates-to-extension" id="StructureDefinition/relates-to-extension"/>
   <artifact name="RR Communication" key="StructureDefinition-rr-communication" id="StructureDefinition/rr-communication"/>
   <artifact name="RR Communication profile example: One condition, one PHA" key="Communication-communication-rr-one-cond-one-pha" id="Communication/communication-rr-one-cond-one-pha"/>
@@ -161,8 +163,8 @@
   <artifact name="US Public Health Supplemental Value Set" key="StructureDefinition-us-ph-supplemental-valueset" id="StructureDefinition/us-ph-supplemental-valueset"/>
   <artifact name="US Public Health Supplemental Valueset Library" key="StructureDefinition-us-ph-supplemental-valueset-library" id="StructureDefinition/us-ph-supplemental-valueset-library"/>
   <artifact name="US Public Health Valueset Library" key="StructureDefinition-us-ph-valueset-library" id="StructureDefinition/us-ph-valueset-library"/>
-  <artifact name="CodeSystem REALD Race Ethnicity" key="CodeSystem-codesystem-reald-race-ethnicity" id="CodeSystem/codesystem-reald-race-ethnicity" deprecated="true" />
-  <artifact name="ValueSet REALD Race Ethnicity" key="ValueSet-valueset-reald-race-ethnicity" id="ValueSet/valueset-reald-race-ethnicity" deprecated="true" />
+  <artifact name="CodeSystem REALD Race Ethnicity" key="CodeSystem-codesystem-reald-race-ethnicity" id="CodeSystem/codesystem-reald-race-ethnicity" deprecated="true"/>
+  <artifact name="ValueSet REALD Race Ethnicity" key="ValueSet-valueset-reald-race-ethnicity" id="ValueSet/valueset-reald-race-ethnicity" deprecated="true"/>
   <artifact name="Disability Status Example: Eve Everywoman" key="Observation-observation-disability-status-eve-everywoman" id="Observation/observation-disability-status-eve-everywoman"/>
   <artifact name="US Public Health Emergency Outbreak Information Example: Eve Everywoman" key="Observation-observation-us-ph-emergency-outbreak-info-eve-everywoman" id="Observation/observation-us-ph-emergency-outbreak-info-eve-everywoman"/>
   <artifact name="US Core Device Example: ECMO" key="Device-us-core-device-ecmo" id="Device/us-core-device-ecmo"/>
@@ -175,12 +177,15 @@
   <artifact name="US Public Health Alternative Expression Extension" key="StructureDefinition-us-ph-alternativeExpression" id="StructureDefinition/us-ph-alternativeExpression"/>
   <artifact name="US Public Health ValueSet Library Example" key="Library-library-us-ph-valueset-library-example" id="Library/library-us-ph-valueset-library-example"/>
   <artifact name="USPublicHealthSpecificationBundleExample" key="Bundle-bundle-us-ph-specification-bundle-example" id="Bundle/bundle-us-ph-specification-bundle-example"/>
-<artifact name="expansion-parameters-ecr" key="Parameters-expansion-parameters-ecr" id="Parameters/expansion-parameters-ecr"/>
+  <artifact name="expansion-parameters-ecr" key="Parameters-expansion-parameters-ecr" id="Parameters/expansion-parameters-ecr"/>
   <artifact name="eRSD PlanDefinition Instance NamedEvent Example" key="PlanDefinition-plandefinition-ersd-instance-namedEvent-example" id="PlanDefinition/plandefinition-ersd-instance-namedEvent-example"/>
   <artifact name="USPublicHealthSupplementalBundleExample" key="Bundle-bundle-us-ph-supplemental-bundle-example" id="Bundle/bundle-us-ph-supplemental-bundle-example"/>
   <artifact name="US Public Health Supplemental Valueset Example" key="ValueSet-valueset-us-ph-supplemental-valueset-example" id="ValueSet/valueset-us-ph-supplemental-valueset-example"/>
-  <artifact name="ERSDSpecificationBundle" key="Bundle-bundle-ersd-specification-bundle" id="Bundle/bundle-ersd-specification-bundle"/>  
-<page name="Home Page" key="index"/>
+  <artifact id="Bundle/bundle-ersd-specification-bundle" key="Bundle-bundle-ersd-specification-bundle" name="eRSD Specification Bundle example"/>
+  <artifact id="Library/library-us-ph-supplemental-valueset-library-example" key="Library-library-us-ph-supplemental-valueset-library-example" name="US Public Health Supplemental ValueSet Library Example"/>
+  <artifact id="Bundle/bundle-ersd-supplemental-bundle" key="Bundle-bundle-ersd-supplemental-bundle" name="eRSD Supplemental Bundle example"/>
+  <page name="Home Page" key="index"/>
+  <page key="toc" name="Table of Contents"/>
   <page name="Notice to Ballot Commenters" key="notice_to_ballot_commenters"/>
   <page name="Transaction Profiles" key="transaction_profiles"/>
   <page name="Electronic Initial Case Report (eICR) Transaction and Profiles" key="electronic_initial_case_report_eicr_transaction_and_profiles"/>
@@ -196,7 +201,9 @@
   <page name="eRSD Jurisdictions CodeSystem Configuration" key="ersd_jurisdictions_codesystem_configuration"/>
   <page name="Rule Filter Generation" key="rule_filter_generation"/>
   <page name="Relationship to Other Standards" key="relationship_to_other_standards"/>
-  <page name="Acknowledgements" key="acknowledgements"/>
+  <page key="NA" name="(NA)"/>
+  <page key="many" name="(many)"/>
+  <page key="acknowledgements" name="Acknowledgements"/>
+  <page key="artifacts" name="Artifacts Summary"/>
   <page name="Downloads" key="downloads"/>
- 
 </specification>
