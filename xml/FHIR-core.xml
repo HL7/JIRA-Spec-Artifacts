@@ -104,18 +104,19 @@
   <artifact name="MedicationKnowledge" key="MedicationKnowledge" id="StructureDefinition/MedicationKnowledge" workgroup="pharm"/>
   <artifact name="MedicationRequest" key="MedicationPrescription" id="StructureDefinition/MedicationPrescription" workgroup="pharm"/>
   <artifact name="MedicationUsage (MedicationStatement)" key="MedicationStatement" id="StructureDefinition/MedicationStatement" workgroup="pharm"/>
-  <artifact name="MedicinalProduct" key="MedicinalProduct" id="StructureDefinition/MedicinalProduct" workgroup="brr"/>
-  <artifact name="MedicinalProductAuthorization" key="MedicinalProductAuthorization" id="StructureDefinition/MedicinalProductAuthorization" workgroup="brr"/>
+  <artifact name="ClinicalUseIssue" key="ClinicalUseIssue" id="StructureDefinition/ClinicalUseIssue" workgroup="brr"/>  
+  <artifact name="MedicinalProductDefinition" key="MedicinalProduct" id="StructureDefinition/MedicinalProductDefinition" workgroup="brr"/>
+  <artifact name="RegulatedAuthorization" key="MedicinalProductAuthorization" id="StructureDefinition/RegulatedAuthorization" workgroup="brr"/>
   <artifact name="MedicinalProductClinicals" key="MedicinalProductClinicals" id="StructureDefinition/MedicinalProductClinicals" workgroup="brr"/>
-  <artifact name="MedicinalProductContraindication" key="MedicinalProductContraindication" id="StructureDefinition/MedicinalProductContraindication" workgroup="brr"/>
+  <artifact name="MedicinalProductContraindication (see ClinicalUseIssue)" key="MedicinalProductContraindication" id="StructureDefinition/MedicinalProductContraindication" workgroup="brr" deprecated="true"/>
   <artifact name="MedicinalProductDeviceSpec" key="MedicinalProductDeviceSpec" id="StructureDefinition/MedicinalProductDeviceSpec" workgroup="brr"/>
   <artifact name="MedicinalProductIndication" key="MedicinalProductIndication" id="StructureDefinition/MedicinalProductIndication" workgroup="brr"/>
-  <artifact name="MedicinalProductIngredient" key="MedicinalProductIngredient" id="StructureDefinition/MedicinalProductIngredient" workgroup="brr"/>
-  <artifact name="MedicinalProductInteraction" key="MedicinalProductInteraction" id="StructureDefinition/MedicinalProductInteraction" workgroup="brr"/>
-  <artifact name="MedicinalProductManufactured" key="MedicinalProductManufactured" id="StructureDefinition/MedicinalProductManufactured" workgroup="brr"/>
+  <artifact name="Ingredient" key="MedicinalProductIngredient" id="StructureDefinition/Ingredient" workgroup="brr"/>
+  <artifact name="MedicinalProductInteraction (see ClinicalUseIssue)" key="MedicinalProductInteraction" id="StructureDefinition/MedicinalProductInteraction" workgroup="brr" deprecated="true"/>
+  <artifact name="ManufacturedItemDefinition" key="MedicinalProductManufactured" id="StructureDefinition/ManufacturedItemDefinition" workgroup="brr"/>
   <artifact name="MedicinalProductPackaged" key="MedicinalProductPackaged" id="StructureDefinition/MedicinalProductPackaged" workgroup="brr"/>
-  <artifact name="MedicinalProductPharmaceutical" key="MedicinalProductPharmaceutical" id="StructureDefinition/MedicinalProductPharmaceutical" workgroup="brr"/>
-  <artifact name="MedicinalProductUndesireableEffect" key="MedicinalProductUndesireableEffect" id="StructureDefinition/MedicinalProductUndesireableEffect" workgroup="brr"/>
+  <artifact name="AdministrableProductDefinition" key="MedicinalProductPharmaceutical" id="StructureDefinition/AdministrableProductDefinition" workgroup="brr"/>
+  <artifact name="MedicinalProductUndesireableEffect (see ClinicalUseIssue)" key="MedicinalProductUndesireableEffect" id="StructureDefinition/MedicinalProductUndesireableEffect" workgroup="brr" deprecated="true"/>
   <artifact name="MessageDefinition" key="MessageDefinition" id="StructureDefinition/MessageDefinition" workgroup="fhir-i"/>
   <artifact name="MessageHeader" key="MessageHeader" id="StructureDefinition/MessageHeader" workgroup="fhir-i"/>
   <artifact name="MolecularSequence (was Sequence)" key="Sequence" id="StructureDefinition/Sequence" workgroup="cg"/>
@@ -169,7 +170,7 @@
   <artifact name="Substance" key="Substance" id="StructureDefinition/Substance" workgroup="oo"/>
   <artifact name="SubstancePolymer" key="SubstancePolymer" id="StructureDefinition/SubstancePolymer" workgroup="oo"/>
   <artifact name="SubstanceReferenceInformation" key="SubstanceReferenceInformation" id="StructureDefinition/SubstanceReferenceInformation" workgroup="oo"/>
-  <artifact name="SubstanceSpecification" key="SubstanceSpecification" id="StructureDefinition/SubstanceSpecification" workgroup="oo"/>
+  <artifact name="SubstanceDefinition" key="SubstanceSpecification" id="StructureDefinition/SubstanceDefinition" workgroup="oo"/>
   <artifact name="SupplyDelivery (was Supply)" key="Supply" id="StructureDefinition/Supply" workgroup="oo"/>
   <artifact name="SupplyRequest" key="SupplyRequest" id="StructureDefinition/SupplyRequest" workgroup="oo"/>
   <artifact name="SupportingDocumentation" key="SupportingDocumentation" id="StructureDefinition/SupportingDocumentation" workgroup="fm" deprecated="true"/>
