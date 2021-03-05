@@ -24070,6 +24070,96 @@
       <page name="Other" key="V2-elr-other" spec="elr"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="V2-vmr-cds"
+                  name="Implementing the Virtual Medical Record for Clinical Decision Support (vMR-CDS) (V2)"
+                  defaultWorkgroup="cds"
+                  defaultVersion="R1_DSTU1"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=84">
+      <version code="R1_DSTU1" deprecated="false"/>
+      <page name="Preface" key="V2-vmr-cds-preface" spec="vmr-cds"/>
+      <page name="1 - Scope" key="V2-vmr-cds-1_scope" spec="vmr-cds"/>
+      <page name="2 - Referenced Documents"
+            key="V2-vmr-cds-2_doc_refs"
+            spec="vmr-cds"/>
+      <page name="3 - Overview" key="V2-vmr-cds-3_overview" spec="vmr-cds"/>
+      <page name="4 - Exising Messages Used"
+            key="V2-vmr-cds-4_messages_used"
+            spec="vmr-cds"/>
+      <page name="4.1 - Immunization"
+            key="V2-vmr-cds-4_1_immunization"
+            spec="vmr-cds"/>
+      <page name="4.2 - Appointments"
+            key="V2-vmr-cds-4_2_appointments"
+            spec="vmr-cds"/>
+      <page name="4.3 - Problem List"
+            key="V2-vmr-cds-4_3_problem_list"
+            spec="vmr-cds"/>
+      <page name="4.4 - Medications"
+            key="V2-vmr-cds-4_4_medications"
+            spec="vmr-cds"/>
+      <page name="4.5 - Allergies"
+            key="V2-vmr-cds-4_5_allergies"
+            spec="vmr-cds"/>
+      <page name="4.6 - Lab Orders"
+            key="V2-vmr-cds-4_6_lab_orders"
+            spec="vmr-cds"/>
+      <page name="4.7 - Observation data"
+            key="V2-vmr-cds-4_7_obs_data"
+            spec="vmr-cds"/>
+      <page name="5 - Use of Structured OBX Segments"
+            key="V2-vmr-cds-5_use_of_obx_seg"
+            spec="vmr-cds"/>
+      <page name="5.1 - Overview of Structured OBX data"
+            key="V2-vmr-cds-5_1_struct_obx_data"
+            spec="vmr-cds"/>
+      <page name="5.2 - Presenting Complaint"
+            key="V2-vmr-cds-5_2_complaint"
+            spec="vmr-cds"/>
+      <page name="5.3 - History of Past Illness"
+            key="V2-vmr-cds-5_3_illness_history"
+            spec="vmr-cds"/>
+      <page name="5.4 - Procedures"
+            key="V2-vmr-cds-5_4_procedures"
+            spec="vmr-cds"/>
+      <page name="5.5 - Family History"
+            key="V2-vmr-cds-5_5_fam_hist"
+            spec="vmr-cds"/>
+      <page name="5.6 - Pregnancies"
+            key="V2-vmr-cds-5_6_pregnancies"
+            spec="vmr-cds"/>
+      <page name="5.7 - Social History"
+            key="V2-vmr-cds-5_7_soc_hist"
+            spec="vmr-cds"/>
+      <page name="5.8 - Substance Abuse"
+            key="V2-vmr-cds-5_8_substance_abuse"
+            spec="vmr-cds"/>
+      <page name="5.9 - Exercise History"
+            key="V2-vmr-cds-5_9_exercise_hist"
+            spec="vmr-cds"/>
+      <page name="5.10 - Vitals" key="V2-vmr-cds-5_10_vitals" spec="vmr-cds"/>
+      <page name="5.11 - Alerts" key="V2-vmr-cds-5_11_alerts" spec="vmr-cds"/>
+      <page name="6 - Summary" key="V2-vmr-cds-6_summary" spec="vmr-cds"/>
+      <page name="7 - Example Message"
+            key="V2-vmr-cds-7_example"
+            spec="vmr-cds"/>
+      <page name="8 - Appendix" key="V2-vmr-cds-8_appendix" spec="vmr-cds"/>
+      <page name="8.1 - Appendix 1 - Structured OBX Principles"
+            key="V2-vmr-cds-8_1_app_obx_prin"
+            spec="vmr-cds"/>
+      <page name="8.2 - Appendix 2 - Mapping to ISO 21090 Data Types"
+            key="V2-vmr-cds-8_2_app_iso_dt_mapping"
+            spec="vmr-cds"/>
+      <page name="8.3 - LOINC Codes and long names used in this document"
+            key="V2-vmr-cds-8_3_loinc_codes"
+            spec="vmr-cds"/>
+      <page name="8.4 - Appendix - Suggested LOINCs for Section Header value"
+            key="V2-vmr-cds-8_4_app_loinc_header"
+            spec="vmr-cds"/>
+      <page name="8.5 - Appendix - Definitions"
+            key="V2-vmr-cds-8_5_app_definitions"
+            spec="vmr-cds"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="OTHER-encprs"
                   name="HL7 EHR-S Electronic Nutrition Care Process Record System (ENCPRS) Functional Profile (OTHER)"
                   defaultWorkgroup="ehr"
@@ -24325,7 +24415,7 @@
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="OTHER-hsp-market"
                   name="HL7 Health Services Platform (HSP) Marketplace (OTHER)"
-                  defaultWorkgroup="cds"
+                  defaultWorkgroup="its"
                   defaultVersion="1.0"
                   url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=510">
       <version code="1.0" deprecated="false"/>
@@ -24408,7 +24498,7 @@
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="OTHER-bdr-dam"
-                  name="HL7 Domain Analysis Model: Birth Defects Reporting (OTHER)"
+                  name="HL7 Domain Analysis Model: Birth Defects Reporting (US) (OTHER)"
                   defaultWorkgroup="pher"
                   defaultVersion="1.0"
                   url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=559">
@@ -24493,5 +24583,156 @@
       <page name="Activities: 4.0 Process birth defect report"
             key="OTHER-bdr-dam-activities_process_BDR"
             spec="bdr-dam"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="OTHER-model-xform"
+                  name="HL7 Model-based Transformation Service (OTHER)"
+                  defaultWorkgroup="soa"
+                  defaultVersion="R1_STU1"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=560">
+      <version code="R1_STU1" deprecated="false"/>
+      <page name="Preface" key="OTHER-model-xform-preface" spec="model-xform"/>
+      <page name="1 - Service Overview and Business Case"
+            key="OTHER-model-xform-1_svc_overview"
+            spec="model-xform"/>
+      <page name="2 - Executive Summary"
+            key="OTHER-model-xform-exec_summary"
+            spec="model-xform"/>
+      <page name="2.1 - Transformation Service Overview"
+            key="OTHER-model-xform-2_1_xform_overview"
+            spec="model-xform"/>
+      <page name="2.2 - Reason for the Standard"
+            key="OTHER-model-xform-2_2_reason"
+            spec="model-xform"/>
+      <page name="2.3 - Structure of the Transformation Service"
+            key="OTHER-model-xform-2_3_structure"
+            spec="model-xform"/>
+      <page name="2.4 - Implementation Considerations"
+            key="OTHER-model-xform-2_4_impl_consid"
+            spec="model-xform"/>
+      <page name="3 - Business Scenarios"
+            key="OTHER-model-xform-3_biz_scen"
+            spec="model-xform"/>
+      <page name="3.1 - Scenario Actors"
+            key="OTHER-model-xform-3_1_scen_actors"
+            spec="model-xform"/>
+      <page name="3.2 - Administrative Scenarios"
+            key="OTHER-model-xform-3_2_scen_admin"
+            spec="model-xform"/>
+      <page name="3.3 - Search/Query Scenarios"
+            key="OTHER-model-xform-3_3_scen_search"
+            spec="model-xform"/>
+      <page name="3.4 - Transformation Service User"
+            key="OTHER-model-xform-3_4_scen_xform_user"
+            spec="model-xform"/>
+      <page name="4 - Assumptions and Dependencies"
+            key="OTHER-model-xform-4_assum_depen"
+            spec="model-xform"/>
+      <page name="4.1 - Dependencies on other Service Frameworks"
+            key="OTHER-model-xform-4_1_depen_other"
+            spec="model-xform"/>
+      <page name="4.2 - Assumptions for the MBTS Service"
+            key="OTHER-model-xform-4_2_assum_mbts"
+            spec="model-xform"/>
+      <page name="5 - Detailed Functional Model for each Interface"
+            key="OTHER-model-xform-5_fms_interfaces"
+            spec="model-xform"/>
+      <page name="5.1 - Administration Operations"
+            key="OTHER-model-xform-5_1_admin_ops"
+            spec="model-xform"/>
+      <page name="5.2 - Search/Access Operations"
+            key="OTHER-model-xform-5_2_search_ops"
+            spec="model-xform"/>
+      <page name="5.3 - Executive Operations"
+            key="OTHER-model-xform-5_3_exec_ops"
+            spec="model-xform"/>
+      <page name="6 - Profiles"
+            key="OTHER-model-xform-6_profiles"
+            spec="model-xform"/>
+      <page name="6.1 - Functional Profiles"
+            key="OTHER-model-xform-6_1_profiles_funct"
+            spec="model-xform"/>
+      <page name="6.2 - Semantic Profiles"
+            key="OTHER-model-xform-6_2_profiles_semantic"
+            spec="model-xform"/>
+      <page name="7 - The Service Framework Functional Model"
+            key="OTHER-model-xform-7_svc_framework_fm"
+            spec="model-xform"/>
+      <page name="Appendix A - Use Case 1"
+            key="OTHER-model-xform-app_a_ucase1"
+            spec="model-xform"/>
+      <page name="Appendix A - Use Case 2"
+            key="OTHER-model-xform-app_a_ucase2"
+            spec="model-xform"/>
+      <page name="Appendix A - Use Case 3"
+            key="OTHER-model-xform-app_a_ucase3"
+            spec="model-xform"/>
+      <page name="Appendix B - Exemplary Mappings for CCDAR2.1 CCDA R2.1 CCD Doc Entry to FHIR Resources"
+            key="OTHER-model-xform-app_b_ccd_2_fhir"
+            spec="model-xform"/>
+      <page name="Appendix C - Exemplary Mappings for HL7 v2.8.2 to FHIR R4"
+            key="OTHER-model-xform-app_c_v282_2_fhir"
+            spec="model-xform"/>
+      <page name="Appendix D - ISO 13606 Annex C Cross Domain Interoperability"
+            key="OTHER-model-xform-app_d_iso_13606"
+            spec="model-xform"/>
+      <page name="C.3 Glossary"
+            key="OTHER-model-xform-glossary"
+            spec="model-xform"/>
+      <page name="Bibliography"
+            key="OTHER-model-xform-biblio"
+            spec="model-xform"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="OTHER-dss"
+                  name="HL7 Implementation Guide: Decision Support Service (US) (OTHER)"
+                  defaultWorkgroup="cds"
+                  defaultVersion="1.2"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=334">
+      <version code="1.2" deprecated="false"/>
+      <version code="1.1" deprecated="false"/>
+      <page name="1.0 - Introduction" key="OTHER-dss-1_intro" spec="dss"/>
+      <page name="1.1 - S and I Framework HeD Initiative"
+            key="OTHER-dss-1_1_hed_initiative"
+            spec="dss"/>
+      <page name="1.2 - Purpose" key="OTHER-dss-1_2_purpose" spec="dss"/>
+      <page name="1.3 - Approach" key="OTHER-dss-1_3_approach" spec="dss"/>
+      <page name="1.4 - Intended Audience"
+            key="OTHER-dss-1_4_audience"
+            spec="dss"/>
+      <page name="1.5 - Conventions and Acronyms Used in this Guide"
+            key="OTHER-dss-1_5_conventions"
+            spec="dss"/>
+      <page name="1.6 - Acronyms" key="OTHER-dss-1_6_acronyms" spec="dss"/>
+      <page name="2.0 - Implementation Approach"
+            key="OTHER-dss-2_0_impl_approach"
+            spec="dss"/>
+      <page name="2.1 - Pre-Conditions"
+            key="OTHER-dss-2_1_pre_conditions"
+            spec="dss"/>
+      <page name="2.2 - Implementation Resources"
+            key="OTHER-dss-2_2_impl_resources"
+            spec="dss"/>
+      <page name="2.3 - Service Interaction Framework"
+            key="OTHER-dss-2_3_svc_ineract_xwork"
+            spec="dss"/>
+      <page name="2.4 - Content Payload Definition"
+            key="OTHER-dss-2_4_cnt_payload_def"
+            spec="dss"/>
+      <page name="2.5 - Clinical Data Representation"
+            key="OTHER-dss-2_5_data_rep"
+            spec="dss"/>
+      <page name="2.6 - Specification of Knowledge Module Meta-Data"
+            key="OTHER-dss-2_6_meta_data"
+            spec="dss"/>
+      <page name="2.7 - Example Implementation"
+            key="OTHER-dss-2_7_impl_example"
+            spec="dss"/>
+      <page name="Appendix A - Acronyms"
+            key="OTHER-dss-app_a_acronyms"
+            spec="dss"/>
+      <page name="Appendix B - Glossary of Terms"
+            key="OTHER-dss-app_b_glossary"
+            spec="dss"/>
    </specification>
 </specifications>
