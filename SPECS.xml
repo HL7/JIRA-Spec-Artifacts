@@ -9527,11 +9527,12 @@
                   defaultWorkgroup="fm"
                   gitUrl="https://github.com/HL7/carin-bb"
                   url="http://hl7.org/fhir/us/carin-bb">
-      <version code="current" url="http://build.fhir.org/ig/HL7/carin-bb"/>
-      <version code="1.0.1" url="http://hl7.org/fhir/us/carin-bb/STU1.0.1"/>
-      <version code="1.0.0" url="http://hl7.org/fhir/us/carin-bb/STU1"/>
-      <version code="0.1.0" url="http://hl7.org/fhir/us/carin-bb/2020Feb"/>
-      <version code="0.1" deprecated="true"/>
+              <version code="current" url="http://build.fhir.org/ig/HL7/carin-bb"/>
+              <version code="1.1.0" url="http://hl7.org/fhir/us/carin-bb/STU1.1.0"/>
+			  <version code="1.0.1" deprecated="true"/>
+              <version code="1.0.0" url="http://hl7.org/fhir/us/carin-bb/STU1"/>
+              <version code="0.1.0" url="http://hl7.org/fhir/us/carin-bb/2020Feb"/>
+              <version code="0.1" deprecated="true"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -9550,11 +9551,11 @@
                 spec="us-carin-bb"/>
       <artifact id="ValueSet/C4BBAdjudication"
                 key="FHIR-us-carin-bb-ValueSet-C4BBAdjudication"
-                name="C4BB Adjudication VS"
+                name="C4BB AdjudicationVS"
                 spec="us-carin-bb"/>
       <artifact id="CodeSystem/C4BBAdjudication"
                 key="FHIR-us-carin-bb-CodeSystem-C4BBAdjudication"
-                name="C4BB Adjudication CS"
+                name="C4BB AdjudicationCS"
                 spec="us-carin-bb"/>
       <artifact id="ValueSet/C4BBAdjudicationCategoryDiscriminator"
                 key="FHIR-us-carin-bb-ValueSet-C4BBAdjudicationCategoryDiscriminator"
@@ -9810,7 +9811,7 @@
                 spec="us-carin-bb"/>
       <artifact id="CodeSystem/CMSHIPPSCodes"
                 key="FHIR-us-carin-bb-CodeSystem-CMSHIPPSCodes"
-                name="Health Insurance Prospective Payment System Codes"
+                name="Health Insurance Prospective Payment System (HIPPS)"
                 spec="us-carin-bb"/>
       <artifact id="CodeSystem/CMSHCPCSCodes"
                 key="FHIR-us-carin-bb-CodeSystem-CMSHCPCSCodes"
@@ -9885,13 +9886,18 @@
                 key="FHIR-us-carin-bb-ValueSet-AHANUBCPointOfOriginForAdmissionOrVisit"
                 name="NUBC Point Of Origin"
                 spec="us-carin-bb"/>
-      <artifact id="CodeSystem/AHANUBCPointOfOriginForAdmissionOrVisit"
+      <artifact deprecated="true"
+                id="CodeSystem/AHANUBCPointOfOriginForAdmissionOrVisit"
                 key="FHIR-us-carin-bb-CodeSystem-AHANUBCPointOfOriginForAdmissionOrVisit"
                 name="NUBC Point Of Origin CS"
                 spec="us-carin-bb"/>
       <artifact id="CodeSystem/AHANUBCPointOfOriginForAdmissionOrVisitNewborn"
                 key="FHIR-us-carin-bb-CodeSystem-AHANUBCPointOfOriginForAdmissionOrVisitNewborn"
-                name="NUBC Point Of Origin - Newborn"
+                name="NUBC Point Of Origin for Newborn"
+                spec="us-carin-bb"/>
+      <artifact id="CodeSystem/AHANUBCPointOfOriginForAdmissionOrVisitNonnewborn"
+                key="FHIR-us-carin-bb-CodeSystem-AHANUBCPointOfOriginForAdmissionOrVisitNonnewborn"
+                name="NUBC Point Of Origin for Non-newborn"
                 spec="us-carin-bb"/>
       <artifact id="ValueSet/AHANUBCPresentOnAdmission"
                 key="FHIR-us-carin-bb-ValueSet-AHANUBCPresentOnAdmission"
@@ -10057,6 +10063,7 @@
             name="Terminology Licensure"
             spec="us-carin-bb"/>
       <page key="FHIR-us-carin-bb-Use_Case" name="Use Case" spec="us-carin-bb"/>
+
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-carin-rtpbc"
