@@ -15,7 +15,7 @@ jobs:
       run: java -jar ./tools/ant/ant-launcher.jar
 
     - name: Install SSH Client
-      uses: webfactory/ssh-agent@v0.2.0
+      uses: webfactory/ssh-agent@v0.4.1
       with:
         ssh-private-key: ${{ secrets.DEPLOY_KEY }}
     

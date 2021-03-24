@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2014 rel. 2 sp1 (x64) (http://www.altova.com) by Lloyd McKenzie (private) -->
-<specification url="http://hl7.org/fhir" ciUrl="http://build.fhir.org" defaultWorkgroup="fhir-i" defaultVersion="R4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
+<specification gitUrl="https://github.com/HL7/fhir" url="http://hl7.org/fhir" ciUrl="http://build.fhir.org" defaultWorkgroup="fhir-i" defaultVersion="R4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
   <version code="R5"/>
+  <version code="R4B"/>
   <version code="R4"/>
   <version code="STU3"/>
   <version code="DSTU2"/>
@@ -32,6 +33,7 @@
   <artifact name="CatalogEntry" key="EntryDefinition" id="StructureDefinition/EntryDefinition" workgroup="oo"/>
   <artifact name="ChargeItem" key="ChargeItem" id="StructureDefinition/ChargeItem" workgroup="pa"/>
   <artifact name="ChargeItemDefinition" key="ChargeItemDefinition" id="StructureDefinition/ChargeItemDefinition" workgroup="pa"/>
+  <artifact name="Citation" key="Citation" id="StructureDefinition/Citation" workgroup="cds"/>
   <artifact name="Claim" key="Claim" id="StructureDefinition/Claim" workgroup="fm"/>
   <artifact name="ClaimResponse" key="ClaimResponse" id="StructureDefinition/ClaimResponse" workgroup="fm"/>
   <artifact name="ClinicalImpression" key="ClinicalImpression" id="StructureDefinition/ClinicalImpression" workgroup="pc"/>
@@ -68,6 +70,7 @@
   <artifact name="EpisodeOfCare" key="EpisodeOfCare" id="StructureDefinition/EpisodeOfCare" workgroup="pc"/>
   <artifact name="EventDefinition" key="EventDefinition" id="StructureDefinition/EventDefinition"/>
   <artifact name="Evidence" key="Evidence" id="StructureDefinition/Evidence" workgroup="cds"/>
+  <artifact name="EvidenceReport" key="EvidenceReport" id="StructureDefinition/EvidenceReport" workgroup="cds"/>
   <artifact name="EvidenceVariable" key="EvidenceVariable" id="StructureDefinition/EvidenceVariable" workgroup="cds"/>
   <artifact name="ExampleScenario" key="ExampleScenario" id="StructureDefinition/ExampleScenario" workgroup="fhir-i"/>
   <artifact name="ExpansionProfile" key="ExpansionProfile" id="StructureDefinition/ExpansionProfile" workgroup="vocab" deprecated="true"/>
@@ -102,18 +105,19 @@
   <artifact name="MedicationKnowledge" key="MedicationKnowledge" id="StructureDefinition/MedicationKnowledge" workgroup="pharm"/>
   <artifact name="MedicationRequest" key="MedicationPrescription" id="StructureDefinition/MedicationPrescription" workgroup="pharm"/>
   <artifact name="MedicationUsage (MedicationStatement)" key="MedicationStatement" id="StructureDefinition/MedicationStatement" workgroup="pharm"/>
-  <artifact name="MedicinalProduct" key="MedicinalProduct" id="StructureDefinition/MedicinalProduct" workgroup="brr"/>
-  <artifact name="MedicinalProductAuthorization" key="MedicinalProductAuthorization" id="StructureDefinition/MedicinalProductAuthorization" workgroup="brr"/>
+  <artifact name="ClinicalUseIssue" key="ClinicalUseIssue" id="StructureDefinition/ClinicalUseIssue" workgroup="brr"/>  
+  <artifact name="MedicinalProductDefinition" key="MedicinalProduct" id="StructureDefinition/MedicinalProductDefinition" workgroup="brr"/>
+  <artifact name="RegulatedAuthorization" key="MedicinalProductAuthorization" id="StructureDefinition/RegulatedAuthorization" workgroup="brr"/>
   <artifact name="MedicinalProductClinicals" key="MedicinalProductClinicals" id="StructureDefinition/MedicinalProductClinicals" workgroup="brr"/>
-  <artifact name="MedicinalProductContraindication" key="MedicinalProductContraindication" id="StructureDefinition/MedicinalProductContraindication" workgroup="brr"/>
+  <artifact name="MedicinalProductContraindication (see ClinicalUseIssue)" key="MedicinalProductContraindication" id="StructureDefinition/MedicinalProductContraindication" workgroup="brr" deprecated="true"/>
   <artifact name="MedicinalProductDeviceSpec" key="MedicinalProductDeviceSpec" id="StructureDefinition/MedicinalProductDeviceSpec" workgroup="brr"/>
   <artifact name="MedicinalProductIndication" key="MedicinalProductIndication" id="StructureDefinition/MedicinalProductIndication" workgroup="brr"/>
-  <artifact name="MedicinalProductIngredient" key="MedicinalProductIngredient" id="StructureDefinition/MedicinalProductIngredient" workgroup="brr"/>
-  <artifact name="MedicinalProductInteraction" key="MedicinalProductInteraction" id="StructureDefinition/MedicinalProductInteraction" workgroup="brr"/>
-  <artifact name="MedicinalProductManufactured" key="MedicinalProductManufactured" id="StructureDefinition/MedicinalProductManufactured" workgroup="brr"/>
-  <artifact name="MedicinalProductPackaged" key="MedicinalProductPackaged" id="StructureDefinition/MedicinalProductPackaged" workgroup="brr"/>
-  <artifact name="MedicinalProductPharmaceutical" key="MedicinalProductPharmaceutical" id="StructureDefinition/MedicinalProductPharmaceutical" workgroup="brr"/>
-  <artifact name="MedicinalProductUndesireableEffect" key="MedicinalProductUndesireableEffect" id="StructureDefinition/MedicinalProductUndesireableEffect" workgroup="brr"/>
+  <artifact name="Ingredient" key="MedicinalProductIngredient" id="StructureDefinition/Ingredient" workgroup="brr"/>
+  <artifact name="MedicinalProductInteraction (see ClinicalUseIssue)" key="MedicinalProductInteraction" id="StructureDefinition/MedicinalProductInteraction" workgroup="brr" deprecated="true"/>
+  <artifact name="ManufacturedItemDefinition" key="MedicinalProductManufactured" id="StructureDefinition/ManufacturedItemDefinition" workgroup="brr"/>
+  <artifact name="PackagedProductDefinition" key="MedicinalProductPackaged" id="StructureDefinition/PackagedProductDefinition" workgroup="brr"/>
+  <artifact name="AdministrableProductDefinition" key="MedicinalProductPharmaceutical" id="StructureDefinition/AdministrableProductDefinition" workgroup="brr"/>
+  <artifact name="MedicinalProductUndesireableEffect (see ClinicalUseIssue)" key="MedicinalProductUndesireableEffect" id="StructureDefinition/MedicinalProductUndesireableEffect" workgroup="brr" deprecated="true"/>
   <artifact name="MessageDefinition" key="MessageDefinition" id="StructureDefinition/MessageDefinition" workgroup="fhir-i"/>
   <artifact name="MessageHeader" key="MessageHeader" id="StructureDefinition/MessageHeader" workgroup="fhir-i"/>
   <artifact name="MolecularSequence (was Sequence)" key="Sequence" id="StructureDefinition/Sequence" workgroup="cg"/>
@@ -162,10 +166,12 @@
   <artifact name="StructureDefinition" key="StructureDefinition" id="StructureDefinition/StructureDefinition" workgroup="fhir-i"/>
   <artifact name="StructureMap" key="StructureMap" id="StructureDefinition/StructureMap" workgroup="fhir-i"/>
   <artifact name="Subscription" key="Subscription" id="StructureDefinition/Subscription" workgroup="fhir-i"/>
+  <artifact name="SubscriptionStatus" key="SubscriptionStatus" id="StructureDefinition/SubscriptionStatus" workgroup="fhir-i"/>
+  <artifact name="SubscriptionTopic" key="SubscriptionTopic" id="StructureDefinition/SubscriptionTopic" workgroup="fhir-i"/>
   <artifact name="Substance" key="Substance" id="StructureDefinition/Substance" workgroup="oo"/>
   <artifact name="SubstancePolymer" key="SubstancePolymer" id="StructureDefinition/SubstancePolymer" workgroup="oo"/>
   <artifact name="SubstanceReferenceInformation" key="SubstanceReferenceInformation" id="StructureDefinition/SubstanceReferenceInformation" workgroup="oo"/>
-  <artifact name="SubstanceSpecification" key="SubstanceSpecification" id="StructureDefinition/SubstanceSpecification" workgroup="oo"/>
+  <artifact name="SubstanceDefinition" key="SubstanceSpecification" id="StructureDefinition/SubstanceDefinition" workgroup="oo"/>
   <artifact name="SupplyDelivery (was Supply)" key="Supply" id="StructureDefinition/Supply" workgroup="oo"/>
   <artifact name="SupplyRequest" key="SupplyRequest" id="StructureDefinition/SupplyRequest" workgroup="oo"/>
   <artifact name="SupportingDocumentation" key="SupportingDocumentation" id="StructureDefinition/SupportingDocumentation" workgroup="fm" deprecated="true"/>
@@ -197,6 +203,7 @@
   <page name="Coming Challenges (change)" key="change" url="change" workgroup="fhir-i"/>
   <page name="Clinical Reasoning Module" key="clinicalreasoning-module" url="clinicalreasoning-module" workgroup="cds">
     <otherpage url="clinicalreasoning-cds-on-fhir"/>
+    <otherpage url="clinicalreasoning-evidence-and-statistics"/>
     <otherpage url="clinicalreasoning-knowledge-artifact-distribution"/>
     <otherpage url="clinicalreasoning-knowledge-artifact-representation"/>
     <otherpage url="clinicalreasoning-quality-reporting"/>
@@ -224,6 +231,7 @@
   <page name="Datatypes" key="datatypes" url="datatypes" workgroup="mnm">
     <otherpage url="datatypes-version-maps"/>
     <otherpage url="datatypes-extras"/>
+    <otherpage url="relatedartifacts"/>
   </page>
   <page name="Defining Extensions" key="defining-extensions" url="defining-extensions" workgroup="fhir-i"/>
   <page name="Diagnostics Module" key="diagnostics-module" url="diagnostics-module" workgroup="oo"/>
@@ -269,6 +277,7 @@
   </page>
   <page name="Mappings to Other Standards (mappings)" key="mappings" url="mappings" workgroup="fhir-i"/>
   <page name="Medications Module" key="medications-module" url="medications-module" workgroup="pharm"/>
+  <page name="Medication Definition Module" key="medication-definition-module" url="medication-definition-module" workgroup="brr"/>
   <page name="Messaging" key="messaging" url="messaging" workgroup="fhir-i"/>
   <page name="Metadata Types" key="metadatatypes" url="metadatatypes" workgroup="fhir-i"/>
   <page name="Modules" key="modules" url="modules" workgroup="fhir-i"/>
@@ -309,6 +318,7 @@
   <page name="Signatures" key="signatures" url="signatures" workgroup="security"/>
   <page name="SMART App Launch" key="smart-app-launch" url="smart-app-launch" workgroup="fhir-i"/>
   <page name="SOA (see Services)" key="soa" url="soa" workgroup="soa" deprecated="true"/>
+  <page name="Subscriptions Framework" key="subscriptions" url="subscriptions" workgroup="fhir-i"/>
   <page name="Persistant Storage" key="storage" url="storage" workgroup="fhir-i"/>
   <page name="Summary" key="summary" url="summary" workgroup="fhir-i"/>
   <page name="Terminologies" key="terminologies" url="terminologies" workgroup="vocab">

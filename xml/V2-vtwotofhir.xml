@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification defaultWorkgroup="pher" defaultVersion="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
+ <version code="1.0"/>
+ <artifact name="Cancel discharge/end visit (ADT_A01)" key="ADT_A01msg" id="message/ADT_A01" workgroup="pa"/>
+ <artifact name="Laboratory order (OML_O21)" key="OML_O21msg" id="message/OML_O21" workgroup="oo"/>
+ <artifact name="Vaccine Record Update (VXU_V04)" key="VXU_V04msg" id="message/VXU_V04" workgroup="oo"/>
+ <artifact name="Unsolicited Report Alarm (ORU_R01)" key="ORU_R01msg" id="message/ORU_R01" workgroup="oo"/>
+ <artifact name="Message Header to FHIR MessageHeader/Provenance (MSH)" key="MSHseg" id="segment/MSH" workgroup="inm"/>
+ <artifact name="Notes and Comments to FHIR Annotation (NTE)" key="NTEseg" id="segment/NTE" workgroup="inm"/>
+ <artifact name="Software Segment to FHIR MessageHeader (SFT)" key="SFTseg" id="segment/SFT" workgroup="inm"/>
+ <artifact name="Patient Allergy Information to FHIR AllergyIntolerance (AL1)" key="AL1seg" id="segment/AL1" workgroup="pa"/>
+ <artifact name="Access Restriction to FHIR Resource (ARV)" key="ARVseg" id="segment/ARV" workgroup="pa"/>
+ <artifact name="Patient Adverse Reaction Information to FHIR AllergyIntolerance (IAM)" key="IAMseg" id="segment/IAM" workgroup="pa"/>
+ <artifact name="Next of Kin / Associated Parties to FHIR Patient/RelatedPerson (NK1)" key="NK1seg" id="segment/NK1" workgroup="pa"/>
+ <artifact name="Patient Additional Demographic to FHIR Patient (PD1)" key="PD1seg" id="segment/PD1" workgroup="pa"/>
+ <artifact name="Patient Identification to FHIR Patient (PID)" key="PIDseg" id="segment/PID" workgroup="pa"/>
+ <artifact name="Patient Visit to FHIR Encounter (PV1)" key="PV1seg" id="segment/PV1" workgroup="pa"/>
+ <artifact name="Patient Visit - Additional Information to FHIR Encounter (PV2)" key="PV2seg" id="segment/PV2" workgroup="pa"/>
+ <artifact name="Observation Request to FHIR DiagnosticReport/ServiceRequest (OBR)" key="OBRseg" id="segment/OBR" workgroup="oo"/>
+ <artifact name="Common Order to FHIR DiagnosticReport/Immunization/ServiceRequest/Provenance (ORC)" key="ORCseg" id="segment/ORC" workgroup="oo"/>
+ <artifact name="Pharmacy/Treatment Administration to FHIR Immunization (RXA)" key="RXAseg" id="segment/RXA" workgroup="oo"/>
+ <artifact name="Pharmacy/Treatment Route to FHIR Immunization (RXR)" key="RXRseg" id="segment/RXR" workgroup="oo"/>
+ <artifact name="Diagnosis to FHIR Condition (DG1)" key="DG1seg" id="segment/DG1" workgroup="fm"/>
+ <artifact name="Procedures to FHIR Procedure (PR1)" key="PR1seg" id="segment/PR1" workgroup="fm"/>
+ <artifact name="Observation/Result to FHIR Observation (OBX)" key="OBXseg" id="segment/OBX" workgroup="oo"/>
+ <artifact name="Participation Information to FHIR Operation (PRT)" key="PRTseg" id="segment/PRT" workgroup="oo"/>
+ <artifact name="Specimen to FHIR Specimen (SPM)" key="SPMseg" id="segment/SPM" workgroup="oo"/>
+ <artifact name="Role to FHIR Patient/RelatedPerson/Encounter (ROL)" key="ROLseg" id="segment/ROL" workgroup="pa"/>
+ <artifact name="Coded With No Exceptions to FHIR CodeableConcept (CNE)" key="CNEdt" id="datatype/CNE" workgroup="inm"/>
+ <artifact name="Coded With Exceptions to FHIR CodeableConcept/Coding/Quantity/Code/String (CWE)" key="CWEdt" id="datatype/CWE" workgroup="inm"/>
+ <artifact name="Extended Composite Id With Check Digit to FHIR Identifier (CX)" key="CXdt" id="datatype/CX" workgroup="inm"/>
+ <artifact name="Driver’s License Number to FHIR Identifier (DLN)" key="DLNdt" id="datatype/DLN" workgroup="inm"/>
+ <artifact name="Date/Time Range to FHIR Period (DR)" key="DRdt" id="datatype/DR" workgroup="inm"/>
+ <artifact name="Date/Time to FHIR dateTime (DTM)" key="DTMdt" id="datatype/DTM" workgroup="inm"/>
+ <artifact name="Encapsulated Data to FHIR Attachment (ED)" key="EDdt" id="datatype/ED" workgroup="inm"/>
+ <artifact name="Entity Identifier to FHIR Coding/Identifier/Procedure (EI)" key="EIdt" id="datatype/EI" workgroup="inm"/>
+ <artifact name="Error Location to FHIR ERL (ERL)" key="ERLdt" id="datatype/ERL" workgroup="inm"/>
+ <artifact name="Hierarchic Designator to FHIR MessageHeader/Provenance/Organization (HD)" key="HDdt" id="datatype/HD" workgroup="inm"/>
+ <artifact name="Coded Value For User to FHIR CodeableConcept (IS)" key="ISdt" id="datatype/IS" workgroup="inm"/>
+ <artifact name="Message Type to FHIR coding (MSG)" key="MSGdt" id="datatype/MSG" workgroup="inm"/>
+ <artifact name="Numeric Array to FHIR NA (NA)" key="NAdt" id="datatype/NA" workgroup="inm"/>
+ <artifact name="Numeric Range to FHIR Range (NR)" key="NRdt" id="datatype/NR" workgroup="inm"/>
+ <artifact name="Person Location to FHIR Location (PL)" key="PLdt" id="datatype/PL" workgroup="inm"/>
+ <artifact name="Practitioner License Or Other Id Number to FHIR Identifier (PLN)" key="PLNdt" id="datatype/PLN" workgroup="inm"/>
+ <artifact name="Processing Type to FHIR MessageHeader (PT)" key="PTdt" id="datatype/PT" workgroup="inm"/>
+ <artifact name="Reference Pointer to FHIR Attachment (RP)" key="RPdt" id="datatype/RP" workgroup="inm"/>
+ <artifact name="Street Address to FHIR Address (SAD)" key="SADdt" id="datatype/SAD" workgroup="inm"/>
+ <artifact name="Structured Numeric to FHIR Quantity/Ratio/Range (SN)" key="SNdt" id="datatype/SN" workgroup="inm"/>
+ <artifact name="String Data to FHIR Identifier (ST)" key="STdt" id="datatype/ST" workgroup="inm"/>
+ <artifact name="Timing/Quantity to FHIR ServiceRequest (TQ)" key="TQdt" id="datatype/TQ" workgroup="inm"/>
+ <artifact name="Extended Address to FHIR Address (XAD)" key="XADdt" id="datatype/XAD" workgroup="inm"/>
+ <artifact name="Extended Composite Id Number And Name For Persons to FHIR Practitioner/RelatedPerson (XCN)" key="XCNdt" id="datatype/XCN" workgroup="inm"/>
+ <artifact name="Extended Composite Name And Identification Number For Organizations to FHIR Organization/string (XON)" key="XONdt" id="datatype/XON" workgroup="inm"/>
+ <artifact name="Extended Person Name to FHIR HumanName (XPN)" key="XPNdt" id="datatype/XPN" workgroup="inm"/>
+ <artifact name="Extended Telecommunication Number to FHIR ContactPoint (XTN)" key="XTNdt" id="datatype/XTN" workgroup="inm"/>
+ <artifact name="Administrative Sex to FHIR Administrative Gender (User0001)" key="User0001vocab" id="vocabmap/User0001" workgroup="inm"/>
+ <artifact name="Marital Status to FHIR V3 MaritalStatus (User0002)" key="User0002vocab" id="vocabmap/User0002" workgroup="inm"/>
+ <artifact name="Admission Type to FHIR V2 0007 (User0007)" key="User0007vocab" id="vocabmap/User0007" workgroup="inm"/>
+ <artifact name="Relationship to FHIR V3 RoleCode (User0063)" key="User0063vocab" id="vocabmap/User0063" workgroup="inm"/>
+ <artifact name="Interpretation Codes to FHIR V3 ObservationInterpretation (HL70078)" key="HL70078vocab" id="vocabmap/HL70078" workgroup="inm"/>
+ <artifact name="Observation Result Status Codes Interpretation to FHIR Observation Status (HL70085)" key="HL70085vocab" id="vocabmap/HL70085" workgroup="inm"/>
+ <artifact name="Re-Admission (User0092)" key="User0092vocab" id="vocabmap/User0092" workgroup="inm"/>
+ <artifact name="Result Status to FHIR Diagnostic Report Status (HL70123)" key="HL70123vocab" id="vocabmap/HL70123" workgroup="inm"/>
+ <artifact name="Contact Role to FHIR V2 0131 (User0131)" key="User0131vocab" id="vocabmap/User0131" workgroup="inm"/>
+ <artifact name="Yes/no Indicator to FHIR Specimen Status (HL70136)" key="HL70136vocab" id="vocabmap/HL70136" workgroup="inm"/>
+ <artifact name="Accept/Application Acknowledgment Conditions to FHIR Messageheader Response Request (HL70155)" key="HL70155vocab" id="vocabmap/HL70155" workgroup="inm"/>
+ <artifact name="Preferred Method of Contact to FHIR V2 0185 (HL70185)" key="HL70185vocab" id="vocabmap/HL70185" workgroup="inm"/>
+ <artifact name="Telecommunication Use Code to FHIR Contact Point Use (HL70201)" key="HL70201vocab" id="vocabmap/HL70201" workgroup="inm"/>
+ <artifact name="Identifier Type to FHIR V2 0203 (HL70203)" key="HL70203vocab" id="vocabmap/HL70203" workgroup="inm"/>
+ <artifact name="Segment Action Code to FHIR Http Verb (HL70206)" key="HL70206vocab" id="vocabmap/HL70206" workgroup="inm"/>
+ <artifact name="Visit Priority Code to FHIR V3 ActPriority (User0217)" key="User0217vocab" id="vocabmap/User0217" workgroup="inm"/>
+ <artifact name="Student Status to FHIR V2 0231 (User0231)" key="User0231vocab" id="vocabmap/User0231" workgroup="inm"/>
+ <artifact name="Universal ID Type to FHIR V2 0301 (HL70301)" key="HL70301vocab" id="vocabmap/HL70301" workgroup="inm"/>
+ <artifact name="Living Will Code to FHIR V2 0315 (User0315)" key="User0315vocab" id="vocabmap/User0315" workgroup="inm"/>
+ <artifact name="Completion Status to FHIR Event Status (HL70322)" key="HL70322vocab" id="vocabmap/HL70322" workgroup="inm"/>
+ <artifact name="Organization Unit Type to FHIR V2 0406 (User0406)" key="User0406vocab" id="vocabmap/User0406" workgroup="inm"/>
+ <artifact name="Mode of Arrival Code to FHIR V2 0430 (User0430)" key="User0430vocab" id="vocabmap/User0430" workgroup="inm"/>
+ <artifact name="Provider Role to FHIR V3 ParticipationType (User0443)" key="User0443vocab" id="vocabmap/User0443" workgroup="inm"/>
+ <artifact name="Name Assembly Order to FHIR V2 0444 (HL70444)" key="HL70444vocab" id="vocabmap/HL70444" workgroup="inm"/>
+ <artifact name="Pharmacy Order Types to FHIR V3 RoleCode (HL70480)" key="HL70480vocab" id="vocabmap/HL70480" workgroup="inm"/>
+ <artifact name="Extended Priority Codes to FHIR Request Priority (User0485)" key="User0485vocab" id="vocabmap/User0485" workgroup="inm"/>
+ <artifact name="Consent Status to FHIR Consent State Codes (HL70498)" key="HL70498vocab" id="vocabmap/HL70498" workgroup="inm"/>
+ <artifact name="NDC Codes to FHIR V3 RoleCode (HL70549)" key="HL70549vocab" id="vocabmap/HL70549" workgroup="inm"/>
+ <page name="Introduction" key="intro"/>
+ <page name="Mapping Guidelines" key="guidelines"/>
+ <page name="Glossary" key="glossary"/>
+ <page name="Map Index" key="mapindex"/>
+ <page name="Message Maps" key="mapmessage"/>
+ <page name="Segment Maps" key="mapsegment"/>
+ <page name="Data Type Maps" key="mapdatatype"/>
+ <page name="Coding System Maps" key="mapcodingsystem"/>
+ <page name="Profiles" key="profiles"/>
+ <page name="Implementation Considerations" key="considerations"/>
+ <page name="Validation of Transforms" key="validation"/>
+ <page name="Test Message Conversions" key="testmessages"/>
+ <page name="Other" key="other"/>
+</specification>

@@ -1,38 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" url="http://hl7.org/fhir/us/davinci-atr" ciUrl="http://build.fhir.org/ig/HL7/davinci-atr" defaultWorkgroup="fm" defaultVersion="current" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" ballotUrl="http://hl7.org/fhir/us/davinci-atr/2020Feb/index.html">
-  <version code="current" url="http://build.fhir.org/ig/HL7/davinci-atr"/>
-  <version code="0.1.0" url="http://hl7.org/fhir/us/davinci-atr/2020Feb/index.html"/>
-  <artifactPageExtension value="-definitions"/>
-  <artifactPageExtension value="-examples"/>
-  <artifactPageExtension value="-mappings"/>
-  <artifact name="Example - Group member attribution list" key="Group-MemberAttributionListExample" id="Group/MemberAttributionListExample"/>
-  <artifact name="Example - Insurance plan simple sample contract" key="InsurancePlan-SampleContract" id="InsurancePlan/SampleContract"/>
-  <artifact name="Example - Organization - Cambia payer" key="Organization-CambiaPayer" id="Organization/CambiaPayer"/>
-  <artifact name="Example - Multicare Provider organization" key="Organization-MulticareProviderOrg" id="Organization/MulticareProviderOrg"/>
-  <artifact name="Example - Patient pat1" key="Patient-pat1" id="Patient/pat1"/>
-  <artifact name="Example - Patient pat2" key="Patient-pat2" id="Patient/pat2"/>
-  <artifact name="DaVinci ATR Consumer" key="CapabilityStatement-davinci-atr-consumer" id="CapabilityStatement/davinci-atr-consumer"/>
-  <artifact name="DaVinci ATR Producer" key="CapabilityStatement-davinci-atr-producer" id="CapabilityStatement/davinci-atr-producer"/>
-  <artifact name="PlanReference" key="StructureDefinition-ext-planReference" id="StructureDefinition/ext-planReference"/>
-  <artifact name="ATRCoverage" key="StructureDefinition-davinci-atr-coverage" id="StructureDefinition/davinci-atr-coverage"/>
-  <artifact name="ChangeType" key="StructureDefinition-ext-changeType" id="StructureDefinition/ext-changeType"/>
-  <artifact name="ATRGroup" key="StructureDefinition-davinci-atr-group" id="StructureDefinition/davinci-atr-group"/>
-  <artifact name="ATRLocation" key="StructureDefinition-davinci-atr-location" id="StructureDefinition/davinci-atr-location"/>
-  <artifact name="ATROrganization" key="StructureDefinition-davinci-atr-organization" id="StructureDefinition/davinci-atr-organization"/>
-  <artifact name="ATRPatient" key="StructureDefinition-davinci-atr-patient" id="StructureDefinition/davinci-atr-patient"/>
-  <artifact name="ATRPractitioner" key="StructureDefinition-davinci-atr-practitioner" id="StructureDefinition/davinci-atr-practitioner"/>
-  <artifact name="ATRPractitionerRole" key="StructureDefinition-davinci-atr-practitionerrole" id="StructureDefinition/davinci-atr-practitionerrole"/>
-  <artifact name="ATRRelatedPerson" key="StructureDefinition-davinci-atr-relatedperson" id="StructureDefinition/davinci-atr-relatedperson"/>
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="Table of Contents" key="toc"/>
-  <page name="IG Home Page" key="index"/>
-  <page name="Use Cases and Overview" key="usecases"/>
-  <page name="Background" key="background"/>
-  <page name="Detailed Specification" key="spec"/>
-  <page name="Credits" key="credits"/>
-  <page name="Useful Downloads" key="downloads"/>
-  <page name="IG Change History" key="changes"/>
-  <page name="IG Version History" key="history"/>
-  <page name="Artifacts Summary" key="artifacts"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-atr/2020Feb/index.html" ciUrl="http://build.fhir.org/ig/HL7/davinci-atr" defaultVersion="1.0.0" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-atr" url="http://hl7.org/fhir/us/davinci-atr">
+<version code="current" url="http://build.fhir.org/ig/HL7/davinci-atr"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/davinci-atr"/>
+<version code="0.1.0" url="http://hl7.org/fhir/us/davinci-atr/2020Feb/index.html"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/atr-coverage" key="StructureDefinition-davinci-atr-coverage" name="ATRCoverage"/>
+<artifact id="StructureDefinition/atr-group" key="StructureDefinition-davinci-atr-group" name="ATRGroup"/>
+<artifact id="StructureDefinition/atr-location" key="StructureDefinition-davinci-atr-location" name="ATRLocation"/>
+<artifact id="StructureDefinition/atr-organization" key="StructureDefinition-davinci-atr-organization" name="ATROrganization"/>
+<artifact id="StructureDefinition/atr-patient" key="StructureDefinition-davinci-atr-patient" name="ATRPatient"/>
+<artifact id="StructureDefinition/atr-practitioner" key="StructureDefinition-davinci-atr-practitioner" name="ATRPractitioner"/>
+<artifact id="StructureDefinition/atr-practitionerrole" key="StructureDefinition-davinci-atr-practitionerrole" name="ATRPractitionerRole"/>
+<artifact id="StructureDefinition/atr-relatedperson" key="StructureDefinition-davinci-atr-relatedperson" name="ATRRelatedPerson"/>
+<artifact id="StructureDefinition/ext-attributedProvider" key="StructureDefinition-ext-attributedProvider" name="AttributedProvider"/>
+<artifact id="StructureDefinition/ext-changeType" key="StructureDefinition-ext-changeType" name="ChangeType"/>
+<artifact id="StructureDefinition/ext-contractValidityPeriod" key="StructureDefinition-ext-contractValidityPeriod" name="ContractValidityPeriod"/>
+<artifact id="Coverage/1" key="Coverage-1" name="Coverage For Patient 1 - Example"/>
+<artifact id="Coverage/2" key="Coverage-2" name="Coverage For Patient 2 - Example"/>
+<artifact id="Coverage/3" key="Coverage-3" name="Coverage For Patient 3 - Example"/>
+<artifact id="StructureDefinition/ext-coverageReference" key="StructureDefinition-ext-coverageReference" name="CoverageReference"/>
+<artifact id="ValueSet/atr-changetype" key="ValueSet-atr-changetype" name="Da Vinci ATR Change Types"/>
+<artifact id="CapabilityStatement/atr-consumer" key="CapabilityStatement-davinci-atr-consumer" name="DaVinci ATR Consumer"/>
+<artifact id="CapabilityStatement/atr-producer" key="CapabilityStatement-davinci-atr-producer" name="DaVinci ATR Producer"/>
+<artifact id="CodeSystem/atr-changetype" key="CodeSystem-atr-changetype" name="Davinci ATR Change Type Codes"/>
+<artifact deprecated="true" id="Group/MemberAttributionListExample" key="Group-MemberAttributionListExample" name="Example - Group member attribution list"/>
+<artifact deprecated="true" id="InsurancePlan/SampleContract" key="InsurancePlan-SampleContract" name="Example - Insurance plan simple sample contract"/>
+<artifact deprecated="true" id="Organization/MulticareProviderOrg" key="Organization-MulticareProviderOrg" name="Example - Multicare Provider organization"/>
+<artifact deprecated="true" id="Organization/CambiaPayer" key="Organization-CambiaPayer" name="Example - Organization - Cambia payer"/>
+<artifact deprecated="true" id="Patient/pat1" key="Patient-pat1" name="Example - Patient pat1"/>
+<artifact deprecated="true" id="Patient/pat2" key="Patient-pat2" name="Example - Patient pat2"/>
+<artifact id="Group/fullexample" key="Group-fullexample" name="Group Member Attribution List example"/>
+<artifact id="StructureDefinition/ext-insuranceProductType" key="StructureDefinition-ext-insuranceProductType" name="InsuranceProductType"/>
+<artifact id="Location/1" key="Location-1" name="Location - Example"/>
+<artifact id="Organization/2" key="Organization-2" name="PRovider Organization Example"/>
+<artifact id="Patient/1" key="Patient-1" name="Patient 1 - Example"/>
+<artifact id="Patient/2" key="Patient-2" name="Patient 2 - Example"/>
+<artifact id="Patient/3" key="Patient-3" name="Patient 3 - Example"/>
+<artifact id="Organization/1" key="Organization-1" name="Payer Organization Example"/>
+<artifact deprecated="true" id="StructureDefinition/ext-planReference" key="StructureDefinition-ext-planReference" name="PlanReference"/>
+<artifact id="Practitioner/1" key="Practitioner-1" name="Practitioner - Example"/>
+<artifact id="PractitionerRole/1" key="PractitionerRole-1" name="PractitionerRole - Example"/>
+<artifact id="RelatedPerson/1" key="RelatedPerson-1" name="Related Person (1) used as a Subscriber in Coverage"/>
+<artifact id="RelatedPerson/2" key="RelatedPerson-2" name="Related Person (2) used as a Subscriber in Coverage"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="background" name="Background"/>
+<page key="credits" name="Credits"/>
+<page key="spec" name="Detailed Specification"/>
+<page key="changes" name="IG Change History"/>
+<page key="index" name="IG Home Page"/>
+<page key="history" name="IG Version History"/>
+<page key="toc" name="Table of Contents"/>
+<page key="usecases" name="Use Cases and Overview"/>
+<page key="downloads" name="Useful Downloads"/>
 </specification>
