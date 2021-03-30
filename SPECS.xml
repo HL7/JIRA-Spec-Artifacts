@@ -2750,22 +2750,69 @@
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-smart"
                   name="SMART on FHIR (FHIR)"
-                  gitUrl="https://github.com/HL7/smart-app-launch"
-                  url="http://www.hl7.org/fhir/smart-app-launch"
-                  ciUrl="http://hl7.github.io/smart-app-launch"
+                  ballotUrl="http://hl7.org/fhir/uv/smart-app-launch/2021May"
+                  ciUrl="http://build.fhir.org/ig/HL7/smart-app-launch"
+                  defaultVersion="current"
                   defaultWorkgroup="fhir-i"
-                  defaultVersion="1.0">
-      <version code="1.0"/>
+                  gitUrl="https://github.com/HL7/smart-app-launch"
+                  url="http://fhir-registry.smarthealthit.org">
+      <version code="current" url="http://build.fhir.org/ig/HL7/smart-app-launch"/>
+      <version code="2.0.0" url="http://hl7.org/fhir/uv/smart-app-launch/2021May"/>
+      <version code="1.0.0" url="http://hl7.org/fhir/smart-app-launch"/>
+      <version code="0.8.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/smart-app-launch/0.8.0"/>
+      <version code="1.0" deprecated="true"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <page name="(NA)" key="FHIR-smart-NA" spec="smart"/>
-      <page name="(many)" key="FHIR-smart-many" spec="smart"/>
-      <page name="(profiles)" key="FHIR-smart-profiles" spec="smart"/>
-      <page name="smart-app-launch"
+      <artifact id="StructureDefinition/oauth-uris"
+                key="FHIR-smart-StructureDefinition-oauth-uris"
+                name="SMART on FHIR Oauth URIs"
+                spec="smart"/>
+      <artifact id="CapabilityStatement/smart-app-launch-example"
+                key="FHIR-smart-CapabilityStatement-smart-app-launch-example"
+                name="smart-app-launch-example"
+                spec="smart"/>
+      <page key="FHIR-smart-NA" name="(NA)" spec="smart"/>
+      <page key="FHIR-smart-many" name="(many)" spec="smart"/>
+      <page deprecated="true"
+            key="FHIR-smart-profiles"
+            name="(profiles)"
+            spec="smart"/>
+      <page key="FHIR-smart-artifacts" name="Artifacts Summary" spec="smart"/>
+      <page key="FHIR-smart-basic-auth-example"
+            name="Basic Auth Example"
+            spec="smart"/>
+      <page key="FHIR-smart-best-practices" name="Best Practices" spec="smart"/>
+      <page key="FHIR-smart-conformance" name="Conformance" spec="smart"/>
+      <page key="FHIR-smart-example-request-access-token"
+            name="Example Request Access Token"
+            spec="smart"/>
+      <page key="FHIR-smart-example-request-patient"
+            name="Example Request Patient"
+            spec="smart"/>
+      <page key="FHIR-smart-example-request-refresh"
+            name="Example Request Refresh"
+            spec="smart"/>
+      <page key="FHIR-smart-example-request-token-post"
+            name="Example Request Token Post"
+            spec="smart"/>
+      <page key="FHIR-smart-index" name="Launch and Authorization" spec="smart"/>
+      <page key="FHIR-smart-scopes-and-launch-context"
+            name="Scopes and Launch Context"
+            spec="smart"/>
+      <page key="FHIR-smart-toc" name="Table of Contents" spec="smart"/>
+      <page key="FHIR-smart-token-introspection"
+            name="Token Introspection"
+            spec="smart"/>
+      <page key="FHIR-smart-worked_example_id_token"
+            name="Worked Example Id Token"
+            spec="smart"/>
+      <page deprecated="true"
             key="FHIR-smart-smart-app-launch"
+            name="smart-app-launch"
             url="smart-app-launch"
-            deprecated="true"
             spec="smart"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
