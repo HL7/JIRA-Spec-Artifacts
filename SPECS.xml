@@ -2869,24 +2869,75 @@
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-bulkdata"
                   name="Bulk Data (FHIR)"
-                  gitUrl="https://github.com/HL7/bulk-data"
-                  url="http://hl7.org/fhir/uv/bulkdata"
+                  ballotUrl="http://hl7.org/fhir/uv/bulkdata/2021May"
                   ciUrl="http://build.fhir.org/ig/HL7/bulk-data"
+                  defaultVersion="current"
                   defaultWorkgroup="fhir-i"
-                  defaultVersion="1.0.1">
+                  gitUrl="https://github.com/HL7/bulk-data"
+                  url="http://hl7.org/fhir/uv/bulkdata">
+      <version code="current" url="http://build.fhir.org/ig/HL7/bulk-data"/>
       <version code="2.0.0"/>
-      <version code="1.1.0"/>  
-      <version code="1.5.0" deprecated="true"/>
-      <version code="1.0.1"/>
-      <version code="1.0.0" deprecated="true"/>
+      <version code="1.1.0" url="http://hl7.org/fhir/uv/bulkdata/2021May"/>
+      <version code="1.0.1" url="http://hl7.org/fhir/uv/bulkdata/STU1"/>
+      <version code="1.0.0"
+               url="http://hl7.org/fhir/uv/bulkdata/STU1"
+               deprecated="true"/>
+      <version code="0.1.0"
+               url="http://hl7.org/fhir/us/bulkdata/2019May"
+               deprecated="true"/>
       <version code="0.1" deprecated="true"/>
+      <version code="1.5.0" deprecated="true"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <page name="(NA)" key="FHIR-bulkdata-NA" spec="bulkdata"/>
-      <page name="(many)" key="FHIR-bulkdata-many" spec="bulkdata"/>
-      <page name="(profiles)" key="FHIR-bulkdata-profiles" spec="bulkdata"/>
-      <page name="index" key="FHIR-bulkdata-index" spec="bulkdata"/>
+      <artifact id="CapabilityStatement/bulk-data"
+                key="FHIR-bulkdata-CapabilityStatement-bulk-data"
+                name="FHIR Bulk Data Access Implementation Guide"
+                spec="bulkdata"/>
+      <artifact id="OperationDefinition/group-export"
+                key="FHIR-bulkdata-OperationDefinition-group-export"
+                name="FHIR Bulk Data Group Level Export"
+                spec="bulkdata"/>
+      <artifact id="OperationDefinition/patient-export"
+                key="FHIR-bulkdata-OperationDefinition-patient-export"
+                name="FHIR Bulk Data Patient Level Export"
+                spec="bulkdata"/>
+      <artifact id="OperationDefinition/export"
+                key="FHIR-bulkdata-OperationDefinition-export"
+                name="FHIR Bulk Data System Level Export"
+                spec="bulkdata"/>
+      <artifact id="ValueSet/include-associated-data"
+                key="FHIR-bulkdata-ValueSet-include-associated-data"
+                name="IncludeAssociatedDataValueSet"
+                spec="bulkdata"/>
+      <artifact id="CodeSystem/include-associated-data"
+                key="FHIR-bulkdata-CodeSystem-include-associated-data"
+                name="IncludeAssociatedDataCodeSystem"
+                spec="bulkdata"/>
+      <page key="FHIR-bulkdata-NA" name="(NA)" spec="bulkdata"/>
+      <page key="FHIR-bulkdata-many" name="(many)" spec="bulkdata"/>
+      <page deprecated="true"
+            key="FHIR-bulkdata-profiles"
+            name="(profiles)"
+            spec="bulkdata"/>
+      <page key="FHIR-bulkdata-artifacts"
+            name="Artifacts Summary"
+            spec="bulkdata"/>
+      <page key="FHIR-bulkdata-abbreviations"
+            name="Bulk Data Abbreviations"
+            spec="bulkdata"/>
+      <page key="FHIR-bulkdata-export" name="Bulk Data Export" spec="bulkdata"/>
+      <page key="FHIR-bulkdata-index"
+            name="Bulk Data IG Home Page"
+            spec="bulkdata"/>
+      <page key="FHIR-bulkdata-downloads" name="Downloads" spec="bulkdata"/>
+      <page key="FHIR-bulkdata-changes"
+            name="IG Change History"
+            spec="bulkdata"/>
+      <page key="FHIR-bulkdata-authorization"
+            name="SMART Backend Services Authorization"
+            spec="bulkdata"/>
+      <page key="FHIR-bulkdata-toc" name="Table of Contents" spec="bulkdata"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-cdisc-lab"
