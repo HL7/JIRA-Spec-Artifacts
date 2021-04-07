@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/security-label-ds4p/2020May" ciUrl="http://hl7.org/fhir/ig/HL7/security-label-ds4p" defaultVersion="0.1.0" defaultWorkgroup="security" gitUrl="https://github.com/HL7/fhir-security-label-ds4p" url="http://hl7.org/fhir/uv/security-label-ds4p">
     <version code="current" url="http://hl7.org/fhir/ig/HL7/security-label-ds4p"/>
+    <version code="0.2.0" url="http://hl7.org/fhir/uv/security-label-ds4p/2021May"/>
     <version code="0.1.0" url="http://hl7.org/fhir/uv/security-label-ds4p/2020May"/>
     <version code="0.1" deprecated="true" url="http://hl7.org/fhir/uv/security-label-ds4p/2020May"/>
     <artifactPageExtension value="-definitions"/>
@@ -8,6 +9,8 @@
     <artifactPageExtension value="-mappings"/>
     <artifact id="Observation/example-extension-must-display" key="example-extension-must-display" name="Simple use of the must-display extension"/>
     <artifact id="Patient/P001" key="Patient-P001" name="Simple use of the must-display extension on a patient"/>
+    <artifact id="Patient/P002" key="Patient-P002" name="Simple use of inline security labels on a patient resource"/>
+    <artifact id="Immunization/I001" key="Immunization-I001" name="Simple use of inline security labels on a reference"/>
     <artifact id="Observation/example-extension-sec-label-basis" key="example-extension-sec-label-basis" name="Simple use of the sec-label-basis extension on an observation"/>
     <artifact id="Observation/example-extension-sec-label-classifier" key="example-extension-sec-label-classifier" name="Simple use of the sec-label-classifier extension"/>
     <artifact deprecated="true" id="Observation/example-extension-sec-label-related-artifact" key="example-extension-sec-label-related-artifact" name="example-extension-sec-label-related-artifact"/>
@@ -17,6 +20,8 @@
     <artifact id="StructureDefinition/extension-sec-label-classifier" key="extension-sec-label-classifier" name="Structure definition for the extension-sec-label-classifier extension"/>
     <artifact id="StructureDefinition/extension-sec-label-related-artifact" key="extension-sec-label-related-artifact" name="Structure definition for the extension-sec-label-related-artifact extension"/>
     <artifact id="StructureDefinition/extension-must-display" key="extension-must-display" name="Structure definition for the must-display extension"/>
+    <artifact id="StructureDefinition/extension-has-inline-sec-label" key="StructureDefinition-extension-has-inline-sec-label" name="Structure definition for the has-inline-sec-label extension"/>
+    <artifact id="StructureDefinition/extension-inline-sec-label" key="StructureDefinition-extension-inline-sec-label" name="Structure definition for the inline-sec-label extension"/>
     <artifact id="ValueSet/valueset-cui-mark" key="valueset-cui-mark" name="Value set definition for CUI Mark"/>
     <artifact id="ValueSet/valueset-integrity" key="valueset-integrity" name="Value set definition for Integrity"/>
     <artifact id="ValueSet/valueset-privacy-policy" key="valueset-privacy-policy" name="Value set definition for Privacy Policy"/>
@@ -33,7 +38,8 @@
     <page key="changes" name="IG Change History"/>
     <page key="index" name="Security Label DS4P Home Page"/>
     <page key="security" name="Security and Privacy Considerations"/>
+    <page key="inline" name="Inline Security Labels"/>
     <page key="toc" name="Table of Contents"/>
     <page key="downloads" name="Useful Downloads"/>
-    <page deprecated="true" key="specification" name="specification" url="specification" workgroup="security"/>
+    <page deprecated="true" key="specification" name="specification" url="specification" />
 </specification>
