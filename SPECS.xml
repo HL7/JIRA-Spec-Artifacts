@@ -17552,6 +17552,7 @@
                   gitUrl="https://github.com/HL7/fhir-security-label-ds4p"
                   url="http://hl7.org/fhir/uv/security-label-ds4p">
       <version code="current" url="http://hl7.org/fhir/ig/HL7/security-label-ds4p"/>
+      <version code="0.2.0" url="http://hl7.org/fhir/uv/security-label-ds4p/2021May"/>
       <version code="0.1.0" url="http://hl7.org/fhir/uv/security-label-ds4p/2020May"/>
       <version code="0.1"
                deprecated="true"
@@ -17566,6 +17567,14 @@
       <artifact id="Patient/P001"
                 key="FHIR-security-label-ds-for-p-Patient-P001"
                 name="Simple use of the must-display extension on a patient"
+                spec="security-label-ds-for-p"/>
+      <artifact id="Patient/P002"
+                key="FHIR-security-label-ds-for-p-Patient-P002"
+                name="Simple use of inline security labels on a patient resource"
+                spec="security-label-ds-for-p"/>
+      <artifact id="Immunization/I001"
+                key="FHIR-security-label-ds-for-p-Immunization-I001"
+                name="Simple use of inline security labels on a reference"
                 spec="security-label-ds-for-p"/>
       <artifact id="Observation/example-extension-sec-label-basis"
                 key="FHIR-security-label-ds-for-p-example-extension-sec-label-basis"
@@ -17603,6 +17612,14 @@
       <artifact id="StructureDefinition/extension-must-display"
                 key="FHIR-security-label-ds-for-p-extension-must-display"
                 name="Structure definition for the must-display extension"
+                spec="security-label-ds-for-p"/>
+      <artifact id="StructureDefinition/extension-has-inline-sec-label"
+                key="FHIR-security-label-ds-for-p-StructureDefinition-extension-has-inline-sec-label"
+                name="Structure definition for the has-inline-sec-label extension"
+                spec="security-label-ds-for-p"/>
+      <artifact id="StructureDefinition/extension-inline-sec-label"
+                key="FHIR-security-label-ds-for-p-StructureDefinition-extension-inline-sec-label"
+                name="Structure definition for the inline-sec-label extension"
                 spec="security-label-ds-for-p"/>
       <artifact id="ValueSet/valueset-cui-mark"
                 key="FHIR-security-label-ds-for-p-valueset-cui-mark"
@@ -17659,6 +17676,9 @@
             spec="security-label-ds-for-p"/>
       <page key="FHIR-security-label-ds-for-p-security"
             name="Security and Privacy Considerations"
+            spec="security-label-ds-for-p"/>
+      <page key="FHIR-security-label-ds-for-p-inline"
+            name="Inline Security Labels"
             spec="security-label-ds-for-p"/>
       <page key="FHIR-security-label-ds-for-p-toc"
             name="Table of Contents"
