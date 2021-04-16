@@ -3157,15 +3157,15 @@
       <version code="current" url="http://build.fhir.org/ig/HL7/genomics-reporting"/>
       <version code="1.1.0" url="http://hl7.org/fhir/uv/genomics-reporting/2021May"/>
       <version code="1.0.0" url="http://hl7.org/fhir/uv/genomics-reporting/STU1"/>
-      <version code="1.0"
-               deprecated="true"
-               url="http://hl7.org/fhir/uv/genomics-reporting/STU1"/>
       <version code="0.3.0"
                deprecated="true"
                url="http://hl7.org/fhir/uv/genomics-reporting/2019Jan"/>
       <version code="0.1.0"
                deprecated="true"
                url="http://hl7.org/fhir/uv/genomics-reporting/2018May"/>
+      <version code="1.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/uv/genomics-reporting/STU1"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -3177,13 +3177,18 @@
                 key="FHIR-genomics-reporting-ConceptMap-dna-change-type-map"
                 name="Concept mapping for DNA Change Type"
                 spec="genomics-reporting"/>
-      <artifact id="CodeSystem/ConditionInheritanceMode"
+      <artifact deprecated="true"
+                id="CodeSystem/ConditionInheritanceMode"
                 key="FHIR-genomics-reporting-CodeSystem-ConditionInheritanceMode"
                 name="Condition Inheritance Pattern"
                 spec="genomics-reporting"/>
+      <artifact id="CodeSystem/ConditionInheritanceModeCS"
+                key="FHIR-genomics-reporting-CodeSystem-ConditionInheritanceModeCS"
+                name="Condition Inheritance Pattern Codes"
+                spec="genomics-reporting"/>
       <artifact id="ValueSet/condition-inheritance-vs"
                 key="FHIR-genomics-reporting-ValueSet-condition-inheritance-vs"
-                name="Condition Inheritance Pattern VS"
+                name="Condition Inheritance Patterns"
                 spec="genomics-reporting"/>
       <artifact id="ValueSet/dna-change-type"
                 key="FHIR-genomics-reporting-ValueSet-dna-change-type"
@@ -3567,11 +3572,11 @@
                 spec="genomics-reporting"/>
       <artifact id="CodeSystem/SequencePhaseRelationshipCS"
                 key="FHIR-genomics-reporting-CodeSystem-SequencePhaseRelationshipCS"
-                name="Sequence Phase Relationship CS"
+                name="Sequence Phase Relationship Codes"
                 spec="genomics-reporting"/>
       <artifact id="ValueSet/seq-phase-relationship"
                 key="FHIR-genomics-reporting-ValueSet-seq-phase-relationship"
-                name="Sequence Phase Relationship VS"
+                name="Sequence Phase Relationships"
                 spec="genomics-reporting"/>
       <artifact id="StructureDefinition/specimen"
                 key="FHIR-genomics-reporting-StructureDefinition-specimen"
