@@ -1,11 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/us-odh" url="http://hl7.org/fhir/us/odh" ciUrl="http://build.fhir.org/ig/HL7/us-odh" defaultWorkgroup="pher" defaultVersion="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="0.1"/>
-  <artifactPageExtension value="-definitions"/>
-  <artifactPageExtension value="-examples"/>
-  <artifactPageExtension value="-mappings"/>
-  <artifact name="OccupationalData" key="OccupationalData" deprecated="true"/>
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="(profiles)" key="profiles"/>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<specification ballotUrl="http://hl7.org/fhir/us/odh/2018Sep" gitUrl="https://github.com/HL7/us-odh" url="http://hl7.org/fhir/us/odh" ciUrl="http://build.fhir.org/ig/HL7/us-odh" defaultWorkgroup="pher" defaultVersion="1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
+  <version code="1.1.0" />
+  <version code="1.0.0" />
+  <version code="0.1" deprecated="true" />
+  <artifactPageExtension value="-definitions" />
+  <artifactPageExtension value="-examples" />
+  <artifactPageExtension value="-mappings" />
+  <artifact name="OccupationalData" key="OccupationalData" deprecated="true" />
+  <artifact name="PHVS_Industry_NAICS_Detail_ODH" key="ValueSet-NamingSystem-naics" id="ValueSet/NamingSystem-naics" />
+  <artifact name="PHVS_Occupation_ONETSOC_Detail_ODH" key="ValueSet-CodeSystem-soc" id="ValueSet/CodeSystem-soc" />
+  <artifact name="Combat Zone Period" key="StructureDefinition-odh-CombatZonePeriod" id="StructureDefinition/odh-CombatZonePeriod" />
+  <artifact name="Employer" key="StructureDefinition-odh-Employer-extension" id="StructureDefinition/odh-Employer-extension" />
+  <artifact name="Employment Status" key="StructureDefinition-odh-EmploymentStatus" id="StructureDefinition/odh-EmploymentStatus" />
+  <artifact name="EmploymentStatusODH" key="ValueSet-v3-employmentStatusODH" id="ValueSet/v3-employmentStatusODH" />
+  <artifact name="Industry CDC Census 2010" key="ValueSet-codesystem-industry-cdc-census-2010" id="ValueSet/codesystem-industry-cdc-census-2010" />
+  <artifact name="Occupation CDC Census 2010" key="ValueSet-CodeSystem-PHOccupationCDCCensus2010" id="ValueSet/CodeSystem-PHOccupationCDCCensus2010" />
+  <artifact name="Occupational Data For Health" key="StructureDefinition-odh-OccupationalDataForHealth" id="StructureDefinition/odh-OccupationalDataForHealth" />
+  <artifact name="Past Or Present Job" key="StructureDefinition-odh-PastOrPresentJob" id="StructureDefinition/odh-PastOrPresentJob" />
+  <artifact name="Retirement Date" key="StructureDefinition-odh-RetirementDate" id="StructureDefinition/odh-RetirementDate" />
+  <artifact name="Usual Work" key="StructureDefinition-odh-UsualWork" id="StructureDefinition/odh-UsualWork" />
+  <artifact name="WorkClassificationODH" key="ValueSet-v3-WorkClassificationODH" id="ValueSet/v3-WorkClassificationODH" />
+  <artifact name="WorkScheduleODH" key="ValueSet-v3-WorkScheduleODH" id="ValueSet/v3-WorkScheduleODH" />
+  <artifact name="Yes No VS" key="ValueSet-obf-datatype-YesNoVS" id="ValueSet/obf-datatype-YesNoVS" />
+  <artifact name="odh is Current Job Extension" key="StructureDefinition-odh-isCurrentJob-extension" id="StructureDefinition/odh-isCurrentJob-extension" />
+  <artifact name="Job Supervisory Level or Pay Grade (ODH)" key="ValueSet-CodeSystem-PHOccupationalDataForHealthODH" id="ValueSet/CodeSystem-PHOccupationalDataForHealthODH" />
+  <artifact name="Combat Zone Period Example" key="Observation-observation-odh-combat-zone-period-sample" id="Observation/observation-odh-combat-zone-period-sample" />
+  <artifact name="Employment Status Example" key="Observation-observation-odh-employment-status-sample" id="Observation/observation-odh-employment-status-sample" />
+  <artifact name="Retirement Date Example" key="Observation-observation-odh-retirement-date-sample" id="Observation/observation-odh-retirement-date-sample" />
+  <artifact name="ODH Patient Maya Gordon" key="Patient-patient-odh-maya-gordon" id="Patient/patient-odh-maya-gordon" />
+  <artifact name="Usual Work Example" key="Observation-observation-odh-usual-work-sample" id="Observation/observation-odh-usual-work-sample" />
+  <artifact name="Occupational Data for Health (ODH)" key="CodeSystem-PHOccupationalDataForHealthODH" id="CodeSystem/PHOccupationalDataForHealthODH" />
+  <artifact name="Occupational Data Composition for Maya Gordon" key="Composition-composition-odh-occupational-data-for-health-sample" id="Composition/composition-odh-occupational-data-for-health-sample" />
+  <artifact name="South Hospital" key="Organization-organization-odh-south-hospital" id="Organization/organization-odh-south-hospital" />
+  <artifact name="Past or Present Job Example" key="Observation-observation-odh-past-or-present-job-sample" id="Observation/observation-odh-past-or-present-job-sample" />
+  <page name="(NA)" key="NA" />
+  <page name="(many)" key="many" />
+  <page name="(profiles)" key="profiles" />
+  <page name="Home Page" key="index" />
+  <page name="History" key="history" />
 </specification>
