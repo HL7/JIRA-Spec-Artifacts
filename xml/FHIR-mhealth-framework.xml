@@ -1,10 +1,220 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/fhir-project-mhealth" url="https://hl7.org/fhir/uv/mhealth-framework" ciUrl="http://build.fhir.org/ig/HL7/fhir-project-mhealth" defaultWorkgroup="ii" defaultVersion="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="0.1"/>
-  <artifactPageExtension value="-definitions"/>
-  <artifactPageExtension value="-examples"/>
-  <artifactPageExtension value="-mappings"/>
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="(profiles)" key="profiles"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               url="http://hl7.org/fhir/uv/mhealth-framework"
+               ciUrl="http://build.fhir.org/ig/example/example-ig"
+               defaultWorkgroup="mh"
+               defaultVersion="current"
+               xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
+               gitUrl="https://github.com/HL7/fhir-project-mhealth"
+               ballotUrl="http://example.org/fhir/STU1">
+   <version code="current" url="http://build.fhir.org/ig/example/example-ig"/>
+   <version code="0.0.1" url="http://example.org/fhir/STU1"/>
+   <artifactPageExtension value="-definitions"/>
+   <artifactPageExtension value="-examples"/>
+   <artifactPageExtension value="-mappings"/>
+   <artifact name="Battery Charge Recommendations"
+             key="StructureDefinition-BatteryChargeRecommendations"
+             id="StructureDefinition/BatteryChargeRecommendations"/>
+   <artifact name="Bp Measurement Recommendations"
+             key="StructureDefinition-BpMeasurementRecommendations"
+             id="StructureDefinition/BpMeasurementRecommendations"/>
+   <artifact name="Bp Measurement Requirements"
+             key="StructureDefinition-BpMeasurementRequirements"
+             id="StructureDefinition/BpMeasurementRequirements"/>
+   <artifact name="Clinical Bp Measurement Recommendations"
+             key="StructureDefinition-ClinicalBpMeasurementRecommendations"
+             id="StructureDefinition/ClinicalBpMeasurementRecommendations"/>
+   <artifact name="Clinical Bp Measurement Requirements"
+             key="StructureDefinition-ClinicalBpMeasurementRequirements"
+             id="StructureDefinition/ClinicalBpMeasurementRequirements"/>
+   <artifact name="Clinical Heart Rate Measurement Requirements"
+             key="StructureDefinition-ClinicalHeartRateMeasurementRequirements"
+             id="StructureDefinition/ClinicalHeartRateMeasurementRequirements"/>
+   <artifact name="Clinical Height And Weight Measurement Recommendations"
+             key="StructureDefinition-ClinicalHeightAndWeightMeasurementRecommendations"
+             id="StructureDefinition/ClinicalHeightAndWeightMeasurementRecommendations"/>
+   <artifact name="Clinical Height And Weight Measurement Requirements"
+             key="StructureDefinition-ClinicalHeightAndWeightMeasurementRequirements"
+             id="StructureDefinition/ClinicalHeightAndWeightMeasurementRequirements"/>
+   <artifact name="Clinical Respiration Rate Requirements"
+             key="StructureDefinition-ClinicalRespirationRateRequirements"
+             id="StructureDefinition/ClinicalRespirationRateRequirements"/>
+   <artifact name="Clinical Spo2 Measurement Requirements"
+             key="StructureDefinition-ClinicalSpo2MeasurementRequirements"
+             id="StructureDefinition/ClinicalSpo2MeasurementRequirements"/>
+   <artifact name="Clinical Temperature Measurement Requirements"
+             key="StructureDefinition-ClinicalTemperatureMeasurementRequirements"
+             id="StructureDefinition/ClinicalTemperatureMeasurementRequirements"/>
+   <artifact name="Comment Recommendations"
+             key="StructureDefinition-CommentRecommendations"
+             id="StructureDefinition/CommentRecommendations"/>
+   <artifact name="Corrections Requirements"
+             key="StructureDefinition-CorrectionsRequirements"
+             id="StructureDefinition/CorrectionsRequirements"/>
+   <artifact name="Device Identifier Recommendations"
+             key="StructureDefinition-DeviceIdentifierRecommendations"
+             id="StructureDefinition/DeviceIdentifierRecommendations"/>
+   <artifact name="Device Identifier Requirements"
+             key="StructureDefinition-DeviceIdentifierRequirements"
+             id="StructureDefinition/DeviceIdentifierRequirements"/>
+   <artifact name="Device Type Requirements"
+             key="StructureDefinition-DeviceTypeRequirements"
+             id="StructureDefinition/DeviceTypeRequirements"/>
+   <artifact name="Heart Rate Measurement Recommendations"
+             key="StructureDefinition-HeartRateMeasurementRecommendations"
+             id="StructureDefinition/HeartRateMeasurementRecommendations"/>
+   <artifact name="Heart Rate Measurement Requirements"
+             key="StructureDefinition-HeartRateMeasurementRequirements"
+             id="StructureDefinition/HeartRateMeasurementRequirements"/>
+   <artifact name="Height Measurement Recommendations"
+             key="StructureDefinition-HeightMeasurementRecommendations"
+             id="StructureDefinition/HeightMeasurementRecommendations"/>
+   <artifact name="Height Measurement Requirements"
+             key="StructureDefinition-HeightMeasurementRequirements"
+             id="StructureDefinition/HeightMeasurementRequirements"/>
+   <artifact name="Manual Entry Detectable Requirements"
+             key="StructureDefinition-ManualEntryDetectableRequirements"
+             id="StructureDefinition/ManualEntryDetectableRequirements"/>
+   <artifact name="Measurement Device Identified Requirements"
+             key="StructureDefinition-MeasurementDeviceIdentifiedRequirements"
+             id="StructureDefinition/MeasurementDeviceIdentifiedRequirements"/>
+   <artifact name="Network Address Recommendations"
+             key="StructureDefinition-NetworkAddressRecommendations"
+             id="StructureDefinition/NetworkAddressRecommendations"/>
+   <artifact name="Physical Activity And Sleep Recommendations"
+             key="StructureDefinition-PhysicalActivityAndSleepRecommendations"
+             id="StructureDefinition/PhysicalActivityAndSleepRecommendations"/>
+   <artifact name="Physical Activity And Sleep Requirements"
+             key="StructureDefinition-PhysicalActivityAndSleepRequirements"
+             id="StructureDefinition/PhysicalActivityAndSleepRequirements"/>
+   <artifact name="Respiration Rate Recommendations"
+             key="StructureDefinition-RespirationRateRecommendations"
+             id="StructureDefinition/RespirationRateRecommendations"/>
+   <artifact name="Respiration Rate Requirements"
+             key="StructureDefinition-RespirationRateRequirements"
+             id="StructureDefinition/RespirationRateRequirements"/>
+   <artifact name="Software Version Recommendations"
+             key="StructureDefinition-SoftwareVersionRecommendations"
+             id="StructureDefinition/SoftwareVersionRecommendations"/>
+   <artifact name="Spo2 Measurement Recommendations"
+             key="StructureDefinition-Spo2MeasurementRecommendations"
+             id="StructureDefinition/Spo2MeasurementRecommendations"/>
+   <artifact name="Spo2 Measurement Requirements"
+             key="StructureDefinition-Spo2MeasurementRequirements"
+             id="StructureDefinition/Spo2MeasurementRequirements"/>
+   <artifact name="Standard Terminology Used Recommendations"
+             key="StructureDefinition-StandardTerminologyUsedRecommendations"
+             id="StructureDefinition/StandardTerminologyUsedRecommendations"/>
+   <artifact name="Temperature Measurement Recommendations"
+             key="StructureDefinition-TemperatureMeasurementRecommendations"
+             id="StructureDefinition/TemperatureMeasurementRecommendations"/>
+   <artifact name="Temperature Measurement Requirements"
+             key="StructureDefinition-TemperatureMeasurementRequirements"
+             id="StructureDefinition/TemperatureMeasurementRequirements"/>
+   <artifact name="Time Stamp Or Duration Requirements"
+             key="StructureDefinition-TimeStampOrDurationRequirements"
+             id="StructureDefinition/TimeStampOrDurationRequirements"/>
+   <artifact name="Unique User Identity Requirements"
+             key="StructureDefinition-UniqueUserIdentityRequirements"
+             id="StructureDefinition/UniqueUserIdentityRequirements"/>
+   <artifact name="Units Recommendations"
+             key="StructureDefinition-UnitsRecommendations"
+             id="StructureDefinition/UnitsRecommendations"/>
+   <artifact name="User Birth Sex Requirements"
+             key="StructureDefinition-UserBirthSexRequirements"
+             id="StructureDefinition/UserBirthSexRequirements"/>
+   <artifact name="User Contact Information Requirements"
+             key="StructureDefinition-UserContactInformationRequirements"
+             id="StructureDefinition/UserContactInformationRequirements"/>
+   <artifact name="User Date Of Birth Requirements"
+             key="StructureDefinition-UserDateOfBirthRequirements"
+             id="StructureDefinition/UserDateOfBirthRequirements"/>
+   <artifact name="User Gender Identity Recommendations"
+             key="StructureDefinition-UserGenderIdentityRecommendations"
+             id="StructureDefinition/UserGenderIdentityRecommendations"/>
+   <artifact name="User Height Requirements"
+             key="StructureDefinition-UserHeightRequirements"
+             id="StructureDefinition/UserHeightRequirements"/>
+   <artifact name="User Name Requirements"
+             key="StructureDefinition-UserNameRequirements"
+             id="StructureDefinition/UserNameRequirements"/>
+   <artifact name="User Weight Requirements"
+             key="StructureDefinition-UserWeightRequirements"
+             id="StructureDefinition/UserWeightRequirements"/>
+   <artifact name="Weight Measurement Recommendations"
+             key="StructureDefinition-WeightMeasurementRecommendations"
+             id="StructureDefinition/WeightMeasurementRecommendations"/>
+   <artifact name="Weight Measurement Requirements"
+             key="StructureDefinition-WeightMeasurementRequirements"
+             id="StructureDefinition/WeightMeasurementRequirements"/>
+   <artifact name="Blood Pressure Measurements"
+             key="ValueSet-BloodPressureMeasurements"
+             id="ValueSet/BloodPressureMeasurements"/>
+   <artifact name="Body Height"
+             key="ValueSet-BodyHeight"
+             id="ValueSet/BodyHeight"/>
+   <artifact name="Body Height Units"
+             key="ValueSet-BodyHeightUnits"
+             id="ValueSet/BodyHeightUnits"/>
+   <artifact name="Body Tempurature Units"
+             key="ValueSet-BodyTempuratureUnits"
+             id="ValueSet/BodyTempuratureUnits"/>
+   <artifact name="Body Weight Units"
+             key="ValueSet-BodyWeightUnits"
+             id="ValueSet/BodyWeightUnits"/>
+   <artifact name="Corrections and Deletions"
+             key="ValueSet-CorrectionsAndDeletions"
+             id="ValueSet/CorrectionsAndDeletions"/>
+   <artifact name="Heart Rate Units"
+             key="ValueSet-HeartRateUnits"
+             id="ValueSet/HeartRateUnits"/>
+   <artifact name="Respiration Rate Units"
+             key="ValueSet-RespirationRateUnits"
+             id="ValueSet/RespirationRateUnits"/>
+   <page name="(NA)" key="NA"/>
+   <page name="(many)" key="many"/>
+   <page name="Table of Contents" key="toc"/>
+   <page name="Home" key="index"/>
+   <page name="Introduction" key="introduction"/>
+   <page name="Overview" key="overview"/>
+   <page name="Use Case" key="use_cases"/>
+   <page name="Actors" key="actors"/>
+   <page name="Conformance" key="conformance"/>
+   <page name="Functional Requirements" key="functional_requirements"/>
+   <page name="Attribution" key="attribution"/>
+   <page name="User Data" key="user_data"/>
+   <page name="User Demographics" key="user_demographics"/>
+   <page name="User Attributes and Preferences"
+         key="user_attributes_and_preferences"/>
+   <page name="System Data" key="system_data"/>
+   <page name="System Configuration" key="system_configuration"/>
+   <page name="System Attributes" key="system_attributes"/>
+   <page name="Observations" key="observations"/>
+   <page name="General Observations" key="general_observations"/>
+   <page name="Coded Observations" key="coded_observations"/>
+   <page name="Numeric Observations" key="numeric_observations"/>
+   <page name="General Requirements" key="general_requirements"/>
+   <page name="Basic Vital Signs" key="basic_vital_signs"/>
+   <page name="Basic Height and Weight" key="basic_height_and_weight"/>
+   <page name="Basic Blood Pressure" key="basic_blood_pressure"/>
+   <page name="Basic Heart Rate" key="basic_heart_rate"/>
+   <page name="Basic Respiration" key="basic_respiration"/>
+   <page name="Basic Spo2" key="basic_spo2"/>
+   <page name="Basic Temperature" key="basic_temperature"/>
+   <page name="Clinical Vital Signs" key="clinical_vital_signs"/>
+   <page name="Clinical Height and Weight" key="clinical_height_and_weight"/>
+   <page name="Clinical Blood Pressure" key="clinical_blood_pressure"/>
+   <page name="Clinical Heart Rate" key="clinical_heart_rate"/>
+   <page name="Clinical Respiration" key="clinical_respiration"/>
+   <page name="Clinical Spo2" key="clinical_spo2"/>
+   <page name="Clinical Temperature" key="clinical_temperature"/>
+   <page name="General Clinical Measurements"
+         key="general_clinical_measurements"/>
+   <page name="Physical Activity and Sleep" key="physical_activity_and_sleep"/>
+   <page name="Data Sharing" key="data_sharing"/>
+   <page name="User Choice" key="user_choice"/>
+   <page name="Sharing Mechanism" key="sharing_mechanism"/>
+   <page name="Appendices" key="appendices"/>
+   <page name="Artifacts Summary" key="artifacts"/>
+   <page name="(profiles)" key="profiles" deprecated="true"/>
 </specification>
