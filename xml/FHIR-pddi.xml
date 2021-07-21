@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/PDDI-CDS" url="http://hl7.org/fhir/uv/pddi" ciUrl="http://build.fhir.org/ig/HL7/PDDI-CDS" defaultWorkgroup="pharm" defaultVersion="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="0.1"/>
+<specification gitUrl='https://github.com/HL7/PDDI-CDS'  
+               url="http://hl7.org/fhir/uv/pddi" 
+               ballotUrl="http://hl7.org/fhir/uv/pddi/2020SEP" 
+               ciUrl="http://build.fhir.org/ig/HL7/PDDI-CDS" 
+               defaultWorkgroup="pharm" 
+               defaultVersion="0.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
+  <version code="0.1" url="http://build.fhir.org/ig/HL7/PDDI-CDS" />
+  <version code="0.2.0" url="http://hl7.org/fhir/uv/pddi/2020SEP" />
   <artifactPageExtension value="-definitions"/>
   <artifactPageExtension value="-examples"/>
   <artifactPageExtension value="-mappings"/>
+  <artifact name="PDDIValueSet" key="PDDIValueSet" id="StructureDefinition/PDDICDS-valueset"/>
+  <artifact name="PDDIRequestGroupActionIndicator" key="PDDIRequestGroupActionIndicator" id="StructureDefinition/PDDICDS-requestgroup-action-indicator"/>
+  <artifact name="PDDICDSIndicator" key="PDDICDSIndicator" id="CodeSystem/PDDICDS-indicator"/>
   <page name="(NA)" key="NA"/>
   <page name="(many)" key="many"/>
-  <page name="(profiles)" key="profiles"/>
+  <page name="CDS Service Spec" key="cds-service-spec" url="cds-service-spec"/>
+  <page name="Knowledge artifacts" key="artifacts" url="artifacts"/>
+  <page name="Downloads" key="downloads" url="downloads"/>
+  <page name="Home" key="home" url="index"/>
+  <page name="Profiles" key="profiles" url="profiles"/>
+  <page name="Test data" key="test-data" url="test-data"/>
+  <page name="Terminology" key="terminology" url="terminology"/>
+  <page name="Use Case" key="use-case" url="use-cases"/>
 </specification>
