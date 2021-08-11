@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/cancer-reporting/2021Sep"
   gitUrl="https://github.com/HL7/cancer-reporting" url="http://hl7.org/fhir/us/cancer-reporting"
   ciUrl="http://build.fhir.org/ig/HL7/cancer-reporting" defaultWorkgroup="oo" defaultVersion="0.1.0"
   xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
   <version code="current" url="http://build.fhir.org/ig/HL7/cancer-reporting" />
-  <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/cancer-reporting/2021-SEP" />
+  <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/cancer-reporting/2021Sep" />
   <artifactPageExtension value="-definitions" />
   <artifactPageExtension value="-examples" />
   <artifactPageExtension value="-mappings" />
@@ -62,7 +62,7 @@
     key="Observation-59852.100004300-us" id="Observation/59852.100004300-us" />
   <artifact name="Tumor Weight: Specify Weight (g) (example)" key="Observation-40496.100004300-us"
     id="Observation/40496.100004300-us" />
-  <artifact name="Tumor Size: Greatest dimension in Centimeters (example)"
+  <artifact name="Tumor Size: Greatest dimension in Centimeters (cm) (example)"
     key="Observation-2129.100004300-us" id="Observation/2129.100004300-us" />
   <artifact name="Histologic Grade: High grade (example)" key="Observation-49275.100004300-us"
     id="Observation/49275.100004300-us" />
@@ -81,8 +81,12 @@
   <artifact
     name="Distant Metastasis (pM): Not applicable- pM cannot be determined from the submitted specimen(s) (example)"
     key="Observation-2149.100004300-us" id="Observation/2149.100004300-us" />
+  <page key="NA" name="(NA)"/>
+  <page key="many" name="(many)"/>
+  <page key="artifacts" name="Artifacts Summary"/>
   <page name="Home Page" key="index" />
   <page name="Background" key="background" />
   <page name="Specification" key="specification" />
   <page name="Downloads" key="downloads" />
+  <page key="toc" name="Table of Contents"/>
 </specification>
