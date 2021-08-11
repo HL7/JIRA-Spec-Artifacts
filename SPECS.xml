@@ -20595,16 +20595,18 @@
                   defaultVersion="1.1.0"
                   defaultWorkgroup="pher"
                   gitUrl="https://github.com/HL7/vrdr"
-                  url="http://hl7.org/fhir/us/vrdr">
-      <version code="current" url="http://build.fhir.org/ig/HL7/vrdr"/>
+                  url="http://hl7.org/fhir/us/vrdr"
+                  ballotUrl="http://hl7.org/fhir/us/vrdr/2021Sep">
+      <version code="current" url="https://build.fhir.org/ig/HL7/vrdr"/>
+      <version code="1.2.0" url="http://hl7.org/fhir/us/vrdr/2021Sep"/>
       <version code="1.1.0" url="http://hl7.org/fhir/us/vrdr/STU1.1"/>
-      <version deprecated="true"
-               code="1.0.0"
+      <version code="1.0.0"
+               deprecated="true"
                url="http://hl7.org/fhir/us/vrdr/STU1"/>
-      <version deprecated="true"
-               code="0.1.0"
+      <version code="0.1.0"
+               deprecated="true"
                url="http://hl7.org/fhir/us/vrdr/2019May"/>
-      <version deprecated="true" code="0.1"/>
+      <version code="0.1" deprecated="true"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -20624,7 +20626,8 @@
                 key="FHIR-us-vrdr-Observation-6606dd3a-49ba-47a9-a6e7-e7e4ebeddac7"
                 name="Birth Record Identifier Example"
                 spec="us-vrdr"/>
-      <artifact id="StructureDefinition/CDPH-CareTeam"
+      <artifact deprecated="true"
+                id="StructureDefinition/CDPH-CareTeam"
                 key="FHIR-us-vrdr-StructureDefinition-CDPH-CareTeam"
                 name="CDPH_CareTeam"
                 spec="us-vrdr"/>
@@ -20868,7 +20871,8 @@
                 key="FHIR-us-vrdr-Organization-1a110397-936f-4be4-ab10-2caed226569d"
                 name="Interested Party Instance Example"
                 spec="us-vrdr"/>
-      <artifact id="StructureDefinition/LANES-Condition"
+      <artifact deprecated="true"
+                id="StructureDefinition/LANES-Condition"
                 key="FHIR-us-vrdr-StructureDefinition-LANES-Condition"
                 name="LANES_Condition"
                 spec="us-vrdr"/>
@@ -20939,6 +20943,10 @@
       <artifact id="Observation/4d0ce010-16f1-44f4-bbf8-3a2030e9de99"
                 key="FHIR-us-vrdr-Observation-4d0ce010-16f1-44f4-bbf8-3a2030e9de99"
                 name="Tobacco Use Contributed To Death Example"
+                spec="us-vrdr"/>
+      <artifact id="StructureDefinition/VRDR-Partial-date-part-absent-reason"
+                key="FHIR-us-vrdr-StructureDefinition-VRDR-Partial-date-part-absent-reason"
+                name="VRDR - Partial date part absent reason"
                 spec="us-vrdr"/>
       <artifact id="StructureDefinition/Within-City-Limits-Indicator"
                 key="FHIR-us-vrdr-StructureDefinition-Within-City-Limits-Indicator"
