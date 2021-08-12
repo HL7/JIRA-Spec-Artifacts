@@ -1,117 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="http://build.fhir.org/ig/HL7/vrdr" defaultVersion="1.2.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/vrdr"
-    url="http://hl7.org/fhir/us/vrdr" ballotUrl="http://hl7.org/fhir/us/vrdr/2021Sep">
-    <version code="current" url="https://build.fhir.org/ig/HL7/vrdr" />
-    <version code="1.2.0" url="http://hl7.org/fhir/us/vrdr/2021Sep" />
-    <version code="1.1.0" url="http://hl7.org/fhir/us/vrdr/STU1.1" />
-    <version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/vrdr/STU1" />
-    <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/vrdr/2019May" />
-    <version code="0.1" deprecated="true" />
-    <artifactPageExtension value="-definitions" />
-    <artifactPageExtension value="-examples" />
-    <artifactPageExtension value="-mappings" />
-    <artifact id="StructureDefinition/VRDR-Autopsy-Performed-Indicator" key="StructureDefinition-VRDR-Autopsy-Performed-Indicator" name="Autopsy Performed Indicator" />
-    <artifact id="Observation/0db13e0d-fea6-4ef1-8285-62d761f61d88" key="Observation-0db13e0d-fea6-4ef1-8285-62d761f61d88" name="Autopsy Performed Indicator Instance Example" />
-    <artifact id="StructureDefinition/VRDR-BirthRecordIdentifier" key="StructureDefinition-VRDR-BirthRecordIdentifier" name="Birth Record Identifier" />
-    <artifact id="Observation/6606dd3a-49ba-47a9-a6e7-e7e4ebeddac7" key="Observation-6606dd3a-49ba-47a9-a6e7-e7e4ebeddac7" name="Birth Record Identifier Example" />
-    <artifact deprecated="true" id="StructureDefinition/CDPH-CareTeam" key="StructureDefinition-CDPH-CareTeam" name="CDPH_CareTeam" />
-    <artifact id="StructureDefinition/VRDR-Cause-Of-Death-Condition" key="StructureDefinition-VRDR-Cause-Of-Death-Condition" name="Cause Of Death Condition" />
-    <artifact id="Condition/f0cbc63d-ac4e-469b-8761-70b6ea8bf666" key="Condition-f0cbc63d-ac4e-469b-8761-70b6ea8bf666" name="Cause Of Death Condition Example" />
-    <artifact id="StructureDefinition/VRDR-Cause-of-Death-Pathway" key="StructureDefinition-VRDR-Cause-of-Death-Pathway" name="Cause of Death Pathway" />
-    <artifact id="List/60401545-f1e1-4a80-867f-02384ffed857" key="List-60401545-f1e1-4a80-867f-02384ffed857" name="Cause of Death Pathway Example" />
-    <artifact id="StructureDefinition/VRDR-Certifier" key="StructureDefinition-VRDR-Certifier" name="Certifier" />
-    <artifact id="Practitioner/cb1219bc-785f-431c-9f56-b8fbbe78bc4d" key="Practitioner-cb1219bc-785f-431c-9f56-b8fbbe78bc4d" name="Certifier Instance Example" />
-    <artifact deprecated="true" key="Condition" name="Condition" />
-    <artifact id="StructureDefinition/VRDR-Condition-Contributing-To-Death" key="StructureDefinition-VRDR-Condition-Contributing-To-Death" name="Condition Contributing To Death" />
-    <artifact id="Condition/56b8ce2e-64f8-450b-8885-0699a53fc781" key="Condition-56b8ce2e-64f8-450b-8885-0699a53fc781" name="Condition Contributing To Death Example" />
-    <artifact id="StructureDefinition/VRDR-Death-Certificate" key="StructureDefinition-VRDR-Death-Certificate" name="Death Certificate" />
-    <artifact id="StructureDefinition/VRDR-Death-Certificate-Document" key="StructureDefinition-VRDR-Death-Certificate-Document" name="Death Certificate Document" />
-    <artifact id="Bundle/7a4613cc-b306-49b2-a428-9f8e67e67a85" key="Bundle-7a4613cc-b306-49b2-a428-9f8e67e67a85" name="Death Certificate Document Example" />
-    <artifact id="Composition/54fd9b4c-7633-4e34-bf6b-6fbe9d48fd30" key="Composition-54fd9b4c-7633-4e34-bf6b-6fbe9d48fd30" name="Death Certificate Example" />
-    <artifact id="StructureDefinition/VRDR-Death-Certificate-Reference" key="StructureDefinition-VRDR-Death-Certificate-Reference" name="Death Certificate Reference" />
-    <artifact id="DocumentReference/bafe16b9-8b50-47e1-829a-a7dbafb45e05" key="DocumentReference-bafe16b9-8b50-47e1-829a-a7dbafb45e05" name="Death Certificate Reference Example" />
-    <artifact id="StructureDefinition/VRDR-Death-Certification" key="StructureDefinition-VRDR-Death-Certification" name="Death Certification" />
-    <artifact id="Procedure/219ef5e3-ed0c-4dab-88eb-b114daaebd73" key="Procedure-219ef5e3-ed0c-4dab-88eb-b114daaebd73" name="Death Certification Instance Example" />
-    <artifact id="StructureDefinition/VRDR-Death-Date" key="StructureDefinition-VRDR-Death-Date" name="Death Date" />
-    <artifact id="Observation/b531cbf7-6290-424c-8155-0549c3fb3243" key="Observation-b531cbf7-6290-424c-8155-0549c3fb3243" name="Death Date Example" />
-    <artifact id="StructureDefinition/VRDR-Death-Location" key="StructureDefinition-VRDR-Death-Location" name="Death Location" />
-    <artifact id="Location/b7de6056-817f-4d73-9830-ce566accd044" key="Location-b7de6056-817f-4d73-9830-ce566accd044" name="Death Location Example" />
-    <artifact id="StructureDefinition/VRDR-Death-Pronouncement-Performer" key="StructureDefinition-VRDR-Death-Pronouncement-Performer" name="Death Pronouncement Performer" />
-    <artifact id="Practitioner/9102c234-53ca-4066-8452-42f3ba751c7d" key="Practitioner-9102c234-53ca-4066-8452-42f3ba751c7d" name="Death Pronouncement Performer Example" />
-    <artifact id="StructureDefinition/VRDR-Decedent" key="StructureDefinition-VRDR-Decedent" name="Decedent" />
-    <artifact id="Observation/df5a2807-e0b2-4971-9820-efdbbbfcef7b" key="Observation-df5a2807-e0b2-4971-9820-efdbbbfcef7b" name="Decedent Age Example" />
-    <artifact id="StructureDefinition/VRDR-Decedent-Disposition-Method" key="StructureDefinition-VRDR-Decedent-Disposition-Method" name="Decedent Disposition Method" />
-    <artifact id="Observation/d80681ff-9f1d-4915-87b5-eda54534096a" key="Observation-d80681ff-9f1d-4915-87b5-eda54534096a" name="Decedent Disposition Method Example" />
-    <artifact id="Observation/9676ae27-2a89-4295-913c-0d6847300a3a" key="Observation-9676ae27-2a89-4295-913c-0d6847300a3a" name="Decedent Education Level Example" />
-    <artifact id="StructureDefinition/VRDR-Decedent-Father" key="StructureDefinition-VRDR-Decedent-Father" name="Decedent Father" />
-    <artifact id="RelatedPerson/976c548f-9460-42f2-b41e-390b3bee91c8" key="RelatedPerson-976c548f-9460-42f2-b41e-390b3bee91c8" name="Decedent Father Example" />
-    <artifact id="Patient/51b806c8-566f-463e-8783-9fbf6be8161d" key="Patient-51b806c8-566f-463e-8783-9fbf6be8161d" name="Decedent Instance Example" />
-    <artifact id="StructureDefinition/VRDR-Decedent-Military-Service" key="StructureDefinition-VRDR-Decedent-Military-Service" name="Decedent Military Service" />
-    <artifact id="Observation/636dafac-0d92-4649-b838-004bcf714f5aj" key="Observation-636dafac-0d92-4649-b838-004bcf714f5aj" name="Decedent Military Service Example" />
-    <artifact id="RelatedPerson/89ababc6-8c2a-4e76-9f53-8677822f54a9" key="RelatedPerson-89ababc6-8c2a-4e76-9f53-8677822f54a9" name="Decedent Mother Example" />
-    <artifact id="StructureDefinition/VRDR-Decedent-Pregnancy" key="StructureDefinition-VRDR-Decedent-Pregnancy" name="Decedent Pregnancy" />
-    <artifact id="Observation/092e7b13-224d-46a6-ac31-0d98d4c84126" key="Observation-092e7b13-224d-46a6-ac31-0d98d4c84126" name="Decedent Pregnancy Example" />
-    <artifact id="StructureDefinition/VRDR-Decedent-Spouse" key="StructureDefinition-VRDR-Decedent-Spouse" name="Decedent Spouse" />
-    <artifact id="RelatedPerson/962fded4-b90a-44f7-950e-3832011ad65f" key="RelatedPerson-962fded4-b90a-44f7-950e-3832011ad65f" name="Decedent Spouse Example" />
-    <artifact id="StructureDefinition/VRDR-Decedent-Transportation-Role" key="StructureDefinition-VRDR-Decedent-Transportation-Role" name="Decedent Transportation Role" />
-    <artifact id="Observation/4424113f-69c4-40fe-b88f-d7b03304dfe4" key="Observation-4424113f-69c4-40fe-b88f-d7b03304dfe4" name="Decedent Transportation Role Example" />
-    <artifact id="Observation/48b230c3-c5b5-4844-83bf-ede59170676e" key="Observation-48b230c3-c5b5-4844-83bf-ede59170676e" name="Decedent Usual Work Example" />
-    <artifact id="StructureDefinition/VRDR-Decedent-Education-Level" key="StructureDefinition-VRDR-Decedent-Education-Level" name="Decedent's Education Level" />
-    <artifact id="StructureDefinition/VRDR-Decedent-Mother" key="StructureDefinition-VRDR-Decedent-Mother" name="Decedent's Mother" />
-    <artifact id="StructureDefinition/VRDR-Decedent-Usual-Work" key="StructureDefinition-VRDR-Decedent-Usual-Work" name="Decedent's Usual Work" />
-    <artifact id="StructureDefinition/VRDR-Decedent-Age" key="StructureDefinition-VRDR-Decedent-Age" name="Decedent's age" />
-    <artifact id="StructureDefinition/VRDR-Disposition-Location" key="StructureDefinition-VRDR-Disposition-Location" name="Disposition Location" />
-    <artifact id="Location/bbe38248-9a8d-414f-996e-58d5fc9eb800" key="Location-bbe38248-9a8d-414f-996e-58d5fc9eb800" name="Disposition Location Example" />
-    <artifact deprecated="true" key="DocumentReference" name="DocumentReference" />
-    <artifact id="StructureDefinition/VRDR-Examiner-Contacted" key="StructureDefinition-VRDR-Examiner-Contacted" name="Examiner Contacted" />
-    <artifact id="Observation/4aed1450-ab2d-4cb9-858f-227b127323a6" key="Observation-4aed1450-ab2d-4cb9-858f-227b127323a6" name="Examiner Contacted Example" />
-    <artifact id="StructureDefinition/VRDR-Funeral-Home" key="StructureDefinition-VRDR-Funeral-Home" name="Funeral Home" />
-    <artifact id="Organization/6f47da13-0c25-483b-8729-7b96716b17fc" key="Organization-6f47da13-0c25-483b-8729-7b96716b17fc" name="Funeral Home Example" />
-    <artifact id="StructureDefinition/VRDR-Funeral-Service-Licensee" key="StructureDefinition-VRDR-Funeral-Service-Licensee" name="Funeral Service Licensee" />
-    <artifact id="PractitionerRole/4b96759f-8395-4093-8417-e1ca3cd26f0a" key="PractitionerRole-4b96759f-8395-4093-8417-e1ca3cd26f0a" name="Funeral Service Licensee Example" />
-    <artifact id="StructureDefinition/VRDR-InjuryIncident" key="StructureDefinition-VRDR-InjuryIncident" name="Injury Incident" />
-    <artifact id="Observation/37c086a1-05bd-479c-92b4-1234d38bfe5a" key="Observation-37c086a1-05bd-479c-92b4-1234d38bfe5a" name="Injury Incident Example" />
-    <artifact id="StructureDefinition/VRDR-Injury-Location" key="StructureDefinition-VRDR-Injury-Location" name="Injury Location" />
-    <artifact id="Location/4b863da8-1bb5-4b17-9be2-4ea39b5d3a2a" key="Location-4b863da8-1bb5-4b17-9be2-4ea39b5d3a2a" name="Injury Location Example" />
-    <artifact id="StructureDefinition/VRDR-Interested-Party" key="StructureDefinition-VRDR-Interested-Party" name="Interested Party" />
-    <artifact id="Organization/1a110397-936f-4be4-ab10-2caed226569d" key="Organization-1a110397-936f-4be4-ab10-2caed226569d" name="Interested Party Instance Example" />
-    <artifact deprecated="true" id="StructureDefinition/LANES-Condition" key="StructureDefinition-LANES-Condition" name="LANES_Condition" />
-    <artifact deprecated="true" key="List" name="List" />
-    <artifact deprecated="true" key="Location" name="Location" />
-    <artifact id="StructureDefinition/Location-Jurisdiction-Id" key="StructureDefinition-Location-Jurisdiction-Id" name="LocationJurisdictionId" />
-    <artifact id="StructureDefinition/VRDR-Manner-of-Death" key="StructureDefinition-VRDR-Manner-of-Death" name="Manner of Death" />
-    <artifact id="Observation/d7c2e459-c7ca-415c-a38c-f78a0f0c5813" key="Observation-d7c2e459-c7ca-415c-a38c-f78a0f0c5813" name="Manner of Death Example" />
-    <artifact id="StructureDefinition/VRDR-Mortician" key="StructureDefinition-VRDR-Mortician" name="Mortician" />
-    <artifact id="Practitioner/80db6f45-8a6d-4583-8a03-55a6663523c2" key="Practitioner-80db6f45-8a6d-4583-8a03-55a6663523c2" name="Mortician Example" />
-    <artifact deprecated="true" key="Observation" name="Observation" />
-    <artifact id="StructureDefinition/Observation-Location" key="StructureDefinition-Observation-Location" name="Observation Location" />
-    <artifact deprecated="true" key="Organization" name="Organization" />
-    <artifact deprecated="true" key="Patient" name="Patient" />
-    <artifact deprecated="true" key="Practitioner" name="Practitioner" />
-    <artifact deprecated="true" key="PractitionerRole" name="PractitionerRole" />
-    <artifact deprecated="true" key="Procedure" name="Procedure" />
-    <artifact deprecated="true" key="RelatedPerson" name="RelatedPerson" />
-    <artifact id="StructureDefinition/VRDR-Tobacco-Use-Contributed-To-Death" key="StructureDefinition-VRDR-Tobacco-Use-Contributed-To-Death" name="Tobacco Use Contributed To Death" />
-    <artifact id="Observation/4d0ce010-16f1-44f4-bbf8-3a2030e9de99" key="Observation-4d0ce010-16f1-44f4-bbf8-3a2030e9de99" name="Tobacco Use Contributed To Death Example" />
-    <artifact id="StructureDefinition/VRDR-Partial-date-part-absent-reason" key="StructureDefinition-VRDR-Partial-date-part-absent-reason" name="VRDR - Partial date part absent reason" />
-    <artifact id="StructureDefinition/Within-City-Limits-Indicator" key="StructureDefinition-Within-City-Limits-Indicator" name="Within City Limits Indicator" />
-    <page key="NA" name="(NA)" />
-    <page key="many" name="(many)" />
-    <page key="acknowledgements" name="Acknowledgements" />
-    <page key="artifacts" name="Artifacts Summary" />
-    <page key="background" name="Background" />
-    <page key="death_certification_resource_profiles" name="Death Certification Resource Profiles" />
-    <page key="death_investigation_resource_profiles" name="Death Investigation Resource Profiles" />
-    <page key="death_reporting_dataflow" name="Death Reporting Dataflow" />
-    <page key="decedent_demographics_resource_profiles" name="Decedent Demographics Resource Profiles" />
-    <page key="decedent_disposition_resource_profiles" name="Decedent Disposition Resource Profiles" />
-    <page key="downloads" name="Downloads" />
-    <page key="index" name="Home Page" />
-    <page key="profiles" name="Profiles" />
-    <page key="project_team" name="Project Team" />
-    <page key="scope_of_the_vrdr_fhir_ig" name="Scope of the VRDR FHIR IG" />
-    <page key="toc" name="Table of Contents" />
-    <page key="terminology_bindings" name="Terminology Bindings" />
-    <page key="vrdr_fhir_ig_uml_data_model" name="VRDR FHIR IG UML Data Model" />
-    <page deprecated="true" key="documentation" name="documentation" />
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    ballotUrl="http://hl7.org/fhir/us/vrdr/2021Sep" ciUrl="http://build.fhir.org/ig/HL7/vrdr"
+    defaultVersion="1.2.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/vrdr"
+    url="http://hl7.org/fhir/us/vrdr">
+    <version code="current" url="https://build.fhir.org/ig/HL7/vrdr"/>
+    <version code="1.2.0" url="http://hl7.org/fhir/us/vrdr/2021Sep"/>
+    <version code="1.1.0" url="http://hl7.org/fhir/us/vrdr/STU1.1"/>
+    <version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/vrdr/STU1"/>
+    <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/vrdr/2019May"/>
+    <version code="0.1" deprecated="true"/>
+    <artifactPageExtension value="-definitions"/>
+    <artifactPageExtension value="-examples"/>
+    <artifactPageExtension value="-mappings"/>
+    <artifact id="StructureDefinition/VRDR-Autopsy-Performed-Indicator"
+        key="StructureDefinition-VRDR-Autopsy-Performed-Indicator"
+        name="Autopsy Performed Indicator"/>
+    <artifact id="Observation/0db13e0d-fea6-4ef1-8285-62d761f61d88"
+        key="Observation-0db13e0d-fea6-4ef1-8285-62d761f61d88"
+        name="Autopsy Performed Indicator Instance Example"/>
+    <artifact id="StructureDefinition/VRDR-BirthRecordIdentifier"
+        key="StructureDefinition-VRDR-BirthRecordIdentifier" name="Birth Record Identifier"/>
+    <artifact id="Observation/6606dd3a-49ba-47a9-a6e7-e7e4ebeddac7"
+        key="Observation-6606dd3a-49ba-47a9-a6e7-e7e4ebeddac7"
+        name="Birth Record Identifier Example"/>
+    <artifact deprecated="true" id="StructureDefinition/CDPH-CareTeam"
+        key="StructureDefinition-CDPH-CareTeam" name="CDPH_CareTeam"/>
+    <artifact id="StructureDefinition/VRDR-Cause-Of-Death-Condition"
+        key="StructureDefinition-VRDR-Cause-Of-Death-Condition" name="Cause Of Death Condition"/>
+    <artifact id="Condition/f0cbc63d-ac4e-469b-8761-70b6ea8bf666"
+        key="Condition-f0cbc63d-ac4e-469b-8761-70b6ea8bf666" name="Cause Of Death Condition Example"/>
+    <artifact id="StructureDefinition/VRDR-Cause-of-Death-Pathway"
+        key="StructureDefinition-VRDR-Cause-of-Death-Pathway" name="Cause of Death Pathway"/>
+    <artifact id="List/60401545-f1e1-4a80-867f-02384ffed857"
+        key="List-60401545-f1e1-4a80-867f-02384ffed857" name="Cause of Death Pathway Example"/>
+    <artifact id="StructureDefinition/VRDR-Certifier" key="StructureDefinition-VRDR-Certifier"
+        name="Certifier"/>
+    <artifact id="Practitioner/cb1219bc-785f-431c-9f56-b8fbbe78bc4d"
+        key="Practitioner-cb1219bc-785f-431c-9f56-b8fbbe78bc4d" name="Certifier Instance Example"/>
+    <artifact deprecated="true" key="Condition" name="Condition"/>
+    <artifact id="StructureDefinition/VRDR-Condition-Contributing-To-Death"
+        key="StructureDefinition-VRDR-Condition-Contributing-To-Death"
+        name="Condition Contributing To Death"/>
+    <artifact id="Condition/56b8ce2e-64f8-450b-8885-0699a53fc781"
+        key="Condition-56b8ce2e-64f8-450b-8885-0699a53fc781"
+        name="Condition Contributing To Death Example"/>
+    <artifact id="StructureDefinition/VRDR-Death-Certificate"
+        key="StructureDefinition-VRDR-Death-Certificate" name="Death Certificate"/>
+    <artifact id="StructureDefinition/VRDR-Death-Certificate-Document"
+        key="StructureDefinition-VRDR-Death-Certificate-Document" name="Death Certificate Document"/>
+    <artifact id="Bundle/7a4613cc-b306-49b2-a428-9f8e67e67a85"
+        key="Bundle-7a4613cc-b306-49b2-a428-9f8e67e67a85" name="Death Certificate Document Example"/>
+    <artifact id="Composition/54fd9b4c-7633-4e34-bf6b-6fbe9d48fd30"
+        key="Composition-54fd9b4c-7633-4e34-bf6b-6fbe9d48fd30" name="Death Certificate Example"/>
+    <artifact id="StructureDefinition/VRDR-Death-Certificate-Reference"
+        key="StructureDefinition-VRDR-Death-Certificate-Reference"
+        name="Death Certificate Reference"/>
+    <artifact id="DocumentReference/bafe16b9-8b50-47e1-829a-a7dbafb45e05"
+        key="DocumentReference-bafe16b9-8b50-47e1-829a-a7dbafb45e05"
+        name="Death Certificate Reference Example"/>
+    <artifact id="StructureDefinition/VRDR-Death-Certification"
+        key="StructureDefinition-VRDR-Death-Certification" name="Death Certification"/>
+    <artifact id="Procedure/219ef5e3-ed0c-4dab-88eb-b114daaebd73"
+        key="Procedure-219ef5e3-ed0c-4dab-88eb-b114daaebd73"
+        name="Death Certification Instance Example"/>
+    <artifact id="StructureDefinition/VRDR-Death-Date" key="StructureDefinition-VRDR-Death-Date"
+        name="Death Date"/>
+    <artifact id="Observation/b531cbf7-6290-424c-8155-0549c3fb3243"
+        key="Observation-b531cbf7-6290-424c-8155-0549c3fb3243" name="Death Date Example"/>
+    <artifact id="StructureDefinition/VRDR-Death-Location"
+        key="StructureDefinition-VRDR-Death-Location" name="Death Location"/>
+    <artifact id="Location/b7de6056-817f-4d73-9830-ce566accd044"
+        key="Location-b7de6056-817f-4d73-9830-ce566accd044" name="Death Location Example"/>
+    <artifact id="StructureDefinition/VRDR-Death-Pronouncement-Performer"
+        key="StructureDefinition-VRDR-Death-Pronouncement-Performer"
+        name="Death Pronouncement Performer"/>
+    <artifact id="Practitioner/9102c234-53ca-4066-8452-42f3ba751c7d"
+        key="Practitioner-9102c234-53ca-4066-8452-42f3ba751c7d"
+        name="Death Pronouncement Performer Example"/>
+    <artifact id="StructureDefinition/VRDR-Decedent" key="StructureDefinition-VRDR-Decedent"
+        name="Decedent"/>
+    <artifact id="Observation/df5a2807-e0b2-4971-9820-efdbbbfcef7b"
+        key="Observation-df5a2807-e0b2-4971-9820-efdbbbfcef7b" name="Decedent Age Example"/>
+    <artifact id="StructureDefinition/VRDR-Decedent-Disposition-Method"
+        key="StructureDefinition-VRDR-Decedent-Disposition-Method"
+        name="Decedent Disposition Method"/>
+    <artifact id="Observation/d80681ff-9f1d-4915-87b5-eda54534096a"
+        key="Observation-d80681ff-9f1d-4915-87b5-eda54534096a"
+        name="Decedent Disposition Method Example"/>
+    <artifact id="Observation/9676ae27-2a89-4295-913c-0d6847300a3a"
+        key="Observation-9676ae27-2a89-4295-913c-0d6847300a3a"
+        name="Decedent Education Level Example"/>
+    <artifact id="StructureDefinition/VRDR-Decedent-Father"
+        key="StructureDefinition-VRDR-Decedent-Father" name="Decedent Father"/>
+    <artifact id="RelatedPerson/976c548f-9460-42f2-b41e-390b3bee91c8"
+        key="RelatedPerson-976c548f-9460-42f2-b41e-390b3bee91c8" name="Decedent Father Example"/>
+    <artifact id="Patient/51b806c8-566f-463e-8783-9fbf6be8161d"
+        key="Patient-51b806c8-566f-463e-8783-9fbf6be8161d" name="Decedent Instance Example"/>
+    <artifact id="StructureDefinition/VRDR-Decedent-Military-Service"
+        key="StructureDefinition-VRDR-Decedent-Military-Service" name="Decedent Military Service"/>
+    <artifact id="Observation/636dafac-0d92-4649-b838-004bcf714f5aj"
+        key="Observation-636dafac-0d92-4649-b838-004bcf714f5aj"
+        name="Decedent Military Service Example"/>
+    <artifact id="RelatedPerson/89ababc6-8c2a-4e76-9f53-8677822f54a9"
+        key="RelatedPerson-89ababc6-8c2a-4e76-9f53-8677822f54a9" name="Decedent Mother Example"/>
+    <artifact id="StructureDefinition/VRDR-Decedent-Pregnancy"
+        key="StructureDefinition-VRDR-Decedent-Pregnancy" name="Decedent Pregnancy"/>
+    <artifact id="Observation/092e7b13-224d-46a6-ac31-0d98d4c84126"
+        key="Observation-092e7b13-224d-46a6-ac31-0d98d4c84126" name="Decedent Pregnancy Example"/>
+    <artifact id="StructureDefinition/VRDR-Decedent-Spouse"
+        key="StructureDefinition-VRDR-Decedent-Spouse" name="Decedent Spouse"/>
+    <artifact id="RelatedPerson/962fded4-b90a-44f7-950e-3832011ad65f"
+        key="RelatedPerson-962fded4-b90a-44f7-950e-3832011ad65f" name="Decedent Spouse Example"/>
+    <artifact id="StructureDefinition/VRDR-Decedent-Transportation-Role"
+        key="StructureDefinition-VRDR-Decedent-Transportation-Role"
+        name="Decedent Transportation Role"/>
+    <artifact id="Observation/4424113f-69c4-40fe-b88f-d7b03304dfe4"
+        key="Observation-4424113f-69c4-40fe-b88f-d7b03304dfe4"
+        name="Decedent Transportation Role Example"/>
+    <artifact id="Observation/48b230c3-c5b5-4844-83bf-ede59170676e"
+        key="Observation-48b230c3-c5b5-4844-83bf-ede59170676e" name="Decedent Usual Work Example"/>
+    <artifact id="StructureDefinition/VRDR-Decedent-Education-Level"
+        key="StructureDefinition-VRDR-Decedent-Education-Level" name="Decedent's Education Level"/>
+    <artifact id="StructureDefinition/VRDR-Decedent-Mother"
+        key="StructureDefinition-VRDR-Decedent-Mother" name="Decedent's Mother"/>
+    <artifact id="StructureDefinition/VRDR-Decedent-Usual-Work"
+        key="StructureDefinition-VRDR-Decedent-Usual-Work" name="Decedent's Usual Work"/>
+    <artifact id="StructureDefinition/VRDR-Decedent-Age" key="StructureDefinition-VRDR-Decedent-Age"
+        name="Decedent's age"/>
+    <artifact id="StructureDefinition/VRDR-Disposition-Location"
+        key="StructureDefinition-VRDR-Disposition-Location" name="Disposition Location"/>
+    <artifact id="Location/bbe38248-9a8d-414f-996e-58d5fc9eb800"
+        key="Location-bbe38248-9a8d-414f-996e-58d5fc9eb800" name="Disposition Location Example"/>
+    <artifact deprecated="true" key="DocumentReference" name="DocumentReference"/>
+    <artifact id="StructureDefinition/VRDR-Examiner-Contacted"
+        key="StructureDefinition-VRDR-Examiner-Contacted" name="Examiner Contacted"/>
+    <artifact id="Observation/4aed1450-ab2d-4cb9-858f-227b127323a6"
+        key="Observation-4aed1450-ab2d-4cb9-858f-227b127323a6" name="Examiner Contacted Example"/>
+    <artifact id="StructureDefinition/VRDR-Funeral-Home" key="StructureDefinition-VRDR-Funeral-Home"
+        name="Funeral Home"/>
+    <artifact id="Organization/6f47da13-0c25-483b-8729-7b96716b17fc"
+        key="Organization-6f47da13-0c25-483b-8729-7b96716b17fc" name="Funeral Home Example"/>
+    <artifact id="StructureDefinition/VRDR-Funeral-Service-Licensee"
+        key="StructureDefinition-VRDR-Funeral-Service-Licensee" name="Funeral Service Licensee"/>
+    <artifact id="PractitionerRole/4b96759f-8395-4093-8417-e1ca3cd26f0a"
+        key="PractitionerRole-4b96759f-8395-4093-8417-e1ca3cd26f0a"
+        name="Funeral Service Licensee Example"/>
+    <artifact id="StructureDefinition/VRDR-InjuryIncident"
+        key="StructureDefinition-VRDR-InjuryIncident" name="Injury Incident"/>
+    <artifact id="Observation/37c086a1-05bd-479c-92b4-1234d38bfe5a"
+        key="Observation-37c086a1-05bd-479c-92b4-1234d38bfe5a" name="Injury Incident Example"/>
+    <artifact id="StructureDefinition/VRDR-Injury-Location"
+        key="StructureDefinition-VRDR-Injury-Location" name="Injury Location"/>
+    <artifact id="Location/4b863da8-1bb5-4b17-9be2-4ea39b5d3a2a"
+        key="Location-4b863da8-1bb5-4b17-9be2-4ea39b5d3a2a" name="Injury Location Example"/>
+    <artifact id="StructureDefinition/VRDR-Interested-Party"
+        key="StructureDefinition-VRDR-Interested-Party" name="Interested Party"/>
+    <artifact id="Organization/1a110397-936f-4be4-ab10-2caed226569d"
+        key="Organization-1a110397-936f-4be4-ab10-2caed226569d"
+        name="Interested Party Instance Example"/>
+    <artifact deprecated="true" id="StructureDefinition/LANES-Condition"
+        key="StructureDefinition-LANES-Condition" name="LANES_Condition"/>
+    <artifact deprecated="true" key="List" name="List"/>
+    <artifact deprecated="true" key="Location" name="Location"/>
+    <artifact id="StructureDefinition/Location-Jurisdiction-Id"
+        key="StructureDefinition-Location-Jurisdiction-Id" name="LocationJurisdictionId"/>
+    <artifact id="StructureDefinition/VRDR-Manner-of-Death"
+        key="StructureDefinition-VRDR-Manner-of-Death" name="Manner of Death"/>
+    <artifact id="Observation/d7c2e459-c7ca-415c-a38c-f78a0f0c5813"
+        key="Observation-d7c2e459-c7ca-415c-a38c-f78a0f0c5813" name="Manner of Death Example"/>
+    <artifact id="StructureDefinition/VRDR-Mortician" key="StructureDefinition-VRDR-Mortician"
+        name="Mortician"/>
+    <artifact id="Practitioner/80db6f45-8a6d-4583-8a03-55a6663523c2"
+        key="Practitioner-80db6f45-8a6d-4583-8a03-55a6663523c2" name="Mortician Example"/>
+    <artifact deprecated="true" key="Observation" name="Observation"/>
+    <artifact id="StructureDefinition/Observation-Location"
+        key="StructureDefinition-Observation-Location" name="Observation Location"/>
+    <artifact deprecated="true" key="Organization" name="Organization"/>
+    <artifact deprecated="true" key="Patient" name="Patient"/>
+    <artifact deprecated="true" key="Practitioner" name="Practitioner"/>
+    <artifact deprecated="true" key="PractitionerRole" name="PractitionerRole"/>
+    <artifact deprecated="true" key="Procedure" name="Procedure"/>
+    <artifact deprecated="true" key="RelatedPerson" name="RelatedPerson"/>
+    <artifact id="StructureDefinition/VRDR-Tobacco-Use-Contributed-To-Death"
+        key="StructureDefinition-VRDR-Tobacco-Use-Contributed-To-Death"
+        name="Tobacco Use Contributed To Death"/>
+    <artifact id="Observation/4d0ce010-16f1-44f4-bbf8-3a2030e9de99"
+        key="Observation-4d0ce010-16f1-44f4-bbf8-3a2030e9de99"
+        name="Tobacco Use Contributed To Death Example"/>
+    <artifact id="StructureDefinition/VRDR-Partial-date-part-absent-reason"
+        key="StructureDefinition-VRDR-Partial-date-part-absent-reason"
+        name="VRDR - Partial date part absent reason"/>
+    <artifact id="StructureDefinition/Within-City-Limits-Indicator"
+        key="StructureDefinition-Within-City-Limits-Indicator" name="Within City Limits Indicator"/>
+    <page key="NA" name="(NA)"/>
+    <page key="many" name="(many)"/>
+    <page key="acknowledgements" name="Acknowledgements"/>
+    <page key="artifacts" name="Artifacts Summary"/>
+    <page key="background" name="Background"/>
+    <page key="death_certification_resource_profiles" name="Death Certification Resource Profiles"/>
+    <page key="death_investigation_resource_profiles" name="Death Investigation Resource Profiles"/>
+    <page key="death_reporting_dataflow" name="Death Reporting Dataflow"/>
+    <page key="decedent_demographics_resource_profiles"
+        name="Decedent Demographics Resource Profiles"/>
+    <page key="decedent_disposition_resource_profiles" name="Decedent Disposition Resource Profiles"/>
+    <page key="downloads" name="Downloads"/>
+    <page key="index" name="Home Page"/>
+    <page key="profiles" name="Profiles"/>
+    <page key="project_team" name="Project Team"/>
+    <page key="scope_of_the_vrdr_fhir_ig" name="Scope of the VRDR FHIR IG"/>
+    <page key="toc" name="Table of Contents"/>
+    <page key="terminology_bindings" name="Terminology Bindings"/>
+    <page key="vrdr_fhir_ig_uml_data_model" name="VRDR FHIR IG UML Data Model"/>
+    <page deprecated="true" key="documentation" name="documentation"/>
 </specification>
