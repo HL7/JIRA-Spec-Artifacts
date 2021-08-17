@@ -6041,7 +6041,8 @@
                   url="http://hl7.org/fhir/uv/saner">
 	     <version code="current" url="http://build.fhir.org/ig/fhir-saner"/>
 	     <version code="0.1.0" url="http://hl7.org/fhir/uv/saner/2021Jan"/>
-	     <version code="0.0.1" url="http://hl7.org/fhir/uv/saner"/>
+	     <version code="1.0.0" url="http://hl7.org/fhir/uv/saner"/>
+	     <version code="0.0.1" deprecated="true"/>
 	     <version code="0.1" deprecated="true"/>
 	     <artifactPageExtension value="-definitions"/>
 	     <artifactPageExtension value="-examples"/>
@@ -6067,13 +6068,12 @@
 	     <artifact id="StructureDefinition/MeasureAlternateCriteria"
                 key="FHIR-saner-StructureDefinition-MeasurePopulationAlternateCriteria"
                 name="Alternate criteria for performing a measure"
-                spec="saner"/> 
+                spec="saner"/>
 	     <artifact deprecated="true"
                 id="MeasurePopulationAlternateCriteria"
                 key="FHIR-saner-MeasurePopulationAlternateCriteria"
                 name="MeasurePopulationAlternateCriteria"
                 spec="saner"/>
-	 
 
 	     <!-- deprecated StructureDefinition/AuditEvent{Create,Delete,Read,Search,Update} and StructureDefinition/audit-event-read and StructureDefinition/audit-event-write -->
 	     <artifact deprecated="true"
@@ -6110,6 +6110,31 @@
                 id="StructureDefinition/Audit-event-write"
                 key="FHIR-saner-AuditEventWrite"
                 name="AuditEventWrite"
+                spec="saner"/>
+	
+	     <!-- More deprecations -->
+	
+
+	     <!-- missed additions -->
+	     <artifact id="AuditEvent/ExAuditEventBase"
+                key="FHIR-saner-AuditEvent-ExAuditEventBase"
+                name="ExAuditEventBase"
+                spec="saner"/>
+	     <artifact id="Organization/MiDOH"
+                key="FHIR-saner-Organization-MiDOH"
+                name="MiDOH"
+                spec="saner"/>
+	     <artifact id="ValueSet/DestinationRoles"
+                key="FHIR-saner-ValueSet-DestinationRoles"
+                name="Destination Roles"
+                spec="saner"/>
+	     <artifact id="ValueSet/SourceRoles"
+                key="FHIR-saner-ValueSet-SourceRoles"
+                name="Source Roles"
+                spec="saner"/>
+	     <artifact id="ValueSet/SourceOrDestinationRoles"
+                key="FHIR-saner-ValueSet-SourceOrDestinationRoles"
+                name="SourceOrDestinationRoles"
                 spec="saner"/>
 
 	     <artifact id="ValueSet/BedLocationOperationalStatus"
@@ -7931,7 +7956,8 @@
                 key="FHIR-saner-CapabilityStatement-MeasureConsumer-Pull"
                 name="MeasureConsumer-Pull"
                 spec="saner"/>
-	     <artifact id="CapabilityStatement/MeasureConsumer-Pull-Questionnaire"
+	     <artifact deprecated="true"
+                id="CapabilityStatement/MeasureConsumer-Pull-Questionnaire"
                 key="FHIR-saner-CapabilityStatement-MeasureConsumer-Pull-Questionnaire"
                 name="MeasureConsumer-Pull-Questionnaire"
                 spec="saner"/>
@@ -7947,7 +7973,8 @@
                 key="FHIR-saner-CapabilityStatement-MeasureConsumer-QueryMeasure-Pull"
                 name="MeasureConsumer-QueryMeasure-Pull"
                 spec="saner"/>
-	     <artifact id="CapabilityStatement/MeasureConsumer-QueryMeasure-Pull-Questionnaire"
+	     <artifact deprecated="true"
+                id="CapabilityStatement/MeasureConsumer-QueryMeasure-Pull-Questionnaire"
                 key="FHIR-saner-CapabilityStatement-MeasureConsumer-QueryMeasure-Pull-Questionnaire"
                 name="MeasureConsumer-QueryMeasure-Pull-Questionnaire"
                 spec="saner"/>
@@ -7975,9 +8002,9 @@
                 key="FHIR-saner-CapabilityStatement-MeasureDefinitionSource-QueryMeasureDefinition"
                 name="MeasureDefinitionSource-QueryMeasureDefinition"
                 spec="saner"/>
-	     <artifact id="StructureDefinition/measure-expectation"
+	     <artifact id="StructureDefinition/MeasureExpectation"
                 key="FHIR-saner-StructureDefinition-measure-expectation"
-                name="MeasureExpection"
+                name="Measure Expectation"
                 spec="saner"/>
 	     <artifact deprecated="true"
                 id="StructureDefinition/MeasureGroupAttributes"
