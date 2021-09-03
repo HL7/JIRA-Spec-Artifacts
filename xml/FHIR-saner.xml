@@ -2,7 +2,7 @@
 <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/saner/2021Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-saner" defaultVersion="1.0.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-saner" url="http://hl7.org/fhir/uv/saner">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-saner"/>
 <version code="0.1.0" url="http://hl7.org/fhir/uv/saner/2021Jan"/>
-<version code="1.0.0" url="http://hl7.org/fhir/uv/saner"/>
+<version code="1.0.0" url="http://hl7.org/fhir/uv/saner/STU1"/>
 <version code="0.0.1" deprecated="true"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
@@ -13,6 +13,7 @@
 <artifact id="CodeSystem/IHE-ADX-agerange" key="CodeSystem-IHE-ADX-agerange" name="Age Range Coding System"/>
 <artifact id="ValueSet/AllCOVID19RiskFactors" key="ValueSet-AllCOVID19RiskFactors" name="All COVID-19 Risk Factors"/>
 <artifact id="StructureDefinition/MeasureAlternateCriteria" key="StructureDefinition-MeasurePopulationAlternateCriteria" name="Alternate criteria for performing a measure"/>
+<artifact deprecated="true" id="StructureDefinition/MeasureGroupAttributes-old" key="StructureDefinition-MeasureGroupAttributes" name="Attributes describing a group of measures"/>
 <artifact deprecated="true" id="StructureDefinition/AuditEventCreate" key="StructureDefinition-AuditEventCreate" name="Audit Event Create Profile"/>
 <artifact deprecated="true" id="StructureDefinition/AuditEventDelete" key="StructureDefinition-AuditEventDelete" name="Audit Event Delete Profile"/>
 <artifact deprecated="true" id="StructureDefinition/AuditEventRead" key="StructureDefinition-AuditEventRead" name="Audit Event Read"/>
@@ -138,11 +139,8 @@
 <artifact id="MeasureReport/ExampleNJ-20200425-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200425-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200425-CDCPatientImpactAndHospitalCapacity"/>
 <artifact id="MeasureReport/ExampleNJ-20200425-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200425-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200425-FEMADailyHospitalCOVID19Reporting"/>
 <artifact id="StructureDefinition/GeoLocation" key="StructureDefinition-GeoLocation-Extension" name="Extension Attributes to associate with a Location Reference to simplify Geographic search"/>
-<artifact deprecated="true" id="StructureDefinition/GeoLocation-old" key="GeoLocation" name="GeoLocation"/>
-<artifact deprecated="true" id="StructureDefinition/MeasureGroupAttributes-old" key="StructureDefinition-MeasureGroupAttributes" name="Attributes describing a group of measures"/>
 <artifact id="Measure/FEMADailyHospitalCOVID19Reporting" key="Measure-FEMADailyHospitalCOVID19Reporting" name="FEMA Laboratory Orders and Results Daily Increase Reporting"/>
-<artifact id="StructureDefinition/PublicHealthMeasure" key="StructureDefinition-PublicHealthMeasure" name="Public Health Measure"/>
-<artifact id="Library/FEMAMeasureLibrary" key="Library-FEMAMeasureLibrary" name="FEMAMeasureLibrary"/> 
+<artifact id="Library/FEMAMeasureLibrary" key="Library-FEMAMeasureLibrary" name="FEMAMeasureLibrary"/>
 <artifact deprecated="true" id="MeasureReport/FHIR-102" key="MeasureReport-FHIR-102" name="FHIR-102"/>
 <artifact deprecated="true" id="MeasureReport/FHIR-105" key="MeasureReport-FHIR-105" name="FHIR-105"/>
 <artifact deprecated="true" id="MeasureReport/FHIR-108" key="MeasureReport-FHIR-108" name="FHIR-108"/>
@@ -306,6 +304,7 @@
 <artifact deprecated="true" id="MeasureReport/FHIR-96" key="MeasureReport-FHIR-96" name="FHIR-96"/>
 <artifact deprecated="true" id="MeasureReport/FHIR-99" key="MeasureReport-FHIR-99" name="FHIR-99"/>
 <artifact id="StructureDefinition/AuditEventBase" key="StructureDefinition-AuditEventBase" name="General Audit Event Requirements"/>
+<artifact deprecated="true" id="StructureDefinition/GeoLocation-old" key="GeoLocation" name="GeoLocation"/>
 <artifact id="ConceptMap/HAvBED2toFHIR" key="ConceptMap-HAvBED2toFHIR" name="HAvBED2 to FHIR Concept Map"/>
 <artifact id="ValueSet/HealthcareServiceLocation" key="ValueSet-HealthcareServiceLocation" name="HealthcareServiceLocation"/>
 <artifact id="ValueSet/HypertensionCOVID19RiskFactors" key="ValueSet-HypertensionCOVID19RiskFactors" name="Hypertension COVID-19 Risk Factors"/>
@@ -543,6 +542,7 @@
 <artifact id="Measure/PatientsByRiskFactorWithSupplementalData" key="Measure-PatientsByRiskFactorWithSupplementalData" name="Patients By Risk Factor"/>
 <artifact id="StructureDefinition/PreciseDateTime" key="StructureDefinition-PreciseDateTime" name="Precise Date Time"/>
 <artifact id="ValueSet/PregnancyCOVID19RiskFactors" key="ValueSet-PregnancyCOVID19RiskFactors" name="Pregnancy COVID-19 Risk Factors"/>
+<artifact id="StructureDefinition/PublicHealthMeasure" key="StructureDefinition-PublicHealthMeasure" name="Public Health Measure"/>
 <artifact id="ValueSet/PublicHealthMeasureAttachmentTypes" key="ValueSet-PublicHealthMeasureAttachmentTypes" name="Public Health Measure Attachment Types"/>
 <artifact id="StructureDefinition/PublicHealthMeasureLibrary" key="StructureDefinition-PublicHealthMeasureLibrary" name="Public Health Measure Library"/>
 <artifact id="StructureDefinition/PublicHealthMeasureReport" key="StructureDefinition-PublicHealthMeasureReport" name="Public Health Measure Report"/>
