@@ -6041,7 +6041,7 @@
                   url="http://hl7.org/fhir/uv/saner">
       <version code="current" url="http://build.fhir.org/ig/HL7/fhir-saner"/>
       <version code="0.1.0" url="http://hl7.org/fhir/uv/saner/2021Jan"/>
-      <version code="1.0.0" url="http://hl7.org/fhir/uv/saner"/>
+      <version code="1.0.0" url="http://hl7.org/fhir/uv/saner/STU1"/>
       <version code="0.0.1" deprecated="true"/>
       <version code="0.1" deprecated="true"/>
       <artifactPageExtension value="-definitions"/>
@@ -6066,6 +6066,11 @@
       <artifact id="StructureDefinition/MeasureAlternateCriteria"
                 key="FHIR-saner-StructureDefinition-MeasurePopulationAlternateCriteria"
                 name="Alternate criteria for performing a measure"
+                spec="saner"/>
+      <artifact deprecated="true"
+                id="StructureDefinition/MeasureGroupAttributes-old"
+                key="FHIR-saner-StructureDefinition-MeasureGroupAttributes"
+                name="Attributes describing a group of measures"
                 spec="saner"/>
       <artifact deprecated="true"
                 id="StructureDefinition/AuditEventCreate"
@@ -6619,28 +6624,14 @@
                 key="FHIR-saner-StructureDefinition-GeoLocation-Extension"
                 name="Extension Attributes to associate with a Location Reference to simplify Geographic search"
                 spec="saner"/>
-      <artifact deprecated="true"
-                id="StructureDefinition/GeoLocation-old"
-                key="FHIR-saner-GeoLocation"
-                name="GeoLocation"
-                spec="saner"/>
-      <artifact deprecated="true"
-                id="StructureDefinition/MeasureGroupAttributes-old"
-                key="FHIR-saner-StructureDefinition-MeasureGroupAttributes"
-                name="Attributes describing a group of measures"
-                spec="saner"/>
       <artifact id="Measure/FEMADailyHospitalCOVID19Reporting"
                 key="FHIR-saner-Measure-FEMADailyHospitalCOVID19Reporting"
                 name="FEMA Laboratory Orders and Results Daily Increase Reporting"
                 spec="saner"/>
-      <artifact id="StructureDefinition/PublicHealthMeasure"
-                key="FHIR-saner-StructureDefinition-PublicHealthMeasure"
-                name="Public Health Measure"
-                spec="saner"/>
       <artifact id="Library/FEMAMeasureLibrary"
                 key="FHIR-saner-Library-FEMAMeasureLibrary"
                 name="FEMAMeasureLibrary"
-                spec="saner"/> 
+                spec="saner"/>
       <artifact deprecated="true"
                 id="MeasureReport/FHIR-102"
                 key="FHIR-saner-MeasureReport-FHIR-102"
@@ -7454,6 +7445,11 @@
       <artifact id="StructureDefinition/AuditEventBase"
                 key="FHIR-saner-StructureDefinition-AuditEventBase"
                 name="General Audit Event Requirements"
+                spec="saner"/>
+      <artifact deprecated="true"
+                id="StructureDefinition/GeoLocation-old"
+                key="FHIR-saner-GeoLocation"
+                name="GeoLocation"
                 spec="saner"/>
       <artifact id="ConceptMap/HAvBED2toFHIR"
                 key="FHIR-saner-ConceptMap-HAvBED2toFHIR"
@@ -8526,6 +8522,10 @@
       <artifact id="ValueSet/PregnancyCOVID19RiskFactors"
                 key="FHIR-saner-ValueSet-PregnancyCOVID19RiskFactors"
                 name="Pregnancy COVID-19 Risk Factors"
+                spec="saner"/>
+      <artifact id="StructureDefinition/PublicHealthMeasure"
+                key="FHIR-saner-StructureDefinition-PublicHealthMeasure"
+                name="Public Health Measure"
                 spec="saner"/>
       <artifact id="ValueSet/PublicHealthMeasureAttachmentTypes"
                 key="FHIR-saner-ValueSet-PublicHealthMeasureAttachmentTypes"
