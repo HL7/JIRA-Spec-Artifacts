@@ -1,328 +1,329 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/saner/2021Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-saner" defaultVersion="1.0.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-saner" url="http://hl7.org/fhir/uv/saner">
-	<version code="current" url="http://build.fhir.org/ig/HL7/fhir-saner"/>
-	<version code="0.1.0" url="http://hl7.org/fhir/uv/saner/2021Jan"/>
-	<version code="1.0.0" url="http://hl7.org/fhir/uv/saner/STU1"/>
-	<version code="0.0.1" deprecated="true"/>
-	<version code="0.1" deprecated="true"/>
-	<artifactPageExtension value="-definitions"/>
-	<artifactPageExtension value="-examples"/>
-	<artifactPageExtension value="-mappings"/>
-	<artifact id="ValueSet/DecadeAgeBrackets" key="ValueSet-DecadeAgeBrackets" name="Age Brackets By Decade"/>
-	<artifact id="ValueSet/ScoreAgeBrackets" key="ValueSet-ScoreAgeBrackets" name="Age Brackets By Score (20)"/>
-	<artifact id="CodeSystem/IHE-ADX-agerange" key="CodeSystem-IHE-ADX-agerange" name="Age Range Coding System"/>
-	<artifact id="ValueSet/AllCOVID19RiskFactors" key="ValueSet-AllCOVID19RiskFactors" name="All COVID-19 Risk Factors"/>
-	<artifact id="StructureDefinition/MeasureAlternateCriteria" key="StructureDefinition-MeasurePopulationAlternateCriteria" name="Alternate criteria for performing a measure"/>
-	<artifact id="ValueSet/BedLocationOperationalStatus" key="ValueSet-BedLocationOperationalStatus" name="Bed Location Operational Status"/>
-	<artifact id="Measure/CDCHealthcareSupplyPathway" key="Measure-CDCHealthcareSupplyPathway" name="CDC Healthcare Supply Pathway"/>
-	<artifact id="Measure/CDCPatientImpactAndHospitalCapacity" key="Measure-CDCPatientImpactAndHospitalCapacity" name="CDC Patient Impact and Hospital Capacity"/>
-	<artifact id="Measure/CDCHealthcareWorkerStaffingPathway" key="Measure-CDCHealthcareWorkerStaffingPathway" name="CDCHealthcareWorkerStaffingPathway"/>
-	<artifact id="ValueSet/COPDCOVID19RiskFactors" key="ValueSet-COPDCOVID19RiskFactors" name="COPD COVID-19 Risk Factors"/>
-	<artifact id="ValueSet/COVID19Complications" key="ValueSet-COVID19Complications" name="COVID-19 Complications"/>
-	<artifact id="ValueSet/PositiveResults" key="ValueSet-PositiveResults" name="COVID-19 Detected"/>
-	<artifact id="ValueSet/Covid19Labs" key="ValueSet-Covid19Labs" name="COVID-19 Diagnostic Test"/>
-	<artifact id="ValueSet/IsolationPrecautions" key="ValueSet-IsolationPrecautions" name="COVID-19 Isolation Precautions"/>
-	<artifact id="ValueSet/NegativeResults" key="ValueSet-NegativeResults" name="COVID-19 Not Detected"/>
-	<artifact id="ValueSet/COVID19Antibody" key="ValueSet-COVID19Antibody" name="COVID19Antibody"/>
-	<artifact id="ValueSet/COVID19DXICD10" key="ValueSet-COVID19DXICD10" name="COVID19DXICD10"/>
-	<artifact id="ValueSet/COVID19DXSNOMED" key="ValueSet-COVID19DXSNOMED" name="COVID19DXSNOMED"/>
-	<artifact id="ValueSet/COVID19Exposures" key="ValueSet-COVID19Exposures" name="COVID19Exposures"/>
-	<artifact id="ValueSet/COVID19Organism" key="ValueSet-COVID19Organism" name="COVID19Organism"/>
-	<artifact id="StructureDefinition/CapabilityStatementWithSlices" key="StructureDefinition-CapabilityStatementWithSlices" name="Capability Statements with Slices"/>
-	<artifact id="ValueSet/CardiovascularCOVID19RiskFactors" key="ValueSet-CardiovascularCOVID19RiskFactors" name="Cardiovascular COVID-19 Risk Factors"/>
-	<artifact id="ValueSet/VTEReports" key="ValueSet-VTEReports" name="Codes for reports about VTE Diagnosics"/>
-	<artifact id="Measure/ComputableCDCPatientImpactAndHospitalCapacity" key="Measure-ComputableCDCPatientImpactAndHospitalCapacity" name="Computable CDC Patient Impact and Hospital Capacity"/>
-	<artifact id="Library/ComputableNHSNMeasureLibrary" key="Library-ComputableNHSNMeasureLibrary" name="ComputableNHSNMeasureLibrary"/>
-	<artifact id="ValueSet/ConfirmedCOVID19Diagnoses" key="ValueSet-ConfirmedCOVID19Diagnoses" name="Confirmed COVID-19 Diagnosis Values"/>
-	<artifact id="CapabilityStatement/DataSource" key="CapabilityStatement-DataSource" name="DataSource"/>
-	<artifact id="CapabilityStatement/DataSource-ComputeMeasure" key="CapabilityStatement-DataSource-ComputeMeasure" name="DataSource-ComputeMeasure"/>
-	<artifact id="ValueSet/DestinationRoles" key="ValueSet-DestinationRoles" name="DestinationRoles"/>
-	<artifact id="ValueSet/DiabetesCOVID19RiskFactors" key="ValueSet-DiabetesCOVID19RiskFactors" name="Diabetes COVID-19 Risk Factors"/>
-	<artifact id="StructureDefinition/ReportingPeriod" key="StructureDefinition-ReportingPeriod" name="Enables specification of proposed measure reporting"/>
-	<artifact id="ValueSet/EventContext" key="ValueSet-EventContext" name="Event Context"/>
-	<artifact id="AuditEvent/ExAuditEventBase" key="AuditEvent-ExAuditEventBase" name="ExAuditEventBase"/>
-	<artifact id="MeasureReport/ExampleNJ-20200404-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200404-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200404-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200404-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200404-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200404-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200405-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200405-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200405-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200405-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200405-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200405-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200406-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200406-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200406-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200406-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200406-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200406-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200407-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200407-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200407-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200407-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200407-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200407-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200408-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200408-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200408-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200408-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200408-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200408-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200409-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200409-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200409-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200409-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200409-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200409-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200410-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200410-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200410-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200410-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200410-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200410-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200411-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200411-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200411-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200411-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200411-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200411-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200412-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200412-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200412-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200412-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200412-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200412-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200413-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200413-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200413-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200413-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200413-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200413-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200414-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200414-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200414-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200414-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200414-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200414-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200415-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200415-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200415-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200415-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200415-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200415-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200416-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200416-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200416-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200416-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200416-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200416-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200417-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200417-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200417-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200417-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200417-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200417-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200418-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200418-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200418-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200418-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200418-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200418-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200419-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200419-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200419-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200419-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200419-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200419-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200420-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200420-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200420-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200420-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200420-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200420-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200421-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200421-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200421-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200421-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200421-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200421-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200422-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200422-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200422-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200422-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200422-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200422-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200423-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200423-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200423-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200423-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200423-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200423-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200424-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200424-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200424-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200424-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200424-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200424-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="MeasureReport/ExampleNJ-20200425-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200425-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200425-CDCPatientImpactAndHospitalCapacity"/>
-	<artifact id="MeasureReport/ExampleNJ-20200425-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200425-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200425-FEMADailyHospitalCOVID19Reporting"/>
-	<artifact id="StructureDefinition/GeoLocation" key="StructureDefinition-GeoLocation-Extension" name="Extension Attributes to associate with a Location Reference to simplify Geographic search"/>
-	<artifact id="Measure/FEMADailyHospitalCOVID19Reporting" key="Measure-FEMADailyHospitalCOVID19Reporting" name="FEMA Laboratory Orders and Results Daily Increase Reporting"/>
-	<artifact id="Library/FEMAMeasureLibrary" key="Library-FEMAMeasureLibrary" name="FEMAMeasureLibrary"/>
-	<artifact id="StructureDefinition/AuditEventBase" key="StructureDefinition-AuditEventBase" name="General Audit Event Requirements"/>
-	<artifact id="ConceptMap/HAvBED2toFHIR" key="ConceptMap-HAvBED2toFHIR" name="HAvBED2 to FHIR Concept Map"/>
-	<artifact id="ValueSet/HealthcareServiceLocation" key="ValueSet-HealthcareServiceLocation" name="HealthcareServiceLocation"/>
-	<artifact id="ValueSet/HypertensionCOVID19RiskFactors" key="ValueSet-HypertensionCOVID19RiskFactors" name="Hypertension COVID-19 Risk Factors"/>
-	<artifact id="ValueSet/ICULocations" key="ValueSet-ICULocations" name="ICU Locations"/>
-	<artifact id="ValueSet/InpatientLocations" key="ValueSet-InpatientLocations" name="Inpatient Locations"/>
-	<artifact id="ValueSet/KidneyDiseaseCOVID19RiskFactors" key="ValueSet-KidneyDiseaseCOVID19RiskFactors" name="Kidney Disease COVID-19 Risk Factors"/>
-	<artifact id="Location/Loc-X140008" key="Location-Loc-X140008" name="Loc-X140008"/>
-	<artifact id="Location/Loc-X140010" key="Location-Loc-X140010" name="Loc-X140010"/>
-	<artifact id="Location/Loc-X140048" key="Location-Loc-X140048" name="Loc-X140048"/>
-	<artifact id="Location/Loc-X140049" key="Location-Loc-X140049" name="Loc-X140049"/>
-	<artifact id="Location/Loc-X140054" key="Location-Loc-X140054" name="Loc-X140054"/>
-	<artifact id="Location/Loc-X140062" key="Location-Loc-X140062" name="Loc-X140062"/>
-	<artifact id="Location/Loc-X140063" key="Location-Loc-X140063" name="Loc-X140063"/>
-	<artifact id="Location/Loc-X140065" key="Location-Loc-X140065" name="Loc-X140065"/>
-	<artifact id="Location/Loc-X140068" key="Location-Loc-X140068" name="Loc-X140068"/>
-	<artifact id="Location/Loc-X140080" key="Location-Loc-X140080" name="Loc-X140080"/>
-	<artifact id="Location/Loc-X140082" key="Location-Loc-X140082" name="Loc-X140082"/>
-	<artifact id="Location/Loc-X140083" key="Location-Loc-X140083" name="Loc-X140083"/>
-	<artifact id="Location/Loc-X140088" key="Location-Loc-X140088" name="Loc-X140088"/>
-	<artifact id="Location/Loc-X140095" key="Location-Loc-X140095" name="Loc-X140095"/>
-	<artifact id="Location/Loc-X140103" key="Location-Loc-X140103" name="Loc-X140103"/>
-	<artifact id="Location/Loc-X140114" key="Location-Loc-X140114" name="Loc-X140114"/>
-	<artifact id="Location/Loc-X140115" key="Location-Loc-X140115" name="Loc-X140115"/>
-	<artifact id="Location/Loc-X140117" key="Location-Loc-X140117" name="Loc-X140117"/>
-	<artifact id="Location/Loc-X140119" key="Location-Loc-X140119" name="Loc-X140119"/>
-	<artifact id="Location/Loc-X140124" key="Location-Loc-X140124" name="Loc-X140124"/>
-	<artifact id="Location/Loc-X140133" key="Location-Loc-X140133" name="Loc-X140133"/>
-	<artifact id="Location/Loc-X140150" key="Location-Loc-X140150" name="Loc-X140150"/>
-	<artifact id="Location/Loc-X140158" key="Location-Loc-X140158" name="Loc-X140158"/>
-	<artifact id="Location/Loc-X140177" key="Location-Loc-X140177" name="Loc-X140177"/>
-	<artifact id="Location/Loc-X140179" key="Location-Loc-X140179" name="Loc-X140179"/>
-	<artifact id="Location/Loc-X140180" key="Location-Loc-X140180" name="Loc-X140180"/>
-	<artifact id="Location/Loc-X140181" key="Location-Loc-X140181" name="Loc-X140181"/>
-	<artifact id="Location/Loc-X140182" key="Location-Loc-X140182" name="Loc-X140182"/>
-	<artifact id="Location/Loc-X140191" key="Location-Loc-X140191" name="Loc-X140191"/>
-	<artifact id="Location/Loc-X140197" key="Location-Loc-X140197" name="Loc-X140197"/>
-	<artifact id="Location/Loc-X140206" key="Location-Loc-X140206" name="Loc-X140206"/>
-	<artifact id="Location/Loc-X140208" key="Location-Loc-X140208" name="Loc-X140208"/>
-	<artifact id="Location/Loc-X140223" key="Location-Loc-X140223" name="Loc-X140223"/>
-	<artifact id="Location/Loc-X140224" key="Location-Loc-X140224" name="Loc-X140224"/>
-	<artifact id="Location/Loc-X140240" key="Location-Loc-X140240" name="Loc-X140240"/>
-	<artifact id="Location/Loc-X140250" key="Location-Loc-X140250" name="Loc-X140250"/>
-	<artifact id="Location/Loc-X140251" key="Location-Loc-X140251" name="Loc-X140251"/>
-	<artifact id="Location/Loc-X140252" key="Location-Loc-X140252" name="Loc-X140252"/>
-	<artifact id="Location/Loc-X140258" key="Location-Loc-X140258" name="Loc-X140258"/>
-	<artifact id="Location/Loc-X140276" key="Location-Loc-X140276" name="Loc-X140276"/>
-	<artifact id="Location/Loc-X140281" key="Location-Loc-X140281" name="Loc-X140281"/>
-	<artifact id="Location/Loc-X140290" key="Location-Loc-X140290" name="Loc-X140290"/>
-	<artifact id="Location/Loc-X140300" key="Location-Loc-X140300" name="Loc-X140300"/>
-	<artifact id="Location/Loc-X143300" key="Location-Loc-X143300" name="Loc-X143300"/>
-	<artifact id="Location/Loc-X143302" key="Location-Loc-X143302" name="Loc-X143302"/>
-	<artifact id="Location/Loc-X410004" key="Location-Loc-X410004" name="Loc-X410004"/>
-	<artifact id="Location/Loc-X410005" key="Location-Loc-X410005" name="Loc-X410005"/>
-	<artifact id="Location/Loc-X410006" key="Location-Loc-X410006" name="Loc-X410006"/>
-	<artifact id="Location/Loc-X410007" key="Location-Loc-X410007" name="Loc-X410007"/>
-	<artifact id="Location/Loc-X410008" key="Location-Loc-X410008" name="Loc-X410008"/>
-	<artifact id="Location/Loc-X410009" key="Location-Loc-X410009" name="Loc-X410009"/>
-	<artifact id="Location/Loc-X410010" key="Location-Loc-X410010" name="Loc-X410010"/>
-	<artifact id="Location/Loc-X410011" key="Location-Loc-X410011" name="Loc-X410011"/>
-	<artifact id="Location/Loc-X410013" key="Location-Loc-X410013" name="Loc-X410013"/>
-	<artifact id="StructureDefinition/MeasureExpectation" key="StructureDefinition-measure-expectation" name="Measure Expectation"/>
-	<artifact id="CodeSystem/MeasureGroupSystem" key="CodeSystem-MeasureGroupSystem" name="Measure Group System"/>
-	<artifact id="ValueSet/MeasureGroups" key="ValueSet-MeasureGroups" name="Measure Groups"/>
-	<artifact id="ValueSet/MeasurePopulations" key="ValueSet-MeasurePopulations" name="Measure Populations"/>
-	<artifact id="CodeSystem/MeasureRateAggregation" key="CodeSystem-MeasureRateAggregation" name="Measure Rate Aggregation Coding System"/>
-	<artifact id="ValueSet/MeasureRateAggregationValues" key="ValueSet-MeasureRateAggregationValues" name="Measure Rate Aggregation Value Set"/>
-	<artifact id="ValueSet/MeasureStatus" key="ValueSet-MeasureStatus" name="Measure Status Values"/>
-	<artifact id="OperationDefinition/Measure-evaluate-measure" key="OperationDefinition-Measure-evaluate-measure" name="Measure-evaluate-measure"/>
-	<artifact id="OperationDefinition/Measure-report-csv" key="OperationDefinition-Measure-report-csv" name="Measure-report-csv"/>
-	<artifact id="CapabilityStatement/MeasureComputer" key="CapabilityStatement-MeasureComputer" name="MeasureComputer"/>
-	<artifact id="CapabilityStatement/MeasureComputer-ComputeMeasure" key="CapabilityStatement-MeasureComputer-ComputeMeasure" name="MeasureComputer-ComputeMeasure"/>
-	<artifact id="CapabilityStatement/MeasureConsumer-Aggregate" key="CapabilityStatement-MeasureConsumer-Aggregate" name="MeasureConsumer-Aggregate"/>
-	<artifact id="CapabilityStatement/MeasureConsumer-CSV-Pull" key="CapabilityStatement-MeasureConsumer-CSV-Pull" name="MeasureConsumer-CSV-Pull"/>
-	<artifact id="CapabilityStatement/MeasureConsumer-CSV-Push" key="CapabilityStatement-MeasureConsumer-CSV-Push" name="MeasureConsumer-CSV-Push"/>
-	<artifact id="CapabilityStatement/MeasureConsumer-ProduceMeasure-CSV-Push" key="CapabilityStatement-MeasureConsumer-ProduceMeasure-CSV-Push" name="MeasureConsumer-ProduceMeasure-CSV-Push"/>
-	<artifact id="CapabilityStatement/MeasureConsumer-ProduceMeasure-Push" key="CapabilityStatement-MeasureConsumer-ProduceMeasure-Push" name="MeasureConsumer-ProduceMeasure-Push"/>
-	<artifact id="CapabilityStatement/MeasureConsumer-ProduceMeasure-SupplementalData" key="CapabilityStatement-MeasureConsumer-ProduceMeasure-SupplementalData" name="MeasureConsumer-ProduceMeasure-SupplementalData"/>
-	<artifact id="CapabilityStatement/MeasureConsumer-Pull" key="CapabilityStatement-MeasureConsumer-Pull" name="MeasureConsumer-Pull"/>
-	<artifact id="CapabilityStatement/MeasureConsumer-Push" key="CapabilityStatement-MeasureConsumer-Push" name="MeasureConsumer-Push"/>
-	<artifact id="CapabilityStatement/MeasureConsumer-QueryMeasure-CSV-Pull" key="CapabilityStatement-MeasureConsumer-QueryMeasure-CSV-Pull" name="MeasureConsumer-QueryMeasure-CSV-Pull"/>
-	<artifact id="CapabilityStatement/MeasureConsumer-QueryMeasure-Pull" key="CapabilityStatement-MeasureConsumer-QueryMeasure-Pull" name="MeasureConsumer-QueryMeasure-Pull"/>
-	<artifact id="CapabilityStatement/MeasureConsumer-SupplementalData" key="CapabilityStatement-MeasureConsumer-SupplementalData" name="MeasureConsumer-SupplementalData"/>
-	<artifact id="StructureDefinition/MeasureCriteria" key="StructureDefinition-MeasureCriteria" name="MeasureCriteria"/>
-	<artifact id="CapabilityStatement/MeasureDefinitionConsumer" key="CapabilityStatement-MeasureDefinitionConsumer" name="MeasureDefinitionConsumer"/>
-	<artifact id="CapabilityStatement/MeasureDefinitionConsumer-QueryMeasureDefinition" key="CapabilityStatement-MeasureDefinitionConsumer-QueryMeasureDefinition" name="MeasureDefinitionConsumer-QueryMeasureDefinition"/>
-	<artifact id="CapabilityStatement/MeasureDefinitionSource" key="CapabilityStatement-MeasureDefinitionSource" name="MeasureDefinitionSource"/>
-	<artifact id="CapabilityStatement/MeasureDefinitionSource-QueryMeasureDefinition" key="CapabilityStatement-MeasureDefinitionSource-QueryMeasureDefinition" name="MeasureDefinitionSource-QueryMeasureDefinition"/>
-	<artifact id="OperationDefinition/MeasureReport-aggregate" key="OperationDefinition-MeasureReport-aggregate" name="MeasureReport-aggregate"/>
-	<artifact id="OperationDefinition/MeasureReport-read-csv" key="OperationDefinition-MeasureReport-read-csv" name="MeasureReport-read-csv"/>
-	<artifact id="OperationDefinition/MeasureReport-search-csv" key="OperationDefinition-MeasureReport-search-csv" name="MeasureReport-search-csv"/>
-	<artifact id="ValueSet/MeasureScoring" key="ValueSet-MeasureScoring" name="MeasureScoring"/>
-	<artifact id="CapabilityStatement/MeasureSource-Aggregate" key="CapabilityStatement-MeasureSource-Aggregate" name="MeasureSource-Aggregate"/>
-	<artifact id="CapabilityStatement/MeasureSource-CSV-Pull" key="CapabilityStatement-MeasureSource-CSV-Pull" name="MeasureSource-CSV-Pull"/>
-	<artifact id="CapabilityStatement/MeasureSource-CSV-Push" key="CapabilityStatement-MeasureSource-CSV-Push" name="MeasureSource-CSV-Push"/>
-	<artifact id="CapabilityStatement/MeasureSource-ProduceMeasure-CSV-Push" key="CapabilityStatement-MeasureSource-ProduceMeasure-CSV-Push" name="MeasureSource-ProduceMeasure-CSV-Push"/>
-	<artifact id="CapabilityStatement/MeasureSource-ProduceMeasure-Push" key="CapabilityStatement-MeasureSource-ProduceMeasure-Push" name="MeasureSource-ProduceMeasure-Push"/>
-	<artifact id="CapabilityStatement/MeasureSource-ProduceMeasure-SupplementalData" key="CapabilityStatement-MeasureSource-ProduceMeasure-SupplementalData" name="MeasureSource-ProduceMeasure-SupplementalData"/>
-	<artifact id="CapabilityStatement/MeasureSource-Pull" key="CapabilityStatement-MeasureSource-Pull" name="MeasureSource-Pull"/>
-	<artifact id="CapabilityStatement/MeasureSource-Push" key="CapabilityStatement-MeasureSource-Push" name="MeasureSource-Push"/>
-	<artifact id="CapabilityStatement/MeasureSource-QueryMeasure-CSV-Pull" key="CapabilityStatement-MeasureSource-QueryMeasure-CSV-Pull" name="MeasureSource-QueryMeasure-CSV-Pull"/>
-	<artifact id="CapabilityStatement/MeasureSource-QueryMeasure-Pull" key="CapabilityStatement-MeasureSource-QueryMeasure-Pull" name="MeasureSource-QueryMeasure-Pull"/>
-	<artifact id="CapabilityStatement/MeasureSource-SupplementalData" key="CapabilityStatement-MeasureSource-SupplementalData" name="MeasureSource-SupplementalData"/>
-	<artifact id="CodeSystem/MeasuredValues" key="CodeSystem-MeasuredValues" name="Measured Values in Sample Measures"/>
-	<artifact id="Organization/MiDOH" key="Organization-MiDOH" name="MiDOH"/>
-	<artifact id="Library/NHSNMeasureLibrary" key="Library-NHSNMeasureLibrary" name="NHSNMeasureLibrary"/>
-	<artifact id="Organization/NJ-DPH" key="Organization-NJ-DPH" name="NJ-DPH"/>
-	<artifact id="ValueSet/NeoplasticCOVID19RiskFactors" key="ValueSet-NeoplasticCOVID19RiskFactors" name="Neoplastic COVID-19 Risk Factors"/>
-	<artifact id="ValueSet/ObesityCOVID19RiskFactors" key="ValueSet-ObesityCOVID19RiskFactors" name="Obesity COVID-19 Risk Factors"/>
-	<artifact id="ValueSet/PatientsOnVentilator" key="ValueSet-PatientsOnVentilator" name="Observations for Patients on a Ventilator"/>
-	<artifact id="ValueSet/PatientDeaths" key="ValueSet-PatientDeaths" name="Patient Died"/>
-	<artifact id="Measure/PatientsByRiskFactorWithSupplementalData" key="Measure-PatientsByRiskFactorWithSupplementalData" name="Patients By Risk Factor"/>
-	<artifact id="StructureDefinition/PreciseDateTime" key="StructureDefinition-PreciseDateTime" name="Precise Date Time"/>
-	<artifact id="ValueSet/PregnancyCOVID19RiskFactors" key="ValueSet-PregnancyCOVID19RiskFactors" name="Pregnancy COVID-19 Risk Factors"/>
-	<artifact id="StructureDefinition/PublicHealthMeasure" key="StructureDefinition-PublicHealthMeasure" name="Public Health Measure"/>
-	<artifact id="ValueSet/PublicHealthMeasureAttachmentTypes" key="ValueSet-PublicHealthMeasureAttachmentTypes" name="Public Health Measure Attachment Types"/>
-	<artifact id="StructureDefinition/PublicHealthMeasureLibrary" key="StructureDefinition-PublicHealthMeasureLibrary" name="Public Health Measure Library"/>
-	<artifact id="StructureDefinition/PublicHealthMeasureReport" key="StructureDefinition-PublicHealthMeasureReport" name="Public Health Measure Report"/>
-	<artifact id="CodeSystem/PublicHealthMeasureScoring" key="CodeSystem-PublicHealthMeasureScoring" name="Public Health Measure Scoring"/>
-	<artifact id="StructureDefinition/PublicHealthMeasureMetadataAttachment" key="StructureDefinition-PublicHealthMeasureMetadataAttachment" name="PublicHealthMeasureMetadataAttachment"/>
-	<artifact id="StructureDefinition/MeasureReportingTiming" key="StructureDefinition-MeasureReportingTiming" name="Recommended Measure Reporting Times"/>
-	<artifact id="ValueSet/Remdesivir" key="ValueSet-Remdesivir" name="Remdesivir"/>
-	<artifact id="ValueSet/SARSCoV2GeneticLabs" key="ValueSet-SARSCoV2GeneticLabs" name="SARSCoV2 Genetic Labs"/>
-	<artifact id="ValueSet/SARSCoV2Labs" key="ValueSet-SARSCoV2Labs" name="SARSCoV2Labs"/>
-	<artifact id="StructureDefinition/MeasuredItemDescription" key="StructureDefinition-MeasuredItemDescription" name="Saner Measured Item Description"/>
-	<artifact id="SearchParameter/SearchParameter-code" key="SearchParameter-SearchParameter-code" name="Search by Code in Definitions and Instances"/>
-	<artifact id="SearchParameter/SearchParameter-definition-text" key="SearchParameter-SearchParameter-definition-text" name="Search by Text in Definitions"/>
-	<artifact id="SearchParameter/SearchParameter-disposition" key="SearchParameter-SearchParameter-disposition" name="Search by hospitalization.dispositionCode in Encounters"/>
-	<artifact id="ValueSet/SickleCellCOVID19RiskFactors" key="ValueSet-SickleCellCOVID19RiskFactors" name="Sickle Cell COVID-19 Risk Factors"/>
-	<artifact id="CodeSystem/MeasurePopulationSystem" key="CodeSystem-MeasurePopulationSystem" name="Situational Awareness Measure Populations"/>
-	<artifact id="ValueSet/SourceOrDestinationRoles" key="ValueSet-SourceOrDestinationRoles" name="SourceOrDestinationRoles"/>
-	<artifact id="ValueSet/SourceRoles" key="ValueSet-SourceRoles" name="SourceRoles"/>
-	<artifact id="ValueSet/SuspectedOrConfirmedCOVID19Diagnoses" key="ValueSet-SuspectedOrConfirmedCOVID19Diagnoses" name="Suspected Or Diagnosed COVID-19"/>
-	<artifact id="ValueSet/SuspectedCOVID19Diagnoses" key="ValueSet-SuspectedCOVID19Diagnoses" name="SuspectedCOVID19Diagnoses"/>
-	<artifact id="ValueSet/TobaccoCOVID19RiskFactors" key="ValueSet-TobaccoCOVID19RiskFactors" name="Tobacco COVID-19 Risk Factors"/>
-	<artifact id="ValueSet/VentilatorDevices" key="ValueSet-VentilatorDevices" name="Ventilator Devices"/>
-	<artifact id="ValueSet/VentilatorObservations" key="ValueSet-VentilatorObservations" name="Ventilator Observations"/>
-	<artifact id="ValueSet/VentilatorProcedures" key="ValueSet-VentilatorProcedures" name="Ventilator Procedures"/>
-	<artifact id="Organization/X140008" key="Organization-X140008" name="X140008"/>
-	<artifact id="Organization/X140010" key="Organization-X140010" name="X140010"/>
-	<artifact id="Organization/X140048" key="Organization-X140048" name="X140048"/>
-	<artifact id="Organization/X140049" key="Organization-X140049" name="X140049"/>
-	<artifact id="Organization/X140054" key="Organization-X140054" name="X140054"/>
-	<artifact id="Organization/X140062" key="Organization-X140062" name="X140062"/>
-	<artifact id="Organization/X140063" key="Organization-X140063" name="X140063"/>
-	<artifact id="Organization/X140065" key="Organization-X140065" name="X140065"/>
-	<artifact id="Organization/X140068" key="Organization-X140068" name="X140068"/>
-	<artifact id="Organization/X140080" key="Organization-X140080" name="X140080"/>
-	<artifact id="Organization/X140082" key="Organization-X140082" name="X140082"/>
-	<artifact id="Organization/X140083" key="Organization-X140083" name="X140083"/>
-	<artifact id="Organization/X140088" key="Organization-X140088" name="X140088"/>
-	<artifact id="Organization/X140095" key="Organization-X140095" name="X140095"/>
-	<artifact id="Organization/X140103" key="Organization-X140103" name="X140103"/>
-	<artifact id="Organization/X140114" key="Organization-X140114" name="X140114"/>
-	<artifact id="Organization/X140115" key="Organization-X140115" name="X140115"/>
-	<artifact id="Organization/X140117" key="Organization-X140117" name="X140117"/>
-	<artifact id="Organization/X140119" key="Organization-X140119" name="X140119"/>
-	<artifact id="Organization/X140124" key="Organization-X140124" name="X140124"/>
-	<artifact id="Organization/X140133" key="Organization-X140133" name="X140133"/>
-	<artifact id="Organization/X140150" key="Organization-X140150" name="X140150"/>
-	<artifact id="Organization/X140158" key="Organization-X140158" name="X140158"/>
-	<artifact id="Organization/X140177" key="Organization-X140177" name="X140177"/>
-	<artifact id="Organization/X140179" key="Organization-X140179" name="X140179"/>
-	<artifact id="Organization/X140180" key="Organization-X140180" name="X140180"/>
-	<artifact id="Organization/X140181" key="Organization-X140181" name="X140181"/>
-	<artifact id="Organization/X140182" key="Organization-X140182" name="X140182"/>
-	<artifact id="Organization/X140191" key="Organization-X140191" name="X140191"/>
-	<artifact id="Organization/X140197" key="Organization-X140197" name="X140197"/>
-	<artifact id="Organization/X140206" key="Organization-X140206" name="X140206"/>
-	<artifact id="Organization/X140208" key="Organization-X140208" name="X140208"/>
-	<artifact id="Organization/X140223" key="Organization-X140223" name="X140223"/>
-	<artifact id="Organization/X140224" key="Organization-X140224" name="X140224"/>
-	<artifact id="Organization/X140240" key="Organization-X140240" name="X140240"/>
-	<artifact id="Organization/X140250" key="Organization-X140250" name="X140250"/>
-	<artifact id="Organization/X140251" key="Organization-X140251" name="X140251"/>
-	<artifact id="Organization/X140252" key="Organization-X140252" name="X140252"/>
-	<artifact id="Organization/X140258" key="Organization-X140258" name="X140258"/>
-	<artifact id="Organization/X140276" key="Organization-X140276" name="X140276"/>
-	<artifact id="Organization/X140281" key="Organization-X140281" name="X140281"/>
-	<artifact id="Organization/X140290" key="Organization-X140290" name="X140290"/>
-	<artifact id="Organization/X140300" key="Organization-X140300" name="X140300"/>
-	<artifact id="Organization/X143300" key="Organization-X143300" name="X143300"/>
-	<artifact id="Organization/X143302" key="Organization-X143302" name="X143302"/>
-	<artifact id="Organization/X410004" key="Organization-X410004" name="X410004"/>
-	<artifact id="Organization/X410005" key="Organization-X410005" name="X410005"/>
-	<artifact id="Organization/X410006" key="Organization-X410006" name="X410006"/>
-	<artifact id="Organization/X410007" key="Organization-X410007" name="X410007"/>
-	<artifact id="Organization/X410008" key="Organization-X410008" name="X410008"/>
-	<artifact id="Organization/X410009" key="Organization-X410009" name="X410009"/>
-	<artifact id="Organization/X410010" key="Organization-X410010" name="X410010"/>
-	<artifact id="Organization/X410011" key="Organization-X410011" name="X410011"/>
-	<artifact id="Organization/X410013" key="Organization-X410013" name="X410013"/>
-	<artifact id="Location/states-NJ" key="Location-states-NJ" name="states-NJ"/>
-	<page key="NA" name="(NA)"/>
-	<page key="many" name="(many)"/>
-	<page key="phrase_book" name="A Phrase Book for Measures Supporting Automation"/>
-	<page key="actors" name="Actors"/>
-	<page key="measure_aggregation" name="Aggregatating Measure Reports"/>
-	<page key="architecture" name="Architecture and Implementation"/>
-	<page key="artifacts" name="Artifacts Summary"/>
-	<page key="automation_testing_examples" name="Automation Testing Examples"/>
-	<page key="transaction-5" name="Communicate Results"/>
-	<page key="transaction-4" name="Compute Measure"/>
-	<page key="measure_automation" name="Computing Measures"/>
-	<page key="ConceptualModel" name="Conceptual Model"/>
-	<page key="measure_group_beds" name="Creating the Bed Availability Group"/>
-	<page key="measure_group_covid19_deaths" name="Creating the COVID 19 Deaths Group"/>
-	<page key="measure_group_hospital_acquired_covid19_patients" name="Creating the Hospital Acquired COVID 19 Group"/>
-	<page key="measure_group_covid19_patients" name="Creating the Patients with COVID 19 Group"/>
-	<page key="measure_group_ventilators" name="Creating the Ventilator Availability Group"/>
-	<page key="measure_creation" name="Defining a Measure from Essential Elements of Information"/>
-	<page key="Examples" name="Examples"/>
-	<page key="CSV_Conversion" name="Exchanging data via CSV Files"/>
-	<page key="fluent_query" name="Fluent Query"/>
-	<page key="glossary" name="Glossary of Terms"/>
-	<page key="Home" name="Home"/>
-	<page key="hospital_capacity_examples" name="Hospital Capacity Measures and Reports"/>
-	<page key="integration" name="Integration with Existing Systems"/>
-	<page key="introduction" name="Introduction"/>
-	<page key="intro" name="Introduction and Overview"/>
-	<page key="laboratory_reporting_examples" name="Laboratory Reporting Examples"/>
-	<page key="transaction-2" name="Produce Measure"/>
-	<page key="profiles_and_extensions" name="Profiles and Extensions"/>
-	<page key="transaction-1" name="Query Measure"/>
-	<page key="transaction-3" name="Query Measure Definition"/>
-	<page key="measure_library" name="Sample Measure Library"/>
-	<page key="SecurityConsiderations" name="Security Considerations"/>
-	<page key="situational_awareness_measures" name="Situational Awareness Measures"/>
-	<page key="spec" name="Specification Details"/>
-	<page key="supporting_vocabulary" name="Supporting Vocabulary"/>
-	<page key="toc" name="Table of Contents"/>
-	<page key="TechnologyEnvironment" name="Technology Environment"/>
-	<page key="vocabulary" name="Terminology Resources"/>
-	<page key="test_plan" name="Test Plan"/>
-	<page key="conformance" name="Testing and Conformance"/>
-	<page key="Transactions" name="Transactions"/>
-	<page key="UseCases" name="Use Cases"/>
+<version code="current" url="http://build.fhir.org/ig/HL7/fhir-saner"/>
+<version code="0.1.0" url="http://hl7.org/fhir/uv/saner/2021Jan"/>
+<version code="1.0.0" url="http://hl7.org/fhir/uv/saner/STU1"/>
+<version code="0.0.1" deprecated="true"/>
+<version code="0.1" deprecated="true"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="ValueSet/DecadeAgeBrackets" key="ValueSet-DecadeAgeBrackets" name="Age Brackets By Decade"/>
+<artifact id="ValueSet/ScoreAgeBrackets" key="ValueSet-ScoreAgeBrackets" name="Age Brackets By Score (20)"/>
+<artifact id="CodeSystem/IHE-ADX-agerange" key="CodeSystem-IHE-ADX-agerange" name="Age Range Coding System"/>
+<artifact id="ValueSet/AllCOVID19RiskFactors" key="ValueSet-AllCOVID19RiskFactors" name="All COVID-19 Risk Factors"/>
+<artifact id="StructureDefinition/MeasureAlternateCriteria" key="StructureDefinition-MeasurePopulationAlternateCriteria" name="Alternate criteria for performing a measure"/>
+<artifact id="StructureDefinition/MeasureGroupAttributes" key="StructureDefinition-MeasureGroupAttributes" name="Attributes describing a group of measures"/>
+<artifact id="ValueSet/BedLocationOperationalStatus" key="ValueSet-BedLocationOperationalStatus" name="Bed Location Operational Status"/>
+<artifact id="Measure/CDCHealthcareSupplyPathway" key="Measure-CDCHealthcareSupplyPathway" name="CDC Healthcare Supply Pathway"/>
+<artifact id="Measure/CDCPatientImpactAndHospitalCapacity" key="Measure-CDCPatientImpactAndHospitalCapacity" name="CDC Patient Impact and Hospital Capacity"/>
+<artifact id="Measure/CDCHealthcareWorkerStaffingPathway" key="Measure-CDCHealthcareWorkerStaffingPathway" name="CDCHealthcareWorkerStaffingPathway"/>
+<artifact id="ValueSet/COPDCOVID19RiskFactors" key="ValueSet-COPDCOVID19RiskFactors" name="COPD COVID-19 Risk Factors"/>
+<artifact id="ValueSet/COVID19Complications" key="ValueSet-COVID19Complications" name="COVID-19 Complications"/>
+<artifact id="ValueSet/PositiveResults" key="ValueSet-PositiveResults" name="COVID-19 Detected"/>
+<artifact id="ValueSet/Covid19Labs" key="ValueSet-Covid19Labs" name="COVID-19 Diagnostic Test"/>
+<artifact id="ValueSet/IsolationPrecautions" key="ValueSet-IsolationPrecautions" name="COVID-19 Isolation Precautions"/>
+<artifact id="ValueSet/NegativeResults" key="ValueSet-NegativeResults" name="COVID-19 Not Detected"/>
+<artifact id="ValueSet/COVID19Antibody" key="ValueSet-COVID19Antibody" name="COVID19Antibody"/>
+<artifact id="ValueSet/COVID19DXICD10" key="ValueSet-COVID19DXICD10" name="COVID19DXICD10"/>
+<artifact id="ValueSet/COVID19DXSNOMED" key="ValueSet-COVID19DXSNOMED" name="COVID19DXSNOMED"/>
+<artifact id="ValueSet/COVID19Exposures" key="ValueSet-COVID19Exposures" name="COVID19Exposures"/>
+<artifact id="ValueSet/COVID19Organism" key="ValueSet-COVID19Organism" name="COVID19Organism"/>
+<artifact id="StructureDefinition/CapabilityStatementWithSlices" key="StructureDefinition-CapabilityStatementWithSlices" name="Capability Statements with Slices"/>
+<artifact id="ValueSet/CardiovascularCOVID19RiskFactors" key="ValueSet-CardiovascularCOVID19RiskFactors" name="Cardiovascular COVID-19 Risk Factors"/>
+<artifact id="ValueSet/VTEReports" key="ValueSet-VTEReports" name="Codes for reports about VTE Diagnosics"/>
+<artifact id="Measure/ComputableCDCPatientImpactAndHospitalCapacity" key="Measure-ComputableCDCPatientImpactAndHospitalCapacity" name="Computable CDC Patient Impact and Hospital Capacity"/>
+<artifact id="Library/ComputableNHSNMeasureLibrary" key="Library-ComputableNHSNMeasureLibrary" name="ComputableNHSNMeasureLibrary"/>
+<artifact id="ValueSet/ConfirmedCOVID19Diagnoses" key="ValueSet-ConfirmedCOVID19Diagnoses" name="Confirmed COVID-19 Diagnosis Values"/>
+<artifact id="CapabilityStatement/DataSource" key="CapabilityStatement-DataSource" name="DataSource"/>
+<artifact id="CapabilityStatement/DataSource-ComputeMeasure" key="CapabilityStatement-DataSource-ComputeMeasure" name="DataSource-ComputeMeasure"/>
+<artifact id="ValueSet/DestinationRoles" key="ValueSet-DestinationRoles" name="DestinationRoles"/>
+<artifact id="ValueSet/DiabetesCOVID19RiskFactors" key="ValueSet-DiabetesCOVID19RiskFactors" name="Diabetes COVID-19 Risk Factors"/>
+<artifact id="StructureDefinition/ReportingPeriod" key="StructureDefinition-ReportingPeriod" name="Enables specification of proposed measure reporting"/>
+<artifact id="ValueSet/EventContext" key="ValueSet-EventContext" name="Event Context"/>
+<artifact id="AuditEvent/ExAuditEventBase" key="AuditEvent-ExAuditEventBase" name="ExAuditEventBase"/>
+<artifact id="MeasureReport/ExampleNJ-20200404-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200404-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200404-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200404-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200404-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200404-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200405-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200405-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200405-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200405-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200405-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200405-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200406-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200406-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200406-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200406-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200406-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200406-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200407-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200407-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200407-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200407-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200407-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200407-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200408-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200408-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200408-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200408-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200408-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200408-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200409-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200409-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200409-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200409-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200409-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200409-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200410-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200410-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200410-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200410-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200410-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200410-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200411-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200411-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200411-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200411-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200411-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200411-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200412-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200412-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200412-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200412-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200412-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200412-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200413-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200413-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200413-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200413-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200413-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200413-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200414-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200414-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200414-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200414-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200414-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200414-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200415-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200415-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200415-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200415-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200415-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200415-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200416-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200416-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200416-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200416-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200416-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200416-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200417-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200417-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200417-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200417-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200417-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200417-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200418-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200418-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200418-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200418-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200418-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200418-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200419-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200419-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200419-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200419-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200419-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200419-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200420-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200420-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200420-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200420-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200420-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200420-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200421-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200421-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200421-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200421-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200421-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200421-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200422-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200422-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200422-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200422-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200422-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200422-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200423-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200423-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200423-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200423-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200423-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200423-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200424-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200424-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200424-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200424-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200424-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200424-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="MeasureReport/ExampleNJ-20200425-CDCPatientImpactAndHospitalCapacity" key="MeasureReport-ExampleNJ-20200425-CDCPatientImpactAndHospitalCapacity" name="ExampleNJ-20200425-CDCPatientImpactAndHospitalCapacity"/>
+<artifact id="MeasureReport/ExampleNJ-20200425-FEMADailyHospitalCOVID19Reporting" key="MeasureReport-ExampleNJ-20200425-FEMADailyHospitalCOVID19Reporting" name="ExampleNJ-20200425-FEMADailyHospitalCOVID19Reporting"/>
+<artifact id="StructureDefinition/GeoLocation" key="StructureDefinition-GeoLocation-Extension" name="Extension Attributes to associate with a Location Reference to simplify Geographic search"/>
+<artifact id="Measure/FEMADailyHospitalCOVID19Reporting" key="Measure-FEMADailyHospitalCOVID19Reporting" name="FEMA Laboratory Orders and Results Daily Increase Reporting"/>
+<artifact id="Library/FEMAMeasureLibrary" key="Library-FEMAMeasureLibrary" name="FEMAMeasureLibrary"/>
+<artifact id="StructureDefinition/AuditEventBase" key="StructureDefinition-AuditEventBase" name="General Audit Event Requirements"/>
+<artifact id="ConceptMap/HAvBED2toFHIR" key="ConceptMap-HAvBED2toFHIR" name="HAvBED2 to FHIR Concept Map"/>
+<artifact id="ValueSet/HealthcareServiceLocation" key="ValueSet-HealthcareServiceLocation" name="HealthcareServiceLocation"/>
+<artifact id="ValueSet/HypertensionCOVID19RiskFactors" key="ValueSet-HypertensionCOVID19RiskFactors" name="Hypertension COVID-19 Risk Factors"/>
+<artifact id="ValueSet/ICULocations" key="ValueSet-ICULocations" name="ICU Locations"/>
+<artifact id="ValueSet/InpatientLocations" key="ValueSet-InpatientLocations" name="Inpatient Locations"/>
+<artifact id="ValueSet/KidneyDiseaseCOVID19RiskFactors" key="ValueSet-KidneyDiseaseCOVID19RiskFactors" name="Kidney Disease COVID-19 Risk Factors"/>
+<artifact id="Location/Loc-X140008" key="Location-Loc-X140008" name="Loc-X140008"/>
+<artifact id="Location/Loc-X140010" key="Location-Loc-X140010" name="Loc-X140010"/>
+<artifact id="Location/Loc-X140048" key="Location-Loc-X140048" name="Loc-X140048"/>
+<artifact id="Location/Loc-X140049" key="Location-Loc-X140049" name="Loc-X140049"/>
+<artifact id="Location/Loc-X140054" key="Location-Loc-X140054" name="Loc-X140054"/>
+<artifact id="Location/Loc-X140062" key="Location-Loc-X140062" name="Loc-X140062"/>
+<artifact id="Location/Loc-X140063" key="Location-Loc-X140063" name="Loc-X140063"/>
+<artifact id="Location/Loc-X140065" key="Location-Loc-X140065" name="Loc-X140065"/>
+<artifact id="Location/Loc-X140068" key="Location-Loc-X140068" name="Loc-X140068"/>
+<artifact id="Location/Loc-X140080" key="Location-Loc-X140080" name="Loc-X140080"/>
+<artifact id="Location/Loc-X140082" key="Location-Loc-X140082" name="Loc-X140082"/>
+<artifact id="Location/Loc-X140083" key="Location-Loc-X140083" name="Loc-X140083"/>
+<artifact id="Location/Loc-X140088" key="Location-Loc-X140088" name="Loc-X140088"/>
+<artifact id="Location/Loc-X140095" key="Location-Loc-X140095" name="Loc-X140095"/>
+<artifact id="Location/Loc-X140103" key="Location-Loc-X140103" name="Loc-X140103"/>
+<artifact id="Location/Loc-X140114" key="Location-Loc-X140114" name="Loc-X140114"/>
+<artifact id="Location/Loc-X140115" key="Location-Loc-X140115" name="Loc-X140115"/>
+<artifact id="Location/Loc-X140117" key="Location-Loc-X140117" name="Loc-X140117"/>
+<artifact id="Location/Loc-X140119" key="Location-Loc-X140119" name="Loc-X140119"/>
+<artifact id="Location/Loc-X140124" key="Location-Loc-X140124" name="Loc-X140124"/>
+<artifact id="Location/Loc-X140133" key="Location-Loc-X140133" name="Loc-X140133"/>
+<artifact id="Location/Loc-X140150" key="Location-Loc-X140150" name="Loc-X140150"/>
+<artifact id="Location/Loc-X140158" key="Location-Loc-X140158" name="Loc-X140158"/>
+<artifact id="Location/Loc-X140177" key="Location-Loc-X140177" name="Loc-X140177"/>
+<artifact id="Location/Loc-X140179" key="Location-Loc-X140179" name="Loc-X140179"/>
+<artifact id="Location/Loc-X140180" key="Location-Loc-X140180" name="Loc-X140180"/>
+<artifact id="Location/Loc-X140181" key="Location-Loc-X140181" name="Loc-X140181"/>
+<artifact id="Location/Loc-X140182" key="Location-Loc-X140182" name="Loc-X140182"/>
+<artifact id="Location/Loc-X140191" key="Location-Loc-X140191" name="Loc-X140191"/>
+<artifact id="Location/Loc-X140197" key="Location-Loc-X140197" name="Loc-X140197"/>
+<artifact id="Location/Loc-X140206" key="Location-Loc-X140206" name="Loc-X140206"/>
+<artifact id="Location/Loc-X140208" key="Location-Loc-X140208" name="Loc-X140208"/>
+<artifact id="Location/Loc-X140223" key="Location-Loc-X140223" name="Loc-X140223"/>
+<artifact id="Location/Loc-X140224" key="Location-Loc-X140224" name="Loc-X140224"/>
+<artifact id="Location/Loc-X140240" key="Location-Loc-X140240" name="Loc-X140240"/>
+<artifact id="Location/Loc-X140250" key="Location-Loc-X140250" name="Loc-X140250"/>
+<artifact id="Location/Loc-X140251" key="Location-Loc-X140251" name="Loc-X140251"/>
+<artifact id="Location/Loc-X140252" key="Location-Loc-X140252" name="Loc-X140252"/>
+<artifact id="Location/Loc-X140258" key="Location-Loc-X140258" name="Loc-X140258"/>
+<artifact id="Location/Loc-X140276" key="Location-Loc-X140276" name="Loc-X140276"/>
+<artifact id="Location/Loc-X140281" key="Location-Loc-X140281" name="Loc-X140281"/>
+<artifact id="Location/Loc-X140290" key="Location-Loc-X140290" name="Loc-X140290"/>
+<artifact id="Location/Loc-X140300" key="Location-Loc-X140300" name="Loc-X140300"/>
+<artifact id="Location/Loc-X143300" key="Location-Loc-X143300" name="Loc-X143300"/>
+<artifact id="Location/Loc-X143302" key="Location-Loc-X143302" name="Loc-X143302"/>
+<artifact id="Location/Loc-X410004" key="Location-Loc-X410004" name="Loc-X410004"/>
+<artifact id="Location/Loc-X410005" key="Location-Loc-X410005" name="Loc-X410005"/>
+<artifact id="Location/Loc-X410006" key="Location-Loc-X410006" name="Loc-X410006"/>
+<artifact id="Location/Loc-X410007" key="Location-Loc-X410007" name="Loc-X410007"/>
+<artifact id="Location/Loc-X410008" key="Location-Loc-X410008" name="Loc-X410008"/>
+<artifact id="Location/Loc-X410009" key="Location-Loc-X410009" name="Loc-X410009"/>
+<artifact id="Location/Loc-X410010" key="Location-Loc-X410010" name="Loc-X410010"/>
+<artifact id="Location/Loc-X410011" key="Location-Loc-X410011" name="Loc-X410011"/>
+<artifact id="Location/Loc-X410013" key="Location-Loc-X410013" name="Loc-X410013"/>
+<artifact id="StructureDefinition/MeasureExpectation" key="StructureDefinition-measure-expectation" name="Measure Expectation"/>
+<artifact id="CodeSystem/MeasureGroupSystem" key="CodeSystem-MeasureGroupSystem" name="Measure Group System"/>
+<artifact id="ValueSet/MeasureGroups" key="ValueSet-MeasureGroups" name="Measure Groups"/>
+<artifact id="ValueSet/MeasurePopulations" key="ValueSet-MeasurePopulations" name="Measure Populations"/>
+<artifact id="CodeSystem/MeasureRateAggregation" key="CodeSystem-MeasureRateAggregation" name="Measure Rate Aggregation Coding System"/>
+<artifact id="ValueSet/MeasureRateAggregationValues" key="ValueSet-MeasureRateAggregationValues" name="Measure Rate Aggregation Value Set"/>
+<artifact id="ValueSet/MeasureStatus" key="ValueSet-MeasureStatus" name="Measure Status Values"/>
+<artifact id="OperationDefinition/Measure-evaluate-measure" key="OperationDefinition-Measure-evaluate-measure" name="Measure-evaluate-measure"/>
+<artifact id="OperationDefinition/Measure-report-csv" key="OperationDefinition-Measure-report-csv" name="Measure-report-csv"/>
+<artifact id="CapabilityStatement/MeasureComputer" key="CapabilityStatement-MeasureComputer" name="MeasureComputer"/>
+<artifact id="CapabilityStatement/MeasureComputer-ComputeMeasure" key="CapabilityStatement-MeasureComputer-ComputeMeasure" name="MeasureComputer-ComputeMeasure"/>
+<artifact id="CapabilityStatement/MeasureConsumer-Aggregate" key="CapabilityStatement-MeasureConsumer-Aggregate" name="MeasureConsumer-Aggregate"/>
+<artifact id="CapabilityStatement/MeasureConsumer-CSV-Pull" key="CapabilityStatement-MeasureConsumer-CSV-Pull" name="MeasureConsumer-CSV-Pull"/>
+<artifact id="CapabilityStatement/MeasureConsumer-CSV-Push" key="CapabilityStatement-MeasureConsumer-CSV-Push" name="MeasureConsumer-CSV-Push"/>
+<artifact id="CapabilityStatement/MeasureConsumer-ProduceMeasure-CSV-Push" key="CapabilityStatement-MeasureConsumer-ProduceMeasure-CSV-Push" name="MeasureConsumer-ProduceMeasure-CSV-Push"/>
+<artifact id="CapabilityStatement/MeasureConsumer-ProduceMeasure-Push" key="CapabilityStatement-MeasureConsumer-ProduceMeasure-Push" name="MeasureConsumer-ProduceMeasure-Push"/>
+<artifact id="CapabilityStatement/MeasureConsumer-ProduceMeasure-SupplementalData" key="CapabilityStatement-MeasureConsumer-ProduceMeasure-SupplementalData" name="MeasureConsumer-ProduceMeasure-SupplementalData"/>
+<artifact id="CapabilityStatement/MeasureConsumer-Pull" key="CapabilityStatement-MeasureConsumer-Pull" name="MeasureConsumer-Pull"/>
+<artifact id="CapabilityStatement/MeasureConsumer-Push" key="CapabilityStatement-MeasureConsumer-Push" name="MeasureConsumer-Push"/>
+<artifact id="CapabilityStatement/MeasureConsumer-QueryMeasure-CSV-Pull" key="CapabilityStatement-MeasureConsumer-QueryMeasure-CSV-Pull" name="MeasureConsumer-QueryMeasure-CSV-Pull"/>
+<artifact id="CapabilityStatement/MeasureConsumer-QueryMeasure-Pull" key="CapabilityStatement-MeasureConsumer-QueryMeasure-Pull" name="MeasureConsumer-QueryMeasure-Pull"/>
+<artifact id="CapabilityStatement/MeasureConsumer-SupplementalData" key="CapabilityStatement-MeasureConsumer-SupplementalData" name="MeasureConsumer-SupplementalData"/>
+<artifact id="StructureDefinition/MeasureCriteria" key="StructureDefinition-MeasureCriteria" name="MeasureCriteria"/>
+<artifact id="CapabilityStatement/MeasureDefinitionConsumer" key="CapabilityStatement-MeasureDefinitionConsumer" name="MeasureDefinitionConsumer"/>
+<artifact id="CapabilityStatement/MeasureDefinitionConsumer-QueryMeasureDefinition" key="CapabilityStatement-MeasureDefinitionConsumer-QueryMeasureDefinition" name="MeasureDefinitionConsumer-QueryMeasureDefinition"/>
+<artifact id="CapabilityStatement/MeasureDefinitionSource" key="CapabilityStatement-MeasureDefinitionSource" name="MeasureDefinitionSource"/>
+<artifact id="CapabilityStatement/MeasureDefinitionSource-QueryMeasureDefinition" key="CapabilityStatement-MeasureDefinitionSource-QueryMeasureDefinition" name="MeasureDefinitionSource-QueryMeasureDefinition"/>
+<artifact id="OperationDefinition/MeasureReport-aggregate" key="OperationDefinition-MeasureReport-aggregate" name="MeasureReport-aggregate"/>
+<artifact id="OperationDefinition/MeasureReport-read-csv" key="OperationDefinition-MeasureReport-read-csv" name="MeasureReport-read-csv"/>
+<artifact id="OperationDefinition/MeasureReport-search-csv" key="OperationDefinition-MeasureReport-search-csv" name="MeasureReport-search-csv"/>
+<artifact id="ValueSet/MeasureScoring" key="ValueSet-MeasureScoring" name="MeasureScoring"/>
+<artifact id="CapabilityStatement/MeasureSource-Aggregate" key="CapabilityStatement-MeasureSource-Aggregate" name="MeasureSource-Aggregate"/>
+<artifact id="CapabilityStatement/MeasureSource-CSV-Pull" key="CapabilityStatement-MeasureSource-CSV-Pull" name="MeasureSource-CSV-Pull"/>
+<artifact id="CapabilityStatement/MeasureSource-CSV-Push" key="CapabilityStatement-MeasureSource-CSV-Push" name="MeasureSource-CSV-Push"/>
+<artifact id="CapabilityStatement/MeasureSource-ProduceMeasure-CSV-Push" key="CapabilityStatement-MeasureSource-ProduceMeasure-CSV-Push" name="MeasureSource-ProduceMeasure-CSV-Push"/>
+<artifact id="CapabilityStatement/MeasureSource-ProduceMeasure-Push" key="CapabilityStatement-MeasureSource-ProduceMeasure-Push" name="MeasureSource-ProduceMeasure-Push"/>
+<artifact id="CapabilityStatement/MeasureSource-ProduceMeasure-SupplementalData" key="CapabilityStatement-MeasureSource-ProduceMeasure-SupplementalData" name="MeasureSource-ProduceMeasure-SupplementalData"/>
+<artifact id="CapabilityStatement/MeasureSource-Pull" key="CapabilityStatement-MeasureSource-Pull" name="MeasureSource-Pull"/>
+<artifact id="CapabilityStatement/MeasureSource-Push" key="CapabilityStatement-MeasureSource-Push" name="MeasureSource-Push"/>
+<artifact id="CapabilityStatement/MeasureSource-QueryMeasure-CSV-Pull" key="CapabilityStatement-MeasureSource-QueryMeasure-CSV-Pull" name="MeasureSource-QueryMeasure-CSV-Pull"/>
+<artifact id="CapabilityStatement/MeasureSource-QueryMeasure-Pull" key="CapabilityStatement-MeasureSource-QueryMeasure-Pull" name="MeasureSource-QueryMeasure-Pull"/>
+<artifact id="CapabilityStatement/MeasureSource-SupplementalData" key="CapabilityStatement-MeasureSource-SupplementalData" name="MeasureSource-SupplementalData"/>
+<artifact id="CodeSystem/MeasuredValues" key="CodeSystem-MeasuredValues" name="Measured Values in Sample Measures"/>
+<artifact id="Organization/MiDOH" key="Organization-MiDOH" name="MiDOH"/>
+<artifact id="Library/NHSNMeasureLibrary" key="Library-NHSNMeasureLibrary" name="NHSNMeasureLibrary"/>
+<artifact id="Organization/NJ-DPH" key="Organization-NJ-DPH" name="NJ-DPH"/>
+<artifact id="ValueSet/NeoplasticCOVID19RiskFactors" key="ValueSet-NeoplasticCOVID19RiskFactors" name="Neoplastic COVID-19 Risk Factors"/>
+<artifact id="ValueSet/ObesityCOVID19RiskFactors" key="ValueSet-ObesityCOVID19RiskFactors" name="Obesity COVID-19 Risk Factors"/>
+<artifact id="ValueSet/PatientsOnVentilator" key="ValueSet-PatientsOnVentilator" name="Observations for Patients on a Ventilator"/>
+<artifact id="ValueSet/PatientDeaths" key="ValueSet-PatientDeaths" name="Patient Died"/>
+<artifact id="Measure/PatientsByRiskFactorWithSupplementalData" key="Measure-PatientsByRiskFactorWithSupplementalData" name="Patients By Risk Factor"/>
+<artifact id="StructureDefinition/PreciseDateTime" key="StructureDefinition-PreciseDateTime" name="Precise Date Time"/>
+<artifact id="ValueSet/PregnancyCOVID19RiskFactors" key="ValueSet-PregnancyCOVID19RiskFactors" name="Pregnancy COVID-19 Risk Factors"/>
+<artifact id="StructureDefinition/PublicHealthMeasure" key="StructureDefinition-PublicHealthMeasure" name="Public Health Measure"/>
+<artifact id="ValueSet/PublicHealthMeasureAttachmentTypes" key="ValueSet-PublicHealthMeasureAttachmentTypes" name="Public Health Measure Attachment Types"/>
+<artifact id="StructureDefinition/PublicHealthMeasureLibrary" key="StructureDefinition-PublicHealthMeasureLibrary" name="Public Health Measure Library"/>
+<artifact id="StructureDefinition/PublicHealthMeasureReport" key="StructureDefinition-PublicHealthMeasureReport" name="Public Health Measure Report"/>
+<artifact id="CodeSystem/PublicHealthMeasureScoring" key="CodeSystem-PublicHealthMeasureScoring" name="Public Health Measure Scoring"/>
+<artifact id="StructureDefinition/PublicHealthMeasureMetadataAttachment" key="StructureDefinition-PublicHealthMeasureMetadataAttachment" name="PublicHealthMeasureMetadataAttachment"/>
+<artifact id="StructureDefinition/MeasureReportingTiming" key="StructureDefinition-MeasureReportingTiming" name="Recommended Measure Reporting Times"/>
+<artifact id="ValueSet/Remdesivir" key="ValueSet-Remdesivir" name="Remdesivir"/>
+<artifact id="ValueSet/SARSCoV2GeneticLabs" key="ValueSet-SARSCoV2GeneticLabs" name="SARSCoV2 Genetic Labs"/>
+<artifact id="ValueSet/SARSCoV2Labs" key="ValueSet-SARSCoV2Labs" name="SARSCoV2Labs"/>
+<artifact id="StructureDefinition/MeasuredItemDescription" key="StructureDefinition-MeasuredItemDescription" name="Saner Measured Item Description"/>
+<artifact id="SearchParameter/SearchParameter-code" key="SearchParameter-SearchParameter-code" name="Search by Code in Definitions and Instances"/>
+<artifact id="SearchParameter/SearchParameter-definition-text" key="SearchParameter-SearchParameter-definition-text" name="Search by Text in Definitions"/>
+<artifact id="SearchParameter/SearchParameter-disposition" key="SearchParameter-SearchParameter-disposition" name="Search by hospitalization.dispositionCode in Encounters"/>
+<artifact id="ValueSet/SickleCellCOVID19RiskFactors" key="ValueSet-SickleCellCOVID19RiskFactors" name="Sickle Cell COVID-19 Risk Factors"/>
+<artifact id="CodeSystem/MeasurePopulationSystem" key="CodeSystem-MeasurePopulationSystem" name="Situational Awareness Measure Populations"/>
+<artifact id="ValueSet/SourceOrDestinationRoles" key="ValueSet-SourceOrDestinationRoles" name="SourceOrDestinationRoles"/>
+<artifact id="ValueSet/SourceRoles" key="ValueSet-SourceRoles" name="SourceRoles"/>
+<artifact id="ValueSet/SuspectedOrConfirmedCOVID19Diagnoses" key="ValueSet-SuspectedOrConfirmedCOVID19Diagnoses" name="Suspected Or Diagnosed COVID-19"/>
+<artifact id="ValueSet/SuspectedCOVID19Diagnoses" key="ValueSet-SuspectedCOVID19Diagnoses" name="SuspectedCOVID19Diagnoses"/>
+<artifact id="ValueSet/TobaccoCOVID19RiskFactors" key="ValueSet-TobaccoCOVID19RiskFactors" name="Tobacco COVID-19 Risk Factors"/>
+<artifact id="ValueSet/VentilatorDevices" key="ValueSet-VentilatorDevices" name="Ventilator Devices"/>
+<artifact id="ValueSet/VentilatorObservations" key="ValueSet-VentilatorObservations" name="Ventilator Observations"/>
+<artifact id="ValueSet/VentilatorProcedures" key="ValueSet-VentilatorProcedures" name="Ventilator Procedures"/>
+<artifact id="Organization/X140008" key="Organization-X140008" name="X140008"/>
+<artifact id="Organization/X140010" key="Organization-X140010" name="X140010"/>
+<artifact id="Organization/X140048" key="Organization-X140048" name="X140048"/>
+<artifact id="Organization/X140049" key="Organization-X140049" name="X140049"/>
+<artifact id="Organization/X140054" key="Organization-X140054" name="X140054"/>
+<artifact id="Organization/X140062" key="Organization-X140062" name="X140062"/>
+<artifact id="Organization/X140063" key="Organization-X140063" name="X140063"/>
+<artifact id="Organization/X140065" key="Organization-X140065" name="X140065"/>
+<artifact id="Organization/X140068" key="Organization-X140068" name="X140068"/>
+<artifact id="Organization/X140080" key="Organization-X140080" name="X140080"/>
+<artifact id="Organization/X140082" key="Organization-X140082" name="X140082"/>
+<artifact id="Organization/X140083" key="Organization-X140083" name="X140083"/>
+<artifact id="Organization/X140088" key="Organization-X140088" name="X140088"/>
+<artifact id="Organization/X140095" key="Organization-X140095" name="X140095"/>
+<artifact id="Organization/X140103" key="Organization-X140103" name="X140103"/>
+<artifact id="Organization/X140114" key="Organization-X140114" name="X140114"/>
+<artifact id="Organization/X140115" key="Organization-X140115" name="X140115"/>
+<artifact id="Organization/X140117" key="Organization-X140117" name="X140117"/>
+<artifact id="Organization/X140119" key="Organization-X140119" name="X140119"/>
+<artifact id="Organization/X140124" key="Organization-X140124" name="X140124"/>
+<artifact id="Organization/X140133" key="Organization-X140133" name="X140133"/>
+<artifact id="Organization/X140150" key="Organization-X140150" name="X140150"/>
+<artifact id="Organization/X140158" key="Organization-X140158" name="X140158"/>
+<artifact id="Organization/X140177" key="Organization-X140177" name="X140177"/>
+<artifact id="Organization/X140179" key="Organization-X140179" name="X140179"/>
+<artifact id="Organization/X140180" key="Organization-X140180" name="X140180"/>
+<artifact id="Organization/X140181" key="Organization-X140181" name="X140181"/>
+<artifact id="Organization/X140182" key="Organization-X140182" name="X140182"/>
+<artifact id="Organization/X140191" key="Organization-X140191" name="X140191"/>
+<artifact id="Organization/X140197" key="Organization-X140197" name="X140197"/>
+<artifact id="Organization/X140206" key="Organization-X140206" name="X140206"/>
+<artifact id="Organization/X140208" key="Organization-X140208" name="X140208"/>
+<artifact id="Organization/X140223" key="Organization-X140223" name="X140223"/>
+<artifact id="Organization/X140224" key="Organization-X140224" name="X140224"/>
+<artifact id="Organization/X140240" key="Organization-X140240" name="X140240"/>
+<artifact id="Organization/X140250" key="Organization-X140250" name="X140250"/>
+<artifact id="Organization/X140251" key="Organization-X140251" name="X140251"/>
+<artifact id="Organization/X140252" key="Organization-X140252" name="X140252"/>
+<artifact id="Organization/X140258" key="Organization-X140258" name="X140258"/>
+<artifact id="Organization/X140276" key="Organization-X140276" name="X140276"/>
+<artifact id="Organization/X140281" key="Organization-X140281" name="X140281"/>
+<artifact id="Organization/X140290" key="Organization-X140290" name="X140290"/>
+<artifact id="Organization/X140300" key="Organization-X140300" name="X140300"/>
+<artifact id="Organization/X143300" key="Organization-X143300" name="X143300"/>
+<artifact id="Organization/X143302" key="Organization-X143302" name="X143302"/>
+<artifact id="Organization/X410004" key="Organization-X410004" name="X410004"/>
+<artifact id="Organization/X410005" key="Organization-X410005" name="X410005"/>
+<artifact id="Organization/X410006" key="Organization-X410006" name="X410006"/>
+<artifact id="Organization/X410007" key="Organization-X410007" name="X410007"/>
+<artifact id="Organization/X410008" key="Organization-X410008" name="X410008"/>
+<artifact id="Organization/X410009" key="Organization-X410009" name="X410009"/>
+<artifact id="Organization/X410010" key="Organization-X410010" name="X410010"/>
+<artifact id="Organization/X410011" key="Organization-X410011" name="X410011"/>
+<artifact id="Organization/X410013" key="Organization-X410013" name="X410013"/>
+<artifact id="Location/states-NJ" key="Location-states-NJ" name="states-NJ"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="phrase_book" name="A Phrase Book for Measures Supporting Automation"/>
+<page key="actors" name="Actors"/>
+<page key="measure_aggregation" name="Aggregatating Measure Reports"/>
+<page key="architecture" name="Architecture and Implementation"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="automation_testing_examples" name="Automation Testing Examples"/>
+<page key="transaction-5" name="Communicate Results"/>
+<page key="transaction-4" name="Compute Measure"/>
+<page key="measure_automation" name="Computing Measures"/>
+<page key="ConceptualModel" name="Conceptual Model"/>
+<page key="measure_group_beds" name="Creating the Bed Availability Group"/>
+<page key="measure_group_covid19_deaths" name="Creating the COVID 19 Deaths Group"/>
+<page key="measure_group_hospital_acquired_covid19_patients" name="Creating the Hospital Acquired COVID 19 Group"/>
+<page key="measure_group_covid19_patients" name="Creating the Patients with COVID 19 Group"/>
+<page key="measure_group_ventilators" name="Creating the Ventilator Availability Group"/>
+<page key="measure_creation" name="Defining a Measure from Essential Elements of Information"/>
+<page key="Examples" name="Examples"/>
+<page key="CSV_Conversion" name="Exchanging data via CSV Files"/>
+<page key="fluent_query" name="Fluent Query"/>
+<page key="glossary" name="Glossary of Terms"/>
+<page key="Home" name="Home"/>
+<page key="hospital_capacity_examples" name="Hospital Capacity Measures and Reports"/>
+<page key="integration" name="Integration with Existing Systems"/>
+<page key="introduction" name="Introduction"/>
+<page key="intro" name="Introduction and Overview"/>
+<page key="laboratory_reporting_examples" name="Laboratory Reporting Examples"/>
+<page key="transaction-2" name="Produce Measure"/>
+<page key="profiles_and_extensions" name="Profiles and Extensions"/>
+<page key="transaction-1" name="Query Measure"/>
+<page key="transaction-3" name="Query Measure Definition"/>
+<page key="measure_library" name="Sample Measure Library"/>
+<page key="SecurityConsiderations" name="Security Considerations"/>
+<page key="situational_awareness_measures" name="Situational Awareness Measures"/>
+<page key="spec" name="Specification Details"/>
+<page key="supporting_vocabulary" name="Supporting Vocabulary"/>
+<page key="toc" name="Table of Contents"/>
+<page key="TechnologyEnvironment" name="Technology Environment"/>
+<page key="vocabulary" name="Terminology Resources"/>
+<page key="test_plan" name="Test Plan"/>
+<page key="conformance" name="Testing and Conformance"/>
+<page key="Transactions" name="Transactions"/>
+<page key="UseCases" name="Use Cases"/>
 </specification>
