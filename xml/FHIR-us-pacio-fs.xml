@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/pacio-fs/2021Jan" ciUrl="https://build.fhir.org/ig/HL7/fhir-pacio-functional-status" defaultVersion="0.1.0" defaultWorkgroup="pc" gitUrl="https://github.com/HL7/fhir-pacio-functional-status" url="http://paciowg.github.io/functional-status-ig">
-<version code="current" url="https://build.fhir.org/ig/HL7/fhir-pacio-functional-status"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               url="http://hl7.org/fhir/us/pacio-fs"
+               ciUrl="http://build.fhir.org/ig/HL7/fhir-pacio-functional-status"
+               defaultWorkgroup="pc"
+               defaultVersion="1.0.0"
+               gitUrl="https://github.com/HL7/fhir-pacio-functional-status"
+               ballotUrl="http://hl7.org/fhir/us/pacio-fs">
+<version code="current" url="http://build.fhir.org/ig/HL7/fhir-pacio-functional-status"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/pacio-fs/STU1"/>
 <version code="0.1.0" url="http://hl7.org/fhir/us/pacio-fs/2021Jan"/>
+<version code="0.0.1" deprecated="true" url="http://example.org/fhir/STU1"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -95,7 +103,7 @@
 <artifact id="StructureDefinition/pacio-fs" key="StructureDefinition-pacio-fs" name="PACIO Functional Status"/>
 <artifact id="CapabilityStatement/pacio-fs" key="CapabilityStatement-pacio-fs" name="PACIO Functional Status Capability Statement"/>
 <artifact id="StructureDefinition/pacio-fsc" key="StructureDefinition-pacio-fsc" name="PACIO Functional Status Collection"/>
-<artifact id="CodeSystem/pacio-cat-cs" key="CodeSystem-pacio-cat-cs" name="PACIO Functioning Category Code System"/>
+<artifact id="CodeSystem/pacio-cat-fs" key="CodeSystem-pacio-cat-fs" name="PACIO Functioning Category Code System"/>
 <artifact id="ValueSet/pacio-cat-vs" key="ValueSet-pacio-cat-vs" name="PACIO Functioning Category Value Set"/>
 <artifact id="StructureDefinition/pacio-nhfs" key="StructureDefinition-pacio-nhfs" name="PACIO Narrative History of Functional Status"/>
 <artifact deprecated="true" id="StructureDefinition/pacio-functional-qr" key="StructureDefinition-pacio-functional-qr" name="PACIO Questionnaire Response"/>
