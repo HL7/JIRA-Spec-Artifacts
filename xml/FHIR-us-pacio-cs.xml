@@ -3,120 +3,116 @@
                url="http://hl7.org/fhir/us/pacio-cs"
                ciUrl="http://build.fhir.org/ig/HL7/fhir-pacio-cognitive-status"
                defaultWorkgroup="pc"
-               defaultVersion="current"
-               xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
+               defaultVersion="1.0.0"
                gitUrl="https://github.com/HL7/fhir-pacio-cognitive-status"
                ballotUrl="http://hl7.org/fhir/us/pacio-cs">
-   <version code="current" url="http://build.fhir.org/ig/example/example-ig"/>
-   <version code="0.0.1" url="http://example.org/fhir/STU1"/>
-   <version code="0.1" deprecated="true"/>
-   <artifactPageExtension value="-definitions"/>
-   <artifactPageExtension value="-examples"/>
-   <artifactPageExtension value="-mappings"/>
-   <artifact name="PACIO Bundled Cognitive Status"
-             key="StructureDefinition-pacio-bcs"
-             id="StructureDefinition/pacio-bcs"/>
-   <artifact name="PACIO Cognition Questionnaire Response"
-             key="StructureDefinition-pacio-cognition-qr"
-             id="StructureDefinition/pacio-cognition-qr"/>
-   <artifact name="PACIO Cognitive Status"
-             key="StructureDefinition-pacio-cs"
-             id="StructureDefinition/pacio-cs"/>
-   <artifact name="PACIO Prior Level of Cognitive Function"
-             key="StructureDefinition-pacio-plcf"
-             id="StructureDefinition/pacio-plcf"/>
-   <artifact name="Use of Device"
-             key="StructureDefinition-pacio-cs-dev"
-             id="StructureDefinition/pacio-cs-dev"/>
-   <artifact name="AssistanceRequired"
-             key="StructureDefinition-assistance-required"
-             id="StructureDefinition/assistance-required"/>
-   <artifact name="DevicePatientUsed"
-             key="StructureDefinition-device-patient-used"
-             id="StructureDefinition/device-patient-used"/>
-   <artifact name="BCS-Hospital-MOCA-1"
-             key="Observation-BCS-Hospital-MOCA-1"
-             id="Observation/BCS-Hospital-MOCA-1"/>
-   <artifact name="BCS-SNF-CAM-Admission-1"
-             key="Observation-BCS-SNF-CAM-Admission-1"
-             id="Observation/BCS-SNF-CAM-Admission-1"/>
-   <artifact name="BCS-SNF-CAM-Admission-1-Ob-Question-1"
-             key="Observation-BCS-SNF-CAM-Admission-1-Ob-Question-1"
-             id="Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1"/>
-   <artifact name="BCS-SNF-CAM-Admission-1-Ob-Question-3"
-             key="Observation-BCS-SNF-CAM-Admission-1-Ob-Question-3"
-             id="Observation/BCS-SNF-CAM-Admission-1-Ob-Question-3"/>
-   <artifact name="BCS-SNF-CAM-Admission-1-Ob-Question-5"
-             key="Observation-BCS-SNF-CAM-Admission-1-Ob-Question-5"
-             id="Observation/BCS-SNF-CAM-Admission-1-Ob-Question-5"/>
-   <artifact name="BSJ-Prior-Level-Of-Cognitive-Function-1"
-             key="Observation-BSJ-Prior-Level-Of-Cognitive-Function-1"
-             id="Observation/BSJ-Prior-Level-Of-Cognitive-Function-1"/>
-   <artifact name="Org-01" key="Organization-Org-01" id="Organization/Org-01"/>
-   <artifact name="Org-02" key="Organization-Org-02" id="Organization/Org-02"/>
-   <artifact name="Org-03" key="Organization-Org-03" id="Organization/Org-03"/>
-   <artifact name="Org-Loc-01"
-             key="Location-Org-Loc-01"
-             id="Location/Org-Loc-01"/>
-   <artifact name="Org-Loc-02"
-             key="Location-Org-Loc-02"
-             id="Location/Org-Loc-02"/>
-   <artifact name="Org-Loc-03"
-             key="Location-Org-Loc-03"
-             id="Location/Org-Loc-03"/>
-   <artifact name="Practitioner-HoneyJones"
-             key="Practitioner-Practitioner-HoneyJones"
-             id="Practitioner/Practitioner-HoneyJones"/>
-   <artifact name="Practitioner-JennyGlass"
-             key="Practitioner-Practitioner-JennyGlass"
-             id="Practitioner/Practitioner-JennyGlass"/>
-   <artifact name="Practitioner-JohnSmith"
-             key="Practitioner-Practitioner-JohnSmith"
-             id="Practitioner/Practitioner-JohnSmith"/>
-   <artifact name="Practitioner-LunaBaskins"
-             key="Practitioner-Practitioner-LunaBaskins"
-             id="Practitioner/Practitioner-LunaBaskins"/>
-   <artifact name="Practitioner-NoraOlogist"
-             key="Practitioner-Practitioner-NoraOlogist"
-             id="Practitioner/Practitioner-NoraOlogist"/>
-   <artifact name="QResponse-Hospital-MOCA-1"
-             key="QuestionnaireResponse-QResponse-Hospital-MOCA-1"
-             id="QuestionnaireResponse/QResponse-Hospital-MOCA-1"/>
-   <artifact name="QResponse-SNF-CAM-Admission-1"
-             key="QuestionnaireResponse-QResponse-SNF-CAM-Admission-1"
-             id="QuestionnaireResponse/QResponse-SNF-CAM-Admission-1"/>
-   <artifact name="Role-RN"
-             key="PractitionerRole-Role-RN"
-             id="PractitionerRole/Role-RN"/>
-   <artifact name="Role-SLP"
-             key="PractitionerRole-Role-SLP"
-             id="PractitionerRole/Role-SLP"/>
-   <artifact name="patientBSJ1"
-             key="Patient-patientBSJ1"
-             id="Patient/patientBSJ1"/>
-   <artifact name="provider-org-01"
-             key="Organization-provider-org-01"
-             id="Organization/provider-org-01"/>
-   <artifact name="provider-org-loc-01"
-             key="Location-provider-org-loc-01"
-             id="Location/provider-org-loc-01"/>
-   <artifact name="provider-role-pcp"
-             key="PractitionerRole-provider-role-pcp"
-             id="PractitionerRole/provider-role-pcp"/>
-   <artifact name="PACIO Cognitive Status Capability Statement"
-             key="CapabilityStatement-pacio-cap"
-             id="CapabilityStatement/pacio-cap"/>
-   <page name="(NA)" key="NA"/>
-   <page name="(many)" key="many"/>
-   <page name="Table of Contents" key="toc"/>
-   <page name="Home" key="index"/>
-   <page name="Cognitive Status Use Case" key="cognitive_status_use_case"/>
-   <page name="Profile Highlights and Guidance"
-         key="profile_highlights_and_guidance"/>
-   <page name="Representative Assessments" key="representative_assessments"/>
-   <page name="Security and Data Sharing" key="security_and_data_sharing"/>
-   <page name="Underlying Technologies" key="underlying_technologies"/>
-   <page name="Artifacts Summary" key="artifacts"/>
-   <page name="(profiles)" key="profiles" deprecated="true"/>
-   <page name="usecases" key="usecases" deprecated="true"/>
+<version code="current" url="http://build.fhir.org/ig/HL7/fhir-pacio-cognitive-status"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/pacio-cs/STU1"/>
+<version code="0.1.0" url="http://hl7.org/fhir/us/pacio-cs/2021Jan"/>
+<version code="0.0.1" deprecated="true" url="http://example.org/fhir/STU1"/>
+<version code="0.1" deprecated="true"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/assistance-required" key="StructureDefinition-assistance-required" name="AssistanceRequired"/>
+<artifact deprecated="true" id="Observation/BCS-Hospital-MOCA-1" key="Observation-BCS-Hospital-MOCA-1" name="BCS-Hospital-MOCA-1"/>
+<artifact deprecated="true" id="Observation/BCS-SNF-CAM-Admission-1" key="Observation-BCS-SNF-CAM-Admission-1" name="BCS-SNF-CAM-Admission-1"/>
+<artifact deprecated="true" id="Observation/BCS-SNF-CAM-Admission-1-Ob-Question-1" key="Observation-BCS-SNF-CAM-Admission-1-Ob-Question-1" name="BCS-SNF-CAM-Admission-1-Ob-Question-1"/>
+<artifact deprecated="true" id="Observation/BCS-SNF-CAM-Admission-1-Ob-Question-3" key="Observation-BCS-SNF-CAM-Admission-1-Ob-Question-3" name="BCS-SNF-CAM-Admission-1-Ob-Question-3"/>
+<artifact deprecated="true" id="Observation/BCS-SNF-CAM-Admission-1-Ob-Question-5" key="Observation-BCS-SNF-CAM-Admission-1-Ob-Question-5" name="BCS-SNF-CAM-Admission-1-Ob-Question-5"/>
+<artifact id="Observation/BSJ-Narrative-History-Cognitive-Status-1" key="Observation-BSJ-Narrative-History-Cognitive-Status-1" name="BSJ-Narrative-History-Cognitive-Status-1"/>
+<artifact deprecated="true" id="Observation/BSJ-Prior-Level-Of-Cognitive-Function-1" key="Observation-BSJ-Prior-Level-Of-Cognitive-Function-1" name="BSJ-Prior-Level-Of-Cognitive-Function-1"/>
+<artifact id="Device/CMS-Device-1" key="Device-CMS-Device-1" name="CMS-Device-1"/>
+<artifact id="Device/CMS-Device-2" key="Device-CMS-Device-2" name="CMS-Device-2"/>
+<artifact id="Observation/CSC-Hospital-MMSE-1" key="Observation-CSC-Hospital-MMSE-1" name="CSC-Hospital-MMSE-1"/>
+<artifact id="Observation/CSC-Hospital-MMSE-1-Ob-Question-31" key="Observation-CSC-Hospital-MMSE-1-Ob-Question-31" name="CSC-Hospital-MMSE-1-Ob-Question-31"/>
+<artifact id="Observation/CSC-Hospital-MOCA-1" key="Observation-CSC-Hospital-MOCA-1" name="CSC-Hospital-MOCA-1"/>
+<artifact id="Observation/CSC-Hospital-MOCA-1-Ob-Question-1" key="Observation-CSC-Hospital-MOCA-1-Ob-Question-1" name="CSC-Hospital-MOCA-1-Ob-Question-1"/>
+<artifact id="Observation/CSC-SNF-BIMS-1" key="Observation-CSC-SNF-BIMS-1" name="CSC-SNF-BIMS-1"/>
+<artifact id="Observation/CSC-SNF-BIMS-1-Ob-Question-10" key="Observation-CSC-SNF-BIMS-1-Ob-Question-10" name="CSC-SNF-BIMS-1-Ob-Question-10"/>
+<artifact id="Observation/CSC-SNF-BIMS-1-Ob-Question-3" key="Observation-CSC-SNF-BIMS-1-Ob-Question-3" name="CSC-SNF-BIMS-1-Ob-Question-3"/>
+<artifact id="Observation/CSC-SNF-BIMS-1-Ob-Question-4" key="Observation-CSC-SNF-BIMS-1-Ob-Question-4" name="CSC-SNF-BIMS-1-Ob-Question-4"/>
+<artifact id="Observation/CSC-SNF-BIMS-1-Ob-Question-5" key="Observation-CSC-SNF-BIMS-1-Ob-Question-5" name="CSC-SNF-BIMS-1-Ob-Question-5"/>
+<artifact id="Observation/CSC-SNF-BIMS-1-Ob-Question-6" key="Observation-CSC-SNF-BIMS-1-Ob-Question-6" name="CSC-SNF-BIMS-1-Ob-Question-6"/>
+<artifact id="Observation/CSC-SNF-BIMS-1-Ob-Question-7" key="Observation-CSC-SNF-BIMS-1-Ob-Question-7" name="CSC-SNF-BIMS-1-Ob-Question-7"/>
+<artifact id="Observation/CSC-SNF-BIMS-1-Ob-Question-8" key="Observation-CSC-SNF-BIMS-1-Ob-Question-8" name="CSC-SNF-BIMS-1-Ob-Question-8"/>
+<artifact id="Observation/CSC-SNF-BIMS-1-Ob-Question-9" key="Observation-CSC-SNF-BIMS-1-Ob-Question-9" name="CSC-SNF-BIMS-1-Ob-Question-9"/>
+<artifact id="DeviceUseStatement/CSC-SNF-BIMS-1-UseOfDevice-1" key="DeviceUseStatement-CSC-SNF-BIMS-1-UseOfDevice-1" name="CSC-SNF-BIMS-1-UseOfDevice-1"/>
+<artifact id="DeviceUseStatement/CSC-SNF-BIMS-1-UseOfDevice-2" key="DeviceUseStatement-CSC-SNF-BIMS-1-UseOfDevice-2" name="CSC-SNF-BIMS-1-UseOfDevice-2"/>
+<artifact id="Observation/CSC-SNF-CAM-Admission-1" key="Observation-CSC-SNF-CAM-Admission-1" name="CSC-SNF-CAM-Admission-1"/>
+<artifact id="Observation/CSC-SNF-CAM-Admission-1-Ob-Question-1" key="Observation-CSC-SNF-CAM-Admission-1-Ob-Question-1" name="CSC-SNF-CAM-Admission-1-Ob-Question-1"/>
+<artifact id="Observation/CSC-SNF-CAM-Admission-1-Ob-Question-3" key="Observation-CSC-SNF-CAM-Admission-1-Ob-Question-3" name="CSC-SNF-CAM-Admission-1-Ob-Question-3"/>
+<artifact id="Observation/CSC-SNF-CAM-Admission-1-Ob-Question-5" key="Observation-CSC-SNF-CAM-Admission-1-Ob-Question-5" name="CSC-SNF-CAM-Admission-1-Ob-Question-5"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1" key="Observation-CSC-SNF-PHQ9-1" name="CSC-SNF-PHQ9-1"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-11" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-11" name="CSC-SNF-PHQ9-1-Ob-Question-11"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-12" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-12" name="CSC-SNF-PHQ9-1-Ob-Question-12"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-13" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-13" name="CSC-SNF-PHQ9-1-Ob-Question-13"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-14" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-14" name="CSC-SNF-PHQ9-1-Ob-Question-14"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-15" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-15" name="CSC-SNF-PHQ9-1-Ob-Question-15"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-16" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-16" name="CSC-SNF-PHQ9-1-Ob-Question-16"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-17" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-17" name="CSC-SNF-PHQ9-1-Ob-Question-17"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-18" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-18" name="CSC-SNF-PHQ9-1-Ob-Question-18"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-19" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-19" name="CSC-SNF-PHQ9-1-Ob-Question-19"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-20" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-20" name="CSC-SNF-PHQ9-1-Ob-Question-20"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-21" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-21" name="CSC-SNF-PHQ9-1-Ob-Question-21"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-22" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-22" name="CSC-SNF-PHQ9-1-Ob-Question-22"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-23" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-23" name="CSC-SNF-PHQ9-1-Ob-Question-23"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-24" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-24" name="CSC-SNF-PHQ9-1-Ob-Question-24"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-25" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-25" name="CSC-SNF-PHQ9-1-Ob-Question-25"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-26" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-26" name="CSC-SNF-PHQ9-1-Ob-Question-26"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-27" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-27" name="CSC-SNF-PHQ9-1-Ob-Question-27"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-28" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-28" name="CSC-SNF-PHQ9-1-Ob-Question-28"/>
+<artifact id="Observation/CSC-SNF-PHQ9-1-Ob-Question-29" key="Observation-CSC-SNF-PHQ9-1-Ob-Question-29" name="CSC-SNF-PHQ9-1-Ob-Question-29"/>
+<artifact id="StructureDefinition/device-patient-used" key="StructureDefinition-device-patient-used" name="DevicePatientUsed"/>
+<artifact id="StructureDefinition/event-location" key="StructureDefinition-event-location" name="ObservationEventLocation"/>
+<artifact id="Organization/Org-01" key="Organization-Org-01" name="Org-01"/>
+<artifact id="Organization/Org-02" key="Organization-Org-02" name="Org-02"/>
+<artifact id="Organization/Org-03" key="Organization-Org-03" name="Org-03"/>
+<artifact id="Location/Org-Loc-01" key="Location-Org-Loc-01" name="Org-Loc-01"/>
+<artifact id="Location/Org-Loc-02" key="Location-Org-Loc-02" name="Org-Loc-02"/>
+<artifact id="Location/Org-Loc-03" key="Location-Org-Loc-03" name="Org-Loc-03"/>
+<artifact deprecated="true" id="StructureDefinition/pacio-bcs" key="StructureDefinition-pacio-bcs" name="PACIO Bundled Cognitive Status"/>
+<artifact deprecated="true" id="StructureDefinition/pacio-cognition-qr" key="StructureDefinition-pacio-cognition-qr" name="PACIO Cognition Questionnaire Response"/>
+<artifact id="StructureDefinition/pacio-cs" key="StructureDefinition-pacio-cs" name="PACIO Cognitive Status"/>
+<artifact id="CapabilityStatement/pacio-cs-cap" key="CapabilityStatement-pacio-cap" name="PACIO Cognitive Status Capability Statement"/>
+<artifact id="StructureDefinition/pacio-csc" key="StructureDefinition-pacio-csc" name="PACIO Cognitive Status Collection"/>
+<artifact id="CodeSystem/pacio-cat-cs" key="CodeSystem-pacio-cat-cs" name="PACIO Functioning Category Code System"/>
+<artifact id="ValueSet/pacio-cat-vs" key="ValueSet-pacio-cat-vs" name="PACIO Functioning Category Value Set"/>
+<artifact id="StructureDefinition/pacio-nhcs" key="StructureDefinition-pacio-nhcs" name="PACIO Narrative History of Cognitive Status"/>
+<artifact deprecated="true" id="StructureDefinition/pacio-plcf" key="StructureDefinition-pacio-plcf" name="PACIO Prior Level of Cognitive Function"/>
+<artifact id="Practitioner/Practitioner-HoneyJones" key="Practitioner-Practitioner-HoneyJones" name="Practitioner-HoneyJones"/>
+<artifact id="Practitioner/Practitioner-JennyGlass" key="Practitioner-Practitioner-JennyGlass" name="Practitioner-JennyGlass"/>
+<artifact id="Practitioner/Practitioner-JohnSmith" key="Practitioner-Practitioner-JohnSmith" name="Practitioner-JohnSmith"/>
+<artifact id="Practitioner/Practitioner-LunaBaskins" key="Practitioner-Practitioner-LunaBaskins" name="Practitioner-LunaBaskins"/>
+<artifact id="Practitioner/Practitioner-NoraOlogist" key="Practitioner-Practitioner-NoraOlogist" name="Practitioner-NoraOlogist"/>
+<artifact id="QuestionnaireResponse/QResponse-Hospital-MMSE-1" key="QuestionnaireResponse-QResponse-Hospital-MMSE-1" name="QResponse-Hospital-MMSE-1"/>
+<artifact id="QuestionnaireResponse/QResponse-Hospital-MOCA-1" key="QuestionnaireResponse-QResponse-Hospital-MOCA-1" name="QResponse-Hospital-MOCA-1"/>
+<artifact id="QuestionnaireResponse/QResponse-SNF-BIMS-1" key="QuestionnaireResponse-QResponse-SNF-BIMS-1" name="QResponse-SNF-BIMS-1"/>
+<artifact id="QuestionnaireResponse/QResponse-SNF-CAM-Admission-1" key="QuestionnaireResponse-QResponse-SNF-CAM-Admission-1" name="QResponse-SNF-CAM-Admission-1"/>
+<artifact id="QuestionnaireResponse/QResponse-SNF-PHQ9-1" key="QuestionnaireResponse-QResponse-SNF-PHQ9-1" name="QResponse-SNF-PHQ9-1"/>
+<artifact deprecated="true" id="PractitionerRole/Role-RN" key="PractitionerRole-Role-RN" name="Role-RN"/>
+<artifact deprecated="true" id="PractitionerRole/Role-SLP" key="PractitionerRole-Role-SLP" name="Role-SLP"/>
+<artifact id="PractitionerRole/Role-SLP-HoneyJones" key="PractitionerRole-Role-SLP-HoneyJones" name="Role-SLP-HoneyJones"/>
+<artifact id="PractitionerRole/Role-SLP-JennyGlass" key="PractitionerRole-Role-SLP-JennyGlass" name="Role-SLP-JennyGlass"/>
+<artifact id="PractitionerRole/Role-SLP-LunaBaskins" key="PractitionerRole-Role-SLP-LunaBaskins" name="Role-SLP-LunaBaskins"/>
+<artifact id="StructureDefinition/pacio-cs-dev" key="StructureDefinition-pacio-cs-dev" name="Use of Device"/>
+<artifact id="Patient/patientBSJ1" key="Patient-patientBSJ1" name="patientBSJ1"/>
+<artifact id="Organization/provider-org-01" key="Organization-provider-org-01" name="provider-org-01"/>
+<artifact id="Organization/provider-org-16" key="Organization-provider-org-16" name="provider-org-16"/>
+<artifact id="Location/provider-org-loc-01" key="Location-provider-org-loc-01" name="provider-org-loc-01"/>
+<artifact id="Location/provider-org-loc-16" key="Location-provider-org-loc-16" name="provider-org-loc-16"/>
+<artifact id="PractitionerRole/provider-role-neurologist" key="PractitionerRole-provider-role-neurologist" name="provider-role-neurologist"/>
+<artifact id="PractitionerRole/provider-role-pcp" key="PractitionerRole-provider-role-pcp" name="provider-role-pcp"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page deprecated="true" key="profiles" name="(profiles)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="cognitive_status_use_case" name="Cognitive Status Use Case"/>
+<page key="index" name="Home"/>
+<page key="profile_highlights_and_guidance" name="Profile Highlights and Guidance"/>
+<page key="representative_assessments" name="Representative Assessments"/>
+<page key="security_and_data_sharing" name="Security and Data Sharing"/>
+<page key="toc" name="Table of Contents"/>
+<page key="underlying_technologies" name="Underlying Technologies"/>
+<page deprecated="true" key="usecases" name="usecases"/>
 </specification>
