@@ -1,7 +1,8 @@
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/nhsn-med-admin/2021May" ciUrl="http://build.fhir.org/ig/HL7/nhsn-med-admin-ig" defaultVersion="0.1.0"
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/nhsn-med-admin/2021May" ciUrl="http://build.fhir.org/ig/HL7/nhsn-med-admin-ig" defaultVersion="1.0.0"
     defaultWorkgroup="pharm" gitUrl="https://github.com/HL7/nhsn-med-admin-ig" url="http://hl7.org/fhir/us/nhsn-med-admin">
     <version code="current" url="http://build.fhir.org/ig/HL7/nhsn-med-admin-ig" />
     <version code="0.1.0" url="http://hl7.org/fhir/us/nhsn-med-admin/2021May" />
+    <version code="1.0.0" url="http://hl7.org/fhir/us/nhsn-med-admin/STU1" />
     <artifactPageExtension value="-definitions" />
     <artifactPageExtension value="-examples" />
     <artifactPageExtension value="-mappings" />
@@ -12,10 +13,8 @@
     <artifact id="Composition/composition-med-admin-1" key="Composition-composition-med-admin-1" name="Example of Composition - Inpatient Medication Administration" />
     <artifact id="Condition/condition-lab-confirmed-covid-med-admin-1" key="Condition-condition-lab-confirmed-covid-med-admin-1" name="Example of Condition - Lab Confirmed COVID" />
     <artifact id="Condition/condition-suspected-covid-med-admin-1" key="Condition-condition-suspected-covid-med-admin-1" name="Example of Condition - Suspected COVID" />
-    <artifact id="MedicationAdministration/medicationadministration-azithromycin-med-admin-1" key="MedicationAdministration-medicationadministration-azithromycin-med-admin-1"
-        name="Example of MedicationAdministration - Azithromycin" />
-    <artifact id="MedicationAdministration/medicationadministration-remdesivir-med-admin-1" key="MedicationAdministration-medicationadministration-remdesivir-med-admin-1"
-        name="Example of MedicationAdministration - Remdesivir" />
+    <artifact id="MedicationAdministration/medicationadministration-azithromycin-med-admin-1" key="MedicationAdministration-medicationadministration-azithromycin-med-admin-1" name="Example of MedicationAdministration - Inpatient Med Admin - Azithromycin"/>
+    <artifact id="MedicationAdministration/medicationadministration-remdesivir-med-admin-1" key="MedicationAdministration-medicationadministration-remdesivir-med-admin-1" name="Example of MedicationAdministration - Inpatient Med Admin - Remdesivir"/>
     <artifact id="Observation/observation-lab-sars-cov-med-admin" key="Observation-observation-lab-sars-cov-med-admin" name="Example of Observation - Lab SARS COV" />
     <artifact id="Condition/condition-hypertension-med-admin-1" key="Condition-condition-hypertension-med-admin-1" name="Example of US Core Condition" />
     <artifact id="Encounter/encounter-completed-inpatient-med-admin-1" key="Encounter-encounter-completed-inpatient-med-admin-1" name="Example of US Core Encounter - Name 'masked'" />
@@ -25,6 +24,7 @@
     <artifact id="Organization/organization-salem-medical-center" key="Organization-organization-salem-medical-center" name="Example of US Core Organization - Salem Medical Center" />
     <artifact id="Patient/patient-med-admin-1" key="Patient-patient-med-admin-1" name="Example of US Core Patient - Name 'masked'" />
     <artifact id="Practitioner/practitioner-med-admin-henry-seven" key="Practitioner-practitioner-med-admin-henry-seven" name="Example of US Core Practitioner" />
+    <artifact id="StructureDefinition/MedicationAdministration-inpatient-med-admin" key="StructureDefinition-MedicationAdministration-inpatient-med-admin" name="MedicationAdministrationInpatientMedAdmin"/>
     <artifact id="StructureDefinition/Observation-lab-sars-cov" key="StructureDefinition-Observation-lab-sars-cov" name="Observation - Laboratory SARS COVID-19" />
     <page key="NA" name="(NA)" />
     <page key="many" name="(many)" />
