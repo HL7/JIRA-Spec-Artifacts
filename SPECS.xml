@@ -16831,13 +16831,17 @@
                 key="FHIR-us-mcode-cancer-condition-parent"
                 name="Cancer Condition Parent"
                 spec="us-mcode"/>
-      <artifact id="StructureDefinition/mcode-cancer-disease-status"
-                key="FHIR-us-mcode-cancer-disease-status"
-                name="Cancer Disease Status Profile"
+      <artifact id="StructureDefinition/mcode-cancer-disease-status-evidence-type"
+                key="FHIR-us-mcode-StructureDefinition-mcode-cancer-disease-status-evidence-type"
+                name="Cancer Disease Status Evidence Type Extension"
                 spec="us-mcode"/>
       <artifact id="ValueSet/mcode-cancer-disease-status-evidence-type-vs"
                 key="FHIR-us-mcode-cancer-disease-status-evidence-type-value-set"
                 name="Cancer Disease Status Evidence Type Value Set"
+                spec="us-mcode"/>
+      <artifact id="StructureDefinition/mcode-cancer-disease-status"
+                key="FHIR-us-mcode-cancer-disease-status"
+                name="Cancer Disease Status Profile"
                 spec="us-mcode"/>
       <artifact id="ValueSet/mcode-cancer-disorder-vs"
                 key="FHIR-us-mcode-cancer-disorder-value-set"
@@ -17130,7 +17134,16 @@
                 key="FHIR-us-mcode-ValueSet-elixhauser-weight-loss-vs"
                 name="Elixhauser Weight Loss Value Set"
                 spec="us-mcode"/>
-
+      <artifact deprecated="true"
+                id="StructureDefinition/mcode-evidence-type"
+                key="FHIR-us-mcode-StructureDefinition-mcode-evidence-type"
+                name="Evidence Type"
+                spec="us-mcode"/>
+      <artifact deprecated="true"
+                id="Extension/mcode-evidence-type-extension"
+                key="FHIR-us-mcode-evidence-type-extension"
+                name="Evidence Type Extension"
+                spec="us-mcode"/>
       <artifact deprecated="true"
                 id="StructureDefinition/mcode-genetic-specimen"
                 key="FHIR-us-mcode-genetic-specimen"
@@ -17402,15 +17415,15 @@
                 spec="us-mcode"/>
       <artifact id="ValueSet/mcode-observation-codes-primary-tumor-vs"
                 key="FHIR-us-mcode-ValueSet-mcode-observation-codes-primary-tumor-vs"
-                name="Staging Type Value Set (for Primary Tumor Category)"
+                name="Staging Type for Primary Tumor Category Value Set"
                 spec="us-mcode"/>
       <artifact id="ValueSet/mcode-observation-codes-regional-nodes-vs"
                 key="FHIR-us-mcode-ValueSet-mcode-observation-codes-regional-nodes-vs"
-                name="Staging Type Value Set (for Regional Node Category)"
+                name="Staging Type for Regional Node Category Value Set"
                 spec="us-mcode"/>
       <artifact id="ValueSet/mcode-observation-codes-stage-group-vs"
                 key="FHIR-us-mcode-ValueSet-mcode-observation-codes-stage-group-vs"
-                name="Staging Type Value Set (for Stage Group)"
+                name="Staging Type for Stage Group Value Set"
                 spec="us-mcode"/>
       <artifact deprecated="true"
                 id="Profile/mcode-tnm-clinical-distant-metastases"
@@ -18206,21 +18219,6 @@
                 key="FHIR-us-mcode-Observation-us-core-smokingstatus-jenny-m"
                 name="us-core-smokingstatus-jenny-m"
                 spec="us-mcode"/>
-      <!-- Here is a problem -->
-      <!--artifact deprecated="true" id="Extension/mcode-evidence-type-extension" key="evidence-type-extension" name="Evidence Type"-->
-      <!--artifact id="StructureDefinition/mcode-evidence-type-extension" key="evidence-type" name="Evidence Type Extension"/-->
-      <!-- End of problem ha ha -->
-
-      <artifact id="StructureDefinition/mcode-evidence-type"
-                key="FHIR-us-mcode-StructureDefinition-mcode-evidence-type"
-                name="Evidence Type"
-                spec="us-mcode"/>
-      <artifact deprecated="true"
-                id="Extension/mcode-evidence-type-extension"
-                key="FHIR-us-mcode-evidence-type-extension"
-                name="Evidence Type Extension"
-                spec="us-mcode"/>
-
       <page key="FHIR-us-mcode-NA" name="(NA)" spec="us-mcode"/>
       <page key="FHIR-us-mcode-many" name="(many)" spec="us-mcode"/>
       <page key="FHIR-us-mcode-artifacts"
