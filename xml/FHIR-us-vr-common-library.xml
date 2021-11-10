@@ -1,224 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification ballotUrl="http://hl7.org/fhir/us/vr-common-library/2021Jan"
-  gitUrl="https://github.com/HL7/fhir-vr-common-ig" url="http://hl7.org/fhir/us/vr-common-library"
-  ciUrl="http://build.fhir.org/ig/HL7/vr-common-library" defaultWorkgroup="pher"
-  defaultVersion="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <version code="current" url="http://build.fhir.org/ig/HL7/vr-common-library"/>
-  <version code="0.1.0" url="http://hl7.org/fhir/us/vr-common-library/2021Jan"/>
-  <version code="0.1" deprecated="true"/>
-  <artifactPageExtension value="-definitions" />
-  <artifactPageExtension value="-examples" />
-  <artifactPageExtension value="-mappings" />
-  <artifact
-    name="Observation - Pregnancy Risk Factor example [Carmen Teresa Lee: Hypertensive disorder, systemic arterial]"
-    key="Observation-observation-pregnancy-risk-factor-carmen-teresa-lee-1-common"
-    id="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-1-common" />
-  <artifact name="Observation - Place of Birth Type"
-    key="Observation-observation-place-of-birth-type-common"
-    id="Observation/observation-place-of-birth-type-common" deprecated="true" />
-  <artifact name="Patient - Child example [Baby G Quinn]" key="Patient-patient-child-babyg-quinn-common"
-    id="Patient/patient-child-babyg-quinn-common" />
-  <artifact name="Patient - Decedent Fetus example [Fetus Not Named]"
-    key="Patient-patient-decedent-fetus-not-named-common"
-    id="Patient/patient-decedent-fetus-not-named-common" />
-  <artifact name="Practitioner - Live Birth Fetal Death example [Janet Seito]"
-    key="Practitioner-practitioner-live-birth-fetal-death-janet-seito-common"
-    id="Practitioner/practitioner-live-birth-fetal-death-janet-seito-common" />
-  <artifact name="RelatedPerson - Mother Natural example [Carmen Teresa Lee]"
-    key="RelatedPerson-relatedperson-mother-natural-carmen-teresa-lee-common"
-    id="RelatedPerson/relatedperson-mother-natural-carmen-teresa-lee-common" />
-  <artifact name="RelatedPerson - Father Natural example [Tom Yan Lee]"
-    key="RelatedPerson-relatedperson-father-natural-tom-yan-lee-common"
-    id="RelatedPerson/relatedperson-father-natural-tom-yan-lee-common" />
-  <artifact name="RelatedPerson - Father example [Tom Yan Lee]"
-    key="RelatedPerson-relatedperson-father-tom-yan-lee-common"
-    id="RelatedPerson/relatedperson-father-tom-yan-lee-common" />
-  <artifact name="RelatedPerson - Mother example [Carmen Teresa Lee]"
-    key="RelatedPerson-relatedperson-mother-carmen-teresa-lee-common"
-    id="RelatedPerson/relatedperson-mother-carmen-teresa-lee-common" />
-  <artifact name="Patient - Mother example [Carmen Teresa Lee]"
-    key="Patient-patient-mother-carmen-teresa-lee-common"
-    id="Patient/patient-mother-carmen-teresa-lee-common" />
-  <artifact name="APGAR Score Timing" key="ValueSet-apgar-timing" id="ValueSet/apgar-timing" />
-  <artifact name="Education Level Person" key="ValueSet-education-level-person"
-    id="ValueSet/education-level-person" />
-  <artifact name="Extension - Related Person Deceased"
-    key="StructureDefinition-Extension-relatedperson-deceased"
-    id="StructureDefinition/Extension-relatedperson-deceased" />
-  <artifact name="Extension - RelatedPerson Birth Place"
-    key="StructureDefinition-Extension-relatedperson-birthplace"
-    id="StructureDefinition/Extension-relatedperson-birthplace" />
-  <artifact name="Extension - RelatedPerson Ethnicity"
-    key="StructureDefinition-Extension-relatedperson-ethnicity"
-    id="StructureDefinition/Extension-relatedperson-ethnicity" />
-  <artifact name="Extension - RelatedPerson Race"
-    key="StructureDefinition-Extension-relatedperson-race"
-    id="StructureDefinition/Extension-relatedperson-race" />
-  <artifact name="Extension - Within City Limits Indicator"
-    key="StructureDefinition-Extension-within-city-limits-indicator"
-    id="StructureDefinition/Extension-within-city-limits-indicator" />
-  <artifact name="Father Relationship" key="ValueSet-father-relationship"
-    id="ValueSet/father-relationship" />
-  <artifact name="Mother Relationship" key="ValueSet-mother-relationship"
-    id="ValueSet/mother-relationship" />
-  <artifact name="Newborn Procedure List" key="ValueSet-newborn-procedure-list"
-    id="ValueSet/newborn-procedure-list" />
-  <artifact name="Observation - APGAR Score" key="StructureDefinition-Observation-apgar-score"
-    id="StructureDefinition/Observation-apgar-score" />
-  <artifact name="Observation - APGAR Score example [BabyG Quinn: 5 min]"
-    key="Observation-observation-apgar-score-babyg-quinn-5-min-common"
-    id="Observation/observation-apgar-score-babyg-quinn-5-min-common" />
-  <artifact name="Observation - Autopsy Performed"
-    key="StructureDefinition-Observation-autopsy-performed"
-    id="StructureDefinition/Observation-autopsy-performed" />
-  <artifact name="Observation - Autopsy Performed example [Fetus Not Named]"
-    key="Observation-observation-autopsy-performed-not-named-common"
-    id="Observation/observation-autopsy-performed-not-named-common" />
-  <artifact name="Observation - Birth Weight" key="StructureDefinition-Observation-birth-weight"
-    id="StructureDefinition/Observation-birth-weight" />
-  <artifact name="Observation - Birth Weight example [Baby G Quinn]"
-    key="Observation-observation-birth-weight-babyg-quinn-common"
-    id="Observation/observation-birth-weight-babyg-quinn-common" />
-  <artifact name="Observation - Birth Weight example [Fetus Not Named]"
-    key="Observation-observation-birth-weight-not-named-common"
-    id="Observation/observation-birth-weight-not-named-common" />
-  <artifact name="Observation - Gestational Age"
-    key="StructureDefinition-Observation-gestational-age-at-delivery"
-    id="StructureDefinition/Observation-gestational-age-at-delivery" />
-  <artifact name="Observation - Gestational Age at Delivery example [Baby G Quinn]"
-    key="Observation-observation-gestational-age-at-delivery-babyg-quinn-common"
-    id="Observation/observation-gestational-age-at-delivery-babyg-quinn-common" />
-  <artifact name="Observation - Gestational Age at Delivery example [Fetus Not Named]"
-    key="Observation-observation-gestational-age-at-delivery-not-named-common"
-    id="Observation/observation-gestational-age-at-delivery-not-named-common" />
-  <artifact name="Observation - Infant Living" key="StructureDefinition-Observation-infant-living"
-    id="StructureDefinition/Observation-infant-living" />
-  <artifact name="Observation - Infant Living example [Baby G Quinn]"
-    key="Observation-observation-infant-living-babyg-quinn-common"
-    id="Observation/observation-infant-living-babyg-quinn-common" />
-  <artifact name="Observation - Last Menstrual Period"
-    key="StructureDefinition-Observation-last-menstrual-period"
-    id="StructureDefinition/Observation-last-menstrual-period" />
-  <artifact name="Observation - Last Menstrual Period example [Carmen Teresa Lee]"
-    key="Observation-observation-last-menstrual-period-carmen-teresa-lee-common"
-    id="Observation/observation-last-menstrual-period-carmen-teresa-lee-common" />
-  <artifact name="Observation - Mother Delivery Weight"
-    key="StructureDefinition-Observation-mother-delivery-weight"
-    id="StructureDefinition/Observation-mother-delivery-weight" />
-  <artifact name="Observation - Mother Delivery Weight example [Jada Ann Quinn]"
-    key="Observation-observation-mother-delivery-weight-jada-ann-quinn-common"
-    id="Observation/observation-mother-delivery-weight-jada-ann-quinn-common" />
-  <artifact name="Observation - Mother Height" key="StructureDefinition-Observation-mother-height"
-    id="StructureDefinition/Observation-mother-height" />
-  <artifact name="Observation - Mother Height example [Carmen Teresa Lee]"
-    key="Observation-observation-mother-height-carmen-teresa-lee-common"
-    id="Observation/observation-mother-height-carmen-teresa-lee-common" />
-  <artifact name="Observation - Mother Pre-Pregnancy Weight"
-    key="StructureDefinition-Observation-mother-prepregnancy-weight"
-    id="StructureDefinition/Observation-mother-prepregnancy-weight" />
-  <artifact name="Observation - Mother Prepregnancy Weight example [Carmen Teresa Lee]"
-    key="Observation-observation-mother-prepregnancy-weight-carmen-teresa-lee-common"
-    id="Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee-common" />
-  <artifact name="Observation - Number Births Now Dead"
-    key="StructureDefinition-Observation-number-births-now-dead"
-    id="StructureDefinition/Observation-number-births-now-dead" />
-  <artifact name="Observation - Number Births Now Dead example [Carmen Teresa Lee]"
-    key="Observation-observation-number-births-now-dead-carmen-teresa-lee-common"
-    id="Observation/observation-number-births-now-dead-carmen-teresa-lee-common" />
-  <artifact name="Observation - Number Births Now Living"
-    key="StructureDefinition-Observation-number-births-now-living"
-    id="StructureDefinition/Observation-number-births-now-living" />
-  <artifact name="Observation - Number Fetal Deaths This Delivery"
-    key="StructureDefinition-Observation-number-fetal-deaths-this-delivery"
-    id="StructureDefinition/Observation-number-fetal-deaths-this-delivery" />
-  <artifact name="Observation - Number Live Births This Delivery"
-    key="StructureDefinition-Observation-number-live-births-this-delivery"
-    id="StructureDefinition/Observation-number-live-births-this-delivery" />
-  <artifact name="Observation - Number of Births Now Living example [Carmen Teresa Lee]"
-    key="Observation-observation-number-births-now-living-carmen-teresa-lee-common"
-    id="Observation/observation-number-births-now-living-carmen-teresa-lee-common" />
-  <artifact name="Observation - Number of Fetal Deaths This Delivery example [Carmen Teresa Lee]"
-    key="Observation-observation-number-deaths-this-delivery-carmen-teresa-lee-common"
-    id="Observation/observation-number-deaths-this-delivery-carmen-teresa-lee-common" />
-  <artifact name="Observation - Number of Prenatal Visits"
-    key="StructureDefinition-Observation-number-prenatal-visits"
-    id="StructureDefinition/Observation-number-prenatal-visits" />
-  <artifact name="Observation - Number Other Pregnancy Outcomes"
-    key="StructureDefinition-Observation-number-other-pregnancy-outcomes"
-    id="StructureDefinition/Observation-number-other-pregnancy-outcomes" />
-  <artifact name="Observation - Number Prenatal Visits example [Jada Ann Quinn]"
-    key="Observation-observation-number-prenatal-visits-jada-ann-quinn-common"
-    id="Observation/observation-number-prenatal-visits-jada-ann-quinn-common" />
-  <artifact name="Observation - Number Previous Cesareans"
-    key="StructureDefinition-Observation-number-previous-cesareans"
-    id="StructureDefinition/Observation-number-previous-cesareans" />
-  <artifact name="Observation - Parent Education Level"
-    key="StructureDefinition-Observation-parent-education-level"
-    id="StructureDefinition/Observation-parent-education-level" />
-  <artifact name="Observation - Parent Education Level example [Carmen Teresa Lee]"
-    key="Observation-observation-parent-education-level-carmen-teresa-lee-common"
-    id="Observation/observation-parent-education-level-carmen-teresa-lee-common" />
-  <artifact name="Observation - Place Of Birth Type"
-    key="StructureDefinition-Observation-place-of-birth-type"
-    id="StructureDefinition/Observation-place-of-birth-type" deprecated="true" />
-  <artifact name="Observation - Plurality" key="StructureDefinition-Observation-plurality"
-    id="StructureDefinition/Observation-plurality" />
-  <artifact name="Observation - Plurality example [Carmen Teresa Lee]"
-    key="Observation-observation-plurality-carmen-teresa-lee-common"
-    id="Observation/observation-plurality-carmen-teresa-lee-common" />
-  <artifact name="Observation - Pregnancy Risk Factor"
-    key="StructureDefinition-Observation-pregnancy-risk-factor"
-    id="StructureDefinition/Observation-pregnancy-risk-factor" />
-  <artifact name="Observation - Number Previous Cesareans example [Carmen Teresa Lee]"
-    key="Observation-observation-number-previous-cesareans-carmen-teresa-lee-common"
-    id="Observation/observation-number-previous-cesareans-carmen-teresa-lee-common" />
-  <artifact name="Patient - Child" key="StructureDefinition-Patient-child"
-    id="StructureDefinition/Patient-child" />
-  <artifact name="Patient - Decedent Fetus" key="StructureDefinition-Patient-decedent-fetus"
-    id="StructureDefinition/Patient-decedent-fetus" />
-  <artifact name="Patient - Mother" key="StructureDefinition-Patient-mother"
-    id="StructureDefinition/Patient-mother" />
-  <artifact name="Practitioner - Live Birth and Fetal Death"
-    key="StructureDefinition-Practitioner-live-birth-fetal-death"
-    id="StructureDefinition/Practitioner-live-birth-fetal-death" />
-  <artifact name="Related Person - Parent" key="StructureDefinition-RelatedPerson-parent"
-    id="StructureDefinition/RelatedPerson-parent" />
-  <artifact name="RelatedPerson - Father" key="StructureDefinition-RelatedPerson-father"
-    id="StructureDefinition/RelatedPerson-father" />
-  <artifact name="RelatedPerson - Father Natural"
-    key="StructureDefinition-RelatedPerson-father-natural"
-    id="StructureDefinition/RelatedPerson-father-natural" />
-  <artifact name="RelatedPerson - Mother" key="StructureDefinition-RelatedPerson-mother"
-    id="StructureDefinition/RelatedPerson-mother" />
-  <artifact name="RelatedPerson - Mother Natural"
-    key="StructureDefinition-RelatedPerson-mother-natural"
-    id="StructureDefinition/RelatedPerson-mother-natural" />
-  <artifact name="ValueSetDatePart" key="ValueSet-ValueSet-date-part"
-    id="ValueSet/ValueSet-date-part" />
-  <artifact name="Extension - Date Part Absent Reason"
-    key="StructureDefinition-Extension-date-part-absent-reason"
-    id="StructureDefinition/Extension-date-part-absent-reason" />
-  <artifact name="Patient - Mother Jada Ann Quinn"
-    key="Patient-patient-mother-jada-ann-quinn-common"
-    id="Patient/patient-mother-jada-ann-quinn-common" />
-  <artifact name="Observation - Number Live Births This Delivery example [Carmen Teresa Lee]"
-    key="Observation-observation-nbr-live-births-delivery-carmen-teresa-lee-common"
-    id="Observation/observation-nbr-live-births-delivery-carmen-teresa-lee-common" />
-  <artifact name="Observation - Number Other Pregnancy Outcomes example [Jada Ann Quinn]"
-    key="Observation-observation-nbr-other-pregnancy-outcomes-jada-ann-quinn-common"
-    id="Observation/observation-nbr-other-pregnancy-outcomes-jada-ann-quinn-common" />
-  <artifact name="RelatedPerson - Stepmother" key="RelatedPerson-relatedperson-parent-stepmother"
-    id="RelatedPerson/relatedperson-parent-stepmother" />
-  <artifact name="Extension - Estimated Fetal Death Time Point"
-    key="StructureDefinition-Extension-estimated-fetal-death-time-point"
-    id="StructureDefinition/Extension-estimated-fetal-death-time-point" />
-  <artifact id="Parameters/expansion-parameters-vr-common" key="Parameters-expansion-parameters-vr-common" name="expansion-parameters-vr-common"/>
-  <page key="NA" name="(NA)"/>
-  <page key="many" name="(many)"/>
-  <page key="artifacts" name="Artifacts Summary"/>
-  <page name="Home Page" key="index" />
-  <page key="toc" name="Table of Contents"/>
-  <page name="Downloads" key="downloads" />
-  <page name="Background" key="background" deprecated="true" />
-  <page name="The Specification" key="the-specification" deprecated="true" />
+<specification ballotUrl="http://hl7.org/fhir/us/vr-common-library/2021Jan" gitUrl="https://github.com/HL7/fhir-vr-common-ig" url="http://hl7.org/fhir/us/vr-common-library"
+    ciUrl="http://build.fhir.org/ig/HL7/vr-common-library" defaultWorkgroup="pher" defaultVersion="1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <version code="current" url="http://build.fhir.org/ig/HL7/vr-common-library" />
+    <version code="0.1.0" url="http://hl7.org/fhir/us/vr-common-library/2021Jan" />
+    <version code="1.0.0" url="http://hl7.org/fhir/us/vr-common-library/STU1" />
+    <version code="0.1" deprecated="true" />
+    <artifactPageExtension value="-definitions" />
+    <artifactPageExtension value="-examples" />
+    <artifactPageExtension value="-mappings" />
+    <artifact id="ValueSet/apgar-timing" key="ValueSet-apgar-timing" name="APGAR Score Timing" />
+    <artifact id="ValueSet/ValueSet-date-part" key="ValueSet-ValueSet-date-part" name="Date Part" />
+    <artifact id="ValueSet/education-level-person" key="ValueSet-education-level-person" name="Education Level Person" />
+    <artifact id="StructureDefinition/Extension-date-part-absent-reason" key="StructureDefinition-Extension-date-part-absent-reason" name="Extension - Date Part Absent Reason" />
+    <artifact deprecated="true" id="StructureDefinition/Extension-estimated-fetal-death-time-point" key="StructureDefinition-Extension-estimated-fetal-death-time-point" name="Extension - Estimated Fetal Death Time Point" />
+    <artifact id="StructureDefinition/Extension-relatedperson-birthplace" key="StructureDefinition-Extension-relatedperson-birthplace" name="Extension - RelatedPerson Birth Place" />
+    <artifact id="StructureDefinition/Extension-relatedperson-deceased" key="StructureDefinition-Extension-relatedperson-deceased" name="Extension - RelatedPerson Deceased" />
+    <artifact deprecated="true" id="StructureDefinition/Extension-relatedperson-ethnicity" key="StructureDefinition-Extension-relatedperson-ethnicity" name="Extension - RelatedPerson Ethnicity" />
+    <artifact deprecated="true" id="StructureDefinition/Extension-relatedperson-race" key="StructureDefinition-Extension-relatedperson-race" name="Extension - RelatedPerson Race" />
+    <artifact id="StructureDefinition/Extension-within-city-limits-indicator" key="StructureDefinition-Extension-within-city-limits-indicator" name="Extension - Within City Limits Indicator" />
+    <artifact id="ValueSet/father-relationship" key="ValueSet-father-relationship" name="Father Relationship" />
+    <artifact id="ValueSet/mother-relationship" key="ValueSet-mother-relationship" name="Mother Relationship" />
+    <artifact deprecated="true" id="ValueSet/newborn-procedure-list" key="ValueSet-newborn-procedure-list" name="Newborn Procedure List" />
+    <artifact id="StructureDefinition/Observation-apgar-score" key="StructureDefinition-Observation-apgar-score" name="Observation - APGAR Score" />
+    <artifact id="Observation/observation-apgar-score-babyg-quinn-5-min-common" key="Observation-observation-apgar-score-babyg-quinn-5-min-common" name="Observation - APGAR Score example [BabyG Quinn: 5 min]" />
+    <artifact id="StructureDefinition/Observation-autopsy-performed" key="StructureDefinition-Observation-autopsy-performed" name="Observation - Autopsy Performed" />
+    <artifact id="Observation/observation-autopsy-performed-not-named-common" key="Observation-observation-autopsy-performed-not-named-common" name="Observation - Autopsy Performed example [Fetus Not Named]" />
+    <artifact id="StructureDefinition/Observation-birth-weight" key="StructureDefinition-Observation-birth-weight" name="Observation - Birth Weight" />
+    <artifact id="Observation/observation-birth-weight-babyg-quinn-common" key="Observation-observation-birth-weight-babyg-quinn-common" name="Observation - Birth Weight example [Baby G Quinn]" />
+    <artifact id="Observation/observation-birth-weight-not-named-common" key="Observation-observation-birth-weight-not-named-common" name="Observation - Birth Weight example [Fetus Not Named]" />
+    <artifact id="StructureDefinition/Observation-gestational-age-at-delivery" key="StructureDefinition-Observation-gestational-age-at-delivery" name="Observation - Gestational Age" />
+    <artifact id="Observation/observation-gestational-age-at-delivery-babyg-quinn-common" key="Observation-observation-gestational-age-at-delivery-babyg-quinn-common"
+        name="Observation - Gestational Age at Delivery example [Baby G Quinn]" />
+    <artifact id="Observation/observation-gestational-age-at-delivery-not-named-common" key="Observation-observation-gestational-age-at-delivery-not-named-common"
+        name="Observation - Gestational Age at Delivery example [Fetus Not Named]" />
+    <artifact id="StructureDefinition/Observation-infant-living" key="StructureDefinition-Observation-infant-living" name="Observation - Infant Living" />
+    <artifact id="Observation/observation-infant-living-babyg-quinn-common" key="Observation-observation-infant-living-babyg-quinn-common" name="Observation - Infant Living example [Baby G Quinn]" />
+    <artifact id="StructureDefinition/Observation-last-menstrual-period" key="StructureDefinition-Observation-last-menstrual-period" name="Observation - Last Menstrual Period" />
+    <artifact id="Observation/observation-last-menstrual-period-carmen-teresa-lee-common" key="Observation-observation-last-menstrual-period-carmen-teresa-lee-common"
+        name="Observation - Last Menstrual Period example [Carmen Teresa Lee]" />
+    <artifact id="StructureDefinition/Observation-mother-delivery-weight" key="StructureDefinition-Observation-mother-delivery-weight" name="Observation - Mother Delivery Weight" />
+    <artifact id="Observation/observation-mother-delivery-weight-jada-ann-quinn-common" key="Observation-observation-mother-delivery-weight-jada-ann-quinn-common"
+        name="Observation - Mother Delivery Weight example [Jada Ann Quinn]" />
+    <artifact id="StructureDefinition/Observation-mother-height" key="StructureDefinition-Observation-mother-height" name="Observation - Mother Height" />
+    <artifact id="Observation/observation-mother-height-carmen-teresa-lee-common" key="Observation-observation-mother-height-carmen-teresa-lee-common" name="Observation - Mother Height example [Carmen Teresa Lee]" />
+    <artifact id="StructureDefinition/Observation-mother-prepregnancy-weight" key="StructureDefinition-Observation-mother-prepregnancy-weight" name="Observation - Mother Pre-Pregnancy Weight" />
+    <artifact id="Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee-common" key="Observation-observation-mother-prepregnancy-weight-carmen-teresa-lee-common"
+        name="Observation - Mother Prepregnancy Weight example [Carmen Teresa Lee]" />
+    <artifact id="StructureDefinition/Observation-number-births-now-dead" key="StructureDefinition-Observation-number-births-now-dead" name="Observation - Number Births Now Dead" />
+    <artifact id="Observation/observation-number-births-now-dead-carmen-teresa-lee-common" key="Observation-observation-number-births-now-dead-carmen-teresa-lee-common"
+        name="Observation - Number Births Now Dead example [Carmen Teresa Lee]" />
+    <artifact id="StructureDefinition/Observation-number-births-now-living" key="StructureDefinition-Observation-number-births-now-living" name="Observation - Number Births Now Living" />
+    <artifact id="StructureDefinition/Observation-number-fetal-deaths-this-delivery" key="StructureDefinition-Observation-number-fetal-deaths-this-delivery" name="Observation - Number Fetal Deaths This Delivery" />
+    <artifact id="StructureDefinition/Observation-number-live-births-this-delivery" key="StructureDefinition-Observation-number-live-births-this-delivery" name="Observation - Number Live Births This Delivery" />
+    <artifact id="Observation/observation-nbr-live-births-delivery-carmen-teresa-lee-common" key="Observation-observation-nbr-live-births-delivery-carmen-teresa-lee-common"
+        name="Observation - Number Live Births This Delivery example [Carmen Teresa Lee]" />
+    <artifact id="StructureDefinition/Observation-number-other-pregnancy-outcomes" key="StructureDefinition-Observation-number-other-pregnancy-outcomes" name="Observation - Number Other Pregnancy Outcomes" />
+    <artifact id="Observation/observation-nbr-other-pregnancy-outcomes-jada-ann-quinn-common" key="Observation-observation-nbr-other-pregnancy-outcomes-jada-ann-quinn-common"
+        name="Observation - Number Other Pregnancy Outcomes example [Jada Ann Quinn]" />
+    <artifact id="Observation/observation-number-prenatal-visits-jada-ann-quinn-common" key="Observation-observation-number-prenatal-visits-jada-ann-quinn-common"
+        name="Observation - Number Prenatal Visits example [Jada Ann Quinn]" />
+    <artifact id="StructureDefinition/Observation-number-previous-cesareans" key="StructureDefinition-Observation-number-previous-cesareans" name="Observation - Number Previous Cesareans" />
+    <artifact id="Observation/observation-number-previous-cesareans-carmen-teresa-lee-common" key="Observation-observation-number-previous-cesareans-carmen-teresa-lee-common"
+        name="Observation - Number Previous Cesareans example [Carmen Teresa Lee]" />
+    <artifact id="Observation/observation-number-births-now-living-carmen-teresa-lee-common" key="Observation-observation-number-births-now-living-carmen-teresa-lee-common"
+        name="Observation - Number of Births Now Living example [Carmen Teresa Lee]" />
+    <artifact id="Observation/observation-number-deaths-this-delivery-carmen-teresa-lee-common" key="Observation-observation-number-deaths-this-delivery-carmen-teresa-lee-common"
+        name="Observation - Number of Fetal Deaths This Delivery example [Carmen Teresa Lee]" />
+    <artifact id="StructureDefinition/Observation-number-prenatal-visits" key="StructureDefinition-Observation-number-prenatal-visits" name="Observation - Number of Prenatal Visits" />
+    <artifact id="StructureDefinition/Observation-parent-education-level" key="StructureDefinition-Observation-parent-education-level" name="Observation - Parent Education Level" />
+    <artifact id="Observation/observation-parent-education-level-carmen-teresa-lee-common" key="Observation-observation-parent-education-level-carmen-teresa-lee-common"
+        name="Observation - Parent Education Level example [Carmen Teresa Lee]" />
+    <artifact deprecated="true" id="StructureDefinition/Observation-place-of-birth-type" key="StructureDefinition-Observation-place-of-birth-type" name="Observation - Place Of Birth Type" />
+    <artifact deprecated="true" id="Observation/observation-place-of-birth-type-common" key="Observation-observation-place-of-birth-type-common" name="Observation - Place of Birth Type" />
+    <artifact id="StructureDefinition/Observation-plurality" key="StructureDefinition-Observation-plurality" name="Observation - Plurality" />
+    <artifact id="Observation/observation-plurality-carmen-teresa-lee-common" key="Observation-observation-plurality-carmen-teresa-lee-common" name="Observation - Plurality example [Carmen Teresa Lee]" />
+    <artifact id="StructureDefinition/Observation-pregnancy-risk-factor" key="StructureDefinition-Observation-pregnancy-risk-factor" name="Observation - Pregnancy Risk Factor" />
+    <artifact id="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-1-common" key="Observation-observation-pregnancy-risk-factor-carmen-teresa-lee-1-common"
+        name="Observation - Pregnancy Risk Factor example [Carmen Teresa Lee: Hypertensive disorder, systemic arterial]" />
+    <artifact id="StructureDefinition/Observation-race" key="StructureDefinition-Observation-race" name="Observation - Race" />
+    <artifact id="Observation/observation-race-jada-ann-quinn-common" key="Observation-observation-race-jada-ann-quinn-common" name="Observation - Race example [Jada Ann Quinn]" />
+    <artifact id="StructureDefinition/Observation-tabulated-ethnicity" key="StructureDefinition-Observation-tabulated-ethnicity" name="Observation - Tabulated Ethnicity" />
+    <artifact id="Observation/observation-tabulated-ethnicity-jada-ann-quinn-common" key="Observation-observation-tabulated-ethnicity-jada-ann-quinn-common"
+        name="Observation - Tabulated Ethnicity example [Jada Ann Quinn]" />
+    <artifact id="StructureDefinition/Patient-child" key="StructureDefinition-Patient-child" name="Patient - Child" />
+    <artifact id="Patient/patient-child-babyg-quinn-common" key="Patient-patient-child-babyg-quinn-common" name="Patient - Child example [Baby G Quinn]" />
+    <artifact id="StructureDefinition/Patient-decedent-fetus" key="StructureDefinition-Patient-decedent-fetus" name="Patient - Decedent Fetus" />
+    <artifact id="Patient/patient-decedent-fetus-not-named-common" key="Patient-patient-decedent-fetus-not-named-common" name="Patient - Decedent Fetus example [Fetus Not Named]" />
+    <artifact id="StructureDefinition/Patient-mother" key="StructureDefinition-Patient-mother" name="Patient - Mother" />
+    <artifact id="Patient/patient-mother-birth-date-part-absent-common" key="Patient-patient-mother-birth-date-part-absent-common" name="Patient - Mother Date Part Absent" />
+    <artifact id="Patient/patient-mother-jada-ann-quinn-common" key="Patient-patient-mother-jada-ann-quinn-common" name="Patient - Mother Jada Ann Quinn" />
+    <artifact id="Patient/patient-mother-carmen-teresa-lee-common" key="Patient-patient-mother-carmen-teresa-lee-common" name="Patient - Mother example [Carmen Teresa Lee]" />
+    <artifact deprecated="true" id="Practitioner/practitioner-live-birth-fetal-death-janet-seito-common" key="Practitioner-practitioner-live-birth-fetal-death-janet-seito-common"
+        name="Practitioner - Live Birth Fetal Death example [Janet Seito]" />
+    <artifact id="StructureDefinition/Practitioner-vital-records" key="StructureDefinition-Practitioner-live-birth-fetal-death" name="Practitioner - Live Birth and Fetal Death" />
+    <artifact id="Practitioner/practitioner-vital-records-janet-seito-common" key="Practitioner-practitioner-vital-records-janet-seito-common" name="Practitioner - Vital Records example [Janet Seito]" />
+    <artifact id="RelatedPerson/relatedperson-father-tony-lewis-common" key="RelatedPerson-relatedperson-father-tony-lewis-common" name="RelatedPerson - Adoptive Father" />
+    <artifact id="RelatedPerson/relatedperson-mother-carol-hoffer-common" key="RelatedPerson-relatedperson-mother-carol-hoffer-common" name="RelatedPerson - Adoptive Mother" />
+    <artifact id="StructureDefinition/RelatedPerson-father" key="StructureDefinition-RelatedPerson-father" name="RelatedPerson - Father" />
+    <artifact id="StructureDefinition/RelatedPerson-father-natural" key="StructureDefinition-RelatedPerson-father-natural" name="RelatedPerson - Father Natural" />
+    <artifact id="RelatedPerson/relatedperson-father-natural-tom-yan-lee-common" key="RelatedPerson-relatedperson-father-natural-tom-yan-lee-common" name="RelatedPerson - Father Natural example [Tom Yan Lee]" />
+    <artifact id="RelatedPerson/relatedperson-father-tom-yan-lee-common" key="RelatedPerson-relatedperson-father-tom-yan-lee-common" name="RelatedPerson - Father example [Tom Yan Lee]" />
+    <artifact id="StructureDefinition/RelatedPerson-mother" key="StructureDefinition-RelatedPerson-mother" name="RelatedPerson - Mother" />
+    <artifact id="RelatedPerson/relatedperson-mother-gestational-carmen-teresa-lee-common" key="RelatedPerson-relatedperson-mother-gestational-carmen-teresa-lee-common"
+        name="RelatedPerson - Mother Gestaional example [Carmen Teresa Lee]" />
+    <artifact id="StructureDefinition/RelatedPerson-mother-gestational" key="StructureDefinition-RelatedPerson-mother-gestational" name="RelatedPerson - Mother Gestational" />
+    <artifact deprecated="true" id="StructureDefinition/RelatedPerson-mother-natural" key="StructureDefinition-RelatedPerson-mother-natural" name="RelatedPerson - Mother Natural" />
+    <artifact deprecated="true" id="RelatedPerson/relatedperson-mother-natural-carmen-teresa-lee-common" key="RelatedPerson-relatedperson-mother-natural-carmen-teresa-lee-common"
+        name="RelatedPerson - Mother Natural example [Carmen Teresa Lee]" />
+    <artifact deprecated="true" id="RelatedPerson/relatedperson-mother-carmen-teresa-lee-common" key="RelatedPerson-relatedperson-mother-carmen-teresa-lee-common" name="RelatedPerson - Mother example [Carmen Teresa Lee]" />
+    <artifact id="StructureDefinition/RelatedPerson-parent" key="StructureDefinition-RelatedPerson-parent" name="RelatedPerson - Parent" />
+    <artifact id="RelatedPerson/relatedperson-parent-stepmother" key="RelatedPerson-relatedperson-parent-stepmother" name="RelatedPerson - Stepmother" />
+    <artifact deprecated="true" id="Parameters/expansion-parameters-vr-common" key="Parameters-expansion-parameters-vr-common" name="expansion-parameters-vr-common" />
+    <page key="NA" name="(NA)" />
+    <page key="many" name="(many)" />
+    <page key="artifacts" name="Artifacts Summary" />
+    <page deprecated="true" key="background" name="Background" />
+    <page key="downloads" name="Downloads" />
+    <page key="index" name="Home Page" />
+    <page key="toc" name="Table of Contents" />
+    <page key="terminology" name="Terminology" />
+    <page deprecated="true" key="the-specification" name="The Specification" />
 </specification>
