@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification ballotUrl="http://hl7.org/fhir/us/covid19library/2021Sep" ciUrl="http://build.fhir.org/ig/HL7/covid19library" defaultVersion="0.13.0" defaultWorkgroup="cimi" gitUrl="https://github.com/HL7/fhir-COVID19Library-ig" url="http://hl7.org/fhir/us/covid19library" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/covid19library/2021Sep" ciUrl="http://build.fhir.org/ig/HL7/covid19library" defaultVersion="0.13.0" defaultWorkgroup="cimi" gitUrl="https://github.com/HL7/fhir-COVID19Library-ig" url="http://hl7.org/fhir/us/covid19library">
 <version code="current" url="http://build.fhir.org/ig/HL7/covid19library"/>
 <version code="0.13.0" url="http://hl7.org/fhir/us/covid19library/2021Sep"/>
 <artifactPageExtension value="-definitions"/>
@@ -9,11 +9,12 @@
 <artifact id="ValueSet/covid19-cvx-codes-value-set" key="ValueSet-covid19-cvx-codes-value-set" name="COVID 19 CVX Code System Vaccine Codes"/>
 <artifact id="StructureDefinition/covid-19-exposure-core" key="StructureDefinition-covid-19-exposure-core" name="COVID 19 Exposure Core profile"/>
 <artifact id="StructureDefinition/covid-19-exposure-questionnaire" key="StructureDefinition-covid-19-exposure-questionnaire" name="COVID 19 Exposure Questionnaire"/>
-<artifact id="StructureDefinition/covid19-symptoms-absent" key="StructureDefinition-covid19-symptoms-absent" name="COVID 19 Symptoms Absent"/>
-<artifact id="StructureDefinition/covid19-symptoms-present" key="StructureDefinition-covid19-symptoms-present" name="COVID 19 Symptoms Present"/>
+<artifact id="StructureDefinition/covid19-symptoms" key="StructureDefinition-covid19-symptoms" name="COVID 19 Signs and Symptoms"/>
+<artifact deprecated="true" id="StructureDefinition/covid19-symptoms-absent" key="StructureDefinition-covid19-symptoms-absent" name="COVID 19 Symptoms Absent"/>
+<artifact deprecated="true" id="StructureDefinition/covid19-symptoms-present" key="StructureDefinition-covid19-symptoms-present" name="COVID 19 Symptoms Present"/>
 <artifact id="StructureDefinition/covid19-manufacturer" key="StructureDefinition-covid19-manufacturer" name="COVID 19 Vaccine Manufacturer"/>
 <artifact id="ValueSet/covid-19-disease-severity-value-set" key="ValueSet-covid-19-disease-severity-value-set" name="COVID-19 Disease Severity Value Set"/>
-<artifact id="StructureDefinition/COVID-19-underlying-medical-condition-absent" key="StructureDefinition-COVID-19-underlying-medical-condition-absent" name="COVID-19 General Underlying Conditions Absent"/>
+<artifact deprecated="true" id="StructureDefinition/COVID-19-underlying-medical-condition-absent" key="StructureDefinition-COVID-19-underlying-medical-condition-absent" name="COVID-19 General Underlying Conditions Absent"/>
 <artifact id="StructureDefinition/COVID-19-underlying-medical-condition-present" key="StructureDefinition-COVID-19-underlying-medical-condition-present" name="COVID-19 General Underlying Conditions Present"/>
 <artifact id="StructureDefinition/COVID-19-ICD10-Diagnosis" key="StructureDefinition-COVID-19-ICD10-Diagnosis" name="COVID-19 ICD 10 Diagnosis"/>
 <artifact id="ValueSet/covid-19-icd-diagnosis-vs" key="ValueSet-covid-19-icd-diagnosis-vs" name="COVID-19 ICD 10 Diagnosis Value Set"/>
@@ -79,8 +80,8 @@
 <artifact deprecated="true" id="ValueSet/covid19-porocedure-code-value-set" key="ValueSet-covid19-porocedure-code-value-set" name="COVID19VaccineProcedureVS"/>
 <artifact id="StructureDefinition/case-patient-report-id" key="StructureDefinition-case-patient-report-id" name="Case-Patient Report Identifying Information"/>
 <artifact deprecated="true" id="Observation/case-patient-report-id" key="Observation-case-patient-report-id" name="CasePatientReportIdentifyingInfo"/>
-<artifact id="StructureDefinition/certainty-of-absence" key="StructureDefinition-certainty-of-absence" name="Certainty of Absence"/>
-<artifact id="ValueSet/certainty-of-absence-value-set" key="ValueSet-certainty-of-absence-value-set" name="Certainty of Absence Value Set"/>
+<artifact deprecated="true" id="StructureDefinition/certainty-of-absence" key="StructureDefinition-certainty-of-absence" name="Certainty of Absence"/>
+<artifact deprecated="true" id="ValueSet/certainty-of-absence-value-set" key="ValueSet-certainty-of-absence-value-set" name="Certainty of Absence Value Set"/>
 <artifact id="StructureDefinition/certainty-of-presence" key="StructureDefinition-certainty-of-presence" name="Certainty of Presence"/>
 <artifact id="ValueSet/certainty-of-presence-value-set" key="ValueSet-certainty-of-presence-value-set" name="Certainty of Presence Value Set"/>
 <artifact deprecated="true" id="Extension/certainty-of-absence" key="Extension-certainty-of-absence" name="CertaintyOfAbsence"/>
@@ -96,6 +97,7 @@
 <artifact id="ValueSet/det-notdet-equivocal-invalid-vs" key="ValueSet-det-notdet-equivocal-invalid-vs" name="Detected, Not-detected, Equivocal, Invalid value set"/>
 <artifact id="ValueSet/det-notdet-inconclusive-invalid-vs" key="ValueSet-det-notdet-inconclusive-invalid-vs" name="Detected, Not-detected, Inconclusive, Invalid value set"/>
 <artifact id="StructureDefinition/exposure-type" key="StructureDefinition-exposure-type" name="Exposure Type"/>
+<artifact id="ValueSet/exposure-type-la-value-set" key="ValueSet-exposure-type-la-value-set" name="Exposure Type LOINC Answer Value Set"/>
 <artifact deprecated="true" id="Observation/exposure-type" key="Observation-exposure-type" name="ExposureType"/>
 <artifact deprecated="true" id="Observation/FluABSARSCoV2PnlRespNAAprb" key="Observation-FluABSARSCoV2PnlRespNAAprb" name="FluABSARSCoV2PnlRespNAAprb"/>
 <artifact deprecated="true" id="Observation/FluABSARSCoV2RespNAAprobe" key="Observation-FluABSARSCoV2RespNAAprobe" name="FluABSARSCoV2RespNAAprobe"/>
@@ -108,7 +110,7 @@
 <artifact deprecated="true" id="Observation/GammaInterferonBackgroundACncPtBldQnIA" key="Observation-GammaInterferonBackgroundACncPtBldQnIA" name="GammaInterferonBackgroundACncPtBldQnIA"/>
 <artifact id="StructureDefinition/gestational-age-at-onset-of-illness" key="StructureDefinition-gestational-age-at-onset-of-illness" name="Gestational Age at Onset of Illness"/>
 <artifact deprecated="true" id="Observation/gestational-age-at-onset-of-illness" key="Observation-gestational-age-at-onset-of-illness" name="GestationalAgeAtOnsetOfIllness"/>
-<artifact id="ValueSet/healthcare-occupation-value-set" key="ValueSet-healthcare-occupation-value-set" name="Healthcare Occupation Value Set"/>
+<artifact deprecated="true" id="ValueSet/healthcare-occupation-value-set" key="ValueSet-healthcare-occupation-value-set" name="Healthcare Occupation Value Set"/>
 <artifact id="StructureDefinition/Humancoronavirus229ERNAPrThrPtNphOrdNonprobeamptarLabObs" key="StructureDefinition-Humancoronavirus229ERNAPrThrPtNphOrdNonprobeamptarLabObs" name="Human coronavirus 229E RNA [Presence] in Nasopharynx by NAA with non-probe detection"/>
 <artifact id="StructureDefinition/Humancoronavirus229EHKU1OC43NL63RNAPresNsphLabObs" key="StructureDefinition-Humancoronavirus229EHKU1OC43NL63RNAPresNsphLabObs" name="Human coronavirus 229E+HKU1+OC43+NL63 RNA [Presence] in Nasopharynx by NAA with non-probe detection"/>
 <artifact id="StructureDefinition/HumancoronavirusHKU1RNAPrThrPtNphOrdNonprobeamptarLabObs" key="StructureDefinition-HumancoronavirusHKU1RNAPrThrPtNphOrdNonprobeamptarLabObs" name="Human coronavirus HKU1 RNA [Presence] in Nasopharynx by NAA with non-probe detection"/>
@@ -134,8 +136,8 @@
 <artifact id="StructureDefinition/FluBvRNARespAlNAAProbe" key="StructureDefinition-FluBvRNARespAlNAAProbe" name="Influenza virus B RNA [Presence] in Respiratory specimen by NAA with probe detection"/>
 <artifact deprecated="true" id="Observation/InfluenzavirusAAgPrThePtNphOrdIArapid" key="Observation-InfluenzavirusAAgPrThePtNphOrdIArapid" name="InfluenzavirusAAgPrThePtNphOrdIArapid"/>
 <artifact deprecated="true" id="Observation/InfluenzavirusBAgPrThrPtNphOrdIArapid" key="Observation-InfluenzavirusBAgPrThrPtNphOrdIArapid" name="InfluenzavirusBAgPrThrPtNphOrdIArapid"/>
-<artifact id="StructureDefinition/known-exposure" key="StructureDefinition-known-exposure" name="Known Exposure"/>
-<artifact id="ValueSet/known-exposure-la-ValueSet" key="ValueSet-known-exposure-la-ValueSet" name="Known Exposure LOINC Answer Value Set"/>
+<artifact id="StructureDefinition/known-sars-cov-2-exposure" key="StructureDefinition-known-exposure" name="Known Exposure"/>
+<artifact deprecated="true" id="ValueSet/known-exposure-la-ValueSet" key="ValueSet-known-exposure-la-ValueSet" name="Known Exposure LOINC Answer Value Set"/>
 <artifact deprecated="true" id="Observation/known-exposure" key="Observation-known-exposure" name="KnownExposure"/>
 <artifact id="StructureDefinition/c19-laboratory-observation-base" key="StructureDefinition-c19-laboratory-observation-base" name="Laboratory Observation Base"/>
 <artifact id="StructureDefinition/c19-lab-panel-observation-base" key="StructureDefinition-c19-lab-panel-observation-base" name="Laboratory Observation Panel Base"/>
@@ -373,19 +375,19 @@
 <page key="many" name="(many)"/>
 <page deprecated="true" key="profiles" name="Artifacts"/>
 <page key="artifacts" name="Artifacts Summary"/>
-<page key="9_COVID19Immunization" name="COVID 19 Immunization"/>
-<page key="3_CaseReportingInfo" name="Case Reporting Info"/>
+<page key="9_COVID19Immunization" name="COVID-19 Immunization"/>
+<page key="3_CaseReportingInfo" name="Case reporting information"/>
 <page key="10_downloads" name="Downloads"/>
-<page key="4_ExposureInfo" name="Exposure Info"/>
-<page key="8_ExposureQuestionnaire" name="Exposure Questionnaire"/>
-<page key="history" name="History"/>
+<page key="4_ExposureInfo" name="Exposure information"/>
+<page key="8_ExposureQuestionnaire" name="Exposure questionnaire example"/>
+<page deprecated="true" key="history" name="History"/>
 <page key="index" name="Home"/>
 <page deprecated="true" key="home" name="IG Home"/>
-<page key="6_LabProfiles" name="Lab Profiles"/>
-<page key="1_Logica_comparison_to_eICR" name="Logica Comparison to E ICR"/>
-<page key="2_Patient_Demographics_and_Vital_Signs" name="Patient Demographics and Vital Signs"/>
-<page key="5_SignsSymptoms_Diagnoses_Comorbidities" name="Signs Symptoms Diagnoses Comorbidities"/>
-<page key="7_SmokingStatus_PregnancyStatus" name="Smoking Status Pregnancy Status"/>
+<page key="6_LabProfiles" name="Lab profiles"/>
+<page key="1_Logica_comparison_to_eICR" name="Logica comparison to eICR"/>
+<page key="2_Patient_Demographics_and_Vital_Signs" name="Patient demographics and Vital Signs"/>
+<page key="5_SignsSymptoms_Diagnoses_Comorbidities" name="Signs, Symptoms, Diagnoses, and Underlying conditions"/>
+<page key="7_SmokingStatus_PregnancyStatus" name="Smoking status and Pregnancy status"/>
 <page deprecated="true" key="support" name="Support"/>
 <page deprecated="true" key="TOC" name="Table Of Contents"/>
 <page key="toc" name="Table of Contents"/>
