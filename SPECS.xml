@@ -10314,21 +10314,32 @@
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-carin-bb"
                   name="US CARIN Blue Button (FHIR)"
-                  ballotUrl="http://hl7.org/fhir/us/carin-bb/2020Feb"
+                  ballotUrl="http://hl7.org/fhir/us/carin-bb/2022Jan"
                   ciUrl="http://build.fhir.org/ig/HL7/carin-bb"
                   defaultVersion="current"
                   defaultWorkgroup="fm"
                   gitUrl="https://github.com/HL7/carin-bb"
                   url="http://hl7.org/fhir/us/carin-bb">
-              <version code="current" url="http://build.fhir.org/ig/HL7/carin-bb"/>
-              <version code="1.1.0" url="http://hl7.org/fhir/us/carin-bb/STU1.1"/>
-			  <version code="1.0.1" deprecated="true"/>
-              <version code="1.0.0" url="http://hl7.org/fhir/us/carin-bb/STU1"/>
-              <version code="0.1.0" url="http://hl7.org/fhir/us/carin-bb/2020Feb"/>
-              <version code="0.1" deprecated="true"/>
+      <version code="current" url="http://build.fhir.org/ig/HL7/carin-bb"/>
+      <version code="1.2.0" url="http://hl7.org/fhir/us/carin-bb/2022Jan"/>
+      <version code="1.1.0" url="http://hl7.org/fhir/us/carin-bb/STU1.1"/>
+      <version code="1.0.0" url="http://hl7.org/fhir/us/carin-bb/STU1"/>
+      <version code="0.1.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/us/carin-bb/2020Feb"/>
+      <version code="1.0.1" deprecated="true"/>
+      <version code="0.1" deprecated="true"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
+      <artifact id="ValueSet/ADADentalProcedureCode"
+                key="FHIR-us-carin-bb-ValueSet-ADADentalProcedureCode"
+                name="ADA Code on Dental Procedures and Nomenclature VS"
+                spec="us-carin-bb"/>
+      <artifact id="CodeSystem/ADADentalProcedureCode"
+                key="FHIR-us-carin-bb-CodeSystem-ADADentalProcedureCode"
+                name="ADA Code on Dental Procedures and Nomenclature CS"
+                spec="us-carin-bb"/>
       <artifact deprecated="true"
                 id="CodeSystem/AMACPTCodes"
                 key="FHIR-us-carin-bb-CodeSystem-AMACPTCodes"
@@ -10342,13 +10353,17 @@
                 key="FHIR-us-carin-bb-CodeSystem-THREEMAPRDRG"
                 name="All Patient Refined Diagnosis Related Groups (APR-DRGs)"
                 spec="us-carin-bb"/>
-      <artifact id="ValueSet/C4BBAdjudication"
-                key="FHIR-us-carin-bb-ValueSet-C4BBAdjudication"
-                name="C4BB AdjudicationVS"
+      <artifact id="CodeSystem/ADAAreaOfOralCavitySystem"
+                key="FHIR-us-carin-bb-CodeSystem-ADAAreaOfOralCavitySystem"
+                name="American Dental Association Area of Oral Cavity System"
                 spec="us-carin-bb"/>
-      <artifact id="CodeSystem/C4BBAdjudication"
-                key="FHIR-us-carin-bb-CodeSystem-C4BBAdjudication"
-                name="C4BB AdjudicationCS"
+      <artifact id="CodeSystem/ADAUniversalNumberingSystem"
+                key="FHIR-us-carin-bb-CodeSystem-ADAUniversalNumberingSystem"
+                name="American Dental Association Universal Numbering System"
+                spec="us-carin-bb"/>
+      <artifact id="ValueSet/ADAUniversalNumberingSystem"
+                key="FHIR-us-carin-bb-ValueSet-ADAUniversalNumberingSystem"
+                name="American Dental Association Universal Numbering Value Set"
                 spec="us-carin-bb"/>
       <artifact id="ValueSet/C4BBAdjudicationCategoryDiscriminator"
                 key="FHIR-us-carin-bb-ValueSet-C4BBAdjudicationCategoryDiscriminator"
@@ -10357,6 +10372,14 @@
       <artifact id="CodeSystem/C4BBAdjudicationDiscriminator"
                 key="FHIR-us-carin-bb-CodeSystem-C4BBAdjudicationDiscriminator"
                 name="C4BB Adjudication Discriminator"
+                spec="us-carin-bb"/>
+      <artifact id="CodeSystem/C4BBAdjudication"
+                key="FHIR-us-carin-bb-CodeSystem-C4BBAdjudication"
+                name="C4BB AdjudicationCS"
+                spec="us-carin-bb"/>
+      <artifact id="ValueSet/C4BBAdjudication"
+                key="FHIR-us-carin-bb-ValueSet-C4BBAdjudication"
+                name="C4BB AdjudicationVS"
                 spec="us-carin-bb"/>
       <artifact id="CapabilityStatement/c4bb"
                 key="FHIR-us-carin-bb-CapabilityStatement-c4bb"
@@ -10390,13 +10413,13 @@
                 key="FHIR-us-carin-bb-ValueSet-C4BBClaimPharmacyTeamRole"
                 name="C4BB Claim Pharmacy CareTeam Roles"
                 spec="us-carin-bb"/>
-      <artifact id="ValueSet/C4BBClaimProcedureType"
-                key="FHIR-us-carin-bb-ValueSet-C4BBClaimProcedureType"
-                name="C4BB Claim Procedure Type VS"
-                spec="us-carin-bb"/>
       <artifact id="CodeSystem/C4BBClaimProcedureType"
                 key="FHIR-us-carin-bb-CodeSystem-C4BBClaimProcedureType"
                 name="C4BB Claim Procedure Type CS"
+                spec="us-carin-bb"/>
+      <artifact id="ValueSet/C4BBClaimProcedureType"
+                key="FHIR-us-carin-bb-ValueSet-C4BBClaimProcedureType"
+                name="C4BB Claim Procedure Type VS"
                 spec="us-carin-bb"/>
       <artifact id="ValueSet/C4BBClaimProfessionalAndNonClinicianCareTeamRole"
                 key="FHIR-us-carin-bb-ValueSet-C4BBClaimProfessionalAndNonClinicianCareTeamRole"
@@ -10422,6 +10445,10 @@
                 key="FHIR-us-carin-bb-StructureDefinition-C4BB-ExplanationOfBenefit-Inpatient-Institutional"
                 name="C4BB ExplanationOfBenefit Inpatient Institutional"
                 spec="us-carin-bb"/>
+      <artifact id="StructureDefinition/C4BB-ExplanationOfBenefit-Oral"
+                key="FHIR-us-carin-bb-StructureDefinition-C4BB-ExplanationOfBenefit-Oral"
+                name="C4BB ExplanationOfBenefit Oral"
+                spec="us-carin-bb"/>
       <artifact id="StructureDefinition/C4BB-ExplanationOfBenefit-Outpatient-Institutional"
                 key="FHIR-us-carin-bb-StructureDefinition-C4BB-ExplanationOfBenefit-Outpatient-Institutional"
                 name="C4BB ExplanationOfBenefit Outpatient Institutional"
@@ -10438,13 +10465,13 @@
                 key="FHIR-us-carin-bb-CodeSystem-C4BBIdentifierType"
                 name="C4BB Identifier Type"
                 spec="us-carin-bb"/>
-      <artifact id="ValueSet/C4BBInstitutionalClaimSubType"
-                key="FHIR-us-carin-bb-ValueSet-C4BBClaimSubType"
-                name="C4BB Institutional Claim SubType VS"
-                spec="us-carin-bb"/>
       <artifact id="CodeSystem/C4BBInstitutionalClaimSubType"
                 key="FHIR-us-carin-bb-CodeSystem-C4BBClaimSubType"
                 name="C4BB Institutional Claim SubType CS"
+                spec="us-carin-bb"/>
+      <artifact id="ValueSet/C4BBInstitutionalClaimSubType"
+                key="FHIR-us-carin-bb-ValueSet-C4BBClaimSubType"
+                name="C4BB Institutional Claim SubType VS"
                 spec="us-carin-bb"/>
       <artifact id="StructureDefinition/C4BB-Organization"
                 key="FHIR-us-carin-bb-StructureDefinition-C4BB-Organization"
@@ -10494,6 +10521,14 @@
                 key="FHIR-us-carin-bb-ValueSet-C4BBPractitionerIdentifierType"
                 name="C4BB Practitioner Identifier Type"
                 spec="us-carin-bb"/>
+      <artifact id="ValueSet/C4BBProfessionalAndNonClinicianClaimSubType"
+                key="FHIR-us-carin-bb-ValueSet-C4BBProfessionalAndNonClinicianClaimSubType"
+                name="C4BB Professional And Non Clinician Claim SubType"
+                spec="us-carin-bb"/>
+      <artifact id="ValueSet/C4BBProfessionalAndNonClinicianClaimType"
+                key="FHIR-us-carin-bb-ValueSet-C4BBProfessionalAndNonClinicianClaimType"
+                name="C4BB Professional And Non Clinician Claim Type"
+                spec="us-carin-bb"/>
       <artifact id="ValueSet/C4BBRelatedClaimRelationshipCodes"
                 key="FHIR-us-carin-bb-ValueSet-C4BBRelatedClaimRelationshipCodes"
                 name="C4BB Related Claim Relationship Codes"
@@ -10534,6 +10569,10 @@
                 key="FHIR-us-carin-bb-Coverage-Coverage1"
                 name="Coverage1"
                 spec="us-carin-bb"/>
+      <artifact id="Coverage/CoverageDental1"
+                key="FHIR-us-carin-bb-Coverage-CoverageDental1"
+                name="CoverageDental1"
+                spec="us-carin-bb"/>
       <artifact id="SearchParameter/coverage-payor"
                 key="FHIR-us-carin-bb-SearchParameter-coverage-payor"
                 name="Coverage_Payor"
@@ -10557,6 +10596,14 @@
       <artifact id="ExplanationOfBenefit/EOBInpatient1"
                 key="FHIR-us-carin-bb-ExplanationOfBenefit-EOBInpatient1"
                 name="EOBInpatient1"
+                spec="us-carin-bb"/>
+      <artifact id="ExplanationOfBenefit/EOBOral1a"
+                key="FHIR-us-carin-bb-ExplanationOfBenefit-EOBOral1a"
+                name="EOBOral1a"
+                spec="us-carin-bb"/>
+      <artifact id="ExplanationOfBenefit/EOBOral2"
+                key="FHIR-us-carin-bb-ExplanationOfBenefit-EOBOral2"
+                name="EOBOral2"
                 spec="us-carin-bb"/>
       <artifact id="ExplanationOfBenefit/EOBOutpatientInstitutional1"
                 key="FHIR-us-carin-bb-ExplanationOfBenefit-EOBOutpatientInstitutional1"
@@ -10606,6 +10653,10 @@
                 key="FHIR-us-carin-bb-SearchParameter-explanationofbenefit-service-date"
                 name="ExplanationOfBenefit_ServiceDate"
                 spec="us-carin-bb"/>
+      <artifact id="SearchParameter/explanationofbenefit-service-start-date"
+                key="FHIR-us-carin-bb-SearchParameter-explanationofbenefit-service-start-date"
+                name="ExplanationOfBenefit_ServiceStartDate"
+                spec="us-carin-bb"/>
       <artifact id="SearchParameter/explanationofbenefit-type"
                 key="FHIR-us-carin-bb-SearchParameter-explanationofbenefit-type"
                 name="ExplanationOfBenefit_Type"
@@ -10636,21 +10687,21 @@
                 key="FHIR-us-carin-bb-ValueSet-NCPDPBrandGenericCode"
                 name="NCPDP Brand Generic Code"
                 spec="us-carin-bb"/>
-      <artifact id="ValueSet/NCPDPBrandGenericIndicator"
-                key="FHIR-us-carin-bb-ValueSet-NCPDPBrandGenericIndicator"
-                name="NCPDP Brand Generic Indicator VS"
-                spec="us-carin-bb"/>
       <artifact id="CodeSystem/NCPDPBrandGenericIndicator"
                 key="FHIR-us-carin-bb-CodeSystem-NCPDPBrandGenericIndicator"
                 name="NCPDP Brand Generic Indicator CS"
                 spec="us-carin-bb"/>
-      <artifact id="ValueSet/NCPDPCompoundCode"
-                key="FHIR-us-carin-bb-ValueSet-NCPDPCompoundCode"
-                name="NCPDP Compound Code CS"
+      <artifact id="ValueSet/NCPDPBrandGenericIndicator"
+                key="FHIR-us-carin-bb-ValueSet-NCPDPBrandGenericIndicator"
+                name="NCPDP Brand Generic Indicator VS"
                 spec="us-carin-bb"/>
       <artifact id="CodeSystem/NCPDPCompoundCode"
                 key="FHIR-us-carin-bb-CodeSystem-NCPDPCompoundCode"
                 name="NCPDP Compound Code"
+                spec="us-carin-bb"/>
+      <artifact id="ValueSet/NCPDPCompoundCode"
+                key="FHIR-us-carin-bb-ValueSet-NCPDPCompoundCode"
+                name="NCPDP Compound Code CS"
                 spec="us-carin-bb"/>
       <artifact id="ValueSet/NCPDPDispensedAsWrittenOrProductSelectionCode"
                 key="FHIR-us-carin-bb-ValueSet-NCPDPDispensedAsWrittenOrProductSelectionCode"
@@ -10741,6 +10792,14 @@
                 key="FHIR-us-carin-bb-ValueSet-FDANationalDrugCode"
                 name="National Drug Code (NDC)"
                 spec="us-carin-bb"/>
+      <artifact id="ValueSet/OralBodySite"
+                key="FHIR-us-carin-bb-ValueSet-OralBodySite"
+                name="Oral Body Site Value Set"
+                spec="us-carin-bb"/>
+      <artifact id="Organization/OrganizationDentalPayer1"
+                key="FHIR-us-carin-bb-Organization-OrganizationDentalPayer1"
+                name="OrganizationDentalPayer1"
+                spec="us-carin-bb"/>
       <artifact id="Organization/Payer1"
                 key="FHIR-us-carin-bb-Organization-Payer1"
                 name="OrganizationPayer1"
@@ -10773,6 +10832,10 @@
                 key="FHIR-us-carin-bb-Practitioner-PractitionerEx3"
                 name="Practitioner Example 3"
                 spec="us-carin-bb"/>
+      <artifact id="Practitioner/PractitionerDentalProvider1"
+                key="FHIR-us-carin-bb-Practitioner-PractitionerDentalProvider1"
+                name="PractitionerDentalProvider1"
+                spec="us-carin-bb"/>
       <artifact id="ValueSet/AMACPTCMSHCPCSProcedureCodes"
                 key="FHIR-us-carin-bb-ValueSet-AMACPTCMSHCPCSProcedureCodes"
                 name="Procedure Codes - AMA CPT - CMS HCPCS"
@@ -10789,30 +10852,38 @@
                 key="FHIR-us-carin-bb-ValueSet-AMACPTCMSHCPCSModifiers"
                 name="Procedure Modifier Codes - AMA CPT - CMS HCPCS"
                 spec="us-carin-bb"/>
-      <artifact id="Organization/ProviderOrganization1"
-                key="FHIR-us-carin-bb-Organization-ProviderOrganizationEx1"
-                name="Provider Organizaiton Example 1"
-                spec="us-carin-bb"/>
       <artifact deprecated="true"
                 id="Organization/ProviderOrganizationEx2"
                 key="FHIR-us-carin-bb-Organization-ProviderOrganizationEx2"
                 name="Provider Organizaiton Example 2"
                 spec="us-carin-bb"/>
+      <artifact id="Organization/ProviderOrganization1"
+                key="FHIR-us-carin-bb-Organization-ProviderOrganizationEx1"
+                name="Provider Organization Example 1"
+                spec="us-carin-bb"/>
       <artifact id="Organization/ProviderOrganization3"
                 key="FHIR-us-carin-bb-Organization-ProviderOrganizationEx3"
-                name="Provider Organizaiton Example 3"
+                name="Provider Organization Example 3"
                 spec="us-carin-bb"/>
       <artifact id="Organization/ProviderOrganization4"
                 key="FHIR-us-carin-bb-Organization-ProviderOrganizationEx4"
-                name="Provider Organizaiton Example 4"
+                name="Provider Organization Example 4"
                 spec="us-carin-bb"/>
       <artifact id="Organization/ProviderOrganization5"
                 key="FHIR-us-carin-bb-Organization-ProviderOrganizationEx5"
-                name="Provider Organizaiton Example 5"
+                name="Provider Organization Example 5"
                 spec="us-carin-bb"/>
       <artifact id="Organization/ProviderOrganization6"
                 key="FHIR-us-carin-bb-Organization-ProviderOrganizationEx6"
-                name="Provider Organizaiton Example 6"
+                name="Provider Organization Example 6"
+                spec="us-carin-bb"/>
+      <artifact id="ValueSet/C4BBSurfaceCodes"
+                key="FHIR-us-carin-bb-ValueSet-C4BBSurfaceCodes"
+                name="US Surface Codes Set"
+                spec="us-carin-bb"/>
+      <artifact id="CodeSystem/C4BBSurfaceCodes"
+                key="FHIR-us-carin-bb-CodeSystem-C4BBSurfaceCodes"
+                name="US Surface Codes System"
                 spec="us-carin-bb"/>
       <artifact id="CodeSystem/X12ClaimAdjustmentReasonCodes"
                 key="FHIR-us-carin-bb-CodeSystem-X12ClaimAdjustmentReasonCodes"
@@ -10835,7 +10906,8 @@
       <page key="FHIR-us-carin-bb-artifacts"
             name="Artifacts Summary"
             spec="us-carin-bb"/>
-      <page key="FHIR-us-carin-bb-Authorization_Authentication_and_Registration"
+      <page deprecated="true"
+            key="FHIR-us-carin-bb-Authorization_Authentication_and_Registration"
             name="Authorization Authentication and Registration"
             spec="us-carin-bb"/>
       <page key="FHIR-us-carin-bb-Background"
@@ -10845,7 +10917,7 @@
             name="Change Notes"
             spec="us-carin-bb"/>
       <page key="FHIR-us-carin-bb-Common_Payer_Consumer_Data_Set"
-            name="Common Payer Consumer Data Set"
+            name="Common Payer Consumer Data Set (CPCDS)"
             spec="us-carin-bb"/>
       <page key="FHIR-us-carin-bb-downloads"
             name="Downloads"
@@ -10859,7 +10931,10 @@
             spec="us-carin-bb"/>
       <page key="FHIR-us-carin-bb-index" name="Home" spec="us-carin-bb"/>
       <page key="FHIR-us-carin-bb-searchparameters"
-            name="Searchparameters"
+            name="Search Parameters"
+            spec="us-carin-bb"/>
+      <page key="FHIR-us-carin-bb-Security_And_Privacy_Considerations"
+            name="Security and Privacy Considerations"
             spec="us-carin-bb"/>
       <page key="FHIR-us-carin-bb-toc"
             name="Table of Contents"
@@ -10872,7 +10947,6 @@
             name="Terminology Licensure"
             spec="us-carin-bb"/>
       <page key="FHIR-us-carin-bb-Use_Case" name="Use Case" spec="us-carin-bb"/>
-
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-carin-rtpbc"
