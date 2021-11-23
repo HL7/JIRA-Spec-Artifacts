@@ -1,16 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    url="http://hl7.org/fhir/us/davinci-pct"    
-    ciUrl="http://build.fhir.org/ig/HL7/davinci-pct" 
-    defaultVersion="1.0.0" 
-    defaultWorkgroup="cds" 
-    gitUrl="https://github.com/HL7/davinci-pct" 
-    xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-    <version code="current" url="http://build.fhir.org/ig/HL7/davinci-pct"/>
-    <version code="1.0.0"/>
-    <artifactPageExtension value="-definitions"/>
-    <artifactPageExtension value="-examples"/>
-    <artifactPageExtension value="-mappings"/>
-    <page key="NA" name="(NA)"/>
-    <page key="many" name="(many)"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="http://hl7.org/fhir/us/davinci-pct" defaultVersion="current" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-pct" url="http://hl7.org/fhir/us/davinci-pct">
+<version code="current" url="http://hl7.org/fhir/us/davinci-pct"/>
+<version code="0.1.0" url="http://hl7.org/fhir/us/davinci-pct/v0.1.0"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/compoundDrugLinkingNum" key="StructureDefinition-compoundDrugLinkingNum" name="CompoundDrugLinkingNumber"/>
+<artifact id="StructureDefinition/countrySubdivisionCode" key="StructureDefinition-countrySubdivisionCode" name="CountrySubdivisionCode"/>
+<artifact id="StructureDefinition/disclaimer" key="StructureDefinition-disclaimer" name="Disclaimer"/>
+<artifact id="StructureDefinition/estimatedDateOfService" key="StructureDefinition-estimatedDateOfService" name="EstimatedDateOfService"/>
+<artifact id="StructureDefinition/expirationDate" key="StructureDefinition-expirationDate" name="Expiration Date"/>
+<artifact id="StructureDefinition/gfeReference" key="StructureDefinition-gfeReference" name="GFE Reference"/>
+<artifact id="StructureDefinition/gfeBillingProviderLineItemCtrlNum" key="StructureDefinition-gfeBillingProviderLineItemCtrlNum" name="GFEBillingProviderLineItemCtrlNum"/>
+<artifact id="StructureDefinition/gfeProviderAssignedIdentifier" key="StructureDefinition-gfeProviderAssignedIdentifier" name="GFEProviderAssignedIdentifier"/>
+<artifact id="StructureDefinition/gfeServiceLinkingInfo" key="StructureDefinition-gfeServiceLinkingInfo" name="GFEServiceLinkingInfo"/>
+<artifact id="OperationDefinition/GFE-submit" key="OperationDefinition-GFE-submit" name="GFESubmitOperation"/>
+<artifact id="StructureDefinition/gfeSubmitter" key="StructureDefinition-gfeSubmitter" name="GFESubmitter"/>
+<artifact id="StructureDefinition/interTransIdentifier" key="StructureDefinition-interTransIdentifier" name="InterTransIdentifier"/>
+<artifact id="StructureDefinition/outOfNetworkProviderInfo" key="StructureDefinition-outOfNetworkProviderInfo" name="Out Of Network Provider Info"/>
+<artifact id="StructureDefinition/davinci-pct-aeob-bundle" key="StructureDefinition-davinci-pct-aeob-bundle" name="PCT AEOB Bundle"/>
+<artifact id="CodeSystem/PCTAdjudicationCategoryType" key="CodeSystem-PCTAdjudicationCategoryType" name="PCT Adjudication Category Type"/>
+<artifact id="StructureDefinition/davinci-pct-aeob" key="StructureDefinition-davinci-pct-aeob" name="PCT Advanced EOB"/>
+<artifact id="ValueSet/PCTProcedureSurgicalCodes" key="ValueSet-PCTProcedureSurgicalCodes" name="PCT CMS HCPCS and AMA CPT Procedure Surgical Codes"/>
+<artifact id="CodeSystem/PCTCareTeamRole" key="CodeSystem-PCTCareTeamRole" name="PCT Care Team Role"/>
+<artifact id="ValueSet/PCTCareTeamRoleVS" key="ValueSet-PCTCareTeamRoleVS" name="PCT Care Team Role Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set"/>
+<artifact id="StructureDefinition/davinci-pct-coverage" key="StructureDefinition-davinci-pct-coverage" name="PCT Coverage"/>
+<artifact id="CodeSystem/PCTCoverageCopayTypeCS" key="CodeSystem-PCTCoverageCopayTypeCS" name="PCT Coverage Copay Type Code System"/>
+<artifact id="ValueSet/pct-coverage-copay-codes" key="ValueSet-pct-coverage-copay-codes" name="PCT Coverage Copay Type Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set"/>
+<artifact id="CodeSystem/PCTDiagnosisType" key="CodeSystem-PCTDiagnosisType" name="PCT Diagnosis Type"/>
+<artifact id="ValueSet/PCTDiagnosisTypeVS" key="ValueSet-PCTDiagnosisTypeVS" name="PCT Diagnosis Type Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set"/>
+<artifact id="StructureDefinition/davinci-pct-gfe-bundle" key="StructureDefinition-davinci-pct-gfe-bundle" name="PCT GFE Bundle"/>
+<artifact id="ValueSet/PCTGFECMSPOS" key="ValueSet-PCTGFECMSPOS" name="PCT GFE CMS Place of Service Value Set"/>
+<artifact id="ValueSet/PCTGFEItemAdjudicationVS" key="ValueSet-PCTGFEItemAdjudicationVS" name="PCT GFE Item Adjudication Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set"/>
+<artifact id="ValueSet/PCTGFEItemCptHcpcsHippsVS" key="ValueSet-PCTGFEItemCptHcpcsHippsVS" name="PCT GFE Item CPT - HCPCS - HIPPS Value Set"/>
+<artifact id="ValueSet/PCTGFEItemCptHcpcsVS" key="ValueSet-PCTGFEItemCptHcpcsVS" name="PCT GFE Item CPT - HCPCS Value Set"/>
+<artifact id="ValueSet/PCTGFEItemNDCVS" key="ValueSet-PCTGFEItemNDCVS" name="PCT GFE Item NDC Value Set"/>
+<artifact id="CodeSystem/PCTGFEItemProcedureCodes" key="CodeSystem-PCTGFEItemProcedureCodes" name="PCT GFE Item Procedure Code System"/>
+<artifact id="CodeSystem/PCTGFEItemRevenueCS" key="CodeSystem-PCTGFEItemRevenueCS" name="PCT GFE Item Revenue Code System"/>
+<artifact id="ValueSet/PCTGFEItemRevenueVS" key="ValueSet-PCTGFEItemRevenueVS" name="PCT GFE NUBC Revenue Value Set"/>
+<artifact id="ValueSet/PCTGFETypeOfBillVS" key="ValueSet-PCTGFETypeOfBillVS" name="PCT GFE NUBC Uniform Billing (UB-04) Type of Bill Value Set"/>
+<artifact id="CodeSystem/PCTSupportingInfoType" key="CodeSystem-PCTSupportingInfoType" name="PCT GFE Supporting Info Type Code System"/>
+<artifact id="CodeSystem/PCTGFETypeOfBillCS" key="CodeSystem-PCTGFETypeOfBillCS" name="PCT GFE Type Of Bill Code System"/>
+<artifact id="StructureDefinition/pct-gfe-Institutional" key="StructureDefinition-pct-gfe-Institutional" name="PCT Good Faith Estimate Institutional"/>
+<artifact id="StructureDefinition/davinci-pct-gfe-professional" key="StructureDefinition-davinci-pct-gfe-professional" name="PCT Good Faith Estimate Professional"/>
+<artifact id="ValueSet/PCTDiagnosticCodes" key="ValueSet-PCTDiagnosticCodes" name="PCT ICD-10 Diagnostic Codes"/>
+<artifact id="StructureDefinition/davinci-pct-location" key="StructureDefinition-davinci-pct-location" name="PCT Location"/>
+<artifact id="StructureDefinition/davinci-pct-organization" key="StructureDefinition-davinci-pct-organization" name="PCT Organization"/>
+<artifact id="CodeSystem/PCTOrgContactPurposeType" key="CodeSystem-PCTOrgContactPurposeType" name="PCT Organization Contact Purpose Type Code System"/>
+<artifact id="ValueSet/PCTOrgContactPurposeTypeVS" key="ValueSet-PCTOrgContactPurposeTypeVS" name="PCT Organization Contact Purpose Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set"/>
+<artifact id="CodeSystem/PCTOrgIdentifierTypeCS" key="CodeSystem-PCTOrgIdentifierTypeCS" name="PCT Organization Identifier Type Code System"/>
+<artifact id="ValueSet/PCTOrgIdentifierTypeVS" key="ValueSet-PCTOrgIdentifierTypeVS" name="PCT Organization Identifier Type Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set"/>
+<artifact id="CodeSystem/PCTOrganizationTypeCS" key="CodeSystem-PCTOrganizationTypeCS" name="PCT Organization Type Code System"/>
+<artifact id="ValueSet/PCTOrganizationTypeVS" key="ValueSet-PCTOrganizationTypeVS" name="PCT Organization Type Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set"/>
+<artifact id="StructureDefinition/davinci-pct-patient" key="StructureDefinition-davinci-pct-patient" name="PCT Patient"/>
+<artifact id="StructureDefinition/davinci-pct-practitioner" key="StructureDefinition-davinci-pct-practitioner" name="PCT Practitioner"/>
+<artifact id="StructureDefinition/davinci-pct-practitionerrole" key="StructureDefinition-davinci-pct-practitionerrole" name="PCT PractitionerRole"/>
+<artifact id="CodeSystem/PCTProcedureSurgicalCS" key="CodeSystem-PCTProcedureSurgicalCS" name="PCT Procedure Surgical Code System"/>
+<artifact id="CodeSystem/PCTProcedureType" key="CodeSystem-PCTProcedureType" name="PCT Procedure Type"/>
+<artifact id="ValueSet/PCTProcedureTypeVS" key="ValueSet-PCTProcedureTypeVS" name="PCT Procedure Type Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set"/>
+<artifact id="CodeSystem/PCTSubjectToMedicalMgmtReasonCS" key="CodeSystem-PCTSubjectToMedicalMgmtReasonCS" name="PCT Subject-To-Medical-Management Reason Code System"/>
+<artifact id="ValueSet/PCTSubjectToMedicalMgmtReasonVS" key="ValueSet-PCTSubjectToMedicalMgmtReasonVS" name="PCT Subject-To-Medical-Management Reason Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set"/>
+<artifact id="ValueSet/PCTSupportingInfoTypeVS" key="ValueSet-PCTSupportingInfoTypeVS" name="PCT Supporting Info Type Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set"/>
+<artifact id="ExplanationOfBenefit/PCT-AEOB-1" key="ExplanationOfBenefit-PCT-AEOB-1" name="PCT-AEOB-1"/>
+<artifact id="Bundle/PCT-AEOB-Bundle-1" key="Bundle-PCT-AEOB-Bundle-1" name="PCT-AEOB-Bundle-1"/>
+<artifact id="Bundle/PCT-GFE-Bundle-Inst-1" key="Bundle-PCT-GFE-Bundle-Inst-1" name="PCT-GFE-Bundle-Inst-1"/>
+<artifact id="Bundle/PCT-GFE-Bundle-Prof-1" key="Bundle-PCT-GFE-Bundle-Prof-1" name="PCT-GFE-Bundle-Prof-1"/>
+<artifact id="Claim/PCT-GFE-Institutional-1" key="Claim-PCT-GFE-Institutional-1" name="PCT-GFE-Institutional-1"/>
+<artifact id="Claim/PCT-GFE-Professional-1" key="Claim-PCT-GFE-Professional-1" name="PCT-GFE-Professional-1"/>
+<artifact id="StructureDefinition/endpoint" key="StructureDefinition-endpoint" name="PCTEndpoint"/>
+<artifact id="Location/Provider-Org-Loc-2" key="Location-Provider-Org-Loc-2" name="Provider-Org-Loc-2"/>
+<artifact id="StructureDefinition/providerEventMethodology" key="StructureDefinition-providerEventMethodology" name="ProviderEventMethodology"/>
+<artifact id="StructureDefinition/providerTaxonomy" key="StructureDefinition-providerTaxonomy" name="ProviderTaxonomy"/>
+<artifact id="StructureDefinition/referralNumber" key="StructureDefinition-referralNumber" name="ReferralNumber"/>
+<artifact id="StructureDefinition/subjectToMedicalMgmt" key="StructureDefinition-subjectToMedicalMgmt" name="Subject To Medical Management"/>
+<artifact id="Organization/Submitter-Org-1" key="Organization-Submitter-Org-1" name="Submitter-Org-1"/>
+<artifact id="Practitioner/Submitter-Practitioner-1" key="Practitioner-Submitter-Practitioner-1" name="Submitter-Practitioner-1"/>
+<artifact id="Contract/contract1001" key="Contract-contract1001" name="contract1001"/>
+<artifact id="Coverage/coverage1001" key="Coverage-coverage1001" name="coverage1001"/>
+<artifact id="Endpoint/endpoint001" key="Endpoint-endpoint001" name="endpoint001"/>
+<artifact id="Organization/org1001" key="Organization-org1001" name="org1001"/>
+<artifact id="Organization/org1002" key="Organization-org1002" name="org1002"/>
+<artifact id="Patient/patient1001" key="Patient-patient1001" name="patient1001"/>
+<artifact id="Practitioner/prac001" key="Practitioner-prac001" name="prac001"/>
+<artifact id="Practitioner/prac002" key="Practitioner-prac002" name="prac002"/>
+<artifact id="PractitionerRole/pracRole002" key="PractitionerRole-pracRole002" name="pracRole002"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="credits" name="Credits"/>
+<page key="formal_specification" name="Formal Specification"/>
+<page key="index" name="Patient Cost Transparency Implementation Guide Home Page"/>
+<page key="toc" name="Table of Contents"/>
+<page key="underlying_technologies" name="Technical Background and Underlying Technologies"/>
+<page key="terminology_licensure" name="Terminology Licensure"/>
+<page key="use_cases" name="Use Cases and Overview"/>
 </specification>
