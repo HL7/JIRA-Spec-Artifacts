@@ -5033,13 +5033,61 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact id="CapabilityStatement/ipa-server"
-                key="FHIR-ipa-CapabilityStatement-ipa-server"
-                name="CapabilityStatement - International Patient Access"
+      <artifact id="AllergyIntolerance/AllIntExample1"
+                key="FHIR-ipa-AllergyIntolerance-AllIntExample1"
+                name="IPA AllergyIntolerance example"
+                spec="ipa"/>
+      <artifact id="Condition/ProblemExample1"
+                key="FHIR-ipa-Condition-ProblemExample1"
+                name="IPA Condition example"
+                spec="ipa"/>
+      <artifact id="DocumentReference/USClinicalNoteExample1"
+                key="FHIR-ipa-DocumentReference-USClinicalNoteExample1"
+                name="IPA DocumentReference example"
                 spec="ipa"/>
       <artifact id="OperationDefinition/docref"
                 key="FHIR-ipa-OperationDefinition-docref"
                 name="IPA Fetch DocumentReference"
+                spec="ipa"/>
+      <artifact id="Immunization/ImmExample1"
+                key="FHIR-ipa-Immunization-ImmExample1"
+                name="IPA Immunization example"
+                spec="ipa"/>
+      <artifact id="Observation/LabExample1"
+                key="FHIR-ipa-Observation-LabExample1"
+                name="IPA Lab Observation example"
+                spec="ipa"/>
+      <artifact id="MedicationStatement/MedStatementExample1"
+                key="FHIR-ipa-MedicationStatement-MedStatementExample1"
+                name="IPA Medication Statement example"
+                spec="ipa"/>
+      <artifact id="Medication/MedExample1"
+                key="FHIR-ipa-Medication-MedExample1"
+                name="IPA Medication example"
+                spec="ipa"/>
+      <artifact id="MedicationRequest/MedRecExample1"
+                key="FHIR-ipa-MedicationRequest-MedRecExample1"
+                name="IPA MedicationRequest example"
+                spec="ipa"/>
+      <artifact id="Patient/PatientExample1"
+                key="FHIR-ipa-Patient-PatientExample1"
+                name="IPA Patient example"
+                spec="ipa"/>
+      <artifact id="PractitionerRole/PractitionerRoleExample1"
+                key="FHIR-ipa-PractitionerRole-PractitionerRoleExample1"
+                name="IPA Practitioner Role example"
+                spec="ipa"/>
+      <artifact id="Practitioner/PractitionerExample1"
+                key="FHIR-ipa-Practitioner-PractitionerExample1"
+                name="IPA Practitioner example"
+                spec="ipa"/>
+      <artifact id="Observation/SmokingExample1"
+                key="FHIR-ipa-Observation-SmokingExample1"
+                name="IPA Smoking Observation example"
+                spec="ipa"/>
+      <artifact id="Observation/VitalSignsExample1"
+                key="FHIR-ipa-Observation-VitalSignsExample1"
+                name="IPA Vital Signs Observation example"
                 spec="ipa"/>
       <artifact id="StructureDefinition/ipa-allergyintolerance"
                 key="FHIR-ipa-StructureDefinition-ipa-allergyintolerance"
@@ -5085,12 +5133,12 @@
                 key="FHIR-ipa-StructureDefinition-ipa-practitionerrole"
                 name="IPA-PractitionerRole"
                 spec="ipa"/>
-      <page name="(NA)" key="FHIR-ipa-NA" spec="ipa"/>
-      <page name="(many)" key="FHIR-ipa-many" spec="ipa"/>
-      <page name="Table of Contents" key="FHIR-ipa-toc" spec="ipa"/>
-      <page name="International Patient Access Implementation Guide"
-            key="FHIR-ipa-index"
-            spec="ipa"/>
+      <artifact id="CapabilityStatement/ipa-server"
+                key="FHIR-ipa-CapabilityStatement-ipa-server"
+                name="International Patient Access Server CapabilityStatement"
+                spec="ipa"/>
+      <page key="FHIR-ipa-NA" name="(NA)" spec="ipa"/>
+      <page key="FHIR-ipa-many" name="(many)" spec="ipa"/>
       <page key="FHIR-ipa-artifacts" name="Artifact List" spec="ipa"/>
       <page key="FHIR-ipa-conformance"
             name="Conforming to this specification"
@@ -5102,10 +5150,27 @@
       <page key="FHIR-ipa-access"
             name="Gaining Access to a patient record"
             spec="ipa"/>
-      <page key="FHIR-ipa-ipa-server" name="IPA Server Rules" spec="ipa"/>
+      <page key="FHIR-ipa-doc-gen"
+            name="Generating Patient Documents"
+            spec="ipa"/>
+      <page key="FHIR-ipa-ipa-server" name="IPA Server Requirements" spec="ipa"/>
+      <page key="FHIR-ipa-ipa-by-country"
+            name="IPA Specifications by Country"
+            spec="ipa"/>
+      <page key="FHIR-ipa-index" name="International Patient Access" spec="ipa"/>
       <page key="FHIR-ipa-internationalization"
             name="Internationalization Issues"
             spec="ipa"/>
+      <page key="FHIR-ipa-privacy" name="Privacy and Consent" spec="ipa"/>
+      <page key="FHIR-ipa-ips-relationship"
+            name="Relationship with International Patient Summary"
+            spec="ipa"/>
+      <page key="FHIR-ipa-safety" name="Safety Check List" spec="ipa"/>
+      <page key="FHIR-ipa-security" name="Security" spec="ipa"/>
+      <page key="FHIR-ipa-synchronization"
+            name="Synchronizing Patient Records"
+            spec="ipa"/>
+      <page key="FHIR-ipa-toc" name="Table of Contents" spec="ipa"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-mhealth-framework"
