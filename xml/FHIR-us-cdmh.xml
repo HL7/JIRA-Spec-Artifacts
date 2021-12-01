@@ -11,4 +11,149 @@
   <page name="index" key="index"/>
   <page name="overview" key="overview"/>
   <page name="terminologies" key="terminologies"/>
+</specification><?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/cdmh/2019May" ciUrl="https://build.fhir.org/ig/HL7/cdmh" defaultVersion="1.0.0" defaultWorkgroup="brr" gitUrl="https://github.com/HL7/cdmh" url="http://hl7.org/fhir/us/cdmh">
+<version code="current" url="https://build.fhir.org/ig/HL7/cdmh"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/cdmh/STU1"/>
+<version code="0.1.0" url="http://hl7.org/fhir/us/cdmh/2019May"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="AdverseEvent/example" key="AdverseEvent-example" name="CDMH Adverse Event - Example"/>
+<artifact id="Condition/example" key="Condition-example" name="CDMH Condition - Example"/>
+<artifact id="Encounter/example" key="Encounter-example" name="CDMH Encounter - Example"/>
+<artifact id="Group/example" key="Group-example" name="CDMH Group - Example"/>
+<artifact id="Observation/example" key="Observation-example" name="CDMH Lab Results - Example"/>
+<artifact id="Location/example" key="Location-example" name="CDMH Location - Example"/>
+<artifact id="Medication/example" key="Medication-example" name="CDMH Medication - Example"/>
+<artifact id="MedicationDispense/example" key="MedicationDispense-example" name="CDMH MedicationDispense - Example"/>
+<artifact id="MedicationRequest/example" key="MedicationRequest-example" name="CDMH MedicationRequest - Example"/>
+<artifact id="MedicationStatement/example" key="MedicationStatement-example" name="CDMH MedicationStatement - Example"/>
+<artifact id="Specimen/example" key="Specimen-example" name="CDMH MedicationStatement - Example"/>
+<artifact id="Organization/acme-lab" key="Organization-acme-lab" name="CDMH Organization - Example"/>
+<artifact id="Patient/example" key="Patient-example" name="CDMH Patient - Example"/>
+<artifact id="Practitioner/example" key="Practitioner-example" name="CDMH Practitioner - Example"/>
+<artifact id="Procedure/example" key="Procedure-example" name="CDMH Procedure - Example"/>
+<artifact id="ResearchStudy/example" key="ResearchStudy-example" name="CDMH ResearchStudy - Example"/>
+<artifact id="Observation/vitals-example" key="Observation-vitals-example" name="CDMH Vital Signs - Example"/>
+<artifact id="StructureDefinition/cdmh-adverseevent" key="StructureDefinition-cdmh-adverseevent" name="CdmhAdverseEvent"/>
+<artifact id="StructureDefinition/cdmh-condition" key="StructureDefinition-cdmh-condition" name="CdmhCondition"/>
+<artifact id="StructureDefinition/cdmh-encounter" key="StructureDefinition-cdmh-encounter" name="CdmhEncounter"/>
+<artifact id="StructureDefinition/cdmh-group" key="StructureDefinition-cdmh-group" name="CdmhGroup"/>
+<artifact id="StructureDefinition/cdmh-lab-results" key="StructureDefinition-cdmh-lab-results" name="CdmhLabResults"/>
+<artifact id="StructureDefinition/cdmh-location" key="StructureDefinition-cdmh-location" name="CdmhLocation"/>
+<artifact id="StructureDefinition/cdmh-medicationdispense" key="StructureDefinition-cdmh-medicationdispense" name="CdmhMedicationDispense"/>
+<artifact id="StructureDefinition/cdmh-medicationrequest" key="StructureDefinition-cdmh-medicationrequest" name="CdmhMedicationRequest"/>
+<artifact id="StructureDefinition/cdmh-medicationstatement" key="StructureDefinition-cdmh-medicationstatement" name="CdmhMedicationStatement"/>
+<artifact id="StructureDefinition/cdmh-organization" key="StructureDefinition-cdmh-organization" name="CdmhOrganization"/>
+<artifact id="StructureDefinition/cdmh-patient" key="StructureDefinition-cdmh-patient" name="CdmhPatient"/>
+<artifact id="StructureDefinition/cdmh-procedure" key="StructureDefinition-cdmh-procedure" name="CdmhProcedure"/>
+<artifact id="StructureDefinition/cdmh-researchstudy" key="StructureDefinition-cdmh-researchstudy" name="CdmhResearchStudy"/>
+<artifact id="StructureDefinition/cdmh-specimen" key="StructureDefinition-cdmh-specimen" name="CdmhSpecimen"/>
+<artifact id="StructureDefinition/cdmh-vital-signs" key="StructureDefinition-cdmh-vital-signs" name="CdmhVitalSigns"/>
+<artifact id="StructureDefinition/cdmh-pcornet-drg-group" key="StructureDefinition-cdmh-pcornet-drg-group" name="DRGGroup"/>
+<artifact id="StructureDefinition/cdmh-pcornet-death-cause" key="StructureDefinition-cdmh-pcornet-death-cause" name="DeathCause"/>
+<artifact id="ConceptMap/uscore-to-pcornet-admitting-source" key="ConceptMap-uscore-to-pcornet-admitting-source" name="Mapping from US Core to PCORNet Admitting Source Codes"/>
+<artifact id="ConceptMap/uscore-to-pcornet-birth-sex" key="ConceptMap-uscore-to-pcornet-birth-sex" name="Mapping from US Core to PCORNet Birth Sex Codes"/>
+<artifact id="ConceptMap/uscore-to-pcornet-clinical-status" key="ConceptMap-uscore-to-pcornet-clinical-status" name="Mapping from US Core to PCORNet Clinical Status Codes"/>
+<artifact id="ConceptMap/uscore-to-pcornet-ethnicity" key="ConceptMap-uscore-to-pcornet-ethnicity" name="Mapping from US Core to PCORNet Ethnicity Codes"/>
+<artifact id="ConceptMap/uscore-to-pcornet-race" key="ConceptMap-uscore-to-pcornet-race" name="Mapping from US Core to PCORNet Race Codes"/>
+<artifact id="ValueSet/pcornet-admitting-source-facility-type" key="ValueSet-pcornet-admitting-source-facility-type" name="PCORNet Admitting Source Facility Type"/>
+<artifact id="CodeSystem/pcornet-admitting-source-facility-type-codes" key="CodeSystem-pcornet-admitting-source-facility-type-codes" name="PCORNet Admitting Source Facility Type Codes"/>
+<artifact id="ValueSet/pcornet-body-position" key="ValueSet-pcornet-body-position" name="PCORNet BP Position"/>
+<artifact id="ValueSet/pcornet-birth-sex" key="ValueSet-pcornet-birth-sex" name="PCORNet Birth Sex"/>
+<artifact id="CodeSystem/pcornet-birth-sex" key="CodeSystem-pcornet-birth-sex" name="PCORNet Birth Sex Codes"/>
+<artifact id="CodeSystem/pcornet-body-position-codes" key="CodeSystem-pcornet-body-position-codes" name="PCORNet Body Position Codes"/>
+<artifact id="ValueSet/pcornet-clinical-status" key="ValueSet-pcornet-clinical-status" name="PCORNet Clinical Status"/>
+<artifact id="CodeSystem/pcornet-clinical-status-codes" key="CodeSystem-pcornet-clinical-status-codes" name="PCORNet Clinical StatusCodes"/>
+<artifact id="ValueSet/pcornet-condition-source" key="ValueSet-pcornet-condition-source" name="PCORNet Condition Source"/>
+<artifact id="CodeSystem/pcornet-dpl-source" key="CodeSystem-pcornet-dpl-source" name="PCORNet DPL Source"/>
+<artifact id="ValueSet/pcornet-drg-group-version" key="ValueSet-pcornet-drg-group-version" name="PCORNet DRG Group Version"/>
+<artifact id="CodeSystem/pcornet-drg-group-versions" key="CodeSystem-pcornet-drg-group-versions" name="PCORNet DRG Group Versions"/>
+<artifact id="ValueSet/pcornet-death-cause-code" key="ValueSet-pcornet-death-cause-code" name="PCORNet Death Cause Code"/>
+<artifact id="CodeSystem/pcornet-death-cause-codes" key="CodeSystem-pcornet-death-cause-codes" name="PCORNet Death Cause Codes"/>
+<artifact id="ValueSet/pcornet-death-cause-type" key="ValueSet-pcornet-death-cause-type" name="PCORNet Death Cause Type"/>
+<artifact id="CodeSystem/pcornet-death-cause-types" key="CodeSystem-pcornet-death-cause-types" name="PCORNet Death Cause Types"/>
+<artifact id="ValueSet/pcornet-death-confidence-code" key="ValueSet-pcornet-death-confidence-code" name="PCORNet Death Confidence Code"/>
+<artifact id="CodeSystem/pcornet-death-confidence-codes" key="CodeSystem-pcornet-death-confidence-codes" name="PCORNet Death Confidence Codes"/>
+<artifact id="ValueSet/pcornet-death-source" key="ValueSet-pcornet-death-source" name="PCORNet Death Source"/>
+<artifact id="CodeSystem/pcornet-death-sources" key="CodeSystem-pcornet-death-sources" name="PCORNet Death Sources"/>
+<artifact id="ValueSet/pcornet-diagnosis-classification" key="ValueSet-pcornet-diagnosis-classification" name="PCORNet Diagnosis Classification"/>
+<artifact id="CodeSystem/pcornet-diagnosis-classification-codes" key="CodeSystem-pcornet-diagnosis-classification-codes" name="PCORNet Diagnosis Classification Codes"/>
+<artifact id="CodeSystem/pcornet-diagnosis-source-origin" key="CodeSystem-pcornet-diagnosis-source-origin" name="PCORNet Diagnosis Source Origin"/>
+<artifact id="ValueSet/pcornet-discharge-disposition" key="ValueSet-pcornet-discharge-disposition" name="PCORNet Discharge Disposition"/>
+<artifact id="CodeSystem/pcornet-discharge-disposition" key="CodeSystem-pcornet-discharge-disposition" name="PCORNet Discharge Disposition Codes"/>
+<artifact id="ValueSet/pcornet-discharge-status" key="ValueSet-pcornet-discharge-status" name="PCORNet Discharge Status"/>
+<artifact id="CodeSystem/pcornet-discharge-status-codes" key="CodeSystem-pcornet-discharge-status-codes" name="PCORNet Discharge Status Codes"/>
+<artifact id="ValueSet/pcornet-encounter-type" key="ValueSet-pcornet-encounter-type" name="PCORNet Encounter Type"/>
+<artifact id="CodeSystem/pcornet-encounter-type-codes" key="CodeSystem-pcornet-encounter-type-codes" name="PCORNet Encounter Type Codes"/>
+<artifact id="ValueSet/pcornet-enr-basis" key="ValueSet-pcornet-enr-basis" name="PCORNet Enrollment Basis"/>
+<artifact id="CodeSystem/pcornet-enr-basis-codes" key="CodeSystem-pcornet-enr-basis-codes" name="PCORNet Enrollment Basis codes"/>
+<artifact id="ValueSet/pcornet-ethnicity" key="ValueSet-pcornet-ethnicity" name="PCORNet Ethnicity"/>
+<artifact id="CodeSystem/pcornet-ethnicity" key="CodeSystem-pcornet-ethnicity" name="PCORNet Ethnicity Codes"/>
+<artifact id="ValueSet/pcornet-facility-type" key="ValueSet-pcornet-facility-type" name="PCORNet Facility Type"/>
+<artifact id="CodeSystem/pcornet-facility-type-codes" key="CodeSystem-pcornet-facility-type-codes" name="PCORNet Facility Type Codes"/>
+<artifact id="ValueSet/pcornet-gender-identity" key="ValueSet-pcornet-gender-identity" name="PCORNet Gender Identity"/>
+<artifact id="CodeSystem/pcornet-gender-identity" key="CodeSystem-pcornet-gender-identity" name="PCORNet Gender Identity Codes"/>
+<artifact id="CodeSystem/pcornet-information-sources" key="CodeSystem-pcornet-information-sources" name="PCORNet Information Source"/>
+<artifact id="ValueSet/pcornet-information-source-hc-subtype" key="ValueSet-pcornet-information-source-hc-subtype" name="PCORNet Information Source HC Subtype"/>
+<artifact id="CodeSystem/pcornet-information-source-hc-subtypes" key="CodeSystem-pcornet-information-source-hc-subtypes" name="PCORNet Information Source HC Subtypes"/>
+<artifact id="ValueSet/pcornet-lab-loinc-code-source" key="ValueSet-pcornet-lab-loinc-code-source" name="PCORNet Lab Loinc Code Source"/>
+<artifact id="ValueSet/pcornet-lab-loinc-source" key="ValueSet-pcornet-lab-loinc-source" name="PCORNet Lab Loinc Source"/>
+<artifact id="CodeSystem/pcornet-lab-loinc-source-codes" key="CodeSystem-pcornet-lab-loinc-source-codes" name="PCORNet Lab Loinc Source Codes"/>
+<artifact id="ValueSet/pcornet-lab-test-priority" key="ValueSet-pcornet-lab-test-priority" name="PCORNet Lab Test Priority"/>
+<artifact id="CodeSystem/pcornet-lab-test-priority-codes" key="CodeSystem-pcornet-lab-test-priority-codes" name="PCORNet Lab Test Priority Codes"/>
+<artifact id="CodeSystem/pcornet-location-code" key="CodeSystem-pcornet-location-code" name="PCORNet Location Code"/>
+<artifact id="CodeSystem/pcornet-principal-discharge-diagnosis" key="CodeSystem-pcornet-principal-discharge-diagnosis" name="PCORNet Principal Discharge Diagnosis"/>
+<artifact id="CodeSystem/pcornet-principal-flag" key="CodeSystem-pcornet-principal-flag" name="PCORNet Principal Flag"/>
+<artifact id="CodeSystem/pcornet-pro-cat" key="CodeSystem-pcornet-pro-cat" name="PCORNet Pro Cat"/>
+<artifact id="CodeSystem/pcornet-pro-method" key="CodeSystem-pcornet-pro-method" name="PCORNet Pro Method"/>
+<artifact id="CodeSystem/pcornet-pro-mode" key="CodeSystem-pcornet-pro-mode" name="PCORNet Pro Mode"/>
+<artifact id="CodeSystem/pcornet-pro-type" key="CodeSystem-pcornet-pro-type" name="PCORNet Pro Type"/>
+<artifact id="ValueSet/pcornet-race" key="ValueSet-pcornet-race" name="PCORNet Race"/>
+<artifact id="CodeSystem/pcornet-race" key="CodeSystem-pcornet-race" name="PCORNet Race Codes"/>
+<artifact id="CodeSystem/pcornet-result-loc" key="CodeSystem-pcornet-result-loc" name="PCORNet Result Loc"/>
+<artifact id="CodeSystem/pcornet-result-modifier" key="CodeSystem-pcornet-result-modifier" name="PCORNet Result Modifier"/>
+<artifact id="ValueSet/pcornet-sexual-orientation" key="ValueSet-pcornet-sexual-orientation" name="PCORNet Sexual Orientation"/>
+<artifact id="CodeSystem/pcornet-sexual-orientation" key="CodeSystem-pcornet-sexual-orientation" name="PCORNet Sexual Orientation Codes"/>
+<artifact id="CodeSystem/pcornet-tobacco" key="CodeSystem-pcornet-tobacco" name="PCORNet Tobacco"/>
+<artifact id="CodeSystem/pcornet-tobacco-type" key="CodeSystem-pcornet-tobacco-type" name="PCORNet Tobacco Type"/>
+<artifact id="CodeSystem/pcornet-vx-status" key="CodeSystem-pcornet-vx-status" name="PCORNet VX Status"/>
+<artifact id="CodeSystem/pcornet-vx-status-reason" key="CodeSystem-pcornet-vx-status-reason" name="PCORNet VX Status Reason"/>
+<artifact id="ValueSet/pcornet-vital-source" key="ValueSet-pcornet-vital-source" name="PCORNet Vital Source"/>
+<artifact id="StructureDefinition/cdmh-pcornet-admitting-source-facility-type" key="StructureDefinition-cdmh-pcornet-admitting-source-facility-type" name="PCORNetAdmittingSourceFacilityType"/>
+<artifact id="StructureDefinition/cdmh-pcornet-body-position" key="StructureDefinition-cdmh-pcornet-body-position" name="PCORNetBodyPosition"/>
+<artifact id="StructureDefinition/cdmh-pcornet-condition-source" key="StructureDefinition-cdmh-pcornet-condition-source" name="PCORNetConditionSource"/>
+<artifact id="StructureDefinition/cdmh-pcornet-drg-group-version" key="StructureDefinition-cdmh-pcornet-drg-group-version" name="PCORNetDRGGroupVersion"/>
+<artifact id="StructureDefinition/cdmh-pcornet-death-cause-code" key="StructureDefinition-cdmh-pcornet-death-cause-code" name="PCORNetDeathCauseCode"/>
+<artifact id="StructureDefinition/cdmh-pcornet-death-cause-confidence" key="StructureDefinition-cdmh-pcornet-death-cause-confidence" name="PCORNetDeathCauseConfidence"/>
+<artifact id="StructureDefinition/cdmh-pcornet-death-cause-source" key="StructureDefinition-cdmh-pcornet-death-cause-source" name="PCORNetDeathCauseSource"/>
+<artifact id="StructureDefinition/cdmh-pcornet-death-cause-type" key="StructureDefinition-cdmh-pcornet-death-cause-type" name="PCORNetDeathCauseType"/>
+<artifact id="StructureDefinition/cdmh-pcornet-death-match-confidence" key="StructureDefinition-cdmh-pcornet-death-match-confidence" name="PCORNetDeathMatchConfidence"/>
+<artifact id="StructureDefinition/cdmh-pcornet-death-source" key="StructureDefinition-cdmh-pcornet-death-source" name="PCORNetDeathSource"/>
+<artifact id="StructureDefinition/cdmh-pcornet-diagnosis-origin" key="StructureDefinition-cdmh-pcornet-diagnosis-origin" name="PCORNetDiagnosisOrigin"/>
+<artifact id="StructureDefinition/cdmh-pcornet-discharge-status" key="StructureDefinition-cdmh-pcornet-discharge-status" name="PCORNetDischargeStatus"/>
+<artifact id="StructureDefinition/cdmh-pcornet-ethnicity" key="StructureDefinition-cdmh-pcornet-ethnicity" name="PCORNetEthnicity"/>
+<artifact id="StructureDefinition/cdmh-pcornet-px-source" key="StructureDefinition-cdmh-pcornet-px-source" name="PCORNetInformationSourceHCSubType"/>
+<artifact id="StructureDefinition/cdmh-pcornet-lab-loinc-code-source" key="StructureDefinition-cdmh-pcornet-lab-loinc-code-source" name="PCORNetLabLoincCodeSource"/>
+<artifact id="StructureDefinition/cdmh-pcornet-lab-result-source" key="StructureDefinition-cdmh-pcornet-lab-result-source" name="PCORNetLabResultSource"/>
+<artifact id="StructureDefinition/cdmh-pcornet-lab-test-priority" key="StructureDefinition-cdmh-pcornet-lab-test-priority" name="PCORNetLabTestPriority"/>
+<artifact id="StructureDefinition/cdmh-pcornet-race" key="StructureDefinition-cdmh-pcornet-race" name="PCORNetRace"/>
+<artifact id="StructureDefinition/cdmh-pcornet-vital-source" key="StructureDefinition-cdmh-pcornet-vital-source" name="PCORNetVitalSource"/>
+<artifact id="StructureDefinition/cdmh-patient-sexualOrientation" key="StructureDefinition-cdmh-patient-sexualOrientation" name="SexualOrientation"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="background" name="Background"/>
+<page key="credits" name="Credits"/>
+<page key="profiles" name="Detailed Specification"/>
+<page key="guidance" name="Guidance"/>
+<page key="changes" name="IG Change History"/>
+<page key="index" name="IG Home Page"/>
+<page key="history" name="IG Version History"/>
+<page key="toc" name="Table of Contents"/>
+<page key="downloads" name="Useful Downloads"/>
+<page deprecated="true" key="documentation" name="documentation"/>
+<page deprecated="true" key="overview" name="overview"/>
+<page deprecated="true" key="terminologies" name="terminologies"/>
 </specification>
