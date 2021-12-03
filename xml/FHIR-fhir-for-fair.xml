@@ -1,53 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             	gitUrl="https://github.com/HL7/fhir-for-fair"
-             	url="http://hl7.org/fhir/uv/fhir-for-fair"
-             	ciUrl="https://build.fhir.org/ig/HL7/fhir-for-fair"
-             	defaultWorkgroup="soa"
-             	defaultVersion	="current"
-             	xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
-             	>	
-	<version code="current"
-       		url="https://build.fhir.org/ig/HL7/fhir-for-fair"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		gitUrl="https://github.com/HL7/fhir-for-fair"
+		url="http://hl7.org/fhir/uv/fhir-for-fair"
+		ciUrl="http://build.fhir.org/ig/HL7/fhir-for-fair"
+		ballotUrl="http://hl7.org/fhir/uv/fhir-for-fair/2021Jan"
+		defaultWorkgroup="soa"
+		defaultVersion="0.1.0"		
+		xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"   	>	
 
-	<page name="(NA)"
-    		key="NA"/>
-	<page name="(many)"
-    		key="many"/>
-	<page name="Table of Contents"
-    		key="toc"/>
-	<page name="About this version"
-    		key="aboutThisVersion"/>
-	<page name="Use cases and scenarios"
-    		key="scenarios"/>
-	<page name="General Recommendations"
-    		key="recommendations"/>
-	<page name="Immunology Database and Analysis Portal"
-    		key="immPort"/>
-	<page name="FAIR4Health Project"
-    		key="FAIR4Health"/>
-	<page name="FITBIR datasets"
-    		key="fitbir"/>
-	<page name="Personal Genetic Locker"
-    		key="personalGeneticLocker"/>
-	<page name="Leipzig Health Atlas (LHA)"
-    		key="leipzigHealthAtlas"/>
-	<page name="HL7 FHIR and RDA Indicators"
-    		key="FHIRandRDAMetrics"/>
-	<page name="RDA Indicators"
-    		key="RDAMetrics"/>
-	<page name="Methodology"
-    		key="methodology"/>
-	<page name="Deployments"
-    		key="deployment"/>
-	<page name="Metadata"
-    		key="metadata"/>
-	<page name="FAIR Guiding Principles"
-    		key="FAIR"/>
-	<page name="HL7 FHIR and FAIR principles"
-    		key="FHIRandFAIR"/>
-	<page name="Useful Downloads"
-    		key="downloads"/>
-	<page name="IG Change History"
-    		key="changes"/> 
+<version code="current" url="http://build.fhir.org/ig/HL7/fhir-for-fair"/>
+<version code="0.1.0" url="http://hl7.org/fhir/uv/fhir-for-fair/2021Jan"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/relatedArtifactClassifier" key="StructureDefinition-relatedArtifactClassifier" name="Classifier (RelatedArtifact)"/>
+<artifact id="StructureDefinition/copyright" key="StructureDefinition-copyright" name="Copyright and Licence"/>
+<artifact id="StructureDefinition/DocumentManifest-uv-f4f" key="StructureDefinition-DocumentManifest-uv-f4f" name="DocumentManifest (Subject Level Medatata)"/>
+<artifact id="Library/f4h-1" key="Library-f4h-1" name="FAIR4Health portal (Library)"/>
+<artifact id="Library/f4h-lib-1" key="Library-f4h-lib-1" name="FAIR4Health study case 1 (Library)"/>
+<artifact id="Library/f4h-lib-2" key="Library-f4h-lib-2" name="FAIR4Health study case 2 (Library)"/>
+<artifact id="ResearchStudy/f4h-rs-2" key="ResearchStudy-f4h-rs-2" name="FAIR4Health study case 2 (ResearchStudy)"/>
+<artifact id="StructureDefinition/Library-uv-f4f" key="StructureDefinition-Library-uv-f4f" name="Library (Study Level Medatata)"/>
+<artifact id="Library/ninfea-1" key="Library-ninfea-1" name="Non-invasive foetal electrocardiography example (Library)"/>
+<artifact id="StructureDefinition/persistentUrl" key="StructureDefinition-persistentUrl" name="Persistent URL extension"/>
+<artifact id="StructureDefinition/RelatedArtifact-uv-f4f" key="StructureDefinition-RelatedArtifact-uv-f4f" name="RelatedArtifact (FHIR for FAIR)"/>
+<artifact id="StructureDefinition/library-relatedContent" key="StructureDefinition-library-relatedContent" name="RelatedArtifact (Library)"/>
+<artifact id="StructureDefinition/ResearchStudy-uv-f4f" key="StructureDefinition-ResearchStudy-uv-f4f" name="ResearchStudy (Study Level Medatata)"/>
+<artifact id="StructureDefinition/relatedArtifactResourceReference" key="StructureDefinition-relatedArtifactResourceReference" name="ResourceReference (RelatedArtifact)"/>
+<artifact id="Condition/example-f4f-condition" key="Condition-example-f4f-condition" name="Sample used by the Subject Level Collection (Condition)"/>
+<artifact id="MedicationStatement/example-f4f-medicationStatement-1" key="MedicationStatement-example-f4f-medicationStatement-1" name="MedicationStatement Sample used by the Subject Level Collection (1)"/>
+<artifact id="MedicationStatement/example-f4f-medicationStatement-2" key="MedicationStatement-example-f4f-medicationStatement-2" name="MedicationStatement Sample used by the Subject Level Collection (2)"/>
+<artifact id="Patient/example-f4f-patient" key="Patient-example-f4f-patient" name="Sample used by the Subject Level Collection (Patient)"/>
+<artifact id="DocumentManifest/example-f4f-manifest" key="DocumentManifest-example-f4f-manifest" name="Subject Level Data Collection (DocumentManifest)"/>
+<artifact id="StructureDefinition/researchStudy-context" key="StructureDefinition-researchStudy-context" name="Usage Context (ResearchStudy)"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="aboutThisVersion" name="About this version"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="benefitResearch" name="Benefits for research studies"/>
+<page key="deployment" name="Deployments"/>
+<page key="FAIR" name="FAIR Guiding Principles"/>
+<page key="FAIR4Health" name="FAIR4Health Project"/>
+<page key="index" name="FHIR for FAIR Home Page"/>
+<page key="FHIRidentifiers" name="FHIR identifiers and FAIR principles"/>
+<page deprecated="true" key="fitbir" name="FITBIR datasets"/>
+<page key="recommendations" name="General Recommendations"/>
+<page key="changes" name="IG Change History"/>
+<page key="immPort" name="Immunology Database and Analysis Portal"/>
+<page key="FHIRandFAIR" name="Implementing the FAIR principles"/>
+<page key="FHIRandRDAMetrics" name="Implementing the RDA Indicators"/>
+<page key="leipzigHealthAtlas" name="Leipzig Health Atlas (LHA)"/>
+<page key="metadata" name="Metadata and data"/>
+<page key="methodology" name="Methodology"/>
+<page key="ninfea" name="Non-Invasive Multimodal Foetal ECG-Doppler Dataset for Antenatal Cardiology Research"/>
+<page key="rw-overview" name="Overview"/>
+<page deprecated="true" key="personalGeneticLocker" name="Personal Genetic Locker"/>
+<page key="RDAMetrics" name="RDA Indicators"/>
+<page key="citation" name="Representing FAIR metadata with Citation"/>
+<page key="toc" name="Table of Contents"/>
+<page key="terminology" name="Terminologies"/>
+<page key="mimic" name="The Medical Information Mart for Intensive Care IV - Emergency Department (MIMIC-IV-ED, v1.0) dataset"/>
+<page key="NFDI4Health" name="The NFDI4Health consortia"/>
+<page deprecated="true" key="scenarios" name="Use cases and scenarios"/>
+<page key="downloads" name="Useful Downloads"/>
 </specification>
