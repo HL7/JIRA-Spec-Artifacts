@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/medmorph/2021Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-medmorph" defaultVersion="0.1.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-medmorph" url="http://hl7.org/fhir/us/medmorph">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-medmorph"/>
+<version code="0.2.0" url="http://hl7.org/fhir/us/medmorph/2022Jan"/>
 <version code="0.1.0" url="http://hl7.org/fhir/us/medmorph/2021Jan"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
@@ -10,6 +11,10 @@
 <artifact id="StructureDefinition/ext-authorSignature" key="StructureDefinition-ext-authorSignature" name="AuthorSignature"/>
 <artifact id="Communication/communication-example-cancer-pha-response" key="Communication-communication-example-cancer-pha-response" name="Communication example from PHA to Healthcare in response to a received cancer report"/>
 <artifact id="StructureDefinition/ext-dataEncrypted" key="StructureDefinition-ext-dataEncrypted" name="DataEncrypted"/>
+<artifact id="Parameters/encounter-close" key="Parameters-encounter-close" name="Encounter Close Subscription Topic Example"/>
+<artifact id="Parameters/encounter-start" key="Parameters-encounter-start" name="Encounter Start Subscription Topic Example"/>
+<artifact id="StructureDefinition/encounter-close" key="StructureDefinition-encounter-close" name="EncounterCloseSubscriptionTopic"/>
+<artifact id="StructureDefinition/encounter-start" key="StructureDefinition-encounter-start" name="EncounterStartSubscriptionTopic"/>
 <artifact id="Bundle/content-bundle-example" key="Bundle-content-bundle-example" name="Example of a Content Bundle containing Patient Data"/>
 <artifact id="Bundle/reporting-bundle-example" key="Bundle-reporting-bundle-example" name="Example of a Reporting Bundle containing Message Header and Content Bundle"/>
 <artifact id="Bundle/response-bundle-example" key="Bundle-response-bundle-example" name="Example of a Response Bundle for a submitted message containing a communication resource."/>
@@ -42,20 +47,21 @@
 <artifact id="StructureDefinition/ext-responseMessageStatus" key="StructureDefinition-ext-responseMessageStatus" name="ResponseMessageStatus"/>
 <artifact id="CodeSystem/us-ph-response-message-processing-status" key="CodeSystem-us-ph-response-message-processing-status" name="US Public Health CodeSystem for Response Message Processing Status Codes"/>
 <artifact id="CodeSystem/us-ph-valueset-usecontext-codes" key="CodeSystem-us-ph-valueset-usecontext-codes" name="US Public Health CodeSystem for ValueSet Use Context Codes"/>
+<artifact id="StructureDefinition/us-ph-content-bundle" key="StructureDefinition-us-ph-content-bundle" name="US Public Health Content Bundle"/>
+<artifact id="StructureDefinition/us-ph-fhirquerypattern-extension" key="StructureDefinition-us-ph-fhirquerypattern-extension" name="US Public Health FHIR Query Pattern Extension"/>
 <artifact id="CodeSystem/us-ph-messageheader-message-types" key="CodeSystem-us-ph-messageheader-message-types" name="US Public Health Message Type Codes"/>
 <artifact id="ValueSet/us-ph-message-types" key="ValueSet-us-ph-message-types" name="US Public Health Message Types"/>
 <artifact id="ValueSet/us-ph-plandefinition-action" key="ValueSet-us-ph-plandefinition-action" name="US Public Health PlanDefinition Action"/>
 <artifact id="CodeSystem/us-ph-plandefinition-actions" key="CodeSystem-us-ph-plandefinition-actions" name="US Public Health PlanDefinition Action Codes"/>
+<artifact id="StructureDefinition/us-ph-reporting-bundle" key="StructureDefinition-us-ph-reporting-bundle" name="US Public Health Reporting Bundle"/>
 <artifact id="ValueSet/us-ph-response-message-processing-status-codes" key="ValueSet-us-ph-response-message-processing-status-codes" name="US Public Health Response Message Processing Status Codes"/>
 <artifact id="CodeSystem/us-ph-triggerdefinition-namedevents" key="CodeSystem-us-ph-triggerdefinition-namedevents" name="US Public Health TriggerDefinition Named Events"/>
 <artifact id="ValueSet/us-ph-triggerdefinition-namedevent" key="ValueSet-us-ph-triggerdefinition-namedevent" name="US Public Health TriggerDefinition NamedEvent"/>
 <artifact id="StructureDefinition/us-ph-communication" key="StructureDefinition-us-ph-communication" name="USPublicHealthCommunication"/>
-<artifact id="StructureDefinition/us-ph-content-bundle" key="StructureDefinition-us-ph-content-bundle" name="USPublicHealthContentBundle"/>
 <artifact id="StructureDefinition/us-ph-endpoint" key="StructureDefinition-us-ph-endpoint" name="USPublicHealthEndpoint"/>
 <artifact id="StructureDefinition/us-ph-messageheader" key="StructureDefinition-us-ph-messageheader" name="USPublicHealthMessageHeader"/>
 <artifact id="StructureDefinition/ext-us-ph-namedEventType" key="StructureDefinition-ext-us-ph-namedEventType" name="USPublicHealthNamedEventType"/>
 <artifact id="StructureDefinition/us-ph-plandefinition" key="StructureDefinition-us-ph-plandefinition" name="USPublicHealthPlanDefinition"/>
-<artifact id="StructureDefinition/us-ph-reporting-bundle" key="StructureDefinition-us-ph-reporting-bundle" name="USPublicHealthReportingBundle"/>
 <artifact id="StructureDefinition/us-ph-response-bundle" key="StructureDefinition-us-ph-response-bundle" name="USPublicHealthResponseBundle"/>
 <artifact id="StructureDefinition/us-ph-specification-bundle" key="StructureDefinition-us-ph-specification-bundle" name="USPublicHealthSpecificationBundle"/>
 <artifact id="StructureDefinition/us-ph-survey-practitioner-group" key="StructureDefinition-us-ph-survey-practitioner-group" name="USPublicHealthSurveyPractitionerGroup"/>
@@ -66,6 +72,7 @@
 <page deprecated="true" key="profiles" name="(profiles)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="background" name="Background"/>
+<page key="contentig" name="Content IG Guidance"/>
 <page key="credits" name="Credits"/>
 <page key="spec" name="Detailed Specification"/>
 <page key="changes" name="IG Change History"/>
