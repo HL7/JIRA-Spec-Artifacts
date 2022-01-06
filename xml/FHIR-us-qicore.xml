@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/qicore/2019Sep" ciUrl="http://build.fhir.org/ig/HL7/qi-core" defaultVersion="4.1.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/fhir-qi-core" url="http://hl7.org/fhir/us/qicore">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="http://build.fhir.org/ig/HL7/qi-core" defaultVersion="current" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/fhir-qi-core" url="http://hl7.org/fhir/us/qicore">
 <version code="current" url="http://build.fhir.org/ig/HL7/qi-core"/>
 <version code="4.1.0" url="http://hl7.org/fhir/us/qicore/STU4.1"/>
-<version code="4.0.0" url="http://hl7.org/fhir/us/qicore/STU4"/>
-<version code="3.3.0" url="http://hl7.org/fhir/us/qicore/2019Sep"/>
+<version code="4.0.0" deprecated="true" url="http://hl7.org/fhir/us/qicore/STU4"/>
+<version code="3.3.0" deprecated="true" url="http://hl7.org/fhir/us/qicore/2019Sep"/>
 <version code="3.2.0" url="http://hl7.org/fhir/us/qicore/STU32"/>
-<version code="3.1.0" url="http://hl7.org/fhir/us/qicore/STU3"/>
+<version code="3.1.0" deprecated="true" url="http://hl7.org/fhir/us/qicore/STU3"/>
 <version code="2.1.0" deprecated="true" url="http://hl7.org/fhir/us/qicore/2018Jan"/>
-<version code="2.0.0" url="http://hl7.org/fhir/us/qicore/STU2"/>
+<version code="2.0.0" deprecated="true" url="http://hl7.org/fhir/us/qicore/STU2"/>
 <version code="2.0" deprecated="true" url="http://hl7.org/fhir/us/qicore/STU2"/>
 <version code="1.6.0" deprecated="true" url="http://hl7.org/fhir/us/qicore/2016Sep"/>
-<version code="1.0.2" url="http://hl7.org/fhir/DSTU2/qicore/qicore.html"/>
+<version code="1.0.2" deprecated="true" url="http://hl7.org/fhir/DSTU2/qicore/qicore.html"/>
 <version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/2015Sep/qicore/qicore.html"/>
 <version code="0.5.0" deprecated="true" url="http://hl7.org/fhir/2015May/qicore.html"/>
 <artifactPageExtension value="-definitions"/>
@@ -45,8 +45,8 @@
 <artifact id="StructureDefinition/qicore-doNotPerformReason" key="StructureDefinition-qicore-doNotPerformReason" name="DoNotPerformReason"/>
 <artifact id="Encounter/example" key="Encounter-example" name="Encounter example"/>
 <artifact id="StructureDefinition/qicore-encounter-procedure" key="StructureDefinition-qicore-encounter-procedure" name="EncounterProcedureExtension"/>
-<artifact id="Library/FHIRCommon" key="Library-FHIRCommon" name="FHIR Common"/>
-<artifact id="Library/FHIRHelpers" key="Library-FHIRHelpers" name="FHIR Helpers"/>
+<artifact deprecated="true" id="Library/FHIRCommon" key="Library-FHIRCommon" name="FHIR Common"/>
+<artifact deprecated="true" id="Library/FHIRHelpers" key="Library-FHIRHelpers" name="FHIR Helpers"/>
 <artifact id="FamilyMemberHistory/example" key="FamilyMemberHistory-example" name="FamilyMemberHistory example"/>
 <artifact id="ValueSet/qicore-flag-category" key="ValueSet-qicore-flag-category" name="Flag Category Codes"/>
 <artifact id="Flag/example" key="Flag-example" name="Flag example"/>
@@ -88,11 +88,13 @@
 <artifact id="Procedure/negation-example" key="Procedure-negation-example" name="ProcedureNotDone with valueset example"/>
 <artifact deprecated="true" key="ProcedureRequest" name="ProcedureRequest"/>
 <artifact deprecated="true" key="Provenance" name="Provenance"/>
+<artifact id="Library/QICoreCommon" key="Library-QICoreCommon" name="QICore Common"/>
+<artifact id="Library/QICoreCommonTests" key="Library-QICoreCommonTests" name="QICore Common Tests"/>
 <artifact id="CodeSystem/communication-medium" key="CodeSystem-communication-medium" name="QICore Communication Medium Codes"/>
 <artifact id="ValueSet/qicore-condition-criticality" key="ValueSet-qicore-condition-criticality" name="QICore Condition Criticality"/>
 <artifact id="CodeSystem/condition-criticality" key="CodeSystem-condition-criticality" name="QICore Condition Criticality Codes"/>
 <artifact id="CodeSystem/diagnosticorder-precondition" key="CodeSystem-diagnosticorder-precondition" name="QICore Diagnostic Order Precondition"/>
-<artifact id="Library/QICoreElements" key="Library-QICoreElements" name="QICore Elements"/>
+<artifact deprecated="true" id="Library/QICoreElements" key="Library-QICoreElements" name="QICore Elements"/>
 <artifact id="Library/QICore-ModelInfo" key="Library-QICore-ModelInfo" name="QICore Model Definition"/>
 <artifact id="ValueSet/qicore-observation-delta" key="ValueSet-qicore-observation-delta" name="QICore Observation Delta Value Set Definition"/>
 <artifact id="ValueSet/qicore-observation-verification" key="ValueSet-qicore-observation-verification" name="QICore Observation Verification Method"/>
