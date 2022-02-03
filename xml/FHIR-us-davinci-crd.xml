@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-crd/2019May" ciUrl="https://build.fhir.org/ig/HL7/davinci-crd" defaultVersion="1.0.0" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-crd" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" url="http://hl7.org/fhir/us/davinci-crd"><version code="current" url="https://build.fhir.org/ig/HL7/davinci-crd"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-crd/202203" ciUrl="https://build.fhir.org/ig/HL7/davinci-crd" defaultVersion="1.0.0" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-crd" url="http://hl7.org/fhir/us/davinci-crd">
+<version code="current" url="https://build.fhir.org/ig/HL7/davinci-crd"/>
+<version code="1.1.0-ballot" url="http://hl7.org/fhir/us/davinci-crd/202203"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-crd/STU1"/>
-<version code="0.3.0" url="http://hl7.org/fhir/us/davinci-crd/2019May"/>
+<version code="0.3.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-crd/2019May"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-crd/2018Sep"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/profile-appointment" key="StructureDefinition-profile-appointment" name="Appointment"/>
-<artifact id="SearchParameter/appointment-insurance" key="SearchParameter-appointment-insurance" name="Appointment Insurance Search Parameter"/>
+<artifact deprecated="true" id="SearchParameter/appointment-insurance" key="SearchParameter-appointment-insurance" name="Appointment Insurance Search Parameter"/>
 <artifact id="Appointment/example" key="Appointment-example" name="Appointment example"/>
+<artifact id="Task/action-example" key="Task-action-example" name="CDS Hook deferred action example"/>
+<artifact id="ValueSet/cardActions" key="ValueSet-cardActions" name="CDS Hooks Card Suggestion Action Types"/>
 <artifact id="ValueSet/afterCompletionCode" key="ValueSet-afterCompletionCode" name="CRD After Completion Code"/>
+<artifact id="CodeSystem/cardType" key="CodeSystem-cardType" name="CRD Card Types Code System"/>
+<artifact id="ValueSet/cardType" key="ValueSet-cardType" name="CRD Card Types Value Set"/>
 <artifact id="ValueSet/coverageClass" key="ValueSet-coverageClass" name="CRD Coverage Classes"/>
 <artifact id="ValueSet/locationAddressType" key="ValueSet-locationAddressType" name="CRD Location Address Types"/>
 <artifact id="ValueSet/taskReasonCode" key="ValueSet-taskReasonCode" name="CRD Reason Codes"/>
 <artifact id="ValueSet/serviceRequestCodes" key="ValueSet-serviceRequestCodes" name="CRD Service Request Codes"/>
 <artifact id="CodeSystem/temp" key="CodeSystem-temp" name="CRD Temporary Codes"/>
+<artifact id="StructureDefinition/profile-crdcardtask" key="StructureDefinition-profile-crdcardtask" name="CRDCardTask"/>
 <artifact id="StructureDefinition/profile-claimresponse" key="StructureDefinition-profile-claimresponse" name="ClaimResponse"/>
 <artifact id="StructureDefinition/profile-communicationrequest" key="StructureDefinition-profile-communicationrequest" name="CommunicationRequest"/>
-<artifact id="SearchParameter/communicationrequest-insurance" key="SearchParameter-communicationrequest-insurance" name="CommunicationRequest Insurance Search Parameter"/>
+<artifact deprecated="true" id="SearchParameter/communicationrequest-insurance" key="SearchParameter-communicationrequest-insurance" name="CommunicationRequest Insurance Search Parameter"/>
 <artifact id="CommunicationRequest/example" key="CommunicationRequest-example" name="CommunicationRequest example"/>
 <artifact id="StructureDefinition/profile-coverage" key="StructureDefinition-profile-coverage" name="Coverage"/>
+<artifact id="CodeSystem/coverageGuidance" key="CodeSystem-coverageGuidance" name="Coverage Guidance Code System"/>
+<artifact id="ValueSet/coverageGuidance" key="ValueSet-coverageGuidance" name="Coverage Guidance Value Set"/>
+<artifact id="StructureDefinition/ext-coverage-information" key="StructureDefinition-ext-coverage-information" name="Coverage Information"/>
 <artifact id="Coverage/example" key="Coverage-example" name="Coverage example"/>
 <artifact id="StructureDefinition/profile-coverage-deident" key="StructureDefinition-profile-coverage-deident" name="CoverageDeident"/>
 <artifact id="Coverage/deident-example" key="Coverage-deident-example" name="De-identified Coverage example"/>
@@ -27,20 +38,21 @@
 <artifact id="StructureDefinition/profile-device" key="StructureDefinition-profile-device" name="Device"/>
 <artifact id="Device/example" key="Device-example" name="Device example"/>
 <artifact id="StructureDefinition/profile-devicerequest" key="StructureDefinition-profile-devicerequest" name="DeviceRequest"/>
-<artifact id="SearchParameter/devicerequest-insurance" key="SearchParameter-devicerequest-insurance" name="DeviceRequest Insurance Search Parameter"/>
+<artifact deprecated="true" id="SearchParameter/devicerequest-insurance" key="SearchParameter-devicerequest-insurance" name="DeviceRequest Insurance Search Parameter"/>
 <artifact id="DeviceRequest/example" key="DeviceRequest-example" name="DeviceRequest example"/>
 <artifact id="StructureDefinition/profile-encounter" key="StructureDefinition-profile-encounter" name="Encounter"/>
-<artifact id="SearchParameter/encounter-insurance" key="SearchParameter-encounter-insurance" name="Encounter Insurance Search Parameter"/>
+<artifact deprecated="true" id="SearchParameter/encounter-insurance" key="SearchParameter-encounter-insurance" name="Encounter Insurance Search Parameter"/>
 <artifact id="Encounter/example" key="Encounter-example" name="Encounter example"/>
-<artifact id="StructureDefinition/ext-insurance" key="StructureDefinition-ext-insurance" name="InsuranceExtension"/>
+<artifact deprecated="true" id="StructureDefinition/ext-insurance" key="StructureDefinition-ext-insurance" name="InsuranceExtension"/>
 <artifact id="StructureDefinition/profile-location" key="StructureDefinition-profile-location" name="Location"/>
 <artifact id="Location/example" key="Location-example" name="Location example"/>
 <artifact id="StructureDefinition/profile-medicationrequest" key="StructureDefinition-profile-medicationrequest" name="MedicationRequest"/>
-<artifact id="SearchParameter/medicationrequest-insurance" key="SearchParameter-medicationrequest-insurance" name="MedicationRequest Insurance Search Parameter"/>
+<artifact deprecated="true" id="SearchParameter/medicationrequest-insurance" key="SearchParameter-medicationrequest-insurance" name="MedicationRequest Insurance Search Parameter"/>
+<artifact id="MedicationRequest/annotated-example" key="MedicationRequest-annotated-example" name="MedicationRequest annotated example"/>
 <artifact id="MedicationRequest/example" key="MedicationRequest-example" name="MedicationRequest example"/>
 <artifact id="NutritionOrder/example" key="NutritionOrder-example" name="NutritionOder example"/>
 <artifact id="StructureDefinition/profile-nutritionorder" key="StructureDefinition-profile-nutritionorder" name="NutritionOrder"/>
-<artifact id="SearchParameter/nutritionorder-insurance" key="SearchParameter-nutritionorder-insurance" name="NutritionOrder Insurance Search Parameter"/>
+<artifact deprecated="true" id="SearchParameter/nutritionorder-insurance" key="SearchParameter-nutritionorder-insurance" name="NutritionOrder Insurance Search Parameter"/>
 <artifact id="StructureDefinition/profile-organization" key="StructureDefinition-profile-organization" name="Organization"/>
 <artifact id="Organization/example" key="Organization-example" name="Organization example"/>
 <artifact id="StructureDefinition/profile-patient" key="StructureDefinition-profile-patient" name="Patient"/>
@@ -51,7 +63,7 @@
 <artifact id="ClaimResponse/priorauth-example" key="ClaimResponse-priorauth-example" name="Prior Authorization example"/>
 <artifact id="Task/questionnaire-example" key="Task-questionnaire-example" name="Questionnaire Task example"/>
 <artifact id="StructureDefinition/profile-servicerequest" key="StructureDefinition-profile-servicerequest" name="ServiceRequest"/>
-<artifact id="SearchParameter/servicerequest-insurance" key="SearchParameter-servicerequest-insurance" name="ServiceRequest Insurance Search Parameter"/>
+<artifact deprecated="true" id="SearchParameter/servicerequest-insurance" key="SearchParameter-servicerequest-insurance" name="ServiceRequest Insurance Search Parameter"/>
 <artifact id="ServiceRequest/example" key="ServiceRequest-example" name="ServiceRequest example"/>
 <artifact deprecated="true" key="SupplyRequest" name="SupplyRequest"/>
 <artifact id="StructureDefinition/profile-taskquestionnaire" key="StructureDefinition-profile-taskquestionnaire" name="TaskQuestionnaire"/>
