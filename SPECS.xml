@@ -15967,15 +15967,21 @@
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-davinci-crd"
                   name="US Da Vinci CRD (FHIR)"
-                  ballotUrl="http://hl7.org/fhir/us/davinci-crd/2019May"
+                  ballotUrl="http://hl7.org/fhir/us/davinci-crd/202203"
                   ciUrl="https://build.fhir.org/ig/HL7/davinci-crd"
                   defaultVersion="1.0.0"
                   defaultWorkgroup="fm"
                   gitUrl="https://github.com/HL7/davinci-crd"
                   url="http://hl7.org/fhir/us/davinci-crd">
       <version code="current" url="https://build.fhir.org/ig/HL7/davinci-crd"/>
+      <version code="1.1.0-ballot" url="http://hl7.org/fhir/us/davinci-crd/202203"/>
       <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-crd/STU1"/>
-      <version code="0.3.0" url="http://hl7.org/fhir/us/davinci-crd/2019May"/>
+      <version code="0.3.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/us/davinci-crd/2019May"/>
+      <version code="0.1.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/us/davinci-crd/2018Sep"/>
       <version code="0.1" deprecated="true"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
@@ -15984,7 +15990,8 @@
                 key="FHIR-us-davinci-crd-StructureDefinition-profile-appointment"
                 name="Appointment"
                 spec="us-davinci-crd"/>
-      <artifact id="SearchParameter/appointment-insurance"
+      <artifact deprecated="true"
+                id="SearchParameter/appointment-insurance"
                 key="FHIR-us-davinci-crd-SearchParameter-appointment-insurance"
                 name="Appointment Insurance Search Parameter"
                 spec="us-davinci-crd"/>
@@ -15992,9 +15999,25 @@
                 key="FHIR-us-davinci-crd-Appointment-example"
                 name="Appointment example"
                 spec="us-davinci-crd"/>
+      <artifact id="Task/action-example"
+                key="FHIR-us-davinci-crd-Task-action-example"
+                name="CDS Hook deferred action example"
+                spec="us-davinci-crd"/>
+      <artifact id="ValueSet/cardActions"
+                key="FHIR-us-davinci-crd-ValueSet-cardActions"
+                name="CDS Hooks Card Suggestion Action Types"
+                spec="us-davinci-crd"/>
       <artifact id="ValueSet/afterCompletionCode"
                 key="FHIR-us-davinci-crd-ValueSet-afterCompletionCode"
                 name="CRD After Completion Code"
+                spec="us-davinci-crd"/>
+      <artifact id="CodeSystem/cardType"
+                key="FHIR-us-davinci-crd-CodeSystem-cardType"
+                name="CRD Card Types Code System"
+                spec="us-davinci-crd"/>
+      <artifact id="ValueSet/cardType"
+                key="FHIR-us-davinci-crd-ValueSet-cardType"
+                name="CRD Card Types Value Set"
                 spec="us-davinci-crd"/>
       <artifact id="ValueSet/coverageClass"
                 key="FHIR-us-davinci-crd-ValueSet-coverageClass"
@@ -16016,6 +16039,10 @@
                 key="FHIR-us-davinci-crd-CodeSystem-temp"
                 name="CRD Temporary Codes"
                 spec="us-davinci-crd"/>
+      <artifact id="StructureDefinition/profile-crdcardtask"
+                key="FHIR-us-davinci-crd-StructureDefinition-profile-crdcardtask"
+                name="CRDCardTask"
+                spec="us-davinci-crd"/>
       <artifact id="StructureDefinition/profile-claimresponse"
                 key="FHIR-us-davinci-crd-StructureDefinition-profile-claimresponse"
                 name="ClaimResponse"
@@ -16024,7 +16051,8 @@
                 key="FHIR-us-davinci-crd-StructureDefinition-profile-communicationrequest"
                 name="CommunicationRequest"
                 spec="us-davinci-crd"/>
-      <artifact id="SearchParameter/communicationrequest-insurance"
+      <artifact deprecated="true"
+                id="SearchParameter/communicationrequest-insurance"
                 key="FHIR-us-davinci-crd-SearchParameter-communicationrequest-insurance"
                 name="CommunicationRequest Insurance Search Parameter"
                 spec="us-davinci-crd"/>
@@ -16035,6 +16063,18 @@
       <artifact id="StructureDefinition/profile-coverage"
                 key="FHIR-us-davinci-crd-StructureDefinition-profile-coverage"
                 name="Coverage"
+                spec="us-davinci-crd"/>
+      <artifact id="CodeSystem/coverageGuidance"
+                key="FHIR-us-davinci-crd-CodeSystem-coverageGuidance"
+                name="Coverage Guidance Code System"
+                spec="us-davinci-crd"/>
+      <artifact id="ValueSet/coverageGuidance"
+                key="FHIR-us-davinci-crd-ValueSet-coverageGuidance"
+                name="Coverage Guidance Value Set"
+                spec="us-davinci-crd"/>
+      <artifact id="StructureDefinition/ext-coverage-information"
+                key="FHIR-us-davinci-crd-StructureDefinition-ext-coverage-information"
+                name="Coverage Information"
                 spec="us-davinci-crd"/>
       <artifact id="Coverage/example"
                 key="FHIR-us-davinci-crd-Coverage-example"
@@ -16064,7 +16104,8 @@
                 key="FHIR-us-davinci-crd-StructureDefinition-profile-devicerequest"
                 name="DeviceRequest"
                 spec="us-davinci-crd"/>
-      <artifact id="SearchParameter/devicerequest-insurance"
+      <artifact deprecated="true"
+                id="SearchParameter/devicerequest-insurance"
                 key="FHIR-us-davinci-crd-SearchParameter-devicerequest-insurance"
                 name="DeviceRequest Insurance Search Parameter"
                 spec="us-davinci-crd"/>
@@ -16076,7 +16117,8 @@
                 key="FHIR-us-davinci-crd-StructureDefinition-profile-encounter"
                 name="Encounter"
                 spec="us-davinci-crd"/>
-      <artifact id="SearchParameter/encounter-insurance"
+      <artifact deprecated="true"
+                id="SearchParameter/encounter-insurance"
                 key="FHIR-us-davinci-crd-SearchParameter-encounter-insurance"
                 name="Encounter Insurance Search Parameter"
                 spec="us-davinci-crd"/>
@@ -16084,7 +16126,8 @@
                 key="FHIR-us-davinci-crd-Encounter-example"
                 name="Encounter example"
                 spec="us-davinci-crd"/>
-      <artifact id="StructureDefinition/ext-insurance"
+      <artifact deprecated="true"
+                id="StructureDefinition/ext-insurance"
                 key="FHIR-us-davinci-crd-StructureDefinition-ext-insurance"
                 name="InsuranceExtension"
                 spec="us-davinci-crd"/>
@@ -16100,9 +16143,14 @@
                 key="FHIR-us-davinci-crd-StructureDefinition-profile-medicationrequest"
                 name="MedicationRequest"
                 spec="us-davinci-crd"/>
-      <artifact id="SearchParameter/medicationrequest-insurance"
+      <artifact deprecated="true"
+                id="SearchParameter/medicationrequest-insurance"
                 key="FHIR-us-davinci-crd-SearchParameter-medicationrequest-insurance"
                 name="MedicationRequest Insurance Search Parameter"
+                spec="us-davinci-crd"/>
+      <artifact id="MedicationRequest/annotated-example"
+                key="FHIR-us-davinci-crd-MedicationRequest-annotated-example"
+                name="MedicationRequest annotated example"
                 spec="us-davinci-crd"/>
       <artifact id="MedicationRequest/example"
                 key="FHIR-us-davinci-crd-MedicationRequest-example"
@@ -16116,7 +16164,8 @@
                 key="FHIR-us-davinci-crd-StructureDefinition-profile-nutritionorder"
                 name="NutritionOrder"
                 spec="us-davinci-crd"/>
-      <artifact id="SearchParameter/nutritionorder-insurance"
+      <artifact deprecated="true"
+                id="SearchParameter/nutritionorder-insurance"
                 key="FHIR-us-davinci-crd-SearchParameter-nutritionorder-insurance"
                 name="NutritionOrder Insurance Search Parameter"
                 spec="us-davinci-crd"/>
@@ -16160,7 +16209,8 @@
                 key="FHIR-us-davinci-crd-StructureDefinition-profile-servicerequest"
                 name="ServiceRequest"
                 spec="us-davinci-crd"/>
-      <artifact id="SearchParameter/servicerequest-insurance"
+      <artifact deprecated="true"
+                id="SearchParameter/servicerequest-insurance"
                 key="FHIR-us-davinci-crd-SearchParameter-servicerequest-insurance"
                 name="ServiceRequest Insurance Search Parameter"
                 spec="us-davinci-crd"/>
