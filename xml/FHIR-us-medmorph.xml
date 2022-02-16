@@ -1,9 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/fhir-medmorph" url="http://hl7.org/fhir/us/medmorph" ciUrl="http://build.fhir.org/ig/HL7/fhir-medmorph" defaultWorkgroup="pher" defaultVersion="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="0.1"/>
-
-    <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="(profiles)" key="profiles"/>
-
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/medmorph/2021Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-medmorph" defaultVersion="0.1.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-medmorph" url="http://hl7.org/fhir/us/medmorph">
+<version code="current" url="http://build.fhir.org/ig/HL7/fhir-medmorph"/>
+<version code="0.2.0" url="http://hl7.org/fhir/us/medmorph/2022Jan"/>
+<version code="0.1.0" url="http://hl7.org/fhir/us/medmorph/2021Jan"/>
+<version code="0.1" deprecated="true"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/ext-asyncIndicator" key="StructureDefinition-ext-asyncIndicator" name="AsyncIndicator"/>
+<artifact id="StructureDefinition/ext-authorSignature" key="StructureDefinition-ext-authorSignature" name="AuthorSignature"/>
+<artifact id="Communication/communication-example-cancer-pha-response" key="Communication-communication-example-cancer-pha-response" name="Communication example from PHA to Healthcare in response to a received cancer report"/>
+<artifact id="StructureDefinition/ext-dataEncrypted" key="StructureDefinition-ext-dataEncrypted" name="DataEncrypted"/>
+<artifact id="Parameters/encounter-close" key="Parameters-encounter-close" name="Encounter Close Subscription Topic Example"/>
+<artifact id="Parameters/encounter-start" key="Parameters-encounter-start" name="Encounter Start Subscription Topic Example"/>
+<artifact id="StructureDefinition/encounter-close" key="StructureDefinition-encounter-close" name="EncounterCloseSubscriptionTopic"/>
+<artifact id="StructureDefinition/encounter-start" key="StructureDefinition-encounter-start" name="EncounterStartSubscriptionTopic"/>
+<artifact id="Bundle/content-bundle-example" key="Bundle-content-bundle-example" name="Example of a Content Bundle containing Patient Data"/>
+<artifact id="Bundle/reporting-bundle-example" key="Bundle-reporting-bundle-example" name="Example of a Reporting Bundle containing Message Header and Content Bundle"/>
+<artifact id="Bundle/response-bundle-example" key="Bundle-response-bundle-example" name="Example of a Response Bundle for a submitted message containing a communication resource."/>
+<artifact id="Bundle/specification-bundle-example" key="Bundle-specification-bundle-example" name="Example of a Specification Bundle for a Knowledge Artifact containing a PlanDefinition and ValueSet"/>
+<artifact id="StructureDefinition/ext-expectedResponseTime" key="StructureDefinition-ext-expectedResponseTime" name="ExpectedResponseTime"/>
+<artifact id="OperationDefinition/Bundle-anonymize" key="OperationDefinition-Bundle-anonymize" name="Generate Anonymized Bundle"/>
+<artifact id="OperationDefinition/Bundle-de-identify" key="OperationDefinition-Bundle-de-identify" name="Generate De-Identified Bundle"/>
+<artifact id="OperationDefinition/Bundle-pseudonymize" key="OperationDefinition-Bundle-psuedonymize" name="Generate Pseudonymized Bundle"/>
+<artifact id="OperationDefinition/Bundle-re-identify" key="OperationDefinition-Bundle-re-identify" name="Generate Re-Identified Bundle"/>
+<artifact id="Group/group-example-survey" key="Group-group-example-survey" name="Group example showing Providers participating in healthcare surveys"/>
+<artifact id="Group/group-example-research" key="Group-group-example-research" name="Group example showing patients participating in research at a healthcare organization"/>
+<artifact id="Endpoint/example-healthcare-endpoint" key="Endpoint-example-healthcare-endpoint" name="Healthcare Organization Endpoint example"/>
+<artifact id="Organization/example-healthcare-org" key="Organization-example-healthcare-org" name="Healthcare Organization Example"/>
+<artifact id="CapabilityStatement/medmorph-backend-service-app" key="CapabilityStatement-medmorph-backend-service-app" name="MedMorph Backend Service App"/>
+<artifact id="CapabilityStatement/medmorph-ehr" key="CapabilityStatement-medmorph-ehr" name="MedMorph EHR"/>
+<artifact id="CapabilityStatement/medmorph-knowledge-artifact-repository" key="CapabilityStatement-medmorph-knowledge-artifact-repository" name="MedMorph Knowledge Artifact Repository"/>
+<artifact deprecated="true" id="CapabilityStatement/medmorph-public-health-agency" key="CapabilityStatement-medmorph-public-health-agency" name="MedMorph Public Health Agency"/>
+<artifact id="CapabilityStatement/medmorph-public-health-authority" key="CapabilityStatement-medmorph-public-health-authority" name="MedMorph Public Health Authority"/>
+<artifact id="CapabilityStatement/medmorph-trust-service-provider" key="CapabilityStatement-medmorph-trust-service-provider" name="MedMorph Trust Service Provider"/>
+<artifact id="CapabilityStatement/medmorph-trusted-third-party" key="CapabilityStatement-medmorph-trusted-third-party" name="MedMorph Trusted Third Party"/>
+<artifact id="MessageHeader/messageheader-example-reportheader" key="MessageHeader-messageheader-example-reportheader" name="MessageHeader example used in the Cancer Reporting Bundle sent from Healthcare org to PHA"/>
+<artifact id="StructureDefinition/ext-messageProcessingCategory" key="StructureDefinition-ext-messageProcessingCategory" name="MessageProcessingCategory"/>
+<artifact id="Patient/1" key="Patient-1" name="Patient 1 - Example"/>
+<artifact id="PlanDefinition/plandefinition-cancer-example" key="PlanDefinition-plandefinition-cancer-example" name="Plan Definition example for Cancer Reporting"/>
+<artifact id="Practitioner/1" key="Practitioner-1" name="Practitioner Example"/>
+<artifact id="Endpoint/example-ph-endpoint" key="Endpoint-example-ph-endpoint" name="Public Health Organization Endpoint example"/>
+<artifact id="Organization/example-pha-org" key="Organization-example-pha-org" name="Public Health Organization Example"/>
+<artifact id="StructureDefinition/ext-receiverAddress" key="StructureDefinition-ext-receiverAddress" name="ReceiverAddress"/>
+<artifact id="StructureDefinition/research-participant-group" key="StructureDefinition-research-participant-group" name="ResearchParticipantGroup"/>
+<artifact id="StructureDefinition/ext-responseMessageStatus" key="StructureDefinition-ext-responseMessageStatus" name="ResponseMessageStatus"/>
+<artifact id="CodeSystem/us-ph-response-message-processing-status" key="CodeSystem-us-ph-response-message-processing-status" name="US Public Health CodeSystem for Response Message Processing Status Codes"/>
+<artifact id="CodeSystem/us-ph-valueset-usecontext-codes" key="CodeSystem-us-ph-valueset-usecontext-codes" name="US Public Health CodeSystem for ValueSet Use Context Codes"/>
+<artifact id="StructureDefinition/us-ph-content-bundle" key="StructureDefinition-us-ph-content-bundle" name="US Public Health Content Bundle"/>
+<artifact id="StructureDefinition/us-ph-fhirquerypattern-extension" key="StructureDefinition-us-ph-fhirquerypattern-extension" name="US Public Health FHIR Query Pattern Extension"/>
+<artifact id="CodeSystem/us-ph-messageheader-message-types" key="CodeSystem-us-ph-messageheader-message-types" name="US Public Health Message Type Codes"/>
+<artifact id="ValueSet/us-ph-message-types" key="ValueSet-us-ph-message-types" name="US Public Health Message Types"/>
+<artifact id="ValueSet/us-ph-plandefinition-action" key="ValueSet-us-ph-plandefinition-action" name="US Public Health PlanDefinition Action"/>
+<artifact id="CodeSystem/us-ph-plandefinition-actions" key="CodeSystem-us-ph-plandefinition-actions" name="US Public Health PlanDefinition Action Codes"/>
+<artifact id="StructureDefinition/us-ph-reporting-bundle" key="StructureDefinition-us-ph-reporting-bundle" name="US Public Health Reporting Bundle"/>
+<artifact id="ValueSet/us-ph-response-message-processing-status-codes" key="ValueSet-us-ph-response-message-processing-status-codes" name="US Public Health Response Message Processing Status Codes"/>
+<artifact id="CodeSystem/us-ph-triggerdefinition-namedevents" key="CodeSystem-us-ph-triggerdefinition-namedevents" name="US Public Health TriggerDefinition Named Events"/>
+<artifact id="ValueSet/us-ph-triggerdefinition-namedevent" key="ValueSet-us-ph-triggerdefinition-namedevent" name="US Public Health TriggerDefinition NamedEvent"/>
+<artifact id="StructureDefinition/us-ph-communication" key="StructureDefinition-us-ph-communication" name="USPublicHealthCommunication"/>
+<artifact id="StructureDefinition/us-ph-endpoint" key="StructureDefinition-us-ph-endpoint" name="USPublicHealthEndpoint"/>
+<artifact id="StructureDefinition/us-ph-messageheader" key="StructureDefinition-us-ph-messageheader" name="USPublicHealthMessageHeader"/>
+<artifact id="StructureDefinition/ext-us-ph-namedEventType" key="StructureDefinition-ext-us-ph-namedEventType" name="USPublicHealthNamedEventType"/>
+<artifact id="StructureDefinition/us-ph-plandefinition" key="StructureDefinition-us-ph-plandefinition" name="USPublicHealthPlanDefinition"/>
+<artifact id="StructureDefinition/us-ph-response-bundle" key="StructureDefinition-us-ph-response-bundle" name="USPublicHealthResponseBundle"/>
+<artifact id="StructureDefinition/us-ph-specification-bundle" key="StructureDefinition-us-ph-specification-bundle" name="USPublicHealthSpecificationBundle"/>
+<artifact id="StructureDefinition/us-ph-survey-practitioner-group" key="StructureDefinition-us-ph-survey-practitioner-group" name="USPublicHealthSurveyPractitionerGroup"/>
+<artifact id="StructureDefinition/us-ph-valueset" key="StructureDefinition-us-ph-valueset" name="USPublicHealthValueSet"/>
+<artifact id="ValueSet/valueset-cancer-trigger-codes-example" key="ValueSet-valueset-cancer-trigger-codes-example" name="ValueSet example for Cancer Reporting"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page deprecated="true" key="profiles" name="(profiles)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="background" name="Background"/>
+<page key="contentig" name="Content IG Guidance"/>
+<page key="credits" name="Credits"/>
+<page key="spec" name="Detailed Specification"/>
+<page key="changes" name="IG Change History"/>
+<page key="index" name="MedMorph Home Page"/>
+<page key="provisioning" name="Provisioning Workflow Specification"/>
+<page deprecated="true" key="reportgeneration" name="Report Generation"/>
+<page key="reportsubmission" name="Report Submission"/>
+<page key="researchdataextraction" name="Research Data Extraction"/>
+<page key="researchdataquery" name="Research Data Query"/>
+<page key="researchusecases" name="Research Use Cases"/>
+<page key="subscription" name="Subscriptions and Notifications"/>
+<page key="toc" name="Table of Contents"/>
+<page key="trustservices" name="Trust Services"/>
+<page key="usecases" name="Use Cases"/>
+<page key="downloads" name="Useful Downloads"/>
 </specification>

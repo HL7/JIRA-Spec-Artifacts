@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/specialty-rx/2021Jan" ciUrl="http://build.fhir.org/ig/HL7/specialty-rx" defaultVersion="current" defaultWorkgroup="pharm" gitUrl="https://github.com/HL7/fhir-specialty-rx" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" url="http://hl7.org/fhir/us/specialty-rx"><version code="current" url="http://build.fhir.org/ig/HL7/specialty-rx"/>
-<version code="0.1.00" url="http://hl7.org/fhir/us/specialty-rx/2021Jan"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ballotUrl="http://hl7.org/fhir/us/specialty-rx/2021Jan" 
+ciUrl="http://build.fhir.org/ig/HL7/fhir-specialty-rx" 
+defaultVersion="1.0.0" 
+defaultWorkgroup="pharm" 
+gitUrl="https://github.com/HL7/fhir-specialty-rx" 
+xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" 
+url="http://hl7.org/fhir/us/specialty-rx">
+<version code="current" url="http://build.fhir.org/ig/HL7/fhir-specialty-rx"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/specialty-rx/STU1"/>
+<version code="0.1.0" url="http://hl7.org/fhir/us/specialty-rx/2021Jan"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="Bundle/specialty-rx-search-response-1-w-include" key="Bundle-specialty-rx-search-response-1-w-include" name="Search Response 1 with _included Medication Resource"/>
+<artifact id="Bundle/specialty-rx-search-response-2-w-revinclude" key="Bundle-specialty-rx-search-response-2-w-revinclude" name="Search Response 2 with _revincluded Provenance Resource"/>
 <artifact deprecated="true" id="StructureDefinition/specialty-rx-allergyintolerance" key="StructureDefinition-specialty-rx-allergyintolerance" name="Specialty Rx AllergyIntolerance"/>
 <artifact deprecated="true" id="AllergyIntolerance/specialty-rx-allergyintolerance-1" key="AllergyIntolerance-specialty-rx-allergyintolerance-1" name="Specialty Rx AllergyIntolerance - 1"/>
 <artifact id="StructureDefinition/specialty-rx-bundle-error" key="StructureDefinition-specialty-rx-bundle-error" name="Specialty Rx Bundle - Error Message"/>
@@ -14,9 +25,11 @@
 <artifact deprecated="true" id="StructureDefinition/specialty-rx-bundle-questionnaire" key="StructureDefinition-specialty-rx-bundle-questionnaire" name="Specialty Rx Bundle - Questionnaire Message"/>
 <artifact deprecated="true" id="StructureDefinition/specialty-rx-bundle-questionnaire-response" key="StructureDefinition-specialty-rx-bundle-questionnaire-response" name="Specialty Rx Bundle - Questionnaire Response Message"/>
 <artifact id="StructureDefinition/specialty-rx-bundle-search-result" key="StructureDefinition-specialty-rx-bundle-search-result" name="Specialty Rx Bundle - Search Result"/>
+<artifact id="CapabilityStatement/specialty-rx-data-consumer-messaging" key="CapabilityStatement-specialty-rx-data-consumer-messaging" name="Specialty Rx CapabilityStatement - Data Consumer - Messaging"/>
+<artifact id="CapabilityStatement/specialty-rx-data-consumer-restful" key="CapabilityStatement-specialty-rx-data-consumer-restful" name="Specialty Rx CapabilityStatement - Data Consumer - RESTful"/>
 <artifact deprecated="true" id="CapabilityStatement/specialty-rx-data-recipient" key="CapabilityStatement-specialty-rx-data-recipient" name="Specialty Rx CapabilityStatement - Data Recipient"/>
-<artifact id="CapabilityStatement/specialty-rx-data-recipient-messaging" key="CapabilityStatement-specialty-rx-data-recipient-messaging" name="Specialty Rx CapabilityStatement - Data Recipient - Messaging"/>
-<artifact id="CapabilityStatement/specialty-rx-data-recipient-restful" key="CapabilityStatement-specialty-rx-data-recipient-restful" name="Specialty Rx CapabilityStatement - Data Recipient - RESTful"/>
+<artifact deprecated="true" id="CapabilityStatement/specialty-rx-data-recipient-messaging" key="CapabilityStatement-specialty-rx-data-recipient-messaging" name="Specialty Rx CapabilityStatement - Data Recipient - Messaging"/>
+<artifact deprecated="true" id="CapabilityStatement/specialty-rx-data-recipient-restful" key="CapabilityStatement-specialty-rx-data-recipient-restful" name="Specialty Rx CapabilityStatement - Data Recipient - RESTful"/>
 <artifact deprecated="true" id="CapabilityStatement/specialty-rx-data-source" key="CapabilityStatement-specialty-rx-data-source" name="Specialty Rx CapabilityStatement - Data Source"/>
 <artifact id="CapabilityStatement/specialty-rx-data-source-messaging" key="CapabilityStatement-specialty-rx-data-source-messaging" name="Specialty Rx CapabilityStatement - Data Source - Messaging"/>
 <artifact id="CapabilityStatement/specialty-rx-data-source-restful" key="CapabilityStatement-specialty-rx-data-source-restful" name="Specialty Rx CapabilityStatement - Data Source - RESTful"/>
@@ -98,12 +111,12 @@
 <page key="message-structure" name="Message Structures"/>
 <page key="message-submission" name="Message submission"/>
 <page key="patient-matching" name="Patient Matching"/>
-<page key="roles" name="Roles"/>
 <page key="request-queries" name="Search Conventions"/>
 <page key="security" name="Security"/>
 <page key="systematic-queries" name="Systematic Query Workflows"/>
 <page key="toc" name="Table of Contents"/>
 <page deprecated="true" key="terminology" name="Terminology"/>
 <page key="us-core-profiles" name="US Core Profiles"/>
+<page key="roles" name="Use Cases and Roles"/>
 <page deprecated="true" key="workflow" name="Workflow Scenarios"/>
 </specification>
