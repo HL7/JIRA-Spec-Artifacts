@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-pdex/2022May" ciUrl="http://build.fhir.org/ig/HL7/davinci-epdx" defaultVersion="1.0.0" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-epdx" url="http://hl7.org/fhir/us/davinci-pdex">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               ballotUrl="http://hl7.org/fhir/us/davinci-pdex/2022May" 
+               ciUrl="http://build.fhir.org/ig/HL7/davinci-epdx" 
+               defaultVersion="1.0.0" 
+               defaultWorkgroup="fm" 
+               gitUrl="https://github.com/HL7/davinci-epdx" 
+               url="http://hl7.org/fhir/us/davinci-pdex">
   <version code="current" url="http://build.fhir.org/ig/HL7/davinci-epdx"/>
   <version code="2.0.0" url="http://hl7.org/fhir/us/davinci-pdex/2022May"/>
   <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-pdex/STU1"/>
@@ -8,34 +14,90 @@
   <artifactPageExtension value="-definitions"/>
   <artifactPageExtension value="-examples"/>
   <artifactPageExtension value="-mappings"/>
-  <artifact id="StructureDefinition/ProvenanceSourceFrom" key="StructureDefinition-ProvenanceSourceFrom" name="An attribute to describe the data source a resource was constructed from"/>
-  <artifact id="StructureDefinition/PriorAuthorizationUtilization" key="StructureDefinition-PriorAuthorizationUtilization" name="An attribute to express the amount of a service or item that has been utilized"/>
-  <artifact id="StructureDefinition/DispenseRefill" key="StructureDefinition-DispenseRefill" name="An attribute to express the refill number of a prescription"/>
-  <artifact deprecated="true" key="AppointmentResponse" name="AppointmentResponse"/>
-  <artifact id="Bundle/3000003" key="Bundle-3000003" name="BundleConditionWithProvenance"/>
-  <artifact id="Bundle/1000000-1" key="Bundle-1000000-1" name="BundleExamplePayer1"/>
-  <artifact id="Bundle/1000000-2" key="Bundle-1000000-2" name="BundleExamplePayer2"/>
-  <artifact id="Bundle/1000000-3" key="Bundle-1000000-3" name="BundleExamplePayer3"/>
-  <artifact id="Bundle/3000002" key="Bundle-3000002" name="BundleWithProvenance"/>
-  <artifact id="Bundle/2000002" key="Bundle-2000002" name="ExampleBundle1"/>
-  <artifact id="Coverage/883210" key="Coverage-883210" name="ExampleCoverage"/>
-  <artifact id="Device/543210" key="Device-543210" name="ExampleDevice"/>
-  <artifact id="Provenance/1000016" key="Provenance-1000006" name="ExampleDocRefProvenance"/>
-  <artifact id="DocumentReference/123456" key="DocumentReference-123456" name="ExampleDocumentReference"/>
-  <artifact id="Encounter/6" key="Encounter-6" name="ExampleEncounter1"/>
-  <artifact id="Encounter/7" key="Encounter-7" name="ExampleEncounter2"/>
-  <artifact id="Encounter/8" key="Encounter-8" name="ExampleEncounter3"/>
-  <artifact id="Location/5" key="Location-5" name="ExampleLocation"/>
-  <artifact id="MedicationDispense/1000001" key="MedicationDispense-1000001" name="ExampleMedicationDispenseClaim"/>
-  <artifact id="Practitioner/4" key="Practitioner-4" name="ExamplePractitioner"/>
-  <artifact id="Provenance/1000002" key="Provenance-1000002" name="ExampleProvenanceAuthorEncounter6"/>
-  <artifact id="Provenance/1000003" key="Provenance-1000003" name="ExampleProvenanceAuthorEncounter7"/>
-  <artifact id="Provenance/1000017" key="Provenance-1000017" name="ExampleProvenanceBundleTransmitter"/>
-  <artifact id="Provenance/1000101" key="Provenance-1000101" name="ExampleProvenanceCustodian"/>
-  <artifact id="Provenance/1000006" key="Provenance-1000006" name="ExampleProvenancePayerModified"/>
-  <artifact id="Provenance/1000005" key="Provenance-1000005" name="ExampleProvenancePayerSource"/>
-  <artifact id="Provenance/1000004" key="Provenance-1000004" name="ExampleProvenanceSoloPractitioner"/>
-  <artifact id="Provenance/1000001" key="Provenance-1000001" name="ExampleProvenanceTransmitter"/>
+  <artifact id="StructureDefinition/ProvenanceSourceFrom" 
+            key="StructureDefinition-ProvenanceSourceFrom" 
+            name="An attribute to describe the data source a resource was constructed from"/>
+  <artifact id="StructureDefinition/PriorAuthorizationUtilization" 
+            key="StructureDefinition-PriorAuthorizationUtilization" 
+            name="An attribute to express the amount of a service or item that has been utilized"/>
+  <artifact id="StructureDefinition/DispenseRefill" 
+            key="StructureDefinition-DispenseRefill" 
+            name="An attribute to express the refill number of a prescription"/>
+  <artifact deprecated="true" 
+            key="AppointmentResponse" 
+            name="AppointmentResponse"/>
+  <artifact id="Bundle/3000003" 
+            key="Bundle-3000003" 
+            name="BundleConditionWithProvenance"/>
+  <artifact id="Bundle/1000000-1" 
+            key="Bundle-1000000-1" 
+            name="BundleExamplePayer1"/>
+  <artifact id="Bundle/1000000-2" 
+            key="Bundle-1000000-2" 
+            name="BundleExamplePayer2"/>
+  <artifact id="Bundle/1000000-3" 
+            key="Bundle-1000000-3" 
+            name="BundleExamplePayer3"/>
+  <artifact id="Bundle/3000002" 
+            key="Bundle-3000002" 
+            name="BundleWithProvenance"/>
+  <artifact id="Bundle/2000002" 
+            key="Bundle-2000002" 
+            name="ExampleBundle1"/>
+  <artifact id="Coverage/883210" 
+            key="Coverage-883210" 
+            name="ExampleCoverage"/>
+  <artifact id="Device/543210" 
+            key="Device-543210" 
+            name="ExampleDevice"/>
+  <artifact id="Provenance/1000016" 
+            key="Provenance-1000006" 
+            name="ExampleDocRefProvenance"/>
+  <artifact id="DocumentReference/123456" 
+            key="DocumentReference-123456" 
+            name="ExampleDocumentReference"/>
+  <artifact id="Encounter/6" 
+            key="Encounter-6" 
+            name="ExampleEncounter1"/>
+  <artifact id="Encounter/7" 
+            key="Encounter-7" 
+            name="ExampleEncounter2"/>
+  <artifact id="Encounter/8" 
+            key="Encounter-8" 
+            name="ExampleEncounter3"/>
+  <artifact id="Location/5" 
+            key="Location-5" 
+            name="ExampleLocation"/>
+  <artifact id="MedicationDispense/1000001" 
+            key="MedicationDispense-1000001" 
+            name="ExampleMedicationDispenseClaim"/>
+  <artifact id="Practitioner/4" 
+            key="Practitioner-4" 
+            name="ExamplePractitioner"/>
+  <artifact id="Provenance/1000002" 
+            key="Provenance-1000002" 
+            name="ExampleProvenanceAuthorEncounter6"/>
+  <artifact id="Provenance/1000003" 
+            key="Provenance-1000003" 
+            name="ExampleProvenanceAuthorEncounter7"/>
+  <artifact id="Provenance/1000017" 
+            key="Provenance-1000017" 
+            name="ExampleProvenanceBundleTransmitter"/>
+  <artifact id="Provenance/1000101" 
+            key="Provenance-1000101" 
+            name="ExampleProvenanceCustodian"/>
+  <artifact id="Provenance/1000006" 
+            key="Provenance-1000006" 
+            name="ExampleProvenancePayerModified"/>
+  <artifact id="Provenance/1000005" 
+            key="Provenance-1000005" 
+            name="ExampleProvenancePayerSource"/>
+  <artifact id="Provenance/1000004" 
+            key="Provenance-1000004" 
+            name="ExampleProvenanceSoloPractitioner"/>
+  <artifact id="Provenance/1000001" 
+            key="Provenance-1000001" 
+            name="ExampleProvenanceTransmitter"/>
   <artifact id="SearchParameter/explanationofbenefit-identifier" key="SearchParameter-explanationofbenefit-identifier" name="ExplanationOfBenefit_Identifier"/>
   <artifact id="SearchParameter/explanationofbenefit-patient" key="SearchParameter-explanationofbenefit-patient" name="ExplanationOfBenefit_Patient"/>
   <artifact id="SearchParameter/explanationofbenefit-service-date" key="SearchParameter-explanationofbenefit-service-date" name="ExplanationOfBenefit_ServiceDate"/>

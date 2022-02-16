@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/cancer-reporting/2021Sep"
+  gitUrl="https://github.com/HL7/cancer-reporting" url="http://hl7.org/fhir/us/cancer-reporting"
+  ciUrl="http://build.fhir.org/ig/HL7/cancer-reporting" defaultWorkgroup="oo" defaultVersion="0.1.0"
+  xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
+  <version code="current" url="http://build.fhir.org/ig/HL7/cancer-reporting" />
+  <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/cancer-reporting/2021Sep" />
+  <artifactPageExtension value="-definitions" />
+  <artifactPageExtension value="-examples" />
+  <artifactPageExtension value="-mappings" />
+  <artifact name="US Pathology Bundle" key="StructureDefinition-us-pathology-bundle"
+    id="StructureDefinition/us-pathology-bundle" />
+  <artifact name="US Pathology MessageHeader" key="StructureDefinition-us-pathology-message-header"
+    id="StructureDefinition/us-pathology-message-header" />
+  <artifact name="US Pathology Diagnostic Report"
+    key="StructureDefinition-us-pathology-diagnostic-report"
+    id="StructureDefinition/us-pathology-diagnostic-report" />
+  <artifact name="US Pathology Specimen" key="StructureDefinition-us-pathology-specimen"
+    id="StructureDefinition/us-pathology-specimen" />
+  <artifact name="US Pathology Next of Kin" key="StructureDefinition-us-pathology-next-of-kin"
+    id="StructureDefinition/us-pathology-next-of-kin" />
+  <artifact name="US Pathology Related Practitioner Roles"
+    key="StructureDefinition-us-pathology-related-practitioner-role"
+    id="StructureDefinition/us-pathology-related-practitioner-role" />
+  <artifact name="US Pathology Provider Types ValueSet" key="ValueSet-us-pathology-provider-types"
+    id="ValueSet/us-pathology-provider-types" />
+  <artifact name="US Pathology Provider Types CodeSystem"
+    key="CodeSystem-us-pathology-provider-types" id="CodeSystem/us-pathology-provider-types" />
+  <artifact name="Pathology Bundle (example)" key="Bundle-cancer-us-pathology-message-bundle"
+    id="Bundle/cancer-us-pathology-message-bundle" />
+  <artifact name="MessageHeader (example)" key="MessageHeader-pathology-message-header"
+    id="MessageHeader/pathology-message-header" />
+  <artifact name="Encounter (example)" key="Encounter-pathology-encounter"
+    id="Encounter/pathology-encounter" />
+  <artifact name="Patient (example)" key="Patient-JoelAlexPatient" id="Patient/JoelAlexPatient" />
+  <artifact name="Pathology Adrenal DiagnosticReport (example)"
+    key="DiagnosticReport-pathology-diagnostic-report"
+    id="DiagnosticReport/pathology-diagnostic-report" />
+  <artifact name="Adrenal Specimen (example)" key="Specimen-adrenal-example"
+    id="Specimen/adrenal-example" />
+  <artifact name="Principal Pathology Lab" key="Organization-principal-pathology-lab"
+    id="Organization/principal-pathology-lab" />
+  <artifact name="Redwood Women's Center, P.C." key="Organization-Redwood-Womens-Center-PC"
+    id="Organization/Redwood-Womens-Center-PC" />
+  <artifact name="Next-of-Kin RelatedPerson (example)" key="RelatedPerson-pathology-next-of-kin"
+    id="RelatedPerson/pathology-next-of-kin" />
+  <artifact name="Pathologist Practitioner (example)" key="Practitioner-pathologist-example"
+    id="Practitioner/pathologist-example" />
+  <artifact name="Pathologist PractitionerRole (example)" key="PractitionerRole-pathologist-example"
+    id="PractitionerRole/pathologist-example" />
+  <artifact name="Oncologist Practitioner (example)" key="Practitioner-oncologist-example"
+    id="Practitioner/oncologist-example" />
+  <artifact name="Oncologist PractitionerRole (example)" key="PractitionerRole-oncologist-example"
+    id="PractitionerRole/oncologist-example" />
+  <artifact name="Adrenal Gland (example)" key="Observation-2118.100004300-us"
+    id="Observation/2118.100004300-us" />
+  <artifact name="Procedure: Adrenalectomy, total (example)" key="Observation-42554.100004300-us"
+    id="Observation/42554.100004300-us" />
+  <artifact name="Specimen Laterality: Bilateral (example)" key="Observation-52756.100004300-us"
+    id="Observation/52756.100004300-us" />
+  <artifact name="Histologic Type: Adrenal cortical carcinoma (example)"
+    key="Observation-59852.100004300-us" id="Observation/59852.100004300-us" />
+  <artifact name="Tumor Weight: Specify Weight (g) (example)" key="Observation-40496.100004300-us"
+    id="Observation/40496.100004300-us" />
+  <artifact name="Tumor Size: Greatest dimension in Centimeters (cm) (example)"
+    key="Observation-2129.100004300-us" id="Observation/2129.100004300-us" />
+  <artifact name="Histologic Grade: High grade (example)" key="Observation-49275.100004300-us"
+    id="Observation/49275.100004300-us" />
+  <artifact name="Regional Lymph Nodes: None Submitted (example)"
+    key="Observation-1867.100004300-us" id="Observation/1867.100004300-us" />
+  <artifact name="Tumor Extension-2: Tumor invasion-2 (example)"
+    key="Observation-53526.100004300-us" id="Observation/53526.100004300-us" />
+  <artifact name="Tumor Extension: Tumor invasion (example)" key="Observation-51265.100004300-us"
+    id="Observation/51265.100004300-us" />
+  <artifact name="TNM Descriptors: m (multiple primary tumors) (example)"
+    key="Observation-20880.100004300-us" id="Observation/20880.100004300-us" />
+  <artifact name="Primary Tumor (pT): pTX: primary tumor cannot be assessed (example)"
+    key="Observation-2137.100004300-us" id="Observation/2137.100004300-us" />
+  <artifact name="Regional Lymph Nodes (pN): pN0: No regional lymph node metastasis (example)"
+    key="Observation-2143.100004300-us" id="Observation/2143.100004300-us" />
+  <artifact
+    name="Distant Metastasis (pM): Not applicable- pM cannot be determined from the submitted specimen(s) (example)"
+    key="Observation-2149.100004300-us" id="Observation/2149.100004300-us" />
+  <page key="NA" name="(NA)"/>
+  <page key="many" name="(many)"/>
+  <page key="artifacts" name="Artifacts Summary"/>
+  <page name="Home Page" key="index" />
+  <page name="Background" key="background" />
+  <page name="Specification" key="specification" />
+  <page name="Downloads" key="downloads" />
+  <page key="toc" name="Table of Contents"/>
+</specification>
