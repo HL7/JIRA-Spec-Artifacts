@@ -19605,22 +19605,25 @@
                   url="http://hl7.org/fhir/us/davinci-pdex-plan-net"
                   ciUrl="http://build.fhir.org/HL7/ig/davinci-pdex-plan-net"
                   defaultWorkgroup="fm"
-                  defaultVersion="current"
-                  ballotUrl="http://hl7.org/fhir/us/davinci-pdex-plan-net">
+                  defaultVersion="1.1.0">
+      <version code="current" url="http://build.fhir.org/HL7/ig/davinci-pdex-plan-net"/>
+      <version code="1.1.0" url="http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.1"/>
+      <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1"/>
+      <version code="0.1.0"
+               url="http://hl7.org/fhir/us/davinci-pdex-plan-net/2020Feb"
+               deprecated="true"/>
       <version code="0.1" deprecated="true"/>
-      <version code="current" url="http://hl7.org/fhir/us/davinci-pdex-plan-net"/>
-      <version code="0.1.0" url="http://hl7.org/fhir/us/davinci-pdex-plan-net"/>
-      <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-pdex-plan-net"/>
+
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
       <artifact id="ValueSet/AcceptingPatientsVS"
                 key="FHIR-us-davinci-plannet-ValueSet-AcceptingPatientsVS"
-                name="Accepting Patients ValueSet"
+                name="Accepting Patients Codes VS"
                 spec="us-davinci-plannet"/>
       <artifact id="CodeSystem/AcceptingPatientsCS"
                 key="FHIR-us-davinci-plannet-CodeSystem-AcceptingPatientsCS"
-                name="Accepting Patients Codesystem"
+                name="Accepting Patients Codes"
                 spec="us-davinci-plannet"/>
       <artifact deprecated="true"
                 key="FHIR-us-davinci-plannet-AcceptingPatients"
@@ -19632,11 +19635,11 @@
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/AccessibilityVS"
                 key="FHIR-us-davinci-plannet-ValueSet-AccessibilityVS"
-                name="Accessibility ValueSet"
+                name="Accessibility VS"
                 spec="us-davinci-plannet"/>
       <artifact id="CodeSystem/AccessibilityCS"
                 key="FHIR-us-davinci-plannet-CodeSystem-AccessibilityCS"
-                name="Accessibility CodeSystem"
+                name="Accessibility CS"
                 spec="us-davinci-plannet"/>
       <artifact id="Organization/Acme"
                 key="FHIR-us-davinci-plannet-Organization-Acme"
@@ -19724,20 +19727,20 @@
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/DeliveryMethodVS"
                 key="FHIR-us-davinci-plannet-ValueSet-DeliveryMethodVS"
-                name="Delivery Methods ValueSet"
+                name="Delivery Methods VS"
                 spec="us-davinci-plannet"/>
       <artifact id="CodeSystem/DeliveryMethodCS"
                 key="FHIR-us-davinci-plannet-CodeSystem-DeliveryMethodCS"
-                name="Delivery Methods CodeSystem"
+                name="Delivery Methods"
                 spec="us-davinci-plannet"/>
       <artifact deprecated="true"
                 id="StructureDefinition/plannet-Endpoint"
                 key="FHIR-us-davinci-plannet-Endpoint"
-                name="Endpoint"
+                name="Plan-Net Endpoint"
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/EndpointConnectionTypeVS"
                 key="FHIR-us-davinci-plannet-ValueSet-EndpointConnectionTypeVS"
-                name="Endpoint Connection Types"
+                name="Endpoint Connection Types VS"
                 spec="us-davinci-plannet"/>
       <artifact id="CodeSystem/EndpointConnectionTypeCS"
                 key="FHIR-us-davinci-plannet-CodeSystem-EndpointConnectionTypeCS"
@@ -19745,11 +19748,11 @@
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/EndpointPayloadTypeVS"
                 key="FHIR-us-davinci-plannet-ValueSet-EndpointPayloadTypeVS"
-                name="Endpoint Payload Types ValueSets"
+                name="Endpoint Payload Types VS"
                 spec="us-davinci-plannet"/>
       <artifact id="CodeSystem/EndpointPayloadTypeCS"
                 key="FHIR-us-davinci-plannet-CodeSystem-EndpointPayloadTypeCS"
-                name="Endpoint Payload Types CodeSystem"
+                name="Endpoint Payload Types"
                 spec="us-davinci-plannet"/>
       <artifact deprecated="true"
                 id="StructureDefinition/plannet-EndpointUseCase-extension"
@@ -19762,7 +19765,7 @@
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/EndpointUsecaseVS"
                 key="FHIR-us-davinci-plannet-ValueSet-EndpointUsecaseVS"
-                name="Endpoint Usecases ValueSeet"
+                name="Endpoint Usecases VS"
                 spec="us-davinci-plannet"/>
       <artifact id="Organization/HamiltonClinic"
                 key="FHIR-us-davinci-plannet-Organization-HamiltonClinic"
@@ -19806,7 +19809,7 @@
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/HealthcareServiceCategoryVS"
                 key="FHIR-us-davinci-plannet-ValueSet-HealthcareServiceCategoryVS"
-                name="Healthcare Service Category ValueSet"
+                name="Healthcare Service CategoryVS"
                 spec="us-davinci-plannet"/>
       <artifact id="CodeSystem/HealthcareServiceCategoryCS"
                 key="FHIR-us-davinci-plannet-CodeSystem-HealthcareServiceCategoryCS"
@@ -19815,11 +19818,11 @@
       <artifact deprecated="true"
                 id="StructureDefinition/plannet-HealthcareService"
                 key="FHIR-us-davinci-plannet-HealthCareService"
-                name="HealthcareService"
+                name="Plan-Net HealthcareService"
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/HealthcareServiceTypeVS"
                 key="FHIR-us-davinci-plannet-ValueSet-HealthcareServiceTypeVS"
-                name="HealthcareService Types ValueSets"
+                name="HealthcareService Types VS"
                 spec="us-davinci-plannet"/>
       <artifact id="HealthcareService/HospERService"
                 key="FHIR-us-davinci-plannet-HealthcareService-HospERService"
@@ -19839,7 +19842,7 @@
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS"
                 key="FHIR-us-davinci-plannet-ValueSet-IndividualSpecialtyAndDegreeLicenseCertificateVS"
-                name="Individual Specialties, Degrees, Licenses, and Certificates"
+                name="Individual Specialties, Degrees, Licenses, and Certificates VS"
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/IndividualAndGroupSpecialtiesVS"
                 key="FHIR-us-davinci-plannet-ValueSet-IndividualAndGroupSpecialtiesVS"
@@ -19847,7 +19850,7 @@
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/InsurancePlanTypeVS"
                 key="FHIR-us-davinci-plannet-ValueSet-InsurancePlanTypeVS"
-                name="Insurance Plan Type ValueSet"
+                name="Insurance Plan TypeVS"
                 spec="us-davinci-plannet"/>
       <artifact id="CodeSystem/InsurancePlanTypeCS"
                 key="FHIR-us-davinci-plannet-CodeSystem-InsurancePlanTypeCS"
@@ -19855,7 +19858,7 @@
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/InsuranceProductTypeVS"
                 key="FHIR-us-davinci-plannet-ValueSet-InsuranceProductTypeVS"
-                name="Insurance Product Type ValueSet"
+                name="Insurance Product Type VS"
                 spec="us-davinci-plannet"/>
       <artifact id="CodeSystem/InsuranceProductTypeCS"
                 key="FHIR-us-davinci-plannet-CodeSystem-InsuranceProductTypeCS"
@@ -19864,7 +19867,7 @@
       <artifact deprecated="true"
                 id="StructureDefinition/plannet-InsurancePlan"
                 key="FHIR-us-davinci-plannet-InsurancePlan"
-                name="InsurancePlan"
+                name="Plan-Net InsurancePlan"
                 spec="us-davinci-plannet"/>
       <artifact id="Practitioner/JoeSmith"
                 key="FHIR-us-davinci-plannet-Practitioner-JoeSmith"
@@ -19884,16 +19887,16 @@
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/LanguageProficiencyVS"
                 key="FHIR-us-davinci-plannet-ValueSet-LanguageProficiencyVS"
-                name="Language Proficiency ValueSet"
+                name="Language Proficiency VS"
                 spec="us-davinci-plannet"/>
       <artifact id="CodeSystem/LanguageProficiencyCS"
                 key="FHIR-us-davinci-plannet-CodeSystem-LanguageProficiencyCS"
-                name="Language Proficiency"
+                name="Language Proficiency CS"
                 spec="us-davinci-plannet"/>
       <artifact deprecated="true"
                 id="StructureDefinition/plannet-Location"
                 key="FHIR-us-davinci-plannet-Location"
-                name="Location"
+                name="Plan-Net Location"
                 spec="us-davinci-plannet"/>
       <artifact id="StructureDefinition/location-reference"
                 key="FHIR-us-davinci-plannet-StructureDefinition-location-reference"
@@ -19906,7 +19909,7 @@
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/MinEndpointConnectionTypeVS"
                 key="FHIR-us-davinci-plannet-ValueSet-MinEndpointConnectionTypeVS"
-                name="Minimum Endpoint Connection Types"
+                name="Minimum Endpoint Connection Types VS"
                 spec="us-davinci-plannet"/>
       <artifact deprecated="true"
                 id="StructureDefinition/plannet-Network-reference-extension"
@@ -19916,7 +19919,7 @@
       <artifact deprecated="true"
                 id="StructureDefinition/plannet-Network"
                 key="FHIR-us-davinci-plannet-Network"
-                name="Network"
+                name="Plan-Net Network"
                 spec="us-davinci-plannet"/>
       <artifact id="StructureDefinition/network-reference"
                 key="FHIR-us-davinci-plannet-StructureDefinition-network-reference"
@@ -19924,7 +19927,7 @@
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/NetworkTypeVS"
                 key="FHIR-us-davinci-plannet-ValueSet-NetworkTypeVS"
-                name="Network Type"
+                name="Network Type VS"
                 spec="us-davinci-plannet"/>
       <artifact id="StructureDefinition/newpatients"
                 key="FHIR-us-davinci-plannet-NewPatients"
@@ -19932,11 +19935,11 @@
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/NonIndividualSpecialtiesVS"
                 key="FHIR-us-davinci-plannet-ValueSet-NonIndividualSpecialtiesVS"
-                name="Non-Individual Specialties ValueSet"
+                name="Non-Individual Specialties"
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/NonIndividualSpecialtyAndDegreeLicenseCertificateVS"
                 key="FHIR-us-davinci-plannet-ValueSet-NonIndividualSpecialtyAndDegreeLicenseCertificateVS"
-                name="Non-Individual Specialties, Degrees, Licenses, and Certificates"
+                name="Non-Individual Specialties, Degrees, Licenses, and Certificates VS"
                 spec="us-davinci-plannet"/>
       <artifact id="StructureDefinition/org-description"
                 key="FHIR-us-davinci-plannet-StructureDefinition-org-description"
@@ -19945,7 +19948,7 @@
       <artifact deprecated="true"
                 id="StructureDefinition/plannet-Organization"
                 key="FHIR-us-davinci-plannet-Organization"
-                name="Organization"
+                name="Plan-Net Organization"
                 spec="us-davinci-plannet"/>
       <artifact id="CodeSystem/OrganizationAffiliationRoleCS"
                 key="FHIR-us-davinci-plannet-CodeSystem-OrganizationAffiliationRoleCS"
@@ -19953,7 +19956,7 @@
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/OrgTypeVS"
                 key="FHIR-us-davinci-plannet-ValueSet-OrgTypeVS"
-                name="Organization Type ValueSet"
+                name="Organization Type VS"
                 spec="us-davinci-plannet"/>
       <artifact id="CodeSystem/OrgTypeCS"
                 key="FHIR-us-davinci-plannet-CodeSystem-OrgTypeCS"
@@ -19962,7 +19965,7 @@
       <artifact deprecated="true"
                 id="StructureDefinition/plannet-OrganizationAffiliation"
                 key="FHIR-us-davinci-plannet-OrganizationAffiliation"
-                name="OrganizationAffiliation"
+                name="Plan-Net OrganizationAffiliation"
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/OrganizationAffiliationRoleVS"
                 key="FHIR-us-davinci-plannet-ValueSet-OrganizationAffiliationRoleVS"
@@ -20064,6 +20067,10 @@
                 key="FHIR-us-davinci-plannet-SearchParameter-insuranceplan-coverage-area"
                 name="Plannet_sp_insuranceplan_coverage_area"
                 spec="us-davinci-plannet"/>
+      <artifact id="SearchParameter/insuranceplan-identifier"
+                key="FHIR-us-davinci-plannet-SearchParameter-insuranceplan-identifier"
+                name="Plannet_sp_insuranceplan_identifier"
+                spec="us-davinci-plannet"/>
       <artifact id="SearchParameter/insuranceplan-name"
                 key="FHIR-us-davinci-plannet-SearchParameter-insuranceplan-name"
                 name="Plannet_sp_insuranceplan_name"
@@ -20128,6 +20135,10 @@
                 key="FHIR-us-davinci-plannet-SearchParameter-organization-partof"
                 name="Plannet_sp_organization_partof"
                 spec="us-davinci-plannet"/>
+      <artifact id="SearchParameter/organization-type"
+                key="FHIR-us-davinci-plannet-SearchParameter-organization-type"
+                name="Plannet_sp_organization_type"
+                spec="us-davinci-plannet"/>
       <artifact id="SearchParameter/organizationaffiliation-location"
                 key="FHIR-us-davinci-plannet-SearchParameter-organizationaffiliation-location"
                 name="Plannet_sp_organizationaffiliation_location"
@@ -20139,6 +20150,10 @@
       <artifact id="SearchParameter/organizationaffiliation-participating-organization"
                 key="FHIR-us-davinci-plannet-SearchParameter-organizationaffiliation-participating-organization"
                 name="Plannet_sp_organizationaffiliation_participating_organization"
+                spec="us-davinci-plannet"/>
+      <artifact id="SearchParameter/organizationaffiliation-period"
+                key="FHIR-us-davinci-plannet-SearchParameter-organizationaffiliation-period"
+                name="Plannet_sp_organizationaffiliation_period"
                 spec="us-davinci-plannet"/>
       <artifact id="SearchParameter/organizationaffiliation-primary-organization"
                 key="FHIR-us-davinci-plannet-SearchParameter-organizationaffiliation-primary-organization"
@@ -20184,6 +20199,10 @@
                 key="FHIR-us-davinci-plannet-SearchParameter-practitionerrole-organization"
                 name="Plannet_sp_practitionerrole_organization"
                 spec="us-davinci-plannet"/>
+      <artifact id="SearchParameter/practitionerrole-period"
+                key="FHIR-us-davinci-plannet-SearchParameter-practitionerrole-period"
+                name="Plannet_sp_practitionerrole_period"
+                spec="us-davinci-plannet"/>
       <artifact id="SearchParameter/practitionerrole-practitioner"
                 key="FHIR-us-davinci-plannet-SearchParameter-practitionerrole-practitioner"
                 name="Plannet_sp_practitionerrole_practitioner"
@@ -20203,7 +20222,7 @@
       <artifact deprecated="true"
                 id="StructureDefinition/plannet-Practitioner"
                 key="FHIR-us-davinci-plannet-Practitioner"
-                name="Practitioner"
+                name="Plan-Net Practitioner"
                 spec="us-davinci-plannet"/>
       <artifact id="StructureDefinition/practitioner-qualification"
                 key="FHIR-us-davinci-plannet-StructureDefinition-practitioner-qualification"
@@ -20212,11 +20231,11 @@
       <artifact deprecated="true"
                 id="StructureDefinition/plannet-PractitionerRole"
                 key="FHIR-us-davinci-plannet-PractitionerRole"
-                name="PractitionerRole"
+                name="Plan-Net PractitionerRole"
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/PractitionerRoleVS"
                 key="FHIR-us-davinci-plannet-ValueSet-PractitionerRoleVS"
-                name="PractitionerRole Code"
+                name="PractitionerRole Code VS"
                 spec="us-davinci-plannet"/>
       <artifact id="CodeSystem/ProviderRoleCS"
                 key="FHIR-us-davinci-plannet-CodeSystem-ProviderRoleCS"
@@ -20228,7 +20247,7 @@
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/QualificationStatusVS"
                 key="FHIR-us-davinci-plannet-ValueSet-QualificationStatusVS"
-                name="Qualification Status ValueSet"
+                name="Qualification Status VS"
                 spec="us-davinci-plannet"/>
       <artifact id="CodeSystem/QualificationStatusCS"
                 key="FHIR-us-davinci-plannet-CodeSystem-QualificationStatusCS"
@@ -20236,11 +20255,11 @@
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/SpecialtiesVS"
                 key="FHIR-us-davinci-plannet-ValueSet-SpecialtiesVS"
-                name="Specialties ValueSet"
+                name="Specialties VS"
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/SpecialtyAndDegreeLicenseCertificateVS"
                 key="FHIR-us-davinci-plannet-ValueSet-SpecialtyAndDegreeLicenseCertificateVS"
-                name="Specialties, Degrees, Licenses, and Certificates ValueSet"
+                name="Specialties, Degrees, Licenses, and Certificates VS"
                 spec="us-davinci-plannet"/>
       <artifact id="Location/StateOfCTLocation"
                 key="FHIR-us-davinci-plannet-Location-StateOfCTLocation"
@@ -20248,11 +20267,11 @@
                 spec="us-davinci-plannet"/>
       <artifact id="SearchParameter/location-endpoint"
                 key="FHIR-us-davinci-plannet-SearchParameter-location-endpoint"
-                name="VhDir_sp_location_endpoint"
+                name="Plannet_sp_location_endpoint"
                 spec="us-davinci-plannet"/>
       <artifact id="SearchParameter/organizationaffiliation-endpoint"
                 key="FHIR-us-davinci-plannet-SearchParameter-organizationaffiliation-endpoint"
-                name="VhDir_sp_organizationaffiliation_endpoint"
+                name="Plannet_sp_organizationaffiliation_endpoint"
                 spec="us-davinci-plannet"/>
       <artifact id="StructureDefinition/via-intermediary"
                 key="FHIR-us-davinci-plannet-CViaIntermediary"
@@ -20260,7 +20279,7 @@
                 spec="us-davinci-plannet"/>
       <artifact id="ValueSet/VirtualModalitiesVS"
                 key="FHIR-us-davinci-plannet-ValueSet-VirtualModalitiesVS"
-                name="Virtual Modalities ValueSet"
+                name="Virtual Modalities VS"
                 spec="us-davinci-plannet"/>
       <artifact id="CodeSystem/VirtualModalitiesCS"
                 key="FHIR-us-davinci-plannet-CodeSystem-VirtualModalitiesCS"
