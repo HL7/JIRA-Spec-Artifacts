@@ -3176,52 +3176,57 @@
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-smart-web-messaging"
                   name="SMART Web Messaging (FHIR)"
-                  gitUrl="https://github.com/HL7/smart-web-messaging"
-                  url="http://hl7.org/fhir/uv/smart-web-messaging"
                   ballotUrl="http://hl7.org/fhir/uv/smart-web-messaging/2020Sep"
                   ciUrl="http://build.fhir.org/ig/HL7/smart-web-messaging"
+                  defaultVersion="1.0.0"
                   defaultWorkgroup="fhir-i"
-                  defaultVersion="0.1.0">
-      <version code="current" url="https://build.fhir.org/ig/HL7/smart-web-messaging"/>
-      <version code="0.1.0" url="https://hl7.org/fhir/uv/smart-web-messaging/2020Sep"/>
-      <version code="1.0.0" deprecated="true"/>
+                  gitUrl="https://github.com/HL7/smart-web-messaging"
+                  url="https://hl7.org/fhir/uv/smart-web-messaging">
+      <version code="current" url="http://build.fhir.org/ig/HL7/smart-web-messaging"/>
+      <version code="1.0.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/uv/smart-web-messaging/STU1"/>
+      <version code="0.1.0" url="http://hl7.org/fhir/uv/smart-web-messaging/2020Sep"/>
       <version code="1.0" deprecated="true"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="Ignore"
-                key="FHIR-smart-web-messaging-Patient-example"
+      <artifact deprecated="true"
                 id="Patient/example"
+                key="FHIR-smart-web-messaging-Patient-example"
+                name="Ignore"
                 spec="smart-web-messaging"/>
-      <page name="(NA)"
-            key="FHIR-smart-web-messaging-NA"
+      <artifact id="CodeSystem/launch-status-code-system"
+                key="FHIR-smart-web-messaging-CodeSystem-launch-status-code-system"
+                name="LaunchStatusCode"
+                spec="smart-web-messaging"/>
+      <page key="FHIR-smart-web-messaging-NA"
+            name="(NA)"
             spec="smart-web-messaging"/>
-      <page name="(many)"
-            key="FHIR-smart-web-messaging-many"
+      <page key="FHIR-smart-web-messaging-many"
+            name="(many)"
             spec="smart-web-messaging"/>
-      <page name="(profiles)"
+      <page deprecated="true"
             key="FHIR-smart-web-messaging-profiles"
-            deprecated="true"
+            name="(profiles)"
             spec="smart-web-messaging"/>
-      <page name="Table of Contents"
-            key="FHIR-smart-web-messaging-toc"
+      <page key="FHIR-smart-web-messaging-activity-catalog"
+            name="Activity Catalog"
             spec="smart-web-messaging"/>
-      <page name="Home"
-            key="FHIR-smart-web-messaging-index"
+      <page key="FHIR-smart-web-messaging-alternatives-considered"
+            name="Alternatives Considered"
             spec="smart-web-messaging"/>
-      <page name="Activity Catalog"
-            key="FHIR-smart-web-messaging-activity-catalog"
+      <page key="FHIR-smart-web-messaging-artifacts"
+            name="Artifacts Summary"
             spec="smart-web-messaging"/>
-      <page name="Alternatives Considered"
-            key="FHIR-smart-web-messaging-alternatives-considered"
+      <page key="FHIR-smart-web-messaging-index"
+            name="Home"
             spec="smart-web-messaging"/>
-      <page name="Artifacts Summary"
-            key="FHIR-smart-web-messaging-artifacts"
+      <page key="FHIR-smart-web-messaging-smart-web-messaging"
+            name="Smart Web Messaging"
             spec="smart-web-messaging"/>
-      <page name="smart-web-messaging"
-            key="FHIR-smart-web-messaging-smart-web-messaging"
-            url="smart-web-messaging"
-            deprecated="true"
+      <page key="FHIR-smart-web-messaging-toc"
+            name="Table of Contents"
             spec="smart-web-messaging"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
