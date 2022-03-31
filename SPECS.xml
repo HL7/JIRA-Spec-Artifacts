@@ -2991,18 +2991,169 @@
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-fhircast"
                   name="FHIRCast (FHIR)"
+                  ballotUrl="http://hl7.org/fhir/uv/fhircast/2022May"
+                  ciUrl="http://build.fhir.org/ig/HL7/fhircast-docs"
+                  defaultVersion="2.0.0"
+                  defaultWorkgroup="inm"
                   gitUrl="https://github.com/HL7/fhircast-docs"
-                  url="http://fhircast.hl7.org"
-                  ciUrl="http://fhircast.org"
-                  defaultWorkgroup="ii"
-                  defaultVersion="0.1">
+                  url="http://hl7.org/fhir/uv/fhircast">
+ 
+      <version code="current" url="http://build.fhir.org/ig/HL7/fhircast-docs"/>
+      <version code="2.1.0-ballot" url="http://hl7.org/fhir/uv/fhircast/2022May"/>
+      <version code="2.0.0" url="https://fhircast.org/specification/STU2"/>
+      <version code="1.0.0" url="https://fhircast.org/specification/STU1"/>
       <version code="0.1"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <page name="(NA)" key="FHIR-fhircast-NA" spec="fhircast"/>
-      <page name="(many)" key="FHIR-fhircast-many" spec="fhircast"/>
-      <page name="(profiles)" key="FHIR-fhircast-profiles" spec="fhircast"/>
+      <artifact id="Observation/435098234"
+                key="FHIR-fhircast-Observation-435098234"
+                name="FHIRcastObservation-Example"
+                spec="fhircast"/>
+      <artifact id="StructureDefinition/fhircast-configuration-extensions"
+                key="FHIR-fhircast-StructureDefinition-fhircast-configuration-extensions"
+                name="FHIRcast extension"
+                spec="fhircast"/>
+      <artifact id="StructureDefinition/fhircast-capabilitystatement"
+                key="FHIR-fhircast-StructureDefinition-fhircast-capabilitystatement"
+                name="FHIRcastCapabilityStatement"
+                spec="fhircast"/>
+      <artifact id="StructureDefinition/fhircast-observation"
+                key="FHIR-fhircast-StructureDefinition-fhircast-observation"
+                name="FHIRcast Observation"
+                spec="fhircast"/>
+      <page key="FHIR-fhircast-NA" name="(NA)" spec="fhircast"/>
+      <page key="FHIR-fhircast-many" name="(many)" spec="fhircast"/>
+      <page deprecated="true"
+            key="FHIR-fhircast-profiles"
+            name="(profiles)"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-artifacts"
+            name="Artifacts Summary"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-change-log" name="Change log" spec="fhircast"/>
+      <page key="FHIR-fhircast-conformance" name="Conformance" spec="fhircast"/>
+      <page key="FHIR-fhircast-content-sharing"
+            name="Content Sharing"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-diagnosticreportevents"
+            name="DiagnosticReport Events"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-diagnosticreport-close"
+            name="DiagnosticReport close event"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-diagnosticreport-select"
+            name="DiagnosticReport select event"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-diagnosticreport-open"
+            name="DiagnosticsReport open event"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-diagnosticreport-update"
+            name="DiagnosticsReport update event"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-encounterevents"
+            name="Encounter Events"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-encounter-close"
+            name="Encounter close event"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-encounter-open"
+            name="Encounter open event"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-event-format"
+            name="Event format"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-event-library"
+            name="Event library"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-eventmaturitymodel"
+            name="Event maturity model"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-eventnotification"
+            name="Event notification"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-event-template"
+            name="Event template"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-extensions" name="Extensions" spec="fhircast"/>
+      <page key="FHIR-fhircast-event-definitions"
+            name="FHIRcast Event Definitions"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-fhircast-oauth2-scopes"
+            name="OAuth2 authorization scopes"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-GetCurrentContext"
+            name="Get Current Context"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-glossary" name="Glossary" spec="fhircast"/>
+      <page key="FHIR-fhircast-heartbeat"
+            name="Heartbeat event"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-imagingstudyevents"
+            name="ImagingStudy Events"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-imagingstudy-close"
+            name="ImagingStudy close event"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-imagingstudy-open"
+            name="ImagingStudy open event"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-infrastructureevents"
+            name="Infrastructure Events"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-introduction"
+            name="Introduction"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-launch-scenarios"
+            name="App launch scenarios and session discovery"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-multi-anchor-considerations"
+            name="Multi-anchor considerations"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-multitab-considerations"
+            name="Multi-tab considerations"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-open-issues" name="Open Issues" spec="fhircast"/>
+      <page key="FHIR-fhircast-patientevents"
+            name="Patient Events"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-patient-close"
+            name="Patient close event"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-patient-open"
+            name="Patient open event"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-RequestContextChange"
+            name="Request Context Change"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-Scenarios" name="Scenarios" spec="fhircast"/>
+      <page key="FHIR-fhircast-security-considerations"
+            name="Security considerations"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-session-discovery"
+            name="Session Discovery"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-specification"
+            name="FHIRcast specification"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-subscribing-and-unsubscribing"
+            name="Subscribing and unsubscribing"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-syncerror"
+            name="Sync error event"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-synchronization-considerations"
+            name="Synchronization considerations"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-table-of-contents"
+            name="Table of Contents"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-userhibernate"
+            name="User hibernate event"
+            spec="fhircast"/>
+      <page key="FHIR-fhircast-userlogout"
+            name="User logout event"
+            spec="fhircast"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-fhirpath"
