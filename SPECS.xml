@@ -27086,18 +27086,29 @@
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-qm"
                   name="US Quality Measures (FHIR)"
+                  ballotUrl="http://hl7.org/fhir/us/cqfmeasures/2021May"
                   ciUrl="http://build.fhir.org/ig/HL7/cqf-measures"
                   defaultVersion="3.0.0"
                   defaultWorkgroup="cqi"
                   gitUrl="https://github.com/HL7/cqf-measures"
                   url="http://hl7.org/fhir/us/cqfmeasures">
       <version code="current" url="http://build.fhir.org/ig/HL7/cqf-measures"/>
-      <version code="3.0.0"/>
-      <version code="2.1.0" deprecated="true"/>
-      <version code="2.0.0" deprecated="true"/>
-      <version code="1.1.0" deprecated="true"/>
-      <version code="1.0.0" deprecated="true"/>
-      <version code="0.1.0" deprecated="true"/>
+      <version code="3.0.0" url="http://hl7.org/fhir/us/cqfmeasures/STU3"/>
+      <version code="2.1.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/us/cqfmeasures/2021May"/>
+      <version code="2.0.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/us/cqfmeasures/STU2"/>
+      <version code="1.1.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/us/cqfmeasures/2020Feb"/>
+      <version code="1.0.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/us/cqfmeasures/STU1"/>
+      <version code="0.1.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/us/cqfmeasures/2019May"/>
       <version code="0.1" deprecated="true"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
@@ -27116,7 +27127,7 @@
                 spec="us-qm"/>
       <artifact id="ValueSet/artifact-comment-type"
                 key="FHIR-us-qm-ValueSet-artifact-comment-type"
-                name="Artifact Comment Type (ValueSet)"
+                name="Artifact Comment Type"
                 spec="us-qm"/>
       <artifact id="CodeSystem/artifact-comment-type"
                 key="FHIR-us-qm-CodeSystem-artifact-comment-type"
@@ -27128,7 +27139,7 @@
                 spec="us-qm"/>
       <artifact id="Measure/BCSComponent"
                 key="FHIR-us-qm-Measure-BCSComponent"
-                name="Breast Cancer Screening (Measure)"
+                name="Breast Cancer Screening"
                 spec="us-qm"/>
       <artifact id="Measure/BreastCancerScreeningFHIR"
                 key="FHIR-us-qm-Measure-BreastCancerScreeningFHIR"
@@ -27426,7 +27437,7 @@
                 spec="us-qm"/>
       <artifact id="ValueSet/cql-version"
                 key="FHIR-us-qm-ValueSet-cql-version"
-                name="CQL Version (ValueSet)"
+                name="CQL Version"
                 spec="us-qm"/>
       <artifact id="CodeSystem/cql-version"
                 key="FHIR-us-qm-CodeSystem-cql-version"
@@ -27434,7 +27445,7 @@
                 spec="us-qm"/>
       <artifact id="Measure/CCSComponent"
                 key="FHIR-us-qm-Measure-CCSComponent"
-                name="Cervical Cancer Screening (Measure)"
+                name="Cervical Cancer Screening"
                 spec="us-qm"/>
       <artifact id="ValueSet/chronic-liver-disease-legacy-example"
                 key="FHIR-us-qm-ValueSet-chronic-liver-disease-legacy-example"
@@ -27565,11 +27576,6 @@
                 key="FHIR-us-qm-Library-FHIRHelpers"
                 name="FHIR Helpers"
                 spec="us-qm"/>
-      <artifact deprecated="true"
-                id="Library/FHIR-ModelInfo"
-                key="FHIR-us-qm-Library-FHIR-ModelInfo"
-                name="FHIR Model Definition"
-                spec="us-qm"/>
       <artifact id="Library/fhir-helpers-FHIR2"
                 key="FHIR-us-qm-Library-fhir-helpers-FHIR2"
                 name="FHIR Helpers DSTU2"
@@ -27577,7 +27583,12 @@
       <artifact deprecated="true"
                 id="Library/fhir-model-definition-FHIR2"
                 key="FHIR-us-qm-Library-fhir-model-definition-FHIR2"
-                name="FHIR Model Definition (DSTU2)"
+                name="FHIR Model Definition (STU2)"
+                spec="us-qm"/>
+      <artifact deprecated="true"
+                id="Library/FHIR-ModelInfo"
+                key="FHIR-us-qm-Library-FHIR-ModelInfo"
+                name="FHIR Model Definition"
                 spec="us-qm"/>
       <artifact id="Library/HBPComponent"
                 key="FHIR-us-qm-Library-HBPComponent"
@@ -27613,7 +27624,7 @@
                 spec="us-qm"/>
       <artifact id="ValueSet/aggregate-method"
                 key="FHIR-us-qm-ValueSet-aggregate-method"
-                name="Measure Aggregate Method (ValueSet)"
+                name="Measure Aggregate Method"
                 spec="us-qm"/>
       <artifact id="CodeSystem/aggregate-method"
                 key="FHIR-us-qm-CodeSystem-aggregate-method"
@@ -27634,7 +27645,7 @@
                 spec="us-qm"/>
       <artifact id="ValueSet/identifier-type"
                 key="FHIR-us-qm-ValueSet-identifier-type"
-                name="Measure Identifier Type (ValueSet)"
+                name="Measure Identifier Type"
                 spec="us-qm"/>
       <artifact id="CodeSystem/identifier-type"
                 key="FHIR-us-qm-CodeSystem-identifier-type"
@@ -27731,7 +27742,7 @@
                 spec="us-qm"/>
       <artifact id="ValueSet/quality-programs"
                 key="FHIR-us-qm-ValueSet-quality-programs"
-                name="Quality Programs (ValueSet)"
+                name="Quality Programs"
                 spec="us-qm"/>
       <artifact id="CodeSystem/quality-programs"
                 key="FHIR-us-qm-CodeSystem-quality-programs"
@@ -27751,7 +27762,7 @@
                 spec="us-qm"/>
       <artifact id="ValueSet/software-system-type"
                 key="FHIR-us-qm-ValueSet-software-system-type"
-                name="Software System Type (ValueSet)"
+                name="Software System Type"
                 spec="us-qm"/>
       <artifact id="CodeSystem/software-system-type"
                 key="FHIR-us-qm-CodeSystem-software-system-type"
@@ -27805,7 +27816,7 @@
                 spec="us-qm"/>
       <artifact id="Measure/measure-vte-1-FHIR"
                 key="FHIR-us-qm-Measure-measure-vte-1-FHIR"
-                name="Venous Thromboembolism Prophylaxis (Measure)"
+                name="Venous Thromboembolism Prophylaxis"
                 spec="us-qm"/>
       <artifact id="Library/ecqm-update-2020"
                 key="FHIR-us-qm-Library-ecqm-update-2020"
@@ -27826,6 +27837,7 @@
             name="CQL Basics"
             spec="us-qm"/>
       <page key="FHIR-us-qm-capabilities" name="Capabilities" spec="us-qm"/>
+      <page key="FHIR-us-qm-changes" name="Changes" spec="us-qm"/>
       <page key="FHIR-us-qm-composite-measures" name="Composites" spec="us-qm"/>
       <page key="FHIR-us-qm-downloads" name="Downloads" spec="us-qm"/>
       <page key="FHIR-us-qm-examples" name="Examples" spec="us-qm"/>
