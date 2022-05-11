@@ -12988,12 +12988,13 @@
                   key="FHIR-us-carin-dic"
                   name="US CARIN Digital Insurance Card (DIC) (FHIR)"
                   ballotUrl="http://hl7.org/fhir/us/insurance-card/2022Jan"
-                  ciUrl="http://build.fhir.org/ig/HL7/insurance-card"
+                  ciUrl="http://build.fhir.org/ig/HL7/carin-digital-insurance-card"
                   defaultVersion="0.1.0"
                   defaultWorkgroup="pie"
                   gitUrl="https://github.com/HL7/carin-digital-insurance-card"
                   url="http://hl7.org/fhir/us/insurance-card">
-      <version code="current" url="http://build.fhir.org/ig/HL7/insurance-card"/>
+      <version code="current"
+               url="http://build.fhir.org/ig/HL7/carin-digital-insurance-card"/>
       <version code="0.1.0" url="http://hl7.org/fhir/us/insurance-card/2022Jan"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
@@ -13010,7 +13011,12 @@
                 key="FHIR-us-carin-dic-StructureDefinition-C4DIC-Barcode-extension"
                 name="Barcode"
                 spec="us-carin-dic"/>
-      <artifact id="StructureDefinition/C4DIC-BeneficiaryCosts-extension"
+      <artifact id="StructureDefinition/C4DIC-BeneficiaryCostString-extension"
+                key="FHIR-us-carin-dic-StructureDefinition-C4DIC-BeneficiaryCostString-extension"
+                name="Beneficiary Cost as String"
+                spec="us-carin-dic"/>
+      <artifact deprecated="true"
+                id="StructureDefinition/C4DIC-BeneficiaryCosts-extension"
                 key="FHIR-us-carin-dic-StructureDefinition-C4DIC-BeneficiaryCosts-extension"
                 name="Beneficiary Costs"
                 spec="us-carin-dic"/>
@@ -13054,7 +13060,8 @@
                 key="FHIR-us-carin-dic-ValueSet-ISOColorVS"
                 name="C4DIC ISO Color"
                 spec="us-carin-dic"/>
-      <artifact id="CodeSystem/ISOColorCS"
+      <artifact deprecated="true"
+                id="CodeSystem/ISOColorCS"
                 key="FHIR-us-carin-dic-CodeSystem-ISOColorCS"
                 name="C4DIC ISO Color Codes"
                 spec="us-carin-dic"/>
@@ -13077,6 +13084,10 @@
       <artifact id="Coverage/Example-Coverage1"
                 key="FHIR-us-carin-dic-Coverage-Example-Coverage1"
                 name="Coverage Example 1"
+                spec="us-carin-dic"/>
+      <artifact id="Coverage/Example-Coverage-FSH"
+                key="FHIR-us-carin-dic-Coverage-Example-Coverage-FSH"
+                name="Example-Coverage-FSH"
                 spec="us-carin-dic"/>
       <artifact id="StructureDefinition/C4DIC-HighlightColor-extension"
                 key="FHIR-us-carin-dic-StructureDefinition-C4DIC-HighlightColor-extension"
