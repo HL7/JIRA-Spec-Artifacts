@@ -1,30 +1,112 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <specification defaultWorkgroup="its" defaultVersion="1.0" url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=510" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
   <version code="1.0" deprecated="false"/>
-  <page name="1 - A Call for Executable Service Portability" key="intro"/>
-  <page name="2 - Core Concepts" key="core_concepts"/>
-  <page name="2.1 - Summary" key="cc_summary"/>
-  <page name="2.2 - Motivations" key="cc_motivations"/>
-  <page name="2.3 - For Providers and Software Vendors" key="cc_providers"/>
-  <page name="2.4 - For Marketplace Operators and Validators" key="cc_marketplace"/>
-  <page name="3 - Functional Infrastructure Model" key="funct_infra"/>
-  <page name="3.1 - What is a Health Service" key="fi_healthsrv"/>
-  <page name="3.2 - What is a compatible Platform" key="fi_platform"/>
-  <page name="4 - API" key="api"/>
-  <page name="4.1 - Platform Independent Model" key="api_independent"/>
-  <page name="4.2 - User Identity and Authentication" key="api_user_id"/>
-  <page name="4.3 - Role-Based Access Control" key="api_access_control"/>
-  <page name="4.4 - Services, Builds and Images" key="api_serv_build_image"/>
-  <page name="4.5 - Standards Compliance Declarations" key="api_compliance_declar"/>
-  <page name="4.6 - Configuration State Tracking" key="api_config_state_track"/>
-  <page name="4.7 - Endpoint Overview" key="api_endpoint"/>
-  <page name="4.8 - Resource Commonalities" key="api_resource_common"/>
-  <page name="4.9 - Special Endpoints" key="api_spcl_endpoints"/>
-  <page name="4.10 - Endpoints" key="api_endpoints"/>
-  <page name="5 - Supplementary Reference Implementation" key="suppl_ref_info"/>
-  <page name="5.1 - Marketplace Service" key="sri_mp_service"/>
-  <page name="5.2 - Marketplace UI" key="sri_mp_ui"/>
-  <page name="5.3 - Platform Agent" key="sri_platform_agent"/>
-  <page name="6 - Appendix A: Model Quick Reference" key="app_a_quick_ref"/>
-  <page name="7 - Appendix B: Referenced Standards" key="app_b_ref_standards"/>
+   <page name="1 - Health Services Platform Marketplace" key="intro" />
+   <page name="2 - License Information" key="license" />
+   <page name="2.1 Specification License" key="license.1" />
+   <page name="2.2 Logica Health" key="license.2" />
+   <page name="2.3 HL7" key="license.3" />
+   <page name="3 - Executive Summary" key="executive" />
+   <page name="3.1 A Call For Product Portability" key="executive.1" />
+   <page name="3.2 Landscape" key="executive.2" />
+   <page name="3.3 The Next Generation" key="executive.3" />
+   <page name="3.4 Product Software Development Life Cycles (SDLCs)" key="executive.4" />   
+   <page name="4 - Core Concepts" key="core_concepts" />
+   <page name="4.1 Overview" key="cc_summary" />
+   <page name="4.2 Motivations" key="cc_motivations" />
+   <page name="4.3 For Providers and Software Vendors" key="cc_providers" />
+   <page name="4.4 For Marketplace Operators and Validators" key="cc_marketplace" />
+   <page name="4.5 Platform Agent" key="core.5" />
+   <page name="5 - Digital Rights Management" key="digital" />
+   <page name="5.1 Product Rights" key="digital.1" />
+   <page name="5.2 Entitlements" key="digital.2" />
+   <page name="5.3 Product Families" key="digital.3" />
+   <page name="5.4 Licenses" key="digital.4" />
+   <page name="5.5 Dynamic Authorization" key="digital.5" />
+   <page name="5.6 Claims" key="digital.6" />
+   <page name="5.7 Voucher" key="digital.7" />
+   <page name="5.8 External Transactions" key="digital.8" />
+   <page name="5.9 Dependencies and Sublicensure" key="digital.9" />
+   <page name="6 - Product Packaging" key="product" />
+   <page name="6.1 JSON Examples key=" key="product.1 " />
+   <page name="6.2 JSON Schemas key=" key="product.2 " />
+   <page name="6.3 Product Build Label Visual Examples key=" key="product.3 " />
+   <page name="6.4 Exemplar Product Label Concept" key="product.4 " />
+   <page name="6.5 Exemplar Build Label Concept" key="product.5 " />
+   <page name="7 - Runtime Telemetry" key="runtime" />
+   <page name="7.1 Use Cases" key="runtime.1" />
+   <page name="7.2 Industry Consensus" key="runtime.2" />
+   <page name="8 - Functional Infrastructure Model" key="funct_infra" />
+   <page name="8.1 What is a Product ?" key="fi_healthsrv" />
+   <page name="8.2 Products SHOULD be:" key="functional.2" />
+   <page name="8.3 Products SHOULD NOT be:" key="functional.3" />
+   <page name="8.4 Product Builds and Packaging" key="functional.4" />
+   <page name="8.5 Executable Product Build images MUST be:" key="functional.5" />
+   <page name="8.6 What is a compatible Platform" key="fi_platform" />
+   <page name="8.7 Capabilities" key="functional.7" />
+   <page name="8.8 Data Integration Layers" key="functional.8" />
+   <page name="8.9 Example on-premise Platform environment" key="functional.9" />
+   <page name="8.10 Cloud-based Platform implementation using Amazon Web Services." key="functional.10" />
+   <page name="9 - Model Quick Reference" key="app_a_quick_ref" />
+   <page name="9.1 Persistent Resources" key="model.1" />
+   <page name="9.2 Non-Persistant Resources" key="model.2" />
+   <page name="10 - API" key="api" />
+   <page name="10.1 Machine-Readable Format" key="api.1" />
+   <page name="10.2 Platform Independent Model" key="api_independent" />
+   <page name="10.3 User Identity and Authentication" key="api_user_id" />
+   <page name="10.4 Role-Based Access Control" key="api_access_control" />
+   <page name="10.5 Administrative Permission Short Circuiting" key="api.5" />
+   <page name="10.6 Permission Semantics" key="api.6" />
+   <page name="10.7 Permission Conflict and Non-Revocation" key="api.7" />
+   <page name="10.8 Products, Builds, and Images" key="api_serv_build_image" />
+   <page name="10.9 Standards Compliance Declarations" key="api_compliance_declar" />
+   <page name="10.10 Configuration State Tracking" key="api_config_state_track" />
+   <page name="10.11 Endpoint Overview" key="api_endpoints" />
+   <page name="10.12 Resource Commonalities" key="api_resource_common" />
+   <page name="10.13 Endpoint Noun-Verb Paths" key="api.13" />
+   <page name="10.14 UUIDs" key="api.14" />
+   <page name="10.15 Timestamps" key="api.15" />
+   <page name="10.16 Paths and URLs" key="api.16" />
+   <page name="10.17 Index Pagination and Filtering" key="api.17" />
+   <page name="10.18 Search Special Endpoints" key="api.18" />
+   <page name="10.19 Endpoints" key="api_endpoint" />
+   <page name="10.20 IdentityProviders (/identity_providers)" key="api.20" />
+   <page name="10.21 Users (/users)" key="api.21" />
+   <page name="10.22 Identities (/users/{userId}/identities)" key="api.22" />
+   <page name="10.23 User Platforms (/users/{userId}/platforms)" key="api.23" />
+   <page name="10.24 User Platforms (Product) Instances (/users/:id/platforms/:id/instances)" key="api.24" />
+   <page name="10.25 Groups (/groups)" key="api.25" />
+   <page name="10.26 Members (/groups/{groupId}/members)" key="api.26" />
+   <page name="10.27 Roles (/roles)" key="api.27" />
+   <page name="10.28 Appointments (/roles/{roleId}/appointments)" key="api.28" />
+   <page name="10.29 Licenses (/licenses)" key="api.29" />
+   <page name="10.30 Products (/products)" key="api.30" />
+   <page name="10.31 ProductLicense (/products/{productId}/licenses)" key="api.31" />
+   <page name="10.32 Builds (/products/{productId}/builds)" key="api.32" />
+   <page name="10.33 Dependencies (/products/{productId}/builds/{buildId}/dependencies)" key="api.33" />
+   <page name="10.34 Exposures (/products/{productId}/builds/{buildId}/exposures)" key="api.34" />
+   <page name="10.35 Configurations (/products/{productId}/builds/{buildId}/configurations)" key="api.35" />
+   <page name="10.36 Tasks (/products/{productId}/builds/{buildId}/configurations/{configurationId}/tasks)" key="api.36" />
+   <page name="10.37 Surrogates (/products/:id/surrogates)" key="api.37" />
+   <page name="10.38 Logos (/products/{productId}/logos)" key="api.38" />
+   <page name="10.39 Screenshots (/products/{productId}/screenshots)" key="api.39" />
+   <page name="10.40 Interfaces (/interfaces)" key="api.40" />
+   <page name="10.41 Entitlement (/entitlements)" key="api.41" />
+   <page name="10.42 Claim (/entitlements/{entitlementId}/claims)" key="api.42" />
+   <page name="10.43 Voucher (/vouchers)" key="api.43" />
+   <page name="10.44 Attempt (/attempts)" key="api.44" />
+   <page name="10.45 Authorization (/authorizations/users/:user_id/products/:product_id and /authorizations/groups/:group_id/products/:product_id)" key="api.45" />
+   <page name="10.46 Status (/status)" key="api.46" />
+   <page name="10.47 WebSockets (/websockets)" key="api_spcl_endpoints" />
+   <page name="11 - Reference implementation" key="suppl_ref_info" />
+   <page name="11 Marketplace Service" key="sri_mp_service" />
+   <page name="11 Platform-Specific Model (PSM)" key="implementation.2" />
+   <page name="11 Platform Integration Agent" key="sri_platform_agent" />
+   <page name="11 Marketplace UI" key="sri_mp_ui" />
+   <page name="11 Full Example Products" key="implementation.5" />
+   <page name="11 SMART-on-FHIR -Bilirubin Product" key="implementation.6" />
+   <page name="11 CDS Hooks - CDC Opioid Prescribing Guidelines" key="implementation.7" />
+   <page name="11 FHIR Resource Service - TBD" key="implementation.8" />
+   <page name="11 Metered Static Content - TBD" key="implementation.9" />
+   <page name="12 - Reference Standards" key="app_b_ref_standards" />
 </specification>
