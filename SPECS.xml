@@ -38437,11 +38437,12 @@
                   name="US Specialty Rx (FHIR)"
                   ballotUrl="http://hl7.org/fhir/us/specialty-rx/2021Jan"
                   ciUrl="http://build.fhir.org/ig/HL7/fhir-specialty-rx"
-                  defaultVersion="1.0.0"
+                  defaultVersion="1.1.0"
                   defaultWorkgroup="pharm"
                   gitUrl="https://github.com/HL7/fhir-specialty-rx"
                   url="http://hl7.org/fhir/us/specialty-rx">
       <version code="current" url="http://build.fhir.org/ig/HL7/fhir-specialty-rx"/>
+      <version code="1.1.0" url="http://hl7.org/fhir/us/specialty-rx/STU2"/>
       <version code="1.0.0" url="http://hl7.org/fhir/us/specialty-rx/STU1"/>
       <version code="0.1.0" url="http://hl7.org/fhir/us/specialty-rx/2021Jan"/>
       <version code="0.1" deprecated="true"/>
@@ -38554,6 +38555,10 @@
                 key="FHIR-us-specialty-rx-CodeSystem-specialty-rx-task-input-type"
                 name="Specialty Rx CodeSystem - Task Input Type"
                 spec="us-specialty-rx"/>
+      <artifact id="CodeSystem/specialty-rx-task-output-type"
+                key="FHIR-us-specialty-rx-CodeSystem-specialty-rx-task-output-type"
+                name="Specialty Rx CodeSystem - Task Output Type"
+                spec="us-specialty-rx"/>
       <artifact id="CodeSystem/specialty-rx-task-type"
                 key="FHIR-us-specialty-rx-CodeSystem-specialty-rx-task-type"
                 name="Specialty Rx CodeSystem - Task Type"
@@ -38567,6 +38572,18 @@
                 id="Condition/specialty-rx-condition-1"
                 key="FHIR-us-specialty-rx-Condition-specialty-rx-condition-1"
                 name="Specialty Rx Condition 1"
+                spec="us-specialty-rx"/>
+      <artifact id="StructureDefinition/specialty-rx-consent"
+                key="FHIR-us-specialty-rx-StructureDefinition-specialty-rx-consent"
+                name="Specialty Rx Consent"
+                spec="us-specialty-rx"/>
+      <artifact id="StructureDefinition/specialty-rx-consent-requested"
+                key="FHIR-us-specialty-rx-StructureDefinition-specialty-rx-consent-requested"
+                name="Specialty Rx Consent Requested"
+                spec="us-specialty-rx"/>
+      <artifact id="Consent/specialty-rx-consent-requested-1"
+                key="FHIR-us-specialty-rx-Consent-specialty-rx-consent-requested-1"
+                name="Specialty Rx Consent Requested 1"
                 spec="us-specialty-rx"/>
       <artifact id="StructureDefinition/specialty-rx-coverage"
                 key="FHIR-us-specialty-rx-StructureDefinition-specialty-rx-coverage"
@@ -38795,6 +38812,26 @@
                 key="FHIR-us-specialty-rx-RelatedPerson-specialty-rx-relatedperson-1"
                 name="Specialty Rx RelatedPerson 1"
                 spec="us-specialty-rx"/>
+      <artifact id="Consent/specialty-rx-consent-1"
+                key="FHIR-us-specialty-rx-Consent-specialty-rx-consent-1"
+                name="Specialty Rx Task - Consent 1"
+                spec="us-specialty-rx"/>
+      <artifact id="StructureDefinition/specialty-rx-task-consent-request"
+                key="FHIR-us-specialty-rx-StructureDefinition-specialty-rx-task-consent-request"
+                name="Specialty Rx Task - Consent Request"
+                spec="us-specialty-rx"/>
+      <artifact id="Task/specialty-rx-task-consent-request-1"
+                key="FHIR-us-specialty-rx-Task-specialty-rx-task-consent-request-1"
+                name="Specialty Rx Task - Consent Request 1"
+                spec="us-specialty-rx"/>
+      <artifact id="Task/specialty-rx-task-consent-request-2-completed"
+                key="FHIR-us-specialty-rx-Task-specialty-rx-task-consent-request-2-completed"
+                name="Specialty Rx Task - Consent Request 2 - Completed"
+                spec="us-specialty-rx"/>
+      <artifact id="Task/specialty-rx-task-consent-request-contained"
+                key="FHIR-us-specialty-rx-Task-specialty-rx-task-consent-request-contained"
+                name="Specialty Rx Task - Consent Request Contained"
+                spec="us-specialty-rx"/>
       <artifact id="StructureDefinition/specialty-rx-task-smart-launch"
                 key="FHIR-us-specialty-rx-StructureDefinition-specialty-rx-task-smart-launch"
                 name="Specialty Rx Task - SMART Launch"
@@ -38812,13 +38849,29 @@
                 key="FHIR-us-specialty-rx-ValueSet-specialty-rx-condition-code"
                 name="Specialty Rx ValueSet - Condition Code"
                 spec="us-specialty-rx"/>
+      <artifact id="ValueSet/specialty-rx-consent-status"
+                key="FHIR-us-specialty-rx-ValueSet-specialty-rx-consent-status"
+                name="Specialty Rx ValueSet - Consent Status"
+                spec="us-specialty-rx"/>
       <artifact id="ValueSet/specialty-rx-event-type"
                 key="FHIR-us-specialty-rx-ValueSet-specialty-rx-event-type"
                 name="Specialty Rx ValueSet - Event Type"
                 spec="us-specialty-rx"/>
+      <artifact id="ValueSet/specialty-rx-task-input-type"
+                key="FHIR-us-specialty-rx-ValueSet-specialty-rx-task-input-type"
+                name="Specialty Rx ValueSet - Task Input Type"
+                spec="us-specialty-rx"/>
+      <artifact id="ValueSet/specialty-rx-task-output-type"
+                key="FHIR-us-specialty-rx-ValueSet-specialty-rx-task-output-type"
+                name="Specialty Rx ValueSet - Task Output Type"
+                spec="us-specialty-rx"/>
       <artifact id="ValueSet/specialty-rx-task-type"
                 key="FHIR-us-specialty-rx-ValueSet-specialty-rx-task-type"
                 name="Specialty Rx ValueSet - Task Type"
+                spec="us-specialty-rx"/>
+      <artifact id="Organization/us-core-organization-clinic-1"
+                key="FHIR-us-specialty-rx-Organization-us-core-organization-clinic-1"
+                name="US Core Organization - Clinic 1 - Acme Clinic"
                 spec="us-specialty-rx"/>
       <page key="FHIR-us-specialty-rx-NA" name="(NA)" spec="us-specialty-rx"/>
       <page key="FHIR-us-specialty-rx-many"
@@ -38832,6 +38885,9 @@
             spec="us-specialty-rx"/>
       <page key="FHIR-us-specialty-rx-missing-data"
             name="Conformance Expectations"
+            spec="us-specialty-rx"/>
+      <page key="FHIR-us-specialty-rx-consent-workflow"
+            name="Consent Workflows"
             spec="us-specialty-rx"/>
       <page key="FHIR-us-specialty-rx-downloads"
             name="Downloads"
