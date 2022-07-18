@@ -34529,9 +34529,12 @@
                   url="http://hl7.org/fhir/us/ecr"
                   ciUrl="http://build.fhir.org/ig/HL7/case-reporting"
                   defaultWorkgroup="pher"
-                  defaultVersion="2.0.0">
+                  defaultVersion="2.1.0">
       <version code="current" url="http://build.fhir.org/ig/HL7/case-reporting"/>
-      <version code="2.0.0" url="http://hl7.org/fhir/us/ecr/STU2"/>
+      <version code="2.1.0" url="http://hl7.org/fhir/us/ecr/STU2.1.0"/>
+      <version code="2.0.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/us/ecr/STU2"/>
       <version code="1.1.0" url="http://hl7.org/fhir/us/ecr/2021Jan"/>
       <version code="1.0.0" url="http://hl7.org/fhir/us/ecr/STU1"/>
       <version code="0.2.0"
@@ -34681,6 +34684,10 @@
       <artifact id="CodeSystem/codesystem-messageHeader-event"
                 key="FHIR-us-ecr-CodeSystem-codesystem-messageHeader-event"
                 name="MessageHeader Event Code System"
+                spec="us-ecr"/>
+      <artifact id="Observation/observation-odh-employment-status-ecr-eve-everywoman"
+                key="FHIR-us-ecr-Observation-observation-odh-employment-status-ecr-eve-everywoman"
+                name="ODH Employment Status Example: observation-odh-employment-status-ecr-eve-everywoman"
                 spec="us-ecr"/>
       <artifact id="Observation/observation-odh-past-or-present-job-eve-everywoman"
                 key="FHIR-us-ecr-Observation-observation-odh-past-or-present-job-eve-everywoman"
@@ -34954,13 +34961,19 @@
                 key="FHIR-us-ecr-Practitioner-practitioner-us-core-henry-seven"
                 name="US Core Practitioner Example: Henry Seven"
                 spec="us-ecr"/>
-      <artifact id="Observation/observation-us-core-results-eve-everywoman-lymphocytes"
+      <artifact deprecated="true"
+                id="Observation/observation-us-core-results-eve-everywoman-lymphocytes"
                 key="FHIR-us-ecr-Observation-observation-us-core-results-eve-everywoman-lymphocytes"
                 name="US Core Results Example: observation-us-core-results-eve-everywoman-lymphocytes"
                 spec="us-ecr"/>
-      <artifact id="Observation/observation-us-core-results-eve-everywoman-pertussis"
+      <artifact deprecated="true"
+                id="Observation/observation-us-core-results-eve-everywoman-pertussis"
                 key="FHIR-us-ecr-Observation-observation-us-core-results-eve-everywoman-pertussis"
                 name="US Core Results Example: observation-us-core-results-eve-everywoman-pertussis"
+                spec="us-ecr"/>
+      <artifact id="Observation/observation-us-ph-lab-result-eve-everywoman-pertussis"
+                key="FHIR-us-ecr-Observation-observation-us-ph-lab-result-eve-everywoman-pertussis"
+                name="US Core Results Example: observation-us-ph-lab-result-eve-everywoman-pertussis"
                 spec="us-ecr"/>
       <artifact id="Observation/observation-blood-pressure-eve-everywoman"
                 key="FHIR-us-ecr-Observation-observation-blood-pressure-eve-everywoman"
@@ -35130,6 +35143,10 @@
                 key="FHIR-us-ecr-StructureDefinition-us-ph-fhirquerypattern-extension"
                 name="US Public Health FHIR Query Pattern Extension"
                 spec="us-ecr"/>
+      <artifact id="StructureDefinition/us-ph-genderidentity-extension"
+                key="FHIR-us-ecr-StructureDefinition-us-ph-genderidentity-extension"
+                name="US Public Health Gender Identity Extension"
+                spec="us-ecr"/>
       <artifact id="StructureDefinition/us-ph-information-recipient-extension"
                 key="FHIR-us-ecr-StructureDefinition-us-ph-information-recipient-extension"
                 name="US Public Health Information Recipient Extension"
@@ -35138,9 +35155,21 @@
                 key="FHIR-us-ecr-StructureDefinition-us-ph-initiation-reason-extension"
                 name="US Public Health Initiation Reason Extension"
                 spec="us-ecr"/>
+      <artifact id="Observation/observation-us-ph-lab-result-eve-everywoman-lymphocytes"
+                key="FHIR-us-ecr-Observation-observation-us-ph-lab-result-eve-everywoman-lymphocytes"
+                name="US Public Health Lab Result Observation Example: observation-us-ph-lab-result-eve-everywoman-lymphocytes"
+                spec="us-ecr"/>
+      <artifact id="StructureDefinition/us-ph-lab-result-observation"
+                key="FHIR-us-ecr-StructureDefinition-us-ph-lab-result-observation"
+                name="US Public Health Laboratory Result Observation Profile"
+                spec="us-ecr"/>
       <artifact id="StructureDefinition/us-ph-location"
                 key="FHIR-us-ecr-StructureDefinition-us-ph-location"
                 name="US Public Health Location"
+                spec="us-ecr"/>
+      <artifact id="StructureDefinition/us-ph-medicationadministration"
+                key="FHIR-us-ecr-StructureDefinition-us-ph-medicationadministration"
+                name="US Public Health MedicationAdministration"
                 spec="us-ecr"/>
       <artifact id="StructureDefinition/us-ph-message-processing-category-extension"
                 key="FHIR-us-ecr-StructureDefinition-us-ph-message-processing-category-extension"
@@ -35235,6 +35264,10 @@
       <artifact id="StructureDefinition/us-ph-receiver-address-extension"
                 key="FHIR-us-ecr-StructureDefinition-us-ph-receiver-address-extension"
                 name="US Public Health Receiver Address Extension"
+                spec="us-ecr"/>
+      <artifact id="StructureDefinition/us-ph-relateddata-extension"
+                key="FHIR-us-ecr-StructureDefinition-us-ph-relateddata-extension"
+                name="US Public Health Related Data Extension"
                 spec="us-ecr"/>
       <artifact id="StructureDefinition/us-ph-reporting-bundle"
                 key="FHIR-us-ecr-StructureDefinition-us-ph-reporting-bundle"
@@ -35341,6 +35374,10 @@
       <artifact id="Library/library-us-ph-valueset-library-expansion-parameters-example"
                 key="FHIR-us-ecr-Library-library-us-ph-valueset-library-expansion-parameters-example"
                 name="US Public Health ValueSet Library Expansion Parameters Example"
+                spec="us-ecr"/>
+      <artifact id="ValueSet/us-ph-valueset-priority"
+                key="FHIR-us-ecr-ValueSet-us-ph-valueset-priority"
+                name="US Public Health ValueSet Priority"
                 spec="us-ecr"/>
       <artifact id="StructureDefinition/us-ph-valueset-library"
                 key="FHIR-us-ecr-StructureDefinition-us-ph-valueset-library"
@@ -35560,6 +35597,10 @@
                 key="FHIR-us-ecr-StructureDefinition-ersd-specification-bundle"
                 name="eRSD Specification Bundle"
                 spec="us-ecr"/>
+      <artifact id="Bundle/bundle-ersd-specification-example"
+                key="FHIR-us-ecr-Bundle-bundle-ersd-specification-example"
+                name="eRSD Specification Bundle Example"
+                spec="us-ecr"/>
       <artifact deprecated="true"
                 id="Bundle/bundle-ersd-specification-bundle"
                 key="FHIR-us-ecr-Bundle-bundle-ersd-specification-bundle"
@@ -35573,6 +35614,10 @@
                 id="StructureDefinition/ersd-supplemental-bundle"
                 key="FHIR-us-ecr-StructureDefinition-ersd-supplemental-bundle"
                 name="eRSD Supplemental Bundle"
+                spec="us-ecr"/>
+      <artifact id="Bundle/bundle-ersd-supplemental-example"
+                key="FHIR-us-ecr-Bundle-bundle-ersd-supplemental-example"
+                name="eRSD Supplemental Bundle Example"
                 spec="us-ecr"/>
       <artifact deprecated="true"
                 id="Bundle/bundle-ersd-supplemental-bundle"
