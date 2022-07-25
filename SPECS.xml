@@ -24770,12 +24770,15 @@
                   name="US Occupational Data for Health (FHIR)"
                   ballotUrl="http://hl7.org/fhir/us/odh/2018Sep"
                   ciUrl="http://build.fhir.org/ig/HL7/us-odh"
-                  defaultVersion="1.1.0"
+                  defaultVersion="1.2.0"
                   defaultWorkgroup="pher"
                   gitUrl="https://github.com/HL7/us-odh"
                   url="http://hl7.org/fhir/us/odh">
       <version code="current" url="http://build.fhir.org/ig/HL7/us-odh"/>
-      <version code="1.1.0" url="http://hl7.org/fhir/us/odh/STU1.1"/>
+      <version code="1.2.0" url="http://hl7.org/fhir/us/odh/STU1.2"/>
+      <version code="1.1.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/us/odh/STU1.1"/>
       <version code="1.0.0"
                deprecated="true"
                url="http://hl7.org/fhir/us/odh/STU1"/>
@@ -24814,6 +24817,10 @@
                 key="FHIR-us-ohd-ValueSet-codesystem-industry-cdc-census-2010"
                 name="Industry CDC Census 2010"
                 spec="us-ohd"/>
+      <artifact id="ValueSet/codesystem-industry-cdc-census-2018"
+                key="FHIR-us-ohd-ValueSet-codesystem-industry-cdc-census-2018"
+                name="Industry CDC Census 2018"
+                spec="us-ohd"/>
       <artifact id="ValueSet/CodeSystem-PHOccupationalDataForHealthODH"
                 key="FHIR-us-ohd-ValueSet-CodeSystem-PHOccupationalDataForHealthODH"
                 name="Job Supervisory Level or Pay Grade (ODH)"
@@ -24825,6 +24832,10 @@
       <artifact id="ValueSet/CodeSystem-PHOccupationCDCCensus2010"
                 key="FHIR-us-ohd-ValueSet-CodeSystem-PHOccupationCDCCensus2010"
                 name="Occupation CDC Census 2010"
+                spec="us-ohd"/>
+      <artifact id="ValueSet/codesystem-occupation-cdc-census-2018"
+                key="FHIR-us-ohd-ValueSet-codesystem-occupation-cdc-census-2018"
+                name="Occupation CDC Census 2018"
                 spec="us-ohd"/>
       <artifact id="Composition/composition-odh-occupational-data-for-health-sample"
                 key="FHIR-us-ohd-Composition-composition-odh-occupational-data-for-health-sample"
