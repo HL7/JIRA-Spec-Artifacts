@@ -31093,6 +31093,10 @@
                 key="FHIR-us-vrdr-ConceptMap-AdministrativeGenderCM"
                 name="AdministrativeGenderCM"
                 spec="us-vrdr"/>
+      <artifact id="StructureDefinition/AliasStatus"
+                key="FHIR-us-vrdr-StructureDefinition-AliasStatus"
+                name="Alias Status of a Death Roster"
+                spec="us-vrdr"/>
       <artifact id="StructureDefinition/vrdr-automated-underlying-cause-of-death"
                 key="FHIR-us-vrdr-StructureDefinition-vrdr-automated-underlying-cause-of-death"
                 name="Automated Underlying Cause Of Death"
@@ -31187,7 +31191,8 @@
                 key="FHIR-us-vrdr-StructureDefinition-vrdr-cause-of-death-part2"
                 name="Cause of Death Part 2"
                 spec="us-vrdr"/>
-      <artifact id="StructureDefinition/vrdr-cause-of-death-pathway"
+      <artifact deprecated="true"
+                id="StructureDefinition/vrdr-cause-of-death-pathway"
                 key="FHIR-us-vrdr-StructureDefinition-VRDR-Cause-of-Death-Pathway"
                 name="Cause of Death Pathway"
                 spec="us-vrdr"/>
@@ -31222,7 +31227,8 @@
                 key="FHIR-us-vrdr-Observation-CauseOfDeathPart2-Example1"
                 name="CauseOfDeathPart2-Example1"
                 spec="us-vrdr"/>
-      <artifact id="List/CauseOfDeathPathway-Example1"
+      <artifact deprecated="true"
+                id="List/CauseOfDeathPathway-Example1"
                 key="FHIR-us-vrdr-List-CauseOfDeathPathway-Example1"
                 name="CauseOfDeathPathway-Example1"
                 spec="us-vrdr"/>
@@ -31349,10 +31355,6 @@
                 key="FHIR-us-vrdr-Composition-54fd9b4c-7633-4e34-bf6b-6fbe9d48fd30"
                 name="Death Certificate Example"
                 spec="us-vrdr"/>
-      <artifact id="CodeSystem/vrdr-filing-format-cs"
-                key="FHIR-us-vrdr-CodeSystem-vrdr-filing-format-cs"
-                name="Death Certificate Filing Formats"
-                spec="us-vrdr"/>
       <artifact deprecated="true"
                 id="StructureDefinition/VRDR-Death-Certificate-Reference"
                 key="FHIR-us-vrdr-StructureDefinition-VRDR-Death-Certificate-Reference"
@@ -31430,9 +31432,21 @@
                 key="FHIR-us-vrdr-Procedure-DeathCertification-Example1"
                 name="DeathCertification-Example1"
                 spec="us-vrdr"/>
+      <artifact id="Procedure/DeathCertification-Example2"
+                key="FHIR-us-vrdr-Procedure-DeathCertification-Example2"
+                name="DeathCertification-Example2"
+                spec="us-vrdr"/>
       <artifact id="Observation/DeathDate-Example1"
                 key="FHIR-us-vrdr-Observation-DeathDate-Example1"
                 name="DeathDate-Example1"
+                spec="us-vrdr"/>
+      <artifact id="Observation/DeathDate-Example2"
+                key="FHIR-us-vrdr-Observation-DeathDate-Example2"
+                name="DeathDate-Example2"
+                spec="us-vrdr"/>
+      <artifact id="Observation/DeathDate-Example3"
+                key="FHIR-us-vrdr-Observation-DeathDate-Example3"
+                name="DeathDate-Example3"
                 spec="us-vrdr"/>
       <artifact id="Location/DeathLocation-Example1"
                 key="FHIR-us-vrdr-Location-DeathLocation-Example1"
@@ -31441,6 +31455,10 @@
       <artifact id="Location/DeathLocation-Example2"
                 key="FHIR-us-vrdr-Location-DeathLocation-Example2"
                 name="DeathLocation-Example2"
+                spec="us-vrdr"/>
+      <artifact id="Location/DeathLocation-Example3"
+                key="FHIR-us-vrdr-Location-DeathLocation-Example3"
+                name="DeathLocation-Example3"
                 spec="us-vrdr"/>
       <artifact id="StructureDefinition/vrdr-decedent"
                 key="FHIR-us-vrdr-StructureDefinition-VRDR-Decedent"
@@ -31575,6 +31593,10 @@
                 key="FHIR-us-vrdr-Patient-Decedent-Example2"
                 name="Decedent-Example2"
                 spec="us-vrdr"/>
+      <artifact id="Patient/Decedent-Example3"
+                key="FHIR-us-vrdr-Patient-Decedent-Example3"
+                name="Decedent-Example3"
+                spec="us-vrdr"/>
       <artifact id="Observation/DecedentAge-Example1"
                 key="FHIR-us-vrdr-Observation-DecedentAge-Example1"
                 name="DecedentAge-Example1"
@@ -31615,6 +31637,10 @@
       <artifact id="Observation/DecedentUsualWork-Example1"
                 key="FHIR-us-vrdr-Observation-DecedentUsualWork-Example1"
                 name="DecedentUsualWork-Example1"
+                spec="us-vrdr"/>
+      <artifact id="Observation/DecedentUsualWork-Example2"
+                key="FHIR-us-vrdr-Observation-DecedentUsualWork-Example2"
+                name="DecedentUsualWork-Example2"
                 spec="us-vrdr"/>
       <artifact id="StructureDefinition/vrdr-demographic-coded-bundle"
                 key="FHIR-us-vrdr-StructureDefinition-vrdr-demographic-coded-content-bundle"
@@ -31718,6 +31744,10 @@
                 key="FHIR-us-vrdr-Observation-EntityAxisCauseOfDeath-Example3"
                 name="EntityAxisCauseOfDeath-Example3"
                 spec="us-vrdr"/>
+      <artifact id="Observation/EntityAxisCauseOfDeath-Example4"
+                key="FHIR-us-vrdr-Observation-EntityAxisCauseOfDeath-Example4"
+                name="EntityAxisCauseOfDeath-Example4"
+                spec="us-vrdr"/>
       <artifact id="StructureDefinition/vrdr-examiner-contacted"
                 key="FHIR-us-vrdr-StructureDefinition-VRDR-Examiner-Contacted"
                 name="Examiner Contacted"
@@ -31738,6 +31768,10 @@
       <artifact id="ValueSet/vrdr-filing-format-vs"
                 key="FHIR-us-vrdr-ValueSet-vrdr-filing-format-vs"
                 name="Filing Format ValueSet"
+                spec="us-vrdr"/>
+      <artifact id="CodeSystem/vrdr-filing-format-cs"
+                key="FHIR-us-vrdr-CodeSystem-vrdr-filing-format-cs"
+                name="Filing Formats CodeSystem"
                 spec="us-vrdr"/>
       <artifact id="ConceptMap/FilingFormatCM"
                 key="FHIR-us-vrdr-ConceptMap-FilingFormatCM"
@@ -31765,6 +31799,14 @@
       <artifact id="Organization/FuneralHome-Example1"
                 key="FHIR-us-vrdr-Organization-FuneralHome-Example1"
                 name="FuneralHome-Example1"
+                spec="us-vrdr"/>
+      <artifact id="ValueSet/vrdr-hispanic-no-unknown-vs"
+                key="FHIR-us-vrdr-ValueSet-vrdr-hispanic-no-unknown-vs"
+                name="Hispanic(Yes) No Unknown"
+                spec="us-vrdr"/>
+      <artifact id="ConceptMap/HispanicNoUnknownCM"
+                key="FHIR-us-vrdr-ConceptMap-HispanicNoUnknownCM"
+                name="HispanicNoUnknownCM"
                 spec="us-vrdr"/>
       <artifact id="CodeSystem/vrdr-hispanic-origin-cs"
                 key="FHIR-us-vrdr-CodeSystem-vrdr-hispanic-origin-cs"
@@ -31808,6 +31850,10 @@
       <artifact id="Observation/InjuryIncident-Example1"
                 key="FHIR-us-vrdr-Observation-InjuryIncident-Example1"
                 name="InjuryIncident-Example1"
+                spec="us-vrdr"/>
+      <artifact id="Observation/InjuryIncident-Example2"
+                key="FHIR-us-vrdr-Observation-InjuryIncident-Example2"
+                name="InjuryIncident-Example2"
                 spec="us-vrdr"/>
       <artifact id="Location/InjuryLocation-Example1"
                 key="FHIR-us-vrdr-Location-InjuryLocation-Example1"
@@ -31937,6 +31983,14 @@
                 key="FHIR-us-vrdr-CodeSystem-vrdr-missing-value-reason-cs"
                 name="Missing Value Reason Codesystem"
                 spec="us-vrdr"/>
+      <artifact id="StructureDefinition/vrdr-mortality-roster-bundle"
+                key="FHIR-us-vrdr-StructureDefinition-vrdr-mortality-roster-bundle"
+                name="Mortality Roster Bundle"
+                spec="us-vrdr"/>
+      <artifact id="Bundle/MortalityRosterBundle-Example1"
+                key="FHIR-us-vrdr-Bundle-MortalityRosterBundle-Example1"
+                name="MortalityRosterBundle-Example1"
+                spec="us-vrdr"/>
       <artifact deprecated="true"
                 id="StructureDefinition/VRDR-Mortician"
                 key="FHIR-us-vrdr-StructureDefinition-VRDR-Mortician"
@@ -31965,11 +32019,13 @@
                 key="FHIR-us-vrdr-StructureDefinition-NVSS-SexAtDeath"
                 name="NVSS SexAtDeath"
                 spec="us-vrdr"/>
-      <artifact id="ValueSet/vrdr-not-applicable-vs"
+      <artifact deprecated="true"
+                id="ValueSet/vrdr-not-applicable-vs"
                 key="FHIR-us-vrdr-ValueSet-vrdr-not-applicable-vs"
                 name="NotApplicable"
                 spec="us-vrdr"/>
-      <artifact id="ConceptMap/NotApplicableCM"
+      <artifact deprecated="true"
+                id="ConceptMap/NotApplicableCM"
                 key="FHIR-us-vrdr-ConceptMap-NotApplicableCM"
                 name="NotApplicableCM"
                 spec="us-vrdr"/>
@@ -32109,6 +32165,10 @@
                 key="FHIR-us-vrdr-Observation-RecordAxisCauseOfDeath-Example1"
                 name="RecordAxisCauseOfDeath-Example1"
                 spec="us-vrdr"/>
+      <artifact id="Observation/RecordAxisCauseOfDeath-Example2"
+                key="FHIR-us-vrdr-Observation-RecordAxisCauseOfDeath-Example2"
+                name="RecordAxisCauseOfDeath-Example2"
+                spec="us-vrdr"/>
       <artifact deprecated="true"
                 key="FHIR-us-vrdr-RelatedPerson"
                 name="RelatedPerson"
@@ -32138,9 +32198,17 @@
                 key="FHIR-us-vrdr-ValueSet-vrdr-residence-country-vs"
                 name="Residence Country Value Set"
                 spec="us-vrdr"/>
+      <artifact id="ValueSet/vrdr-spouse-alive-vs"
+                key="FHIR-us-vrdr-ValueSet-vrdr-spouse-alive-vs"
+                name="Spouse Alive Value Set"
+                spec="us-vrdr"/>
       <artifact id="StructureDefinition/SpouseAlive"
                 key="FHIR-us-vrdr-StructureDefinition-SpouseAlive"
                 name="Spouse Is Alive"
+                spec="us-vrdr"/>
+      <artifact id="ConceptMap/SpouseAliveCM"
+                key="FHIR-us-vrdr-ConceptMap-SpouseAliveCM"
+                name="SpouseAliveCM"
                 spec="us-vrdr"/>
       <artifact id="StructureDefinition/StateSpecificField"
                 key="FHIR-us-vrdr-StructureDefinition-StateSpecificField"
@@ -32240,7 +32308,8 @@
                 key="FHIR-us-vrdr-StructureDefinition-Within-City-Limits-Indicator"
                 name="Within City Limits Indicator"
                 spec="us-vrdr"/>
-      <artifact id="ValueSet/vrdr-yes-no-not-applicable-vs"
+      <artifact deprecated="true"
+                id="ValueSet/vrdr-yes-no-not-applicable-vs"
                 key="FHIR-us-vrdr-ValueSet-vrdr-yes-no-not-applicable-vs"
                 name="Yes No NotApplicable"
                 spec="us-vrdr"/>
@@ -32252,7 +32321,8 @@
                 key="FHIR-us-vrdr-ValueSet-vrdr-yes-no-unknown-not-applicable-vs"
                 name="Yes No Unknown NotApplicable"
                 spec="us-vrdr"/>
-      <artifact id="ConceptMap/YesNoNotApplicableCM"
+      <artifact deprecated="true"
+                id="ConceptMap/YesNoNotApplicableCM"
                 key="FHIR-us-vrdr-ConceptMap-YesNoNotApplicableCM"
                 name="YesNoNotApplicableCM"
                 spec="us-vrdr"/>
@@ -32282,7 +32352,8 @@
       <page key="FHIR-us-vrdr-change_log" name="Change Log" spec="us-vrdr"/>
       <page key="FHIR-us-vrdr-conformance" name="Conformance" spec="us-vrdr"/>
       <page key="FHIR-us-vrdr-credits" name="Credits" spec="us-vrdr"/>
-      <page key="FHIR-us-vrdr-IJE_File_Layouts_Version_2021_FHIR"
+      <page deprecated="true"
+            key="FHIR-us-vrdr-IJE_File_Layouts_Version_2021_FHIR"
             name="Data Dictionary"
             spec="us-vrdr"/>
       <page deprecated="true"
@@ -32292,6 +32363,9 @@
       <page deprecated="true"
             key="FHIR-us-vrdr-death_investigation_resource_profiles"
             name="Death Investigation Resource Profiles"
+            spec="us-vrdr"/>
+      <page key="FHIR-us-vrdr-DeathRecordDataDictionary"
+            name="Death Record Data Dictionary"
             spec="us-vrdr"/>
       <page deprecated="true"
             key="FHIR-us-vrdr-death_reporting_dataflow"
@@ -32309,6 +32383,9 @@
             name="Download Specification"
             spec="us-vrdr"/>
       <page key="FHIR-us-vrdr-index" name="Home" spec="us-vrdr"/>
+      <page key="FHIR-us-vrdr-MortalityRosterDataDictionary"
+            name="Mortality Roster Data Dictionary"
+            spec="us-vrdr"/>
       <page deprecated="true"
             key="FHIR-us-vrdr-profiles"
             name="Profiles"
