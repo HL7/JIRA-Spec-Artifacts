@@ -1,16 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification
-  gitUrl="https://github.com/HL7/fhir-pacio-pfe"
-  url="http://hl7.org/fhir/us/pacio-pfe"
-  ciUrl="http://build.fhir.org/ig/HL7/fhir-pacio-pfe"
-  defaultWorkgroup="pc" defaultVersion="1.0.0-ballot"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="1.0.0-ballot"/>
-  <artifactPageExtension value="-definitions"/>
-  <artifactPageExtension value="-examples"/>
-  <artifactPageExtension value="-mappings"/>
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="(profiles)" key="profiles"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/pacio-pfe/2022Sept" ciUrl="http://build.fhir.org/ig/HL7/fhir-pacio-pfe" defaultVersion="1.0.0-ballot" defaultWorkgroup="pc" gitUrl="https://github.com/HL7/fhir-pacio-pfe" url="http://hl7.org/fhir/us/pacio-pfe">
+<version code="current" url="http://build.fhir.org/ig/HL7/fhir-pacio-pfe"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/us/pacio-pfe/2022Sept"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/assistance-required" key="StructureDefinition-assistance-required" name="AssistanceRequired"/>
+<artifact id="StructureDefinition/device-patient-used" key="StructureDefinition-device-patient-used" name="DevicePatientUsed"/>
+<artifact id="StructureDefinition/event-location" key="StructureDefinition-event-location" name="ObservationEventLocation"/>
+<artifact id="Device/PFEIG-CMS-Device-BedsideRails" key="Device-PFEIG-CMS-Device-BedsideRails" name="PFEIG-CMS-Device-BedsideRails"/>
+<artifact id="Device/PFEIG-CMS-Device-Eyeglasses" key="Device-PFEIG-CMS-Device-Eyeglasses" name="PFEIG-CMS-Device-Eyeglasses"/>
+<artifact id="Device/PFEIG-CMS-Device-HandleBars" key="Device-PFEIG-CMS-Device-HandleBars" name="PFEIG-CMS-Device-HandleBars"/>
+<artifact id="Device/PFEIG-CMS-Device-HearingAid" key="Device-PFEIG-CMS-Device-HearingAid" name="PFEIG-CMS-Device-HearingAid"/>
+<artifact id="Device/PFEIG-CMS-Device-RaisedToiletSeat" key="Device-PFEIG-CMS-Device-RaisedToiletSeat" name="PFEIG-CMS-Device-RaisedToiletSeat"/>
+<artifact id="Device/PFEIG-CMS-Device-RollingWalker" key="Device-PFEIG-CMS-Device-RollingWalker" name="PFEIG-CMS-Device-RollingWalker"/>
+<artifact id="Device/PFEIG-CMS-Device-Walker" key="Device-PFEIG-CMS-Device-Walker" name="PFEIG-CMS-Device-Walker"/>
+<artifact id="Observation/PFEIG-CSC-Hospital-MMSE-1" key="Observation-PFEIG-CSC-Hospital-MMSE-1" name="PFEIG-CSC-Hospital-MMSE-1"/>
+<artifact id="Observation/PFEIG-CSC-Hospital-MMSE-1-Ob-Question-31" key="Observation-PFEIG-CSC-Hospital-MMSE-1-Ob-Question-31" name="PFEIG-CSC-Hospital-MMSE-1-Ob-Question-31"/>
+<artifact id="Observation/PFEIG-CSC-Hospital-MOCA-1" key="Observation-PFEIG-CSC-Hospital-MOCA-1" name="PFEIG-CSC-Hospital-MOCA-1"/>
+<artifact id="Observation/PFEIG-CSC-Hospital-MOCA-1-Ob-Question-1" key="Observation-PFEIG-CSC-Hospital-MOCA-1-Ob-Question-1" name="PFEIG-CSC-Hospital-MOCA-1-Ob-Question-1"/>
+<artifact id="Observation/PFEIG-CSC-SNF-BIMS-1" key="Observation-PFEIG-CSC-SNF-BIMS-1" name="PFEIG-CSC-SNF-BIMS-1"/>
+<artifact id="Observation/PFEIG-CSC-SNF-BIMS-1-Ob-Question-10" key="Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-10" name="PFEIG-CSC-SNF-BIMS-1-Ob-Question-10"/>
+<artifact id="Observation/PFEIG-CSC-SNF-BIMS-1-Ob-Question-3" key="Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-3" name="PFEIG-CSC-SNF-BIMS-1-Ob-Question-3"/>
+<artifact id="Observation/PFEIG-CSC-SNF-BIMS-1-Ob-Question-4" key="Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-4" name="PFEIG-CSC-SNF-BIMS-1-Ob-Question-4"/>
+<artifact id="Observation/PFEIG-CSC-SNF-BIMS-1-Ob-Question-5" key="Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-5" name="PFEIG-CSC-SNF-BIMS-1-Ob-Question-5"/>
+<artifact id="Observation/PFEIG-CSC-SNF-BIMS-1-Ob-Question-6" key="Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-6" name="PFEIG-CSC-SNF-BIMS-1-Ob-Question-6"/>
+<artifact id="Observation/PFEIG-CSC-SNF-BIMS-1-Ob-Question-7" key="Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-7" name="PFEIG-CSC-SNF-BIMS-1-Ob-Question-7"/>
+<artifact id="Observation/PFEIG-CSC-SNF-BIMS-1-Ob-Question-8" key="Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-8" name="PFEIG-CSC-SNF-BIMS-1-Ob-Question-8"/>
+<artifact id="Observation/PFEIG-CSC-SNF-BIMS-1-Ob-Question-9" key="Observation-PFEIG-CSC-SNF-BIMS-1-Ob-Question-9" name="PFEIG-CSC-SNF-BIMS-1-Ob-Question-9"/>
+<artifact id="DeviceUseStatement/PFEIG-CSC-SNF-BIMS-1-UseOfDevice-1" key="DeviceUseStatement-PFEIG-CSC-SNF-BIMS-1-UseOfDevice-1" name="PFEIG-CSC-SNF-BIMS-1-UseOfDevice-1"/>
+<artifact id="DeviceUseStatement/PFEIG-CSC-SNF-BIMS-1-UseOfDevice-2" key="DeviceUseStatement-PFEIG-CSC-SNF-BIMS-1-UseOfDevice-2" name="PFEIG-CSC-SNF-BIMS-1-UseOfDevice-2"/>
+<artifact id="Observation/PFEIG-CSC-SNF-CAM-Admission-1" key="Observation-PFEIG-CSC-SNF-CAM-Admission-1" name="PFEIG-CSC-SNF-CAM-Admission-1"/>
+<artifact id="Observation/PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-1" key="Observation-PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-1" name="PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-1"/>
+<artifact id="Observation/PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-3" key="Observation-PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-3" name="PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-3"/>
+<artifact id="Observation/PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-5" key="Observation-PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-5" name="PFEIG-CSC-SNF-CAM-Admission-1-Ob-Question-5"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1" key="Observation-PFEIG-CSC-SNF-PHQ9-1" name="PFEIG-CSC-SNF-PHQ9-1"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-11" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-11" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-11"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-12" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-12" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-12"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-13" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-13" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-13"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-14" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-14" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-14"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-15" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-15" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-15"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-16" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-16" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-16"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-17" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-17" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-17"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-18" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-18" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-18"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-19" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-19" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-19"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-20" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-20" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-20"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-21" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-21" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-21"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-22" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-22" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-22"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-23" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-23" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-23"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-24" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-24" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-24"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-25" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-25" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-25"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-26" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-26" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-26"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-27" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-27" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-27"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-28" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-28" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-28"/>
+<artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-29" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-29" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-29"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1" name="PFEIG-FSC-Hospital-Admission-Mobility-1"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-13" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-13" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-13"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-15" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-15" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-15"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-17" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-17" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-17"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-19" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-19" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-19"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-21" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-21" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-21"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-23" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-23" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-23"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-25" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-25" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-25"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-27" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-27" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-27"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-29" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-29" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-29"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-3" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-3" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-3"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-31" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-31" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-31"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-33" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-33" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-33"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-5" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-5" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-5"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-7" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-7" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-7"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-9" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-9" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-9"/>
+<artifact id="DeviceUseStatement/PFEIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-6" key="DeviceUseStatement-PFEIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-6" name="PFEIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-6"/>
+<artifact id="DeviceUseStatement/PFEIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-7" key="DeviceUseStatement-PFEIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-7" name="PFEIG-FSC-Hospital-Admission-Mobility-1-UseOfDevice-7"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1" name="PFEIG-FSC-Hospital-Discharge-Mobility-1"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-10" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-10" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-10"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-12" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-12" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-12"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-14" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-14" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-14"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-16" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-16" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-16"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-18" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-18" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-18"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-2" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-2" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-2"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-20" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-20" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-20"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-22" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-22" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-22"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-24" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-24" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-24"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-26" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-26" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-26"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-28" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-28" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-28"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-30" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-30" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-30"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-32" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-32" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-32"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-34" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-34" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-34"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-4" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-4" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-4"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-6" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-6" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-6"/>
+<artifact id="Observation/PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-8" key="Observation-PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-8" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-Ob-Question-8"/>
+<artifact id="DeviceUseStatement/PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-1" key="DeviceUseStatement-PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-1" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-1"/>
+<artifact id="DeviceUseStatement/PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-2" key="DeviceUseStatement-PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-2" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-2"/>
+<artifact id="DeviceUseStatement/PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-3" key="DeviceUseStatement-PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-3" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-3"/>
+<artifact id="DeviceUseStatement/PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-4" key="DeviceUseStatement-PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-4" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-4"/>
+<artifact id="DeviceUseStatement/PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-5" key="DeviceUseStatement-PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-5" name="PFEIG-FSC-Hospital-Discharge-Mobility-1-UseOfDevice-5"/>
+<artifact id="Observation/PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1" key="Observation-PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1" name="PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1"/>
+<artifact id="Observation/PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-11" key="Observation-PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-11" name="PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-11"/>
+<artifact id="Observation/PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-15" key="Observation-PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-15" name="PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-15"/>
+<artifact id="Observation/PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-19" key="Observation-PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-19" name="PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-19"/>
+<artifact id="Observation/PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-23" key="Observation-PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-23" name="PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-23"/>
+<artifact id="Observation/PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27" key="Observation-PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27" name="PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27"/>
+<artifact id="Observation/PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3" key="Observation-PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3" name="PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3"/>
+<artifact id="Observation/PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7" key="Observation-PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7" name="PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7"/>
+<artifact id="Observation/PFEIG-Narrative-History-Cognitive-Status-1" key="Observation-PFEIG-Narrative-History-Cognitive-Status-1" name="PFEIG-Narrative-History-Cognitive-Status-1"/>
+<artifact id="Observation/PFEIG-Narrative-History-Functional-Status-1" key="Observation-PFEIG-Narrative-History-Functional-Status-1" name="PFEIG-Narrative-History-Functional-Status-1"/>
+<artifact id="Organization/PFEIG-Org-01" key="Organization-PFEIG-Org-01" name="PFEIG-Org-01"/>
+<artifact id="Organization/PFEIG-Org-02" key="Organization-PFEIG-Org-02" name="PFEIG-Org-02"/>
+<artifact id="Organization/PFEIG-Org-03" key="Organization-PFEIG-Org-03" name="PFEIG-Org-03"/>
+<artifact id="Location/PFEIG-Org-Loc-01" key="Location-PFEIG-Org-Loc-01" name="PFEIG-Org-Loc-01"/>
+<artifact id="Location/PFEIG-Org-Loc-02" key="Location-PFEIG-Org-Loc-02" name="PFEIG-Org-Loc-02"/>
+<artifact id="Location/PFEIG-Org-Loc-03" key="Location-PFEIG-Org-Loc-03" name="PFEIG-Org-Loc-03"/>
+<artifact id="Practitioner/PFEIG-Practitioner-DanielGranger" key="Practitioner-PFEIG-Practitioner-DanielGranger" name="PFEIG-Practitioner-DanielGranger"/>
+<artifact id="Practitioner/PFEIG-Practitioner-HoneyJones" key="Practitioner-PFEIG-Practitioner-HoneyJones" name="PFEIG-Practitioner-HoneyJones"/>
+<artifact id="Practitioner/PFEIG-Practitioner-JenCadbury" key="Practitioner-PFEIG-Practitioner-JenCadbury" name="PFEIG-Practitioner-JenCadbury"/>
+<artifact id="Practitioner/PFEIG-Practitioner-JennyGlass" key="Practitioner-PFEIG-Practitioner-JennyGlass" name="PFEIG-Practitioner-JennyGlass"/>
+<artifact id="Practitioner/PFEIG-Practitioner-JohnSmith" key="Practitioner-PFEIG-Practitioner-JohnSmith" name="PFEIG-Practitioner-JohnSmith"/>
+<artifact id="Practitioner/PFEIG-Practitioner-LunaBaskins" key="Practitioner-PFEIG-Practitioner-LunaBaskins" name="PFEIG-Practitioner-LunaBaskins"/>
+<artifact id="Practitioner/PFEIG-Practitioner-NoraOlogist" key="Practitioner-PFEIG-Practitioner-NoraOlogist" name="PFEIG-Practitioner-NoraOlogist"/>
+<artifact id="Practitioner/PFEIG-Practitioner-RonMarble" key="Practitioner-PFEIG-Practitioner-RonMarble" name="PFEIG-Practitioner-RonMarble"/>
+<artifact id="Practitioner/PFEIG-Practitioner-SallySmith" key="Practitioner-PFEIG-Practitioner-SallySmith" name="PFEIG-Practitioner-SallySmith"/>
+<artifact id="Practitioner/PFEIG-Practitioner-ScottDumble" key="Practitioner-PFEIG-Practitioner-ScottDumble" name="PFEIG-Practitioner-ScottDumble"/>
+<artifact id="QuestionnaireResponse/PFEIG-QResponse-Hospital-Admission-Mobility-1" key="QuestionnaireResponse-PFEIG-QResponse-Hospital-Admission-Mobility-1" name="PFEIG-QResponse-Hospital-Admission-Mobility-1"/>
+<artifact id="QuestionnaireResponse/PFEIG-QResponse-Hospital-Discharge-Mobility-1" key="QuestionnaireResponse-PFEIG-QResponse-Hospital-Discharge-Mobility-1" name="PFEIG-QResponse-Hospital-Discharge-Mobility-1"/>
+<artifact id="QuestionnaireResponse/PFEIG-QResponse-Hospital-MMSE-1" key="QuestionnaireResponse-PFEIG-QResponse-Hospital-MMSE-1" name="PFEIG-QResponse-Hospital-MMSE-1"/>
+<artifact id="QuestionnaireResponse/PFEIG-QResponse-Hospital-MOCA-1" key="QuestionnaireResponse-PFEIG-QResponse-Hospital-MOCA-1" name="PFEIG-QResponse-Hospital-MOCA-1"/>
+<artifact id="QuestionnaireResponse/PFEIG-QResponse-SNF-Admission-Mobility-SelfCare-1" key="QuestionnaireResponse-PFEIG-QResponse-SNF-Admission-Mobility-SelfCare-1" name="PFEIG-QResponse-SNF-Admission-Mobility-SelfCare-1"/>
+<artifact id="QuestionnaireResponse/PFEIG-QResponse-SNF-BIMS-1" key="QuestionnaireResponse-PFEIG-QResponse-SNF-BIMS-1" name="PFEIG-QResponse-SNF-BIMS-1"/>
+<artifact id="QuestionnaireResponse/PFEIG-QResponse-SNF-CAM-Admission-1" key="QuestionnaireResponse-PFEIG-QResponse-SNF-CAM-Admission-1" name="PFEIG-QResponse-SNF-CAM-Admission-1"/>
+<artifact id="QuestionnaireResponse/PFEIG-QResponse-SNF-PHQ9-1" key="QuestionnaireResponse-PFEIG-QResponse-SNF-PHQ9-1" name="PFEIG-QResponse-SNF-PHQ9-1"/>
+<artifact id="PractitionerRole/PFEIG-Role-OT-DanielGranger" key="PractitionerRole-PFEIG-Role-OT-DanielGranger" name="PFEIG-Role-OT-DanielGranger"/>
+<artifact id="PractitionerRole/PFEIG-Role-OT-JenCadbury" key="PractitionerRole-PFEIG-Role-OT-JenCadbury" name="PFEIG-Role-OT-JenCadbury"/>
+<artifact id="PractitionerRole/PFEIG-Role-PT-LunaBaskins" key="PractitionerRole-PFEIG-Role-PT-LunaBaskins" name="PFEIG-Role-PT-LunaBaskins"/>
+<artifact id="PractitionerRole/PFEIG-Role-PT-RonMarble" key="PractitionerRole-PFEIG-Role-PT-RonMarble" name="PFEIG-Role-PT-RonMarble"/>
+<artifact id="PractitionerRole/PFEIG-Role-PT-SallySmith" key="PractitionerRole-PFEIG-Role-PT-SallySmith" name="PFEIG-Role-PT-SallySmith"/>
+<artifact id="PractitionerRole/PFEIG-Role-PT-ScottDumble" key="PractitionerRole-PFEIG-Role-PT-ScottDumble" name="PFEIG-Role-PT-ScottDumble"/>
+<artifact id="PractitionerRole/PFEIG-Role-SLP-HoneyJones" key="PractitionerRole-PFEIG-Role-SLP-HoneyJones" name="PFEIG-Role-SLP-HoneyJones"/>
+<artifact id="PractitionerRole/PFEIG-Role-SLP-JennyGlass" key="PractitionerRole-PFEIG-Role-SLP-JennyGlass" name="PFEIG-Role-SLP-JennyGlass"/>
+<artifact id="PractitionerRole/PFEIG-Role-SLP-LunaBaskins" key="PractitionerRole-PFEIG-Role-SLP-LunaBaskins" name="PFEIG-Role-SLP-LunaBaskins"/>
+<artifact id="Patient/PFEIG-patientBSJ1" key="Patient-PFEIG-patientBSJ1" name="PFEIG-patientBSJ1"/>
+<artifact id="Organization/PFEIG-provider-org-01" key="Organization-PFEIG-provider-org-01" name="PFEIG-provider-org-01"/>
+<artifact id="Organization/PFEIG-provider-org-16" key="Organization-PFEIG-provider-org-16" name="PFEIG-provider-org-16"/>
+<artifact id="Location/PFEIG-provider-org-loc-01" key="Location-PFEIG-provider-org-loc-01" name="PFEIG-provider-org-loc-01"/>
+<artifact id="Location/PFEIG-provider-org-loc-16" key="Location-PFEIG-provider-org-loc-16" name="PFEIG-provider-org-loc-16"/>
+<artifact id="PractitionerRole/PFEIG-provider-role-neurologist" key="PractitionerRole-PFEIG-provider-role-neurologist" name="PFEIG-provider-role-neurologist"/>
+<artifact id="PractitionerRole/PFEIG-provider-role-pcp" key="PractitionerRole-PFEIG-provider-role-pcp" name="PFEIG-provider-role-pcp"/>
+<artifact id="CapabilityStatement/pacio-pfe-cap" key="CapabilityStatement-pacio-pfe-cap" name="Personal Functioning and Engagement Capability Statement"/>
+<artifact id="CodeSystem/pfe-category-cs" key="CodeSystem-pfe-category-cs" name="Personal Functioning and Engagement Category"/>
+<artifact id="ValueSet/pfe-category-vs" key="ValueSet-pfe-category-vs" name="Personal Functioning and Engagement Category Value Set"/>
+<artifact id="StructureDefinition/pfe-collection" key="StructureDefinition-pfe-collection" name="Personal Functioning and Engagement Collection"/>
+<artifact id="CodeSystem/pfe-functioning-cs" key="CodeSystem-pfe-functioning-cs" name="Personal Functioning and Engagement Functioning Category Code System"/>
+<artifact id="StructureDefinition/pfe-narrative-history-of-status" key="StructureDefinition-pfe-narrative-history-of-status" name="Personal Functioning and Engagement Narrative History of Status"/>
+<artifact id="StructureDefinition/pfe-observation" key="StructureDefinition-pfe-observation" name="Personal Functioning and Engagement Observation"/>
+<artifact id="StructureDefinition/pfe-use-of-device" key="StructureDefinition-pfe-use-of-device" name="Personal Functioning and Engagement Use of Device"/>
+<artifact id="ValueSet/pfe-loinc-snomed-vs" key="ValueSet-pfe-loinc-snomed-vs" name="Personal Functioning and Engagement ValueSet LOINC SNOMED"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page deprecated="true" key="profiles" name="(profiles)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="domains" name="Domains"/>
+<page key="downloads" name="Downloads"/>
+<page key="formal_specification" name="Formal Specification"/>
+<page key="index" name="Home"/>
+<page key="personal_functioning_and_engagement_use_case" name="Personal Functioning and Engagement Use Case"/>
+<page key="security_and_data_sharing" name="Security and Data Sharing"/>
+<page key="structured_data_capture" name="Structured Data Capture"/>
+<page key="toc" name="Table of Contents"/>
+<page key="underlying_technologies" name="Underlying Technologies"/>
 </specification>
