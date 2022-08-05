@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/fhir-directory-exchange/2022Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-directory-exchange-deprecated" defaultVersion="1.0.0-ballot" defaultWorkgroup="pa" gitUrl="https://github.com/HL7/fhir-directory-exchange-deprecated" url="http://hl7.org/fhir/us/fhir-directory-exchange">
-<version code="current" url="http://build.fhir.org/ig/HL7/fhir-directory-exchange"/>
-<version code="1.0.0-ballot" url="http://hl7.org/fhir/us/fhir-directory-exchange/2022Sep"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/directory-query/2022Sep" ciUrl="http://build.fhir.org/ig/HL7/directory-query" defaultVersion="1.0.0-ballot" defaultWorkgroup="pa" gitUrl="https://github.com/HL7/fhir-directory-query" url="http://hl7.org/fhir/us/directory-query">
+<version code="current" url="http://build.fhir.org/ig/HL7/directory-query"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/us/directory-query/2022Sep"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="CodeSystem/AcceptingPatientsCS" key="CodeSystem-AcceptingPatientsCS" name="Accepting Patients Codes Code System"/>
+<artifact id="ValueSet/AcceptingPatientsVS" key="ValueSet-AcceptingPatientsVS" name="Accepting Patients Codes Value Set"/>
+<artifact id="StructureDefinition/accessibility" key="StructureDefinition-accessibility" name="Accessibility"/>
+<artifact id="CodeSystem/AccessibilityCS" key="CodeSystem-AccessibilityCS" name="Accessibility Code System"/>
+<artifact id="ValueSet/AccessibilityVS" key="ValueSet-AccessibilityVS" name="Accessibility Value Set"/>
 <artifact id="Organization/Acme" key="Organization-Acme" name="Acme"/>
 <artifact id="Endpoint/AcmeOfCTPortalEndpoint" key="Endpoint-AcmeOfCTPortalEndpoint" name="AcmeOfCTPortalEndpoint"/>
 <artifact id="InsurancePlan/AcmeQHPBronze" key="InsurancePlan-AcmeQHPBronze" name="AcmeQHPBronze"/>
@@ -12,6 +17,7 @@
 <artifact id="Organization/AcmeofCTPremNet" key="Organization-AcmeofCTPremNet" name="AcmeofCTPremNet"/>
 <artifact id="Organization/AcmeofCTStdNet" key="Organization-AcmeofCTStdNet" name="AcmeofCTStdNet"/>
 <artifact id="PractitionerRole/AnonRole" key="PractitionerRole-AnonRole" name="AnonRole"/>
+<artifact id="StructureDefinition/associatedServers" key="StructureDefinition-associatedServers" name="Associated Servers"/>
 <artifact id="Organization/BigBox" key="Organization-BigBox" name="BigBox"/>
 <artifact id="Organization/BurrClinic" key="Organization-BurrClinic" name="BurrClinic"/>
 <artifact id="OrganizationAffiliation/BurrClinicAffil" key="OrganizationAffiliation-BurrClinicAffil" name="BurrClinicAffil"/>
@@ -19,11 +25,29 @@
 <artifact id="Organization/CancerClinic" key="Organization-CancerClinic" name="CancerClinic"/>
 <artifact id="Location/CancerClinicLoc" key="Location-CancerClinicLoc" name="CancerClinicLoc"/>
 <artifact id="HealthcareService/CancerClinicService" key="HealthcareService-CancerClinicService" name="CancerClinicService"/>
+<artifact id="CodeSystem/CareTeamCategoryCS" key="CodeSystem-CareTeamCategoryCS" name="CareTeam Category Code System"/>
 <artifact id="CareTeam/CareTeam1" key="CareTeam-CareTeam1" name="CareTeam1"/>
+<artifact id="StructureDefinition/communication-proficiency" key="StructureDefinition-communication-proficiency" name="Communication Proficiency"/>
 <artifact id="Organization/ConnHIE" key="Organization-ConnHIE" name="ConnHIE"/>
 <artifact id="OrganizationAffiliation/ConnHIEAffil" key="OrganizationAffiliation-ConnHIEAffil" name="ConnHIEAffil"/>
+<artifact id="StructureDefinition/contactpoint-availabletime" key="StructureDefinition-contactpoint-availabletime" name="Contactpoint Availabletime"/>
 <artifact id="Practitioner/Counselor" key="Practitioner-Counselor" name="Counselor"/>
 <artifact id="PractitionerRole/CounselorRole1" key="PractitionerRole-CounselorRole1" name="CounselorRole1"/>
+<artifact id="CodeSystem/CredentialStatusCS" key="CodeSystem-CredentialStatusCS" name="Credential Status Code System"/>
+<artifact id="StructureDefinition/delivery-method" key="StructureDefinition-delivery-method" name="Delivery Method"/>
+<artifact id="CodeSystem/DeliveryMethodCS" key="CodeSystem-DeliveryMethodCS" name="Delivery Methods Code System"/>
+<artifact id="ValueSet/DeliveryMethodVS" key="ValueSet-DeliveryMethodVS" name="Delivery Methods Value Set"/>
+<artifact id="StructureDefinition/dynamicRegistration" key="StructureDefinition-dynamicRegistration" name="Dynamic Registration"/>
+<artifact id="CodeSystem/EndpointConnectionTypeCS" key="CodeSystem-EndpointConnectionTypeCS" name="Endpoint Connection Types (additional) Code System"/>
+<artifact id="ValueSet/EndpointConnectionTypeVS" key="ValueSet-EndpointConnectionTypeVS" name="Endpoint Connection Types Value Set"/>
+<artifact id="ValueSet/EndpointPayloadTypeVS" key="ValueSet-EndpointPayloadTypeVS" name="Endpoint Payload Type Value Set"/>
+<artifact id="CodeSystem/EndpointPayloadTypeCS" key="CodeSystem-EndpointPayloadTypeCS" name="Endpoint Payload Types Code System"/>
+<artifact id="StructureDefinition/endpointType" key="StructureDefinition-endpointType" name="Endpoint Type"/>
+<artifact id="CodeSystem/EndpointTypeCS" key="CodeSystem-EndpointTypeCS" name="Endpoint Type Code System"/>
+<artifact id="ValueSet/EndpointTypeVS" key="ValueSet-EndpointTypeVS" name="Endpoint Type Value Set"/>
+<artifact id="StructureDefinition/endpoint-usecase" key="StructureDefinition-endpoint-usecase" name="Endpoint Usecase"/>
+<artifact id="ValueSet/EndpointUsecaseVS" key="ValueSet-EndpointUsecaseVS" name="Endpoint Usecases Value Set"/>
+<artifact id="StructureDefinition/fundingSource" key="StructureDefinition-fundingSource" name="Funding Source"/>
 <artifact id="Organization/HamiltonClinic" key="Organization-HamiltonClinic" name="HamiltonClinic"/>
 <artifact id="OrganizationAffiliation/HamiltonClinicAffil" key="OrganizationAffiliation-HamiltonClinicAffil" name="HamiltonClinicAffil"/>
 <artifact id="HealthcareService/HamiltonClinicServices" key="HealthcareService-HamiltonClinicServices" name="HamiltonClinicServices"/>
@@ -34,27 +58,64 @@
 <artifact id="OrganizationAffiliation/HartfordOrthopedicAffil" key="OrganizationAffiliation-HartfordOrthopedicAffil" name="HartfordOrthopedicAffil"/>
 <artifact id="HealthcareService/HartfordOrthopedicServices" key="HealthcareService-HartfordOrthopedicServices" name="HartfordOrthopedicServices"/>
 <artifact id="Organization/HartfordOrthopedics" key="Organization-HartfordOrthopedics" name="HartfordOrthopedics"/>
+<artifact id="CodeSystem/HealthcareServiceCategoryCS" key="CodeSystem-HealthcareServiceCategoryCS" name="Healthcare Service Category Code System"/>
+<artifact id="ValueSet/HealthcareServiceCategoryVS" key="ValueSet-HealthcareServiceCategoryVS" name="Healthcare Service Category Value Set"/>
+<artifact id="ValueSet/HealthcareServiceTypeVS" key="ValueSet-HealthcareServiceTypeVS" name="HealthcareService Type Value Set"/>
 <artifact id="HealthcareService/HospERService" key="HealthcareService-HospERService" name="HospERService"/>
 <artifact id="Location/HospLoc1" key="Location-HospLoc1" name="HospLoc1"/>
 <artifact id="Location/HospLoc2" key="Location-HospLoc2" name="HospLoc2"/>
 <artifact id="Organization/Hospital" key="Organization-Hospital" name="Hospital"/>
+<artifact id="CodeSystem/IgTypeCS" key="CodeSystem-IgTypeCS" name="IG Type Code System"/>
+<artifact id="ValueSet/IgTypeVS" key="ValueSet-IgTypeVS" name="IG Type Value Set"/>
+<artifact id="StructureDefinition/igsSupported" key="StructureDefinition-igsSupported" name="IGs Supported"/>
+<artifact id="ValueSet/IdentifierStatusVS" key="ValueSet-IdentifierStatusVS" name="Identifier Status Value Set"/>
+<artifact id="ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS" key="ValueSet-IndividualSpecialtyAndDegreeLicenseCertificateVS" name="Individual Specialties, Degrees, Licenses, and Certificates Value Set"/>
+<artifact id="ValueSet/IndividualAndGroupSpecialtiesVS" key="ValueSet-IndividualAndGroupSpecialtiesVS" name="Individual and Group Specialties"/>
+<artifact id="CodeSystem/InsurancePlanTypeCS" key="CodeSystem-InsurancePlanTypeCS" name="Insurance Plan Type Code System"/>
+<artifact id="ValueSet/InsurancePlanTypeVS" key="ValueSet-InsurancePlanTypeVS" name="Insurance Plan Type Value Set"/>
+<artifact id="CodeSystem/InsuranceProductTypeCS" key="CodeSystem-InsuranceProductTypeCS" name="Insurance Product Type Code System"/>
+<artifact id="ValueSet/InsuranceProductTypeVS" key="ValueSet-InsuranceProductTypeVS" name="Insurance Product Type Value Set"/>
 <artifact id="Practitioner/JoeSmith" key="Practitioner-JoeSmith" name="JoeSmith"/>
 <artifact id="PractitionerRole/JoeSmithRole1" key="PractitionerRole-JoeSmithRole1" name="JoeSmithRole1"/>
 <artifact id="PractitionerRole/JoeSmithRole2" key="PractitionerRole-JoeSmithRole2" name="JoeSmithRole2"/>
 <artifact id="PractitionerRole/JoeSmithRole3" key="PractitionerRole-JoeSmithRole3" name="JoeSmithRole3"/>
-<artifact id="StructureDefinition/NatlDirEx-CareTeam" key="StructureDefinition-NatlDirEx-CareTeam" name="National Directory Care Team"/>
-<artifact id="StructureDefinition/NatlDirEx-Endpoint" key="StructureDefinition-NatlDirEx-Endpoint" name="National Directory Endpoint"/>
-<artifact id="StructureDefinition/NatlDirEx-HealthcareService" key="StructureDefinition-NatlDirEx-HealthcareService" name="National Directory HealthcareService"/>
-<artifact id="StructureDefinition/NatlDirEx-InsurancePlan" key="StructureDefinition-NatlDirEx-InsurancePlan" name="National Directory InsurancePlan"/>
-<artifact id="StructureDefinition/NatlDirEx-Location" key="StructureDefinition-NatlDirEx-Location" name="National Directory Location"/>
-<artifact id="StructureDefinition/NatlDirEx-Network" key="StructureDefinition-NatlDirEx-Network" name="National Directory Network"/>
-<artifact id="StructureDefinition/NatlDirEx-Organization" key="StructureDefinition-NatlDirEx-Organization" name="National Directory Organization"/>
-<artifact id="StructureDefinition/NatlDirEx-OrganizationAffiliation" key="StructureDefinition-NatlDirEx-OrganizationAffiliation" name="National Directory OrganizationAffiliation"/>
-<artifact id="StructureDefinition/NatlDirEx-Practitioner" key="StructureDefinition-NatlDirEx-Practitioner" name="National Directory Practitioner"/>
-<artifact id="StructureDefinition/NatlDirEx-PractitionerRole" key="StructureDefinition-NatlDirEx-PractitionerRole" name="National Directory PractitionerRole"/>
-<artifact id="StructureDefinition/NatlDirEx-Restriction" key="StructureDefinition-NatlDirEx-Restriction" name="National Directory Restriction"/>
-<artifact id="StructureDefinition/NatlDirEx-Validation" key="StructureDefinition-NatlDirEx-Validation" name="National Directory Validation"/>
+<artifact id="CodeSystem/LanguageProficiencyCS" key="CodeSystem-LanguageProficiencyCS" name="Language Proficiency Code System"/>
+<artifact id="ValueSet/LanguageProficiencyVS" key="ValueSet-LanguageProficiencyVS" name="Language Proficiency Value Set"/>
+<artifact id="StructureDefinition/location-reference" key="StructureDefinition-location-reference" name="Location Reference"/>
+<artifact id="ValueSet/MinEndpointConnectionTypeVS" key="ValueSet-MinEndpointConnectionTypeVS" name="Minimum Endpoint Connection Types Value Set"/>
+<artifact id="ValueSet/ConsentVS" key="ValueSet-ConsentVS" name="National Directory Consent Value Set"/>
+<artifact id="StructureDefinition/NatlDirEndpointQry-CareTeam" key="StructureDefinition-NatlDirEndpointQry-CareTeam" name="National Directory Endpoint Qry Care Team"/>
+<artifact id="StructureDefinition/NatlDirEndpointQry-Endpoint" key="StructureDefinition-NatlDirEndpointQry-Endpoint" name="National Directory Endpoint Qry Exchange Endpoint"/>
+<artifact id="StructureDefinition/NatlDirEndpointQry-HealthcareService" key="StructureDefinition-NatlDirEndpointQry-HealthcareService" name="National Directory Endpoint Qry Exchange HealthcareService"/>
+<artifact id="StructureDefinition/NatlDirEndpointQry-InsurancePlan" key="StructureDefinition-NatlDirEndpointQry-InsurancePlan" name="National Directory Endpoint Qry Exchange InsurancePlan"/>
+<artifact id="StructureDefinition/NatlDirEndpointQry-Location" key="StructureDefinition-NatlDirEndpointQry-Location" name="National Directory Endpoint Qry Exchange Location"/>
+<artifact id="StructureDefinition/NatlDirEndpointQry-Network" key="StructureDefinition-NatlDirEndpointQry-Network" name="National Directory Endpoint Qry Exchange Network"/>
+<artifact id="StructureDefinition/NatlDirEndpointQry-Organization" key="StructureDefinition-NatlDirEndpointQry-Organization" name="National Directory Endpoint Qry Exchange Organization"/>
+<artifact id="StructureDefinition/NatlDirEndpointQry-OrganizationAffiliation" key="StructureDefinition-NatlDirEndpointQry-OrganizationAffiliation" name="National Directory Endpoint Qry Exchange OrganizationAffiliation"/>
+<artifact id="StructureDefinition/NatlDirEndpointQry-Practitioner" key="StructureDefinition-NatlDirEndpointQry-Practitioner" name="National Directory Endpoint Qry Exchange Practitioner"/>
+<artifact id="StructureDefinition/NatlDirEndpointQry-PractitionerRole" key="StructureDefinition-NatlDirEndpointQry-PractitionerRole" name="National Directory Endpoint Qry Exchange PractitionerRole"/>
+<artifact id="StructureDefinition/NatlDir-Restriction" key="StructureDefinition-NatlDir-Restriction" name="National Directory Endpoint Qry Exchange Restriction"/>
+<artifact id="StructureDefinition/NatlDir-Verification" key="StructureDefinition-NatlDir-Verification" name="National Directory Endpoint Qry Exchange Verification"/>
+<artifact id="CodeSystem/ConsentScopeCS" key="CodeSystem-ConsentScopeCS" name="National Healthcare Directory ConsentScopeCodes Code System"/>
+<artifact id="StructureDefinition/usage-restriction" key="StructureDefinition-usage-restriction" name="NatlDir Usage Restriction"/>
+<artifact id="StructureDefinition/careteam-alias" key="StructureDefinition-careteam-alias" name="NatlDirEndpointQry Careteam Alias"/>
+<artifact id="StructureDefinition/healthcareservice-reference" key="StructureDefinition-healthcareservice-reference" name="NatlDirEndpointQry Healthcareservice Reference"/>
+<artifact id="StructureDefinition/identifier-status" key="StructureDefinition-identifier-status" name="NatlDirEndpointQry Identifier Status"/>
+<artifact id="StructureDefinition/endpoint-reference" key="StructureDefinition-endpoint-reference" name="NatlDirEndpointQry Practitioner Endpoint Reference"/>
+<artifact id="StructureDefinition/network-reference" key="StructureDefinition-network-reference" name="Network Reference"/>
+<artifact id="ValueSet/NetworkTypeVS" key="ValueSet-NetworkTypeVS" name="Network Type Value Set"/>
+<artifact id="StructureDefinition/newpatients" key="StructureDefinition-newpatients" name="New Patients"/>
+<artifact id="ValueSet/NonIndividualSpecialtiesVS" key="ValueSet-NonIndividualSpecialtiesVS" name="Non-Individual Specialties"/>
+<artifact id="ValueSet/NonIndividualSpecialtyAndDegreeLicenseCertificateVS" key="ValueSet-NonIndividualSpecialtyAndDegreeLicenseCertificateVS" name="Non-Individual Specialties, Degrees, Licenses, and Certificates Value Set"/>
+<artifact id="StructureDefinition/org-description" key="StructureDefinition-org-description" name="Org Description"/>
+<artifact id="CodeSystem/OrganizationAffiliationRoleCS" key="CodeSystem-OrganizationAffiliationRoleCS" name="Organization Affiliation Role"/>
+<artifact id="ValueSet/OrgAliasTypeVS" key="ValueSet-OrgAliasTypeVS" name="Organization Alias Typ Value Sete"/>
+<artifact id="CodeSystem/OrgAliasTypeCS" key="CodeSystem-OrgAliasTypeCS" name="Organization Alias Type Code System"/>
+<artifact id="CodeSystem/OrgTypeCS" key="CodeSystem-OrgTypeCS" name="Organization Type Code System"/>
+<artifact id="ValueSet/OrgTypeVS" key="ValueSet-OrgTypeVS" name="Organization Type Value Set"/>
+<artifact id="ValueSet/OrganizationAffiliationRoleVS" key="ValueSet-OrganizationAffiliationRoleVS" name="OrganizationAffiliation Roles"/>
 <artifact id="Consent/PatientConsent" key="Consent-PatientConsent" name="PatientConsent"/>
+<artifact id="StructureDefinition/paymentAccepted" key="StructureDefinition-paymentAccepted" name="Payment Accepted"/>
 <artifact id="Organization/PharmChain" key="Organization-PharmChain" name="PharmChain"/>
 <artifact id="OrganizationAffiliation/PharmChainAffil1" key="OrganizationAffiliation-PharmChainAffil1" name="PharmChainAffil1"/>
 <artifact id="OrganizationAffiliation/PharmChainAffil2" key="OrganizationAffiliation-PharmChainAffil2" name="PharmChainAffil2"/>
@@ -66,7 +127,14 @@
 <artifact id="Location/PharmLoc2" key="Location-PharmLoc2" name="PharmLoc2"/>
 <artifact id="Location/PharmLoc3" key="Location-PharmLoc3" name="PharmLoc3"/>
 <artifact id="Location/PharmLoc4" key="Location-PharmLoc4" name="PharmLoc4"/>
+<artifact id="StructureDefinition/practitioner-qualification" key="StructureDefinition-practitioner-qualification" name="Practitioner Qualification"/>
+<artifact id="ValueSet/PractitionerRoleVS" key="ValueSet-PractitionerRoleVS" name="PractitionerRole Code Value Set"/>
+<artifact id="CodeSystem/ProviderRoleCS" key="CodeSystem-ProviderRoleCS" name="Provider Role Codes Code System"/>
 <artifact id="VerificationResult/ProviderAttestation" key="VerificationResult-ProviderAttestation" name="ProviderAttestation"/>
+<artifact id="CodeSystem/QualificationStatusCS" key="CodeSystem-QualificationStatusCS" name="Qualification Status Code System"/>
+<artifact id="ValueSet/QualificationStatusVS" key="ValueSet-QualificationStatusVS" name="Qualification Status Value Set"/>
+<artifact id="StructureDefinition/rating" key="StructureDefinition-rating" name="Rating"/>
+<artifact id="StructureDefinition/requiredDocument" key="StructureDefinition-requiredDocument" name="Required Document"/>
 <artifact id="SearchParameter/Endpoint-connection-type" key="SearchParameter-Endpoint-connection-type" name="Search by Connection Type in Endpoints"/>
 <artifact id="SearchParameter/Endpoint-identifier" key="SearchParameter-Endpoint-identifier" name="Search by Indentifer in Endpoints"/>
 <artifact id="SearchParameter/Location-address" key="SearchParameter-Location-address" name="Search by address in Location with multipleOr"/>
@@ -137,27 +205,43 @@
 <artifact id="SearchParameter/Organization-type" key="SearchParameter-Organization-type" name="Search by type in Organization with multipleOr"/>
 <artifact id="SearchParameter/Endpoint-usecase-standard" key="SearchParameter-Endpoint-usecase-standard" name="Search by usecase-standard in Endpoints"/>
 <artifact id="SearchParameter/Endpoint-usecase-type" key="SearchParameter-Endpoint-usecase-type" name="Search by usecase-type in Endpoints"/>
+<artifact id="StructureDefinition/secureEndpoint" key="StructureDefinition-secureEndpoint" name="Secure Endpoint"/>
+<artifact id="StructureDefinition/secureExchangeArtifacts" key="StructureDefinition-secureExchangeArtifacts" name="Secure Exchange Artifacts"/>
+<artifact id="ValueSet/SpecialtiesVS" key="ValueSet-SpecialtiesVS" name="Specialties Value Set"/>
+<artifact id="ValueSet/SpecialtyAndDegreeLicenseCertificateVS" key="ValueSet-SpecialtyAndDegreeLicenseCertificateVS" name="Specialties, Degrees, Licenses, and Certificates Value Set"/>
 <artifact id="Location/StateOfCTLocation" key="Location-StateOfCTLocation" name="StateOfCTLocation"/>
+<artifact id="StructureDefinition/trustFramework" key="StructureDefinition-trustFramework" name="Trust Framework"/>
+<artifact id="ValueSet/TrustFrameworkTypeVS" key="ValueSet-TrustFrameworkTypeVS" name="Trust Framework Type Value Set"/>
+<artifact id="CodeSystem/TrustFrameworkTypeCS" key="CodeSystem-TrustFrameworkTypeCS" name="Trust FrameworkType Code System"/>
+<artifact id="CodeSystem/ValidationTypeCS" key="CodeSystem-ValidationTypeCS" name="Validation Type Code System"/>
+<artifact id="ValueSet/ValidationProcessVS" key="ValueSet-ValidationProcessVS" name="Validation Type Value Set"/>
+<artifact id="StructureDefinition/via-intermediary" key="StructureDefinition-via-intermediary" name="Via Intermediary"/>
+<artifact id="CodeSystem/VirtualModalitiesCS" key="CodeSystem-VirtualModalitiesCS" name="Virtual Modalities Code System"/>
+<artifact id="ValueSet/VirtualModalitiesVS" key="ValueSet-VirtualModalitiesVS" name="Virtual Modalities Value Set"/>
 <artifact id="HealthcareService/VirtualCounselService" key="HealthcareService-VirtualCounselService" name="VirtualCounselService"/>
-<artifact id="CapabilityStatement/fhir-national-directory" key="CapabilityStatement-fhir-national-directory" name="fhir-national-directory"/>
+<artifact id="CapabilityStatement/directory-query-basic-endpoint" key="CapabilityStatement-directory-query-basic-endpoint" name="directory-query-basic-endpoint"/>
+<artifact id="CapabilityStatement/directory-query-basic-expanded" key="CapabilityStatement-directory-query-basic-expanded" name="directory-query-basic-expanded"/>
+<artifact id="CapabilityStatement/directory-query-health-or-human-services-endpoint" key="CapabilityStatement-directory-query-health-or-human-services-endpoint" name="directory-query-health-or-human-services-endpoint"/>
+<artifact id="CapabilityStatement/directory-query-health-or-human-services-expanded" key="CapabilityStatement-directory-query-health-or-human-services-expanded" name="directory-query-health-or-human-services-expanded"/>
+<artifact id="CapabilityStatement/directory-query-human-services-endpoint" key="CapabilityStatement-directory-query-human-services-endpoint" name="directory-query-human-services-endpoint"/>
+<artifact id="CapabilityStatement/directory-query-human-services-expanded" key="CapabilityStatement-directory-query-human-services-expanded" name="directory-query-human-services-expanded"/>
+<artifact id="CapabilityStatement/directory-query-provider-endpoint" key="CapabilityStatement-directory-query-provider-endpoint" name="directory-query-provider-endpoint"/>
+<artifact id="CapabilityStatement/directory-query-provider-expanded" key="CapabilityStatement-directory-query-provider-expanded" name="directory-query-provider-expanded"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="all-examples" name="All Examples"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="bulk-data" name="Bulk Data"/>
 <page key="capstatements" name="Capstatements"/>
-<page key="careteam-alias-summary" name="Careteam Alias Summary"/>
 <page key="conformance" name="Conformance"/>
 <page key="downloads" name="Downloads"/>
 <page key="example-list-generator" name="Example List Generator"/>
 <page key="examples" name="Examples"/>
 <page key="extensions" name="Extensions"/>
 <page key="general-guidance" name="General Guidance"/>
-<page key="general-guidanceOld" name="General Guidance Old"/>
 <page key="guidance" name="Guidance"/>
 <page key="history" name="History"/>
 <page key="index" name="Home"/>
-<page key="link-list" name="Link List"/>
 <page key="logo" name="Logo"/>
 <page key="profiles" name="Profiles"/>
 <page key="schematron-list-generator" name="Schematron List Generator"/>
