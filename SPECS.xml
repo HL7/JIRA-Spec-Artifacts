@@ -52432,6 +52432,58 @@
       <page key="OTHER-cql-hqmf-TBD" name="TBD" spec="cql-hqmf"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="OTHER-dam-nc"
+                  name="Nutrition Care DAM (OTHER)"
+                  defaultWorkgroup="oo"
+                  defaultVersion="2021SEP"
+                  url="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=289">
+      <version code="2021SEP" deprecated="false"/>
+      <page name="Acknowledgements"
+            key="OTHER-dam-nc-acknowledge"
+            spec="dam-nc"/>
+      <page name="Revision History"
+            key="OTHER-dam-nc-rev_history"
+            spec="dam-nc"/>
+      <page name="Overview" key="OTHER-dam-nc-overview" spec="dam-nc"/>
+      <page name="Nutrition Care Introduction"
+            key="OTHER-dam-nc-nc_intro"
+            spec="dam-nc"/>
+      <page name="Nutrition Care Use Cases"
+            key="OTHER-dam-nc-nc_use_cases"
+            spec="dam-nc"/>
+      <page name="Nutrition Care Process Steps"
+            key="OTHER-dam-nc-procss_steps"
+            spec="dam-nc"/>
+      <page name="Diet and Nutrition Orders Introduction"
+            key="OTHER-dam-nc-dno_intro"
+            spec="dam-nc"/>
+      <page name="Diet Order Common Data Elements"
+            key="OTHER-dam-nc-common_data_elem"
+            spec="dam-nc"/>
+      <page name="Nutrition Order Activity States"
+            key="OTHER-dam-nc-activity_states"
+            spec="dam-nc"/>
+      <page name="Diet Order Storyboards and Use Cases"
+            key="OTHER-dam-nc-do_use_cases"
+            spec="dam-nc"/>
+      <page name="Activity Diagrams"
+            key="OTHER-dam-nc-act_diagrams"
+            spec="dam-nc"/>
+      <page name="Information Model" key="OTHER-dam-nc-inf_model" spec="dam-nc"/>
+      <page name="Conformance Criteria"
+            key="OTHER-dam-nc-conf_criteria"
+            spec="dam-nc"/>
+      <page name="Glossary" key="OTHER-dam-nc-gloss" spec="dam-nc"/>
+      <page name="Acronyms" key="OTHER-dam-nc-acronym" spec="dam-nc"/>
+      <page name="References" key="OTHER-dam-nc-ref" spec="dam-nc"/>
+      <page name="Appendix A: Nutrition Order Terminology - Example Value Sets"
+            key="OTHER-dam-nc-appendix_a"
+            spec="dam-nc"/>
+      <page name="Appendix B: Storyboard naming standards"
+            key="OTHER-dam-nc-appendix_b"
+            spec="dam-nc"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="OTHER-dam-vr"
                   name="HL7 Cross-Paradigm Domain Analysis Model: Vital Records (OTHER)"
                   defaultWorkgroup="pher"
@@ -52593,6 +52645,101 @@
             key="OTHER-encprs-infrafunc"
             spec="encprs"/>
       <page key="OTHER-encprs-TBD" name="TBD" spec="encprs"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="OTHER-gh"
+                  name="Gender Harmony - Modeling Sex and Gender Representation (OTHER)"
+                  defaultWorkgroup="vocab"
+                  defaultVersion="1.0"
+                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=564">
+      <version code="1.0" deprecated="false"/>
+      <page name="Introduction" key="OTHER-gh-intro" spec="gh"/>
+      <page name="Background" key="OTHER-gh-background" spec="gh"/>
+      <page name="Scope" key="OTHER-gh-scope" spec="gh"/>
+      <page name="Intended Audience" key="OTHER-gh-intendaud" spec="gh"/>
+      <page name="Current State" key="OTHER-gh-currentstate" spec="gh"/>
+      <page name="Current State: USCDI and ISA"
+            key="OTHER-gh-uscdiisa"
+            spec="gh"/>
+      <page name="Current State: FHIR" key="OTHER-gh-fhir" spec="gh"/>
+      <page name="Current State: DICOM" key="OTHER-gh-dicom" spec="gh"/>
+      <page name="Current State: SNOMED International"
+            key="OTHER-gh-snomed"
+            spec="gh"/>
+      <page name="Current State: HL7 V2" key="OTHER-gh-v2" spec="gh"/>
+      <page name="Current State: C-CDA/HL7 V3" key="OTHER-gh-ccda" spec="gh"/>
+      <page name="Current State: NCPDP" key="OTHER-gh-ncpdp" spec="gh"/>
+      <page name="Current State: X12" key="OTHER-gh-x12" spec="gh"/>
+      <page name="Impact of Sex and Gender on Clinical Care"
+            key="OTHER-gh-impact"
+            spec="gh"/>
+      <page name="Sex and Gender in Quality Measurement"
+            key="OTHER-gh-quality"
+            spec="gh"/>
+      <page name="Sex and Gender Reporting in Payment for Care"
+            key="OTHER-gh-payment"
+            spec="gh"/>
+      <page name="Sex and Gender Uses in Data Analysis"
+            key="OTHER-gh-data"
+            spec="gh"/>
+      <page name="Modeling Sex and Gender Representation"
+            key="OTHER-gh-directcarefunc"
+            spec="gh"/>
+      <page name="Contextual Definitions of Sex and Gender Identity"
+            key="OTHER-gh-contextdefs"
+            spec="gh"/>
+      <page name="Person" key="OTHER-gh-person" spec="gh"/>
+      <page name="Gender Harmony (GI)" key="OTHER-gh-gi" spec="gh"/>
+      <page name="Sex for Clinical Use (SFCU)" key="OTHER-gh-sfcu" spec="gh"/>
+      <page name="Recorded Sex and Gender" key="OTHER-gh-rsg" spec="gh"/>
+      <page name="Name to Use" key="OTHER-gh-nu" spec="gh"/>
+      <page name="Pronouns" key="OTHER-gh-pronouns" spec="gh"/>
+      <page name="Implementation Guidance" key="OTHER-gh-guidance" spec="gh"/>
+      <page name="Implementation Guidance: FHIR"
+            key="OTHER-gh-fhirguide"
+            spec="gh"/>
+      <page name="Implementation Guidance: DICOM"
+            key="OTHER-gh-dicomguidance"
+            spec="gh"/>
+      <page name="Implementation Guidance: HL7 V2.x"
+            key="OTHER-gh-v2guidance"
+            spec="gh"/>
+      <page name="Appendix 1 - Proposed Vaue Sets"
+            key="OTHER-gh-valuesets"
+            spec="gh"/>
+      <page name="Appendix 1 - RecordedSexOrGender InternationalEquivalent Value Set"
+            key="OTHER-gh-rsgvs"
+            spec="gh"/>
+      <page name="Appendix 1 - Gender Identity Value Set"
+            key="OTHER-gh-givs"
+            spec="gh"/>
+      <page name="Appendix 1 - SexForClinicalUseCategory Value Set"
+            key="OTHER-gh-sfcucvs"
+            spec="gh"/>
+      <page name="Appendix 1 -Pronoun Value Set"
+            key="OTHER-gh-pronounvs"
+            spec="gh"/>
+      <page name="Appendix 2 - Gender Harmony Project Feedback Survey Summary Report"
+            key="OTHER-gh-ghsurvey"
+            spec="gh"/>
+      <page name="Appendix 3 - Additional Data Coding Examples"
+            key="OTHER-gh-examples"
+            spec="gh"/>
+      <page name="Appendix 3 - Gender Identity (GI)"
+            key="OTHER-gh-giexamples"
+            spec="gh"/>
+      <page name="Appendix 3 - Sex for Clinical Use (SCFU)"
+            key="OTHER-gh-scfuexamples"
+            spec="gh"/>
+      <page name="Appendix 3 - Recorded Sex and Gender"
+            key="OTHER-gh-rsgexamples"
+            spec="gh"/>
+      <page name="Appendix 3 - Name to Use" key="OTHER-gh-nuexamples" spec="gh"/>
+      <page name="Appendix 3 - Pronouns"
+            key="OTHER-gh-pronounexamples"
+            spec="gh"/>
+      <page name="bibliography" key="OTHER-gh-bib" spec="gh"/>
+      <page name="(N/A)" key="OTHER-gh-na" spec="gh"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="OTHER-hsp-market"
@@ -53045,6 +53192,33 @@
             spec="model-xform"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="OTHER-pcd"
+                  name="HL7 Informative Document: Patient Contributed Data (OTHER)"
+                  defaultWorkgroup="pe"
+                  defaultVersion="2022SEP"
+                  url="http://www.hl7.org/documentcenter/public/ballots/2022SEP/downloads/HL7_PCD_R1_I1_2022SEP.pdf">
+      <version code="2022SEP" deprecated="false"/>
+      <page name="Introduction" key="OTHER-pcd-intro" spec="pcd"/>
+      <page name="Definitions Relevant to PCD"
+            key="OTHER-pcd-definitions"
+            spec="pcd"/>
+      <page name="Vision Statement" key="OTHER-pcd-vision" spec="pcd"/>
+      <page name="History of PCD" key="OTHER-pcd-history" spec="pcd"/>
+      <page name="The Health Data Ecosystem"
+            key="OTHER-pcd-ecosystem"
+            spec="pcd"/>
+      <page name="Principles Regarding PCD"
+            key="OTHER-pcd-principles"
+            spec="pcd"/>
+      <page name="PCD Standards Overview" key="OTHER-pcd-standards" spec="pcd"/>
+      <page name="Patient Journeys" key="OTHER-pcd-journeys" spec="pcd"/>
+      <page name="Descriptors of PCD" key="OTHER-pcd-descriptors" spec="pcd"/>
+      <page name="Recommendations" key="OTHER-pcd-recommendations" spec="pcd"/>
+      <page name="Appendix—elaboration of PCD Descriptors"
+            key="OTHER-pcd-apdx-descriptors"
+            spec="pcd"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="OTHER-pohr"
                   name="Problem-Oriented Health Record (POHR) (OTHER)"
                   defaultWorkgroup="ehr"
@@ -53243,58 +53417,6 @@
       <page name="Appendix C: Tinkar Model Concepts"
             key="OTHER-stterm-kb-app_c_model_concepts"
             spec="stterm-kb"/>
-   </specification>
-   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                  key="OTHER-dam-nc"
-                  name="Nutrition Care DAM (OTHER)"
-                  defaultWorkgroup="oo"
-                  defaultVersion="2021SEP"
-                  url="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=289">
-      <version code="2021SEP" deprecated="false"/>
-      <page name="Acknowledgements"
-            key="OTHER-dam-nc-acknowledge"
-            spec="dam-nc"/>
-      <page name="Revision History"
-            key="OTHER-dam-nc-rev_history"
-            spec="dam-nc"/>
-      <page name="Overview" key="OTHER-dam-nc-overview" spec="dam-nc"/>
-      <page name="Nutrition Care Introduction"
-            key="OTHER-dam-nc-nc_intro"
-            spec="dam-nc"/>
-      <page name="Nutrition Care Use Cases"
-            key="OTHER-dam-nc-nc_use_cases"
-            spec="dam-nc"/>
-      <page name="Nutrition Care Process Steps"
-            key="OTHER-dam-nc-procss_steps"
-            spec="dam-nc"/>
-      <page name="Diet and Nutrition Orders Introduction"
-            key="OTHER-dam-nc-dno_intro"
-            spec="dam-nc"/>
-      <page name="Diet Order Common Data Elements"
-            key="OTHER-dam-nc-common_data_elem"
-            spec="dam-nc"/>
-      <page name="Nutrition Order Activity States"
-            key="OTHER-dam-nc-activity_states"
-            spec="dam-nc"/>
-      <page name="Diet Order Storyboards and Use Cases"
-            key="OTHER-dam-nc-do_use_cases"
-            spec="dam-nc"/>
-      <page name="Activity Diagrams"
-            key="OTHER-dam-nc-act_diagrams"
-            spec="dam-nc"/>
-      <page name="Information Model" key="OTHER-dam-nc-inf_model" spec="dam-nc"/>
-      <page name="Conformance Criteria"
-            key="OTHER-dam-nc-conf_criteria"
-            spec="dam-nc"/>
-      <page name="Glossary" key="OTHER-dam-nc-gloss" spec="dam-nc"/>
-      <page name="Acronyms" key="OTHER-dam-nc-acronym" spec="dam-nc"/>
-      <page name="References" key="OTHER-dam-nc-ref" spec="dam-nc"/>
-      <page name="Appendix A: Nutrition Order Terminology - Example Value Sets"
-            key="OTHER-dam-nc-appendix_a"
-            spec="dam-nc"/>
-      <page name="Appendix B: Storyboard naming standards"
-            key="OTHER-dam-nc-appendix_b"
-            spec="dam-nc"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="OTHER-us-pod-fp"
@@ -53562,100 +53684,5 @@
             key="OTHER-vsd-roleclassvs"
             spec="vsd"/>
       <page name="(N/A)" key="OTHER-vsd-na" spec="vsd"/>
-   </specification>
-   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                  key="OTHER-gh"
-                  name="Gender Harmony - Modeling Sex and Gender Representation (OTHER)"
-                  defaultWorkgroup="vocab"
-                  defaultVersion="1.0"
-                  url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=564">
-      <version code="1.0" deprecated="false"/>
-      <page name="Introduction" key="OTHER-gh-intro" spec="gh"/>
-      <page name="Background" key="OTHER-gh-background" spec="gh"/>
-      <page name="Scope" key="OTHER-gh-scope" spec="gh"/>
-      <page name="Intended Audience" key="OTHER-gh-intendaud" spec="gh"/>
-      <page name="Current State" key="OTHER-gh-currentstate" spec="gh"/>
-      <page name="Current State: USCDI and ISA"
-            key="OTHER-gh-uscdiisa"
-            spec="gh"/>
-      <page name="Current State: FHIR" key="OTHER-gh-fhir" spec="gh"/>
-      <page name="Current State: DICOM" key="OTHER-gh-dicom" spec="gh"/>
-      <page name="Current State: SNOMED International"
-            key="OTHER-gh-snomed"
-            spec="gh"/>
-      <page name="Current State: HL7 V2" key="OTHER-gh-v2" spec="gh"/>
-      <page name="Current State: C-CDA/HL7 V3" key="OTHER-gh-ccda" spec="gh"/>
-      <page name="Current State: NCPDP" key="OTHER-gh-ncpdp" spec="gh"/>
-      <page name="Current State: X12" key="OTHER-gh-x12" spec="gh"/>
-      <page name="Impact of Sex and Gender on Clinical Care"
-            key="OTHER-gh-impact"
-            spec="gh"/>
-      <page name="Sex and Gender in Quality Measurement"
-            key="OTHER-gh-quality"
-            spec="gh"/>
-      <page name="Sex and Gender Reporting in Payment for Care"
-            key="OTHER-gh-payment"
-            spec="gh"/>
-      <page name="Sex and Gender Uses in Data Analysis"
-            key="OTHER-gh-data"
-            spec="gh"/>
-      <page name="Modeling Sex and Gender Representation"
-            key="OTHER-gh-directcarefunc"
-            spec="gh"/>
-      <page name="Contextual Definitions of Sex and Gender Identity"
-            key="OTHER-gh-contextdefs"
-            spec="gh"/>
-      <page name="Person" key="OTHER-gh-person" spec="gh"/>
-      <page name="Gender Harmony (GI)" key="OTHER-gh-gi" spec="gh"/>
-      <page name="Sex for Clinical Use (SFCU)" key="OTHER-gh-sfcu" spec="gh"/>
-      <page name="Recorded Sex and Gender" key="OTHER-gh-rsg" spec="gh"/>
-      <page name="Name to Use" key="OTHER-gh-nu" spec="gh"/>
-      <page name="Pronouns" key="OTHER-gh-pronouns" spec="gh"/>
-      <page name="Implementation Guidance" key="OTHER-gh-guidance" spec="gh"/>
-      <page name="Implementation Guidance: FHIR"
-            key="OTHER-gh-fhirguide"
-            spec="gh"/>
-      <page name="Implementation Guidance: DICOM"
-            key="OTHER-gh-dicomguidance"
-            spec="gh"/>
-      <page name="Implementation Guidance: HL7 V2.x"
-            key="OTHER-gh-v2guidance"
-            spec="gh"/>
-      <page name="Appendix 1 - Proposed Vaue Sets"
-            key="OTHER-gh-valuesets"
-            spec="gh"/>
-      <page name="Appendix 1 - RecordedSexOrGender InternationalEquivalent Value Set"
-            key="OTHER-gh-rsgvs"
-            spec="gh"/>
-      <page name="Appendix 1 - Gender Identity Value Set"
-            key="OTHER-gh-givs"
-            spec="gh"/>
-      <page name="Appendix 1 - SexForClinicalUseCategory Value Set"
-            key="OTHER-gh-sfcucvs"
-            spec="gh"/>
-      <page name="Appendix 1 -Pronoun Value Set"
-            key="OTHER-gh-pronounvs"
-            spec="gh"/>
-      <page name="Appendix 2 - Gender Harmony Project Feedback Survey Summary Report"
-            key="OTHER-gh-ghsurvey"
-            spec="gh"/>
-      <page name="Appendix 3 - Additional Data Coding Examples"
-            key="OTHER-gh-examples"
-            spec="gh"/>
-      <page name="Appendix 3 - Gender Identity (GI)"
-            key="OTHER-gh-giexamples"
-            spec="gh"/>
-      <page name="Appendix 3 - Sex for Clinical Use (SCFU)"
-            key="OTHER-gh-scfuexamples"
-            spec="gh"/>
-      <page name="Appendix 3 - Recorded Sex and Gender"
-            key="OTHER-gh-rsgexamples"
-            spec="gh"/>
-      <page name="Appendix 3 - Name to Use" key="OTHER-gh-nuexamples" spec="gh"/>
-      <page name="Appendix 3 - Pronouns"
-            key="OTHER-gh-pronounexamples"
-            spec="gh"/>
-      <page name="bibliography" key="OTHER-gh-bib" spec="gh"/>
-      <page name="(N/A)" key="OTHER-gh-na" spec="gh"/>
    </specification>
 </specifications>
