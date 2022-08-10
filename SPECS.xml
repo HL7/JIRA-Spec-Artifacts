@@ -46991,6 +46991,91 @@
       <page key="FHIR-uv-eyecare-downloads" name="Downloads" spec="uv-eyecare"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-ihe-sdc-ecc"
+                  name="IHE SDC/eCC on FHIR (FHIR)"
+                  ballotUrl="http://hl7.org/fhir/uv/ihe-sdc-ecc/2022Sep"
+                  ciUrl="http://build.fhir.org/ig/HL7/ihe-sdc-ecc-on-fhir"
+                  defaultVersion="1.0.0-ballot"
+                  defaultWorkgroup="oo"
+                  gitUrl="https://github.com/HL7/ihe-sdc-ecc-on-fhir"
+                  url="http://hl7.org/fhir/uv/ihe-sdc-ecc">
+      <version code="current" url="http://build.fhir.org/ig/HL7/ihe-sdc-ecc-on-fhir"/>
+      <version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/ihe-sdc-ecc/2022Sep"/>
+      <version code="0.1.0"
+               deprecated="true"
+               url="http://build.fhir.org/ig/HL7/ihe-sdc-ecc-on-fhir"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <artifact id="ConceptMap/conceptMapCAPex"
+                key="FHIR-ihe-sdc-ecc-ConceptMap-conceptMapCAPex"
+                name="Example ConceptMap resource showing mapping of SNOMED to CAP CKeys"
+                spec="ihe-sdc-ecc"/>
+      <artifact id="StructureDefinition/ihe-sdc-ecc-DiagnosticReport"
+                key="FHIR-ihe-sdc-ecc-StructureDefinition-ihe-sdc-ecc-DiagnosticReport"
+                name="IHE SDC/eCC on FHIR DiagnosticReport"
+                spec="ihe-sdc-ecc"/>
+      <artifact id="StructureDefinition/ihe-sdc-ecc-DocumentReference"
+                key="FHIR-ihe-sdc-ecc-StructureDefinition-ihe-sdc-ecc-ihe-sdc-ecc-DocumentReference"
+                name="IHE SDC/eCC on FHIR DocumentReference"
+                spec="ihe-sdc-ecc"/>
+      <artifact id="StructureDefinition/ihe-sdc-ecc-Observation"
+                key="FHIR-ihe-sdc-ecc-StructureDefinition-ihe-sdc-ecc-Observation"
+                name="IHE SDC/eCC on FHIR Observation"
+                spec="ihe-sdc-ecc"/>
+      <artifact id="DocumentReference/eCCDocRef0"
+                key="FHIR-ihe-sdc-ecc-DocumentReference-eCCDocRef0"
+                name="SDC eCC DocumentReference"
+                spec="ihe-sdc-ecc"/>
+      <artifact id="Observation/SDCeCCObservationChild"
+                key="FHIR-ihe-sdc-ecc-Observation-SDCeCCObservationChild"
+                name="SDC eCC Observation Child Example"
+                spec="ihe-sdc-ecc"/>
+      <artifact id="Observation/SDCeCCObservationCode"
+                key="FHIR-ihe-sdc-ecc-Observation-SDCeCCObservationCode"
+                name="SDC eCC Observation Code Example"
+                spec="ihe-sdc-ecc"/>
+      <artifact id="Observation/SDCeCCObservationCodeLIR"
+                key="FHIR-ihe-sdc-ecc-Observation-SDCeCCObservationCodeLIR"
+                name="SDC eCC Observation List Item Response Example"
+                spec="ihe-sdc-ecc"/>
+      <artifact id="Observation/SDCeCCObservationParent"
+                key="FHIR-ihe-sdc-ecc-Observation-SDCeCCObservationParent"
+                name="SDC eCC Observation Parent Example"
+                spec="ihe-sdc-ecc"/>
+      <artifact id="Observation/SDCeCCObservationSection"
+                key="FHIR-ihe-sdc-ecc-Observation-SDCeCCObservationSection"
+                name="SDC eCC Observation Section Example"
+                spec="ihe-sdc-ecc"/>
+      <artifact id="Observation/SDCeCCObservationStringEx"
+                key="FHIR-ihe-sdc-ecc-Observation-SDCeCCObservationStringEx"
+                name="SDC eCC Observation Text Example"
+                spec="ihe-sdc-ecc"/>
+      <artifact id="DiagnosticReport/eCCDiagnosticReport0"
+                key="FHIR-ihe-sdc-ecc-DiagnosticReport-eCCDiagnosticReport0"
+                name="eCC Diagnostic Report"
+                spec="ihe-sdc-ecc"/>
+      <page key="FHIR-ihe-sdc-ecc-NA" name="(NA)" spec="ihe-sdc-ecc"/>
+      <page key="FHIR-ihe-sdc-ecc-many" name="(many)" spec="ihe-sdc-ecc"/>
+      <page key="FHIR-ihe-sdc-ecc-artifacts"
+            name="Artifacts Summary"
+            spec="ihe-sdc-ecc"/>
+      <page key="FHIR-ihe-sdc-ecc-dataextraction"
+            name="Data Extraction"
+            spec="ihe-sdc-ecc"/>
+      <page key="FHIR-ihe-sdc-ecc-downloads"
+            name="Downloads"
+            spec="ihe-sdc-ecc"/>
+      <page key="FHIR-ihe-sdc-ecc-index" name="Home" spec="ihe-sdc-ecc"/>
+      <page key="FHIR-ihe-sdc-ecc-support" name="Support" spec="ihe-sdc-ecc"/>
+      <page key="FHIR-ihe-sdc-ecc-toc"
+            name="Table of Contents"
+            spec="ihe-sdc-ecc"/>
+      <page key="FHIR-ihe-sdc-ecc-terminology"
+            name="Terminology"
+            spec="ihe-sdc-ecc"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-fhir-registry-protocols-ig"
                   name="Protocols for Clinical Registry Extraction and Data Submission (FHIR)"
                   ciUrl="http://build.fhir.org/ig/HL7/fhir-registry-protocols-ig"
