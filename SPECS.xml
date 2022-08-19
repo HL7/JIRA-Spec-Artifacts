@@ -41648,13 +41648,13 @@
                   key="FHIR-us-ecr"
                   name="Electronic Case Reporting (FHIR)"
                   ballotUrl="http://hl7.org/fhir/us/ecr/2021Jan"
-                  gitUrl="https://github.com/HL7/case-reporting"
-                  url="http://hl7.org/fhir/us/ecr"
                   ciUrl="http://build.fhir.org/ig/HL7/case-reporting"
+                  defaultVersion="2.1.0"
                   defaultWorkgroup="pher"
-                  defaultVersion="2.1.0">
+                  gitUrl="https://github.com/HL7/case-reporting"
+                  url="http://hl7.org/fhir/us/ecr">
       <version code="current" url="http://build.fhir.org/ig/HL7/case-reporting"/>
-      <version code="2.1.0" url="http://hl7.org/fhir/us/ecr/STU2.1.0"/>
+      <version code="2.1.0" url="http://hl7.org/fhir/us/ecr/STU2.1"/>
       <version code="2.0.0"
                deprecated="true"
                url="http://hl7.org/fhir/us/ecr/STU2"/>
@@ -41756,6 +41756,14 @@
       <artifact id="ValueSet/valueset-ostc-example"
                 key="FHIR-us-ecr-ValueSet-valueset-ostc-example"
                 name="Example ValueSet: Organism Substance Triggers for Public Health Reporting"
+                spec="us-ecr"/>
+      <artifact id="ValueSet/valueset-sdltc-example"
+                key="FHIR-us-ecr-ValueSet-valueset-sdltc-example"
+                name="Example ValueSet: Suspected Disorder Lab Obs Triggers for Public Health Reporting"
+                spec="us-ecr"/>
+      <artifact id="ValueSet/valueset-sdmtc-example"
+                key="FHIR-us-ecr-ValueSet-valueset-sdmtc-example"
+                name="Example ValueSet: Suspected Disorder Medication Order Triggers for Public Health Reporting"
                 spec="us-ecr"/>
       <artifact id="ValueSet/valueset-sdtc-example"
                 key="FHIR-us-ecr-ValueSet-valueset-sdtc-example"
@@ -42044,7 +42052,8 @@
                 key="FHIR-us-ecr-Library-RuleFilters"
                 name="Rule Filters Example Library"
                 spec="us-ecr"/>
-      <artifact id="StructureDefinition/therapeutic-medication-response-extension"
+      <artifact deprecated="true"
+                id="StructureDefinition/therapeutic-medication-response-extension"
                 key="FHIR-us-ecr-StructureDefinition-therapeutic-medication-response-extension"
                 name="Therapeutic Medication Response Extension"
                 spec="us-ecr"/>
@@ -42185,6 +42194,10 @@
       <artifact id="StructureDefinition/us-ph-computable-valueset"
                 key="FHIR-us-ecr-StructureDefinition-us-ph-computablevalueset"
                 name="US Public Health Computable ValueSet"
+                spec="us-ecr"/>
+      <artifact id="ValueSet/us-ph-computable-valueset-example"
+                key="FHIR-us-ecr-ValueSet-us-ph-computable-valueset-example"
+                name="US Public Health Computable Valueset Example"
                 spec="us-ecr"/>
       <artifact id="StructureDefinition/us-ph-condition"
                 key="FHIR-us-ecr-StructureDefinition-us-ph-condition"
@@ -42442,6 +42455,10 @@
                 key="FHIR-us-ecr-StructureDefinition-us-ph-supplemental-valueset-library"
                 name="US Public Health Supplemental Valueset Library"
                 spec="us-ecr"/>
+      <artifact id="StructureDefinition/us-ph-therapeutic-medication-response-extension"
+                key="FHIR-us-ecr-StructureDefinition-us-ph-therapeutic-medication-response-extension"
+                name="US Public Health Therapeutic Medication Response Extension"
+                spec="us-ecr"/>
       <artifact id="StructureDefinition/us-ph-transportation-details"
                 key="FHIR-us-ecr-StructureDefinition-us-ph-transportation-details"
                 name="US Public Health Transportation Details"
@@ -42501,6 +42518,10 @@
       <artifact id="ValueSet/us-ph-valueset-priority"
                 key="FHIR-us-ecr-ValueSet-us-ph-valueset-priority"
                 name="US Public Health ValueSet Priority"
+                spec="us-ecr"/>
+      <artifact id="ValueSet/us-ph-valueset-example"
+                key="FHIR-us-ecr-ValueSet-us-ph-valueset-example"
+                name="US Public Health Valueset Example"
                 spec="us-ecr"/>
       <artifact id="StructureDefinition/us-ph-valueset-library"
                 key="FHIR-us-ecr-StructureDefinition-us-ph-valueset-library"
