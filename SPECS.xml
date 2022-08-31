@@ -3201,15 +3201,19 @@
                   gitUrl="https://github.com/HL7/cds-hooks-hl7-site"
                   ciUrl="http://cds-hooks.org"
                   defaultWorkgroup="cds"
-                  defaultVersion="1.0">
+                  defaultVersion="2.0">
       <version code="1.0"/>
+      <version code="2.0"/>
       <artifact name="Conformance"
                 key="FHIR-cds-hooks-Conformance"
                 deprecated="true"
                 spec="cds-hooks"/>
       <page name="(NA)" key="FHIR-cds-hooks-NA" spec="cds-hooks"/>
       <page name="(many)" key="FHIR-cds-hooks-many" spec="cds-hooks"/>
-      <page name="(profiles)" key="FHIR-cds-hooks-profiles" spec="cds-hooks"/>
+      <page name="(profiles)"
+            key="FHIR-cds-hooks-profiles"
+            deprecated="true"
+            spec="cds-hooks"/>
       <page name="documentation"
             key="FHIR-cds-hooks-documentation"
             deprecated="true"
@@ -3218,6 +3222,10 @@
             key="FHIR-cds-hooks-index"
             deprecated="true"
             spec="cds-hooks"/>
+      <page name="specification"
+            key="FHIR-cds-hooks-specification"
+            spec="cds-hooks"/>
+      <page name="hooks" key="FHIR-cds-hooks-hooks" spec="cds-hooks"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-cds-hooks-patient-view"
