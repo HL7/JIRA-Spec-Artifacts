@@ -1,6 +1,6 @@
 # JIRA-Spec-Artifacts
 This project manages the artifacts, pages, and other lists associated with all HL7 projects managed through JIRA feedback projects.
- 
+
 Read more about it here: <https://confluence.hl7.org/display/HL7/Configuring+Specification+Feedback>
 
 To make pull requests against this project, create a fork in your personal Github space and submit a pull request from there.  (Most users will not have permission to create branches directly within this project.)
