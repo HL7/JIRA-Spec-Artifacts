@@ -127,7 +127,7 @@
     <xsl:for-each select="$ballotSpecs/specification[not(starts-with(@gitUrl, 'https://github.com/HL7/')) and not(@deprecated='true') and starts-with(@key, 'FHIR-')]">
       <xsl:message terminate="yes" select="concat('ERROR: FHIR specifications that are not deprecated must have a gitUrl attribute that starts with ''https://github.com/HL7/'' ', @key)"/>
     </xsl:for-each>
-    <xsl:for-each select="$ballotSpecs/specification[not(starts-with(@ciUrl, 'http://build.fhir.org')) and $ballotSpecs/specification[not(starts-with(@ciUrl, 'https://build.fhir.org')) and not(@deprecated='true') and starts-with(@key, 'FHIR-')]">
+    <xsl:for-each select="$ballotSpecs/specification[not((starts-with(@ciUrl, 'http://build.fhir.org')) or starts-with(@ciUrl, 'https://build.fhir.org')) and not(@deprecated='true') and starts-with(@key, 'FHIR-')]">
       <xsl:message select="concat('WARNING: FHIR specifications that are not deprecated SHOULD have a ciUrl attribute that starts with ''https://build.fhir.org'' ', @key, ' - actual was: ', @ciUrl)"/>
     </xsl:for-each>
     <xsl:for-each select="$ballotSpecs/specification[not(starts-with(@url, 'http://hl7.org/fhir')) and not(@deprecated='true') and starts-with(@key, 'FHIR-')]">
