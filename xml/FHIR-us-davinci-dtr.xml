@@ -1,30 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-dtr/2019Sep" ciUrl="http://build.fhir.org/ig/HL7/davinci-dtr" defaultVersion="1.0.0" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/davinci-dtr" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" url="http://hl7.org/fhir/us/davinci-dtr"><version code="current" url="http://build.fhir.org/ig/HL7/davinci-dtr"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-dtr/2022May" ciUrl="http://build.fhir.org/ig/HL7/davinci-dtr" defaultVersion="1.0.0" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/davinci-dtr" url="http://hl7.org/fhir/us/davinci-dtr">
+<version code="current" url="http://build.fhir.org/ig/HL7/davinci-dtr"/>
+<version code="1.1.0-ballot" url="http://hl7.org/fhir/us/davinci-dtr/2022May"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-dtr/STU1"/>
-<version code="0.2.0" url="http://hl7.org/fhir/us/davinci-dtr/2019Sep"/>
+<version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-dtr/2019Sep"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-dtr/2019May"/>
+<version code="1.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-dtr/STU1.1"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="Questionnaire/home-o2-questionnaire" key="Questionnaire-home-o2-questionnaire" name="DTR Home Oxygen Therapy Questionnaire - R4"/>
-<artifact id="QuestionnaireResponse/home-o2-questionnaireresponse" key="QuestionnaireResponse-home-o2-questionnaireresponse" name="DTR Home Oxygen Therapy QuestionnaireResponse - R4"/>
-<artifact id="StructureDefinition/dtr-questionnaire-r4" key="StructureDefinition-dtr-questionnaire-r4" name="DTR Questionnaire - R4"/>
-<artifact id="StructureDefinition/dtr-questionnaireresponse-r4" key="StructureDefinition-dtr-questionnaireresponse-r4" name="DTR QuestionnaireResponse - R4"/>
-<artifact id="StructureDefinition/dtr-task-r4" key="StructureDefinition-dtr-task-r4" name="DTR Task - R4"/>
-<artifact id="Task/blood-gass-panel-task-r4" key="Task-blood-gass-panel-task-r4" name="DTR Task Example - R4"/>
+<artifact id="StructureDefinition/dtr-coverage-r4" key="StructureDefinition-dtr-coverage-r4" name="DTR Coverage R4"/>
+<artifact id="StructureDefinition/dtr-documentreference-r4" key="StructureDefinition-dtr-documentreference-r4" name="DTR Document Reference R4"/>
+<artifact id="StructureDefinition/dtr-questionnaire-r4" key="StructureDefinition-dtr-questionnaire-r4" name="DTR Questionnaire R4"/>
+<artifact id="StructureDefinition/dtr-questionnaireresponse-r4" key="StructureDefinition-dtr-questionnaireresponse-r4" name="DTR Questionnaire Response R4"/>
+<artifact id="StructureDefinition/dtr-sdc-questionnaire" key="StructureDefinition-dtr-sdc-questionnaire" name="DTR SDC Questionnaire"/>
+<artifact id="StructureDefinition/dtr-sdc-questionnaire-adapt" key="StructureDefinition-dtr-sdc-questionnaire-adapt" name="DTR SDC Questionnaire for adaptive form"/>
+<artifact deprecated="true" id="StructureDefinition/dtr-task-r4" key="StructureDefinition-dtr-task-r4" name="DTR Task - R4"/>
+<artifact deprecated="true" id="Task/blood-gass-panel-task-r4" key="Task-blood-gass-panel-task-r4" name="DTR Task Example - R4"/>
+<artifact id="Coverage/DTRCoverage1002" key="Coverage-DTRCoverage1002" name="DTRCoverage1002"/>
+<artifact id="OperationDefinition/Questionnaire-for-Order" key="OperationDefinition-Questionnaire-for-Order" name="DTRQuestionnaireOperation"/>
+<artifact id="StructureDefinition/endpoint" key="StructureDefinition-endpoint" name="PayerEndpoint"/>
+<artifact id="StructureDefinition/context" key="StructureDefinition-context" name="QuestionnaireResponseContext"/>
+<artifact id="Contract/contract1001" key="Contract-contract1001" name="contract1001"/>
+<artifact id="Coverage/coverage1001" key="Coverage-coverage1001" name="coverage1001"/>
+<artifact id="DeviceRequest/deviceRequest0001" key="DeviceRequest-deviceRequest0001" name="deviceRequest0001"/>
+<artifact id="Patient/example1" key="Patient-example1" name="example1"/>
+<artifact id="Practitioner/example2" key="Practitioner-example2" name="example2"/>
+<artifact id="DocumentReference/home-o2-documentreference" key="DocumentReference-home-o2-documentreference" name="home-o2-documentreference"/>
+<artifact id="Questionnaire/home-o2-questionnaire" key="Questionnaire-home-o2-questionnaire" name="home-o2-questionnaire"/>
+<artifact id="QuestionnaireResponse/home-o2-questionnaireresponse" key="QuestionnaireResponse-home-o2-questionnaireresponse" name="home-o2-questionnaireresponse"/>
+<artifact id="QuestionnaireResponse/home-o2-sdc-adaptive-questionnaireresponse" key="QuestionnaireResponse-home-o2-sdc-adaptive-questionnaireresponse" name="home-o2-sdc-adaptive-questionnaireresponse"/>
+<artifact id="Questionnaire/home-o2-sdc-questionnaire" key="Questionnaire-home-o2-sdc-questionnaire" name="home-o2-sdc-questionnaire"/>
+<artifact id="Organization/org1001" key="Organization-org1001" name="org1001"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page deprecated="true" key="profiles" name="(profiles)"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="specification__behaviors" name="Behaviors"/>
+<page key="specification__behaviors__best_practices" name="Best Practices"/>
 <page key="specification__cds_hooks" name="CDS Hooks"/>
 <page key="specification__cql" name="CQL"/>
+<page key="changehistory" name="Change History"/>
 <page key="credits" name="Credits"/>
-<page key="examples" name="Examples"/>
+<page key="index" name="Documentation Templates Rules Implementation Guide Home Page"/>
+<page deprecated="true" key="examples" name="Examples"/>
 <page key="specification__behaviors__execution_of_CQL" name="Execution of CQL"/>
-<page key="specification__behaviors" name="Expectations of Application Behavior"/>
-<page key="resources__home-o2-prepopulation" name="Home Oxygen Therapy Questionnaire Prepopulation CQL"/>
-<page key="index" name="Home Page"/>
+<page key="specification" name="Formal Specification"/>
+<page deprecated="true" key="resources__home-o2-prepopulation" name="Home Oxygen Therapy Questionnaire Prepopulation CQL"/>
+<page key="specification__behaviors__passing_information_other_exchanges" name="How DTR passes information to PAS, PAO or other exchanges"/>
 <page key="specification__behaviors__launch_outside_of_CRD" name="Launch outside of CRD"/>
 <page key="specification__behaviors__persisting_application_state" name="Persisting Application State"/>
 <page key="specification__behaviors__persisting_results" name="Persisting Results"/>
@@ -32,12 +56,14 @@
 <page key="specification__profiles" name="Profiles"/>
 <page key="specification__behaviors__questionnaire_evaluation" name="Questionnaire Evaluation"/>
 <page key="specification__behaviors__requesting_additional_information_from_the_user" name="Requesting Additional Information from the User"/>
-<page key="resources" name="Resources"/>
+<page deprecated="true" key="resources" name="Resources"/>
 <page key="specification__behaviors__retrieval_of_payer_resources" name="Retrieval of Payer Resources"/>
-<page key="specification" name="Specification"/>
+<page key="specification__behaviors__sdc_adaptive_forms" name="SDC Adaptive Forms"/>
 <page key="toc" name="Table of Contents"/>
 <page key="specification__behaviors__task_creation" name="Task Creation"/>
-<page key="underlying_technologies" name="Underlying Technologies"/>
-<page key="use_case" name="Use Case"/>
+<page key="underlying_technologies" name="Technical Background and Underlying Technologies"/>
+<page deprecated="true" key="use_case" name="Use Case"/>
+<page key="use_cases" name="Use Cases and Overview"/>
+<page key="specification_value_set_code_system_guidance" name="Value Set and Code System Guidance"/>
 <page deprecated="true" key="administration-module" name="administration-module"/>
 </specification>
