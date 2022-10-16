@@ -1480,6 +1480,10 @@
                 id="StructureDefinition/ActivityDefinition"
                 workgroup="cds"
                 spec="core"/>
+      <artifact name="ActorDefinition"
+                key="FHIR-core-ActorDefinition"
+                id="StructureDefinition/ActorDefinition"
+                spec="core"/>
       <artifact name="AdministrableProductDefinition"
                 key="FHIR-core-MedicinalProductPharmaceutical"
                 id="StructureDefinition/AdministrableProductDefinition"
@@ -1556,6 +1560,7 @@
                 key="FHIR-core-EntryDefinition"
                 id="StructureDefinition/EntryDefinition"
                 workgroup="oo"
+                deprecated="true"
                 spec="core"/>
       <artifact name="ChargeItem"
                 key="FHIR-core-ChargeItem"
@@ -1587,9 +1592,9 @@
                 id="StructureDefinition/ClinicalImpression"
                 workgroup="pc"
                 spec="core"/>
-      <artifact name="ClinicalUseIssue"
+      <artifact name="ClinicalUseDefinition (was ClinicalUseIssue)"
                 key="FHIR-core-ClinicalUseIssue"
-                id="StructureDefinition/ClinicalUseIssue"
+                id="StructureDefinition/ClinicalUseDefinition"
                 workgroup="brr"
                 spec="core"/>  
       <artifact name="CodeSystem"
@@ -1703,6 +1708,11 @@
       <artifact name="DeviceRequest (was DeviceUseRequest)"
                 key="FHIR-core-DeviceUseRequest"
                 id="StructureDefinition/DeviceUseRequest"
+                workgroup="oo"
+                spec="core"/>
+      <artifact name="DeviceDispense"
+                key="FHIR-core-DeviceDispense"
+                id="StructureDefinition/DeviceDispense"
                 workgroup="oo"
                 spec="core"/>
       <artifact name="DeviceUsage (DeviceUseStatement)"
@@ -1840,14 +1850,14 @@
                 workgroup="ii"
                 deprecated="true"
                 spec="core"/>
-      <artifact name="ImagingStudy"
-                key="FHIR-core-ImagingStudy"
-                id="StructureDefinition/ImagingStudy"
-                workgroup="ii"
-                spec="core"/>
       <artifact name="ImagingSelection"
                 key="FHIR-core-ImagingSelection"
                 id="StructureDefinition/ImagingSelection"
+                workgroup="ii"
+                spec="core"/>
+      <artifact name="ImagingStudy"
+                key="FHIR-core-ImagingStudy"
+                id="StructureDefinition/ImagingStudy"
                 workgroup="ii"
                 spec="core"/>
       <artifact name="Immunization"
@@ -2017,6 +2027,11 @@
                 key="FHIR-core-NamingSystem"
                 id="StructureDefinition/NamingSystem"
                 spec="core"/>
+      <artifact name="NutritionIntake"
+                key="FHIR-core-NutritionIntake"
+                id="StructureDefinition/NutritionIntake"
+                workgroup="oo"
+                spec="core"/>
       <artifact name="NutritionOrder (was NutritionRequest)"
                 key="FHIR-core-NutritionRequest"
                 id="StructureDefinition/NutritionRequest"
@@ -2185,10 +2200,14 @@
                 id="StructureDefinition/RelatedPerson"
                 workgroup="pa"
                 spec="core"/>
-      <artifact name="RequestGroup"
+      <artifact name="RequestOrchestration (was RequestGroup)"
                 key="FHIR-core-RequestGroup"
                 id="StructureDefinition/RequestGroup"
                 workgroup="cds"
+                spec="core"/>
+      <artifact name="Requirements"
+                key="FHIR-core-Requirements"
+                id="StructureDefinition/Requirements"
                 spec="core"/>
       <artifact name="ResearchStudy"
                 key="FHIR-core-ResearchStudy"
@@ -2412,7 +2431,10 @@
       <page name="Asynchronous API (async)"
             key="FHIR-core-async"
             url="async"
-            spec="core"/>
+            spec="core">
+         <otherpage url="async-bulk"/>
+         <otherpage url="async-bundle"/>
+      </page>
       <page name="Backbone Element"
             key="FHIR-core-backboneelement"
             url="backboneelement"
@@ -2519,13 +2541,28 @@
             url="datatypes"
             workgroup="mnm"
             spec="core">
-         <otherpage url="datatypes-version-maps"/>
+         <otherpage url="datatypes-definitions"/>
+         <otherpage url="datatypes-examples"/>
          <otherpage url="datatypes-extras"/>
+         <otherpage url="datatypes-mappings"/>
+         <otherpage url="datatypes-version-maps"/>
          <otherpage url="marketingstatus"/>
+         <otherpage url="marketingstatus-definitions"/>
+         <otherpage url="marketingstatus-examples"/>
+         <otherpage url="marketingstatus-extras"/>
+         <otherpage url="marketingstatus-mappings"/>
          <otherpage url="ordereddistribution"/>
          <otherpage url="population"/>
+         <otherpage url="population-definitions"/>
+         <otherpage url="population-examples"/>
+         <otherpage url="population-extras"/>
+         <otherpage url="population-mappings"/>
          <otherpage url="prodcharacteristic"/>
          <otherpage url="productshelflife"/>
+         <otherpage url="productshelflife-definitions"/>
+         <otherpage url="productshelflife-examples"/>
+         <otherpage url="productshelflife-extras"/>
+         <otherpage url="productshelflife-mappings"/>
          <otherpage url="relatedartifacts"/>
          <otherpage url="statistic"/>
       </page>
@@ -2559,7 +2596,12 @@
             key="FHIR-core-dosage"
             url="dosage"
             workgroup="pharm"
-            spec="core"/>
+            spec="core">
+         <otherpage url="dosage-definitions"/>
+         <otherpage url="dosage-examples"/>
+         <otherpage url="dosage-extras"/>
+         <otherpage url="dosage-mappings"/>
+      </page>
       <page name="Downloads"
             key="FHIR-core-downloads"
             url="downloads"
@@ -2579,16 +2621,34 @@
             key="FHIR-core-elementdefinition"
             url="elementdefinition"
             spec="core">
+         <otherpage url="elementdefinition-definitions"/>
+         <otherpage url="elementdefinition-examples"/>
          <otherpage url="elementdefinition-extras"/>
+         <otherpage url="elementdefinition-mappings"/>
       </page>
       <page name="Exchange Module"
             key="FHIR-core-exchange-module"
             url="exchange-module"
             spec="core"/>
+      <page name="Exchanging Resources"
+            key="FHIR-core-exchanging"
+            url="exchanging"
+            spec="core">
+         <otherpage url="exchanging-messaging"/>
+         <otherpage url="exchanging-operation"/>
+         <otherpage url="exchanging-polling"/>
+         <otherpage url="exchanging-request"/>
+         <otherpage url="exchanging-rest"/>
+         <otherpage url="exchanging-search"/>
+         <otherpage url="exchanging-subscription"/>
+      </page>
       <page name="Extensibility"
             key="FHIR-core-extensibility"
             url="extensibility"
-            spec="core"/>
+            spec="core">
+         <otherpage url="extensibility-definitions"/>
+         <otherpage url="extensibility-examples"/>
+      </page>
       <page name="Extension Registry"
             key="FHIR-core-extensibility-registry"
             url="extensibility-registry"
@@ -2608,7 +2668,7 @@
             url="financial-module"
             workgroup="fm"
             spec="core"/>
-      <page name="Resource Formats"
+      <page name="Resource Definitions"
             key="FHIR-core-formats"
             url="formats"
             workgroup="its"
@@ -2686,6 +2746,10 @@
             workgroup="its"
             deprecated="true"
             spec="core"/>
+      <page name="Logical Models"
+            key="FHIR-core-logical"
+            url="logical"
+            spec="core"/>
       <page name="Managing Resource Identity (managing)"
             key="FHIR-core-managing"
             url="managing"
@@ -2717,15 +2781,23 @@
       <page name="Metadata Types"
             key="FHIR-core-metadatatypes"
             url="metadatatypes"
-            spec="core"/>
+            spec="core">
+         <otherpage url="metadatatypes-definitions"/>
+         <otherpage url="metadatatypes-examples"/>
+         <otherpage url="metadatatypes-mappings"/>
+      </page>
       <page name="Modules"
             key="FHIR-core-modules"
             url="modules"
-            spec="core"/>
+            spec="core">
+         <otherpage url="modules-fragment"/>
+         <otherpage url="modules-list"/>
+      </page>
       <page name="Narrative"
             key="FHIR-core-narrative"
             url="narrative"
             spec="core">
+         <otherpage url="narrative-definitions"/>
          <otherpage url="narrative-example"/>
       </page>
       <page name="ND-JSON"
@@ -2734,11 +2806,17 @@
             workgroup="its"
             spec="core"/>
       <page name="Namespaces (ns)" key="FHIR-core-ns" url="ns" spec="core"/>
+      <page name="OIDs"
+            key="FHIR-core-oids"
+            url="oids"
+            workgroup="vocab"
+            spec="core"/>
       <page name="operations"
             key="FHIR-core-operations"
             url="operations"
             spec="core">
          <otherpage url="op-example-request"/>
+         <otherpage url="operations-for-large-resources"/>
       </page>
       <page name="Operations List"
             key="FHIR-core-operationslist"
@@ -2752,6 +2830,10 @@
          <otherpage url="overview-clinical"/>
          <otherpage url="overview-dev"/>
       </page>
+      <page name="Packages"
+            key="FHIR-core-packages"
+            url="packages"
+            spec="core"/>
       <page name="Patterns"
             key="FHIR-core-patterns"
             url="patterns"
@@ -2763,7 +2845,9 @@
       <page name="Profiling"
             key="FHIR-core-profiling"
             url="profiling"
-            spec="core"/>
+            spec="core">
+         <otherpage url="profiling-examples"/>
+      </page>
       <page name="Managing Push and Pull (pushpull)"
             key="FHIR-core-pushpull"
             url="pushpull"
@@ -2777,11 +2861,15 @@
             key="FHIR-core-r3maps"
             url="r3maps"
             spec="core"/>
+      <page name="Transforms between R4 and R5 (r4maps)"
+            key="FHIR-core-r4maps"
+            url="r4maps"
+            spec="core"/>
       <page name="Resource Description Framework (RDF)"
             key="FHIR-core-rdf"
             url="rdf"
             workgroup="its"
-            spec="core"/>
+            spec="core"/>  
       <page name="Implementation Registry (registry/iglist)"
             key="FHIR-core-iglist"
             url="registry"
@@ -2789,6 +2877,13 @@
       <page name="References"
             key="FHIR-core-references"
             url="references"
+            spec="core">
+         <otherpage url="references-definitions"/>
+         <otherpage url="references-extras"/>
+      </page>
+      <page name="Resource Formats"
+            key="FHIR-core-resource-formats"
+            url="resource-formats"
             spec="core"/>
       <page name="Guide to Resources (resourceguide)"
             key="FHIR-core-resourceguide"
@@ -2799,6 +2894,7 @@
             url="resourcelist"
             spec="core">
          <otherpage url="fmg"/>
+         <otherpage url="resourceslist-examples"/>
       </page>
       <page name="Resources (see BaseResource)"
             key="FHIR-core-resources"
@@ -2814,6 +2910,7 @@
             url="sc"
             spec="core"/>
       <page name="Search" key="FHIR-core-search" url="search" spec="core">
+         <otherpage url="search-build"/>
          <otherpage url="search_filter"/>
       </page>
       <page name="Search Parameter Registry"
@@ -2855,13 +2952,13 @@
             workgroup="soa"
             deprecated="true"
             spec="core"/>
-      <page name="Subscriptions Framework"
-            key="FHIR-core-subscriptions"
-            url="subscriptions"
-            spec="core"/>
       <page name="Persistant Storage"
             key="FHIR-core-storage"
             url="storage"
+            spec="core"/>
+      <page name="Subscriptions Framework"
+            key="FHIR-core-subscriptions"
+            url="subscriptions"
             spec="core"/>
       <page name="Summary"
             key="FHIR-core-summary"
@@ -2889,6 +2986,11 @@
          <otherpage url="ucum"/>
          <otherpage url="unii"/>
       </page>
+      <page name="Terminologies - Binding Examples"
+            key="FHIR-core-terminologies-binding-examples"
+            url="terminologies-binding-examples"
+            workgroup="vocab"
+            spec="core"/>
       <page name="Terminologies - Concept Maps"
             key="FHIR-core-terminologies-conceptmaps"
             url="terminologies-conceptmaps"
@@ -2947,14 +3049,16 @@
             key="FHIR-core-types"
             url="types"
             spec="core">
+         <otherpage url="types-definitions"/>
          <otherpage url="types-extras"/>
+         <otherpage url="types-mappings"/>
          <otherpage url="tyeps-version-maps"/>
       </page>
+      <page name="UML definition" key="FHIR-core-uml" url="uml" spec="core"/>
       <page name="Update Rules (updates)"
             key="FHIR-core-updates"
             url="updates"
             spec="core"/>
-      <page name="UML definition" key="FHIR-core-uml" url="uml" spec="core"/>
       <page name="UsageContext (see Metadata Types)"
             key="FHIR-core-usagecontext"
             url="usagecontext"
@@ -2989,8 +3093,9 @@
             key="FHIR-core-workflow"
             url="workflow"
             spec="core">
-         <otherpage url="workflow-communications"/>
          <otherpage url="workflow-ad-hoc"/>
+         <otherpage url="workflow-communications"/>
+         <otherpage url="workflow-examples"/>
          <otherpage url="workflow-management"/>
       </page>
       <page name="Workflow Module"
