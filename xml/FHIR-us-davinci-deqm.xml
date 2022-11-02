@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="http://build.fhir.org/ig/HL7/davinci-deqm" defaultVersion="3.0.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/davinci-deqm" url="http://hl7.org/fhir/us/davinci-deqm">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-deqm/2020Sep" ciUrl="http://build.fhir.org/ig/HL7/davinci-deqm" defaultVersion="3.1.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/davinci-deqm" url="http://hl7.org/fhir/us/davinci-deqm">
 <version code="current" url="http://build.fhir.org/ig/HL7/davinci-deqm"/>
+<version code="3.1.0" url="http://hl7.org/fhir/us/davinci-deqm/STU3.1"/>
 <version code="3.0.0" url="http://hl7.org/fhir/us/davinci-deqm/STU3"/>
-<version code="2.1.0" url="http://hl7.org/fhir/us/davinci-deqm/2020Sep"/>
-<version code="2.0.0" url="http://hl7.org/fhir/us/davinci-deqm/STU2"/>
-<version code="1.1.0" url="http://hl7.org/fhir/us/davinci-deqm/2020Feb"/>
-<version code="1.0.0" url="http://hl7.org/fhir/us/davinci-deqm/STU1"/>
+<version code="2.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2020Sep"/>
+<version code="2.0.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/STU2"/>
+<version code="1.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2020Feb"/>
+<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/STU1"/>
 <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2019May/STU3/index.html"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2018Sep/STU3/index.html"/>
 <version code="0.1" deprecated="true"/>
@@ -19,9 +20,9 @@
 <artifact id="Coverage/coverage01" key="Coverage-coverage01" name="Coverage01"/>
 <artifact id="Coverage/coverage02" key="Coverage-coverage02" name="Coverage02"/>
 <artifact id="Coverage/coverage03" key="Coverage-coverage03" name="Coverage03"/>
-<artifact id="StructureDefinition/coverage-deqm" key="StructureDefinition-coverage-deqm" name="DEQM Coverage Profile"/>
 <artifact id="StructureDefinition/extension-alternateScoreType" key="StructureDefinition-extension-alternateScoreType" name="DEQM Alternate Score Type Extension"/>
 <artifact id="StructureDefinition/extension-certificationIdentifier" key="StructureDefinition-extension-certificationIdentifier" name="DEQM Certification Identifier Extension"/>
+<artifact id="StructureDefinition/coverage-deqm" key="StructureDefinition-coverage-deqm" name="DEQM Coverage Profile"/>
 <artifact id="StructureDefinition/datax-measurereport-deqm" key="StructureDefinition-datax-measurereport-deqm" name="DEQM Data Exchange MeasureReport Profile"/>
 <artifact id="StructureDefinition/extension-gapStatus" key="StructureDefinition-extension-gapStatus" name="DEQM Gap Status Modifier Extension"/>
 <artifact id="StructureDefinition/gaps-bundle-deqm" key="StructureDefinition-gaps-bundle-deqm" name="DEQM Gaps In Care Bundle Profile"/>
@@ -36,7 +37,7 @@
 <artifact id="StructureDefinition/extension-measureScoring" key="StructureDefinition-extension-measureScoring" name="DEQM Measure Scoring Extension"/>
 <artifact id="MedicationAdministration/medicationadministration01" key="MedicationAdministration-medicationadministration01" name="DEQM MedicationAdministration Example"/>
 <artifact id="StructureDefinition/medicationadministration-deqm" key="StructureDefinition-medicationadministration-deqm" name="DEQM MedicationAdministration Profile"/>
-<artifact id="StructureDefinition/organization-deqm" key="StructureDefinition-organization-deqm" name="DEQM Organization Profile"/>
+<artifact deprecated="true" id="StructureDefinition/organization-deqm" key="StructureDefinition-organization-deqm" name="DEQM Organization Profile"/>
 <artifact id="StructureDefinition/extension-populationReference" key="StructureDefinition-extension-populationReference" name="DEQM Population Reference Extension"/>
 <artifact id="StructureDefinition/practitioner-deqm" key="StructureDefinition-practitioner-deqm" name="DEQM Practitioner Profile"/>
 <artifact id="StructureDefinition/extension-reporterGroup" key="StructureDefinition-extension-reporterGroup" name="DEQM Reporter Group Extension"/>
@@ -75,8 +76,11 @@
 <artifact id="MeasureReport/gaps-indv-measurereport02" key="MeasureReport-gaps-indv-measurereport02" name="Gaps Individual MeasureReport02"/>
 <artifact id="MeasureReport/gaps-indv-measurereport03" key="MeasureReport-gaps-indv-measurereport03" name="Gaps Individual MeasureReport03"/>
 <artifact id="MeasureReport/gaps-indv-measurereport04" key="MeasureReport-gaps-indv-measurereport04" name="Gaps Individual MeasureReport04"/>
-<artifact id="Parameters/multiple-gaps-indv-report01" key="Parameters-multiple-gaps-indv-report01" name="Gaps Multiple Bundles Individual MeasureReports01"/>
-<artifact id="Parameters/multiple-gaps-indv-report02" key="Parameters-multiple-gaps-indv-report02" name="Gaps Multiple Bundles Individual MeasureReports02"/>
+<artifact id="Parameters/multiple-gaps-indv-report01" key="Parameters-multiple-gaps-indv-report01" name="Gaps Multiple Parameters Individual MeasureReports01"/>
+<artifact id="Parameters/multiple-gaps-indv-report02" key="Parameters-multiple-gaps-indv-report02" name="Gaps Multiple Parameters Individual MeasureReports02"/>
+<artifact id="Parameters/single-gaps-closed-indv-report01" key="Parameters-single-gaps-closed-indv-report01" name="Gaps Parameters Closed Individual MeasureReport01"/>
+<artifact id="Parameters/single-gaps-closed-indv-report02" key="Parameters-single-gaps-closed-indv-report02" name="Gaps Parameters Closed Individual MeasureReport02"/>
+<artifact id="Parameters/single-gaps-open-indv-report01" key="Parameters-single-gaps-open-indv-report01" name="Gaps Parameters Open Individual MeasureReports"/>
 <artifact id="Patient/gaps-patient01" key="Patient-gaps-patient01" name="Gaps Patient01"/>
 <artifact id="Patient/gaps-patient02" key="Patient-gaps-patient02" name="Gaps Patient02"/>
 <artifact id="Procedure/gaps-procedure01" key="Procedure-gaps-procedure01" name="Gaps Procedure01"/>
