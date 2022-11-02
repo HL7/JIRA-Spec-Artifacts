@@ -1304,8 +1304,8 @@
                   defaultVersion="1.5.3"
                   defaultWorkgroup="cqi"
                   url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=35">
-		<!-- 1.5.3: Release 1 STU 5.3 -->
-		<!-- 1.5.2.1: Release 1 STU 5.2 Errata 1 -->
+		<!-- 1.5.3.1: Release 1 STU 5.3 Errata 1 -->
+		    <version code="1.5.3.1" deprecated="false"/>
 		    <version code="1.5.3" deprecated="false"/>
 		    <version code="1.5.2.1" deprecated="false"/>
 		    <version code="1.5.2" deprecated="true"/>
@@ -19750,17 +19750,27 @@
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-us-davinci-deqm"
                   name="US Da Vinci DEQM (FHIR)"
+                  ballotUrl="http://hl7.org/fhir/us/davinci-deqm/2020Sep"
                   ciUrl="http://build.fhir.org/ig/HL7/davinci-deqm"
-                  defaultVersion="3.0.0"
+                  defaultVersion="3.1.0"
                   defaultWorkgroup="cqi"
                   gitUrl="https://github.com/HL7/davinci-deqm"
                   url="http://hl7.org/fhir/us/davinci-deqm">
       <version code="current" url="http://build.fhir.org/ig/HL7/davinci-deqm"/>
+      <version code="3.1.0" url="http://hl7.org/fhir/us/davinci-deqm/STU3.1"/>
       <version code="3.0.0" url="http://hl7.org/fhir/us/davinci-deqm/STU3"/>
-      <version code="2.1.0" url="http://hl7.org/fhir/us/davinci-deqm/2020Sep"/>
-      <version code="2.0.0" url="http://hl7.org/fhir/us/davinci-deqm/STU2"/>
-      <version code="1.1.0" url="http://hl7.org/fhir/us/davinci-deqm/2020Feb"/>
-      <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-deqm/STU1"/>
+      <version code="2.1.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/us/davinci-deqm/2020Sep"/>
+      <version code="2.0.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/us/davinci-deqm/STU2"/>
+      <version code="1.1.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/us/davinci-deqm/2020Feb"/>
+      <version code="1.0.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/us/davinci-deqm/STU1"/>
       <version code="0.2.0"
                deprecated="true"
                url="http://hl7.org/fhir/us/davinci-deqm/2019May/STU3/index.html"/>
@@ -19799,10 +19809,6 @@
                 key="FHIR-us-davinci-deqm-Coverage-coverage03"
                 name="Coverage03"
                 spec="us-davinci-deqm"/>
-      <artifact id="StructureDefinition/coverage-deqm"
-                key="FHIR-us-davinci-deqm-StructureDefinition-coverage-deqm"
-                name="DEQM Coverage Profile"
-                spec="us-davinci-deqm"/>
       <artifact id="StructureDefinition/extension-alternateScoreType"
                 key="FHIR-us-davinci-deqm-StructureDefinition-extension-alternateScoreType"
                 name="DEQM Alternate Score Type Extension"
@@ -19810,6 +19816,10 @@
       <artifact id="StructureDefinition/extension-certificationIdentifier"
                 key="FHIR-us-davinci-deqm-StructureDefinition-extension-certificationIdentifier"
                 name="DEQM Certification Identifier Extension"
+                spec="us-davinci-deqm"/>
+      <artifact id="StructureDefinition/coverage-deqm"
+                key="FHIR-us-davinci-deqm-StructureDefinition-coverage-deqm"
+                name="DEQM Coverage Profile"
                 spec="us-davinci-deqm"/>
       <artifact id="StructureDefinition/datax-measurereport-deqm"
                 key="FHIR-us-davinci-deqm-StructureDefinition-datax-measurereport-deqm"
@@ -19869,7 +19879,8 @@
                 key="FHIR-us-davinci-deqm-StructureDefinition-medicationadministration-deqm"
                 name="DEQM MedicationAdministration Profile"
                 spec="us-davinci-deqm"/>
-      <artifact id="StructureDefinition/organization-deqm"
+      <artifact deprecated="true"
+                id="StructureDefinition/organization-deqm"
                 key="FHIR-us-davinci-deqm-StructureDefinition-organization-deqm"
                 name="DEQM Organization Profile"
                 spec="us-davinci-deqm"/>
@@ -20027,11 +20038,23 @@
                 spec="us-davinci-deqm"/>
       <artifact id="Parameters/multiple-gaps-indv-report01"
                 key="FHIR-us-davinci-deqm-Parameters-multiple-gaps-indv-report01"
-                name="Gaps Multiple Bundles Individual MeasureReports01"
+                name="Gaps Multiple Parameters Individual MeasureReports01"
                 spec="us-davinci-deqm"/>
       <artifact id="Parameters/multiple-gaps-indv-report02"
                 key="FHIR-us-davinci-deqm-Parameters-multiple-gaps-indv-report02"
-                name="Gaps Multiple Bundles Individual MeasureReports02"
+                name="Gaps Multiple Parameters Individual MeasureReports02"
+                spec="us-davinci-deqm"/>
+      <artifact id="Parameters/single-gaps-closed-indv-report01"
+                key="FHIR-us-davinci-deqm-Parameters-single-gaps-closed-indv-report01"
+                name="Gaps Parameters Closed Individual MeasureReport01"
+                spec="us-davinci-deqm"/>
+      <artifact id="Parameters/single-gaps-closed-indv-report02"
+                key="FHIR-us-davinci-deqm-Parameters-single-gaps-closed-indv-report02"
+                name="Gaps Parameters Closed Individual MeasureReport02"
+                spec="us-davinci-deqm"/>
+      <artifact id="Parameters/single-gaps-open-indv-report01"
+                key="FHIR-us-davinci-deqm-Parameters-single-gaps-open-indv-report01"
+                name="Gaps Parameters Open Individual MeasureReports"
                 spec="us-davinci-deqm"/>
       <artifact id="Patient/gaps-patient01"
                 key="FHIR-us-davinci-deqm-Patient-gaps-patient01"
