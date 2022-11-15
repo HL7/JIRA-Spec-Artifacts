@@ -3360,6 +3360,7 @@
                   gitUrl="https://github.com/HL7/smart-app-launch"
                   url="http://hl7.org/fhir/smart-app-launch">
       <version code="current" url="http://build.fhir.org/ig/HL7/smart-app-launch"/>
+      <version code="2.1.0-ballot" url="http://hl7.org/fhir/smart-app-launch/2023Jan"/>
       <version code="2.0.0" url="http://hl7.org/fhir/smart-app-launch/STU2"/>
       <version code="1.1.0" url="http://hl7.org/fhir/smart-app-launch/2021May"/>
       <version code="1.0.0" url="http://hl7.org/fhir/smart-app-launch/1.0.0"/>
@@ -3370,15 +3371,55 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
+      <artifact id="ValueSet/smart-launch-info"
+                key="FHIR-smart-ValueSet-smart-launch-info"
+                name="Codes for tasks to application launches"
+                spec="smart"/>
+      <artifact id="Basic/app-state"
+                key="FHIR-smart-Basic-app-state"
+                name="Example App State"
+                spec="smart"/>
+      <artifact id="Task/task-for-ehr-launch"
+                key="FHIR-smart-Task-task-for-ehr-launch"
+                name="Example Task for EHR Launch"
+                spec="smart"/>
+      <artifact id="Task/task-for-standalone-launch"
+                key="FHIR-smart-Task-task-for-standalone-launch"
+                name="Example Task for Standalone Launch"
+                spec="smart"/>
+      <artifact id="ValueSet/smart-launch-types"
+                key="FHIR-smart-ValueSet-smart-launch-types"
+                name="Launch Types for tasks to application launches"
+                spec="smart"/>
+      <artifact id="StructureDefinition/smart-app-state-basic"
+                key="FHIR-smart-StructureDefinition-smart-app-state-basic"
+                name="SMART App State"
+                spec="smart"/>
       <artifact deprecated="true"
                 id="StructureDefinition/oauth-uris"
                 key="FHIR-smart-StructureDefinition-oauth-uris"
                 name="SMART on FHIR Oauth URIs"
                 spec="smart"/>
+      <artifact id="CodeSystem/smart-codes"
+                key="FHIR-smart-CodeSystem-smart-codes"
+                name="SMART on FHIR terminology."
+                spec="smart"/>
+      <artifact id="StructureDefinition/task-ehr-launch"
+                key="FHIR-smart-StructureDefinition-task-ehr-launch"
+                name="TaskEhrLaunch"
+                spec="smart"/>
+      <artifact id="StructureDefinition/task-standalone-launch"
+                key="FHIR-smart-StructureDefinition-task-standalone-launch"
+                name="TaskStandaloneLaunch"
+                spec="smart"/>
       <artifact deprecated="true"
                 id="CapabilityStatement/smart-app-launch-example"
                 key="FHIR-smart-CapabilityStatement-smart-app-launch-example"
                 name="smart-app-launch-example"
+                spec="smart"/>
+      <artifact id="CapabilityStatement/smart-app-state-server"
+                key="FHIR-smart-CapabilityStatement-smart-app-state-server"
+                name="smart-app-state-server"
                 spec="smart"/>
       <page key="FHIR-smart-NA" name="(NA)" spec="smart"/>
       <page key="FHIR-smart-many" name="(many)" spec="smart"/>
@@ -3389,10 +3430,10 @@
       <page key="FHIR-smart-app-launch"
             name="App Launch: Launch and Authorization"
             spec="smart"/>
-      <page key="FHIR-smart-artifacts" name="Artifacts Summary" spec="smart"/>
-      <page key="FHIR-smart-client-confidential-asymmetric"
-            name="Client Authentication: Asymmetric (public key)"
+      <page key="FHIR-smart-scopes-and-launch-context"
+            name="App Launch: Scopes and Launch Context"
             spec="smart"/>
+      <page key="FHIR-smart-artifacts" name="Artifacts Summary" spec="smart"/>
       <page key="FHIR-smart-backend-services"
             name="Backend Services"
             spec="smart"/>
@@ -3401,6 +3442,12 @@
             name="Basic Auth Example"
             spec="smart"/>
       <page key="FHIR-smart-best-practices" name="Best Practices" spec="smart"/>
+      <page key="FHIR-smart-client-confidential-asymmetric"
+            name="Client Authentication: Asymmetric (public key)"
+            spec="smart"/>
+      <page key="FHIR-smart-client-confidential-symmetric"
+            name="Client Authentication: Symmetric (shared secret)"
+            spec="smart"/>
       <page key="FHIR-smart-conformance" name="Conformance" spec="smart"/>
       <page key="FHIR-smart-example-app-launch-asymmetric-auth"
             name="Example App Launch for Asymmetric Client Auth"
@@ -3435,13 +3482,13 @@
             spec="smart"/>
       <page key="FHIR-smart-examples" name="Examples" spec="smart"/>
       <page key="FHIR-smart-index" name="Overview" spec="smart"/>
-      <page key="FHIR-smart-scopes-and-launch-context"
-            name="App Launch: Scopes and Launch Context"
-            spec="smart"/>
-      <page key="FHIR-smart-client-confidential-symmetric"
-            name="Client Authentication: Symmetric (shared secret)"
+      <page key="FHIR-smart-app-state"
+            name="Persisting App State (Experimental)"
             spec="smart"/>
       <page key="FHIR-smart-toc" name="Table of Contents" spec="smart"/>
+      <page key="FHIR-smart-task-launch"
+            name="Task profile for requesting SMART launch (Experimental)"
+            spec="smart"/>
       <page key="FHIR-smart-token-introspection"
             name="Token Introspection"
             spec="smart"/>
