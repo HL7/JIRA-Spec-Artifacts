@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification ballotUrl="http://hl7.org/fhir/us/mcc/2023Jan" gitUrl="https://github.com/HL7/mcc" url="http://hl7.org/fhir/mcc" ciUrl="http://build.fhir.org/ig/HL7/mcc" defaultWorkgroup="pc" defaultVersion="1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
+    <version code="1.0.0" url="http://hl7.org/fhir/us/mcc/2023Jan"/>
+    <artifactPageExtension value="-definitions"/>
+    <artifactPageExtension value="-examples"/>
+    <artifactPageExtension value="-mappings"/>
+    <artifact name="Multiple Chronic Condition Care Plan Medication Request" key="StructureDefinition-MCCMedicationRequest" id="StructureDefinition/MCCMedicationRequest"/>
+    <artifact name="Multiple Chronic Condition Care Plan Laboratory Result Observation" key="StructureDefinition-MCCLaboratoryResultObservation" id="StructureDefinition/MCCLaboratoryResultObservation"/>
+    <artifact name="Multiple Chronic Condition Care Plan Goal" key="StructureDefinition-MCCGoal" id="StructureDefinition/MCCGoal"/>
+    <artifact name="Multiple Chronic Condition Care Plan Diagnostic Report and Note" key="StructureDefinition-MCCDiagnosticReportAndNote" id="StructureDefinition/MCCDiagnosticReportAndNote"/>
+    <artifact name="Multiple Chronic Condition Care Plan Chronic Disease Conditions" key="StructureDefinition-MCCChronicDisease" id="StructureDefinition/MCCChronicDisease"/>
+    <artifact name="Document Reference to Patients Personal Advance Care Plan (Advance Directive)" key="StructureDefinition-DocRefPACP" id="StructureDefinition/DocRefPACP"/>
+    <artifact name="Multiple Chronic Condition Care Plan Family History" key="StructureDefinition-MCCFamilyHistory" id="StructureDefinition/MCCFamilyHistory"/>
+    <artifact name="Multiple Chronic Condition Care Plan Procedure" key="StructureDefinition-MCCProcedure" id="StructureDefinition/MCCProcedure"/>
+    <artifact name="Multiple Chronic Care Condition Care Plan" key="StructureDefinition-mccCarePlan" id="StructureDefinition/mccCarePlan"/>
+    <artifact name="Multiple Chronic Condition Care Plan Example" key="CarePlan-MCCCarePlan" id="CarePlan/MCCCarePlan"/>
+    <artifact name="MCC Procedure Example - Dialysis" key="Procedure-Dialysis" id="Procedure/Dialysis"/>
+    <artifact name="MCC Diagnostic Report and Note Example" key="DiagnosticReport-BoneSurvey" id="DiagnosticReport/BoneSurvey"/>
+    <artifact name="MCC Family Member History Example - Father" key="FamilyMemberHistory-father" id="FamilyMemberHistory/father"/>
+    <artifact name="MCC Document Reference to Advance Directives Example" key="DocumentReference-PACP" id="DocumentReference/PACP"/>
+    <artifact name="MCC Chronic Condition - CKD Example" key="Condition-ConditionCKD" id="Condition/ConditionCKD"/>
+    <artifact name="MCC Goal Example - Weight Loss" key="Goal-WGT-loss" id="Goal/WGT-loss"/>
+    <artifact name="MCC Practitioner - Nephrologist" key="Practitioner-practitionerMCC-1" id="Practitioner/practitionerMCC-1"/>
+    <artifact name="MCC Practitioner - Nurse Practitioner" key="Practitioner-practitionerMCC-2" id="Practitioner/practitionerMCC-2"/>
+    <artifact name="MCC Practitioner - Primary Care Provider" key="Practitioner-practitionerMCC-3" id="Practitioner/practitionerMCC-3"/>
+    <artifact name="MCC Practitioner - Nephrologist Provider Role" key="PractitionerRole-PractitionerRoleMCC1" id="PractitionerRole/PractitionerRoleMCC1"/>
+    <artifact name="MCC Practitioner - Nurse Practitioner Role" key="PractitionerRole-PractitionerRoleMCC2" id="PractitionerRole/PractitionerRoleMCC2"/>
+    <artifact name="MCC Practitioner - Primary Care Provider Role" key="PractitionerRole-PractitionerRoleMCC3" id="PractitionerRole/PractitionerRoleMCC3"/>
+    <artifact name="MCC Lab Observation - BUN" key="Observation-bunMCC" id="Observation/bunMCC"/>
+    <artifact name="MCC Patient" key="Patient-cc-pat-pnoelle" id="Patient/cc-pat-pnoelle"/>
+    <artifact name="Multiple Chronic Condition Care Plan Care Team" key="CareTeam-MCCCareTeamexample" id="CareTeam/MCCCareTeamexample"/>
+    <artifact name="Expansion Parameters - MCC SNOMED" key="Parameters-expansion-parameters-fhir-mcc-ig" id="Parameters/expansion-parameters-fhir-mcc-ig"/>
+    <artifact name="MCC Goal Example - Normal Hypertension" key="Goal-HPT-WNL" id="Goal/HPT-WNL"/>
+    <artifact name="US-Core MCC Weight Example" key="Observation-MCCweight" id="Observation/MCCweight"/>
+    <artifact name="MCC Medication Request Example" key="MedicationRequest-MCCMedExample" id="MedicationRequest/MCCMedExample"/>
+    <artifact name="Multiple Chronic Condition Care Plan Symptom Observation" key="StructureDefinition-MCCSymptomObservation" id="StructureDefinition/MCCSymptomObservation"/>
+    <artifact name="MCC Symptom Observation Example - Taste Sense Altered" key="Observation-Symptom1" id="Observation/Symptom1"/>
+    <artifact name="Multiple Chronic Condition Care Plan Service Request" key="StructureDefinition-MCCServiceRequest" id="StructureDefinition/MCCServiceRequest"/>
+    <artifact name="Multiple Chronic Condition Service Request - Food Pantry" key="ServiceRequest-foodpantry-referral" id="ServiceRequest/foodpantry-referral"/>
+    <artifact name="Multiple Chronic Condition Care Plan Observation SDOH Assessment" key="StructureDefinition-MCCObservationSDOHAssessment" id="StructureDefinition/MCCObservationSDOHAssessment"/>
+    <artifact name="MCC Observation SDOH Assessment" key="Observation-AHC-HRSN-item-example-68517-2" id="Observation/AHC-HRSN-item-example-68517-2"/>
+    <artifact name="Multiple Chronic Condition Care Plan Immunization" key="StructureDefinition-MCCImmunization" id="StructureDefinition/MCCImmunization"/>
+    <artifact name="Multiple Chronic Condition Care Plan Immunization Example" key="Immunization-immunizarion-1" id="Immunization/immunizarion-1"/>
+    <artifact name="Multiple Chronic Condition Care Plan Nutrition Order" key="StructureDefinition-MCCNutritionOrder" id="StructureDefinition/MCCNutritionOrder"/>
+    <artifact name="Multiple Chronic Condition Care Plan Nutrition Order Example" key="NutritionOrder-fiberrestricteddiet" id="NutritionOrder/fiberrestricteddiet"/>
+    <artifact name="Multiple Chronic Condition Care Plan Clinical Impression" key="StructureDefinition-MCCClinicalImpression" id="StructureDefinition/MCCClinicalImpression"/>
+    <artifact name="Multiple Chronic Condition Care Plan Clinical Impression Example" key="ClinicalImpression-clinical-impression-example" id="ClinicalImpression/clinical-impression-example"/>
+    <artifact name="Multiple Chronic Condition Care Plan Questionnaire Response" key="StructureDefinition-MCCQuestionnaireResponse" id="StructureDefinition/MCCQuestionnaireResponse"/>
+    <artifact name="MCCCareTeam" key="StructureDefinition-MCCCareTeam" id="StructureDefinition/MCCCareTeam"/>
+    <artifact name="MCC Care Team Example" key="CareTeam-careteam-of-noelle" id="CareTeam/careteam-of-noelle"/>
+    <artifact name="Caregiver Example" key="RelatedPerson-caregiver-of-noelle" id="RelatedPerson/caregiver-of-noelle"/>
+    <artifact name="MCC QuestionnaireResponse Example" key="QuestionnaireResponse-hunger-vital-sign-example" id="QuestionnaireResponse/hunger-vital-sign-example"/>
+    <artifact name="Multiple Chronic Condition Care Plan Patient/Caregiver Condition Status Observation" key="StructureDefinition-MCCPatientCaregiverConditionStatus" id="StructureDefinition/MCCPatientCaregiverConditionStatus"/>
+    <artifact name="Multiple Chronic Condition Care Plan Caregiver Considerations Observation" key="StructureDefinition-MCCCaregiverConsiderationsObservation" id="StructureDefinition/MCCCaregiverConsiderationsObservation"/>
+    <artifact name="MCC Observation of Caregiver considerations example" key="Observation-caregiver-consideration-obs-example" id="Observation/caregiver-consideration-obs-example"/>
+    <artifact name="Multiple Chronic Condition Care Plan example of Observation of Caregiver feelings towards status of a patients condition" key="Observation-caregiver-feelings-condition-status" id="Observation/caregiver-feelings-condition-status"/>
+    <artifact name="Multiple Chronic Condition Care Plan Caregiver on Care Team" key="StructureDefinition-MCCCaregiverOnCareTeam" id="StructureDefinition/MCCCaregiverOnCareTeam"/>
+    <artifact name="Multiple Chronic Condition Care Plan example of MCC CaregiverOnCareTeam" key="CareTeam-caregiveronteam-of-noelle" id="CareTeam/caregiveronteam-of-noelle"/>
+    <artifact name="Multiple Chronic Condition Care Plan Clinical Test Observation" key="StructureDefinition-MCCClinicalTestObservation" id="StructureDefinition/MCCClinicalTestObservation"/>
+    <artifact name="MCC Clinical Test Observation example" key="Observation-pulse-intensity-palpation" id="Observation/pulse-intensity-palpation"/>
+    <artifact name="MCC Server CapabilityStatement" key="CapabilityStatement-mcc-server" id="CapabilityStatement/mcc-server"/>
+    <artifact name="Multiple Chronic Condition Care Plan Simple Observation" key="StructureDefinition-MCCSimpleObservation" id="StructureDefinition/MCCSimpleObservation"/>
+    <artifact name="Multiple Chronic Condition Care Plan Simple Observation Example" key="Observation-simple-observation-example" id="Observation/simple-observation-example"/>
+    <artifact name="Multiple Chronic Condition Care Plan Clinical Imaging Observation" key="StructureDefinition-MCCImagingObservation" id="StructureDefinition/MCCImagingObservation"/>
+    <artifact name="Multiple Chronic Condition Care Plan Imagining Observation Example" key="Observation-mcc-imaging-observation-example" id="Observation/mcc-imaging-observation-example"/>
+    <page name="Home Page" key="index"/>
+    <page name="MCC Use Cases" key="mcc_use_cases"/>
+    <page name="Structure and Design Considerations" key="structure_and_design_considerations"/>
+    <page name="Profiles or Resources Directly Reused in this Guide" key="profiles_or_resources_directly_reused_in_this_guide"/>
+    <page name="Security" key="security"/>
+    <page name="Questionnaire Response" key="questionnaire_response"/>
+    <page name="MCC Care Plan SDOH Guidance" key="mcc_care_plan_sdoh_guidance"/>
+    <page name="Conformance" key="conformance"/>
+    <page name="MCC Must-support" key="mcc_mustsupport"/>
+    <page name="MCC Value Set Libraries and Usage" key="mcc_value_set_libraries_and_usage"/>
+    <page name="MCC Chronic Condition Value Sets" key="mcc_chronic_condition_value_sets"/>
+    <page name="MCC Clinical Test Value Sets" key="mcc_clinical_test_value_sets"/>
+    <page name="MCC Diagnostic Report Value Sets" key="mcc_diagnostic_report_value_sets"/>
+    <page name="MCC Goal Value Sets" key="mcc_goal_value_sets"/>
+    <page name="MCC Laboratory Result Value Sets" key="mcc_laboratory_result_value_sets"/>
+    <page name="MCC Medication Request Value Sets" key="mcc_medication_request_value_sets"/>
+    <page name="MCC Observation Imaging Value Sets" key="mcc_observation_imaging_value_sets"/>
+    <page name="MCC Procedure and Service Request Value Sets" key="mcc_procedure_and_service_request_value_sets"/>
+    <page name="MCC Questionnaire Response Value Sets" key="mcc_questionnaire_response_value_sets"/>
+    <page name="MCC Symptom Value Sets" key="mcc_symptom_value_sets"/>
+</specification>
+
