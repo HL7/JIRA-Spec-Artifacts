@@ -4906,6 +4906,38 @@
             spec="immds"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-ehrs-rle"
+                  name="EHRS Functional Model - Record Lifecycle Events (FHIR)"
+                  ballotUrl="http://hl7.org/fhir/uv/ehrs-rle/2023Jan"
+                  ciUrl="http://build.fhir.org/ig/HL7/ehrs-rle-ig"
+                  defaultVersion="current"
+                  defaultWorkgroup="ehr"
+                  gitUrl="https://github.com/HL7/ehrs-rle-ig"
+                  url="http://hl7.org/fhir/uv/ehrs-rle">
+      <version code="current" url="http://build.fhir.org/ig/HL7/ehrs-rle-ig"/>
+      <artifact id="StructureDefinition/ehrsrle-auditevent"
+                key="FHIR-ehrs-rle-EHRSFunctionalModelRecordLifecycleEventsAuditEvent"
+                name="AuditEvent"
+                spec="ehrs-rle"/>
+      <artifact id="StructureDefinition/ehrsrle-provenance"
+                key="FHIR-ehrs-rle-EHRSFunctionalModelRecordLifecycleEventsProvenance"
+                name="Provenance"
+                spec="ehrs-rle"/>
+      <artifact id="CapabilityStatement/conformance-ehrs-rle"
+                key="FHIR-ehrs-rle-EHRSFunctionalModelRecordLifecycleEventsCapabilityStatement"
+                name="CapabilityStatement"
+                spec="ehrs-rle"/>
+      <page key="FHIR-ehrs-rle-NA" name="(NA)" spec="ehrs-rle"/>
+      <page key="FHIR-ehrs-rle-many" name="(many)" spec="ehrs-rle"/>
+      <page key="FHIR-ehrs-rle-artifacts"
+            name="Artifacts Summary"
+            spec="ehrs-rle"/>
+      <page key="FHIR-ehrs-rle-index"
+            name="Implementation Guide"
+            spec="ehrs-rle"/>
+      <page key="FHIR-ehrs-rle-toc" name="Table of Contents" spec="ehrs-rle"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-ips"
                   name="International Patient Summary (FHIR)"
                   ballotUrl="http://hl7.org/fhir/uv/ips/2019Sep"
