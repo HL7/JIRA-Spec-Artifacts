@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/security-label-ds4p/2021Sep" ciUrl="http://hl7.org/fhir/ig/HL7/security-label-ds4p" defaultVersion="0.3.0" defaultWorkgroup="security" gitUrl="https://github.com/HL7/fhir-security-label-ds4p" url="http://hl7.org/fhir/uv/security-label-ds4p">
-    <version code="current" url="http://hl7.org/fhir/ig/HL7/security-label-ds4p"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/security-label-ds4p/2021Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-security-label-ds4p" defaultVersion="0.3.0" defaultWorkgroup="security" gitUrl="https://github.com/HL7/fhir-security-label-ds4p" url="http://hl7.org/fhir/uv/security-label-ds4p">
+    <version code="current" url="http://build.fhir.org/ig/HL7/fhir-security-label-ds4p"/>
     <version code="0.3.0" url="http://hl7.org/fhir/uv/security-label-ds4p/2021Sep"/>
     <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/uv/security-label-ds4p/2021May"/>
     <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/uv/security-label-ds4p/2020May"/>
@@ -8,6 +8,7 @@
     <artifactPageExtension value="-definitions"/>
     <artifactPageExtension value="-examples"/>
     <artifactPageExtension value="-mappings"/>
+    <artifact id="CodeSystem/codesystem-inline-labels" key="CodeSystem-codesystem-inline-labels" name="Code system definition for the HAS-INLINE-SEC-LABEL code"/>
     <artifact id="Observation/example-extension-display" key="example-extension-must-display" name="Simple use of the display extension"/>
     <artifact id="Patient/P001" key="Patient-P001" name="Simple use of the display extension on a patient"/>
     <artifact id="Patient/P002" key="Patient-P002" name="Simple use of inline security labels on a patient resource"/>
@@ -21,16 +22,16 @@
     <artifact id="StructureDefinition/extension-sec-label-classifier" key="extension-sec-label-classifier" name="Structure definition for the extension-sec-label-classifier extension"/>
     <artifact id="StructureDefinition/extension-sec-label-related-artifact" key="extension-sec-label-related-artifact" name="Structure definition for the extension-sec-label-related-artifact extension"/>
     <artifact id="StructureDefinition/extension-display" key="extension-must-display" name="Structure definition for the display extension"/>
-    <artifact id="StructureDefinition/extension-has-inline-sec-label" key="StructureDefinition-extension-has-inline-sec-label" name="Structure definition for the has-inline-sec-label extension"/>
+    <artifact deprecated="true" id="StructureDefinition/extension-has-inline-sec-label" key="StructureDefinition-extension-has-inline-sec-label" name="Structure definition for the has-inline-sec-label extension"/>
     <artifact id="StructureDefinition/extension-inline-sec-label" key="StructureDefinition-extension-inline-sec-label" name="Structure definition for the inline-sec-label extension"/>
-    <artifact id="ValueSet/valueset-cui-mark" key="valueset-cui-mark" name="Value set definition for CUI Mark"/>
-    <artifact id="ValueSet/valueset-integrity" key="valueset-integrity" name="Value set definition for Integrity"/>
-    <artifact id="ValueSet/valueset-privacy-policy" key="valueset-privacy-policy" name="Value set definition for Privacy Policy"/>
-    <artifact id="ValueSet/valueset-provenance" key="valueset-provenance" name="Value set definition for Provenance"/>
+    <artifact deprecated="true" id="ValueSet/valueset-cui-mark" key="valueset-cui-mark" name="Value set definition for CUI Mark"/>
+    <artifact deprecated="true" id="ValueSet/valueset-integrity" key="valueset-integrity" name="Value set definition for Integrity"/>
+    <artifact deprecated="true" id="ValueSet/valueset-privacy-policy" key="valueset-privacy-policy" name="Value set definition for Privacy Policy"/>
+    <artifact deprecated="true" id="ValueSet/valueset-provenance" key="valueset-provenance" name="Value set definition for Provenance"/>
     <artifact id="ValueSet/valueset-security-authorization" key="valueset-security-authorization" name="Value set definition for Security Authorization"/>
-    <artifact id="ValueSet/valueset-sec-label-contributor-type" key="valueset-sec-label-contributor-type" name="Value set definition for Security Label Contributor Type"/>
+    <artifact deprecated="true" id="ValueSet/valueset-sec-label-contributor-type" key="valueset-sec-label-contributor-type" name="Value set definition for Security Label Contributor Type"/>
     <artifact id="ValueSet/valueset-security-label-mark" key="valueset-security-label-mark" name="Value set definition for Security Label Mark"/>
-    <artifact id="ValueSet/valueset-trust" key="valueset-trust" name="Value set definition for Trust"/>
+    <artifact deprecated="true" id="ValueSet/valueset-trust" key="valueset-trust" name="Value set definition for Trust"/>
     <page key="NA" name="(NA)"/>
     <page key="many" name="(many)"/>
     <page key="artifacts" name="Artifacts Summary"/>
@@ -39,6 +40,7 @@
     <page key="spec" name="Detailed Specification"/>
     <page key="changes" name="IG Change History"/>
     <page key="index" name="Security Label DS4P Home Page"/>
+    <page key="implementation" name="Implementation Notes"/>
     <page key="security" name="Security and Privacy Considerations"/>
     <page key="inline" name="Inline Security Labels"/>
     <page key="concept" name="Security Labeling Conceptual Structure"/>
