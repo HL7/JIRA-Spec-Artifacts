@@ -50702,15 +50702,20 @@
                   name="Maternal and Infant Health Research (FHIR)"
                   ballotUrl="http://hl7.org/fhir/us/mihr/2022May"
                   ciUrl="http://build.fhir.org/ig/HL7/fhir-mmm-ig"
-                  defaultVersion="1.0.0-ballot"
+                  defaultVersion="1.0.0"
                   defaultWorkgroup="pher"
                   gitUrl="https://github.com/HL7/fhir-mmm-ig"
                   url="http://hl7.org/fhir/us/mihr">
       <version code="current" url="http://build.fhir.org/ig/HL7/fhir-mmm-ig"/>
+      <version code="1.0.0" url="http://hl7.org/fhir/us/mihr/STU1"/>
       <version code="1.0.0-ballot" url="http://hl7.org/fhir/us/mihr/2022May"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
+      <artifact id="Patient/example-nih-child-pih"
+                key="FHIR-us-mihr-Patient-example-nih-child-pih"
+                name="Child of Mother Patient with Pregnancy-Induced Hypertension"
+                spec="us-mihr"/>
       <artifact id="Condition/condition-pregnant-allison-doe-example"
                 key="FHIR-us-mihr-Condition-condition-pregnant-allison-doe-example"
                 name="Condition - Allison Doe pregnancy example"
@@ -50727,6 +50732,10 @@
                 key="FHIR-us-mihr-Condition-condition-pih-jane-smith-example"
                 name="Condition - pregnancy-induced hypertension example"
                 spec="us-mihr"/>
+      <artifact id="Device/cqf-tooling"
+                key="FHIR-us-mihr-Device-cqf-tooling"
+                name="Device CQF Tooling"
+                spec="us-mihr"/>
       <artifact id="Encounter/encounter-delivery-jane-smith-example"
                 key="FHIR-us-mihr-Encounter-encounter-delivery-jane-smith-example"
                 name="Encounter - Jane Smith example"
@@ -50735,7 +50744,7 @@
                 key="FHIR-us-mihr-Encounter-encounter-newborn-child-jane-smith-example"
                 name="Encounter - newborn child of Jane Smith example"
                 spec="us-mihr"/>
-      <artifact id="Parameters/expansion-parameters-fhir-mmm-ig"
+      <artifact id="Parameters/expansion-parameter-mmm-ig"
                 key="FHIR-us-mihr-Parameters-expansion-parameters-fhir-mmm-ig"
                 name="Expansion Parameters - MIHR IG"
                 spec="us-mihr"/>
@@ -50758,6 +50767,10 @@
       <artifact id="Measure/PAMDeaths"
                 key="FHIR-us-mihr-Measure-PAMDeaths"
                 name="Measure for Pregnancy Associated Maternal Deaths"
+                spec="us-mihr"/>
+      <artifact id="Patient/example-nih-mother-pih"
+                key="FHIR-us-mihr-Patient-example-nih-mother-pih"
+                name="Mother Patient with Pregnancy-induced Hypertension"
                 spec="us-mihr"/>
       <artifact id="Observation/observation-child-john-smith-example"
                 key="FHIR-us-mihr-Observation-observation-child-john-smith-example"
@@ -50795,6 +50808,22 @@
                 key="FHIR-us-mihr-Patient-patient-child-jane-smith-example"
                 name="Patient - second child of Jane Smith example"
                 spec="us-mihr"/>
+      <artifact id="ValueSet/pregnancy"
+                key="FHIR-us-mihr-ValueSet-pregnancy"
+                name="Pregnancy"
+                spec="us-mihr"/>
+      <artifact id="ValueSet/PregnancyNonLive"
+                key="FHIR-us-mihr-ValueSet-PregnancyNonLive"
+                name="Pregnancy Non-Live"
+                spec="us-mihr"/>
+      <artifact id="ValueSet/PregnancyProcedureDelivery"
+                key="FHIR-us-mihr-ValueSet-PregnancyProcedureDelivery"
+                name="Pregnancy Procedure Delivery"
+                spec="us-mihr"/>
+      <artifact id="ValueSet/PregnancyProcedureDelivery-CPT"
+                key="FHIR-us-mihr-ValueSet-PregnancyProcedureDelivery-CPT"
+                name="Pregnancy Procedure Delivery CPT"
+                spec="us-mihr"/>
       <artifact id="RelatedPerson/relatedperson-child-peter-doe-example"
                 key="FHIR-us-mihr-RelatedPerson-relatedperson-child-peter-doe-example"
                 name="Related Person - child of Allison Doe example"
@@ -50807,19 +50836,13 @@
                 key="FHIR-us-mihr-RelatedPerson-relatedperson-child-bobby-doe-example"
                 name="RelatedPerson - child of Allison Doe example"
                 spec="us-mihr"/>
-      <artifact id="ValueSet/PregnancyDeliveryDiagnosis"
+      <artifact deprecated="true"
+                id="ValueSet/PregnancyDeliveryDiagnosis"
                 key="FHIR-us-mihr-ValueSet-PregnancyDeliveryDiagnosis"
                 name="ValueSet - Pregnancy Delivery Diagnosis"
                 spec="us-mihr"/>
-      <artifact id="ValueSet/PregnancyNonLive"
-                key="FHIR-us-mihr-ValueSet-PregnancyNonLive"
-                name="ValueSet - Pregnancy Non-Live Diagnosis"
-                spec="us-mihr"/>
-      <artifact id="ValueSet/PregnancyProcedureDelivery-CPT"
-                key="FHIR-us-mihr-ValueSet-PregnancyProcedureDelivery-CPT"
-                name="ValueSet - Pregnancy Procedure Delivery CPT"
-                spec="us-mihr"/>
-      <artifact id="ValueSet/ProceduresDuringPregnancy"
+      <artifact deprecated="true"
+                id="ValueSet/ProceduresDuringPregnancy"
                 key="FHIR-us-mihr-ValueSet-ProceduresDuringPregnancy"
                 name="ValueSet - Procedures During Pregnancy"
                 spec="us-mihr"/>
@@ -50834,14 +50857,6 @@
       <artifact id="ValueSet/hypertensive-disorders-pregnancy-SNOMED"
                 key="FHIR-us-mihr-ValueSet-hypertensive-disorders-pregnancy-SNOMED"
                 name="ValueSet – Hypertensive Disorders of Pregnancy SNOMED CT"
-                spec="us-mihr"/>
-      <artifact id="ValueSet/pregnancy"
-                key="FHIR-us-mihr-ValueSet-pregnancy"
-                name="ValueSet – Pregnancy"
-                spec="us-mihr"/>
-      <artifact id="ValueSet/PregnancyProcedureDelivery"
-                key="FHIR-us-mihr-ValueSet-PregnancyProcedureDelivery"
-                name="ValueSet – Pregnancy Procedure Delivery"
                 spec="us-mihr"/>
       <page key="FHIR-us-mihr-NA" name="(NA)" spec="us-mihr"/>
       <page key="FHIR-us-mihr-many" name="(many)" spec="us-mihr"/>
