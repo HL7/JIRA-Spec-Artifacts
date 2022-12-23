@@ -1,26 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl='https://github.com/HL7/PDDI-CDS'  
-               url="http://hl7.org/fhir/uv/pddi" 
-               ballotUrl="http://hl7.org/fhir/uv/pddi/2020SEP" 
-               ciUrl="http://build.fhir.org/ig/HL7/PDDI-CDS" 
-               defaultWorkgroup="pharm" 
-               defaultVersion="0.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="0.1" url="http://build.fhir.org/ig/HL7/PDDI-CDS" />
-  <version code="0.2.0" url="http://hl7.org/fhir/uv/pddi/2020SEP" />
-  <artifactPageExtension value="-definitions"/>
-  <artifactPageExtension value="-examples"/>
-  <artifactPageExtension value="-mappings"/>
-  <artifact name="PDDIValueSet" key="PDDIValueSet" id="StructureDefinition/PDDICDS-valueset"/>
-  <artifact name="PDDIRequestGroupActionIndicator" key="PDDIRequestGroupActionIndicator" id="StructureDefinition/PDDICDS-requestgroup-action-indicator"/>
-  <artifact name="PDDICDSIndicator" key="PDDICDSIndicator" id="CodeSystem/PDDICDS-indicator"/>
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="CDS Service Spec" key="cds-service-spec" url="cds-service-spec"/>
-  <page name="Knowledge artifacts" key="artifacts" url="artifacts"/>
-  <page name="Downloads" key="downloads" url="downloads"/>
-  <page name="Home" key="home" url="index"/>
-  <page name="Profiles" key="profiles" url="profiles"/>
-  <page name="Test data" key="test-data" url="test-data"/>
-  <page name="Terminology" key="terminology" url="terminology"/>
-  <page name="Use Case" key="use-case" url="use-cases"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/pddi/2023Jan" ciUrl="http://build.fhir.org/ig/HL7/PDDI-CDS" defaultVersion="1.0.0-ballot" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/PDDI-CDS" url="http://hl7.org/fhir/uv/pddi">
+<version code="current" url="http://build.fhir.org/ig/HL7/PDDI-CDS"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/pddi/2023Jan"/>
+<version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/uv/pddi/2020Sep"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/uv/pddi/2018Sep"/>
+<version code="0.1" deprecated="true" url="http://hl7.org/fhir/uv/pddi/2018Sep"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact deprecated="true" id="CodeSystem/PDDICDS-indicator" key="PDDICDSIndicator" name="PDDICDSIndicator"/>
+<artifact deprecated="true" id="StructureDefinition/PDDICDS-requestgroup-action-indicator" key="PDDIRequestGroupActionIndicator" name="PDDIRequestGroupActionIndicator"/>
+<artifact deprecated="true" id="StructureDefinition/PDDICDS-valueset" key="PDDIValueSet" name="PDDIValueSet"/>
+<artifact id="CodeSystem/codesystem-PDDICDS-indicator" key="CodeSystem-codesystem-PDDICDS-indicator" name="codesystem-PDDICDS-indicator"/>
+<artifact id="Condition/condition-warfarin-nsaid-Hx-UGIB-prefetch" key="Condition-condition-warfarin-nsaid-Hx-UGIB-prefetch" name="condition-warfarin-nsaid-Hx-UGIB-prefetch"/>
+<artifact id="Encounter/encounter-digoxin-cyclosporine-context" key="Encounter-encounter-digoxin-cyclosporine-context" name="encounter-digoxin-cyclosporine-context"/>
+<artifact id="Encounter/encounter-digoxin-cyclosporine-prefetch" key="Encounter-encounter-digoxin-cyclosporine-prefetch" name="encounter-digoxin-cyclosporine-prefetch"/>
+<artifact id="Encounter/encounter-warfarin-nsaid-context" key="Encounter-encounter-warfarin-nsaid-context" name="encounter-warfarin-nsaid-context"/>
+<artifact id="Encounter/encounter-warfarin-nsaid-prefetch" key="Encounter-encounter-warfarin-nsaid-prefetch" name="encounter-warfarin-nsaid-prefetch"/>
+<artifact id="MedicationAdministration/medicationadministration-warfarin-nsaid-warfarin-prefetch" key="MedicationAdministration-medicationadministration-warfarin-nsaid-warfarin-prefetch" name="medicationadministration-warfarin-nsaid-warfarin-prefetch"/>
+<artifact id="MedicationDispense/medicationdispense-digoxin-cyclosporine-digoxin-prefetch" key="MedicationDispense-medicationdispense-digoxin-cyclosporine-digoxin-prefetch" name="medicationdispense-digoxin-cyclosporine-digoxin-prefetch"/>
+<artifact id="MedicationDispense/medicationdispense-digoxin-cyclosporine-furosemide-prefetch" key="MedicationDispense-medicationdispense-digoxin-cyclosporine-furosemide-prefetch" name="medicationdispense-digoxin-cyclosporine-furosemide-prefetch"/>
+<artifact id="MedicationDispense/medicationdispense-warfarin-nsaid-warfarin-prefetch" key="MedicationDispense-medicationdispense-warfarin-nsaid-warfarin-prefetch" name="medicationdispense-warfarin-nsaid-warfarin-prefetch"/>
+<artifact id="MedicationRequest/medicationrequest-digoxin-cyclosporine-cyclosporine-context" key="MedicationRequest-medicationrequest-digoxin-cyclosporine-cyclosporine-context" name="medicationrequest-digoxin-cyclosporine-cyclosporine-context"/>
+<artifact id="MedicationRequest/medicationrequest-digoxin-cyclosporine-cyclosporine-prefetch" key="MedicationRequest-medicationrequest-digoxin-cyclosporine-cyclosporine-prefetch" name="medicationrequest-digoxin-cyclosporine-cyclosporine-prefetch"/>
+<artifact id="MedicationRequest/medicationrequest-digoxin-cyclosporine-digoxin-context" key="MedicationRequest-medicationrequest-digoxin-cyclosporine-digoxin-context" name="medicationrequest-digoxin-cyclosporine-digoxin-context"/>
+<artifact id="MedicationRequest/medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch" key="MedicationRequest-medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch" name="medicationrequest-warfarin-nsaid-aldosteroneantagonist-prefetch"/>
+<artifact id="MedicationRequest/medicationrequest-warfarin-nsaid-corticosteroid-prefetch" key="MedicationRequest-medicationrequest-warfarin-nsaid-corticosteroid-prefetch" name="medicationrequest-warfarin-nsaid-corticosteroid-prefetch"/>
+<artifact id="MedicationRequest/medicationrequest-warfarin-nsaid-misoprostol-prefetch" key="MedicationRequest-medicationrequest-warfarin-nsaid-misoprostol-prefetch" name="medicationrequest-warfarin-nsaid-misoprostol-prefetch"/>
+<artifact id="MedicationRequest/medicationrequest-warfarin-nsaid-nsaid-context" key="MedicationRequest-medicationrequest-warfarin-nsaid-nsaid-context" name="medicationrequest-warfarin-nsaid-nsaid-context"/>
+<artifact id="MedicationRequest/medicationrequest-warfarin-nsaid-nsaid-prefetch" key="MedicationRequest-medicationrequest-warfarin-nsaid-nsaid-prefetch" name="medicationrequest-warfarin-nsaid-nsaid-prefetch"/>
+<artifact id="MedicationRequest/medicationrequest-warfarin-nsaid-ppi-prefetch" key="MedicationRequest-medicationrequest-warfarin-nsaid-ppi-prefetch" name="medicationrequest-warfarin-nsaid-ppi-prefetch"/>
+<artifact id="MedicationRequest/medicationrequest-warfarin-nsaid-topicaldiclofenac-context" key="MedicationRequest-medicationrequest-warfarin-nsaid-topicaldiclofenac-context" name="medicationrequest-warfarin-nsaid-topicaldiclofenac-context"/>
+<artifact id="MedicationRequest/medicationrequest-warfarin-nsaid-warfarin-context" key="MedicationRequest-medicationrequest-warfarin-nsaid-warfarin-context" name="medicationrequest-warfarin-nsaid-warfarin-context"/>
+<artifact id="MedicationRequest/medicationrequest-warfarin-nsaid-warfarin-prefetch" key="MedicationRequest-medicationrequest-warfarin-nsaid-warfarin-prefetch" name="medicationrequest-warfarin-nsaid-warfarin-prefetch"/>
+<artifact id="MedicationStatement/medicationstatement-warfarin-nsaid-warfarin-prefetch" key="MedicationStatement-medicationstatement-warfarin-nsaid-warfarin-prefetch" name="medicationstatement-warfarin-nsaid-warfarin-prefetch"/>
+<artifact id="Observation/observation-digoxin-cyclosporine-calcium" key="Observation-observation-digoxin-cyclosporine-calcium" name="observation-digoxin-cyclosporine-calcium"/>
+<artifact id="Observation/observation-digoxin-cyclosporine-digoxin" key="Observation-observation-digoxin-cyclosporine-digoxin" name="observation-digoxin-cyclosporine-digoxin"/>
+<artifact id="Observation/observation-digoxin-cyclosporine-magnesium" key="Observation-observation-digoxin-cyclosporine-magnesium" name="observation-digoxin-cyclosporine-magnesium"/>
+<artifact id="Observation/observation-digoxin-cyclosporine-potassium" key="Observation-observation-digoxin-cyclosporine-potassium" name="observation-digoxin-cyclosporine-potassium"/>
+<artifact id="Observation/observation-digoxin-cyclosporine-renal" key="Observation-observation-digoxin-cyclosporine-renal" name="observation-digoxin-cyclosporine-renal"/>
+<artifact id="Patient/patient-digoxin-cyclosporine-context" key="Patient-patient-digoxin-cyclosporine-context" name="patient-digoxin-cyclosporine-context"/>
+<artifact id="Patient/patient-warfarin-nsaid-over65-prefetch" key="Patient-patient-warfarin-nsaid-over65-prefetch" name="patient-warfarin-nsaid-over65-prefetch"/>
+<artifact id="Patient/patient-warfarin-nsaid-under65-prefetch" key="Patient-patient-warfarin-nsaid-under65-prefetch" name="patient-warfarin-nsaid-under65-prefetch"/>
+<artifact id="Procedure/procedure-digoxin-cyclosporine-calcium" key="Procedure-procedure-digoxin-cyclosporine-calcium" name="procedure-digoxin-cyclosporine-calcium"/>
+<artifact id="Procedure/procedure-digoxin-cyclosporine-consultation" key="Procedure-procedure-digoxin-cyclosporine-consultation" name="procedure-digoxin-cyclosporine-consultation"/>
+<artifact id="Procedure/procedure-digoxin-cyclosporine-creatinine" key="Procedure-procedure-digoxin-cyclosporine-creatinine" name="procedure-digoxin-cyclosporine-creatinine"/>
+<artifact id="Procedure/procedure-digoxin-cyclosporine-digoxin" key="Procedure-procedure-digoxin-cyclosporine-digoxin" name="procedure-digoxin-cyclosporine-digoxin"/>
+<artifact id="Procedure/procedure-digoxin-cyclosporine-magnesium" key="Procedure-procedure-digoxin-cyclosporine-magnesium" name="procedure-digoxin-cyclosporine-magnesium"/>
+<artifact id="Procedure/procedure-digoxin-cyclosporine-potassium" key="Procedure-procedure-digoxin-cyclosporine-potassium" name="procedure-digoxin-cyclosporine-potassium"/>
+<artifact id="ValueSet/valueset-AAS" key="ValueSet-valueset-AAS" name="valueset-AAS"/>
+<artifact id="ValueSet/valueset-CYCS" key="ValueSet-valueset-CYCS" name="valueset-CYCS"/>
+<artifact id="ValueSet/valueset-Hx-UGIB-snomed" key="ValueSet-valueset-Hx-UGIB-snomed" name="valueset-Hx-UGIB-snomed"/>
+<artifact id="ValueSet/valueset-LOOPDIURETIC" key="ValueSet-valueset-LOOPDIURETIC" name="valueset-LOOPDIURETIC"/>
+<artifact id="ValueSet/valueset-NSAIDS" key="ValueSet-valueset-NSAIDS" name="valueset-NSAIDS"/>
+<artifact id="ValueSet/valueset-PDDICDS-indicator" key="ValueSet-valueset-PDDICDS-indicator" name="valueset-PDDICDS-indicator"/>
+<artifact id="ValueSet/valueset-PPIS" key="ValueSet-valueset-PPIS" name="valueset-PPIS"/>
+<artifact id="ValueSet/valueset-SCS" key="ValueSet-valueset-SCS" name="valueset-SCS"/>
+<artifact id="ValueSet/valueset-aldosterone" key="ValueSet-valueset-aldosterone" name="valueset-aldosterone"/>
+<artifact id="ValueSet/valueset-aspirin" key="ValueSet-valueset-aspirin" name="valueset-aspirin"/>
+<artifact id="ValueSet/valueset-betamethasone" key="ValueSet-valueset-betamethasone" name="valueset-betamethasone"/>
+<artifact id="ValueSet/valueset-betamethasone-exclude" key="ValueSet-valueset-betamethasone-exclude" name="valueset-betamethasone-exclude"/>
+<artifact id="ValueSet/valueset-bromfenac" key="ValueSet-valueset-bromfenac" name="valueset-bromfenac"/>
+<artifact id="ValueSet/valueset-bromfenac-exclude" key="ValueSet-valueset-bromfenac-exclude" name="valueset-bromfenac-exclude"/>
+<artifact id="ValueSet/valueset-bumetanide" key="ValueSet-valueset-bumetanide" name="valueset-bumetanide"/>
+<artifact id="ValueSet/valueset-calcium-LOINC" key="ValueSet-valueset-calcium-LOINC" name="valueset-calcium-LOINC"/>
+<artifact id="ValueSet/valueset-celecoxib" key="ValueSet-valueset-celecoxib" name="valueset-celecoxib"/>
+<artifact id="ValueSet/valueset-cloprednol" key="ValueSet-valueset-cloprednol" name="valueset-cloprednol"/>
+<artifact id="ValueSet/valueset-cortisone" key="ValueSet-valueset-cortisone" name="valueset-cortisone"/>
+<artifact id="ValueSet/valueset-cortivazol" key="ValueSet-valueset-cortivazol" name="valueset-cortivazol"/>
+<artifact id="ValueSet/valueset-cyclosporine" key="ValueSet-valueset-cyclosporine" name="valueset-cyclosporine"/>
+<artifact id="ValueSet/valueset-cyclosporine-exclude" key="ValueSet-valueset-cyclosporine-exclude" name="valueset-cyclosporine-exclude"/>
+<artifact id="ValueSet/valueset-deflazacort" key="ValueSet-valueset-deflazacort" name="valueset-deflazacort"/>
+<artifact id="ValueSet/valueset-desoxycorticosterone" key="ValueSet-valueset-desoxycorticosterone" name="valueset-desoxycorticosterone"/>
+<artifact id="ValueSet/valueset-dexamethasone" key="ValueSet-valueset-dexamethasone" name="valueset-dexamethasone"/>
+<artifact id="ValueSet/valueset-dexamethasone-exclude" key="ValueSet-valueset-dexamethasone-exclude" name="valueset-dexamethasone-exclude"/>
+<artifact id="ValueSet/valueset-dexlansoprazole" key="ValueSet-valueset-dexlansoprazole" name="valueset-dexlansoprazole"/>
+<artifact id="ValueSet/valueset-diclofenac" key="ValueSet-valueset-diclofenac" name="valueset-diclofenac"/>
+<artifact id="ValueSet/valueset-diclofenac-exclude" key="ValueSet-valueset-diclofenac-exclude" name="valueset-diclofenac-exclude"/>
+<artifact id="ValueSet/valueset-diflunisal" key="ValueSet-valueset-diflunisal" name="valueset-diflunisal"/>
+<artifact id="ValueSet/valueset-digoxin" key="ValueSet-valueset-digoxin" name="valueset-digoxin"/>
+<artifact id="ValueSet/valueset-digoxin-LOINC" key="ValueSet-valueset-digoxin-LOINC" name="valueset-digoxin-LOINC"/>
+<artifact id="ValueSet/valueset-eplerenone" key="ValueSet-valueset-eplerenone" name="valueset-eplerenone"/>
+<artifact id="ValueSet/valueset-esomeprazole" key="ValueSet-valueset-esomeprazole" name="valueset-esomeprazole"/>
+<artifact id="ValueSet/valueset-ethacrynate" key="ValueSet-valueset-ethacrynate" name="valueset-ethacrynate"/>
+<artifact id="ValueSet/valueset-etodolac" key="ValueSet-valueset-etodolac" name="valueset-etodolac"/>
+<artifact id="ValueSet/valueset-fenoprofen" key="ValueSet-valueset-fenoprofen" name="valueset-fenoprofen"/>
+<artifact id="ValueSet/valueset-fludrocortisone" key="ValueSet-valueset-fludrocortisone" name="valueset-fludrocortisone"/>
+<artifact id="ValueSet/valueset-fluocortolone" key="ValueSet-valueset-fluocortolone" name="valueset-fluocortolone"/>
+<artifact id="ValueSet/valueset-fluocortolone-exclude" key="ValueSet-valueset-fluocortolone-exclude" name="valueset-fluocortolone-exclude"/>
+<artifact id="ValueSet/valueset-flurbiprofen" key="ValueSet-valueset-flurbiprofen" name="valueset-flurbiprofen"/>
+<artifact id="ValueSet/valueset-flurbiprofen-exclude" key="ValueSet-valueset-flurbiprofen-exclude" name="valueset-flurbiprofen-exclude"/>
+<artifact id="ValueSet/valueset-furosemide" key="ValueSet-valueset-furosemide" name="valueset-furosemide"/>
+<artifact id="ValueSet/valueset-hydrocortisone" key="ValueSet-valueset-hydrocortisone" name="valueset-hydrocortisone"/>
+<artifact id="ValueSet/valueset-hydrocortisone-exclude" key="ValueSet-valueset-hydrocortisone-exclude" name="valueset-hydrocortisone-exclude"/>
+<artifact id="ValueSet/valueset-ibuprofen" key="ValueSet-valueset-ibuprofen" name="valueset-ibuprofen"/>
+<artifact id="ValueSet/valueset-ibuprofen-exclude" key="ValueSet-valueset-ibuprofen-exclude" name="valueset-ibuprofen-exclude"/>
+<artifact id="ValueSet/valueset-indomethacin" key="ValueSet-valueset-indomethacin" name="valueset-indomethacin"/>
+<artifact id="ValueSet/valueset-ketoprofen" key="ValueSet-valueset-ketoprofen" name="valueset-ketoprofen"/>
+<artifact id="ValueSet/valueset-ketoprofen-exclude" key="ValueSet-valueset-ketoprofen-exclude" name="valueset-ketoprofen-exclude"/>
+<artifact id="ValueSet/valueset-ketorolac" key="ValueSet-valueset-ketorolac" name="valueset-ketorolac"/>
+<artifact id="ValueSet/valueset-ketorolac-exclude" key="ValueSet-valueset-ketorolac-exclude" name="valueset-ketorolac_exclude"/>
+<artifact id="ValueSet/valueset-lansoprazole" key="ValueSet-valueset-lansoprazole" name="valueset-lansoprazole"/>
+<artifact id="ValueSet/valueset-magnesium-LOINC" key="ValueSet-valueset-magnesium-LOINC" name="valueset-lansoprazole-magnesium-LOINC"/>
+<artifact id="ValueSet/valueset-mefenamate" key="ValueSet-valueset-mefenamate" name="valueset-mefenamate"/>
+<artifact id="ValueSet/valueset-meloxicam" key="ValueSet-valueset-meloxicam" name="valueset-meloxicam"/>
+<artifact id="ValueSet/valueset-meprednisone" key="ValueSet-valueset-meprednisone" name="valueset-meprednisone"/>
+<artifact id="ValueSet/valueset-methylprednisolone" key="ValueSet-valueset-methylprednisolone" name="valueset-methylprednisolone"/>
+<artifact id="ValueSet/valueset-methylprednisolone-exclude" key="ValueSet-valueset-methylprednisolone-exclude" name="valueset-methylprednisolone_exclude"/>
+<artifact id="ValueSet/valueset-misoprostol" key="ValueSet-valueset-misoprostol" name="valueset-misoprostol"/>
+<artifact id="ValueSet/valueset-nabumetone" key="ValueSet-valueset-nabumetone" name="valueset-nabumetone"/>
+<artifact id="ValueSet/valueset-naproxen" key="ValueSet-valueset-naproxen" name="valueset-naproxen"/>
+<artifact id="ValueSet/valueset-nepafenac" key="ValueSet-valueset-nepafenac" name="valueset-nepafenac"/>
+<artifact id="ValueSet/valueset-nepafenac-exclude" key="ValueSet-valueset-nepafenac-exclude" name="valueset-nepafenac-exclude"/>
+<artifact id="ValueSet/valueset-omeprazole" key="ValueSet-valueset-omeprazole" name="valueset-omeprazole"/>
+<artifact id="ValueSet/valueset-oxaprozin" key="ValueSet-valueset-oxaprozin" name="valueset-oxaprozin"/>
+<artifact id="ValueSet/valueset-pantoprazole" key="ValueSet-valueset-pantoprazole" name="valueset-pantoprazole"/>
+<artifact id="ValueSet/valueset-paramethasone" key="ValueSet-valueset-paramethasone" name="valueset-paramethasone"/>
+<artifact id="ValueSet/valueset-piroxicam" key="ValueSet-valueset-piroxicam" name="valueset-piroxicam"/>
+<artifact id="ValueSet/valueset-piroxicam-exclude" key="ValueSet-valueset-piroxicam-exclude" name="valueset-piroxicam-exclude"/>
+<artifact id="ValueSet/valueset-potassium-LOINC" key="ValueSet-valueset-potassium-LOINC" name="valueset-potassium-LOINC"/>
+<artifact id="ValueSet/valueset-prednisolone" key="ValueSet-valueset-prednisolone" name="valueset-prednisolone"/>
+<artifact id="ValueSet/valueset-prednisolone-exclude" key="ValueSet-valueset-prednisolone-exclude" name="valueset-prednisolone-exclude"/>
+<artifact id="ValueSet/valueset-prednisone" key="ValueSet-valueset-prednisone" name="valueset-prednisone"/>
+<artifact id="ValueSet/valueset-prednylidene" key="ValueSet-valueset-prednylidene" name="valueset-prednylidene"/>
+<artifact id="ValueSet/valueset-rabeprazole" key="ValueSet-valueset-rabeprazole" name="valueset-rabeprazole"/>
+<artifact id="ValueSet/valueset-renal-LOINC" key="ValueSet-valueset-renal-LOINC" name="valueset-renal-LOINC"/>
+<artifact id="ValueSet/valueset-rimexolone" key="ValueSet-valueset-rimexolone" name="valueset-rimexolone"/>
+<artifact id="ValueSet/valueset-rimexolone-exclude" key="ValueSet-valueset-rimexolone-exclude" name="valueset-rimexolone-exclude"/>
+<artifact id="ValueSet/valueset-spironolactone" key="ValueSet-valueset-spironolactone" name="valueset-spironolactone"/>
+<artifact id="ValueSet/valueset-sulindac" key="ValueSet-valueset-sulindac" name="valueset-sulindac"/>
+<artifact id="ValueSet/valueset-tolmetin" key="ValueSet-valueset-tolmetin" name="valueset-tolmetin"/>
+<artifact id="ValueSet/valueset-topicaldiclofenac" key="ValueSet-valueset-topicaldiclofenac" name="valueset-topicaldiclofenac"/>
+<artifact id="ValueSet/valueset-torsemide" key="ValueSet-valueset-torsemide" name="valueset-torsemide"/>
+<artifact id="ValueSet/valueset-triamcinolone" key="ValueSet-valueset-triamcinolone" name="valueset-triamcinolone"/>
+<artifact id="ValueSet/valueset-triamcinolone-exclude" key="ValueSet-valueset-triamcinolone-exclude" name="valueset-triamcinolone-exclude"/>
+<artifact id="ValueSet/valueset-trilostane" key="ValueSet-valueset-trilostane" name="valueset-trilostane"/>
+<artifact id="ValueSet/valueset-warfarin" key="ValueSet-valueset-warfarin" name="valueset-warfarin"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="cds-service-spec" name="CDS Service Specification"/>
+<page deprecated="true" key="home" name="Home" url="index"/>
+<page key="index" name="Implementation Guide for PDDI CDS (DRAFT)"/>
+<page key="knowledge-artifacts" name="Knowledge Representation for PDDI CDS"/>
+<page key="downloads" name="PDDI CDS – Downloads"/>
+<page key="profiles" name="Profiles defined as part of the PDDI CDS Implementation Guide"/>
+<page key="toc" name="Table of Contents"/>
+<page key="terminology" name="Terminology defined for the PDDI CDS Implementation Guide"/>
+<page deprecated="true" key="test-data" name="Test data" url="test-data"/>
+<page key="testdata" name="Test data defined as part of the PDDI CDS Implementation Guide"/>
+<page deprecated="true" key="use-case" name="Use Case" url="use-cases"/>
+<page key="use-cases" name="Use Case - a potential interaction between warfarin and non-steroidal anti-inflammatory drugs (NSAIDs)"/>
 </specification>
