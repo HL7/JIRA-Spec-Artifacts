@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/icsr-ae-reporting/2021Sep" ciUrl="https://build.fhir.org/ig/HL7/icsr-ae-reporting" defaultVersion="1.0.0" defaultWorkgroup="brr" gitUrl="https://github.com/HL7/fhir-icsr-ae-reporting" url="http://hl7.org/fhir/us/icsr-ae-reporting">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/icsr-ae-reporting/2021Sep" ciUrl="https://build.fhir.org/ig/HL7/icsr-ae-reporting" defaultVersion="1.1.0" defaultWorkgroup="brr" gitUrl="https://github.com/HL7/fhir-icsr-ae-reporting" url="http://hl7.org/fhir/us/icsr-ae-reporting">
 <version code="current" url="https://build.fhir.org/ig/HL7/icsr-ae-reporting"/>
+<version code="1.1.0" url="http://hl7.org/fhir/us/icsr-ae-reporting"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/icsr-ae-reporting/STU1"/>
 <version code="0.1.0" url="http://hl7.org/fhir/us/icsr-ae-reporting/2021Sep"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="StructureDefinition/icsr-aecountobservation" key="StructureDefinition-ibm-fda-icsr-aecountobservation" name="AECountObservation"/>
 <artifact deprecated="true" id="ValueSet/MyocardialInfarctionDiagnosisCodes" key="ValueSet-MyocardialInfarctionDiagnosisCodes" name="Acute Myocardial Infarction Diagnosis Codes"/>
 <artifact id="StructureDefinition/icsr-ext-additionaldocumentinformation" key="StructureDefinition-ibm-fda-icsr-ext-additionaldocumentinformation" name="AdditionalDocumentInformation"/>
+<artifact id="StructureDefinition/icsr-aecountobservation" key="StructureDefinition-ibm-fda-icsr-aecountobservation" name="AECountObservation"/>
 <artifact id="StructureDefinition/icsr-ext-ageattimeofonset" key="StructureDefinition-ibm-fda-icsr-ext-ageattimeofonset" name="AgeAtTimeOfOnset"/>
 <artifact id="StructureDefinition/icsr-ext-ageatvaccination" key="StructureDefinition-ibm-fda-icsr-ext-ageatvaccination" name="AgeAtVaccination"/>
 <artifact deprecated="true" id="ValueSet/AnaphylaxisDiagnosisCodes" key="ValueSet-AnaphylaxisDiagnosisCodes" name="Anaphylaxis Diagnosis Codes"/>
 <artifact deprecated="true" id="ValueSet/AppendicitisDiagnosisCodes" key="ValueSet-AppendicitisDiagnosisCodes" name="Appendicitis Diagnosis Codes"/>
 <artifact id="StructureDefinition/icsr-ext-authorprimarysource" key="StructureDefinition-ibm-fda-icsr-ext-authorprimarysource" name="AuthorPrimarySource"/>
-<artifact id="PractitionerRole/BESTAuthorRole" key="PractitionerRole-BESTAuthorRole" name="BEST Author Role of ICSR reports"/>
-<artifact id="Practitioner/BESTAuthor" key="Practitioner-BESTAuthor" name="BEST Author of ICSR Reports"/>
-<artifact id="Observation/BESTPatientAgeGroup" key="Observation-BESTPatientAgeGroup" name="BEST Patient Age Group"/>
-<artifact id="Patient/BESTPatient" key="Patient-BESTPatient" name="BEST Patient for FAERS Sample"/>
 <artifact deprecated="true" id="ValueSet/BellsPalsyDiagnosisCodes" key="ValueSet-BellsPalsyDiagnosisCodes" name="Bell's Palsy Diagnosis Codes"/>
-<artifact id="ValueSet/COVID19VaccineCodeVS" key="ValueSet-COVID19VaccineCodeVS" name="COVID-19 Vaccine Codes"/>
+<artifact id="Practitioner/BESTAuthor" key="Practitioner-BESTAuthor" name="BEST Author of ICSR Reports"/>
+<artifact id="PractitionerRole/BESTAuthorRole" key="PractitionerRole-BESTAuthorRole" name="BEST Author Role of ICSR reports"/>
+<artifact id="Observation/BESTPatientAgeGroup" key="Observation-BESTPatientAgeGroup" name="BEST Patient Age Group"/>
+<artifact id="Patient/BESTPatient" key="Patient-BESTPatient" name="BEST Patient for Transfusion Sample"/>
 <artifact id="StructureDefinition/icsr-ext-caseidentifier" key="StructureDefinition-ibm-fda-icsr-ext-caseidentifier" name="CaseIdentifier"/>
 <artifact id="ValueSet/TransfusionProcedureCodeVS" key="ValueSet-TransfusionProcedureCodeVS" name="Codes that represent a transfusion procedure Value Set"/>
 <artifact id="StructureDefinition/icsr-ext-combinationproductreport" key="StructureDefinition-ibm-fda-icsr-ext-combinationproductreport" name="CombinationProductReport"/>
 <artifact deprecated="true" id="ValueSet/COVID19DiagnosisCodes" key="ValueSet-COVID19DiagnosisCodes" name="Covid-19 Preventable Outcome Diagnosis Codes"/>
+<artifact id="ValueSet/COVID19VaccineCodeVS" key="ValueSet-COVID19VaccineCodeVS" name="COVID-19 Vaccine Codes"/>
 <artifact deprecated="true" id="ValueSet/DeepVeinThrombosisDiagnosisCodes" key="ValueSet-DeepVeinThrombosisDiagnosisCodes" name="Deep Vein Thrombosis Diagnosis Codes"/>
 <artifact id="StructureDefinition/icsr-ext-departmentname" key="StructureDefinition-ibm-fda-icsr-ext-departmentname" name="DepartmentName"/>
 <artifact id="StructureDefinition/icsr-patientagegroup" key="StructureDefinition-ibm-fda-icsr-patientagegroup" name="Descriptive Age Group for the Patient"/>
@@ -35,17 +36,15 @@
 <artifact id="StructureDefinition/icsr-ext-eventseriousness" key="StructureDefinition-icsr-ext-eventseriousness" name="EventSeriousness"/>
 <artifact id="StructureDefinition/icsr-ext-expeditedreport" key="StructureDefinition-ibm-fda-icsr-ext-expeditedreport" name="ExpeditedReport"/>
 <artifact id="StructureDefinition/icsr-exposurecountobservation" key="StructureDefinition-ibm-fda-icsr-exposurecountobservation" name="ExposureCountObservation"/>
-<artifact id="StructureDefinition/faers-adverseevent" key="StructureDefinition-ibm-fda-faers-adverseevent" name="FAERS Adverse Event"/>
-<artifact id="Organization/BESTPrototype" key="Organization-BESTPrototype" name="FAERS BEST Prototype"/>
+<artifact deprecated="true" id="StructureDefinition/faers-adverseevent" key="StructureDefinition-ibm-fda-faers-adverseevent" name="FAERS Adverse Event"/>
 <artifact deprecated="true" id="StructureDefinition/ibm-fda-icsr-faers-bundle" key="StructureDefinition-ibm-fda-icsr-faers-bundle" name="FAERS Bundle"/>
-<artifact id="Bundle/ConnectathonFAERSBundle" key="Bundle-ConnectathonFAERSBundle" name="FAERS Bundle for Connectathon Sample"/>
-<artifact id="MedicationAdministration/FAERSDiphenhydramine" key="MedicationAdministration-FAERSDiphenhydramine" name="FAERS Diphenhydramine Administration"/>
-<artifact id="MedicationAdministration/FAERSEpinephrine" key="MedicationAdministration-FAERSEpinephrine" name="FAERS Epinephrine Administration"/>
-<artifact id="Organization/FDA" key="Organization-FDA" name="FAERS FDA Organization"/>
+<artifact deprecated="true" id="Bundle/ConnectathonFAERSBundle" key="Bundle-ConnectathonFAERSBundle" name="FAERS Bundle for Connectathon Sample"/>
+<artifact deprecated="true" id="MedicationAdministration/FAERSDiphenhydramine" key="MedicationAdministration-FAERSDiphenhydramine" name="FAERS Diphenhydramine Administration"/>
+<artifact deprecated="true" id="MedicationAdministration/FAERSEpinephrine" key="MedicationAdministration-FAERSEpinephrine" name="FAERS Epinephrine Administration"/>
 <artifact deprecated="true" id="StructureDefinition/ibm-fda-icsr-faers-messageheader" key="StructureDefinition-ibm-fda-icsr-faers-messageheader" name="FAERS MessageHeader"/>
-<artifact id="AdverseEvent/FAERSExampleEvent" key="AdverseEvent-FAERSExampleEvent" name="FAERS Sample Event"/>
-<artifact id="Composition/FAERSExample" key="Composition-FAERSExample" name="FAERS Sample ICSR Report"/>
-<artifact id="Procedure/FAERSExampleTransfusion" key="Procedure-FAERSExampleTransfusion" name="FAERS Suspect Transfusion"/>
+<artifact deprecated="true" id="AdverseEvent/FAERSExampleEvent" key="AdverseEvent-FAERSExampleEvent" name="FAERS Sample Event"/>
+<artifact deprecated="true" id="Composition/FAERSExample" key="Composition-FAERSExample" name="FAERS Sample ICSR Report"/>
+<artifact deprecated="true" id="Procedure/FAERSExampleTransfusion" key="Procedure-FAERSExampleTransfusion" name="FAERS Suspect Transfusion"/>
 <artifact deprecated="true" id="ValueSet/FebrileSeizureDiagnosisCodes" key="ValueSet-FebrileSeizureDiagnosisCodes" name="Febrile Seizures Diagnosis Codes"/>
 <artifact id="StructureDefinition/icsr-ext-firstreceivedate" key="StructureDefinition-ibm-fda-icsr-ext-firstreceivedate" name="FirstReceiveDate"/>
 <artifact id="StructureDefinition/icsr-ext-firstsendertype" key="StructureDefinition-ibm-fda-icsr-ext-firstsendertype" name="FirstSenderType"/>
@@ -66,26 +65,28 @@
 <artifact id="ValueSet/ICSRSeriousness" key="ValueSet-ICSRSeriousness" name="ICSR Seriousness Codes"/>
 <artifact id="ValueSet/ICSRAESeriousness" key="ValueSet-ICSRAESeriousness" name="ICSR Top-Level Seriousness"/>
 <artifact id="StructureDefinition/icsr-transfusion" key="StructureDefinition-ibm-fda-icsr-transfusion" name="ICSR Transfusion"/>
-<artifact id="ValueSet/ISBTBloodProductCodeVS" key="ValueSet-ISBTBloodProductCodeVS" name="ISBT Blood Product Codes"/>
-<artifact id="ValueSet/ISBTConvalescentPlasmaCodeVS" key="ValueSet-ISBTConvalescentPlasmaCodeVS" name="ISBT Convalescent Plasma Codes"/>
 <artifact deprecated="true" id="ValueSet/ThrombocytopenicPurpuraDiagnosisCodes" key="ValueSet-ThrombocytopenicPurpuraDiagnosisCodes" name="Immune Thrombocytopenia (ITP) Diagnosis Codes"/>
 <artifact deprecated="true" id="ValueSet/InfluenzaDiagnosisCodes" key="ValueSet-InfluenzaDiagnosisCodes" name="Influenza Preventable Outcome Diagnosis Codes"/>
 <artifact id="ValueSet/InfluenzaVaccineCodeVS" key="ValueSet-InfluenzaVaccineCodeVS" name="Influenza Vaccine Codes"/>
+<artifact id="ValueSet/ISBTBloodProductCodeVS" key="ValueSet-ISBTBloodProductCodeVS" name="ISBT Blood Product Codes"/>
+<artifact id="ValueSet/ISBTConvalescentPlasmaCodeVS" key="ValueSet-ISBTConvalescentPlasmaCodeVS" name="ISBT Convalescent Plasma Codes"/>
 <artifact deprecated="true" id="ValueSet/KawasakiDiseaseDiagnosisCodes" key="ValueSet-KawasakiDiseaseDiagnosisCodes" name="Kawasaki Disease Diagnosis Codes"/>
 <artifact id="StructureDefinition/icsr-messageorganization" key="StructureDefinition-ibm-fda-icsr-messageorganization" name="MessageHeader Organization"/>
 <artifact id="StructureDefinition/icsr-ext-militarystatus" key="StructureDefinition-ibm-fda-icsr-ext-militarystatus" name="MilitaryStatus"/>
-<artifact id="Bundle/MinimumFAERSBundle" key="Bundle-MinimumFAERSBundle" name="Minimum FAERS Bundle"/>
-<artifact id="Bundle/MinimumVAERSBundle" key="Bundle-MinimumVAERSBundle" name="Minimum VAERS Bundle"/>
+<artifact deprecated="true" id="Bundle/MinimumFAERSBundle" key="Bundle-MinimumFAERSBundle" name="Minimum FAERS Bundle"/>
+<artifact id="Bundle/MinimumTransfusionReportBundle" key="Bundle-MinimumTransfusionReportBundle" name="Minimum Transfusion Case Report Bundle"/>
+<artifact id="Bundle/MinimumVaccinationReportBundle" key="Bundle-MinimumVaccinationReportBundle" name="Minimum Vaccination Case Report Bundle"/>
+<artifact deprecated="true" id="Bundle/MinimumVAERSBundle" key="Bundle-MinimumVAERSBundle" name="Minimum VAERS Bundle"/>
 <artifact id="StructureDefinition/icsr-ext-mostrecentdate" key="StructureDefinition-ibm-fda-icsr-ext-mostrecentdate" name="MostRecentDate"/>
 <artifact deprecated="true" id="ValueSet/MISDiagnosisCodes" key="ValueSet-MISDiagnosisCodes" name="Multisystem Inflammatory Syndrome (MIS) Diagnosis Codes"/>
 <artifact deprecated="true" id="ValueSet/MyocarditisDiagnosisCodes" key="ValueSet-MyocarditisDiagnosisCodes" name="Myocarditis/Pericarditis Diagnosis Codes"/>
 <artifact deprecated="true" id="ValueSet/NarcolepsyDiagnosisCodes" key="ValueSet-NarcolepsyDiagnosisCodes" name="Narcolepsy Diagnosis Codes"/>
 <artifact deprecated="true" id="ValueSet/NonhemorrhagicStrokeDiagnosisCodes" key="ValueSet-NonhemorrhagicStrokeDiagnosisCodes" name="Non-hemorrhagic Stroke Diagnosis Codes"/>
+<artifact id="StructureDefinition/icsr-patientlastmenstrualperiod" key="StructureDefinition-ibm-fda-icsr-patientlastmenstrualperiod" name="Patient's Date of Last Menstrual Period"/>
 <artifact id="ValueSet/PatientAgeGroupVS" key="ValueSet-PatientAgeGroupVS" name="Patient Age Group"/>
 <artifact id="StructureDefinition/icsr-patientheight" key="StructureDefinition-ibm-fda-icsr-patientheight" name="Patient Body Height in cm"/>
 <artifact id="StructureDefinition/icsr-patientweight" key="StructureDefinition-ibm-fda-icsr-patientweight" name="Patient Body Weight in kg"/>
 <artifact id="ValueSet/PatientMilitaryStatus" key="ValueSet-PatientMilitaryStatus" name="Patient Military Status"/>
-<artifact id="StructureDefinition/icsr-patientlastmenstrualperiod" key="StructureDefinition-ibm-fda-icsr-patientlastmenstrualperiod" name="Patient's Date of Last Menstrual Period"/>
 <artifact id="StructureDefinition/icsr-authorpractitioner" key="StructureDefinition-ibm-fda-icsr-authorpractitioner" name="Practitioner Author"/>
 <artifact id="StructureDefinition/icsr-authorpractitionerrole" key="StructureDefinition-ibm-fda-icsr-authorpractitionerrole" name="PractitionerRole Author"/>
 <artifact id="StructureDefinition/icsr-ext-previouscaseidentifier" key="StructureDefinition-ibm-fda-icsr-ext-previouscaseidentifier" name="PreviousCaseIdentifier"/>
@@ -95,42 +96,65 @@
 <artifact id="StructureDefinition/icsr-ext-reportamendment" key="StructureDefinition-ibm-fda-icsr-ext-reportamendment" name="ReportAmendment"/>
 <artifact id="Observation/SampleAECountObservation" key="Observation-SampleAECountObservation" name="Sample Adverse Event Count Observation"/>
 <artifact id="PractitionerRole/SampleAuthorRole" key="PractitionerRole-SampleAuthorRole" name="Sample Author Role of ICSR Report"/>
-<artifact id="BiologicallyDerivedProduct/FAERSBloodProduct" key="BiologicallyDerivedProduct-FAERSBloodProduct" name="Sample Blood Product"/>
+<artifact id="BiologicallyDerivedProduct/TransfusionBloodProduct" key="BiologicallyDerivedProduct-FAERSBloodProduct" name="Sample Blood Product"/>
 <artifact id="BiologicallyDerivedProduct/SampleConvalescentPlasma" key="BiologicallyDerivedProduct-SampleConvalescentPlasma" name="Sample Convalescent Plasma"/>
 <artifact id="Observation/SampleExposureCountObservation" key="Observation-SampleExposureCountObservation" name="Sample Exposure Count Observation"/>
-<artifact id="Composition/SampleFAERSReport" key="Composition-SampleFAERSReport" name="Sample ICSR FAERS Report"/>
+<artifact deprecated="true" id="Composition/SampleFAERSReport" key="Composition-SampleFAERSReport" name="Sample ICSR FAERS Report"/>
 <artifact id="Patient/SampleICSRPatient" key="Patient-SampleICSRPatient" name="Sample ICSR Report Patient"/>
-<artifact id="Composition/SampleVAERSReport" key="Composition-SampleVAERSReport" name="Sample ICSR VAERS Report"/>
-<artifact id="MessageHeader/US-IBM-FAERS-fad94c04-29e7-5b37-e535-a8aad123cf9a" key="MessageHeader-US-IBM-FAERS-fad94c04-29e7-5b37-e535-a8aad123cf9a" name="Sample MessageHeader for FAERS"/>
-<artifact id="MessageHeader/beafb541-3eab-eb9e-1bf1-5fa477d56e77" key="MessageHeader-beafb541-3eab-eb9e-1bf1-5fa477d56e77" name="Sample MessageHeader for FAERS report for Connecathon"/>
-<artifact id="MessageHeader/US-IBM-VAERS-fad94c04-29e7-5b37-e535-a8aad123cf9a" key="MessageHeader-US-IBM-VAERS-fad94c04-29e7-5b37-e535-a8aad123cf9a" name="Sample MessageHeader for VAERS"/>
-<artifact id="MessageHeader/US-IBM-e380bc14-2a03-7b64-c3f5-22daea2aa495" key="MessageHeader-US-IBM-e380bc14-2a03-7b64-c3f5-22daea2aa495" name="Sample MessageHeader for VAERS report for Connecathon"/>
+<artifact id="Composition/SampleTransfusionReport" key="Composition-SampleTransfusionReport" name="Sample ICSR Transfusion Report"/>
+<artifact id="Composition/SampleVaccinationReport" key="Composition-SampleVaccinationReport" name="Sample ICSR Vaccination Report"/>
+<artifact deprecated="true" id="Composition/SampleVAERSReport" key="Composition-SampleVAERSReport" name="Sample ICSR VAERS Report"/>
+<artifact deprecated="true" id="MessageHeader/US-IBM-FAERS-fad94c04-29e7-5b37-e535-a8aad123cf9a" key="MessageHeader-US-IBM-FAERS-fad94c04-29e7-5b37-e535-a8aad123cf9a" name="Sample MessageHeader for FAERS"/>
+<artifact id="MessageHeader/US-IBM-Transfusion-fad94c04-29e7-5b37-e535-a8aad123cf9a" key="MessageHeader-US-IBM-Transfusion-fad94c04-29e7-5b37-e535-a8aad123cf9a" name="Sample MessageHeader for Transfusion"/>
+<artifact id="MessageHeader/beafb541-3eab-eb9e-1bf1-5fa477d56e77" key="MessageHeader-beafb541-3eab-eb9e-1bf1-5fa477d56e77" name="Sample MessageHeader for Transfusion report for Connecathon"/>
+<artifact id="MessageHeader/US-IBM-Vaccination-fad94c04-29e7-5b37-e535-a8aad123cf9a" key="MessageHeader-US-IBM-Vaccination-fad94c04-29e7-5b37-e535-a8aad123cf9a" name="Sample MessageHeader for Vaccination"/>
+<artifact id="MessageHeader/US-IBM-e380bc14-2a03-7b64-c3f5-22daea2aa495" key="MessageHeader-US-IBM-e380bc14-2a03-7b64-c3f5-22daea2aa495" name="Sample MessageHeader for Vaccination report for Connecathon"/>
+<artifact deprecated="true" id="MessageHeader/US-IBM-VAERS-fad94c04-29e7-5b37-e535-a8aad123cf9a" key="MessageHeader-US-IBM-VAERS-fad94c04-29e7-5b37-e535-a8aad123cf9a" name="Sample MessageHeader for VAERS"/>
 <artifact id="Observation/SamplePatientHeight" key="Observation-SamplePatientHeight" name="Sample Patient Height Observation"/>
 <artifact id="Observation/SamplePatientLastMenstrualPeriod" key="Observation-SamplePatientLastMenstrualPeriod" name="Sample Patient Menstrual Period Date Observation"/>
 <artifact id="Observation/SamplePatientWeight" key="Observation-SamplePatientWeight" name="Sample Patient Weight Observation"/>
 <artifact id="Practitioner/SampleAuthorPractitioner" key="Practitioner-SampleAuthorPractitioner" name="Sample Practitioner Author of ICSR Report"/>
 <artifact id="RelatedPerson/SampleAuthorRelatedPerson" key="RelatedPerson-SampleAuthorRelatedPerson" name="Sample Related Person Author of ICSR Report"/>
-<artifact id="Organization/SenderOrganization" key="Organization-SenderOrganization" name="Sender Organization for VAERS/FAERS"/>
+<artifact id="Organization/SenderOrganization" key="Organization-SenderOrganization" name="Sample Sender Organization"/>
+<artifact id="StructureDefinition/transfusion-adverseevent" key="StructureDefinition-transfusion-adverseevent" name="Transfusion Adverse Event"/>
+<artifact id="Organization/BESTPrototype" key="Organization-BESTPrototype" name="Transfusion BEST Prototype"/>
+<artifact id="Bundle/ConnectathonTransfusionBundle" key="Bundle-ConnectathonTransfusionBundle" name="Transfusion Bundle for Connectathon Sample"/>
+<artifact id="MedicationAdministration/TransfusionDiphenhydramine" key="MedicationAdministration-TransfusionDiphenhydramine" name="Transfusion Diphenhydramine Administration"/>
+<artifact id="MedicationAdministration/TransfusionEpinephrine" key="MedicationAdministration-TransfusionEpinephrine" name="Transfusion Epinephrine Administration"/>
+<artifact id="Organization/FDA" key="Organization-FDA" name="Transfusion FDA Organization"/>
 <artifact id="ValueSet/MedDRATransfusionAdverseEventVS" key="ValueSet-MedDRATransfusionAdverseEventVS" name="Transfusion-related Adverse Events"/>
+<artifact id="AdverseEvent/TransfusionExampleEvent" key="AdverseEvent-TransfusionExampleEvent" name="Transfusion Sample Event"/>
+<artifact id="Composition/TransfusionExample" key="Composition-TransfusionExample" name="Transfusion Sample ICSR Report"/>
+<artifact id="Procedure/TransfusionExampleTransfusion" key="Procedure-TransfusionExampleTransfusion" name="Transfusion Suspect Transfusion"/>
 <artifact deprecated="true" id="ValueSet/TransverseMyelitisDiagnosisCodes" key="ValueSet-TransverseMyelitisDiagnosisCodes" name="Transverse Myelitis Diagnosis Codes"/>
 <artifact id="StructureDefinition/icsr-ext-usedproduct" key="StructureDefinition-ibm-fda-icsr-ext-usedproduct" name="UsedProduct"/>
 <artifact id="StructureDefinition/icsr-ext-usedproductamount" key="StructureDefinition-ibm-fda-icsr-ext-usedproductamount" name="UsedProductAmount"/>
-<artifact id="StructureDefinition/vaers-adverseevent" key="StructureDefinition-ibm-fda-vaers-adverseevent" name="VAERS Adverse Event"/>
-<artifact id="PractitionerRole/VAERSAuthorRole" key="PractitionerRole-VAERSAuthorRole" name="VAERS Author Role of ICSR reports"/>
-<artifact id="Practitioner/VAERSAuthor" key="Practitioner-VAERSAuthor" name="VAERS Author of ICSR Reports"/>
-<artifact deprecated="true" id="StructureDefinition/ibm-fda-icsr-vaers-bundle" key="StructureDefinition-ibm-fda-icsr-vaers-bundle" name="VAERS Bundle"/>
-<artifact id="Bundle/ConnectathonVAERSBundle" key="Bundle-ConnectathonVAERSBundle" name="VAERS Bundle for Connectathon Sample"/>
-<artifact id="MedicationAdministration/VAERSHydrocortisoneAdministration" key="MedicationAdministration-VAERSHydrocortisoneAdministration" name="VAERS Hydrocortisone Administration"/>
-<artifact deprecated="true" id="StructureDefinition/ibm-fda-icsr-vaers-messageheader" key="StructureDefinition-ibm-fda-icsr-vaers-messageheader" name="VAERS MessageHeader"/>
-<artifact id="Patient/VAERSPatient" key="Patient-VAERSPatient" name="VAERS Patient for FAERS Sample"/>
-<artifact id="AdverseEvent/VAERSExampleEvent" key="AdverseEvent-VAERSExampleEvent" name="VAERS Sample Event"/>
-<artifact id="Composition/VAERSExample" key="Composition-VAERSExample" name="VAERS Sample ICSR Report"/>
-<artifact id="Immunization/VAERSExampleImmunization" key="Immunization-VAERSExampleImmunization" name="VAERS Sample Immunization for Connectathon Sample"/>
-<artifact id="Organization/VAERSSender" key="Organization-VAERSSender" name="VAERS Sending Organization"/>
+<artifact id="StructureDefinition/vaccination-adverseevent" key="StructureDefinition-vaccination-adverseevent" name="Vaccination Adverse Event"/>
+<artifact id="Practitioner/VaccinationAuthor" key="Practitioner-VaccinationAuthor" name="Vaccination Author of ICSR Reports"/>
+<artifact id="PractitionerRole/VaccinationAuthorRole" key="PractitionerRole-VaccinationAuthorRole" name="Vaccination Author Role of ICSR reports"/>
+<artifact id="Bundle/ConnectathonVaccinationBundle" key="Bundle-ConnectathonVaccinationBundle" name="Vaccination Bundle for Connectathon Sample"/>
+<artifact id="MedicationAdministration/VaccinationHydrocortisoneAdministration" key="MedicationAdministration-VaccinationHydrocortisoneAdministration" name="Vaccination Hydrocortisone Administration"/>
+<artifact id="Patient/VaccinationPatient" key="Patient-VaccinationPatient" name="Vaccination Patient for Transfusion Sample"/>
 <artifact id="ValueSet/MedDRAVaccinationAdverseEventVS" key="ValueSet-MedDRAVaccinationAdverseEventVS" name="Vaccination-related Adverse Events"/>
+<artifact id="AdverseEvent/VaccinationExampleEvent" key="AdverseEvent-VaccinationExampleEvent" name="Vaccination Sample Event"/>
+<artifact id="Composition/VaccinationExample" key="Composition-VaccinationExample" name="Vaccination Sample ICSR Report"/>
+<artifact id="Immunization/VaccinationExampleImmunization" key="Immunization-VaccinationExampleImmunization" name="Vaccination Sample Immunization for Connectathon Sample"/>
+<artifact id="Organization/VaccinationSender" key="Organization-VaccinationSender" name="Vaccination Sending Organization"/>
 <artifact id="ValueSet/VaccineCodeVS" key="ValueSet-VaccineCodeVS" name="Vaccine Codes"/>
-<page key="NA" name="(NA)"/>
+<artifact deprecated="true" id="StructureDefinition/vaers-adverseevent" key="StructureDefinition-ibm-fda-vaers-adverseevent" name="VAERS Adverse Event"/>
+<artifact deprecated="true" id="Practitioner/VAERSAuthor" key="Practitioner-VAERSAuthor" name="VAERS Author of ICSR Reports"/>
+<artifact deprecated="true" id="PractitionerRole/VAERSAuthorRole" key="PractitionerRole-VAERSAuthorRole" name="VAERS Author Role of ICSR reports"/>
+<artifact deprecated="true" id="StructureDefinition/ibm-fda-icsr-vaers-bundle" key="StructureDefinition-ibm-fda-icsr-vaers-bundle" name="VAERS Bundle"/>
+<artifact deprecated="true" id="Bundle/ConnectathonVAERSBundle" key="Bundle-ConnectathonVAERSBundle" name="VAERS Bundle for Connectathon Sample"/>
+<artifact deprecated="true" id="MedicationAdministration/VAERSHydrocortisoneAdministration" key="MedicationAdministration-VAERSHydrocortisoneAdministration" name="VAERS Hydrocortisone Administration"/>
+<artifact deprecated="true" id="StructureDefinition/ibm-fda-icsr-vaers-messageheader" key="StructureDefinition-ibm-fda-icsr-vaers-messageheader" name="VAERS MessageHeader"/>
+<artifact deprecated="true" id="Patient/VAERSPatient" key="Patient-VAERSPatient" name="VAERS Patient for FAERS Sample"/>
+<artifact deprecated="true" id="AdverseEvent/VAERSExampleEvent" key="AdverseEvent-VAERSExampleEvent" name="VAERS Sample Event"/>
+<artifact deprecated="true" id="Composition/VAERSExample" key="Composition-VAERSExample" name="VAERS Sample ICSR Report"/>
+<artifact deprecated="true" id="Immunization/VAERSExampleImmunization" key="Immunization-VAERSExampleImmunization" name="VAERS Sample Immunization for Connectathon Sample"/>
+<artifact deprecated="true" id="Organization/VAERSSender" key="Organization-VAERSSender" name="VAERS Sending Organization"/>
 <page key="many" name="(many)"/>
+<page key="NA" name="(NA)"/>
 <page deprecated="true" key="profiles" name="(profiles)"/>
 <page key="algorithms" name="Adverse Event Algorithms"/>
 <page key="artifacts" name="Artifacts Summary"/>
