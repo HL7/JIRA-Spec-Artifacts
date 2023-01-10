@@ -664,8 +664,9 @@
 		<!--<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:noNamespaceSchemaLocation="schemas/specification.xsd" defaultVersion="STU2"
  defaultWorkgroup="cic">-->
-		    <version deprecated="false" code="3.1.0-ballot"/>
-		    <version deprecated="false" code="2.1.0"/>
+		    <version deprecated="false" code="3.2.0"/>
+		    <version deprecated="true" code="3.1.0-ballot"/>
+		    <version deprecated="true" code="2.1.0"/>
 		    <version deprecated="true" code="1.1.0"/>
 		    <page key="CDA-emspcr-NA" name="(NA)" spec="emspcr"/>
 		    <page key="CDA-emspcr-many" name="(many)" spec="emspcr"/>
@@ -16501,7 +16502,8 @@
                   ciUrl="http://build.fhir.org/ig/HL7/ccda-on-fhir"
                   defaultWorkgroup="sd"
                   defaultVersion="1.0">
-      <version code="1.0"/>
+      <version code="1.0" deprecated="true"/>
+      <version code="2.0"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -16525,6 +16527,56 @@
                 key="FHIR-us-ccda-ValueSet"
                 deprecated="true"
                 spec="us-ccda"/>
+      <artifact id="ConceptMap/C2F-Patient"
+                key="FHIR-us-ccda-ConceptMap-C2F-Patient"
+                name="CCDA-to-FHIR map for Patient"
+                spec="us-ccda"/>
+      <artifact id="ConceptMap/C2F-Condition"
+                key="FHIR-us-ccda-ConceptMap-C2F-Condition"
+                name="CCDA-to-FHIR map for Condition"
+                spec="us-ccda"/>
+      <artifact id="ConceptMap/C2F-AllergyIntolerance"
+                key="FHIR-us-ccda-ConceptMap-C2F-AllergyIntolerance"
+                name="CCDA-to-FHIR map for AllergyIntolerance"
+                spec="us-ccda"/>
+      <artifact id="ConceptMap/C2F-MedicationRequest"
+                key="FHIR-us-ccda-ConceptMap-C2F-MedicationRequest"
+                name="CCDA-to-FHIR map for MedicationRequest"
+                spec="us-ccda"/>
+      <artifact id="ConceptMap/C2F-Procedure"
+                key="FHIR-us-ccda-ConceptMap-C2F-Procedure"
+                name="CCDA-to-FHIR map for Procedure"
+                spec="us-ccda"/>
+      <artifact id="ConceptMap/C2F-Immunization"
+                key="FHIR-us-ccda-ConceptMap-C2F-Immunization"
+                name="CCDA-to-FHIR map for Immunization"
+                spec="us-ccda"/>
+      <artifact id="ConceptMap/F2C-Patient"
+                key="FHIR-us-ccda-ConceptMap-F2C-Patient"
+                name="FHIR-to-CCDA map for Patient"
+                spec="us-ccda"/>
+      <artifact id="ConceptMap/F2C-Condition"
+                key="FHIR-us-ccda-ConceptMap-F2C-Condition"
+                name="FHIR-to-CCDA map for Condition"
+                spec="us-ccda"/>
+      <artifact id="ConceptMap/F2C-AllergyIntolerance"
+                key="FHIR-us-ccda-ConceptMap-F2C-AllergyIntolerance"
+                name="FHIR-to-CCDA map for AllergyIntolerance"
+                spec="us-ccda"/>
+      <artifact id="ConceptMap/F2C-MedicationRequest"
+                key="FHIR-us-ccda-ConceptMap-F2C-MedicationRequest"
+                name="FHIR-to-CCDA map for MedicationRequest"
+                spec="us-ccda"/>
+      <artifact id="ConceptMap/F2C-Procedure"
+                key="FHIR-us-ccda-ConceptMap-F2C-Procedure"
+                name="FHIR-to-CCDA map for Procedure"
+                spec="us-ccda"/>
+      <artifact id="ConceptMap/F2C-Immunization"
+                key="FHIR-us-ccda-ConceptMap-F2C-Immunization"
+                name="FHIR-to-CCDA map for Immunization"
+                spec="us-ccda"/>
+      <page name="Guidance" key="FHIR-us-ccda-Guidance" spec="us-ccda"/>
+      <page name="Terminology" key="FHIR-us-ccda-Terminology" spec="us-ccda"/>
       <page name="(NA)" key="FHIR-us-ccda-NA" spec="us-ccda"/>
       <page name="(many)" key="FHIR-us-ccda-many" spec="us-ccda"/>
       <page name="(methodology)" key="FHIR-us-ccda-methodology" spec="us-ccda"/>
