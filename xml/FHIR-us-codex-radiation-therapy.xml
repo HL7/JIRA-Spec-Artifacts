@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="http://build.fhir.org/ig/codex-radiation-therapy" defaultVersion="current" defaultWorkgroup="cgp" gitUrl="https://github.com/HL7/codex-radiation-therapy" url="http://hl7.org/fhir/us/codex-radiation-therapy">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/codex-radiation-therapy/2022Sep" ciUrl="http://build.fhir.org/ig/codex-radiation-therapy" defaultVersion="1.0.0-ballot" defaultWorkgroup="cgp" gitUrl="https://github.com/HL7/codex-radiation-therapy" url="http://hl7.org/fhir/us/codex-radiation-therapy">
 <version code="current" url="http://build.fhir.org/ig/codex-radiation-therapy"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/us/codex-radiation-therapy/2022Sep"/>
 <version code="0.1.0" deprecated="true"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="ValueSet/codex-radiotherapy-applicator-types-vs" key="ValueSet-codex-radiotherapy-applicator-types-vs" name="Brachytherapy Applicator Types"/>
-<artifact id="CodeSystem/codex-radiotherapy-applicator-types-cs" key="CodeSystem-codex-radiotherapy-applicator-types-cs" name="Brachytherapy Applicator Types Code System"/>
+<artifact id="ValueSet/codexrt-brachytherapy-applicator-type-vs" key="ValueSet-codexrt-brachytherapy-applicator-type-vs" name="Brachytherapy Applicator Type Value Set"/>
+<artifact deprecated="true" id="ValueSet/codex-radiotherapy-applicator-types-vs" key="ValueSet-codex-radiotherapy-applicator-types-vs" name="Brachytherapy Applicator Types"/>
+<artifact deprecated="true" id="CodeSystem/codex-radiotherapy-applicator-types-cs" key="CodeSystem-codex-radiotherapy-applicator-types-cs" name="Brachytherapy Applicator Types Code System"/>
+<artifact id="ValueSet/codexrt-brachytherapy-device-type-vs" key="ValueSet-codexrt-brachytherapy-device-type-vs" name="Brachytherapy Device Type Value Set"/>
+<artifact id="CapabilityStatement/CodexRTServerCapabilityStatement" key="CapabilityStatement-CodexRTServerCapabilityStatement" name="CodeX RT Server CapabilityStatement"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-progression-qualifier" key="StructureDefinition-codexrt-radiotherapy-progression-qualifier" name="Disease Progression Qualifier"/>
+<artifact id="ValueSet/codexrt-disease-progression-qualifier-vs" key="ValueSet-codexrt-disease-progression-qualifier-vs" name="Disease Progression Qualifier Value Set"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-dose-planned-to-volume" key="StructureDefinition-codexrt-radiotherapy-dose-planned-to-volume" name="Dose Planned to Volume"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-dose-prescribed-to-volume" key="StructureDefinition-codexrt-radiotherapy-dose-prescribed-to-volume" name="Dose Prescribed to Volume"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-energy-or-isotope" key="StructureDefinition-codexrt-radiotherapy-energy-or-isotope" name="Energy or Isotope"/>
 <artifact id="Condition/Diagnosis-1-Breast" key="Condition-Diagnosis-1-Breast" name="Example Diagnosis 1"/>
 <artifact id="Condition/Diagnosis-101-Breast" key="Condition-Diagnosis-101-Breast" name="Example Diagnosis 101 Breast"/>
 <artifact id="Condition/Diagnosis-2-Prostate" key="Condition-Diagnosis-2-Prostate" name="Example Diagnosis 2"/>
@@ -23,22 +30,30 @@
 <artifact id="Patient/Patient-XRTS-04-22A" key="Patient-Patient-XRTS-04-22A" name="Example XRTS Patient 4"/>
 <artifact id="Patient/Patient-XRTS-05-22A" key="Patient-Patient-XRTS-05-22A" name="Example XRTS Patient 5"/>
 <artifact id="Patient/Patient-XRTS-06-22B" key="Patient-Patient-XRTS-06-22B" name="Example XRTS Patient 6"/>
+<artifact id="Patient/Patient-XRTS-07-22B" key="Patient-Patient-XRTS-07-22B" name="Example XRTS Patient 7"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-fractions-delivered" key="StructureDefinition-codexrt-radiotherapy-fractions-delivered" name="Number of Delivered Fractions"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-fractions-planned" key="StructureDefinition-codexrt-radiotherapy-fractions-planned" name="Number of Planned Fractions"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-fractions-prescribed" key="StructureDefinition-codexrt-radiotherapy-fractions-prescribed" name="Number of Prescribed Fractions"/>
-<artifact id="StructureDefinition/codexrt-radiotherapy-course-prescription" key="StructureDefinition-codexrt-radiotherapy-course-prescription" name="Radiotherapy Course Cumulative Prescription"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-course-prescription" key="StructureDefinition-codexrt-radiotherapy-course-prescription" name="Radiotherapy Course Prescription"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-course-summary" key="StructureDefinition-codexrt-radiotherapy-course-summary" name="Radiotherapy Course Summary"/>
-<artifact id="StructureDefinition/codexrt-radiotherapy-energy-or-isotope" key="StructureDefinition-codexrt-radiotherapy-energy-or-isotope" name="Radiotherapy Energy or Isotope"/>
-<artifact id="StructureDefinition/codexrt-radiotherapy-fractions-delivered" key="StructureDefinition-codexrt-radiotherapy-fractions-delivered" name="Radiotherapy Fractions Delivered"/>
-<artifact id="ValueSet/codex-radiotherapy-isotopes" key="ValueSet-codex-radiotherapy-isotopes" name="Radiotherapy Isotopes"/>
-<artifact id="StructureDefinition/codexrt-radiotherapy-phase-prescription" key="StructureDefinition-codexrt-radiotherapy-phase-prescription" name="Radiotherapy Phase Cumulative Prescription"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-disease-status" key="StructureDefinition-codexrt-radiotherapy-disease-status" name="Radiotherapy Disease Status"/>
+<artifact id="ValueSet/codexrt-radiotherapy-energy-unit-vs" key="ValueSet-codexrt-radiotherapy-energy-unit-vs" name="Radiotherapy Energy Unit Value Set"/>
+<artifact id="ValueSet/codexrt-radiotherapy-isotope-vs" key="ValueSet-codexrt-radiotherapy-isotope-vs" name="Radiotherapy Isotope Value Set"/>
+<artifact deprecated="true" id="ValueSet/codex-radiotherapy-isotopes" key="ValueSet-codex-radiotherapy-isotopes" name="Radiotherapy Isotopes"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-phase-prescription" key="StructureDefinition-codexrt-radiotherapy-phase-prescription" name="Radiotherapy Phase Prescription"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-plan-prescription" key="StructureDefinition-codexrt-radiotherapy-plan-prescription" name="Radiotherapy Plan Prescription"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-planned-course" key="StructureDefinition-codexrt-radiotherapy-planned-course" name="Radiotherapy Planned Course"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-planned-phase" key="StructureDefinition-codexrt-radiotherapy-planned-phase" name="Radiotherapy Planned Phase"/>
+<artifact id="ValueSet/codexrt-radiotherapy-reason-for-revision-or-adaptation-vs" key="ValueSet-codexrt-radiotherapy-reason-for-revision-or-adaptation-vs" name="Radiotherapy Reason for Revision or Adaptation Value Set"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-seed-device" key="StructureDefinition-codexrt-radiotherapy-seed-device" name="Radiotherapy Seed Device"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-treated-phase" key="StructureDefinition-codexrt-radiotherapy-treated-phase" name="Radiotherapy Treated Phase"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-treated-plan" key="StructureDefinition-codexrt-radiotherapy-treated-plan" name="Radiotherapy Treated Plan"/>
-<artifact id="StructureDefinition/codexrt-radiotheraphy-treatment-applicator-type" key="StructureDefinition-codexrt-radiotheraphy-treatment-applicator-type" name="Radiotherapy Treatment Applicator Type"/>
+<artifact deprecated="true" id="StructureDefinition/codexrt-radiotheraphy-treatment-applicator-type" key="StructureDefinition-codexrt-radiotheraphy-treatment-applicator-type" name="Radiotherapy Treatment Applicator Type"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-treatment-device" key="StructureDefinition-codexrt-radiotherapy-treatment-device" name="Radiotherapy Treatment Device"/>
+<artifact id="ValueSet/codexrt-radiotherapy-treatment-location-type-vs" key="ValueSet-codexrt-radiotherapy-treatment-location-type-vs" name="Radiotherapy Treatment Location Type Value Set"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-treatment-plan" key="StructureDefinition-codexrt-radiotherapy-treatment-plan" name="Radiotherapy Treatment Plan"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-volume" key="StructureDefinition-codexrt-radiotherapy-volume" name="Radiotherapy Volume"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-volume-extension" key="StructureDefinition-codexrt-radiotherapy-volume-extension" name="Radiotherapy Volume Extension"/>
 <artifact id="ServiceRequest/RadiotherapyCoursePrescription-04-Prostate" key="ServiceRequest-RadiotherapyCoursePrescription-04-Prostate" name="RadiotherapyCoursePrescription-04-Prostate"/>
 <artifact id="ServiceRequest/RadiotherapyCoursePrescription-101-RTTD-BilateralBreast" key="ServiceRequest-RadiotherapyCoursePrescription-101-RTTD-BilateralBreast" name="RadiotherapyCoursePrescription-101-RTTD-BilateralBreast"/>
 <artifact id="Procedure/RadiotherapyCourseSummary-04-Prostate" key="Procedure-RadiotherapyCourseSummary-04-Prostate" name="RadiotherapyCourseSummary-04-Prostate"/>
@@ -56,6 +71,7 @@
 <artifact id="Procedure/RadiotherapyCourseSummary-XRTS-05-22A-02-BrainMets-1P-1V" key="Procedure-RadiotherapyCourseSummary-XRTS-05-22A-02-BrainMets-1P-1V" name="RadiotherapyCourseSummary-XRTS-05-22A-02-BrainMets-1P-1V"/>
 <artifact id="Procedure/RadiotherapyCourseSummary-XRTS-06-22B-01-Uterus-1P-1V" key="Procedure-RadiotherapyCourseSummary-XRTS-06-22B-01-Uterus-1P-1V" name="RadiotherapyCourseSummary-XRTS-06-22B-01-Uterus-1P-1V"/>
 <artifact id="Procedure/RadiotherapyCourseSummary-XRTS-06-22B-01-Uterus-1P-1V-1Fx" key="Procedure-RadiotherapyCourseSummary-XRTS-06-22B-01-Uterus-1P-1V-1Fx" name="RadiotherapyCourseSummary-XRTS-06-22B-01-Uterus-1P-1V-1Fx"/>
+<artifact id="Procedure/RadiotherapyCourseSummary-XRTS-07-22B-01-Uterus-1P-1V" key="Procedure-RadiotherapyCourseSummary-XRTS-07-22B-01-Uterus-1P-1V" name="RadiotherapyCourseSummary-XRTS-07-22B-01-Uterus-1P-1V"/>
 <artifact id="ServiceRequest/RadiotherapyPhasePrescription-04-Prostate-Phase1" key="ServiceRequest-RadiotherapyPhasePrescription-04-Prostate-Phase1" name="RadiotherapyPhasePrescription-04-Prostate-Phase1"/>
 <artifact id="ServiceRequest/RadiotherapyPhasePrescription-05-Prostate-Phase2" key="ServiceRequest-RadiotherapyPhasePrescription-05-Prostate-Phase2" name="RadiotherapyPhasePrescription-05-Prostate-Phase2"/>
 <artifact id="ServiceRequest/RadiotherapyPhasePrescription-101-RTTD-LeftBreastTang" key="ServiceRequest-RadiotherapyPhasePrescription-101-RTTD-LeftBreastTang" name="RadiotherapyPhasePrescription-101-RTTD-LeftBreastTang"/>
@@ -71,6 +87,7 @@
 <artifact id="ServiceRequest/RadiotherapyPlannedCourse-XRTS-05-22A-01-BrainMets-1P-1V" key="ServiceRequest-RadiotherapyPlannedCourse-XRTS-05-22A-01-BrainMets-1P-1V" name="RadiotherapyPlannedCourse-XRTS-05-22A-01-BrainMets-1P-1V"/>
 <artifact id="ServiceRequest/RadiotherapyPlannedCourse-XRTS-05-22A-02-BrainMets-1P-1V" key="ServiceRequest-RadiotherapyPlannedCourse-XRTS-05-22A-02-BrainMets-1P-1V" name="RadiotherapyPlannedCourse-XRTS-05-22A-02-BrainMets-1P-1V"/>
 <artifact id="ServiceRequest/RadiotherapyPlannedCourse-XRTS-06-22B-01-Uterus-1P-1V" key="ServiceRequest-RadiotherapyPlannedCourse-XRTS-06-22B-01-Uterus-1P-1V" name="RadiotherapyPlannedCourse-XRTS-06-22B-01-Uterus-1P-1V"/>
+<artifact id="ServiceRequest/RadiotherapyPlannedCourse-XRTS-07-22B-01-Uterus-1P-1V" key="ServiceRequest-RadiotherapyPlannedCourse-XRTS-07-22B-01-Uterus-1P-1V" name="RadiotherapyPlannedCourse-XRTS-07-22B-01-Uterus-1P-1V"/>
 <artifact id="ServiceRequest/RadiotherapyPlannedPhase-04-Prostate-Phase1" key="ServiceRequest-RadiotherapyPlannedPhase-04-Prostate-Phase1" name="RadiotherapyPlannedPhase-04-Prostate-Phase1"/>
 <artifact id="ServiceRequest/RadiotherapyPlannedPhase-05-Prostate-Phase2" key="ServiceRequest-RadiotherapyPlannedPhase-05-Prostate-Phase2" name="RadiotherapyPlannedPhase-05-Prostate-Phase2"/>
 <artifact id="ServiceRequest/RadiotherapyPlannedPhase-XRTS-01-22A-01-01-Primary" key="ServiceRequest-RadiotherapyPlannedPhase-XRTS-01-22A-01-01-Primary" name="RadiotherapyPlannedPhase-XRTS-01-22A-01-01-Primary"/>
@@ -83,6 +100,8 @@
 <artifact id="ServiceRequest/RadiotherapyPlannedPhase-XRTS-05-22A-01-01-Primary" key="ServiceRequest-RadiotherapyPlannedPhase-XRTS-05-22A-01-01-Primary" name="RadiotherapyPlannedPhase-XRTS-05-22A-01-01-Primary"/>
 <artifact id="ServiceRequest/RadiotherapyPlannedPhase-XRTS-05-22A-02-01-Primary" key="ServiceRequest-RadiotherapyPlannedPhase-XRTS-05-22A-02-01-Primary" name="RadiotherapyPlannedPhase-XRTS-05-22A-02-01-Primary"/>
 <artifact id="ServiceRequest/RadiotherapyPlannedPhase-XRTS-06-22B-01-01-Primary" key="ServiceRequest-RadiotherapyPlannedPhase-XRTS-06-22B-01-01-Primary" name="RadiotherapyPlannedPhase-XRTS-06-22B-01-01-Primary"/>
+<artifact id="ServiceRequest/RadiotherapyPlannedPhase-XRTS-07-22B-01-01-Primary" key="ServiceRequest-RadiotherapyPlannedPhase-XRTS-07-22B-01-01-Primary" name="RadiotherapyPlannedPhase-XRTS-07-22B-01-01-Primary"/>
+<artifact id="Device/RadiotherapySeedDevice-Mesh" key="Device-RadiotherapySeedDevice-Mesh" name="RadiotherapySeedDevice-Mesh"/>
 <artifact id="Procedure/RadiotherapyTreatedPhase-05-Prostate-Phase1" key="Procedure-RadiotherapyTreatedPhase-05-Prostate-Phase1" name="RadiotherapyTreatedPhase-05-Prostate-Phase1"/>
 <artifact id="Procedure/RadiotherapyTreatedPhase-101-LeftBreastTang" key="Procedure-RadiotherapyTreatedPhase-101-LeftBreastTang" name="RadiotherapyTreatedPhase-101-LeftBreastTang"/>
 <artifact id="Procedure/RadiotherapyTreatedPhase-102-LeftBreastBoost" key="Procedure-RadiotherapyTreatedPhase-102-LeftBreastBoost" name="RadiotherapyTreatedPhase-102-LeftBreastBoost"/>
@@ -103,7 +122,9 @@
 <artifact id="Procedure/RadiotherapyTreatedPhase-XRTS-05-22A-02-01-Primary" key="Procedure-RadiotherapyTreatedPhase-XRTS-05-22A-02-01-Primary" name="RadiotherapyTreatedPhase-XRTS-05-22A-02-01-Primary"/>
 <artifact id="Procedure/RadiotherapyTreatedPhase-XRTS-06-22B-01-01-Primary" key="Procedure-RadiotherapyTreatedPhase-XRTS-06-22B-01-01-Primary" name="RadiotherapyTreatedPhase-XRTS-06-22B-01-01-Primary"/>
 <artifact id="Procedure/RadiotherapyTreatedPhase-XRTS-06-22B-01-01-Primary-1Fx" key="Procedure-RadiotherapyTreatedPhase-XRTS-06-22B-01-01-Primary-1Fx" name="RadiotherapyTreatedPhase-XRTS-06-22B-01-01-Primary-1Fx"/>
+<artifact id="Procedure/RadiotherapyTreatedPhase-XRTS-07-22B-01-01-Primary" key="Procedure-RadiotherapyTreatedPhase-XRTS-07-22B-01-01-Primary" name="RadiotherapyTreatedPhase-XRTS-07-22B-01-01-Primary"/>
 <artifact id="Procedure/RadiotherapyTreatedPlan-05-Prostate-Phase1-Plan1" key="Procedure-RadiotherapyTreatedPlan-05-Prostate-Phase1-Plan1" name="RadiotherapyTreatedPlan-05-Prostate-Phase1-Plan1"/>
+<artifact id="Device/RadiotherapyTreatmentDevice-ACMETurbo3000Afterloader" key="Device-RadiotherapyTreatmentDevice-ACMETurbo3000Afterloader" name="RadiotherapyTreatmentDevice-ACMETurbo3000Afterloader"/>
 <artifact id="ServiceRequest/RadiotherapyTreatmentPlan-04-Prostate-Phase1-Plan1" key="ServiceRequest-RadiotherapyTreatmentPlan-04-Prostate-Phase1-Plan1" name="RadiotherapyTreatmentPlan-04-Prostate-Phase1-Plan1"/>
 <artifact id="ServiceRequest/RadiotherapyTreatmentPlan-05-Prostate-Phase2-Plan1" key="ServiceRequest-RadiotherapyTreatmentPlan-05-Prostate-Phase2-Plan1" name="RadiotherapyTreatmentPlan-05-Prostate-Phase2-Plan1"/>
 <artifact id="BodyStructure/radiotherapyVolume-01-PTV50" key="BodyStructure-radiotherapyVolume-01-PTV50" name="RadiotherapyVolume-01-PTV50"/>
@@ -125,34 +146,41 @@
 <artifact id="BodyStructure/RadiotherapyVolume-XRTS-05-22A-01-BrainMets" key="BodyStructure-RadiotherapyVolume-XRTS-05-22A-01-BrainMets" name="RadiotherapyVolume-XRTS-05-22A-01-BrainMets"/>
 <artifact id="BodyStructure/RadiotherapyVolume-XRTS-05-22A-02-BrainMets" key="BodyStructure-RadiotherapyVolume-XRTS-05-22A-02-BrainMets" name="RadiotherapyVolume-XRTS-05-22A-02-BrainMets"/>
 <artifact id="BodyStructure/RadiotherapyVolume-XRTS-06-22B-01-Uterus" key="BodyStructure-RadiotherapyVolume-XRTS-06-22B-01-Uterus" name="RadiotherapyVolume-XRTS-06-22B-01-Uterus"/>
-<artifact id="StructureDefinition/codexrt-radiotheraphy-reason-for-revision" key="StructureDefinition-codexrt-radiotheraphy-reason-for-revision" name="Reason for Revision"/>
-<artifact id="CodeSystem/codex-radiotherapy-reason-for-revision-cs" key="CodeSystem-codex-radiotherapy-reason-for-revision-cs" name="Reason for Revision Code System"/>
-<artifact id="ValueSet/codex-radiotherapy-reason-for-revision-vs" key="ValueSet-codex-radiotherapy-reason-for-revision-vs" name="Reason for Revision Value Set"/>
+<artifact id="BodyStructure/RadiotherapyVolume-XRTS-07-22B-01-Uterus" key="BodyStructure-RadiotherapyVolume-XRTS-07-22B-01-Uterus" name="RadiotherapyVolume-XRTS-07-22B-01-Uterus"/>
+<artifact deprecated="true" id="StructureDefinition/codexrt-radiotheraphy-reason-for-revision" key="StructureDefinition-codexrt-radiotheraphy-reason-for-revision" name="Reason for Revision"/>
+<artifact deprecated="true" id="CodeSystem/codex-radiotherapy-reason-for-revision-cs" key="CodeSystem-codex-radiotherapy-reason-for-revision-cs" name="Reason for Revision Code System"/>
+<artifact deprecated="true" id="ValueSet/codex-radiotherapy-reason-for-revision-vs" key="ValueSet-codex-radiotherapy-reason-for-revision-vs" name="Reason for Revision Value Set"/>
+<artifact id="StructureDefinition/codexrt-radiotheraphy-reason-for-revision-or-adaptation" key="StructureDefinition-codexrt-radiotheraphy-reason-for-revision-or-adaptation" name="Reason for Revision or Adaptation"/>
 <artifact id="StructureDefinition/codexrt-dicom-reference" key="StructureDefinition-codexrt-dicom-reference" name="Reference to DICOM SOP Instance"/>
 <artifact id="CodeSystem/snomed-requested-cs" key="CodeSystem-snomed-requested-cs" name="Requested SNOMED Codes Code System"/>
-<artifact id="StructureDefinition/codexrt-radiotheraphy-treatment-device" key="StructureDefinition-codexrt-radiotheraphy-treatment-device" name="Treatment Device"/>
-<artifact id="StructureDefinition/codexrt-radiotheraphy-treatment-device-manufacturer" key="StructureDefinition-codexrt-radiotheraphy-treatment-device-manufacturer" name="Treatment Device Manufacturer"/>
-<artifact id="StructureDefinition/codexrt-radiotheraphy-treatment-device-model" key="StructureDefinition-codexrt-radiotheraphy-treatment-device-model" name="Treatment Device Model"/>
-<artifact id="ValueSet/radiotherapy-energy-units" key="ValueSet-radiotherapy-energy-units" name="Unit to characterize Energy in Radiotherapy"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-treatment-applicator-type" key="StructureDefinition-codexrt-radiotherapy-treatment-applicator-type" name="Treatment Applicator Type"/>
+<artifact deprecated="true" id="StructureDefinition/codexrt-radiotheraphy-treatment-device" key="StructureDefinition-codexrt-radiotheraphy-treatment-device" name="Treatment Device"/>
+<artifact deprecated="true" id="StructureDefinition/codexrt-radiotheraphy-treatment-device-manufacturer" key="StructureDefinition-codexrt-radiotheraphy-treatment-device-manufacturer" name="Treatment Device Manufacturer"/>
+<artifact deprecated="true" id="StructureDefinition/codexrt-radiotheraphy-treatment-device-model" key="StructureDefinition-codexrt-radiotheraphy-treatment-device-model" name="Treatment Device Model"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-treatment-location" key="StructureDefinition-codexrt-radiotherapy-treatment-location" name="Treatment Location"/>
+<artifact id="Location/Treatment-Location-1" key="Location-Treatment-Location-1" name="Treatment Location 1"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-uniform-fractionation" key="StructureDefinition-codexrt-radiotherapy-uniform-fractionation" name="Uniform Fractionation"/>
+<artifact deprecated="true" id="ValueSet/radiotherapy-energy-units" key="ValueSet-radiotherapy-energy-units" name="Unit to characterize Energy in Radiotherapy"/>
+<artifact id="Observation/cancer-disease-status-22A" key="Observation-cancer-disease-status-22A" name="cancer-disease-status-22A"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="basic_examples" name="Basic Examples"/>
-<page key="capabilitystatements" name="Capability Statements"/>
+<page deprecated="true" key="capabilitystatements" name="Capability Statements"/>
 <page key="change_log" name="Change Log"/>
-<page key="codesystems" name="Code Systems"/>
+<page deprecated="true" key="codesystems" name="Code Systems"/>
 <page key="conformance-general" name="Conformance Expectations"/>
 <page key="dictionary" name="Data Dictionary"/>
 <page key="downloads" name="Download Specification"/>
 <page key="examples" name="Extended Example"/>
-<page key="extensions" name="Extensions"/>
+<page deprecated="true" key="extensions" name="Extensions"/>
 <page key="index" name="Home"/>
 <page deprecated="true" key="overview" name="Overview"/>
 <page key="conformance-profiles" name="Profile Conformance"/>
-<page key="profiles" name="Profiles"/>
+<page deprecated="true" key="profiles" name="Profiles"/>
 <page deprecated="true" key="glossary" name="Radioterapy Glossary"/>
 <page key="toc" name="Table of Contents"/>
 <page key="terminology" name="Terminology"/>
 <page deprecated="true" key="codex-radiation-therapy" name="The codex-radiation-therapy FHIR Project" url="codex-radiation-therapy"/>
-<page key="valuesets" name="Value Sets"/>
+<page deprecated="true" key="valuesets" name="Value Sets"/>
 </specification>

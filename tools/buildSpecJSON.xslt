@@ -108,6 +108,9 @@
       <xsl:apply-templates mode="familySpecs" select="node()"/>
     </xsl:copy>
 	</xsl:template>
+	<xsl:template mode="familySpecs" match="*[@deprecated='true']/@name">
+    <xsl:attribute name="name" select="concat(., ' [deprecated]')"/>
+	</xsl:template>
 	<!--
     - The ballot specs provide an integrated version listing all specs from all families.  (Keys and names get the family added to keep them unique)
     -->
