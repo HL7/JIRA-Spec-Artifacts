@@ -49422,7 +49422,9 @@
       <version code="current" url="http://build.fhir.org/ig/HL7/fhir-specialty-rx"/>
       <version code="2.0.0-ballot" url="http://hl7.org/fhir/us/specialty-rx/2022Sep"/>
       <version code="1.0.0" url="http://hl7.org/fhir/us/specialty-rx/STU1"/>
-      <version code="0.1.0" url="http://hl7.org/fhir/us/specialty-rx/2021Jan"/>
+      <version code="0.1.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/us/specialty-rx/2021Jan"/>
       <version code="1.1.0-ballot"
                deprecated="true"
                url="http://hl7.org/fhir/us/specialty-rx/2022Sep"/>
@@ -49531,21 +49533,29 @@
                 key="FHIR-us-specialty-rx-CodeSystem-specialty-rx-event-type"
                 name="Specialty Rx CodeSystem - Event Type"
                 spec="us-specialty-rx"/>
-      <artifact id="CodeSystem/specialty-rx-task-identifier-type"
+      <artifact id="CodeSystem/specialty-rx-task-characteristic"
+                key="FHIR-us-specialty-rx-CodeSystem-specialty-rx-task-characteristic"
+                name="Specialty Rx CodeSystem - Task Characteristic"
+                spec="us-specialty-rx"/>
+      <artifact deprecated="true"
+                id="CodeSystem/specialty-rx-task-identifier-type"
                 key="FHIR-us-specialty-rx-CodeSystem-specialty-rx-task-identifier-type"
-                name="Specialty Rx CodeSystem - Task Identifier Type"
+                name="Specialty Rx CodeSystem - Task Identifier Type [deprecated]"
                 spec="us-specialty-rx"/>
-      <artifact id="CodeSystem/specialty-rx-task-input-type"
+      <artifact deprecated="true"
+                id="CodeSystem/specialty-rx-task-input-type"
                 key="FHIR-us-specialty-rx-CodeSystem-specialty-rx-task-input-type"
-                name="Specialty Rx CodeSystem - Task Input Type"
+                name="Specialty Rx CodeSystem - Task Input Type [deprecated]"
                 spec="us-specialty-rx"/>
-      <artifact id="CodeSystem/specialty-rx-task-output-type"
+      <artifact deprecated="true"
+                id="CodeSystem/specialty-rx-task-output-type"
                 key="FHIR-us-specialty-rx-CodeSystem-specialty-rx-task-output-type"
-                name="Specialty Rx CodeSystem - Task Output Type"
+                name="Specialty Rx CodeSystem - Task Output Type [deprecated]"
                 spec="us-specialty-rx"/>
-      <artifact id="CodeSystem/specialty-rx-task-type"
+      <artifact deprecated="true"
+                id="CodeSystem/specialty-rx-task-type"
                 key="FHIR-us-specialty-rx-CodeSystem-specialty-rx-task-type"
-                name="Specialty Rx CodeSystem - Task Type"
+                name="Specialty Rx CodeSystem - Task Type [deprecated]"
                 spec="us-specialty-rx"/>
       <artifact deprecated="true"
                 id="StructureDefinition/specialty-rx-condition"
