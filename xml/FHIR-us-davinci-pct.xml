@@ -29,7 +29,7 @@
 <artifact id="StructureDefinition/davinci-pct-aeob-adjudication-error" key="StructureDefinition-davinci-pct-aeob-adjudication-error" name="PCT AEOB Adjudication Error"/>
 <artifact id="StructureDefinition/davinci-pct-aeob-bundle" key="StructureDefinition-davinci-pct-aeob-bundle" name="PCT AEOB Bundle"/>
 <artifact id="StructureDefinition/davinci-pct-aeob-complete" key="StructureDefinition-davinci-pct-aeob-complete" name="PCT AEOB Complete"/>
-<artifact id="CodeSystem/PCTAEOBProcessNoteCS" key="CodeSystem-PCTAEOBProcessNoteCS" name="PCT AEOB Process Note"/>
+<artifact id="CodeSystem/PCTAEOBProcessNoteCS" key="CodeSystem-PCTAEOBProcessNoteCS" name="PCT AEOB Process Note Code System"/>
 <artifact id="ValueSet/PCTAEOBProcessNoteVS" key="ValueSet-PCTAEOBProcessNoteVS" name="PCT AEOB Process Note Types"/>
 <artifact id="CodeSystem/PCTAdjudicationCategoryCS" key="CodeSystem-PCTAdjudicationCategoryCS" name="PCT Adjudication Category CodeSystem"/>
 <artifact deprecated="true" id="CodeSystem/PCTAdjudicationCategoryType" key="CodeSystem-PCTAdjudicationCategoryType" name="PCT Adjudication Category Type"/>
@@ -40,19 +40,20 @@
 <artifact id="StructureDefinition/davinci-pct-aeob" key="StructureDefinition-davinci-pct-aeob" name="PCT Advanced EOB"/>
 <artifact id="ValueSet/PCTProcedureSurgicalCodes" key="ValueSet-PCTProcedureSurgicalCodes" name="PCT CMS HCPCS and AMA CPT Procedure Surgical Codes"/>
 <artifact id="CodeSystem/PCTCareTeamRole" key="CodeSystem-PCTCareTeamRole" name="PCT Care Team Role"/>
-<artifact id="ValueSet/PCTCareTeamRoleVS" key="ValueSet-PCTCareTeamRoleVS" name="PCT Care Team Role Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set"/>
+<artifact id="ValueSet/PCTCareTeamRoleVS" key="ValueSet-PCTCareTeamRoleVS" name="PCT Care Team Role Value Set"/>
 <artifact id="StructureDefinition/davinci-pct-coverage" key="StructureDefinition-davinci-pct-coverage" name="PCT Coverage"/>
 <artifact deprecated="true" id="CodeSystem/PCTCoverageCopayTypeCS" key="CodeSystem-PCTCoverageCopayTypeCS" name="PCT Coverage Copay Type Code System"/>
 <artifact deprecated="true" id="ValueSet/pct-coverage-copay-codes" key="ValueSet-pct-coverage-copay-codes" name="PCT Coverage Copay Type Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set"/>
 <artifact id="CodeSystem/PCTDiagnosisType" key="CodeSystem-PCTDiagnosisType" name="PCT Diagnosis Type"/>
-<artifact id="ValueSet/PCTDiagnosisTypeVS" key="ValueSet-PCTDiagnosisTypeVS" name="PCT Diagnosis Type Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set"/>
-<artifact id="ValueSet/PCTFinancialTypeVS" key="ValueSet-PCTFinancialTypeVS" name="PCT Financial Type"/>
-<artifact id="CodeSystem/PCTFinancialType" key="CodeSystem-PCTFinancialType" name="PCT Financial Type"/>
+<artifact id="ValueSet/PCTDiagnosisTypeVS" key="ValueSet-PCTDiagnosisTypeVS" name="PCT Diagnosis Type Value Set"/>
+<artifact id="CodeSystem/PCTFinancialType" key="CodeSystem-PCTFinancialType" name="PCT Financial Type Code System"/>
+<artifact id="ValueSet/PCTFinancialTypeVS" key="ValueSet-PCTFinancialTypeVS" name="PCT Financial Type Value Set"/>
 <artifact id="StructureDefinition/davinci-pct-gfe-bundle" key="StructureDefinition-davinci-pct-gfe-bundle" name="PCT GFE Bundle"/>
 <artifact id="ValueSet/PCTGFECMSPOS" key="ValueSet-PCTGFECMSPOS" name="PCT GFE CMS Place of Service Value Set"/>
 <artifact id="CodeSystem/PCTGFEFrequency" key="CodeSystem-PCTGFEFrequency" name="PCT GFE Frequency Code System"/>
 <artifact id="ValueSet/PCTGFEFrequencyVS" key="ValueSet-PCTGFEFrequencyVS" name="PCT GFE Frequency Code Value Set"/>
-<artifact id="ValueSet/PCTAdjudicationCategoryVS" key="ValueSet-PCTGFEItemAdjudicationVS" name="PCT GFE Item Adjudication Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set"/>
+<artifact id="ValueSet/PCTAdjudicationCategoryVS" key="ValueSet-PCTAdjudicationCategoryVS" name="PCT GFE Item Adjudication Value Set"/>
+<artifact deprecated="true" id="ValueSet/PCTGFEItemAdjudicationVS" key="ValueSet-PCTGFEItemAdjudicationVS" name="PCT GFE Item Adjudication Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set"/>
 <artifact deprecated="true" id="ValueSet/PCTGFEItemCptHcpcsHippsVS" key="ValueSet-PCTGFEItemCptHcpcsHippsVS" name="PCT GFE Item CPT - HCPCS - HIPPS Value Set"/>
 <artifact id="ValueSet/PCTGFEItemCptHcpcsVS" key="ValueSet-PCTGFEItemCptHcpcsVS" name="PCT GFE Item CPT - HCPCS Value Set"/>
 <artifact id="ValueSet/PCTGFEItemNDCVS" key="ValueSet-PCTGFEItemNDCVS" name="PCT GFE Item NDC Value Set"/>
@@ -83,9 +84,9 @@
 <artifact deprecated="true" id="StructureDefinition/davinci-pct-practitionerrole" key="StructureDefinition-davinci-pct-practitionerrole" name="PCT PractitionerRole"/>
 <artifact deprecated="true" id="CodeSystem/PCTProcedureSurgicalCS" key="CodeSystem-PCTProcedureSurgicalCS" name="PCT Procedure Surgical Code System"/>
 <artifact id="CodeSystem/PCTProcedureType" key="CodeSystem-PCTProcedureType" name="PCT Procedure Type"/>
-<artifact id="ValueSet/PCTProcedureTypeVS" key="ValueSet-PCTProcedureTypeVS" name="PCT Procedure Type Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set"/>
+<artifact id="ValueSet/PCTProcedureTypeVS" key="ValueSet-PCTProcedureTypeVS" name="PCT Procedure Type Value Set"/>
 <artifact id="CodeSystem/PCTSubjectToMedicalMgmtReasonCS" key="CodeSystem-PCTSubjectToMedicalMgmtReasonCS" name="PCT Subject-To-Medical-Management Reason Code System"/>
-<artifact id="ValueSet/PCTSubjectToMedicalMgmtReasonVS" key="ValueSet-PCTSubjectToMedicalMgmtReasonVS" name="PCT Subject-To-Medical-Management Reason Value Set - locally defined for testing purpose; an external FHIR value set will be created through the HL7 Terminology (THO) process to replace this value set"/>
+<artifact id="ValueSet/PCTSubjectToMedicalMgmtReasonVS" key="ValueSet-PCTSubjectToMedicalMgmtReasonVS" name="PCT Subject-To-Medical-Management Reason Value Set"/>
 <artifact id="ValueSet/PCTSupportingInfoTypeVS" key="ValueSet-PCTSupportingInfoTypeVS" name="PCT Supporting Info Type Value Set"/>
 <artifact id="ValueSet/PCTBenefitBalanceCategoryVS" key="ValueSet-PCTBenefitBalanceCategoryVS" name="PCT benefitBalance.category codes"/>
 <artifact id="ExplanationOfBenefit/PCT-AEOB-1" key="ExplanationOfBenefit-PCT-AEOB-1" name="PCT-AEOB-1"/>
