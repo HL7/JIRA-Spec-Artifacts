@@ -6,27 +6,21 @@
                defaultVersion="0.1.0"
                xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
    <version code="current" url="https://build.fhir.org/ig/HL7/fhir-ipa"/>
-   <version code="0.1.0" url="http://hl7.org/fhir/uv/ipa/2022Jan"/>
    <version code="1.0.0" url="http://hl7.org/fhir/uv/ipa/STU1" deprecated="true"/>
+   <version code="0.1.0" url="http://hl7.org/fhir/uv/ipa/2022Jan"/>
    <version code="0.8.0" deprecated="true"/>
    <version code="0.1" deprecated="true"/>
    <artifactPageExtension value="-definitions"/>
    <artifactPageExtension value="-examples"/>
    <artifactPageExtension value="-mappings"/>
-   <artifact id="AllergyIntolerance/AllIntExample1" key="AllergyIntolerance-AllIntExample1" name="IPA AllergyIntolerance example"/>
-   <artifact id="Condition/ProblemExample1" key="Condition-ProblemExample1" name="IPA Condition example"/>
-   <artifact id="DocumentReference/USClinicalNoteExample1" key="DocumentReference-USClinicalNoteExample1" name="IPA DocumentReference example"/>
+   <artifact id="DocumentReference/USClinicalNoteExample1" key="DocumentReference-USClinicalNoteExample1" name="DocumentReference Example"/>
+   <artifact id="AllergyIntolerance/AllIntExample1" key="AllergyIntolerance-AllIntExample1" name="IPA AllergyIntolerance Example"/>
+   <artifact id="Condition/EncounterExample1" key="Condition-EncounterExample1" name="IPA Condition Example"/>
    <artifact id="OperationDefinition/docref" key="OperationDefinition-docref" name="IPA Fetch DocumentReference"/>
-   <artifact id="Immunization/ImmExample1" key="Immunization-ImmExample1" name="IPA Immunization example"/>
-   <artifact id="Observation/LabExample1" key="Observation-LabExample1" name="IPA Lab Observation example"/>
-   <artifact id="MedicationStatement/MedStatementExample1" key="MedicationStatement-MedStatementExample1" name="IPA Medication Statement example"/>
-   <artifact id="Medication/MedExample1" key="Medication-MedExample1" name="IPA Medication example"/>
-   <artifact id="MedicationRequest/MedRecExample1" key="MedicationRequest-MedRecExample1" name="IPA MedicationRequest example"/>
-   <artifact id="Patient/PatientExample1" key="Patient-PatientExample1" name="IPA Patient example"/>
-   <artifact id="PractitionerRole/PractitionerRoleExample1" key="PractitionerRole-PractitionerRoleExample1" name="IPA Practitioner Role example"/>
-   <artifact id="Practitioner/PractitionerExample1" key="Practitioner-PractitionerExample1" name="IPA Practitioner example"/>
-   <artifact id="Observation/SmokingExample1" key="Observation-SmokingExample1" name="IPA Smoking Observation example"/>
-   <artifact id="Observation/VitalSignsExample1" key="Observation-VitalSignsExample1" name="IPA Vital Signs Observation example"/>
+   <artifact id="Immunization/ImmExample1" key="Immunization-ImmExample1" name="IPA Immunization Example"/>
+   <artifact id="AllergyIntolerance/NKAExample" key="AllergyIntolerance-NKAExample" name="IPA No Known Allergies AllergyIntolerance Example"/>
+   <artifact id="Patient/PatientExample1" key="Patient-PatientExample1" name="IPA Patient Example"/>
+   <artifact id="Condition/ProblemExample1" key="Condition-ProblemExample1" name="IPA Problem List Item Example"/>
    <artifact id="StructureDefinition/ipa-allergyintolerance" key="StructureDefinition-ipa-allergyintolerance" name="IPA-AllergyIntolerance"/>
    <artifact id="StructureDefinition/ipa-condition" key="StructureDefinition-ipa-condition" name="IPA-Condition"/>
    <artifact id="StructureDefinition/ipa-documentreference" key="StructureDefinition-ipa-documentreference" name="IPA-DocumentReference"/>
@@ -38,23 +32,35 @@
    <artifact id="StructureDefinition/ipa-patient" key="StructureDefinition-ipa-patient" name="IPA-Patient"/>
    <artifact id="StructureDefinition/ipa-practitioner" key="StructureDefinition-ipa-practitioner" name="IPA-Practitioner"/>
    <artifact id="StructureDefinition/ipa-practitionerrole" key="StructureDefinition-ipa-practitionerrole" name="IPA-PractitionerRole"/>
+   <artifact id="StructureDefinition/ipa-problem-list-item" key="StructureDefinition-ipa-problem-list-item" name="IPA-problem-list-item"/>
+   <artifact id="CapabilityStatement/ipa-client" key="CapabilityStatement-ipa-client" name="International Patient Access Client CapabilityStatement"/>
    <artifact id="CapabilityStatement/ipa-server" key="CapabilityStatement-ipa-server" name="International Patient Access Server CapabilityStatement"/>
+   <artifact id="Medication/MedExample1" key="Medication-MedExample1" name="Medication Example"/>
+   <artifact id="MedicationRequest/MedRecExample1" key="MedicationRequest-MedRecExample1" name="MedicationRequest Example"/>
+   <artifact id="MedicationStatement/MedStatementExample1" key="MedicationStatement-MedStatementExample1" name="MedicationStatement Example"/>
+   <artifact id="Observation/LabExample1" key="Observation-LabExample1" name="Observation Lab Example"/>
+   <artifact id="Observation/VitalSignsExample1" key="Observation-VitalSignsExample1" name="Observation Vital Signs Example"/>
+   <artifact id="Observation/SmokingExample1" key="Observation-SmokingExample1" name="Observation social history smoking Example"/>
+   <artifact id="Practitioner/PractitionerExample1" key="Practitioner-PractitionerExample1" name="Practitioner Example"/>
+   <artifact id="PractitionerRole/PractitionerRoleExample1" key="PractitionerRole-PractitionerRoleExample1" name="PractitionerRole Example"/>
    <page key="NA" name="(NA)"/>
    <page key="many" name="(many)"/>
-   <page key="artifacts" name="Artifact List"/>
-   <page key="conformance" name="Conforming to this specification"/>
+   <page key="artifacts" name="Artifacts Summary"/>
+   <page key="conformance" name="Conforming to this Specification"/>
    <page key="downloads" name="Downloads"/>
-   <page key="fetching" name="Finding / Retrieving information about the patient"/>
-   <page key="access" name="Gaining Access to a patient record"/>
-   <page key="doc-gen" name="Generating Patient Documents"/>
-   <page key="ipa-server" name="IPA Server Requirements"/>
-   <page key="ipa-by-country" name="IPA Specifications by Country"/>
+   <page key="fetching" name="Finding and Retrieving Patient Information"/>
+   <page key="access" name="Gaining Access to a Patient Record"/>
+   <page deprecated="true" key="doc-gen" name="Generating Patient Documents"/>
+   <page key="ImplementationGuide-hl7.fhir.uv.ipa" name="IPA ImplementationGuide Resource"/>
+   <page deprecated="true" key="ipa-server" name="IPA Server Requirements"/>
+   <page deprecated="true" key="ipa-by-country" name="IPA Specifications by Country"/>
    <page key="index" name="International Patient Access"/>
    <page key="internationalization" name="Internationalization Issues"/>
-   <page key="privacy" name="Privacy and Consent"/>
-   <page key="ips-relationship" name="Relationship with International Patient Summary"/>
-   <page key="safety" name="Safety Check List"/>
-   <page key="security" name="Security"/>
+   <page deprecated="true" key="privacy" name="Privacy and Consent"/>
+   <page deprecated="true" key="ips-relationship" name="Relationship with International Patient Summary"/>
+   <page deprecated="true" key="safety" name="Safety Check List"/>
+   <page key="security" name="Security and Privacy"/>
    <page key="synchronization" name="Synchronizing Patient Records"/>
    <page key="toc" name="Table of Contents"/>
+   <page key="using-the-api" name="Using the API"/>
 </specification>
