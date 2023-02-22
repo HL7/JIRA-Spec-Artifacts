@@ -686,14 +686,18 @@
                   key="CDA-hai"
                   deprecated="false"
                   name="Healthcare Associated Infection (HAI) Reports (CDA)"
-                  defaultVersion="3.4.0"
+                  defaultVersion="4.2.1"
                   defaultWorkgroup="sd"
                   url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=426">
 		<!--<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:noNamespaceSchemaLocation="schemas/specification.xsd" defaultVersion="STU4"
  defaultWorkgroup="sd">-->
-		    <version deprecated="false" code="3.4.0"/>
-		    <version deprecated="false" code="3.3.0"/>
+	     <version code="4.2.1"/>
+	     <version code="4.2.0"/>
+	     <version code="4.1.0"/>
+	     <version code="3.0.0"/>
+		    <version code="3.4.0"/>
+		    <version code="3.3.0"/>
 		    <version deprecated="true" code="2.1.0"/>
 		    <page key="CDA-hai-NA" name="(NA)" spec="hai"/>
 		    <page key="CDA-hai-many" name="(many)" spec="hai"/>
@@ -713,13 +717,14 @@
                   key="CDA-hailtcfcda"
                   deprecated="false"
                   name="National Healthcare Safety Network (NHSN) Healthcare Associated Infection (HAI) Reports for Long Term Care Facilities (HAI-LTCF-CDA) (CDA)"
-                  defaultVersion="1.1.0"
+                  defaultVersion="1.1.1"
                   defaultWorkgroup="sd"
                   url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=546">
 <!--<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:noNamespaceSchemaLocation="schemas/specification.xsd" defaultVersion="STU1"
  defaultWorkgroup="sd">-->
 	     <version code="1.1.0" deprecated="false"/>
+      <version code="1.1.1" deprecated="false"/>
 	     <page key="CDA-hailtcfcda-NA" name="(NA)" spec="hailtcfcda"/>
 	     <page key="CDA-hailtcfcda-many" name="(many)" spec="hailtcfcda"/>
 	     <page key="CDA-hailtcfcda-usecases" name="Use Cases" spec="hailtcfcda"/>
@@ -31606,9 +31611,13 @@
                   gitUrl="https://github.com/HL7/HAI"
                   url="http://hl7.org/fhir/us/hai"
                   ciUrl="http://build.fhir.org/ig/HL7/HAI"
-                  defaultWorkgroup="pher"
-                  defaultVersion="0.1">
-      <version code="0.1"/>
+                  defaultWorkgroup="sd"
+                  defaultVersion="2.1.0">
+      <version code="2.1.0"/>
+      <version code="2.0.0"/>
+      <version code="1.1.0"/>
+      <version code="1.0.0"/>
+      <version deprecated="true" code="0.1"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -31635,11 +31644,12 @@
                   name="US Healthcare Associated Infection Reports Long Term Care Facilities (HAI-LTCF) (FHIR)"
                   ballotUrl="http://hl7.org/fhir/us/hai-ltcf/2019Sep"
                   ciUrl="http://build.fhir.org/ig/HL7/HAI-LTCF"
-                  defaultVersion="1.0.0"
+                  defaultVersion="1.1.0"
                   defaultWorkgroup="pher"
                   gitUrl="https://github.com/HL7/HAI-LTCF"
                   url="http://hl7.org/fhir/us/hai-ltcf">
       <version code="current" url="http://build.fhir.org/ig/HL7/HAI-LTCF"/>
+      <version code="1.1.0" url="http://hl7.org/fhir/us/hai-ltcf/STU1.1"/>
       <version code="1.0.0" url="http://hl7.org/fhir/us/hai-ltcf/STU1"/>
       <version code="0.1.0" url="http://hl7.org/fhir/us/hai-ltcf/2019Sep"/>
       <version code="0.1" deprecated="true"/>
@@ -31756,8 +31766,12 @@
       <page key="FHIR-us-hai-ltcf-toc"
             name="Table of Contents"
             spec="us-hai-ltcf"/>
-      <page key="FHIR-us-hai-ltcf-this_specificiation"
-            name="This Specificiation"
+      <page deprecated="true"
+            key="FHIR-us-hai-ltcf-this_specificiation"
+            name="This Specificiation [deprecated]"
+            spec="us-hai-ltcf"/>
+      <page key="FHIR-us-hai-ltcf-this_specification"
+            name="This Specification"
             spec="us-hai-ltcf"/>
       <page deprecated="true"
             key="FHIR-us-hai-ltcf-mappings"
