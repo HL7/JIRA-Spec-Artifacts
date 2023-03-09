@@ -1028,27 +1028,125 @@
                   defaultVersion="1.1.0"
                   defaultWorkgroup="pharm"
                   url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=514">
-		<!-- new version 1.2.0 added -->
-		    <version code="1.2.0" deprecated="false"/>
-		    <!-- -->
-		    <version code="1.2.0-ballot" deprecated="false"/>
-		    <version code="1.1.0" deprecated="false"/>
-		    <version code="1.0.0" deprecated="false"/>
-		    <page key="CDA-pharm-NA" name="(NA)" spec="pharm"/>
-		    <page key="CDA-pharm-many" name="(many)" spec="pharm"/>
-		    <page key="CDA-pharm-usecases" name="Use Cases" spec="pharm"/>
-		    <page key="CDA-pharm-narratives" name="Narrative Guidance" spec="pharm"/>
-		    <page key="CDA-pharm-templates" name="Templates" spec="pharm"/>
-		    <page key="CDA-pharm-figures-examples"
+	<!-- new version 1.2.0 added -->
+	     <version code="1.2.0" deprecated="false"/>
+	     <!-- -->
+	     <version code="1.2.0-ballot" deprecated="false"/>
+	     <version code="1.1.0" deprecated="false"/>
+	     <version code="1.0.0" deprecated="false"/>
+
+
+	     <artifact id="2.16.840.1.113883.10.21.4.4"
+                name="UV ClinicalStatement Encounter"
+                key="CDA-pharm-UVClinicalStatementMinimalEncounter"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.4.3"
+                name="UV ClinicalStatement Observation"
+                key="CDA-pharm-UVClinicalStatementMinimalObservation"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.4.12"
+                name="UV Comment Activity"
+                key="CDA-pharm-UVCommentactivity"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.4.9"
+                name="UV Dispense Event Reference"
+                key="CDA-pharm-UVDispenseEventReference"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.4.2"
+                name="UV Dispense Request"
+                key="CDA-pharm-UVDispenseRequest"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.4.18"
+                name="UV Ingredient"
+                key="CDA-pharm-UVIngredient"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.4.15"
+                name="UV Medication Dispense"
+                key="CDA-pharm-UVMedicationDispense"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.4.11"
+                name="UV Medication Information (detail)"
+                key="CDA-pharm-UVMedicationInformationdetail"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.4.10"
+                name="UV Medication Information (simple)"
+                key="CDA-pharm-UVMedicationInformationsimple"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.4.8"
+                name="UV Medication Order Reference"
+                key="CDA-pharm-UVMedicationOrderReference"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.4.13"
+                name="UV Medication Administration"
+                key="CDA-pharm-UVMedicationadministration"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.4.7"
+                name="UV Medication Statement"
+                key="CDA-pharm-UVMedicationstatement"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.4.6"
+                name="UV Subordinate Substance Administration"
+                key="CDA-pharm-UVSubordinateadministration"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.4.1"
+                name="UV Medication Order"
+                key="CDA-pharm-UVSubstanceadministrationrequest"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.4.14"
+                name="UV Substitution Event Adminstration"
+                key="CDA-pharm-UVSubstitutionEventAdministration"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.4.5"
+                name="UV Substitution Permission"
+                key="CDA-pharm-UVSubstitutionPermission"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.4.17"
+                name="UV Content"
+                key="CDA-pharm-UVasContent"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.4.19"
+                name="UV Generalized Medicine Class"
+                key="CDA-pharm-UVgeneralizedMedicineClass"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.10.21.9.1"
+                name="UV Use Period"
+                key="CDA-pharm-Useperiod"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.11.21.2"
+                name="ActStatusActiveCompletedAbortedSuspended"
+                key="CDA-pharm-ActStatusCodeActiveCompletedAbortedSuspended"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.11.21.1"
+                name="Medication Time Units (UCUM)"
+                key="CDA-pharm-MedicationTimeUnits"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.11.21.4"
+                name="Mood Code Evn Int Rqo"
+                key="CDA-pharm-MoodCodeEvnIntRqo"
+                spec="pharm"/>
+	     <artifact id="2.16.840.1.113883.11.21.5"
+                name="Unknown or absent medication"
+                key="CDA-pharm-Unknownorabsentmedication"
+                spec="pharm"/>
+
+
+
+	     <page key="CDA-pharm-NA" name="(NA)" spec="pharm"/>
+	     <page key="CDA-pharm-many" name="(many)" spec="pharm"/>
+	     <page key="CDA-pharm-usecases" name="Use Cases" spec="pharm"/>
+	     <page key="CDA-pharm-narratives" name="Narrative Guidance" spec="pharm"/>
+	     <page key="CDA-pharm-templates" name="Templates" spec="pharm"/>
+	     <page key="CDA-pharm-figures-examples"
             name="Figures and Examples"
             spec="pharm"/>
-		    <page key="CDA-pharm-valuesets" name="Value sets" spec="pharm"/>
-		    <page key="CDA-pharm-samplefiles" name="Sample Files" spec="pharm"/>
-		    <page key="CDA-pharm-schematron"
+	     <page key="CDA-pharm-valuesets" name="Value sets" spec="pharm"/>
+	     <page key="CDA-pharm-samplefiles" name="Sample Files" spec="pharm"/>
+	     <page key="CDA-pharm-schematron"
             name="Schematron Validation Files"
             spec="pharm"/>
-		    <page key="CDA-pharm-TBD" name="TBD" spec="pharm"/>
-	  </specification>
+	     <page key="CDA-pharm-TBD" name="TBD" spec="pharm"/>
+
+   </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="CDA-phcaserpt"
                   deprecated="false"
