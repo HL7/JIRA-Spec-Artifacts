@@ -5015,28 +5015,31 @@
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-ehrs-rle"
                   name="EHRS Functional Model - Record Lifecycle Events (FHIR)"
-                  ballotUrl="http://hl7.org/fhir/uv/ehrs-rle/2023Jan"
+                  ballotUrl="http://hl7.org/fhir/uv/ehrs-rle/2023May"
                   ciUrl="https://build.fhir.org/ig/HL7/ehrs-rle-ig"
-                  defaultVersion="1.0.0-ballot"
+                  defaultVersion="1.1.0-ballot"
                   defaultWorkgroup="ehr"
                   gitUrl="https://github.com/HL7/ehrs-rle-ig"
                   url="http://hl7.org/fhir/uv/ehrs-rle">
       <version code="current" url="https://build.fhir.org/ig/HL7/ehrs-rle-ig"/>
-      <version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/ehrs-rle/2023Jan"/>
+      <version code="1.1.0-ballot" url="http://hl7.org/fhir/uv/ehrs-rle/2023May"/>
+      <version code="1.0.0-ballot"
+               deprecated="true"
+               url="http://hl7.org/fhir/uv/ehrs-rle/2023Jan"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact id="CapabilityStatement/conformance-ehrs-rle"
-                key="FHIR-ehrs-rle-EHRSFunctionalModelRecordLifecycleEventsCapabilityStatement"
-                name="EHRS Functional Model - Record Lifecycle Events Capability Statement"
-                spec="ehrs-rle"/>
       <artifact id="StructureDefinition/ehrsrle-auditevent"
                 key="FHIR-ehrs-rle-EHRSFunctionalModelRecordLifecycleEventsAuditEvent"
-                name="EHRSFunctionalModelRecordLifecycleEventsAuditEvent"
+                name="EHRS Functional Model - Record Lifecycle Events - AuditEvent"
+                spec="ehrs-rle"/>
+      <artifact id="CapabilityStatement/conformance-ehrs-rle"
+                key="FHIR-ehrs-rle-EHRSFunctionalModelRecordLifecycleEventsCapabilityStatement"
+                name="EHRS Functional Model - Record Lifecycle Events - Capability Statement"
                 spec="ehrs-rle"/>
       <artifact id="StructureDefinition/ehrsrle-provenance"
                 key="FHIR-ehrs-rle-EHRSFunctionalModelRecordLifecycleEventsProvenance"
-                name="EHRSFunctionalModelRecordLifecycleEventsProvenance"
+                name="EHRS Functional Model - Record Lifecycle Events - Provenance"
                 spec="ehrs-rle"/>
       <page key="FHIR-ehrs-rle-NA" name="(NA)" spec="ehrs-rle"/>
       <page key="FHIR-ehrs-rle-many" name="(many)" spec="ehrs-rle"/>
