@@ -19,6 +19,18 @@
     <schemavalidate noNamespaceFile="schemas/specification.xsd">
       <fileset dir="xml" includes="*.xml" excludes="SPECS-*.xml,_workgroups.xml,_families.xml"/>
     </schemavalidate>
+    <resourcecount property="count.cda">
+      <fileset dir="xml" includes="CDA-*.xml"/>
+    </resourcecount>
+    <resourcecount property="count.fhir">
+      <fileset dir="xml" includes="FHIR-*.xml"/>
+    </resourcecount>
+    <resourcecount property="count.other">
+      <fileset dir="xml" includes="OTHER-*.xml"/>
+    </resourcecount>
+    <resourcecount property="count.v2">
+      <fileset dir="xml" includes="V2-*.xml"/>
+    </resourcecount>
   </target>
   <target name="genJson" depends="validate" description="Generates json files for JIRA and comparison XML file">
     <mkdir dir="json"/>
@@ -39,6 +51,20 @@
     <xslt in="xml/_families.xml" out="json/SPECS.json" style="tools/buildSpecJSON.xslt" classpathref="saxon.path">
       <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
+    <echo file="tools/temp/actualcount.txt" message="CDA-${count.cda}&#x0a;"/>
+    <echo file="tools/temp/actualcount.txt" message="FHIR-${count.fhir}&#x0a;" append="true"/>
+    <echo file="tools/temp/actualcount.txt" message="OTHER-${count.other}&#x0a;" append="true"/>
+    <echo file="tools/temp/actualcount.txt" message="V2-${count.v2}&#x0a;" append="true"/>
+    <xslt in="json/SPECS.xml" out="tools/temp/definedcount.txt" style="tools/countSpecs.xslt" classpathref="saxon.path">
+      <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+    </xslt>
+    <fail message="The number of spec files found in the XML folder doesn't match the number of files defined in the SPECS-*.xml files.  Check the tools/temp/actualcount.txt (files in the folder) and definedcount.txt (files listed in SPECS-*.xml files) files.  Typically this happens when file is committed to the XML folder, but no row is added to the appropriate SPECS-*.xml files.">
+      <condition>
+        <not>
+          <filesmatch file1="tools/temp/actualcount.txt" file2="tools/temp/definedcount.txt" textfile="true"/>
+        </not>
+      </condition>
+    </fail>
   </target>
   <target name="test" depends="genJson" description="Default task Travis looks for"/>
 </project>
