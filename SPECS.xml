@@ -3462,11 +3462,12 @@
                   name="SMART on FHIR (FHIR)"
                   ballotUrl="http://hl7.org/fhir/smart-app-launch/2021May"
                   ciUrl="http://build.fhir.org/ig/HL7/smart-app-launch"
-                  defaultVersion="2.0.0"
+                  defaultVersion="2.1.0"
                   defaultWorkgroup="fhir-i"
                   gitUrl="https://github.com/HL7/smart-app-launch"
                   url="http://hl7.org/fhir/smart-app-launch">
       <version code="current" url="http://build.fhir.org/ig/HL7/smart-app-launch"/>
+      <version code="2.1.0" url="http://hl7.org/fhir/smart-app-launch/STU2.1"/>
       <version code="2.1.0-ballot" url="http://hl7.org/fhir/smart-app-launch/2023Jan"/>
       <version code="2.0.0" url="http://hl7.org/fhir/smart-app-launch/STU2"/>
       <version code="1.1.0" url="http://hl7.org/fhir/smart-app-launch/2021May"/>
@@ -3540,6 +3541,7 @@
       <page key="FHIR-smart-scopes-and-launch-context"
             name="App Launch: Scopes and Launch Context"
             spec="smart"/>
+      <page key="FHIR-smart-apps" name="Apps" spec="smart"/>
       <page key="FHIR-smart-artifacts" name="Artifacts Summary" spec="smart"/>
       <page key="FHIR-smart-backend-services"
             name="Backend Services"
@@ -3549,6 +3551,9 @@
             name="Basic Auth Example [deprecated]"
             spec="smart"/>
       <page key="FHIR-smart-best-practices" name="Best Practices" spec="smart"/>
+      <page key="FHIR-smart-client-authentication"
+            name="Client Authentication"
+            spec="smart"/>
       <page key="FHIR-smart-client-confidential-asymmetric"
             name="Client Authentication: Asymmetric (public key)"
             spec="smart"/>
@@ -3567,6 +3572,9 @@
             spec="smart"/>
       <page key="FHIR-smart-example-backend-services"
             name="Example Backend Services Flow"
+            spec="smart"/>
+      <page key="FHIR-smart-worked_example_id_token"
+            name="Example Id Token"
             spec="smart"/>
       <page key="FHIR-smart-authorization-example-jwks-and-signatures"
             name="Example JWS generation for Asymmetric Client Auth"
@@ -3592,15 +3600,13 @@
       <page key="FHIR-smart-app-state"
             name="Persisting App State (Experimental)"
             spec="smart"/>
+      <page key="FHIR-smart-references" name="References" spec="smart"/>
       <page key="FHIR-smart-toc" name="Table of Contents" spec="smart"/>
       <page key="FHIR-smart-task-launch"
             name="Task profile for requesting SMART launch (Experimental)"
             spec="smart"/>
       <page key="FHIR-smart-token-introspection"
             name="Token Introspection"
-            spec="smart"/>
-      <page key="FHIR-smart-worked_example_id_token"
-            name="Worked Example Id Token"
             spec="smart"/>
       <page deprecated="true"
             key="FHIR-smart-smart-app-launch"
