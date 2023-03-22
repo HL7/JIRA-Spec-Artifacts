@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/hai-ltcf/2019Sep" ciUrl="http://build.fhir.org/ig/HL7/HAI-LTCF" defaultVersion="1.0.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/HAI-LTCF" url="http://hl7.org/fhir/us/hai-ltcf">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/hai-ltcf/2019Sep" ciUrl="http://build.fhir.org/ig/HL7/HAI-LTCF" defaultVersion="1.1.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/HAI-LTCF" url="http://hl7.org/fhir/us/hai-ltcf">
   <version code="current" url="http://build.fhir.org/ig/HL7/HAI-LTCF" />
-  <version code="0.1.0" url="http://hl7.org/fhir/us/hai-ltcf/2019Sep" />
-  <version code="1.0.0" url="http://hl7.org/fhir/us/hai-ltcf/STU1" />
+  <version code="1.1.0" url="http://hl7.org/fhir/us/hai-ltcf/STU1.1"/>
+  <version code="1.0.0" url="http://hl7.org/fhir/us/hai-ltcf/STU1"/>
+  <version code="0.1.0" url="http://hl7.org/fhir/us/hai-ltcf/2019Sep"/>
   <version code="0.1" deprecated="true" />
   <artifactPageExtension value="-definitions" />
   <artifactPageExtension value="-examples" />
@@ -20,11 +21,11 @@
   <artifact id="QuestionnaireResponse/hai-ltcf-questionnaireresponse-mdro-cdi-event" key="QuestionnaireResponse-hai-ltcf-questionnaireresponse-mdro-cdi-event" name="MDRO and CDI Event Report for LTCF" />
   <artifact id="Questionnaire/hai-ltcf-questionnaire-mdro-cdi-summary" key="Questionnaire-hai-ltcf-questionnaire-mdro-cdi-summary" name="MDRO and CDI LabID Event Reporting Monthly Summary Data for LTCF" />
   <artifact id="QuestionnaireResponse/hai-ltcf-questionnaireresponse-mdro-cdi-summary" key="QuestionnaireResponse-hai-ltcf-questionnaireresponse-mdro-cdi-summary" name="MDRO and CDI Monthly Summary Data for LTCF" />
-  <artifact id="CodeSystem/hsloc" key="CodeSystem-hsloc" name="NHSN Healthcare Facility Patient Care Location (HSLOC)" />
-  <artifact id="ValueSet/nhsn-healthcare-service-location-code" key="ValueSet-nhsn-healthcare-service-location-code" name="NHSN Healthcare Service Location Code" />
-  <artifact id="ValueSet/nhsn-population-summary-report-type-code" key="ValueSet-nhsn-population-summary-report-type-code" name="NHSN Population Summary Report Type Code" />
-  <artifact id="ValueSet/nhsn-primary-resident-service-type" key="ValueSet-nhsn-primary-resident-service-type" name="NHSN Primary Resident Service Type" />
-  <artifact id="CodeSystem/cdcnhsn" key="CodeSystem-cdcnhsn" name="NHSN Surveillance System Codes (CDCNHSN)" />
+  <artifact deprecated="true" id="CodeSystem/hsloc" key="CodeSystem-hsloc" name="NHSN Healthcare Facility Patient Care Location (HSLOC)" />
+  <artifact deprecated="true" id="ValueSet/nhsn-healthcare-service-location-code" key="ValueSet-nhsn-healthcare-service-location-code" name="NHSN Healthcare Service Location Code" />
+  <artifact deprecated="true" id="ValueSet/nhsn-population-summary-report-type-code" key="ValueSet-nhsn-population-summary-report-type-code" name="NHSN Population Summary Report Type Code" />
+  <artifact deprecated="true" id="ValueSet/nhsn-primary-resident-service-type" key="ValueSet-nhsn-primary-resident-service-type" name="NHSN Primary Resident Service Type" />
+  <artifact deprecated="true" id="CodeSystem/cdcnhsn" key="CodeSystem-cdcnhsn" name="NHSN Surveillance System Codes (CDCNHSN)" />
   <artifact deprecated="true" key="Questionnaire" name="Questionnaire" />
   <artifact deprecated="true" key="QuestionnaireAnswers" name="QuestionnaireAnswers" />
   <artifact id="Parameters/expansion-parameters-lctf" key="Parameters-expansion-parameters-lctf" name="expansion-parameters-lctf" />
@@ -36,7 +37,8 @@
   <page key="downloads" name="Downloads" />
   <page key="index" name="Healthcare Associated Infection Reports (FHIR)" />
   <page key="toc" name="Table of Contents" />
-  <page key="this_specificiation" name="This Specificiation" />
+  <page deprecated="true" key="this_specificiation" name="This Specificiation" />
+  <page key="this_specification" name="This Specification" />
   <page deprecated="true" key="mappings" name="mappings" />
   <page deprecated="true" key="terminologies" name="terminologies" />
 </specification>
