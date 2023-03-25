@@ -9289,6 +9289,97 @@
             spec="radiation-dose-summary"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-rtls"
+                  name="Real Time Location Services (FHIR)"
+                  ballotUrl="http://hl7.org/fhir/uv/rtls/2023May"
+                  ciUrl="https://build.fhir.org/ig/HL7/rtls-ig"
+                  defaultVersion="1.0.0-ballot"
+                  defaultWorkgroup="pa"
+                  url="http://hl7.org/fhir/uv/rtls"
+                  gitUrl="https://github.com/HL7/rtls-ig">
+      <version code="current" url="https://build.fhir.org/ig/HL7/rtls-ig"/>
+      <version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/rtls/2023May"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <artifact id="Bundle/EnrollTagExample-MessageBundle"
+                key="FHIR-rtls-Bundle-EnrollTagExample-MessageBundle"
+                name="Enroll Tag Event example"
+                spec="rtls"/>
+      <artifact id="Bundle/LocationUpdateExample-MessageBundle1"
+                key="FHIR-rtls-Bundle-LocationUpdateExample-MessageBundle1"
+                name="Location Update Event example"
+                spec="rtls"/>
+      <artifact id="Device/rtlsTagExample"
+                key="FHIR-rtls-Device-rtlsTagExample"
+                name="RTLS Device example"
+                spec="rtls"/>
+      <artifact id="StructureDefinition/rtlsLocation"
+                key="FHIR-rtls-StructureDefinition-rtlsLocation"
+                name="RTLS Location Resource Profile"
+                spec="rtls"/>
+      <artifact id="Location/rtlsLocationExample"
+                key="FHIR-rtls-Location-rtlsLocationExample"
+                name="RTLS Location example"
+                spec="rtls"/>
+      <artifact id="StructureDefinition/rtlsMessageBundle"
+                key="FHIR-rtls-StructureDefinition-rtlsMessageBundle"
+                name="RTLS Message Bundle Profile"
+                spec="rtls"/>
+      <artifact id="CodeSystem/rtlsMessageEvents"
+                key="FHIR-rtls-CodeSystem-rtlsMessageEvents"
+                name="RTLS Message Events"
+                spec="rtls"/>
+      <artifact id="ValueSet/rtlsMessageEvents"
+                key="FHIR-rtls-ValueSet-rtlsMessageEvents"
+                name="RTLS Message Events Valueset"
+                spec="rtls"/>
+      <artifact id="StructureDefinition/rtlsMessageHeader"
+                key="FHIR-rtls-StructureDefinition-rtlsMessageHeader"
+                name="RTLS Message Header Resource Profile"
+                spec="rtls"/>
+      <artifact id="StructureDefinition/rtlsSubscription"
+                key="FHIR-rtls-StructureDefinition-rtlsSubscription"
+                name="RTLS Subscription"
+                spec="rtls"/>
+      <artifact id="CodeSystem/rtlsSubscriptionEvents"
+                key="FHIR-rtls-CodeSystem-rtlsSubscriptionEvents"
+                name="RTLS Subscription Events"
+                spec="rtls"/>
+      <artifact id="StructureDefinition/rtlsSubscriptionStatus"
+                key="FHIR-rtls-StructureDefinition-rtlsSubscriptionStatus"
+                name="RTLS Subscription Status Profile"
+                spec="rtls"/>
+      <artifact id="ValueSet/rtlsSubscriptionTopicEvents"
+                key="FHIR-rtls-ValueSet-rtlsSubscriptionTopicEvents"
+                name="RTLS Subscription Topic Events Valueset"
+                spec="rtls"/>
+      <artifact id="StructureDefinition/rtlsSubscriptionTopic"
+                key="FHIR-rtls-StructureDefinition-rtlsSubscriptionTopic"
+                name="RTLS Subscription Topic Profile"
+                spec="rtls"/>
+      <artifact id="Subscription/rtlsSubscriptionExample"
+                key="FHIR-rtls-Subscription-rtlsSubscriptionExample"
+                name="RTLS Subscription example"
+                spec="rtls"/>
+      <artifact id="StructureDefinition/rtlsDevice"
+                key="FHIR-rtls-StructureDefinition-rtlsDevice"
+                name="RTLS Tag Device Profile"
+                spec="rtls"/>
+      <artifact id="Bundle/UnenrollTagExample-MessageBundle"
+                key="FHIR-rtls-Bundle-UnenrollTagExample-MessageBundle"
+                name="Unenroll Tag Event example"
+                spec="rtls"/>
+      <page key="FHIR-rtls-NA" name="(NA)" spec="rtls"/>
+      <page key="FHIR-rtls-many" name="(many)" spec="rtls"/>
+      <page key="FHIR-rtls-artifacts" name="Artifacts Summary" spec="rtls"/>
+      <page key="FHIR-rtls-background" name="Background" spec="rtls"/>
+      <page key="FHIR-rtls-home" name="Home" spec="rtls"/>
+      <page key="FHIR-rtls-changes" name="IG Change History" spec="rtls"/>
+      <page key="FHIR-rtls-spec" name="Specification" spec="rtls"/>
+      <page key="FHIR-rtls-toc" name="Table of Contents" spec="rtls"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-saner"
                   name="Situation Awareness for Novel Epidemic Response (FHIR)"
                   ballotUrl="http://hl7.org/fhir/uv/saner/2021Jan"
