@@ -1,51 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/physical-activity/2023May" ciUrl="http://build.fhir.org/ig/HL7/physical-activity" defaultVersion="1.0.0-ballot" defaultWorkgroup="pc" url="http://hl7.org/fhir/us/physical-activity" gitUrl="https://github.com/HL7/physical-activity" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-	<version code="current" url="http://build.fhir.org/ig/HL7/physical-activity"/>
-	<version code="1.0.0-ballot" url="http://hl7.org/fhir/us/physical-activity/2023May"/>
-	<artifactPageExtension value="-definitions"/>
-	<artifactPageExtension value="-examples"/>
-	<artifactPageExtension value="-mappings"/>
-	<artifact id="StructureDefinition/pa-activity-measure" key="StructureDefinition-pa-activity-measure" name="Activity-based Physical Activity Measure"/>
-	<artifact id="ValueSet/PAActivityMeasures" key="ValueSet-PAActivityMeasures" name="Activity-instance Physical Activity Measure Codes"/>
-	<artifact id="Observation/ExampleExerciseMinutesPerWeek" key="Observation-ExampleExerciseMinutesPerWeek" name="Example Exercise Minutes per Week"/>
-	<artifact id="Observation/ExampleEVSDaysPerWeek" key="Observation-ExampleEVSDaysPerWeek" name="Example Exercise Vital Sign Days per Week"/>
-	<artifact id="Observation/ExampleEVSMinutesPerDay" key="Observation-ExampleEVSMinutesPerDay" name="Example Exercise Vital Sign Minutes per Day"/>
-	<artifact id="QuestionnaireResponse/qr-evs-example" key="QuestionnaireResponse-qr-evs-example" name="Example Exercise Vital Sign QuestionnaireResponse"/>
-	<artifact id="Observation/ExampleStrengthDaysPerWeek" key="Observation-ExampleStrengthDaysPerWeek" name="Example Strength Exercise Days per Week"/>
-	<artifact id="StructureDefinition/observation-exercise-base" key="StructureDefinition-observation-exercise-base" name="Exercise Base"/>
-	<artifact id="StructureDefinition/observation-min-per-week" key="StructureDefinition-observation-min-per-week" name="Exercise Minutes per Week"/>
-	<artifact id="StructureDefinition/observation-support" key="StructureDefinition-observation-support" name="Exercise Supporting Observation"/>
-	<artifact id="StructureDefinition/observation-evs-days-per-week" key="StructureDefinition-observation-evs-days-per-week" name="Exercise Vital Sign Days per Week"/>
-	<artifact id="StructureDefinition/observation-evs-min-per-day" key="StructureDefinition-observation-evs-min-per-day" name="Exercise Vital Sign Minutes per Day"/>
-	<artifact id="Questionnaire/questionnaire-evs" key="Questionnaire-questionnaire-evs" name="Exercise Vital Sign Questionnaire"/>
-	<artifact id="ValueSet/ValueSetEVS" key="ValueSet-ValueSetEVS" name="Exercise Vital Sign Value Set"/>
-	<artifact id="StructureDefinition/pa-condition" key="StructureDefinition-pa-condition" name="Low Physical Activity Condition"/>
-	<artifact id="StructureDefinition/pa-careplan" key="StructureDefinition-pa-careplan" name="Physical Activity Care Plan"/>
-	<artifact id="StructureDefinition/pa-activity-Group" key="StructureDefinition-pa-activity-Group" name="Physical Activity Group"/>
-	<artifact id="ValueSet/PAInterventions" key="ValueSet-PAInterventions" name="Physical Activity Intervention Codes"/>
-	<artifact id="StructureDefinition/pa-procedure" key="StructureDefinition-pa-procedure" name="Physical Activity Procedure"/>
-	<artifact id="StructureDefinition/pa-servicerequest" key="StructureDefinition-pa-servicerequest" name="Physical Activity Service Request"/>
-	<artifact id="StructureDefinition/pa-task-for-referral-management" key="StructureDefinition-pa-task-for-referral-management" name="Physical Activity Task for Referral Management"/>
-	<artifact id="StructureDefinition/pa-goal" key="StructureDefinition-pa-goal" name="Physical Activity-Related Goal"/>
-	<artifact id="StructureDefinition/observation-strength-days-per-week" key="StructureDefinition-observation-strength-days-per-week" name="Strength Days Week"/>
-	<artifact id="CodeSystem/temporary-codes" key="CodeSystem-temporary-codes" name="Temporary Codes"/>
-	<artifact id="StructureDefinition/pa-time-measure" key="StructureDefinition-pa-time-measure" name="Time-based Physical Activity Measure"/>
-	<artifact id="ValueSet/PATimeMeasures" key="ValueSet-PATimeMeasures" name="Time-based Physical Activity Measure Codes"/>
-	<artifact id="ValueSet/USCorePAServiceRequestCategory" key="ValueSet-USCorePAServiceRequestCategory" name="US Core Physical Activity ServiceRequest Category"/>
-	<artifact id="CapabilityStatement/pa-care-manager" key="CapabilityStatement-pa-care-manager" name="pa-care-manager"/>
-	<artifact id="CapabilityStatement/pa-patient-engagement" key="CapabilityStatement-pa-patient-engagement" name="pa-patient-engagement"/>
-	<artifact id="CapabilityStatement/pa-referral-recipient" key="CapabilityStatement-pa-referral-recipient" name="pa-referral-recipient"/>
-	<page key="NA" name="(NA)"/>
-	<page key="many" name="(many)"/>
-	<page key="workflow" name="Conformance &amp; Workflow"/>
-	<page key="credits" name="Credits"/>
-	<page key="downloads" name="Downloads"/>
-	<page key="fhir" name="FHIR Background"/>
-	<page key="artifacts" name="IG Artifacts"/>
-	<page key="background" name="Importance of Physical Activity"/>
-	<page key="openissues" name="Open Issues"/>
-	<page key="index" name="Physical Activity Home"/>
-	<page key="measures" name="Physical Activity Measures"/>
-	<page key="interventions" name="Plans &amp; Interventions"/>
-	<page key="toc" name="Table of Contents"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/physical-activity/2023May" ciUrl="https://build.fhir.org/ig/HL7/physical-activity" defaultVersion="1.0.0-ballot" defaultWorkgroup="pc" gitUrl="https://github.com/HL7/physical-activity" url="http://hl7.org/fhir/us/physical-activity">
+<version code="current" url="https://build.fhir.org/ig/HL7/physical-activity"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/us/physical-activity/2023May"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact deprecated="true" id="QuestionnaireResponse/qr-evs-example" key="QuestionnaireResponse-qr-evs-example" name="Example Exercise Vital Sign QuestionnaireResponse"/>
+<artifact id="Condition/ExampleCondition" key="Condition-ExampleCondition" name="Example Low Physical Activity Condition"/>
+<artifact id="Observation/ExampleActivityType" key="Observation-ExampleActivityType" name="Example Observation Activity Measure - Activity"/>
+<artifact id="Observation/ExampleActivityDuration" key="Observation-ExampleActivityDuration" name="Example Observation Activity Measure - Activity duration"/>
+<artifact id="Observation/ExampleActivityCalories" key="Observation-ExampleActivityCalories" name="Example Observation Activity Measure - Calories"/>
+<artifact id="Observation/ExampleActivityModerate" key="Observation-ExampleActivityModerate" name="Example Observation Activity Measure - Moderate Minutes"/>
+<artifact id="Observation/ExampleActivityPeakHR" key="Observation-ExampleActivityPeakHR" name="Example Observation Activity Measure - Peak Heart Rate"/>
+<artifact id="Observation/ExampleActivityVigorous" key="Observation-ExampleActivityVigorous" name="Example Observation Activity Measure - Vigorous Minutes"/>
+<artifact id="Observation/ExampleAverageRestingHeartRate" key="Observation-ExampleAverageRestingHeartRate" name="Example Observation Average Resting Heart Rate"/>
+<artifact id="Observation/ExampleCaloriesPerDay" key="Observation-ExampleCaloriesPerDay" name="Example Observation Calories per Day"/>
+<artifact id="Observation/ExampleDailySteps" key="Observation-ExampleDailySteps" name="Example Observation Daily Steps"/>
+<artifact id="Observation/ExampleActivityGroup" key="Observation-ExampleActivityGroup" name="Example Observation Activity Group"/>
+<artifact id="Observation/ExampleEVSMinutesPerWeek" key="Observation-ExampleExerciseMinutesPerWeek" name="Example Observation Exercise Minutes per Week"/>
+<artifact id="Observation/ExampleEVSDaysPerWeek" key="Observation-ExampleEVSDaysPerWeek" name="Example Observation Exercise Vital Sign Days per Week"/>
+<artifact id="Observation/ExampleEVSMinutesPerDay" key="Observation-ExampleEVSMinutesPerDay" name="Example Observation Exercise Vital Sign Minutes per Day"/>
+<artifact id="Observation/ExamplePeakDailyHeartRate" key="Observation-ExamplePeakDailyHeartRate" name="Example Observation Peak Daily Heart Rate"/>
+<artifact id="Observation/ExampleStrengthDaysPerWeek" key="Observation-ExampleStrengthDaysPerWeek" name="Example Observation Strength Exercise Days per Week"/>
+<artifact id="CarePlan/ExampleCarePlan" key="CarePlan-ExampleCarePlan" name="Example Physical Activity Care Plan"/>
+<artifact id="Goal/ExampleGoal" key="Goal-ExampleGoal" name="Example Physical Activity Goal"/>
+<artifact id="ServiceRequest/ExampleServiceRequest" key="ServiceRequest-ExampleServiceRequest" name="Example Physical Activity Referral"/>
+<artifact id="Task/ExampleFufillmentTask" key="Task-ExampleFufillmentTask" name="Example Physical Activity Referral Fulfillment Request"/>
+<artifact id="DiagnosticReport/ExampleReport" key="DiagnosticReport-ExampleReport" name="Example Physical Activity Report"/>
+<artifact id="RelatedPerson/ExampleRelatedPerson" key="RelatedPerson-ExampleRelatedPerson" name="Example Relative"/>
+<artifact deprecated="true" id="StructureDefinition/observation-support" key="StructureDefinition-observation-support" name="Exercise Supporting Observation"/>
+<artifact deprecated="true" id="Questionnaire/questionnaire-evs" key="Questionnaire-questionnaire-evs" name="Exercise Vital Sign Questionnaire"/>
+<artifact id="StructureDefinition/pa-observation-base" key="StructureDefinition-observation-exercise-base" name="PA Base Observation"/>
+<artifact id="StructureDefinition/pa-careplan" key="StructureDefinition-pa-careplan" name="PA Care Plan"/>
+<artifact id="StructureDefinition/pa-condition-low-pa" key="StructureDefinition-pa-condition" name="PA Condition - Low Physical Activity"/>
+<artifact id="ValueSet/pa-diagnosticreport-status" key="ValueSet-pa-diagnosticreport-status" name="PA DiagnosticReport Statuses"/>
+<artifact id="StructureDefinition/pa-diagnosticreport" key="StructureDefinition-pa-diagnosticreport" name="PA Intervention Report"/>
+<artifact id="StructureDefinition/pa-observation-time-measure" key="StructureDefinition-pa-time-measure" name="PA Measure - Time-based"/>
+<artifact id="StructureDefinition/pa-observation-activity-measure" key="StructureDefinition-pa-activity-measure" name="PA Observation - Activity-based"/>
+<artifact id="StructureDefinition/pa-observation-activity-group" key="StructureDefinition-pa-activity-Group" name="PA Observation Activity Group"/>
+<artifact id="ValueSet/pa-observation-code-activity" key="ValueSet-PAActivityMeasures" name="PA Observation Activity-related codes"/>
+<artifact id="ValueSet/pa-observation-status" key="ValueSet-pa-observation-status" name="PA Observation Statuses"/>
+<artifact id="ValueSet/pa-observation-code-time" key="ValueSet-PATimeMeasures" name="PA Observation Time-related codes"/>
+<artifact id="ValueSet/pa-observation-code-evs" key="ValueSet-ValueSetEVS" name="PA Observation Vital Sign Codes"/>
+<artifact id="ValueSet/pa-servicerequest-intent" key="ValueSet-pa-servicerequest-intent" name="PA Referral Intents"/>
+<artifact id="ValueSet/pa-task-status" key="ValueSet-pa-task-status" name="PA Referral Task Status"/>
+<artifact id="StructureDefinition/pa-relatedperson" key="StructureDefinition-pa-relatedperson" name="PA Related Person"/>
+<artifact id="ValueSet/pa-diagnosticreport-type" key="ValueSet-pa-diagnosticreport-type" name="PA Report Types"/>
+<artifact id="StructureDefinition/pa-servicerequest" key="StructureDefinition-pa-servicerequest" name="PA Service Request"/>
+<artifact id="ValueSet/pa-diagnosticreport-category" key="ValueSet-USCorePAServiceRequestCategory" name="PA ServiceRequest Category - USCore"/>
+<artifact id="ValueSet/pa-servicerequest-code" key="ValueSet-PAInterventions" name="PA ServiceRequest Intervention Codes"/>
+<artifact id="StructureDefinition/pa-observation-strength-days-per-week" key="StructureDefinition-observation-strength-days-per-week" name="PA Strength Days Week"/>
+<artifact id="StructureDefinition/pa-task-for-referral-management" key="StructureDefinition-pa-task-for-referral-management" name="PA Task for Referral Management"/>
+<artifact id="StructureDefinition/pa-observation-evs-days-per-week" key="StructureDefinition-observation-evs-days-per-week" name="PA Vital Sign Days per Week"/>
+<artifact id="StructureDefinition/pa-observation-evs-min-per-day" key="StructureDefinition-observation-evs-min-per-day" name="PA Vital Sign Minutes per Day"/>
+<artifact id="StructureDefinition/pa-observation-evs-min-per-week" key="StructureDefinition-observation-min-per-week" name="PA Vital Sign Minutes per Week"/>
+<artifact id="StructureDefinition/pa-observation-evs" key="StructureDefinition-pa-observation-evs" name="PA Vital Sign Observation"/>
+<artifact id="StructureDefinition/pa-goal" key="StructureDefinition-pa-goal" name="PA-Related Goal"/>
+<artifact deprecated="true" id="StructureDefinition/pa-procedure" key="StructureDefinition-pa-procedure" name="Physical Activity Procedure"/>
+<artifact id="StructureDefinition/reference-rest" key="StructureDefinition-reference-rest" name="Reference - RESTful"/>
+<artifact id="StructureDefinition/reference-rest-or-logical" key="StructureDefinition-reference-rest-or-logical" name="Reference - RESTful or Logical"/>
+<artifact id="CodeSystem/pa-temporary-codes" key="CodeSystem-temporary-codes" name="Temporary Codes"/>
+<artifact id="CapabilityStatement/pa-care-manager" key="CapabilityStatement-pa-care-manager" name="pa-care-manager"/>
+<artifact id="CapabilityStatement/pa-patient-engagement" key="CapabilityStatement-pa-patient-engagement" name="pa-patient-engagement"/>
+<artifact id="CapabilityStatement/pa-service-provider-full" key="CapabilityStatement-pa-service-provider-full" name="pa-service-provider-full"/>
+<artifact id="CapabilityStatement/pa-service-provider-light" key="CapabilityStatement-pa-referral-recipient" name="pa-service-provider-light"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="conformance" name="Conformance Expectations"/>
+<page key="credits" name="Credits"/>
+<page key="design" name="Design Considerations"/>
+<page key="downloads" name="Downloads"/>
+<page key="fhir" name="FHIR Background"/>
+<page key="artifacts" name="IG Artifacts"/>
+<page key="scenarios" name="Implementation Scenarios"/>
+<page key="background" name="Importance of Physical Activity"/>
+<page key="openissues" name="Open Issues"/>
+<page key="measures" name="Physical Activity Measures"/>
+<page key="workflow" name="Physical Activity Workflow"/>
+<page key="interventions" name="Plans &amp; Interventions"/>
+<page key="security" name="Privacy and Security Considerations"/>
+<page key="toc" name="Table of Contents"/>
+<page key="index" name="Welcome to the Physical Activity IG"/>
 </specification>
