@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/qicore/2022Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-qi-core" defaultVersion="4.1.1" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/fhir-qi-core" url="http://hl7.org/fhir/us/qicore">
-<version code="current" url="http://build.fhir.org/ig/HL7/fhir-qi-core"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/qicore/2022Sep" ciUrl="https://build.fhir.org/ig/HL7/fhir-qi-core" defaultVersion="5.0.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/fhir-qi-core" url="http://hl7.org/fhir/us/qicore">
+<version code="current" url="https://build.fhir.org/ig/HL7/fhir-qi-core"/>
+<version code="5.0.0" url="http://hl7.org/fhir/us/qicore/STU5"/>
 <version code="5.0.0-ballot" url="http://hl7.org/fhir/us/qicore/2022Sep"/>
 <version code="4.1.1" url="http://hl7.org/fhir/us/qicore/STU4.1.1"/>
 <version code="4.1.0" deprecated="true" url="http://hl7.org/fhir/us/qicore/STU4.1"/>
@@ -23,7 +24,6 @@
 <artifact id="AdverseEvent/example" key="AdverseEvent-example" name="AdverseEvent example"/>
 <artifact id="AllergyIntolerance/example" key="AllergyIntolerance-example" name="AllergyIntrolerance example"/>
 <artifact id="AllergyIntolerance/example-refuted" key="AllergyIntolerance-example-refuted" name="AllergyIntrolerance refuted example"/>
-<artifact id="ValueSet/qicore-observation-body-position" key="ValueSet-qicore-observation-body-position" name="Body Position"/>
 <artifact deprecated="true" id="StructureDefinition/qicore-bodysite" key="BodySite" name="BodySite"/>
 <artifact id="BodyStructure/example" key="BodyStructure-example" name="BodyStructure example"/>
 <artifact id="CarePlan/example" key="CarePlan-example" name="CarePlan example"/>
@@ -33,12 +33,12 @@
 <artifact id="Observation/imaging-result-xray-chest-findings" key="Observation-imaging-result-xray-chest-findings" name="Clinical Imaging Xray Chest Findings Example"/>
 <artifact id="Communication/example" key="Communication-example" name="Communication example"/>
 <artifact id="Communication/negation-example" key="Communication-negation-example" name="Communication negation example"/>
-<artifact id="ValueSet/qicore-communication-reason-not-performed" key="ValueSet-qicore-communication-reason-not-performed" name="Communication reason not performed codes"/>
+<artifact deprecated="true" id="ValueSet/qicore-communication-reason-not-performed" key="ValueSet-qicore-communication-reason-not-performed" name="Communication reason not performed codes"/>
 <artifact id="CommunicationRequest/example" key="CommunicationRequest-example" name="CommunicationRequest example"/>
 <artifact id="Condition/example" key="Condition-example" name="Condition Encounter Diagnosis example"/>
 <artifact id="Condition/health-concern-example" key="Condition-health-concern-example" name="Condition Problems Health Concerns example"/>
 <artifact id="Condition/appendicitis-example" key="Condition-appendicitis-example" name="Condition example - appendicitis"/>
-<artifact id="ValueSet/qicore-condition-certainty" key="ValueSet-qicore-condition-certainty" name="Condition/Diagnosis Certainty"/>
+<artifact deprecated="true" id="ValueSet/qicore-condition-certainty" key="ValueSet-qicore-condition-certainty" name="Condition/Diagnosis Certainty"/>
 <artifact id="Coverage/example" key="Coverage-example" name="Coverage example"/>
 <artifact id="Coverage/example-new" key="Coverage-example-new" name="Coverage example - Subscriber ID"/>
 <artifact id="Device/example" key="Device-example" name="Device example"/>
@@ -48,15 +48,14 @@
 <artifact id="DeviceUseStatement/example" key="DeviceUseStatement-example" name="DeviceUseStatement example"/>
 <artifact id="DiagnosticReport/example" key="DiagnosticReport-example" name="DiagnosticReportLab example"/>
 <artifact id="DiagnosticReport/note-example" key="DiagnosticReport-note-example" name="DiagnosticReportNote example"/>
-<artifact id="ValueSet/qicore-patient-disability" key="ValueSet-qicore-patient-disability" name="Disability Value Set"/>
-<artifact id="ValueSet/qicore-condition-stage" key="ValueSet-qicore-condition-stage" name="Disease Stage Value Set"/>
-<artifact id="StructureDefinition/qicore-doNotPerformReason" key="StructureDefinition-qicore-doNotPerformReason" name="DoNotPerformReason"/>
-<artifact id="StructureDefinition/qicore-encounter-procedure" key="StructureDefinition-qicore-encounter-procedure" name="Encounter Procedure Extension"/>
+<artifact deprecated="true" id="ValueSet/qicore-patient-disability" key="ValueSet-qicore-patient-disability" name="Disability Value Set"/>
+<artifact deprecated="true" id="ValueSet/qicore-condition-stage" key="ValueSet-qicore-condition-stage" name="Disease Stage Value Set"/>
+<artifact deprecated="true" id="StructureDefinition/qicore-encounter-procedure" key="StructureDefinition-qicore-encounter-procedure" name="Encounter Procedure Extension"/>
 <artifact id="Encounter/example" key="Encounter-example" name="Encounter example"/>
 <artifact deprecated="true" id="Library/FHIRCommon" key="Library-FHIRCommon" name="FHIR Common"/>
 <artifact deprecated="true" id="Library/FHIRHelpers" key="Library-FHIRHelpers" name="FHIR Helpers"/>
 <artifact id="FamilyMemberHistory/example" key="FamilyMemberHistory-example" name="FamilyMemberHistory example"/>
-<artifact id="ValueSet/qicore-flag-category" key="ValueSet-qicore-flag-category" name="Flag Category Codes"/>
+<artifact deprecated="true" id="ValueSet/qicore-flag-category" key="ValueSet-qicore-flag-category" name="Flag Category Codes"/>
 <artifact id="Flag/example" key="Flag-example" name="Flag example"/>
 <artifact id="Observation/example-frailty" key="Observation-example-frailty" name="Frailty observation example"/>
 <artifact id="Observation/example-gestation" key="Observation-example-gestation" name="Gestation age at birth observation example"/>
@@ -89,114 +88,127 @@
 <artifact id="MedicationRequest/practitioner-ordered-example" key="MedicationRequest-practitioner-ordered-example" name="MedicationRequest Practitioner Ordered Example"/>
 <artifact id="MedicationRequest/example" key="MedicationRequest-example" name="MedicationRequest example"/>
 <artifact id="MedicationStatement/example" key="MedicationStatement-example" name="MedicationStatment example"/>
-<artifact id="ValueSet/qicore-negation-reason" key="ValueSet-qicore-negation-reason" name="Negation Reason Codes"/>
-<artifact id="StructureDefinition/qicore-notDoneValueSet" key="StructureDefinition-qicore-notDoneValueSet" name="Not Done Value Set"/>
+<artifact id="ValueSet/qicore-non-negative-event-status" key="ValueSet-qicore-non-negative-event-status" name="Non-Negative Event Status"/>
+<artifact id="ValueSet/qicore-non-negative-immunization-status" key="ValueSet-qicore-non-negative-immunization-status" name="Non-Negative Immunization Status"/>
+<artifact id="ValueSet/qicore-non-negative-medication-admin-status" key="ValueSet-qicore-non-negative-medication-admin-status" name="Non-Negative MedicationAdministration Status"/>
+<artifact id="ValueSet/qicore-non-negative-medicationdispense-status" key="ValueSet-qicore-non-negative-medicationdispense-status" name="Non-Negative MedicationDispense Status"/>
+<artifact id="ValueSet/qicore-non-negative-observation-status" key="ValueSet-qicore-non-negative-observation-status" name="Non-Negative Observation Status"/>
+<artifact id="ValueSet/qicore-non-negative-task-status" key="ValueSet-qicore-non-negative-task-status" name="Non-Negative Task Status"/>
 <artifact id="NutritionOrder/example" key="NutritionOrder-example" name="NutrientOrder example"/>
 <artifact deprecated="true" id="StructureDefinition/qicore-nutritionrequest" key="NutritionRequest" name="NutritionRequest"/>
 <artifact id="Observation/example-odh" key="Observation-example-odh" name="ODH Observation example"/>
 <artifact id="Observation/example" key="Observation-example" name="Observation example"/>
-<artifact id="Observation/negation-with-code-example" key="Observation-negation-with-code-example" name="ObservationNotDone with code example"/>
-<artifact id="Observation/negation-example" key="Observation-negation-example" name="ObservationNotDone with valueset example"/>
+<artifact id="Observation/negation-with-code-example" key="Observation-negation-with-code-example" name="ObservationCancelled with code example"/>
+<artifact id="Observation/negation-example" key="Observation-negation-example" name="ObservationCancelled with valueset example"/>
 <artifact id="Organization/example" key="Organization-example" name="Organization example"/>
 <artifact id="QuestionnaireResponse/PHQ-9-example" key="QuestionnaireResponse-PHQ-9-example" name="PHQ-9 QuestionnaireResponse Example"/>
 <artifact id="Patient/example" key="Patient-example" name="Patient example"/>
 <artifact id="Practitioner/example" key="Practitioner-example" name="Practitioner example"/>
 <artifact id="PractitionerRole/example" key="PractitionerRole-example" name="PractitionerRole example"/>
-<artifact id="ValueSet/qicore-bodystructure-precoordinated" key="ValueSet-qicore-bodystructure-precoordinated" name="Precoordinated Body Structures"/>
+<artifact deprecated="true" id="ValueSet/qicore-bodystructure-precoordinated" key="ValueSet-qicore-bodystructure-precoordinated" name="Precoordinated Body Structures"/>
 <artifact id="Procedure/example" key="Procedure-example" name="Procedure example"/>
 <artifact id="Procedure/negation-with-code-example" key="Procedure-negation-with-code-example" name="ProcedureNotDone with code example"/>
 <artifact id="Procedure/negation-example" key="Procedure-negation-example" name="ProcedureNotDone with valueset example"/>
 <artifact deprecated="true" key="ProcedureRequest" name="ProcedureRequest"/>
 <artifact deprecated="true" key="Provenance" name="Provenance"/>
 <artifact id="StructureDefinition/qicore-adverseevent" key="AdverseEvent" name="QICore AdverseEvent"/>
-<artifact id="StructureDefinition/qicore-allergyintolerance" key="AllergyIntolerance" name="QICore Allergy Intolerance"/>
-<artifact id="StructureDefinition/qicore-careplan" key="StructureDefinition-qicore-careplan" name="QICore Care Plan"/>
+<artifact id="StructureDefinition/qicore-allergyintolerance" key="AllergyIntolerance" name="QICore AllergyIntolerance"/>
+<artifact id="StructureDefinition/qicore-servicerequest-appropriatenessScore" key="StructureDefinition-qicore-servicerequest-appropriatenessScore" name="QICore Appropriateness Score"/>
+<artifact id="StructureDefinition/qicore-bodystructure" key="StructureDefinition-qicore-bodystructure" name="QICore BodyStructure"/>
+<artifact id="StructureDefinition/qicore-careplan" key="StructureDefinition-qicore-careplan" name="QICore CarePlan"/>
 <artifact id="StructureDefinition/qicore-careteam" key="StructureDefinition-qicore-careteam" name="QICore CareTeam"/>
-<artifact id="StructureDefinition/qicore-claimresponse" key="StructureDefinition-qicore-claimresponse" name="QICore Claim Response"/>
-<artifact id="Library/QICoreCommon" key="Library-QICoreCommon" name="QICore Common"/>
-<artifact id="Library/QICoreCommonTests" key="Library-QICoreCommonTests" name="QICore Common Tests"/>
-<artifact id="CodeSystem/communication-medium" key="CodeSystem-communication-medium" name="QICore Communication Medium Codes"/>
-<artifact id="ValueSet/qicore-condition-criticality" key="ValueSet-qicore-condition-criticality" name="QICore Condition Criticality"/>
-<artifact id="CodeSystem/condition-criticality" key="CodeSystem-condition-criticality" name="QICore Condition Criticality Codes"/>
+<artifact id="StructureDefinition/qicore-claim" key="Claim" name="QICore Claim"/>
+<artifact id="StructureDefinition/qicore-claimresponse" key="StructureDefinition-qicore-claimresponse" name="QICore ClaimResponse"/>
+<artifact deprecated="true" id="Library/QICoreCommon" key="Library-QICoreCommon" name="QICore Common"/>
+<artifact deprecated="true" id="Library/QICoreCommonTests" key="Library-QICoreCommonTests" name="QICore Common Tests"/>
+<artifact id="StructureDefinition/qicore-communication" key="Communication" name="QICore Communication"/>
+<artifact deprecated="true" id="CodeSystem/communication-medium" key="CodeSystem-communication-medium" name="QICore Communication Medium Codes"/>
+<artifact id="StructureDefinition/qicore-communicationrequest" key="CommunicationRequest" name="QICore CommunicationRequest"/>
+<artifact deprecated="true" id="ValueSet/qicore-condition-criticality" key="ValueSet-qicore-condition-criticality" name="QICore Condition Criticality"/>
+<artifact deprecated="true" id="CodeSystem/condition-criticality" key="CodeSystem-condition-criticality" name="QICore Condition Criticality Codes"/>
 <artifact id="StructureDefinition/qicore-condition-encounter-diagnosis" key="StructureDefinition-qicore-condition-encounter-diagnosis" name="QICore Condition Encounter Diagnosis"/>
 <artifact id="StructureDefinition/qicore-condition-problems-health-concerns" key="StructureDefinition-qicore-condition-problems-health-concerns" name="QICore Condition Problems Health Concerns"/>
 <artifact id="StructureDefinition/qicore-coverage" key="Coverage" name="QICore Coverage"/>
-<artifact id="CodeSystem/diagnosticorder-precondition" key="CodeSystem-diagnosticorder-precondition" name="QICore Diagnostic Order Precondition"/>
+<artifact id="StructureDefinition/qicore-device" key="Device" name="QICore Device"/>
+<artifact id="StructureDefinition/qicore-devicenotrequested" key="StructureDefinition-qicore-devicenotrequested" name="QICore Device Not Requested"/>
+<artifact id="StructureDefinition/qicore-devicerequest" key="DeviceUseRequest" name="QICore DeviceRequest"/>
+<artifact id="StructureDefinition/qicore-deviceusestatement" key="DeviceUseStatement" name="QICore DeviceUseStatement"/>
+<artifact id="StructureDefinition/qicore-encounter-diagnosisPresentOnAdmission" key="StructureDefinition-qicore-encounter-diagnosisPresentOnAdmission" name="QICore Diagnosis Present on Admission"/>
+<artifact deprecated="true" id="CodeSystem/diagnosticorder-precondition" key="CodeSystem-diagnosticorder-precondition" name="QICore Diagnostic Order Precondition"/>
 <artifact id="StructureDefinition/qicore-diagnosticreport-lab" key="DiagnosticReportLab" name="QICore DiagnosticReport Profile for Laboratory Results Reporting"/>
 <artifact id="StructureDefinition/qicore-diagnosticreport-note" key="DiagnosticReportNote" name="QICore DiagnosticReport Profile for Report and Note Exchange"/>
+<artifact id="StructureDefinition/qicore-doNotPerformReason" key="StructureDefinition-qicore-doNotPerformReason" name="QICore Do Not Perform Reason"/>
 <artifact deprecated="true" id="Library/QICoreElements" key="Library-QICoreElements" name="QICore Elements"/>
 <artifact id="StructureDefinition/qicore-encounter" key="Encounter" name="QICore Encounter"/>
-<artifact id="ValueSet/qicore-encounter-discharge-disposition" key="ValueSet-qicore-encounter-discharge-disposition" name="QICore Encounter Clinical Discharge Disposition Codes"/>
+<artifact deprecated="true" id="ValueSet/qicore-encounter-discharge-disposition" key="ValueSet-qicore-encounter-discharge-disposition" name="QICore Encounter Clinical Discharge Disposition Codes"/>
+<artifact id="StructureDefinition/qicore-familymemberhistory" key="FamilyHistory" name="QICore FamilyMemberHistory"/>
+<artifact id="StructureDefinition/qicore-flag" key="Flag" name="QICore Flag"/>
 <artifact id="StructureDefinition/qicore-goal" key="Goal" name="QICore Goal"/>
-<artifact id="StructureDefinition/qicore-imagingstudy" key="ImagingStudy" name="QICore Imaging Study"/>
+<artifact id="StructureDefinition/qicore-imagingstudy" key="ImagingStudy" name="QICore ImagingStudy"/>
 <artifact id="StructureDefinition/qicore-immunization" key="StructureDefinition-qicore-immunization" name="QICore Immunization"/>
 <artifact id="StructureDefinition/qicore-immunizationnotdone" key="StructureDefinition-qicore-immunizationnotdone" name="QICore Immunization Not Done"/>
+<artifact id="StructureDefinition/qicore-immunizationevaluation" key="StructureDefinition-qicore-immunizationevaluation" name="QICore ImmunizationEvaluation"/>
+<artifact id="StructureDefinition/qicore-immunizationrecommendation" key="StructureDefinition-qicore-immunizationrecommendation" name="QICore ImmunizationRecommendation"/>
 <artifact id="StructureDefinition/qicore-isElective" key="StructureDefinition-qicore-isElective" name="QICore IsElective"/>
 <artifact id="StructureDefinition/qicore-observation-lab" key="StructureDefinition-qicore-observation-lab" name="QICore Laboratory Result Observation"/>
+<artifact id="StructureDefinition/qicore-location" key="Location" name="QICore Location"/>
 <artifact id="StructureDefinition/qicore-medication" key="Medication" name="QICore Medication"/>
-<artifact id="StructureDefinition/qicore-mednotrequested" key="StructureDefinition-qicore-mednotrequested" name="QICore Medication Not Requested"/>
+<artifact id="StructureDefinition/qicore-medicationnotrequested" key="StructureDefinition-qicore-mednotrequested" name="QICore Medication Not Requested"/>
+<artifact id="StructureDefinition/qicore-medicationadministration" key="MedicationAdministration" name="QICore MedicationAdministration"/>
+<artifact id="StructureDefinition/qicore-medicationadministrationnotdone" key="StructureDefinition-qicore-medicationadministrationnotdone" name="QICore MedicationAdministration Not Done"/>
+<artifact id="StructureDefinition/qicore-medicationdispense" key="MedicationDispense" name="QICore MedicationDispense"/>
+<artifact id="StructureDefinition/qicore-medicationdispensedeclined" key="StructureDefinition-qicore-medicationdispensedeclined" name="QICore MedicationDispense Declined"/>
 <artifact id="StructureDefinition/qicore-medicationrequest" key="MedicationPrescription" name="QICore MedicationRequest"/>
+<artifact id="StructureDefinition/qicore-medicationstatement" key="MedicationStatement" name="QICore MedicationStatement"/>
 <artifact id="Library/QICore-ModelInfo" key="Library-QICore-ModelInfo" name="QICore Model Definition"/>
+<artifact id="ValueSet/qicore-negation-reason" key="ValueSet-qicore-negation-reason" name="QICore Negation Reason Codes"/>
+<artifact id="StructureDefinition/qicore-notDoneReason" key="StructureDefinition-qicore-notDoneReason" name="QICore Not Done Reason"/>
+<artifact id="StructureDefinition/qicore-recorded" key="StructureDefinition-qicore-recorded" name="QICore Not Done Recorded"/>
+<artifact id="StructureDefinition/qicore-notDoneValueSet" key="StructureDefinition-qicore-notDoneValueSet" name="QICore Not Done ValueSet"/>
+<artifact id="StructureDefinition/qicore-nutritionorder" key="StructureDefinition-qicore-nutritionorder" name="QICore NutritionOrder"/>
 <artifact id="StructureDefinition/qicore-observation" key="Observation" name="QICore Observation"/>
+<artifact id="ValueSet/qicore-observation-body-position" key="ValueSet-qicore-observation-body-position" name="QICore Observation Body Position"/>
+<artifact id="StructureDefinition/qicore-observationcancelled" key="StructureDefinition-qicore-observationcancelled" name="QICore Observation Cancelled"/>
 <artifact id="StructureDefinition/qicore-observation-clinical-test" key="StructureDefinition-qicore-observation-clinical-test" name="QICore Observation Clinical Test Result"/>
-<artifact id="ValueSet/qicore-observation-delta" key="ValueSet-qicore-observation-delta" name="QICore Observation Delta Value Set Definition"/>
+<artifact deprecated="true" id="ValueSet/qicore-observation-delta" key="ValueSet-qicore-observation-delta" name="QICore Observation Delta Value Set Definition"/>
 <artifact id="StructureDefinition/qicore-observation-imaging" key="StructureDefinition-qicore-observation-imaging" name="QICore Observation Imaging Result"/>
 <artifact id="StructureDefinition/qicore-observation-survey" key="StructureDefinition-qicore-observation-survey" name="QICore Observation Survey"/>
-<artifact id="ValueSet/qicore-observation-verification" key="ValueSet-qicore-observation-verification" name="QICore Observation Verification Method"/>
-<artifact id="CodeSystem/observation-verification" key="CodeSystem-observation-verification" name="QICore Observation Verification Method Codes"/>
+<artifact deprecated="true" id="ValueSet/qicore-observation-verification" key="ValueSet-qicore-observation-verification" name="QICore Observation Verification Method"/>
+<artifact deprecated="true" id="CodeSystem/observation-verification" key="CodeSystem-observation-verification" name="QICore Observation Verification Method Codes"/>
+<artifact id="StructureDefinition/qicore-organization" key="Organization" name="QICore Organization"/>
+<artifact id="StructureDefinition/qicore-patient" key="Patient" name="QICore Patient"/>
 <artifact id="StructureDefinition/qicore-practitioner" key="Practitioner" name="QICore Practitioner"/>
+<artifact id="StructureDefinition/qicore-practitionerrole" key="PractitionerRole" name="QICore PractitionerRole"/>
 <artifact id="ValueSet/qicore-present-on-admission" key="ValueSet-qicore-present-on-admission" name="QICore Present On Admission Codes"/>
+<artifact id="StructureDefinition/qicore-procedure" key="Procedure" name="QICore Procedure"/>
+<artifact id="StructureDefinition/qicore-procedurenotdone" key="StructureDefinition-qicore-procedurenotdone" name="QICore Procedure Not Done"/>
 <artifact id="StructureDefinition/qicore-questionnaireresponse" key="StructureDefinition-qicore-questionnaireresponse" name="QICore QuestionnaireResponse"/>
+<artifact id="ValueSet/qicore-goal-reason-rejected" key="ValueSet-qicore-goal-reason-rejected" name="QICore Reasons Rejecting Goal"/>
+<artifact id="StructureDefinition/qicore-relatedperson" key="RelatedPerson" name="QICore RelatedPerson"/>
+<artifact id="ValueSet/qicore-medication-dose-type" key="ValueSet-qicore-medication-dose-type" name="QICore SNOMED CT Dosage Codes"/>
 <artifact id="StructureDefinition/qicore-servicenotrequested" key="StructureDefinition-qicore-servicenotrequested" name="QICore Service Not Requested"/>
-<artifact id="StructureDefinition/qicore-servicerequest" key="ServiceRequest" name="QICore Service Request"/>
-<artifact id="StructureDefinition/qicore-bodystructure" key="StructureDefinition-qicore-bodystructure" name="QICoreBodyStructure"/>
-<artifact id="StructureDefinition/qicore-claim" key="Claim" name="QICoreClaim"/>
-<artifact id="StructureDefinition/qicore-communication" key="Communication" name="QICoreCommunication"/>
-<artifact id="StructureDefinition/qicore-communicationnotdone" key="StructureDefinition-qicore-communicationnotdone" name="QICoreCommunicationNotDone"/>
-<artifact id="StructureDefinition/qicore-communicationrequest" key="CommunicationRequest" name="QICoreCommunicationRequest"/>
+<artifact id="StructureDefinition/qicore-servicerequest" key="ServiceRequest" name="QICore ServiceRequest"/>
+<artifact id="StructureDefinition/qicore-specimen" key="Specimen" name="QICore Specimen"/>
+<artifact id="StructureDefinition/qicore-substance" key="Substance" name="QICore Substance"/>
+<artifact id="StructureDefinition/qicore-task" key="Task" name="QICore Task"/>
+<artifact id="StructureDefinition/qicore-taskrejected" key="StructureDefinition-qicore-taskrejected" name="QICore Task Rejected"/>
 <artifact deprecated="true" id="StructureDefinition/qicore-condition" key="Condition" name="QICoreCondition"/>
-<artifact id="StructureDefinition/qicore-device" key="Device" name="QICoreDevice"/>
-<artifact id="StructureDefinition/qicore-devicenotrequested" key="StructureDefinition-qicore-devicenotrequested" name="QICoreDeviceNotRequested"/>
-<artifact id="StructureDefinition/qicore-devicerequest" key="DeviceUseRequest" name="QICoreDeviceRequest"/>
-<artifact id="StructureDefinition/qicore-deviceusestatement" key="DeviceUseStatement" name="QICoreDeviceUseStatement"/>
-<artifact id="StructureDefinition/qicore-encounter-diagnosisPresentOnAdmission" key="StructureDefinition-qicore-encounter-diagnosisPresentOnAdmission" name="QICoreDiagnosisPresentOnAdmission"/>
-<artifact id="StructureDefinition/qicore-familymemberhistory" key="FamilyHistory" name="QICoreFamilyMemberHistory"/>
-<artifact id="StructureDefinition/qicore-flag" key="Flag" name="QICoreFlag"/>
-<artifact id="StructureDefinition/qicore-immunizationevaluation" key="StructureDefinition-qicore-immunizationevaluation" name="QICoreImmunizationEvaluation"/>
-<artifact id="StructureDefinition/qicore-immunizationrec" key="ImmunizationRecommendation" name="QICoreImmunizationRecommendation"/>
-<artifact id="StructureDefinition/qicore-location" key="Location" name="QICoreLocation"/>
-<artifact id="StructureDefinition/qicore-medicationadministration" key="MedicationAdministration" name="QICoreMedicationAdministration"/>
-<artifact id="StructureDefinition/qicore-mednotadministered" key="StructureDefinition-qicore-mednotadministered" name="QICoreMedicationAdministrationNotDone"/>
-<artifact id="StructureDefinition/qicore-medicationdispense" key="MedicationDispense" name="QICoreMedicationDispense"/>
-<artifact id="StructureDefinition/qicore-mednotdispensed" key="StructureDefinition-qicore-mednotdispensed" name="QICoreMedicationDispenseNotDone"/>
-<artifact id="StructureDefinition/qicore-medicationstatement" key="MedicationStatement" name="QICoreMedicationStatement"/>
-<artifact id="StructureDefinition/qicore-notDoneReason" key="StructureDefinition-qicore-notDoneReason" name="QICoreNotDoneReason"/>
-<artifact id="StructureDefinition/qicore-recorded" key="StructureDefinition-qicore-recorded" name="QICoreNotDoneRecorded"/>
-<artifact id="StructureDefinition/qicore-nutritionorder" key="StructureDefinition-qicore-nutritionorder" name="QICoreNutritionOrder"/>
-<artifact id="StructureDefinition/qicore-observationnotdone" key="StructureDefinition-qicore-observationnotdone" name="QICoreObservationNotDone"/>
-<artifact id="StructureDefinition/qicore-organization" key="Organization" name="QICoreOrganization"/>
-<artifact id="StructureDefinition/qicore-patient" key="Patient" name="QICorePatient"/>
-<artifact id="StructureDefinition/qicore-practitionerrole" key="PractitionerRole" name="QICorePractitionerRole"/>
-<artifact id="StructureDefinition/qicore-procedure" key="Procedure" name="QICoreProcedure"/>
-<artifact id="StructureDefinition/qicore-procedurenotdone" key="StructureDefinition-qicore-procedurenotdone" name="QICoreProcedureNotDone"/>
-<artifact id="ValueSet/qicore-procedure-type" key="ValueSet-qicore-procedure-type" name="QICoreProcedureType"/>
-<artifact id="StructureDefinition/qicore-relatedperson" key="RelatedPerson" name="QICoreRelatedPerson"/>
-<artifact id="StructureDefinition/qicore-specimen" key="Specimen" name="QICoreSpecimen"/>
-<artifact id="StructureDefinition/qicore-substance" key="Substance" name="QICoreSubstance"/>
-<artifact id="StructureDefinition/qicore-task" key="Task" name="QICoreTask"/>
-<artifact id="StructureDefinition/qicore-tasknotdone" key="StructureDefinition-qicore-tasknotdone" name="QICoreTaskNotDone"/>
-<artifact id="CodeSystem/appropriateness-score" key="CodeSystem-appropriateness-score" name="RAND Appropriateness Score Codes"/>
-<artifact id="StructureDefinition/qicore-servicerequest-appropriatenessScore" key="StructureDefinition-qicore-servicerequest-appropriatenessScore" name="RAND Appropriateness Score Extension"/>
-<artifact id="ValueSet/qicore-appropriateness-score" key="ValueSet-qicore-appropriateness-score" name="RAND Appropriateness Scores"/>
-<artifact id="ValueSet/qicore-encounter-canceled-reason" key="ValueSet-qicore-encounter-canceled-reason" name="Reasons for canceled or refused encounter codes"/>
-<artifact id="ValueSet/qicore-allergyintolerance-reason-refuted" key="ValueSet-qicore-allergyintolerance-reason-refuted" name="Reasons for refuting allergy or intolerance codes"/>
-<artifact id="ValueSet/qicore-servicerequest-reason-rejected" key="ValueSet-qicore-servicerequest-reason-rejected" name="Reasons for rejecting a service request"/>
-<artifact id="ValueSet/qicore-goal-reason-rejected" key="ValueSet-qicore-goal-reason-rejected" name="Reasons for rejecting goal codes"/>
+<artifact deprecated="true" id="StructureDefinition/qicore-immunizationrec" key="ImmunizationRecommendation" name="QICoreImmunizationRecommendation"/>
+<artifact deprecated="true" id="StructureDefinition/qicore-mednotadministered" key="StructureDefinition-qicore-mednotadministered" name="QICoreMedicationAdministrationNotDone"/>
+<artifact deprecated="true" id="StructureDefinition/qicore-mednotdispensed" key="StructureDefinition-qicore-mednotdispensed" name="QICoreMedicationDispenseNotDone"/>
+<artifact deprecated="true" id="StructureDefinition/qicore-observationnotdone" key="StructureDefinition-qicore-observationnotdone" name="QICoreObservationNotDone"/>
+<artifact deprecated="true" id="ValueSet/qicore-procedure-type" key="ValueSet-qicore-procedure-type" name="QICoreProcedureType"/>
+<artifact deprecated="true" id="StructureDefinition/qicore-tasknotdone" key="StructureDefinition-qicore-tasknotdone" name="QICoreTaskNotDone"/>
+<artifact id="StructureDefinition/qicore-communicationnotdone" key="StructureDefinition-qicore-communicationnotdone" name="QiCore Communication Not Done"/>
+<artifact deprecated="true" id="CodeSystem/appropriateness-score" key="CodeSystem-appropriateness-score" name="RAND Appropriateness Score Codes"/>
+<artifact deprecated="true" id="ValueSet/qicore-appropriateness-score" key="ValueSet-qicore-appropriateness-score" name="RAND Appropriateness Scores"/>
+<artifact deprecated="true" id="ValueSet/qicore-encounter-canceled-reason" key="ValueSet-qicore-encounter-canceled-reason" name="Reasons for canceled or refused encounter codes"/>
+<artifact deprecated="true" id="ValueSet/qicore-allergyintolerance-reason-refuted" key="ValueSet-qicore-allergyintolerance-reason-refuted" name="Reasons for refuting allergy or intolerance codes"/>
+<artifact deprecated="true" id="ValueSet/qicore-servicerequest-reason-rejected" key="ValueSet-qicore-servicerequest-reason-rejected" name="Reasons for rejecting a service request"/>
 <artifact deprecated="true" key="ReferralRequest" name="ReferralRequest"/>
 <artifact id="RelatedPerson/example" key="RelatedPerson-example" name="RelatedPerson example"/>
-<artifact id="ValueSet/qicore-medication-dose-type" key="ValueSet-qicore-medication-dose-type" name="SNOMED CT Dosages Codes"/>
-<artifact id="ValueSet/qicore-priority" key="ValueSet-qicore-priority" name="SNOMED CT Priorities Codes"/>
-<artifact id="ValueSet/qicore-encounter-condition-role" key="ValueSet-qicore-encounter-condition-role" name="SNOMED CT Qualifier For Type of Diagnosis Codes"/>
+<artifact deprecated="true" id="ValueSet/qicore-priority" key="ValueSet-qicore-priority" name="SNOMED CT Priorities Codes"/>
+<artifact deprecated="true" id="ValueSet/qicore-encounter-condition-role" key="ValueSet-qicore-encounter-condition-role" name="SNOMED CT Qualifier For Type of Diagnosis Codes"/>
 <artifact id="ServiceRequest/negation-example-code" key="ServiceRequest-negation-example-code" name="ServiceNotRequested with code example"/>
 <artifact id="ServiceRequest/negation-example" key="ServiceRequest-negation-example" name="ServiceNotRequested with valueset example"/>
 <artifact id="ServiceRequest/myringotomy-example" key="ServiceRequest-myringotomy-example" name="ServiceRequest Myringotomy Procedure example"/>
@@ -208,8 +220,8 @@
 <artifact deprecated="true" key="StructureDefinition" name="StructureDefinition"/>
 <artifact id="Substance/example" key="Substance-example" name="Substance example"/>
 <artifact id="Task/example" key="Task-example" name="Task example"/>
-<artifact id="Task/negation-with-code-example" key="Task-negation-with-code-example" name="TaskNotDone with code example"/>
-<artifact id="Task/negation-example" key="Task-negation-example" name="TaskNotDone with valueset example"/>
+<artifact id="Task/negation-with-code-example" key="Task-negation-with-code-example" name="TaskRejected with code example"/>
+<artifact id="Task/negation-example" key="Task-negation-example" name="TaskRejected with valueset example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
