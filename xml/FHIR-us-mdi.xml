@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/mdi/2022May" ciUrl="http://build.fhir.org/ig/HL7/fhir-mdi-ig" defaultVersion="1.0.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-mdi-ig" url="http://hl7.org/fhir/us/mdi">
+    <version code="current" url="http://build.fhir.org/ig/HL7/fhir-mdi-ig"/>
+    <version code="1.1.0" url="http://build.fhir.org/ig/HL7/fhir-mdi-ig"/>
+    <version code="1.0.0" url="http://hl7.org/fhir/us/mdi"/>
+    <version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/mdi/2022May"/>
+    <artifactPageExtension value="-definitions"/>
+    <artifactPageExtension value="-examples"/>
+    <artifactPageExtension value="-mappings"/>
+    <artifact id="StructureDefinition/Bundle-document-mdi-to-edrs" key="StructureDefinition-Bundle-document-mdi-to-edrs" name="Bundle - Document MDI to EDRS"/>
+    <artifact id="Bundle/bundle-mdi-to-edrs-a-freeman" key="Bundle-bundle-mdi-to-edrs-a-freeman" name="Bundle - MDI to EDRS - Freeman"/>
+    <artifact id="StructureDefinition/Bundle-message-tox-to-mdi" key="StructureDefinition-Bundle-message-tox-to-mdi" name="Bundle - Message Toxicology to MDI"/>
+    <artifact id="Bundle/bundle-mdi-tox-report-message-a-freeman" key="Bundle-bundle-mdi-tox-report-message-a-freeman" name="Bundle - Message Toxicology to MDI - Freeman"/>
+    <artifact id="CodeSystem/CodeSystem-death-pregnancy-status" key="CodeSystem-CodeSystem-death-pregnancy-status" name="CodeSystem - Death Pregnancy Status"/>
+    <artifact id="CodeSystem/CodeSystem-mdi-codes" key="CodeSystem-CodeSystem-mdi-codes" name="CodeSystem - MDI"/>
+    <artifact id="StructureDefinition/Composition-mdi-to-edrs" key="StructureDefinition-Composition-mdi-to-edrs" name="Composition - MDI to EDRS"/>
+    <artifact id="StructureDefinition/DiagnosticReport-toxicology-to-mdi" key="StructureDefinition-DiagnosticReport-toxicology-to-mdi" name="DiagnosticReport - Toxicology Lab Result to MDI"/>
+    <artifact id="DiagnosticReport/diagnosticreport-mdi-toxicology-lab-a-freeman" key="DiagnosticReport-diagnosticreport-mdi-toxicology-lab-a-freeman" name="DiagnosticReport - Toxicology Lab Result to MDI - Freeman"/>
+    <artifact id="Parameters/expansion-parameters-mdi" key="Parameters-expansion-parameters-mdi" name="Parameters - SNOMED US Version"/>
+    <artifact id="StructureDefinition/Extension-observation-location" key="StructureDefinition-Extension-observation-location" name="Extension - Location" deprecated="true"/>
+    <artifact id="StructureDefinition/Extension-tracking-number" key="StructureDefinition-Extension-tracking-number" name="Extension - Tracking Number"/>
+    <artifact id="StructureDefinition/List-cause-of-death-pathway" key="StructureDefinition-List-cause-of-death-pathway" name="List - Cause of Death Pathway" deprecated="true"/>
+    <artifact id="List/list-cause-of-death-pathway-a-freeman" key="List-list-cause-of-death-pathway-a-freeman" name="List - Cause of Death Pathway - Freeman" deprecated="true"/>
+    <artifact id="Location/us-core-location-atlanta-ga-death-location-a-freeman" key="Location-us-core-location-atlanta-ga-death-location-a-freeman" name="Location - Atlanta GA Death Location - Freeman" deprecated="true"/>
+    <artifact id="Composition/composition-mdi-to-edrs-a-freeman" key="Composition-composition-mdi-to-edrs-a-freeman" name="MDI to EDRS Composition - Freeman"/>
+    <artifact id="StructureDefinition/MessageHeader-toxicology-to-mdi" key="StructureDefinition-MessageHeader-toxicology-to-mdi" name="MessageHeader - Toxicology to MDI"/>
+    <artifact id="MessageHeader/messageheader-mdi-tox-result-report-a-freeman" key="MessageHeader-messageheader-mdi-tox-result-report-a-freeman" name="MessageHeader - Toxicology to MDI - Freeman"/>
+    <artifact id="StructureDefinition/Observation-cause-of-death-condition" key="StructureDefinition-Observation-cause-of-death-condition" name="Observation - Cause of Death Condition" deprecated="true"/>
+    <artifact id="Observation/observation-cause-of-death-condition-a-freeman-1" key="Observation-observation-cause-of-death-condition-a-freeman-1" name="Observation - Cause of Death Condition - Freeman Primary" deprecated="true"/>
+    <artifact id="StructureDefinition/Observation-condition-contributing-to-death" key="StructureDefinition-Observation-condition-contributing-to-death" name="Observation - Condition Contributing to Death" deprecated="true"/>
+    <artifact id="Observation/observation-condition-contributing-to-death-a-freeman" key="Observation-observation-condition-contributing-to-death-a-freeman" name="Observation - Condition Contributing to Death - Freeman - Hypertensive Heart Disease" deprecated="true"/>
+    <artifact id="StructureDefinition/Observation-death-date" key="StructureDefinition-Observation-death-date" name="Observation - Death Date"/>
+    <artifact id="Observation/observation-death-date-a-freeman" key="Observation-observation-death-date-a-freeman" name="Observation - Death Date - Freeman"/>
+    <artifact id="Observation/observation-death-injury-at-work-a-freeman" key="Observation-observation-death-injury-at-work-a-freeman" name="Observation - Death Injury at Work - Freeman" deprecated="true"/>
+    <artifact id="StructureDefinition/Observation-death-injury-at-work" key="StructureDefinition-Observation-death-injury-at-work" name="Observation - Death Injury/Event Occurred at Work" deprecated="true"/>
+    <artifact id="StructureDefinition/Observation-decedent-pregnancy" key="StructureDefinition-Observation-decedent-pregnancy" name="Observation - Decedent Pregnancy"/>
+    <artifact id="Observation/observation-decedent-pregnancy-a-freeman" key="Observation-observation-decedent-pregnancy-a-freeman" name="Observation - Decedent Pregnancy - Freeman"/>
+    <artifact id="StructureDefinition/Observation-how-death-injury-occurred" key="StructureDefinition-Observation-how-death-injury-occurred" name="Observation - How Death Injury Occurred"/>
+    <artifact id="Observation/observation-how-death-injury-occurred-a-freeman-med-ingest" key="Observation-observation-how-death-injury-occurred-a-freeman-med-ingest" name="Observation - How Death Injury Occurred - Freeman - Medication ingestion"/>
+    <artifact id="StructureDefinition/Observation-manner-of-death" key="StructureDefinition-Observation-manner-of-death" name="Observation - Manner of Death"/>
+    <artifact id="Observation/observation-manner-of-death-a-freeman-accidental" key="Observation-observation-manner-of-death-a-freeman-accidental" name="Observation - Manner of Death - Freeman"/>
+    <artifact id="Observation/observation-odh-usual-work-a-freeman" key="Observation-observation-odh-usual-work-a-freeman" name="Observation - ODH Usual Work - Freeman" deprecated="true"/>
+    <artifact id="Observation/observation-tobacco-use-a-freeman" key="Observation-observation-tobacco-use-a-freeman" name="Observation - Tobacco Use - Freeman"/>
+    <artifact id="StructureDefinition/Observation-tobacco-use-contributed-to-death" key="StructureDefinition-Observation-tobacco-use-contributed-to-death" name="Observation - Tobacco Use Contributed to Death"/>
+    <artifact id="StructureDefinition/Observation-toxicology-lab-result" key="StructureDefinition-Observation-toxicology-lab-result" name="Observation - Toxicology Lab Result"/>
+    <artifact id="Observation/us-core-lab-result-4-anpp-blood-a-freeman" key="Observation-us-core-lab-result-4-anpp-blood-a-freeman" name="Observation - Toxicology Lab Result - 4-anpp Blood Freeman"/>
+    <artifact id="Observation/us-core-lab-result-4-anpp-urine-a-freeman" key="Observation-us-core-lab-result-4-anpp-urine-a-freeman" name="Observation - Toxicology Lab Result - 4-anpp Urine Freeman"/>
+    <artifact id="Observation/us-core-lab-result-acetylfentanyl-blood-a-freeman" key="Observation-us-core-lab-result-acetylfentanyl-blood-a-freeman" name="Observation - Toxicology Lab Result - Acetylfentanyl Blood Freeman"/>
+    <artifact id="Observation/us-core-lab-result-acetylfentanyl-urine-a-freeman" key="Observation-us-core-lab-result-acetylfentanyl-urine-a-freeman" name="Observation - Toxicology Lab Result - Acetylfentanyl Urine Freeman"/>
+    <artifact id="Observation/us-core-lab-result-etoh-gas-chromatography-blood-a-freeman" key="Observation-us-core-lab-result-etoh-gas-chromatography-blood-a-freeman" name="Observation - Toxicology Lab Result - Ethanol Blood Freeman"/>
+    <artifact id="Observation/us-core-lab-result-etoh-gas-chromatography-urine-a-freeman" key="Observation-us-core-lab-result-etoh-gas-chromatography-urine-a-freeman" name="Observation - Toxicology Lab Result - Ethanol Urine Freeman"/>
+    <artifact id="Observation/us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman" key="Observation-us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman" name="Observation - Toxicology Lab Result - Ethanol Vitreous Humor Freeman"/>
+    <artifact id="Observation/us-core-lab-result-fentanyl-blood-a-freeman" key="Observation-us-core-lab-result-fentanyl-blood-a-freeman" name="Observation - Toxicology Lab Result - Fentanyl Blood Freeman"/>
+    <artifact id="Observation/us-core-lab-result-fentanyl-urine-a-freeman" key="Observation-us-core-lab-result-fentanyl-urine-a-freeman" name="Observation - Toxicology Lab Result - Fentanyl Urine Freeman"/>
+    <artifact id="Observation/us-core-lab-result-norfentanyl-urine-a-freeman" key="Observation-us-core-lab-result-norfentanyl-urine-a-freeman" name="Observation - Toxicology Lab Result - Norfentanyl Urine Freeman"/>
+    <artifact id="Observation/us-core-lab-result-xylazine-urine-a-freeman" key="Observation-us-core-lab-result-xylazine-urine-a-freeman" name="Observation - Toxicology Lab Result - Xylazine Urine Freeman"/>
+    <artifact id="StructureDefinition/Specimen-toxicology-lab" key="StructureDefinition-Specimen-toxicology-lab" name="Specimen - Toxicology Lab"/>
+    <artifact id="Specimen/specimen-bile-toxicology-a-freeman" key="Specimen-specimen-bile-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Bile"/>
+    <artifact id="Specimen/specimen-blood-toxicology-a-freeman" key="Specimen-specimen-blood-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Blood"/>
+    <artifact id="Specimen/specimen-liver-toxicology-a-freeman" key="Specimen-specimen-liver-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Liver"/>
+    <artifact id="Specimen/specimen-stomach-contents-toxicology-a-freeman" key="Specimen-specimen-stomach-contents-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Stomach Contents"/>
+    <artifact id="Specimen/specimen-urine-toxicology-a-freeman" key="Specimen-specimen-urine-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Urine"/>
+    <artifact id="Specimen/specimen-vitreous-humor-toxicology-a-freeman" key="Specimen-specimen-vitreous-humor-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Vitreous Humor"/>
+    <artifact id="Organization/us-core-organization-tox-lab" key="Organization-us-core-organization-tox-lab" name="US Core Organization - UF Health Pathology Labs, Forensic Toxicology Laboratory"/>
+    <artifact id="Patient/us-core-patient-a-freeman" key="Patient-us-core-patient-a-freeman" name="US Core Patient - Alice J. Freeman"/>
+    <artifact id="Patient/us-core-patient-unknown-name" key="Patient-us-core-patient-unknown-name" name="US Core Patient - Unknown Name"/>
+    <artifact id="Practitioner/us-core-practitioner-b-goldberger" key="Practitioner-us-core-practitioner-b-goldberger" name="US Core Practitioner - Dr. Bruce Goldberger"/>
+    <artifact id="Practitioner/us-core-practitioner-j-jones" key="Practitioner-us-core-practitioner-j-jones" name="US Core Practitioner - Dr. Jane Jones" deprecated="true"/>
+    <artifact id="Practitioner/us-core-practitioner-s-jones" key="Practitioner-us-core-practitioner-s-jones" name="US Core Practitioner - Dr. Sam Jones"/>
+    <artifact id="ValueSet/ValueSet-contributory-tobacco-use" key="ValueSet-ValueSet-contributory-tobacco-use" name="ValueSet - Contributory Tobacco Use"/>
+    <artifact id="ValueSet/ValueSet-date-establishment-methods" key="ValueSet-ValueSet-date-establishment-methods" name="ValueSet - Date Establishment Methods" deprecated="true"/>
+    <artifact id="ValueSet/ValueSet-death-pregnancy-status" key="ValueSet-ValueSet-death-pregnancy-status" name="ValueSet - Death Pregnancy Status"/>
+    <artifact id="ValueSet/ValueSet-manner-of-death" key="ValueSet-ValueSet-manner-of-death" name="ValueSet - Manner of Death"/>
+    <artifact id="ValueSet/ValueSet-tracking-number-type" key="ValueSet-ValueSet-tracking-number-type" name="ValueSet - Tracking Number Type"/>
+    <artifact id="ValueSet/ValueSet-units-of-age" key="ValueSet-ValueSet-units-of-age" name="ValueSet - Units of Age" deprecated="true"/>
+    <artifact id="ValueSet/ValueSet-yes-no-not-applicable" key="ValueSet-ValueSet-yes-no-not-applicable" name="ValueSet - Yes, No, Not Applicable" deprecated="true"/>
+    <artifact name="Observation - Cause of Death Part 1" key="StructureDefinition-Observation-cause-of-death-part1" id="StructureDefinition/Observation-cause-of-death-part1"/>
+    <artifact name="Observation - Contributing Cause of Death Part 2" key="StructureDefinition-Observation-contributing-cause-of-death-part2" id="StructureDefinition/Observation-contributing-cause-of-death-part2"/>
+    <artifact name="ValueSet - Certifier Types" key="ValueSet-ValueSet-certifier-types" id="ValueSet/ValueSet-certifier-types"/>
+    <artifact name="ValueSet - Date Establishment Approach" key="ValueSet-ValueSet-date-establishment-approach" id="ValueSet/ValueSet-date-establishment-approach"/>
+    <artifact name="ValueSet - Place of Death" key="ValueSet-ValueSet-place-of-death" id="ValueSet/ValueSet-place-of-death"/>
+    <artifact name="Observation - Contributing Cause of Death Part 2 - Freeman" key="Observation-observation-contributing-cause-of-death-part2-a-freeman" id="Observation/observation-contributing-cause-of-death-part2-a-freeman"/>
+    <artifact name="Observation - Cause of Death Part 1 - Freeman" key="Observation-observation-cause-of-death-part1-a-freeman" id="Observation/observation-cause-of-death-part1-a-freeman"/>
+    <artifact name="ValueSet - Transportation Incident Role" key="ValueSet-ValueSet-transportation-incident-role" id="ValueSet/ValueSet-transportation-incident-role"/>
+    <artifact name="MessageDefinitionToxicologySystem" key="MessageDefinition-MessageDefinition-toxicology-system" id="MessageDefinition/MessageDefinition-toxicology-system"/>
+    <artifact name="ValueSet - Yes No Unknown" key="ValueSet-ValueSet-yes-no-unknown" id="ValueSet/ValueSet-yes-no-unknown"/>
+    <artifact name="Extension - Date Time" key="StructureDefinition-Extension-date-time" id="StructureDefinition/Extension-date-time"/>
+    <artifact name="Extension - Date Day" key="StructureDefinition-Extension-date-day" id="StructureDefinition/Extension-date-day"/>
+    <artifact name="Extension - Date Month" key="StructureDefinition-Extension-date-month" id="StructureDefinition/Extension-date-month"/>
+    <artifact name="ValueSet - Yes No Unknown NotApplicable" key="ValueSet-ValueSet-yes-no-unknown-not-applicable" id="ValueSet/ValueSet-yes-no-unknown-not-applicable"/>
+    <artifact name="Extension - Date Year" key="StructureDefinition-Extension-date-year" id="StructureDefinition/Extension-date-year"/>
+    <artifact name="Extension - Partial DateTime" key="StructureDefinition-Extension-partial-date-time" id="StructureDefinition/Extension-partial-date-time"/>
+    <artifact name="CodeSystem - Local Component Codes" key="CodeSystem-CodeSystem-local-component-codes" id="CodeSystem/CodeSystem-local-component-codes"/>
+    <artifact name="CapabilityStatement - Electronic Death Reporting System (EDRS) Server" key="CapabilityStatement-CapabilityStatement-edrs-server" id="CapabilityStatement/CapabilityStatement-edrs-server"/>
+    <artifact name="CapabilityStatement - Forensic Toxicology Laboratory Server" key="CapabilityStatement-CapabilityStatement-forensic-toxicology-laboratory-server" id="CapabilityStatement/CapabilityStatement-forensic-toxicology-laboratory-server"/>
+    <artifact name="CapabilityStatement - Medical Examiner/Coroner Server" key="CapabilityStatement-CapabilityStatement-medical-examiner-coroner-server" id="CapabilityStatement/CapabilityStatement-medical-examiner-coroner-server"/>
+    <artifact name="Observation - Autopsy Performed Indicator" key="StructureDefinition-Observation-autopsy-performed-indicator" id="StructureDefinition/Observation-autopsy-performed-indicator"/>
+    <artifact name="Procedure - Death Certification" key="StructureDefinition-Procedure-death-certification" id="StructureDefinition/Procedure-death-certification"/>
+    <artifact name="Procedure - Death Certification - Freeman" key="Procedure-procedure-death-certification-a-freeman" id="Procedure/procedure-death-certification-a-freeman"/>
+    <artifact name="Observation - Autopsy Performed Indicator - Freeman" key="Observation-observation-autopsy-performed-indicator-a-freeman" id="Observation/observation-autopsy-performed-indicator-a-freeman"/>
+    <artifact name="Location - Death" key="StructureDefinition-Location-death" id="StructureDefinition/Location-death"/>
+    <artifact name="Location - Injury" key="StructureDefinition-Location-injury" id="StructureDefinition/Location-injury"/>
+    <artifact name="Location - Death - Atlanta GA Freeman" key="Location-location-death-atlanta-ga-a-freeman" id="Location/location-death-atlanta-ga-a-freeman"/>
+    <artifact name="Location - Injury - Atlanta GA Freeman" key="Location-location-injury-atlanta-ga-a-freeman" id="Location/location-injury-atlanta-ga-a-freeman"/>
+    <artifact name="US Core Practitioner - Dr. J.M. Lehz" key="Practitioner-us-core-practitioner-jm-lehz" id="Practitioner/us-core-practitioner-jm-lehz"/>
+    <artifact name="Atlanta GA Death Location - Freeman (address string)" key="Location-location-death-string" id="Location/location-death-string"/>
+    <artifact name="Lake Death Location - Lat/Long" key="Location-location-death-lat-long" id="Location/location-death-lat-long"/>
+    <artifact name="Observation - Death Date - period" key="Observation-observation-death-date-period" id="Observation/observation-death-date-period"/>
+    <artifact name="MDI to EDRS Composition - draft" key="Composition-composition-mdi-to-edrs-draft" id="Composition/composition-mdi-to-edrs-draft"/>
+    <artifact name="DocumentReference - MDI Report" key="StructureDefinition-DocumentReference-mdi-report" id="StructureDefinition/DocumentReference-mdi-report"/>
+    <artifact name="DocumentReference - MDI Report - Autopsy Report example" key="DocumentReference-documentreference-mdi-autopsy-report-ex" id="DocumentReference/documentreference-mdi-autopsy-report-ex"/>
+    <artifact name="DocumentReference - MDI Report - Investigator's Narrative example" key="DocumentReference-documentreference-mdi-investigator-narrative-ex" id="DocumentReference/documentreference-mdi-investigator-narrative-ex"/>
+    <page key="NA" name="(NA)" deprecated="true"/>
+    <page key="many" name="(many)" deprecated="true"/>
+    <page key="artifacts" name="Artifacts Summary" deprecated="true"/>
+    <page key="background" name="Background"/>
+    <page key="best_practices" name="Best Practices"/>
+    <page key="downloads" name="Downloads"/>
+    <page key="index" name="Home Page"/>
+    <page key="specification" name="Specification"/>
+    <page key="toc" name="Table of Contents" deprecated="true"/>
+    <page key="terminology" name="Terminology"/>
+    <page name="Security Recommendations" key="security_recommendations"/>
+    <page name="Change Log" key="change_log"/>
+</specification>
