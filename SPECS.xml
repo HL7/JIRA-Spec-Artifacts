@@ -56303,6 +56303,10 @@
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
+      <artifact id="Location/location-death-string"
+                key="FHIR-us-mdi-Location-location-death-string"
+                name="Atlanta GA Death Location - Freeman (address string)"
+                spec="us-mdi"/>
       <artifact id="StructureDefinition/Bundle-document-mdi-to-edrs"
                 key="FHIR-us-mdi-StructureDefinition-Bundle-document-mdi-to-edrs"
                 name="Bundle - Document MDI to EDRS"
@@ -56355,6 +56359,18 @@
                 key="FHIR-us-mdi-DiagnosticReport-diagnosticreport-mdi-toxicology-lab-a-freeman"
                 name="DiagnosticReport - Toxicology Lab Result to MDI - Freeman"
                 spec="us-mdi"/>
+      <artifact id="StructureDefinition/DocumentReference-mdi-report"
+                key="FHIR-us-mdi-StructureDefinition-DocumentReference-mdi-report"
+                name="DocumentReference - MDI Report"
+                spec="us-mdi"/>
+      <artifact id="DocumentReference/documentreference-mdi-autopsy-report-ex"
+                key="FHIR-us-mdi-DocumentReference-documentreference-mdi-autopsy-report-ex"
+                name="DocumentReference - MDI Report - Autopsy Report example"
+                spec="us-mdi"/>
+      <artifact id="DocumentReference/documentreference-mdi-investigator-narrative-ex"
+                key="FHIR-us-mdi-DocumentReference-documentreference-mdi-investigator-narrative-ex"
+                name="DocumentReference - MDI Report - Investigator's Narrative example"
+                spec="us-mdi"/>
       <artifact id="StructureDefinition/Extension-date-day"
                 key="FHIR-us-mdi-StructureDefinition-Extension-date-day"
                 name="Extension - Date Day"
@@ -56383,6 +56399,10 @@
       <artifact id="StructureDefinition/Extension-tracking-number"
                 key="FHIR-us-mdi-StructureDefinition-Extension-tracking-number"
                 name="Extension - Tracking Number"
+                spec="us-mdi"/>
+      <artifact id="Location/location-death-lat-long"
+                key="FHIR-us-mdi-Location-location-death-lat-long"
+                name="Lake Death Location - Lat/Long"
                 spec="us-mdi"/>
       <artifact deprecated="true"
                 id="StructureDefinition/List-cause-of-death-pathway"
@@ -56419,6 +56439,10 @@
                 key="FHIR-us-mdi-Composition-composition-mdi-to-edrs-a-freeman"
                 name="MDI to EDRS Composition - Freeman"
                 spec="us-mdi"/>
+      <artifact id="Composition/composition-mdi-to-edrs-draft"
+                key="FHIR-us-mdi-Composition-composition-mdi-to-edrs-draft"
+                name="MDI to EDRS Composition - draft"
+                spec="us-mdi"/>
       <artifact id="MessageDefinition/MessageDefinition-toxicology-system"
                 key="FHIR-us-mdi-MessageDefinition-MessageDefinition-toxicology-system"
                 name="MessageDefinitionToxicologySystem"
@@ -56430,10 +56454,6 @@
       <artifact id="MessageHeader/messageheader-mdi-tox-result-report-a-freeman"
                 key="FHIR-us-mdi-MessageHeader-messageheader-mdi-tox-result-report-a-freeman"
                 name="MessageHeader - Toxicology to MDI - Freeman"
-                spec="us-mdi"/>
-      <artifact id="Observation/us-core-lab-result-fentanyl-blood-a-freeman"
-                key="FHIR-us-mdi-Observation-us-core-lab-result-fentanyl-blood-a-freeman"
-                name="Observation - Toxicology Lab Result - Fentanyl Blood Freeman"
                 spec="us-mdi"/>
       <artifact id="StructureDefinition/Observation-autopsy-performed-indicator"
                 key="FHIR-us-mdi-StructureDefinition-Observation-autopsy-performed-indicator"
@@ -56486,6 +56506,10 @@
       <artifact id="Observation/observation-death-date-a-freeman"
                 key="FHIR-us-mdi-Observation-observation-death-date-a-freeman"
                 name="Observation - Death Date - Freeman"
+                spec="us-mdi"/>
+      <artifact id="Observation/observation-death-date-period"
+                key="FHIR-us-mdi-Observation-observation-death-date-period"
+                name="Observation - Death Date - period"
                 spec="us-mdi"/>
       <artifact deprecated="true"
                 id="Observation/observation-death-injury-at-work-a-freeman"
@@ -56566,6 +56590,10 @@
                 key="FHIR-us-mdi-Observation-us-core-lab-result-etoh-gas-chromatography-vit-humor-a-freeman"
                 name="Observation - Toxicology Lab Result - Ethanol Vitreous Humor Freeman"
                 spec="us-mdi"/>
+      <artifact id="Observation/us-core-lab-result-fentanyl-blood-a-freeman"
+                key="FHIR-us-mdi-Observation-us-core-lab-result-fentanyl-blood-a-freeman"
+                name="Observation - Toxicology Lab Result - Fentanyl Blood Freeman"
+                spec="us-mdi"/>
       <artifact id="Observation/us-core-lab-result-fentanyl-urine-a-freeman"
                 key="FHIR-us-mdi-Observation-us-core-lab-result-fentanyl-urine-a-freeman"
                 name="Observation - Toxicology Lab Result - Fentanyl Urine Freeman"
@@ -56634,9 +56662,14 @@
                 key="FHIR-us-mdi-Practitioner-us-core-practitioner-b-goldberger"
                 name="US Core Practitioner - Dr. Bruce Goldberger"
                 spec="us-mdi"/>
-      <artifact id="Practitioner/us-core-practitioner-j-jones"
+      <artifact id="Practitioner/us-core-practitioner-jm-lehz"
+                key="FHIR-us-mdi-Practitioner-us-core-practitioner-jm-lehz"
+                name="US Core Practitioner - Dr. J.M. Lehz"
+                spec="us-mdi"/>
+      <artifact deprecated="true"
+                id="Practitioner/us-core-practitioner-j-jones"
                 key="FHIR-us-mdi-Practitioner-us-core-practitioner-j-jones"
-                name="US Core Practitioner - Dr. Jane Jones"
+                name="US Core Practitioner - Dr. Jane Jones [deprecated]"
                 spec="us-mdi"/>
       <artifact id="Practitioner/us-core-practitioner-s-jones"
                 key="FHIR-us-mdi-Practitioner-us-core-practitioner-s-jones"
@@ -56679,9 +56712,10 @@
                 key="FHIR-us-mdi-ValueSet-ValueSet-transportation-incident-role"
                 name="ValueSet - Transportation Incident Role"
                 spec="us-mdi"/>
-      <artifact id="ValueSet/ValueSet-units-of-age"
+      <artifact deprecated="true"
+                id="ValueSet/ValueSet-units-of-age"
                 key="FHIR-us-mdi-ValueSet-ValueSet-units-of-age"
-                name="ValueSet - Units of Age"
+                name="ValueSet - Units of Age [deprecated]"
                 spec="us-mdi"/>
       <artifact id="ValueSet/ValueSet-yes-no-unknown"
                 key="FHIR-us-mdi-ValueSet-ValueSet-yes-no-unknown"
@@ -56691,9 +56725,10 @@
                 key="FHIR-us-mdi-ValueSet-ValueSet-yes-no-unknown-not-applicable"
                 name="ValueSet - Yes No Unknown NotApplicable"
                 spec="us-mdi"/>
-      <artifact id="ValueSet/ValueSet-yes-no-not-applicable"
+      <artifact deprecated="true"
+                id="ValueSet/ValueSet-yes-no-not-applicable"
                 key="FHIR-us-mdi-ValueSet-ValueSet-yes-no-not-applicable"
-                name="ValueSet - Yes, No, Not Applicable"
+                name="ValueSet - Yes, No, Not Applicable [deprecated]"
                 spec="us-mdi"/>
       <page key="FHIR-us-mdi-NA" name="(NA)" spec="us-mdi"/>
       <page key="FHIR-us-mdi-many" name="(many)" spec="us-mdi"/>
@@ -56702,8 +56737,12 @@
       <page key="FHIR-us-mdi-best_practices"
             name="Best Practices"
             spec="us-mdi"/>
+      <page key="FHIR-us-mdi-change_log" name="Change Log" spec="us-mdi"/>
       <page key="FHIR-us-mdi-downloads" name="Downloads" spec="us-mdi"/>
       <page key="FHIR-us-mdi-index" name="Home Page" spec="us-mdi"/>
+      <page key="FHIR-us-mdi-security_recommendations"
+            name="Security Recommendations"
+            spec="us-mdi"/>
       <page key="FHIR-us-mdi-specification" name="Specification" spec="us-mdi"/>
       <page key="FHIR-us-mdi-toc" name="Table of Contents" spec="us-mdi"/>
       <page key="FHIR-us-mdi-terminology" name="Terminology" spec="us-mdi"/>
