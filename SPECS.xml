@@ -18112,38 +18112,55 @@
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-shorthand"
                   name="Shorthand (FHIR)"
-                  gitUrl="https://github.com/HL7/fhir-shorthand"
-                  url="http://hl7.org/fhir/uv/shorthand"
+                  ballotUrl="http://hl7.org/fhir/uv/shorthand/2021Sep"
                   ciUrl="http://build.fhir.org/ig/HL7/fhir-shorthand"
+                  defaultVersion="2.0.0"
                   defaultWorkgroup="fhir-i"
-                  defaultVersion="0.12.0">
+                  gitUrl="https://github.com/HL7/fhir-shorthand"
+                  url="http://hl7.org/fhir/uv/shorthand">
+      <version code="current" url="http://build.fhir.org/ig/HL7/fhir-shorthand"/>
+      <version code="2.0.0" url="http://hl7.org/fhir/uv/shorthand/N1"/>
+      <version code="1.2.0" url="http://hl7.org/fhir/uv/shorthand/2021Sep"/>
       <version code="1.0.0" url="http://hl7.org/fhir/uv/shorthand/STU1"/>
       <version code="0.12.0"
-               url="http://hl7.org/fhir/uv/shorthand/2020May"
-               deprecated="true"/>
-      <artifact name="Shorthand Instance Tags"
-                key="FHIR-shorthand-shorthand-instance-tags"
-                id="ValueSet/shorthand-instance-tags"
-                spec="shorthand"/>
-      <artifact name="Shorthand Code System"
-                key="FHIR-shorthand-shorthand-code-system"
+               deprecated="true"
+               url="http://hl7.org/fhir/uv/shorthand/2020May"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <artifact deprecated="true"
                 id="CodeSystem/shorthand-code-system"
+                key="FHIR-shorthand-shorthand-code-system"
+                name="Shorthand Code System [deprecated]"
                 spec="shorthand"/>
-      <page name="(NA)" key="FHIR-shorthand-NA" spec="shorthand"/>
-      <page name="(many)" key="FHIR-shorthand-many" spec="shorthand"/>
-      <page name="Home" key="FHIR-shorthand-index" spec="shorthand"/>
-      <page name="Table of Contents" key="FHIR-shorthand-toc" spec="shorthand"/>
-      <page name="Overview" key="FHIR-shorthand-overview" spec="shorthand"/>
-      <page name="Language Reference"
-            key="FHIR-shorthand-languagereference"
+      <artifact deprecated="true"
+                id="ValueSet/shorthand-instance-tags"
+                key="FHIR-shorthand-shorthand-instance-tags"
+                name="Shorthand Instance Tags [deprecated]"
+                spec="shorthand"/>
+      <page key="FHIR-shorthand-NA" name="(NA)" spec="shorthand"/>
+      <page key="FHIR-shorthand-many" name="(many)" spec="shorthand"/>
+      <page key="FHIR-shorthand-artifacts"
+            name="Artifacts Summary"
             spec="shorthand"/>
-      <page name="SUSHI" key="FHIR-shorthand-sushi" spec="shorthand"/>
-      <page name="Quick Reference"
+      <page key="FHIR-shorthand-change_log" name="Change Log" spec="shorthand"/>
+      <page key="FHIR-shorthand-index" name="FHIR Shorthand" spec="shorthand"/>
+      <page key="FHIR-shorthand-languagereference"
+            name="Language Reference"
+            spec="shorthand"/>
+      <page key="FHIR-shorthand-overview" name="Overview" spec="shorthand"/>
+      <page deprecated="true"
             key="FHIR-shorthand-quickreference"
+            name="Quick Reference [deprecated]"
             spec="shorthand"/>
-      <page name="Tutorial [deprecated]"
+      <page deprecated="true"
+            key="FHIR-shorthand-sushi"
+            name="SUSHI [deprecated]"
+            spec="shorthand"/>
+      <page key="FHIR-shorthand-toc" name="Table of Contents" spec="shorthand"/>
+      <page deprecated="true"
             key="FHIR-shorthand-tutorial"
-            deprecated="true"
+            name="Tutorial [deprecated]"
             spec="shorthand"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
