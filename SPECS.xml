@@ -39561,30 +39561,159 @@
                   ciUrl="http://build.fhir.org/ig/HL7/HAI"
                   defaultWorkgroup="sd"
                   defaultVersion="2.1.0">
-      <version code="2.1.0"/>
-      <version code="2.0.0"/>
-      <version code="1.1.0"/>
-      <version code="1.0.0"/>
-      <version deprecated="true" code="0.1"/>
+      <version code="current" url="http://build.fhir.org/ig/HL7/HAI"/>
+      <version code="2.1.0" url="http://hl7.org/fhir/us/hai/STU2.1"/>
+      <version code="2.0.0" url="http://hl7.org/fhir/us/hai/STU2"/>
+      <version code="1.1.0" url="http://hl7.org/fhir/us/hai/2019May"/>
+      <version code="1.0.0" url="http://hl7.org/fhir/us/hai/STU1"/>
+      <version code="0.1.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/us/hai/2018May"/>
+      <version code="0.1" deprecated="true"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
-      <artifact name="ImplementationGuide [deprecated]"
+      <artifact id="Device/hai-authoring-device"
+                key="FHIR-us-hai-Device-hai-authoring-device"
+                name="Device - HAI Authoring"
+                spec="us-hai"/>
+      <artifact id="Group/hai-group-1"
+                key="FHIR-us-hai-Group-hai-group-1"
+                name="Group: HAI Group 1"
+                spec="us-hai"/>
+      <artifact id="StructureDefinition/hai-population-summary-questionnaire"
+                key="FHIR-us-hai-StructureDefinition-hai-population-summary-questionnaire"
+                name="Healthcare Associated Infection Population Summary Questionnaire"
+                spec="us-hai"/>
+      <artifact id="StructureDefinition/hai-population-summary-questionnaireresponse"
+                key="FHIR-us-hai-StructureDefinition-hai-population-summary-questionnaireresponse"
+                name="Healthcare Associated Infection Population Summary QuestionnaireResponse"
+                spec="us-hai"/>
+      <artifact id="StructureDefinition/hai-single-person-report-questionnaire"
+                key="FHIR-us-hai-StructureDefinition-hai-single-person-report-questionnaire"
+                name="Healthcare Associated Infection Single-Person Report Questionnaire"
+                spec="us-hai"/>
+      <artifact id="StructureDefinition/hai-single-person-report-questionnaireresponse"
+                key="FHIR-us-hai-StructureDefinition-hai-single-person-report-questionnaireresponse"
+                name="Healthcare Associated Infection Single-Person Report QuestionnaireResponse"
+                spec="us-hai"/>
+      <artifact deprecated="true"
                 key="FHIR-us-hai-ImplementationGuide"
-                deprecated="true"
+                name="ImplementationGuide [deprecated]"
                 spec="us-hai"/>
-      <artifact name="Questionnaire [deprecated]"
+      <artifact id="CodeSystem/CDCNHSN"
+                key="FHIR-us-hai-CodeSystem-CDCNHSN"
+                name="NHSN Surveillance System Codes"
+                spec="us-hai"/>
+      <artifact id="ValueSet/nhsn-pathogen-ranking"
+                key="FHIR-us-hai-ValueSet-nhsn-pathogen-ranking"
+                name="NHSNPathogenRanking"
+                spec="us-hai"/>
+      <artifact id="Parameters/expansion-parameters-hai"
+                key="FHIR-us-hai-Parameters-expansion-parameters-hai"
+                name="Parameters - SNOMED US Version"
+                spec="us-hai"/>
+      <artifact deprecated="true"
                 key="FHIR-us-hai-Questionnaire"
-                deprecated="true"
+                name="Questionnaire [deprecated]"
                 spec="us-hai"/>
-      <page name="(NA)" key="FHIR-us-hai-NA" spec="us-hai"/>
-      <page name="(many)" key="FHIR-us-hai-many" spec="us-hai"/>
-      <page name="(profiles)" key="FHIR-us-hai-profiles" spec="us-hai"/>
-      <page name="index" key="FHIR-us-hai-index" url="index" spec="us-hai"/>
-      <page name="terminologies-valuesets [deprecated]"
+      <artifact id="Questionnaire/hai-questionnaire-los-denom"
+                key="FHIR-us-hai-Questionnaire-hai-questionnaire-los-denom"
+                name="Questionnaire - Late Onset Sepsis/Meningitis Denominator"
+                spec="us-hai"/>
+      <artifact id="Questionnaire/hai-questionnaire-los-event"
+                key="FHIR-us-hai-Questionnaire-hai-questionnaire-los-event"
+                name="Questionnaire - Late Onset Sepsis/Meningitis Event (LOS)"
+                spec="us-hai"/>
+      <artifact id="Questionnaire/hai-questionnaire-opc-proc-denom"
+                key="FHIR-us-hai-Questionnaire-hai-questionnaire-opc-proc-denom"
+                name="Questionnaire - Outpatient Procedure Component Denominator for Procedure"
+                spec="us-hai"/>
+      <artifact id="Questionnaire/hai-questionnaire-opc-sdom-denom"
+                key="FHIR-us-hai-Questionnaire-hai-questionnaire-opc-sdom-denom"
+                name="Questionnaire - Outpatient Procedure Component Denominator for Same Day Outcome Measures Report"
+                spec="us-hai"/>
+      <artifact id="Questionnaire/hai-questionnaire-opc-sdom-event"
+                key="FHIR-us-hai-Questionnaire-hai-questionnaire-opc-sdom-event"
+                name="Questionnaire - Outpatient Procedure Component Same Day Outcome Measures Event"
+                spec="us-hai"/>
+      <artifact id="Questionnaire/hai-questionnaire-opc-ssi-event"
+                key="FHIR-us-hai-Questionnaire-hai-questionnaire-opc-ssi-event"
+                name="Questionnaire - Outpatient Procedure Component Surgical Site Infection Event"
+                spec="us-hai"/>
+      <artifact id="QuestionnaireResponse/hai-questionnaireresponse-los-denom"
+                key="FHIR-us-hai-QuestionnaireResponse-hai-questionnaireresponse-los-denom"
+                name="QuestionnaireResponse - Late Onset Sepsis/Meningitis Denominator"
+                spec="us-hai"/>
+      <artifact id="QuestionnaireResponse/hai-questionnaireresponse-los-event"
+                key="FHIR-us-hai-QuestionnaireResponse-hai-questionnaireresponse-los-event"
+                name="QuestionnaireResponse - Late Onset Sepsis/Meningitis Event (LOS)"
+                spec="us-hai"/>
+      <artifact id="QuestionnaireResponse/hai-questionnaireresponse-opc-proc-denom"
+                key="FHIR-us-hai-QuestionnaireResponse-hai-questionnaireresponse-opc-proc-denom"
+                name="QuestionnaireResponse - Outpatient Procedure Component Denominator for Procedure"
+                spec="us-hai"/>
+      <artifact id="QuestionnaireResponse/hai-questionnaireresponse-opc-sdom-denom"
+                key="FHIR-us-hai-QuestionnaireResponse-hai-questionnaireresponse-opc-sdom-denom"
+                name="QuestionnaireResponse - Outpatient Procedure Component Denominator for Same Day Outcome Measures Report"
+                spec="us-hai"/>
+      <artifact id="QuestionnaireResponse/hai-questionnaireresponse-opc-sdom-event"
+                key="FHIR-us-hai-QuestionnaireResponse-hai-questionnaireresponse-opc-sdom-event"
+                name="QuestionnaireResponse - Outpatient Procedure Component Same Day Outcome Measures Event"
+                spec="us-hai"/>
+      <artifact id="QuestionnaireResponse/hai-questionnaireresponse-opc-ssi-event"
+                key="FHIR-us-hai-QuestionnaireResponse-hai-questionnaireresponse-opc-ssi-event"
+                name="QuestionnaireResponse - Outpatient Procedure Component Surgical Site Infection Event"
+                spec="us-hai"/>
+      <artifact id="Patient/hai-patient-1"
+                key="FHIR-us-hai-Patient-hai-patient-1"
+                name="US Core Patient: HAI Patient 1"
+                spec="us-hai"/>
+      <page key="FHIR-us-hai-NA" name="(NA)" spec="us-hai"/>
+      <page key="FHIR-us-hai-many" name="(many)" spec="us-hai"/>
+      <page deprecated="true"
+            key="FHIR-us-hai-profiles"
+            name="(profiles) [deprecated]"
+            spec="us-hai"/>
+      <page key="FHIR-us-hai-acknowledgements"
+            name="Acknowledgements"
+            spec="us-hai"/>
+      <page key="FHIR-us-hai-artifacts" name="Artifacts Summary" spec="us-hai"/>
+      <page key="FHIR-us-hai-audience" name="Audience" spec="us-hai"/>
+      <page key="FHIR-us-hai-design_considerations"
+            name="Design Considerations"
+            spec="us-hai"/>
+      <page key="FHIR-us-hai-downloads" name="Downloads" spec="us-hai"/>
+      <page key="FHIR-us-hai-index" name="Home" spec="us-hai"/>
+      <page key="FHIR-us-hai-relationship_to_another_standard"
+            name="Relationship to Another Standard"
+            spec="us-hai"/>
+      <page key="FHIR-us-hai-release_history"
+            name="Release History"
+            spec="us-hai"/>
+      <page key="FHIR-us-hai-toc" name="Table of Contents" spec="us-hai"/>
+      <page key="FHIR-us-hai-mapping-los-denom"
+            name="mapping-los-denom"
+            spec="us-hai"/>
+      <page key="FHIR-us-hai-mapping-los-event"
+            name="mapping-los-event"
+            spec="us-hai"/>
+      <page key="FHIR-us-hai-mapping-opc-proc-denom"
+            name="mapping-opc-proc-denom"
+            spec="us-hai"/>
+      <page key="FHIR-us-hai-mapping-opc-sdom-denom"
+            name="mapping-opc-sdom-denom"
+            spec="us-hai"/>
+      <page key="FHIR-us-hai-mapping-opc-sdom-event"
+            name="mapping-opc-sdom-event"
+            spec="us-hai"/>
+      <page key="FHIR-us-hai-mapping-opc-ssi-event"
+            name="mapping-opc-ssi-event"
+            spec="us-hai"/>
+      <page deprecated="true"
             key="FHIR-us-hai-terminologies-valuesets"
+            name="terminologies-valuesets [deprecated]"
             url="terminologies-valuesets"
-            deprecated="true"
             spec="us-hai"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
