@@ -29744,11 +29744,12 @@
                   name="US Da Vinci DEQM (FHIR)"
                   ballotUrl="http://hl7.org/fhir/us/davinci-deqm/2023Jan"
                   ciUrl="http://build.fhir.org/ig/HL7/davinci-deqm"
-                  defaultVersion="3.1.0"
+                  defaultVersion="4.0.0"
                   defaultWorkgroup="cqi"
                   gitUrl="https://github.com/HL7/davinci-deqm"
                   url="http://hl7.org/fhir/us/davinci-deqm">
       <version code="current" url="http://build.fhir.org/ig/HL7/davinci-deqm"/>
+      <version code="4.0.0" url="http://hl7.org/fhir/us/davinci-deqm/STU4"/>
       <version code="4.0.0-ballot" url="http://hl7.org/fhir/us/davinci-deqm/2023Jan"/>
       <version code="3.1.0" url="http://hl7.org/fhir/us/davinci-deqm/STU3.1"/>
       <version code="3.0.0" url="http://hl7.org/fhir/us/davinci-deqm/STU3"/>
@@ -29822,17 +29823,23 @@
                 key="FHIR-us-davinci-deqm-Coverage-coverage01"
                 name="Coverage01"
                 spec="us-davinci-deqm"/>
-      <artifact id="Coverage/coverage02"
+      <artifact deprecated="true"
+                id="Coverage/coverage02"
                 key="FHIR-us-davinci-deqm-Coverage-coverage02"
-                name="Coverage02"
+                name="Coverage02 [deprecated]"
                 spec="us-davinci-deqm"/>
-      <artifact id="Coverage/coverage03"
+      <artifact deprecated="true"
+                id="Coverage/coverage03"
                 key="FHIR-us-davinci-deqm-Coverage-coverage03"
-                name="Coverage03"
+                name="Coverage03 [deprecated]"
                 spec="us-davinci-deqm"/>
       <artifact id="StructureDefinition/extension-alternateScoreType"
                 key="FHIR-us-davinci-deqm-StructureDefinition-extension-alternateScoreType"
                 name="DEQM Alternate Score Type Extension"
+                spec="us-davinci-deqm"/>
+      <artifact id="StructureDefinition/extension-calculatedDate"
+                key="FHIR-us-davinci-deqm-StructureDefinition-extension-calculatedDate"
+                name="DEQM Calculated Date Extension"
                 spec="us-davinci-deqm"/>
       <artifact id="StructureDefinition/extension-certificationIdentifier"
                 key="FHIR-us-davinci-deqm-StructureDefinition-extension-certificationIdentifier"
@@ -29850,6 +29857,10 @@
       <artifact id="StructureDefinition/datax-measurereport-deqm"
                 key="FHIR-us-davinci-deqm-StructureDefinition-datax-measurereport-deqm"
                 name="DEQM Data Exchange MeasureReport Profile"
+                spec="us-davinci-deqm"/>
+      <artifact id="StructureDefinition/extension-dataLocation"
+                key="FHIR-us-davinci-deqm-StructureDefinition-extension-dataLocation"
+                name="DEQM Data Location Extension"
                 spec="us-davinci-deqm"/>
       <artifact id="OperationDefinition/deqm.evaluate-measure"
                 key="FHIR-us-davinci-deqm-OperationDefinition-deqm.evaluate-measure"
@@ -29897,6 +29908,10 @@
                 key="FHIR-us-davinci-deqm-StructureDefinition-extension-groupImprovementNotation"
                 name="DEQM Group Improvement Notation Extension"
                 spec="us-davinci-deqm"/>
+      <artifact id="StructureDefinition/indv-measurereport-list"
+                key="FHIR-us-davinci-deqm-StructureDefinition-indv-measurereport-list"
+                name="DEQM Individual MeasureReport List"
+                spec="us-davinci-deqm"/>
       <artifact id="StructureDefinition/indv-measurereport-deqm"
                 key="FHIR-us-davinci-deqm-StructureDefinition-indv-measurereport-deqm"
                 name="DEQM Individual MeasureReport Profile"
@@ -29931,9 +29946,14 @@
                 key="FHIR-us-davinci-deqm-StructureDefinition-extension-reporterGroup"
                 name="DEQM Reporter Group Extension"
                 spec="us-davinci-deqm"/>
-      <artifact id="StructureDefinition/extension-reportingProgramReference"
+      <artifact id="StructureDefinition/extension-reportingProgram"
+                key="FHIR-us-davinci-deqm-StructureDefinition-extension-reportingProgram"
+                name="DEQM Reporting Program Extension"
+                spec="us-davinci-deqm"/>
+      <artifact deprecated="true"
+                id="StructureDefinition/extension-reportingProgramReference"
                 key="FHIR-us-davinci-deqm-StructureDefinition-extension-reportingProgramReference"
-                name="DEQM Reporting Program Reference Extension"
+                name="DEQM Reporting Program Reference Extension [deprecated]"
                 spec="us-davinci-deqm"/>
       <artifact id="StructureDefinition/extension-reportingVendor"
                 key="FHIR-us-davinci-deqm-StructureDefinition-extension-reportingVendor"
@@ -29942,6 +29962,10 @@
       <artifact id="Device/deqm-software-system-example"
                 key="FHIR-us-davinci-deqm-Device-deqm-software-system-example"
                 name="DEQM Software System Example"
+                spec="us-davinci-deqm"/>
+      <artifact id="StructureDefinition/subjectlist-measurereport-deqm"
+                key="FHIR-us-davinci-deqm-StructureDefinition-subjectlist-measurereport-deqm"
+                name="DEQM Subject List MeasureReport"
                 spec="us-davinci-deqm"/>
       <artifact id="StructureDefinition/extension-submitDataUpdateType"
                 key="FHIR-us-davinci-deqm-StructureDefinition-extension-submitDataUpdateType"
@@ -29982,6 +30006,14 @@
       <artifact id="StructureDefinition/gaps-guidanceresponse-detailedcaregap"
                 key="FHIR-us-davinci-deqm-StructureDefinition-gaps-guidanceresponse-detailedcaregap"
                 name="Detailed Care Gap Guidance Response"
+                spec="us-davinci-deqm"/>
+      <artifact id="GuidanceResponse/detailedguidanceresponse01"
+                key="FHIR-us-davinci-deqm-GuidanceResponse-detailedguidanceresponse01"
+                name="DetailedGuidanceResponse01"
+                spec="us-davinci-deqm"/>
+      <artifact id="GuidanceResponse/detailedguidanceresponse02"
+                key="FHIR-us-davinci-deqm-GuidanceResponse-detailedguidanceresponse02"
+                name="DetailedGuidanceResponse02"
                 spec="us-davinci-deqm"/>
       <artifact id="Encounter/nhsn-iip-en101"
                 key="FHIR-us-davinci-deqm-Encounter-nhsn-iip-en101"
@@ -30335,6 +30367,10 @@
                 key="FHIR-us-davinci-deqm-Bundle-single-indv-vte-report-option7"
                 name="Single Indv Vte Report Option 7"
                 spec="us-davinci-deqm"/>
+      <artifact id="MeasureReport/subjectlist-measurereport01"
+                key="FHIR-us-davinci-deqm-MeasureReport-subjectlist-measurereport01"
+                name="Subject List MeasureReport01"
+                spec="us-davinci-deqm"/>
       <artifact id="MeasureReport/summ-measurereport01"
                 key="FHIR-us-davinci-deqm-MeasureReport-summ-measurereport01"
                 name="Summ Measurereport01"
@@ -30362,6 +30398,14 @@
       <artifact id="Task/task03"
                 key="FHIR-us-davinci-deqm-Task-task03"
                 name="Task03"
+                spec="us-davinci-deqm"/>
+      <artifact id="List/list2"
+                key="FHIR-us-davinci-deqm-List-list2"
+                name="list2"
+                spec="us-davinci-deqm"/>
+      <artifact id="MeasureReport/summ-PI"
+                key="FHIR-us-davinci-deqm-MeasureReport-summ-PI"
+                name="summ-PI"
                 spec="us-davinci-deqm"/>
       <page key="FHIR-us-davinci-deqm-NA" name="(NA)" spec="us-davinci-deqm"/>
       <page key="FHIR-us-davinci-deqm-many"
@@ -30415,6 +30459,9 @@
             spec="us-davinci-deqm"/>
       <page key="FHIR-us-davinci-deqm-profiles"
             name="Profiles and Extensions"
+            spec="us-davinci-deqm"/>
+      <page key="FHIR-us-davinci-deqm-subjectlist-reporting"
+            name="Subject List Reporting"
             spec="us-davinci-deqm"/>
       <page key="FHIR-us-davinci-deqm-summary-reporting"
             name="Summary Reporting"
