@@ -68067,14 +68067,14 @@
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-ibcm"
                   name="International Birth And Child Model (FHIR)"
-                  ballotUrl="http://hl7.org/fhir/uv/ibcm/2023Sep"
-                  gitUrl="https://github.com/HL7/fetal_records"
+                  ballotUrl="http://hl7.org/fhir/uv/ibcm/1.0.0-ballot"
                   ciUrl="http://build.fhir.org/ig/HL7/fetal_records"
                   defaultVersion="1.0.0-ballot"
                   defaultWorkgroup="pc"
+                  gitUrl="https://github.com/HL7/fetal_records"
                   url="http://hl7.org/fhir/uv/ibcm">
       <version code="current" url="http://build.fhir.org/ig/HL7/fetal_records"/>
-      <version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/ibcm/2023Sep"/>
+      <version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/ibcm/1.0.0-ballot"/>
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
@@ -68162,6 +68162,10 @@
                 key="FHIR-ibcm-Observation-uc2-gestation24"
                 name="UC2 Gestationale Age 24.14 weeks"
                 spec="ibcm"/>
+      <artifact id="Observation/uc2-hypoplasialung"
+                key="FHIR-ibcm-Observation-uc2-hypoplasialung"
+                name="UC2 Hypoplasia of Lung"
+                spec="ibcm"/>
       <artifact id="Condition/uc2-416010008"
                 key="FHIR-ibcm-Condition-uc2-416010008"
                 name="UC2 Hypospadias Fetus B"
@@ -68174,17 +68178,19 @@
                 key="FHIR-ibcm-Observation-uc2-karyotype-fetusB"
                 name="UC2 Karyotype Fetus B"
                 spec="ibcm"/>
-      <artifact id="Observation/uc2-lhr"
+      <artifact deprecated="true"
+                id="Observation/uc2-lhr"
                 key="FHIR-ibcm-Observation-uc2-lhr"
-                name="UC2 Lung-Head Ratio Fetus A"
+                name="UC2 Lung-Head Ratio Fetus A [deprecated]"
                 spec="ibcm"/>
       <artifact id="Patient/uc2-mother"
                 key="FHIR-ibcm-Patient-uc2-mother"
                 name="UC2 Mother Patient"
                 spec="ibcm"/>
-      <artifact id="Observation/uc2-lungvolume"
+      <artifact deprecated="true"
+                id="Observation/uc2-lungvolume"
                 key="FHIR-ibcm-Observation-uc2-lungvolume"
-                name="UC2 Observed:Expected Lung Volume Fetus A"
+                name="UC2 Observed:Expected Lung Volume Fetus A [deprecated]"
                 spec="ibcm"/>
       <artifact id="Condition/uc2-pregnancy"
                 key="FHIR-ibcm-Condition-uc2-pregnancy"
