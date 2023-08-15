@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-crd/2022May" ciUrl="https://build.fhir.org/ig/HL7/davinci-crd" defaultVersion="1.0.0" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-crd" url="http://hl7.org/fhir/us/davinci-crd">
-<version code="current" url="https://build.fhir.org/ig/HL7/davinci-crd"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-crd/2022May" ciUrl="http://build.fhir.org/ig/HL7/davinci-crd" defaultVersion="1.1.0" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-crd" url="http://hl7.org/fhir/us/davinci-crd">
+<version code="current" url="http://build.fhir.org/ig/HL7/davinci-crd"/>
+<version code="1.1.0" url="http://hl7.org/fhir/us/davinci-crd/STU1.1"/>
 <version code="1.1.0-ballot" url="http://hl7.org/fhir/us/davinci-crd/2022May"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-crd/STU1"/>
 <version code="0.3.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-crd/2019May"/>
@@ -9,75 +10,99 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="StructureDefinition/profile-appointment" key="StructureDefinition-profile-appointment" name="Appointment"/>
+<artifact id="ValueSet/AdditionalDocumentation" key="ValueSet-AdditionalDocumentation" name="Additional Documentation Value Set"/>
 <artifact deprecated="true" id="SearchParameter/appointment-insurance" key="SearchParameter-appointment-insurance" name="Appointment Insurance Search Parameter"/>
 <artifact id="Appointment/example" key="Appointment-example" name="Appointment example"/>
-<artifact id="Task/action-example" key="Task-action-example" name="CDS Hook deferred action example"/>
+<artifact id="ValueSet/cdsHookType" key="ValueSet-cdsHookType" name="CDS Hook Types"/>
+<artifact deprecated="true" id="Task/action-example" key="Task-action-example" name="CDS Hook deferred action example"/>
 <artifact id="ValueSet/cardActions" key="ValueSet-cardActions" name="CDS Hooks Card Suggestion Action Types"/>
+<artifact id="StructureDefinition/CDSHookServicesExtensionConfig" key="StructureDefinition-CDSHookServicesExtensionConfig" name="CDS Hooks Services Configuration Extension"/>
 <artifact id="ValueSet/afterCompletionCode" key="ValueSet-afterCompletionCode" name="CRD After Completion Code"/>
-<artifact id="CodeSystem/cardType" key="CodeSystem-cardType" name="CRD Card Types Code System"/>
+<artifact id="StructureDefinition/profile-appointment" key="StructureDefinition-profile-appointment" name="CRD Appointment"/>
+<artifact deprecated="true" id="CodeSystem/cardType" key="CodeSystem-cardType" name="CRD Card Types Code System"/>
 <artifact id="ValueSet/cardType" key="ValueSet-cardType" name="CRD Card Types Value Set"/>
+<artifact id="CapabilityStatement/crd-client" key="CapabilityStatement-crd-client" name="CRD Client"/>
+<artifact id="StructureDefinition/profile-communicationrequest" key="StructureDefinition-profile-communicationrequest" name="CRD Communication Request"/>
+<artifact id="StructureDefinition/profile-coverage" key="StructureDefinition-profile-coverage" name="CRD Coverage"/>
+<artifact id="ValueSet/coverageAssertionReasons" key="ValueSet-coverageAssertionReasons" name="CRD Coverage Assertion Reasons"/>
 <artifact id="ValueSet/coverageClass" key="ValueSet-coverageClass" name="CRD Coverage Classes"/>
+<artifact id="ValueSet/coverageDetail" key="ValueSet-coverageDetail" name="CRD Coverage Detail Codes"/>
+<artifact id="StructureDefinition/profile-device" key="StructureDefinition-profile-device" name="CRD Device"/>
+<artifact id="StructureDefinition/profile-devicerequest" key="StructureDefinition-profile-devicerequest" name="CRD Device Request"/>
+<artifact id="ValueSet/deviceRequest" key="ValueSet-deviceRequest" name="CRD Device Request Codes"/>
+<artifact id="ValueSet/crdDocReason" key="ValueSet-crdDocReason" name="CRD Documentation Reason Value Set"/>
+<artifact id="StructureDefinition/profile-encounter" key="StructureDefinition-profile-encounter" name="CRD Encounter"/>
+<artifact id="StructureDefinition/profile-location" key="StructureDefinition-profile-location" name="CRD Location"/>
 <artifact id="ValueSet/locationAddressType" key="ValueSet-locationAddressType" name="CRD Location Address Types"/>
+<artifact id="StructureDefinition/profile-medicationrequest" key="StructureDefinition-profile-medicationrequest" name="CRD Medication Request"/>
+<artifact id="StructureDefinition/CRDMetricData" key="StructureDefinition-CRDMetricData" name="CRD Metric Data"/>
+<artifact id="StructureDefinition/profile-nutritionorder" key="StructureDefinition-profile-nutritionorder" name="CRD Nutrition Order"/>
+<artifact id="StructureDefinition/profile-organization" key="StructureDefinition-profile-organization" name="CRD Organization"/>
+<artifact id="StructureDefinition/profile-patient" key="StructureDefinition-profile-patient" name="CRD Patient"/>
+<artifact id="StructureDefinition/profile-practitioner" key="StructureDefinition-profile-practitioner" name="CRD Practitioner"/>
+<artifact id="StructureDefinition/profile-taskquestionnaire" key="StructureDefinition-profile-taskquestionnaire" name="CRD Questionnaire Task"/>
 <artifact id="ValueSet/taskReasonCode" key="ValueSet-taskReasonCode" name="CRD Reason Codes"/>
+<artifact id="CapabilityStatement/crd-server" key="CapabilityStatement-crd-server" name="CRD Server"/>
+<artifact id="StructureDefinition/profile-servicerequest" key="StructureDefinition-profile-servicerequest" name="CRD Service Request"/>
 <artifact id="ValueSet/serviceRequestCodes" key="ValueSet-serviceRequestCodes" name="CRD Service Request Codes"/>
 <artifact id="CodeSystem/temp" key="CodeSystem-temp" name="CRD Temporary Codes"/>
-<artifact id="StructureDefinition/profile-crdcardtask" key="StructureDefinition-profile-crdcardtask" name="CRDCardTask"/>
-<artifact id="StructureDefinition/profile-claimresponse" key="StructureDefinition-profile-claimresponse" name="ClaimResponse"/>
-<artifact id="StructureDefinition/profile-communicationrequest" key="StructureDefinition-profile-communicationrequest" name="CommunicationRequest"/>
+<artifact id="StructureDefinition/profile-visionprescription" key="StructureDefinition-profile-visionprescription" name="CRD Vision Prescription"/>
+<artifact deprecated="true" id="StructureDefinition/profile-crdcardtask" key="StructureDefinition-profile-crdcardtask" name="CRDCardTask"/>
+<artifact deprecated="true" id="StructureDefinition/profile-claimresponse" key="StructureDefinition-profile-claimresponse" name="ClaimResponse"/>
 <artifact deprecated="true" id="SearchParameter/communicationrequest-insurance" key="SearchParameter-communicationrequest-insurance" name="CommunicationRequest Insurance Search Parameter"/>
 <artifact id="CommunicationRequest/example" key="CommunicationRequest-example" name="CommunicationRequest example"/>
-<artifact id="StructureDefinition/profile-coverage" key="StructureDefinition-profile-coverage" name="Coverage"/>
-<artifact id="CodeSystem/coverageGuidance" key="CodeSystem-coverageGuidance" name="Coverage Guidance Code System"/>
-<artifact id="ValueSet/coverageGuidance" key="ValueSet-coverageGuidance" name="Coverage Guidance Value Set"/>
+<artifact deprecated="true" id="CodeSystem/coverageGuidance" key="CodeSystem-coverageGuidance" name="Coverage Guidance Code System"/>
+<artifact deprecated="true" id="ValueSet/coverageGuidance" key="ValueSet-coverageGuidance" name="Coverage Guidance Value Set"/>
 <artifact id="StructureDefinition/ext-coverage-information" key="StructureDefinition-ext-coverage-information" name="Coverage Information"/>
+<artifact id="ValueSet/coveragePaDetail" key="ValueSet-coveragePaDetail" name="Coverage Prior Authorization Value Set"/>
 <artifact id="Coverage/example" key="Coverage-example" name="Coverage example"/>
-<artifact id="StructureDefinition/profile-coverage-deident" key="StructureDefinition-profile-coverage-deident" name="CoverageDeident"/>
-<artifact id="Coverage/deident-example" key="Coverage-deident-example" name="De-identified Coverage example"/>
-<artifact id="Patient/deident-example" key="Patient-deident-example" name="De-identified Patient example"/>
-<artifact id="StructureDefinition/profile-device" key="StructureDefinition-profile-device" name="Device"/>
+<artifact deprecated="true" id="StructureDefinition/profile-coverage-deident" key="StructureDefinition-profile-coverage-deident" name="CoverageDeident"/>
+<artifact id="ValueSet/coverageInfo" key="ValueSet-coverageInfo" name="Covered Information Value Set"/>
+<artifact deprecated="true" id="Coverage/deident-example" key="Coverage-deident-example" name="De-identified Coverage example"/>
+<artifact deprecated="true" id="Patient/deident-example" key="Patient-deident-example" name="De-identified Patient example"/>
 <artifact id="Device/example" key="Device-example" name="Device example"/>
-<artifact id="StructureDefinition/profile-devicerequest" key="StructureDefinition-profile-devicerequest" name="DeviceRequest"/>
 <artifact deprecated="true" id="SearchParameter/devicerequest-insurance" key="SearchParameter-devicerequest-insurance" name="DeviceRequest Insurance Search Parameter"/>
 <artifact id="DeviceRequest/example" key="DeviceRequest-example" name="DeviceRequest example"/>
-<artifact id="StructureDefinition/profile-encounter" key="StructureDefinition-profile-encounter" name="Encounter"/>
 <artifact deprecated="true" id="SearchParameter/encounter-insurance" key="SearchParameter-encounter-insurance" name="Encounter Insurance Search Parameter"/>
 <artifact id="Encounter/example" key="Encounter-example" name="Encounter example"/>
+<artifact id="ValueSet/informationNeeded" key="ValueSet-informationNeeded" name="Information Needed Value Set"/>
 <artifact deprecated="true" id="StructureDefinition/ext-insurance" key="StructureDefinition-ext-insurance" name="InsuranceExtension"/>
-<artifact id="StructureDefinition/profile-location" key="StructureDefinition-profile-location" name="Location"/>
 <artifact id="Location/example" key="Location-example" name="Location example"/>
-<artifact id="StructureDefinition/profile-medicationrequest" key="StructureDefinition-profile-medicationrequest" name="MedicationRequest"/>
 <artifact deprecated="true" id="SearchParameter/medicationrequest-insurance" key="SearchParameter-medicationrequest-insurance" name="MedicationRequest Insurance Search Parameter"/>
 <artifact id="MedicationRequest/annotated-example" key="MedicationRequest-annotated-example" name="MedicationRequest annotated example"/>
 <artifact id="MedicationRequest/example" key="MedicationRequest-example" name="MedicationRequest example"/>
+<artifact id="ValueSet/metricDataSource" key="ValueSet-metricDataSource" name="Metric Data Source"/>
+<artifact id="ValueSet/metricTokenUse" key="ValueSet-metricTokenUse" name="Metric Token Use"/>
 <artifact id="NutritionOrder/example" key="NutritionOrder-example" name="NutritionOder example"/>
-<artifact id="StructureDefinition/profile-nutritionorder" key="StructureDefinition-profile-nutritionorder" name="NutritionOrder"/>
 <artifact deprecated="true" id="SearchParameter/nutritionorder-insurance" key="SearchParameter-nutritionorder-insurance" name="NutritionOrder Insurance Search Parameter"/>
-<artifact id="StructureDefinition/profile-organization" key="StructureDefinition-profile-organization" name="Organization"/>
 <artifact id="Organization/example" key="Organization-example" name="Organization example"/>
-<artifact id="StructureDefinition/profile-patient" key="StructureDefinition-profile-patient" name="Patient"/>
 <artifact id="Patient/example" key="Patient-example" name="Patient example"/>
-<artifact id="StructureDefinition/profile-patient-deident" key="StructureDefinition-profile-patient-deident" name="PatientDident"/>
-<artifact id="StructureDefinition/profile-practitioner" key="StructureDefinition-profile-practitioner" name="Practitioner"/>
+<artifact deprecated="true" id="StructureDefinition/profile-patient-deident" key="StructureDefinition-profile-patient-deident" name="PatientDident"/>
 <artifact id="Practitioner/example" key="Practitioner-example" name="Practitioner example"/>
-<artifact id="ClaimResponse/priorauth-example" key="ClaimResponse-priorauth-example" name="Prior Authorization example"/>
+<artifact deprecated="true" id="ClaimResponse/priorauth-example" key="ClaimResponse-priorauth-example" name="Prior Authorization example"/>
 <artifact id="Task/questionnaire-example" key="Task-questionnaire-example" name="Questionnaire Task example"/>
-<artifact id="StructureDefinition/profile-servicerequest" key="StructureDefinition-profile-servicerequest" name="ServiceRequest"/>
 <artifact deprecated="true" id="SearchParameter/servicerequest-insurance" key="SearchParameter-servicerequest-insurance" name="ServiceRequest Insurance Search Parameter"/>
 <artifact id="ServiceRequest/example" key="ServiceRequest-example" name="ServiceRequest example"/>
 <artifact deprecated="true" key="SupplyRequest" name="SupplyRequest"/>
-<artifact id="StructureDefinition/profile-taskquestionnaire" key="StructureDefinition-profile-taskquestionnaire" name="TaskQuestionnaire"/>
+<artifact id="VisionPrescription/visionprescription-example" key="VisionPrescription-visionprescription-example" name="VisionPrescription example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page deprecated="true" key="profiles" name="(profiles)"/>
 <page key="artifacts" name="Artifact List"/>
+<page key="deviations" name="CDS Hook Deviations and Enhancements"/>
 <page key="index" name="CRD IG Home Page"/>
+<page key="metrics" name="CRD Metrics"/>
 <page key="history" name="Change History"/>
 <page key="credits" name="Credits"/>
 <page key="downloads" name="Downloads"/>
 <page key="allartifacts" name="FHIR Artifacts"/>
-<page key="hooks" name="Formal Specification"/>
+<page key="foundation" name="Foundational Requirements"/>
+<page key="implementation" name="Implementation Considerations"/>
+<page key="security" name="Privacy, Security, and Safety"/>
+<page key="cards" name="Supported Cards"/>
+<page key="hooks" name="Supported Hooks"/>
 <page key="toc" name="Table of Contents"/>
 <page key="background" name="Technical Background"/>
 <page key="usecases" name="Use Cases and Overview"/>
+<page key="epa" name="ePA Coordinators"/>
 </specification>
