@@ -5,8 +5,8 @@
 <version code="2.1.0" url="http://hl7.org/fhir/us/vrdr/STU2.1"/>
 <version code="2.0.0" url="http://hl7.org/fhir/us/vrdr/STU2"/>
 <version code="1.2.0" deprecated="true" url="http://hl7.org/fhir/us/vrdr/2021Sep"/>
-<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/vrdr/STU1"/>
-<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/vrdr/2019May"/>
+<version code="1.0.0"  deprecated="true" url="http://hl7.org/fhir/us/vrdr/STU1"/>
+<version code="0.1.0"  deprecated="true" url="http://hl7.org/fhir/us/vrdr/2019May"/>
 <version code="1.1.0" deprecated="true" url="http://hl7.org/fhir/us/vrdr/STU1.1"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
@@ -16,9 +16,9 @@
 <artifact id="CodeSystem/vrdr-activity-at-time-of-death-cs" key="CodeSystem-vrdr-activity-at-time-of-death-cs" name="Activity at Time of Death Codesystem"/>
 <artifact id="ValueSet/vrdr-activity-at-time-of-death-vs" key="ValueSet-vrdr-activity-at-time-of-death-vs" name="Activity at Time of Death VS"/>
 <artifact id="Observation/ActivityAtTimeOfDeath-Example1" key="Observation-ActivityAtTimeOfDeath-Example1" name="ActivityAtTimeOfDeath-Example1"/>
-<artifact id="ConceptMap/ActivityAtTimeOfDeathCM" key="ConceptMap-ActivityAtTimeOfDeathCM" name="ActivityAtTimeOfDeathCM"/>
+<artifact id="ConceptMap/ActivityAtTimeOfDeathCM" key="ConceptMap-ActivityAtTimeOfDeathCM" name="ActivityAtTimeOfDeath Concept Map"/>
 <artifact id="ValueSet/vrdr-administrative-gender-vs" key="ValueSet-vrdr-administrative-gender-vs" name="Administrative Gender PHVS_Sex_MFU"/>
-<artifact id="ConceptMap/AdministrativeGenderCM" key="ConceptMap-AdministrativeGenderCM" name="AdministrativeGenderCM"/>
+<artifact id="ConceptMap/AdministrativeGenderCM" key="ConceptMap-AdministrativeGenderCM" name="AdministrativeGender Concept"/>
 <artifact id="StructureDefinition/AliasStatus" key="StructureDefinition-AliasStatus" name="Alias Status of a Death Roster"/>
 <artifact id="StructureDefinition/vrdr-automated-underlying-cause-of-death" key="StructureDefinition-vrdr-automated-underlying-cause-of-death" name="Automated Underlying Cause Of Death"/>
 <artifact id="Observation/AutomatedUnderlyingCauseOfDeath-Example1" key="Observation-AutomatedUnderlyingCauseOfDeath-Example1" name="AutomatedUnderlyingCauseOfDeath-Example1"/>
@@ -56,7 +56,7 @@
 <artifact deprecated="true" id="Practitioner/cb1219bc-785f-431c-9f56-b8fbbe78bc4d" key="Practitioner-cb1219bc-785f-431c-9f56-b8fbbe78bc4d" name="Certifier Instance Example"/>
 <artifact id="ValueSet/vrdr-certifier-types-vs" key="ValueSet-vrdr-certifier-types-vs" name="Certifier Types VS"/>
 <artifact id="Practitioner/Certifier-Example1" key="Practitioner-Certifier-Example1" name="Certifier-Example1"/>
-<artifact id="ConceptMap/CertifierTypesCM" key="ConceptMap-CertifierTypesCM" name="CertifierTypesCM"/>
+<artifact id="ConceptMap/CertifierTypesCM" key="ConceptMap-CertifierTypesCM" name="CertifierTypes Concept Map"/>
 <artifact id="StructureDefinition/CityCode" key="StructureDefinition-CityCode" name="City Code"/>
 <artifact id="StructureDefinition/vrdr-coded-race-and-ethnicity" key="StructureDefinition-vrdr-coded-race-and-ethnicity" name="Coded Race and Ethnicity"/>
 <artifact id="Observation/CodedRaceAndEthnicity-Example1" key="Observation-CodedRaceAndEthnicity-Example1" name="CodedRaceAndEthnicity-Example1"/>
@@ -67,7 +67,7 @@
 <artifact deprecated="true" id="Condition/56b8ce2e-64f8-450b-8885-0699a53fc781" key="Condition-56b8ce2e-64f8-450b-8885-0699a53fc781" name="Condition Contributing To Death Example"/>
 <artifact deprecated="true" id="Observation/ConditionContributingToDeath-Example1" key="Observation-ConditionContributingToDeath-Example1" name="ConditionContributingToDeath-Example1"/>
 <artifact id="ValueSet/vrdr-contributory-tobacco-use-vs" key="ValueSet-vrdr-contributory-tobacco-use-vs" name="Contributory Tobacco Use VS"/>
-<artifact id="ConceptMap/ContributoryTobaccoUseCM" key="ConceptMap-ContributoryTobaccoUseCM" name="ContributoryTobaccoUseCM"/>
+<artifact id="ConceptMap/ContributoryTobaccoUseCM" key="ConceptMap-ContributoryTobaccoUseCM" name="ContributoryTobaccoUse Concept Map"/>
 <artifact id="CodeSystem/vrdr-country-code-cs" key="CodeSystem-vrdr-country-code-cs" name="Country Codes"/>
 <artifact id="StructureDefinition/Date-Day" key="StructureDefinition-Date-Day" name="Date Day"/>
 <artifact deprecated="true" id="CodeSystem/vrdr-date-methods-cs" key="CodeSystem-vrdr-date-methods-cs" name="Date Methods"/>
@@ -165,12 +165,12 @@
 <artifact id="ValueSet/vrdr-edit-bypass-012-vs" key="ValueSet-vrdr-edit-bypass-012-vs" name="Edit Bypass 012"/>
 <artifact id="ValueSet/vrdr-edit-bypass-01234-vs" key="ValueSet-vrdr-edit-bypass-01234-vs" name="Edit Bypass 01234"/>
 <artifact id="ValueSet/vrdr-edit-bypass-0124-vs" key="ValueSet-vrdr-edit-bypass-0124-vs" name="Edit Bypass 0124"/>
-<artifact id="ConceptMap/EditBypass01234CM" key="ConceptMap-EditBypass01234CM" name="EditBypass01234CM"/>
-<artifact id="ConceptMap/EditBypass0124CM" key="ConceptMap-EditBypass0124CM" name="EditBypass0124CM"/>
-<artifact id="ConceptMap/EditBypass012CM" key="ConceptMap-EditBypass012CM" name="EditBypass012CM"/>
-<artifact id="ConceptMap/EditBypass01CM" key="ConceptMap-EditBypass01CM" name="EditBypass01CM"/>
+<artifact id="ConceptMap/EditBypass01234CM" key="ConceptMap-EditBypass01234CM" name="EditBypass01234Concept Map"/>
+<artifact id="ConceptMap/EditBypass0124CM" key="ConceptMap-EditBypass0124CM" name="EditBypass0124Concept Map"/>
+<artifact id="ConceptMap/EditBypass012CM" key="ConceptMap-EditBypass012CM" name="EditBypass012Concept Map"/>
+<artifact id="ConceptMap/EditBypass01CM" key="ConceptMap-EditBypass01CM" name="EditBypass01Concept Map"/>
 <artifact id="ValueSet/vrdr-education-level-vs" key="ValueSet-vrdr-education-level-vs" name="Education Level"/>
-<artifact id="ConceptMap/EducationLevelCM" key="ConceptMap-EducationLevelCM" name="EducationLevelCM"/>
+<artifact id="ConceptMap/EducationLevelCM" key="ConceptMap-EducationLevelCM" name="EducationLevelConcept Map"/>
 <artifact id="StructureDefinition/vrdr-emerging-issues" key="StructureDefinition-vrdr-emerging-issues" name="Emerging Issues"/>
 <artifact id="Observation/EmergingIssues-Example1" key="Observation-EmergingIssues-Example1" name="EmergingIssues-Example1"/>
 <artifact id="StructureDefinition/vrdr-entity-axis-cause-of-death" key="StructureDefinition-vrdr-entity-axis-cause-of-death" name="Entity Axis Cause Of Death"/>
@@ -184,17 +184,17 @@
 <artifact id="StructureDefinition/FilingFormat" key="StructureDefinition-FilingFormat" name="Filing Format"/>
 <artifact id="ValueSet/vrdr-filing-format-vs" key="ValueSet-vrdr-filing-format-vs" name="Filing Format ValueSet"/>
 <artifact id="CodeSystem/vrdr-filing-format-cs" key="CodeSystem-vrdr-filing-format-cs" name="Filing Formats CodeSystem"/>
-<artifact id="ConceptMap/FilingFormatCM" key="ConceptMap-FilingFormatCM" name="FilingFormatCM"/>
+<artifact id="ConceptMap/FilingFormatCM" key="ConceptMap-FilingFormatCM" name="FilingFormatConcept Map"/>
 <artifact id="StructureDefinition/vrdr-funeral-home" key="StructureDefinition-VRDR-Funeral-Home" name="Funeral Home"/>
 <artifact deprecated="true" id="Organization/6f47da13-0c25-483b-8729-7b96716b17fc" key="Organization-6f47da13-0c25-483b-8729-7b96716b17fc" name="Funeral Home Example"/>
 <artifact deprecated="true" id="StructureDefinition/VRDR-Funeral-Service-Licensee" key="StructureDefinition-VRDR-Funeral-Service-Licensee" name="Funeral Service Licensee"/>
 <artifact deprecated="true" id="PractitionerRole/4b96759f-8395-4093-8417-e1ca3cd26f0a" key="PractitionerRole-4b96759f-8395-4093-8417-e1ca3cd26f0a" name="Funeral Service Licensee Example"/>
 <artifact id="Organization/FuneralHome-Example1" key="Organization-FuneralHome-Example1" name="FuneralHome-Example1"/>
 <artifact id="ValueSet/vrdr-hispanic-no-unknown-vs" key="ValueSet-vrdr-hispanic-no-unknown-vs" name="Hispanic(Yes) No Unknown"/>
-<artifact id="ConceptMap/HispanicNoUnknownCM" key="ConceptMap-HispanicNoUnknownCM" name="HispanicNoUnknownCM"/>
+<artifact id="ConceptMap/HispanicNoUnknownCM" key="ConceptMap-HispanicNoUnknownCM" name="HispanicNoUnknownConcept Map"/>
 <artifact id="CodeSystem/vrdr-hispanic-origin-cs" key="CodeSystem-vrdr-hispanic-origin-cs" name="HispanicOrigin CS"/>
 <artifact id="ValueSet/vrdr-hispanic-origin-vs" key="ValueSet-vrdr-hispanic-origin-vs" name="HispanicOrigin Value Set"/>
-<artifact id="ConceptMap/HispanicOriginCM" key="ConceptMap-HispanicOriginCM" name="HispanicOriginCM"/>
+<artifact id="ConceptMap/HispanicOriginCM" key="ConceptMap-HispanicOriginCM" name="HispanicOriginConcept Map"/>
 <artifact id="ValueSet/vrdr-icd10-causes-of-death-vs" key="ValueSet-vrdr-icd10-causes-of-death-vs" name="ICD10 Causes of Death VS"/>
 <artifact id="StructureDefinition/vrdr-injury-incident" key="StructureDefinition-VRDR-InjuryIncident" name="Injury Incident"/>
 <artifact deprecated="true" id="Observation/37c086a1-05bd-479c-92b4-1234d38bfe5a" key="Observation-37c086a1-05bd-479c-92b4-1234d38bfe5a" name="Injury Incident Example"/>
@@ -208,7 +208,7 @@
 <artifact id="Observation/InputRaceAndEthnicity-Example1" key="Observation-InputRaceAndEthnicity-Example1" name="InputRaceAndEthnicity-Example1"/>
 <artifact id="CodeSystem/vrdr-intentional-reject-cs" key="CodeSystem-vrdr-intentional-reject-cs" name="Intentional Reject CodeSystem"/>
 <artifact id="ValueSet/vrdr-intentional-reject-vs" key="ValueSet-vrdr-intentional-reject-vs" name="Intentional Reject ValueSet"/>
-<artifact id="ConceptMap/IntentionalRejectCM" key="ConceptMap-IntentionalRejectCM" name="IntentionalRejectCM"/>
+<artifact id="ConceptMap/IntentionalRejectCM" key="ConceptMap-IntentionalRejectCM" name="IntentionalRejectConcept Map"/>
 <artifact deprecated="true" id="StructureDefinition/VRDR-Interested-Party" key="StructureDefinition-VRDR-Interested-Party" name="Interested Party"/>
 <artifact deprecated="true" id="Organization/1a110397-936f-4be4-ab10-2caed226569d" key="Organization-1a110397-936f-4be4-ab10-2caed226569d" name="Interested Party Instance Example"/>
 <artifact id="ValueSet/vrdr-jurisdiction-vs" key="ValueSet-vrdr-jurisdiction-vs" name="Jurisdictions Value Set"/>
@@ -226,13 +226,13 @@
 <artifact deprecated="true" id="Observation/d7c2e459-c7ca-415c-a38c-f78a0f0c5813" key="Observation-d7c2e459-c7ca-415c-a38c-f78a0f0c5813" name="Manner of Death Example"/>
 <artifact id="ValueSet/vrdr-manner-of-death-vs" key="ValueSet-vrdr-Manner-of-Death" name="Manner of Death VS"/>
 <artifact id="Observation/MannerOfDeath-Example1" key="Observation-MannerOfDeath-Example1" name="MannerOfDeath-Example1"/>
-<artifact id="ConceptMap/MannerOfDeathCM" key="ConceptMap-MannerOfDeathCM" name="MannerOfDeathCM"/>
+<artifact id="ConceptMap/MannerOfDeathCM" key="ConceptMap-MannerOfDeathCM" name="MannerOfDeathConcept Map"/>
 <artifact id="StructureDefinition/vrdr-manual-underlying-cause-of-death" key="StructureDefinition-vrdr-manual-underlying-cause-of-death" name="Manual Underlying Cause Of Death"/>
 <artifact id="Observation/ManualUnderlyingCauseOfDeath-Example1" key="Observation-ManualUnderlyingCauseOfDeath-Example1" name="ManualUnderlyingCauseOfDeath-Example1"/>
 <artifact id="ValueSet/vrdr-marital-status-vs" key="ValueSet-vrdr-marital-status-vs" name="Marital Status Value Set"/>
-<artifact id="ConceptMap/MaritalStatusCM" key="ConceptMap-MaritalStatusCM" name="MaritalStatusCM"/>
+<artifact id="ConceptMap/MaritalStatusCM" key="ConceptMap-MaritalStatusCM" name="MaritalStatusConcept Map"/>
 <artifact id="ValueSet/vrdr-method-of-disposition-vs" key="ValueSet-vrdr-method-of-disposition-vs" name="Method of Disposition VS"/>
-<artifact id="ConceptMap/MethodOfDispositionCM" key="ConceptMap-MethodOfDispositionCM" name="MethodOfDispositionCM"/>
+<artifact id="ConceptMap/MethodOfDispositionCM" key="ConceptMap-MethodOfDispositionCM" name="MethodOfDispositionConcept Map"/>
 <artifact id="CodeSystem/vrdr-missing-value-reason-cs" key="CodeSystem-vrdr-missing-value-reason-cs" name="Missing Value Reason Codesystem"/>
 <artifact id="StructureDefinition/vrdr-mortality-roster-bundle" key="StructureDefinition-vrdr-mortality-roster-bundle" name="Mortality Roster Bundle"/>
 <artifact id="Bundle/MortalityRosterBundle-Example1" key="Bundle-MortalityRosterBundle-Example1" name="MortalityRosterBundle-Example1"/>
@@ -243,7 +243,7 @@
 <artifact deprecated="true" id="StructureDefinition/NVSS-Race" key="StructureDefinition-NVSS-Race" name="NVSS Race"/>
 <artifact id="StructureDefinition/NVSS-SexAtDeath" key="StructureDefinition-NVSS-SexAtDeath" name="NVSS SexAtDeath"/>
 <artifact deprecated="true" id="ValueSet/vrdr-not-applicable-vs" key="ValueSet-vrdr-not-applicable-vs" name="NotApplicable"/>
-<artifact deprecated="true" id="ConceptMap/NotApplicableCM" key="ConceptMap-NotApplicableCM" name="NotApplicableCM"/>
+<artifact deprecated="true" id="ConceptMap/NotApplicableCM" key="ConceptMap-NotApplicableCM" name="NotApplicableConcept Map"/>
 <artifact deprecated="true" key="Observation" name="Observation"/>
 <artifact deprecated="true" id="StructureDefinition/Observation-Location" key="StructureDefinition-Observation-Location" name="Observation Location"/>
 <artifact deprecated="true" key="Organization" name="Organization"/>
@@ -256,38 +256,38 @@
 <artifact id="ValueSet/vrdr-place-of-death-vs" key="ValueSet-vrdr-place-of-death-vs" name="Place of Death VS -- PHVS_PlaceOfDeath_NCHS"/>
 <artifact deprecated="true" id="CodeSystem/vrdr-place-of-injury-cs" key="CodeSystem-vrdr-place-of-injury-cs" name="Place of Injury (WHO/ICD)"/>
 <artifact id="ValueSet/vrdr-place-of-injury-vs" key="ValueSet-vrdr-place-of-injury-vs" name="Place of Injury VS"/>
-<artifact id="ConceptMap/PlaceOfDeathCM" key="ConceptMap-PlaceOfDeathCM" name="PlaceOfDeathCM"/>
+<artifact id="ConceptMap/PlaceOfDeathCM" key="ConceptMap-PlaceOfDeathCM" name="PlaceOfDeathConcept Map"/>
 <artifact id="Observation/PlaceOfInjury-Example1" key="Observation-PlaceOfInjury-Example1" name="PlaceOfInjury-Example1"/>
-<artifact id="ConceptMap/PlaceOfInjuryCM" key="ConceptMap-PlaceOfInjuryCM" name="PlaceOfInjuryCM"/>
+<artifact id="ConceptMap/PlaceOfInjuryCM" key="ConceptMap-PlaceOfInjuryCM" name="PlaceOfInjuryConcept Map"/>
 <artifact id="StructureDefinition/PostDirectional" key="StructureDefinition-PostDirectional" name="PostDirectional"/>
 <artifact deprecated="true" key="Practitioner" name="Practitioner"/>
 <artifact deprecated="true" key="PractitionerRole" name="PractitionerRole"/>
 <artifact id="StructureDefinition/PreDirectional" key="StructureDefinition-PreDirectional" name="PreDirectional"/>
 <artifact id="ValueSet/vrdr-pregnancy-status-vs" key="ValueSet-vrdr-pregnancy-status-vs" name="Pregnancy Status"/>
 <artifact id="CodeSystem/vrdr-pregnancy-status-cs" key="CodeSystem-vrdr-pregnancy-status-cs" name="Pregnancy Status Codes"/>
-<artifact id="ConceptMap/PregnancyStatusCM" key="ConceptMap-PregnancyStatusCM" name="PregnancyStatusCM"/>
+<artifact id="ConceptMap/PregnancyStatusCM" key="ConceptMap-PregnancyStatusCM" name="PregnancyStatusConcept Map"/>
 <artifact deprecated="true" key="Procedure" name="Procedure"/>
 <artifact id="CodeSystem/vrdr-race-code-cs" key="CodeSystem-vrdr-race-code-cs" name="Race Code CS"/>
 <artifact id="ValueSet/vrdr-race-code-vs" key="ValueSet-vrdr-race-code-vs" name="Race Code Value Set"/>
 <artifact id="ValueSet/vrdr-race-missing-value-reason-vs" key="ValueSet-vrdr-race-nissing-value-reason-vs" name="Race Missing Value Reason"/>
 <artifact id="CodeSystem/vrdr-race-recode-40-cs" key="CodeSystem-vrdr-race-recode-40-cs" name="Race Recode 40 CS"/>
 <artifact id="ValueSet/vrdr-race-recode-40-vs" key="ValueSet-vrdr-race-recode-40-vs" name="Race Recode 40 Value Set"/>
-<artifact id="ConceptMap/RaceCodeCM" key="ConceptMap-RaceCodeCM" name="RaceCodeCM"/>
-<artifact id="ConceptMap/RaceMissingValueReasonCM" key="ConceptMap-RaceMissingValueReasonCM" name="RaceMissingValueReasonCM"/>
-<artifact id="ConceptMap/RaceRecode40CM" key="ConceptMap-RaceRecode40CM" name="RaceRecode40CM"/>
+<artifact id="ConceptMap/RaceCodeCM" key="ConceptMap-RaceCodeCM" name="RaceCodeConcept Map"/>
+<artifact id="ConceptMap/RaceMissingValueReasonCM" key="ConceptMap-RaceMissingValueReasonCM" name="RaceMissingValueReasonConcept Map"/>
+<artifact id="ConceptMap/RaceRecode40CM" key="ConceptMap-RaceRecode40CM" name="RaceRecode40Concept Map"/>
 <artifact id="StructureDefinition/vrdr-record-axis-cause-of-death" key="StructureDefinition-vrdr-record-axis-cause-of-death" name="Record Axis Cause Of Death"/>
 <artifact id="Observation/RecordAxisCauseOfDeath-Example1" key="Observation-RecordAxisCauseOfDeath-Example1" name="RecordAxisCauseOfDeath-Example1"/>
 <artifact id="Observation/RecordAxisCauseOfDeath-Example2" key="Observation-RecordAxisCauseOfDeath-Example2" name="RecordAxisCauseOfDeath-Example2"/>
 <artifact deprecated="true" key="RelatedPerson" name="RelatedPerson"/>
 <artifact deprecated="true" id="ValueSet/vrdr-related-person-relationship-type-vs" key="ValueSet-vrdr-related-person-relationship-type-vs" name="RelatedPerson Relationship type VS -- PHVS_RelatedPersonRelationshipType_NCHS"/>
-<artifact id="ConceptMap/ReplaceStatusCM" key="ConceptMap-ReplaceStatusCM" name="ReplaceStatusCM"/>
+<artifact id="ConceptMap/ReplaceStatusCM" key="ConceptMap-ReplaceStatusCM" name="ReplaceStatusConcept Map"/>
 <artifact id="ValueSet/vrdr-replace-status-vs" key="ValueSet-vrdr-replace-status-vs" name="Replacement Status VS"/>
 <artifact id="CodeSystem/vrdr-replace-status-cs" key="CodeSystem-vrdr-replace-status-cs" name="Replacement Status of Death Record Submission"/>
 <artifact id="StructureDefinition/ReplaceStatus" key="StructureDefinition-ReplaceStatus" name="Replacement Status of a Death Record (deprecated)"/>
 <artifact id="ValueSet/vrdr-residence-country-vs" key="ValueSet-vrdr-residence-country-vs" name="Residence Country Value Set"/>
 <artifact id="ValueSet/vrdr-spouse-alive-vs" key="ValueSet-vrdr-spouse-alive-vs" name="Spouse Alive Value Set"/>
 <artifact id="StructureDefinition/SpouseAlive" key="StructureDefinition-SpouseAlive" name="Spouse Is Alive"/>
-<artifact id="ConceptMap/SpouseAliveCM" key="ConceptMap-SpouseAliveCM" name="SpouseAliveCM"/>
+<artifact id="ConceptMap/SpouseAliveCM" key="ConceptMap-SpouseAliveCM" name="SpouseAliveConcept Map"/>
 <artifact id="StructureDefinition/StateSpecificField" key="StructureDefinition-StateSpecificField" name="State Specific Field"/>
 <artifact id="ValueSet/vrdr-states-territories-provinces-vs" key="ValueSet-vrdr-states-territories-provinces-vs" name="States, Territories and Provinces Value Set"/>
 <artifact id="StructureDefinition/StreetDesignator" key="StructureDefinition-StreetDesignator" name="StreetDesignator"/>
@@ -297,27 +297,27 @@
 <artifact id="Observation/SurgeryDate-Example1" key="Observation-SurgeryDate-Example1" name="SurgeryDate-Example1"/>
 <artifact id="CodeSystem/vrdr-system-reject-cs" key="CodeSystem-vrdr-system-reject-cs" name="System Reject Code System"/>
 <artifact id="ValueSet/vrdr-system-reject-vs" key="ValueSet-vrdr-system-reject-vs" name="System Reject ValueSet"/>
-<artifact id="ConceptMap/SystemRejectCM" key="ConceptMap-SystemRejectCM" name="SystemRejectCM"/>
+<artifact id="ConceptMap/SystemRejectCM" key="ConceptMap-SystemRejectCM" name="SystemRejectConcept Map"/>
 <artifact id="StructureDefinition/vrdr-tobacco-use-contributed-to-death" key="StructureDefinition-VRDR-Tobacco-Use-Contributed-To-Death" name="Tobacco Use Contributed To Death"/>
 <artifact deprecated="true" id="Observation/4d0ce010-16f1-44f4-bbf8-3a2030e9de99" key="Observation-4d0ce010-16f1-44f4-bbf8-3a2030e9de99" name="Tobacco Use Contributed To Death Example"/>
 <artifact id="Observation/TobaccoUseContributedToDeath-Example1" key="Observation-TobaccoUseContributedToDeath-Example1" name="TobaccoUseContributedToDeath-Example1"/>
 <artifact id="CodeSystem/vrdr-transax-conversion-cs" key="CodeSystem-vrdr-transax-conversion-cs" name="Transax Conversion Code System"/>
 <artifact id="ValueSet/vrdr-transax-conversion-vs" key="ValueSet-vrdr-transax-conversion-vs" name="Transax Conversion ValueSet"/>
-<artifact id="ConceptMap/TransaxConversionCM" key="ConceptMap-TransaxConversionCM" name="TransaxConversionCM"/>
+<artifact id="ConceptMap/TransaxConversionCM" key="ConceptMap-TransaxConversionCM" name="TransaxConversionConcept Map"/>
 <artifact id="ValueSet/vrdr-transportation-incident-role-vs" key="ValueSet-vrdr-transportation-incident-role-vs" name="Transportation Incident Role"/>
-<artifact id="ConceptMap/TransportationIncidentRoleCM" key="ConceptMap-TransportationIncidentRoleCM" name="TransportationIncidentRoleCM"/>
+<artifact id="ConceptMap/TransportationIncidentRoleCM" key="ConceptMap-TransportationIncidentRoleCM" name="TransportationIncidentRoleConcept Map"/>
 <artifact id="ValueSet/vrdr-usstates-territories-vs" key="ValueSet-vrdr-usstates-territories-vs" name="US States, Territories Value Set"/>
 <artifact id="StructureDefinition/UnitOrAptNumber" key="StructureDefinition-UnitOrAptNumber" name="UnitOrAptNumber"/>
 <artifact id="ValueSet/vrdr-units-of-age-vs" key="ValueSet-vrdr-units-of-age-vs" name="Units of Age"/>
-<artifact id="ConceptMap/UnitsOfAgeCM" key="ConceptMap-UnitsOfAgeCM" name="UnitsOfAgeCM"/>
+<artifact id="ConceptMap/UnitsOfAgeCM" key="ConceptMap-UnitsOfAgeCM" name="UnitsOfAgeConcept Map"/>
 <artifact deprecated="true" id="StructureDefinition/VRDR-Partial-date-part-absent-reason" key="StructureDefinition-VRDR-Partial-date-part-absent-reason" name="VRDR - Partial date part absent reason"/>
 <artifact id="StructureDefinition/WithinCityLimitsIndicator" key="StructureDefinition-Within-City-Limits-Indicator" name="Within City Limits Indicator"/>
 <artifact deprecated="true" id="ValueSet/vrdr-yes-no-not-applicable-vs" key="ValueSet-vrdr-yes-no-not-applicable-vs" name="Yes No NotApplicable"/>
 <artifact id="ValueSet/vrdr-yes-no-unknown-vs" key="ValueSet-vrdr-yes-no-unknown-vs" name="Yes No Unknown"/>
 <artifact id="ValueSet/vrdr-yes-no-unknown-not-applicable-vs" key="ValueSet-vrdr-yes-no-unknown-not-applicable-vs" name="Yes No Unknown NotApplicable"/>
-<artifact deprecated="true" id="ConceptMap/YesNoNotApplicableCM" key="ConceptMap-YesNoNotApplicableCM" name="YesNoNotApplicableCM"/>
-<artifact id="ConceptMap/YesNoUnknownCM" key="ConceptMap-YesNoUnknownCM" name="YesNoUnknownCM"/>
-<artifact id="ConceptMap/YesNoUnknownNotApplicableCM" key="ConceptMap-YesNoUnknownNotApplicableCM" name="YesNoUnknownNotApplicableCM"/>
+<artifact deprecated="true" id="ConceptMap/YesNoNotApplicableCM" key="ConceptMap-YesNoNotApplicableCM" name="YesNoNotApplicableConcept Map"/>
+<artifact id="ConceptMap/YesNoUnknownCM" key="ConceptMap-YesNoUnknownCM" name="YesNoUnknownConcept Map"/>
+<artifact id="ConceptMap/YesNoUnknownNotApplicableCM" key="ConceptMap-YesNoUnknownNotApplicableCM" name="YesNoUnknownNotApplicableConcept Map"/>
 <artifact deprecated="true" id="ConceptMap/place-of-death" key="ConceptMap-place-of-death" name="place-of-death"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
