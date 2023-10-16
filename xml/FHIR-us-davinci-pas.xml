@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-pas/2022May" ciUrl="http://build.fhir.org/ig/HL7/davinci-pas" defaultVersion="1.2.0" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-pas" url="http://hl7.org/fhir/us/davinci-pas">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-pas/2022May" ciUrl="http://build.fhir.org/ig/HL7/davinci-pas" defaultVersion="2.0.0" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-pas" url="http://hl7.org/fhir/us/davinci-pas">
 <version code="current" url="http://build.fhir.org/ig/HL7/davinci-pas"/>
-<version code="1.2.0" url="http://hl7.org/fhir/us/davinci-pas/STU1.2"/>
-<version code="1.2.0-ballot" url="http://hl7.org/fhir/us/davinci-pas/2022May"/>
+<version code="2.0.0" url="http://hl7.org/fhir/us/davinci-pas/STU2"/>
+<version code="1.2.0" url="http://hl7.org/fhir/us/davinci-pas/STU1.2" deprecated="true"/>
+<version code="1.2.0-ballot" url="http://hl7.org/fhir/us/davinci-pas/2022May" deprecated="true"/>
 <version code="1.1.0" url="http://hl7.org/fhir/us/davinci-pas/STU1.1"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-pas/STU1"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-pas/2019Sep"/>
@@ -12,7 +13,10 @@
 <artifactPageExtension value="-mappings"/>
 <artifact deprecated="true" id="CodeSystem/AHANUBCRevenueCodes" key="CodeSystem-AHANUBCRevenueCodes" name="AHA NUBC Revenue Code System"/>
 <artifact id="ValueSet/AHANUBCRevenueCodes" key="ValueSet-AHANUBCRevenueCodes" name="AHA NUBC Revenue Value Set"/>
+<artifact id="Task/AdditionalInformationTaskExample" key="Task-AdditionalInformationTaskExample" name="Additional Information Task Example"/>
 <artifact id="StructureDefinition/extension-administrationReferenceNumber" key="StructureDefinition-extension-administrationReferenceNumber" name="AdministrationReferenceNumber"/>
+<artifact id="ValueSet/AttachmentRequestCodes" key="ValueSet-AttachmentRequestCodes" name="Attachment Request Codes"/>
+<artifact id="ClaimResponse/PractitionerRequestorResponseExample" key="ClaimResponse-PractitionerRequestorResponseExample" name="Authorization Response with Practitioner Requestor Example"/>
 <artifact id="StructureDefinition/extension-authorizationNumber" key="StructureDefinition-extension-authorizationNumber" name="AuthorizationNumber"/>
 <artifact id="StructureDefinition/extension-timingcalendarpattern" key="StructureDefinition-extension-timingcalendarpattern" name="CalendarPattern"/>
 <artifact id="StructureDefinition/extension-careTeamClaimScope" key="StructureDefinition-extension-careTeamClaimScope" name="CareTeamClaimScope"/>
@@ -37,12 +41,12 @@
 <artifact id="StructureDefinition/extension-errorFollowupAction" key="StructureDefinition-extension-errorFollowupAction" name="ErrorFollowupAction"/>
 <artifact id="StructureDefinition/extension-errorPath" key="StructureDefinition-extension-errorPath" name="ErrorPath"/>
 <artifact id="StructureDefinition/extension-homeHealthCareInformation" key="StructureDefinition-extension-homeHealthCareInformation" name="HomeHealthCareInformation"/>
-<artifact id="Claim/HomecareAuthorizationUpdateExample" key="Claim-HomecareAuthorizationUpdateExample" name="Homecare Authorizaion Update Example"/>
 <artifact id="Bundle/HomecareAuthorizationBundleExample" key="Bundle-HomecareAuthorizationBundleExample" name="Homecare Authorization Bundle Example"/>
 <artifact id="Bundle/HomecareAuthorizationDifferentialBundleExample" key="Bundle-HomecareAuthorizationDifferentialBundleExample" name="Homecare Authorization Differential Update Bundle Example"/>
 <artifact id="Claim/HomecareAuthorizationDifferentialExample" key="Claim-HomecareAuthorizationDifferentialExample" name="Homecare Authorization Differential Update Example"/>
 <artifact id="Claim/HomecareAuthorizationExample" key="Claim-HomecareAuthorizationExample" name="Homecare Authorization Example"/>
 <artifact id="Bundle/HomecareAuthorizationUpdateBundleExample" key="Bundle-HomecareAuthorizationUpdateBundleExample" name="Homecare Authorization Update Bundle Example"/>
+<artifact id="Claim/HomecareAuthorizationUpdateExample" key="Claim-HomecareAuthorizationUpdateExample" name="Homecare Authorization Update Example"/>
 <artifact id="StructureDefinition/extension-identifierJurisdiction" key="StructureDefinition-extension-identifierJurisdiction" name="IdentifierJurisdiction"/>
 <artifact id="StructureDefinition/extension-identifierSubDepartment" key="StructureDefinition-extension-identifierSubDepartment" name="IdentifierSubDepartment"/>
 <artifact id="StructureDefinition/modifierextension-infoCancelled" key="StructureDefinition-modifierextension-infoCancelled" name="InfoCancelledFlag"/>
@@ -64,6 +68,7 @@
 <artifact id="StructureDefinition/extension-nursingHomeLevelOfCare" key="StructureDefinition-extension-nursingHomeLevelOfCare" name="NursingHomeLevelOfCare"/>
 <artifact id="StructureDefinition/extension-nursingHomeResidentialStatus" key="StructureDefinition-extension-nursingHomeResidentialStatus" name="NursingHomeResidentialStatus"/>
 <artifact id="NutritionOrder/NutritionOrderExample" key="NutritionOrder-NutritionOrderExample" name="Nutrition Order Example"/>
+<artifact id="StructureDefinition/extension-paLineNumber" key="StructureDefinition-extension-paLineNumber" name="PALineNumber"/>
 <artifact id="StructureDefinition/profile-beneficiary" key="StructureDefinition-profile-beneficiary" name="PAS Beneficiary Patient"/>
 <artifact id="StructureDefinition/profile-claim" key="StructureDefinition-profile-claim" name="PAS Claim"/>
 <artifact id="StructureDefinition/profile-claim-base" key="StructureDefinition-profile-claim-base" name="PAS Claim Base"/>
@@ -103,6 +108,8 @@
 <artifact id="SubscriptionTopic/PASSubscriptionTopic" key="SubscriptionTopic-PASSubscriptionTopic" name="PAS Subscription"/>
 <artifact deprecated="true" id="CodeSystem/PASSupportingInfoType" key="CodeSystem-PASSupportingInfoType" name="PAS Supporting Info Type Code System"/>
 <artifact id="ValueSet/PASSupportingInfoType" key="ValueSet-PASSupportingInfoType" name="PAS Supporting Info Type Value Set"/>
+<artifact id="StructureDefinition/profile-task" key="StructureDefinition-profile-task" name="PAS Task"/>
+<artifact id="ValueSet/PASTaskCodes" key="ValueSet-PASTaskCodes" name="PAS Task Codes"/>
 <artifact id="CodeSystem/PASTempCodes" key="CodeSystem-PASTempCodes" name="PAS Temporary Codes"/>
 <artifact id="StructureDefinition/profile-datatype-timing" key="StructureDefinition-profile-datatype-timing" name="PAS Timing"/>
 <artifact id="StructureDefinition/extension-patientStatus" key="StructureDefinition-extension-patientStatus" name="PatientStatus"/>
