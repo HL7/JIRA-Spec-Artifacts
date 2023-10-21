@@ -128,7 +128,6 @@
 	<xsl:template match="/">
     <!-- Check cross-specification validation rules -->
     <xsl:for-each select="$ballotSpecs/specification[not(@deprecated='true') and starts-with(@key, 'FHIR-')]">
-<xsl:message>Got here</xsl:message>
       <xsl:choose>
         <xsl:when test="@defaultWorkgroup='eu' and not(starts-with(@gitUrl, 'https://github.com/HL7-eu/'))">
           <xsl:message terminate="yes" select="concat('ERROR: FHIR HL7 EU specifications that are not deprecated must have a gitUrl attribute that starts with ''https://github.com/HL7-eu/'' ', @key)"/>
@@ -144,8 +143,15 @@
     <xsl:for-each select="$ballotSpecs/specification[not(starts-with(@url, 'http://hl7.org/fhir')) and not(@deprecated='true') and starts-with(@key, 'FHIR-')]">
       <xsl:message select="concat('WARNING: FHIR specifications that are not deprecated SHOULD have a url attribute that starts with ''http://hl7.org/fhir'' ', @key, ' - actual was: ', @url)"/>
     </xsl:for-each>
-    <xsl:for-each select="$ballotSpecs/specification[@ballotUrl and not(starts-with(@ballotUrl, 'http://hl7.org/'))]">
-      <xsl:message terminate="yes" select="concat('ERROR: If present, ballotUrl must start with ''http://hl7.org/'' ', @key, ' - actual was: ', @ballotUrl)"/>
+    <xsl:for-each select="$ballotSpecs/specification[@ballotUrl]">
+      <xsl:choose>
+        <xsl:when test="@defaultWorkgroup='eu' and not(starts-with(@ballotUrl, 'http://hl7.eu/'))">
+          <xsl:message terminate="yes" select="concat('ERROR: If present, ballotUrl must start with ''http://hl7.eu/'' ', @key, ' - actual was: ', @ballotUrl)"/>
+        </xsl:when>
+        <xsl:when test="not(@defaultWorkgroup='eu') and not(starts-with(@ballotUrl, 'http://hl7.org/'))">
+          <xsl:message terminate="yes" select="concat('ERROR: If present, ballotUrl must start with ''http://hl7.org/'' ', @key, ' - actual was: ', @ballotUrl)"/>
+        </xsl:when>
+      </xsl:choose>
     </xsl:for-each>
     <xsl:for-each select="distinct-values($ballotSpecs/specification/@gitUrl)">
       <xsl:if test="count($ballotSpecs/specification[@gitUrl=current()])!=1">
