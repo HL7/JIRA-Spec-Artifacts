@@ -127,8 +127,16 @@
     -->
 	<xsl:template match="/">
     <!-- Check cross-specification validation rules -->
-    <xsl:for-each select="$ballotSpecs/specification[not(starts-with(@gitUrl, 'https://github.com/HL7/')) and not(@deprecated='true') and starts-with(@key, 'FHIR-')]">
-      <xsl:message terminate="yes" select="concat('ERROR: FHIR specifications that are not deprecated must have a gitUrl attribute that starts with ''https://github.com/HL7/'' ', @key)"/>
+    <xsl:for-each select="$ballotSpecs/specification[not(@deprecated='true') and starts-with(@key, 'FHIR-')]">
+<xsl:message>Got here</xsl:message>
+      <xsl:choose>
+        <xsl:when test="@defaultWorkgroup='eu' and not(starts-with(@gitUrl, 'https://github.com/HL7-eu/'))">
+          <xsl:message terminate="yes" select="concat('ERROR: FHIR HL7 EU specifications that are not deprecated must have a gitUrl attribute that starts with ''https://github.com/HL7-eu/'' ', @key)"/>
+        </xsl:when>
+        <xsl:when test="not(@defaultWorkgroup='eu') and not(starts-with(@gitUrl, 'https://github.com/HL7/'))">
+          <xsl:message terminate="yes" select="concat('ERROR: FHIR HL7 International specifications that are not deprecated must have a gitUrl attribute that starts with ''https://github.com/HL7/'' ', @key)"/>
+        </xsl:when>
+      </xsl:choose>
     </xsl:for-each>
     <xsl:for-each select="$ballotSpecs/specification[not(starts-with(@ciUrl, 'http://build.fhir.org')) and not(@deprecated='true') and starts-with(@key, 'FHIR-')]">
       <xsl:message select="concat('WARNING: FHIR specifications that are not deprecated SHOULD have a ciUrl attribute that starts with ''http://build.fhir.org'' ', @key, ' - actual was: ', @ciUrl)"/>
