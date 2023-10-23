@@ -97,9 +97,11 @@
       <xsl:when test="contains($prefix, 'FHIR') and not(matches(string(@id), '^([A-Z][a-z]+)+/[A-Za-z0-9\-\.]{1,64}$'))">
         <xsl:message terminate="yes" select="concat('ERROR: In FHIR artifact ', $key, ', id value of ', @id, ' does not follow the pattern ResourceName/id')"/>
       </xsl:when>
+<!--
       <xsl:when test="contains($prefix, 'CDA') and not(matches(@id, '^[0-2](\.(0|[1-9][0-9]*))+$'))">
         <xsl:message terminate="yes" select="concat('ERROR: In CDA artifact ', $key, ', id value of ', @id, ' is not an OID', matches(@id, '^[0-2](\\.(0|[1-9][0-9]*))+$'))"/>
       </xsl:when>
+-->
     </xsl:choose>    
     <xsl:copy>
       <xsl:apply-templates mode="familySpecs" select="@*"/>
