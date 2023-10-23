@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/registry-protocols/2023May" ciUrl="http://build.fhir.org/ig/HL7/fhir-registry-protocols-ig" defaultVersion="1.0.0-ballot" defaultWorkgroup="cic" gitUrl="https://github.com/HL7/fhir-registry-protocols-ig" url="http://hl7.org/fhir/us/registry-protocols">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/registry-protocols/2023May" ciUrl="http://build.fhir.org/ig/HL7/fhir-registry-protocols-ig" defaultVersion="1.0.0" defaultWorkgroup="cic" gitUrl="https://github.com/HL7/fhir-registry-protocols-ig" url="http://hl7.org/fhir/us/registry-protocols">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-registry-protocols-ig"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/registry-protocols/STU1"/>
 <version code="1.0.0-ballot" url="http://hl7.org/fhir/us/registry-protocols/2023May"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -82,13 +83,13 @@
 <artifact id="ValueSet/PriorDiagnosticCoronaryAngiographyProcedureResults" key="ValueSet-PriorDiagnosticCoronaryAngiographyProcedureResults" name="Prior Diagnostic Coronary Angiography Procedure Results"/>
 <artifact id="ValueSet/PriorCABG" key="ValueSet-PriorCABG" name="Prior History of Coronary Artery Bypass Graft"/>
 <artifact id="ValueSet/PriorMyocardialInfarction" key="ValueSet-PriorMyocardialInfarction" name="Prior Myocardial Infarction"/>
-<artifact id="CapabilityStatement/RS" key="CapabilityStatement-RS" name="RS"/>
-<artifact id="CapabilityStatement/RS-SRRD" key="CapabilityStatement-RS-SRRD" name="RS-SRRD"/>
-<artifact id="CapabilityStatement/RSDC" key="CapabilityStatement-RSDC" name="RSDC"/>
-<artifact id="CapabilityStatement/RSDC-CURD" key="CapabilityStatement-RSDC-CURD" name="RSDC-CURD"/>
-<artifact id="CapabilityStatement/RSDR" key="CapabilityStatement-RSDR" name="RSDR"/>
-<artifact id="CapabilityStatement/RSDR-CURD" key="CapabilityStatement-RSDR-CURD" name="RSDR-CURD"/>
-<artifact id="CapabilityStatement/RSDR-SRRD" key="CapabilityStatement-RSDR-SRRD" name="RSDR-SRRD"/>
+<artifact id="CapabilityStatement/RSDC-CURD" key="CapabilityStatement-RSDC-CURD" name="Registry Submission Definition Creator implementing the Create / Update Registry Definition transaction."/>
+<artifact id="CapabilityStatement/RSDC" key="CapabilityStatement-RSDC" name="Registry Submission Definition Creator."/>
+<artifact id="CapabilityStatement/RSDR-CURD" key="CapabilityStatement-RSDR-CURD" name="Registry Submission Definition Repository implementing the Create / Update Registry Definition transaction."/>
+<artifact id="CapabilityStatement/RSDR-SRRD" key="CapabilityStatement-RSDR-SRRD" name="Registry Submission Definition Repository implementing the Search / Retrieve Registry Definition transaction."/>
+<artifact id="CapabilityStatement/RSDR" key="CapabilityStatement-RSDR" name="Registry Submission Definition Repository."/>
+<artifact id="CapabilityStatement/RS-SRRD" key="CapabilityStatement-RS-SRRD" name="Registry Submitter implementing the Search / Retrieve Registry Definition transaction."/>
+<artifact id="CapabilityStatement/RS" key="CapabilityStatement-RS" name="Registry Submitter."/>
 <artifact id="ValueSet/RoseDyspneaQ" key="ValueSet-RoseDyspneaQ" name="Rose Dyspnea Questions"/>
 <artifact id="ValueSet/CardiacCatheter" key="ValueSet-CardiacCatheter" name="SNOMED Cardiac Catheters"/>
 <artifact id="ValueSet/OrganDonor" key="ValueSet-OrganDonor" name="SNOMED Valueset of Organ Donor codes"/>
