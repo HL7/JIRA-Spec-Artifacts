@@ -207,7 +207,7 @@
 <artifact deprecated="true" id="ValueSet/mcode-observation-codes-primary-tumor-vs" key="ValueSet-mcode-observation-codes-primary-tumor-vs" name="Staging Type for Primary Tumor Category Value Set"/>
 <artifact deprecated="true" id="ValueSet/mcode-observation-codes-regional-nodes-vs" key="ValueSet-mcode-observation-codes-regional-nodes-vs" name="Staging Type for Regional Node Category Value Set"/>
 <artifact deprecated="true" id="ValueSet/mcode-observation-codes-stage-group-vs" key="ValueSet-mcode-observation-codes-stage-group-vs" name="Staging Type for Stage Group Value Set"/>
-<artifact id="ConceptMap/TG263CM" key="ConceptMap-TG263CM" name="TG263CM"/>
+<artifact id="ConceptMap/TG263CM" key="ConceptMap-TG263CM" name="TG263 Concept Map"/>
 <artifact deprecated="true" id="Profile/mcode-tnm-clinical-distant-metastases" key="tnm-clinical-distant-metastases" name="TNM Clinical Distant Metastases"/>
 <artifact deprecated="true" id="Profile/mcode-tnm-clinical-primary-tumor-category" key="tnm-clinical-primary-tumor-category" name="TNM Clinical Primary Tumor Category"/>
 <artifact deprecated="true" id="Profile/mcode-tnm-clinical-regional-nodes-category" key="tnm-clinical-regional-nodes-category" name="TNM Clinical Regional Nodes Category"/>
@@ -388,18 +388,17 @@
 <artifact deprecated="true" id="Example/mcode-tnm-pathological-stage-group-example-01" key="mcode-tnm-pathological-stage-group-example-01" name="mCODETNMPathologicalStageGroupExample01"/>
 <artifact deprecated="true" id="Example/mcode-tumor-marker-example-01" key="mcode-tumor-marker-example-01" name="mCODETumorMarkerExample01"/>
 <artifact id="Bundle/mcode-patient-bundle-jenny-m" key="Bundle-mcode-patient-bundle-jenny-m" name="mcode-patient-bundle-jenny-m"/>
-<artifact id="OperationDefinition/mcode-patient-everything" key="OperationDefinition-mcode-patient-everything" name="mcode-patient-everything"/>
-<artifact id="CapabilityStatement/mcode-receiver-cancer-conditions-then-patients" key="CapabilityStatement-mcode-receiver-cancer-conditions-then-patients" name="mcode-receiver-cancer-conditions-then-patients"/>
-<artifact id="CapabilityStatement/mcode-receiver-patient-bundle" key="CapabilityStatement-mcode-receiver-patient-bundle" name="mcode-receiver-patient-bundle"/>
-<artifact id="CapabilityStatement/mcode-receiver-patients-and-cancer-conditions" key="CapabilityStatement-mcode-receiver-patients-and-cancer-conditions" name="mcode-receiver-patients-and-cancer-conditions"/>
-<artifact id="CapabilityStatement/mcode-receiver-patients-in-group" key="CapabilityStatement-mcode-receiver-patients-in-group" name="mcode-receiver-patients-in-group"/>
-<artifact id="CapabilityStatement/mcode-receiver-patients-with-cancer-condition" key="CapabilityStatement-mcode-receiver-patients-with-cancer-condition" name="mcode-receiver-patients-with-cancer-condition"/>
-<artifact id="CapabilityStatement/mcode-sender-cancer-conditions-then-patients" key="CapabilityStatement-mcode-sender-cancer-conditions-then-patients" name="mcode-sender-cancer-conditions-then-patients"/>
-<artifact id="CapabilityStatement/mcode-sender-patient-bundle" key="CapabilityStatement-mcode-sender-patient-bundle" name="mcode-sender-patient-bundle"/>
-<artifact id="CapabilityStatement/mcode-sender-patients-and-cancer-conditions" key="CapabilityStatement-mcode-sender-patients-and-cancer-conditions" name="mcode-sender-patients-and-cancer-conditions"/>
-<artifact id="CapabilityStatement/mcode-sender-patients-in-group" key="CapabilityStatement-mcode-sender-patients-in-group" name="mcode-sender-patients-in-group"/>
-<artifact id="CapabilityStatement/mcode-sender-patients-with-cancer-condition" key="CapabilityStatement-mcode-sender-patients-with-cancer-condition" name="mcode-sender-patients-with-cancer-condition"/>
-<artifact id="Observation/melanoma-breslow-depth-stage" key="Observation-melanoma-breslow-depth-stage" name="melanoma-breslow-depth-stage"/>
+<artifact id="OperationDefinition/mcode-patient-everything" key="OperationDefinition-mcode-patient-everything" name="Fetch mCODE Patient Bundle for a given Patient"/>
+<artifact id="CapabilityStatement/mcode-receiver-patients-and-cancer-conditions" key="CapabilityStatement-mcode-receiver-patients-and-cancer-conditions" name="mCODE Data Receiver CapabilityStatement: Get in-scope patients (and associated Conditions) using _include"/>
+<artifact id="CapabilityStatement/mcode-receiver-patients-with-cancer-condition" key="CapabilityStatement-mcode-receiver-patients-with-cancer-condition" name="mCODE Data Receiver CapabilityStatement: Get in-scope patients using reverse chaining"/>
+<artifact id="CapabilityStatement/mcode-receiver-patient-bundle" key="CapabilityStatement-mcode-receiver-patient-bundle" name="mCODE Data Receiver: Get Bundle for a Patient"/>
+<artifact id="CapabilityStatement/mcode-receiver-cancer-conditions-then-patients" key="CapabilityStatement-mcode-receiver-cancer-conditions-then-patients" name="mCODE Data Receiver: Get Conditions then Patients"/>
+<artifact id="CapabilityStatement/mcode-receiver-patients-in-group" key="CapabilityStatement-mcode-receiver-patients-in-group" name="mCODE Data Receiver: Get Patients in Group"/>
+<artifact id="CapabilityStatement/mcode-sender-patients-and-cancer-conditions" key="CapabilityStatement-mcode-sender-patients-and-cancer-conditions" name="mCODE Data Sender CapabilityStatement: Get in-scope patients (and associated Conditions) using _include"/>
+<artifact id="CapabilityStatement/mcode-sender-patients-with-cancer-condition" key="CapabilityStatement-mcode-sender-patients-with-cancer-condition" name="mCODE Data Sender CapabilityStatement: Get in-scope patients using reverse chaining"/>
+<artifact id="CapabilityStatement/mcode-sender-patient-bundle" key="CapabilityStatement-mcode-sender-patient-bundle" name="mCODE Data Sender: Get Bundle for a Patient"/>
+<artifact id="CapabilityStatement/mcode-sender-cancer-conditions-then-patients" key="CapabilityStatement-mcode-sender-cancer-conditions-then-patients" name="mCODE Data Sender: Get Conditions then Patients"/>
+<artifact id="CapabilityStatement/mcode-sender-patients-in-group" key="CapabilityStatement-mcode-sender-patients-in-group" name="mCODE Data Sender: Get Patients in Group"/><artifact id="Observation/melanoma-breslow-depth-stage" key="Observation-melanoma-breslow-depth-stage" name="melanoma-breslow-depth-stage"/>
 <artifact id="Observation/melanoma-clark-level-4" key="Observation-melanoma-clark-level-4" name="melanoma-clark-level-4"/>
 <artifact id="Observation/multiple-myeloma-iss-stage-II" key="Observation-multiple-myeloma-iss-stage-II" name="multiple-myeloma-iss-stage-II"/>
 <artifact id="Observation/multiple-myeloma-riss-stage-II" key="Observation-multiple-myeloma-riss-stage-II" name="multiple-myeloma-riss-stage-II"/>
