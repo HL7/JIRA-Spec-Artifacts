@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/hl7-eu/laboratory" defaultVersion="current" defaultWorkgroup="eu" gitUrl="https://github.com/HL7/laboratory" url="http://hl7.eu/fhir/laboratory">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/laboratory/0.1.0-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/laboratory" defaultVersion="0.1.0-ballot" defaultWorkgroup="eu" gitUrl="https://github.com/HL7-eu/laboratory" url="http://hl7.eu/fhir/laboratory">
 <version code="current" url="https://build.fhir.org/ig/hl7-eu/laboratory"/>
+<version code="0.1.0-ballot" url="http://hl7.eu/fhir/laboratory/0.1.0-ballot"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
@@ -34,8 +35,10 @@
 <artifact id="Bundle/BundleLabResultMicroCultureSusc" key="Bundle-BundleLabResultMicroCultureSusc" name="Bundle Microbiology Culture + Susceptibility Lab Result"/>
 <artifact id="StructureDefinition/Bundle-eu-lab" key="StructureDefinition-Bundle-eu-lab" name="Bundle: Laboratory Report"/>
 <artifact id="StructureDefinition/Composition-eu-lab" key="StructureDefinition-Composition-eu-lab" name="Composition: Laboratory Report"/>
+<artifact id="Composition/comp-lab-example" key="Composition-comp-lab-example" name="Composition: example"/>
 <artifact id="ConceptMap/ConceptMap-eu-diagRptStatus2CompStatus" key="ConceptMap-ConceptMap-eu-diagRptStatus2CompStatus" name="DiagnosticReport to Composition status"/>
 <artifact id="StructureDefinition/DiagnosticReport-eu-lab" key="StructureDefinition-DiagnosticReport-eu-lab" name="DiagnosticReport: Laboratory Report"/>
+<artifact id="DiagnosticReport/dr-lab-example" key="DiagnosticReport-dr-lab-example" name="DiagnosticReport: example"/>
 <artifact id="StructureDefinition/composition-basedOn-order-or-requisition" key="StructureDefinition-composition-basedOn-order-or-requisition" name="Document Based On Order"/>
 <artifact id="StructureDefinition/HumanName-obl-eu-lab" key="StructureDefinition-HumanName-obl-eu-lab" name="Human Name Obligations"/>
 <artifact id="StructureDefinition/HumanName-eu" key="StructureDefinition-HumanName-eu" name="HumanName (Eu)"/>
@@ -53,14 +56,32 @@
 <artifact id="ValueSet/lab-npu-vs" key="ValueSet-lab-npu-vs" name="NPU Laboratory Codes VS"/>
 <artifact id="StructureDefinition/Observation-resultslab-eu-lab" key="StructureDefinition-Observation-resultslab-eu-lab" name="Observation Results: laboratory"/>
 <artifact id="Observation/d29b286d-b99c-410f-af4e-9455ea49d0af" key="Observation-d29b286d-b99c-410f-af4e-9455ea49d0af" name="Observation with ratio result type"/>
+<artifact id="Observation/obs-aerobic-culture" key="Observation-obs-aerobic-culture" name="Observation: Aerobic Culture example"/>
+<artifact id="Observation/obs-anaerobic-culture" key="Observation-obs-anaerobic-culture" name="Observation: Anaerobic Culture example"/>
+<artifact id="Observation/obs-gs-org1" key="Observation-obs-gs-org1" name="Observation: Gram-positive cocci example"/>
+<artifact id="Observation/obs-gs-org1-quant" key="Observation-obs-gs-org1-quant" name="Observation: Gram-positive cocci, observed quantity, example"/>
+<artifact id="Observation/obs-wbc" key="Observation-obs-wbc" name="Observation: Leukocytes Presence example"/>
+<artifact id="Observation/obs-org-id1-susc-1" key="Observation-obs-org-id1-susc-1" name="Observation: Staphylococcus aureus Cephalothin susceptibility example"/>
+<artifact id="Observation/obs-org-id1-growth" key="Observation-obs-org-id1-growth" name="Observation: Staphylococcus aureus Growth example"/>
+<artifact id="Observation/obs-org-id1-susc-3" key="Observation-obs-org-id1-susc-3" name="Observation: Staphylococcus aureus Oxacillin susceptibility example"/>
+<artifact id="Observation/obs-org-id1-susc-4" key="Observation-obs-org-id1-susc-4" name="Observation: Staphylococcus aureus Vancomycin susceptibility example"/>
+<artifact id="Observation/obs-org-id1" key="Observation-obs-org-id1" name="Observation: Staphylococcus aureus identified example"/>
+<artifact id="Observation/obs-org-id1-susc-2" key="Observation-obs-org-id1-susc-2" name="Observation: Staphylococcus aureus levoFLOXacin susceptibility example"/>
+<artifact id="Observation/obs-org-id1-susc-panel" key="Observation-obs-org-id1-susc-panel" name="Observation: Staphylococcus aureus susceptibility panel example"/>
+<artifact id="Observation/obs-gram-stain" key="Observation-obs-gram-stain" name="Observation: gram staining example"/>
 <artifact id="StructureDefinition/Patient-obl-eu-lab" key="StructureDefinition-Patient-obl-eu-lab" name="Patient Obligations"/>
 <artifact id="StructureDefinition/Patient-animal-eu-lab" key="StructureDefinition-Patient-animal-eu-lab" name="Patient: Animal"/>
 <artifact id="StructureDefinition/Patient-eu-lab" key="StructureDefinition-Patient-eu-lab" name="Patient: Person"/>
+<artifact id="Patient/Patient-animal-example" key="Patient-Patient-animal-example" name="Patient: animal example"/>
+<artifact id="Patient/pat-lab-example" key="Patient-pat-lab-example" name="Patient: example"/>
 <artifact id="StructureDefinition/Practitioner-eu-lab" key="StructureDefinition-Practitioner-eu-lab" name="Practitioner: Laboratory Report"/>
+<artifact id="Practitioner/pr-lab-example" key="Practitioner-pr-lab-example" name="Practitioner: example"/>
 <artifact id="StructureDefinition/PractitionerRole-eu-lab" key="StructureDefinition-PractitionerRole-eu-lab" name="PractitionerRole: Laboratory Report"/>
+<artifact id="PractitionerRole/prrole-lab-example" key="PractitionerRole-prrole-lab-example" name="PractitionerRole: example"/>
 <artifact id="StructureDefinition/Quantity-eu-lab" key="StructureDefinition-Quantity-eu-lab" name="Quantity (Eu) for lab observations"/>
 <artifact id="StructureDefinition/Ratio-eu-lab" key="StructureDefinition-Ratio-eu-lab" name="Ratio (Eu) for lab observations"/>
 <artifact id="StructureDefinition/ServiceRequest-eu-lab" key="StructureDefinition-ServiceRequest-eu-lab" name="ServiceRequest: Laboratory Order"/>
+<artifact id="ServiceRequest/srv-request-example" key="ServiceRequest-srv-request-example" name="ServiceRequest: example"/>
 <artifact id="StructureDefinition/Specimen-eu-lab" key="StructureDefinition-Specimen-eu-lab" name="Specimen: Laboratory"/>
 <artifact id="Specimen/Specimen-animal-example" key="Specimen-Specimen-animal-example" name="Specimen: animal example"/>
 <artifact id="ValueSet/lab-result-standard-eu-lab" key="ValueSet-lab-result-standard-eu-lab" name="Standard Laboratory Codes"/>
