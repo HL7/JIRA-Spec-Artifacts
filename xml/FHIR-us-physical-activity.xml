@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/physical-activity/2023May" ciUrl="https://build.fhir.org/ig/HL7/physical-activity" defaultVersion="1.0.0" defaultWorkgroup="pc" gitUrl="https://github.com/HL7/physical-activity" url="http://hl7.org/fhir/us/physical-activity">
+<version code="current" url="https://build.fhir.org/ig/HL7/physical-activity"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/physical-activity/STU1"/>
+<version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/physical-activity/2023May"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="Bundle/Scen1CarePlanBundle2" key="Bundle-Scen1CarePlanBundleV2" name="Bundle 'Search Set' - Care Plan - updated - Scenario 1"/>
+<artifact id="Bundle/Scen4CarePlanBundle1" key="Bundle-Scen4CarePlanBundle1" name="Bundle 'Search Set' - CarePlan - Initial care plan - Scenario 4"/>
+<artifact id="Bundle/Scen4CarePlanBundle2" key="Bundle-Scen4CarePlanBundle2" name="Bundle 'Search Set' - CarePlan - Updated care plan - Scenario 4"/>
+<artifact id="Bundle/Scen1CarePlanBundle1" key="Bundle-Scen1CarePlanBundleV1" name="Bundle 'Search Set' - CarePlan - initial - Scenario 1"/>
+<artifact id="Bundle/Scen2ConditionResponseBundle" key="Bundle-Scen2ConditionResponseBundle" name="Bundle 'Search Set' - Condition - Scenario 2"/>
+<artifact id="Bundle/Scen2DiagnosticReportObservationsResponseBundle" key="Bundle-Scen2DiagnosticReportObservationsResponseBundle" name="Bundle 'Search Set' - DiagnosticReport, Observations - Scenario 2"/>
+<artifact id="Bundle/Scen2TaskEHRResponseBundle1" key="Bundle-Scen2TaskEHRResponseBundle1" name="Bundle 'Search Set' - Fit 4 Life Task 'accepted' - Scenario 2"/>
+<artifact id="Bundle/Scen2TaskEHRResponseBundle2" key="Bundle-Scen2TaskEHRResponseBundle2" name="Bundle 'Search Set' - Fit 4 Life Task 'completed' - Scenario 2"/>
+<artifact id="Bundle/Scen1GoalBundle1" key="Bundle-Scen1GoalBundleV1" name="Bundle 'Search Set' - Goal - Initial goal - Scenario 1"/>
+<artifact id="Bundle/Scen4GoalBundle1" key="Bundle-Scen4GoalBundle1" name="Bundle 'Search Set' - Goal - Initial goal(s) - Scenario 4"/>
+<artifact id="Bundle/Scen4GoalBundle2" key="Bundle-Scen4GoalBundle2" name="Bundle 'Search Set' - Goal - Updated goal(s) - Scenario 4"/>
+<artifact id="Bundle/Scen1GoalBundle2" key="Bundle-Scen1GoalBundleV2" name="Bundle 'Search Set' - Goal - Updated goals - Scenario 1"/>
+<artifact id="Bundle/Scen5ObservationsResponseBundle" key="Bundle-Scen5ObservationsResponseBundle" name="Bundle 'Search Set' - Observation - activity and blood glucose - Scenario 5"/>
+<artifact id="Bundle/Scen2ObservationResponseBundle" key="Bundle-Scen2ObservationResponseBundle" name="Bundle 'Search Set' - Observations - Supporting Measures - Scenario 2"/>
+<artifact id="Bundle/Scen2PractitionerTrainerSearchsetBundle" key="Bundle-Scen2PractitionerTrainerSearchsetBundle" name="Bundle 'Search Set' - PractitionerRole - Personal Trainers - Scenario 2"/>
+<artifact id="Bundle/Scen3ServiceRequestYMCAResponseBundle" key="Bundle-Scen3ServiceRequestYMCAResponseBundle" name="Bundle 'Search Set' - ServiceRequest - Exercise program referral - Scenario 3"/>
+<artifact id="Bundle/Scen1ExerciseRxBundle" key="Bundle-Scen1ExerciseRxBundle" name="Bundle 'Search Set' - ServiceRequest - Scenario 1"/>
+<artifact id="Bundle/Scen2ReferralFit4LifeResponseBundle" key="Bundle-Scen2ReferralFit4LifeResponseBundle" name="Bundle 'Search Set' - ServiceRequest, Patient - Fit4Life Referral - Scenario 2"/>
+<artifact id="Bundle/Scen2TaskGetFitResponseBundle" key="Bundle-Scen2TaskGetFitResponseBundle" name="Bundle 'Search Set' - Task - GetFit Fulfillment Request - Scenario 2"/>
+<artifact id="Bundle/Scen4TaskBundle1" key="Bundle-Scen4TaskBundle1" name="Bundle 'Search Set' - Task - Initial task(s) - Scenario 4"/>
+<artifact id="Bundle/Scen4TaskBundle2" key="Bundle-Scen4TaskBundle2" name="Bundle 'Search Set' - Task - Second task(s) - Scenario 4"/>
+<artifact id="Bundle/Scen4TaskBundle3" key="Bundle-Scen4TaskBundle3" name="Bundle 'Search Set' - Task - Third task(s) - Scenario 4"/>
+<artifact id="Bundle/Scen3TaskEHRResponseBundle1" key="Bundle-Scen3TaskEHRResponseBundle1" name="Bundle 'Search Set' - YMCA Task 'accepted' - Scenario 3"/>
+<artifact id="Bundle/Scen3TaskEHRResponseBundle2" key="Bundle-Scen3TaskEHRResponseBundle2" name="Bundle 'Search Set' - YMCA Task 'completed' - Scenario 3"/>
+<artifact id="Bundle/Scen2SubscriptionNotificationNewTaskBundle" key="Bundle-Scen2SubscriptionNotificationNewTaskBundle" name="Bundle 'Subscription Notification' - GetFit Task - Scenario 2"/>
+<artifact id="Bundle/Scen2NotificationUpdatedTaskBundle" key="Bundle-Scen2NotificationUpdatedTaskBundle" name="Bundle 'Subscription Notification' - Task - Fit 4 Life 'accepted' - Scenario 2"/>
+<artifact id="Bundle/Scen2NotificationCompletedTaskBundle" key="Bundle-Scen2NotificationCompletedTaskBundle" name="Bundle 'Subscription Notification' - Task - Fit 4 Life 'completed' - Scenario 2"/>
+<artifact id="Bundle/Scen3NotificationUpdatedTaskBundle" key="Bundle-Scen3NotificationUpdatedTaskBundle" name="Bundle 'Subscription Notification' - Task - accepted - Scenario 3"/>
+<artifact id="Bundle/Scen3NotificationCompletedTaskBundle" key="Bundle-Scen3NotificationCompletedTaskBundle" name="Bundle 'Subscription Notification' - Task - completed - Scenario 3"/>
+<artifact id="Bundle/ExampleBundleTaskSearchResponse" key="Bundle-ExampleBundleTaskSearchResponse" name="Bundle (Search Set) - Task"/>
+<artifact id="Bundle/ExampleSubscriptionBundleWithIds" key="Bundle-ExampleSubscriptionBundleWithIds" name="Bundle (Subscription Notification) - Task with ids"/>
+<artifact id="CarePlan/Scen1CarePlanV1" key="CarePlan-Scen1CarePlanV1" name="CarePlan - initial - Scenario 1"/>
+<artifact id="CarePlan/Scen4CarePlanV1" key="CarePlan-Scen4CarePlanV1" name="CarePlan - initial version - Scenario 4"/>
+<artifact id="CarePlan/ExampleCarePlan" key="CarePlan-ExampleCarePlan" name="CarePlan - simple"/>
+<artifact id="CarePlan/Scen1CarePlanV2" key="CarePlan-Scen1CarePlanV2" name="CarePlan - updated - Scenario 1"/>
+<artifact id="CarePlan/Scen4CarePlanV2" key="CarePlan-Scen4CarePlanV2" name="CarePlan - updated version - Scenario 4"/>
+<artifact id="Condition/Scen2ConditionHypertension" key="Condition-Scen2ConditionHypertension" name="Condition - Hypertension - Scenario 2"/>
+<artifact id="Condition/Scen2ConditionLackOfExercise" key="Condition-Scen2ConditionLackOfExercise" name="Condition - Lack of Physical Exercise - Scenario 2"/>
+<artifact id="Condition/ExampleCondition" key="Condition-ExampleCondition" name="Condition - Low Physical Activity"/>
+<artifact id="DiagnosticReport/Scen2DiagnosticReport" key="DiagnosticReport-Scen2DiagnosticReport" name="DiagnosticReport - PA Consultation Report - Scenario 2"/>
+<artifact id="DiagnosticReport/ExampleReport" key="DiagnosticReport-ExampleReport" name="DiagnosticReport - Physical Activity Report"/>
+<artifact deprecated="true" id="QuestionnaireResponse/qr-evs-example" key="QuestionnaireResponse-qr-evs-example" name="Example Exercise Vital Sign QuestionnaireResponse"/>
+<artifact deprecated="true" id="StructureDefinition/observation-support" key="StructureDefinition-observation-support" name="Exercise Supporting Observation"/>
+<artifact deprecated="true" id="Questionnaire/questionnaire-evs" key="Questionnaire-questionnaire-evs" name="Exercise Vital Sign Questionnaire"/>
+<artifact id="Goal/ExampleGoal" key="Goal-ExampleGoal" name="Goal - 100 min/week"/>
+<artifact id="Goal/Scen1GoalV2" key="Goal-Scen1GoalV2" name="Goal - 100 min/wk 'completed' - Scenario 1"/>
+<artifact id="Goal/Scen1GoalV1" key="Goal-Scen1GoalV1" name="Goal - 100 min/wk 'in-progress' - Scenario 1"/>
+<artifact id="Goal/Scen1Goal2" key="Goal-Scen1Goal2" name="Goal - 150 min/wk 'in-progress' - Scenario 1"/>
+<artifact id="Goal/Scen4Goal1V2" key="Goal-Scen4Goal1V2" name="Goal - Lifting 'achieved' - Scenario 4"/>
+<artifact id="Goal/Scen4Goal1V1" key="Goal-Scen4Goal1V1" name="Goal - Lifting 'active' - Scenario 4"/>
+<artifact id="Goal/Scen4Goal2V1" key="Goal-Scen4Goal2V1" name="Goal - Lifting2 'active' - Scenario 4"/>
+<artifact id="Goal/Scen4Goal2V2" key="Goal-Scen4Goal2V2" name="Goal - Lifting2 'sustaining' - Scenario 4"/>
+<artifact id="Observation/Scen2ObsActivityDuration" key="Observation-Scen2ObsActivityDuration" name="Observation - Activity Duration - Scenario 2"/>
+<artifact id="Observation/Scen5ObsActivityDuration" key="Observation-Scen5ObsActivityDuration" name="Observation - Activity Duration - Scenario 5"/>
+<artifact id="Observation/ExampleActivityGroup" key="Observation-ExampleActivityGroup" name="Observation - Activity Group"/>
+<artifact id="Observation/Scen2ObsActivityGroup" key="Observation-Scen2ObsActivityGroup" name="Observation - Activity Group - Scenario 2"/>
+<artifact id="Observation/Scen5ObsActivityGroup" key="Observation-Scen5ObsActivityGroup" name="Observation - Activity Group - Scenario 5"/>
+<artifact id="Observation/ExampleActivityCalories" key="Observation-ExampleActivityCalories" name="Observation - Activity Measure - Calories"/>
+<artifact id="Observation/ExampleActivityDuration" key="Observation-ExampleActivityDuration" name="Observation - Activity Measure - Duration"/>
+<artifact id="Observation/ExampleActivityMeanHR" key="Observation-ExampleActivityMeanHR" name="Observation - Activity Measure - Mean Heart Rate"/>
+<artifact id="Observation/ExampleActivityModerate" key="Observation-ExampleActivityModerate" name="Observation - Activity Measure - Moderate Minutes"/>
+<artifact id="Observation/ExampleActivityPeakHR" key="Observation-ExampleActivityPeakHR" name="Observation - Activity Measure - Peak Heart Rate"/>
+<artifact id="Observation/ExampleActivityType" key="Observation-ExampleActivityType" name="Observation - Activity Measure - Type"/>
+<artifact id="Observation/ExampleActivityVigorous" key="Observation-ExampleActivityVigorous" name="Observation - Activity Measure - Vigorous Minutes"/>
+<artifact id="Observation/Scen2ObsActivityType" key="Observation-Scen2ObsActivityType" name="Observation - Activity Type - Scenario 2"/>
+<artifact id="Observation/Scen4ObservationActivityType" key="Observation-Scen4ObservationActivityType" name="Observation - Activity Type - Scenario 4"/>
+<artifact id="Observation/Scen5ObsActivityType" key="Observation-Scen5ObsActivityType" name="Observation - Activity Type - Scenario 5"/>
+<artifact id="Observation/Scen2ObsActivityMeanHR" key="Observation-Scen2ObsActivityMeanHR" name="Observation - Average Activity Heart Rate - Scenario 2"/>
+<artifact id="Observation/Scen5ObsActivityMeanHR" key="Observation-Scen5ObsActivityMeanHR" name="Observation - Average Activity Heart Rate - Scenario 5"/>
+<artifact id="Observation/ExampleAverageRestingHeartRate" key="Observation-ExampleAverageRestingHeartRate" name="Observation - Average Resting Heart Rate"/>
+<artifact id="Observation/Scen2ObsCalories" key="Observation-Scen2ObsCalories" name="Observation - Calories Burned in 24 Hours - Scenario 2"/>
+<artifact id="Observation/ExampleCaloriesPerDay" key="Observation-ExampleCaloriesPerDay" name="Observation - Calories per Day"/>
+<artifact id="Observation/Scen4ObservationCaloriesPerDay" key="Observation-Scen4ObservationCaloriesPerDay" name="Observation - Calories/Day - Scenario 4"/>
+<artifact id="Observation/ExampleDailySteps" key="Observation-ExampleDailySteps" name="Observation - Daily Steps"/>
+<artifact id="Observation/Scen4ObservationDailySteps" key="Observation-Scen4ObservationDailySteps" name="Observation - Daily Steps - Scenario 4"/>
+<artifact id="Observation/Scen2ObsDaysPerWeek" key="Observation-Scen2ObsDaysPerWeek" name="Observation - Days per Week - Scenario 2"/>
+<artifact id="Observation/Scen2ObsDaysPerWeek2" key="Observation-Scen2ObsDaysPerWeek2" name="Observation - Days per week 'patient-submitted' - Scenario 2"/>
+<artifact id="Observation/Scen1ObservationDaysPerWeek" key="Observation-Scen1ObservationDaysPerWeek" name="Observation - Days per week - Scenario 1"/>
+<artifact id="Observation/ExampleEVSDaysPerWeek" key="Observation-ExampleEVSDaysPerWeek" name="Observation - Exercise Vital Sign Days per Week"/>
+<artifact id="Observation/ExampleEVSMinutesPerDay" key="Observation-ExampleEVSMinutesPerDay" name="Observation - Exercise Vital Sign Minutes per Day"/>
+<artifact id="Observation/ExampleEVSMinutesPerWeek" key="Observation-ExampleExerciseMinutesPerWeek" name="Observation - Exercise Vital Sign Minutes per Week"/>
+<artifact id="Observation/ExampleStrengthDaysPerWeek" key="Observation-ExampleStrengthDaysPerWeek" name="Observation - Exercise Vital Sign Strength Days per Week"/>
+<artifact id="Observation/Scen2ObsActivityPeakHR" key="Observation-Scen2ObsActivityPeakHR" name="Observation - Maximum Activity Heart Rate - Scenario 2"/>
+<artifact id="Observation/Scen1ObservationMinsPerDay" key="Observation-Scen1ObservationMinsPerDay" name="Observation - Minutes per Day - Scenario 1"/>
+<artifact id="Observation/Scen2ObsMinutesPerDay" key="Observation-Scen2ObsMinutesPerDay" name="Observation - Minutes per Day - Scenario 2"/>
+<artifact id="Observation/Scen1ObservationMinsPerWeek" key="Observation-Scen1ObservationMinsPerWeek" name="Observation - Minutes per Week - Scenario 1"/>
+<artifact id="Observation/Scen2ObsMinutesPerDay2" key="Observation-Scen2ObsMinutesPerDay2" name="Observation - Minutes per day 'patient-submitted' - Scenario 2"/>
+<artifact id="Observation/Scen4ObservationEVSMinutesPerDay" key="Observation-Scen4ObservationEVSMinutesPerDay" name="Observation - Minutes/Day - Scenario 4"/>
+<artifact id="Observation/Scen4ObservationEVSMinutesPerDay2" key="Observation-Scen4ObservationEVSMinutesPerDay2" name="Observation - Minutes/Day#2 - Scenario 4"/>
+<artifact id="Observation/Scen4ObservationEVSMinutesPerDay3" key="Observation-Scen4ObservationEVSMinutesPerDay3" name="Observation - Minutes/Day#3 - Scenario 4"/>
+<artifact id="Observation/Scen5ObsActivityModerate" key="Observation-Scen5ObsActivityModerate" name="Observation - Moderate Duration - Scenario 5"/>
+<artifact id="Observation/Scen2ObsActivityExperience" key="Observation-Scen2ObsActivityExperience" name="Observation - Patient's Activity Experience - Scenario 2"/>
+<artifact id="Observation/ExamplePeakDailyHeartRate" key="Observation-ExamplePeakDailyHeartRate" name="Observation - Peak Daily Heart Rate"/>
+<artifact id="Observation/Scen4ObservationPeakDailyHeartRate" key="Observation-Scen4ObservationPeakDailyHeartRate" name="Observation - Peak Daily Heart Rate - Scenario 4"/>
+<artifact id="Observation/Scen1ObservationStrengthDaysPerWeek" key="Observation-Scen1ObservationStrengthDaysPerWeek" name="Observation - Strength Days per Week - Scenario 1"/>
+<artifact id="Observation/Scen5ObsBloodGlucose" key="Observation-Scen5ObsBloodGlucose" name="Observation - US Core Blood Glucose - Scenario 5"/>
+<artifact id="Observation/Scen5ObsActivityVigorous" key="Observation-Scen5ObsActivityVigorous" name="Observation - Vigorous Duration - Scenario 5"/>
+<artifact id="Organization/Scen3OrgYMCA" key="Organization-Scen3OrgYMCA" name="Organization - Cincinnati Central YMCA - Scenario 3"/>
+<artifact id="Organization/Scen2OrgFit4Life" key="Organization-Scen2OrgFit4Life" name="Organization - Fit 4 Life - Scenario 2"/>
+<artifact id="Organization/Scen2OrgGetFitTraining" key="Organization-Scen2OrgGetFitTraining" name="Organization - Get Fit Training - Scenario 2"/>
+<artifact id="Organization/Scen2OrgGoodCardio" key="Organization-Scen2OrgGoodCardio" name="Organization - Good Health Cardiology - Scenario 2"/>
+<artifact id="Organization/Scen1OrgGoodhealth" key="Organization-Scen1OrgGoodhealth" name="Organization - Good Health Clinic - Scenario 1"/>
+<artifact id="Organization/Scen3OrgMainClinic" key="Organization-Scen3OrgMainClinic" name="Organization - Main Street Clinic - Scenario 3"/>
+<artifact id="CapabilityStatement/pa-care-manager" key="CapabilityStatement-pa-care-manager" name="PA Care Manager"/>
+<artifact id="StructureDefinition/pa-careplan" key="StructureDefinition-pa-careplan" name="PA Care Plan"/>
+<artifact id="StructureDefinition/pa-condition-low-pa" key="StructureDefinition-pa-condition" name="PA Condition - Low Physical Activity"/>
+<artifact id="ValueSet/pa-condition-verification-status" key="ValueSet-pa-condition-verification-status" name="PA Condition Verification Status"/>
+<artifact id="ValueSet/pa-diagnosticreport-status" key="ValueSet-pa-diagnosticreport-status" name="PA DiagnosticReport Statuses"/>
+<artifact id="ValueSet/pa-diagnosticreport-type" key="ValueSet-pa-diagnosticreport-type" name="PA DiagnosticReport Types"/>
+<artifact id="StructureDefinition/pa-goal" key="StructureDefinition-pa-goal" name="PA Goal"/>
+<artifact id="ValueSet/pa-goal-target-measure" key="ValueSet-pa-goal-target-measure" name="PA Goal Target Measure Codes"/>
+<artifact id="StructureDefinition/pa-diagnosticreport" key="StructureDefinition-pa-diagnosticreport" name="PA Intervention Report"/>
+<artifact id="StructureDefinition/pa-observation-evs-days-per-week" key="StructureDefinition-observation-evs-days-per-week" name="PA Observation - EVS, Days/Week"/>
+<artifact id="StructureDefinition/pa-observation-evs-min-per-day" key="StructureDefinition-observation-evs-min-per-day" name="PA Observation - EVS, Minutes/Day"/>
+<artifact id="StructureDefinition/pa-observation-evs-min-per-week" key="StructureDefinition-observation-min-per-week" name="PA Observation - EVS, Minutes/Week"/>
+<artifact id="StructureDefinition/pa-observation-strength-days-per-week" key="StructureDefinition-observation-strength-days-per-week" name="PA Observation - EVS, Strength Days/Week"/>
+<artifact id="StructureDefinition/pa-observation-activity-group" key="StructureDefinition-pa-activity-Group" name="PA Observation - Supporting, Activity Group"/>
+<artifact id="StructureDefinition/pa-observation-activity-measure" key="StructureDefinition-pa-activity-measure" name="PA Observation - Supporting, Activity-based"/>
+<artifact id="StructureDefinition/pa-observation-time-measure" key="StructureDefinition-pa-time-measure" name="PA Observation - Supporting, Time-based"/>
+<artifact id="ValueSet/pa-feeling-scale" key="ValueSet-pa-feeling-scale" name="PA Observation Activity Feeling Scale"/>
+<artifact id="ValueSet/pa-observation-code-activity" key="ValueSet-PAActivityMeasures" name="PA Observation Activity-related codes"/>
+<artifact id="StructureDefinition/pa-observation-base" key="StructureDefinition-observation-exercise-base" name="PA Observation Base"/>
+<artifact id="StructureDefinition/pa-observation-evs" key="StructureDefinition-pa-observation-evs" name="PA Observation EVS Base"/>
+<artifact id="ValueSet/pa-observation-status" key="ValueSet-pa-observation-status" name="PA Observation Statuses"/>
+<artifact id="ValueSet/pa-observation-code-time" key="ValueSet-PATimeMeasures" name="PA Observation Time-related codes"/>
+<artifact id="ValueSet/pa-observation-code-evs" key="ValueSet-ValueSetEVS" name="PA Observation Vital Sign Codes"/>
+<artifact id="CapabilityStatement/pa-patient-engagement" key="CapabilityStatement-pa-patient-engagement" name="PA Patient Engagement"/>
+<artifact id="StructureDefinition/pa-relatedperson" key="StructureDefinition-pa-relatedperson" name="PA Related Person"/>
+<artifact id="CapabilityStatement/pa-service-provider-full" key="CapabilityStatement-pa-service-provider-full" name="PA Service Provider (Full)"/>
+<artifact id="CapabilityStatement/pa-service-provider-light" key="CapabilityStatement-pa-referral-recipient" name="PA Service Provider (Light)"/>
+<artifact id="StructureDefinition/pa-servicerequest" key="StructureDefinition-pa-servicerequest" name="PA Service Request"/>
+<artifact id="ValueSet/pa-diagnosticreport-category" key="ValueSet-USCorePAServiceRequestCategory" name="PA ServiceRequest Category - USCore"/>
+<artifact id="ValueSet/pa-servicerequest-intent" key="ValueSet-pa-servicerequest-intent" name="PA ServiceRequest Intents"/>
+<artifact id="ValueSet/pa-servicerequest-code" key="ValueSet-PAInterventions" name="PA ServiceRequest Intervention Codes"/>
+<artifact id="ValueSet/pa-servicerequest-status" key="ValueSet-pa-servicerequest-status" name="PA ServiceRequest Status"/>
+<artifact id="ValueSet/pa-task-status" key="ValueSet-pa-task-status" name="PA Task Fulfillment Status"/>
+<artifact id="StructureDefinition/pa-task-for-referral-management" key="StructureDefinition-pa-task-for-referral-management" name="PA Task for Referral Management"/>
+<artifact id="Parameters/Scen2Parameters" key="Parameters-Scen2Parameters" name="Parameters 'Subscription Status' - GetFit Task - Scenario 2"/>
+<artifact id="Parameters/Scen2Parameters2" key="Parameters-Scen2Parameters2" name="Parameters 'Subscription Status' - Task - Fit 4 Life 'accepted' - Scenario 2"/>
+<artifact id="Parameters/Scen2Parameters3" key="Parameters-Scen2Parameters3" name="Parameters 'Subscription Status' - Task - Fit 4 Life 'completed' - Scenario 2"/>
+<artifact id="Parameters/Scen3Parameters1" key="Parameters-Scen3Parameters1" name="Parameters 'Subscription Status' - Task - accepted - Scenario 3"/>
+<artifact id="Parameters/Scen3Parameters2" key="Parameters-Scen3Parameters2" name="Parameters 'Subscription Status' - Task - completed - Scenario 3"/>
+<artifact id="Parameters/ExampleSubscriptionStatusWithIds" key="Parameters-ExampleSubscriptionStatusWithIds" name="Parameters (Subscription Status) - Task with Ids"/>
+<artifact id="Parameters/ExampleSubscriptionStatusWithNoIds" key="Parameters-ExampleSubscriptionStatusWithNoIds" name="Parameters (Subscription Status) - Task with no Ids"/>
+<artifact id="Patient/Scen3PatientShevchenko" key="Patient-Scen3PatientShevchenko" name="Patient - James Shevchenko - Scenario 3"/>
+<artifact id="Patient/Scen2PatientJohansson" key="Patient-Scen2PatientJohansson" name="Patient - Johansson - Scenario 2"/>
+<artifact id="Patient/Scen1PatientKhatun" key="Patient-Scen1PatientKhatun" name="Patient - Jorin Khatun - Scenario 1"/>
+<artifact id="Patient/Scen4PatientScarborough" key="Patient-Scen4PatientScarborough" name="Patient - Ms. Scarborough - Scenario 4"/>
+<artifact id="RelatedPerson/Scen5RelatedPersonNadia" key="RelatedPerson-Scen5RelatedPersonNadia" name="Patient - Nadia Belyaev - Scenario 5"/>
+<artifact deprecated="true" id="StructureDefinition/pa-procedure" key="StructureDefinition-pa-procedure" name="Physical Activity Procedure"/>
+<artifact id="Practitioner/Scen3PractitionerBlackrock" key="Practitioner-Scen3PractitionerBlackrock" name="Practitioner - Dr. Blackrock - Scenario 3"/>
+<artifact id="Practitioner/Scen1PractitionerPatel" key="Practitioner-Scen1PractitionerPatel" name="Practitioner - Dr. Patel - Scenario 1"/>
+<artifact id="Practitioner/Scen2PractitionerLopez" key="Practitioner-Scen2PractitionerLopez" name="Practitioner - John Lopez - Scenario 2"/>
+<artifact id="Practitioner/Scen2PractitionerMatthews" key="Practitioner-Scen2PractitionerMatthews" name="Practitioner - Mr. Matthews - Scenario 2"/>
+<artifact id="Practitioner/Scen2PractitionerWang" key="Practitioner-Scen2PractitionerWang" name="Practitioner - Mrs. Wang - Scenario 2"/>
+<artifact id="Practitioner/Scen4Practitioner" key="Practitioner-Scen4Practitioner" name="Practitioner - Ms. Rocha - Scenario 4"/>
+<artifact id="PractitionerRole/Scen1RolePatel" key="PractitionerRole-Scen1RolePatel" name="Practitioner Role - Dr. Patel - Scenario 1"/>
+<artifact id="PractitionerRole/Scen3RoleBlackrock" key="PractitionerRole-Scen3RoleBlackrock" name="PractitionerRole - Dr. Blackrock - Scenario 3"/>
+<artifact id="PractitionerRole/Scen2RoleLopez" key="PractitionerRole-Scen2RoleLopez" name="PractitionerRole - John Lopez - Scenario 2"/>
+<artifact id="PractitionerRole/Scen2RoleMatthews" key="PractitionerRole-Scen2RoleMatthews" name="PractitionerRole - Mr. Matthews - Scenario 2"/>
+<artifact id="PractitionerRole/Scen2RoleWang" key="PractitionerRole-Scen2RoleWang" name="PractitionerRole - Mrs. Wang - Scenario 2"/>
+<artifact id="PractitionerRole/Scen4Role" key="PractitionerRole-Scen4Role" name="PractitionerRole - Ms. Rocha - Scenario 4"/>
+<artifact id="Questionnaire/Scen4Questionnaire" key="Questionnaire-Scen4Questionnaire" name="Questionnaire - Exercise Satisfaction - Scenario 4"/>
+<artifact id="QuestionnaireResponse/Scen4QuestionnaireResponse" key="QuestionnaireResponse-Scen4QuestionnaireResponse" name="QuestionnaireResponse - Exercise Satisfaction - Scenario 4"/>
+<artifact id="QuestionnaireResponse/Scen4QuestionnaireResponse2" key="QuestionnaireResponse-Scen4QuestionnaireResponse2" name="QuestionnaireResponse - Exercise Satisfaction2 - Scenario 4"/>
+<artifact id="StructureDefinition/reference-rest" key="StructureDefinition-reference-rest" name="Reference - RESTful"/>
+<artifact id="StructureDefinition/reference-rest-or-logical" key="StructureDefinition-reference-rest-or-logical" name="Reference - RESTful or Logical"/>
+<artifact id="RelatedPerson/ExampleRelatedPerson" key="RelatedPerson-ExampleRelatedPerson" name="RelatedPerson - Relative"/>
+<artifact id="Patient/Scen5PatientRosalie" key="Patient-Scen5PatientRosalie" name="RelatedPerson - Rosalie Belyaev - Scenario 5"/>
+<artifact id="ExampleScenario/Scen1ExercisePrescriptionScenario" key="ExampleScenario-Scen1ExercisePrescriptionScenario" name="Scenario 1 - Exercise Prescription"/>
+<artifact id="ExampleScenario/Scen2ProviderToPersonaltrainerReferral" key="ExampleScenario-Scen2ProviderToPersonaltrainerReferral" name="Scenario 2 - Provider to Personal Trainer Post-Rehabilitation Referral"/>
+<artifact id="ExampleScenario/Scen3ProviderToYMCAReferral" key="ExampleScenario-Scen3ProviderToYMCAReferral" name="Scenario 3 - Patient Seeks Referral for Exercise Program"/>
+<artifact id="ExampleScenario/Scen4PhysicalActivityPlan" key="ExampleScenario-Scen4PhysicalActivityPlan" name="Scenario 4 - Patient Works with Personal Trainer"/>
+<artifact id="ExampleScenario/Scen5ActivityAndGlucoseObservations" key="ExampleScenario-Scen5ActivityAndGlucoseObservations" name="Scenario 5 - Patient-Provider Communication on Activity and Blood Glucose Observations"/>
+<artifact id="ServiceRequest/Scen3ServiceRequest" key="ServiceRequest-Scen3ServiceRequest" name="ServiceRequest - PA Program Referral - Scenario 3"/>
+<artifact id="ServiceRequest/ExampleServiceRequest" key="ServiceRequest-ExampleServiceRequest" name="ServiceRequest - PA Referral"/>
+<artifact id="ServiceRequest/Scen1ExerciseRx" key="ServiceRequest-Scen1ExerciseRx" name="ServiceRequest - Prescription - Scenario 1"/>
+<artifact id="ServiceRequest/Scen2ServiceRequest" key="ServiceRequest-Scen2ServiceRequest" name="ServiceRequest - for Physical Activity Program - Scenario 2"/>
+<artifact id="Bundle/ExampleSubscriptionBundleWithNoIds" key="Bundle-ExampleSubscriptionBundleWithNoIds" name="Subscription (Notification Bundle) - Task with no Ids"/>
+<artifact id="Subscription/Scen2SubscriptionEhr" key="Subscription-Scen2SubscriptionEhr" name="Subscription - EHR Monitoring Task - Scenario 2"/>
+<artifact id="Subscription/Scen3SubscriptionEhr" key="Subscription-Scen3SubscriptionEhr" name="Subscription - EHR Monitoring Task - Scenario 3"/>
+<artifact id="Subscription/Scen2SubscriptionGetFit" key="Subscription-Scen2SubscriptionGetFit" name="Subscription - GetFit Monitoring Task - Scenario 2"/>
+<artifact id="Subscription/ExampleSubscriptionWebhook" key="Subscription-ExampleSubscriptionWebhook" name="Subscription - Task - Care Manager"/>
+<artifact id="Subscription/ExampleSubscriptionSMS" key="Subscription-ExampleSubscriptionSMS" name="Subscription - Task - Patient by SMS"/>
+<artifact id="Subscription/ExampleSubscriptionEmail" key="Subscription-ExampleSubscriptionEmail" name="Subscription - Task - Service Provider by Email"/>
+<artifact id="Task/Scen2TaskFit4LifeV2" key="Task-Scen2TaskFit4LifeV2" name="Task - Fit 4 Life Referral 'accepted' - Scenario 2"/>
+<artifact id="Task/Scen2TaskFit4LifeV3" key="Task-Scen2TaskFit4LifeV3" name="Task - Fit 4 Life Referral 'completed' - Scenario 2"/>
+<artifact id="Task/Scen2TaskFit4LifeV1" key="Task-Scen2TaskFit4LifeV1" name="Task - Fit 4 Life Referral 'requested' - Scenario 2"/>
+<artifact id="Task/ExampleFulfillmentTask" key="Task-ExampleFufillmentTask" name="Task - PA Referral Fulfillment Request"/>
+<artifact id="Task/Scen3TaskYMCAV2" key="Task-Scen3TaskYMCAV2" name="Task - Seeking fufillment from YMCA 'in-progress' - Scenario 3"/>
+<artifact id="Task/Scen3TaskYMCAV1" key="Task-Scen3TaskYMCAV1" name="Task - Seeking fufillment from YMCA 'requested' - Scenario 3"/>
+<artifact id="Task/Scen2TaskGetFitV2" key="Task-Scen2TaskGetFitV2" name="Task - Seeking fulfillment from GetFit 'refused' - Scenario 2"/>
+<artifact id="Task/Scen2TaskGetFitV1" key="Task-Scen2TaskGetFitV1" name="Task - Seeking fulfillment from GetFit 'requested' - Scenario 2"/>
+<artifact id="Task/Scen3TaskYMCAV3" key="Task-Scen3TaskYMCAV3" name="Task - Seeking fulfillment from YMCA 'completed' - Scenario 3"/>
+<artifact id="Task/Scen4TaskFillSurveyV2" key="Task-Scen4TaskFillSurveyV2" name="Task - fill Questionnaire#1 'completed' - Scenario 4"/>
+<artifact id="Task/Scen4TaskFillSurveyV1" key="Task-Scen4TaskFillSurveyV1" name="Task - fill Questionnaire#1 'requested' - Scenario 4"/>
+<artifact id="Task/Scen4TaskFillSurvey2V2" key="Task-Scen4TaskFillSurvey2V2" name="Task - fill Questionnaire#2 'completed' - Scenario 4"/>
+<artifact id="Task/Scen4TaskFillSurvey2V1" key="Task-Scen4TaskFillSurvey2V1" name="Task - fill Questionnaire#2 'requested' - Scenario 4"/>
+<artifact id="Task/Scen4TaskReviewVideoV2" key="Task-Scen4TaskReviewVideoV2" name="Task - view video 'completed' - Scenario 4"/>
+<artifact id="Task/Scen4TaskReviewVideoV1" key="Task-Scen4TaskReviewVideoV1" name="Task - view video 'requested' - Scenario 4"/>
+<artifact id="CodeSystem/pa-temporary-codes" key="CodeSystem-temporary-codes" name="Temporary Codes"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="conformance" name="Conformance Expectations"/>
+<page key="credits" name="Credits"/>
+<page key="design" name="Design Considerations"/>
+<page key="downloads" name="Downloads"/>
+<page key="fhir" name="FHIR Background"/>
+<page key="artifacts" name="IG Artifacts"/>
+<page key="scenarios" name="Implementation Scenarios"/>
+<page key="background" name="Importance of Physical Activity"/>
+<page key="openissues" name="Open Issues"/>
+<page key="measures" name="Physical Activity Measures"/>
+<page key="workflow" name="Physical Activity Workflow"/>
+<page key="interventions" name="Plans &amp; Interventions"/>
+<page key="security" name="Privacy and Security Considerations"/>
+<page key="toc" name="Table of Contents"/>
+<page key="index" name="Welcome to the Physical Activity IG"/>
+</specification>

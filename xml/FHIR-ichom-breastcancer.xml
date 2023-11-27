@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/ichom-breast-cancer/2023Jan" ciUrl="https://build.fhir.org/ig/HL7/fhir-ichom-breast-cancer-ig" defaultVersion="1.0.0" defaultWorkgroup="cic" gitUrl="https://github.com/HL7/fhir-ichom-breast-cancer-ig" url="http://hl7.org/fhir/uv/ichom-breast-cancer">
+<version code="current" url="https://build.fhir.org/ig/HL7/fhir-ichom-breast-cancer-ig"/>
+<version code="1.0.0" url="http://hl7.org/fhir/uv/ichom-breast-cancer/STU1"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/ichom-breast-cancer/2023Jan"/>
+<version code="0.1.0-ballot" deprecated="true"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="CodeSystem/AgreementResponseCodeSystem" key="CodeSystem-AgreementResponseCodeSystem" name="Agreement response CodeSystem"/>
+<artifact id="ValueSet/AgreementResponseVS" key="ValueSet-AgreementResponseVS" name="Agreement response ValueSet"/>
+<artifact id="StructureDefinition/axilla-surgery" key="StructureDefinition-axilla-surgery" name="Axilla surgery"/>
+<artifact id="ValueSet/AxillaSurgeryVS" key="ValueSet-AxillaSurgeryVS" name="Axilla surgery ValueSet"/>
+<artifact id="Procedure/AxillaSurgeryPatient147" key="Procedure-AxillaSurgeryPatient147" name="AxillaSurgeryPatient147"/>
+<artifact id="StructureDefinition/axillary-clearance" key="StructureDefinition-axillary-clearance" name="Axillary clearance"/>
+<artifact id="Procedure/AxillaryClearancePatient147" key="Procedure-AxillaryClearancePatient147" name="AxillaryClearancePatient147"/>
+<artifact id="StructureDefinition/best-supportive-care" key="StructureDefinition-best-supportive-care" name="Best supportive care"/>
+<artifact id="Procedure/BestSupportiveCarePatient147" key="Procedure-BestSupportiveCarePatient147" name="BestSupportiveCarePatient147"/>
+<artifact id="StructureDefinition/ichom-body-height" key="StructureDefinition-ichom-body-height" name="Body height"/>
+<artifact id="StructureDefinition/ichom-body-weight" key="StructureDefinition-ichom-body-weight" name="Body weight"/>
+<artifact id="Observation/BodyHeightPatient147" key="Observation-BodyHeightPatient147" name="BodyHeightPatient147"/>
+<artifact id="Observation/BodyWeightPatient147" key="Observation-BodyWeightPatient147" name="BodyWeightPatient147"/>
+<artifact id="StructureDefinition/patient" key="StructureDefinition-patient" name="Breast cancer patient"/>
+<artifact id="StructureDefinition/breast-cancer-surgery" key="StructureDefinition-breast-cancer-surgery" name="Breast cancer surgery"/>
+<artifact id="CodeSystem/BreastSurgeryTypesCodeSystem" key="CodeSystem-BreastSurgeryTypesCodeSystem" name="Breast surgery types CodeSystem"/>
+<artifact id="Procedure/BreastCancerSurgeryPatient147" key="Procedure-BreastCancerSurgeryPatient147" name="BreastCancerSurgeryPatient147"/>
+<artifact deprecated="true" id="CodeSystem/BreastQCodeSystem" key="CodeSystem-BreastQCodeSystem" name="BreastQ response CodeSystem"/>
+<artifact deprecated="true" id="ValueSet/BreastQValueSet" key="ValueSet-BreastQValueSet" name="BreastQ response ValueSet"/>
+<artifact deprecated="true" id="Bundle/DebugBundleClinical-02-SixMonths" key="Bundle-DebugBundleClinical-02-SixMonths" name="Bundle of the clinical response at 6 months follow-up"/>
+<artifact deprecated="true" id="Bundle/DebugBundleClinical-03-Annual" key="Bundle-DebugBundleClinical-03-Annual" name="Bundle of the clinical response at annual follow-up"/>
+<artifact deprecated="true" id="Bundle/DebugBundlePatient-03-Year1and2" key="Bundle-DebugBundlePatient-03-Year1and2" name="Bundle of the patient response at 1 and 2 years of follow-up"/>
+<artifact deprecated="true" id="Bundle/DebugBundlePatient-04-Year3and4" key="Bundle-DebugBundlePatient-04-Year3and4" name="Bundle of the patient response at 3 and 4 years of follow-up"/>
+<artifact deprecated="true" id="Bundle/DebugBundlePatient-02-SixMonths" key="Bundle-DebugBundlePatient-02-SixMonths" name="Bundle of the patient response at 6 months follow-up"/>
+<artifact deprecated="true" id="Bundle/DebugBundlePatient-01-Baseline" key="Bundle-DebugBundlePatient-01-Baseline" name="Bundle of the patient response at baseline"/>
+<artifact deprecated="true" id="Bundle/DebugBundlePatient-02-Follow-Up" key="Bundle-DebugBundlePatient-02-Follow-Up" name="Bundle of the patient response during post-treatment follow-up"/>
+<artifact deprecated="true" id="Bundle/DebugBundleClinical-01-Baseline" key="Bundle-DebugBundleClinical-01-Baseline" name="Bundle the clinical response at baseline"/>
+<artifact id="StructureDefinition/breast-cancer-stage-group" key="StructureDefinition-breast-cancer-stage-group" name="Cancer Stage Group"/>
+<artifact id="StructureDefinition/chemotherapy" key="StructureDefinition-chemotherapy" name="Chemotherapy"/>
+<artifact id="Procedure/ChemotherapyPatient147" key="Procedure-ChemotherapyPatient147" name="ChemotherapyPatient147"/>
+<artifact id="Observation/ClinicalMetastasesPatient147" key="Observation-ClinicalMetastasesPatient147" name="ClinicalMetastasesPatient147"/>
+<artifact id="Observation/ClinicalNodalStagePatient147" key="Observation-ClinicalNodalStagePatient147" name="ClinicalNodalStagePatient147"/>
+<artifact id="Questionnaire/ClinicalResponseAnnualUpdate" key="Questionnaire-ClinicalResponseAnnualUpdate" name="ClinicalResponseAnnualUpdate"/>
+<artifact id="Questionnaire/ClinicalResponseBaseline" key="Questionnaire-ClinicalResponseBaseline" name="ClinicalResponseBaseline"/>
+<artifact id="Questionnaire/ClinicalResponseSixMonths" key="Questionnaire-ClinicalResponseSixMonths" name="ClinicalResponseSixMonths"/>
+<artifact id="Observation/ClinicalTNMStagePatient147" key="Observation-ClinicalTNMStagePatient147" name="ClinicalTNMStagePatient147"/>
+<artifact id="Observation/ClinicalTumorStagePatient147" key="Observation-ClinicalTumorStagePatient147" name="ClinicalTumorStagePatient147"/>
+<artifact id="StructureDefinition/complication" key="StructureDefinition-complication" name="Complication"/>
+<artifact id="Condition/ComplicationPatient147" key="Condition-ComplicationPatient147" name="ComplicationPatient147"/>
+<artifact id="StructureDefinition/death-attr-bc" key="StructureDefinition-death-attr-bc" name="Death attributable to breast cancer"/>
+<artifact id="Observation/DeathAttributableBCPatient147" key="Observation-DeathAttributableBCPatient147" name="DeathAttributableBCPatient147"/>
+<artifact deprecated="true" id="CodeSystem/EORTCQLQCodeSystem" key="CodeSystem-EORTCQLQCodeSystem" name="EORTC-QLQ questionnaire CodeSystem"/>
+<artifact deprecated="true" id="ValueSet/EORTCQLQValueSet" key="ValueSet-EORTCQLQValueSet" name="EORTC-QLQ questionnaire ValueSet"/>
+<artifact id="Observation/ERStatusPatient147" key="Observation-ERStatusPatient147" name="ERStatusPatient147"/>
+<artifact id="StructureDefinition/EducationLevel" key="StructureDefinition-EducationLevel" name="Education Level Extension"/>
+<artifact id="ValueSet/EducationLevelVS" key="ValueSet-EducationLevelVS" name="Education level of patient ValueSet"/>
+<artifact id="StructureDefinition/endopredicton-score" key="StructureDefinition-endopredicton-score" name="Endopredict score"/>
+<artifact id="Observation/EndopredictonPatient147" key="Observation-EndopredictonPatient147" name="EndopredictonPatient147"/>
+<artifact id="StructureDefinition/er-status" key="StructureDefinition-er-status" name="Estrogen receptor status"/>
+<artifact id="ValueSet/EstrogenStatusVS" key="ValueSet-EstrogenStatusVS" name="Estrogen receptor status ValueSet"/>
+<artifact id="StructureDefinition/Ethnicity" key="StructureDefinition-Ethnicity" name="Ethnicity Extension"/>
+<artifact id="Observation/TreatmentPlanFollowedPatient147" key="Observation-TreatmentPlanFollowedPatient147" name="Example Real Treatment Plan Followed"/>
+<artifact id="Observation/TreatmentPlanNotFollowedPatient147" key="Observation-TreatmentPlanNotFollowedPatient147" name="Example Treatment Plan Not Followed"/>
+<artifact id="Patient/BreastCancerPatient121" key="Patient-BreastCancerPatient121" name="Example of Breast Cancer Patient Cornetet"/>
+<artifact id="Patient/BreastCancerPatient147" key="Patient-BreastCancerPatient147" name="Example of Breast Cancer Patient Letsche"/>
+<artifact id="Patient/BreastCancerPatient134" key="Patient-BreastCancerPatient134" name="Example of Breast Cancer Patient Mortera"/>
+<artifact id="Procedure/TargetedTherapyPatient134" key="Procedure-TargetedTherapyPatient134" name="Example of Targeted therapy"/>
+<artifact id="Observation/MenopausalStatusPatient147" key="Observation-MenopausalStatusPatient147" name="Example of menopausal status"/>
+<artifact deprecated="true" id="CodeSystem/FACTESCodeSystem" key="CodeSystem-FACTESCodeSystem" name="FACT-ES questionnaire CodeSystem"/>
+<artifact deprecated="true" id="ValueSet/FACTESValueSet" key="ValueSet-FACTESValueSet" name="FACT-ES questionnaire ValueSet"/>
+<artifact id="ValueSet/GermlineMutationVS" key="ValueSet-GermlineMutationVS" name="Germline Mutation ValueSet"/>
+<artifact id="StructureDefinition/germline-mutation" key="StructureDefinition-germline-mutation" name="Germline mutation"/>
+<artifact id="Observation/GermlineMutationPatient147" key="Observation-GermlineMutationPatient147" name="GermlineMutationPatient147"/>
+<artifact id="ValueSet/GradingVS" key="ValueSet-GradingVS" name="Grading of tumor ValueSet"/>
+<artifact id="StructureDefinition/her-status" key="StructureDefinition-her-status" name="HER2 receptor status"/>
+<artifact id="ValueSet/HER2ReceptorStatusVS" key="ValueSet-HER2ReceptorStatusVS" name="HER2 receptor status ValueSet"/>
+<artifact id="Observation/HERStatusPatient147" key="Observation-HERStatusPatient147" name="HERStatusPatient147"/>
+<artifact id="StructureDefinition/histo-type" key="StructureDefinition-histo-type" name="Histological type of the tumor"/>
+<artifact id="ValueSet/HistologicalTypeVS" key="ValueSet-HistologicalTypeVS" name="Histological type of the tumor ValueSet"/>
+<artifact id="Observation/HistotypePatient147" key="Observation-HistotypePatient147" name="HistotypePatient147"/>
+<artifact id="StructureDefinition/hormonal-therpay" key="StructureDefinition-hormonal-therpay" name="Hormonal therapy"/>
+<artifact id="Procedure/HormonaltherapyPatient147" key="Procedure-HormonaltherapyPatient147" name="HormonaltherapyPatient147"/>
+<artifact id="StructureDefinition/immunotherapy" key="StructureDefinition-immunotherapy" name="Immunotherapy"/>
+<artifact id="Procedure/ImmunotherapyPatient147" key="Procedure-ImmunotherapyPatient147" name="ImmunotherapyPatient147"/>
+<artifact id="CodeSystem/ComplicationImpactCodeSystem" key="CodeSystem-ComplicationImpactCodeSystem" name="Impact of complication CodeSystem"/>
+<artifact id="ValueSet/ComplicationImpactVS" key="ValueSet-ComplicationImpactVS" name="Impact of complication ValueSet"/>
+<artifact id="ValueSet/TherapyIntentVS" key="ValueSet-TherapyIntentVS" name="Intent of therapy ValueSet"/>
+<artifact id="StructureDefinition/invasion-grade" key="StructureDefinition-invasion-grade" name="Invasion grade"/>
+<artifact id="Observation/InvasionGradePatient147" key="Observation-InvasionGradePatient147" name="InvasionGradePatient147"/>
+<artifact deprecated="true" id="StructureDefinition/involved-margins-reoperation" key="StructureDefinition-involved-margins-reoperation" name="Involved Margins Reoperation"/>
+<artifact id="ValueSet/LateralityVS" key="ValueSet-LateralityVS" name="Laterality of breast cancer ValueSet"/>
+<artifact id="ValueSet/LateralityNewCancerVS" key="ValueSet-LateralityNewCancerVS" name="Laterality of new cancer ValueSet"/>
+<artifact id="CodeSystem/ImplantLocationCodeSystem" key="CodeSystem-ImplantLocationCodeSystem" name="Location of the implant CodeSystem"/>
+<artifact id="ValueSet/ImplantLocationVS" key="ValueSet-ImplantLocationVS" name="Location of the implant ValueSet"/>
+<artifact id="StructureDefinition/lymph-nodes-involved" key="StructureDefinition-lymph-nodes-involved" name="Lymph nodes involved"/>
+<artifact id="Observation/LymphNodesInvolvedPatient147" key="Observation-LymphNodesInvolvedPatient147" name="LymphNodesInvolvedPatient147"/>
+<artifact id="Observation/LymphNodesResectedPatient147" key="Observation-LymphNodesResectedPatient147" name="LymphNodesResectedPatient147"/>
+<artifact id="StructureDefinition/mammaprint-score" key="StructureDefinition-mammaprint-score" name="Mammaprint score"/>
+<artifact id="Observation/MammaprintPatient147" key="Observation-MammaprintPatient147" name="MammaprintPatient147"/>
+<artifact id="StructureDefinition/menopausal-status" key="StructureDefinition-menopausal-status" name="Menopausal status"/>
+<artifact id="ValueSet/MenopausalStatusVS" key="ValueSet-MenopausalStatusVS" name="Menopausal status of patient ValueSet"/>
+<artifact id="CodeSystem/MolecularProfilingCodeSystem" key="CodeSystem-MolecularProfilingCodeSystem" name="Molecular Profiling CodeSystem"/>
+<artifact id="ValueSet/MolecularProfilingStatusVS" key="ValueSet-MolecularProfilingStatusVS" name="Molecular profiling"/>
+<artifact id="CodeSystem/TreatmentPlanComplianceCodeSystem" key="CodeSystem-TreatmentPlanComplianceCodeSystem" name="Observation identifiers for treatment plan non-compliance reason CodeSystem"/>
+<artifact id="ValueSet/TreatmentPlanComplianceVS" key="ValueSet-TreatmentPlanComplianceVS" name="Observation identifiers for treatment plan non-compliance reason ValueSet"/>
+<artifact id="StructureDefinition/oncotype-score" key="StructureDefinition-oncotype-score" name="Oncotype Score"/>
+<artifact id="Observation/OncotypePatient147" key="Observation-OncotypePatient147" name="OncotypePatient147"/>
+<artifact id="Observation/PRStatusPatient147" key="Observation-PRStatusPatient147" name="PRStatusPatient147"/>
+<artifact id="Observation/PathologicalMetastasesPatient147" key="Observation-PathologicalMetastasesPatient147" name="PathologicalMetastasesPatient147"/>
+<artifact id="Observation/PathologicalNodalStagePatient147" key="Observation-PathologicalNodalStagePatient147" name="PathologicalNodalStagePatient147"/>
+<artifact id="Observation/PathologicalTNMStagePatient147" key="Observation-PathologicalTNMStagePatient147" name="PathologicalTNMStagePatient147"/>
+<artifact id="Observation/PathologicalTumorStagePatient147" key="Observation-PathologicalTumorStagePatient147" name="PathologicalTumorStagePatient147"/>
+<artifact id="CodeSystem/PatientEducationCodeSystem" key="CodeSystem-PatientEducationCodeSystem" name="Patient Treatment Education Codesystem"/>
+<artifact id="ValueSet/PatientEducationVS" key="ValueSet-PatientEducationVS" name="Patient Treatment Education ValueSet"/>
+<artifact id="CodeSystem/PatientTreatPrefCodeSystem" key="CodeSystem-PatientTreatPrefCodeSystem" name="Patient treatment preference CodeSystem"/>
+<artifact id="ValueSet/PatientTreatPrefVS" key="ValueSet-PatientTreatPrefVS" name="Patient treatment preference ValueSet"/>
+<artifact id="Questionnaire/PatientReportedBaseline" key="Questionnaire-PatientReportedBaseline" name="PatientReportedBaseline"/>
+<artifact id="Questionnaire/PatientReportedFollowUp" key="Questionnaire-PatientReportedFollowUp" name="PatientReportedFollowUp"/>
+<artifact deprecated="true" id="Questionnaire/PatientReportedSixMonths" key="Questionnaire-PatientReportedSixMonths" name="PatientReportedSixMonths"/>
+<artifact deprecated="true" id="Questionnaire/PatientReportedYear1and2" key="Questionnaire-PatientReportedYear1and2" name="PatientReportedYear1and2"/>
+<artifact deprecated="true" id="Questionnaire/PatientReportedYear3and4" key="Questionnaire-PatientReportedYear3and4" name="PatientReportedYear3and4"/>
+<artifact id="StructureDefinition/primary-breastcancer" key="StructureDefinition-primary-breastcancer" name="Primary Breast Cancer Condition"/>
+<artifact id="Condition/PrimaryBreastCancerPatient147" key="Condition-PrimaryBreastCancerPatient147" name="PrimaryBreastCancerPatient147"/>
+<artifact id="StructureDefinition/pr-status" key="StructureDefinition-pr-status" name="Progesterone receptor status"/>
+<artifact id="ValueSet/ProgesteroneStatusVS" key="ValueSet-ProgesteroneStatusVS" name="Progesterone receptor status ValueSet"/>
+<artifact id="StructureDefinition/Race" key="StructureDefinition-Race" name="Race Extension"/>
+<artifact id="StructureDefinition/radiotherapy" key="StructureDefinition-radiotherapy" name="Radiotherapy"/>
+<artifact id="Procedure/RadiotherapyPatient147" key="Procedure-RadiotherapyPatient147" name="RadiotherapyPatient147"/>
+<artifact id="ValueSet/InvolvedMarginsReoperationTypeVS" key="ValueSet-InvolvedMarginsReoperationTypeVS" name="Re-operation due to involved margins ValueSet"/>
+<artifact id="StructureDefinition/reoperation-surgery" key="StructureDefinition-reoperation-surgery" name="Re-operation surgery"/>
+<artifact id="StructureDefinition/treatment-plan-followed" key="StructureDefinition-treatment-plan-followed" name="Real Treatment Plan Followed"/>
+<artifact id="CodeSystem/TreatmentPlanFollowedCodeSystem" key="CodeSystem-TreatmentPlanFollowedCodeSystem" name="Real Treatment Plan Followed CodeSystem"/>
+<artifact id="ValueSet/TreatmentPlanFollowedVS" key="ValueSet-TreatmentPlanFollowedVS" name="Real Treatment Plan Followed ValueSet"/>
+<artifact id="CodeSystem/TreatmentPlanNotFollowedCodeSystem" key="CodeSystem-TreatmentPlanNotFollowedCodeSystem" name="Real Treatment Plan Not Followed CodeSystem"/>
+<artifact id="ValueSet/ReoperationReasonVS" key="ValueSet-ReoperationReasonVS" name="Reasoncode of the re-operation"/>
+<artifact id="ValueSet/RecommendedTreatmentTypeVS" key="ValueSet-RecommendedTreatmentTypeVS" name="Recommended treatment types ValueSet"/>
+<artifact id="StructureDefinition/reconstruction-surgery" key="StructureDefinition-reconstruction-surgery" name="Reconstruction surgery"/>
+<artifact id="Procedure/ReconstructionSurgeryPatient147" key="Procedure-ReconstructionSurgeryPatient147" name="ReconstructionSurgeryPatient147"/>
+<artifact id="StructureDefinition/recr-method" key="StructureDefinition-recr-method" name="Recurrence Method"/>
+<artifact id="CodeSystem/RecurrenceMethodCodeSystem" key="CodeSystem-RecurrenceMethodCodeSystem" name="Recurrence method CodeSystem"/>
+<artifact id="ValueSet/RecurrenceMethodVS" key="ValueSet-RecurrenceMethodVS" name="Recurrence method ValueSet"/>
+<artifact id="CodeSystem/RecurrenceCodeSystem" key="CodeSystem-RecurrenceCodeSystem" name="Recurrence of neoplasm CodeSystem"/>
+<artifact id="ValueSet/RecurrenceVS" key="ValueSet-RecurrenceVS" name="Recurrence of neoplasm ValueSet"/>
+<artifact id="Observation/RecurrenceMethodPatient147" key="Observation-RecurrenceMethodPatient147" name="RecurrenceMethodPatient147"/>
+<artifact id="ValueSet/RelationshipStatusVS" key="ValueSet-RelationshipStatusVS" name="Relationship status of patient ValueSet"/>
+<artifact deprecated="true" id="Procedure/ReoperationPatient147" key="Procedure-ReoperationPatient147" name="ReoperationPatient147"/>
+<artifact id="Procedure/ReoperationSurgeryPatient147" key="Procedure-ReoperationSurgeryPatient147" name="ReoperationSurgeryPatient147"/>
+<artifact id="StructureDefinition/lymph-nodes-resected" key="StructureDefinition-lymph-nodes-resected" name="Resected lymph nodes"/>
+<artifact id="ValueSet/SACQPatientComorbidityHistory" key="ValueSet-SACQPatientComorbidityHistory" name="SACQ Patient's comorbidity history ValueSet"/>
+<artifact deprecated="true" id="CodeSystem/SACQPatientComorbidityCodeSystem" key="CodeSystem-SACQPatientComorbidityCodeSystem" name="SACQ patient's comorbidity history CodeSystem"/>
+<artifact id="CodeSystem/SatisfactionResponseCodeSystem" key="CodeSystem-SatisfactionResponseCodeSystem" name="Satisfaction response CodeSystem"/>
+<artifact id="ValueSet/SatisfactionResponseVS" key="ValueSet-SatisfactionResponseVS" name="Satisfaction response ValueSet"/>
+<artifact id="StructureDefinition/secondary-breastcancer" key="StructureDefinition-secondary-breastcancer" name="Secondary Breast Cancer Condition"/>
+<artifact id="Condition/SecondaryBreastCancerPatient147" key="Condition-SecondaryBreastCancerPatient147" name="SecondaryBreastCancerPatient147"/>
+<artifact id="StructureDefinition/sizeinvasivetumor" key="StructureDefinition-sizeinvasivetumor" name="Size of invasive tumor"/>
+<artifact id="ValueSet/TNMStageGroupVS" key="ValueSet-TNMStageGroupVS" name="Staging Type for Stage Group ValueSet"/>
+<artifact id="StructureDefinition/tnm-distant-metastases" key="StructureDefinition-tnm-distant-metastases" name="TNM Distant Metastases"/>
+<artifact deprecated="true" id="ValueSet/tnm-distant-metastases-category-vs" key="ValueSet-tnm-distant-metastases-category-vs" name="TNM Distant Metastases Value Set"/>
+<artifact id="ValueSet/TNMDistantMetastasesVS" key="ValueSet-TNMDistantMetastasesVS" name="TNM Distant Metastases ValueSet"/>
+<artifact id="StructureDefinition/tnm-primary-tumor-stage" key="StructureDefinition-tnm-primary-tumor-stage" name="TNM Primary Tumor Stage"/>
+<artifact deprecated="true" id="ValueSet/tnm-primary-tumor-category-vs" key="ValueSet-tnm-primary-tumor-category-vs" name="TNM Primary Tumor Value Set"/>
+<artifact id="ValueSet/TNMPrimaryTumorVS" key="ValueSet-TNMPrimaryTumorVS" name="TNM Primary Tumor ValueSet"/>
+<artifact id="StructureDefinition/tnm-regional-nodes-stage" key="StructureDefinition-tnm-regional-nodes-stage" name="TNM Regional Nodal Stage"/>
+<artifact deprecated="true" id="ValueSet/tnm-regional-nodes-category-vs" key="ValueSet-tnm-regional-nodes-category-vs" name="TNM Regional Nodes Value Set"/>
+<artifact id="ValueSet/TNMRegionalNodesVS" key="ValueSet-TNMRegionalNodesVS" name="TNM Regional Nodes ValueSet"/>
+<artifact id="ValueSet/TargetedAxillaSurgeryVS" key="ValueSet-TargetedAxillaSurgeryVS" name="Targeted axilla surgery ValueSet"/>
+<artifact id="StructureDefinition/targeted-therapy" key="StructureDefinition-targeted-therapy" name="Targeted therapy"/>
+<artifact id="ValueSet/LocationRadiotherapyVS" key="ValueSet-LocationRadiotherapyVS" name="The location of radiotherapy ValueSet"/>
+<artifact id="StructureDefinition/treatment-plan-not-followed" key="StructureDefinition-treatment-plan-not-followed" name="Treatment Plan Not Followed"/>
+<artifact id="ValueSet/TreatmentPlanNotFollowedVS" key="ValueSet-TreatmentPlanNotFollowedVS" name="Treatment Plan Not Followed ValueSet"/>
+<artifact id="StructureDefinition/treatment-plan" key="StructureDefinition-treatment-plan" name="Treatment recommended by a multidisciplinary team"/>
+<artifact id="CodeSystem/TreatmentTypesCodeSystem" key="CodeSystem-TreatmentTypesCodeSystem" name="Treatment variables CodeSytem"/>
+<artifact id="CarePlan/TreatmentPlanPatient147" key="CarePlan-TreatmentPlanPatient147" name="TreatmentPlanPatient147"/>
+<artifact id="StructureDefinition/tumor-grade" key="StructureDefinition-tumor-grade" name="Tumor grade"/>
+<artifact id="Observation/TumorGradePatient147" key="Observation-TumorGradePatient147" name="TumorGradePatient147"/>
+<artifact id="Observation/TumorSizePatient147" key="Observation-TumorSizePatient147" name="TumorSizePatient147"/>
+<artifact id="ValueSet/ChemoTherapyTypeVS" key="ValueSet-ChemoTherapyTypeVS" name="Type of chemotherapy ValueSet"/>
+<artifact id="CodeSystem/ComplicationTypeCodeSystem" key="CodeSystem-ComplicationTypeCodeSystem" name="Type of complication CodeSystem"/>
+<artifact id="ValueSet/ComplicationTypeVS" key="ValueSet-ComplicationTypeVS" name="Type of complication ValueSet"/>
+<artifact id="ValueSet/HormonalTherapyTypeVS" key="ValueSet-HormonalTherapyTypeVS" name="Type of hormonal therapy ValueSet"/>
+<artifact id="ValueSet/ReoperationTypeVS" key="ValueSet-ReoperationTypeVS" name="Type of re-operation"/>
+<artifact id="CodeSystem/ReconstructionTypeCodeSystem" key="CodeSystem-ReconstructionTypeCodeSystem" name="Type of reconstruction surgery CodeSystem"/>
+<artifact id="ValueSet/ReconstructionTypeVS" key="ValueSet-ReconstructionTypeVS" name="Type of reconstruction surgery ValueSet"/>
+<artifact id="ValueSet/TargetedTherapyVS" key="ValueSet-TargetedTherapyVS" name="Type of targeted therapy ValueSet"/>
+<artifact deprecated="true" id="ValueSet/TreatmentTypeValueSet" key="ValueSet-TreatmentTypeValueSet" name="Type of treatments"/>
+<artifact id="ValueSet/TreatmentTypeVS" key="ValueSet-TreatmentTypeVS" name="Type of treatments ValueSet"/>
+<artifact id="ValueSet/BreastSurgeryTypeVS" key="ValueSet-BreastSurgeryTypeVS" name="Types of breast surgery ValueSet"/>
+<artifact id="ValueSet/BodyWeightVS" key="ValueSet-BodyWeightVS" name="Units of patient's body weight ValueSet"/>
+<artifact deprecated="true" id="ValueSet/tnm-stage-group-vs" key="ValueSet-tnm-stage-group-vs" name="Value Set of Staging Type for Stage Group"/>
+<artifact id="ValueSet/NoYesUnknownVS" key="ValueSet-NoYesUnknownVS" name="Yes, No and Unknown Valueset"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="downloads" name="Downloads"/>
+<page key="fhir-basics" name="FHIR basics"/>
+<page key="3_standard-set" name="ICHOM Set"/>
+<page key="index" name="Introduction"/>
+<page key="4_security" name="Security"/>
+<page key="toc" name="Table of Contents"/>
+<page key="2_use-cases" name="Use Cases"/>
+</specification>
