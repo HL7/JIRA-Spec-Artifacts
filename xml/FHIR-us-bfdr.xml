@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gitUrl="https://github.com/HL7/fhir-bfdr" ballotUrl="http://hl7.org/fhir/us/fhir-bfdr/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-bfdr" defaultVersion="1.1.0" defaultWorkgroup="pher"  url="http://hl7.org/fhir/us/fhir-bfdr">
 <version code="current" url="https://build.fhir.org/ig/HL7/fhir-bfdr"/>
+<version code="2.0.0-ballot" url="https://hl7.org/fhir/us/fhir-bfdr/2024Jan"/>
 <version code="1.1.0" url="https://hl7.org/fhir/us/bfdr/STU1.1"/>
-<version code="1.0.0" url="https://hl7.org/fhir/us/bfdr/STU1"/>
-<version code="0.1.0" url="http://hl7.org/fhir/us/fhir-bfdr/2021Jan"/>
+<version code="1.0.0" deprecated="true" url="https://hl7.org/fhir/us/bfdr/STU1"/>
+<version code="0.1.0" deprecated="true" url="https://hl7.org/fhir/us/bfdr/2021Jan"/>
+<version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
@@ -13,7 +15,7 @@
 <artifact id="ConceptMap/BirthAttendantTitlesCM" key="ConceptMap-BirthAttendantTitlesCM" name="BirthAttendantTitles Concept Map"/>
 <artifact id="ConceptMap/BirthDeliveryOccurredCM" key="ConceptMap-BirthDeliveryOccurredCM" name="BirthDeliveryOccurred Concept Map"/>
 <artifact id="Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn" key="Bundle-bundle-coded-race-and-ethnicity-baby-g-quinn" name="Bundle - Coded Race and Ethnicity - Baby G Quinn"/>
-<artifact id="StructureDefinition/vr-demographic-coded-bundle" key="StructureDefinition-vr-demographic-coded-bundle" name="Bundle - Demographic Coded Content Bundle for BFDR"/>
+<artifact id="StructureDefinition/vr-demographic-coded-bundle" deprecated="true" key="StructureDefinition-vr-demographic-coded-bundle" name="Bundle - Demographic Coded Content Bundle for BFDR"/>
 <artifact id="StructureDefinition/BundleDocumentBFDR" key="StructureDefinition-BundleDocumentBFDR" name="Bundle - Document Birth and Fetal Death"/>
 <artifact id="Bundle/bundle-jurisdiction-fetal-death-not-named" key="Bundle-bundle-jurisdiction-fetal-death-not-named" name="Bundle - Jurisdiction Fetal Death Report - Fetus Not Named"/>
 <artifact id="Bundle/bundle-jurisdiction-live-birth-babyg-quinn" key="Bundle-bundle-jurisdiction-live-birth-babyg-quinn" name="Bundle - Jurisdiction Live Birth Report - Baby G Quinn"/>
@@ -22,9 +24,9 @@
 <artifact id="CapabilityStatement/CapabilityStatement-bfdr" key="CapabilityStatement-CapabilityStatement-bfdr" name="CapabilityStatement - Birth and Fetal Death"/>
 <artifact id="StructureDefinition/CertificateNumber" key="StructureDefinition-CertificateNumber" name="Certificate Number"/>
 <artifact id="CodeSystem/CodeSystem-abnormal-conditions-newborn" key="CodeSystem-CodeSystem-abnormal-conditions-newborn" name="CodeSystem - Abnormal Conditions Newborn"/>
-<artifact id="CodeSystem/CodeSystem-vr-birth-delivery-occurred" key="CodeSystem-CodeSystem-vr-birth-delivery-occurred" name="CodeSystem - Birth Delivery Occurred"/>
-<artifact id="CodeSystem/CodeSystem-vr-birth-and-fetal-death-financial-class" key="CodeSystem-CodeSystem-vr-birth-and-fetal-death-financial-class" name="CodeSystem - Birth and Death Financial Class"/>
-<artifact id="CodeSystem/CodeSystem-vr-fetal-death-cause-or-condition" key="CodeSystem-CodeSystem-vr-fetal-death-cause-or-condition" name="CodeSystem - Fetal Death Cause or Condition"/>
+<artifact id="CodeSystem/CodeSystem-vr-birth-delivery-occurred" deprecated="true" key="CodeSystem-CodeSystem-vr-birth-delivery-occurred" name="CodeSystem - Birth Delivery Occurred"/>
+<artifact id="CodeSystem/CodeSystem-vr-birth-and-fetal-death-financial-class" deprecated="true" key="CodeSystem-CodeSystem-vr-birth-and-fetal-death-financial-class" name="CodeSystem - Birth and Death Financial Class"/>
+<artifact id="CodeSystem/CodeSystem-vr-fetal-death-cause-or-condition" deprecated="true" key="CodeSystem-CodeSystem-vr-fetal-death-cause-or-condition" name="CodeSystem - Fetal Death Cause or Condition"/>
 <artifact id="CodeSystem/CodeSystem-informant-relationship-to-mother" key="CodeSystem-CodeSystem-informant-relationship-to-mother" name="CodeSystem - Informant Relationship to Mother"/>
 <artifact id="StructureDefinition/CompositionCodedCauseOfFetalDeath" key="StructureDefinition-CompositionCodedCauseOfFetalDeath" name="Composition - Coded Cause of Fetal Death"/>
 <artifact id="Composition/composition-coded-cause-of-fetal-death-not-named" key="Composition-composition-coded-cause-of-fetal-death-not-named" name="Composition - Coded Cause of Fetal Death - Fetus Not Named"/>
@@ -92,7 +94,7 @@
 <artifact id="StructureDefinition/Observation-apgar-score" key="StructureDefinition-Observation-apgar-score" name="Observation - APGAR Score"/>
 <artifact id="StructureDefinition/Observation-steroids-fetal-lung-maturation" key="StructureDefinition-Observation-steroids-fetal-lung-maturation" name="Observation - Administration of Steroids for Fetal Lung Maturation"/>
 <artifact id="Observation/observation-steroids-fetal-lung-maturation-jada-ann-quinn" key="Observation-observation-steroids-fetal-lung-maturation-jada-ann-quinn" name="Observation - Administration of Steroids for Fetal Lung Maturation - Jada Ann Quinn"/>
-<artifact id="StructureDefinition/Observation-antibiotics-during-labor" key="StructureDefinition-Observation-antibiotics-during-labor" name="Observation - Antibiotics Administered During Labor"/>
+<artifact id="StructureDefinition/Observation-antibiotics-during-labor" key="StructureDefinition-Observation-antibiotics-during-labor" name="Observation - Antibiotics Administered During Labor"/><artifact id="StructureDefinition/Observation-antibiotics-during-labor" key="StructureDefinition-Observation-antibiotics-during-labor" name="Observation - Antibiotics Administered During Labor"/>
 <artifact id="Observation/observation-antibiotics-during-labor-jada-ann-quinn" key="Observation-observation-antibiotics-during-labor-jada-ann-quinn" name="Observation - Antibiotics Administered During Labor - Jada Ann Quinn"/>
 <artifact id="Observation/observation-apgar-score-babyg-quinn-1-min" key="Observation-observation-apgar-score-babyg-quinn-1-min" name="Observation - Apgar Score - BabyG Quinn: 1 min"/>
 <artifact id="Observation/observation-apgar-score-babyg-quinn-5-min" key="Observation-observation-apgar-score-babyg-quinn-5-min" name="Observation - Apgar Score - BabyG Quinn: 5 min"/>
