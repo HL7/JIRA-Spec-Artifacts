@@ -1,306 +1,574 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gitUrl="https://github.com/HL7/US-Core" url="http://hl7.org/fhir/us/core" ciUrl="http://build.fhir.org/ig/HL7/US-Core" defaultWorkgroup="cgp" defaultVersion="3.1.1" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-   <version code="3.2.0" />
-   <version code="3.1.1" />
-   <version code="3.1.0" />
-   <version code="3.0.1" deprecated="true" />
-   <version code="2.1.0" />
-   <version code="2.0.0" deprecated="true" />
-   <version code="1.1.0" />
-   <version code="1.0.1" deprecated="true" />
-   <version code="1.0.0" deprecated="true" />
-   <version code="1.0" deprecated="true" />
-   <artifactPageExtension value="-definitions" />
-   <artifactPageExtension value="-examples" />
-   <artifactPageExtension value="-mappings" />
-   <artifact name="USCoreVaccineNationalDrugCode" id="ValueSet/us-core-ndc-vaccine-codes" key="ValueSet-us-core-ndc-vaccine-codes" />
-   <artifact name="USCorePractitionerrolePractitioner" id="SearchParameter/us-core-practitionerrole-practitioner" key="SearchParameter-us-core-practitionerrole-practitioner" />
-   <artifact name="USCorePractitionerIdentifier" id="SearchParameter/us-core-practitioner-identifier" key="SearchParameter-us-core-practitioner-identifier" />
-   <artifact name="USCorePractitionerName" id="SearchParameter/us-core-practitioner-name" key="SearchParameter-us-core-practitioner-name" />
-   <artifact name="UsCoreClientCapabilityStatement" id="CapabilityStatement/us-core-client" key="CapabilityStatement-us-core-client" />
-   <artifact name="USCoreMedicationrequestStatus" id="SearchParameter/us-core-medicationrequest-status" key="SearchParameter-us-core-medicationrequest-status" />
-   <artifact name="USCoreLocationAddress" id="SearchParameter/us-core-location-address" key="SearchParameter-us-core-location-address" />
-   <artifact name="USCoreEthnicity" id="SearchParameter/us-core-ethnicity" key="SearchParameter-us-core-ethnicity" />
-   <artifact name="Temperature" id="Observation/temperature" key="Observation-temperature" />
-   <artifact name="USCoreProviderSpecialityNucc" id="ValueSet/us-core-provider-specialty" key="ValueSet-us-core-provider-specialty" />
-   <artifact name="Urine-ph" id="Observation/urine-ph" key="Observation-urine-ph" />
-   <artifact name="USCoreLocationName" id="SearchParameter/us-core-location-name" key="SearchParameter-us-core-location-name" />
-   <artifact name="USCoreImmunizationPatient" id="SearchParameter/us-core-immunization-patient" key="SearchParameter-us-core-immunization-patient" />
-   <artifact name="USCoreProvenance" id="StructureDefinition/us-core-provenance" key="StructureDefinition-us-core-provenance" />
-   <artifact name="USCorePulseOximetryProfile" id="StructureDefinition/us-core-pulse-oximetry" key="StructureDefinition-us-core-pulse-oximetry" />
-   <artifact name="USCoreConditionClinicalStatus" id="SearchParameter/us-core-condition-clinical-status" key="SearchParameter-us-core-condition-clinical-status" />
-   <artifact name="UsCoreSmokingStatusPreferred" id="ValueSet/us-core-observation-smokingstatus" key="ValueSet-us-core-observation-smokingstatus" />
-   <artifact name="USCoreObservationPatient" id="SearchParameter/us-core-observation-patient" key="SearchParameter-us-core-observation-patient" />
-   <artifact name="USCoreCareplanDate" id="SearchParameter/us-core-careplan-date" key="SearchParameter-us-core-careplan-date" />
-   <artifact name="C887e62f-6166-419f-8268-b5ecd6c7b901" id="Bundle/c887e62f-6166-419f-8268-b5ecd6c7b901" key="Bundle-c887e62f-6166-419f-8268-b5ecd6c7b901" />
-   <artifact name="USCoreDocumentreferenceId" id="SearchParameter/us-core-documentreference-id" key="SearchParameter-us-core-documentreference-id" />
-   <artifact name="Serum-sodium" id="Observation/serum-sodium" key="Observation-serum-sodium" />
-   <artifact name="USCoreGoalPatient" id="SearchParameter/us-core-goal-patient" key="SearchParameter-us-core-goal-patient" />
-   <artifact name="USCorePatientGiven" id="SearchParameter/us-core-patient-given" key="SearchParameter-us-core-patient-given" />
-   <artifact name="USCorePediatricBMIforAgeObservationProfile" id="StructureDefinition/pediatric-bmi-for-age" key="StructureDefinition-pediatric-bmi-for-age" />
-   <artifact name="USCoreObservationValueCodes" id="ValueSet/us-core-observation-value-codes" key="ValueSet-us-core-observation-value-codes" />
-   <artifact name="USCoreEncounterStatus" id="SearchParameter/us-core-encounter-status" key="SearchParameter-us-core-encounter-status" />
-   <artifact name="USCoreObservationCode" id="SearchParameter/us-core-observation-code" key="SearchParameter-us-core-observation-code" />
-   <artifact name="USCoreDiagnosticreportDate" id="SearchParameter/us-core-diagnosticreport-date" key="SearchParameter-us-core-diagnosticreport-date" />
-   <artifact name="Urine-color" id="Observation/urine-color" key="Observation-urine-color" />
-   <artifact name="Blood-pressure" id="Observation/blood-pressure" key="Observation-blood-pressure" />
-   <artifact name="Hl7east" id="Location/hl7east" key="Location-hl7east" />
-   <artifact name="UspsTwoLetterAlphabeticCodes" id="ValueSet/us-core-usps-state" key="ValueSet-us-core-usps-state" />
-   <artifact name="Example-organization-2" id="Organization/example-organization-2" key="Organization-example-organization-2" />
-   <artifact name="BirthSex" id="ValueSet/birthsex" key="ValueSet-birthsex" />
-   <artifact name="USCoreClinicalNoteType" id="ValueSet/us-core-clinical-note-type" key="ValueSet-us-core-clinical-note-type" />
-   <artifact name="Pediatric-bmi-example" id="Observation/pediatric-bmi-example" key="Observation-pediatric-bmi-example" />
-   <artifact name="Urine-ketone" id="Observation/urine-ketone" key="Observation-urine-ketone" />
-   <artifact name="USCoreEncounterPatient" id="SearchParameter/us-core-encounter-patient" key="SearchParameter-us-core-encounter-patient" />
-   <artifact name="USCoreCarePlanCategoryExtensionCodes" id="CodeSystem/careplan-category" key="CodeSystem-careplan-category" />
-   <artifact name="USCoreDocumentreferenceCategory" id="SearchParameter/us-core-documentreference-category" key="SearchParameter-us-core-documentreference-category" />
-   <artifact name="Metabolic-panel" id="DiagnosticReport/metabolic-panel" key="DiagnosticReport-metabolic-panel" />
-   <artifact name="Erythrocytes" id="Observation/erythrocytes" key="Observation-erythrocytes" />
-   <artifact name="USCoreNDCtoCVXCodeMapping" id="ConceptMap/ndc-cvx" key="ConceptMap-ndc-cvx" />
-   <artifact name="USCoreLocation" id="StructureDefinition/us-core-location" key="StructureDefinition-us-core-location" />
-   <artifact name="DetailedRace" id="ValueSet/detailed-race" key="ValueSet-detailed-race" />
-   <artifact name="USCoreDiagnosticreportStatus" id="SearchParameter/us-core-diagnosticreport-status" key="SearchParameter-us-core-diagnosticreport-status" />
-   <artifact name="USCoreImmunizationProfile" id="StructureDefinition/us-core-immunization" key="StructureDefinition-us-core-immunization" />
-   <artifact name="Sato2-fio2" id="Observation/satO2-fiO2" key="Observation-satO2-fiO2" />
-   <artifact name="Acme-lab" id="Organization/acme-lab" key="Organization-acme-lab" />
-   <artifact name="Uscore-med2" id="Medication/uscore-med2" key="Medication-uscore-med2" />
-   <artifact name="USCoreProcedureProfile" id="StructureDefinition/us-core-procedure" key="StructureDefinition-us-core-procedure" />
-   <artifact name="Oxygen-saturation" id="Observation/oxygen-saturation" key="Observation-oxygen-saturation" />
-   <artifact name="USCoreDiagnosticReportProfileLaboratoryReporting" id="StructureDefinition/us-core-diagnosticreport-lab" key="StructureDefinition-us-core-diagnosticreport-lab" />
-   <artifact name="USCorePatientBirthdate" id="SearchParameter/us-core-patient-birthdate" key="SearchParameter-us-core-patient-birthdate" />
-   <artifact name="Saint-luke-w-endpoint" id="Organization/saint-luke-w-endpoint" key="Organization-saint-luke-w-endpoint" />
-   <artifact name="USCoreDiagnosticReportLabCodes" id="ValueSet/us-core-diagnosticreport-lab-codes" key="ValueSet-us-core-diagnosticreport-lab-codes" />
-   <artifact name="Serum-calcium" id="Observation/serum-calcium" key="Observation-serum-calcium" />
-   <artifact name="USCoreDocumentReferenceProfile" id="StructureDefinition/us-core-documentreference" key="StructureDefinition-us-core-documentreference" />
-   <artifact name="USCoreRace" id="SearchParameter/us-core-race" key="SearchParameter-us-core-race" />
-   <artifact name="Uscore-mo3" id="Bundle/uscore-mo3" key="Bundle-uscore-mo3" />
-   <artifact name="Urinalysis" id="DiagnosticReport/urinalysis" key="DiagnosticReport-urinalysis" />
-   <artifact name="USCoreDocumentreferenceStatus" id="SearchParameter/us-core-documentreference-status" key="SearchParameter-us-core-documentreference-status" />
-   <artifact name="Encounter Example-1" id="Encounter/example-1" key="Encounter-example-1" />
-   <artifact name="USCoreMedicationProfile" id="StructureDefinition/us-core-medication" key="StructureDefinition-us-core-medication" />
-   <artifact name="USCoreDeviceType" id="SearchParameter/us-core-device-type" key="SearchParameter-us-core-device-type" />
-   <artifact name="Serum-co2" id="Observation/serum-co2" key="Observation-serum-co2" />
-   <artifact name="USCoreEncounterIdentifier" id="SearchParameter/us-core-encounter-identifier" key="SearchParameter-us-core-encounter-identifier" />
-   <artifact name="UsCorePediatricHeadOccipitalFrontalCircumferencePercentileProfile" id="StructureDefinition/head-occipital-frontal-circumference-percentile" key="StructureDefinition-head-occipital-frontal-circumference-percentile" />
-   <artifact name="Neutrophils" id="Observation/neutrophils" key="Observation-neutrophils" />
-   <artifact name="Urine-bilirubin" id="Observation/urine-bilirubin" key="Observation-urine-bilirubin" />
-   <artifact name="USCoreDiagnosticreportReportAndNoteCodes" id="ValueSet/us-core-diagnosticreport-report-and-note-codes" key="ValueSet-us-core-diagnosticreport-report-and-note-codes" />
-   <artifact name="USCoreDevicePatient" id="SearchParameter/us-core-device-patient" key="SearchParameter-us-core-device-patient" />
-   <artifact name="USCoreProcedureCodes" id="ValueSet/us-core-procedure-code" key="ValueSet-us-core-procedure-code" />
-   <artifact name="USCoreDiagnosticReportProfileNoteExchange" id="StructureDefinition/us-core-diagnosticreport-note" key="StructureDefinition-us-core-diagnosticreport-note" />
-   <artifact name="USCore" id="ImplementationGuide/hl7.fhir.us.core" key="ImplementationGuide-hl7.fhir.us.core" />
-   <artifact name="Urine-leukocyte-esterase" id="Observation/urine-leukocyte-esterase" key="Observation-urine-leukocyte-esterase" />
-   <artifact name="USCoreDocumentReferenceType" id="ValueSet/us-core-documentreference-type" key="ValueSet-us-core-documentreference-type" />
-   <artifact name="Self-tylenol" id="MedicationRequest/self-tylenol" key="MedicationRequest-self-tylenol" />
-   <artifact name="USCoreIcd_10PcsProcedureCodes" id="ValueSet/us-core-procedure-icd10pcs" key="ValueSet-us-core-procedure-icd10pcs" />
-   <artifact name="USCoreObservationSmokingStatusStatus" id="ValueSet/us-core-observation-smoking-status-status" key="ValueSet-us-core-observation-smoking-status-status" />
-   <artifact name="USCoreGoalLifecycleStatus" id="SearchParameter/us-core-goal-lifecycle-status" key="SearchParameter-us-core-goal-lifecycle-status" />
-   <artifact name="Mchc" id="Observation/mchc" key="Observation-mchc" />
-   <artifact name="Urine-clarity" id="Observation/urine-clarity" key="Observation-urine-clarity" />
-   <artifact name="Rehab" id="Procedure/rehab" key="Procedure-rehab" />
-   <artifact name="USCorePatientId" id="SearchParameter/us-core-patient-id" key="SearchParameter-us-core-patient-id" />
-   <artifact name="USCoreCareplanPatient" id="SearchParameter/us-core-careplan-patient" key="SearchParameter-us-core-careplan-patient" />
-   <artifact name="USCorePatientName" id="SearchParameter/us-core-patient-name" key="SearchParameter-us-core-patient-name" />
-   <artifact name="USCoreImmunizationStatus" id="SearchParameter/us-core-immunization-status" key="SearchParameter-us-core-immunization-status" />
-   <artifact name="USCoreAllergyintoleranceClinicalStatus" id="SearchParameter/us-core-allergyintolerance-clinical-status" key="SearchParameter-us-core-allergyintolerance-clinical-status" />
-   <artifact name="USCoreLaboratoryResultObservationProfile" id="StructureDefinition/us-core-observation-lab" key="StructureDefinition-us-core-observation-lab" />
-   <artifact name="USCoreObservationCategory" id="SearchParameter/us-core-observation-category" key="SearchParameter-us-core-observation-category" />
-   <artifact name="USCoreDocumentReferencesCategoryCodes" id="CodeSystem/us-core-documentreference-category" key="CodeSystem-us-core-documentreference-category" />
-   <artifact name="USCoreDirectEmailExtension" id="StructureDefinition/us-core-direct" key="StructureDefinition-us-core-direct" />
-   <artifact name="USCoreRaceExtension" id="StructureDefinition/us-core-race" key="StructureDefinition-us-core-race" />
-   <artifact name="Bmi" id="Observation/bmi" key="Observation-bmi" />
-   <artifact name="USCoreProviderRoleNucc" id="ValueSet/us-core-provider-role" key="ValueSet-us-core-provider-role" />
-   <artifact name="Urine-hemoglobin" id="Observation/urine-hemoglobin" key="Observation-urine-hemoglobin" />
-   <artifact name="USCoreImmunizationDate" id="SearchParameter/us-core-immunization-date" key="SearchParameter-us-core-immunization-date" />
-   <artifact name="USCoreCareTeamProviderRoles" id="ValueSet/us-core-careteam-provider-roles" key="ValueSet-us-core-careteam-provider-roles" />
-   <artifact name="USCoreProcedureDate" id="SearchParameter/us-core-procedure-date" key="SearchParameter-us-core-procedure-date" />
-   <artifact name="USCoreMedicationrequestIntent" id="SearchParameter/us-core-medicationrequest-intent" key="SearchParameter-us-core-medicationrequest-intent" />
-   <artifact name="USCoreCareplanStatus" id="SearchParameter/us-core-careplan-status" key="SearchParameter-us-core-careplan-status" />
-   <artifact name="Urobilinogen" id="Observation/urobilinogen" key="Observation-urobilinogen" />
-   <artifact name="DetailedEthnicity" id="ValueSet/detailed-ethnicity" key="ValueSet-detailed-ethnicity" />
-   <artifact name="Urine-sediment" id="Observation/urine-sediment" key="Observation-urine-sediment" />
-   <artifact name="66c8856b-ba11-4876-8aa8-467aad8c11a2" id="Bundle/66c8856b-ba11-4876-8aa8-467aad8c11a2" key="Bundle-66c8856b-ba11-4876-8aa8-467aad8c11a2" />
-   <artifact name="LanguageCodesWithLanguageAndOptionallyARegionModifier" id="ValueSet/simple-language" key="ValueSet-simple-language" />
-   <artifact name="USCoreDiagnosticreportPatient" id="SearchParameter/us-core-diagnosticreport-patient" key="SearchParameter-us-core-diagnosticreport-patient" />
-   <artifact name="Some-day-smoker" id="Observation/some-day-smoker" key="Observation-some-day-smoker" />
-   <artifact name="Serum-creatinine" id="Observation/serum-creatinine" key="Observation-serum-creatinine" />
-   <artifact name="USCoreVaccineAdministeredValueSetCvx" id="ValueSet/us-core-vaccines-cvx" key="ValueSet-us-core-vaccines-cvx" />
-   <artifact name="USCoreSmokingStatusObservationCodes" id="ValueSet/us-core-smoking-status-observation-codes" key="ValueSet-us-core-smoking-status-observation-codes" />
-   <artifact name="Imm-1" id="Immunization/imm-1" key="Immunization-imm-1" />
-   <artifact name="Uscore-med1" id="Medication/uscore-med1" key="Medication-uscore-med1" />
-   <artifact name="USCoreCareteamStatus" id="SearchParameter/us-core-careteam-status" key="SearchParameter-us-core-careteam-status" />
-   <artifact name="Cbc" id="DiagnosticReport/cbc" key="DiagnosticReport-cbc" />
-   <artifact name="USCoreGoalTargetDate" id="SearchParameter/us-core-goal-target-date" key="SearchParameter-us-core-goal-target-date" />
-   <artifact name="USCoreEncounterProfile" id="StructureDefinition/us-core-encounter" key="StructureDefinition-us-core-encounter" />
-   <artifact name="USCorePediatricWeightForHeightObservationProfile" id="StructureDefinition/pediatric-weight-for-height" key="StructureDefinition-pediatric-weight-for-height" />
-   <artifact name="USCoreOrganizationAddress" id="SearchParameter/us-core-organization-address" key="SearchParameter-us-core-organization-address" />
-   <artifact name="SearchParameter USCoreConditionCode" id="SearchParameter/us-core-condition-code" key="SearchParameter-us-core-condition-code" />
-   <artifact name="USCoreConditionCategoryCodes" id="ValueSet/us-core-condition-category" key="ValueSet-us-core-condition-category" />
-   <artifact name="USCoreMedicationCodes" id="ValueSet/us-core-medication-codes" key="ValueSet-us-core-medication-codes" />
-   <artifact name="USCoreSmokingStatusmaxValueSet" id="ValueSet/us-core-observation-smokingstatus-max" key="ValueSet-us-core-observation-smokingstatus-max" />
-   <artifact name="Urine-wbcs" id="Observation/urine-wbcs" key="Observation-urine-wbcs" />
-   <artifact name="USCoreOrganizationName" id="SearchParameter/us-core-organization-name" key="SearchParameter-us-core-organization-name" />
-   <artifact name="Bun" id="Observation/bun" key="Observation-bun" />
-   <artifact name="AllergyIntolerance Example" id="AllergyIntolerance/example" key="AllergyIntolerance-example" />
-   <artifact name="USCoreAllergyintolerancePatient" id="SearchParameter/us-core-allergyintolerance-patient" key="SearchParameter-us-core-allergyintolerance-patient" />
-   <artifact name="Cardiology-report" id="DiagnosticReport/cardiology-report" key="DiagnosticReport-cardiology-report" />
-   <artifact name="UsCoreServerCapabilityStatement" id="CapabilityStatement/us-core-server" key="CapabilityStatement-us-core-server" />
-   <artifact name="OmbEthnicityCategories" id="ValueSet/omb-ethnicity-category" key="ValueSet-omb-ethnicity-category" />
-   <artifact name="USCorePractitionerProfile" id="StructureDefinition/us-core-practitioner" key="StructureDefinition-us-core-practitioner" />
-   <artifact name="USCoreEncounterClass" id="SearchParameter/us-core-encounter-class" key="SearchParameter-us-core-encounter-class" />
-   <artifact name="USCoreMedicationrequestAuthoredon" id="SearchParameter/us-core-medicationrequest-authoredon" key="SearchParameter-us-core-medicationrequest-authoredon" />
-   <artifact name="Uscore-mo2" id="MedicationRequest/uscore-mo2" key="MedicationRequest-uscore-mo2" />
-   <artifact name="USCoreDocumentreferenceType" id="SearchParameter/us-core-documentreference-type" key="SearchParameter-us-core-documentreference-type" />
-   <artifact name="1036" id="Encounter/1036" key="Encounter-1036" />
-   <artifact name="NarrativeStatus" id="ValueSet/us-core-narrative-status" key="ValueSet-us-core-narrative-status" />
-   <artifact name="USCoreConditionCategoryExtensionCodes" id="CodeSystem/condition-category" key="CodeSystem-condition-category" />
-   <artifact name="Urine-rbcs" id="Observation/urine-rbcs" key="Observation-urine-rbcs" />
-   <artifact name="USCoreCareTeam" id="StructureDefinition/us-core-careteam" key="StructureDefinition-us-core-careteam" />
-   <artifact name="USCoreLocationAddressCity" id="SearchParameter/us-core-location-address-city" key="SearchParameter-us-core-location-address-city" />
-   <artifact name="USCorePatientProfile" id="StructureDefinition/us-core-patient" key="StructureDefinition-us-core-patient" />
-   <artifact name="CareTeam Example" id="CareTeam/example" key="CareTeam-example" />
-   <artifact name="USCoreConditionPatient" id="SearchParameter/us-core-condition-patient" key="SearchParameter-us-core-condition-patient" />
-   <artifact name="Vitals-panel" id="Observation/vitals-panel" key="Observation-vitals-panel" />
-   <artifact name="USCoreFetchDocumentReferences" id="OperationDefinition/docref" key="OperationDefinition-docref" />
-   <artifact name="Uscore-mo1" id="MedicationRequest/uscore-mo1" key="MedicationRequest-uscore-mo1" />
-   <artifact name="USCoreEthnicityExtension" id="StructureDefinition/us-core-ethnicity" key="StructureDefinition-us-core-ethnicity" />
-   <artifact name="Urine-nitrite" id="Observation/urine-nitrite" key="Observation-urine-nitrite" />
-   <artifact name="USCoreDocumentreferencePeriod" id="SearchParameter/us-core-documentreference-period" key="SearchParameter-us-core-documentreference-period" />
-   <artifact name="Blood-glucose" id="Observation/blood-glucose" key="Observation-blood-glucose" />
-   <artifact name="Goal-1" id="Goal/goal-1" key="Goal-goal-1" />
-   <artifact name="USCoreEncounterDate" id="SearchParameter/us-core-encounter-date" key="SearchParameter-us-core-encounter-date" />
-   <artifact name="USCoreMedicationrequestEncounter" id="SearchParameter/us-core-medicationrequest-encounter" key="SearchParameter-us-core-medicationrequest-encounter" />
-   <artifact name="USCoreConditionOnsetDate" id="SearchParameter/us-core-condition-onset-date" key="SearchParameter-us-core-condition-onset-date" />
-   <artifact name="USCoreDocumentreferencePatient" id="SearchParameter/us-core-documentreference-patient" key="SearchParameter-us-core-documentreference-patient" />
-   <artifact name="Weight" id="Observation/weight" key="Observation-weight" />
-   <artifact name="USCoreOrganizationProfile" id="StructureDefinition/us-core-organization" key="StructureDefinition-us-core-organization" />
-   <artifact name="Heart-rate" id="Observation/heart-rate" key="Observation-heart-rate" />
-   <artifact name="Urine-cells" id="Observation/urine-cells" key="Observation-urine-cells" />
-   <artifact name="Udi-1" id="Device/udi-1" key="Device-udi-1" />
-   <artifact name="Udi-2" id="Device/udi-2" key="Device-udi-2" />
-   <artifact name="Udi-3" id="Device/udi-3" key="Device-udi-3" />
-   <artifact name="USCoreDiagnosticreportCategory" id="SearchParameter/us-core-diagnosticreport-category" key="SearchParameter-us-core-diagnosticreport-category" />
-   <artifact name="Condition Example" id="Condition/example" key="Condition-example" />
-   <artifact name="Serum-total-bilirubin" id="Observation/serum-total-bilirubin" key="Observation-serum-total-bilirubin" />
-   <artifact name="Episode-summary" id="DocumentReference/episode-summary" key="DocumentReference-episode-summary" />
-   <artifact name="Length" id="Observation/length" key="Observation-length" />
-   <artifact name="Hemoglobin" id="Observation/hemoglobin" key="Observation-hemoglobin" />
-   <artifact name="Urine-epi-cells" id="Observation/urine-epi-cells" key="Observation-urine-epi-cells" />
-   <artifact name="SearchParameter USCoreEncounterType" id="SearchParameter/us-core-encounter-type" key="SearchParameter-us-core-encounter-type" />
-   <artifact name="USCoreCareplanCategory" id="SearchParameter/us-core-careplan-category" key="SearchParameter-us-core-careplan-category" />
-   <artifact name="Child-example" id="Patient/child-example" key="Patient-child-example" />
-   <artifact name="USCoreProcedureCode" id="SearchParameter/us-core-procedure-code" key="SearchParameter-us-core-procedure-code" />
-   <artifact name="Usg" id="Observation/usg" key="Observation-usg" />
-   <artifact name="USCoreMedicationrequestPatient" id="SearchParameter/us-core-medicationrequest-patient" key="SearchParameter-us-core-medicationrequest-patient" />
-   <artifact name="Practitioner-2" id="Practitioner/practitioner-2" key="Practitioner-practitioner-2" />
-   <artifact name="Practitioner-1" id="Practitioner/practitioner-1" key="Practitioner-practitioner-1" />
-   <artifact name="Ofc-percentile" id="Observation/ofc-percentile" key="Observation-ofc-percentile" />
-   <artifact name="USCoreLocationAddressPostalcode" id="SearchParameter/us-core-location-address-postalcode" key="SearchParameter-us-core-location-address-postalcode" />
-   <artifact name="USCoreCondition" id="StructureDefinition/us-core-condition" key="StructureDefinition-us-core-condition" />
-   <artifact name="Infant-example" id="Patient/infant-example" key="Patient-infant-example" />
-   <artifact name="USCoreAllergySubstance" id="ValueSet/us-core-allergy-substance" key="ValueSet-us-core-allergy-substance" />
-   <artifact name="USCoreObservationDate" id="SearchParameter/us-core-observation-date" key="SearchParameter-us-core-observation-date" />
-   <artifact name="USCoreConditionCategory" id="SearchParameter/us-core-condition-category" key="SearchParameter-us-core-condition-category" />
-   <artifact name="Respiratory-rate" id="Observation/respiratory-rate" key="Observation-respiratory-rate" />
-   <artifact name="Hc1" id="Condition/hc1" key="Condition-hc1" />
-   <artifact name="USCoreCarePlanProfile" id="StructureDefinition/us-core-careplan" key="StructureDefinition-us-core-careplan" />
-   <artifact name="Chest-xray-report" id="DiagnosticReport/chest-xray-report" key="DiagnosticReport-chest-xray-report" />
-   <artifact name="USCorePractitionerroleSpecialty" id="SearchParameter/us-core-practitionerrole-specialty" key="SearchParameter-us-core-practitionerrole-specialty" />
-   <artifact name="USCorePractitionerRoleProfile" id="StructureDefinition/us-core-practitionerrole" key="StructureDefinition-us-core-practitionerrole" />
-   <artifact name="Serum-potassium" id="Observation/serum-potassium" key="Observation-serum-potassium" />
-   <artifact name="USCoreEncounterId" id="SearchParameter/us-core-encounter-id" key="SearchParameter-us-core-encounter-id" />
-   <artifact name="Colonoscopy" id="CarePlan/colonoscopy" key="CarePlan-colonoscopy" />
-   <artifact name="USCoreSmokingStatusProfile" id="StructureDefinition/us-core-smokingstatus" key="StructureDefinition-us-core-smokingstatus" />
-   <artifact name="USCoreProvenancePaticipantTypeCodes" id="ValueSet/us-core-provenance-participant-type" key="ValueSet-us-core-provenance-participant-type" />
-   <artifact name="USCoreDiagnosticReportCategory" id="ValueSet/us-core-diagnosticreport-category" key="ValueSet-us-core-diagnosticreport-category" />
-   <artifact name="Defib-implant" id="Procedure/defib-implant" key="Procedure-defib-implant" />
-   <artifact name="USCoreDiagnosticreportCode" id="SearchParameter/us-core-diagnosticreport-code" key="SearchParameter-us-core-diagnosticreport-code" />
-   <artifact name="USCoreMedicationRequestProfile" id="StructureDefinition/us-core-medicationrequest" key="StructureDefinition-us-core-medicationrequest" />
-   <artifact name="Bp-data-absent" id="Observation/bp-data-absent" key="Observation-bp-data-absent" />
-   <artifact name="Urine-glucose" id="Observation/urine-glucose" key="Observation-urine-glucose" />
-   <artifact name="Pediatric-wt-example" id="Observation/pediatric-wt-example" key="Observation-pediatric-wt-example" />
-   <artifact name="Patient Example" id="Patient/example" key="Patient-example" />
-   <artifact name="USCorePatientFamily" id="SearchParameter/us-core-patient-family" key="SearchParameter-us-core-patient-family" />
-   <artifact name="USCorePatientGender" id="SearchParameter/us-core-patient-gender" key="SearchParameter-us-core-patient-gender" />
-   <artifact name="Height" id="Observation/height" key="Observation-height" />
-   <artifact name="USCoreDocumentreferenceDate" id="SearchParameter/us-core-documentreference-date" key="SearchParameter-us-core-documentreference-date" />
-   <artifact name="USCoreLocationAddressState" id="SearchParameter/us-core-location-address-state" key="SearchParameter-us-core-location-address-state" />
-   <artifact name="USCoreObservationStatus" id="SearchParameter/us-core-observation-status" key="SearchParameter-us-core-observation-status" />
-   <artifact name="Serum-chloride" id="Observation/serum-chloride" key="Observation-serum-chloride" />
-   <artifact name="USCoreBirthSexExtension" id="StructureDefinition/us-core-birthsex" key="StructureDefinition-us-core-birthsex" />
-   <artifact name="Urine-bacteria" id="Observation/urine-bacteria" key="Observation-urine-bacteria" />
-   <artifact name="RaceAndEthnicityCDC" id="CodeSystem/cdcrec" key="CodeSystem-cdcrec" />
-   <artifact name="USCoreEncounterType" id="ValueSet/us-core-encounter-type" key="ValueSet-us-core-encounter-type" />
-   <artifact name="USCoreCareteamPatient" id="SearchParameter/us-core-careteam-patient" key="SearchParameter-us-core-careteam-patient" />
-   <artifact name="USCoreDocumentReferenceCategory" id="ValueSet/us-core-documentreference-category" key="ValueSet-us-core-documentreference-category" />
-   <artifact name="USCoreImplantableDeviceProfile" id="StructureDefinition/us-core-implantable-device" key="StructureDefinition-us-core-implantable-device" />
-   <artifact name="USCorePatientIdentifier" id="SearchParameter/us-core-patient-identifier" key="SearchParameter-us-core-patient-identifier" />
-   <artifact name="USCoreProvenancePaticipantTypeExtensionCodes" id="CodeSystem/us-core-provenance-participant-type" key="CodeSystem-us-core-provenance-participant-type" />
-   <artifact name="OmbRaceCategories" id="ValueSet/omb-race-category" key="ValueSet-omb-race-category" />
-   <artifact name="USCoreProcedureStatus" id="SearchParameter/us-core-procedure-status" key="SearchParameter-us-core-procedure-status" />
-   <artifact name="USCoreAllergyIntolerance" id="StructureDefinition/us-core-allergyintolerance" key="StructureDefinition-us-core-allergyintolerance" />
-   <artifact name="USCoreGoalProfile" id="StructureDefinition/us-core-goal" key="StructureDefinition-us-core-goal" />
-   <artifact name="USCoreProcedurePatient" id="SearchParameter/us-core-procedure-patient" key="SearchParameter-us-core-procedure-patient" />
-   <artifact name="USCoreConditionCode" id="ValueSet/us-core-condition-code" key="ValueSet-us-core-condition-code" />
-   <artifact name="Urine-protein" id="Observation/urine-protein" key="Observation-urine-protein" />
-   <artifact name="AllergyIntolerance" key="AllergyIntolerance" deprecated="true" />
-   <artifact name="AuditEvent" key="AuditEvent" deprecated="true" />
-   <artifact name="Binary" key="Binary" deprecated="true" />
-   <artifact name="CarePlan" key="CarePlan" deprecated="true" />
-   <artifact name="CareTeam" key="CareTeam" deprecated="true" />
-   <artifact name="Composition" key="Composition" deprecated="true" />
-   <artifact name="Condition" key="Condition" deprecated="true" />
-   <artifact name="Conformance" key="Conformance" deprecated="true" />
-   <artifact name="Coverage" key="Coverage" deprecated="true" />
-   <artifact name="Device" key="Device" deprecated="true" />
-   <artifact name="DiagnosticRequest (see ServiceRequest)" key="DiagnosticRequest" deprecated="true" />
-   <artifact name="DiagnosticReport" key="DiagnosticReport" deprecated="true" />
-   <artifact name="DocumentReference" key="DocumentReference" deprecated="true" />
-   <artifact name="Encounter" key="Encounter" deprecated="true" />
-   <artifact name="FamilyMemberHistory" key="FamilyHistory" deprecated="true" />
-   <artifact name="Goal" key="Goal" deprecated="true" />
-   <artifact name="Immunization" key="Immunization" deprecated="true" />
-   <artifact name="List" key="List" deprecated="true" />
-   <artifact name="Location" key="Location" deprecated="true" />
-   <artifact name="Measure" key="Measure" deprecated="true" />
-   <artifact name="Medication" key="Medication" deprecated="true" />
-   <artifact name="MedicationAdministration" key="MedicationAdministration" deprecated="true" />
-   <artifact name="MedicationDispense" key="MedicationDispense" deprecated="true" />
-   <artifact name="MedicationRequest" key="MedicationPrescription" deprecated="true" />
-   <artifact name="MedicationUsage (MedicationStatement)" key="MedicationStatement" deprecated="true" />
-   <artifact name="Observation" key="Observation" deprecated="true" />
-   <artifact name="Organization" key="Organization" deprecated="true" />
-   <artifact name="Patient" key="Patient" deprecated="true" />
-   <artifact name="Practitioner" key="Practitioner" deprecated="true" />
-   <artifact name="PractitionerRole" key="PractitionerRole" deprecated="true" />
-   <artifact name="Procedure" key="Procedure" deprecated="true" />
-   <artifact name="Provenance" key="Provenance" deprecated="true" />
-   <artifact name="Specimen" key="Specimen" deprecated="true" />
-   <artifact name="StructureDefinition" key="StructureDefinition" deprecated="true" />
-   <artifact name="ValueSet" key="ValueSet" deprecated="true" />
-   <page name="(NA)" key="NA" />
-   <page name="(many)" key="many" />
-   <page name="Home" key="index" />
-   <page name="General Guidance" key="general-guidance" />
-   <page name="Clinical Notes Guidance" key="clinical-notes-guidance" />
-   <page name="Medication List Guidance" key="all-meds" />
-   <page name="Basic Provenance" key="basic-provenance" />
-   <page name="DSTU2 to R4 Conversion" key="r2-r4-guidance" />
-   <page name="Future of US Core" key="future-of-us-core" />
-   <page name="Profiles and Extensions" key="profiles" />
-   <page name="Search Parameters and Operations" key="searchparameters" />
-   <page name="Terminology" key="terminology" />
-   <page name="Capability Statements" key="capstatements" />
-   <page name="Security" key="security" />
-   <page name="Examples" key="all-examples" />
-   <page name="Downloads" key="downloads" />
-   <page name="(methodology)" key="methodology" deprecated="true" />
-
-   <page name="Schemas &amp; Schematrons" key="schemas-schematrons" deprecated="true" />
-   <page name="Argnonauts" key="argonauts" url="argnonauts" deprecated="true" />
-
-   <page name="Implementation Registry (registry/iglist)" key="iglist" url="registry" deprecated="true" />
-   <page name="Terminologies - Systems" key="terminologies-systems" url="terminologies-systems" deprecated="true" />
-   <page name="implementation" key="implementation" url="implementation" deprecated="true" />
-   <page name="terminologies" key="terminologies" url="terminologies" deprecated="true" />
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/core/2023Jan" ciUrl="http://build.fhir.org/ig/HL7/US-Core" defaultVersion="6.1.0" defaultWorkgroup="cgp" gitUrl="https://github.com/HL7/US-Core" url="http://hl7.org/fhir/us/core">
+<version code="current" url="http://build.fhir.org/ig/HL7/US-Core"/>
+<version code="6.1.0" url="http://hl7.org/fhir/us/core/STU6.1"/>
+<version code="6.1.0-snapshot1" url="http://hl7.org/fhir/us/core/STU6.1-snapshot1"/>
+<version code="6.0.0" url="http://hl7.org/fhir/us/core/STU6"/>
+<version code="6.0.0-ballot" url="http://hl7.org/fhir/us/core/2023Jan"/>
+<version code="5.0.1" url="http://hl7.org/fhir/us/core/STU5.0.1"/>
+<version code="5.0.0" url="http://hl7.org/fhir/us/core/STU5"/>
+<version code="4.1.0" deprecated="true" url="http://hl7.org/fhir/us/core/2022Jan"/>
+<version code="4.0.0" url="http://hl7.org/fhir/us/core/STU4"/>
+<version code="3.2.0" deprecated="true" url="http://hl7.org/fhir/us/core/2021Jan"/>
+<version code="3.1.1" url="http://hl7.org/fhir/us/core/STU3.1.1"/>
+<version code="3.1.0" deprecated="true" url="http://hl7.org/fhir/us/core/STU3.1"/>
+<version code="3.0.1" deprecated="true" url="http://hl7.org/fhir/us/core/2019Sep"/>
+<version code="3.0.0" url="http://hl7.org/fhir/us/core/STU3"/>
+<version code="2.1.0" deprecated="true" url="http://hl7.org/fhir/us/core/2019Jan"/>
+<version code="2.0.0" deprecated="true" url="http://hl7.org/fhir/us/core/STU2"/>
+<version code="1.1.0" deprecated="true" url="http://hl7.org/fhir/us/core/2018Jan"/>
+<version code="1.0.1" deprecated="true" url="http://hl7.org/fhir/us/core/1.0.1"/>
+<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/core/STU1"/>
+<version code="0.0.0" deprecated="true" url="http://hl7.org/fhir/us/core/2017Jan"/>
+<version code="1.0" deprecated="true"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="Observation/10-minute-apgar-score" key="Observation-10-minute-apgar-score" name="10 Minute Apgar Score Example"/>
+<artifact id="Observation/10-minute-apgar-score-panel" key="Observation-10-minute-apgar-score-panel" name="10 Minute Apgar Score Panel Example"/>
+<artifact id="Observation/10-minute-apgar-color" key="Observation-10-minute-apgar-color" name="10 minute Apgar Color Example"/>
+<artifact id="Observation/10-minute-apgar-heart-rate" key="Observation-10-minute-apgar-heart-rate" name="10 minute Apgar Heart Rate Example"/>
+<artifact id="Observation/10-minute-apgar-muscle-tone" key="Observation-10-minute-apgar-muscle-tone" name="10 minute Apgar Muscle Tone Example"/>
+<artifact id="Observation/10-minute-apgar-reflex-irritability" key="Observation-10-minute-apgar-reflex-irritability" name="10 minute Apgar Reflex Irritability Example"/>
+<artifact id="Observation/10-minute-apgar-respiratory-effort" key="Observation-10-minute-apgar-respiratory-effort" name="10 minute Apgar Respiratory effort Example"/>
+<artifact deprecated="true" id="Observation/AHC-HRSN-item-example-44250-9" key="Observation-AHC-HRSN-item-example-44250-9" name="Ahc-Hrsn Item Example 44250-9"/>
+<artifact deprecated="true" id="Observation/AHC-HRSN-item-example-44255-8" key="Observation-AHC-HRSN-item-example-44255-8" name="Ahc-Hrsn Item Example 44255-8"/>
+<artifact deprecated="true" id="Observation/AHC-HRSN-item-example-68516-4" key="Observation-AHC-HRSN-item-example-68516-4" name="Ahc-Hrsn Item Example 68516-4"/>
+<artifact deprecated="true" id="Observation/AHC-HRSN-item-example-68524-8" key="Observation-AHC-HRSN-item-example-68524-8" name="Ahc-Hrsn Item Example 68524-8"/>
+<artifact deprecated="true" id="Observation/AHC-HRSN-item-example-69858-9" key="Observation-AHC-HRSN-item-example-69858-9" name="Ahc-Hrsn Item Example 69858-9"/>
+<artifact deprecated="true" id="Observation/AHC-HRSN-item-example-69861-3" key="Observation-AHC-HRSN-item-example-69861-3" name="Ahc-Hrsn Item Example 69861-3"/>
+<artifact deprecated="true" id="Observation/AHC-HRSN-item-example-76513-1" key="Observation-AHC-HRSN-item-example-76513-1" name="Ahc-Hrsn Item Example 76513-1"/>
+<artifact deprecated="true" id="Observation/AHC-HRSN-item-example-89555-7" key="Observation-AHC-HRSN-item-example-89555-7" name="Ahc-Hrsn Item Example 89555-7"/>
+<artifact deprecated="true" id="Observation/AHC-HRSN-item-example-93038-8" key="Observation-AHC-HRSN-item-example-93038-8" name="Ahc-Hrsn Item Example 93038-8"/>
+<artifact deprecated="true" id="Observation/AHC-HRSN-item-example-93159-2" key="Observation-AHC-HRSN-item-example-93159-2" name="Ahc-Hrsn Item Example 93159-2"/>
+<artifact deprecated="true" id="Observation/AHC-HRSN-item-example-95530-2" key="Observation-AHC-HRSN-item-example-95530-2" name="Ahc-Hrsn Item Example 95530-2"/>
+<artifact deprecated="true" id="Observation/AHC-HRSN-item-example-96780-2" key="Observation-AHC-HRSN-item-example-96780-2" name="Ahc-Hrsn Item Example 96780-2"/>
+<artifact deprecated="true" id="Observation/AHC-HRSN-item-example-96781-0" key="Observation-AHC-HRSN-item-example-96781-0" name="Ahc-Hrsn Item Example 96781-0"/>
+<artifact deprecated="true" id="Observation/AHC-HRSN-item-example-96782-8" key="Observation-AHC-HRSN-item-example-96782-8" name="Ahc-Hrsn Item Example 96782-8"/>
+<artifact deprecated="true" id="Observation/AHC-HRSN-item-example-96842-0" key="Observation-AHC-HRSN-item-example-96842-0" name="Ahc-Hrsn Item Example 96842-0"/>
+<artifact deprecated="true" id="Observation/AHC-HRSN-item-example-97027-7" key="Observation-AHC-HRSN-item-example-97027-7" name="Ahc-Hrsn Item Example 97027-7"/>
+<artifact id="Observation/AHC-HRSN-item-example-68517-2" key="Observation-AHC-HRSN-item-example-68517-2" name="Ahc-Hrsn Item Observation Example 68517-2"/>
+<artifact deprecated="true" id="Observation/AHC-HRSN-panel-example-96777-8" key="Observation-AHC-HRSN-panel-example-96777-8" name="Ahc-Hrsn Panel Example 96777-8"/>
+<artifact deprecated="true" key="AllergyIntolerance" name="AllergyIntolerance"/>
+<artifact id="AllergyIntolerance/example" key="AllergyIntolerance-example" name="AllergyIntolerance Example"/>
+<artifact id="Bundle/c887e62f-6166-419f-8268-b5ecd6c7b901" key="Bundle-c887e62f-6166-419f-8268-b5ecd6c7b901" name="AllergyIntolerance Provenance Example"/>
+<artifact id="Observation/at-home-in-vitro-test" key="Observation-at-home-in-vitro-test" name="At Home In Vitro Test Example"/>
+<artifact deprecated="true" key="AuditEvent" name="AuditEvent"/>
+<artifact id="Observation/bmi" key="Observation-bmi" name="BMI Example"/>
+<artifact id="Observation/bp-data-absent" key="Observation-bp-data-absent" name="BP Data Absent Example"/>
+<artifact deprecated="true" id="Observation/bun" key="Observation-bun" name="BUN Example"/>
+<artifact deprecated="true" key="Binary" name="Binary"/>
+<artifact id="ValueSet/birthsex" key="ValueSet-birthsex" name="Birth Sex"/>
+<artifact deprecated="true" id="Observation/blood-glucose" key="Observation-blood-glucose" name="Blood Glucose Example"/>
+<artifact id="Observation/blood-pressure" key="Observation-blood-pressure" name="Blood Pressure Example"/>
+<artifact id="DiagnosticReport/cbc" key="DiagnosticReport-cbc" name="CBC Example"/>
+<artifact id="Observation/capillary-refill-time-nail-bed" key="Observation-capillary-refill-time-nail-bed" name="Capillary refill Time Nail Bed Example"/>
+<artifact deprecated="true" key="CarePlan" name="CarePlan"/>
+<artifact deprecated="true" key="CareTeam" name="CareTeam"/>
+<artifact id="CareTeam/example" key="CareTeam-example" name="CareTeam Example"/>
+<artifact id="Media/chest-xray" key="Media-chest-xray" name="Chest Xray Example"/>
+<artifact id="CarePlan/colonoscopy" key="CarePlan-colonoscopy" name="Colonoscopy Example"/>
+<artifact deprecated="true" key="Composition" name="Composition"/>
+<artifact deprecated="true" key="Condition" name="Condition"/>
+<artifact id="Condition/condition-duodenal-ulcer" key="Condition-condition-duodenal-ulcer" name="Condition Duodenal Ulcer Example"/>
+<artifact deprecated="true" id="Condition/example" key="Condition-example" name="Condition Example"/>
+<artifact deprecated="true" key="Conformance" name="Conformance"/>
+<artifact deprecated="true" key="Coverage" name="Coverage"/>
+<artifact id="Coverage/coverage-example" key="Coverage-coverage-example" name="Coverage Example"/>
+<artifact id="DiagnosticReport/bone-density-report" key="DiagnosticReport-bone-density-report" name="DXA Bone density quantitative measurement panel Example"/>
+<artifact id="Observation/dxa-femur-l-armass-bmd" key="Observation-dxa-femur-l-armass-bmd" name="DXA Femur-L ArMass BMD Example"/>
+<artifact id="Observation/dxa-femur-l-t-score-bmd" key="Observation-dxa-femur-l-t-score-bmd" name="DXA Femur-L T-score BMD Example"/>
+<artifact id="Observation/dxa-femur-l-z-score-bmd" key="Observation-dxa-femur-l-z-score-bmd" name="DXA Femur-L Z-score BMD Example"/>
+<artifact id="Observation/dxa-hip-l-armass-bmd" key="Observation-dxa-hip-l-armass-bmd" name="DXA Hip-L ArMass BMD Example"/>
+<artifact id="Observation/dxa-hip-l-t-score-bmd" key="Observation-dxa-hip-l-t-score-bmd" name="DXA Hip-L T-score BMD Example"/>
+<artifact id="Observation/dxa-hip-l-z-score-bmd" key="Observation-dxa-hip-l-z-score-bmd" name="DXA Hip-L Z-score BMD Example"/>
+<artifact id="Patient/deceased-example" key="Patient-deceased-example" name="Deceased Patient Example"/>
+<artifact id="ValueSet/detailed-race" key="ValueSet-detailed-race" name="Detailed Race"/>
+<artifact id="ValueSet/detailed-ethnicity" key="ValueSet-detailed-ethnicity" name="Detailed ethnicity"/>
+<artifact deprecated="true" key="Device" name="Device"/>
+<artifact id="Device/udi-2" key="Device-udi-2" name="Device Defib Example"/>
+<artifact id="Device/udi-3" key="Device-udi-3" name="Device Knee Example"/>
+<artifact deprecated="true" key="DiagnosticReport" name="DiagnosticReport"/>
+<artifact id="DiagnosticReport/cardiology-report" key="DiagnosticReport-cardiology-report" name="DiagnosticReport Cardiology Report Example"/>
+<artifact id="DiagnosticReport/chest-xray-report" key="DiagnosticReport-chest-xray-report" name="DiagnosticReport Chest Xray Report Example"/>
+<artifact deprecated="true" key="DiagnosticRequest" name="DiagnosticRequest (see ServiceRequest)"/>
+<artifact id="DocumentReference/discharge-summary" key="DocumentReference-discharge-summary" name="Discharge Summary Example"/>
+<artifact id="Bundle/docref-example-1" key="Bundle-docref-example-1" name="Docref Example 1"/>
+<artifact id="Bundle/docref-example-2" key="Bundle-docref-example-2" name="Docref Example 2"/>
+<artifact deprecated="true" key="DocumentReference" name="DocumentReference"/>
+<artifact id="Media/ekg-strip" key="Media-ekg-strip" name="EKG Strip Image"/>
+<artifact id="Observation/ekg-impression" key="Observation-ekg-impression" name="EKG impression Example"/>
+<artifact id="Observation/ekg-lead" key="Observation-ekg-lead" name="EKG lead Example"/>
+<artifact deprecated="true" key="Encounter" name="Encounter"/>
+<artifact id="Encounter/example-1" key="Encounter-example-1" name="Encounter 1 Example"/>
+<artifact id="Encounter/1036" key="Encounter-1036" name="Encounter 1036 Example"/>
+<artifact id="Encounter/delivery" key="Encounter-delivery" name="Encounter Delivery Example"/>
+<artifact id="Condition/encounter-diagnosis-example1" key="Condition-encounter-diagnosis-example1" name="Encounter Diagnosis Example 1"/>
+<artifact id="Condition/encounter-diagnosis-example2" key="Condition-encounter-diagnosis-example2" name="Encounter Diagnosis Example 2"/>
+<artifact id="DocumentReference/episode-summary" key="DocumentReference-episode-summary" name="Episode Summary Example"/>
+<artifact id="Observation/cbc-erythrocytes" key="Observation-erythrocytes" name="Erythrocytes Example"/>
+<artifact deprecated="true" key="FamilyHistory" name="FamilyMemberHistory"/>
+<artifact deprecated="true" key="Goal" name="Goal"/>
+<artifact id="Goal/goal-1" key="Goal-goal-1" name="Goal 1 Example"/>
+<artifact id="Goal/goal-sdoh-2" key="Goal-goal-sdoh-2" name="Goal 2 Example"/>
+<artifact deprecated="true" id="Condition/hc1" key="Condition-hc1" name="HC1 Example"/>
+<artifact id="Location/hl7east" key="Location-hl7east" name="HL7East Example"/>
+<artifact id="Observation/head-circumference" key="Observation-head-circumference" name="Head Circumference Example"/>
+<artifact id="Condition/health-concern-example" key="Condition-health-concern-example" name="Health Concern Example"/>
+<artifact id="Observation/heart-rate" key="Observation-heart-rate" name="Heart Rate Example"/>
+<artifact id="Observation/heart-rate-rhythm" key="Observation-heart-rate-rhythm" name="Heart rate rhythm Example"/>
+<artifact id="Observation/height" key="Observation-height" name="Height Example"/>
+<artifact id="Observation/cbc-hematocrit" key="Observation-cbc-hematocrit" name="Hematocrit Example"/>
+<artifact id="Observation/cbc-hemoglobin" key="Observation-hemoglobin" name="Hemoglobin Example"/>
+<artifact id="Location/hospital" key="Location-hospital" name="Hospital Location"/>
+<artifact deprecated="true" id="Observation/hunger-question-example" key="Observation-hunger-question-example" name="Hunger Question Example"/>
+<artifact id="Observation/HVS-item-example-88122-7" key="Observation-HVS-item-example-88122-7" name="Hvs Item Example 88122-7"/>
+<artifact id="Observation/HVS-item-example-88123-5" key="Observation-HVS-item-example-88123-5" name="Hvs Item Example 88123-5"/>
+<artifact id="Observation/HVS-item-example-88124-3" key="Observation-HVS-item-example-88124-3" name="Hvs Item Example 88124-3"/>
+<artifact id="Observation/HVS-panel-example-88121-9" key="Observation-HVS-panel-example-88121-9" name="Hvs Panel Example 88121-9"/>
+<artifact id="Immunization/imm-1" key="Immunization-imm-1" name="Imm 1 Example"/>
+<artifact deprecated="true" key="Immunization" name="Immunization"/>
+<artifact id="Observation/jugular-vein-distension" key="Observation-jugular-vein-distension" name="Jugular vein distension Example"/>
+<artifact id="ValueSet/simple-language" key="ValueSet-simple-language" name="Language codes with language and optionally a region modifier"/>
+<artifact id="Observation/length" key="Observation-length" name="Length Example"/>
+<artifact id="Observation/cbc-leukocytes" key="Observation-cbc-leukocytes" name="Leukocytes Example"/>
+<artifact deprecated="true" key="List" name="List"/>
+<artifact deprecated="true" key="Location" name="Location"/>
+<artifact id="Observation/cbc-mch" key="Observation-cbc-mch" name="MCH Example"/>
+<artifact id="Observation/cbc-mchc" key="Observation-mchc" name="MCHC Example"/>
+<artifact id="Observation/cbc-mcv" key="Observation-cbc-mcv" name="MCV Example"/>
+<artifact deprecated="true" key="Measure" name="Measure"/>
+<artifact deprecated="true" key="Medication" name="Medication"/>
+<artifact id="MedicationDispense/medicationdispense-example" key="MedicationDispense-medicationdispense-example" name="Medication Dispense Example"/>
+<artifact deprecated="true" key="MedicationAdministration" name="MedicationAdministration"/>
+<artifact deprecated="true" key="MedicationDispense" name="MedicationDispense"/>
+<artifact deprecated="true" key="MedicationPrescription" name="MedicationRequest"/>
+<artifact id="MedicationRequest/medicationrequest-coded-oral-axid" key="MedicationRequest-medicationrequest-coded-oral-axid" name="MedicationRequest Coded Oral Axid Example"/>
+<artifact id="MedicationRequest/medicationrequest-contained-oral-axid" key="MedicationRequest-medicationrequest-contained-oral-axid" name="MedicationRequest Contained Oral Axid Example"/>
+<artifact id="MedicationRequest/medicationrequest-referenced-oral-axid" key="MedicationRequest-medicationrequest-referenced-oral-axid" name="MedicationRequest Referenced Oral Axid Example"/>
+<artifact id="MedicationRequest/self-tylenol" key="MedicationRequest-self-tylenol" name="MedicationRequest Self Tylenol Example"/>
+<artifact deprecated="true" key="MedicationStatement" name="MedicationUsage (MedicationStatement)"/>
+<artifact id="DiagnosticReport/metabolic-panel" key="DiagnosticReport-metabolic-panel" name="Metabolic Panel Example"/>
+<artifact id="CareTeam/missing-coded-data-example" key="CareTeam-missing-coded-data-example" name="Missing Coded Data Example"/>
+<artifact deprecated="true" id="Observation/neutrophils" key="Observation-neutrophils" name="Neutrophils Example"/>
+<artifact id="Observation/ofc-percentile" key="Observation-ofc-percentile" name="OFC Percentile Example"/>
+<artifact id="ValueSet/omb-ethnicity-category" key="ValueSet-omb-ethnicity-category" name="OMB Ethnicity Categories"/>
+<artifact id="ValueSet/omb-race-category" key="ValueSet-omb-race-category" name="OMB Race Categories"/>
+<artifact deprecated="true" key="Observation" name="Observation"/>
+<artifact id="Observation/satO2-fiO2" key="Observation-satO2-fiO2" name="Observation SatO2 FiO2 Example"/>
+<artifact id="Observation/observation-occupation" key="Observation-observation-occupation" name="Occupation Observation Example"/>
+<artifact id="Observation/observation-occupation-industry-unknown" key="Observation-observation-occupation-industry-unknown" name="Occupation Observation Example: Industry Unknown"/>
+<artifact id="Observation/observation-occupation-unknown" key="Observation-observation-occupation-unknown" name="Occupation Observation Example: Unknown Occupation"/>
+<artifact deprecated="true" key="Organization" name="Organization"/>
+<artifact id="Organization/example-organization-2" key="Organization-example-organization-2" name="Organization 2 Example"/>
+<artifact id="Organization/acme-lab" key="Organization-acme-lab" name="Organization Acme Lab Example"/>
+<artifact id="Organization/acme-payer" key="Organization-acme-payer" name="Organization Acme Payer Example"/>
+<artifact id="Organization/holy-healthcare" key="Organization-holy-healthcare" name="Organization Holy Healthcare Example"/>
+<artifact id="Observation/oxygen-saturation" key="Observation-oxygen-saturation" name="Oxygen Saturation Example"/>
+<artifact id="Observation/p-r-interval-ekg-lead" key="Observation-p-r-interval-ekg-lead" name="P-R interval {EKG lead} Example"/>
+<artifact id="Observation/PHQ9-item-example-44250-9" key="Observation-PHQ9-item-example-44250-9" name="PHQ9 Item Example 44250-9"/>
+<artifact id="Observation/PHQ9-item-example-44251-7" key="Observation-PHQ9-item-example-44251-7" name="PHQ9 Item Example 44251-7"/>
+<artifact id="Observation/PHQ9-item-example-44252-5" key="Observation-PHQ9-item-example-44252-5" name="PHQ9 Item Example 44252-5"/>
+<artifact id="Observation/PHQ9-item-example-44253-3" key="Observation-PHQ9-item-example-44253-3" name="PHQ9 Item Example 44253-3"/>
+<artifact id="Observation/PHQ9-item-example-44254-1" key="Observation-PHQ9-item-example-44254-1" name="PHQ9 Item Example 44254-1"/>
+<artifact id="Observation/PHQ9-item-example-44255-8" key="Observation-PHQ9-item-example-44255-8" name="PHQ9 Item Example 44255-8"/>
+<artifact id="Observation/PHQ9-item-example-44258-2" key="Observation-PHQ9-item-example-44258-2" name="PHQ9 Item Example 44258-2"/>
+<artifact id="Observation/PHQ9-item-example-44259-0" key="Observation-PHQ9-item-example-44259-0" name="PHQ9 Item Example 44259-0"/>
+<artifact id="Observation/PHQ9-item-example-44260-8" key="Observation-PHQ9-item-example-44260-8" name="PHQ9 Item Example 44260-8"/>
+<artifact id="Observation/PHQ9-item-example-44261-6" key="Observation-PHQ9-item-example-44261-6" name="PHQ9 Item Example 44261-6"/>
+<artifact id="Observation/PHQ9-item-example-69722-7" key="Observation-PHQ9-item-example-69722-7" name="PHQ9 Item Example 69722-7"/>
+<artifact id="Observation/PHQ9-panel-example-44249-1" key="Observation-PHQ9-panel-example-44249-1" name="PHQ9 Panel Example 44249-1"/>
+<artifact id="Observation/PRAPARE-panel-example-93043-8" key="Observation-PRAPARE-panel-example-93043-8" name="PRAPARE Panel Example 93043-8"/>
+<artifact deprecated="true" key="Patient" name="Patient"/>
+<artifact id="Patient/child-example" key="Patient-child-example" name="Patient Child Example"/>
+<artifact id="Patient/example" key="Patient-example" name="Patient Example"/>
+<artifact id="Patient/infant-example" key="Patient-infant-example" name="Patient Infant Example"/>
+<artifact id="RelatedPerson/shaw-niece" key="RelatedPerson-shaw-niece" name="Patient Niece Example"/>
+<artifact id="Observation/pediatric-bmi-example" key="Observation-pediatric-bmi-example" name="Pediatric BMI Example"/>
+<artifact id="Observation/pediatric-wt-example" key="Observation-pediatric-wt-example" name="Pediatric Wt Example"/>
+<artifact id="Observation/cbc-platelets" key="Observation-cbc-platelets" name="Platelets Example"/>
+<artifact deprecated="true" key="Practitioner" name="Practitioner"/>
+<artifact id="Practitioner/practitioner-1" key="Practitioner-practitioner-1" name="Practitioner 1 Example"/>
+<artifact id="Practitioner/practitioner-2" key="Practitioner-practitioner-2" name="Practitioner 2 Example"/>
+<artifact id="Practitioner/practitioner-pharmacist" key="Practitioner-practitioner-pharmacist" name="Practitioner Pharmacist Example"/>
+<artifact deprecated="true" key="PractitionerRole" name="PractitionerRole"/>
+<artifact id="Bundle/66c8856b-ba11-4876-8aa8-467aad8c11a2" key="Bundle-66c8856b-ba11-4876-8aa8-467aad8c11a2" name="PractitionerRole_Practitioner_Endpoint_Bundle_Example Example"/>
+<artifact id="Observation/PRAPARE-item-example-54899-0" key="Observation-PRAPARE-item-example-54899-0" name="Prapare Item Example 54899-0"/>
+<artifact id="Observation/PRAPARE-item-example-56051-6" key="Observation-PRAPARE-item-example-56051-6" name="Prapare Item Example 56051-6"/>
+<artifact id="Observation/PRAPARE-item-example-56799-0" key="Observation-PRAPARE-item-example-56799-0" name="Prapare Item Example 56799-0"/>
+<artifact id="Observation/PRAPARE-item-example-63512-8" key="Observation-PRAPARE-item-example-63512-8" name="Prapare Item Example 63512-8"/>
+<artifact id="Observation/PRAPARE-item-example-63586-2" key="Observation-PRAPARE-item-example-63586-2" name="Prapare Item Example 63586-2"/>
+<artifact id="Observation/PRAPARE-item-example-67875-5" key="Observation-PRAPARE-item-example-67875-5" name="Prapare Item Example 67875-5"/>
+<artifact id="Observation/PRAPARE-item-example-71802-3" key="Observation-PRAPARE-item-example-71802-3" name="Prapare Item Example 71802-3"/>
+<artifact id="Observation/PRAPARE-item-example-76437-3" key="Observation-PRAPARE-item-example-76437-3" name="Prapare Item Example 76437-3"/>
+<artifact id="Observation/PRAPARE-item-example-76501-6" key="Observation-PRAPARE-item-example-76501-6" name="Prapare Item Example 76501-6"/>
+<artifact id="Observation/PRAPARE-item-example-82589-3" key="Observation-PRAPARE-item-example-82589-3" name="Prapare Item Example 82589-3"/>
+<artifact id="Observation/PRAPARE-item-example-93026-3" key="Observation-PRAPARE-item-example-93026-3" name="Prapare Item Example 93026-3"/>
+<artifact id="Observation/PRAPARE-item-example-93027-1" key="Observation-PRAPARE-item-example-93027-1" name="Prapare Item Example 93027-1"/>
+<artifact id="Observation/PRAPARE-item-example-93028-9" key="Observation-PRAPARE-item-example-93028-9" name="Prapare Item Example 93028-9"/>
+<artifact id="Observation/PRAPARE-item-example-93029-7" key="Observation-PRAPARE-item-example-93029-7" name="Prapare Item Example 93029-7"/>
+<artifact id="Observation/PRAPARE-item-example-93030-5" key="Observation-PRAPARE-item-example-93030-5" name="Prapare Item Example 93030-5"/>
+<artifact id="Observation/PRAPARE-item-example-93033-9" key="Observation-PRAPARE-item-example-93033-9" name="Prapare Item Example 93033-9"/>
+<artifact id="Observation/PRAPARE-item-example-93034-7" key="Observation-PRAPARE-item-example-93034-7" name="Prapare Item Example 93034-7"/>
+<artifact id="Observation/PRAPARE-item-example-93035-4" key="Observation-PRAPARE-item-example-93035-4" name="Prapare Item Example 93035-4"/>
+<artifact id="Observation/PRAPARE-item-example-93038-8" key="Observation-PRAPARE-item-example-93038-8" name="Prapare Item Example 93038-8"/>
+<artifact deprecated="true" id="Observation/prapare-multiselect-example" key="Observation-prapare-multiselect-example" name="Prapare Multiselect Example"/>
+<artifact id="Observation/PRAPARE-multiselect-item-example-32624-9-answer0" key="Observation-PRAPARE-multiselect-item-example-32624-9-answer0" name="Prapare Multiselect-Item Example 32624-9-Answer0"/>
+<artifact id="Observation/PRAPARE-multiselect-item-example-32624-9-answer1" key="Observation-PRAPARE-multiselect-item-example-32624-9-answer1" name="Prapare Multiselect-Item Example 32624-9-Answer1"/>
+<artifact id="Observation/PRAPARE-multiselect-item-example-93031-3-answer0" key="Observation-PRAPARE-multiselect-item-example-93031-3-answer0" name="Prapare Multiselect-Item Example 93031-3-Answer0"/>
+<artifact id="Observation/PRAPARE-multiselect-item-example-93031-3-answer1" key="Observation-PRAPARE-multiselect-item-example-93031-3-answer1" name="Prapare Multiselect-Item Example 93031-3-Answer1"/>
+<artifact id="Observation/PRAPARE-panel-example-93025-5" key="Observation-PRAPARE-panel-example-93025-5" name="Prapare Panel Example 93025-5"/>
+<artifact id="Observation/PRAPARE-panel-example-93039-6" key="Observation-PRAPARE-panel-example-93039-6" name="Prapare Panel Example 93039-6"/>
+<artifact id="Observation/PRAPARE-panel-example-93040-4" key="Observation-PRAPARE-panel-example-93040-4" name="Prapare Panel Example 93040-4"/>
+<artifact id="Observation/PRAPARE-panel-example-93041-2" key="Observation-PRAPARE-panel-example-93041-2" name="Prapare Panel Example 93041-2"/>
+<artifact id="Observation/PRAPARE-panel-example-93042-0" key="Observation-PRAPARE-panel-example-93042-0" name="Prapare Panel Example 93042-0"/>
+<artifact id="Observation/pregnancy-intent" key="Observation-pregnancy-intent" name="Pregnancy Intent Observation Example"/>
+<artifact id="Observation/pregnancy-status" key="Observation-pregnancy-status" name="Pregnancy Status Observation Example"/>
+<artifact deprecated="true" key="Procedure" name="Procedure"/>
+<artifact id="Procedure/defib-implant" key="Procedure-defib-implant" name="Procedure Defibrillator Implant Example"/>
+<artifact deprecated="true" key="Provenance" name="Provenance"/>
+<artifact id="Observation/pulse-intensity-palpation" key="Observation-pulse-intensity-palpation" name="Pulse intensity Palpation Example"/>
+<artifact id="Observation/q-t-interval-ekg-lead" key="Observation-q-t-interval-ekg-lead" name="Q-T interval {EKG lead} Example"/>
+<artifact id="Observation/qrs-dur-ekg-lead" key="Observation-qrs-dur-ekg-lead" name="QRS dur {EKG lead} Example"/>
+<artifact id="Questionnaire/hunger-vital-sign-example" key="Questionnaire-hunger-vital-sign-example" name="Questionnaire Hunger Vital Sign [HVS] Example"/>
+<artifact id="Questionnaire/phq-9-example" key="Questionnaire-phq-9-example" name="Questionnaire PHQ-9 Example"/>
+<artifact id="Questionnaire/prapare-example" key="Questionnaire-prapare-example" name="Questionnaire PRAPARE Example"/>
+<artifact deprecated="true" id="QuestionnaireResponse/AHC-HRSN-screening-example" key="QuestionnaireResponse-AHC-HRSN-screening-example" name="QuestionnaireResponse AHC HRSN Screening Example"/>
+<artifact deprecated="true" id="QuestionnaireResponse/5774968" key="QuestionnaireResponse-5774968" name="QuestionnaireResponse Example 44250-9"/>
+<artifact deprecated="true" id="QuestionnaireResponse/glascow-coma-score" key="QuestionnaireResponse-glascow-coma-score" name="QuestionnaireResponse Glascow Coma Score Example"/>
+<artifact id="QuestionnaireResponse/hunger-vital-sign-example" key="QuestionnaireResponse-hunger-vital-sign-example" name="QuestionnaireResponse Hunger Vital Sign [HVS] Example"/>
+<artifact id="QuestionnaireResponse/phq-9-example" key="QuestionnaireResponse-phq-9-example" name="QuestionnaireResponse PHQ-9 Example"/>
+<artifact id="QuestionnaireResponse/prapare-example" key="QuestionnaireResponse-PRAPARE-example" name="QuestionnaireResponse PRAPARE Example"/>
+<artifact deprecated="true" id="CodeSystem/cdcrec" key="CodeSystem-cdcrec" name="RaceAndEthnicityCDC"/>
+<artifact id="Procedure/rehab" key="Procedure-rehab" name="Rehab Example"/>
+<artifact id="Observation/respiratory-rate" key="Observation-respiratory-rate" name="Respiratory Rate Example"/>
+<artifact id="Condition/condition-SDOH-example" key="Condition-condition-SDOH-example" name="SDOH Problem/Health Concern Example"/>
+<artifact id="Organization/saint-luke-w-endpoint" key="Organization-saint-luke-w-endpoint" name="Saint Luke W Endpoint Example"/>
+<artifact id="Observation/serum-bun" key="Observation-serum-bun" name="Serum BUN Example"/>
+<artifact id="Observation/serum-co2" key="Observation-serum-co2" name="Serum CO2 Example"/>
+<artifact id="Observation/serum-calcium" key="Observation-serum-calcium" name="Serum Calcium Example"/>
+<artifact id="Observation/serum-chloride" key="Observation-serum-chloride" name="Serum Chloride Example"/>
+<artifact id="Observation/serum-creatinine" key="Observation-serum-creatinine" name="Serum Creatinine Example"/>
+<artifact id="Observation/serum-glucose" key="Observation-serum-glucose" name="Serum Glucose Example"/>
+<artifact id="Observation/serum-potassium" key="Observation-serum-potassium" name="Serum Potassium Example"/>
+<artifact id="Observation/serum-sodium" key="Observation-serum-sodium" name="Serum Sodium Example"/>
+<artifact id="Specimen/specimen-example-serum" key="Specimen-specimen-example-serum" name="Serum Specimen Example"/>
+<artifact id="Observation/serum-total-bilirubin" key="Observation-serum-total-bilirubin" name="Serum Total Bilirubin Example"/>
+<artifact id="ServiceRequest/defib-implant" key="ServiceRequest-defib-implant" name="ServiceRequest Defibrillator Implant Example"/>
+<artifact id="ServiceRequest/foodpantry-referral" key="ServiceRequest-foodpantry-referral" name="ServiceRequest Example"/>
+<artifact id="ServiceRequest/rehab" key="ServiceRequest-rehab" name="ServiceRequest for Rehab Example"/>
+<artifact id="Observation/sexual-orientation-example" key="Observation-sexual-orientation-example" name="Sexual Orientation Observation Example"/>
+<artifact id="Observation/simple-observation-cognitive-status" key="Observation-simple-observation-cognitive-status" name="Simple Observation Cognitive Status Example"/>
+<artifact id="Observation/simple-observation-disability-status" key="Observation-simple-observation-disability-status" name="Simple Observation Disability Status Example"/>
+<artifact id="Observation/simple-observation-sdoh" key="Observation-simple-observation-sdoh" name="Simple Observation SDOH Example"/>
+<artifact deprecated="true" id="Observation/socialhistory-assessment-example" key="Observation-socialhistory-assessment-example" name="Social History Assessment Example"/>
+<artifact id="Observation/some-day-smoker" key="Observation-some-day-smoker" name="Some Day Smoker Example"/>
+<artifact deprecated="true" key="Specimen" name="Specimen"/>
+<artifact deprecated="true" key="StructureDefinition" name="StructureDefinition"/>
+<artifact id="Provenance/example-targeted-provenance" key="Provenance-example-targeted-provenance" name="Targeted Provenance Example"/>
+<artifact id="Patient/example-targeted-provenance" key="Patient-example-targeted-provenance" name="Targeted Provenance Patient Example"/>
+<artifact id="Observation/temperature" key="Observation-temperature" name="Temperature Example"/>
+<artifact id="Device/udi-1" key="Device-udi-1" name="UDI 1 Example"/>
+<artifact id="StructureDefinition/us-core-allergyintolerance" key="StructureDefinition-us-core-allergyintolerance" name="US Core AllergyIntolerance Profile"/>
+<artifact id="StructureDefinition/us-core-bmi" key="StructureDefinition-us-core-bmi" name="US Core BMI Profile"/>
+<artifact id="StructureDefinition/us-core-birthsex" key="StructureDefinition-us-core-birthsex" name="US Core Birth Sex Extension"/>
+<artifact id="StructureDefinition/us-core-blood-pressure" key="StructureDefinition-us-core-blood-pressure" name="US Core Blood Pressure Profile"/>
+<artifact id="StructureDefinition/us-core-body-height" key="StructureDefinition-us-core-body-height" name="US Core Body Height Profile"/>
+<artifact id="StructureDefinition/us-core-body-temperature" key="StructureDefinition-us-core-body-temperature" name="US Core Body Temperature Profile"/>
+<artifact id="StructureDefinition/us-core-body-weight" key="StructureDefinition-us-core-body-weight" name="US Core Body Weight Profile"/>
+<artifact id="CodeSystem/careplan-category" key="CodeSystem-careplan-category" name="US Core CarePlan Category Extension Codes"/>
+<artifact id="StructureDefinition/us-core-careplan" key="StructureDefinition-us-core-careplan" name="US Core CarePlan Profile"/>
+<artifact id="StructureDefinition/us-core-careteam" key="StructureDefinition-us-core-careteam" name="US Core CareTeam Profile"/>
+<artifact id="CodeSystem/us-core-category" key="CodeSystem-us-core-category" name="US Core Category"/>
+<artifact id="CapabilityStatement/us-core-client" key="CapabilityStatement-us-core-client" name="US Core Client CapabilityStatement"/>
+<artifact id="ValueSet/us-core-clinical-note-type" key="ValueSet-us-core-clinical-note-type" name="US Core Clinical Note Type"/>
+<artifact id="ValueSet/us-core-clinical-result-observation-category" key="ValueSet-us-core-clinical-result-observation-category" name="US Core Clinical Result Observation Category"/>
+<artifact deprecated="true" id="ValueSet/us-core-clinical-test-codes" key="ValueSet-us-core-clinical-test-codes" name="US Core Clinical Test Codes"/>
+<artifact deprecated="true" id="ValueSet/us-core-common-sdoh-assessments" key="ValueSet-us-core-common-sdoh-assessments" name="US Core Common SDOH Assessments"/>
+<artifact deprecated="true" id="ValueSet/us-core-condition-category" key="ValueSet-us-core-condition-category" name="US Core Condition Category Codes"/>
+<artifact id="CodeSystem/condition-category" key="CodeSystem-condition-category" name="US Core Condition Category Extension Codes"/>
+<artifact id="ValueSet/us-core-condition-code" key="ValueSet-us-core-condition-code" name="US Core Condition Codes"/>
+<artifact id="StructureDefinition/us-core-condition-encounter-diagnosis" key="StructureDefinition-us-core-condition-encounter-diagnosis" name="US Core Condition Encounter Diagnosis Profile"/>
+<artifact id="StructureDefinition/us-core-condition-problems-health-concerns" key="StructureDefinition-us-core-condition-problems-health-concerns" name="US Core Condition Problems and Health Concerns Profile"/>
+<artifact deprecated="true" id="StructureDefinition/us-core-condition" key="StructureDefinition-us-core-condition" name="US Core Condition Profile"/>
+<artifact id="StructureDefinition/us-core-coverage" key="StructureDefinition-us-core-coverage" name="US Core Coverage Profile"/>
+<artifact id="ValueSet/us-core-diagnosticreport-category" key="ValueSet-us-core-diagnosticreport-category" name="US Core Diagnostic Report Category Codes"/>
+<artifact deprecated="true" id="ValueSet/us-core-diagnosticreport-lab-codes" key="ValueSet-us-core-diagnosticreport-lab-codes" name="US Core Diagnostic Report Laboratory Codes"/>
+<artifact id="StructureDefinition/us-core-diagnosticreport-lab" key="StructureDefinition-us-core-diagnosticreport-lab" name="US Core DiagnosticReport Profile for Laboratory Results Reporting"/>
+<artifact id="StructureDefinition/us-core-diagnosticreport-note" key="StructureDefinition-us-core-diagnosticreport-note" name="US Core DiagnosticReport Profile for Report and Note Exchange"/>
+<artifact id="StructureDefinition/us-core-direct" key="StructureDefinition-us-core-direct" name="US Core Direct email Extension"/>
+<artifact id="ValueSet/us-core-discharge-disposition" key="ValueSet-us-core-discharge-disposition" name="US Core Discharge Disposition"/>
+<artifact id="ValueSet/us-core-documentreference-category" key="ValueSet-us-core-documentreference-category" name="US Core DocumentReference Category"/>
+<artifact id="StructureDefinition/us-core-documentreference" key="StructureDefinition-us-core-documentreference" name="US Core DocumentReference Profile"/>
+<artifact id="ValueSet/us-core-documentreference-type" key="ValueSet-us-core-documentreference-type" name="US Core DocumentReference Type"/>
+<artifact id="CodeSystem/us-core-documentreference-category" key="CodeSystem-us-core-documentreference-category" name="US Core DocumentReferences Category Codes"/>
+<artifact id="StructureDefinition/us-core-encounter" key="StructureDefinition-us-core-encounter" name="US Core Encounter Profile"/>
+<artifact id="ValueSet/us-core-encounter-type" key="ValueSet-us-core-encounter-type" name="US Core Encounter Type"/>
+<artifact id="StructureDefinition/us-core-ethnicity" key="StructureDefinition-us-core-ethnicity" name="US Core Ethnicity Extension"/>
+<artifact deprecated="true" id="StructureDefinition/us-core-extension-questionnaire-uri" key="StructureDefinition-us-core-extension-questionnaire-uri" name="US Core Extension Questionnaire URI"/>
+<artifact id="OperationDefinition/docref" key="OperationDefinition-docref" name="US Core Fetch DocumentReference"/>
+<artifact id="StructureDefinition/us-core-genderIdentity" key="StructureDefinition-us-core-genderIdentity" name="US Core Gender Identity Extension"/>
+<artifact id="ValueSet/us-core-goal-description" key="ValueSet-us-core-goal-description" name="US Core Goal Codes"/>
+<artifact id="StructureDefinition/us-core-goal" key="StructureDefinition-us-core-goal" name="US Core Goal Profile"/>
+<artifact id="StructureDefinition/us-core-head-circumference" key="StructureDefinition-us-core-head-circumference" name="US Core Head Circumference Profile"/>
+<artifact id="StructureDefinition/us-core-heart-rate" key="StructureDefinition-us-core-heart-rate" name="US Core Heart Rate Profile"/>
+<artifact id="StructureDefinition/us-core-immunization" key="StructureDefinition-us-core-immunization" name="US Core Immunization Profile"/>
+<artifact id="StructureDefinition/us-core-implantable-device" key="StructureDefinition-us-core-implantable-device" name="US Core Implantable Device Profile"/>
+<artifact id="StructureDefinition/us-core-jurisdiction" key="StructureDefinition-us-core-jurisdiction" name="US Core Jurisdiction Extension"/>
+<artifact id="StructureDefinition/us-core-observation-lab" key="StructureDefinition-us-core-observation-lab" name="US Core Laboratory Result Observation Profile"/>
+<artifact id="ValueSet/us-core-laboratory-test-codes" key="ValueSet-us-core-laboratory-test-codes" name="US Core Laboratory Test Codes"/>
+<artifact id="StructureDefinition/us-core-location" key="StructureDefinition-us-core-location" name="US Core Location Profile"/>
+<artifact id="StructureDefinition/us-core-medication" key="StructureDefinition-us-core-medication" name="US Core Medication Profile"/>
+<artifact id="StructureDefinition/us-core-medicationdispense" key="StructureDefinition-us-core-medicationdispense" name="US Core MedicationDispense Profile"/>
+<artifact id="StructureDefinition/us-core-medicationrequest" key="StructureDefinition-us-core-medicationrequest" name="US Core MedicationRequest Profile"/>
+<artifact id="ValueSet/us-core-narrative-status" key="ValueSet-us-core-narrative-status" name="US Core Narrative Status"/>
+<artifact id="ValueSet/us-core-diagnosticreport-report-and-note-codes" key="ValueSet-us-core-diagnosticreport-report-and-note-codes" name="US Core Non Laboratory Codes"/>
+<artifact deprecated="true" id="ValueSet/us-core-category" key="ValueSet-us-core-observation-category" name="US Core Observation Category"/>
+<artifact deprecated="true" id="CodeSystem/us-core-observation-category" key="CodeSystem-us-core-observation-category" name="US Core Observation Category Extension Codes"/>
+<artifact id="StructureDefinition/us-core-observation-clinical-result" key="StructureDefinition-us-core-observation-clinical-result" name="US Core Observation Clinical Result Profile"/>
+<artifact deprecated="true" id="StructureDefinition/us-core-observation-clinical-test" key="StructureDefinition-us-core-observation-clinical-test" name="US Core Observation Clinical Test Result Profile"/>
+<artifact deprecated="true" id="StructureDefinition/us-core-observation-imaging" key="StructureDefinition-us-core-observation-imaging" name="US Core Observation Imaging Result Profile"/>
+<artifact id="StructureDefinition/us-core-observation-occupation" key="StructureDefinition-us-core-observation-occupation" name="US Core Observation Occupation Profile"/>
+<artifact id="StructureDefinition/us-core-observation-pregnancyintent" key="StructureDefinition-us-core-observation-pregnancyintent" name="US Core Observation Pregnancy Intent Profile"/>
+<artifact id="StructureDefinition/us-core-observation-pregnancystatus" key="StructureDefinition-us-core-observation-pregnancystatus" name="US Core Observation Pregnancy Status Profile"/>
+<artifact deprecated="true" id="StructureDefinition/us-core-observation-sdoh-assessment" key="StructureDefinition-us-core-observation-sdoh-assessment" name="US Core Observation SDOH Assessment Profile"/>
+<artifact id="StructureDefinition/us-core-observation-screening-assessment" key="StructureDefinition-us-core-observation-screening-assessment" name="US Core Observation Screening Assessment Profile"/>
+<artifact id="StructureDefinition/us-core-observation-sexual-orientation" key="StructureDefinition-us-core-observation-sexual-orientation" name="US Core Observation Sexual Orientation Profile"/>
+<artifact deprecated="true" id="StructureDefinition/us-core-observation-social-history" key="StructureDefinition-us-core-observation-social-history" name="US Core Observation Social History Profile"/>
+<artifact deprecated="true" id="StructureDefinition/us-core-observation-survey" key="StructureDefinition-us-core-observation-survey" name="US Core Observation Survey Profile"/>
+<artifact id="ValueSet/us-core-observation-value-codes" key="ValueSet-us-core-observation-value-codes" name="US Core Observation Value Codes (SNOMED-CT)"/>
+<artifact id="StructureDefinition/us-core-organization" key="StructureDefinition-us-core-organization" name="US Core Organization Profile"/>
+<artifact id="StructureDefinition/us-core-patient" key="StructureDefinition-us-core-patient" name="US Core Patient Profile"/>
+<artifact id="StructureDefinition/pediatric-bmi-for-age" key="StructureDefinition-pediatric-bmi-for-age" name="US Core Pediatric BMI for Age Observation Profile"/>
+<artifact id="StructureDefinition/head-occipital-frontal-circumference-percentile" key="StructureDefinition-head-occipital-frontal-circumference-percentile" name="US Core Pediatric Head Occipital Frontal Circumference Percentile Profile"/>
+<artifact id="StructureDefinition/pediatric-weight-for-height" key="StructureDefinition-pediatric-weight-for-height" name="US Core Pediatric Weight for Height Observation Profile"/>
+<artifact id="StructureDefinition/us-core-practitioner" key="StructureDefinition-us-core-practitioner" name="US Core Practitioner Profile"/>
+<artifact id="StructureDefinition/us-core-practitionerrole" key="StructureDefinition-us-core-practitionerrole" name="US Core PractitionerRole Profile"/>
+<artifact id="ValueSet/us-core-pregnancy-intent" key="ValueSet-us-core-pregnancy-intent" name="US Core Pregnancy Intent Codes"/>
+<artifact id="ValueSet/us-core-pregnancy-status" key="ValueSet-us-core-pregnancy-status" name="US Core Pregnancy Status Codes"/>
+<artifact id="ValueSet/us-core-problem-or-health-concern" key="ValueSet-us-core-problem-or-health-concern" name="US Core Problem or Health Concern"/>
+<artifact id="ValueSet/us-core-procedure-code" key="ValueSet-us-core-procedure-code" name="US Core Procedure Codes"/>
+<artifact id="StructureDefinition/us-core-procedure" key="StructureDefinition-us-core-procedure" name="US Core Procedure Profile"/>
+<artifact id="ValueSet/us-core-provenance-participant-type" key="ValueSet-us-core-provenance-participant-type" name="US Core Provenance Participant Type Codes"/>
+<artifact id="CodeSystem/us-core-provenance-participant-type" key="CodeSystem-us-core-provenance-participant-type" name="US Core Provenance Participant Type Extension Codes"/>
+<artifact id="StructureDefinition/us-core-provenance" key="StructureDefinition-us-core-provenance" name="US Core Provenance Profile"/>
+<artifact deprecated="true" id="ValueSet/us-core-provider-role" key="ValueSet-us-core-provider-role" name="US Core Provider Role (NUCC)"/>
+<artifact id="StructureDefinition/us-core-pulse-oximetry" key="StructureDefinition-us-core-pulse-oximetry" name="US Core Pulse Oximetry Profile"/>
+<artifact deprecated="true" id="StructureDefinition/us-core-questionnaireresponse" key="StructureDefinition-us-core-questionnaireresponse" name="US Core QuestionnaireResponse Profile"/>
+<artifact id="StructureDefinition/us-core-race" key="StructureDefinition-us-core-race" name="US Core Race Extension"/>
+<artifact id="StructureDefinition/us-core-relatedperson" key="StructureDefinition-us-core-relatedperson" name="US Core RelatedPerson Profile"/>
+<artifact id="StructureDefinition/us-core-respiratory-rate" key="StructureDefinition-us-core-respiratory-rate" name="US Core Respiratory Rate Profile"/>
+<artifact id="ValueSet/us-core-screening-assessment-condition-category" key="ValueSet-us-core-screening-assessment-condition-category" name="US Core Screening Assessment Condition Category"/>
+<artifact id="ValueSet/us-core-screening-assessment-observation-category" key="ValueSet-us-core-screening-assessment-observation-category" name="US Core Screening Assessment Observation Category"/>
+<artifact deprecated="true" id="StructureDefinition/us-core-observation-screening-response" key="StructureDefinition-us-core-observation-screening-response" name="US Core Screening Response Observation Profile"/>
+<artifact id="CapabilityStatement/us-core-server" key="CapabilityStatement-us-core-server" name="US Core Server CapabilityStatement"/>
+<artifact id="ValueSet/us-core-servicerequest-category" key="ValueSet-us-core-servicerequest-category" name="US Core ServiceRequest Category Codes"/>
+<artifact id="StructureDefinition/us-core-servicerequest" key="StructureDefinition-us-core-servicerequest" name="US Core ServiceRequest Profile"/>
+<artifact id="StructureDefinition/us-core-sex" key="StructureDefinition-us-core-sex" name="US Core Sex Extension"/>
+<artifact deprecated="true" id="StructureDefinition/us-core-sex-for-clinical-use" key="StructureDefinition-us-core-sex-for-clinical-use" name="US Core Sex For Clinical Use"/>
+<artifact deprecated="true" id="CodeSystem/us-core-sex-for-clinical-use" key="CodeSystem-us-core-sex-for-clinical-use" name="US Core Sex for Clinical Use"/>
+<artifact deprecated="true" id="ValueSet/us-core-sex-for-clinical-use" key="ValueSet-us-core-sex-for-clinical-use" name="US Core Sex for Clinical Use Codes"/>
+<artifact id="ValueSet/us-core-sexual-orientation" key="ValueSet-us-core-sexual-orientation" name="US Core Sexual Orientation"/>
+<artifact id="ValueSet/us-core-simple-observation-category" key="ValueSet-us-core-simple-observation-category" name="US Core Simple Observation Category"/>
+<artifact id="ValueSet/simple-observation" key="ValueSet-simple-observation" name="US Core Simple Observation Codes"/>
+<artifact id="StructureDefinition/us-core-simple-observation" key="StructureDefinition-us-core-simple-observation" name="US Core Simple Observation Profile"/>
+<artifact id="ValueSet/us-core-observation-smokingstatus-max" key="ValueSet-us-core-observation-smokingstatus-max" name="US Core Smoking Status Max-Binding"/>
+<artifact id="ValueSet/us-core-smoking-status-observation-codes" key="ValueSet-us-core-smoking-status-observation-codes" name="US Core Smoking Status Observation Codes"/>
+<artifact id="StructureDefinition/us-core-smokingstatus" key="StructureDefinition-us-core-smokingstatus" name="US Core Smoking Status Observation Profile"/>
+<artifact deprecated="true" id="StructureDefinition/us-core-observation-social-history-assessment" key="StructureDefinition-us-core-observation-social-history-assessment" name="US Core Social History Assessment Observation Profile"/>
+<artifact id="StructureDefinition/us-core-specimen" key="StructureDefinition-us-core-specimen" name="US Core Specimen Profile"/>
+<artifact id="ValueSet/us-core-observation-smoking-status-status" key="ValueSet-us-core-observation-smoking-status-status" name="US Core Status for Smoking Status Observation"/>
+<artifact id="ValueSet/us-core-survey-codes" key="ValueSet-us-core-survey-codes" name="US Core Survey Codes"/>
+<artifact deprecated="true" id="CodeSystem/us-core-tags" key="CodeSystem-us-core-tags" name="US Core Tags CodeSystem"/>
+<artifact deprecated="true" id="ValueSet/us-core-tags" key="ValueSet-us-core-tags" name="US Core Tags ValueSet"/>
+<artifact id="StructureDefinition/us-core-tribal-affiliation" key="StructureDefinition-us-core-tribal-affiliation" name="US Core Tribal Affiliation Extension"/>
+<artifact id="StructureDefinition/uscdi-requirement" key="StructureDefinition-uscdi-requirement" name="US Core USCDI Requirement Extension"/>
+<artifact id="StructureDefinition/us-core-vital-signs" key="StructureDefinition-us-core-vital-signs" name="US Core Vital Signs Profile"/>
+<artifact id="ValueSet/us-core-vital-signs" key="ValueSet-us-core-vital-signs" name="US Core Vital Signs ValueSet"/>
+<artifact deprecated="true" id="ImplementationGuide/hl7.fhir.us.core" key="ImplementationGuide-hl7.fhir.us.core" name="USCore"/>
+<artifact deprecated="true" id="ValueSet/us-core-allergy-substance" key="ValueSet-us-core-allergy-substance" name="USCoreAllergySubstance"/>
+<artifact id="SearchParameter/us-core-allergyintolerance-clinical-status" key="SearchParameter-us-core-allergyintolerance-clinical-status" name="USCoreAllergyintoleranceClinicalStatus"/>
+<artifact id="SearchParameter/us-core-allergyintolerance-patient" key="SearchParameter-us-core-allergyintolerance-patient" name="USCoreAllergyintolerancePatient"/>
+<artifact deprecated="true" id="ValueSet/us-core-careteam-provider-roles" key="ValueSet-us-core-careteam-provider-roles" name="USCoreCareTeamProviderRoles"/>
+<artifact id="SearchParameter/us-core-careteam-role" key="SearchParameter-us-core-careteam-role" name="USCoreCareTeamRole"/>
+<artifact id="SearchParameter/us-core-careplan-category" key="SearchParameter-us-core-careplan-category" name="USCoreCareplanCategory"/>
+<artifact id="SearchParameter/us-core-careplan-date" key="SearchParameter-us-core-careplan-date" name="USCoreCareplanDate"/>
+<artifact id="SearchParameter/us-core-careplan-patient" key="SearchParameter-us-core-careplan-patient" name="USCoreCareplanPatient"/>
+<artifact id="SearchParameter/us-core-careplan-status" key="SearchParameter-us-core-careplan-status" name="USCoreCareplanStatus"/>
+<artifact id="SearchParameter/us-core-careteam-patient" key="SearchParameter-us-core-careteam-patient" name="USCoreCareteamPatient"/>
+<artifact id="SearchParameter/us-core-careteam-status" key="SearchParameter-us-core-careteam-status" name="USCoreCareteamStatus"/>
+<artifact id="SearchParameter/us-core-condition-abatement-date" key="SearchParameter-us-core-condition-abatement-date" name="USCoreConditionAbatementDate"/>
+<artifact id="SearchParameter/us-core-condition-asserted-date" key="SearchParameter-us-core-condition-asserted-date" name="USCoreConditionAssertedDate"/>
+<artifact id="SearchParameter/us-core-condition-category" key="SearchParameter-us-core-condition-category" name="USCoreConditionCategory"/>
+<artifact id="SearchParameter/us-core-condition-clinical-status" key="SearchParameter-us-core-condition-clinical-status" name="USCoreConditionClinicalStatus"/>
+<artifact id="SearchParameter/us-core-condition-code" key="SearchParameter-us-core-condition-code" name="USCoreConditionCode"/>
+<artifact id="SearchParameter/us-core-condition-encounter" key="SearchParameter-us-core-condition-encounter" name="USCoreConditionEncounter"/>
+<artifact id="SearchParameter/us-core-condition-onset-date" key="SearchParameter-us-core-condition-onset-date" name="USCoreConditionOnsetDate"/>
+<artifact id="SearchParameter/us-core-condition-patient" key="SearchParameter-us-core-condition-patient" name="USCoreConditionPatient"/>
+<artifact id="SearchParameter/us-core-condition-recorded-date" key="SearchParameter-us-core-condition-recorded-date" name="USCoreConditionRecordedDate"/>
+<artifact id="SearchParameter/us-core-coverage-patient" key="SearchParameter-us-core-coverage-patient" name="USCoreCoveragePatient"/>
+<artifact id="SearchParameter/us-core-device-patient" key="SearchParameter-us-core-device-patient" name="USCoreDevicePatient"/>
+<artifact id="SearchParameter/us-core-device-status" key="SearchParameter-us-core-device-status" name="USCoreDeviceStatus"/>
+<artifact id="SearchParameter/us-core-device-type" key="SearchParameter-us-core-device-type" name="USCoreDeviceType"/>
+<artifact id="SearchParameter/us-core-diagnosticreport-category" key="SearchParameter-us-core-diagnosticreport-category" name="USCoreDiagnosticreportCategory"/>
+<artifact id="SearchParameter/us-core-diagnosticreport-code" key="SearchParameter-us-core-diagnosticreport-code" name="USCoreDiagnosticreportCode"/>
+<artifact id="SearchParameter/us-core-diagnosticreport-date" key="SearchParameter-us-core-diagnosticreport-date" name="USCoreDiagnosticreportDate"/>
+<artifact id="SearchParameter/us-core-diagnosticreport-patient" key="SearchParameter-us-core-diagnosticreport-patient" name="USCoreDiagnosticreportPatient"/>
+<artifact id="SearchParameter/us-core-diagnosticreport-status" key="SearchParameter-us-core-diagnosticreport-status" name="USCoreDiagnosticreportStatus"/>
+<artifact id="SearchParameter/us-core-documentreference-category" key="SearchParameter-us-core-documentreference-category" name="USCoreDocumentreferenceCategory"/>
+<artifact id="SearchParameter/us-core-documentreference-date" key="SearchParameter-us-core-documentreference-date" name="USCoreDocumentreferenceDate"/>
+<artifact id="SearchParameter/us-core-documentreference-id" key="SearchParameter-us-core-documentreference-id" name="USCoreDocumentreferenceId"/>
+<artifact id="SearchParameter/us-core-documentreference-patient" key="SearchParameter-us-core-documentreference-patient" name="USCoreDocumentreferencePatient"/>
+<artifact id="SearchParameter/us-core-documentreference-period" key="SearchParameter-us-core-documentreference-period" name="USCoreDocumentreferencePeriod"/>
+<artifact id="SearchParameter/us-core-documentreference-status" key="SearchParameter-us-core-documentreference-status" name="USCoreDocumentreferenceStatus"/>
+<artifact id="SearchParameter/us-core-documentreference-type" key="SearchParameter-us-core-documentreference-type" name="USCoreDocumentreferenceType"/>
+<artifact id="SearchParameter/us-core-encounter-class" key="SearchParameter-us-core-encounter-class" name="USCoreEncounterClass"/>
+<artifact id="SearchParameter/us-core-encounter-date" key="SearchParameter-us-core-encounter-date" name="USCoreEncounterDate"/>
+<artifact id="SearchParameter/us-core-encounter-discharge-disposition" key="SearchParameter-us-core-encounter-discharge-disposition" name="USCoreEncounterDischargeDisposition"/>
+<artifact id="SearchParameter/us-core-encounter-id" key="SearchParameter-us-core-encounter-id" name="USCoreEncounterId"/>
+<artifact id="SearchParameter/us-core-encounter-identifier" key="SearchParameter-us-core-encounter-identifier" name="USCoreEncounterIdentifier"/>
+<artifact id="SearchParameter/us-core-encounter-location" key="SearchParameter-us-core-encounter-location" name="USCoreEncounterLocation"/>
+<artifact id="SearchParameter/us-core-encounter-patient" key="SearchParameter-us-core-encounter-patient" name="USCoreEncounterPatient"/>
+<artifact id="SearchParameter/us-core-encounter-status" key="SearchParameter-us-core-encounter-status" name="USCoreEncounterStatus"/>
+<artifact id="SearchParameter/us-core-encounter-type" key="SearchParameter-us-core-encounter-type" name="USCoreEncounterType"/>
+<artifact id="SearchParameter/us-core-ethnicity" key="SearchParameter-us-core-ethnicity" name="USCoreEthnicity"/>
+<artifact id="SearchParameter/us-core-goal-description" key="SearchParameter-us-core-goal-description" name="USCoreGoalDescription"/>
+<artifact id="SearchParameter/us-core-goal-lifecycle-status" key="SearchParameter-us-core-goal-lifecycle-status" name="USCoreGoalLifecycleStatus"/>
+<artifact id="SearchParameter/us-core-goal-patient" key="SearchParameter-us-core-goal-patient" name="USCoreGoalPatient"/>
+<artifact id="SearchParameter/us-core-goal-target-date" key="SearchParameter-us-core-goal-target-date" name="USCoreGoalTargetDate"/>
+<artifact deprecated="true" id="ValueSet/us-core-procedure-icd10pcs" key="ValueSet-us-core-procedure-icd10pcs" name="USCoreIcd_10PcsProcedureCodes"/>
+<artifact id="SearchParameter/us-core-immunization-date" key="SearchParameter-us-core-immunization-date" name="USCoreImmunizationDate"/>
+<artifact id="SearchParameter/us-core-immunization-patient" key="SearchParameter-us-core-immunization-patient" name="USCoreImmunizationPatient"/>
+<artifact id="SearchParameter/us-core-immunization-status" key="SearchParameter-us-core-immunization-status" name="USCoreImmunizationStatus"/>
+<artifact id="SearchParameter/us-core-location-address" key="SearchParameter-us-core-location-address" name="USCoreLocationAddress"/>
+<artifact id="SearchParameter/us-core-location-address-city" key="SearchParameter-us-core-location-address-city" name="USCoreLocationAddressCity"/>
+<artifact id="SearchParameter/us-core-location-address-postalcode" key="SearchParameter-us-core-location-address-postalcode" name="USCoreLocationAddressPostalcode"/>
+<artifact id="SearchParameter/us-core-location-address-state" key="SearchParameter-us-core-location-address-state" name="USCoreLocationAddressState"/>
+<artifact id="SearchParameter/us-core-location-name" key="SearchParameter-us-core-location-name" name="USCoreLocationName"/>
+<artifact deprecated="true" id="ValueSet/us-core-medication-codes" key="ValueSet-us-core-medication-codes" name="USCoreMedicationCodes"/>
+<artifact id="SearchParameter/us-core-medicationdispense-patient" key="SearchParameter-us-core-medicationdispense-patient" name="USCoreMedicationdispensePatient"/>
+<artifact id="SearchParameter/us-core-medicationdispense-status" key="SearchParameter-us-core-medicationdispense-status" name="USCoreMedicationdispenseStatus"/>
+<artifact id="SearchParameter/us-core-medicationdispense-type" key="SearchParameter-us-core-medicationdispense-type" name="USCoreMedicationdispenseType"/>
+<artifact id="SearchParameter/us-core-medicationrequest-authoredon" key="SearchParameter-us-core-medicationrequest-authoredon" name="USCoreMedicationrequestAuthoredon"/>
+<artifact id="SearchParameter/us-core-medicationrequest-encounter" key="SearchParameter-us-core-medicationrequest-encounter" name="USCoreMedicationrequestEncounter"/>
+<artifact id="SearchParameter/us-core-medicationrequest-intent" key="SearchParameter-us-core-medicationrequest-intent" name="USCoreMedicationrequestIntent"/>
+<artifact id="SearchParameter/us-core-medicationrequest-patient" key="SearchParameter-us-core-medicationrequest-patient" name="USCoreMedicationrequestPatient"/>
+<artifact id="SearchParameter/us-core-medicationrequest-status" key="SearchParameter-us-core-medicationrequest-status" name="USCoreMedicationrequestStatus"/>
+<artifact deprecated="true" id="ConceptMap/ndc-cvx" key="ConceptMap-ndc-cvx" name="USCoreNDCtoCVXCodeMapping"/>
+<artifact id="SearchParameter/us-core-observation-category" key="SearchParameter-us-core-observation-category" name="USCoreObservationCategory"/>
+<artifact id="SearchParameter/us-core-observation-code" key="SearchParameter-us-core-observation-code" name="USCoreObservationCode"/>
+<artifact id="SearchParameter/us-core-observation-date" key="SearchParameter-us-core-observation-date" name="USCoreObservationDate"/>
+<artifact id="SearchParameter/us-core-observation-patient" key="SearchParameter-us-core-observation-patient" name="USCoreObservationPatient"/>
+<artifact id="SearchParameter/us-core-observation-status" key="SearchParameter-us-core-observation-status" name="USCoreObservationStatus"/>
+<artifact id="SearchParameter/us-core-organization-address" key="SearchParameter-us-core-organization-address" name="USCoreOrganizationAddress"/>
+<artifact id="SearchParameter/us-core-organization-name" key="SearchParameter-us-core-organization-name" name="USCoreOrganizationName"/>
+<artifact id="SearchParameter/us-core-patient-birthdate" key="SearchParameter-us-core-patient-birthdate" name="USCorePatientBirthdate"/>
+<artifact id="SearchParameter/us-core-patient-death-date" key="SearchParameter-us-core-patient-death-date" name="USCorePatientDeathDate"/>
+<artifact id="SearchParameter/us-core-patient-family" key="SearchParameter-us-core-patient-family" name="USCorePatientFamily"/>
+<artifact id="SearchParameter/us-core-patient-gender" key="SearchParameter-us-core-patient-gender" name="USCorePatientGender"/>
+<artifact id="SearchParameter/us-core-patient-gender-identity" key="SearchParameter-us-core-patient-gender-identity" name="USCorePatientGenderIdentity"/>
+<artifact id="SearchParameter/us-core-patient-given" key="SearchParameter-us-core-patient-given" name="USCorePatientGiven"/>
+<artifact id="SearchParameter/us-core-patient-id" key="SearchParameter-us-core-patient-id" name="USCorePatientId"/>
+<artifact id="SearchParameter/us-core-patient-identifier" key="SearchParameter-us-core-patient-identifier" name="USCorePatientIdentifier"/>
+<artifact id="SearchParameter/us-core-patient-name" key="SearchParameter-us-core-patient-name" name="USCorePatientName"/>
+<artifact id="SearchParameter/us-core-practitioner-id" key="SearchParameter-us-core-practitioner-id" name="USCorePractitionerId"/>
+<artifact id="SearchParameter/us-core-practitioner-identifier" key="SearchParameter-us-core-practitioner-identifier" name="USCorePractitionerIdentifier"/>
+<artifact id="SearchParameter/us-core-practitioner-name" key="SearchParameter-us-core-practitioner-name" name="USCorePractitionerName"/>
+<artifact id="SearchParameter/us-core-practitionerrole-practitioner" key="SearchParameter-us-core-practitionerrole-practitioner" name="USCorePractitionerrolePractitioner"/>
+<artifact id="SearchParameter/us-core-practitionerrole-specialty" key="SearchParameter-us-core-practitionerrole-specialty" name="USCorePractitionerroleSpecialty"/>
+<artifact id="SearchParameter/us-core-procedure-code" key="SearchParameter-us-core-procedure-code" name="USCoreProcedureCode"/>
+<artifact id="SearchParameter/us-core-procedure-date" key="SearchParameter-us-core-procedure-date" name="USCoreProcedureDate"/>
+<artifact id="SearchParameter/us-core-procedure-patient" key="SearchParameter-us-core-procedure-patient" name="USCoreProcedurePatient"/>
+<artifact id="SearchParameter/us-core-procedure-status" key="SearchParameter-us-core-procedure-status" name="USCoreProcedureStatus"/>
+<artifact deprecated="true" id="ValueSet/us-core-provider-specialty" key="ValueSet-us-core-provider-specialty" name="USCoreProviderSpecialityNucc"/>
+<artifact deprecated="true" id="SearchParameter/us-core-questionnaireresponse-authored" key="SearchParameter-us-core-questionnaireresponse-authored" name="USCoreQuestionnaireresponseAuthored"/>
+<artifact deprecated="true" id="SearchParameter/us-core-questionnaireresponse-id" key="SearchParameter-us-core-questionnaireresponse-id" name="USCoreQuestionnaireresponseId"/>
+<artifact deprecated="true" id="SearchParameter/us-core-questionnaireresponse-patient" key="SearchParameter-us-core-questionnaireresponse-patient" name="USCoreQuestionnaireresponsePatient"/>
+<artifact deprecated="true" id="SearchParameter/us-core-questionnaireresponse-questionnaire" key="SearchParameter-us-core-questionnaireresponse-questionnaire" name="USCoreQuestionnaireresponseQuestionnaire"/>
+<artifact deprecated="true" id="SearchParameter/us-core-questionnaireresponse-status" key="SearchParameter-us-core-questionnaireresponse-status" name="USCoreQuestionnaireresponseStatus"/>
+<artifact deprecated="true" id="SearchParameter/us-core-questionnaireresponse-tag" key="SearchParameter-us-core-questionnaireresponse-tag" name="USCoreQuestionnaireresponseTag"/>
+<artifact id="SearchParameter/us-core-race" key="SearchParameter-us-core-race" name="USCoreRace"/>
+<artifact id="SearchParameter/us-core-relatedperson-id" key="SearchParameter-us-core-relatedperson-id" name="USCoreRelatedpersonId"/>
+<artifact id="SearchParameter/us-core-relatedperson-name" key="SearchParameter-us-core-relatedperson-name" name="USCoreRelatedpersonName"/>
+<artifact id="SearchParameter/us-core-relatedperson-patient" key="SearchParameter-us-core-relatedperson-patient" name="USCoreRelatedpersonPatient"/>
+<artifact id="SearchParameter/us-core-servicerequest-authored" key="SearchParameter-us-core-servicerequest-authored" name="USCoreServicerequestAuthored"/>
+<artifact id="SearchParameter/us-core-servicerequest-category" key="SearchParameter-us-core-servicerequest-category" name="USCoreServicerequestCategory"/>
+<artifact id="SearchParameter/us-core-servicerequest-code" key="SearchParameter-us-core-servicerequest-code" name="USCoreServicerequestCode"/>
+<artifact id="SearchParameter/us-core-servicerequest-id" key="SearchParameter-us-core-servicerequest-id" name="USCoreServicerequestId"/>
+<artifact id="SearchParameter/us-core-servicerequest-patient" key="SearchParameter-us-core-servicerequest-patient" name="USCoreServicerequestPatient"/>
+<artifact id="SearchParameter/us-core-servicerequest-status" key="SearchParameter-us-core-servicerequest-status" name="USCoreServicerequestStatus"/>
+<artifact id="SearchParameter/us-core-specimen-id" key="SearchParameter-us-core-specimen-id" name="USCoreSpecimenId"/>
+<artifact id="SearchParameter/us-core-specimen-patient" key="SearchParameter-us-core-specimen-patient" name="USCoreSpecimenPatient"/>
+<artifact deprecated="true" id="ValueSet/us-core-vaccines-cvx" key="ValueSet-us-core-vaccines-cvx" name="USCoreVaccineAdministeredValueSetCvx"/>
+<artifact deprecated="true" id="ValueSet/us-core-ndc-vaccine-codes" key="ValueSet-us-core-ndc-vaccine-codes" name="USCoreVaccineNationalDrugCode"/>
+<artifact deprecated="true" id="Observation/usg" key="Observation-usg" name="USG Example"/>
+<artifact id="ValueSet/us-core-usps-state" key="ValueSet-us-core-usps-state" name="USPS Two Letter Alphabetic Codes"/>
+<artifact deprecated="true" id="DiagnosticReport/urinalysis" key="DiagnosticReport-urinalysis" name="Urinalysis Example"/>
+<artifact deprecated="true" id="Observation/urine-bacteria" key="Observation-urine-bacteria" name="Urine Bacteria Example"/>
+<artifact deprecated="true" id="Observation/urine-bilirubin" key="Observation-urine-bilirubin" name="Urine Bilirubin Example"/>
+<artifact deprecated="true" id="Observation/urine-cells" key="Observation-urine-cells" name="Urine Cells Example"/>
+<artifact deprecated="true" id="Observation/urine-clarity" key="Observation-urine-clarity" name="Urine Clarity Example"/>
+<artifact deprecated="true" id="Observation/urine-color" key="Observation-urine-color" name="Urine Color Example"/>
+<artifact deprecated="true" id="Observation/urine-epi-cells" key="Observation-urine-epi-cells" name="Urine Epi Cells Example"/>
+<artifact deprecated="true" id="Observation/urine-glucose" key="Observation-urine-glucose" name="Urine Glucose Example"/>
+<artifact deprecated="true" id="Observation/urine-hemoglobin" key="Observation-urine-hemoglobin" name="Urine Hemoglobin Example"/>
+<artifact deprecated="true" id="Observation/urine-ketone" key="Observation-urine-ketone" name="Urine Ketone Example"/>
+<artifact deprecated="true" id="Observation/urine-leukocyte-esterase" key="Observation-urine-leukocyte-esterase" name="Urine Leukocyte Esterase Example"/>
+<artifact deprecated="true" id="Observation/urine-nitrite" key="Observation-urine-nitrite" name="Urine Nitrite Example"/>
+<artifact deprecated="true" id="Observation/urine-protein" key="Observation-urine-protein" name="Urine Protein Example"/>
+<artifact deprecated="true" id="Observation/urine-rbcs" key="Observation-urine-rbcs" name="Urine RBCsExample"/>
+<artifact deprecated="true" id="Observation/urine-sediment" key="Observation-urine-sediment" name="Urine Sediment Example"/>
+<artifact deprecated="true" id="Observation/urine-wbcs" key="Observation-urine-wbcs" name="Urine WBCsExample"/>
+<artifact deprecated="true" id="Observation/urine-ph" key="Observation-urine-ph" name="Urine pH Example"/>
+<artifact id="Observation/urobilinogen" key="Observation-urobilinogen" name="Urobilinogen Example"/>
+<artifact deprecated="true" id="ValueSet/us-core-observation-smokingstatus" key="ValueSet-us-core-observation-smokingstatus" name="UsCoreSmokingStatusPreferred"/>
+<artifact deprecated="true" id="MedicationRequest/uscore-mo1" key="MedicationRequest-uscore-mo1" name="Uscore MO1 Example"/>
+<artifact deprecated="true" id="MedicationRequest/uscore-mo2" key="MedicationRequest-uscore-mo2" name="Uscore MO2 Example"/>
+<artifact deprecated="true" id="Bundle/uscore-mo3" key="Bundle-uscore-mo3" name="Uscore MO3 Example"/>
+<artifact id="Medication/uscore-med1" key="Medication-uscore-med1" name="Uscore Med1 Example"/>
+<artifact id="Medication/uscore-med2" key="Medication-uscore-med2" name="Uscore Med2 Example"/>
+<artifact deprecated="true" key="ValueSet" name="ValueSet"/>
+<artifact deprecated="true" id="Observation/vitals-panel" key="Observation-vitals-panel" name="Vitals-panel"/>
+<artifact id="Observation/weight" key="Observation-weight" name="Weight Example"/>
+<artifact id="Observation/xray-chest-findings" key="Observation-xray-chest-findings" name="Xray Chest Findings Example"/>
+<artifact id="Observation/xray-chest-impression" key="Observation-xray-chest-impression" name="Xray Chest Impression Example"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page deprecated="true" key="methodology" name="(methodology)"/>
+<page deprecated="true" key="argonauts" name="Argnonauts" url="argnonauts"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="basic-provenance" name="Basic Provenance"/>
+<page key="capstatements" name="Capability Statements"/>
+<page key="changes" name="Change Log"/>
+<page key="changes-between-versions" name="Changes Between Versions"/>
+<page key="clinical-notes" name="Clinical Notes"/>
+<page deprecated="true" key="clinical-notes-guidance" name="Clinical Notes Guidance"/>
+<page key="conformance" name="Conformance"/>
+<page deprecated="true" key="conformance-expectations" name="Conformance Expectations"/>
+<page deprecated="true" key="r2-r4-guidance" name="DSTU2 to R4 Conversion"/>
+<page key="downloads" name="Downloads"/>
+<page key="all-examples" name="Examples"/>
+<page key="future-of-us-core" name="Future of US Core"/>
+<page key="general-guidance" name="General Guidance"/>
+<page key="general-requirements" name="General Requirements"/>
+<page key="guidance" name="Guidance"/>
+<page key="index" name="Home"/>
+<page deprecated="true" key="iglist" name="Implementation Registry (registry/iglist)" url="registry"/>
+<page key="medication-list" name="Medication List"/>
+<page deprecated="true" key="all-meds" name="Medication List Guidance"/>
+<page key="must-support" name="Must Support"/>
+<page key="observation-summary" name="Observation Summary Table"/>
+<page key="profiles" name="Profiles and Extensions"/>
+<page deprecated="true" key="schemas-schematrons" name="Schemas &amp; Schematrons"/>
+<page key="screening-and-assessments" name="Screening and Assessments"/>
+<page key="searchparameters" name="Search Parameters and Operations"/>
+<page key="security" name="Security"/>
+<page deprecated="true" key="sdoh" name="Social Determinants of Health (SDOH)"/>
+<page key="toc" name="Table of Contents"/>
+<page deprecated="true" key="terminologies-systems" name="Terminologies - Systems" url="terminologies-systems"/>
+<page key="terminology" name="Terminology"/>
+<page key="ImplementationGuide-hl7.fhir.us.core" name="US Core ImplementationGuide Resource"/>
+<page key="uscdi" name="USCDI"/>
+<page deprecated="true" key="implementation" name="implementation" url="implementation"/>
+<page deprecated="true" key="terminologies" name="terminologies" url="terminologies"/>
 </specification>

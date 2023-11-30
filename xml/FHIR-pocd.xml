@@ -1,14 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/uv-pocd" url="http://hl7.org/fhir/uv/pocd" ciUrl="http://build.fhir.org/ig/HL7/uv-pocd" defaultWorkgroup="dev" defaultVersion="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="0.1"/>
-  <artifactPageExtension value="-definitions"/>
-  <artifactPageExtension value="-examples"/>
-  <artifactPageExtension value="-mappings"/>
-  <artifact name="Device" key="Device" deprecated="true"/>
-  <artifact name="DeviceComponent" key="DeviceComponent" deprecated="true"/>
-  <artifact name="DeviceMetric" key="DeviceMetric" deprecated="true"/>
-  <artifact name="Observation" key="Observation" deprecated="true"/>
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="(profiles)" key="profiles"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/pocd/2021Sep" ciUrl="http://build.fhir.org/ig/HL7/uv-pocd" defaultVersion="0.3.0" defaultWorkgroup="dev" gitUrl="https://github.com/HL7/uv-pocd" url="http://hl7.org/fhir/uv/pocd">
+<version code="current" url="http://build.fhir.org/ig/HL7/uv-pocd"/>
+<version code="0.3.0" url="http://hl7.org/fhir/uv/pocd/2021Sep"/>
+<version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/uv/pocd/2018Sep"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/uv/pocd/2018Jan"/>
+<version code="0.1" deprecated="true"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/approved-jurisdictions" key="StructureDefinition-approved-jurisdictions" name="Approved Jurisdictions extension"/>
+<artifact id="Device/BloodPressureChannelDevice" key="Device-BloodPressureChannelDevice" name="Blood Pressure Channel example"/>
+<artifact id="Device/BloodPressureVmdDevice" key="Device-BloodPressureVmdDevice" name="Blood Pressure VMD example"/>
+<artifact id="DeviceMetric/CVPSampleArrayDeviceMetric" key="DeviceMetric-CVPSampleArrayDeviceMetric" name="CVP Sample Array metric example"/>
+<artifact id="Observation/CVPSampleArrayObservation" key="Observation-CVPSampleArrayObservation" name="CVP Sample Array observation example"/>
+<artifact id="StructureDefinition/ChannelDevice" key="StructureDefinition-ChannelDevice" name="Channel Device profile"/>
+<artifact id="StructureDefinition/CompoundNumericObservation" key="StructureDefinition-CompoundNumericObservation" name="Compound Numeric Observation profile"/>
+<artifact deprecated="true" key="Device" name="Device"/>
+<artifact id="StructureDefinition/device-instance" key="StructureDefinition-device-instance" name="Device Instance extension"/>
+<artifact deprecated="true" key="DeviceComponent" name="DeviceComponent"/>
+<artifact deprecated="true" key="DeviceMetric" name="DeviceMetric"/>
+<artifact id="Device/ECGChannelDevice" key="Device-ECGChannelDevice" name="ECG Channel example"/>
+<artifact id="DeviceMetric/ECGSampleArrayDeviceMetric" key="DeviceMetric-ECGSampleArrayDeviceMetric" name="ECG Sample Array metric example"/>
+<artifact deprecated="true" key="Observation" name="Observation"/>
+<artifact id="Observation/ECGSampleArrayObservation" key="Observation-ECGSampleArrayObservation" name="ECG Sample Array observation example"/>
+<artifact id="Device/ECGVmdDevice" key="Device-ECGVmdDevice" name="ECG VMD example"/>
+<artifact id="StructureDefinition/EnumerationDeviceMetric" key="StructureDefinition-EnumerationDeviceMetric" name="Enumeration DeviceMetric profile"/>
+<artifact id="StructureDefinition/EnumerationObservation" key="StructureDefinition-EnumerationObservation" name="Enumeration Observation profile"/>
+<artifact id="Device/HeartRateChannelDevice" key="Device-HeartRateChannelDevice" name="Heart Rate Channel example"/>
+<artifact id="DeviceMetric/HeartRateNumericDeviceMetric" key="DeviceMetric-HeartRateNumericDeviceMetric" name="Heart Rate Numeric metric example"/>
+<artifact id="Observation/HeartRateNumericObservation" key="Observation-HeartRateNumericObservation" name="Heart Rate Numeric observation example"/>
+<artifact id="CodeSystem/kind-of-relation" key="CodeSystem-kind-of-relation" name="Kind of relation code system"/>
+<artifact id="ValueSet/kind-of-relation" key="ValueSet-kind-of-relation" name="Kind of relation value set"/>
+<artifact id="ValueSet/11073MDC-metric" key="ValueSet-11073MDC-metric" name="MDC Metric nomenclature"/>
+<artifact id="ValueSet/11073MDC-object" key="ValueSet-11073MDC-object" name="MDC Object infrastructure and Device nomenclature (ValueSet)"/>
+<artifact id="ValueSet/11073MDC-dimension" key="ValueSet-11073MDC-dimension" name="MDC Unit of Measurement"/>
+<artifact id="StructureDefinition/MdsDevice" key="StructureDefinition-MdsDevice" name="MDS Device profile"/>
+<artifact id="CodeSystem/measurement-status" key="CodeSystem-measurement-status" name="Measurement status codes"/>
+<artifact id="CodeSystem/metric-availability" key="CodeSystem-metric-availability" name="Metric availability code system"/>
+<artifact id="StructureDefinition/metric-availability" key="StructureDefinition-metric-availability" name="Metric availability extension"/>
+<artifact id="ValueSet/metric-availability" key="ValueSet-metric-availability" name="Metric availability value set"/>
+<artifact id="Device/NBPChannelDevice" key="Device-NBPChannelDevice" name="NBP Channel example"/>
+<artifact id="DeviceMetric/NBPNumericDeviceMetric" key="DeviceMetric-NBPNumericDeviceMetric" name="NBP Numeric metric example"/>
+<artifact id="Observation/NBPCompoundNumericObservation" key="Observation-NBPCompoundNumericObservation" name="NBP Numeric observation example"/>
+<artifact id="Device/NBPVmdDevice" key="Device-NBPVmdDevice" name="NBP VMD example"/>
+<artifact id="StructureDefinition/NumericDeviceMetric" key="StructureDefinition-NumericDeviceMetric" name="Numeric DeviceMetric profile"/>
+<artifact id="StructureDefinition/NumericObservation" key="StructureDefinition-NumericObservation" name="Numeric Observation profile"/>
+<artifact id="ValueSet/observation-interpretation" key="ValueSet-observation-interpretation" name="Observation interpretation codes"/>
+<artifact id="StructureDefinition/Observation" key="StructureDefinition-Observation" name="Observation profile"/>
+<artifact id="StructureDefinition/operating-cycles" key="StructureDefinition-operating-cycles" name="Operating cycles extension"/>
+<artifact id="StructureDefinition/operating-hours" key="StructureDefinition-operating-hours" name="Operating hours extension"/>
+<artifact id="CodeSystem/operating-mode" key="CodeSystem-operating-mode" name="Operating mode code system"/>
+<artifact id="StructureDefinition/operating-mode" key="StructureDefinition-operating-mode" name="Operating mode extension"/>
+<artifact id="ValueSet/operating-mode" key="ValueSet-operating-mode" name="Operating mode value set"/>
+<artifact id="StructureDefinition/operator" key="StructureDefinition-operator" name="Operator extension"/>
+<artifact id="Device/PhysioMonitorMdsDevice" key="Device-PhysioMonitorMdsDevice" name="Patient Monitor MDS example"/>
+<artifact id="StructureDefinition/Patient" key="StructureDefinition-Patient" name="Patient profile"/>
+<artifact id="StructureDefinition/Practitioner" key="StructureDefinition-Practitioner" name="Practitioner profile"/>
+<artifact id="StructureDefinition/relation" key="StructureDefinition-relation" name="Relation extension"/>
+<artifact id="StructureDefinition/resolution" key="StructureDefinition-resolution" name="Resolution extension"/>
+<artifact id="DeviceMetric/RhythmStatusEnumerationDeviceMetric" key="DeviceMetric-RhythmStatusEnumerationDeviceMetric" name="Rhythm Status Enumeration metric example"/>
+<artifact id="Observation/RhythmStatusEnumerationObservation" key="Observation-RhythmStatusEnumerationObservation" name="Rhythm Status Enumeration observation example"/>
+<artifact id="CodeSystem/safety" key="CodeSystem-safety" name="Safety classification code system"/>
+<artifact id="ValueSet/safety" key="ValueSet-safety" name="Safety classification value set"/>
+<artifact id="StructureDefinition/SampleArrayDeviceMetric" key="StructureDefinition-SampleArrayDeviceMetric" name="Sample Array DeviceMetric profile"/>
+<artifact id="StructureDefinition/SampleArrayObservation" key="StructureDefinition-SampleArrayObservation" name="Sample Array Observation profile"/>
+<artifact id="CapabilityStatement/ServerCapabilityStatement" key="CapabilityStatement-ServerCapabilityStatement" name="Server CapabilityStatement"/>
+<artifact id="Location/SomeLocation" key="Location-SomeLocation" name="Some Location example"/>
+<artifact id="Patient/SomePatient" key="Patient-SomePatient" name="Some Patient example"/>
+<artifact id="Practitioner/SomePractitioner" key="Practitioner-SomePractitioner" name="Some Practitioner example"/>
+<artifact id="StructureDefinition/sweep-speed" key="StructureDefinition-sweep-speed" name="Sweep Speed extension"/>
+<artifact id="StructureDefinition/technical-range" key="StructureDefinition-technical-range" name="Technical range extension"/>
+<artifact id="StructureDefinition/VmdDevice" key="StructureDefinition-VmdDevice" name="VMD Device profile"/>
+<artifact id="StructureDefinition/visual-grid" key="StructureDefinition-visual-grid" name="Visual Grid extension"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="definitions" name="Abbreviations and Definitions"/>
+<page key="artifacts" name="Artifact List"/>
+<page key="changes" name="Change Log"/>
+<page key="downloads" name="Downloads"/>
+<page key="mappingv2" name="HL7 V2 Mapping"/>
+<page key="index" name="Home"/>
+<page key="mappingdim" name="Mapping from IEEE 11073-10201 DIM to FHIR"/>
+<page key="mappingsdc" name="Mapping from IEEE 11073-10207 SDC to FHIR"/>
+<page key="overview" name="Overview"/>
+<page key="profiles" name="Profiles"/>
+<page key="transfer" name="RESTful Transfer"/>
+<page key="toc" name="Table of Contents"/>
+<page key="guidance" name="Technical Implementation Guidance"/>
+<page key="terminology" name="Terminology"/>
 </specification>

@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/specialty-rx/2021Jan" ciUrl="http://build.fhir.org/ig/HL7/specialty-rx" defaultVersion="current" defaultWorkgroup="pharm" gitUrl="https://github.com/HL7/fhir-specialty-rx" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" url="http://hl7.org/fhir/us/specialty-rx"><version code="current" url="http://build.fhir.org/ig/HL7/specialty-rx"/>
-<version code="0.1.00" url="http://hl7.org/fhir/us/specialty-rx/2021Jan"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ballotUrl="http://hl7.org/fhir/us/specialty-rx/2022Sep" 
+ciUrl="http://build.fhir.org/ig/HL7/fhir-specialty-rx" 
+defaultVersion="2.0.0" defaultWorkgroup="pharm" 
+gitUrl="https://github.com/HL7/fhir-specialty-rx" 
+xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" 
+url="http://hl7.org/fhir/us/specialty-rx">
+<version code="current" url="http://build.fhir.org/ig/HL7/fhir-specialty-rx"/>
+<version code="2.0.0" url="http://hl7.org/fhir/us/specialty-rx/STU2"/>
+<version code="2.0.0-ballot" url="http://hl7.org/fhir/us/specialty-rx/2022Sep"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/specialty-rx/STU1"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/specialty-rx/2021Jan"/>
+<version code="1.1.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/specialty-rx/2022Sep"/>
+<version code="1.1.0" deprecated="true" url="http://hl7.org/fhir/us/specialty-rx/STU2"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="Bundle/specialty-rx-search-response-1-w-include" key="Bundle-specialty-rx-search-response-1-w-include" name="Search Response 1 with _included Medication Resource"/>
+<artifact id="Bundle/specialty-rx-search-response-2-w-revinclude" key="Bundle-specialty-rx-search-response-2-w-revinclude" name="Search Response 2 with _revincluded Provenance Resource"/>
 <artifact deprecated="true" id="StructureDefinition/specialty-rx-allergyintolerance" key="StructureDefinition-specialty-rx-allergyintolerance" name="Specialty Rx AllergyIntolerance"/>
 <artifact deprecated="true" id="AllergyIntolerance/specialty-rx-allergyintolerance-1" key="AllergyIntolerance-specialty-rx-allergyintolerance-1" name="Specialty Rx AllergyIntolerance - 1"/>
 <artifact id="StructureDefinition/specialty-rx-bundle-error" key="StructureDefinition-specialty-rx-bundle-error" name="Specialty Rx Bundle - Error Message"/>
@@ -14,20 +28,27 @@
 <artifact deprecated="true" id="StructureDefinition/specialty-rx-bundle-questionnaire" key="StructureDefinition-specialty-rx-bundle-questionnaire" name="Specialty Rx Bundle - Questionnaire Message"/>
 <artifact deprecated="true" id="StructureDefinition/specialty-rx-bundle-questionnaire-response" key="StructureDefinition-specialty-rx-bundle-questionnaire-response" name="Specialty Rx Bundle - Questionnaire Response Message"/>
 <artifact id="StructureDefinition/specialty-rx-bundle-search-result" key="StructureDefinition-specialty-rx-bundle-search-result" name="Specialty Rx Bundle - Search Result"/>
+<artifact id="CapabilityStatement/specialty-rx-data-consumer-messaging" key="CapabilityStatement-specialty-rx-data-consumer-messaging" name="Specialty Rx CapabilityStatement - Data Consumer - Messaging"/>
+<artifact id="CapabilityStatement/specialty-rx-data-consumer-restful" key="CapabilityStatement-specialty-rx-data-consumer-restful" name="Specialty Rx CapabilityStatement - Data Consumer - RESTful"/>
 <artifact deprecated="true" id="CapabilityStatement/specialty-rx-data-recipient" key="CapabilityStatement-specialty-rx-data-recipient" name="Specialty Rx CapabilityStatement - Data Recipient"/>
-<artifact id="CapabilityStatement/specialty-rx-data-recipient-messaging" key="CapabilityStatement-specialty-rx-data-recipient-messaging" name="Specialty Rx CapabilityStatement - Data Recipient - Messaging"/>
-<artifact id="CapabilityStatement/specialty-rx-data-recipient-restful" key="CapabilityStatement-specialty-rx-data-recipient-restful" name="Specialty Rx CapabilityStatement - Data Recipient - RESTful"/>
+<artifact deprecated="true" id="CapabilityStatement/specialty-rx-data-recipient-messaging" key="CapabilityStatement-specialty-rx-data-recipient-messaging" name="Specialty Rx CapabilityStatement - Data Recipient - Messaging"/>
+<artifact deprecated="true" id="CapabilityStatement/specialty-rx-data-recipient-restful" key="CapabilityStatement-specialty-rx-data-recipient-restful" name="Specialty Rx CapabilityStatement - Data Recipient - RESTful"/>
 <artifact deprecated="true" id="CapabilityStatement/specialty-rx-data-source" key="CapabilityStatement-specialty-rx-data-source" name="Specialty Rx CapabilityStatement - Data Source"/>
 <artifact id="CapabilityStatement/specialty-rx-data-source-messaging" key="CapabilityStatement-specialty-rx-data-source-messaging" name="Specialty Rx CapabilityStatement - Data Source - Messaging"/>
 <artifact id="CapabilityStatement/specialty-rx-data-source-restful" key="CapabilityStatement-specialty-rx-data-source-restful" name="Specialty Rx CapabilityStatement - Data Source - RESTful"/>
 <artifact deprecated="true" id="StructureDefinition/specialty-rx-careteam" key="StructureDefinition-specialty-rx-careteam" name="Specialty Rx CareTeam"/>
 <artifact deprecated="true" id="CareTeam/specialty-rx-careteam-1" key="CareTeam-specialty-rx-careteam-1" name="Specialty Rx CareTeam 1"/>
 <artifact id="CodeSystem/specialty-rx-event-type" key="CodeSystem-specialty-rx-event-type" name="Specialty Rx CodeSystem - Event Type"/>
-<artifact id="CodeSystem/specialty-rx-task-identifier-type" key="CodeSystem-specialty-rx-task-identifier-type" name="Specialty Rx CodeSystem - Task Identifier Type"/>
-<artifact id="CodeSystem/specialty-rx-task-input-type" key="CodeSystem-specialty-rx-task-input-type" name="Specialty Rx CodeSystem - Task Input Type"/>
-<artifact id="CodeSystem/specialty-rx-task-type" key="CodeSystem-specialty-rx-task-type" name="Specialty Rx CodeSystem - Task Type"/>
+<artifact id="CodeSystem/specialty-rx-task-characteristic" key="CodeSystem-specialty-rx-task-characteristic" name="Specialty Rx CodeSystem - Task Characteristic"/>
+<artifact deprecated="true" id="CodeSystem/specialty-rx-task-identifier-type" key="CodeSystem-specialty-rx-task-identifier-type" name="Specialty Rx CodeSystem - Task Identifier Type"/>
+<artifact deprecated="true" id="CodeSystem/specialty-rx-task-input-type" key="CodeSystem-specialty-rx-task-input-type" name="Specialty Rx CodeSystem - Task Input Type"/>
+<artifact deprecated="true" id="CodeSystem/specialty-rx-task-output-type" key="CodeSystem-specialty-rx-task-output-type" name="Specialty Rx CodeSystem - Task Output Type"/>
+<artifact deprecated="true" id="CodeSystem/specialty-rx-task-type" key="CodeSystem-specialty-rx-task-type" name="Specialty Rx CodeSystem - Task Type"/>
 <artifact deprecated="true" id="StructureDefinition/specialty-rx-condition" key="StructureDefinition-specialty-rx-condition" name="Specialty Rx Condition"/>
 <artifact deprecated="true" id="Condition/specialty-rx-condition-1" key="Condition-specialty-rx-condition-1" name="Specialty Rx Condition 1"/>
+<artifact id="StructureDefinition/specialty-rx-consent" key="StructureDefinition-specialty-rx-consent" name="Specialty Rx Consent"/>
+<artifact id="StructureDefinition/specialty-rx-consent-requested" key="StructureDefinition-specialty-rx-consent-requested" name="Specialty Rx Consent Requested"/>
+<artifact id="Consent/specialty-rx-consent-requested-1" key="Consent-specialty-rx-consent-requested-1" name="Specialty Rx Consent Requested 1"/>
 <artifact id="StructureDefinition/specialty-rx-coverage" key="StructureDefinition-specialty-rx-coverage" name="Specialty Rx Coverage"/>
 <artifact id="Coverage/specialty-rx-coverage-1" key="Coverage-specialty-rx-coverage-1" name="Specialty Rx Coverage 1"/>
 <artifact deprecated="true" id="StructureDefinition/specialty-rx-endpoint-direct" key="StructureDefinition-specialty-rx-endpoint-direct" name="Specialty Rx Endpoint - Direct"/>
@@ -79,17 +100,28 @@
 <artifact deprecated="true" id="Bundle/specialty-rx-questionnaire-response-1" key="Bundle-specialty-rx-questionnaire-response-1" name="Specialty Rx Questionnaire Response 1"/>
 <artifact deprecated="true" id="StructureDefinition/specialty-rx-relatedperson" key="StructureDefinition-specialty-rx-relatedperson" name="Specialty Rx RelatedPerson"/>
 <artifact deprecated="true" id="RelatedPerson/specialty-rx-relatedperson-1" key="RelatedPerson-specialty-rx-relatedperson-1" name="Specialty Rx RelatedPerson 1"/>
+<artifact id="Consent/specialty-rx-consent-1" key="Consent-specialty-rx-consent-1" name="Specialty Rx Task - Consent 1"/>
+<artifact id="StructureDefinition/specialty-rx-task-consent-request" key="StructureDefinition-specialty-rx-task-consent-request" name="Specialty Rx Task - Consent Request"/>
+<artifact id="Task/specialty-rx-task-consent-request-1" key="Task-specialty-rx-task-consent-request-1" name="Specialty Rx Task - Consent Request 1"/>
+<artifact id="Task/specialty-rx-task-consent-request-2-completed" key="Task-specialty-rx-task-consent-request-2-completed" name="Specialty Rx Task - Consent Request 2 - Completed"/>
+<artifact id="Task/specialty-rx-task-consent-request-contained" key="Task-specialty-rx-task-consent-request-contained" name="Specialty Rx Task - Consent Request Contained"/>
 <artifact id="StructureDefinition/specialty-rx-task-smart-launch" key="StructureDefinition-specialty-rx-task-smart-launch" name="Specialty Rx Task - SMART Launch"/>
 <artifact id="Task/specialty-rx-task-smart-launch-1" key="Task-specialty-rx-task-smart-launch-1" name="Specialty Rx Task - SMART Launch 1"/>
 <artifact id="Task/specialty-rx-task-smart-launch-2-ids" key="Task-specialty-rx-task-smart-launch-2-ids" name="Specialty Rx Task - SMART Launch 2 with IDs"/>
 <artifact deprecated="true" id="ValueSet/specialty-rx-condition-code" key="ValueSet-specialty-rx-condition-code" name="Specialty Rx ValueSet - Condition Code"/>
+<artifact id="ValueSet/specialty-rx-consent-status" key="ValueSet-specialty-rx-consent-status" name="Specialty Rx ValueSet - Consent Status"/>
 <artifact id="ValueSet/specialty-rx-event-type" key="ValueSet-specialty-rx-event-type" name="Specialty Rx ValueSet - Event Type"/>
+<artifact id="ValueSet/specialty-rx-task-input-type" key="ValueSet-specialty-rx-task-input-type" name="Specialty Rx ValueSet - Task Input Type"/>
+<artifact id="ValueSet/specialty-rx-task-output-type" key="ValueSet-specialty-rx-task-output-type" name="Specialty Rx ValueSet - Task Output Type"/>
 <artifact id="ValueSet/specialty-rx-task-type" key="ValueSet-specialty-rx-task-type" name="Specialty Rx ValueSet - Task Type"/>
+<artifact id="Organization/us-core-organization-clinic-1" key="Organization-us-core-organization-clinic-1" name="US Core Organization - Clinic 1 - Acme Clinic"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="capability-statements" name="Capability Statements"/>
+<page key="changes" name="Change Log"/>
 <page key="missing-data" name="Conformance Expectations"/>
+<page key="consent-workflow" name="Consent Workflows"/>
 <page key="downloads" name="Downloads"/>
 <page key="error-handling" name="Error handling"/>
 <page key="index" name="IG Home Page"/>

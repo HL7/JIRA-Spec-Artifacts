@@ -55,7 +55,7 @@ To address this, you must make sure that:
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
         >
-          <version code="1.0.0"/>
+          <version code="1.0"/>
           <artifactPageExtension value="-definitions"/>
           <artifactPageExtension value="-examples"/>
           <artifactPageExtension value="-mappings"/>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- This data is just for testing purposes and is not complete -->
 <specification defaultWorkgroup="inm" defaultVersion="V2.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="V2.10"/>
+  <version code="V2.10" deprecated="false"/>
+  <version code="V2.9.1"/>
   <version code="V2.9"/>
   <version code="V2.8.2"/>
   <version code="V2.8.1"/>
@@ -12,7 +13,6 @@
   <version code="V2.5.1"/>
   <version code="V2.5"/>
   <version code="2.1.3" deprecated="true"/>
-  <version code="2.9" deprecated="true"/>
   <artifact name="MSH" key="MSH" id="??" deprecated="true"/>
   <artifact name="Abstract (ABS)" key="ABSseg" id="segment/ABS"/>
   <artifact name="Accident (ACC)" key="ACCseg" id="segment/ACC"/>
@@ -71,6 +71,9 @@
   <artifact name="Goal Detail (GOL)" key="GOLseg" id="segment/GOL"/>
   <artifact name="Grouping/Reimbursement - Visit (GP1)" key="GP1seg" id="segment/GP1"/>
   <artifact name="Grouping/Reimbursement - Procedure Line Item (GP2)" key="GP2seg" id="segment/GP2"/>
+  <artifact name="Person Gender and Sex Segment (GSP)" key="GSPseg" id="segment/GSP"/>
+  <artifact name="Recorded Gender and Sex Segment (GSR)" key="GSRseg" id="segment/GSR"/>
+  <artifact name="Sex For Clinical Use Segment (GSC)" key="GSCseg" id="segment/GSC"/>
   <artifact name="Guarantor (GT1)" key="GT1seg" id="segment/GT1"/>
   <artifact name="any HL7 segment (Hxx)" key="Hxxseg" id="segment/Hxx"/>
   <artifact name="Patient Adverse Reaction Information (IAM)" key="IAMseg" id="segment/IAM"/>
@@ -111,6 +114,9 @@
   <artifact name="Observation/Result (OBX)" key="OBXseg" id="segment/OBX"/>
   <artifact name="Dietary Orders, Supplements, and Preferences (ODS)" key="ODSseg" id="segment/ODS"/>
   <artifact name="Diet Tray Instructions (ODT)" key="ODTseg" id="segment/ODT"/>
+  <artifact name="Person Employment Status segment (OH1)" key="OH1seg" id="segment/OH1"/>
+  <artifact name="Past or Present Job segment (OH2)" key="OH2seg" id="segment/OH2"/>
+  <artifact name="Usual Work segment (OH3)" key="OH3seg" id="segment/OH3"/>
   <artifact name="General Segment (OM1)" key="OM1seg" id="segment/OM1"/>
   <artifact name="Numeric Observation (OM2)" key="OM2seg" id="segment/OM2"/>
   <artifact name="Categorical Service/Test/Observation (OM3)" key="OM3seg" id="segment/OM3"/>
@@ -405,7 +411,7 @@
   <page name="Control (Chapter 2)" key="control" workgroup="inm"/>
   <page name="Data Types (Chapter 2A)" key="datatypes" workgroup="inm"/>
   <page name="Conformance (Chapter 2B)" key="conformance" workgroup="cgit"/>
-  <page name="Code Tables (Chapter 2C" key="codetables" workgroup="inm"/>
+  <page name="Code Tables (Chapter 2C)" key="codetables" workgroup="inm"/>
   <page name="Patient Administration (Chapter 3)" key="patadmin" workgroup="pa"/>
   <page name="Orders (Chapter 4)" key="orders" workgroup="oo"/>
   <page name="Orders - Medication/Vaccination (Chapter 4A" key="medvacc" workgroup="oo"/>
