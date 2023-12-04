@@ -1,43 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-		gitUrl="https://github.com/HL7/fhir-for-fair"
-		url="http://hl7.org/fhir/uv/fhir-for-fair"
-		ciUrl="http://build.fhir.org/ig/HL7/fhir-for-fair"
-		ballotUrl="http://hl7.org/fhir/uv/fhir-for-fair/2022Jan"
-		defaultWorkgroup="soa"
-		defaultVersion="0.1.0"		
-		xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"   	>	
-
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/fhir-for-fair/2022Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-for-fair" defaultVersion="1.0.0" defaultWorkgroup="soa" gitUrl="https://github.com/HL7/fhir-for-fair" url="http://hl7.org/fhir/uv/fhir-for-fair">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-for-fair"/>
+<version code="1.0.0" url="http://hl7.org/fhir/uv/fhir-for-fair/STU1"/>
 <version code="0.1.0" url="http://hl7.org/fhir/uv/fhir-for-fair/2022Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="StructureDefinition/relatedArtifactClassifier" key="StructureDefinition-relatedArtifactClassifier" name="Classifier (RelatedArtifact)"/>
-<artifact id="StructureDefinition/copyright" key="StructureDefinition-copyright" name="Copyright and Licence"/>
-<artifact id="StructureDefinition/DocumentManifest-uv-f4f" key="StructureDefinition-DocumentManifest-uv-f4f" name="DocumentManifest (Subject Level Medatata)"/>
-<artifact id="Library/f4h-1" key="Library-f4h-1" name="FAIR4Health portal (Library)"/>
-<artifact id="Library/f4h-lib-1" key="Library-f4h-lib-1" name="FAIR4Health study case 1 (Library)"/>
-<artifact id="Library/f4h-lib-2" key="Library-f4h-lib-2" name="FAIR4Health study case 2 (Library)"/>
-<artifact id="ResearchStudy/f4h-rs-2" key="ResearchStudy-f4h-rs-2" name="FAIR4Health study case 2 (ResearchStudy)"/>
-<artifact id="StructureDefinition/Library-uv-f4f" key="StructureDefinition-Library-uv-f4f" name="Library (Study Level Medatata)"/>
-<artifact id="Library/ninfea-1" key="Library-ninfea-1" name="Non-invasive foetal electrocardiography example (Library)"/>
-<artifact id="StructureDefinition/persistentUrl" key="StructureDefinition-persistentUrl" name="Persistent URL extension"/>
-<artifact id="StructureDefinition/RelatedArtifact-uv-f4f" key="StructureDefinition-RelatedArtifact-uv-f4f" name="RelatedArtifact (FHIR for FAIR)"/>
-<artifact id="StructureDefinition/library-relatedContent" key="StructureDefinition-library-relatedContent" name="RelatedArtifact (Library)"/>
-<artifact id="StructureDefinition/ResearchStudy-uv-f4f" key="StructureDefinition-ResearchStudy-uv-f4f" name="ResearchStudy (Study Level Medatata)"/>
-<artifact id="StructureDefinition/relatedArtifactResourceReference" key="StructureDefinition-relatedArtifactResourceReference" name="ResourceReference (RelatedArtifact)"/>
-<artifact id="Condition/example-f4f-condition" key="Condition-example-f4f-condition" name="Sample used by the Subject Level Collection (Condition)"/>
-<artifact id="MedicationStatement/example-f4f-medicationStatement-1" key="MedicationStatement-example-f4f-medicationStatement-1" name="MedicationStatement Sample used by the Subject Level Collection (1)"/>
-<artifact id="MedicationStatement/example-f4f-medicationStatement-2" key="MedicationStatement-example-f4f-medicationStatement-2" name="MedicationStatement Sample used by the Subject Level Collection (2)"/>
-<artifact id="Patient/example-f4f-patient" key="Patient-example-f4f-patient" name="Sample used by the Subject Level Collection (Patient)"/>
-<artifact id="DocumentManifest/example-f4f-manifest" key="DocumentManifest-example-f4f-manifest" name="Subject Level Data Collection (DocumentManifest)"/>
-<artifact id="StructureDefinition/researchStudy-context" key="StructureDefinition-researchStudy-context" name="Usage Context (ResearchStudy)"/>
+<artifact id="StructureDefinition/relatedArtifactClassifier" key="StructureDefinition-relatedArtifactClassifier" name="Classifier [RelatedArtifact]"/>
+<artifact id="StructureDefinition/classifier" key="StructureDefinition-classifier" name="Classifier [Resource]"/>
+<artifact id="StructureDefinition/library-relatedContent" key="StructureDefinition-library-relatedContent" name="Content as RelatedArtifact [Library]"/>
+<artifact id="StructureDefinition/copyright" key="StructureDefinition-copyright" name="Copyright"/>
+<artifact id="StructureDefinition/DocumentManifest-uv-f4f" key="StructureDefinition-DocumentManifest-uv-f4f" name="DocumentManifest [Subject Level Medatata]"/>
+<artifact id="Library/f4h-1" key="Library-f4h-1" name="FAIR4Health portal [Library]"/>
+<artifact id="Library/f4h-lib-1" key="Library-f4h-lib-1" name="FAIR4Health study case 1 [Library]"/>
+<artifact id="Library/f4h-lib-2" key="Library-f4h-lib-2" name="FAIR4Health study case 2 [Library]"/>
+<artifact id="ResearchStudy/f4h-rs-2" key="ResearchStudy-f4h-rs-2" name="FAIR4Health study case 2 [ResearchStudy]"/>
+<artifact id="StructureDefinition/Library-uv-f4f" key="StructureDefinition-Library-uv-f4f" name="Library [Study Level Medatata]"/>
+<artifact id="StructureDefinition/licenceAttachment" key="StructureDefinition-licenceAttachment" name="Licence Terms as Attachment"/>
+<artifact id="StructureDefinition/licenceCodeable" key="StructureDefinition-licenceCodeable" name="Licence Terms as CodeableConcept"/>
+<artifact id="StructureDefinition/List-uv-f4f" key="StructureDefinition-List-uv-f4f" name="List [Subject Level Medatata]"/>
+<artifact id="MedicationStatement/example-f4f-medicationStatement-1" key="MedicationStatement-example-f4f-medicationStatement-1" name="MedicationStatement Sample used by the Subject Level Collection [1]"/>
+<artifact id="MedicationStatement/example-f4f-medicationStatement-2" key="MedicationStatement-example-f4f-medicationStatement-2" name="MedicationStatement Sample used by the Subject Level Collection [2]"/>
+<artifact id="Library/ninfea-1" key="Library-ninfea-1" name="Non-invasive foetal electrocardiography example [Library]"/>
+<artifact id="StructureDefinition/subjectOther" key="StructureDefinition-subjectOther" name="Other Subjects [Resource]"/>
+<artifact deprecated="true" id="StructureDefinition/persistentUrl" key="StructureDefinition-persistentUrl" name="Persistent URL extension"/>
+<artifact id="StructureDefinition/RelatedArtifact-uv-f4f" key="StructureDefinition-RelatedArtifact-uv-f4f" name="RelatedArtifact [FHIR for FAIR]"/>
+<artifact id="CodeSystem/related-artifact-type" key="CodeSystem-related-artifact-type" name="RelatedArtifactType [CodeSystem]"/>
+<artifact id="ValueSet/related-artifact-type" key="ValueSet-related-artifact-type" name="RelatedArtifactType [ValueSet]"/>
+<artifact id="StructureDefinition/ResearchStudy-uv-f4f" key="StructureDefinition-ResearchStudy-uv-f4f" name="ResearchStudy [Study Level Medatata]"/>
+<artifact id="StructureDefinition/relatedArtifactResourceReference" key="StructureDefinition-relatedArtifactResourceReference" name="ResourceReference [RelatedArtifact]"/>
+<artifact id="Condition/example-f4f-condition" key="Condition-example-f4f-condition" name="Sample used by the Subject Level Collection [Condition]"/>
+<artifact id="Patient/example-f4f-patient" key="Patient-example-f4f-patient" name="Sample used by the Subject Level Collection [Patient]"/>
+<artifact id="DocumentManifest/example-f4f-manifest" key="DocumentManifest-example-f4f-manifest" name="Subject Level Data Collection [DocumentManifest]"/>
+<artifact id="List/example-f4f-list" key="List-example-f4f-list" name="Subject Level Data Collection [List]"/>
+<artifact id="StructureDefinition/relatedArtifactType" key="StructureDefinition-relatedArtifactType" name="Type [RelatedArtifact]"/>
+<artifact id="StructureDefinition/researchStudy-context" key="StructureDefinition-researchStudy-context" name="Usage Context [ResearchStudy]"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="aboutThisVersion" name="About this version"/>
+<page key="copyrights" name="Acknowledgments, licenses and copyrights"/>
 <page key="artifacts" name="Artifacts Summary"/>
-<page key="benefitResearch" name="Benefits for research studies"/>
+<page deprecated="true" key="benefitResearch" name="Benefits for research studies"/>
+<page key="cedar" name="Center for Evidence and Practice Improvement (CEPI) Evidence Discovery and Retrieval (CEDAR) - Making evidence more FAIR"/>
 <page key="deployment" name="Deployments"/>
 <page key="FAIR" name="FAIR Guiding Principles"/>
 <page key="FAIR4Health" name="FAIR4Health Project"/>
@@ -61,6 +65,7 @@
 <page key="terminology" name="Terminologies"/>
 <page key="mimic" name="The Medical Information Mart for Intensive Care IV - Emergency Department (MIMIC-IV-ED, v1.0) dataset"/>
 <page key="NFDI4Health" name="The NFDI4Health consortia"/>
+<page key="PHT" name="The Personal Health Train"/>
 <page deprecated="true" key="scenarios" name="Use cases and scenarios"/>
 <page key="downloads" name="Useful Downloads"/>
 </specification>
