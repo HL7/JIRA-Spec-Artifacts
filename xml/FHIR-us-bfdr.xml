@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gitUrl="https://github.com/HL7/fhir-bfdr" ballotUrl="http://hl7.org/fhir/us/bfdr/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/bfdr" defaultVersion="1.1.0" defaultWorkgroup="pher"  url="http://hl7.org/fhir/us/bfdr">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gitUrl="https://github.com/HL7/fhir-bfdr" ballotUrl="http://hl7.org/fhir/us/bfdr/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-bfdr" defaultVersion="2.0.0-ballot" defaultWorkgroup="pher"  url="http://hl7.org/fhir/us/bfdr">
 <version code="current" url="https://build.fhir.org/ig/HL7/bfdr"/>
 <version code="2.0.0-ballot" url="https://hl7.org/fhir/us/bfdr/2024Jan"/>
 <version code="1.1.0" url="https://hl7.org/fhir/us/bfdr/STU1.1"/>
@@ -9,9 +9,8 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="StructureDefinition/vr-demographic-coded-bundle" deprecated="true" key="StructureDefinition-vr-demographic-coded-bundle" name="Bundle - Demographic Coded Content Bundle for BFDR"/>
-<artifact id="StructureDefinition/Bundle-document-bfdr" key="StructureDefinition-Bundle-document-bfdr" name="Bundle - Document Birth and Fetal Death"/>
-<artifact id="StructureDefinition/Bundle-coded-cause-of-fetal-death" key="StructureDefinition-Bundle-coded-cause-of-fetal-death" name="Bundle - Coded Cause of Fetal Death"/>
+<artifact id="StructureDefinition/Bundle-demographic-coded-content" key="StructureDefinition-bundle-demographic-coded-content" name="Bundle - Demographic Coded Content Bundle for BFDR"/><artifact id="StructureDefinition/Bundle-document-bfdr" key="StructureDefinition-Bundle-document-bfdr" name="Bundle - Document Birth and Fetal Death"/>
+<artifact id="Bundle/bundle-coded-cause-of-fetal-death-not-named" key="Bundle-bundle-coded-cause-of-fetal-death-not-named" name="Bundle - Coded Cause of Fetal Death - not named"/> <artifact id="StructureDefinition/Bundle-coded-cause-of-fetal-death" key="StructureDefinition-Bundle-coded-cause-of-fetal-death" name="Bundle - Coded Cause of Fetal Death Bundle for BFDR"/>
 <artifact id="StructureDefinition/Composition-coded-cause-of-fetal-death" key="StructureDefinition-Composition-coded-cause-of-fetal-death" name="Composition - Coded Cause of Fetal Death"/>
 <artifact id="StructureDefinition/Composition-coded-race-and-ethnicity" key="StructureDefinition-Composition-coded-race-and-ethnicity" name="Composition - Coded Race and Ethnicity"/>
 <artifact id="StructureDefinition/Composition-jurisdiction-fetal-death-report" key="StructureDefinition-Composition-jurisdiction-fetal-death-report" name="Composition - Jurisdiction Fetal Death Report"/>
@@ -70,8 +69,7 @@
 <artifact id="Condition/condition-ruptured-uterus-jada-ann-quinn" key="Condition-condition-ruptured-uterus-jada-ann-quinn" name="Condition - Ruptured Uterus - Jada Ann Quinn"/>
 <artifact id="StructureDefinition/Condition-seizure" key="StructureDefinition-Condition-seizure" name="Condition - Seizure"/>
 <artifact id="Condition/condition-seizure-babyg-quinn" key="Condition-condition-seizure-babyg-quinn" name="Condition - Seizure - BabyG Quinn"/>
-<artifact deprecated="true" id="StructureDefinition/Coverage-principal-payer-delivery" key="StructureDefinition-Coverage-principal-payer-delivery" name="Coverage - Principal Payer for Delivery old"/>
-<artifact id="StructureDefinition/Coverage-principal-payer-for-delivery" key="StructureDefinition-Coverage-principal-payer-for-delivery" name="Coverage - Principal Payer for Delivery"/>
+<artifact id="StructureDefinition/Coverage-principal-payer-delivery" key="StructureDefinition-Coverage-principal-payer-delivery" name="Coverage - Principal Payer for Delivery"/>
 <artifact id="Coverage/coverage-principal-payer-for-delivery-jada-ann-quinn" key="Coverage-coverage-principal-payer-for-delivery-jada-ann-quinn" name="Coverage - Principal Payer for Delivery - Jada Ann Quinn"/>
 <artifact id="ConceptMap/DeliveryRoutesCM" key="ConceptMap-DeliveryRoutesCM" name="DeliveryRoutes Concept Map"/>
 <artifact id="StructureDefinition/Encounter-birth" key="StructureDefinition-Encounter-birth" name="Encounter - Birth"/>
@@ -96,7 +94,7 @@
 <artifact id="StructureDefinition/Observation-apgar-score" key="StructureDefinition-Observation-apgar-score" name="Observation - APGAR Score"/>
 <artifact id="StructureDefinition/Observation-steroids-fetal-lung-maturation" key="StructureDefinition-Observation-steroids-fetal-lung-maturation" name="Observation - Administration of Steroids for Fetal Lung Maturation"/>
 <artifact id="Observation/observation-steroids-fetal-lung-maturation-jada-ann-quinn" key="Observation-observation-steroids-fetal-lung-maturation-jada-ann-quinn" name="Observation - Administration of Steroids for Fetal Lung Maturation - Jada Ann Quinn"/>
-<artifact id="StructureDefinition/Observation-antibiotics-during-labor" key="StructureDefinition-Observation-antibiotics-during-labor" name="Observation - Antibiotics Administered During Labor"/>
+<artifact id="StructureDefinition/Observation-antibiotics-administered-during-labor" key="StructureDefinition-Observation-antibiotics-during-labor" name="Observation - Antibiotics Administered During Labor"/>
 <artifact id="Observation/observation-antibiotics-during-labor-jada-ann-quinn" key="Observation-observation-antibiotics-during-labor-jada-ann-quinn" name="Observation - Antibiotics Administered During Labor - Jada Ann Quinn"/>
 <artifact id="Observation/observation-apgar-score-babyg-quinn-1-min" key="Observation-observation-apgar-score-babyg-quinn-1-min" name="Observation - Apgar Score - BabyG Quinn: 1 min"/>
 <artifact id="Observation/observation-apgar-score-babyg-quinn-5-min" key="Observation-observation-apgar-score-babyg-quinn-5-min" name="Observation - Apgar Score - BabyG Quinn: 5 min"/>
@@ -189,7 +187,7 @@
 <artifact id="StructureDefinition/Observation-None-congenital-anomolies-of-the-newborn" key="StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn" name="Observation - None Of Specified Congenital Anomolies Of The Newborn"/>
 <artifact id="Observation/observation-none-congenital-anomolies-babyg-quinn" key="Observation-observation-none-congenital-anomolies-babyg-quinn" name="Observation - None Of Specified Congenital Anomolies of Newborn - BabyG Quinn"/>
 <artifact id="Observation/observation-no-infections-present-jada-ann-quinn" key="Observation-observation-no-infections-present-jada-ann-quinn" name="Observation - None Of Specified Infections During Pregnancy - Jada Ann Quinn"/>
-<artifact id="StructureDefinition/Observation-no-infections-present-during-pregnancy" key="StructureDefinition-Observation-no-infections-present-during-pregnancy" name="Observation - None Of Specified Infections Specified During Pregnancy"/>
+<artifact id="StructureDefinition/Observation-no-infections-present-during-pregnancy" key="StructureDefinition-Observation-no-infections-present-during-pregnancy" name="Observation - None Of Specified Infections During Pregnancy"/>
 <artifact id="StructureDefinition/Observation-none-of-specified-maternal-morbidities" key="StructureDefinition-Observation-none-of-specified-maternal-morbidities" name="Observation - None Of Specified Maternal Morbidities"/>
 <artifact id="Observation/observation-none-maternal-morbidities-jada-ann-quinn" key="Observation-observation-none-maternal-morbidities-jada-ann-quinn" name="Observation - None Of Specified Maternal Morbidities - Jada Ann Quinn"/>
 <artifact id="StructureDefinition/Observation-none-of-specified-obstetric-procedures" key="StructureDefinition-Observation-none-of-specified-obstetric-procedures" name="Observation - None Of Specified Obstetric Procedures"/>
@@ -298,7 +296,7 @@
 <artifact id="Organization/organization-jurisdictional-vital-records-office" key="Organization-organization-jurisdictional-vital-records-office" name="US Core Organization - Jurisdictional Vital Records Office"/>
 <artifact id="Organization/organization-nchs" key="Organization-organization-nchs" name="US Core Organization - National Center for Health Statistics [NCHS]"/>
 <artifact id="Organization/organization-south-hospital" key="Organization-organization-south-hospital" name="US Core Organization - South Hospital"/>
-<artifact id="Parameters/expansion-parameters-bfdr" key="Parameters-expansion-parameters" name="USA SNOMED-CT"/>
+<artifact id="Parameters/expansion-parameters" key="Parameters-expansion-parameters" name="USA SNOMED-CT"/>
 <artifact id="ValueSet/ValueSet-apgar-timing" key="ValueSet-ValueSet-apgar-timing" name="ValueSet - APGAR Score Timing"/>
 <artifact id="ValueSet/ValueSet-birth-attendant-titles" key="ValueSet-ValueSet-birth-attendant-titles" name="ValueSet - Birth Attendants Titles"/>
 <artifact id="ValueSet/ValueSet-birth-delivery-occurred" key="ValueSet-ValueSet-birth-delivery-occurred" name="ValueSet - Birth Delivery Occurred"/>
@@ -321,6 +319,10 @@
 <artifact id="ValueSet/ValueSet-obstetric-procedure" key="ValueSet-ValueSet-obstetric-procedure" name="ValueSet - Obstetric Procedures"/>
 <artifact id="ValueSet/ValueSet-plurality-edit-flags" key="ValueSet-ValueSet-plurality-edit-flags" name="ValueSet - Plurality Edit Flags (NCHS)"/>
 <artifact id="ValueSet/ValueSet-pregnancy-report-edit-flags" key="ValueSet-ValueSet-pregnancy-report-edit-flags" name="ValueSet - Pregnancy Report Edit Flags (NCHS)"/>
+<artifact id="Observation/observation-usual-work-james-brandon-quinn" key="Observation-observation-usual-work-james-brandon-quinn" name="Observation - Father Usual Work - James Brandon Quinn"/>
+<artifact id="Observation/observation-usual-work-tom-yan-lee" key="Observation-observation-usual-work-tom-yan-lee" name="Observation - Father Usual Work - Tom Yan Lee"/>
+<artifact id="Observation/observation-usual-work-carmen-teresa-lee" key="Observation-observation-usual-work-carmen-teresa-lee" name="Observation - Mother Usual Work - Carmen Teresa Lee"/>
+<artifact id="Observation/observation-usual-work-jada-ann-quinn" key="Observation-observation-usual-work-jada-ann-quinn" name="Observation - Mother Usual Work - Jada Ann Quinn"/>
 <artifact deprecated="true" id="Observation/observation-bridged-race-jada-ann-quinn" key="Observation-observation-bridged-race-jada-ann-quinn" name="Bridged Race example [Jada Ann Quinn]"/>
 <artifact deprecated="true" id="StructureDefinition/Bundle-message-bfdr" key="StructureDefinition-Bundle-message-bfdr" name="Bundle - Message Birth and Fetal Death"/>
 <artifact deprecated="true" id="Bundle/bundle-provider-facility-fetal-death-not-named" key="Bundle-bundle-provider-facility-fetal-death-not-named" name="Bundle - Provider Facility Fetal Death Report example [Fetus Not Named]"/>
@@ -458,8 +460,6 @@
 <page key="ije_mapping_natality" name="Data Dictionary Natality"/>
 <page deprecated="true" key="ije_mapping" name="IJE Mapping"/>
 <page key="downloads" name="Downloads"/>
-<page key="example_baby_g_quinn" name="Example Baby G Quinn"/>
-<page key="example_fetal_death" name="Example Fetal Death"/>
 <page key="vr_ig_harmonization" name="FHIR Implementation Guide Harmonization Plan"/>
 <page deprecated="true" key="appendix_a_-_example_facility_worksheet_for_the_live_birth_certificate" name="Facility Worksheet for Live Birth"/>
 <page deprecated="true" key="appendix_b_-_example_live_birth_certificate" name="Example Live Birth Certificate"/>
@@ -478,4 +478,6 @@
 <page key="vital_records_form_mapping" name="Vital Records Form Mapping"/>
 <page deprecated="true" key="vital_records_forms_mapping" name="Vital Records Forms Mapping"/>
 <page deprecated="true" key="terminology" name="Terminology"/>
+<page key="example_fetal_death" name="Fetal Death Report Example - Not Named"/>
+<page key="example_baby_g_quinn" name="Live Birth Report Example - Baby G Quinn"/>
 </specification>
