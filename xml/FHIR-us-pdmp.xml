@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/pdmp/2024Jan" ciUrl="https://build.fhir.org/ig/HL7/fhir-pdmp" defaultVersion="1.0.0-ballot" defaultWorkgroup="pharm" gitUrl="https://github.com/HL7/fhir-pdmp" url="http://hl7.org/fhir/us/pdmp">
+<version code="current" url="https://build.fhir.org/ig/HL7/fhir-pdmp"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/us/pdmp/2024Jan"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/pdmp-bundle-history-result" key="StructureDefinition-pdmp-bundle-history-result" name="PDMP Bundle - History Result"/>
+<artifact id="StructureDefinition/pdmp-bundle-request-message" key="StructureDefinition-pdmp-bundle-request-message" name="PDMP Bundle - Request Message"/>
+<artifact id="StructureDefinition/pdmp-bundle-response-message" key="StructureDefinition-pdmp-bundle-response-message" name="PDMP Bundle - Response Message"/>
+<artifact id="CodeSystem/pdmp-event-type" key="CodeSystem-pdmp-event-type" name="PDMP Code System - Event Type"/>
+<artifact id="CodeSystem/temporary-pdmp-patient-relationship" key="CodeSystem-temporary-pdmp-patient-relationship" name="PDMP Code System - Patient Relationship (Temporary)"/>
+<artifact id="StructureDefinition/pdmp-activity-period-extension" key="StructureDefinition-pdmp-activity-period-extension" name="PDMP Extension - Activity Period"/>
+<artifact id="StructureDefinition/pdmp-header-timestamp-extension" key="StructureDefinition-pdmp-header-timestamp-extension" name="PDMP Extension - Header Timestamp"/>
+<artifact id="StructureDefinition/pdmp-extension-rx-refill-number" key="StructureDefinition-pdmp-extension-rx-refill-number" name="PDMP Extension - Prescription Refill Number"/>
+<artifact id="StructureDefinition/pdmp-extension-rx-transmission-method" key="StructureDefinition-pdmp-extension-rx-transmission-method" name="PDMP Extension - Prescription Transmission Method"/>
+<artifact id="StructureDefinition/pdmp-medicationadministration" key="StructureDefinition-pdmp-medicationadministration" name="PDMP MedicationAdministration"/>
+<artifact id="StructureDefinition/pdmp-medicationdispense" key="StructureDefinition-pdmp-medicationdispense" name="PDMP MedicationDispense"/>
+<artifact id="MessageDefinition/pdmp-request" key="MessageDefinition-pdmp-request" name="PDMP Message Definition - Request"/>
+<artifact id="MessageDefinition/pdmp-response" key="MessageDefinition-pdmp-response" name="PDMP Message Definition - Response"/>
+<artifact id="StructureDefinition/pdmp-messageheader-request-op" key="StructureDefinition-pdmp-messageheader-request-op" name="PDMP MessageHeader - Request Operation"/>
+<artifact id="StructureDefinition/pdmp-messageheader-response-op" key="StructureDefinition-pdmp-messageheader-response-op" name="PDMP MessageHeader - Response Operation"/>
+<artifact id="OperationDefinition/get-pdmp-history" key="OperationDefinition-get-pdmp-history" name="PDMP Operation Get PDMP History"/>
+<artifact id="StructureDefinition/pdmp-organization-pharmacy" key="StructureDefinition-pdmp-organization-pharmacy" name="PDMP Organization - Pharmacy"/>
+<artifact id="StructureDefinition/pdmp-parameters-request-operation" key="StructureDefinition-pdmp-parameters-request-operation" name="PDMP Parameters - Request Operation"/>
+<artifact id="StructureDefinition/pdmp-parameters-response-operation" key="StructureDefinition-pdmp-parameters-response-operation" name="PDMP Parameters - Response Operation"/>
+<artifact id="StructureDefinition/pdmp-patient" key="StructureDefinition-pdmp-patient" name="PDMP Patient"/>
+<artifact id="ValueSet/pdmp-event-type" key="ValueSet-pdmp-event-type" name="PDMP Value Set - Event Type"/>
+<artifact id="ValueSet/pdmp-patient-relationship" key="ValueSet-pdmp-patient-relationship" name="PDMP Value Set - Patient Relationship"/>
+<artifact id="ValueSet/pdmp-rx-transmission-method" key="ValueSet-pdmp-rx-transmission-method" name="PDMP Value Set - Prescription Transmission Method"/>
+<artifact id="ValueSet/pdmp-species-type" key="ValueSet-pdmp-species-type" name="PDMP Value Set - Species Type"/>
+<artifact id="CodeSystem/temporary-pmix-species-type-code" key="CodeSystem-temporary-pmix-species-type-code" name="PMIX Code System - Species Type Code (Temporary)"/>
+<artifact id="CodeSystem/temporary-pmix-transmission-form-of-rx-origin" key="CodeSystem-temporary-pmix-transmission-form-of-rx-origin" name="PMIX Transmission Form Of Rx Origin Code System (Temporary)"/>
+<artifact deprecated="true" id="StructureDefinition/pdmp-refill-number-extension" key="StructureDefinition-pdmp-refill-number-extension" name="Refill_Number_Extensionn"/>
+<artifact id="Parameters/get-pdmp-history-input-parameters-1" key="Parameters-get-pdmp-history-input-parameters-1" name="get-pdmp-history-input-parameters-1"/>
+<artifact id="Parameters/get-pdmp-history-output-parameters-1" key="Parameters-get-pdmp-history-output-parameters-1" name="get-pdmp-history-output-parameters-1"/>
+<artifact id="Bundle/bundle-res-1" key="Bundle-bundle-res-1" name="pdmp-bundle-history-result-1"/>
+<artifact id="Bundle/pdmp-bundle-request-message-1" key="Bundle-pdmp-bundle-request-message-1" name="pdmp-bundle-request-message-1"/>
+<artifact id="Bundle/pdmp-bundle-response-message-1" key="Bundle-pdmp-bundle-response-message-1" name="pdmp-bundle-response-message-1"/>
+<artifact id="CapabilityStatement/pdmp-client" key="CapabilityStatement-pdmp-client" name="pdmp-client"/>
+<artifact id="MedicationAdministration/pdmp-medadmin-1" key="MedicationAdministration-pdmp-medadmin-1" name="pdmp-medadmin-1"/>
+<artifact id="MedicationDispense/pdmp-meddispense-1" key="MedicationDispense-pdmp-meddispense-1" name="pdmp-meddispense-1"/>
+<artifact id="Patient/pdmp-patient-1" key="Patient-pdmp-patient-1" name="pdmp-patient-1"/>
+<artifact id="Patient/pdmp-patient-2-veterinary" key="Patient-pdmp-patient-2-veterinary" name="pdmp-patient-2-veterinary"/>
+<artifact id="Organization/pdmp-pharmacy-1" key="Organization-pdmp-pharmacy-1" name="pdmp-pharmacy-1"/>
+<artifact id="CapabilityStatement/pdmp-server" key="CapabilityStatement-pdmp-server" name="pdmp-server"/>
+<artifact id="RelatedPerson/relatedperson-2-veterinary" key="RelatedPerson-relatedperson-2-veterinary" name="relatedperson-2-veterinary"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="capability-statements" name="Capability Statements"/>
+<page key="changes" name="Changes"/>
+<page key="conformance" name="Conformance"/>
+<page key="deployment" name="Deployment"/>
+<page key="downloads" name="Downloads"/>
+<page key="fhir-medication-background" name="Fhir Medication Background"/>
+<page key="index" name="Home"/>
+<page key="mappings" name="Mappings"/>
+<page key="profiles" name="Profiles"/>
+<page key="search" name="Search"/>
+<page key="security" name="Security"/>
+<page key="submission-options" name="Submission Options"/>
+<page key="toc" name="Table of Contents"/>
+<page key="us-core-profiles" name="Us Core Profiles"/>
+<page key="use-case" name="Use Case"/>
+</specification>
