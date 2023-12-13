@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2014 rel. 2 sp1 (x64) (http://www.altova.com) by Lloyd McKenzie (private) -->
-<specification gitUrl="https://github.com/HL7/fhir" url="http://hl7.org/fhir" ciUrl="http://build.fhir.org" defaultWorkgroup="fhir-i" defaultVersion="R4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
+<specification gitUrl="https://github.com/HL7/fhir" url="http://hl7.org/fhir" ciUrl="http://build.fhir.org" defaultWorkgroup="fhir-i" defaultVersion="R5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
+  <version code="R6"/>
   <version code="R5"/>
   <version code="R4B"/>
   <version code="R4"/>
@@ -13,6 +14,7 @@
   <artifactPageExtension value="-mappings"/>
   <artifact name="DomainResource" key="DomainResource" id="StructureDefinition/DomainResource" workgroup="fhir-i"/>
   <artifact name="BaseResource" key="BaseResource" id="StructureDefinition/Resource" workgroup="fhir-i"/>
+  <artifact name="CanonicalResource" key="CanonicalResource" id="StructureDefinition/CanonicalResource" workgroup="fhir-i"/>
   <artifact name="MetadataResource" key="MetadataResource" id="StructureDefinition/MetadataResource" workgroup="fhir-i"/>
   <artifact name="Account" key="Account" id="StructureDefinition/Account" workgroup="pa"/>
   <artifact name="ActivityDefinition" key="ActivityDefinition" id="StructureDefinition/ActivityDefinition" workgroup="cds"/>
@@ -23,10 +25,12 @@
   <artifact name="AllergyIntolerance" key="AllergyIntolerance" id="StructureDefinition/AllergyIntolerance" workgroup="pc"/>
   <artifact name="Appointment" key="Appointment" id="StructureDefinition/Appointment" workgroup="pa"/>
   <artifact name="AppointmentResponse" key="AppointmentResponse" id="StructureDefinition/AppointmentResponse" workgroup="pa"/>
+  <artifact name="ArtifactAssessment" key="ArtifactAssessment" id="StructureDefinition/ArtifactAssessment" workgroup="cds"/>
   <artifact name="AuditEvent" key="AuditEvent" id="StructureDefinition/AuditEvent" workgroup="security"/>
   <artifact name="Basic" key="Basic" id="StructureDefinition/Basic" workgroup="fhir-i"/>
   <artifact name="Binary" key="Binary" id="StructureDefinition/Binary" workgroup="fhir-i"/>
   <artifact name="BiologicallyDerivedProduct" key="BiologicallyDerivedProduct" id="StructureDefinition/BiologicallyDerivedProduct" workgroup="brr"/>
+  <artifact name="BiologicallyDerivedProductDispense" key="BiologicallyDerivedProductDispense" id="StructureDefinition/BiologicallyDerivedProductDispense" workgroup="brr"/>
   <artifact name="BodyStructure" key="BodySite" id="StructureDefinition/BodySite" workgroup="oo"/>
   <artifact name="Bundle" key="Feed" id="StructureDefinition/Feed" workgroup="fhir-i"/>
   <artifact name="CapabilityStatement (Conformance)" key="Conformance" id="StructureDefinition/Conformance" workgroup="fhir-i"/>
@@ -58,6 +62,7 @@
   <artifact name="DetectedIssue" key="Alert" id="StructureDefinition/Alert" workgroup="cds"/>
   <artifact name="Device" key="Device" id="StructureDefinition/Device" workgroup="oo"/>
   <artifact name="DeviceComponent" key="DeviceComponent" id="StructureDefinition/DeviceComponent" workgroup="dev" deprecated="true"/>
+  <artifact name="DeviceAssociation" key="DeviceAssociation" id="StructureDefinition/DeviceAssociation" workgroup="oo"/>
   <artifact name="DeviceDefinition" key="DeviceDefinition" id="StructureDefinition/DeviceDefinition" workgroup="oo"/>
   <artifact name="DeviceMetric" key="DeviceMetric" id="StructureDefinition/DeviceMetric" workgroup="dev"/>
   <artifact name="DeviceObservationReport" key="DeviceObservationReport" id="StructureDefinition/DeviceObservationReport" workgroup="dev" deprecated="true"/>
@@ -66,9 +71,10 @@
   <artifact name="DeviceUsage (DeviceUseStatement)" key="DeviceUseStatement" id="StructureDefinition/DeviceUseStatement" workgroup="oo"/>
   <artifact name="DiagnosticReport" key="DiagnosticReport" id="StructureDefinition/DiagnosticReport" workgroup="oo"/>
   <artifact name="DiagnosticRequest (see ServiceRequest)" key="DiagnosticRequest" id="StructureDefinition/DiagnosticRequest" workgroup="oo" deprecated="true"/>
-  <artifact name="DocumentManifest" key="DocumentManifest" id="StructureDefinition/DocumentManifest" workgroup="sd"/>
+  <artifact name="DocumentManifest (See List)" key="DocumentManifest" id="StructureDefinition/DocumentManifest" workgroup="sd" deprecated="true"/>
   <artifact name="DocumentReference" key="DocumentReference" id="StructureDefinition/DocumentReference" workgroup="sd"/>
   <artifact name="Encounter" key="Encounter" id="StructureDefinition/Encounter" workgroup="pa"/>
+  <artifact name="EncounterHistory" key="EncounterHistory" id="StructureDefinition/EncounterHistory" workgroup="pa"/>
   <artifact name="EndPoint" key="EndPoint" id="StructureDefinition/EndPoint" workgroup="pa"/>
   <artifact name="EnrollmentRequest" key="EnrollmentRequest" id="StructureDefinition/EnrollmentRequest" workgroup="fm"/>
   <artifact name="EnrollmentResponse" key="EnrollmentResponse" id="StructureDefinition/EnrollmentResponse" workgroup="fm"/>
@@ -83,6 +89,7 @@
   <artifact name="ExtensionDefinition (see StructureDefinition)" key="ExtensionDefinition" id="StructureDefinition/ExtensionDefinition" workgroup="fhir-i" deprecated="true"/>
   <artifact name="FamilyMemberHistory" key="FamilyHistory" id="StructureDefinition/FamilyHistory" workgroup="pc"/>
   <artifact name="Flag" key="Flag" id="StructureDefinition/Flag" workgroup="pc"/>
+  <artifact name="FormularyItem" key="FormularyItem" id="StructureDefinition/FormularyItem" workgroup="pharm"/>
   <artifact name="GenomicStudy" key="GenomicStudy" id="StructureDefinition/GenomicStudy" workgroup="cg"/>
   <artifact name="Goal" key="Goal" id="StructureDefinition/Goal" workgroup="pc"/>
   <artifact name="GraphDefinition" key="GraphDefinition" id="StructureDefinition/GraphDefinition" workgroup="fhir-i"/>
@@ -98,8 +105,10 @@
   <artifact name="ImplementationGuide" key="ImplementationGuide" id="StructureDefinition/ImplementationGuide" workgroup="fhir-i"/>
   <artifact name="Ingredient" key="MedicinalProductIngredient" id="StructureDefinition/Ingredient" workgroup="brr"/>
   <artifact name="InsurancePlan" key="ProductPlan" id="StructureDefinition/ProductPlan" workgroup="pa"/>
+  <artifact name="InventoryReport" key="InventoryReport" id="StructureDefinition/InventoryReport" workgroup="oo"/>
+  <artifact name="InventoryItem" key="InventoryItem" id="StructureDefinition/InventoryItem" workgroup="oo"/>
   <artifact name="Invoice" key="Invoice" id="StructureDefinition/Invoice" workgroup="fm"/>
-  <artifact name="ItemInstance" key="ItemInstance" id="StructureDefinition/ItemInstance" workgroup="oo" deprecated="true"/>
+  <artifact name="ItemInstance (deprecated)" key="ItemInstance" id="StructureDefinition/ItemInstance" workgroup="oo" deprecated="true"/>
   <artifact name="Library" key="Library" id="StructureDefinition/Library" workgroup="cds"/>
   <artifact name="Linkage" key="Linkage" id="StructureDefinition/Linkage" workgroup="fhir-i"/>
   <artifact name="List" key="List" id="StructureDefinition/List" workgroup="fhir-i"/>
@@ -113,7 +122,7 @@
   <artifact name="MedicationDispense" key="MedicationDispense" id="StructureDefinition/MedicationDispense" workgroup="pharm"/>
   <artifact name="MedicationKnowledge" key="MedicationKnowledge" id="StructureDefinition/MedicationKnowledge" workgroup="pharm"/>
   <artifact name="MedicationRequest" key="MedicationPrescription" id="StructureDefinition/MedicationPrescription" workgroup="pharm"/>
-  <artifact name="MedicationUsage (MedicationStatement)" key="MedicationStatement" id="StructureDefinition/MedicationStatement" workgroup="pharm"/>
+  <artifact name="MedicationStatement" key="MedicationStatement" id="StructureDefinition/MedicationStatement" workgroup="pharm"/>
   <artifact name="MedicinalProductDefinition" key="MedicinalProduct" id="StructureDefinition/MedicinalProductDefinition" workgroup="brr"/>
   <artifact name="MedicinalProductClinicals" key="MedicinalProductClinicals" id="StructureDefinition/MedicinalProductClinicals" workgroup="brr" deprecated="true"/>
   <artifact name="MedicinalProductContraindication (see ClinicalUseIssue)" key="MedicinalProductContraindication" id="StructureDefinition/MedicinalProductContraindication" workgroup="brr" deprecated="true"/>
@@ -189,6 +198,7 @@
   <artifact name="SupportingDocumentation" key="SupportingDocumentation" id="StructureDefinition/SupportingDocumentation" workgroup="fm" deprecated="true"/>
   <artifact name="Task" key="Task" id="StructureDefinition/Task" workgroup="oo"/>
   <artifact name="TerminologyCapabilities" key="TerminologyCapabilities" id="StructureDefinition/TerminologyCapabilities" workgroup="vocab"/>
+  <artifact name="TestPlan" key="TestPlan" id="StructureDefinition/TestPlan" workgroup="fhir-i"/>
   <artifact name="TestReport" key="TestReport" id="StructureDefinition/TestReport" workgroup="fhir-i"/>
   <artifact name="TestScript" key="TestScript" id="StructureDefinition/TestScript" workgroup="fhir-i"/>
   <artifact name="Topic (see SubscriptionTopic)" key="Topic" id="StructureDefinition/Topic" workgroup="fhir-i" deprecated="true"/>
@@ -196,7 +206,7 @@
   <artifact name="UserSession" key="UserSession" id="StructureDefinition/UserSession" workgroup="security" deprecated="true"/>
   <artifact name="ValueSet" key="ValueSet" id="StructureDefinition/ValueSet" workgroup="vocab"/>
   <artifact name="VerificationResult" key="VerificationResult" id="StructureDefinition/VerificationResult" workgroup="pa"/>
-  <artifact name="VisionPrescription" key="VisionPrescription" id="StructureDefinition/VisionPrescription" workgroup="fm"/>
+  <artifact name="VisionPrescription" key="VisionPrescription" id="StructureDefinition/VisionPrescription" workgroup="oo"/>
   <artifact name="Definition Pattern" key="_Definition" id="StructureDefinition/Definition" workgroup="fhir-i"/>
   <artifact name="Event Pattern" key="_Event" id="StructureDefinition/Event" workgroup="fhir-i"/>
   <artifact name="Request Pattern" key="_Request" id="StructureDefinition/Request" workgroup="fhir-i"/>
@@ -255,24 +265,28 @@
     <otherpage url="datatypes-examples"/>
     <otherpage url="datatypes-extras"/>
     <otherpage url="datatypes-mappings"/>
+    <otherpage url="datatypes-profiles"/>
     <otherpage url="datatypes-version-maps"/>
     <otherpage url="marketingstatus"/>
     <otherpage url="marketingstatus-definitions"/>
     <otherpage url="marketingstatus-examples"/>
     <otherpage url="marketingstatus-extras"/>
     <otherpage url="marketingstatus-mappings"/>
+    <otherpage url="marketingstatus-profiles"/>
     <otherpage url="ordereddistribution"/>
     <otherpage url="population"/>
     <otherpage url="population-definitions"/>
     <otherpage url="population-examples"/>
     <otherpage url="population-extras"/>
     <otherpage url="population-mappings"/>
+    <otherpage url="population-profiles"/>
     <otherpage url="prodcharacteristic"/>
     <otherpage url="productshelflife"/>
     <otherpage url="productshelflife-definitions"/>
     <otherpage url="productshelflife-examples"/>
     <otherpage url="productshelflife-extras"/>
     <otherpage url="productshelflife-mappings"/>
+    <otherpage url="productshelflife-profiles"/>
     <otherpage url="relatedartifacts"/>
     <otherpage url="statistic"/>
   </page>
@@ -287,6 +301,7 @@
     <otherpage url="dosage-examples"/>
     <otherpage url="dosage-extras"/>
     <otherpage url="dosage-mappings"/>
+    <otherpage url="dosage-profiles"/>
   </page>
   <page name="Downloads" key="downloads" url="downloads" workgroup="fhir-i"/>
   <page name="EHR Functional Model (ehr-fm)" key="ehr-fm" url="ehr-fm" workgroup="ehr"/>
@@ -298,6 +313,7 @@
     <otherpage url="elementdefinition-examples"/>
     <otherpage url="elementdefinition-extras"/>
     <otherpage url="elementdefinition-mappings"/>
+    <otherpage url="elementdefinition-profiles"/>
   </page>
   <page name="Exchange Module" key="exchange-module" url="exchange-module" workgroup="fhir-i"/>
   <page name="Exchanging Resources" key="exchanging" url="exchanging" workgroup="fhir-i">
@@ -316,6 +332,7 @@
   <page name="Extension Registry" key="extensibility-registry" url="extensibility-registry" workgroup="fhir-i"/>
   <page name="Tags, Bundles, Compartments &amp; Binary (now split)" key="extras" url="extras" workgroup="fhir-i" deprecated="true"/>
   <page name="FHIRPath (fluentpath)" key="fluentpath" url="fhirpath" workgroup="its"/>
+  <page name="FHIR X-Query" key="fhir-xquery" url="fhir-xquery" workgroup="fhir-i"/>
   <page name="Financial Module" key="financial-module" url="financial-module" workgroup="fm"/>
   <page name="Resource Definitions" key="formats" url="formats" workgroup="its"/>
   <page name="Foundation Module" key="foundation-module" url="foundation-module" workgroup="fhir-i"/>
@@ -351,6 +368,7 @@
     <otherpage url="metadatatypes-definitions"/>
     <otherpage url="metadatatypes-examples"/>
     <otherpage url="metadatatypes-mappings"/>
+    <otherpage url="metadatatypes-profiles"/>
   </page>
   <page name="Modules" key="modules" url="modules" workgroup="fhir-i">
     <otherpage url="modules-fragment"/>
@@ -359,9 +377,11 @@
   <page name="Narrative" key="narrative" url="narrative" workgroup="fhir-i">
     <otherpage url="narrative-definitions"/>
     <otherpage url="narrative-example"/>
+    <otherpage url="narrative-version-maps"/>
   </page>
   <page name="ND-JSON" key="nd-json" url="nd-json" workgroup="its"/>
   <page name="Namespaces (ns)" key="ns" url="ns" workgroup="fhir-i"/>
+  <page name="Obligations" key="obligations" url="obligations" workgroup="fhir-i"/>
   <page name="OIDs" key="oids" url="oids" workgroup="vocab"/>
   <page name="operations" key="operations" url="operations" workgroup="fhir-i">
     <otherpage url="op-example-request"/>
@@ -372,6 +392,7 @@
     <otherpage url="overview-arch"/>
     <otherpage url="overview-clinical"/>
     <otherpage url="overview-dev"/>
+    <otherpage url="overview-patient"/>
   </page>
   <page name="Packages" key="packages" url="packages" workgroup="fhir-i"/>
   <page name="Patterns" key="patterns" url="patterns" workgroup="fhir-i"/>
@@ -389,14 +410,18 @@
   <page name="References" key="references" url="references" workgroup="fhir-i">
     <otherpage url="references-definitions"/>
     <otherpage url="references-extras"/>
+    <otherpage url="references-profiles"/>
   </page>
   <page name="Resource Formats" key="resource-formats" url="resource-formats" workgroup="fhir-i"/>
   <page name="Guide to Resources (resourceguide)" key="resourceguide" url="resourceguide" workgroup="fhir-i"/>
   <page name="Resource List" key="resourcelist" url="resourcelist" workgroup="fhir-i">
     <otherpage url="fmg"/>
-    <otherpage url="resourceslist-examples"/>
+    <otherpage url="resourcelist-examples"/>
   </page>
-  <page name="Resources (see BaseResource)" key="resources" url="resources" workgroup="fhir-i" deprecated="true"/>
+  <page name="Resources (see BaseResource)" key="resources" url="resources" workgroup="fhir-i" deprecated="true">
+    <otherpage url="resources-definitions"/>
+    <otherpage url="resources-examples"/>
+  </page>
   <page name="Clinical Safety (safety)" key="safety" url="safety" workgroup="fhir-i"/>
   <page name="Status Codes Grid (sc)" key="sc" url="sc" workgroup="fhir-i"/>
   <page name="Search" key="search" url="search" workgroup="fhir-i">
@@ -427,6 +452,8 @@
     <otherpage url="ndfrt"/>
     <otherpage url="pclocd"/>
     <otherpage url="rxnorm"/>
+    <otherpage url="sid-icd-10"/>
+    <otherpage url="sid-icd-9"/>
     <otherpage url="snomedcd"/>
     <otherpage url="snomedct-usage"/>
     <otherpage url="ucum"/>
@@ -434,7 +461,10 @@
   </page>
   <page name="Terminologies - Binding Examples" key="terminologies-binding-examples" url="terminologies-binding-examples" workgroup="vocab"/>
   <page name="Terminologies - Concept Maps" key="terminologies-conceptmaps" url="terminologies-conceptmaps" workgroup="vocab"/>
-  <page name="Terminologies - Systems" key="terminologies-systems" url="terminologies-systems" workgroup="vocab"/>
+  <page name="Terminologies - Identifier Registry" key="identifier-registry" url="identifier-registry" workgroup="vocab"/>
+  <page name="Terminologies - Systems" key="terminologies-systems" url="terminologies-systems" workgroup="vocab">
+    <otherpage url="sid-us-ssn"/>
+  </page>
   <page name="Terminologies - v2" key="terminologies-v2" url="terminologies-v2" workgroup="vocab" deprecated="true"/>
   <page name="Terminologies - v3" key="terminologies-v3" url="terminologies-v3" workgroup="vocab" deprecated="true"/>
   <page name="Terminologies - Valuesets" key="terminologies-valuesets" url="terminologies-valuesets" workgroup="vocab"/>
@@ -448,6 +478,7 @@
     <otherpage url="types-definitions"/>
     <otherpage url="types-extras"/>
     <otherpage url="types-mappings"/>
+    <otherpage url="types-profiles"/>
     <otherpage url="tyeps-version-maps"/>
   </page>
   <page name="UML definition" key="uml" url="uml" workgroup="fhir-i"/>

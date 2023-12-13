@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/codex-radiation-therapy/2022Sep" ciUrl="http://build.fhir.org/ig/codex-radiation-therapy" defaultVersion="1.0.0-ballot" defaultWorkgroup="cgp" gitUrl="https://github.com/HL7/codex-radiation-therapy" url="http://hl7.org/fhir/us/codex-radiation-therapy">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/codex-radiation-therapy/2022Sep" ciUrl="http://build.fhir.org/ig/codex-radiation-therapy" defaultVersion="1.0.0" defaultWorkgroup="cgp" gitUrl="https://github.com/HL7/codex-radiation-therapy" url="http://hl7.org/fhir/us/codex-radiation-therapy">
 <version code="current" url="http://build.fhir.org/ig/codex-radiation-therapy"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/codex-radiation-therapy/STU1"/>
 <version code="1.0.0-ballot" url="http://hl7.org/fhir/us/codex-radiation-therapy/2022Sep"/>
 <version code="0.1.0" deprecated="true"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="ValueSet/codexrt-radiotheraphy-adverse-event-severity-or-gradeVS" key="ValueSet-codexrt-radiotheraphy-adverse-event-severity-or-gradeVS" name="Adverse Event Severity or Grade Value Set"/>
+<artifact id="ValueSet/codexrt-radiotherapy-adverse-event-termVS" key="ValueSet-codexrt-radiotherapy-adverse-event-termVS" name="Adverse Event Terms Value Set"/>
 <artifact id="ValueSet/codexrt-brachytherapy-applicator-type-vs" key="ValueSet-codexrt-brachytherapy-applicator-type-vs" name="Brachytherapy Applicator Type Value Set"/>
 <artifact deprecated="true" id="ValueSet/codex-radiotherapy-applicator-types-vs" key="ValueSet-codex-radiotherapy-applicator-types-vs" name="Brachytherapy Applicator Types"/>
 <artifact deprecated="true" id="CodeSystem/codex-radiotherapy-applicator-types-cs" key="CodeSystem-codex-radiotherapy-applicator-types-cs" name="Brachytherapy Applicator Types Code System"/>
 <artifact id="ValueSet/codexrt-brachytherapy-device-type-vs" key="ValueSet-codexrt-brachytherapy-device-type-vs" name="Brachytherapy Device Type Value Set"/>
 <artifact id="CapabilityStatement/CodexRTServerCapabilityStatement" key="CapabilityStatement-CodexRTServerCapabilityStatement" name="CodeX RT Server CapabilityStatement"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-course-involves-reirradiation" key="StructureDefinition-codexrt-radiotherapy-course-involves-reirradiation" name="Course Involves Reirradiation"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-progression-qualifier" key="StructureDefinition-codexrt-radiotherapy-progression-qualifier" name="Disease Progression Qualifier"/>
 <artifact id="ValueSet/codexrt-disease-progression-qualifier-vs" key="ValueSet-codexrt-disease-progression-qualifier-vs" name="Disease Progression Qualifier Value Set"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-dose-planned-to-volume" key="StructureDefinition-codexrt-radiotherapy-dose-planned-to-volume" name="Dose Planned to Volume"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-dose-prescribed-to-volume" key="StructureDefinition-codexrt-radiotherapy-dose-prescribed-to-volume" name="Dose Prescribed to Volume"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-energy-or-isotope" key="StructureDefinition-codexrt-radiotherapy-energy-or-isotope" name="Energy or Isotope"/>
+<artifact id="AdverseEvent/RadiotherapyAdverseEvent-XRTS-07-22B" key="AdverseEvent-RadiotherapyAdverseEvent-XRTS-07-22B" name="Example Adverse Event from Radiotherapy"/>
 <artifact id="Condition/Diagnosis-1-Breast" key="Condition-Diagnosis-1-Breast" name="Example Diagnosis 1"/>
 <artifact id="Condition/Diagnosis-101-Breast" key="Condition-Diagnosis-101-Breast" name="Example Diagnosis 101 Breast"/>
 <artifact id="Condition/Diagnosis-2-Prostate" key="Condition-Diagnosis-2-Prostate" name="Example Diagnosis 2"/>
@@ -31,13 +36,22 @@
 <artifact id="Patient/Patient-XRTS-05-22B" key="Patient-Patient-XRTS-05-22A" name="Example XRTS Patient 5"/>
 <artifact id="Patient/Patient-XRTS-06-22B" key="Patient-Patient-XRTS-06-22B" name="Example XRTS Patient 6"/>
 <artifact id="Patient/Patient-XRTS-07-22B" key="Patient-Patient-XRTS-07-22B" name="Example XRTS Patient 7"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-free-breathing-motion-mgmt-technique" key="StructureDefinition-codexrt-radiotherapy-free-breathing-motion-mgmt-technique" name="Free-Breathing Motion Management Technique"/>
+<artifact id="ValueSet/codexrt-image-guided-radiotherapy-energy-unit-vs" key="ValueSet-codexrt-image-guided-radiotherapy-energy-unit-vs" name="Image Guided Radiotherapy Energy Unit Value Set"/>
+<artifact id="StructureDefinition/codexrt-image-guided-radiotherapy-modality" key="StructureDefinition-codexrt-image-guided-radiotherapy-modality" name="Image Guided Radiotherapy Modality"/>
+<artifact id="ValueSet/codexrt-image-guided-radiotherapy-modality-vs" key="ValueSet-codexrt-image-guided-radiotherapy-modality-vs" name="Image Guided Radiotherapy Modality Value Set"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-fractions-delivered" key="StructureDefinition-codexrt-radiotherapy-fractions-delivered" name="Number of Delivered Fractions"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-fractions-planned" key="StructureDefinition-codexrt-radiotherapy-fractions-planned" name="Number of Planned Fractions"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-fractions-prescribed" key="StructureDefinition-codexrt-radiotherapy-fractions-prescribed" name="Number of Prescribed Fractions"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-point-dose" key="StructureDefinition-codexrt-radiotherapy-point-dose" name="Point Dose"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-primary-plan-dose" key="StructureDefinition-codexrt-radiotherapy-primary-plan-dose" name="Primary Plan Dose"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-adverse-event" key="StructureDefinition-codexrt-radiotherapy-adverse-event" name="Radiotherapy Adverse Event"/>
+<artifact id="StructureDefinition/codexrt-radiotheraphy-adverse-event-severity-or-grade" key="StructureDefinition-codexrt-radiotheraphy-adverse-event-severity-or-grade" name="Radiotherapy Adverse Event Grade"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-course-prescription" key="StructureDefinition-codexrt-radiotherapy-course-prescription" name="Radiotherapy Course Prescription"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-course-summary" key="StructureDefinition-codexrt-radiotherapy-course-summary" name="Radiotherapy Course Summary"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-disease-status" key="StructureDefinition-codexrt-radiotherapy-disease-status" name="Radiotherapy Disease Status"/>
 <artifact id="ValueSet/codexrt-radiotherapy-energy-unit-vs" key="ValueSet-codexrt-radiotherapy-energy-unit-vs" name="Radiotherapy Energy Unit Value Set"/>
+<artifact id="ValueSet/codexrt-radiotherapy-free-breathing-motion-mgmt-technique-vs" key="ValueSet-codexrt-radiotherapy-free-breathing-motion-mgmt-technique-vs" name="Radiotherapy Free-Breathing Motion Management Technique Value Set"/>
 <artifact id="ValueSet/codexrt-radiotherapy-isotope-vs" key="ValueSet-codexrt-radiotherapy-isotope-vs" name="Radiotherapy Isotope Value Set"/>
 <artifact deprecated="true" id="ValueSet/codex-radiotherapy-isotopes" key="ValueSet-codex-radiotherapy-isotopes" name="Radiotherapy Isotopes"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-phase-prescription" key="StructureDefinition-codexrt-radiotherapy-phase-prescription" name="Radiotherapy Phase Prescription"/>
@@ -45,6 +59,7 @@
 <artifact id="StructureDefinition/codexrt-radiotherapy-planned-course" key="StructureDefinition-codexrt-radiotherapy-planned-course" name="Radiotherapy Planned Course"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-planned-phase" key="StructureDefinition-codexrt-radiotherapy-planned-phase" name="Radiotherapy Planned Phase"/>
 <artifact id="ValueSet/codexrt-radiotherapy-reason-for-revision-or-adaptation-vs" key="ValueSet-codexrt-radiotherapy-reason-for-revision-or-adaptation-vs" name="Radiotherapy Reason for Revision or Adaptation Value Set"/>
+<artifact id="ValueSet/codexrt-radiotherapy-respiratory-motion-management-vs" key="ValueSet-codexrt-radiotherapy-respiratory-motion-management-vs" name="Radiotherapy Respiratory Motion Management Value Set"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-seed-device" key="StructureDefinition-codexrt-radiotherapy-seed-device" name="Radiotherapy Seed Device"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-treated-phase" key="StructureDefinition-codexrt-radiotherapy-treated-phase" name="Radiotherapy Treated Phase"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-treated-plan" key="StructureDefinition-codexrt-radiotherapy-treated-plan" name="Radiotherapy Treated Plan"/>
@@ -203,8 +218,10 @@
 <artifact id="StructureDefinition/codexrt-radiotheraphy-reason-for-revision-or-adaptation" key="StructureDefinition-codexrt-radiotheraphy-reason-for-revision-or-adaptation" name="Reason for Revision or Adaptation"/>
 <artifact id="StructureDefinition/codexrt-dicom-reference" key="StructureDefinition-codexrt-dicom-reference" name="Reference to DICOM SOP Instance"/>
 <artifact id="CodeSystem/snomed-requested-cs" key="CodeSystem-snomed-requested-cs" name="Requested SNOMED Codes Code System"/>
+<artifact id="StructureDefinition/codexrt-radiotherapy-respiratory-motion-management" key="StructureDefinition-codexrt-radiotherapy-respiratory-motion-management" name="Respiratory Motion Management"/>
 <artifact id="SearchParameter/Patient-id" key="SearchParameter-Patient-id" name="Search by _id in Patients with multipleOr"/>
 <artifact id="SearchParameter/Condition-code" key="SearchParameter-Condition-code" name="Search by code:in in Conditions"/>
+<artifact id="CodeSystem/codexrt-radiotheraphy-adverse-event-severity-or-gradeCS" key="CodeSystem-codexrt-radiotheraphy-adverse-event-severity-or-gradeCS" name="Severity or Grade CodeSystem based on CTCAE"/>
 <artifact id="StructureDefinition/codexrt-radiotherapy-treatment-applicator-type" key="StructureDefinition-codexrt-radiotherapy-treatment-applicator-type" name="Treatment Applicator Type"/>
 <artifact deprecated="true" id="StructureDefinition/codexrt-radiotheraphy-treatment-device" key="StructureDefinition-codexrt-radiotheraphy-treatment-device" name="Treatment Device"/>
 <artifact deprecated="true" id="StructureDefinition/codexrt-radiotheraphy-treatment-device-manufacturer" key="StructureDefinition-codexrt-radiotheraphy-treatment-device-manufacturer" name="Treatment Device Manufacturer"/>
@@ -218,22 +235,27 @@
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
-<page key="basic_examples" name="Basic Examples"/>
+<page deprecated="true" key="basic_examples" name="Basic Examples"/>
+<page key="building_on_mcode" name="Building on mCODE"/>
+<page key="building_the_ig" name="Building the Implementation Guide"/>
 <page deprecated="true" key="capabilitystatements" name="Capability Statements"/>
 <page key="change_log" name="Change Log"/>
 <page deprecated="true" key="codesystems" name="Code Systems"/>
+<page key="ImplementationGuide-hl7.fhir.us.codex-radiation-therapy" name="CodeX Radiation Therapy ImplementationGuide Resource"/>
 <page key="conformance-general" name="Conformance Expectations"/>
+<page key="credits" name="Credits"/>
 <page key="dictionary" name="Data Dictionary"/>
+<page key="history" name="Development history"/>
 <page key="downloads" name="Download Specification"/>
-<page key="examples" name="Extended Example"/>
+<page deprecated="true" key="examples" name="Extended Example"/>
 <page deprecated="true" key="extensions" name="Extensions"/>
 <page key="index" name="Home"/>
 <page deprecated="true" key="overview" name="Overview"/>
-<page key="conformance-profiles" name="Profile Conformance"/>
+<page deprecated="true" key="conformance-profiles" name="Profile Conformance"/>
 <page deprecated="true" key="profiles" name="Profiles"/>
 <page deprecated="true" key="glossary" name="Radioterapy Glossary"/>
 <page key="toc" name="Table of Contents"/>
-<page key="terminology" name="Terminology"/>
+<page deprecated="true" key="terminology" name="Terminology"/>
 <page deprecated="true" key="codex-radiation-therapy" name="The codex-radiation-therapy FHIR Project" url="codex-radiation-therapy"/>
 <page deprecated="true" key="valuesets" name="Value Sets"/>
 </specification>
