@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This data is just for testing purposes and is not complete -->
+<specification defaultWorkgroup="inm" defaultVersion="V2.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
+  <version code="V2.10" deprecated="false"/>
+  <version code="V2.9.1"/>
+  <version code="V2.9"/>
+  <version code="V2.8.2"/>
+  <version code="V2.8.1"/>
+  <version code="V2.8"/>
+  <version code="V2.7.1"/>
+  <version code="V2.7"/>
+  <version code="V2.6"/>
+  <version code="V2.5.1"/>
+  <version code="V2.5"/>
+  <version code="2.1.3" deprecated="true"/>
+  <artifact name="MSH" key="MSH" id="??" deprecated="true"/>
+  <artifact name="Abstract (ABS)" key="ABSseg" id="segment/ABS"/>
+  <artifact name="Accident (ACC)" key="ACCseg" id="segment/ACC"/>
+  <artifact name="Addendum (ADD)" key="ADDseg" id="segment/ADD"/>
+  <artifact name="Adjustment (ADJ)" key="ADJseg" id="segment/ADJ"/>
+  <artifact name="Professional Affiliation (AFF)" key="AFFseg" id="segment/AFF"/>
+  <artifact name="Appointment Information - General Resource (AIG)" key="AIGseg" id="segment/AIG"/>
+  <artifact name="Appointment Information - Location Resource (AIL)" key="AILseg" id="segment/AIL"/>
+  <artifact name="Appointment Information - Personnel Resource (AIP)" key="AIPseg" id="segment/AIP"/>
+  <artifact name="Appointment Information (AIS)" key="AISseg" id="segment/AIS"/>
+  <artifact name="Patient Allergy Information (AL1)" key="AL1seg" id="segment/AL1"/>
+  <artifact name="Appointment Preferences (APR)" key="APRseg" id="segment/APR"/>
+  <artifact name="Appointment Request (ARQ)" key="ARQseg" id="segment/ARQ"/>
+  <artifact name="Access Restriction (ARV)" key="ARVseg" id="segment/ARV"/>
+  <artifact name="Authorization Information (AUT)" key="AUTseg" id="segment/AUT"/>
+  <artifact name="Batch Header (BHS)" key="BHSseg" id="segment/BHS"/>
+  <artifact name="Blood Code (BLC)" key="BLCseg" id="segment/BLC"/>
+  <artifact name="Billing (BLG)" key="BLGseg" id="segment/BLG"/>
+  <artifact name="Blood product order (BPO)" key="BPOseg" id="segment/BPO"/>
+  <artifact name="Blood product dispense status (BPX)" key="BPXseg" id="segment/BPX"/>
+  <artifact name="Batch Trailer (BTS)" key="BTSseg" id="segment/BTS"/>
+  <artifact name="Blood Product Transfusion/Disposition (BTX)" key="BTXseg" id="segment/BTX"/>
+  <artifact name="Blood Unit Information (BUI)" key="BUIseg" id="segment/BUI"/>
+  <artifact name="Charge Description Master (CDM)" key="CDMseg" id="segment/CDM"/>
+  <artifact name="Cumulative Dosage (CDO)" key="CDOseg" id="segment/CDO"/>
+  <artifact name="Certificate Detail (CER)" key="CERseg" id="segment/CER"/>
+  <artifact name="Clinical Study Master (CM0)" key="CM0seg" id="segment/CM0"/>
+  <artifact name="Clinical Study Phase Master (CM1)" key="CM1seg" id="segment/CM1"/>
+  <artifact name="Clinical Study Schedule Master (CM2)" key="CM2seg" id="segment/CM2"/>
+  <artifact name="Clear Notification (CNS)" key="CNSseg" id="segment/CNS"/>
+  <artifact name="Consent Segment (CON)" key="CONseg" id="segment/CON"/>
+  <artifact name="Clinical Study Phase (CSP)" key="CSPseg" id="segment/CSP"/>
+  <artifact name="Clinical Study Registration (CSR)" key="CSRseg" id="segment/CSR"/>
+  <artifact name="Clinical Study Data Schedule Segment (CSS)" key="CSSseg" id="segment/CSS"/>
+  <artifact name="Contact Data (CTD)" key="CTDseg" id="segment/CTD"/>
+  <artifact name="Clinical Trial Identification (CTI)" key="CTIseg" id="segment/CTI"/>
+  <artifact name="Disability (DB1)" key="DB1seg" id="segment/DB1"/>
+  <artifact name="Diagnosis (DG1)" key="DG1seg" id="segment/DG1"/>
+  <artifact name="DRG Master File Information (DMI)" key="DMIseg" id="segment/DMI"/>
+  <artifact name="Donation (DON)" key="DONseg" id="segment/DON"/>
+  <artifact name="Diagnosis and Procedure Code (DPS)" key="DPSseg" id="segment/DPS"/>
+  <artifact name="Diagnosis Related Group (DRG)" key="DRGseg" id="segment/DRG"/>
+  <artifact name="Continuation Pointer (DSC)" key="DSCseg" id="segment/DSC"/>
+  <artifact name="Display Data (DSP)" key="DSPseg" id="segment/DSP"/>
+  <artifact name="Equipment Command (ECD)" key="ECDseg" id="segment/ECD"/>
+  <artifact name="Equipment Command Response (ECR)" key="ECRseg" id="segment/ECR"/>
+  <artifact name="Educational Detail (EDU)" key="EDUseg" id="segment/EDU"/>
+  <artifact name="Equipment/log Service (EQP)" key="EQPseg" id="segment/EQP"/>
+  <artifact name="Equipment Detail (EQU)" key="EQUseg" id="segment/EQU"/>
+  <artifact name="Error (ERR)" key="ERRseg" id="segment/ERR"/>
+  <artifact name="Event Type (EVN)" key="EVNseg" id="segment/EVN"/>
+  <artifact name="Facility (FAC)" key="FACseg" id="segment/FAC"/>
+  <artifact name="File Header (FHS)" key="FHSseg" id="segment/FHS"/>
+  <artifact name="Financial Transaction (FT1)" key="FT1seg" id="segment/FT1"/>
+  <artifact name="File Trailer (FTS)" key="FTSseg" id="segment/FTS"/>
+  <artifact name="Goal Detail (GOL)" key="GOLseg" id="segment/GOL"/>
+  <artifact name="Grouping/Reimbursement - Visit (GP1)" key="GP1seg" id="segment/GP1"/>
+  <artifact name="Grouping/Reimbursement - Procedure Line Item (GP2)" key="GP2seg" id="segment/GP2"/>
+  <artifact name="Person Gender and Sex Segment (GSP)" key="GSPseg" id="segment/GSP"/>
+  <artifact name="Recorded Gender and Sex Segment (GSR)" key="GSRseg" id="segment/GSR"/>
+  <artifact name="Sex For Clinical Use Segment (GSC)" key="GSCseg" id="segment/GSC"/>
+  <artifact name="Guarantor (GT1)" key="GT1seg" id="segment/GT1"/>
+  <artifact name="any HL7 segment (Hxx)" key="Hxxseg" id="segment/Hxx"/>
+  <artifact name="Patient Adverse Reaction Information (IAM)" key="IAMseg" id="segment/IAM"/>
+  <artifact name="allergy reaction (IAR)" key="IARseg" id="segment/IAR"/>
+  <artifact name="Inventory Item Master (IIM)" key="IIMseg" id="segment/IIM"/>
+  <artifact name="Material Lot (ILT)" key="ILTseg" id="segment/ILT"/>
+  <artifact name="Insurance (IN1)" key="IN1seg" id="segment/IN1"/>
+  <artifact name="Insurance Additional Information (IN2)" key="IN2seg" id="segment/IN2"/>
+  <artifact name="Insurance Additional Information, Certification (IN3)" key="IN3seg" id="segment/IN3"/>
+  <artifact name="Inventory Detail (INV)" key="INVseg" id="segment/INV"/>
+  <artifact name="Imaging Procedure Control Segment (IPC)" key="IPCseg" id="segment/IPC"/>
+  <artifact name="Invoice Processing Results (IPR)" key="IPRseg" id="segment/IPR"/>
+  <artifact name="Interaction Status Detail (ISD)" key="ISDseg" id="segment/ISD"/>
+  <artifact name="Material Item (ITM)" key="ITMseg" id="segment/ITM"/>
+  <artifact name="Invoice Segment (IVC)" key="IVCseg" id="segment/IVC"/>
+  <artifact name="Material Location (IVT)" key="IVTseg" id="segment/IVT"/>
+  <artifact name="Language Detail (LAN)" key="LANseg" id="segment/LAN"/>
+  <artifact name="Location Charge Code (LCC)" key="LCCseg" id="segment/LCC"/>
+  <artifact name="Location Characteristic (LCH)" key="LCHseg" id="segment/LCH"/>
+  <artifact name="Location Department (LDP)" key="LDPseg" id="segment/LDP"/>
+  <artifact name="Location Identification (LOC)" key="LOCseg" id="segment/LOC"/>
+  <artifact name="Location Relationship (LRL)" key="LRLseg" id="segment/LRL"/>
+  <artifact name="Master File Coverage (MCP)" key="MCPseg" id="segment/MCP"/>
+  <artifact name="Master File Acknowledgment (MFA)" key="MFAseg" id="segment/MFA"/>
+  <artifact name="Master File Entry (MFE)" key="MFEseg" id="segment/MFE"/>
+  <artifact name="Master File Identification (MFI)" key="MFIseg" id="segment/MFI"/>
+  <artifact name="Merge Patient Information (MRG)" key="MRGseg" id="segment/MRG"/>
+  <artifact name="Message Acknowledgment (MSA)" key="MSAseg" id="segment/MSA"/>
+  <artifact name="Message Header (MSH)" key="MSHseg" id="segment/MSH"/>
+  <artifact name="System Clock (NCK)" key="NCKseg" id="segment/NCK"/>
+  <artifact name="Notification Detail (NDS)" key="NDSseg" id="segment/NDS"/>
+  <artifact name="Next of Kin / Associated Parties (NK1)" key="NK1seg" id="segment/NK1"/>
+  <artifact name="Bed Status Update (NPU)" key="NPUseg" id="segment/NPU"/>
+  <artifact name="Application Status Change (NSC)" key="NSCseg" id="segment/NSC"/>
+  <artifact name="Application control level statistics (NST)" key="NSTseg" id="segment/NST"/>
+  <artifact name="Notes and Comments (NTE)" key="NTEseg" id="segment/NTE"/>
+  <artifact name="Observation Request (OBR)" key="OBRseg" id="segment/OBR"/>
+  <artifact name="Observation/Result (OBX)" key="OBXseg" id="segment/OBX"/>
+  <artifact name="Dietary Orders, Supplements, and Preferences (ODS)" key="ODSseg" id="segment/ODS"/>
+  <artifact name="Diet Tray Instructions (ODT)" key="ODTseg" id="segment/ODT"/>
+  <artifact name="Person Employment Status segment (OH1)" key="OH1seg" id="segment/OH1"/>
+  <artifact name="Past or Present Job segment (OH2)" key="OH2seg" id="segment/OH2"/>
+  <artifact name="Usual Work segment (OH3)" key="OH3seg" id="segment/OH3"/>
+  <artifact name="General Segment (OM1)" key="OM1seg" id="segment/OM1"/>
+  <artifact name="Numeric Observation (OM2)" key="OM2seg" id="segment/OM2"/>
+  <artifact name="Categorical Service/Test/Observation (OM3)" key="OM3seg" id="segment/OM3"/>
+  <artifact name="Observations that Require Specimens (OM4)" key="OM4seg" id="segment/OM4"/>
+  <artifact name="Observation Batteries (Sets) (OM5)" key="OM5seg" id="segment/OM5"/>
+  <artifact name="Observations that are Calculated from Other Observations (OM6)" key="OM6seg" id="segment/OM6"/>
+  <artifact name="Additional Basic Attributes (OM7)" key="OM7seg" id="segment/OM7"/>
+  <artifact name="Supporting Clinical Information (OMC)" key="OMCseg" id="segment/OMC"/>
+  <artifact name="Common Order (ORC)" key="ORCseg" id="segment/ORC"/>
+  <artifact name="Practitioner Organization Unit (ORG)" key="ORGseg" id="segment/ORG"/>
+  <artifact name="Override Segment (OVR)" key="OVRseg" id="segment/OVR"/>
+  <artifact name="Shipment Package (PAC)" key="PACseg" id="segment/PAC"/>
+  <artifact name="Patient Charge Cost Center Exceptions (PCE)" key="PCEseg" id="segment/PCE"/>
+  <artifact name="Possible Causal Relationship (PCR)" key="PCRseg" id="segment/PCR"/>
+  <artifact name="Patient Additional Demographic (PD1)" key="PD1seg" id="segment/PD1"/>
+  <artifact name="Patient Death and Autopsy (PDA)" key="PDAseg" id="segment/PDA"/>
+  <artifact name="Product Detail Country (PDC)" key="PDCseg" id="segment/PDC"/>
+  <artifact name="Product Experience Observation (PEO)" key="PEOseg" id="segment/PEO"/>
+  <artifact name="Product Experience Sender (PES)" key="PESseg" id="segment/PES"/>
+  <artifact name="Patient Identification (PID)" key="PIDseg" id="segment/PID"/>
+  <artifact name="Item Packaging (PKG)" key="PKGseg" id="segment/PKG"/>
+  <artifact name="Payer Master File (PM1)" key="PM1seg" id="segment/PM1"/>
+  <artifact name="Payment Information (PMT)" key="PMTseg" id="segment/PMT"/>
+  <artifact name="Procedures (PR1)" key="PR1seg" id="segment/PR1"/>
+  <artifact name="Practitioner Detail (PRA)" key="PRAseg" id="segment/PRA"/>
+  <artifact name="Problem Details (PRB)" key="PRBseg" id="segment/PRB"/>
+  <artifact name="Pricing (PRC)" key="PRCseg" id="segment/PRC"/>
+  <artifact name="Provider Data (PRD)" key="PRDseg" id="segment/PRD"/>
+  <artifact name="Participation Information (PRT)" key="PRTseg" id="segment/PRT"/>
+  <artifact name="Product/Service Group (PSG)" key="PSGseg" id="segment/PSG"/>
+  <artifact name="Product Summary Header (PSH)" key="PSHseg" id="segment/PSH"/>
+  <artifact name="Product/Service Line Item (PSL)" key="PSLseg" id="segment/PSL"/>
+  <artifact name="Product/Service Section (PSS)" key="PSSseg" id="segment/PSS"/>
+  <artifact name="Pathway (PTH)" key="PTHseg" id="segment/PTH"/>
+  <artifact name="Patient Visit (PV1)" key="PV1seg" id="segment/PV1"/>
+  <artifact name="Patient Visit - Additional Information (PV2)" key="PV2seg" id="segment/PV2"/>
+  <artifact name="Payee Information (PYE)" key="PYEseg" id="segment/PYE"/>
+  <artifact name="Query Acknowledgment (QAK)" key="QAKseg" id="segment/QAK"/>
+  <artifact name="Query Identification (QID)" key="QIDseg" id="segment/QID"/>
+  <artifact name="Query Parameter Definition (QPD)" key="QPDseg" id="segment/QPD"/>
+  <artifact name="Query Response Instance (QRI)" key="QRIseg" id="segment/QRI"/>
+  <artifact name="Response Control Parameter (RCP)" key="RCPseg" id="segment/RCP"/>
+  <artifact name="Table Row Definition (RDF)" key="RDFseg" id="segment/RDF"/>
+  <artifact name="Table Row Data (RDT)" key="RDTseg" id="segment/RDT"/>
+  <artifact name="Clinical Relationship Segment (REL)" key="RELseg" id="segment/REL"/>
+  <artifact name="Referral Information (RF1)" key="RF1seg" id="segment/RF1"/>
+  <artifact name="Request for Information (RFI)" key="RFIseg" id="segment/RFI"/>
+  <artifact name="Resource Group (RGS)" key="RGSseg" id="segment/RGS"/>
+  <artifact name="Risk Management Incident (RMI)" key="RMIseg" id="segment/RMI"/>
+  <artifact name="Role (ROL)" key="ROLseg" id="segment/ROL"/>
+  <artifact name="Requisition Detail-1 (RQ1)" key="RQ1seg" id="segment/RQ1"/>
+  <artifact name="Requisition Detail (RQD)" key="RQDseg" id="segment/RQD"/>
+  <artifact name="Pharmacy/Treatment Administration (RXA)" key="RXAseg" id="segment/RXA"/>
+  <artifact name="Pharmacy/Treatment Component Order (RXC)" key="RXCseg" id="segment/RXC"/>
+  <artifact name="Pharmacy/Treatment Dispense (RXD)" key="RXDseg" id="segment/RXD"/>
+  <artifact name="Pharmacy/Treatment Encoded Order (RXE)" key="RXEseg" id="segment/RXE"/>
+  <artifact name="Pharmacy/Treatment Give (RXG)" key="RXGseg" id="segment/RXG"/>
+  <artifact name="Pharmacy/Treatment Order (RXO)" key="RXOseg" id="segment/RXO"/>
+  <artifact name="Pharmacy/Treatment Route (RXR)" key="RXRseg" id="segment/RXR"/>
+  <artifact name="Pharmacy/Treatment Infusion (RXV)" key="RXVseg" id="segment/RXV"/>
+  <artifact name="Specimen Container detail (SAC)" key="SACseg" id="segment/SAC"/>
+  <artifact name="Anti-Microbial Cycle Data (SCD)" key="SCDseg" id="segment/SCD"/>
+  <artifact name="Scheduling Activity Information (SCH)" key="SCHseg" id="segment/SCH"/>
+  <artifact name="Sterilizer Configuration (Anti-Microbial Devices) (SCP)" key="SCPseg" id="segment/SCP"/>
+  <artifact name="Sterilization Device Data (SDD)" key="SDDseg" id="segment/SDD"/>
+  <artifact name="Software Segment (SFT)" key="SFTseg" id="segment/SFT"/>
+  <artifact name="Segment Group Header (SGH)" key="SGHseg" id="segment/SGH"/>
+  <artifact name="Segment Group Trailer (SGT)" key="SGTseg" id="segment/SGT"/>
+  <artifact name="Shipment (SHP)" key="SHPseg" id="segment/SHP"/>
+  <artifact name="Substance Identifier (SID)" key="SIDseg" id="segment/SID"/>
+  <artifact name="Sterilization Lot (SLT)" key="SLTseg" id="segment/SLT"/>
+  <artifact name="Specimen (SPM)" key="SPMseg" id="segment/SPM"/>
+  <artifact name="Staff Identification (STF)" key="STFseg" id="segment/STF"/>
+  <artifact name="Sterilization Parameter (STZ)" key="STZseg" id="segment/STZ"/>
+  <artifact name="Test Code Configuration (TCC)" key="TCCseg" id="segment/TCC"/>
+  <artifact name="Test Code Detail (TCD)" key="TCDseg" id="segment/TCD"/>
+  <artifact name="Timing/Quantity (TQ1)" key="TQ1seg" id="segment/TQ1"/>
+  <artifact name="Timing/Quantity Relationship (TQ2)" key="TQ2seg" id="segment/TQ2"/>
+  <artifact name="Transcription Document Header (TXA)" key="TXAseg" id="segment/TXA"/>
+  <artifact name="User Authentication Credential Segment (UAC)" key="UACseg" id="segment/UAC"/>
+  <artifact name="Uniform Billing Data (UB1)" key="UB1seg" id="segment/UB1"/>
+  <artifact name="Uniform Billing (UB92) Data (UB2)" key="UB2seg" id="segment/UB2"/>
+  <artifact name="Variance (VAR)" key="VARseg" id="segment/VAR"/>
+  <artifact name="Purchasing Vendor (VND)" key="VNDseg" id="segment/VND"/>
+  <artifact name="General acknowledgment message (ACK)" key="ACKmsg" id="message/ACK"/>
+  <artifact name="ADT message (ADT)" key="ADTmsg" id="message/ADT"/>
+  <artifact name="Add/change billing account (BAR)" key="BARmsg" id="message/BAR"/>
+  <artifact name="Blood product dispense status message (BPS)" key="BPSmsg" id="message/BPS"/>
+  <artifact name="Blood product dispense status acknowledgement message (BRP)" key="BRPmsg" id="message/BRP"/>
+  <artifact name="Blood product transfusion/disposition acknowledgement message (BRT)" key="BRTmsg" id="message/BRT"/>
+  <artifact name="Blood product transfusion/disposition message (BTS)" key="BTSmsg" id="message/BTS"/>
+  <artifact name="Collaborative Care Fetch (CCF)" key="CCFmsg" id="message/CCF"/>
+  <artifact name="Collaborative Care Information (CCI)" key="CCImsg" id="message/CCI"/>
+  <artifact name="Collaborative Care Message (CCM)" key="CCMmsg" id="message/CCM"/>
+  <artifact name="Collaborative Care Query (CCQ)" key="CCQmsg" id="message/CCQ"/>
+  <artifact name="Collaborative Care Referral (CCR)" key="CCRmsg" id="message/CCR"/>
+  <artifact name="Collaborative Care Update (CCU)" key="CCUmsg" id="message/CCU"/>
+  <artifact name="Collaborative Care Query Update (CQU)" key="CQUmsg" id="message/CQU"/>
+  <artifact name="Clinical study registration message (CRM)" key="CRMmsg" id="message/CRM"/>
+  <artifact name="Unsolicited study data message (CSU)" key="CSUmsg" id="message/CSU"/>
+  <artifact name="Create Donor Record (DBC)" key="DBCmsg" id="message/DBC"/>
+  <artifact name="Update Donor Record (DBU)" key="DBUmsg" id="message/DBU"/>
+  <artifact name="Donor Eligibility (DEL)" key="DELmsg" id="message/DEL"/>
+  <artifact name="Donor Eligibility Observation (DEO)" key="DEOmsg" id="message/DEO"/>
+  <artifact name="Donor Eligibility Request (DER)" key="DERmsg" id="message/DER"/>
+  <artifact name="Detail financial transactions (DFT)" key="DFTmsg" id="message/DFT"/>
+  <artifact name="Donation Procedure (DPR)" key="DPRmsg" id="message/DPR"/>
+  <artifact name="Donor Request to Collect (DRC)" key="DRCmsg" id="message/DRC"/>
+  <artifact name="Automated equipment command message (EAC)" key="EACmsg" id="message/EAC"/>
+  <artifact name="Automated equipment notification message (EAN)" key="EANmsg" id="message/EAN"/>
+  <artifact name="Automated equipment response message (EAR)" key="EARmsg" id="message/EAR"/>
+  <artifact name="Health Care Invoice (EHC)" key="EHCmsg" id="message/EHC"/>
+  <artifact name="Automated equipment status update acknowledgment message (ESR)" key="ESRmsg" id="message/ESR"/>
+  <artifact name="Automated equipment status update message (ESU)" key="ESUmsg" id="message/ESU"/>
+  <artifact name="Automated equipment inventory request message (INR)" key="INRmsg" id="message/INR"/>
+  <artifact name="Automated equipment inventory update message (INU)" key="INUmsg" id="message/INU"/>
+  <artifact name="Automated equipment log/service request message (LSR)" key="LSRmsg" id="message/LSR"/>
+  <artifact name="Automated equipment log/service update message (LSU)" key="LSUmsg" id="message/LSU"/>
+  <artifact name="Medical document management (MDM)" key="MDMmsg" id="message/MDM"/>
+  <artifact name="Master files application acknowledgment (MFK)" key="MFKmsg" id="message/MFK"/>
+  <artifact name="Master files notification (MFN)" key="MFNmsg" id="message/MFN"/>
+  <artifact name="Application management data message (NMD)" key="NMDmsg" id="message/NMD"/>
+  <artifact name="Blood product order message (OMB)" key="OMBmsg" id="message/OMB"/>
+  <artifact name="Dietary order (OMD)" key="OMDmsg" id="message/OMD"/>
+  <artifact name="General clinical order message (OMG)" key="OMGmsg" id="message/OMG"/>
+  <artifact name="Imaging order (OMI)" key="OMImsg" id="message/OMI"/>
+  <artifact name="Laboratory order message (OML)" key="OMLmsg" id="message/OML"/>
+  <artifact name="Non-stock requisition order message (OMN)" key="OMNmsg" id="message/OMN"/>
+  <artifact name="Pharmacy/treatment order message (OMP)" key="OMPmsg" id="message/OMP"/>
+  <artifact name="General order message with document payload (OMQ)" key="OMQmsg" id="message/OMQ"/>
+  <artifact name="Stock requisition order message (OMS)" key="OMSmsg" id="message/OMS"/>
+  <artifact name="Population/Location-Based Laboratory Order Message (OPL)" key="OPLmsg" id="message/OPL"/>
+  <artifact name="Population/Location-Based Laboratory Order Acknowledgment Message (OPR)" key="OPRmsg" id="message/OPR"/>
+  <artifact name="Unsolicited Population/Location-Based Laboratory Observation Message (OPU)" key="OPUmsg" id="message/OPU"/>
+  <artifact name="Observation Report Acknowledgment (ORA)" key="ORAmsg" id="message/ORA"/>
+  <artifact name="Blood product order acknowledgement message (ORB)" key="ORBmsg" id="message/ORB"/>
+  <artifact name="Dietary order acknowledgment message (ORD)" key="ORDmsg" id="message/ORD"/>
+  <artifact name="General clinical order acknowledgment message (ORG)" key="ORGmsg" id="message/ORG"/>
+  <artifact name="Imaging order acknowledgement message (ORI)" key="ORImsg" id="message/ORI"/>
+  <artifact name="Laboratory acknowledgment message (unsolicited) (ORL)" key="ORLmsg" id="message/ORL"/>
+  <artifact name="Non-stock requisition - General order acknowledgment message (ORN)" key="ORNmsg" id="message/ORN"/>
+  <artifact name="Pharmacy/treatment order acknowledgment message (ORP)" key="ORPmsg" id="message/ORP"/>
+  <artifact name="Stock requisition - Order acknowledgment message (ORS)" key="ORSmsg" id="message/ORS"/>
+  <artifact name="Unsolicited transmission of an observation message (ORU)" key="ORUmsg" id="message/ORU"/>
+  <artifact name="General Order Message with Document Payload Acknowledgement (ORX)" key="ORXmsg" id="message/ORX"/>
+  <artifact name="Specimen Shipment Message (OSM)" key="OSMmsg" id="message/OSM"/>
+  <artifact name="Order status update (OSU)" key="OSUmsg" id="message/OSU"/>
+  <artifact name="Unsolicited laboratory observation message (OUL)" key="OULmsg" id="message/OUL"/>
+  <artifact name="Product experience message (PEX)" key="PEXmsg" id="message/PEX"/>
+  <artifact name="Patient goal message (PGL)" key="PGLmsg" id="message/PGL"/>
+  <artifact name="Patient insurance information (PIN)" key="PINmsg" id="message/PIN"/>
+  <artifact name="Add personnel record (PMU)" key="PMUmsg" id="message/PMU"/>
+  <artifact name="Patient pathway message (goal-oriented) (PPG)" key="PPGmsg" id="message/PPG"/>
+  <artifact name="Patient pathway message (problem-oriented) (PPP)" key="PPPmsg" id="message/PPP"/>
+  <artifact name="Patient problem message (PPR)" key="PPRmsg" id="message/PPR"/>
+  <artifact name="Query by parameter (QBP)" key="QBPmsg" id="message/QBP"/>
+  <artifact name="Cancel query (QCN)" key="QCNmsg" id="message/QCN"/>
+  <artifact name="Create subscription (QSB)" key="QSBmsg" id="message/QSB"/>
+  <artifact name="Cancel subscription/acknowledge message (QSX)" key="QSXmsg" id="message/QSX"/>
+  <artifact name="Query for previous events (QVR)" key="QVRmsg" id="message/QVR"/>
+  <artifact name="Pharmacy/treatment administration message (RAS)" key="RASmsg" id="message/RAS"/>
+  <artifact name="Pharmacy/treatment encoded order message (RDE)" key="RDEmsg" id="message/RDE"/>
+  <artifact name="Pharmacy/treatment dispense information (RDR)" key="RDRmsg" id="message/RDR"/>
+  <artifact name="Pharmacy/treatment dispense message (RDS)" key="RDSmsg" id="message/RDS"/>
+  <artifact name="Display based response (RDY)" key="RDYmsg" id="message/RDY"/>
+  <artifact name="Patient referral (REF)" key="REFmsg" id="message/REF"/>
+  <artifact name="Pharmacy/treatment give message (RGV)" key="RGVmsg" id="message/RGV"/>
+  <artifact name="Return patient authorization (RPA)" key="RPAmsg" id="message/RPA"/>
+  <artifact name="Return patient information (RPI)" key="RPImsg" id="message/RPI"/>
+  <artifact name="Return patient display list (RPL)" key="RPLmsg" id="message/RPL"/>
+  <artifact name="Return patient list (RPR)" key="RPRmsg" id="message/RPR"/>
+  <artifact name="Request patient authorization (RQA)" key="RQAmsg" id="message/RQA"/>
+  <artifact name="Request patient information (RQI)" key="RQImsg" id="message/RQI"/>
+  <artifact name="Request patient demographics (RQP)" key="RQPmsg" id="message/RQP"/>
+  <artifact name="Pharmacy/treatment administration acknowledgment message (RRA)" key="RRAmsg" id="message/RRA"/>
+  <artifact name="Pharmacy/treatment dispense acknowledgment message (RRD)" key="RRDmsg" id="message/RRD"/>
+  <artifact name="Pharmacy/treatment encoded order acknowledgment message (RRE)" key="RREmsg" id="message/RRE"/>
+  <artifact name="Pharmacy/treatment give acknowledgment message (RRG)" key="RRGmsg" id="message/RRG"/>
+  <artifact name="Return referral information (RRI)" key="RRImsg" id="message/RRI"/>
+  <artifact name="Segment pattern response (RSP)" key="RSPmsg" id="message/RSP"/>
+  <artifact name="Tabular response (RTB)" key="RTBmsg" id="message/RTB"/>
+  <artifact name="Notification of Anti-Microbial Device Cycle Data (SCN)" key="SCNmsg" id="message/SCN"/>
+  <artifact name="Notification of Anti-Microbial Device Data (SDN)" key="SDNmsg" id="message/SDN"/>
+  <artifact name="Sterilization anti-microbial device data request (SDR)" key="SDRmsg" id="message/SDR"/>
+  <artifact name="Schedule information unsolicited (SIU)" key="SIUmsg" id="message/SIU"/>
+  <artifact name="Notification of New Sterilization Lot (SLN)" key="SLNmsg" id="message/SLN"/>
+  <artifact name="Sterilization lot request (SLR)" key="SLRmsg" id="message/SLR"/>
+  <artifact name="Sterilization anti-microbial device cycle data request (SMD)" key="SMDmsg" id="message/SMD"/>
+  <artifact name="Schedule request message (SRM)" key="SRMmsg" id="message/SRM"/>
+  <artifact name="Scheduled request response (SRR)" key="SRRmsg" id="message/SRR"/>
+  <artifact name="Specimen status request message (SSR)" key="SSRmsg" id="message/SSR"/>
+  <artifact name="Specimen status update message (SSU)" key="SSUmsg" id="message/SSU"/>
+  <artifact name="Notification of Sterilization Configuration (STC)" key="STCmsg" id="message/STC"/>
+  <artifact name="Sterilization item request (STI)" key="STImsg" id="message/STI"/>
+  <artifact name="Automated equipment test code settings request message (TCR)" key="TCRmsg" id="message/TCR"/>
+  <artifact name="Automated equipment test code settings update message (TCU)" key="TCUmsg" id="message/TCU"/>
+  <artifact name="Unsolicited display update message (UDM)" key="UDMmsg" id="message/UDM"/>
+  <artifact name="Unsolicited vaccination record update (VXU)" key="VXUmsg" id="message/VXU"/>
+  <artifact name="ADDRESS (AD)" key="ADdt" id="datatype/AD" workgroup="inm"/>
+  <artifact name="AUTHORIZATION INFORMATION (AUI)" key="AUIdt" id="datatype/AUI" workgroup="inm"/>
+  <artifact name="CHARGE CODE AND DATE (CCD)" key="CCDdt" id="datatype/CCD" workgroup="inm"/>
+  <artifact name="CHANNEL CALIBRATION PARAMETERS (CCP)" key="CCPdt" id="datatype/CCP" workgroup="inm"/>
+  <artifact name="CHANNEL DEFINITION (CD)" key="CDdt" id="datatype/CD" workgroup="inm"/>
+  <artifact name="CODED ENTRY (CE)" key="CEdt" id="datatype/CE" workgroup="inm"/>
+  <artifact name="CODED ELEMENT WITH FORMATTED VALUES (CF)" key="CFdt" id="datatype/CF" workgroup="inm"/>
+  <artifact name="CODED WITH NO EXCEPTIONS (CNE)" key="CNEdt" id="datatype/CNE" workgroup="inm"/>
+  <artifact name="COMPOSITE ID NUMBER AND NAME SIMPLIFIED (CNN)" key="CNNdt" id="datatype/CNN" workgroup="inm"/>
+  <artifact name="COMPOSITE PRICE (CP)" key="CPdt" id="datatype/CP" workgroup="inm"/>
+  <artifact name="COMPOSITE QUANTITY WITH UNITS (CQ)" key="CQdt" id="datatype/CQ" workgroup="inm"/>
+  <artifact name="CHANNEL SENSITIVITY AND UNITS (CSU)" key="CSUdt" id="datatype/CSU" workgroup="inm"/>
+  <artifact name="CODED WITH EXCEPTIONS (CWE)" key="CWEdt" id="datatype/CWE" workgroup="inm"/>
+  <artifact name="EXTENDED COMPOSITE ID WITH CHECK DIGIT (CX)" key="CXdt" id="datatype/CX" workgroup="inm"/>
+  <artifact name="DAILY DEDUCTIBLE INFORMATION (DDI)" key="DDIdt" id="datatype/DDI" workgroup="inm"/>
+  <artifact name="DATE AND INSTITUTION NAME (DIN)" key="DINdt" id="datatype/DIN" workgroup="inm"/>
+  <artifact name="DISCHARGE TO LOCATION AND DATE (DLD)" key="DLDdt" id="datatype/DLD" workgroup="inm"/>
+  <artifact name="DRIVER’S LICENSE NUMBER (DLN)" key="DLNdt" id="datatype/DLN" workgroup="inm"/>
+  <artifact name="DELTA (DLT)" key="DLTdt" id="datatype/DLT" workgroup="inm"/>
+  <artifact name="DATE/TIME RANGE (DR)" key="DRdt" id="datatype/DR" workgroup="inm"/>
+  <artifact name="DATE (DT)" key="DTdt" id="datatype/DT" workgroup="inm"/>
+  <artifact name="DATE/TIME (DTM)" key="DTMdt" id="datatype/DTM" workgroup="inm"/>
+  <artifact name="DAY TYPE AND NUMBER (DTN)" key="DTNdt" id="datatype/DTN" workgroup="inm"/>
+  <artifact name="ENCAPSULATED DATA (ED)" key="EDdt" id="datatype/ED" workgroup="inm"/>
+  <artifact name="ENTITY IDENTIFIER (EI)" key="EIdt" id="datatype/EI" workgroup="inm"/>
+  <artifact name="ENTITY IDENTIFIER PAIR (EIP)" key="EIPdt" id="datatype/EIP" workgroup="inm"/>
+  <artifact name="ERROR LOCATION AND DESCRIPTION (ELD)" key="ELDdt" id="datatype/ELD" workgroup="inm"/>
+  <artifact name="ERROR LOCATION (ERL)" key="ERLdt" id="datatype/ERL" workgroup="inm"/>
+  <artifact name="FINANCIAL CLASS (FC)" key="FCdt" id="datatype/FC" workgroup="inm"/>
+  <artifact name="FAMILY NAME (FN)" key="FNdt" id="datatype/FN" workgroup="inm"/>
+  <artifact name="FORMATTED TEXT DATA (FT)" key="FTdt" id="datatype/FT" workgroup="inm"/>
+  <artifact name="GENERAL TIMING SPECIFICATION (GTS)" key="GTSdt" id="datatype/GTS" workgroup="inm"/>
+  <artifact name="HIERARCHIC DESIGNATOR (HD)" key="HDdt" id="datatype/HD" workgroup="inm"/>
+  <artifact name="INSURANCE CERTIFICATION DEFINITION (ICD)" key="ICDdt" id="datatype/ICD" workgroup="inm"/>
+  <artifact name="CODED VALUE FOR HL7 DEFINED TABLES (ID)" key="IDdt" id="datatype/ID" workgroup="inm"/>
+  <artifact name="CODED VALUE FOR USER (IS)" key="ISdt" id="datatype/IS" workgroup="inm"/>
+  <artifact name="JOB CODE/CLASS (JCC)" key="JCCdt" id="datatype/JCC" workgroup="inm"/>
+  <artifact name="LOCATION WITH ADDRESS VARIATION 1 (LA1)" key="LA1dt" id="datatype/LA1" workgroup="inm"/>
+  <artifact name="LOCATION WITH ADDRESS VARIATION 2 (LA2)" key="LA2dt" id="datatype/LA2" workgroup="inm"/>
+  <artifact name="MULTIPLEXED ARRAY (MA)" key="MAdt" id="datatype/MA" workgroup="inm"/>
+  <artifact name="MONEY (MO)" key="MOdt" id="datatype/MO" workgroup="inm"/>
+  <artifact name="MONEY AND CHARGE CODE (MOC)" key="MOCdt" id="datatype/MOC" workgroup="inm"/>
+  <artifact name="MONEY OR PERCENTAGE (MOP)" key="MOPdt" id="datatype/MOP" workgroup="inm"/>
+  <artifact name="MESSAGE TYPE (MSG)" key="MSGdt" id="datatype/MSG" workgroup="inm"/>
+  <artifact name="NUMERIC ARRAY (NA)" key="NAdt" id="datatype/NA" workgroup="inm"/>
+  <artifact name="NAME WITH DATE AND LOCATION (NDL)" key="NDLdt" id="datatype/NDL" workgroup="inm"/>
+  <artifact name="NUMERIC (NM)" key="NMdt" id="datatype/NM" workgroup="inm"/>
+  <artifact name="NUMERIC RANGE (NR)" key="NRdt" id="datatype/NR" workgroup="inm"/>
+  <artifact name="OCCURRENCE CODE AND DATE (OCD)" key="OCDdt" id="datatype/OCD" workgroup="inm"/>
+  <artifact name="OBSERVATION GROUPER (OG)" key="OGdt" id="datatype/OG" workgroup="inm"/>
+  <artifact name="ORDER SEQUENCE DEFINITION (OSD)" key="OSDdt" id="datatype/OSD" workgroup="inm"/>
+  <artifact name="OCCURRENCE SPAN CODE AND DATE (OSP)" key="OSPdt" id="datatype/OSP" workgroup="inm"/>
+  <artifact name="PRACTITIONER INSTITUTIONAL PRIVILEGES (PIP)" key="PIPdt" id="datatype/PIP" workgroup="inm"/>
+  <artifact name="PERSON LOCATION (PL)" key="PLdt" id="datatype/PL" workgroup="inm"/>
+  <artifact name="PRACTITIONER LICENSE OR OTHER ID NUMBER (PLN)" key="PLNdt" id="datatype/PLN" workgroup="inm"/>
+  <artifact name="PERFORMING PERSON TIME STAMP (PPN)" key="PPNdt" id="datatype/PPN" workgroup="inm"/>
+  <artifact name="PARENT RESULT LINK (PRL)" key="PRLdt" id="datatype/PRL" workgroup="inm"/>
+  <artifact name="PROCESSING TYPE (PT)" key="PTdt" id="datatype/PT" workgroup="inm"/>
+  <artifact name="POLICY TYPE AND AMOUNT (PTA)" key="PTAdt" id="datatype/PTA" workgroup="inm"/>
+  <artifact name="QUERY INPUT PARAMETER LIST (QIP)" key="QIPdt" id="datatype/QIP" workgroup="inm"/>
+  <artifact name="QUERY SELECTION CRITERIA (QSC)" key="QSCdt" id="datatype/QSC" workgroup="inm"/>
+  <artifact name="ROW COLUMN DEFINITION (RCD)" key="RCDdt" id="datatype/RCD" workgroup="inm"/>
+  <artifact name="REFERENCE RANGE (RFR)" key="RFRdt" id="datatype/RFR" workgroup="inm"/>
+  <artifact name="REPEAT INTERVAL (RI)" key="RIdt" id="datatype/RI" workgroup="inm"/>
+  <artifact name="ROOM COVERAGE (RMC)" key="RMCdt" id="datatype/RMC" workgroup="inm"/>
+  <artifact name="REFERENCE POINTER (RP)" key="RPdt" id="datatype/RP" workgroup="inm"/>
+  <artifact name="REPEAT PATTERN (RPT)" key="RPTdt" id="datatype/RPT" workgroup="inm"/>
+  <artifact name="STREET ADDRESS (SAD)" key="SADdt" id="datatype/SAD" workgroup="inm"/>
+  <artifact name="SCHEDULING CLASS VALUE PAIR (SCV)" key="SCVdt" id="datatype/SCV" workgroup="inm"/>
+  <artifact name="SEQUENCE ID (SI)" key="SIdt" id="datatype/SI" workgroup="inm"/>
+  <artifact name="STRUCTURED NUMERIC (SN)" key="SNdt" id="datatype/SN" workgroup="inm"/>
+  <artifact name="STRING OF TELEPHONE NUMBER DIGITS (SNM)" key="SNMdt" id="datatype/SNM" workgroup="inm"/>
+  <artifact name="SPECIALTY DESCRIPTION (SPD)" key="SPDdt" id="datatype/SPD" workgroup="inm"/>
+  <artifact name="SPECIMEN SOURCE (SPS)" key="SPSdt" id="datatype/SPS" workgroup="inm"/>
+  <artifact name="SORT ORDER (SRT)" key="SRTdt" id="datatype/SRT" workgroup="inm"/>
+  <artifact name="STRING DATA (ST)" key="STdt" id="datatype/ST" workgroup="inm"/>
+  <artifact name="TIME (TM)" key="TMdt" id="datatype/TM" workgroup="inm"/>
+  <artifact name="TIMING/QUANTITY (TQ)" key="TQdt" id="datatype/TQ" workgroup="inm"/>
+  <artifact name="TIMESTAMP (TS)" key="TSdt" id="datatype/TS" workgroup="inm"/>
+  <artifact name="TEXT DATA (TX)" key="TXdt" id="datatype/TX" workgroup="inm"/>
+  <artifact name="UB VALUE CODE AND AMOUNT (UVC)" key="UVCdt" id="datatype/UVC" workgroup="inm"/>
+  <artifact name="VISITING HOURS (VH)" key="VHdt" id="datatype/VH" workgroup="inm"/>
+  <artifact name="VERSION IDENTIFIER (VID)" key="VIDdt" id="datatype/VID" workgroup="inm"/>
+  <artifact name="VALUE RANGE (VR)" key="VRdt" id="datatype/VR" workgroup="inm"/>
+  <artifact name="CHANNEL IDENTIFIER (WVI)" key="WVIdt" id="datatype/WVI" workgroup="inm"/>
+  <artifact name="WAVEFORM SOURCE (WVS)" key="WVSdt" id="datatype/WVS" workgroup="inm"/>
+  <artifact name="EXTENDED ADDRESS (XAD)" key="XADdt" id="datatype/XAD" workgroup="inm"/>
+  <artifact name="EXTENDED COMPOSITE ID NUMBER AND NAME FOR PERSONS (XCN)" key="XCNdt" id="datatype/XCN" workgroup="inm"/>
+  <artifact name="EXTENDED COMPOSITE NAME AND IDENTIFICATION NUMBER FOR ORGANIZATIONS (XON)" key="XONdt" id="datatype/XON" workgroup="inm"/>
+  <artifact name="EXTENDED PERSON NAME (XPN)" key="XPNdt" id="datatype/XPN" workgroup="inm"/>
+  <artifact name="EXTENDED TELECOMMUNICATION NUMBER (XTN)" key="XTNdt" id="datatype/XTN" workgroup="inm"/>
+  <page name="(NA)" key="NA" deprecated="true"/>
+  <page name="Introduction (Chapter 1)" key="intro" workgroup="inm"/>
+  <page name="Control (Chapter 2)" key="control" workgroup="inm"/>
+  <page name="Data Types (Chapter 2A)" key="datatypes" workgroup="inm"/>
+  <page name="Conformance (Chapter 2B)" key="conformance" workgroup="cgit"/>
+  <page name="Code Tables (Chapter 2C)" key="codetables" workgroup="inm"/>
+  <page name="Patient Administration (Chapter 3)" key="patadmin" workgroup="pa"/>
+  <page name="Orders (Chapter 4)" key="orders" workgroup="oo"/>
+  <page name="Orders - Medication/Vaccination (Chapter 4A" key="medvacc" workgroup="oo"/>
+  <page name="Queries (Chapter 5)" key="queries" workgroup="inm"/>
+  <page name="Financial Management (Chapter 6)" key="finmgt" workgroup="fm"/>
+  <page name="Observations (Chapter 7)" key="observations" workgroup="oo"/>
+  <page name="Master Files (Chapter 8)" key="masterfiles" workgroup="inm"/>
+  <page name="Medical Records (Chapter 9)" key="medicalrecords" workgroup="sd"/>
+  <page name="Scheduling (Chapter 10)" key="scheduling" workgroup="pa"/>
+  <page name="Patient Referral (Chapter 11)" key="referrals" workgroup="pc"/>
+  <page name="Patient Care (Chapter 12)" key="patientcare" workgroup="pc"/>
+  <page name="Clincal Lab Automation (Chapter 13)" key="laboutomation" workgroup="oo"/>
+  <page name="Application Management (Chapter 14)" key="appmgt" workgroup="inm"/>
+  <page name="Personnel Management (Chapter 15)" key="persmgt" workgroup="pa"/>
+  <page name="Claims and Reimbursal (Chapter 16)" key="claims" workgroup="fm"/>
+  <page name="Materials Management (Chapter 17)" key="matmgt" workgroup="oo"/>
+  <page name="Data Management Tables (Appendix A)" key="datamgttables" workgroup="inm"/>
+  <page name="Lower Layer Protocols (Appendix B)" key="lowerlayer" workgroup="inm"/>
+  <page name="BNF Message Descriptions (Appendix C)" key="bnfdescriptions" workgroup="inm"/>
+  <page name="Glossary (Appendix D)" key="glossary" workgroup="inm"/>
+  <page name="Index (Appendix E)" key="index" workgroup="inm"/>
+  <page name="Other" key="other" workgroup="v2mg"/>
+</specification>
+
