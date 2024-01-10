@@ -1,0 +1,221 @@
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/core/0.2.2-preview" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-core" defaultVersion="0.2.2-preview" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-core" url="http://hl7.org.au/fhir/core">
+	<version code="current" url="https://build.fhir.org/ig/hl7au/au-fhir-core"/>  
+    <version code="0.2.2-preview" url="http://hl7.org.au/fhir/core/0.2.2-preview"/>	
+	<artifactPageExtension value="-definitions"/>
+	<artifactPageExtension value="-examples"/>
+	<artifactPageExtension value="-mapping"/>
+	<artifact id="CapabilityStatement/au-core-server" key="CapabilityStatement-au-core-server" name="AU Core Server CapabilityStatement" />
+	<artifact id="CapabilityStatement/au-core-client" key="CapabilityStatement-au-core-client" name="AU Core Client CapabilityStatement" />
+	<artifact id="SearchParameter/au-core-clinical-patient" key="SearchParameter-au-core-clinical-patient" name="AUCoreClinicalPatient" />
+	<artifact id="SearchParameter/au-core-coverage-patient" key="SearchParameter-au-core-coverage-patient" name="AUCoreCoveragePatient" />
+	<artifact id="SearchParameter/au-core-practitionerrole-practitioner" key="SearchParameter-au-core-practitionerrole-practitioner" name="AUCorePractitionerRolePractitioner" />
+	<artifact id="SearchParameter/au-core-specimen-patient" key="SearchParameter-au-core-specimen-patient" name="AUCoreSpecimenPatient" />
+	<artifact id="StructureDefinition/au-core-allergyintolerance" key="StructureDefinition-au-core-allergyintolerance" name="AU Core AllergyIntolerance" />
+	<artifact id="StructureDefinition/au-core-condition" key="StructureDefinition-au-core-condition" name="AU Core Condition" />
+	<artifact id="StructureDefinition/au-core-diagnosticreport" key="StructureDefinition-au-core-diagnosticreport" name="AU Core DiagnosticReport" />
+	<artifact id="StructureDefinition/au-core-documentreference" key="StructureDefinition-au-core-documentreference" name="AU Core DocumentReference" />
+	<artifact id="StructureDefinition/au-core-encounter" key="StructureDefinition-au-core-encounter" name="AU Core Encounter" />
+	<artifact id="StructureDefinition/au-core-healthcareservice" key="StructureDefinition-au-core-healthcareservice" name="AU Core HealthcareService" />
+	<artifact id="StructureDefinition/au-core-immunization" key="StructureDefinition-au-core-immunization" name="AU Core Immunization" />
+	<artifact id="StructureDefinition/au-core-lipid-result" key="StructureDefinition-au-core-lipid-result" name="AU Core Lipid Result" />
+	<artifact id="StructureDefinition/au-core-location" key="StructureDefinition-au-core-location" name="AU Core Location" />
+	<artifact id="StructureDefinition/au-core-medication" key="StructureDefinition-au-core-medication" name="AU Core Medication" />
+	<artifact id="StructureDefinition/au-core-medicationrequest" key="StructureDefinition-au-core-medicationrequest" name="AU Core MedicationRequest" />
+	<artifact id="StructureDefinition/au-core-medicationstatement" key="StructureDefinition-au-core-medicationstatement" name="AU Core MedicationStatement" />
+	<artifact id="StructureDefinition/au-core-observation" key="StructureDefinition-au-core-observation" name="AU Core Observation" />
+	<artifact id="StructureDefinition/au-core-organization" key="StructureDefinition-au-core-organization" name="AU Core Organization" />
+	<artifact id="StructureDefinition/au-core-patient" key="StructureDefinition-au-core-patient" name="AU Core Patient" />
+	<artifact id="StructureDefinition/au-core-practitioner" key="StructureDefinition-au-core-practitioner" name="AU Core Practitioner" />
+	<artifact id="StructureDefinition/au-core-practitionerrole" key="StructureDefinition-au-core-practitionerrole" name="AU Core PractitionerRole" />
+	<artifact id="StructureDefinition/au-core-procedure" key="StructureDefinition-au-core-procedure" name="AU Core Procedure" />
+	<artifact id="StructureDefinition/au-core-provenance" key="StructureDefinition-au-core-provenance" name="AU Core Provenance" />
+	<artifact id="StructureDefinition/au-core-bloodpressure" key="StructureDefinition-au-core-bloodpressure" name="AU Core Blood Pressure" />
+	<artifact id="StructureDefinition/au-core-bodyheight" key="StructureDefinition-au-core-bodyheight" name="AU Core Body Height" />
+	<artifact id="StructureDefinition/au-core-bodyweight" key="StructureDefinition-au-core-bodyweight" name="AU Core Body Weight" />
+	<artifact id="StructureDefinition/au-core-vitalspanel" key="StructureDefinition-au-core-vitalspanel" name="AU Core Vitals Panel" />
+	<artifact id="StructureDefinition/au-core-oxygensat" key="StructureDefinition-au-core-oxygensat" name="AU Core Oxygen Saturation" />
+	<artifact id="StructureDefinition/au-core-bmi" key="StructureDefinition-au-core-bmi" name="AU Core BMI" />
+	<artifact id="StructureDefinition/au-core-bodytemp" key="StructureDefinition-au-core-bodytemp" name="AU Core Body Temperature" />
+	<artifact id="StructureDefinition/au-core-resprate" key="StructureDefinition-au-core-resprate" name="AU Core Respiration Rate" />
+	<artifact id="StructureDefinition/au-core-headcircum" key="StructureDefinition-au-core-headcircum" name="AU Core Head Circumference" />
+	<artifact id="StructureDefinition/au-core-heartrate" key="StructureDefinition-au-core-heartrate" name="AU Core Heart Rate" />
+	<artifact id="StructureDefinition/au-core-waistcircum" key="StructureDefinition-au-core-waistcircum" name="AU Core Waist Circumference" />
+	<artifact id="StructureDefinition/au-core-smokingstatus" key="StructureDefinition-au-core-smokingstatus" name="AU Core Smoking Status" />
+	<artifact id="ValueSet/lipid-result-reporting" key="ValueSet-lipid-result-reporting" name="Lipid Result Reporting" />
+	<artifact id="AllergyIntolerance/lactose" key="AllergyIntolerance-lactose" name="AllergyIntolerance - Lactose intolerance" />
+	<artifact id="AllergyIntolerance/nkda" key="AllergyIntolerance-nkda" name="AllergyIntolerance - No known drug allergy" />
+	<artifact id="AllergyIntolerance/noneknown" key="AllergyIntolerance-noneknown" name="AllergyIntolerance - No known allergy" />
+	<artifact id="AllergyIntolerance/penicillin" key="AllergyIntolerance-penicillin" name="AllergyIntolerance - Penicillin allergy" />
+	<artifact id="AllergyIntolerance/dust" key="AllergyIntolerance-dust" name="AllergyIntolerance - Dust allergy" />
+	<artifact id="AllergyIntolerance/wasp" key="AllergyIntolerance-wasp" name="AllergyIntolerance - Wasp venom allergy" />
+	<artifact id="AllergyIntolerance/egg" key="AllergyIntolerance-egg" name="AllergyIntolerance - Egg allergy" />
+	<artifact id="BodyStructure/right-knee" key="BodyStructure-right-knee" name="BodyStructure - Right Knee" />
+	<artifact id="BodyStructure/left-knee" key="BodyStructure-left-knee" name="BodyStructure - Left Knee" />
+	<artifact id="BodyStructure/tumour-spleen" key="BodyStructure-tumour-spleen" name="BodyStructure - Splenic mass" />
+	<artifact id="Condition/aci" key="Condition-aci" name="Condition - Acute myocardial infarction of anterior wall" />
+	<artifact id="Condition/ckd" key="Condition-ckd" name="Condition - Chronic Kidney Disease (part of multiple chronic condition care plan)" />
+	<artifact id="Condition/coronary-syndrome" key="Condition-coronary-syndrome" name="Condition - Acute coronary syndrome" />
+	<artifact id="Condition/fever" key="Condition-fever" name="Condition - Fever" />
+	<artifact id="Condition/nailwound" key="Condition-nailwound" name="Condition - Nail wound" />
+	<artifact id="Condition/uti" key="Condition-uti" name="Condition - Urinary tract infection" />
+	<artifact id="Condition/jaundice" key="Condition-jaundice" name="Condition - Neonatal jaundice" />
+	<artifact id="Condition/cleftpalate" key="Condition-cleftpalate" name="Condition - Cleft palate" />
+	<artifact id="Condition/clefttongue" key="Condition-clefttongue" name="Condition - Cleft tongue" />
+	<artifact id="Condition/bipolar" key="Condition-bipolar" name="Condition - Bipolar Disorder" />
+	<artifact id="Condition/zinc" key="Condition-zinc" name="Condition - Zinc Depletion Syndrome" />
+	<artifact id="Condition/cellulitis" key="Condition-cellulitis" name="Condition - Cellulitis of Right Knee" />
+	<artifact id="Condition/lymphoma" key="Condition-lymphoma" name="Condition - Diffuse B-cell lymphoma of the Brain" />
+	<artifact id="Condition/vkc" key="Condition-vkc" name="Condition - Vernal keratoconjunctivitis" />
+	<artifact id="DiagnosticReport/lipid-panel" key="DiagnosticReport-lipid-panel" name="DiagnosticReport - Lipid Panel" />
+	<artifact id="DocumentReference/acp" key="DocumentReference-acp" name="DocumentReference - Advance Care Plan" />
+	<artifact id="DocumentReference/mental-health-crisis-plan" key="DocumentReference-mental-health-crisis-plan" name="DocumentReference - Mental health crisis plan" />
+	<artifact id="Encounter/annualvisit-1" key="Encounter-annualvisit-1" name="Encounter - Annual check up 1" />
+	<artifact id="Encounter/annualvisit-2" key="Encounter-annualvisit-2" name="Encounter - Annual check up 2" />
+	<artifact id="Encounter/covid-admin-1" key="Encounter-covid-admin-1" name="Encounter - COVID 19 Vaccine Administration 1" />
+	<artifact id="Encounter/covid-admin-2" key="Encounter-covid-admin-2" name="Encounter - COVID 19 Vaccine Administration 2" />
+	<artifact id="Encounter/delivery" key="Encounter-delivery" name="Encounter - Delivery" />
+	<artifact id="Encounter/discharge-1" key="Encounter-discharge-1" name="Encounter - Discharge 1" />
+	<artifact id="Encounter/emergency" key="Encounter-emergency" name="Encounter - in progress emergency" />
+	<artifact id="Encounter/home-meds-review" key="Encounter-home-meds-review" name="Encounter - Home Medicines Review" />
+	<artifact id="Encounter/nailwound" key="Encounter-nailwound" name="Encounter - presentation at GP for nail wound" />
+	<artifact id="Encounter/telehealth" key="Encounter-telehealth" name="Encounter - telehealth" />
+	<artifact id="FamilyMemberHistory/father" key="FamilyMemberHistory-father" name="FamilyMemberHistory - Father (part of multiple chronic condition care plan)" />
+	<artifact id="Goal/hpt-wnl" key="Goal-hpt-wnl" name="Goal - Systolic blood pressure (part of multiple chronic condition care plan)" />
+	<artifact id="Goal/wgt-loss" key="Goal-wgt-loss" name="Goal - Weight loss (part of multiple chronic condition care plan)" />
+	<artifact id="HealthcareService/bobrester-medical-center" key="HealthcareService-bobrester-medical-center" name="HealthcareService - Bobrester Medical Centre" />
+	<artifact id="HealthcareService/lge-priv-xray" key="HealthcareService-lge-priv-xray" name="HealthcareService - Private X-Ray" />
+	<artifact id="Immunization/air-covid-1" key="Immunization-air-covid-1" name="Immunization - Australian Immunisaton Register Record of COVID Dose 1" />
+	<artifact id="Immunization/air-covid-2" key="Immunization-air-covid-2" name="Immunization - Australian Immunisation Register Record of COVID Dose 2" />
+	<artifact id="Immunization/covid-1" key="Immunization-covid-1" name="Immunization - COVID Dose 1" />
+	<artifact id="Immunization/covid-2" key="Immunization-covid-2" name="Immunization - COVID Dose 2" />
+	<artifact id="Immunization/hepb-1" key="Immunization-hepb-1" name="Immunization - Administration of Hepatitis B vaccination at birth" />
+	<artifact id="Immunization/zoster-notgiven" key="Immunization-zoster-notgiven" name="Immunization - Administration of Zoster vaccination refused" />
+	<artifact id="Location/au-hospital" key="Location-au-hospital" name="Location - Hospital Site" />
+	<artifact id="Location/au-hospital-pharm-out" key="Location-au-hospital-pharm-out" name="Location - Friends Pharmacy" />
+	<artifact id="Location/au-hospital-sw-physio" key="Location-au-hospital-sw-physio" name="Location - Physiotherapy Offices - AU Hospital" />
+	<artifact id="Location/au-jurisdiction" key="Location-au-jurisdiction" name="Location - Jurisdiction of Australia" />
+	<artifact id="Location/bobrester-medical-center" key="Location-bobrester-medical-center" name="Location - Tindal Building" />
+	<artifact id="Location/patient-home" key="Location-patient-home" name="Location - Patient home" />
+	<artifact id="Location/pharmacy" key="Location-pharmacy" name="Location - Pharmacy building" />
+	<artifact id="Medication/1active-ingredient" key="Medication-1active-ingredient" name="Medication - Branded pack with one active ingredient" />
+	<artifact id="Medication/2active-ingredients" key="Medication-2active-ingredients" name="Medication - Product with two active ingredients" />
+	<artifact id="Medication/4active-ingredients" key="Medication-4active-ingredients" name="Medication - Product with four active ingredients" />
+	<artifact id="Medication/simvastatin" key="Medication-simvastatin" name="Medication - Simvastatin 40 MG Disintegrating Oral Tablet" />
+	<artifact id="MedicationRequest/paracetamol-codeine" key="MedicationRequest-paracetamol-codeine" name="MedicationRequest - active prescription, paracetamol 500 mg + codeine phosphate hemihydrate 30 mg" />
+	<artifact id="MedicationRequest/reaptan" key="MedicationRequest-reaptan" name="MedicationRequest - active prescription, Reaptan" />
+	<artifact id="MedicationStatement/active-bisoprolol" key="MedicationStatement-active-bisoprolol" name="MedicationStatement - practitioner records active use of Bisoprolol 2.5mg" />
+	<artifact id="MedicationStatement/active-amiodarone" key="MedicationStatement-active-amiodarone" name="MedicationStatement - practitioner records active use of Amiodarone 200mg" />
+	<artifact id="MedicationStatement/completed-aldara" key="MedicationStatement-completed-aldara" name="MedicationStatement - practitioner records completed use of Aldara 5% cream" />
+	<artifact id="MedicationStatement/completed-chloramphenicol" key="MedicationStatement-completed-chloramphenicol" name="MedicationStatement - practitioner records completed use of Chloramphenicol 1% eye ointment" />
+	<artifact id="MedicationStatement/intended-coq10" key="MedicationStatement-intended-coq10" name="MedicationStatement - practitioner records intended use of CoQ10 150mg" />
+	<artifact id="MedicationStatement/previous-use" key="MedicationStatement-previous-use" name="MedicationStatement - practitioner reported previous use of Diflucan" />
+	<artifact id="MedicationStatement/simvastatin" key="MedicationStatement-simvastatin" name="MedicationStatement - current use of Simvastatin" />
+	<artifact id="Observation/bloodpressure-1" key="Observation-bloodpressure-1" name="Observation - Blood Pressure 1" />
+	<artifact id="Observation/bloodpressure-2" key="Observation-bloodpressure-2" name="Observation - Blood Pressure 2" />
+	<artifact id="Observation/bloodpressure-data-absent" key="Observation-bloodpressure-data-absent" name="Observation - Blood Pressure (data absent for diastolic)" />
+	<artifact id="Observation/bmi-1" key="Observation-bmi-1" name="Observation - BMI 1" />
+	<artifact id="Observation/bodyheight-1" key="Observation-bodyheight-1" name="Observation - Height 1" />
+	<artifact id="Observation/bodyheight-2" key="Observation-bodyheight-2" name="Observation - Length 2" />
+	<artifact id="Observation/bodyheight-3" key="Observation-bodyheight-3" name="Observation - Length 3" />
+	<artifact id="Observation/bodyheight-4" key="Observation-bodyheight-4" name="Observation - Height 4" />
+	<artifact id="Observation/bodytemp-1" key="Observation-bodytemp-1" name="Observation - Temperature" />
+	<artifact id="Observation/bodytemp-fever" key="Observation-bodytemp-fever" name="Observation - Temperature (fever)" />
+	<artifact id="Observation/bodyweight-1" key="Observation-bodyweight-1" name="Observation - Body weight 1" />
+	<artifact id="Observation/bodyweight-2" key="Observation-bodyweight-2" name="Observation - Body weight 2" />
+	<artifact id="Observation/bodyweight-3" key="Observation-bodyweight-3" name="Observation - Body weight 3" />
+	<artifact id="Observation/bodyweight-mcc" key="Observation-bodyweight-mcc" name="Observation - Body weight (part of multiple chronic condition care plan)" />
+	<artifact id="Observation/bonedensity-simple-precon" key="Observation-bonedensity-simple-precon" name="Observation - Bone Density of Left Femur (pre-coordinated body site code)" />
+	<artifact id="Observation/bonedensity-simple-contained" key="Observation-bonedensity-simple-contained" name="Observation - Bone Density of Left Femur (contained BodyStructure)" />
+	<artifact id="Observation/bun-mcc" key="Observation-bun-mcc" name="Observation - Urea nitrogen [Mass/volume] in Serum or Plasma (part of multiple chronic condition care plan)" />
+	<artifact id="Observation/headcircum-1" key="Observation-headcircum-1" name="Observation - Head circumference" />
+	<artifact id="Observation/hearing-threshold-1" key="Observation-hearing-threshold-1" name="Observation - Hearing threshold Ear (left) 500 Hz" />
+	<artifact id="Observation/heartrate-1" key="Observation-heartrate-1" name="Observation - Heart rate" />
+	<artifact id="Observation/lipid-chol-1" key="Observation-lipid-chol-1" name="Observation - Cholesterol" />
+	<artifact id="Observation/lipid-hdl-1" key="Observation-lipid-hdl-1" name="Observation - HDL" />
+	<artifact id="Observation/lipid-ldl-1" key="Observation-lipid-ldl-1" name="Observation - LDL" />
+	<artifact id="Observation/lipid-non-hdlc-1" key="Observation-lipid-non-hdlc-1" name="Observation - Non HDL Cholesterol" />
+	<artifact id="Observation/lipid-total-chol-1" key="Observation-lipid-total-chol-1" name="Observation - Total Cholesterol/HDL ratio" />
+	<artifact id="Observation/lipid-triglyceride-1" key="Observation-lipid-triglyceride-1" name="Observation - Triglyceride" />
+	<artifact id="Observation/oxygensat-1" key="Observation-oxygensat-1" name="Observation - Oxygen saturation" />
+	<artifact id="Observation/pathresult-covid-1" key="Observation-pathresult-covid-1" name="Observation - COVID Pathology Result (Not detected)" />
+	<artifact id="Observation/resprate-1" key="Observation-resprate-1" name="Observation - Respiration rate" />
+	<artifact id="Observation/sex-at-birth-intersex" key="Observation-sex-at-birth-intersex" name="Observation - Intersex at birth" />
+	<artifact id="Observation/sex-at-birth-female" key="Observation-sex-at-birth-female" name="Observation - Female at birth" />
+	<artifact id="Observation/sex-at-birth-male" key="Observation-sex-at-birth-male" name="Observation - Male at birth" />
+	<artifact id="Observation/smokingstatus-current-smoker" key="Observation-smokingstatus-current-smoker" name="Observation - Current smoker" />
+	<artifact id="Observation/vitalspanel-1" key="Observation-vitalspanel-1" name="Observation - Vital signs panel" />
+	<artifact id="Observation/waistcircum-1" key="Observation-waistcircum-1" name="Observation - Waist Circumference 1" />
+	<artifact id="Organization/aaaaaia-insurer" key="Organization-aaaaaia-insurer" name="Organization - AAAAAIA HI PTY LTD" />
+	<artifact id="Organization/adv-hearing-care" key="Organization-adv-hearing-care" name="Organization - Audiology Advanced Hearing Care" />
+	<artifact id="Organization/bobrester-medical-center" key="Organization-bobrester-medical-center" name="Organization - Bobrester Medical Centre" />
+	<artifact id="Organization/dva-au" key="Organization-dva-au" name="Organization - Department of Veterans' Affairs" />
+	<artifact id="Organization/health-au" key="Organization-health-au" name="Organization - Department of Health and Aged Care" />
+	<artifact id="Organization/hospital-au" key="Organization-hospital-au" name="Organization - Hospitals Australia" />
+	<artifact id="Organization/hospital-int" key="Organization-hospital-int" name="Organization - Hospitals International" />
+	<artifact id="Organization/pharmacy" key="Organization-pharmacy" name="Organization - Retail Pharmacy" />
+	<artifact id="Organization/services-au" key="Organization-services-au" name="Organization - Services Australia" />
+	<artifact id="Patient/baby-smith-john" key="Patient-baby-smith-john" name="Patient - Baby patient" />
+	<artifact id="Patient/dan-harry" key="Patient-dan-harry" name="Patient - Mr. Harry Dan" />
+	<artifact id="Patient/bennelong-anne" key="Patient-bennelong-anne" name="Patient - Mrs. Anne Bennelong" />
+	<artifact id="Patient/italia-sofia" key="Patient-italia-sofia" name="Patient - Ms. Sofia Italia (foreign tourist)" />
+	<artifact id="Patient/smith-emma" key="Patient-smith-emma" name="Patient - Ms. Emma SMITH" />
+	<artifact id="Patient/wang-li" key="Patient-wang-li" name="Patient - Mr. Li Wang" />
+	<artifact id="Practitioner/bobrester-bob" key="Practitioner-bobrester-bob" name="Practitioner - Dr. Bob Bobrester" />
+	<artifact id="Practitioner/bradley-jill" key="Practitioner-bradley-jill" name="Practitioner - Jill Bradley" />
+	<artifact id="Practitioner/cardy-igist" key="Practitioner-cardy-igist" name="Practitioner - Dr. Igist Cardy" />
+	<artifact id="Practitioner/levin-henry" key="Practitioner-levin-henry" name="Practitioner - Dr Henry Levin VII (part of multiple chronic condition care plan)" />
+	<artifact id="Practitioner/nurse-nancy" key="Practitioner-nurse-nancy" name="Practitioner - RNP Nancy Nurse (part of multiple chronic condition care plan)" />
+	<artifact id="Practitioner/pharmacist" key="Practitioner-pharmacist" name="Practitioner - Mr Representative Pharmacist" />
+	<artifact id="Practitioner/primary-peter" key="Practitioner-primary-peter" name="Practitioner - Dr Peter Primary (part of multiple chronic condition care plan)" />
+	<artifact id="Practitioner/sandyson-sandy" key="Practitioner-sandyson-sandy" name="Practitioner - Ms. Sandy Sandyson" />
+	<artifact id="Practitioner/surgeon-david" key="Practitioner-surgeon-david" name="Practitioner - Dr. David Surgeon" />
+	<artifact id="PractitionerRole/audiologist-bradley-jill" key="PractitionerRole-audiologist-bradley-jill" name="PractitionerRole - Audiologist" />
+	<artifact id="PractitionerRole/bobrester-bob-gp" key="PractitionerRole-bobrester-bob-gp" name="PractitionerRole - General practitioner" />
+	<artifact id="PractitionerRole/cardiologist-cardy-igist" key="PractitionerRole-cardiologist-cardy-igist" name="PractitionerRole - Cardiologist" />
+	<artifact id="PractitionerRole/dietician-tan-patricia" key="PractitionerRole-dietician-tan-patricia" name="PractitionerRole - Dietician" />
+	<artifact id="PractitionerRole/gp-primary-peter" key="PractitionerRole-gp-primary-peter" name="PractitionerRole - General Practitioner (part of multiple chronic condition care plan)" />
+	<artifact id="PractitionerRole/nephrologist-levin-henry" key="PractitionerRole-nephrologist-levin-henry" name="PractitionerRole - Nephrologist (part of multiple chronic condition care plan)" />
+	<artifact id="PractitionerRole/np-nurse-nancy" key="PractitionerRole-np-nurse-nancy" name="PractitionerRole - Registered nurse (part of multiple chronic condition care plan)" />
+	<artifact id="PractitionerRole/retail-pharmacist" key="PractitionerRole-retail-pharmacist" name="PractitionerRole - Retail pharmacist" />
+	<artifact id="PractitionerRole/sandyson-sandy-nurse" key="PractitionerRole-sandyson-sandy-nurse" name="PractitionerRole - Registered nurse" />
+	<artifact id="PractitionerRole/surgeon-david-surgeon" key="PractitionerRole-surgeon-david-surgeon" name="PractitionerRole - Surgeon" />
+	<artifact id="Procedure/cryotherapy" key="Procedure-cryotherapy" name="Procedure - Cryotherapy" />
+	<artifact id="Procedure/dialysis" key="Procedure-dialysis" name="Procedure - Dialysis (part of multiple chronic condition care plan)" />
+	<artifact id="Procedure/stentinsertion" key="Procedure-stentinsertion" name="Procedure - Stent insertion" />
+	<artifact id="Provenance/delete" key="Provenance-delete" name="Provenance - delete a specific document reference version" />
+	<artifact id="Provenance/signature" key="Provenance-signature" name="Provenance - Signature for advance care plan" />
+	<artifact id="RelatedPerson/smith-emma-john" key="RelatedPerson-smith-emma-john" name="RelatedPerson - Mother of John Smith" />
+	<artifact id="RelatedPerson/rabbit-peter" key="RelatedPerson-rabbit-peter" name="RelatedPerson - Friend of Mr Li Wang" />
+	<artifact id="ServiceRequest/order-chestct" key="ServiceRequest-order-chestct" name="ServiceRequest - Chest CT order" />
+	<artifact id="ServiceRequest/order-chestxray" key="ServiceRequest-order-chestxray" name="ServiceRequest - Chest X-ray  order" />
+	<artifact id="ServiceRequest/order-ct-abpelcontrast" key="ServiceRequest-order-ct-abpelcontrast" name="ServiceRequest - CT of abdomen and pelvis with contrast order" />
+	<artifact id="ServiceRequest/order-covid" key="ServiceRequest-order-covid" name="ServiceRequest - 2019-Novel Coronavirus PCR order" />
+	<artifact id="ServiceRequest/order-lipid" key="ServiceRequest-order-lipid" name="ServiceRequest - Lipid Panel order" />
+	<artifact id="ServiceRequest/order-lk-ctcontrast" key="ServiceRequest-order-lk-ctcontrast" name="ServiceRequest - Left Knee CT with contrast order" />
+	<artifact id="ServiceRequest/order-lkxray" key="ServiceRequest-order-lkxray" name="ServiceRequest - Left Knee X-ray order" />
+	<artifact id="ServiceRequest/order-rk-ctcontrast" key="ServiceRequest-order-rk-ctcontrast" name="ServiceRequest - Right Knee CT with contrast order" />
+	<artifact id="ServiceRequest/order-rkxray" key="ServiceRequest-order-rkxray" name="ServiceRequest - Right Knee X-ray order" />
+	<artifact id="Specimen/nasoswab" key="Specimen-nasoswab" name="Specimen - Naso swab (COVID test)" />
+	<artifact id="StructureDefinition/au-core-diagnosticresult-imag" key="StructureDefinition-au-core-diagnosticresult-imag" name="AU Core Diagnostic Imaging Result Observation" />
+	<artifact id="StructureDefinition/au-core-diagnosticresult-path" key="StructureDefinition-au-core-diagnosticresult-path" name="AU Core Pathology Result Observation" />
+	<artifact id="StructureDefinition/au-core-diagnosticresult" key="StructureDefinition-au-core-diagnosticresult" name="AU Core Diagnostic Result Observation" />
+	<artifact id="StructureDefinition/au-core-servicerequest" key="StructureDefinition-au-core-servicerequest" name="AU Core ServiceRequest" />
+	<artifact id="StructureDefinition/au-core-sexassignedatbirth" key="StructureDefinition-au-core-sexassignedatbirth" name="AU Core Biological Sex Assigned at Birth" />
+	<page key="NA" name="(NA)"/>
+	<page key="many" name="(many)"/>
+	<page key="toc" name="Table of Contents"/>
+	<page key="index" name="Home"/>
+	<page key="conformance" name="Conformance"/>
+	<page key="general-requirements" name="General Requirements"/>
+	<page key="must-support" name="Must Support"/>
+	<page key="guidance" name="Guidance"/>
+	<page key="general-guidance" name="General Guidance"/>
+	<page key="comparison" name="Comparison with other national and international specifications"/>
+	<page key="profiles-and-extensions" name="Profiles and Extensions"/>
+	<page key="search-parameters" name="Search Parameters"/>
+	<page key="terminology" name="Terminology"/>
+	<page key="capability-statements" name="Capability Statements"/>
+	<page key="examples" name="Examples"/>
+	<page key="downloads" name="Downloads"/>
+</specification>
+        
