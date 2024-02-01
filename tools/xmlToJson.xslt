@@ -86,15 +86,37 @@
     <xsl:for-each select="@*[not(contains(name(.), ':'))]">
       <xsl:choose>
         <xsl:when test="local-name(.)=('deprecated')">
-          <xsl:value-of select="concat('&quot;', local-name(.), '&quot;:', .)"/>
+          <xsl:value-of select="concat('&quot;', local-name(.), '&quot;:')"/>
+          <xsl:call-template name="escapeText">
+            <xsl:with-param name="text" select="."/>
+          </xsl:call-template>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="concat('&quot;', local-name(.), '&quot;:&quot;', ., '&quot;')"/>
+          <xsl:value-of select="concat('&quot;', local-name(.), '&quot;:&quot;')"/>
+          <xsl:call-template name="escapeText">
+            <xsl:with-param name="text" select="."/>
+          </xsl:call-template>
+          <xsl:text>"</xsl:text>
         </xsl:otherwise>
       </xsl:choose>
       <xsl:if test="position()!=last()">,</xsl:if>
     </xsl:for-each>
 	</xsl:template>
+  <xsl:template name="escapeText">
+    <xsl:param name="text"/>
+    <xsl:choose>
+      <xsl:when test="contains($text, '&quot;')">
+        <xsl:value-of select="substring-before($text, '&quot;')"/>
+        <xsl:text>\"</xsl:text>
+        <xsl:call-template name="escapeText">
+          <xsl:with-param name="text" select="substring-after($text, '&quot;')"/>
+        </xsl:call-template>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$text"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
   <xsl:template name="doNamedArray">
     <xsl:param name="name"/>
     <xsl:value-of select="concat('&quot;', $name, '&quot;:')"/>
