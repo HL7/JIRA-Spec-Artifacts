@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/HL7/CardX-HTN-MNG/index.html" defaultVersion="current" defaultWorkgroup="cic" url="http://hl7.org/fhir/uv/cardx-htn" gitUrl="https://github.com/HL7/CardX-HTN-MNG">
-<version code="current" url="https://build.fhir.org/ig/HL7/CardX-HTN-MNG/index.html"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cardx-htn/0.1.0-ballot" ciUrl="http://build.fhir.org/ig/HL7/CardX-HTN-MNG/index.html" defaultVersion="0.1.0" defaultWorkgroup="cic" url="http://hl7.org/fhir/uv/cardx-htn">
+<version code="current" url="http://build.fhir.org/ig/HL7/CardX-HTN-MNG/index.html"/>
+<version code="0.1.0" url="http://hl7.org/fhir/uv/cardx-htn/0.1.0-ballot"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/average-smbp" key="StructureDefinition-average-smbp" name="Average Self-measured Blood Pressure"/>
 <artifact id="Observation/AverageSMBP-Protocol-example" key="Observation-AverageSMBP-Protocol-example" name="AverageSMBP-Protocol-example"/>
 <artifact id="Observation/AverageSMBP-example" key="Observation-AverageSMBP-example" name="AverageSMBP-example"/>
-<artifact id="StructureDefinition/MeasurementSettingExt" key="StructureDefinition-MeasurementSettingExt" name="Measurement Setting"/>
+<artifact id="CapabilityStatement/CardXCapabilityStatementClient" key="CapabilityStatement-CardXCapabilityStatementClient" name="HTN-Mng-CardX Client Capability Statement"/>
+<artifact id="CapabilityStatement/CardXCapabilityStatementServer" key="CapabilityStatement-CardXCapabilityStatementServer" name="HTN-Mng-CardX Server Capability Statement"/>
 <artifact id="StructureDefinition/NumberOfMeasurementsExt" key="StructureDefinition-NumberOfMeasurementsExt" name="Number of Measurements"/>
 <artifact id="ValueSet/NumericResultIntVS" key="ValueSet-NumericResultIntVS" name="Numeric Result Interpretation value set"/>
 <artifact id="StructureDefinition/smbp-associated-heart-rate" key="StructureDefinition-smbp-associated-heart-rate" name="SMBP Associated Heart Rate"/>
@@ -44,19 +46,17 @@
 <artifact id="StructureDefinition/self-measured-bp" key="StructureDefinition-self-measured-bp" name="Self-measured Blood Pressure"/>
 <artifact id="Observation/SelfMeasuredBloodPressure-example" key="Observation-SelfMeasuredBloodPressure-example" name="SelfMeasuredBloodPressure-example"/>
 <artifact id="Device/example-smbp-device" key="Device-example-smbp-device" name="example-smbp-device"/>
-<artifact id="Patient/patient-example-Jake-Donald" key="Patient-patient-example-Jake-Donald" name="patient-example-Jake-Donald"/>
 <artifact id="Patient/patient-example-Sally-Sue" key="Patient-patient-example-Sally-Sue" name="patient-example-Sally-Sue"/>
 <artifact id="Practitioner/practitioner-example-Mary-Hill" key="Practitioner-practitioner-example-Mary-Hill" name="practitioner-example-Mary-Hill"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="Background" name="Background"/>
 <page key="cardx-background" name="Cardx Background"/>
-<page key="dataRequirements" name="Data Requirements"/>
+<page key="Credits" name="Credits"/>
 <page key="index" name="Home"/>
 <page key="IG-examples" name="IG Examples"/>
-<page key="priorart" name="Priorart"/>
 <page key="profiles" name="Profiles"/>
-<page key="related-igs" name="Related Igs"/>
 <page key="SMBP-Protocol-Examples" name="SMBP Protocol Examples"/>
 <page key="toc" name="Table of Contents"/>
 <page key="use-cases" name="Use Cases"/>
