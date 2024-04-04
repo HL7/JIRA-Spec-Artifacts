@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/vrdr/2024May" ciUrl="http://build.fhir.org/ig/HL7/vrdr" defaultVersion="2.2.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/vrdr" url="http://hl7.org/fhir/us/vrdr">
 <version code="current" url="http://build.fhir.org/ig/HL7/vrdr"/>
-<version code="3.0.0-ballot" url="http://hl7.org/fhir/us/vrdr/2024May"/>
+<version code="3.0.0-ballot"  url="http://hl7.org/fhir/us/vrdr/2024May"/>
 <version code="2.2.0" url="http://hl7.org/fhir/us/vrdr/STU2.2"/>
 <version code="2.1.0" url="http://hl7.org/fhir/us/vrdr/STU2.1"/>
 <version code="2.0.0" url="http://hl7.org/fhir/us/vrdr/STU2"/>
@@ -34,8 +34,8 @@
 <artifact id="Observation/AutopsyPerformedIndicator-Example1" key="Observation-AutopsyPerformedIndicator-Example1" name="AutopsyPerformedIndicator-Example1"/>
 <artifact id="Observation/AutopsyPerformedIndicatorUT-Example1" key="Observation-AutopsyPerformedIndicatorUT-Example1" name="AutopsyPerformedIndicatorUT-Example1"/>
 <artifact deprecated="true" id="StructureDefinition/AuxiliaryStateIdentifier" key="StructureDefinition-AuxiliaryStateIdentifier" name="Auxiliary State Identifier"/>
-<artifact deprecated="true" id="StructureDefinition/AuxiliaryStateIdentifier1" key="StructureDefinition-AuxiliaryStateIdentifier1" name="Auxiliary State Identifier1"/>
-<artifact deprecated="true" id="StructureDefinition/AuxiliaryStateIdentifier2" key="StructureDefinition-AuxiliaryStateIdentifier2" name="Auxiliary State Identifier2"/>
+<artifact id="StructureDefinition/AuxiliaryStateIdentifier1" key="StructureDefinition-AuxiliaryStateIdentifier1" name="Auxiliary State Identifier1 Vital Records"/>
+<artifact id="StructureDefinition/AuxiliaryStateIdentifier2" key="StructureDefinition-AuxiliaryStateIdentifier2" name="Auxiliary State Identifier2 Vital Records"/>
 <artifact id="StructureDefinition/vrdr-birth-record-identifier-child" key="StructureDefinition-vrdr-birth-record-identifier-child" name="Birth Record Identifier Child"/>
 <artifact deprecated="true" id="Observation/6606dd3a-49ba-47a9-a6e7-e7e4ebeddac7" key="Observation-6606dd3a-49ba-47a9-a6e7-e7e4ebeddac7" name="Birth Record Identifier Example"/>
 <artifact id="StructureDefinition/vrdr-birth-record-identifier" key="StructureDefinition-VRDR-BirthRecordIdentifier" name="Birth Record Identifier Infant"/>
@@ -365,6 +365,11 @@
 <artifact deprecated="true" id="ConceptMap/YesNoUnknownCM" key="ConceptMap-YesNoUnknownCM" name="YesNoUnknown Concept Map"/>
 <artifact deprecated="true" id="ConceptMap/YesNoUnknownNotApplicableCM" key="ConceptMap-YesNoUnknownNotApplicableCM" name="YesNoUnknownNotApplicable Concept Map"/>
 <artifact deprecated="true" id="ConceptMap/place-of-death" key="ConceptMap-place-of-death" name="place-of-death"/>
+<artifact id="CodeSystem/CodeSystem-vr-edit-flags" key="CodeSystem-CodeSystem-vr-edit-flags" name="Birth and Death Edit Flags Vital Records"/>
+<artifact id="ValueSet/valueset-edit-bypass-01234-vr" key="ValueSet-valueset-edit-bypass-01234-vr" name="Edit Bypass 01234 Vital Records"/>
+<artifact id="StructureDefinition/Extension-jurisdiction-id-vr" key="StructureDefinition-Extension-jurisdiction-id-vr" name="Location Jurisdiction Id Vital Records"/>
+<artifact id="StructureDefinition/Location-vr" key="StructureDefinition-Location-vr" name="Location for Vital Records"/>
+<artifact id="ValueSet/ValueSet-marital-status-vr" key="ValueSet-ValueSet-marital-status-vr" name="Marital Status Vital Records"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page deprecated="true" key="acknowledgements" name="Acknowledgements"/>
