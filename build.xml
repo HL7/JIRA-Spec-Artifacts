@@ -48,10 +48,11 @@
     </dependset>
     <xslt in="xml/_families.xml" out="json/families.json" style="tools/xmlToJson.xslt"/>
     <xslt in="xml/_workgroups.xml" out="json/workgroups.json" style="tools/xmlToJson.xslt"/>
+    <xslt in="xml/_accelerators.xml" out="json/accelerators.json" style="tools/xmlToJson.xslt"/>
     <get src="https://hl7.github.io/JIRA-Spec-Artifacts/SPECS.xml" dest="tools/temp/SPECS.xml" usetimestamp="true"/>
     <dependset>
       <srcfilelist dir="tools/temp" files="SPECS.xml"/>
-      <srcfileset dir="xml" includes="*.xml" excludes="_workgroups.xml,_families.xml"/>
+      <srcfileset dir="xml" includes="*.xml" excludes="_accelerators.xml,_workgroups.xml,_families.xml"/>
       <targetfileset dir="json" includes="SPECS*.json"/>
     </dependset>
     <xslt in="xml/_families.xml" out="json/SPECS.json" style="tools/buildSpecJSON.xslt" classpathref="saxon.path">
