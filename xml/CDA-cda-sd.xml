@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/cda/stds/core/2023Sep" ciUrl="https://build.fhir.org/ig/HL7/CDA-core-2.0" defaultVersion="2.0.0-sd-ballot" defaultWorkgroup="sd" url="http://hl7.org/cda/stds/core">
-<version code="current" url="https://build.fhir.org/ig/HL7/CDA-core-sd"/>
-<version code="2.0.0-sd-ballot" url="http://hl7.org/cda/stds/core/2023Sep"/>
-<version code="2.1.0-draft1" url="http://hl7.org/cda/stds/core/draft1"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/cda/stds/core/2023Sep" ciUrl="http://build.fhir.org/ig/HL7/CDA-core-sd" defaultVersion="2.0.0-sd" defaultWorkgroup="sd" url="http://hl7.org/cda/stds/core">
+<version code="current" url="http://build.fhir.org/ig/HL7/CDA-core-sd"/>
+<version code="2.0.0-sd" url="https://hl7.org/cda/stds/core"/>
+<version code="2.0.0-sd-snapshot1" deprecated="true" url="http://hl7.org/cda/stds/core/2.0.0-sd-snapshot1"/>
+<version code="2.0.0-sd-ballot" deprecated="true" url="http://hl7.org/cda/stds/core/2023Sep"/>
+<version code="2.1.0-draft1" deprecated="true" url="http://hl7.org/cda/stds/core/draft1"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
@@ -21,10 +23,33 @@
 <artifact id="StructureDefinition/Authorization" key="StructureDefinition-Authorization" name="Authorization (CDA Class)"/>
 <artifact id="StructureDefinition/BL" key="StructureDefinition-BL" name="BL: Boolean (V3 Data Type)"/>
 <artifact id="CodeSystem/BinaryDataEncoding" key="CodeSystem-BinaryDataEncoding" name="Binary Data Encoding Code System"/>
-<artifact id="ValueSet/BinaryDataEncoding" key="ValueSet-BinaryDataEncoding" name="Binary Data Encoding Value Set"/>
 <artifact id="StructureDefinition/Birthplace" key="StructureDefinition-Birthplace" name="Birthplace (CDA Class)"/>
 <artifact id="StructureDefinition/CD" key="StructureDefinition-CD" name="CD: ConceptDescriptor (V3 Data Type)"/>
+<artifact id="ValueSet/CDAActClass" key="ValueSet-CDAActClass" name="CDAActClass"/>
+<artifact id="ValueSet/CDAActClassObservation" key="ValueSet-CDAActClassObservation" name="CDAActClassObservation"/>
+<artifact id="ValueSet/CDAActMood" key="ValueSet-CDAActMood" name="CDAActMood"/>
+<artifact id="ValueSet/CDAActMoodIntent" key="ValueSet-CDAActMoodIntent" name="CDAActMoodIntent"/>
+<artifact id="ValueSet/CDAActRelationshipType" key="ValueSet-CDAActRelationshipType" name="CDAActRelationshipType"/>
+<artifact id="ValueSet/CDAActSubstanceAdministrationCode" key="ValueSet-CDAActSubstanceAdministrationCode" name="CDAActSubstanceAdministrationCode"/>
+<artifact id="ValueSet/BinaryDataEncoding" key="ValueSet-BinaryDataEncoding" name="CDABinaryDataEncoding"/>
+<artifact id="ValueSet/CDACompressionAlgorithm" key="ValueSet-CDACompressionAlgorithm" name="CDACompressionAlgorithm"/>
+<artifact id="ValueSet/CDAContextControl" key="ValueSet-CDAContextControl" name="CDAContextControl"/>
+<artifact id="ValueSet/CDAEntityCode" key="ValueSet-CDAEntityCode" name="CDAEntityCode"/>
+<artifact id="ValueSet/CDAEntityNamePartQualifier" key="ValueSet-CDAEntityNamePartQualifier" name="CDAEntityNamePartQualifier"/>
+<artifact id="ValueSet/CDAEntityNameUse" key="ValueSet-CDAEntityNameUse" name="CDAEntityNameUse"/>
+<artifact id="ValueSet/CDAInformationRecipientRole" key="ValueSet-CDAInformationRecipientRole" name="CDAInformationRecipientRole"/>
+<artifact id="ValueSet/CDAMaterialEntityClassType" key="ValueSet-CDAMaterialEntityClassType" name="CDAMaterialEntityClassType"/>
 <artifact id="ValueSet/CDANullFlavor" key="ValueSet-CDANullFlavor" name="CDANullFlavor"/>
+<artifact id="ValueSet/CDAObservationInterpretation" key="ValueSet-CDAObservationInterpretation" name="CDAObservationInterpretation"/>
+<artifact id="ValueSet/CDAParticipationType" key="ValueSet-CDAParticipationType" name="CDAParticipationType"/>
+<artifact id="ValueSet/CDAPostalAddressUse" key="ValueSet-CDAPostalAddressUse" name="CDAPostalAddressUse"/>
+<artifact id="ValueSet/CDARoleClass" key="ValueSet-CDARoleClass" name="CDARoleClass"/>
+<artifact id="ValueSet/CDARoleClassAssociative" key="ValueSet-CDARoleClassAssociative" name="CDARoleClassAssociative"/>
+<artifact id="ValueSet/CDARoleClassMutualRelationship" key="ValueSet-CDARoleClassMutualRelationship" name="CDARoleClassMutualRelationship"/>
+<artifact id="ValueSet/CDARoleClassRoot" key="ValueSet-CDARoleClassRoot" name="CDARoleClassRoot"/>
+<artifact id="ValueSet/CDARoleCode" key="ValueSet-CDARoleCode" name="CDARoleCode"/>
+<artifact id="ValueSet/CDASetOperator" key="ValueSet-CDASetOperator" name="CDASetOperator"/>
+<artifact id="ValueSet/CDASignatureCode" key="ValueSet-CDASignatureCode" name="CDASignatureCode"/>
 <artifact id="StructureDefinition/CE" key="StructureDefinition-CE" name="CE: CodedWithEquivalents (V3 Data Type)"/>
 <artifact id="StructureDefinition/CO" key="StructureDefinition-CO" name="CO: CodedOrdinal (V3 Data Type)"/>
 <artifact id="StructureDefinition/CR" key="StructureDefinition-CR" name="CR: ConceptRole (V3 Data Type)"/>
@@ -33,7 +58,6 @@
 <artifact id="StructureDefinition/ClinicalDocument" key="StructureDefinition-ClinicalDocument" name="ClinicalDocument (CDA Class)"/>
 <artifact id="StructureDefinition/Component" key="StructureDefinition-Component" name="Component (CDA Class)"/>
 <artifact id="StructureDefinition/ComponentOf" key="StructureDefinition-ComponentOf" name="ComponentOf (CDA Class)"/>
-<artifact id="ValueSet/CDACompressionAlgorithm" key="ValueSet-CDACompressionAlgorithm" name="CompressionAlgorithm"/>
 <artifact id="StructureDefinition/Consent" key="StructureDefinition-Consent" name="Consent (CDA Class)"/>
 <artifact id="StructureDefinition/Criterion" key="StructureDefinition-Criterion" name="Criterion (CDA Class)"/>
 <artifact id="StructureDefinition/Custodian" key="StructureDefinition-Custodian" name="Custodian (CDA Class)"/>
@@ -157,7 +181,9 @@
 <page key="cda-rmim" name="Graphical Map of CDA"/>
 <page key="dt-uml" name="Graphical Map of Datatypes"/>
 <page key="index" name="IG Home Page"/>
+<page key="implementation" name="Implementation Notes"/>
 <page key="narrative" name="Narrative Block"/>
 <page key="overview" name="Overview"/>
 <page key="toc" name="Table of Contents"/>
+<page key="terminology" name="Terminology"/>
 </specification>
