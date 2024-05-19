@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/FHIR/fhir-tools-ig" defaultVersion="0.1.0" defaultWorkgroup="fhir-i" gitUrl="https://github.com/HL7/davinci-deqm" url="http://hl7.org/fhir/tools">
+<version code="current" url="https://build.fhir.org/ig/FHIR/fhir-tools-ig"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/tools/0.1.0"/>
+<version code="2.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2020Sep"/>
+<version code="2.0.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/STU2"/>
+<version code="1.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2020Feb"/>
+<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/STU1"/>
+<version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2019May/STU3/index.html"/>
+<version code="0.1" deprecated="true"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/ig-actor-example-url" key="StructureDefinition-ig-actor-example-url" name="Actor Example URL"/>
+<artifact id="StructureDefinition/ig-example-actor" key="StructureDefinition-ig-example-actor" name="Actor For Example"/>
+<artifact id="StructureDefinition/additional-binding" key="StructureDefinition-additional-binding" name="Additional Binding Extension"/>
+<artifact id="CodeSystem/additional-binding-purpose" key="CodeSystem-additional-binding-purpose" name="Additional Binding Purpose Codes"/>
+<artifact id="ValueSet/additional-binding-purpose" key="ValueSet-additional-binding-purpose" name="Additional Binding Purpose ValueSet"/>
+<artifact id="StructureDefinition/implementationguide-resource-format" key="StructureDefinition-implementationguide-resource-format" name="Binary Resource Format"/>
+<artifact id="StructureDefinition/implementationguide-resource-logical" key="StructureDefinition-implementationguide-resource-logical" name="Binary Resource Logical"/>
+<artifact id="StructureDefinition/binding-definition" key="StructureDefinition-binding-definition" name="Binding Definition"/>
+<artifact id="StructureDefinition/CDSHookContext" key="StructureDefinition-CDSHookContext" name="CDS Hook Specific Context (Logical Definition)"/>
+<artifact id="StructureDefinition/CDSHookOrderSelectContext" key="StructureDefinition-CDSHookOrderSelectContext" name="CDS Hook Specific Context for order-select (Logical Definition)"/>
+<artifact id="StructureDefinition/CDSHookOrderSignContext" key="StructureDefinition-CDSHookOrderSignContext" name="CDS Hook Specific Context for order-sign (Logical Definition)"/>
+<artifact id="StructureDefinition/CDSHookPatientViewContext" key="StructureDefinition-CDSHookPatientViewContext" name="CDS Hook Specific Context for patient-view (Logical Definition)"/>
+<artifact id="CodeSystem/CDSActionType" key="CodeSystem-CDSActionType" name="CDSActionType Codes"/>
+<artifact id="ValueSet/CDSActionType" key="ValueSet-CDSActionType" name="CDSActionType Codes ValueSet"/>
+<artifact id="Binary/CDSHookServices" key="Binary-CDSHookServices" name="CDSHookServices Example"/>
+<artifact id="StructureDefinition/CDSHooksRequest" key="StructureDefinition-CDSHooksRequest" name="CDSHooks Request (Logical Definition)"/>
+<artifact id="StructureDefinition/CDSHooksResponse" key="StructureDefinition-CDSHooksResponse" name="CDSHooks Response (Logical Definition)"/>
+<artifact id="StructureDefinition/CDSHooksElement" key="StructureDefinition-CDSHooksElement" name="CDSHooks Services Base Extensible Element"/>
+<artifact id="StructureDefinition/CDSHooksServices" key="StructureDefinition-CDSHooksServices" name="CDSHooks Services Request (Logical Definition)"/>
+<artifact id="CodeSystem/CDSIndicator" key="CodeSystem-CDSIndicator" name="CDSIndicator Codes"/>
+<artifact id="ValueSet/CDSIndicator" key="ValueSet-CDSIndicator" name="CDSIndicator Codes ValueSet"/>
+<artifact id="CodeSystem/CDSLinkType" key="CodeSystem-CDSLinkType" name="CDSLinkType Codes"/>
+<artifact id="ValueSet/CDSLinkType" key="ValueSet-CDSLinkType" name="CDSLinkType Codes ValueSet"/>
+<artifact id="CodeSystem/CDSSelectionBehavior" key="CodeSystem-CDSSelectionBehavior" name="CDSSelectionBehavior Codes"/>
+<artifact id="ValueSet/CDSSelectionBehavior" key="ValueSet-CDSSelectionBehavior" name="CDSSelectionBehavior Codes ValueSet"/>
+<artifact deprecated="true" id="OperationDefinition/care-gaps" key="OperationDefinition-care-gaps" name="Care Gaps Operation"/>
+<artifact deprecated="true" id="Parameters/col-submit-collect-obs" key="Parameters-col-submit-collect-obs" name="Col Submit Collect Obs"/>
+<artifact id="CodeSystem/r4-equivalence" key="CodeSystem-r4-equivalence" name="ConceptMapEquivalence"/>
+<artifact deprecated="true" id="CapabilityStatement/consumer-client" key="CapabilityStatement-consumer-client" name="Consumer Client CapabilityStatement"/>
+<artifact deprecated="true" id="CapabilityStatement/consumer-server" key="CapabilityStatement-consumer-server" name="Consumer Server CapabilityStatement"/>
+<artifact deprecated="true" id="Coverage/coverage01" key="Coverage-coverage01" name="Coverage01"/>
+<artifact deprecated="true" id="Coverage/coverage02" key="Coverage-coverage02" name="Coverage02"/>
+<artifact deprecated="true" id="Coverage/coverage03" key="Coverage-coverage03" name="Coverage03"/>
+<artifact deprecated="true" id="StructureDefinition/extension-alternateScoreType" key="StructureDefinition-extension-alternateScoreType" name="DEQM Alternate Score Type Extension"/>
+<artifact deprecated="true" id="StructureDefinition/extension-certificationIdentifier" key="StructureDefinition-extension-certificationIdentifier" name="DEQM Certification Identifier Extension"/>
+<artifact deprecated="true" id="StructureDefinition/coverage-deqm" key="StructureDefinition-coverage-deqm" name="DEQM Coverage Profile"/>
+<artifact deprecated="true" id="StructureDefinition/datax-measurereport-deqm" key="StructureDefinition-datax-measurereport-deqm" name="DEQM Data Exchange MeasureReport Profile"/>
+<artifact deprecated="true" id="StructureDefinition/extension-gapStatus" key="StructureDefinition-extension-gapStatus" name="DEQM Gap Status Modifier Extension"/>
+<artifact deprecated="true" id="StructureDefinition/gaps-bundle-deqm" key="StructureDefinition-gaps-bundle-deqm" name="DEQM Gaps In Care Bundle Profile"/>
+<artifact deprecated="true" id="StructureDefinition/gaps-composition-deqm" key="StructureDefinition-gaps-composition-deqm" name="DEQM Gaps In Care Composition Profile"/>
+<artifact deprecated="true" id="StructureDefinition/gaps-detectedissue-deqm" key="StructureDefinition-gaps-detectedissue-deqm" name="DEQM Gaps In Care Detected Issue Profile"/>
+<artifact deprecated="true" id="CodeSystem/gaps-doc-type" key="CodeSystem-gaps-doc-type" name="DEQM Gaps In Care Document Type Code System"/>
+<artifact deprecated="true" id="CodeSystem/gaps-status" key="CodeSystem-gaps-status" name="DEQM Gaps In Care Gap Status Code System"/>
+<artifact deprecated="true" id="ValueSet/gaps-status" key="ValueSet-gaps-status" name="DEQM Gaps In Care Gap Status Value Set"/>
+<artifact deprecated="true" id="StructureDefinition/gaps-group-deqm" key="StructureDefinition-gaps-group-deqm" name="DEQM Gaps In Care Group Profile"/>
+<artifact deprecated="true" id="StructureDefinition/gaps-indv-measurereport-deqm" key="StructureDefinition-gaps-indv-measurereport-deqm" name="DEQM Gaps In Care Individual MeasureReport Profile"/>
+<artifact deprecated="true" id="StructureDefinition/indv-measurereport-deqm" key="StructureDefinition-indv-measurereport-deqm" name="DEQM Individual MeasureReport Profile"/>
+<artifact deprecated="true" id="StructureDefinition/extension-measureScoring" key="StructureDefinition-extension-measureScoring" name="DEQM Measure Scoring Extension"/>
+<artifact deprecated="true" id="MedicationAdministration/medicationadministration01" key="MedicationAdministration-medicationadministration01" name="DEQM MedicationAdministration Example"/>
+<artifact deprecated="true" id="StructureDefinition/medicationadministration-deqm" key="StructureDefinition-medicationadministration-deqm" name="DEQM MedicationAdministration Profile"/>
+<artifact deprecated="true" id="StructureDefinition/organization-deqm" key="StructureDefinition-organization-deqm" name="DEQM Organization Profile"/>
+<artifact deprecated="true" id="StructureDefinition/extension-populationReference" key="StructureDefinition-extension-populationReference" name="DEQM Population Reference Extension"/>
+<artifact deprecated="true" id="StructureDefinition/practitioner-deqm" key="StructureDefinition-practitioner-deqm" name="DEQM Practitioner Profile"/>
+<artifact deprecated="true" id="StructureDefinition/extension-reporterGroup" key="StructureDefinition-extension-reporterGroup" name="DEQM Reporter Group Extension"/>
+<artifact deprecated="true" id="StructureDefinition/extension-reportingVendor" key="StructureDefinition-extension-reportingVendor" name="DEQM Reporting Vendor Extension"/>
+<artifact deprecated="true" id="Device/deqm-software-system-example" key="Device-deqm-software-system-example" name="DEQM Software System Example"/>
+<artifact deprecated="true" id="StructureDefinition/extension-submitDataUpdateType" key="StructureDefinition-extension-submitDataUpdateType" name="DEQM Submit Data Update Type Extension"/>
+<artifact deprecated="true" id="StructureDefinition/summary-measurereport-deqm" key="StructureDefinition-summary-measurereport-deqm" name="DEQM Summary MeasureReport Profile"/>
+<artifact deprecated="true" id="CodeSystem/update-type" key="CodeSystem-update-type" name="DEQM Update Type Code System"/>
+<artifact deprecated="true" id="ValueSet/update-type" key="ValueSet-update-type" name="DEQM Update Type Value Set"/>
+<artifact deprecated="true" id="Observation/DNA-occultblood" key="Observation-DNA-occultblood" name="DNA Occult Blood"/>
+<artifact deprecated="true" id="MeasureReport/datax-measurereport01" key="MeasureReport-datax-measurereport01" name="Datax Measurereport01"/>
+<artifact deprecated="true" id="MeasureReport/datax-measurereport02" key="MeasureReport-datax-measurereport02" name="Datax Measurereport02"/>
+<artifact deprecated="true" id="MeasureReport/datax-measurereport03" key="MeasureReport-datax-measurereport03" name="Datax Measurereport03"/>
+<artifact id="StructureDefinition/elementdefinition-date-format" key="StructureDefinition-elementdefinition-date-format" name="Date Format String"/>
+<artifact id="StructureDefinition/elementdefinition-date-rules" key="StructureDefinition-elementdefinition-date-rules" name="Date Validation Rules control"/>
+<artifact id="StructureDefinition/implementationguide-resource-uri" key="StructureDefinition-implementationguide-resource-uri" name="Defined Uri"/>
+<artifact deprecated="true" id="Encounter/encounter01" key="Encounter-encounter01" name="Encounter01"/>
+<artifact deprecated="true" id="Encounter/encounter02" key="Encounter-encounter02" name="Encounter02"/>
+<artifact deprecated="true" id="Encounter/encounter03" key="Encounter-encounter03" name="Encounter03"/>
+<artifact deprecated="true" key="ExampleScenario" name="ExampleScenario"/>
+<artifact id="CodeSystem/extension-style" key="CodeSystem-extension-style" name="Extension Style Codes"/>
+<artifact id="StructureDefinition/extension-style" key="StructureDefinition-extension-style" name="Extension Style Extension"/>
+<artifact id="ValueSet/extension-style" key="ValueSet-extension-style" name="Extension Style ValueSet"/>
+<artifact deprecated="true" id="Bundle/single-gaps-closed-indv-report01" key="Bundle-single-gaps-closed-indv-report01" name="Gaps Bundle Closed Individual MeasureReport01"/>
+<artifact deprecated="true" id="Bundle/single-gaps-closed-indv-report02" key="Bundle-single-gaps-closed-indv-report02" name="Gaps Bundle Closed Individual MeasureReport02"/>
+<artifact deprecated="true" id="Bundle/single-gaps-open-indv-report01" key="Bundle-single-gaps-open-indv-report01" name="Gaps Bundle Open Individual MeasureReports"/>
+<artifact deprecated="true" id="Composition/gaps-composition01" key="Composition-gaps-composition01" name="Gaps Composition01"/>
+<artifact deprecated="true" id="Composition/gaps-composition02" key="Composition-gaps-composition02" name="Gaps Composition02"/>
+<artifact deprecated="true" id="Composition/gaps-composition03" key="Composition-gaps-composition03" name="Gaps Composition03"/>
+<artifact deprecated="true" id="DetectedIssue/gaps-detectedissue01" key="DetectedIssue-gaps-detectedissue01" name="Gaps DetectedIssue01"/>
+<artifact deprecated="true" id="DetectedIssue/gaps-detectedissue02" key="DetectedIssue-gaps-detectedissue02" name="Gaps DetectedIssue02"/>
+<artifact deprecated="true" id="DetectedIssue/gaps-detectedissue03" key="DetectedIssue-gaps-detectedissue03" name="Gaps DetectedIssue03"/>
+<artifact deprecated="true" id="DetectedIssue/gaps-detectedissue04" key="DetectedIssue-gaps-detectedissue04" name="Gaps DetectedIssue04"/>
+<artifact deprecated="true" id="DetectedIssue/gaps-detectedissue05" key="DetectedIssue-gaps-detectedissue05" name="Gaps DetectedIssue05"/>
+<artifact deprecated="true" id="Encounter/gaps-encounter01" key="Encounter-gaps-encounter01" name="Gaps Encounter01"/>
+<artifact deprecated="true" id="Encounter/gaps-encounter02" key="Encounter-gaps-encounter02" name="Gaps Encounter02"/>
+<artifact deprecated="true" id="Encounter/gaps-encounter03" key="Encounter-gaps-encounter03" name="Gaps Encounter03"/>
+<artifact deprecated="true" id="Group/gaps-subject-group01" key="Group-gaps-subject-group01" name="Gaps Group01 subject"/>
+<artifact deprecated="true" id="CapabilityStatement/gic-client" key="CapabilityStatement-gic-client" name="Gaps In Care Client CapabilityStatement"/>
+<artifact deprecated="true" id="CapabilityStatement/gic-server" key="CapabilityStatement-gic-server" name="Gaps In Care Server CapabilityStatement"/>
+<artifact deprecated="true" id="MeasureReport/gaps-indv-measurereport01" key="MeasureReport-gaps-indv-measurereport01" name="Gaps Individual MeasureReport01"/>
+<artifact deprecated="true" id="MeasureReport/gaps-indv-measurereport02" key="MeasureReport-gaps-indv-measurereport02" name="Gaps Individual MeasureReport02"/>
+<artifact deprecated="true" id="MeasureReport/gaps-indv-measurereport03" key="MeasureReport-gaps-indv-measurereport03" name="Gaps Individual MeasureReport03"/>
+<artifact deprecated="true" id="MeasureReport/gaps-indv-measurereport04" key="MeasureReport-gaps-indv-measurereport04" name="Gaps Individual MeasureReport04"/>
+<artifact deprecated="true" id="Parameters/multiple-gaps-indv-report01" key="Parameters-multiple-gaps-indv-report01" name="Gaps Multiple Parameters Individual MeasureReports01"/>
+<artifact deprecated="true" id="Parameters/multiple-gaps-indv-report02" key="Parameters-multiple-gaps-indv-report02" name="Gaps Multiple Parameters Individual MeasureReports02"/>
+<artifact deprecated="true" id="Parameters/single-gaps-closed-indv-report01" key="Parameters-single-gaps-closed-indv-report01" name="Gaps Parameters Closed Individual MeasureReport01"/>
+<artifact deprecated="true" id="Parameters/single-gaps-closed-indv-report02" key="Parameters-single-gaps-closed-indv-report02" name="Gaps Parameters Closed Individual MeasureReport02"/>
+<artifact deprecated="true" id="Parameters/single-gaps-open-indv-report01" key="Parameters-single-gaps-open-indv-report01" name="Gaps Parameters Open Individual MeasureReports"/>
+<artifact deprecated="true" id="Patient/gaps-patient01" key="Patient-gaps-patient01" name="Gaps Patient01"/>
+<artifact deprecated="true" id="Patient/gaps-patient02" key="Patient-gaps-patient02" name="Gaps Patient02"/>
+<artifact deprecated="true" id="Procedure/gaps-procedure01" key="Procedure-gaps-procedure01" name="Gaps Procedure01"/>
+<artifact deprecated="true" id="Procedure/gaps-procedure02" key="Procedure-gaps-procedure02" name="Gaps Procedure02"/>
+<artifact deprecated="true" id="Organization/gaps-organization-reportingvendor" key="Organization-gaps-organization-reportingvendor" name="Gaps Reporting Vendor Organization"/>
+<artifact deprecated="true" id="Group/group01" key="Group-group01" name="Group01"/>
+<artifact id="StructureDefinition/implementationguide-dependency-comment" key="StructureDefinition-implementationguide-dependency-comment" name="IG Dependency Comment"/>
+<artifact id="StructureDefinition/ig-internal-dependency" key="StructureDefinition-ig-internal-dependency" name="IG Internal Dependency"/>
+<artifact id="StructureDefinition/ig-link-dependency" key="StructureDefinition-ig-link-dependency" name="IG Link Dependency"/>
+<artifact id="StructureDefinition/ig-page-name" key="StructureDefinition-ig-page-name" name="IG Page Name"/>
+<artifact id="StructureDefinition/ig-parameter" key="StructureDefinition-ig-parameter" name="IG Parameter"/>
+<artifact id="CodeSystem/ig-parameters" key="CodeSystem-ig-parameters" name="IG Parameter Codes"/>
+<artifact id="StructureDefinition/igpublisher-bundle" key="StructureDefinition-igpublisher-bundle" name="IG Publisher Bundle"/>
+<artifact id="CodeSystem/id-expectation" key="CodeSystem-id-expectation" name="Id Expectation Codes"/>
+<artifact id="StructureDefinition/id-expectation" key="StructureDefinition-id-expectation" name="Id Expectation Extension"/>
+<artifact id="ValueSet/id-expectation" key="ValueSet-id-expectation" name="Id Expectation Set"/>
+<artifact id="StructureDefinition/implied-string-prefix" key="StructureDefinition-implied-string-prefix" name="Implied String Prefix"/>
+<artifact deprecated="true" id="MeasureReport/indv-measurereport01" key="MeasureReport-indv-measurereport01" name="Indv Measurereport01"/>
+<artifact deprecated="true" id="MeasureReport/indv-measurereport02" key="MeasureReport-indv-measurereport02" name="Indv Measurereport02"/>
+<artifact deprecated="true" id="MeasureReport/indv-measurereport03" key="MeasureReport-indv-measurereport03" name="Indv Measurereport03"/>
+<artifact deprecated="true" id="MeasureReport/indv-measurreport-stratification-example" key="MeasureReport-indv-measurreport-stratification-example" name="Indv Measurreport Stratification Example"/>
+<artifact id="StructureDefinition/inherit-obligations" key="StructureDefinition-inherit-obligations" name="Inherit Obligations"/>
+<artifact id="CodeSystem/json-empty-behavior" key="CodeSystem-json-empty-behavior" name="Json Empty Behavior Codes"/>
+<artifact id="ValueSet/json-empty-behavior" key="ValueSet-json-empty-behavior" name="Json Empty Behavior Codes Value Set"/>
+<artifact id="StructureDefinition/json-empty-behavior" key="StructureDefinition-json-empty-behavior" name="Json Empty Behavior Extension"/>
+<artifact id="StructureDefinition/json-nullable" key="StructureDefinition-json-nullable" name="Json Nullable Extension"/>
+<artifact id="StructureDefinition/json-primitive-choice" key="StructureDefinition-json-primitive-choice" name="Json Primitive Choice Extension"/>
+<artifact id="StructureDefinition/json-property-key" key="StructureDefinition-json-property-key" name="Json Property Key Extension"/>
+<artifact id="StructureDefinition/json-name" key="StructureDefinition-json-name" name="Json Property Name Extension"/>
+<artifact deprecated="true" id="Library/library-exm124-example" key="Library-library-exm124-example" name="Library Cervical Cancer Screening (EXM124)"/>
+<artifact deprecated="true" id="Library/library-exm130-example" key="Library-library-exm130-example" name="Library Colorectal Cancer Screening (EXM130)"/>
+<artifact deprecated="true" id="Library/library-mrp-example" key="Library-library-mrp-example" name="Library Mrp Example"/>
+<artifact deprecated="true" id="Location/location01" key="Location-location01" name="Location01"/>
+<artifact deprecated="true" id="Location/location02" key="Location-location02" name="Location02"/>
+<artifact deprecated="true" id="Location/location03" key="Location-location03" name="Location03"/>
+<artifact id="StructureDefinition/logical-container" key="StructureDefinition-logical-container" name="Logical Container"/>
+<artifact id="StructureDefinition/logical-target" key="StructureDefinition-logical-target" name="Logical Target"/>
+<artifact deprecated="true" id="Measure/measure-exm124-example" key="Measure-measure-exm124-example" name="Measure Cervical Cancer Screening (EXM124)"/>
+<artifact deprecated="true" id="Measure/measure-exm130-example" key="Measure-measure-exm130-example" name="Measure Colorectal Cancer Screening (EXM130)"/>
+<artifact deprecated="true" id="Measure/date-of-last-power-outage" key="Measure-date-of-last-power-outage" name="Measure Date of Last Power Outage"/>
+<artifact deprecated="true" id="Measure/measure-mrp-example" key="Measure-measure-mrp-example" name="Measure Mrp Example"/>
+<artifact deprecated="true" key="MeasureReport" name="MeasureReport"/>
+<artifact deprecated="true" id="Parameters/mrp-submit-obs" key="Parameters-mrp-submit-obs" name="Mrp Submit Obs"/>
+<artifact deprecated="true" id="Parameters/mrp-submit-task" key="Parameters-mrp-submit-task" name="Mrp Submit Task"/>
+<artifact deprecated="true" id="Bundle/multiple-indv-mrp-obs-report" key="Bundle-multiple-indv-mrp-obs-report" name="Multiple Indv Mrp Obs Report"/>
+<artifact deprecated="true" id="Bundle/multiple-indv-mrp-task-report" key="Bundle-multiple-indv-mrp-task-report" name="Multiple Indv Mrp Task Report"/>
+<artifact deprecated="true" id="Bundle/multiple-summ-report" key="Bundle-multiple-summ-report" name="Multiple Summ Report"/>
+<artifact id="StructureDefinition/xml-namespace" key="StructureDefinition-xml-namespace" name="Namespace"/>
+<artifact id="StructureDefinition/no-binding" key="StructureDefinition-no-binding" name="No Binding Extension"/>
+<artifact id="StructureDefinition/obligation-profile" key="StructureDefinition-obligation-profile" name="Obligation Profile Flag"/>
+<artifact deprecated="true" id="Observation/observation01" key="Observation-observation01" name="Observation01"/>
+<artifact deprecated="true" id="Observation/observation02" key="Observation-observation02" name="Observation02"/>
+<artifact deprecated="true" id="Observation/observation03" key="Observation-observation03" name="Observation03"/>
+<artifact deprecated="true" key="Organization" name="Organization"/>
+<artifact deprecated="true" id="Organization/organization01" key="Organization-organization01" name="Organization01"/>
+<artifact deprecated="true" id="Organization/organization02" key="Organization-organization02" name="Organization02"/>
+<artifact deprecated="true" id="Organization/organization03" key="Organization-organization03" name="Organization03"/>
+<artifact deprecated="true" id="Organization/organization04" key="Organization-organization04" name="Organization04"/>
+<artifact id="StructureDefinition/package-scope" key="StructureDefinition-package-scope" name="Package Scope"/>
+<artifact deprecated="true" id="Patient/patient01" key="Patient-patient01" name="Patient01"/>
+<artifact deprecated="true" id="Patient/patient02" key="Patient-patient02" name="Patient02"/>
+<artifact deprecated="true" id="Patient/patient03" key="Patient-patient03" name="Patient03"/>
+<artifact deprecated="true" key="Practitioner" name="Practitioner"/>
+<artifact deprecated="true" id="Practitioner/practitioner01" key="Practitioner-practitioner01" name="Practitioner01"/>
+<artifact deprecated="true" id="Practitioner/practitioner02" key="Practitioner-practitioner02" name="Practitioner02"/>
+<artifact deprecated="true" id="Practitioner/practitioner03" key="Practitioner-practitioner03" name="Practitioner03"/>
+<artifact deprecated="true" id="CapabilityStatement/producer-client" key="CapabilityStatement-producer-client" name="Producer Client CapabilityStatement"/>
+<artifact deprecated="true" id="CapabilityStatement/producer-server" key="CapabilityStatement-producer-server" name="Producer Server CapabilityStatement"/>
+<artifact id="StructureDefinition/profile-mapping" key="StructureDefinition-profile-mapping" name="Profile Mapping Extension"/>
+<artifact deprecated="true" id="CapabilityStatement/receiver-server" key="CapabilityStatement-receiver-server" name="Receiver Server CapabilityStatement"/>
+<artifact deprecated="true" id="CapabilityStatement/reporter-client" key="CapabilityStatement-reporter-client" name="Reporter Client CapabilityStatement"/>
+<artifact id="StructureDefinition/implementationguide-resource-fragment" key="StructureDefinition-implementationguide-resource-fragment" name="Resource Fragment"/>
+<artifact id="StructureDefinition/resource-sort" key="StructureDefinition-resource-sort" name="Resource Sort Extension"/>
+<artifact id="StructureDefinition/searchparameter-base-type" key="StructureDefinition-searchparameter-base-type" name="Search Parameter Base Type"/>
+<artifact id="StructureDefinition/select-by-map" key="StructureDefinition-select-by-map" name="Select By Map"/>
+<artifact id="ValueSet/select-by-map-filter" key="ValueSet-select-by-map-filter" name="SelectByMap Filter Codes (VS)"/>
+<artifact deprecated="true" id="Bundle/single-indv-col-obs-report" key="Bundle-single-indv-col-obs-report" name="Single Indv Col Obs Report"/>
+<artifact deprecated="true" id="Bundle/single-indv-mrp-obs-report" key="Bundle-single-indv-mrp-obs-report" name="Single Indv Mrp Obs Report"/>
+<artifact deprecated="true" id="Bundle/single-indv-mrp-task-report" key="Bundle-single-indv-mrp-task-report" name="Single Indv Mrp Task Report"/>
+<artifact deprecated="true" id="Bundle/single-indv-vte-report-option1" key="Bundle-single-indv-vte-report-option1" name="Single Indv Vte Report Option 1"/>
+<artifact deprecated="true" id="Bundle/single-indv-vte-report-option7" key="Bundle-single-indv-vte-report-option7" name="Single Indv Vte Report Option 7"/>
+<artifact deprecated="true" id="MeasureReport/summ-measurereport01" key="MeasureReport-summ-measurereport01" name="Summ Measurereport01"/>
+<artifact deprecated="true" id="MeasureReport/summ-measurereport02" key="MeasureReport-summ-measurereport02" name="Summ Measurereport02"/>
+<artifact deprecated="true" id="MeasureReport/summ-medicare-stratification-example" key="MeasureReport-summ-medicare-stratification-example" name="Summ Medicare Stratification Example"/>
+<artifact deprecated="true" id="MeasureReport/date-of-last-power-outage" key="MeasureReport-date-of-last-power-outage" name="Summary MeasureReport Date of Last Power Outage"/>
+<artifact deprecated="true" id="Task/task01" key="Task-task01" name="Task01"/>
+<artifact deprecated="true" id="Task/task02" key="Task-task02" name="Task02"/>
+<artifact deprecated="true" id="Task/task03" key="Task-task03" name="Task03"/>
+<artifact id="StructureDefinition/elementdefinition-binding-style" key="StructureDefinition-elementdefinition-binding-style" name="Terminology Binding Style Extension"/>
+<artifact id="CodeSystem/tx-issue-type" key="CodeSystem-tx-issue-type" name="Terminology Issue Type"/>
+<artifact id="StructureDefinition/type-specifier" key="StructureDefinition-type-specifier" name="Type Specifier Extension"/>
+<artifact id="StructureDefinition/valueset-expansion-parameter" key="StructureDefinition-valueset-expansion-parameter" name="ValueSet Expansion Parameter"/>
+<artifact id="CodeSystem/binding-style" key="CodeSystem-binding-style" name="Vocab Binding Style Codes"/>
+<artifact id="ValueSet/binding-style" key="ValueSet-binding-style" name="Vocab Binding Style ValueSet"/>
+<artifact id="StructureDefinition/web-source" key="StructureDefinition-web-source" name="Web Source"/>
+<artifact id="StructureDefinition/xml-choice-group" key="StructureDefinition-xml-choice-group" name="XML Choice Group"/>
+<artifact id="StructureDefinition/xml-name" key="StructureDefinition-xml-name" name="Xml Element Name Extension"/>
+<artifact id="ValueSet/ig-parameters" key="ValueSet-ig-parameters" name="ig-parameters Codes ValueSet"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page deprecated="true" key="all-examples" name="All Examples"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="binary" name="Binary Support"/>
+<page deprecated="true" key="capstatements" name="Capability Statements"/>
+<page deprecated="true" key="change-notes" name="Change Notes"/>
+<page deprecated="true" key="col" name="Colorectal Cancer Screening (COL)"/>
+<page deprecated="true" key="datax" name="Data Exchange"/>
+<page deprecated="true" key="downloads" name="Downloads"/>
+<page deprecated="true" key="usecases" name="Example Use Cases"/>
+<page key="format-extensions" name="Format Extensions"/>
+<page deprecated="true" key="framework" name="Framework"/>
+<page deprecated="true" key="gaps-examples" name="Gaps in Care Example Use Cases"/>
+<page deprecated="true" key="gaps-in-care-reporting" name="Gaps in Care Reporting"/>
+<page deprecated="true" key="guidance" name="General Guidance"/>
+<page key="index" name="Home Page"/>
+<page deprecated="true" key="indv-reporting" name="Individual Reporting"/>
+<page deprecated="true" key="mrp" name="Medication Reconciliation Post-Discharge (MRP)"/>
+<page deprecated="true" key="operations" name="Operations"/>
+<page key="other" name="Other Information"/>
+<page key="page-factories" name="Page Factories"/>
+<page deprecated="true" key="profiles" name="Profiles and Extensions"/>
+<page deprecated="true" key="summary-reporting" name="Summary Reporting"/>
+<page key="toc" name="Table of Contents"/>
+<page deprecated="true" key="terminology" name="Terminology"/>
+<page deprecated="true" key="vte1" name="Venous Thromboembolism Prophylaxis (VTE-1)"/>
+<page deprecated="true" key="history" name="history"/>
+</specification>

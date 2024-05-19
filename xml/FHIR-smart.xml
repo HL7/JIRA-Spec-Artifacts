@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/smart-app-launch/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/smart-app-launch" defaultVersion="2.1.0" defaultWorkgroup="fhir-i" gitUrl="https://github.com/HL7/smart-app-launch" url="http://hl7.org/fhir/smart-app-launch">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/smart-app-launch/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/smart-app-launch" defaultVersion="2.2.0" defaultWorkgroup="fhir-i" gitUrl="https://github.com/HL7/smart-app-launch" url="http://hl7.org/fhir/smart-app-launch">
 <version code="current" url="http://build.fhir.org/ig/HL7/smart-app-launch"/>
+<version code="2.2.0" url="http://hl7.org/fhir/smart-app-launch/STU2.2"/>
 <version code="2.2.0-ballot" url="http://hl7.org/fhir/smart-app-launch/2024Jan"/>
 <version code="2.1.0" url="http://hl7.org/fhir/smart-app-launch/STU2.1"/>
 <version code="2.1.0-ballot" url="http://hl7.org/fhir/smart-app-launch/2023Jan"/>
@@ -16,17 +17,17 @@
 <artifact id="ValueSet/smart-launch-info" key="ValueSet-smart-launch-info" name="Codes for tasks to application launches"/>
 <artifact id="Bundle/example3" key="Bundle-example3" name="Different EHRs for different sub-populations displayed in a unified card"/>
 <artifact id="Basic/app-state" key="Basic-app-state" name="Example App State"/>
-<artifact id="Organization/example" key="Organization-example" name="Example Brand"/>
-<artifact id="Endpoint/example" key="Endpoint-example" name="Example Endpoint"/>
+<artifact deprecated="true" id="Organization/example" key="Organization-example" name="Example Brand"/>
+<artifact deprecated="true" id="Endpoint/example" key="Endpoint-example" name="Example Endpoint"/>
 <artifact id="Task/task-for-ehr-launch" key="Task-task-for-ehr-launch" name="Example Task for EHR Launch"/>
 <artifact id="Task/task-for-standalone-launch" key="Task-task-for-standalone-launch" name="Example Task for Standalone Launch"/>
 <artifact id="Bundle/example1" key="Bundle-example1" name="Lab with Locations Nationwide"/>
 <artifact id="ValueSet/smart-launch-types" key="ValueSet-smart-launch-types" name="Launch Types for tasks to application launches"/>
-<artifact id="StructureDefinition/patient-access-brand" key="StructureDefinition-patient-access-brand" name="Patient Access Brand (Organization) Profile"/>
-<artifact id="StructureDefinition/patient-access-brands-bundle" key="StructureDefinition-patient-access-brands-bundle" name="Patient Access Brands Bundle Profile"/>
-<artifact id="CodeSystem/patient-access-category" key="CodeSystem-patient-access-category" name="Patient Access Category Code System"/>
-<artifact id="ValueSet/patient-access-category" key="ValueSet-patient-access-category" name="Patient Access Category Value Set"/>
-<artifact id="StructureDefinition/patient-access-endpoint" key="StructureDefinition-patient-access-endpoint" name="Patient Access Endpoint Profile"/>
+<artifact deprecated="true" id="StructureDefinition/patient-access-brand" key="StructureDefinition-patient-access-brand" name="Patient Access Brand (Organization) Profile"/>
+<artifact deprecated="true" id="StructureDefinition/patient-access-brands-bundle" key="StructureDefinition-patient-access-brands-bundle" name="Patient Access Brands Bundle Profile"/>
+<artifact deprecated="true" id="CodeSystem/patient-access-category" key="CodeSystem-patient-access-category" name="Patient Access Category Code System"/>
+<artifact deprecated="true" id="ValueSet/patient-access-category" key="ValueSet-patient-access-category" name="Patient Access Category Value Set"/>
+<artifact deprecated="true" id="StructureDefinition/patient-access-endpoint" key="StructureDefinition-patient-access-endpoint" name="Patient Access Endpoint Profile"/>
 <artifact id="Bundle/example2" key="Bundle-example2" name="Regional Health System With Independently Branded Affiliates"/>
 <artifact id="StructureDefinition/smart-app-state-basic" key="StructureDefinition-smart-app-state-basic" name="SMART App State"/>
 <artifact deprecated="true" id="StructureDefinition/oauth-uris" key="StructureDefinition-oauth-uris" name="SMART on FHIR Oauth URIs"/>
@@ -34,6 +35,10 @@
 <artifact id="StructureDefinition/task-ehr-launch" key="StructureDefinition-task-ehr-launch" name="TaskEhrLaunch"/>
 <artifact id="StructureDefinition/task-standalone-launch" key="StructureDefinition-task-standalone-launch" name="TaskStandaloneLaunch"/>
 <artifact id="Bundle/example4" key="Bundle-example4" name="Two co-equal brands"/>
+<artifact id="StructureDefinition/user-access-brand" key="StructureDefinition-user-access-brand" name="User Access Brand (Organization) Profile"/>
+<artifact id="StructureDefinition/user-access-brands-bundle" key="StructureDefinition-user-access-brands-bundle" name="User Access Brands Bundle Profile"/>
+<artifact id="ValueSet/user-access-category" key="ValueSet-user-access-category" name="User Access Category Value Set"/>
+<artifact id="StructureDefinition/user-access-endpoint" key="StructureDefinition-user-access-endpoint" name="User Access Endpoint Profile"/>
 <artifact deprecated="true" id="CapabilityStatement/smart-app-launch-example" key="CapabilityStatement-smart-app-launch-example" name="smart-app-launch-example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
@@ -61,12 +66,12 @@
 <page deprecated="true" key="example-request-token-post" name="Example Request Token Post"/>
 <page key="examples" name="Examples"/>
 <page key="index" name="Overview"/>
-<page key="example-brands" name="Patient-Access Brand Examples"/>
-<page key="brands" name="Patient-Access Brands and Endpoints"/>
 <page key="app-state" name="Persisting App State (Experimental)"/>
 <page key="references" name="References"/>
 <page key="toc" name="Table of Contents"/>
 <page key="task-launch" name="Task profile for requesting SMART launch (Experimental)"/>
 <page key="token-introspection" name="Token Introspection"/>
+<page key="example-brands" name="User-access Brand Examples"/>
+<page key="brands" name="User-access Brands and Endpoints"/>
 <page deprecated="true" key="smart-app-launch" name="smart-app-launch" url="smart-app-launch"/>
 </specification>
