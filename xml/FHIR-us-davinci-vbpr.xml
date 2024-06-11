@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-vbpr/2023Sep" ciUrl="https://build.fhir.org/ig/HL7/davinci-vbpr" defaultVersion="1.0.0-ballot" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/davinci-vbpr" url="http://hl7.org/fhir/us/davinci-vbpr">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-vbpr/2023Sep" ciUrl="https://build.fhir.org/ig/HL7/davinci-vbpr" defaultVersion="1.0.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/davinci-vbpr" url="http://hl7.org/fhir/us/davinci-vbpr">
 <version code="current" url="https://build.fhir.org/ig/HL7/davinci-vbpr"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/davinci-vbpr/STU1"/>
 <version code="1.0.0-ballot" url="http://hl7.org/fhir/us/davinci-vbpr/2023Sep"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -9,6 +10,9 @@
 <artifact id="StructureDefinition/baseline" key="StructureDefinition-baseline" name="Baseline"/>
 <artifact id="ValueSet/vbp-cohort" key="ValueSet-vbp-cohort" name="Cohort"/>
 <artifact id="CodeSystem/vbp-cohort" key="CodeSystem-vbp-cohort" name="Cohort Codes"/>
+<artifact id="StructureDefinition/contractual-status" key="StructureDefinition-contractual-status" name="Contractual Status"/>
+<artifact id="Measure/vbp-measure02" key="Measure-vbp-measure02" name="Example Value-Based Contract - ABC Payer and EveryHospital"/>
+<artifact id="Measure/vbp-measure01" key="Measure-vbp-measure01" name="Example Value-Based Contract - ABC Payer and GoodHealth"/>
 <artifact id="StructureDefinition/group-reference" key="StructureDefinition-group-reference" name="Group Reference"/>
 <artifact id="ValueSet/hcplan-framework" key="ValueSet-hcplan-framework" name="HCPLAN Framework Categories"/>
 <artifact id="CodeSystem/hcplan-framework" key="CodeSystem-hcplan-framework" name="HCPLAN Framework Categories Codes"/>
@@ -16,6 +20,8 @@
 <artifact id="CodeSystem/vbp-incentive" key="CodeSystem-vbp-incentive" name="Incentive Payment Codes"/>
 <artifact id="StructureDefinition/lob" key="StructureDefinition-lob" name="Line of Business"/>
 <artifact id="ValueSet/lob" key="ValueSet-lob" name="Line of Business Value Set"/>
+<artifact id="ValueSet/measure-contractual-status" key="ValueSet-measure-contractual-status" name="Measure Contractual Status"/>
+<artifact id="CodeSystem/measure-contractual-status" key="CodeSystem-measure-contractual-status" name="Measure Contractual Status Codes"/>
 <artifact id="ValueSet/measure-stratifier-example" key="ValueSet-measure-stratifier-example" name="Measure Stratifier Example"/>
 <artifact id="CodeSystem/measure-stratifier-example" key="CodeSystem-measure-stratifier-example" name="Measure Stratifier Example Codes"/>
 <artifact id="StructureDefinition/organization-subject" key="StructureDefinition-organization-subject" name="Organization Subject"/>
@@ -38,6 +44,7 @@
 <artifact id="StructureDefinition/vbp-measure" key="StructureDefinition-vbp-measure" name="Value-Based Performance Measure"/>
 <artifact id="CodeSystem/vbp-measure-population" key="CodeSystem-vbp-measure-population" name="Value-Based Performance Measure Population Type Codes"/>
 <artifact id="StructureDefinition/vbp-performance-measurereport" key="StructureDefinition-vbp-performance-measurereport" name="Value-Based Performance MeasureReport"/>
+<artifact id="SearchParameter/measurereport-category" key="SearchParameter-measurereport-category" name="measurereport-category"/>
 <artifact id="SearchParameter/measurereport-subject-organization" key="SearchParameter-measurereport-subject-organization" name="measurereport-subject-organization"/>
 <artifact id="MeasureReport/quality-measurereport01" key="MeasureReport-quality-measurereport01" name="quality-measurereport01"/>
 <artifact id="MeasureReport/quality-measurereport02" key="MeasureReport-quality-measurereport02" name="quality-measurereport02"/>
@@ -63,8 +70,6 @@
 <artifact id="MeasureReport/quality-measurereport31" key="MeasureReport-quality-measurereport31" name="quality-measurereport31"/>
 <artifact id="MeasureReport/quality-measurereport32" key="MeasureReport-quality-measurereport32" name="quality-measurereport32"/>
 <artifact id="MeasureReport/quality-measurereport33" key="MeasureReport-quality-measurereport33" name="quality-measurereport33"/>
-<artifact id="Measure/vbp-measure01" key="Measure-vbp-measure01" name="vbp-measure01"/>
-<artifact id="Measure/vbp-measure02" key="Measure-vbp-measure02" name="vbp-measure02"/>
 <artifact id="MeasureReport/vbp-measurereport101" key="MeasureReport-vbp-measurereport101" name="vbp-measurereport101"/>
 <artifact id="MeasureReport/vbp-measurereport102" key="MeasureReport-vbp-measurereport102" name="vbp-measurereport102"/>
 <artifact id="MeasureReport/vbp-measurereport103" key="MeasureReport-vbp-measurereport103" name="vbp-measurereport103"/>
