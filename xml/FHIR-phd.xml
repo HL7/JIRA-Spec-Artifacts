@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/phd/2019May" ciUrl="https://build.fhir.org/ig/HL7/phd" defaultVersion="1.0.0" defaultWorkgroup="dev" gitUrl="https://github.com/HL7/PHD" url="http://hl7.org/fhir/uv/phd">
-<version code="current" url="https://build.fhir.org/ig/HL7/phd"/>
-<version code="1.0.0" url="http://hl7.org/fhir/uv/phd/STU1"/>
-<version code="0.3.0" url="http://hl7.org/fhir/uv/phd/2019May"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/phd/2019May" ciUrl="http://build.fhir.org/ig/HL7/phd" defaultVersion="1.1.0" defaultWorkgroup="dev" gitUrl="https://github.com/HL7/PHD" url="http://hl7.org/fhir/uv/phd">
+<version code="current" url="http://build.fhir.org/ig/HL7/phd"/>
+<version code="1.1.0" url="http://hl7.org/fhir/uv/phd/STU1.1"/>
+<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/uv/phd/STU1"/>
+<version code="0.3.0" deprecated="true" url="http://hl7.org/fhir/uv/phd/2019May"/>
 <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/uv/phd/2019Jan"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/uv/phd/2018Jan"/>
 <version code="0.1" deprecated="true" url="http://hl7.org/fhir/uv/phd/2018Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -16,6 +18,9 @@
 <artifact id="CodeSystem/ContinuaHFS" key="CodeSystem-ContinuaHFS" name="ContinuaHFS"/>
 <artifact id="CodeSystem/ContinuaPHD" key="CodeSystem-ContinuaPHD" name="ContinuaPHD"/>
 <artifact deprecated="true" key="Device" name="Device"/>
+<artifact id="ValueSet/DeviceSystemIdIdentifier" key="ValueSet-DeviceSystemIdIdentifier" name="Device System Id Identifier"/>
+<artifact id="ValueSet/DeviceTransportIdentifiers" key="ValueSet-DeviceTransportIdentifiers" name="Device Transport Address Identifiers"/>
+<artifact id="ValueSet/DeviceTypes11073MDC" key="ValueSet-DeviceTypes11073MDC" name="Device Type Specialization IEEE 11073-10101 Nomenclature Codes"/>
 <artifact id="Bundle/bundle-continuousnonin" key="Bundle-bundle-continuousnonin" name="Example Bundled upload"/>
 <artifact id="Observation/bloodPress-1.0.1" key="Observation-bloodPress-1.0.1" name="Example of Compound measurement"/>
 <artifact id="Device/phd-74E8FFFEFF051C00.001C05FFE874" key="Device-phd-74E8FFFEFF051C00.001C05FFE874" name="Example of PHD Device"/>
@@ -34,8 +39,9 @@
 <artifact id="Observation/spotnumeric-1.0.0.3" key="Observation-spotnumeric-1.0.0.3" name="Example of a numeric."/>
 <artifact id="Observation/rtsa-1234" key="Observation-rtsa-1234" name="Example of an Rtsa."/>
 <artifact id="Observation/glucose-1.0.0.4" key="Observation-glucose-1.0.0.4" name="Example of coded enumeration"/>
+<artifact id="ValueSet/MDCobject" key="ValueSet-MDCobject" name="IEEE 11073 MDC Object infrastructure and Device nomenclature"/>
 <artifact id="ValueSet/MDCnotObject" key="ValueSet-MDCnotObject" name="MDCnotObject"/>
-<artifact id="CodeSystem/measurement-status" key="CodeSystem-measurement-status" name="Measurement status codes"/>
+<artifact deprecated="true" id="CodeSystem/measurement-status" key="CodeSystem-measurement-status" name="Measurement status codes"/>
 <artifact deprecated="true" key="Observation" name="Observation"/>
 <artifact id="StructureDefinition/PhdBaseObservation" key="StructureDefinition-PhdBaseObservation" name="PhdBaseObservation"/>
 <artifact id="StructureDefinition/PhdBitsEnumerationObservation" key="StructureDefinition-PhdBitsEnumerationObservation" name="PhdBitsEnumerationObservation"/>
@@ -44,6 +50,7 @@
 <artifact id="StructureDefinition/PhdCompoundNumericObservation" key="StructureDefinition-PhdCompoundNumericObservation" name="PhdCompoundNumericObservation"/>
 <artifact id="StructureDefinition/PhdDevice" key="StructureDefinition-PhdDevice" name="PhdDevice"/>
 <artifact id="StructureDefinition/PhdNumericObservation" key="StructureDefinition-PhdNumericObservation" name="PhdNumericObservation"/>
+<artifact id="CodeSystem/PhdObservationCategories" key="CodeSystem-PhdObservationCategories" name="PhdObservationCategories"/>
 <artifact id="StructureDefinition/PhdPatient" key="StructureDefinition-PhdPatient" name="PhdPatient"/>
 <artifact id="StructureDefinition/PhdRtsaObservation" key="StructureDefinition-PhdRtsaObservation" name="PhdRtsaObservation"/>
 <artifact id="CapabilityStatement/PhdServerCapabilityStatement" key="CapabilityStatement-PhdServerCapabilityStatement" name="PhdServerCapabilityStatement"/>
@@ -59,6 +66,7 @@
 <page key="ASN1BITsCodeSystem" name="ASN1 BITs Code System"/>
 <page key="ASN1ToHL7Codes" name="ASN1 BITs Codes"/>
 <page key="phgExample" name="Android Gateway example"/>
+<page key="Appendices" name="Appendices"/>
 <page key="artifacts" name="Artifact List"/>
 <page key="Audience" name="Audience"/>
 <page key="BITsDevSensor" name="BITs measurement; Device-Sensor status"/>
@@ -85,7 +93,7 @@
 <page key="MetricAttributesofNoInterest" name="Metric Protocol-Only Attributes"/>
 <page key="NumericNaN" name="NaN Example"/>
 <page key="Nomenclaturecodes" name="Nomenclature codes"/>
-<page key="Non1107320601Devices" name="Non 11073 20601 Devices"/>
+<page key="Non1107320601Devices" name="Non IEEE 11073-20601 Devices"/>
 <page key="ObtainObservationCode" name="Obtaining the Observation Code"/>
 <page key="ObtainUnitCode" name="Obtaining the Unit Code"/>
 <page key="Organization" name="Organization"/>
