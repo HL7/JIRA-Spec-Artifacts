@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/pharm-quality/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/uv-dx-pq" gitUrl="https://github.com/HL7/uv-dx-pq" defaultVersion="1.0.0-ballot" defaultWorkgroup="brr" url="http://hl7.org/fhir/uv/pharm-quality">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/pharm-quality/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/uv-dx-pq" defaultVersion="1.0.0" defaultWorkgroup="brr" gitUrl="https://github.com/HL7/uv-dx-pq" url="http://hl7.org/fhir/uv/pharm-quality">
 <version code="current" url="http://build.fhir.org/ig/HL7/uv-dx-pq"/>
+<version code="1.0.0" url="http://hl7.org/fhir/uv/pharm-quality/STU1"/>
 <version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/pharm-quality/2024Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -9,54 +10,62 @@
 <artifact id="ActivityDefinition/activitydefinition-test-drug-pq-ex1" key="ActivityDefinition-activitydefinition-test-drug-pq-ex1" name="ActivityDefinition - Test - example 1"/>
 <artifact id="ActivityDefinition/LyophilizationAct" key="ActivityDefinition-LyophilizationAct" name="ActivityDefinition - Test - example 2"/>
 <artifact id="ObservationDefinition/Assay" key="ObservationDefinition-Assay" name="Assay"/>
-<artifact id="ValueSet/pqcmc-closure-type-terminology" key="ValueSet-pqcmc-closure-type-terminology" name="Closure Type Terminology"/>
-<artifact id="CodeSystem/cs-batch-designation-local-pq" key="CodeSystem-cs-batch-designation-local-pq" name="CodeSystem - Batch Designation"/>
-<artifact id="CodeSystem/cs-characterizationStep-local-pq" key="CodeSystem-cs-characterizationStep-local-pq" name="CodeSystem - Characterization Step"/>
-<artifact id="CodeSystem/cs-closureTypes-local-pq" key="CodeSystem-cs-closureTypes-local-pq" name="CodeSystem - Closure Types"/>
-<artifact id="CodeSystem/cs-color-local-pq" key="CodeSystem-cs-color-local-pq" name="CodeSystem - Color"/>
-<artifact id="CodeSystem/cs-containerOrientation-local-pq" key="CodeSystem-cs-containerOrientation-local-pq" name="CodeSystem - Container Orientation"/>
-<artifact id="CodeSystem/cs-controlCriticality-local-pq" key="CodeSystem-cs-controlCriticality-local-pq" name="CodeSystem - Control Criticality"/>
-<artifact id="CodeSystem/cs-deviceProperty-local-pq" key="CodeSystem-cs-deviceProperty-local-pq" name="CodeSystem - Device Property"/>
-<artifact id="CodeSystem/cs-deviceType-local-pq" key="CodeSystem-cs-deviceType-local-pq" name="CodeSystem - Device Type"/>
-<artifact id="CodeSystem/cs-diagramType-local-pq" key="CodeSystem-cs-diagramType-local-pq" name="CodeSystem - Diagram Type"/>
-<artifact id="CodeSystem/cs-equipmentClass-local-pq" key="CodeSystem-cs-equipmentClass-local-pq" name="CodeSystem - Equipment Class"/>
-<artifact id="CodeSystem/cs-local-codes-drug-pq" key="CodeSystem-cs-local-codes-drug-pq" name="CodeSystem - Example Local Codes - Drug"/>
-<artifact id="CodeSystem/cs-goalPriority-local-pq" key="CodeSystem-cs-goalPriority-local-pq" name="CodeSystem - Goal Priority"/>
-<artifact id="CodeSystem/cs-grade-local-pq" key="CodeSystem-cs-grade-local-pq" name="CodeSystem - Grade"/>
-<artifact id="CodeSystem/cs-ich-m7-classification-local-pq" key="CodeSystem-cs-ich-m7-classification-local-pq" name="CodeSystem - ICH M7 Classification"/>
-<artifact id="CodeSystem/cs-impurity-origin-local-pq" key="CodeSystem-cs-impurity-origin-local-pq" name="CodeSystem - Impurity Origin"/>
-<artifact id="CodeSystem/cs-impurity-type-local-pq" key="CodeSystem-cs-impurity-type-local-pq" name="CodeSystem - Impurity Type"/>
-<artifact id="CodeSystem/cs-ingredientFunction-local-pq" key="CodeSystem-cs-ingredientFunction-local-pq" name="CodeSystem - Ingredient Function"/>
-<artifact id="CodeSystem/cs-manufactured-item-property-local-pq" key="CodeSystem-cs-manufactured-item-property-local-pq" name="CodeSystem - Manufactured Item Property"/>
-<artifact id="CodeSystem/cs-manufacturingParticipantRole-local-pq" key="CodeSystem-cs-manufacturingParticipantRole-local-pq" name="CodeSystem - Manufacturing Participant Role"/>
-<artifact id="CodeSystem/cs-manufacturingStep-local-pq" key="CodeSystem-cs-manufacturingStep-local-pq" name="CodeSystem - Manufacturing Step"/>
-<artifact id="CodeSystem/cs-manufacturingStepScale-local-pq" key="CodeSystem-cs-manufacturingStepScale-local-pq" name="CodeSystem - Manufacturing Step Scale"/>
-<artifact id="CodeSystem/cs-mutagenicity-local-pq" key="CodeSystem-cs-mutagenicity-local-pq" name="CodeSystem - Mutagenicity"/>
-<artifact id="CodeSystem/cs-mutagenicityClassificationType-local-pq" key="CodeSystem-cs-mutagenicityClassificationType-local-pq" name="CodeSystem - Mutagenicity Classification Type"/>
-<artifact id="CodeSystem/cs-packageProperty-local-pq" key="CodeSystem-cs-packageProperty-local-pq" name="CodeSystem - Package Property"/>
-<artifact id="CodeSystem/cs-planType-local-pq" key="CodeSystem-cs-planType-local-pq" name="CodeSystem - Plan Type"/>
-<artifact id="CodeSystem/cs-processParameter-local-pq" key="CodeSystem-cs-processParameter-local-pq" name="CodeSystem - Process Parameter"/>
-<artifact id="CodeSystem/cs-productNameType-local-pq" key="CodeSystem-cs-productNameType-local-pq" name="CodeSystem - Product Name Type"/>
-<artifact id="CodeSystem/cs-productSiteUtilizationType-local-pq" key="CodeSystem-cs-productSiteUtilizationType-local-pq" name="CodeSystem - Product Site Utilization Type"/>
-<artifact id="CodeSystem/cs-qualifiedValueCriticality-local-pq" key="CodeSystem-cs-qualifiedValueCriticality-local-pq" name="CodeSystem - Qualified Value Criticality"/>
-<artifact id="CodeSystem/cs-reportType-local-pq" key="CodeSystem-cs-reportType-local-pq" name="CodeSystem - Report Type"/>
-<artifact id="CodeSystem/cs-specification-type-local-pq" key="CodeSystem-cs-specification-type-local-pq" name="CodeSystem - Specification Type"/>
-<artifact id="CodeSystem/cs-substance-property-local-pq" key="CodeSystem-cs-substance-property-local-pq" name="CodeSystem - Substance Property"/>
-<artifact id="CodeSystem/cs-substance-property-solubility-local-pq" key="CodeSystem-cs-substance-property-solubility-local-pq" name="CodeSystem - Substance Property Solubility"/>
-<artifact id="CodeSystem/cs-substancePropertyType-local-pq" key="CodeSystem-cs-substancePropertyType-local-pq" name="CodeSystem - Substance Property Type"/>
-<artifact id="CodeSystem/cs-testCategory-local-pq" key="CodeSystem-cs-testCategory-local-pq" name="CodeSystem - Test Category"/>
-<artifact id="CodeSystem/cs-timePointDescription-local-pq" key="CodeSystem-cs-timePointDescription-local-pq" name="CodeSystem - Time Point Description"/>
+<artifact id="ValueSet/vs-batch-designation-pq" key="ValueSet-vs-batch-designation-local-pq" name="Batch Designation"/>
+<artifact id="CodeSystem/batch-designation" key="CodeSystem-cs-batch-designation-local-pq" name="Batch Designation Codes"/>
+<artifact id="StructureDefinition/Bundle-analytical-procedure-pq" key="StructureDefinition-Bundle-analytical-procedure-pq" name="Bundle - Analytical Procedure"/>
+<artifact id="StructureDefinition/Bundle-batch-analysis-pq" key="StructureDefinition-Bundle-batch-analysis-pq" name="Bundle - Batch Analysis"/>
+<artifact id="StructureDefinition/Bundle-batch-formula-pq" key="StructureDefinition-Bundle-batch-formula-pq" name="Bundle - Batch Formula"/>
+<artifact id="StructureDefinition/Bundle-container-closure-system-pq" key="StructureDefinition-Bundle-container-closure-system-pq" name="Bundle - Container Closure System"/>
+<artifact id="StructureDefinition/Bundle-drug-product-pq" key="StructureDefinition-Bundle-drug-product-pq" name="Bundle - Drug Product"/>
+<artifact id="StructureDefinition/Bundle-product-impurities-pq" key="StructureDefinition-Bundle-product-impurities-pq" name="Bundle - Impurities"/>
+<artifact id="StructureDefinition/Bundle-product-manufacturing-pq" key="StructureDefinition-Bundle-product-manufacturing-pq" name="Bundle - Manufacturing"/>
+<artifact id="StructureDefinition/Bundle-organizations-pq" key="StructureDefinition-Bundle-organizations-pq" name="Bundle - Organizations"/>
+<artifact id="StructureDefinition/Bundle-product-process-validation-pq" key="StructureDefinition-Bundle-product-process-validation-pq" name="Bundle - Process Validation"/>
+<artifact id="StructureDefinition/Bundle-drug-product-batch-info-pq" key="StructureDefinition-Bundle-drug-product-batch-info-pq" name="Bundle - Product Batch Information"/>
+<artifact id="StructureDefinition/Bundle-drug-product-compatibility-pq" key="StructureDefinition-Bundle-drug-product-compatibility-pq" name="Bundle - Product Compatibility"/>
+<artifact id="StructureDefinition/Bundle-drug-product-composition-pq" key="StructureDefinition-Bundle-drug-product-composition-pq" name="Bundle - Product Composition"/>
+<artifact id="StructureDefinition/Bundle-drug-product-excipients-pq" key="StructureDefinition-Bundle-drug-product-excipients-pq" name="Bundle - Product Excipients"/>
+<artifact id="StructureDefinition/Bundle-drug-product-microbiological-attributes-pq" key="StructureDefinition-Bundle-drug-product-microbiological-attributes-pq" name="Bundle - Product Microbiological Attributes"/>
+<artifact id="StructureDefinition/Bundle-drug-product-specification-pq" key="StructureDefinition-Bundle-drug-product-specification-pq" name="Bundle - Product Specification"/>
+<artifact id="StructureDefinition/Bundle-drug-reference-standards-pq" key="StructureDefinition-Bundle-drug-reference-standards-pq" name="Bundle - Reference Standards"/>
+<artifact id="StructureDefinition/Bundle-drug-stability-pq" key="StructureDefinition-Bundle-drug-stability-pq" name="Bundle - Stability"/>
+<artifact id="StructureDefinition/Bundle-drug-substance-batch-info-pq" key="StructureDefinition-Bundle-drug-substance-batch-info-pq" name="Bundle - Substance Batch Information"/>
+<artifact id="StructureDefinition/Bundle-drug-substance-characterization-pq" key="StructureDefinition-Bundle-drug-substance-characterization-pq" name="Bundle - Substance Characterization"/>
+<artifact id="StructureDefinition/Bundle-drug-substance-general-properties-pq" key="StructureDefinition-Bundle-drug-substance-general-properties-pq" name="Bundle - Substance General Properties"/>
+<artifact id="StructureDefinition/Bundle-drug-substance-specification-pq" key="StructureDefinition-Bundle-drug-substance-specification-pq" name="Bundle - Substance Specification"/>
+<artifact id="ValueSet/vs-characterizationStep-pq" key="ValueSet-vs-characterizationStep-pq" name="Characterization Steps"/>
+<artifact id="CodeSystem/container-closure-type" key="CodeSystem-cs-closureTypes-local-pq" name="Closure Type Codes"/>
+<artifact deprecated="true" id="ValueSet/pqcmc-closure-type-terminology" key="ValueSet-pqcmc-closure-type-terminology" name="Closure Type Terminology"/>
+<artifact id="ValueSet/vs-closureTypes-pq" key="ValueSet-vs-closureTypes-pq" name="Closure Types"/>
+<artifact deprecated="true" id="CodeSystem/cs-controlCriticality-local-pq" key="CodeSystem-cs-controlCriticality-local-pq" name="CodeSystem - Control Criticality"/>
+<artifact deprecated="true" id="CodeSystem/cs-ich-m7-classification-local-pq" key="CodeSystem-cs-ich-m7-classification-local-pq" name="CodeSystem - ICH M7 Classification"/>
+<artifact deprecated="true" id="CodeSystem/cs-mutagenicity-local-pq" key="CodeSystem-cs-mutagenicity-local-pq" name="CodeSystem - Mutagenicity"/>
+<artifact deprecated="true" id="CodeSystem/cs-mutagenicityClassificationType-local-pq" key="CodeSystem-cs-mutagenicityClassificationType-local-pq" name="CodeSystem - Mutagenicity Classification Type"/>
+<artifact deprecated="true" id="CodeSystem/cs-substance-property-solubility-local-pq" key="CodeSystem-cs-substance-property-solubility-local-pq" name="CodeSystem - Substance Property Solubility"/>
+<artifact deprecated="true" id="CodeSystem/cs-substancePropertyType-local-pq" key="CodeSystem-cs-substancePropertyType-local-pq" name="CodeSystem - Substance Property Type"/>
+<artifact id="ValueSet/vs-color-pq" key="ValueSet-vs-color-pq" name="Colors"/>
 <artifact id="StructureDefinition/Composition-drug-pq" key="StructureDefinition-Composition-drug-pq" name="Composition - Drug"/>
 <artifact id="Composition/composition-drug-pq-formulation" key="Composition-composition-drug-pq-formulation" name="Composition - Drug - example, formulation"/>
 <artifact id="Composition/composition-drug-pq-risk" key="Composition-composition-drug-pq-risk" name="Composition - Drug - example, risk"/>
+<artifact id="CodeSystem/container-orientation" key="CodeSystem-cs-containerOrientation-local-pq" name="Container Orientation Codes"/>
+<artifact id="ValueSet/vs-containerOrientation-pq" key="ValueSet-vs-containerOrientation-local-pq" name="Container Orientations"/>
 <artifact id="ObservationDefinition/Degradation" key="ObservationDefinition-Degradation" name="Degradation"/>
 <artifact id="ObservationDefinition/Description" key="ObservationDefinition-Description" name="Description"/>
+<artifact id="ValueSet/vs-deviceProperty-pq" key="ValueSet-vs-deviceProperty-local-pq" name="Device Properties"/>
+<artifact id="CodeSystem/device-property" key="CodeSystem-cs-deviceProperty-local-pq" name="Device Property Codes"/>
+<artifact id="ValueSet/vs-deviceType-pq" key="ValueSet-vs-deviceType-local-pq" name="Device Type"/>
+<artifact id="CodeSystem/cs-deviceType-pq-example" key="CodeSystem-cs-deviceType-local-pq" name="Device Type - example"/>
 <artifact id="StructureDefinition/DeviceDefinition-drug-pq" key="StructureDefinition-DeviceDefinition-drug-pq" name="DeviceDefinition - Drug"/>
 <artifact id="DeviceDefinition/devicedefinition-drug-pq-ex1" key="DeviceDefinition-devicedefinition-drug-pq-ex1" name="DeviceDefinition - Drug - example"/>
 <artifact id="StructureDefinition/DiagnosticReport-analysis-drug-pq" key="StructureDefinition-DiagnosticReport-analysis-drug-pq" name="DiagnosticReport - Drug Analysis"/>
 <artifact id="DiagnosticReport/diagnosticreport-analysis-drug-pq-stability-prod" key="DiagnosticReport-diagnosticreport-analysis-drug-pq-stability-prod" name="DiagnosticReport - Drug Analysis - example, stability"/>
+<artifact id="CodeSystem/diagram-type" key="CodeSystem-cs-diagramType-local-pq" name="Diagram Type Codes"/>
+<artifact id="ValueSet/vs-diagramType-pq" key="ValueSet-vs-diagramType-pq" name="Diagram Types"/>
 <artifact id="StructureDefinition/DocumentReference-drug-pq" key="StructureDefinition-DocumentReference-drug-pq" name="DocumentReference - Drug"/>
 <artifact id="DocumentReference/documentreference-drug-pq-process-flow-diagram" key="DocumentReference-documentreference-drug-pq-process-flow-diagram" name="DocumentReference - Drug - example"/>
+<artifact id="CodeSystem/drug-substance-or-product-color" key="CodeSystem-cs-color-local-pq" name="Drug Substance or Product Color Codes"/>
+<artifact id="ValueSet/vs-equipmentClass-pq" key="ValueSet-vs-equipmentClass-pq" name="Equipment Classes"/>
+<artifact id="CodeSystem/cs-local-codes-drug-pq-example" key="CodeSystem-cs-local-codes-drug-pq" name="Example Local Codes - Drug"/>
 <artifact id="Bundle/bundle-batch-formula-pq-ex1" key="Bundle-bundle-batch-formula-pq-ex1" name="Example: Bundle - Batch Formula"/>
 <artifact id="Bundle/bundle-container-closure-system-pq-ex1-prod" key="Bundle-bundle-container-closure-system-pq-ex1-prod" name="Example: Bundle - Container Closure System, product"/>
 <artifact id="Bundle/bundle-container-closure-system-pq-ex2-sub" key="Bundle-bundle-container-closure-system-pq-ex2-sub" name="Example: Bundle - Container Closure System, substance"/>
@@ -91,6 +100,7 @@
 <artifact id="StructureDefinition/Extension-batch-derived-from-pq" key="StructureDefinition-Extension-batch-derived-from-pq" name="Extension - Batch Derived From"/>
 <artifact id="StructureDefinition/Extension-batch-designation-pq" key="StructureDefinition-Extension-batch-designation-pq" name="Extension - Batch Designation"/>
 <artifact id="StructureDefinition/Extension-batch-number-of-full-shelves-pq" key="StructureDefinition-Extension-batch-number-of-full-shelves-pq" name="Extension - Batch Number of Full Shelves"/>
+<artifact id="StructureDefinition/Extension-batch-number-of-items-pq" key="StructureDefinition-Extension-batch-number-of-items-pq" name="Extension - Batch Number of Items"/>
 <artifact id="StructureDefinition/Extension-batch-number-of-partial-shelves-pq" key="StructureDefinition-Extension-batch-number-of-partial-shelves-pq" name="Extension - Batch Number of Partial Shelves"/>
 <artifact id="StructureDefinition/Extension-batch-number-of-vials-pq" key="StructureDefinition-Extension-batch-number-of-vials-pq" name="Extension - Batch Number of Vials"/>
 <artifact id="StructureDefinition/Extension-batch-release-date-pq" key="StructureDefinition-Extension-batch-release-date-pq" name="Extension - Batch Release Date"/>
@@ -123,31 +133,64 @@
 <artifact id="StructureDefinition/Extension-target-fill-weight-pq" key="StructureDefinition-Extension-target-fill-weight-pq" name="Extension - Target Fill Weight"/>
 <artifact id="StructureDefinition/Extension-test-comment-pq" key="StructureDefinition-Extension-test-comment-pq" name="Extension - Test Comment"/>
 <artifact id="StructureDefinition/Extension-time-point-description-pq" key="StructureDefinition-Extension-time-point-description-pq" name="Extension - Time Point Description"/>
+<artifact id="ValueSet/vs-goalPriority-pq" key="ValueSet-vs-goalPriority-pq" name="Goal Priority"/>
+<artifact id="CodeSystem/cs-goalPriority-pq-example" key="CodeSystem-cs-goalPriority-local-pq" name="Goal Priority - example"/>
+<artifact id="ValueSet/vs-grade-pq" key="ValueSet-vs-grade-pq" name="Grades"/>
+<artifact id="ValueSet/vs-country-pq" key="ValueSet-vs-country-pq" name="ISO Country two letter codes"/>
 <artifact id="ObservationDefinition/Identification" key="ObservationDefinition-Identification" name="Identification"/>
 <artifact id="ObservationDefinition/Impurities" key="ObservationDefinition-Impurities" name="Impurities"/>
+<artifact id="CodeSystem/impurity-origin" key="CodeSystem-cs-impurity-origin-local-pq" name="Impurity Origin Codes"/>
+<artifact id="ValueSet/vs-impurity-origin-pq" key="ValueSet-vs-impurity-origin-local-pq" name="Impurity Origins"/>
+<artifact id="CodeSystem/impurity-type" key="CodeSystem-cs-impurity-type-local-pq" name="Impurity Type Codes"/>
+<artifact id="ValueSet/vs-impurity-type-pq" key="ValueSet-vs-impurity-type-pq" name="Impurity Types"/>
 <artifact id="StructureDefinition/Ingredient-drug-pq" key="StructureDefinition-Ingredient-drug-pq" name="Ingredient - Drug"/>
 <artifact id="Ingredient/ingredient-drug-pq-ex1" key="Ingredient-ingredient-drug-pq-ex1" name="Ingredient - Drug - example"/>
+<artifact id="ValueSet/vs-ingredientFunction-pq" key="ValueSet-vs-ingredientFunction-local-pq" name="Ingredient Function"/>
+<artifact id="CodeSystem/ingredient-function" key="CodeSystem-cs-ingredientFunction-local-pq" name="Ingredient Function Codes"/>
+<artifact id="ValueSet/vs-manufactured-item-property-pq" key="ValueSet-vs-manufactured-item-property-local-pq" name="Manufactured Item Property"/>
+<artifact id="CodeSystem/cs-manufactured-item-property-pq-example" key="CodeSystem-cs-manufactured-item-property-local-pq" name="Manufactured Item Property - example"/>
 <artifact id="StructureDefinition/ManufacturedItemDefinition-drug-pq" key="StructureDefinition-ManufacturedItemDefinition-drug-pq" name="ManufacturedItemDefinition - Drug"/>
 <artifact id="ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex1" key="ManufacturedItemDefinition-manufactureditemdefinition-drug-pq-ex1" name="ManufacturedItemDefinition - Drug - example 1"/>
 <artifact id="ManufacturedItemDefinition/manufactureditemdefinition-drug-pq-ex2" key="ManufacturedItemDefinition-manufactureditemdefinition-drug-pq-ex2" name="ManufacturedItemDefinition - Drug - example 2"/>
+<artifact id="ValueSet/vs-manufacturingParticipantRole-pq" key="ValueSet-vs-manufacturingParticipantRole-pq" name="Manufacturing Participant Role"/>
+<artifact id="CodeSystem/manufacturing-participant-role" key="CodeSystem-cs-manufacturingParticipantRole-local-pq" name="Manufacturing Participant Role Codes"/>
+<artifact id="ValueSet/vs-manufacturingStep-pq" key="ValueSet-vs-manufacturingStep-local-pq" name="Manufacturing Step"/>
+<artifact id="CodeSystem/manufacturing-step" key="CodeSystem-cs-manufacturingStep-local-pq" name="Manufacturing Step Codes"/>
+<artifact id="ValueSet/vs-manufacturingStepScale-pq" key="ValueSet-vs-manufacturingStepScale-local-pq" name="Manufacturing Step Scale"/>
+<artifact id="CodeSystem/manufacturing-step-scale" key="CodeSystem-cs-manufacturingStepScale-local-pq" name="Manufacturing Step Scale Codes"/>
 <artifact id="StructureDefinition/Medication-batch-information-drug-pq" key="StructureDefinition-Medication-batch-information-drug-pq" name="Medication - Batch Information"/>
 <artifact id="Medication/medication-batch-information-drug-pq-ex1" key="Medication-medication-batch-information-drug-pq-ex1" name="Medication - Batch Information - example"/>
-<artifact id="ValueSet/medicinalproduct-characteristic-type" key="ValueSet-medicinalproduct-characteristic-type" name="MedicinalProduct Characteristic Type"/>
+<artifact id="ValueSet/vs-medicinalproduct-characteristic-type" key="ValueSet-medicinalproduct-characteristic-type" name="MedicinalProduct Characteristic Type"/>
 <artifact id="StructureDefinition/MedicinalProductDefinition-drug-product-pq" key="StructureDefinition-MedicinalProductDefinition-drug-product-pq" name="MedicinalProductDefinition - Drug Product"/>
 <artifact id="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1" key="MedicinalProductDefinition-medicinalproductdefinition-drug-product-pq-ex1" name="MedicinalProductDefinition - Drug Product - example"/>
-<artifact id="ValueSet/medicine-doseform" key="ValueSet-medicine-doseform" name="Medicine Dose Form EDQM"/>
-<artifact id="ValueSet/medicine-route-of-administration" key="ValueSet-medicine-route-of-administration" name="Medicine Route of Administration EDQM"/>
+<artifact id="ValueSet/vs-medicine-doseform" key="ValueSet-medicine-doseform" name="Medicine Dose Form EDQM"/>
+<artifact id="ValueSet/vs-medicine-route-of-administration" key="ValueSet-medicine-route-of-administration" name="Medicine Route of Administration EDQM"/>
 <artifact id="ObservationDefinition/Microbiological" key="ObservationDefinition-Microbiological" name="Microbiological"/>
 <artifact id="StructureDefinition/Observation-test-result-drug-pq" key="StructureDefinition-Observation-test-result-drug-pq" name="Observation - Test Result"/>
 <artifact id="Observation/observation-test-result-lt25c-i1-description" key="Observation-observation-test-result-lt25c-i1-description" name="Observation - Test Result - example 1"/>
 <artifact id="Observation/observation-test-result-lt25c-i1-degradation-imp1" key="Observation-observation-test-result-lt25c-i1-degradation-imp1" name="Observation - Test Result - example 2"/>
+<artifact id="CodeSystem/observation-qualified-value-criticality" key="CodeSystem-cs-qualifiedValueCriticality-local-pq" name="Observation Qualified Value Criticality Codes"/>
 <artifact id="StructureDefinition/ObservationDefinition-test-method-drug-pq" key="StructureDefinition-ObservationDefinition-test-method-drug-pq" name="ObservationDefinition - Test Method"/>
 <artifact id="ObservationDefinition/longTerm25X" key="ObservationDefinition-longTerm25X" name="ObservationDefinition - Test Method - example 1, longTerm25X"/>
 <artifact id="ObservationDefinition/Water" key="ObservationDefinition-Water" name="ObservationDefinition - Test Method - example 2, Water"/>
 <artifact id="StructureDefinition/Organization-drug-pq" key="StructureDefinition-Organization-drug-pq" name="Organization - Drug"/>
-<artifact id="Organization/organization-drug-pq-ex1" key="Organization-organization-drug-pq-ex1" name="Organization - Drug - example"/>
+<artifact id="Organization/organization-drug-pq-ex1" key="Organization-organization-drug-pq-ex1" name="Organization - Drug - example 1, manufacturer"/>
+<artifact id="Organization/organization-drug-pq-ex2" key="Organization-organization-drug-pq-ex2" name="Organization - Drug - example 2, manufacturer"/>
+<artifact id="Organization/organization-drug-pq-ex3" key="Organization-organization-drug-pq-ex3" name="Organization - Drug - example 3, packaging"/>
+<artifact id="Organization/organization-drug-pq-ex4" key="Organization-organization-drug-pq-ex4" name="Organization - Drug - example 4, packaging"/>
+<artifact id="Organization/organization-drug-pq-ex5" key="Organization-organization-drug-pq-ex5" name="Organization - Drug - example 5, testing lab"/>
+<artifact id="CodeSystem/package-grade" key="CodeSystem-cs-grade-local-pq" name="Package Grade Codes"/>
+<artifact id="ValueSet/vs-packageProperty-pq" key="ValueSet-vs-packageProperty-local-pq" name="Package Property"/>
+<artifact id="CodeSystem/package-property" key="CodeSystem-cs-packageProperty-local-pq" name="Package Property Codes"/>
 <artifact id="StructureDefinition/PackagedProductDefinition-drug-pq" key="StructureDefinition-PackagedProductDefinition-drug-pq" name="PackagedProductDefinition - Drug"/>
 <artifact id="PackagedProductDefinition/packagedproductdefinition-drug-pq-ex1" key="PackagedProductDefinition-packagedproductdefinition-drug-pq-ex1" name="PackagedProductDefinition - Drug - example"/>
+<artifact id="CodeSystem/pharmaceutical-manufacturing-equipment-class" key="CodeSystem-cs-equipmentClass-local-pq" name="Pharmaceutical Manufacturing Equipment Class Codes"/>
+<artifact id="ValueSet/vs-pharmaceutical-organization-type" key="ValueSet-vs-pharmaceutical-organization-type" name="Pharmaceutical Organization Type"/>
+<artifact id="CodeSystem/pharmaceutical-organization-type" key="CodeSystem-pharmaceutical-organization-type" name="Pharmaceutical Organization Type Codes"/>
+<artifact id="CodeSystem/pharmaceutical-plan-type" key="CodeSystem-cs-planType-local-pq" name="Pharmaceutical Plan Type Codes"/>
+<artifact id="CodeSystem/pharmaceutical-report-type" key="CodeSystem-cs-reportType-local-pq" name="Pharmaceutical Report Type Codes"/>
+<artifact id="CodeSystem/pharmaceutical-test-category" key="CodeSystem-cs-testCategory-local-pq" name="Pharmaceutical Test Category Codes"/>
+<artifact id="ValueSet/vs-planType-pq" key="ValueSet-vs-planType-local-pq" name="Plan Type"/>
 <artifact id="StructureDefinition/PlanDefinition-drug-pq" key="StructureDefinition-PlanDefinition-drug-pq" name="PlanDefinition - Drug"/>
 <artifact id="PlanDefinition/plandefinition-drug-pq-ex3-drug-specification" key="PlanDefinition-plandefinition-drug-pq-ex3-drug-specification" name="PlanDefinition - Drug - example, drug specification"/>
 <artifact id="PlanDefinition/plandefinition-drug-pq-ex2-manufacturing-plan" key="PlanDefinition-plandefinition-drug-pq-ex2-manufacturing-plan" name="PlanDefinition - Drug - example, manufacturing plan"/>
@@ -157,56 +200,39 @@
 <artifact id="StructureDefinition/Procedure-drug-pq" key="StructureDefinition-Procedure-drug-pq" name="Procedure - Drug"/>
 <artifact id="Procedure/procedure-drug-pq-ex1" key="Procedure-procedure-drug-pq-ex1" name="Procedure - Drug - example 1"/>
 <artifact id="Procedure/procedure-drug-pq-ex2" key="Procedure-procedure-drug-pq-ex2" name="Procedure - Drug - example 2"/>
-<artifact id="StructureDefinition/Bundle-analytical-procedure-pq" key="StructureDefinition-Bundle-analytical-procedure-pq" name="Profile: Bundle - Analytical Procedure"/>
-<artifact id="StructureDefinition/Bundle-batch-analysis-pq" key="StructureDefinition-Bundle-batch-analysis-pq" name="Profile: Bundle - Batch Analysis"/>
-<artifact id="StructureDefinition/Bundle-batch-formula-pq" key="StructureDefinition-Bundle-batch-formula-pq" name="Profile: Bundle - Batch Formula"/>
-<artifact id="StructureDefinition/Bundle-container-closure-system-pq" key="StructureDefinition-Bundle-container-closure-system-pq" name="Profile: Bundle - Container Closure System"/>
-<artifact id="StructureDefinition/Bundle-drug-product-pq" key="StructureDefinition-Bundle-drug-product-pq" name="Profile: Bundle - Drug Product"/>
-<artifact id="StructureDefinition/Bundle-product-impurities-pq" key="StructureDefinition-Bundle-product-impurities-pq" name="Profile: Bundle - Impurities"/>
-<artifact id="StructureDefinition/Bundle-product-manufacturing-pq" key="StructureDefinition-Bundle-product-manufacturing-pq" name="Profile: Bundle - Manufacturing"/>
-<artifact id="StructureDefinition/Bundle-organizations-pq" key="StructureDefinition-Bundle-organizations-pq" name="Profile: Bundle - Organizations"/>
-<artifact id="StructureDefinition/Bundle-product-process-validation-pq" key="StructureDefinition-Bundle-product-process-validation-pq" name="Profile: Bundle - Process Validation"/>
-<artifact id="StructureDefinition/Bundle-drug-product-batch-info-pq" key="StructureDefinition-Bundle-drug-product-batch-info-pq" name="Profile: Bundle - Product Batch Information"/>
-<artifact id="StructureDefinition/Bundle-drug-product-compatibility-pq" key="StructureDefinition-Bundle-drug-product-compatibility-pq" name="Profile: Bundle - Product Compatibility"/>
-<artifact id="StructureDefinition/Bundle-drug-product-composition-pq" key="StructureDefinition-Bundle-drug-product-composition-pq" name="Profile: Bundle - Product Composition"/>
-<artifact id="StructureDefinition/Bundle-drug-product-excipients-pq" key="StructureDefinition-Bundle-drug-product-excipients-pq" name="Profile: Bundle - Product Excipients"/>
-<artifact id="StructureDefinition/Bundle-drug-product-microbiological-attributes-pq" key="StructureDefinition-Bundle-drug-product-microbiological-attributes-pq" name="Profile: Bundle - Product Microbiological Attributes"/>
-<artifact id="StructureDefinition/Bundle-drug-product-specification-pq" key="StructureDefinition-Bundle-drug-product-specification-pq" name="Profile: Bundle - Product Specification"/>
-<artifact id="StructureDefinition/Bundle-drug-reference-standards-pq" key="StructureDefinition-Bundle-drug-reference-standards-pq" name="Profile: Bundle - Reference Standards"/>
-<artifact id="StructureDefinition/Bundle-drug-stability-pq" key="StructureDefinition-Bundle-drug-stability-pq" name="Profile: Bundle - Stability"/>
-<artifact id="StructureDefinition/Bundle-drug-substance-batch-info-pq" key="StructureDefinition-Bundle-drug-substance-batch-info-pq" name="Profile: Bundle - Substance Batch Information"/>
-<artifact id="StructureDefinition/Bundle-drug-substance-characterization-pq" key="StructureDefinition-Bundle-drug-substance-characterization-pq" name="Profile: Bundle - Substance Characterization"/>
-<artifact id="StructureDefinition/Bundle-drug-substance-general-properties-pq" key="StructureDefinition-Bundle-drug-substance-general-properties-pq" name="Profile: Bundle - Substance General Properties"/>
-<artifact id="StructureDefinition/Bundle-drug-substance-specification-pq" key="StructureDefinition-Bundle-drug-substance-specification-pq" name="Profile: Bundle - Substance Specification"/>
+<artifact id="ValueSet/vs-processParameter-pq" key="ValueSet-vs-processParameter-pq" name="Process Parameter"/>
+<artifact id="CodeSystem/process-parameter" key="CodeSystem-cs-processParameter-local-pq" name="Process Parameter Codes"/>
+<artifact id="ValueSet/vs-process-validation-procedure-pq" key="ValueSet-vs-process-validation-procedure-pq" name="Process Validation Procedure"/>
+<artifact id="ValueSet/vs-productNameType-pq" key="ValueSet-vs-productNameType-pq" name="Product Name Type"/>
+<artifact id="CodeSystem/cs-productNameType-pq-example" key="CodeSystem-cs-productNameType-local-pq" name="Product Name Type - example"/>
+<artifact id="ValueSet/vs-productSiteUtilizationType-pq" key="ValueSet-vs-productSiteUtilizationType-local-pq" name="Product Site Utilization"/>
+<artifact id="CodeSystem/product-site-utilization-type" key="CodeSystem-cs-productSiteUtilizationType-local-pq" name="Product Site Utilization Type Codes"/>
+<artifact id="ValueSet/vs-qualifiedValueCriticality-pq" key="ValueSet-vs-qualifiedValueCriticality-local-pq" name="Qualified Value Criticality"/>
+<artifact id="ValueSet/vs-reportType-pq" key="ValueSet-vs-reportType-pq" name="Report Type"/>
+<artifact id="ValueSet/vs-specification-type-pq" key="ValueSet-vs-specification-type-pq" name="Specification Type"/>
+<artifact id="CodeSystem/cs-specification-type-pq-example" key="CodeSystem-cs-specification-type-local-pq" name="Specification Type - example"/>
 <artifact id="StructureDefinition/Specimen-drug-pq" key="StructureDefinition-Specimen-drug-pq" name="Specimen - Drug"/>
 <artifact id="Specimen/specimen-drug-pq-ex1" key="Specimen-specimen-drug-pq-ex1" name="Specimen - Drug - example"/>
 <artifact id="StructureDefinition/SpecimenDefinition-drug-pq" key="StructureDefinition-SpecimenDefinition-drug-pq" name="SpecimenDefinition - Drug"/>
 <artifact id="SpecimenDefinition/specimendefinition-drug-pq-ex1" key="SpecimenDefinition-specimendefinition-drug-pq-ex1" name="SpecimenDefinition - Drug - example 1"/>
 <artifact id="SpecimenDefinition/specimenDefStoredAt30" key="SpecimenDefinition-specimenDefStoredAt30" name="SpecimenDefinition - Drug - example 2"/>
 <artifact id="SpecimenDefinition/specimenDefStoredAt40" key="SpecimenDefinition-specimenDefStoredAt40" name="SpecimenDefinition - Drug - example 3"/>
+<artifact id="CodeSystem/structure-characterization-technique" key="CodeSystem-cs-characterizationStep-local-pq" name="Structure Characterization Technique Codes"/>
 <artifact id="StructureDefinition/Substance-drug-pq" key="StructureDefinition-Substance-drug-pq" name="Substance - Drug"/>
 <artifact id="Substance/substance-drug-pq-ex1" key="Substance-substance-drug-pq-ex1" name="Substance - Drug - example"/>
+<artifact id="ValueSet/vs-substance-property-pq" key="ValueSet-vs-substance-property-pq" name="Substance Property"/>
+<artifact id="CodeSystem/cs-substance-property-pq-example" key="CodeSystem-cs-substance-property-local-pq" name="Substance Property - example"/>
+<artifact id="ValueSet/vs-substance-property-value-pq" key="ValueSet-vs-substance-property-value-pq" name="Substance Property Value"/>
+<artifact id="CodeSystem/cs-substance-property-value-pq-example" key="CodeSystem-cs-substance-property-value-pq-example" name="Substance Property Value - example"/>
 <artifact id="StructureDefinition/SubstanceDefinition-component-substance-drug-pq" key="StructureDefinition-SubstanceDefinition-component-substance-drug-pq" name="SubstanceDefinition - Component Drug"/>
 <artifact id="SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1" key="SubstanceDefinition-substancedefinition-component-substance-drug-pq-ex1" name="SubstanceDefinition - Component Drug - example 1"/>
 <artifact id="SubstanceDefinition/StelbatololAqueousSolution" key="SubstanceDefinition-StelbatololAqueousSolution" name="SubstanceDefinition - Component Drug - example 2"/>
 <artifact id="SubstanceDefinition/StelbatololGranules" key="SubstanceDefinition-StelbatololGranules" name="SubstanceDefinition - Component Drug - example 3"/>
+<artifact id="ValueSet/vs-testCategory-pq" key="ValueSet-vs-testCategory-pq" name="Test Category"/>
+<artifact id="ValueSet/vs-test-method-pq" key="ValueSet-vs-test-method-local-pq" name="Test Method"/>
+<artifact id="ValueSet/vs-timePointDescription-pq" key="ValueSet-vs-timePointDescription-local-pq" name="Time Point Description"/>
+<artifact id="CodeSystem/time-point-description" key="CodeSystem-cs-timePointDescription-local-pq" name="Time Point Description Codes"/>
 <artifact id="ObservationDefinition/Uniformity" key="ObservationDefinition-Uniformity" name="Uniformity"/>
-<artifact id="ValueSet/vs-batch-designation-local-pq" key="ValueSet-vs-batch-designation-local-pq" name="ValueSet - Batch Designation"/>
-<artifact id="ValueSet/vs-containerOrientation-local-pq" key="ValueSet-vs-containerOrientation-local-pq" name="ValueSet - Container Orientation"/>
-<artifact id="ValueSet/vs-deviceProperty-local-pq" key="ValueSet-vs-deviceProperty-local-pq" name="ValueSet - Device Property"/>
-<artifact id="ValueSet/vs-deviceType-local-pq" key="ValueSet-vs-deviceType-local-pq" name="ValueSet - Device Type"/>
-<artifact id="ValueSet/vs-impurity-origin-local-pq" key="ValueSet-vs-impurity-origin-local-pq" name="ValueSet - Impurity Origin"/>
-<artifact id="ValueSet/vs-ingredientFunction-local-pq" key="ValueSet-vs-ingredientFunction-local-pq" name="ValueSet - Ingredient Function"/>
-<artifact id="ValueSet/vs-manufactured-item-property-local-pq" key="ValueSet-vs-manufactured-item-property-local-pq" name="ValueSet - Manufactured Item Property"/>
-<artifact id="ValueSet/vs-manufacturingStep-local-pq" key="ValueSet-vs-manufacturingStep-local-pq" name="ValueSet - Manufacturing Step"/>
-<artifact id="ValueSet/vs-manufacturingStepScale-local-pq" key="ValueSet-vs-manufacturingStepScale-local-pq" name="ValueSet - Manufacturing Step Scale"/>
-<artifact id="ValueSet/vs-packageProperty-local-pq" key="ValueSet-vs-packageProperty-local-pq" name="ValueSet - Package Property"/>
-<artifact id="ValueSet/vs-planType-local-pq" key="ValueSet-vs-planType-local-pq" name="ValueSet - Plan Type"/>
-<artifact id="ValueSet/vs-process-validation-procedure-pq" key="ValueSet-vs-process-validation-procedure-pq" name="ValueSet - Process Validation Procedure"/>
-<artifact id="ValueSet/vs-productSiteUtilizationType-local-pq" key="ValueSet-vs-productSiteUtilizationType-local-pq" name="ValueSet - Product Site Utilization"/>
-<artifact id="ValueSet/vs-qualifiedValueCriticality-local-pq" key="ValueSet-vs-qualifiedValueCriticality-local-pq" name="ValueSet - Qualified Value Criticality"/>
-<artifact id="ValueSet/vs-test-method-local-pq" key="ValueSet-vs-test-method-local-pq" name="ValueSet - Test Method"/>
-<artifact id="ValueSet/vs-timePointDescription-local-pq" key="ValueSet-vs-timePointDescription-local-pq" name="ValueSet - Time Point Description"/>
 <artifact id="ObservationDefinition/accelerated40X" key="ObservationDefinition-accelerated40X" name="accelerated40X"/>
 <artifact id="ObservationDefinition/accelerated40Y" key="ObservationDefinition-accelerated40Y" name="accelerated40Y"/>
 <artifact id="ObservationDefinition/accelerated40Z" key="ObservationDefinition-accelerated40Z" name="accelerated40Z"/>
@@ -240,7 +266,7 @@
   <otherpage url="batch_info_rend_p"/>
   <otherpage url="batch_info_rend_s"/>
 </page>
-<page key="best_practices" name="Best Practices, Resources"/>
+<page key="best_practices" name="Best Practices" deprecated="true"/>
 <page key="use_cases" name="Business Use Cases"/>
 <page key="compatibility" name="Compatibility">
   <otherpage url="compatibility_rend_p"/>
@@ -259,6 +285,7 @@
   <otherpage url="drug_specification_rend_p"/>
   <otherpage url="drug_specification_rend_s"/>
 </page>
+<page key="general_design" name="General Principles &amp; Design"/>
 <page key="index" name="Home Page"/>
 <page key="identification" name="Identification">
   <otherpage url="identification_rend_p1"/>
