@@ -1,31 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/health-care-surveys-reporting/2022Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-health-care-surveys-reporting" defaultVersion="0.1.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-health-care-surveys-reporting" url="http://hl7.org/fhir/us/health-care-surveys-reporting">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/health-care-surveys-reporting/2022Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-health-care-surveys-reporting" defaultVersion="1.0.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-health-care-surveys-reporting" url="http://hl7.org/fhir/us/health-care-surveys-reporting">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-health-care-surveys-reporting"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/health-care-surveys-reporting/STU1"/>
 <version code="0.1.0" url="http://hl7.org/fhir/us/health-care-surveys-reporting/2022Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="Bundle/content-bundle-example" key="Bundle-content-bundle-example" name="Example of a Content Bundle containing Patient Data"/>
+<artifact id="AllergyIntolerance/example" key="AllergyIntolerance-example" name="AllergyIntolerance Example"/>
+<artifact id="Composition/hcs-composition-example" key="Composition-hcs-composition-example" name="Composition Example"/>
+<artifact id="Condition/example" key="Condition-example" name="Condition Example"/>
+<artifact id="Encounter/example-1" key="Encounter-example-1" name="Encounter Example"/>
+<artifact id="Bundle/hcs-content-bundle-example" key="Bundle-hcs-content-bundle-example" name="Example of a Content Bundle containing Composition resource"/>
+<artifact deprecated="true" id="Bundle/content-bundle-example" key="Bundle-content-bundle-example" name="Example of a Content Bundle containing Patient Data"/>
 <artifact id="Bundle/healthcare-survey-specification-bundle-example" key="Bundle-healthcare-survey-specification-bundle-example" name="Example of a Specification Bundle containing PlanDefinition"/>
-<artifact id="Group/group-example-survey" key="Group-group-example-survey" name="Group example showing Providers participating in health care surveys"/>
+<artifact deprecated="true" id="Group/group-example-survey" key="Group-group-example-survey" name="Group example showing Providers participating in health care surveys"/>
 <artifact id="MedicationAdministration/medicationadministration-example" key="MedicationAdministration-medicationadministration-example" name="HCS Medication Administration Example"/>
 <artifact id="PlanDefinition/plandefinition-example" key="PlanDefinition-plandefinition-example" name="HCS PlanDefinition Example"/>
 <artifact id="Bundle/reporting-bundle-example" key="Bundle-reporting-bundle-example" name="HCS Reporting Bundle Example"/>
 <artifact id="StructureDefinition/hcs-medicationadministration" key="StructureDefinition-hcs-medicationadministration" name="HcsMedicationAdministration"/>
+<artifact id="StructureDefinition/hcs-medicationstatement" key="StructureDefinition-hcs-medicationstatement" name="HcsMedicationStatement"/>
+<artifact id="StructureDefinition/hcs-servicerequest" key="StructureDefinition-hcs-servicerequest" name="HcsServiceRequest"/>
+<artifact id="StructureDefinition/hcs-composition" key="StructureDefinition-hcs-composition" name="Health Care Survey Report Composition"/>
 <artifact id="StructureDefinition/hcs-content-bundle" key="StructureDefinition-hcs-content-bundle" name="Health Care Surveys Content Bundle"/>
-<artifact id="CapabilityStatement/health-care-surveys-reporting-ehr" key="CapabilityStatement-health-care-surveys-reporting-ehr" name="Health Care Surveys EHR Capability Statement"/>
+<artifact id="CapabilityStatement/health-care-surveys-reporting-data-source" key="CapabilityStatement-health-care-surveys-reporting-ehr" name="Health Care Surveys EHR Capability Statement"/>
 <artifact id="StructureDefinition/hcs-plandefinition" key="StructureDefinition-hcs-plandefinition" name="Health Care Surveys PlanDefinition"/>
 <artifact id="StructureDefinition/hcs-reporting-bundle" key="StructureDefinition-hcs-reporting-bundle" name="Health Care Surveys Reporting Bundle"/>
 <artifact id="Endpoint/example-healthcare-endpoint" key="Endpoint-example-healthcare-endpoint" name="Healthcare Organization Endpoint example"/>
 <artifact id="Organization/example-healthcare-org" key="Organization-example-healthcare-org" name="Healthcare Organization Example"/>
+<artifact id="MedicationRequest/self-tylenol" key="MedicationRequest-self-tylenol" name="MedicationRequest Example"/>
+<artifact id="MedicationStatement/example" key="MedicationStatement-example" name="MedicationStatement Example"/>
 <artifact id="MessageHeader/messageheader-example-reportheader" key="MessageHeader-messageheader-example-reportheader" name="MessageHeader example used in the HCS Bundle sent from Healthcare org to PHA"/>
 <artifact id="Patient/1" key="Patient-1" name="Patient 1 - Example"/>
+<artifact id="Patient/example" key="Patient-example" name="Patient Example"/>
 <artifact id="Practitioner/1" key="Practitioner-1" name="Practitioner Example"/>
 <artifact id="Endpoint/example-ph-endpoint" key="Endpoint-example-ph-endpoint" name="Public Health Organization Endpoint example"/>
 <artifact id="Organization/example-pha-org" key="Organization-example-pha-org" name="Public Health Organization Example"/>
+<artifact id="ServiceRequest/example" key="ServiceRequest-example" name="ServiceRequest Example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="credits" name="Credits"/>
 <page key="spec" name="Detailed Specification"/>
 <page key="index" name="Health Care Surveys Content IG Home"/>
 <page key="changes" name="IG Change History"/>
