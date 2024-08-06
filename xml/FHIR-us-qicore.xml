@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/qicore/2023Sep" ciUrl="https://build.fhir.org/ig/HL7/fhir-qi-core" defaultVersion="6.0.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/fhir-qi-core" url="http://hl7.org/fhir/us/qicore">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/qicore/2024Sep" ciUrl="https://build.fhir.org/ig/HL7/fhir-qi-core" defaultVersion="6.0.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/fhir-qi-core" url="http://hl7.org/fhir/us/qicore">
 <version code="current" url="https://build.fhir.org/ig/HL7/fhir-qi-core"/>
+<version code="7.0.0-ballot" url="http://hl7.org/fhir/us/qicore/2024Sep"/>
 <version code="6.0.0" url="http://hl7.org/fhir/us/qicore/STU6"/>
-<version code="6.0.0-ballot" url="http://hl7.org/fhir/us/qicore/2023Sep"/>
+<version code="6.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/qicore/2023Sep"/>
 <version code="5.0.0" url="http://hl7.org/fhir/us/qicore/STU5"/>
 <version code="5.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/qicore/2022Sep"/>
 <version code="4.1.1" url="http://hl7.org/fhir/us/qicore/STU4.1.1"/>
@@ -184,11 +185,12 @@
 <artifact id="StructureDefinition/qicore-medicationrequest" key="MedicationPrescription" name="QICore MedicationRequest"/>
 <artifact id="StructureDefinition/qicore-medicationstatement" key="MedicationStatement" name="QICore MedicationStatement"/>
 <artifact id="Library/QICore-ModelInfo" key="Library-QICore-ModelInfo" name="QICore Model Definition"/>
+<artifact id="Parameters/qicore-modelinfosettings" key="Parameters-qicore-modelinfosettings" name="QICore ModelInfo Settings example"/>
 <artifact id="ValueSet/qicore-negation-reason" key="ValueSet-qicore-negation-reason" name="QICore Negation Reason Codes"/>
 <artifact id="StructureDefinition/qicore-nonpatient-observation" key="StructureDefinition-qicore-nonpatient-observation" name="QICore NonPatient Observation"/>
 <artifact id="StructureDefinition/qicore-notDoneReason" key="StructureDefinition-qicore-notDoneReason" name="QICore Not Done Reason"/>
 <artifact id="StructureDefinition/qicore-recorded" key="StructureDefinition-qicore-recorded" name="QICore Not Done Recorded"/>
-<artifact id="StructureDefinition/qicore-notDoneValueSet" key="StructureDefinition-qicore-notDoneValueSet" name="QICore Not Done ValueSet"/>
+<artifact deprecated="true" id="StructureDefinition/qicore-notDoneValueSet" key="StructureDefinition-qicore-notDoneValueSet" name="QICore Not Done ValueSet"/>
 <artifact deprecated="true" id="StructureDefinition/qicore-nutritionintake" key="StructureDefinition-qicore-nutritionintake" name="QICore Nutrition Intake"/>
 <artifact id="StructureDefinition/qicore-nutritionorder" key="StructureDefinition-qicore-nutritionorder" name="QICore NutritionOrder"/>
 <artifact deprecated="true" id="StructureDefinition/qicore-observation" key="Observation" name="QICore Observation"/>
@@ -254,6 +256,7 @@
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="changes" name="Changes"/>
 <page key="modelinfo" name="Model Info"/>
+<page key="qi-elements" name="QI Key Elements"/>
 <page key="downloads" name="QI-Core Downloads"/>
 <page key="examples" name="QI-Core Examples"/>
 <page key="extensions" name="QI-Core Extensions"/>
@@ -261,7 +264,7 @@
 <page key="patterns" name="QI-Core Patterns"/>
 <page key="profiles" name="QI-Core Profiles"/>
 <page key="terminology" name="QI-Core Terminology"/>
-<page key="qdm-to-qicore" name="Quality Data Model (QDM)v5.6 to QI-Core R6 Mapping"/>
+<page key="qdm-to-qicore" name="Quality Data Model (QDM)v5.6 to QI-Core R7 Mapping"/>
 <page key="index" name="Quality Improvement Core (QI-Core) Implementation Guide"/>
 <page key="toc" name="Table of Contents"/>
 </specification>
