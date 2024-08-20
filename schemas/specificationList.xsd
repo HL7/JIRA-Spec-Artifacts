@@ -3,6 +3,7 @@
   <xs:annotation>
     <xs:documentation>Validates files listing all specifications for a single product family</xs:documentation>
   </xs:annotation>
+  <xs:include schemaLocation="accelerators.xsd"/>
   <xs:element name="specifications">
     <xs:annotation>
       <xs:documentation>A grouper for all specifications for the family</xs:documentation>
@@ -33,6 +34,11 @@
                   <xs:pattern value="[A-Z][^\s]+([\s][^\s]+)*"/>
                 </xs:restriction>
               </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="accelerator" type="Accelerator">
+              <xs:annotation>
+                <xs:documentation>Indicates the accelerator responsible for this specification</xs:documentation>
+              </xs:annotation>
             </xs:attribute>
             <xs:attribute name="deprecated" type="xs:boolean" default="false">
               <xs:annotation>
