@@ -1,126 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    ballotUrl="http://hl7.org/fhir/uv/ibcm/1.0.0-ballot"
-    ciUrl="http://build.fhir.org/ig/HL7/fetal_records" defaultVersion="1.0.0-ballot"
-    defaultWorkgroup="pc" gitUrl="https://github.com/HL7/fetal_records"
-    url="http://hl7.org/fhir/uv/ibcm">
-    <version code="current" url="http://build.fhir.org/ig/HL7/fetal_records"/>
-    <version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/ibcm/1.0.0-ballot"/>
-    <artifactPageExtension value="-definitions"/>
-    <artifactPageExtension value="-examples"/>
-    <artifactPageExtension value="-mappings"/>
-    <artifact id="StructureDefinition/ibcm-fetal-record" key="StructureDefinition-ibcm-fetal-record"
-        name="IBCM Fetal Record Profile"/>
-    <artifact id="StructureDefinition/fetal-record-identifier"
-        key="StructureDefinition-fetal-record-identifier" name="IBCM Fetus Identifier profile"/>
-    <artifact id="Condition/uc1-399216004" key="Condition-uc1-399216004"
-        name="UC1 D-Transposition of the Great Vessels"/>
-    <artifact id="Observation/uc1-estimatedfetalbodyweight"
-        key="Observation-uc1-estimatedfetalbodyweight" name="UC1 Estimated Fetal Body Weight"/>
-    <artifact id="Patient/uc1-fetus" key="Patient-uc1-fetus" name="UC1 Fetus Patient"/>
-    <artifact id="Observation/uc1-gestation21" key="Observation-uc1-gestation21"
-        name="UC1 Gestational Age 21 weeks"/>
-    <artifact id="Observation/uc1-gestation37" key="Observation-uc1-gestation37"
-        name="UC1 Gestational Age 37 weeks"/>
-    <artifact id="Medication/uc1-medication" key="Medication-uc1-medication"
-        name="UC1 Medication Prostaglandin E"/>
-    <artifact id="MedicationRequest/uc1-medicationrequest"
-        key="MedicationRequest-uc1-medicationrequest"
-        name="UC1 MedicationRequest Prostaglandin E Infusion"/>
-    <artifact id="Patient/uc1-mother" key="Patient-uc1-mother" name="UC1 Mother Patient"/>
-    <artifact id="Condition/uc1-pregnancy" key="Condition-uc1-pregnancy" name="UC1 Pregnancy"/>
-    <artifact id="RelatedPerson/uc1-mother-relatedperson"
-        key="RelatedPerson-uc1-mother-relatedperson" name="UC1 RelatedPerson"/>
-    <artifact id="DiagnosticReport/uc1-ultrasoundreport" key="DiagnosticReport-uc1-ultrasoundreport"
-        name="UC1 UltraSound Report 21 weeks"/>
-    <artifact id="Procedure/uc1-ultrasoundscan" key="Procedure-uc1-ultrasoundscan"
-        name="UC1 UltraSound Report 37 weeks"/>
-    <artifact id="Procedure/uc2-amniocentesis" key="Procedure-uc2-amniocentesis"
-        name="UC2 Amniocentesis Procedure"/>
-    <artifact id="DiagnosticReport/uc2-amniocentesisreport"
-        key="DiagnosticReport-uc2-amniocentesisreport" name="UC2 Amniocentesis Report"/>
-    <artifact id="Condition/uc2-17190001" key="Condition-uc2-17190001"
-        name="UC2 Congenital Diaphragmatic Hernia Fetus A"/>
-    <artifact id="Patient/uc2-fetusA" key="Patient-uc2-fetusA" name="UC2 Fetus A Patient"/>
-    <artifact id="Patient/uc2-fetusB" key="Patient-uc2-fetusB" name="UC2 Fetus B Patient"/>
-    <artifact id="Observation/uc2-gestation20" key="Observation-uc2-gestation20"
-        name="UC2 Gestationale Age 20 weeks"/>
-    <artifact id="Observation/uc2-gestation24" key="Observation-uc2-gestation24"
-        name="UC2 Gestationale Age 24.14 weeks"/>
-    <artifact id="Observation/uc2-hypoplasialung" key="Observation-uc2-hypoplasialung"
-        name="UC2 Hypoplasia of Lung"/>
-    <artifact id="Condition/uc2-416010008" key="Condition-uc2-416010008"
-        name="UC2 Hypospadias Fetus B"/>
-    <artifact id="Observation/uc2-karyotype-fetusA" key="Observation-uc2-karyotype-fetusA"
-        name="UC2 Karyotype Fetus A"/>
-    <artifact id="Observation/uc2-karyotype-fetusB" key="Observation-uc2-karyotype-fetusB"
-        name="UC2 Karyotype Fetus B"/>
-    <artifact deprecated="true" id="Observation/uc2-lhr" key="Observation-uc2-lhr"
-        name="UC2 Lung-Head Ratio Fetus A"/>
-    <artifact id="Patient/uc2-mother" key="Patient-uc2-mother" name="UC2 Mother Patient"/>
-    <artifact deprecated="true" id="Observation/uc2-lungvolume" key="Observation-uc2-lungvolume"
-        name="UC2 Observed:Expected Lung Volume Fetus A"/>
-    <artifact id="Condition/uc2-pregnancy" key="Condition-uc2-pregnancy" name="UC2 Pregnancy"/>
-    <artifact id="RelatedPerson/uc2-mother-fetusA" key="RelatedPerson-uc2-mother-fetusA"
-        name="UC2 RelatedPerson Fetus A"/>
-    <artifact id="RelatedPerson/uc2-mother-fetusB" key="RelatedPerson-uc2-mother-fetusB"
-        name="UC2 RelatedPerson Fetus B"/>
-    <artifact id="DiagnosticReport/uc2-ultrasoundreport20"
-        key="DiagnosticReport-uc2-ultrasoundreport20" name="UC2 UltraSound Report 24 weeks"/>
-    <artifact id="DiagnosticReport/uc2-ultrasoundreport24"
-        key="DiagnosticReport-uc2-ultrasoundreport24" name="UC2 UltraSound Scan 24 weeks"/>
-    <artifact id="Procedure/uc2-ultrasoundscan20" key="Procedure-uc2-ultrasoundscan20"
-        name="UC2 UltraSound Scan Procedure 20 weeks"/>
-    <artifact id="Procedure/uc2-ultrasoundscan24" key="Procedure-uc2-ultrasoundscan24"
-        name="UC2 UltraSound Scan Procedure 24 weeks"/>
-    <artifact id="Encounter/uc3-encounter-admission" key="Encounter-uc3-encounter-admission"
-        name="UC3 Admission"/>
-    <artifact id="Observation/uc3-bodyheight-firstMOHvisit"
-        key="Observation-uc3-bodyheight-firstMOHvisit" name="UC3 Body Height First MOH Visit"/>
-    <artifact id="Observation/uc3-bodyweight-firstMOHvisit"
-        key="Observation-uc3-bodyweight-firstMOHvisit" name="UC3 Body Weight First MOH Visit"/>
-    <artifact id="Observation/uc3-bodyweight-followupMOHvisit"
-        key="Observation-uc3-bodyweight-followupMOHvisit" name="UC3 Body Weight Follow Up MOH Visit"/>
-    <artifact id="Procedure/uc3-childbirth" key="Procedure-uc3-childbirth" name="UC3 Child Birth"/>
-    <artifact id="FamilyMemberHistory/uc3-familymemberhistory"
-        key="FamilyMemberHistory-uc3-familymemberhistory" name="UC3 FamilyMemberHistory of Fetus"/>
-    <artifact id="Observation/uc3-femurlenght-obsclinic" key="Observation-uc3-femurlenght-obsclinic"
-        name="UC3 Femur Length Obstetric Clinic"/>
-    <artifact id="Encounter/uc3-encounter-firstMOHvisit" key="Encounter-uc3-encounter-firstMOHvisit"
-        name="UC3 First MOH Visit"/>
-    <artifact id="Encounter/uc3-encounter-followupMOHvisit"
-        key="Encounter-uc3-encounter-followupMOHvisit" name="UC3 Follow Up MOH Visit"/>
-    <artifact id="Observation/uc3-headcircumference-obsclinic"
-        key="Observation-uc3-headcircumference-obsclinic"
-        name="UC3 Head Circumference Obstetric Clinic"/>
-    <artifact id="Observation/uc3-hemoglobin-firstMOHvisit"
-        key="Observation-uc3-hemoglobin-firstMOHvisit" name="UC3 Hemoglobin First MOH Visit"/>
-    <artifact id="Location/uc3-location-KandyHospital" key="Location-uc3-location-KandyHospital"
-        name="UC3 Kandy Hospital"/>
-    <artifact id="Location/uc3-location-localMOH" key="Location-uc3-location-localMOH"
-        name="UC3 Local MOH"/>
-    <artifact id="Patient/uc3-mother" key="Patient-uc3-mother" name="UC3 Mother Patient"/>
-    <artifact id="Encounter/uc3-encounter-obsclinic" key="Encounter-uc3-encounter-obsclinic"
-        name="UC3 Obstetric Clinic Encounter"/>
-    <artifact id="Observation/uc3-pregnancytest-firstMOHVisit"
-        key="Observation-uc3-pregnancytest-firstMOHVisit" name="UC3 Pregnancy Test First MOH Visit"/>
-    <artifact id="Observation/uc3-reducingsubstances-firstMOHvisit"
-        key="Observation-uc3-reducingsubstances-firstMOHvisit"
-        name="UC3 Reducing Substances First MOH Visit"/>
-    <artifact id="Observation/uc3-uterusfundalheight-followupMOHvisit"
-        key="Observation-uc3-uterusfundalheight-followupMOHvisit"
-        name="UC3 Uterus Fundal Height Follow Up MOH Visit"/>
-    <artifact id="Patient/uc3-fetus" key="Patient-uc3-fetus" name="uc3-fetus"/>
-    <page key="NA" name="(NA)"/>
-    <page key="many" name="(many)"/>
-    <page key="analysis" name="Analysis"/>
-    <page key="artifacts" name="Artifacts Summary"/>
-    <page key="background" name="Background"/>
-    <page key="downloads" name="Downloads"/>
-    <page key="index" name="Home"/>
-    <page key="toc" name="Table of Contents"/>
-    <page key="thought-process" name="Thought Process"/>
-    <page key="use-case1-service-request" name="Use Case 1 Service Request"/>
-    <page key="use-case2-result-reporting" name="Use Case 2 Result Reporting"/>
-    <page key="use-case3-data-transfer" name="Use Case 3 Data Transfer"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/ibcm/2024Sep" ciUrl="http://build.fhir.org/ig/HL7/fetal_records" defaultVersion="1.0.0-ballot2" defaultWorkgroup="pc" gitUrl="https://github.com/HL7/fetal_records" url="http://hl7.org/fhir/uv/ibcm">
+<version code="current" url="http://build.fhir.org/ig/HL7/fetal_records"/>
+<version code="1.0.0-ballot2" url="http://hl7.org/fhir/uv/ibcm/2024Sep"/>
+<version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/ibcm/1.0.0-ballot"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/ibcm-fetal-record" key="StructureDefinition-ibcm-fetal-record" name="IBCM Fetal Record Profile"/>
+<artifact deprecated="true" id="StructureDefinition/fetal-record-identifier" key="StructureDefinition-fetal-record-identifier" name="IBCM Fetus Identifier profile"/>
+<artifact id="Condition/uc1-399216004" key="Condition-uc1-399216004" name="UC1 D-Transposition of the Great Vessels"/>
+<artifact id="Observation/uc1-estimatedfetalbodyweight" key="Observation-uc1-estimatedfetalbodyweight" name="UC1 Estimated Fetal Body Weight"/>
+<artifact id="Patient/uc1-fetus" key="Patient-uc1-fetus" name="UC1 Fetus Patient"/>
+<artifact id="Observation/uc1-gestation21" key="Observation-uc1-gestation21" name="UC1 Gestational Age 21 weeks"/>
+<artifact id="Observation/uc1-gestation37" key="Observation-uc1-gestation37" name="UC1 Gestational Age 37 weeks"/>
+<artifact id="Medication/uc1-medication" key="Medication-uc1-medication" name="UC1 Medication Prostaglandin E"/>
+<artifact id="MedicationRequest/uc1-medicationrequest" key="MedicationRequest-uc1-medicationrequest" name="UC1 MedicationRequest Prostaglandin E Infusion"/>
+<artifact id="Patient/uc1-mother" key="Patient-uc1-mother" name="UC1 Mother Patient"/>
+<artifact id="Practitioner/uc1-practitioner" key="Practitioner-uc1-practitioner" name="UC1 Practitioner"/>
+<artifact id="Condition/uc1-pregnancy" key="Condition-uc1-pregnancy" name="UC1 Pregnancy"/>
+<artifact id="RelatedPerson/uc1-mother-relatedperson" key="RelatedPerson-uc1-mother-relatedperson" name="UC1 RelatedPerson"/>
+<artifact id="DiagnosticReport/uc1-ultrasoundreport" key="DiagnosticReport-uc1-ultrasoundreport" name="UC1 UltraSound Report 21 weeks"/>
+<artifact id="Procedure/uc1-ultrasoundscan" key="Procedure-uc1-ultrasoundscan" name="UC1 UltraSound Report 37 weeks"/>
+<artifact id="Procedure/uc2-amniocentesis" key="Procedure-uc2-amniocentesis" name="UC2 Amniocentesis Procedure"/>
+<artifact id="DiagnosticReport/uc2-amniocentesisreport" key="DiagnosticReport-uc2-amniocentesisreport" name="UC2 Amniocentesis Report"/>
+<artifact id="Condition/uc2-17190001" key="Condition-uc2-17190001" name="UC2 Congenital Diaphragmatic Hernia Fetus A"/>
+<artifact id="Patient/uc2-fetusA" key="Patient-uc2-fetusA" name="UC2 Fetus A Patient"/>
+<artifact id="Patient/uc2-fetusB" key="Patient-uc2-fetusB" name="UC2 Fetus B Patient"/>
+<artifact id="Observation/uc2-gestation20" key="Observation-uc2-gestation20" name="UC2 Gestationale Age 20 weeks"/>
+<artifact id="Observation/uc2-gestation24" key="Observation-uc2-gestation24" name="UC2 Gestationale Age 24.14 weeks"/>
+<artifact id="Observation/uc2-hypoplasialung" key="Observation-uc2-hypoplasialung" name="UC2 Hypoplasia of Lung"/>
+<artifact id="Condition/uc2-416010008" key="Condition-uc2-416010008" name="UC2 Hypospadias Fetus B"/>
+<artifact id="Observation/uc2-karyotype-fetusA" key="Observation-uc2-karyotype-fetusA" name="UC2 Karyotype Fetus A"/>
+<artifact id="Observation/uc2-karyotype-fetusB" key="Observation-uc2-karyotype-fetusB" name="UC2 Karyotype Fetus B"/>
+<artifact deprecated="true" id="Observation/uc2-lhr" key="Observation-uc2-lhr" name="UC2 Lung-Head Ratio Fetus A"/>
+<artifact id="Patient/uc2-mother" key="Patient-uc2-mother" name="UC2 Mother Patient"/>
+<artifact deprecated="true" id="Observation/uc2-lungvolume" key="Observation-uc2-lungvolume" name="UC2 Observed:Expected Lung Volume Fetus A"/>
+<artifact id="Practitioner/uc2-practitioner" key="Practitioner-uc2-practitioner" name="UC2 Practitioner"/>
+<artifact id="Condition/uc2-pregnancy" key="Condition-uc2-pregnancy" name="UC2 Pregnancy"/>
+<artifact id="RelatedPerson/uc2-mother-fetusA" key="RelatedPerson-uc2-mother-fetusA" name="UC2 RelatedPerson Fetus A"/>
+<artifact id="RelatedPerson/uc2-mother-fetusB" key="RelatedPerson-uc2-mother-fetusB" name="UC2 RelatedPerson Fetus B"/>
+<artifact id="DiagnosticReport/uc2-ultrasoundreport20" key="DiagnosticReport-uc2-ultrasoundreport20" name="UC2 UltraSound Report 24 weeks"/>
+<artifact id="DiagnosticReport/uc2-ultrasoundreport24" key="DiagnosticReport-uc2-ultrasoundreport24" name="UC2 UltraSound Scan 24 weeks"/>
+<artifact id="Procedure/uc2-ultrasoundscan20" key="Procedure-uc2-ultrasoundscan20" name="UC2 UltraSound Scan Procedure 20 weeks"/>
+<artifact id="Procedure/uc2-ultrasoundscan24" key="Procedure-uc2-ultrasoundscan24" name="UC2 UltraSound Scan Procedure 24 weeks"/>
+<artifact deprecated="true" id="Encounter/uc3-encounter-admission" key="Encounter-uc3-encounter-admission" name="UC3 Admission"/>
+<artifact id="Observation/uc3-bodyheight-firstMOHvisit" key="Observation-uc3-bodyheight-firstMOHvisit" name="UC3 Body Height First MOH Visit"/>
+<artifact id="Observation/uc3-bodyweight-firstMOHvisit" key="Observation-uc3-bodyweight-firstMOHvisit" name="UC3 Body Weight First MOH Visit"/>
+<artifact id="Observation/uc3-bodyweight-followupMOHvisit" key="Observation-uc3-bodyweight-followupMOHvisit" name="UC3 Body Weight Follow Up MOH Visit"/>
+<artifact deprecated="true" id="Procedure/uc3-childbirth" key="Procedure-uc3-childbirth" name="UC3 Child Birth"/>
+<artifact id="FamilyMemberHistory/uc3-familymemberhistory" key="FamilyMemberHistory-uc3-familymemberhistory" name="UC3 FamilyMemberHistory of Fetus"/>
+<artifact id="Observation/uc3-femurlenght-obsclinic" key="Observation-uc3-femurlenght-obsclinic" name="UC3 Femur Length Obstetric Clinic"/>
+<artifact id="Encounter/uc3-encounter-firstMOHvisit" key="Encounter-uc3-encounter-firstMOHvisit" name="UC3 First MOH Visit"/>
+<artifact id="Encounter/uc3-encounter-followupMOHvisit" key="Encounter-uc3-encounter-followupMOHvisit" name="UC3 Follow Up MOH Visit"/>
+<artifact id="Observation/uc3-headcircumference-obsclinic" key="Observation-uc3-headcircumference-obsclinic" name="UC3 Head Circumference Obstetric Clinic"/>
+<artifact id="Observation/uc3-hemoglobin-firstMOHvisit" key="Observation-uc3-hemoglobin-firstMOHvisit" name="UC3 Hemoglobin First MOH Visit"/>
+<artifact id="Location/uc3-location-KandyHospital" key="Location-uc3-location-KandyHospital" name="UC3 Kandy Hospital"/>
+<artifact id="Location/uc3-location-localMOH" key="Location-uc3-location-localMOH" name="UC3 Local MOH"/>
+<artifact id="Patient/uc3-mother" key="Patient-uc3-mother" name="UC3 Mother Patient"/>
+<artifact id="Encounter/uc3-encounter-obsclinic" key="Encounter-uc3-encounter-obsclinic" name="UC3 Obstetric Clinic Encounter"/>
+<artifact id="Practitioner/uc3-practitioner" key="Practitioner-uc3-practitioner" name="UC3 Practitioner"/>
+<artifact id="Practitioner/uc3-practitioner2" key="Practitioner-uc3-practitioner2" name="UC3 Practitioner 2"/>
+<artifact id="Condition/uc3-pregnancy" key="Condition-uc3-pregnancy" name="UC3 Pregnancy"/>
+<artifact id="Observation/uc3-pregnancytest-firstMOHVisit" key="Observation-uc3-pregnancytest-firstMOHVisit" name="UC3 Pregnancy Test First MOH Visit"/>
+<artifact id="Observation/uc3-reducingsubstances-firstMOHvisit" key="Observation-uc3-reducingsubstances-firstMOHvisit" name="UC3 Reducing Substances First MOH Visit"/>
+<artifact id="RelatedPerson/uc3-mother-fetus" key="RelatedPerson-uc3-mother-fetus" name="UC3 RelatedPerson Fetus"/>
+<artifact id="Observation/uc3-uterusfundalheight-followupMOHvisit" key="Observation-uc3-uterusfundalheight-followupMOHvisit" name="UC3 Uterus Fundal Height Follow Up MOH Visit"/>
+<artifact id="CarePlan/uc3-careplan" key="CarePlan-uc3-careplan" name="uc3-careplan"/>
+<artifact id="Patient/uc3-fetus" key="Patient-uc3-fetus" name="uc3-fetus"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="analysis" name="Analysis"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="background" name="Background"/>
+<page key="downloads" name="Downloads"/>
+<page key="guidance" name="Guidance"/>
+<page key="index" name="Home"/>
+<page key="toc" name="Table of Contents"/>
+<page deprecated="true" key="thought-process" name="Thought Process"/>
+<page key="use-case1-medication-request" name="Use Case 1 Medication Request"/>
+<page deprecated="true" key="use-case1-service-request" name="Use Case 1 Service Request"/>
+<page key="use-case2-result-reporting" name="Use Case 2 Result Reporting"/>
+<page key="use-case3-data-transfer" name="Use Case 3 Data Transfer"/>
 </specification>
