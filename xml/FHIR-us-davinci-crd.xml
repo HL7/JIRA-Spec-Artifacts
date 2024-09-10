@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-crd/2022May" ciUrl="http://build.fhir.org/ig/HL7/davinci-crd" defaultVersion="2.0.1" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-crd" url="http://hl7.org/fhir/us/davinci-crd">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="http://build.fhir.org/ig/HL7/davinci-crd" defaultVersion="2.1.0-preview" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-crd" url="http://hl7.org/fhir/us/davinci-crd">
 <version code="current" url="http://build.fhir.org/ig/HL7/davinci-crd"/>
+<version code="2.1.0-preview" url="http://hl7.org/fhir/us/davinci-crd/STU2.1-preview"/>
 <version code="2.0.1" url="http://hl7.org/fhir/us/davinci-crd/STU2"/>
 <version code="2.0.0" url="http://hl7.org/fhir/us/davinci-crd/STU2"/>
 <version code="1.1.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/davinci-crd/2022May"/>
@@ -13,17 +14,25 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact deprecated="true" id="SearchParameter/appointment-insurance" key="SearchParameter-appointment-insurance" name="Appointment Insurance Search Parameter"/>
-<artifact id="Appointment/example" key="Appointment-example" name="Appointment example"/>
+<artifact id="Appointment/example1" key="Appointment-example1" name="Appointment ServiceRequest example"/>
+<artifact id="Appointment/example2" key="Appointment-example" name="Appointment example"/>
 <artifact id="ValueSet/cdsHookType" key="ValueSet-cdsHookType" name="CDS Hook Types Value Set"/>
 <artifact deprecated="true" id="Task/action-example" key="Task-action-example" name="CDS Hook deferred action example"/>
 <artifact id="ValueSet/cardActions" key="ValueSet-cardActions" name="CDS Hooks Card Suggestion Action Types Value Set"/>
+<artifact id="StructureDefinition/CDSHookServiceRequestExtensionRequestConfig" key="StructureDefinition-CDSHookServiceRequestExtensionRequestConfig" name="CDS Hooks Service Request Configuration Extension"/>
+<artifact id="StructureDefinition/CDSHookServiceResponseExtensionAssociatedResource" key="StructureDefinition-CDSHookServiceResponseExtensionAssociatedResource" name="CDS Hooks Service Response Associated Resource Extension"/>
+<artifact id="StructureDefinition/CDSHookServiceResponseExtensionIfNoneExist" key="StructureDefinition-CDSHookServiceResponseExtensionIfNoneExist" name="CDS Hooks Service Response If-None-Exist Extension"/>
 <artifact id="StructureDefinition/CDSHookServicesExtensionConfiguration" key="StructureDefinition-CDSHookServicesExtensionConfig" name="CDS Hooks Services Configuration Extension"/>
+<artifact id="ValueSet/cmslocationcodes" key="ValueSet-cmslocationcodes" name="CMS Location Codes Value Set"/>
 <artifact id="ValueSet/CMSMappableLocationCodes" key="ValueSet-CMSMappableLocationCodes" name="CMS Mappable Location Codes"/>
 <artifact id="ValueSet/afterCompletionCode" key="ValueSet-afterCompletionCode" name="CRD After Completion Code Value Set"/>
-<artifact id="StructureDefinition/profile-appointment" key="StructureDefinition-profile-appointment" name="CRD Appointment"/>
+<artifact deprecated="true" id="StructureDefinition/profile-appointment" key="StructureDefinition-profile-appointment" name="CRD Appointment"/>
+<artifact id="StructureDefinition/profile-appointment-base" key="StructureDefinition-profile-appointment-base" name="CRD Base Appointment"/>
 <artifact deprecated="true" id="CodeSystem/cardType" key="CodeSystem-cardType" name="CRD Card Types Code System"/>
 <artifact id="ValueSet/cardType" key="ValueSet-cardType" name="CRD Card Types Value Set"/>
-<artifact id="CapabilityStatement/crd-client" key="CapabilityStatement-crd-client" name="CRD Client"/>
+<artifact deprecated="true" id="CapabilityStatement/crd-client" key="CapabilityStatement-crd-client" name="CRD Client"/>
+<artifact id="CapabilityStatement/crd-client3.1" key="CapabilityStatement-crd-client3.1" name="CRD Client USCDI 1"/>
+<artifact id="CapabilityStatement/crd-client6.1" key="CapabilityStatement-crd-client6.1" name="CRD Client USCDI 3"/>
 <artifact id="StructureDefinition/profile-communicationrequest" key="StructureDefinition-profile-communicationrequest" name="CRD Communication Request"/>
 <artifact id="ValueSet/configTypes" key="ValueSet-configTypes" name="CRD Configuration Code Data Types Value Set"/>
 <artifact id="StructureDefinition/profile-coverage" key="StructureDefinition-profile-coverage" name="CRD Coverage"/>
@@ -37,7 +46,10 @@
 <artifact id="StructureDefinition/profile-device" key="StructureDefinition-profile-device" name="CRD Device"/>
 <artifact id="StructureDefinition/profile-devicerequest" key="StructureDefinition-profile-devicerequest" name="CRD Device Request"/>
 <artifact id="ValueSet/deviceRequest" key="ValueSet-deviceRequest" name="CRD Device Request Codes Value Set"/>
-<artifact id="StructureDefinition/profile-encounter" key="StructureDefinition-profile-encounter" name="CRD Encounter"/>
+<artifact id="StructureDefinition/profile-task-dispatch" key="StructureDefinition-profile-task-dispatch" name="CRD Dispatch Task"/>
+<artifact deprecated="true" id="StructureDefinition/profile-encounter" key="StructureDefinition-profile-encounter" name="CRD Encounter"/>
+<artifact id="StructureDefinition/profile-encounter3.1" key="StructureDefinition-profile-encounter3.1" name="CRD Encounter - USCDI 1"/>
+<artifact id="StructureDefinition/profile-encounter6.1" key="StructureDefinition-profile-encounter6.1" name="CRD Encounter - USCDI 3"/>
 <artifact id="ValueSet/informationNeeded" key="ValueSet-informationNeeded" name="CRD Information Needed Value Set"/>
 <artifact id="StructureDefinition/profile-location" key="StructureDefinition-profile-location" name="CRD Location"/>
 <artifact id="ValueSet/locationAddressType" key="ValueSet-locationAddressType" name="CRD Location Address Types Value Set"/>
@@ -49,14 +61,18 @@
 <artifact id="ValueSet/orderDetail" key="ValueSet-orderDetail" name="CRD Order Detail Codes Value Set"/>
 <artifact id="StructureDefinition/profile-organization" key="StructureDefinition-profile-organization" name="CRD Organization"/>
 <artifact id="StructureDefinition/profile-patient" key="StructureDefinition-profile-patient" name="CRD Patient"/>
-<artifact id="StructureDefinition/profile-practitioner" key="StructureDefinition-profile-practitioner" name="CRD Practitioner"/>
+<artifact deprecated="true" id="StructureDefinition/profile-practitioner" key="StructureDefinition-profile-practitioner" name="CRD Practitioner"/>
 <artifact id="StructureDefinition/profile-taskquestionnaire" key="StructureDefinition-profile-taskquestionnaire" name="CRD Questionnaire Task"/>
-<artifact id="CapabilityStatement/crd-server" key="CapabilityStatement-crd-server" name="CRD Server"/>
+<artifact deprecated="true" id="CapabilityStatement/crd-server" key="CapabilityStatement-crd-server" name="CRD Server"/>
+<artifact id="CapabilityStatement/crd-server3.1" key="CapabilityStatement-crd-server3.1" name="CRD Server USCDI 1"/>
+<artifact id="CapabilityStatement/crd-server6.1" key="CapabilityStatement-crd-server6.1" name="CRD Server USCDI 3"/>
 <artifact id="StructureDefinition/profile-servicerequest" key="StructureDefinition-profile-servicerequest" name="CRD Service Request"/>
 <artifact id="ValueSet/serviceRequestCodes" key="ValueSet-serviceRequestCodes" name="CRD Service Request Codes Value Set"/>
 <artifact id="ValueSet/taskReason" key="ValueSet-taskReasonCode" name="CRD Task Reason Codes Value Set"/>
 <artifact id="CodeSystem/temp" key="CodeSystem-temp" name="CRD Temporary Codes"/>
 <artifact id="StructureDefinition/profile-visionprescription" key="StructureDefinition-profile-visionprescription" name="CRD Vision Prescription"/>
+<artifact id="StructureDefinition/profile-appointment-no-order" key="StructureDefinition-profile-appointment-no-order" name="CRDAppointmentNoOrder"/>
+<artifact id="StructureDefinition/profile-appointment-with-order" key="StructureDefinition-profile-appointment-with-order" name="CRDAppointmentWithOrder"/>
 <artifact deprecated="true" id="StructureDefinition/profile-crdcardtask" key="StructureDefinition-profile-crdcardtask" name="CRDCardTask"/>
 <artifact deprecated="true" id="StructureDefinition/profile-claimresponse" key="StructureDefinition-profile-claimresponse" name="ClaimResponse"/>
 <artifact deprecated="true" id="SearchParameter/communicationrequest-insurance" key="SearchParameter-communicationrequest-insurance" name="CommunicationRequest Insurance Search Parameter"/>
@@ -71,8 +87,17 @@
 <artifact id="Device/example" key="Device-example" name="Device example"/>
 <artifact deprecated="true" id="SearchParameter/devicerequest-insurance" key="SearchParameter-devicerequest-insurance" name="DeviceRequest Insurance Search Parameter"/>
 <artifact id="DeviceRequest/example" key="DeviceRequest-example" name="DeviceRequest example"/>
+<artifact id="Task/task-dispatch-example" key="Task-task-dispatch-example" name="Dispatch Task example"/>
 <artifact deprecated="true" id="SearchParameter/encounter-insurance" key="SearchParameter-encounter-insurance" name="Encounter Insurance Search Parameter"/>
 <artifact id="Encounter/example" key="Encounter-example" name="Encounter example"/>
+<artifact id="Binary/CRDServiceRequest2" key="Binary-CRDServiceRequest2" name="Example CRD Service Request with ServiceRequests"/>
+<artifact id="Binary/CRDServiceRequest" key="Binary-CRDServiceRequest" name="Example CRD Service Requestion with MedicationRequests"/>
+<artifact id="Binary/CRDServiceResponse" key="Binary-CRDServiceResponse" name="Example CRD Service Response"/>
+<artifact id="Binary/CRDServiceResponse2" key="Binary-CRDServiceResponse2" name="Example CRD Service Response - Coverage Information"/>
+<artifact id="Binary/CRDServices" key="Binary-CRDServices" name="Example CRD Services Response"/>
+<artifact id="Bundle/search-response" key="Bundle-search-response" name="Example EHR response"/>
+<artifact id="Bundle/search-request" key="Bundle-search-request" name="Example EHR search"/>
+<artifact id="ConceptMap/HL7Location-CRDTemp" key="ConceptMap-HL7Location-CRDTemp" name="HL7 Location code to CMS location code"/>
 <artifact deprecated="true" id="StructureDefinition/ext-insurance" key="StructureDefinition-ext-insurance" name="InsuranceExtension"/>
 <artifact id="Location/example" key="Location-example" name="Location example"/>
 <artifact deprecated="true" id="SearchParameter/medicationrequest-insurance" key="SearchParameter-medicationrequest-insurance" name="MedicationRequest Insurance Search Parameter"/>
@@ -83,7 +108,8 @@
 <artifact id="Organization/example" key="Organization-example" name="Organization example"/>
 <artifact id="Patient/example" key="Patient-example" name="Patient example"/>
 <artifact deprecated="true" id="StructureDefinition/profile-patient-deident" key="StructureDefinition-profile-patient-deident" name="PatientDident"/>
-<artifact id="Practitioner/example" key="Practitioner-example" name="Practitioner example"/>
+<artifact deprecated="true" id="Practitioner/example" key="Practitioner-example" name="Practitioner example"/>
+<artifact id="Practitioner/full" key="Practitioner-full" name="Practitioner full example"/>
 <artifact deprecated="true" id="ClaimResponse/priorauth-example" key="ClaimResponse-priorauth-example" name="Prior Authorization example"/>
 <artifact id="Task/questionnaire-example" key="Task-questionnaire-example" name="Questionnaire Task example"/>
 <artifact deprecated="true" id="SearchParameter/servicerequest-insurance" key="SearchParameter-servicerequest-insurance" name="ServiceRequest Insurance Search Parameter"/>
@@ -95,9 +121,9 @@
 <page deprecated="true" key="profiles" name="(profiles)"/>
 <page key="artifacts" name="Artifact List"/>
 <page key="deviations" name="CDS Hook Deviations and Enhancements"/>
+<page key="cards" name="CDS Hook Response Profiles"/>
 <page key="index" name="CRD IG Home Page"/>
 <page key="metrics" name="CRD Metrics"/>
-<page key="cards" name="Cards Profiles"/>
 <page key="history" name="Change History"/>
 <page key="credits" name="Credits"/>
 <page key="downloads" name="Downloads"/>
