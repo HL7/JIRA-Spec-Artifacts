@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="http://build.fhir.org/ig/HL7/davinci-crd" defaultVersion="2.1.0-preview" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-crd" url="http://hl7.org/fhir/us/davinci-crd">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="http://build.fhir.org/ig/HL7/davinci-crd" defaultVersion="2.1.0" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-crd" url="http://hl7.org/fhir/us/davinci-crd">
 <version code="current" url="http://build.fhir.org/ig/HL7/davinci-crd"/>
-<version code="2.1.0-preview" url="http://hl7.org/fhir/us/davinci-crd/STU2.1-preview"/>
-<version code="2.0.1" url="http://hl7.org/fhir/us/davinci-crd/STU2"/>
-<version code="2.0.0" url="http://hl7.org/fhir/us/davinci-crd/STU2"/>
+<version code="2.1.0" url="http://hl7.org/fhir/us/davinci-crd/STU2.1"/>
+<version code="2.1.0-preview" url="http://hl7.org/fhir/us/davinci-crd/STU2.1-preview" deprecated="true"/>
+<version code="2.0.1" url="http://hl7.org/fhir/us/davinci-crd/STU2" deprecated="true"/>
+<version code="2.0.0" url="http://hl7.org/fhir/us/davinci-crd/STU2" deprecated="true"/>
 <version code="1.1.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/davinci-crd/2022May"/>
 <version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-crd/STU1"/>
 <version code="0.3.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-crd/2019May"/>
@@ -33,6 +34,7 @@
 <artifact deprecated="true" id="CapabilityStatement/crd-client" key="CapabilityStatement-crd-client" name="CRD Client"/>
 <artifact id="CapabilityStatement/crd-client3.1" key="CapabilityStatement-crd-client3.1" name="CRD Client USCDI 1"/>
 <artifact id="CapabilityStatement/crd-client6.1" key="CapabilityStatement-crd-client6.1" name="CRD Client USCDI 3"/>
+<artifact id="CapabilityStatement/crd-client7.0" key="CapabilityStatement-crd-client7.0" name="CRD Client USCDI 4"/>
 <artifact id="StructureDefinition/profile-communicationrequest" key="StructureDefinition-profile-communicationrequest" name="CRD Communication Request"/>
 <artifact id="ValueSet/configTypes" key="ValueSet-configTypes" name="CRD Configuration Code Data Types Value Set"/>
 <artifact id="StructureDefinition/profile-coverage" key="StructureDefinition-profile-coverage" name="CRD Coverage"/>
@@ -48,8 +50,8 @@
 <artifact id="ValueSet/deviceRequest" key="ValueSet-deviceRequest" name="CRD Device Request Codes Value Set"/>
 <artifact id="StructureDefinition/profile-task-dispatch" key="StructureDefinition-profile-task-dispatch" name="CRD Dispatch Task"/>
 <artifact deprecated="true" id="StructureDefinition/profile-encounter" key="StructureDefinition-profile-encounter" name="CRD Encounter"/>
-<artifact id="StructureDefinition/profile-encounter3.1" key="StructureDefinition-profile-encounter3.1" name="CRD Encounter - USCDI 1"/>
-<artifact id="StructureDefinition/profile-encounter6.1" key="StructureDefinition-profile-encounter6.1" name="CRD Encounter - USCDI 3"/>
+<artifact deprecated="true" id="StructureDefinition/profile-encounter3.1" key="StructureDefinition-profile-encounter3.1" name="CRD Encounter - USCDI 1"/>
+<artifact deprecated="true" id="StructureDefinition/profile-encounter6.1" key="StructureDefinition-profile-encounter6.1" name="CRD Encounter - USCDI 3"/>
 <artifact id="ValueSet/informationNeeded" key="ValueSet-informationNeeded" name="CRD Information Needed Value Set"/>
 <artifact id="StructureDefinition/profile-location" key="StructureDefinition-profile-location" name="CRD Location"/>
 <artifact id="ValueSet/locationAddressType" key="ValueSet-locationAddressType" name="CRD Location Address Types Value Set"/>
@@ -63,9 +65,9 @@
 <artifact id="StructureDefinition/profile-patient" key="StructureDefinition-profile-patient" name="CRD Patient"/>
 <artifact deprecated="true" id="StructureDefinition/profile-practitioner" key="StructureDefinition-profile-practitioner" name="CRD Practitioner"/>
 <artifact id="StructureDefinition/profile-taskquestionnaire" key="StructureDefinition-profile-taskquestionnaire" name="CRD Questionnaire Task"/>
-<artifact deprecated="true" id="CapabilityStatement/crd-server" key="CapabilityStatement-crd-server" name="CRD Server"/>
-<artifact id="CapabilityStatement/crd-server3.1" key="CapabilityStatement-crd-server3.1" name="CRD Server USCDI 1"/>
-<artifact id="CapabilityStatement/crd-server6.1" key="CapabilityStatement-crd-server6.1" name="CRD Server USCDI 3"/>
+<artifact deprecated="true" id="CapabilityStatement/crd-server3.1" key="CapabilityStatement-crd-server3.1" name="CRD Server USCDI 1"/>
+<artifact deprecated="true" id="CapabilityStatement/crd-server" key="CapabilityStatement-crd-server" name="CRD Server USCDI 1, 3, 4"/>
+<artifact deprecated="true" id="CapabilityStatement/crd-server6.1" key="CapabilityStatement-crd-server6.1" name="CRD Server USCDI 3"/>
 <artifact id="StructureDefinition/profile-servicerequest" key="StructureDefinition-profile-servicerequest" name="CRD Service Request"/>
 <artifact id="ValueSet/serviceRequestCodes" key="ValueSet-serviceRequestCodes" name="CRD Service Request Codes Value Set"/>
 <artifact id="ValueSet/taskReason" key="ValueSet-taskReasonCode" name="CRD Task Reason Codes Value Set"/>
