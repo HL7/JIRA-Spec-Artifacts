@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification url="http://cds-hooks.hl7.org" gitUrl="https://github.com/HL7/cds-hooks-hl7-site" ciUrl="http://cds-hooks.org" defaultWorkgroup="cds" defaultVersion="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="1.0.0" url="https://cds-hooks.hl7.org/1.0"/>
-  <version code="2.0.0" url="https://cds-hooks.hl7.org/2.0"/>
-  <version code="1.0" deprecated="true"/>
-  <version code="2.0" deprecated="true"/>
-  <artifact name="Conformance" key="Conformance" deprecated="true"/>
-  <artifact id="Hooks/patient-view" key="Hooks-patient-view" name="Hooks - Patient View" />
-  <artifact id="Hooks/order-sign" key="Hooks-order-sign" name="Hooks - Order Sign" />
-  <artifact id="Hooks/order-select" key="Hooks-order-select" name="Hooks - Order Select" />
-  <artifact id="Hooks/appointment-book" key="Hooks-appointment-book" name="Hooks - Appointment Book" />
-  <artifact id="Hooks/encounter-discharge" key="Hooks-encounter-discharge" name="Hooks - Encounter Discharge" />
-  <artifact id="Hooks/order-dispatch" key="Hooks-order-dispatch" name="Hooks - Order Dispatch" />
-  <artifact id="Hooks/encounter-start" key="Hooks-encounter-start" name="Hooks - Encounter Start" />
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="(profiles)" key="profiles" deprecated="true"/>
-  <page name="documentation" key="documentation" deprecated="true"/>
-  <page name="index" key="index" deprecated="true"/>
-  <page name="specification" key="specification"/>
-  <page name="hooks" key="hooks"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/HL7/cds-hooks" defaultVersion="current" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/cds-hooks" url="https://cds-hooks.hl7.org">
+<version code="current" url="https://build.fhir.org/ig/HL7/cds-hooks"/>
+<version code="2.0.0" url="https://cds-hooks.hl7.org/2.0" />
+<version code="1.0.0" url="https://cds-hooks.hl7.org/1.0" />
+<version code="1.0" deprecated="true"/>
+<version code="2.0" deprecated="true"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact deprecated="true" key="Conformance" name="Conformance"/>
+<artifact deprecated="true" id="Hooks/appointment-book" key="Hooks-appointment-book" name="Hooks - Appointment Book"/>
+<artifact deprecated="true" id="Hooks/encounter-discharge" key="Hooks-encounter-discharge" name="Hooks - Encounter Discharge"/>
+<artifact deprecated="true" id="Hooks/encounter-start" key="Hooks-encounter-start" name="Hooks - Encounter Start"/>
+<artifact deprecated="true" id="Hooks/order-dispatch" key="Hooks-order-dispatch" name="Hooks - Order Dispatch"/>
+<artifact deprecated="true" id="Hooks/order-select" key="Hooks-order-select" name="Hooks - Order Select"/>
+<artifact deprecated="true" id="Hooks/order-sign" key="Hooks-order-sign" name="Hooks - Order Sign"/>
+<artifact deprecated="true" id="Hooks/patient-view" key="Hooks-patient-view" name="Hooks - Patient View"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page deprecated="true" key="profiles" name="(profiles)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="toc" name="Table of Contents"/>
+<page deprecated="true" key="documentation" name="documentation"/>
+<page deprecated="true" key="hooks" name="hooks"/>
+<page key="specification" name="specification"/>
+<page name="(profiles) [deprecated]" key="FHIR-cds-hooks-profiles" deprecated="true"/>
+<page name="documentation [deprecated]" key="FHIR-cds-hooks-documentation" deprecated="true"/>
+<page name="index [deprecated]" key="FHIR-cds-hooks-index" deprecated="true"/>
 </specification>
