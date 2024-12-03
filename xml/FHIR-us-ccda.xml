@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/ccda/2023May" ciUrl="http://build.fhir.org/ig/HL7/ccda-on-fhir" defaultVersion="1.2.0" defaultWorkgroup="cgp" gitUrl="https://github.com/HL7/ccda-on-fhir" url="http://hl7.org/fhir/us/ccda">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/ccda/2025Jan" ciUrl="http://build.fhir.org/ig/HL7/ccda-on-fhir" defaultVersion="2.0.0" defaultWorkgroup="cgp" gitUrl="https://github.com/HL7/ccda-on-fhir" url="http://hl7.org/fhir/us/ccda">
 <version code="current" url="http://build.fhir.org/ig/HL7/ccda-on-fhir"/>
-<version code="1.2.0" url="http://hl7.org/fhir/us/ccda/STU1.2"/>
-<version code="1.2.0-ballot" url="http://hl7.org/fhir/us/ccda/2023May"/>
+<version code="2.0.0" url="http://hl7.org/fhir/us/ccda/STU2.0"/>
+<version code="2.0.0-ballot" url="http://hl7.org/fhir/us/ccda/2025Jan"/>
+<version code="1.2.0" deprecated="true" url="http://hl7.org/fhir/us/ccda/STU1.2"/>
+<version code="1.2.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/ccda/2023May"/>
 <version code="1.1.0" deprecated="true" url="http://hl7.org/fhir/us/ccda/STU1.1"/>
 <version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/ccda/STU1"/>
 <version code="1.8.0" deprecated="true" url="http://hl7.org/fhir/us/ccda/2017Jan"/>
@@ -103,6 +105,10 @@
 <artifact id="ConceptMap/FC-TelecomType" key="ConceptMap-FC-TelecomType" name="FHIR to C-CDA Telecom Type"/>
 <artifact id="ConceptMap/FC-TelecomUse" key="ConceptMap-FC-TelecomUse" name="FHIR to C-CDA Telecom Use"/>
 <artifact id="ConceptMap/FC-AllergyIntoleranceCategory" key="ConceptMap-FC-AllergyIntoleranceCategory" name="FHIR to CCDA Allergy Intolerance Category"/>
+<artifact id="ConceptMap/CF-EncounterStatus" key="ConceptMap-CF-EncounterStatus" name="CCDA Encounter Status to FHIR Encounter Status"/>
+<artifact id="ConceptMap/CF-ResultReportStatus" key="ConceptMap-CF-ResultReportStatus" name="CCDA Result Report Status to FHIR Result Report Status"/>
+<artifact id="ConceptMap/CF-ResultStatus" key="ConceptMap-CF-ResultStatus" name="CCDA Result Status to FHIR Result Status"/>
+<artifact id="ConceptMap/FC-Observation Status" key="ConceptMap-FC-ObservationStatus" name="FHIR Observation Status to CCDA Observation Status"/>
 <artifact deprecated="true" id="ConceptMap/F2C-AllergyIntolerance" key="ConceptMap-F2C-AllergyIntolerance" name="FHIR-to-CCDA map for AllergyIntolerance"/>
 <artifact deprecated="true" id="ConceptMap/F2C-Condition" key="ConceptMap-F2C-Condition" name="FHIR-to-CCDA map for Condition"/>
 <artifact deprecated="true" id="ConceptMap/F2C-Immunization" key="ConceptMap-F2C-Immunization" name="FHIR-to-CCDA map for Immunization"/>
@@ -166,6 +172,13 @@
 <page key="CF-problems" name="C-CDA to FHIR Problems"/>
 <page key="CF-procedures" name="C-CDA to FHIR Procedures"/>
 <page key="CF-index" name="C-CDA → FHIR Index"/>
+<page key="CF-encounters" name="C-CDA to FHIR Encounters"/>
+<page key="CF-notes" name="C-CDA to FHIR Notes"/>
+<page key="CF-participation" name="C-CDA to FHIR Participation"/>
+<page key="CF-results" name="C-CDA to FHIR Results"/>
+<page key="CF-social" name="C-CDA to FHIR Social History"/>
+<page key="CF-vitals" name="C-CDA to FHIR Vital Signs"/>
+<page key="FC-vitals" name="FHIR to C-CDA Vital Signs"/>
 <page key="downloads" name="Downloads"/>
 <page key="FC-allergies" name="FHIR to C-CDA Allergies"/>
 <page key="FC-immunizations" name="FHIR to C-CDA Immunizations"/>
