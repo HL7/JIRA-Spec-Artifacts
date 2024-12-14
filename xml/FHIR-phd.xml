@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/phd/2024Sep" ciUrl="http://build.fhir.org/ig/HL7/phd" defaultVersion="1.1.0" defaultWorkgroup="dev" gitUrl="https://github.com/HL7/PHD" url="http://hl7.org/fhir/uv/phd">
 <version code="current" url="http://build.fhir.org/ig/HL7/phd"/>
+<version code="1.1.0" url="http://hl7.org/fhir/uv/phd/STU1.1"/>
 <version code="2.0.0-ballot" url="http://hl7.org/fhir/uv/phd/2024Sep"/>
 <version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/uv/phd/STU1"/>
 <version code="0.3.0" deprecated="true" url="http://hl7.org/fhir/uv/phd/2019May"/>
 <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/uv/phd/2019Jan"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/uv/phd/2018Jan"/>
-<version code="1.1.0" deprecated="false" url="http://hl7.org/fhir/uv/phd/STU1.1"/>
 <version code="0.1" deprecated="true" url="http://hl7.org/fhir/uv/phd/2018Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="CodeSystem/ASN1EventOrState" key="CodeSystem-ASN1EventOrState" name="11073 ASN1 Event Or State"/>
 <artifact id="CodeSystem/ASN1ToHL7" key="CodeSystem-ASN1ToHL7" name="ASN1ToHL7"/>
-<artifact id="CodeSystem/ASN1ToHL7Concepts" key="CodeSystem-ASN1ToHL7Concepts" name="ASN1ToHL7Concepts"/>
+<artifact deprecated="true" id="CodeSystem/ASN1ToHL7Concepts" key="CodeSystem-ASN1ToHL7Concepts" name="ASN1ToHL7Concepts"/>
 <artifact id="ValueSet/ASN1attribute" key="ValueSet-ASN1attribute" name="ASN1attribute"/>
 <artifact id="ValueSet/ASN1measurement" key="ValueSet-ASN1measurement" name="ASN1measurement"/>
 <artifact id="ValueSet/CodeableConcept11073MDC" key="ValueSet-CodeableConcept11073MDC" name="CodeableConcept11073MDC"/>
@@ -28,20 +28,20 @@
 <artifact deprecated="true" id="Observation/bloodPress-1.0.1" key="Observation-bloodPress-1.0.1" name="Example of Compound measurement"/>
 <artifact id="Device/phd-74E8FFFEFF051C00.001C05FFE874" key="Device-phd-74E8FFFEFF051C00.001C05FFE874" name="Example of PHD Device"/>
 <artifact id="Observation/stringenum-1234" key="Observation-stringenum-1234" name="Example of String measurement"/>
-<artifact id="Observation/bits-observation" key="Observation-bits-1.0.0.40" name="Example of a ASN1 BITs measurement"/>
+<artifact id="Observation/bits-1.0.0.40" key="Observation-bits-1.0.0.40" name="Example of a ASN1 BITs measurement"/>
 <artifact id="Device/phd-711000FEFF5F49B0.B0495F001071" key="Device-phd-711000FEFF5F49B0.B0495F001071" name="Example of a Blood Pressure PHD"/>
-<artifact id="Observation/coin-example-1" key="Observation-coin-example-1" name="Example of a Coincident Time Stamp"/>
+<artifact deprecated="true" id="Observation/coin-example-1" key="Observation-coin-example-1" name="Example of a Coincident Time Stamp"/>
 <artifact id="Observation/coin-20181119202022" key="Observation-coin-20181119202022" name="Example of a Coincident Time Stamp PHG better synchronized"/>
 <artifact deprecated="true" id="Observation/coin-1234" key="Observation-coin-1234" name="Example of a Coincident Time Stamp referenced by the Glucose Meal Context Observation"/>
 <artifact id="Observation/coin-20181119174911" key="Observation-coin-20181119174911" name="Example of a Coincident Time Stamp referenced from BP observation"/>
-<artifact id="Observation/coin-example-timefault" key="Observation-coin-fault20" name="Example of a Coincident Time Stamp with a Time Fault"/>
+<artifact id="Observation/coin-fault20" key="Observation-coin-fault20" name="Example of a Coincident Time Stamp with a Time Fault"/>
 <artifact id="Device/phg-ecde3d4e58532d31.000000000000" key="Device-phg-ecde3d4e58532d31.000000000000" name="Example of a Gateway"/>
 <artifact id="Device/phd-00601900010E9234.F45EABA80832" key="Device-phd-00601900010E9234.F45EABA80832" name="Example of a Glucose Monitor PHD"/>
-<artifact id="Observation/numeric-observation-not-a-number" key="Observation-nan-1.0.0.42" name="Example of a NaN case"/>
-<artifact id="Patient/patientExample-1" key="Patient-sisansarahId.1.2.3.4.5.6.7.8.10" name="Example of a Patient"/>
-<artifact id="Observation/compound-numeric-observation" key="Observation-compound-numeric-observation" name="Example of a compound numeric observation"/>
-<artifact id="Bundle/bundle-example-1" key="Bundle-nonin-hdp-1542718631721" name="Example of a first time Bundle upload"/>
-<artifact id="Observation/numeric-spotnumeric" key="Observation-spotnumeric-1.0.0.3" name="Example of a numeric."/>
+<artifact id="Observation/nan-1.0.0.42" key="Observation-nan-1.0.0.42" name="Example of a NaN case"/>
+<artifact id="Patient/sisansarahId.1.2.3.4.5.6.7.8.10" key="Patient-sisansarahId.1.2.3.4.5.6.7.8.10" name="Example of a Patient"/>
+<artifact deprecated="true" id="Observation/compound-numeric-observation" key="Observation-compound-numeric-observation" name="Example of a compound numeric observation"/>
+<artifact id="Bundle/nonin-hdp-1542718631721" key="Bundle-nonin-hdp-1542718631721" name="Example of a first time Bundle upload"/>
+<artifact id="Observation/spotnumeric-1.0.0.3" key="Observation-spotnumeric-1.0.0.3" name="Example of a numeric."/>
 <artifact id="Observation/rtsa-1234" key="Observation-rtsa-1234" name="Example of an Rtsa."/>
 <artifact id="Observation/glucose-1.0.0.4" key="Observation-glucose-1.0.0.4" name="Example of coded enumeration"/>
 <artifact id="ValueSet/MDCobject" key="ValueSet-MDCobject" name="IEEE 11073 MDC Object infrastructure and Device nomenclature"/>
@@ -99,7 +99,7 @@
 <page key="MetricAttributesofNoInterest" name="Metric Protocol-Only Attributes"/>
 <page deprecated="true" key="NumericNaN" name="NaN Example"/>
 <page key="Nomenclaturecodes" name="Nomenclature codes"/>
-<page key="Non11073PHDDevices" name="Non IEEE 11073 PHD Devices"/>
+<page deprecated="true" key="Non11073PHDDevices" name="Non IEEE 11073 PHD Devices"/>
 <page deprecated="true" key="Non1107320601Devices" name="Non IEEE 11073-20601 Devices"/>
 <page key="ObtainObservationCode" name="Obtaining the Observation Code"/>
 <page key="ObtainUnitCode" name="Obtaining the Unit Code"/>
