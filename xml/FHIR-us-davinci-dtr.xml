@@ -5,10 +5,10 @@
 <version code="2.1.0-preview" deprecated="true" url="http://hl7.org/fhir/us/davinci-dtr/2.1.0-preview"/>
 <version code="2.0.1" deprecated="true" url="http://hl7.org/fhir/us/davinci-dtr/STU2"/>
 <version code="1.1.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/davinci-dtr/2022May"/>
-<version code="2.0.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-dtr/STU2"/>
 <version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-dtr/STU1"/>
 <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-dtr/2019Sep"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-dtr/2019May"/>
+<version code="2.0.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-dtr/STU2"/>
 <version code="1.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-dtr/STU1.1"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
@@ -34,8 +34,8 @@
 <artifact id="OperationDefinition/DTR-Questionnaire-next-question" key="OperationDefinition-DTR-Questionnaire-next-question" name="DTR Next Question Operation"/>
 <artifact id="StructureDefinition/dtr-next-question-output-parameters" key="StructureDefinition-dtr-next-question-output-parameters" name="DTR Next Question Output Parameters"/>
 <artifact deprecated="true" id="CapabilityStatement/dtr-payer-service" key="CapabilityStatement-dtr-payer-service" name="DTR Payer Service"/>
-<artifact id="CapabilityStatement/dtr-payer-service-311" key="CapabilityStatement-dtr-payer-service-311" name="DTR Payer Service - USCDI 1"/>
-<artifact id="CapabilityStatement/dtr-payer-service-610" key="CapabilityStatement-dtr-payer-service-610" name="DTR Payer Service - USCDI 3"/>
+<artifact deprecated="true" id="CapabilityStatement/dtr-payer-service-311" key="CapabilityStatement-dtr-payer-service-311" name="DTR Payer Service - USCDI 1"/>
+<artifact deprecated="true" id="CapabilityStatement/dtr-payer-service-610" key="CapabilityStatement-dtr-payer-service-610" name="DTR Payer Service - USCDI 3"/>
 <artifact id="OperationDefinition/questionnaire-package" key="OperationDefinition-questionnaire-package" name="DTR Questionnaire Package"/>
 <artifact id="StructureDefinition/DTR-QPackageBundle" key="StructureDefinition-DTR-QPackageBundle" name="DTR Questionnaire Package Bundle"/>
 <artifact id="StructureDefinition/dtr-qpackage-input-parameters" key="StructureDefinition-dtr-qpackage-input-parameters" name="DTR Questionnaire Package Input Parameters"/>
@@ -53,10 +53,10 @@
 <artifact id="CodeSystem/temp" key="CodeSystem-temp" name="DTR Temporary Codes"/>
 <artifact deprecated="true" id="Coverage/DTRCoverage1002" key="Coverage-DTRCoverage1002" name="DTRCoverage1002"/>
 <artifact deprecated="true" id="OperationDefinition/Questionnaire-for-Order" key="OperationDefinition-Questionnaire-for-Order" name="DTRQuestionnaireOperation"/>
-<artifact id="Bundle/DTRQuestionnairePackageOperationResultComplex" key="Bundle-DTRQuestionnairePackageOperationResultComplex" name="DTRQuestionnairePackageOperationResultComplex"/>
 <artifact deprecated="true" id="CapabilityStatement/full-dtr-ehr" key="CapabilityStatement-full-dtr-ehr" name="Full DTR EHR"/>
 <artifact id="CapabilityStatement/full-dtr-ehr-311" key="CapabilityStatement-full-dtr-ehr-311" name="Full DTR EHR - USCDI 1"/>
-<artifact id="CapabilityStatement/full-dtr-ehr-610" key="CapabilityStatement-full-dtr-ehr-610" name="Full DTR EHR - USCDI 3"/>
+<artifact deprecated="true" id="CapabilityStatement/full-dtr-ehr-610" key="CapabilityStatement-full-dtr-ehr-610" name="Full DTR EHR - USCDI 3"/>
+<artifact id="CapabilityStatement/full-dtr-ehr-700" key="CapabilityStatement-full-dtr-ehr-700" name="Full DTR EHR - USCDI 3 &amp; 4"/>
 <artifact id="Questionnaire/home-o2-std-questionnaire" key="Questionnaire-home-o2-std-questionnaire" name="Home Oxygen Therapy Order Template"/>
 <artifact id="ValueSet/MetricsinformationOrigins" key="ValueSet-MetricsinformationOrigins" name="Information Human Origins Value Set"/>
 <artifact id="StructureDefinition/information-origin" key="StructureDefinition-information-origin" name="Information Origin"/>
@@ -64,7 +64,8 @@
 <artifact id="StructureDefinition/intendedUse" key="StructureDefinition-intendedUse" name="Intended Use"/>
 <artifact deprecated="true" id="CapabilityStatement/light-dtr-ehr" key="CapabilityStatement-light-dtr-ehr" name="Light DTR EHR"/>
 <artifact id="CapabilityStatement/light-dtr-ehr-311" key="CapabilityStatement-light-dtr-ehr-311" name="Light DTR EHR - USCDI 1"/>
-<artifact id="CapabilityStatement/light-dtr-ehr-610" key="CapabilityStatement-light-dtr-ehr-610" name="Light DTR EHR - USCDI 3"/>
+<artifact deprecated="true" id="CapabilityStatement/light-dtr-ehr-610" key="CapabilityStatement-light-dtr-ehr-610" name="Light DTR EHR - USCDI 3"/>
+<artifact id="CapabilityStatement/light-dtr-ehr-700" key="CapabilityStatement-light-dtr-ehr-700" name="Light DTR EHR - USCDI 3 &amp; 4"/>
 <artifact id="ValueSet/metric-Action" key="ValueSet-metric-Action" name="Metric Action"/>
 <artifact id="ValueSet/metric-launchmode" key="ValueSet-metric-launchmode" name="Metric Launch Mode"/>
 <artifact id="ValueSet/metric-Source" key="ValueSet-metric-Source" name="Metric Source"/>
@@ -73,11 +74,13 @@
 <artifact deprecated="true" id="StructureDefinition/endpoint" key="StructureDefinition-endpoint" name="PayerEndpoint"/>
 <artifact id="Practitioner/PractitionerExample" key="Practitioner-PractitionerExample" name="PractitionerExample"/>
 <artifact id="Library/library-quick-model-definition" key="Library-library-quick-model-definition" name="QUICK Model Definition"/>
+<artifact id="Bundle/DTRQuestionnairePackageOperationResultComplex" key="Bundle-DTRQuestionnairePackageOperationResultComplex" name="Questionnaire Package Operation Results - Complex"/>
 <artifact id="Bundle/DTRQuestionnairePackageOperationResultSimple" key="Bundle-DTRQuestionnairePackageOperationResultSimple" name="Questionnaire Package Operation Results - Simple"/>
 <artifact id="StructureDefinition/qr-context" key="StructureDefinition-context" name="Questionnaire Response Context"/>
 <artifact id="Questionnaire/referred-questionnaire" key="Questionnaire-referred-questionnaire" name="Referred Questionnaire for QuestionnaireResponse"/>
-<artifact id="CapabilityStatement/smart-dtr-client-311" key="CapabilityStatement-smart-dtr-client-311" name="SMART DTR Client - USCDI 1"/>
-<artifact id="CapabilityStatement/smart-dtr-client-610" key="CapabilityStatement-smart-dtr-client-610" name="SMART DTR Client - USCDI 3"/>
+<artifact id="CapabilityStatement/smart-dtr-client" key="CapabilityStatement-smart-dtr-client" name="SMART DTR Client"/>
+<artifact deprecated="true" id="CapabilityStatement/smart-dtr-client-311" key="CapabilityStatement-smart-dtr-client-311" name="SMART DTR Client - USCDI 1"/>
+<artifact deprecated="true" id="CapabilityStatement/smart-dtr-client-610" key="CapabilityStatement-smart-dtr-client-610" name="SMART DTR Client - USCDI 3"/>
 <artifact id="ServiceRequest/ServiceRequestExample" key="ServiceRequest-ServiceRequestExample" name="ServiceRequestExample"/>
 <artifact deprecated="true" id="Contract/contract1001" key="Contract-contract1001" name="contract1001"/>
 <artifact deprecated="true" id="Coverage/coverage1001" key="Coverage-coverage1001" name="coverage1001"/>
@@ -102,6 +105,7 @@
 <page key="artifacts" name="Artifact List"/>
 <page deprecated="true" key="specification__behaviors" name="Behaviors"/>
 <page deprecated="true" key="specification__behaviors__best_practices" name="Best Practices"/>
+<page key="burden" name="Burden Reduction"/>
 <page deprecated="true" key="specification__cds_hooks" name="CDS Hooks"/>
 <page deprecated="true" key="specification__cql" name="CQL"/>
 <page key="changehistory" name="Change History"/>
@@ -124,16 +128,17 @@
 <page deprecated="true" key="specification__profiles" name="Profiles"/>
 <page key="credits" name="Project and Participants"/>
 <page deprecated="true" key="specification__behaviors__questionnaire_evaluation" name="Questionnaire Evaluation"/>
+<page key="background" name="Reading this IG"/>
 <page deprecated="true" key="specification__behaviors__requesting_additional_information_from_the_user" name="Requesting Additional Information from the User"/>
 <page deprecated="true" key="resources" name="Resources"/>
 <page deprecated="true" key="specification__behaviors__retrieval_of_payer_resources" name="Retrieval of Payer Resources"/>
 <page deprecated="true" key="specification__behaviors__sdc_adaptive_forms" name="SDC Adaptive Forms"/>
 <page key="toc" name="Table of Contents"/>
 <page deprecated="true" key="specification__behaviors__task_creation" name="Task Creation"/>
-<page key="background" name="Technical Background"/>
 <page deprecated="true" key="underlying_technologies" name="Technical Background and Underlying Technologies"/>
 <page deprecated="true" key="use_case" name="Use Case"/>
-<page key="use_cases" name="Use Cases and Overview"/>
+<page key="usecases" name="Use Cases"/>
+<page deprecated="true" key="use_cases" name="Use Cases and Overview"/>
 <page deprecated="true" key="specification_value_set_code_system_guidance" name="Value Set and Code System Guidance"/>
 <page deprecated="true" key="administration-module" name="administration-module"/>
 </specification>

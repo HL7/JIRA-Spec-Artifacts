@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cql/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/cql-ig" defaultVersion="1.0.0" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/cql-ig" url="http://hl7.org/fhir/uv/cql">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cql/2025Jan" ciUrl="http://build.fhir.org/ig/HL7/cql-ig" defaultVersion="1.0.0" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/cql-ig" url="http://hl7.org/fhir/uv/cql">
 <version code="current" url="http://build.fhir.org/ig/HL7/cql-ig"/>
+<version code="2.0.0-ballot" url="http://hl7.org/fhir/uv/cql/2025Jan"/>
 <version code="1.0.0" url="http://hl7.org/fhir/uv/cql/STU1"/>
 <version code="1.0.0-snapshot" url="http://hl7.org/fhir/uv/cql/1.0.0-snapshot"/>
-<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/cql/2024Jan"/>
+<version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/cql/2024Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
@@ -45,7 +46,10 @@
 <artifact id="Patient/example" key="Patient-example" name="Example Patient"/>
 <artifact id="ValueSet/shareable-example" key="ValueSet-shareable-example" name="Example Specific health concern(s) Codes"/>
 <artifact id="Parameters/cql-typemappingexampleresult" key="Parameters-cql-typemappingexampleresult" name="Example Type Mapping Evaluation Result Parameters"/>
-<artifact deprecated="true" id="Library/FHIRCommon" key="Library-FHIRCommon" name="FHIR Common"/>
+<artifact id="Library/FHIRCommon" key="Library-FHIRCommon" name="FHIR Common"/>
+<artifact id="Library/FHIRHelpers" key="Library-FHIRHelpers" name="FHIR Helpers"/>
+<artifact id="Library/FHIRHelpersTests" key="Library-FHIRHelpersTests" name="FHIR HelpersTests"/>
+<artifact id="Library/FHIR-ModelInfo" key="Library-FHIR-ModelInfo" name="FHIR Model Definition"/>
 <artifact id="CapabilityStatement/cql-evaluation-service-example" key="CapabilityStatement-cql-evaluation-service-example" name="Library Evaluation Service Capability Statement Example"/>
 <artifact id="Library/ParameterExample" key="Library-ParameterExample" name="Parameter Example"/>
 <artifact id="StructureDefinition/cql-specifichealthconcerns-profile-example" key="StructureDefinition-cql-specifichealthconcerns-profile-example" name="Specific health concern(s)"/>

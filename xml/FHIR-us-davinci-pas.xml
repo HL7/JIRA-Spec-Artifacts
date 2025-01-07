@@ -4,12 +4,12 @@
 <version code="2.1.0" url="http://hl7.org/fhir/us/davinci-pas/STU2.1"/>
 <version code="2.1.0-preview" deprecated="true" url="http://hl7.org/fhir/us/davinci-pas/2.1.0-preview"/>
 <version code="2.0.1" deprecated="true" url="http://hl7.org/fhir/us/davinci-pas/STU2"/>
-<version code="2.0.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-pas/STU2"/>
 <version code="1.2.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/davinci-pas/2022May"/>
-<version code="1.2.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-pas/STU1.2"/>
 <version code="1.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-pas/STU1.1"/>
 <version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-pas/STU1"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-pas/2019Sep"/>
+<version code="2.0.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-pas/STU2"/>
+<version code="1.2.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-pas/STU1.2"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -20,7 +20,9 @@
 <artifact id="StructureDefinition/extension-administrationReferenceNumber" key="StructureDefinition-extension-administrationReferenceNumber" name="AdministrationReferenceNumber"/>
 <artifact deprecated="true" id="ValueSet/AttachmentRequestCodes" key="ValueSet-AttachmentRequestCodes" name="Attachment Request Codes"/>
 <artifact id="ClaimResponse/PractitionerRequestorResponseExample" key="ClaimResponse-PractitionerRequestorResponseExample" name="Authorization Response with Practitioner Requestor Example"/>
+<artifact id="ClaimResponse/PractitionerRequestorAdditionalContentResponseExample" key="ClaimResponse-PractitionerRequestorAdditionalContentResponseExample" name="Authorization Response with Practitioner Requestor and Additional Content Example"/>
 <artifact id="StructureDefinition/extension-authorizationNumber" key="StructureDefinition-extension-authorizationNumber" name="AuthorizationNumber"/>
+<artifact id="StructureDefinition/extension-authorizedProviderType" key="StructureDefinition-extension-authorizedProviderType" name="AuthorizedProviderType"/>
 <artifact id="StructureDefinition/extension-timingcalendarpattern" key="StructureDefinition-extension-timingcalendarpattern" name="CalendarPattern"/>
 <artifact id="StructureDefinition/extension-careTeamClaimScope" key="StructureDefinition-extension-careTeamClaimScope" name="CareTeamClaimScope"/>
 <artifact id="StructureDefinition/extension-itemCertificationEffectiveDate" key="StructureDefinition-extension-itemCertificationEffectiveDate" name="CertificationEffectiveDate"/>
@@ -133,6 +135,7 @@
 <artifact id="Bundle/RejectionResponseBundleExample" key="Bundle-RejectionResponseBundleExample" name="Rejection Response Bundle Example"/>
 <artifact id="ClaimResponse/RejectionResponseExample" key="ClaimResponse-RejectionResponseExample" name="Rejection Response Example"/>
 <artifact id="StructureDefinition/extension-requestedService" key="StructureDefinition-extension-requestedService" name="RequestedService"/>
+<artifact id="StructureDefinition/extension-revenueCode" key="StructureDefinition-extension-revenueCode" name="RevenueCode"/>
 <artifact id="StructureDefinition/extension-revenueUnitRateLimit" key="StructureDefinition-extension-revenueUnitRateLimit" name="RevenueUnitRateLimit"/>
 <artifact id="StructureDefinition/extension-reviewAction" key="StructureDefinition-extension-reviewAction" name="ReviewAction"/>
 <artifact id="StructureDefinition/extension-reviewActionCode" key="StructureDefinition-extension-reviewActionCode" name="ReviewActionCode"/>
@@ -175,6 +178,7 @@
 <page key="fhirArtifacts" name="Artifacts Overview"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="changelog" name="Change Log"/>
+<page key="conformance" name="Conformance"/>
 <page key="credits" name="Credits"/>
 <page key="downloads" name="Downloads"/>
 <page key="specification" name="Formal Specification"/>
