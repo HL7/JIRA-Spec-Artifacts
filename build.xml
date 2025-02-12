@@ -6,18 +6,24 @@
   <target name="validate" description="Validates files, includinging generating workgroup schema">
     <!-- Check that the workgroups file is valid and if so generate a schema for it to use in subsequent validation -->
     <schemavalidate noNamespaceFile="schemas/workgroupList.xsd" file="xml/_workgroups.xml"/>
+    <schemavalidate noNamespaceFile="schemas/acceleratorList.xsd" file="xml/_accelerators.xml"/>
     <dependset>
       <srcfilelist dir="tools" files="buildWGschema.xslt"/>
       <targetfilelist dir="schemas" files="workgroups.xsd"/>
     </dependset>
     <xslt in="xml/_workgroups.xml" out="schemas/workgroups.xsd" style="tools/buildWGschema.xslt"/>
+    <dependset>
+      <srcfilelist dir="tools" files="buildAcceleratorSchema.xslt"/>
+      <targetfilelist dir="schemas" files="accelerators.xsd"/>
+    </dependset>
+    <xslt in="xml/_accelerators.xml" out="schemas/accelerators.xsd" style="tools/buildAcceleratorSchema.xslt"/>
     <!-- Validate remaining files -->
     <schemavalidate noNamespaceFile="schemas/familyList.xsd" file="xml/_families.xml"/>
     <schemavalidate noNamespaceFile="schemas/specificationList.xsd">
       <fileset dir="xml" includes="SPECS-*.xml"/>
     </schemavalidate>
     <schemavalidate noNamespaceFile="schemas/specification.xsd">
-      <fileset dir="xml" includes="*.xml" excludes="SPECS-*.xml,_workgroups.xml,_families.xml"/>
+      <fileset dir="xml" includes="*.xml" excludes="SPECS-*.xml,_accelerators.xml,_workgroups.xml,_families.xml"/>
     </schemavalidate>
     <resourcecount property="count.cda">
       <fileset dir="xml" includes="CDA-*.xml"/>
@@ -42,10 +48,11 @@
     </dependset>
     <xslt in="xml/_families.xml" out="json/families.json" style="tools/xmlToJson.xslt"/>
     <xslt in="xml/_workgroups.xml" out="json/workgroups.json" style="tools/xmlToJson.xslt"/>
+    <xslt in="xml/_accelerators.xml" out="json/accelerators.json" style="tools/xmlToJson.xslt"/>
     <get src="https://hl7.github.io/JIRA-Spec-Artifacts/SPECS.xml" dest="tools/temp/SPECS.xml" usetimestamp="true"/>
     <dependset>
       <srcfilelist dir="tools/temp" files="SPECS.xml"/>
-      <srcfileset dir="xml" includes="*.xml" excludes="_workgroups.xml,_families.xml"/>
+      <srcfileset dir="xml" includes="*.xml" excludes="_accelerators.xml,_workgroups.xml,_families.xml"/>
       <targetfileset dir="json" includes="SPECS*.json"/>
     </dependset>
     <xslt in="xml/_families.xml" out="json/SPECS.json" style="tools/buildSpecJSON.xslt" classpathref="saxon.path">
@@ -65,6 +72,9 @@
         </not>
       </condition>
     </fail>
+    <xslt in="json/SPECS.xml" out="tools/temp/rules.txt" style="tools/checkRules.xslt" classpathref="saxon.path">
+      <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+    </xslt>
   </target>
   <target name="test" depends="genJson" description="Default task Travis looks for"/>
 </project>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cardx-htn-mng/2024May" ciUrl="http://build.fhir.org/ig/HL7/cardx-htn-mng" defaultVersion="1.0.0" defaultWorkgroup="cic" gitUrl="https://github.com/HL7/fhir-cardx-htn-mng" url="http://hl7.org/fhir/uv/cardx-htn-mng">
+<version code="current" url="http://build.fhir.org/ig/HL7/cardx-htn-mng"/>
+<version code="1.0.0" url="http://hl7.org/fhir/uv/cardx-htn-mng/STU1"/>
+<version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/cardx-htn-mng/2024May"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/average-smbp" key="StructureDefinition-average-smbp" name="Average Self-measured Blood Pressure"/>
+<artifact id="Observation/AverageSMBP-Protocol-example" key="Observation-AverageSMBP-Protocol-example" name="AverageSMBP-Protocol-example"/>
+<artifact id="Observation/AverageSMBP-example" key="Observation-AverageSMBP-example" name="AverageSMBP-example"/>
+<artifact id="CapabilityStatement/CardXCapabilityStatementClient" key="CapabilityStatement-CardXCapabilityStatementClient" name="HTN-Mng-CardX Client Capability Statement"/>
+<artifact id="CapabilityStatement/CardXCapabilityStatementServer" key="CapabilityStatement-CardXCapabilityStatementServer" name="HTN-Mng-CardX Server Capability Statement"/>
+<artifact id="StructureDefinition/NumberOfMeasurementsExt" key="StructureDefinition-NumberOfMeasurementsExt" name="Number of Measurements"/>
+<artifact id="ValueSet/NumericResultIntVS" key="ValueSet-NumericResultIntVS" name="Numeric Result Interpretation value set"/>
+<artifact id="StructureDefinition/smbp-associated-heart-rate" key="StructureDefinition-smbp-associated-heart-rate" name="SMBP Associated Heart Rate"/>
+<artifact id="ValueSet/smbp-obs-status" key="ValueSet-smbp-obs-status" name="SMBP Observation Status value set"/>
+<artifact id="Observation/SMBP-Associated-HeartRate-example" key="Observation-SMBP-Associated-HeartRate-example" name="SMBP-Associated-HeartRate-example"/>
+<artifact id="Observation/SMBP-FirstAM-Measurement-Day1" key="Observation-SMBP-FirstAM-Measurement-Day1" name="SMBP-FirstAM-Measurement-Day1"/>
+<artifact id="Observation/SMBP-FirstAM-Measurement-Day2" key="Observation-SMBP-FirstAM-Measurement-Day2" name="SMBP-FirstAM-Measurement-Day2"/>
+<artifact id="Observation/SMBP-FirstAM-Measurement-Day3" key="Observation-SMBP-FirstAM-Measurement-Day3" name="SMBP-FirstAM-Measurement-Day3"/>
+<artifact id="Observation/SMBP-FirstAM-Measurement-Day4" key="Observation-SMBP-FirstAM-Measurement-Day4" name="SMBP-FirstAM-Measurement-Day4"/>
+<artifact id="Observation/SMBP-FirstAM-Measurement-Day5" key="Observation-SMBP-FirstAM-Measurement-Day5" name="SMBP-FirstAM-Measurement-Day5"/>
+<artifact id="Observation/SMBP-FirstAM-Measurement-Day6" key="Observation-SMBP-FirstAM-Measurement-Day6" name="SMBP-FirstAM-Measurement-Day6"/>
+<artifact id="Observation/SMBP-FirstAM-Measurement-Day7" key="Observation-SMBP-FirstAM-Measurement-Day7" name="SMBP-FirstAM-Measurement-Day7"/>
+<artifact id="Observation/SMBP-FirstPM-Measurement-Day1" key="Observation-SMBP-FirstPM-Measurement-Day1" name="SMBP-FirstPM-Measurement-Day1"/>
+<artifact id="Observation/SMBP-FirstPM-Measurement-Day2" key="Observation-SMBP-FirstPM-Measurement-Day2" name="SMBP-FirstPM-Measurement-Day2"/>
+<artifact id="Observation/SMBP-FirstPM-Measurement-Day3" key="Observation-SMBP-FirstPM-Measurement-Day3" name="SMBP-FirstPM-Measurement-Day3"/>
+<artifact id="Observation/SMBP-FirstPM-Measurement-Day4" key="Observation-SMBP-FirstPM-Measurement-Day4" name="SMBP-FirstPM-Measurement-Day4"/>
+<artifact id="Observation/SMBP-FirstPM-Measurement-Day5" key="Observation-SMBP-FirstPM-Measurement-Day5" name="SMBP-FirstPM-Measurement-Day5"/>
+<artifact id="Observation/SMBP-FirstPM-Measurement-Day6" key="Observation-SMBP-FirstPM-Measurement-Day6" name="SMBP-FirstPM-Measurement-Day6"/>
+<artifact id="Observation/SMBP-FirstPM-Measurement-Day7" key="Observation-SMBP-FirstPM-Measurement-Day7" name="SMBP-FirstPM-Measurement-Day7"/>
+<artifact id="Observation/SMBP-SecondAM-Measurement-Day1" key="Observation-SMBP-SecondAM-Measurement-Day1" name="SMBP-SecondAM-Measurement-Day1"/>
+<artifact id="Observation/SMBP-SecondAM-Measurement-Day2" key="Observation-SMBP-SecondAM-Measurement-Day2" name="SMBP-SecondAM-Measurement-Day2"/>
+<artifact id="Observation/SMBP-SecondAM-Measurement-Day3" key="Observation-SMBP-SecondAM-Measurement-Day3" name="SMBP-SecondAM-Measurement-Day3"/>
+<artifact id="Observation/SMBP-SecondAM-Measurement-Day4" key="Observation-SMBP-SecondAM-Measurement-Day4" name="SMBP-SecondAM-Measurement-Day4"/>
+<artifact id="Observation/SMBP-SecondAM-Measurement-Day5" key="Observation-SMBP-SecondAM-Measurement-Day5" name="SMBP-SecondAM-Measurement-Day5"/>
+<artifact id="Observation/SMBP-SecondAM-Measurement-Day6" key="Observation-SMBP-SecondAM-Measurement-Day6" name="SMBP-SecondAM-Measurement-Day6"/>
+<artifact id="Observation/SMBP-SecondAM-Measurement-Day7" key="Observation-SMBP-SecondAM-Measurement-Day7" name="SMBP-SecondAM-Measurement-Day7"/>
+<artifact id="Observation/SMBP-SecondPM-Measurement-Day1" key="Observation-SMBP-SecondPM-Measurement-Day1" name="SMBP-SecondPM-Measurement-Day1"/>
+<artifact id="Observation/SMBP-SecondPM-Measurement-Day2" key="Observation-SMBP-SecondPM-Measurement-Day2" name="SMBP-SecondPM-Measurement-Day2"/>
+<artifact id="Observation/SMBP-SecondPM-Measurement-Day3" key="Observation-SMBP-SecondPM-Measurement-Day3" name="SMBP-SecondPM-Measurement-Day3"/>
+<artifact id="Observation/SMBP-SecondPM-Measurement-Day4" key="Observation-SMBP-SecondPM-Measurement-Day4" name="SMBP-SecondPM-Measurement-Day4"/>
+<artifact id="Observation/SMBP-SecondPM-Measurement-Day5" key="Observation-SMBP-SecondPM-Measurement-Day5" name="SMBP-SecondPM-Measurement-Day5"/>
+<artifact id="Observation/SMBP-SecondPM-Measurement-Day6" key="Observation-SMBP-SecondPM-Measurement-Day6" name="SMBP-SecondPM-Measurement-Day6"/>
+<artifact id="Observation/SMBP-SecondPM-Measurement-Day7" key="Observation-SMBP-SecondPM-Measurement-Day7" name="SMBP-SecondPM-Measurement-Day7"/>
+<artifact id="StructureDefinition/self-measured-bp" key="StructureDefinition-self-measured-bp" name="Self-measured Blood Pressure"/>
+<artifact id="Observation/SelfMeasuredBloodPressure-example" key="Observation-SelfMeasuredBloodPressure-example" name="SelfMeasuredBloodPressure-example"/>
+<artifact id="Device/example-smbp-device" key="Device-example-smbp-device" name="example-smbp-device"/>
+<artifact id="Patient/patient-example-Sally-Sue" key="Patient-patient-example-Sally-Sue" name="patient-example-Sally-Sue"/>
+<artifact id="Practitioner/practitioner-example-Mary-Hill" key="Practitioner-practitioner-example-Mary-Hill" name="practitioner-example-Mary-Hill"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts"/>
+<page deprecated="true" key="Background" name="Background"/>
+<page key="Capability-Statement" name="Capability Statement"/>
+<page key="CardX-Background" name="Card X Background"/>
+<page key="Credits" name="Credits"/>
+<page key="index" name="Home"/>
+<page key="Hypertension-Background" name="Hypertension Background"/>
+<page key="IG-examples" name="IG Examples"/>
+<page key="profiles" name="Profiles"/>
+<page key="SMBP-Example-Readings" name="SMBP Example Readings"/>
+<page deprecated="true" key="SMBP-Protocol-Examples" name="SMBP Protocol Examples"/>
+<page key="toc" name="Table of Contents"/>
+<page key="Technical-Scenarios" name="Technical Scenarios"/>
+</specification>

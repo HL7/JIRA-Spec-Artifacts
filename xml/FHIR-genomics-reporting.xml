@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/genomics-reporting/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/genomics-reporting" defaultVersion="2.0.0" defaultWorkgroup="cg" gitUrl="https://github.com/HL7/genomics-reporting" url="http://hl7.org/fhir/uv/genomics-reporting">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/genomics-reporting/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/genomics-reporting" defaultVersion="3.0.0" defaultWorkgroup="cg" gitUrl="https://github.com/HL7/genomics-reporting" url="http://hl7.org/fhir/uv/genomics-reporting">
 <version code="current" url="http://build.fhir.org/ig/HL7/genomics-reporting"/>
+<version code="3.0.0" url="http://hl7.org/fhir/uv/genomics-reporting/STU3"/>
 <version code="3.0.0-ballot" url="http://hl7.org/fhir/uv/genomics-reporting/2024Jan"/>
 <version code="2.0.0" url="http://hl7.org/fhir/uv/genomics-reporting/STU2"/>
 <version code="1.1.0" deprecated="true" url="http://hl7.org/fhir/uv/genomics-reporting/2021May"/>
@@ -112,6 +113,7 @@
 <artifact id="StructureDefinition/genomic-study-analysis-output" key="StructureDefinition-genomic-study-analysis-output" name="Genomic Study Analysis Output"/>
 <artifact id="StructureDefinition/genomic-study-analysis-protocol-performed" key="StructureDefinition-genomic-study-analysis-protocol-performed" name="Genomic Study Analysis Protocol Performed"/>
 <artifact id="StructureDefinition/genomic-study-analysis-regions" key="StructureDefinition-genomic-study-analysis-regions" name="Genomic Study Analysis Regions"/>
+<artifact id="StructureDefinition/genomic-study-analysis-genomic-source-class" key="StructureDefinition-genomic-study-analysis-genomic-source-class" name="Genomic Study Analysis Source Class"/>
 <artifact id="StructureDefinition/genomic-study-analysis-specimen" key="StructureDefinition-genomic-study-analysis-specimen" name="Genomic Study Analysis Specimen"/>
 <artifact id="StructureDefinition/genomic-study-analysis-title" key="StructureDefinition-genomic-study-analysis-title" name="Genomic Study Analysis Title"/>
 <artifact id="CodeSystem/genomic-study-change-type-cs" key="CodeSystem-genomic-study-change-type-cs" name="Genomic Study Change Type CodeSystem"/>
@@ -164,7 +166,7 @@
 <artifact id="Observation/HaplotypeExamplePharmVar02" key="Observation-HaplotypeExamplePharmVar02" name="HaplotypeExamplePharmVar02"/>
 <artifact id="Observation/HaplotypeSet-Clinical-Trial-Example-1of2" key="Observation-HaplotypeSet-Clinical-Trial-Example-1of2" name="HaplotypeSet-Clinical-Trial-Example-1of2"/>
 <artifact id="Observation/HaplotypeSet-Clinical-Trial-Example-2of2" key="Observation-HaplotypeSet-Clinical-Trial-Example-2of2" name="HaplotypeSet-Clinical-Trial-Example-2of2"/>
-<artifact id="ValueSet/high-low-codes-vs" key="ValueSet-high-low-codes" name="High Low codes"/>
+<artifact deprecated="true" id="ValueSet/high-low-codes-vs" key="ValueSet-high-low-codes" name="High Low codes"/>
 <artifact id="ValueSet/hgvs-vs" key="ValueSet-hgvs" name="Human Genome Variation Society (HGVS) Nomenclature"/>
 <artifact id="Observation/ISCN-CMLExample" key="Observation-ISCN-CMLExample" name="ISCN-CMLExample"/>
 <artifact id="Observation/ISCN-CMLImplication" key="Observation-ISCN-CMLImplication" name="ISCN-CMLImplication"/>
@@ -197,9 +199,9 @@
 <artifact id="Observation/NTHL1-snv-molc" key="Observation-NTHL1-snv-molc" name="NTHL1-snv-molc"/>
 <artifact id="Observation/NTHL1-snv-var" key="Observation-NTHL1-snv-var" name="NTHL1-snv-var"/>
 <artifact deprecated="true" key="Observation" name="Observation"/>
-<artifact id="StructureDefinition/overall-interpretation" key="StructureDefinition-overall-interpretation" name="Overall Interpretation"/>
-<artifact id="Observation/OverallInterpExample1" key="Observation-OverallInterpExample1" name="OverallInterpExample1"/>
-<artifact id="Observation/OverallInterpExample2" key="Observation-OverallInterpExample2" name="OverallInterpExample2"/>
+<artifact deprecated="true" id="StructureDefinition/overall-interpretation" key="StructureDefinition-overall-interpretation" name="Overall Interpretation"/>
+<artifact deprecated="true" id="Observation/OverallInterpExample1" key="Observation-OverallInterpExample1" name="OverallInterpExample1"/>
+<artifact deprecated="true" id="Observation/OverallInterpExample2" key="Observation-OverallInterpExample2" name="OverallInterpExample2"/>
 <artifact id="Observation/PDL1Example" key="Observation-PDL1Example" name="PDL1Example"/>
 <artifact id="Procedure/PGXGenomicStudy" key="Procedure-PGXGenomicStudy" name="PGXGenomicStudy"/>
 <artifact id="Procedure/PGXGenomicStudyAnalysis" key="Procedure-PGXGenomicStudyAnalysis" name="PGXGenomicStudyAnalysis"/>
@@ -239,7 +241,7 @@
 <artifact deprecated="true" id="Observation/RegionStudiedPGx2" key="Observation-RegionStudiedPGx2" name="RegionStudiedPGx2"/>
 <artifact deprecated="true" id="Observation/RegionStudiedPGx3" key="Observation-RegionStudiedPGx3" name="RegionStudiedPGx3"/>
 <artifact deprecated="true" id="StructureDefinition/CGRelatedArtifact" key="StructureDefinition-CGRelatedArtifact" name="Related Artifact"/>
-<artifact id="StructureDefinition/related-artifact-component" key="StructureDefinition-related-artifact-component" name="Related Artifact for Observation component"/>
+<artifact id="StructureDefinition/workflow-relatedArtifactComponent" key="StructureDefinition-related-artifact-component" name="Related Artifact for Observation component"/>
 <artifact id="StructureDefinition/repeat-motif-order" key="StructureDefinition-repeat-motif-order" name="Repeat Motif Order"/>
 <artifact id="Observation/RepeatExpansion" key="Observation-RepeatExpansion" name="RepeatExpansion"/>
 <artifact id="Observation/SNVexample" key="Observation-SNVexample" name="SNVexample"/>
@@ -304,6 +306,7 @@
 <artifact id="Patient/denovoChild" key="Patient-denovoChild" name="denovoChild"/>
 <artifact id="Patient/denovoFather" key="Patient-denovoFather" name="denovoFather"/>
 <artifact id="Patient/denovoMother" key="Patient-denovoMother" name="denovoMother"/>
+<artifact id="Observation/diagnosticImplication-interact-smn1-smn2" key="Observation-diagnosticImplication-interact-smn1-smn2" name="diagnosticImplication-interact-smn1-smn2"/>
 <artifact id="DiagnosticReport/diagnosticreport-hla-glstring-r4" key="DiagnosticReport-diagnosticreport-hla-glstring-r4" name="diagnosticreport-hla-glstring-r4"/>
 <artifact id="ServiceRequest/eMERGEServiceRequest" key="ServiceRequest-eMERGEServiceRequest" name="eMERGEServiceRequest"/>
 <artifact id="DocumentReference/genomicFileFatherBAM" key="DocumentReference-genomicFileFatherBAM" name="genomicFileFatherBAM"/>
@@ -328,8 +331,10 @@
 <artifact id="Observation/molec-conseq4" key="Observation-molec-conseq4" name="molec-conseq4"/>
 <artifact id="Specimen/normalSpecimen" key="Specimen-normalSpecimen" name="normalSpecimen"/>
 <artifact id="Observation/obs-idh-ex" key="Observation-obs-idh-ex" name="obs-idh-ex"/>
+<artifact id="Observation/obs1-interact-smn1-smn2" key="Observation-obs1-interact-smn1-smn2" name="obs1-interact-smn1-smn2"/>
+<artifact id="Observation/obs2-interact-smn1-smn2" key="Observation-obs2-interact-smn1-smn2" name="obs2-interact-smn1-smn2"/>
 <artifact id="Practitioner/orderingPractitioner" key="Practitioner-orderingPractitioner" name="orderingPractitioner"/>
-<artifact id="Observation/overallInt" key="Observation-overallInt" name="overallInt"/>
+<artifact deprecated="true" id="Observation/overallInt" key="Observation-overallInt" name="overallInt"/>
 <artifact id="Practitioner/pathologistPractitioner" key="Practitioner-pathologistPractitioner" name="pathologistPractitioner"/>
 <artifact id="Organization/performingOrganization" key="Organization-performingOrganization" name="performingOrganization"/>
 <artifact id="Practitioner/practitioner02" key="Practitioner-practitioner02" name="practitioner02"/>
@@ -341,6 +346,9 @@
 <artifact id="DocumentReference/somaticVCFfile" key="DocumentReference-somaticVCFfile" name="somaticVCFfile"/>
 <artifact id="Specimen/specimen-hla-r4" key="Specimen-specimen-hla-r4" name="specimen-hla-r4"/>
 <artifact id="Practitioner/supervisorPractitioner" key="Practitioner-supervisorPractitioner" name="supervisorPractitioner"/>
+<artifact id="Observation/therapuDrug1-interact-smn1-smn2" key="Observation-therapuDrug1-interact-smn1-smn2" name="therapuDrug1-interact-smn1-smn2"/>
+<artifact id="Observation/therapuDrug2-interact-smn1-smn2" key="Observation-therapuDrug2-interact-smn1-smn2" name="therapuDrug2-interact-smn1-smn2"/>
+<artifact id="Observation/therapuDrug3-interact-smn1-smn2" key="Observation-therapuDrug3-interact-smn1-smn2" name="therapuDrug3-interact-smn1-smn2"/>
 <artifact id="Device/triodenovo-software" key="Device-triodenovo-software" name="triodenovo-software"/>
 <artifact id="Specimen/tumorSpecimen" key="Specimen-tumorSpecimen" name="tumorSpecimen"/>
 <artifact id="Observation/variant-with-molec-consequences" key="Observation-variant-with-molec-consequences" name="variant-with-molec-consequences"/>
@@ -352,16 +360,17 @@
 <page key="domain" name="Appendix C: HL7 Domain Analysis Model"/>
 <page key="usecases" name="Appendix D: Query Guidance"/>
 <page key="codings" name="Appendix E: External Coding Systems"/>
-<page key="conversion" name="Appendix F: Conversion from STU3 Extensions"/>
+<page key="conversion" name="Appendix F: Conversion from FHIR Core STU3"/>
 <page key="molecularSequence" name="Appendix G: Molecular Sequence"/>
 <page key="groupingGuidance" name="Appendix H: Grouping Guidance"/>
 <page key="Glossary" name="Appendix I: Glossary"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="changes" name="Change Log"/>
 <page key="general" name="General Genomic Reporting"/>
-<page key="background" name="Genomics Background"/>
-<page key="histocompatibility" name="Histocompatibility and Immunogenetics Reporting"/>
+<page key="background" name="Genomic Background"/>
+<page key="operations" name="Genomic Operations"/>
+<page key="histocompatibility" name="Histocompatibility and Immunogenetic Reporting"/>
 <page key="index" name="Home Page"/>
-<page key="operations" name="Operations"/>
 <page key="pharmacogenomics" name="Pharmacogenomic Reporting"/>
 <page key="somatics" name="Somatic Reporting"/>
 <page key="toc" name="Table of Contents"/>
