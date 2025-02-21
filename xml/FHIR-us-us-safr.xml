@@ -1,45 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/HL7/us-safr/" ballotUrl="http://hl7.org/fhir/us/us-safr/2025May" defaultVersion="0.1.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/us-safr" url="http://hl7.org/fhir/us-safr">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    ciUrl="https://build.fhir.org/ig/HL7/us-safr"
+    ballotUrl="http://hl7.org/fhir/us/us-safr/2025May" defaultVersion="0.1.0"
+    defaultWorkgroup="pher" gitUrl="https://github.com/HL7/us-safr"
+    url="http://hl7.org/fhir/us-safr">
     <version code="current" url="https://build.fhir.org/ig/HL7/us-safr/"/>
     <version code="0.1.0" deprecated="false" url="http://hl7.org/fhir/us/us-safr/2025May"/>
-<artifactPageExtension value="-definitions"/>
-<artifactPageExtension value="-examples"/>
-<artifactPageExtension value="-mappings"/>
-<artifact id="Bundle/BedCapacityMeasure-bundle-example" key="Bundle-BedCapacityMeasure-bundle-example" name="Bed Capacity MeasureReport Bundle Example 1"/>
-<artifact id="Measure/BedCapacityMeasure" key="Measure-BedCapacityMeasure" name="Bed Capacity for US Situational Awareness Framework for Reporting"/>
-<artifact id="Library/BedCapacityLibrary" key="Library-BedCapacityLibrary" name="BedCapacityLibrary"/>
-<artifact id="Device/cqf-tooling" key="Device-cqf-tooling" name="CQF Tooling Device"/>
-<artifact id="Bundle/HrdMeasure-bundle-example" key="Bundle-HrdMeasure-bundle-example" name="HRD Measure Bundle Example 1"/>
-<artifact id="MeasureReport/hrd-measurereport-example-1" key="MeasureReport-hrd-measurereport-example-1" name="HRD Measure Report Example 1"/>
-<artifact id="Bundle/bed-capacity-bundle-example" key="Bundle-bed-capacity-bundle-example" name="HRD MeasureReport Bundle Example 1"/>
-<artifact id="Bundle/hrd-bundle-example-hosp" key="Bundle-hrd-bundle-example-hosp" name="HRD MeasureReport Bundle Example 1"/>
-<artifact id="CodeSystem/SAFRHealthareCapacityCS" key="CodeSystem-SAFRHealthareCapacityCS" name="Healthcare Capacity Reporting Code System"/>
-<artifact id="Measure/HrdMeasure" key="Measure-HrdMeasure" name="Hospital Respiratory Data Measure for US Situational Awareness Framework for Reporting"/>
-<artifact id="CodeSystem/SAFRHRDCS" key="CodeSystem-SAFRHRDCS" name="Hospital Respiratory Data Reporting Code System"/>
-<artifact id="CodeSystem/HRDSupplyDaysCS" key="CodeSystem-HRDSupplyDaysCS" name="Hospital Respiratory Data Supply Days Code System"/>
-<artifact id="Library/HrdMeasureLibrary" key="Library-HrdMeasureLibrary" name="HrdMeasureLibrary"/>
-<artifact id="MeasureReport/bed-capacity-measurereport-example-chld" key="MeasureReport-bed-capacity-measurereport-example-chld" name="MeasureReport - Children's Hospital Bed Capacity Individual Measure Report"/>
-<artifact id="MeasureReport/bed-capacity-measurereport-example-hosp" key="MeasureReport-bed-capacity-measurereport-example-hosp" name="MeasureReport - Hospital Bed Capacity Individual Measure Report"/>
-<artifact id="MeasureReport/bed-capacity-measurereport-example-ipf" key="MeasureReport-bed-capacity-measurereport-example-ipf" name="MeasureReport - Inpatient Psychiatric Facility Bed Capacity Individual Measure Report"/>
-<artifact id="Organization/organization-example-submitting-organization" key="Organization-organization-example-submitting-organization" name="Organization - Example Submitting Organization"/>
-<artifact id="CapabilityStatement/SafrCapabilityStatementDataAggregator" key="CapabilityStatement-SafrCapabilityStatementDataAggregator" name="US SAFR Data Aggregator CapabilityStatement"/>
-<artifact id="CapabilityStatement/SafrCapabilityStatementEvaluationEngine" key="CapabilityStatement-SafrCapabilityStatementEvaluationEngine" name="US SAFR Data Evaluation Engine CapabilityStatement"/>
-<artifact id="CapabilityStatement/SafrCapabilityStatementDataSource" key="CapabilityStatement-SafrCapabilityStatementDataSource" name="US SAFR Data Source CapabilityStatement"/>
-<artifact id="CodeSystem/SAFRFacilityCS" key="CodeSystem-SAFRFacilityCS" name="US SAFR Facility Reporting Code System"/>
-<artifact id="ValueSet/SAFRFacilityVS" key="ValueSet-SAFRFacilityVS" name="US SAFR Facility Reporting ValueSet"/>
-<artifact id="StructureDefinition/us-safr-measure-bundle" key="StructureDefinition-us-safr-measure-bundle" name="US SAFR Measure Bundle"/>
-<artifact id="StructureDefinition/safr-measurereport-bundle" key="StructureDefinition-safr-measurereport-bundle" name="US SAFR Measure Report Bundle"/>
-<artifact id="CapabilityStatement/SafrCapabilityStatementMeasureSource" key="CapabilityStatement-SafrCapabilityStatementMeasureSource" name="US SAFR Measure Source CapabilityStatement"/>
-<artifact id="CapabilityStatement/SafrCapabilityStatementMeasureReportRecipient" key="CapabilityStatement-SafrCapabilityStatementMeasureReportRecipient" name="US SAFR MeasureReport Recipient CapabilityStatement"/>
-<artifact id="StructureDefinition/nhsn-submitting-organization" key="StructureDefinition-nhsn-submitting-organization" name="US SAFR Submitting Organization"/>
-<page key="NA" name="(NA)"/>
-<page key="many" name="(many)"/>
-<page key="actors" name="Actors"/>
-<page key="artifacts" name="Artifacts Summary"/>
-<page key="downloads" name="Downloads"/>
-<page key="index" name="Home"/>
-<page key="security" name="Security"/>
-<page key="specification" name="Specification"/>
-<page key="toc" name="Table of Contents"/>
-<page key="usecases" name="Usecases"/>
+    <artifactPageExtension value="-definitions"/>
+    <artifactPageExtension value="-examples"/>
+    <artifactPageExtension value="-mappings"/>
+    <artifact id="Bundle/BedCapacityMeasure-bundle-example"
+        key="Bundle-BedCapacityMeasure-bundle-example"
+        name="Bed Capacity MeasureReport Bundle Example 1"/>
+    <artifact id="Measure/BedCapacityMeasure" key="Measure-BedCapacityMeasure"
+        name="Bed Capacity for US Situational Awareness Framework for Reporting"/>
+    <artifact id="Library/BedCapacityLibrary" key="Library-BedCapacityLibrary"
+        name="BedCapacityLibrary"/>
+    <artifact id="Device/cqf-tooling" key="Device-cqf-tooling" name="CQF Tooling Device"/>
+    <artifact id="Bundle/HrdMeasure-bundle-example" key="Bundle-HrdMeasure-bundle-example"
+        name="HRD Measure Bundle Example"/>
+    <artifact id="MeasureReport/hrd-measurereport-example-1"
+        key="MeasureReport-hrd-measurereport-example-1" name="HRD Measure Report Example 1"/>
+    <artifact id="Bundle/bed-capacity-bundle-example" key="Bundle-bed-capacity-bundle-example"
+        name="HRD MeasureReport Bundle Example 1"/>
+    <artifact id="Bundle/hrd-bundle-example-hosp" key="Bundle-hrd-bundle-example-hosp"
+        name="HRD MeasureReport Bundle Example 1"/>
+    <artifact id="CodeSystem/SAFRHealthareCapacityCS" key="CodeSystem-SAFRHealthareCapacityCS"
+        name="Healthcare Capacity Reporting Code System"/>
+    <artifact id="Measure/HrdMeasure" key="Measure-HrdMeasure"
+        name="Hospital Respiratory Data Measure for US Situational Awareness Framework for Reporting"/>
+    <artifact id="CodeSystem/SAFRHRDCS" key="CodeSystem-SAFRHRDCS"
+        name="Hospital Respiratory Data Reporting Code System"/>
+    <artifact id="CodeSystem/HRDSupplyDaysCS" key="CodeSystem-HRDSupplyDaysCS"
+        name="Hospital Respiratory Data Supply Days Code System"/>
+    <artifact id="Library/HrdMeasureLibrary" key="Library-HrdMeasureLibrary"
+        name="HrdMeasureLibrary"/>
+    <artifact id="MeasureReport/bed-capacity-measurereport-example-chld"
+        key="MeasureReport-bed-capacity-measurereport-example-chld"
+        name="MeasureReport - Children's Hospital Bed Capacity Individual Measure Report"/>
+    <artifact id="MeasureReport/bed-capacity-measurereport-example-hosp"
+        key="MeasureReport-bed-capacity-measurereport-example-hosp"
+        name="MeasureReport - Hospital Bed Capacity Individual Measure Report"/>
+    <artifact id="MeasureReport/bed-capacity-measurereport-example-ipf"
+        key="MeasureReport-bed-capacity-measurereport-example-ipf"
+        name="MeasureReport - Inpatient Psychiatric Facility Bed Capacity Individual Measure Report"/>
+    <artifact id="Organization/organization-example-submitting-organization"
+        key="Organization-organization-example-submitting-organization"
+        name="Organization - Example Submitting Organization"/>
+    <artifact id="CapabilityStatement/SafrCapabilityStatementDataAggregator"
+        key="CapabilityStatement-SafrCapabilityStatementDataAggregator"
+        name="US SAFR Data Aggregator CapabilityStatement"/>
+    <artifact id="CapabilityStatement/SafrCapabilityStatementEvaluationEngine"
+        key="CapabilityStatement-SafrCapabilityStatementEvaluationEngine"
+        name="US SAFR Data Evaluation Engine CapabilityStatement"/>
+    <artifact id="CapabilityStatement/SafrCapabilityStatementDataSource"
+        key="CapabilityStatement-SafrCapabilityStatementDataSource"
+        name="US SAFR Data Source CapabilityStatement"/>
+    <artifact id="CodeSystem/SAFRFacilityCS" key="CodeSystem-SAFRFacilityCS"
+        name="US SAFR Facility Reporting Code System"/>
+    <artifact id="ValueSet/SAFRFacilityVS" key="ValueSet-SAFRFacilityVS"
+        name="US SAFR Facility Reporting ValueSet"/>
+    <artifact id="StructureDefinition/us-safr-measure-bundle"
+        key="StructureDefinition-us-safr-measure-bundle" name="US SAFR Measure Bundle"/>
+    <artifact id="StructureDefinition/safr-measurereport-bundle"
+        key="StructureDefinition-safr-measurereport-bundle" name="US SAFR Measure Report Bundle"/>
+    <artifact id="CapabilityStatement/SafrCapabilityStatementMeasureSource"
+        key="CapabilityStatement-SafrCapabilityStatementMeasureSource"
+        name="US SAFR Measure Source CapabilityStatement"/>
+    <artifact id="CapabilityStatement/SafrCapabilityStatementMeasureReportRecipient"
+        key="CapabilityStatement-SafrCapabilityStatementMeasureReportRecipient"
+        name="US SAFR MeasureReport Recipient CapabilityStatement"/>
+    <artifact id="StructureDefinition/nhsn-submitting-organization"
+        key="StructureDefinition-nhsn-submitting-organization"
+        name="US SAFR Submitting Organization"/>
+    <page key="NA" name="(NA)"/>
+    <page key="many" name="(many)"/>
+    <page key="actors" name="Actors"/>
+    <page key="artifacts" name="Artifacts Summary"/>
+    <page key="downloads" name="Downloads"/>
+    <page key="index" name="Home"/>
+    <page key="security" name="Security"/>
+    <page key="specification" name="Specification"/>
+    <page key="toc" name="Table of Contents"/>
+    <page key="usecases" name="Usecases"/>
 </specification>
