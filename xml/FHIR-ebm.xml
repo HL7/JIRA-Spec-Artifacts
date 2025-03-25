@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/ebm/2025May" ciUrl="http://build.fhir.org/ig/HL7/ebm" defaultVersion="1.0.0-ballot2" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/ebm" url="http://hl7.org/fhir/uv/ebm">
 <version code="current" url="http://build.fhir.org/ig/HL7/ebm"/>
-<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/ebm/2024Jan"/>
 <version code="1.0.0-ballot2" url="http://hl7.org/fhir/uv/ebm/2025May"/>
+<version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/ebm/2024Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="Citation/267246" key="Citation-267246" name="11232013 Rosiglitazone monotherapy is effective in patients with type 2 diabetes."/>
 <artifact id="Evidence/55" key="Evidence-55" name="14-day mortality remdesivir vs placebo meta-analysis (ACTT-1, Wang et al, WHO SOLIDARITY)"/>
 <artifact id="Citation/179628" key="Citation-179628" name="14706014 Chemohormonal therapy as primary treatment for metastatic prostate cancer: a randomized study of estramustine phosphate plus luteinizing hormone-releasing hormone agonist versus flutamide plus luteinizing hormone-releasing hormone agonist."/>
+<artifact id="Citation/267247" key="Citation-267247" name="15832493 Spotlight on rosiglitazone in the management of type 2 diabetes mellitus."/>
+<artifact id="Citation/267496" key="Citation-267496" name="15855602 Defining and reporting hypoglycemia in diabetes: a report from the American Diabetes Association Workgroup on Hypoglycemia."/>
 <artifact id="DeviceDefinition/179899" key="DeviceDefinition-179899" name="179899"/>
 <artifact id="Citation/179602" key="Citation-179602" name="18160893 Wonder woman. Like my childhood heroine, Mrs. Betty also had amazing powers."/>
 <artifact id="Citation/179637" key="Citation-179637" name="18508207 A Phase 3 placebo-controlled, double-blind, multi-site trial of the alpha-2-adrenergic agonist, lofexidine, for opioid withdrawal."/>
@@ -18,6 +21,7 @@
 <artifact id="Citation/179625" key="Citation-179625" name="22502942 Addition of radiotherapy to long-term androgen deprivation in locally advanced prostate cancer: an open randomised phase 3 trial."/>
 <artifact id="Citation/179615" key="Citation-179615" name="23306100 Androgen-deprivation therapy alone or with docetaxel in non-castrate metastatic prostate cancer (GETUG-AFU 15): a randomised, open-label, phase 3 trial."/>
 <artifact id="Citation/179623" key="Citation-179623" name="23452809 Long-term follow-up of a phase II trial of chemotherapy plus hormone therapy for biochemical relapse after definitive local therapy for prostate cancer."/>
+<artifact id="Citation/267501" key="Citation-267501" name="23589542 Hypoglycemia and diabetes: a report of a workgroup of the American Diabetes Association and the Endocrine Society."/>
 <artifact id="Citation/179629" key="Citation-179629" name="23604530 A phase II trial of androgen deprivation therapy (ADT) plus chemotherapy as initial treatment for local failures or advanced prostate cancer."/>
 <artifact id="Citation/179624" key="Citation-179624" name="24598155 Long-term results of a phase II study with neoadjuvant docetaxel chemotherapy and complete androgen blockade in locally advanced and high-risk prostate cancer."/>
 <artifact id="Citation/179617" key="Citation-179617" name="25301760 Survival with Newly Diagnosed Metastatic Prostate Cancer in the &#34;Docetaxel Era&#34;: Data from 917 Patients in the Control Arm of the STAMPEDE Trial (MRC PR08, CRUK/06/019)."/>
@@ -25,8 +29,12 @@
 <artifact id="Citation/179621" key="Citation-179621" name="26028518 Androgen deprivation therapy plus docetaxel and estramustine versus androgen deprivation therapy alone for high-risk localised prostate cancer (GETUG 12): a phase 3 randomised controlled trial."/>
 <artifact id="Citation/179630" key="Citation-179630" name="26092557 Feasibility study of a randomized controlled trial comparing docetaxel chemotherapy and androgen deprivation therapy with sequential prostatic biopsies from patients with advanced non-castration-resistant prostate cancer."/>
 <artifact id="Citation/179616" key="Citation-179616" name="26244877 Chemohormonal Therapy in Metastatic Hormone-Sensitive Prostate Cancer."/>
+<artifact id="Citation/267500" key="Citation-267500" name="26502880 A novel nasal powder formulation of glucagon: toxicology studies in animal models."/>
+<artifact id="Citation/267499" key="Citation-267499" name="26681725 Intranasal Glucagon for Treatment of Insulin-Induced Hypoglycemia in Adults With Type 1 Diabetes: A Randomized Crossover Noninferiority Study."/>
+<artifact id="Citation/267498" key="Citation-267498" name="26859072 Emotional Distress in the Partners of Type 1 Diabetes Adults: Worries About Hypoglycemia and Other Key Concerns."/>
 <artifact id="Citation/33089" key="Citation-33089" name="27222544 Metabolic Surgery in the Treatment Algorithm for Type 2 Diabetes: A Joint Statement by International Diabetes Organizations."/>
 <artifact id="Citation/179613" key="Citation-179613" name="27308831 Efficacy and Safety of Combined Androgen Deprivation Therapy (ADT) and Docetaxel Compared with ADT Alone for Metastatic Hormone-Naive Prostate Cancer: A Systematic Review and Meta-Analysis."/>
+<artifact id="Citation/267497" key="Citation-267497" name="27979893 6. Glycemic Targets."/>
 <artifact id="Citation/179601" key="Citation-179601" name="29114761 Web Exclusives. Annals Story Slam - How Wonder Woman Became My Alter Ego."/>
 <artifact id="Citation/179600" key="Citation-179600" name="29114762 Web Exclusives. Annals Story Slam - Wonder Woman Is a Cartoon Character."/>
 <artifact id="Citation/179599" key="Citation-179599" name="29202628 &#34;I Kinda Feel Like Wonder Woman&#34;: An Interpretative Phenomenological Analysis of Pole Fitness and Positive Body Image."/>
@@ -34,27 +42,50 @@
 <artifact id="Citation/179597" key="Citation-179597" name="29694275 A regressive formula of perversity: Wertham and the women of comics."/>
 <artifact id="Citation/179596" key="Citation-179596" name="29694302 Introduction: &#34;Suffering Sappho!&#34;: Lesbian content and queer female characters in comics."/>
 <artifact id="Citation/179595" key="Citation-179595" name="30467172 Finding my inner Wonder Woman."/>
-<artifact id="Group/33395" key="Group-33395" name="33395"/>
+<artifact id="Citation/292440" key="Citation-292440" name="30545967 Parachute use to prevent death and major trauma when jumping from aircraft: randomized controlled trial."/>
+<artifact id="Citation/306957" key="Citation-306957" name="30545967 Parachute use to prevent death and major trauma when jumping from aircraft: randomized controlled trial."/>
 <artifact id="Citation/179594" key="Citation-179594" name="34871555 What Can Wonder Woman Teach Radiologists?"/>
 <artifact id="Citation/33399" key="Citation-33399" name="35243488 Bariatric surgery and cardiovascular disease: a systematic review and meta-analysis."/>
 <artifact id="Citation/179605" key="Citation-179605" name="36491989 Another Georgia Wonder Woman: She Does More Astounding Tricks Than Did Lula Hurst."/>
+<artifact id="Citation/264329" key="Citation-264329" name="37024129 Benefits and harms of drug treatment for type 2 diabetes: systematic review and network meta-analysis of randomised controlled trials."/>
 <artifact id="Citation/179604" key="Citation-179604" name="6907780 Career guide: to change what needs changing...doesn't take Wonder Woman."/>
+<artifact id="ResearchStudy/267245" key="ResearchStudy-267245" name="A Study of Nasal Glucagon (LY900018) in Japanese Participants With Diabetes Mellitus - M11 Example"/>
 <artifact id="Evidence/179683" key="Evidence-179683" name="ADAS-Cog(11) EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol - EBMonFHIR IG Version"/>
 <artifact id="StructureDefinition/adaptation" key="StructureDefinition-adaptation" name="Adaptation"/>
+<artifact id="StructureDefinition/additional-language" key="StructureDefinition-additional-language" name="AdditionalLanguage"/>
+<artifact id="Group/265093" key="Group-265093" name="Adults with type 2 diabetes"/>
+<artifact id="Group/236947" key="Group-236947" name="Adults with type 2 diabetes and CVD and CKD"/>
+<artifact id="Group/236533" key="Group-236533" name="Adults with type 2 diabetes and established CVD (but no CKD)"/>
+<artifact id="EvidenceVariable/297518" key="EvidenceVariable-297518" name="Age"/>
+<artifact id="Evidence/298037" key="Evidence-298037" name="Age with comparator"/>
+<artifact id="Evidence/298035" key="Evidence-298035" name="Age with intervention"/>
+<artifact id="EvidenceVariable/297738" key="EvidenceVariable-297738" name="Aircraft Type"/>
+<artifact id="Evidence/307431" key="Evidence-307431" name="Aircraft Type with comparator"/>
+<artifact id="Evidence/307430" key="Evidence-307430" name="Aircraft Type with intervention"/>
+<artifact id="EvidenceVariable/297740" key="EvidenceVariable-297740" name="Altitude"/>
+<artifact id="Evidence/307447" key="Evidence-307447" name="Altitude comparing intervention vs. comparator"/>
+<artifact id="Evidence/307444" key="Evidence-307444" name="Altitude for enrolled group"/>
+<artifact id="Evidence/307442" key="Evidence-307442" name="Altitude for screened group"/>
+<artifact id="Evidence/307251" key="Evidence-307251" name="Altitude with comparator"/>
+<artifact id="Evidence/307250" key="Evidence-307250" name="Altitude with intervention"/>
+<artifact id="Group/306658" key="Group-306658" name="Analyzed Group PARACHUTE Trial"/>
 <artifact id="Citation/7636" key="Citation-7636" name="Anticoagulation for COVID-19 Combined RCTs in NEJM"/>
-<artifact id="StructureDefinition/artifact-approvalDate" key="StructureDefinition-artifact-approvalDate" name="ArtifactApprovalDate"/>
+<artifact deprecated="true" id="StructureDefinition/artifact-approvalDate" key="StructureDefinition-artifact-approvalDate" name="ArtifactApprovalDate"/>
 <artifact id="StructureDefinition/artifact-assessment-compared" key="StructureDefinition-artifact-assessment-compared" name="ArtifactAssessmentCompared"/>
 <artifact id="StructureDefinition/artifact-assessment-date-as-rating" key="StructureDefinition-artifact-assessment-date-as-rating" name="ArtifactAssessmentDateAsRating"/>
-<artifact id="StructureDefinition/artifact-effectivePeriod" key="StructureDefinition-artifact-effectivePeriod" name="ArtifactEffectivePeriod"/>
-<artifact id="StructureDefinition/artifact-lastReviewDate" key="StructureDefinition-artifact-lastReviewDate" name="ArtifactLastReviewDate"/>
-<artifact id="Group/32139" key="Group-32139" name="Bariatric_Surgery_Eligibility_Group_ADA_Recommendation_8_16"/>
-<artifact id="Group/179511" key="Group-179511" name="Bariatric_Surgery_Eligibility_Group_ADA_Recommendation_8_17"/>
-<artifact id="Group/172423" key="Group-172423" name="Bariatric_Surgery_RYGB_VSG_LAGB_BPD"/>
+<artifact deprecated="true" id="StructureDefinition/artifact-effectivePeriod" key="StructureDefinition-artifact-effectivePeriod" name="ArtifactEffectivePeriod"/>
+<artifact deprecated="true" id="StructureDefinition/artifact-lastReviewDate" key="StructureDefinition-artifact-lastReviewDate" name="ArtifactLastReviewDate"/>
+<artifact id="Composition/312203" key="Composition-312203" name="Baseline Measure Report: Association of Bariatric Surgery vs Medical Obesity Treatment With Long-term Medical Complications and Obesity-Related Comorbidities (2018 Norwegian Cohort)"/>
+<artifact id="List/307202" key="List-307202" name="Baseline Measures List for PARACHUTE Trial"/>
 <artifact id="StructureDefinition/baseline-measure-evidence" key="StructureDefinition-baseline-measure-evidence" name="BaselineMeasureEvidence"/>
 <artifact id="Evidence/179451" key="Evidence-179451" name="BaselineMeasureEvidence: Age in 2018 Norwegian Cohort Medical Group"/>
 <artifact id="Evidence/179452" key="Evidence-179452" name="BaselineMeasureEvidence: Age in 2018 Norwegian Cohort Surgical Group"/>
 <artifact id="Evidence/179458" key="Evidence-179458" name="BaselineMeasureEvidence: BMI in 2018 Norwegian Cohort Medical Group"/>
 <artifact id="Evidence/179457" key="Evidence-179457" name="BaselineMeasureEvidence: BMI in 2018 Norwegian Cohort Surgical Group"/>
+<artifact id="StructureDefinition/baseline-measure-report" key="StructureDefinition-baseline-measure-report" name="BaselineMeasureReport"/>
+<artifact id="StructureDefinition/baseline-variables-list" key="StructureDefinition-baseline-variables-list" name="BaselineVariablesList"/>
+<artifact id="List/312201" key="List-312201" name="BaselineVariablesList: Association of Bariatric Surgery vs Medical Obesity Treatment With Long-term Medical Complications and Obesity-Related Comorbidities (2018 Norwegian Cohort)"/>
+<artifact id="ResearchStudy/264321" key="ResearchStudy-264321" name="Benefits and harms of drug treatment for type 2 diabetes: systematic review and network meta-analysis of randomised controlled trials"/>
 <artifact id="StructureDefinition/book-citation" key="StructureDefinition-book-citation" name="BookCitation"/>
 <artifact id="Citation/121719" key="Citation-121719" name="BookCitation: Crossing the Quality Chasm: A New Health System for the 21st Century"/>
 <artifact id="StructureDefinition/book-part-citation" key="StructureDefinition-book-part-citation" name="BookPartCitation"/>
@@ -62,45 +93,40 @@
 <artifact id="Citation/139860" key="Citation-139860" name="BookPartCitation: Chapter 3 of Crossing the Quality Chasm: A New Health System for the 21st Century - without baseCitation"/>
 <artifact id="Evidence/179690" key="Evidence-179690" name="CIBIC+ EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol - EBMonFHIR IG Version"/>
 <artifact id="Group/12714" key="Group-12714" name="COVID_19PneumoniaHospitalizedAdult"/>
+<artifact id="Group/346486" key="Group-346486" name="CTIS2024-516402-32-00 Eligibility Criteria"/>
+<artifact id="EvidenceVariable/346487" key="EvidenceVariable-346487" name="CTIS2024-516402-32-00 Primary Outcome 1"/>
+<artifact id="EvidenceVariable/346488" key="EvidenceVariable-346488" name="CTIS2024-516402-32-00 Secondary Outcome 1"/>
+<artifact id="EvidenceVariable/346489" key="EvidenceVariable-346489" name="CTIS2024-516402-32-00 Secondary Outcome 2"/>
+<artifact id="EvidenceVariable/346490" key="EvidenceVariable-346490" name="CTIS2024-516402-32-00 Secondary Outcome 3"/>
+<artifact id="EvidenceVariable/346491" key="EvidenceVariable-346491" name="CTIS2024-516402-32-00 Secondary Outcome 4"/>
+<artifact id="EvidenceVariable/346492" key="EvidenceVariable-346492" name="CTIS2024-516402-32-00 Secondary Outcome 5"/>
+<artifact id="EvidenceVariable/346493" key="EvidenceVariable-346493" name="CTIS2024-516402-32-00 Secondary Outcome 6"/>
+<artifact id="EvidenceVariable/346494" key="EvidenceVariable-346494" name="CTIS2024-516402-32-00 Secondary Outcome 7"/>
+<artifact id="EvidenceVariable/346495" key="EvidenceVariable-346495" name="CTIS2024-516402-32-00 Secondary Outcome 8"/>
+<artifact id="StructureDefinition/ctis-record" key="StructureDefinition-ctis-record" name="CTISRecord"/>
 <artifact id="ArtifactAssessment/179693" key="ArtifactAssessment-179693" name="Certainty of Evidence Rating of 14-day mortality remdesivir vs placebo meta-analysis (ACTT-1, Wang et al, WHO SOLIDARITY)"/>
 <artifact id="StructureDefinition/certainty-of-evidence" key="StructureDefinition-certainty-of-evidence" name="CertaintyOfEvidence"/>
-<artifact id="StructureDefinition/characteristic-description" key="StructureDefinition-characteristic-description" name="CharacteristicDescription"/>
-<artifact id="StructureDefinition/characteristic-determined-by-expression" key="StructureDefinition-characteristic-determined-by-expression" name="CharacteristicDeterminedByExpression"/>
-<artifact id="StructureDefinition/characteristic-determined-by-reference" key="StructureDefinition-characteristic-determined-by-reference" name="CharacteristicDeterminedByReference"/>
-<artifact id="StructureDefinition/characteristic-duration-duration" key="StructureDefinition-characteristic-duration-duration" name="CharacteristicDurationDuration"/>
-<artifact id="StructureDefinition/characteristic-duration-range" key="StructureDefinition-characteristic-duration-range" name="CharacteristicDurationRange"/>
-<artifact id="StructureDefinition/characteristic-instances-quantity" key="StructureDefinition-characteristic-instances-quantity" name="CharacteristicInstancesQuantity"/>
-<artifact id="StructureDefinition/characteristic-instances-range" key="StructureDefinition-characteristic-instances-range" name="CharacteristicInstancesRange"/>
-<artifact id="StructureDefinition/characteristic-method" key="StructureDefinition-characteristic-method" name="CharacteristicMethod"/>
-<artifact id="StructureDefinition/characteristic-offset" key="StructureDefinition-characteristic-offset" name="CharacteristicOffset"/>
+<artifact deprecated="true" id="StructureDefinition/characteristic-description" key="StructureDefinition-characteristic-description" name="CharacteristicDescription"/>
+<artifact deprecated="true" id="StructureDefinition/characteristic-determined-by-expression" key="StructureDefinition-characteristic-determined-by-expression" name="CharacteristicDeterminedByExpression"/>
+<artifact deprecated="true" id="StructureDefinition/characteristic-determined-by-reference" key="StructureDefinition-characteristic-determined-by-reference" name="CharacteristicDeterminedByReference"/>
+<artifact deprecated="true" id="StructureDefinition/characteristic-duration-duration" key="StructureDefinition-characteristic-duration-duration" name="CharacteristicDurationDuration"/>
+<artifact deprecated="true" id="StructureDefinition/characteristic-duration-range" key="StructureDefinition-characteristic-duration-range" name="CharacteristicDurationRange"/>
+<artifact deprecated="true" id="StructureDefinition/characteristic-instances-quantity" key="StructureDefinition-characteristic-instances-quantity" name="CharacteristicInstancesQuantity"/>
+<artifact deprecated="true" id="StructureDefinition/characteristic-instances-range" key="StructureDefinition-characteristic-instances-range" name="CharacteristicInstancesRange"/>
+<artifact deprecated="true" id="StructureDefinition/characteristic-method" key="StructureDefinition-characteristic-method" name="CharacteristicMethod"/>
+<artifact deprecated="true" id="StructureDefinition/characteristic-offset" key="StructureDefinition-characteristic-offset" name="CharacteristicOffset"/>
 <artifact id="StructureDefinition/characteristic-timing" key="StructureDefinition-characteristic-timing" name="CharacteristicTiming"/>
-<artifact id="StructureDefinition/characteristic-value-expression" key="StructureDefinition-characteristic-value-expression" name="CharacteristicValueExpression"/>
-<artifact id="StructureDefinition/characteristic-value-uri" key="StructureDefinition-characteristic-value-uri" name="CharacteristicValueUri"/>
+<artifact deprecated="true" id="StructureDefinition/characteristic-value-expression" key="StructureDefinition-characteristic-value-expression" name="CharacteristicValueExpression"/>
+<artifact deprecated="true" id="StructureDefinition/characteristic-value-uri" key="StructureDefinition-characteristic-value-uri" name="CharacteristicValueUri"/>
+<artifact id="Citation/247416" key="Citation-247416" name="Citation for Composition: ComparativeEvidenceReport: Association of Bariatric Surgery vs Medical Obesity Treatment With Long-term Medical Complications and Obesity-Related Comorbidities (2018 Norwegian Cohort)"/>
 <artifact id="Citation/58" key="Citation-58" name="Citation for FEvIR Evidence 55: 14-day mortality remdesivir vs placebo meta-analysis (ACTT-1, Wang et al, WHO SOLIDARITY)"/>
 <artifact id="Citation/7638" key="Citation-7638" name="Citation for FEvIR Evidence 7637: Critically appraised summary of primary outcome of multi-platform RCT of anticoagulation for non-critically ill COVID-19"/>
+<artifact id="StructureDefinition/cite-as" key="StructureDefinition-cite-as" name="CiteAs"/>
 <artifact id="StructureDefinition/classification" key="StructureDefinition-classification" name="Classification"/>
 <artifact id="ArtifactAssessment/179448" key="ArtifactAssessment-179448" name="Classification: Study Design for Association of Bariatric Surgery with Complications and Comorbidities JAMA 2018 Norwegian Cohort"/>
-<artifact id="StructureDefinition/cohort-definition" key="StructureDefinition-cohort-definition" name="Cohort Definition"/>
-<artifact id="Group/179902" key="Group-179902" name="CohortDefinition_At_least_2_risk_factors_for_stroke"/>
-<artifact id="Group/179514" key="Group-179514" name="CohortDefinition_BMI_27_5_32_4_in_Asian_Americans_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery"/>
-<artifact id="Group/179513" key="Group-179513" name="CohortDefinition_BMI_30_34_9_in_persons_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery"/>
-<artifact id="Group/179510" key="Group-179510" name="CohortDefinition_BMI_32_5_37_4_in_Asian_Americans_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery"/>
-<artifact id="Group/179509" key="Group-179509" name="CohortDefinition_BMI_35_39_9_in_persons_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery"/>
-<artifact id="Group/179376" key="Group-179376" name="CohortDefinition_BMI_35_and_at_least_1_obesity_related_comorbidity"/>
-<artifact id="Group/179508" key="Group-179508" name="CohortDefinition_BMI_37_5_kg_m2_in_Asian_Americans"/>
-<artifact id="Group/179506" key="Group-179506" name="CohortDefinition_BMI_criteria_for_ADA_surgery_recommendation"/>
-<artifact id="Group/170441" key="Group-170441" name="CohortDefinition_Cancer_of_any_kind_except_basal_cell_skin_cancer_or_cancer_in_situ_unless_documented_to_be_disease_free_for_five_years"/>
-<artifact id="Group/170442" key="Group-170442" name="CohortDefinition_Cardiovascular_event"/>
-<artifact id="Group/179901" key="Group-179901" name="CohortDefinition_Heart_failure_based_on_Phenotypes"/>
-<artifact id="Group/179512" key="Group-179512" name="CohortDefinition_Lower_BMI_criteria_for_ADA_surgery_consideration"/>
-<artifact id="Group/173249" key="Group-173249" name="CohortDefinition_Nonfatal_myocardial_infarction"/>
-<artifact id="Group/173250" key="Group-173250" name="CohortDefinition_Nonfatal_stroke"/>
-<artifact id="Group/179898" key="Group-179898" name="CohortDefinition_Oxygen_saturation_96_on_Boots_Finger_Pulse_Oximeter"/>
-<artifact id="Group/179900" key="Group-179900" name="CohortDefinition_Oxygen_saturation_96_on_Boots_Finger_Pulse_Oximeter_with_Ranges"/>
-<artifact id="Group/179507" key="Group-179507" name="CohortDefinition_Proxy_criteria_for_surgical_candidates"/>
-<artifact id="Group/179375" key="Group-179375" name="CohortDefinition_Severe_obesity"/>
-<artifact id="StructureDefinition/combination-method" key="StructureDefinition-combination-method" name="CombinationMethod"/>
-<artifact id="StructureDefinition/combination-threshold" key="StructureDefinition-combination-threshold" name="CombinationThreshold"/>
+<artifact id="StructureDefinition/cohort-definition" key="StructureDefinition-cohort-definition" name="CohortDefinition"/>
+<artifact deprecated="true" id="StructureDefinition/combination-method" key="StructureDefinition-combination-method" name="CombinationMethod"/>
+<artifact deprecated="true" id="StructureDefinition/combination-threshold" key="StructureDefinition-combination-threshold" name="CombinationThreshold"/>
 <artifact id="StructureDefinition/comment" key="StructureDefinition-comment" name="Comment"/>
 <artifact id="ArtifactAssessment/179694" key="ArtifactAssessment-179694" name="Comment on Guideline: ADA 2021 Standards of Medical Care 8. Obesity Management for the Treatment of Type 2 Diabetes by Joanne Dehnbostel 2023-11-28T15:19:01.266Z"/>
 <artifact id="StructureDefinition/comparative-baseline-measure-evidence" key="StructureDefinition-comparative-baseline-measure-evidence" name="ComparativeBaselineMeasureEvidence"/>
@@ -133,15 +159,18 @@
 <artifact id="StructureDefinition/comparative-evidence-report" key="StructureDefinition-comparative-evidence-report" name="ComparativeEvidenceReport"/>
 <artifact id="Composition/178426" key="Composition-178426" name="ComparativeEvidenceReport: Association of Bariatric Surgery vs Medical Obesity Treatment With Long-term Medical Complications and Obesity-Related Comorbidities (2018 Norwegian Cohort)"/>
 <artifact id="StructureDefinition/comparative-evidence-report-subject" key="StructureDefinition-comparative-evidence-report-subject" name="ComparativeEvidenceReportSubject"/>
-<artifact id="Group/179633" key="Group-179633" name="ComparativeEvidenceReportSubject_Association_of_Bariatric_Surgery_vs_Medical_Obesity_Treatment_With_Long_term_Medical_Complications_and_Obesity_Related_Comorbidities_2018_Norwegian_Cohort"/>
-<artifact id="StructureDefinition/comparative-participant-flow" key="StructureDefinition-comparative-participant-flow" name="ComparativeParticipantFlow"/>
-<artifact id="Evidence/179635" key="Evidence-179635" name="ComparativeParticipantFlow: Dropout due to stopping intervention Lofexidine vs. Placebo in opioid detoxification trial"/>
-<artifact id="StructureDefinition/comparator-definition" key="StructureDefinition-comparator-definition" name="ComparatorDefinition"/>
-<artifact id="Group/172424" key="Group-172424" name="ComparatorDefinition_NOT_Bariatric_Surgery_RYGB_VSG_LAGB_BPD"/>
-<artifact id="Group/179785" key="Group-179785" name="ComparatorDefinition_Usual_care_pharmacologic_thromboprophylaxis"/>
+<artifact id="Group/179633" key="Group-179633" name="ComparativeEvidenceReportSubject: Association of Bariatric Surgery vs Medical Obesity Treatment With Long-term Medical Complications and Obesity-Related Comorbidities (2018 Norwegian Cohort)"/>
+<artifact id="StructureDefinition/comparative-evidence-synthesis-report" key="StructureDefinition-comparative-evidence-synthesis-report" name="ComparativeEvidenceSynthesisReport"/>
+<artifact id="Composition/236538" key="Composition-236538" name="ComparativeEvidenceSynthesisReport: GLP-1 RA vs. Standard care in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact deprecated="true" id="StructureDefinition/comparative-participant-flow" key="StructureDefinition-comparative-participant-flow" name="ComparativeParticipantFlow"/>
+<artifact id="StructureDefinition/comparative-participant-flow-evidence" key="StructureDefinition-comparative-participant-flow-evidence" name="ComparativeParticipantFlowEvidence"/>
+<artifact id="Evidence/179635" key="Evidence-179635" name="ComparativeParticipantFlowEvidence: Dropout due to stopping intervention Lofexidine vs. Placebo in opioid detoxification trial"/>
+<artifact deprecated="true" id="StructureDefinition/comparator-definition" key="StructureDefinition-comparator-definition" name="ComparatorDefinition"/>
+<artifact id="Group/236776" key="Group-236776" name="ComparatorDefinition: Glucagon-Like Peptide-1 (GLP-1) receptor agonists"/>
+<artifact id="Group/172460" key="Group-172460" name="ComparatorDefinition: Obese patients ≥ 18 years old without bariatric surgery"/>
+<artifact id="Group/236530" key="Group-236530" name="ComparatorDefinition: Standard care"/>
 <artifact id="StructureDefinition/comparator-group" key="StructureDefinition-comparator-group" name="ComparatorGroup"/>
-<artifact id="Group/172939" key="Group-172939" name="ComparatorGroup_JAMA_2018_Norwegian_cohort_study_Control_cohort"/>
-<artifact id="Group/172460" key="Group-172460" name="ComparatorGroup_Obese_patients_18_years_old_without_bariatric_surgery"/>
+<artifact id="Group/172939" key="Group-172939" name="ComparatorGroup: JAMA 2018 Norwegian cohort study Control cohort"/>
 <artifact id="StructureDefinition/comparator-only-evidence" key="StructureDefinition-comparator-only-evidence" name="ComparatorOnlyEvidence"/>
 <artifact id="Evidence/104385" key="Evidence-104385" name="ComparatorOnlyEvidence: Additional GI surgical procedure without bariatric surgery (Control Group) in JAMA 2018 Norwegian cohort study"/>
 <artifact id="Evidence/104384" key="Evidence-104384" name="ComparatorOnlyEvidence: All-cause mortality without bariatric surgery in 2022 meta-analysis"/>
@@ -154,9 +183,41 @@
 <artifact id="ArtifactAssessment/171898" key="ArtifactAssessment-171898" name="Composite Rating of FOI 153881 for Project FOI 112280"/>
 <artifact id="StructureDefinition/composite-rating" key="StructureDefinition-composite-rating" name="CompositeRating"/>
 <artifact id="Organization/118079" key="Organization-118079" name="Computable_Publishing_LLC"/>
+<artifact id="StructureDefinition/conceptual-cohort-definition" key="StructureDefinition-conceptual-cohort-definition" name="ConceptualCohortDefinition"/>
+<artifact id="Group/179902" key="Group-179902" name="ConceptualCohortDefinition: At least 2 risk factors for stroke"/>
+<artifact id="Group/179514" key="Group-179514" name="ConceptualCohortDefinition: BMI 27.5-32.4 in Asian Americans who do not achieve durable weight loss and improvement in comorbidities without surgery"/>
+<artifact id="Group/179513" key="Group-179513" name="ConceptualCohortDefinition: BMI 30-34.9 in persons who do not achieve durable weight loss and improvement in comorbidities without surgery"/>
+<artifact id="Group/179510" key="Group-179510" name="ConceptualCohortDefinition: BMI 32.5-37.4 in Asian Americans who do not achieve durable weight loss and improvement in comorbidities without surgery"/>
+<artifact id="Group/179509" key="Group-179509" name="ConceptualCohortDefinition: BMI 35-39.9 in persons who do not achieve durable weight loss and improvement in comorbidities without surgery"/>
+<artifact id="Group/179506" key="Group-179506" name="ConceptualCohortDefinition: BMI criteria for ADA surgery recommendation"/>
+<artifact id="Group/179376" key="Group-179376" name="ConceptualCohortDefinition: BMI ≥ 35 and at least 1 obesity-related comorbidity"/>
+<artifact id="Group/179508" key="Group-179508" name="ConceptualCohortDefinition: BMI ≥ 37.5 kg/m2 in Asian Americans"/>
+<artifact id="Group/179897" key="Group-179897" name="ConceptualCohortDefinition: Estimated glomerular filtration rate 45-59"/>
+<artifact id="Group/179901" key="Group-179901" name="ConceptualCohortDefinition: Heart failure based on Phenotypes"/>
+<artifact id="Group/179512" key="Group-179512" name="ConceptualCohortDefinition: Lower BMI criteria for ADA surgery consideration"/>
+<artifact id="Group/279340" key="Group-279340" name="ConceptualCohortDefinition: Meet either T1DM-specific eligibility criteria or T2DM-specific eligibility criteria"/>
+<artifact id="Group/173249" key="Group-173249" name="ConceptualCohortDefinition: Nonfatal myocardial infarction"/>
+<artifact id="Group/173250" key="Group-173250" name="ConceptualCohortDefinition: Nonfatal stroke"/>
+<artifact id="Group/179898" key="Group-179898" name="ConceptualCohortDefinition: Oxygen saturation &lt; 96% on Boots Finger Pulse Oximeter"/>
+<artifact id="Group/179900" key="Group-179900" name="ConceptualCohortDefinition: Oxygen saturation &lt; 96% on Boots Finger Pulse Oximeter with Ranges"/>
+<artifact id="Group/179507" key="Group-179507" name="ConceptualCohortDefinition: Proxy criteria for surgical candidates"/>
+<artifact id="Group/179375" key="Group-179375" name="ConceptualCohortDefinition: Severe obesity"/>
+<artifact id="Group/270503" key="Group-270503" name="ConceptualCohortDefinition: T1DM or T2DM"/>
+<artifact id="Group/279347" key="Group-279347" name="ConceptualCohortDefinition: T1DM-specific criteria"/>
+<artifact id="Group/279346" key="Group-279346" name="ConceptualCohortDefinition: T2DM-specific criteria"/>
+<artifact id="Group/170441" key="Group-170441" name="ConceptualCohortDefinition_Cancer_of_any_kind_except_basal_cell_skin_cancer_or_cancer_in_situ_unless_documented_to_be_disease_free_for_five_years"/>
+<artifact id="Group/170442" key="Group-170442" name="ConceptualCohortDefinition_Cardiovascular_event"/>
+<artifact id="StructureDefinition/conceptual-comparator-definition" key="StructureDefinition-conceptual-comparator-definition" name="ConceptualComparatorDefinition"/>
+<artifact id="Group/172424" key="Group-172424" name="ConceptualComparatorDefinition: NOT Bariatric Surgery (RYGB, VSG, LAGB, BPD)"/>
+<artifact id="Group/179785" key="Group-179785" name="ConceptualComparatorDefinition: Usual-care pharmacologic thromboprophylaxis"/>
+<artifact id="StructureDefinition/conceptual-exposure-definition" key="StructureDefinition-conceptual-exposure-definition" name="ConceptualExposureDefinition"/>
+<artifact id="Group/172423" key="Group-172423" name="ConceptualExposureDefinition: Bariatric Surgery (RYGB, VSG, LAGB, BPD)"/>
+<artifact id="Group/179786" key="Group-179786" name="ConceptualExposureDefinition: Therapeutic-dose anticoagulation with heparin"/>
+<artifact id="Group/291369" key="Group-291369" name="ConceptualExposureDefinition: Therapeutic-dose anticoagulation with heparin"/>
 <artifact id="Evidence/7637" key="Evidence-7637" name="Critically appraised summary of primary outcome of multi-platform RCT of anticoagulation for non-critically ill patients with COVID-19"/>
-<artifact id="CodeSystem/181451" key="CodeSystem-181451" name="DataDictionary: Measuring the Rate of Scientific Knowledge Transfer"/>
-<artifact id="CodeSystem/179650" key="CodeSystem-179650" name="DataDictionary: phs003190"/>
+<artifact deprecated="true" id="StructureDefinition/data-dictionary" key="StructureDefinition-data-dictionary" name="DataDictionary"/>
+<artifact deprecated="true" id="CodeSystem/181451" key="CodeSystem-181451" name="DataDictionary: Measuring the Rate of Scientific Knowledge Transfer"/>
+<artifact deprecated="true" id="CodeSystem/179650" key="CodeSystem-179650" name="DataDictionary: phs003190"/>
 <artifact id="StructureDefinition/database-citation" key="StructureDefinition-database-citation" name="DatabaseCitation"/>
 <artifact id="Citation/29812" key="Citation-29812" name="DatabaseCitation: Citation for FEvIR Platform"/>
 <artifact id="StructureDefinition/database-entry-citation" key="StructureDefinition-database-entry-citation" name="DatabaseEntryCitation"/>
@@ -165,27 +226,59 @@
 <artifact id="Citation/179559" key="Citation-179559" name="DatasetCitation: Extrachromosomal DNA Amplification Contributes to Small Cell Lung Cancer Heterogeneity and is Associated with Worse Outcomes"/>
 <artifact id="StructureDefinition/date-as-rating" key="StructureDefinition-date-as-rating" name="DateAsRating"/>
 <artifact id="ArtifactAssessment/181452" key="ArtifactAssessment-155969" name="DateOfFirstPublication Classification of FOI 153881 by Rachel Couban"/>
+<artifact id="Evidence/318274" key="Evidence-318274" name="Death or Major Traumatic Injury 30 days after Impact comparing intervention vs. comparator"/>
+<artifact id="Evidence/318266" key="Evidence-318266" name="Death or Major Traumatic Injury 30 days after Impact with comparator"/>
+<artifact id="Evidence/312175" key="Evidence-312175" name="Death or Major Traumatic Injury 30 days after Impact with intervention"/>
+<artifact id="Evidence/318272" key="Evidence-318272" name="Death or Major Traumatic Injury on Impact comparing intervention vs. comparator"/>
+<artifact id="Evidence/318273" key="Evidence-318273" name="Death or Major Traumatic Injury on Impact comparing intervention vs. comparator"/>
 <artifact id="Citation/153881" key="Citation-153881" name="Delany-Moretlwe 2022 clinical trial"/>
+<artifact id="Group/265092" key="Group-265092" name="Diabetes treatment medication"/>
+<artifact id="StructureDefinition/dichotomous-intended-outcome" key="StructureDefinition-dichotomous-intended-outcome" name="DichotomousIntendedOutcome"/>
+<artifact id="EvidenceVariable/298615" key="EvidenceVariable-298615" name="DichotomousIntendedOutcome: Death or Major Traumatic Injury within 30 days"/>
 <artifact id="ValueSet/179430" key="ValueSet-179430" name="EBMImplementationGuideProfile Value Set"/>
-<artifact id="Group/179897" key="Group-179897" name="EGFR_45_59"/>
+<artifact id="ResearchStudy/346485" key="ResearchStudy-346485" name="Eculizumab in hypertensive emergency-associated hemolytic uremic syndrome: a randomized multicenter controlled trial (HYPERSHU)"/>
+<artifact id="Group/264323" key="Group-264323" name="Eligibility criteria for NMA_Diabetes"/>
 <artifact id="StructureDefinition/endpoint-analysis-plan" key="StructureDefinition-endpoint-analysis-plan" name="EndpointAnalysisPlan"/>
+<artifact id="Group/306657" key="Group-306657" name="Enrolled Group PARACHUTE Trial"/>
+<artifact id="EvidenceVariable/297729" key="EvidenceVariable-297729" name="Ethnic Group"/>
+<artifact id="Evidence/303337" key="Evidence-303337" name="Ethnic Group with comparator"/>
+<artifact id="Evidence/303336" key="Evidence-303336" name="Ethnic Group with intervention"/>
 <artifact id="CodeSystem/179423" key="CodeSystem-179423" name="Evidence Based Medicine on FHIR Implementation Guide Code System"/>
-<artifact id="ValueSet/evidence-variable-role-subtype" key="ValueSet-evidence-variable-role-subtype" name="Evidence Variable Role Subtype Value Set"/>
+<artifact id="ValueSet/evidence-report-contributor-role" key="ValueSet-evidence-report-contributor-role" name="Evidence Report Contributor Role Value Set"/>
+<artifact deprecated="true" id="ValueSet/evidence-variable-role-subtype" key="ValueSet-evidence-variable-role-subtype" name="Evidence Variable Role Subtype Value Set"/>
 <artifact id="StructureDefinition/evidence-list" key="StructureDefinition-evidence-list" name="EvidenceList"/>
 <artifact id="List/179800" key="List-179800" name="EvidenceList: Effect estimates for meta-analysis (Biegel 2020, Wang 2020, SOLIDARITY)"/>
 <artifact id="List/179470" key="List-179470" name="EvidenceList: Study results included in Mean difference in HbA1c effect of bariatric surgery in 2016 meta-analysis"/>
+<artifact deprecated="true" id="StructureDefinition/evidence-map" key="StructureDefinition-evidence-map" name="EvidenceMap"/>
+<artifact deprecated="true" id="Composition/104213" key="Composition-104213" name="EvidenceMap: Bariatric Surgery Summary of Findings Example for GIN 2022"/>
+<artifact deprecated="true" id="StructureDefinition/evidence-r6" key="StructureDefinition-evidence-r6" name="EvidenceR6"/>
 <artifact id="StructureDefinition/evidence-report" key="StructureDefinition-evidence-report" name="EvidenceReport"/>
+<artifact id="StructureDefinition/evidence-report-package" key="StructureDefinition-evidence-report-package" name="EvidenceReportPackage"/>
 <artifact id="ValueSet/179431" key="ValueSet-179431" name="EvidenceReportSectionCode Value Set"/>
 <artifact id="StructureDefinition/evidence-report-subject" key="StructureDefinition-evidence-report-subject" name="EvidenceReportSubject"/>
-<artifact id="Group/179562" key="Group-179562" name="EvidenceReportSubject_Clinical_Outcomes_for_Effects_of_Bariatric_Surgery"/>
+<artifact id="Group/179562" key="Group-179562" name="EvidenceReportSubject: Clinical Outcomes for Effects of Bariatric Surgery"/>
 <artifact id="StructureDefinition/evidence-synthesis-evidence" key="StructureDefinition-evidence-synthesis-evidence" name="EvidenceSynthesisEvidence"/>
-<artifact id="StructureDefinition/evidence-variable-category-value-reference" key="StructureDefinition-evidence-variable-category-value-reference" name="EvidenceVariableCategoryValueReference"/>
-<artifact id="StructureDefinition/evidence-variable-definition" key="StructureDefinition-evidence-variable-definition" name="EvidenceVariableDefinition"/>
+<artifact id="StructureDefinition/evidence-table-report-package" key="StructureDefinition-evidence-table-report-package" name="EvidenceTableReportPackage"/>
+<artifact id="EvidenceVariable/346801" key="EvidenceVariable-346801" name="EvidenceVariable: Patient id"/>
+<artifact id="EvidenceVariable/346782" key="EvidenceVariable-346782" name="EvidenceVariable: Time of measurement"/>
+<artifact id="EvidenceVariable/346802" key="EvidenceVariable-346802" name="EvidenceVariable: case_id"/>
+<artifact deprecated="true" id="StructureDefinition/evidence-variable-category-value-reference" key="StructureDefinition-evidence-variable-category-value-reference" name="EvidenceVariableCategoryValueReference"/>
+<artifact id="StructureDefinition/evidence-variable-classifier" key="StructureDefinition-evidence-variable-classifier" name="EvidenceVariableClassifier"/>
+<artifact id="StructureDefinition/evidence-variable-conditional" key="StructureDefinition-evidence-variable-conditional" name="EvidenceVariableConditional"/>
+<artifact id="StructureDefinition/evidence-variable-constraint" key="StructureDefinition-evidence-variable-constraint" name="EvidenceVariableConstraint"/>
+<artifact id="StructureDefinition/evidence-variable-data-cleaning" key="StructureDefinition-evidence-variable-data-cleaning" name="EvidenceVariableDataCleaning"/>
+<artifact id="StructureDefinition/evidence-variable-data-storage" key="StructureDefinition-evidence-variable-data-storage" name="EvidenceVariableDataStorage"/>
+<artifact deprecated="true" id="StructureDefinition/evidence-variable-definition" key="StructureDefinition-evidence-variable-definition" name="EvidenceVariableDefinition"/>
+<artifact id="StructureDefinition/evidence-variable-definition-modifier" key="StructureDefinition-evidence-variable-definition-modifier" name="EvidenceVariableDefinitionModifier"/>
+<artifact id="StructureDefinition/evidence-variable-handling-detail" key="StructureDefinition-evidence-variable-handling-detail" name="EvidenceVariableHandlingDetail"/>
+<artifact id="StructureDefinition/evidence-variable-missing-data" key="StructureDefinition-evidence-variable-missing-data" name="EvidenceVariableMissingData"/>
+<artifact id="StructureDefinition/evidence-variable-period" key="StructureDefinition-evidence-variable-period" name="EvidenceVariablePeriod"/>
+<artifact deprecated="true" id="ValueSet/179424" key="ValueSet-179424" name="EvidenceVariableRoleSubtype Value Set"/>
 <artifact id="Evidence/179691" key="Evidence-179691" name="Example EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol - EBMonFHIR IG Version"/>
-<artifact id="StructureDefinition/exposure-definition" key="StructureDefinition-exposure-definition" name="ExposureDefinition"/>
-<artifact id="Group/179786" key="Group-179786" name="ExposureDefinition_Therapeutic_dose_anticoagulation_with_heparin"/>
+<artifact id="Evidence/307453" key="Evidence-307453" name="Excluded from PARACHUTE Study"/>
+<artifact deprecated="true" id="StructureDefinition/exposure-definition" key="StructureDefinition-exposure-definition" name="ExposureDefinition"/>
 <artifact id="StructureDefinition/exposure-group" key="StructureDefinition-exposure-group" name="ExposureGroup"/>
-<artifact id="Group/172934" key="Group-172934" name="ExposureGroup_JAMA_2018_Norwegian_cohort_study_Surgery_cohort"/>
+<artifact id="Group/172934" key="Group-172934" name="ExposureGroup: JAMA 2018 Norwegian cohort study Surgery cohort"/>
 <artifact deprecated="true" id="StructureDefinition/exposure-variable" key="StructureDefinition-exposure-variable" name="ExposureVariable"/>
 <artifact id="EvidenceVariable/179449" key="EvidenceVariable-179449" name="ExposureVariable: Age (as continuous variable)"/>
 <artifact id="EvidenceVariable/179450" key="EvidenceVariable-179450" name="ExposureVariable: Body Mass Index (as continuous variable)"/>
@@ -199,17 +292,72 @@
 <artifact id="EvidenceVariable/179677" key="EvidenceVariable-179677" name="ExposureVariable: pht013094.v1.p1 SAMPLE_ID"/>
 <artifact id="EvidenceVariable/179679" key="EvidenceVariable-179679" name="ExposureVariable: pht013094.v1.p1 SAMPLE_USE"/>
 <artifact id="EvidenceVariable/179681" key="EvidenceVariable-179681" name="ExposureVariable: pht013094.v1.p1 Source_Type"/>
+<artifact id="EvidenceVariable/297734" key="EvidenceVariable-297734" name="Family History of Parachute Use"/>
+<artifact id="Evidence/303343" key="Evidence-303343" name="Family History of Parachute Use with comparator"/>
+<artifact id="Evidence/303342" key="Evidence-303342" name="Family History of Parachute Use with intervention"/>
+<artifact id="EvidenceVariable/297735" key="EvidenceVariable-297735" name="Frequent Flier"/>
+<artifact id="Evidence/303345" key="Evidence-303345" name="Frequent Flier with comparator"/>
+<artifact id="Evidence/303344" key="Evidence-303344" name="Frequent Flier with intervention"/>
+<artifact id="Group/236535" key="Group-236535" name="GLP-1 RA Group in Adults with diabetes type 2 with moderate CV risk"/>
+<artifact id="Group/236948" key="Group-236948" name="GLP-1 RA Group in Adults with type 2 diabetes"/>
+<artifact id="Group/306660" key="Group-306660" name="Group Randomized to Comparator (empty backpack) in PARACHUTE Trial"/>
+<artifact id="Group/306659" key="Group-306659" name="Group Randomized to Intervention Group (parachute) in PARACHUTE Trial"/>
 <artifact id="StructureDefinition/group-assignment" key="StructureDefinition-group-assignment" name="GroupAssignment"/>
 <artifact id="EvidenceVariable/172427" key="EvidenceVariable-172427" name="GroupAssignment: Bariatric Surgery vs. no bariatric surgery"/>
+<artifact id="EvidenceVariable/183637" key="EvidenceVariable-183637" name="GroupAssignment: ExposureDefinition: Bariatric Surgery (RYGB, VSG, LAGB, BPD) vs. ComparatorDefinition: NOT Bariatric Surgery (RYGB, VSG, LAGB, BPD)"/>
+<artifact id="EvidenceVariable/312202" key="EvidenceVariable-312202" name="GroupAssignment: ExposureDefinition: Bariatric Surgery (RYGB, VSG, LAGB, BPD) vs. ComparatorDefinition: NOT Bariatric Surgery (RYGB, VSG, LAGB, BPD)"/>
+<artifact id="EvidenceVariable/239273" key="EvidenceVariable-239273" name="GroupAssignment: ExposureGroup: JAMA 2018 Norwegian cohort study Surgery cohort vs. ComparatorGroup: JAMA 2018 Norwegian cohort study Control cohort"/>
+<artifact id="EvidenceVariable/236536" key="EvidenceVariable-236536" name="GroupAssignment: GLP-1 RA vs. Standard care"/>
+<artifact id="EvidenceVariable/297490" key="EvidenceVariable-297490" name="GroupAssignment: Jumping from aircraft with parachute vs. Jumping from aircraft with empty backpack"/>
+<artifact id="EvidenceVariable/307445" key="EvidenceVariable-307445" name="GroupAssignment: Non Participants vs. Enrolled Participants"/>
 <artifact id="EvidenceVariable/172479" key="EvidenceVariable-172479" name="GroupAssignment: Roux-en-Y gastric bypass or Biliopancreatic Diversion vs. medical treatment"/>
 <artifact id="EvidenceVariable/172481" key="EvidenceVariable-172481" name="GroupAssignment: Roux-en-Y gastric bypass surgery vs. Lifestyle-intensive medical management intervention alone"/>
 <artifact id="EvidenceVariable/172478" key="EvidenceVariable-172478" name="GroupAssignment: Roux-en-Y gastric bypass vs. medical treatment"/>
+<artifact id="EvidenceVariable/236950" key="EvidenceVariable-236950" name="GroupAssignment: SGLT2 inhibitors vs. GLP-1 RA"/>
 <artifact id="EvidenceVariable/179784" key="EvidenceVariable-179784" name="GroupAssignment: Therapeutic-dose anticoagulation with heparin vs. Usual-care pharmacologic thromboprophylaxis"/>
 <artifact id="EvidenceVariable/179689" key="EvidenceVariable-179689" name="GroupAssignment: high dose xanomeline vs. low dose xanomeline vs. placebo"/>
 <artifact id="StructureDefinition/group-r6" key="StructureDefinition-group-r6" name="GroupR6"/>
 <artifact id="StructureDefinition/guideline" key="StructureDefinition-guideline" name="Guideline"/>
 <artifact id="Composition/179465" key="Composition-179465" name="Guideline: ADA 2021 Standards of Medical Care 8. Obesity Management for the Treatment of Type 2 Diabetes"/>
+<artifact id="EvidenceVariable/297747" key="EvidenceVariable-297747" name="Health Survey Score Total"/>
+<artifact id="Evidence/318276" key="Evidence-318276" name="Health Survey Score Total comparing intervention vs. comparator"/>
+<artifact id="Evidence/318269" key="Evidence-318269" name="Health Survey Score Total with comparator"/>
+<artifact id="Evidence/312177" key="Evidence-312177" name="Health Survey Score Total with intervention"/>
+<artifact id="EvidenceVariable/297749" key="EvidenceVariable-297749" name="Health Survey Score-Mental Health Subscore"/>
+<artifact id="Evidence/318278" key="Evidence-318278" name="Health Survey Score-Mental Health Subscore comparing intervention vs. comparator"/>
+<artifact id="Evidence/318271" key="Evidence-318271" name="Health Survey Score-Mental Health Subscore with comparator"/>
+<artifact id="Evidence/312179" key="Evidence-312179" name="Health Survey Score-Mental Health Subscore with intervention"/>
+<artifact id="EvidenceVariable/297748" key="EvidenceVariable-297748" name="Health Survey Score-Physical Health Subscore"/>
+<artifact id="Evidence/318277" key="Evidence-318277" name="Health Survey Score-Physical Health Subscore comparing intervention vs. comparator"/>
+<artifact id="Evidence/318270" key="Evidence-318270" name="Health Survey Score-Physical Health Subscore with comparator"/>
+<artifact id="Evidence/312178" key="Evidence-312178" name="Health Survey Score-Physical Health Subscore with intervention"/>
+<artifact id="EvidenceVariable/297730" key="EvidenceVariable-297730" name="Height"/>
+<artifact id="Evidence/298039" key="Evidence-298039" name="Height with comparator"/>
+<artifact id="Evidence/298038" key="Evidence-298038" name="Height with intervention"/>
+<artifact id="EvidenceVariable/297732" key="EvidenceVariable-297732" name="History of Acrophobia"/>
+<artifact id="Evidence/303339" key="Evidence-303339" name="History of Acrophobia with comparator"/>
+<artifact id="Evidence/303338" key="Evidence-303338" name="History of Acrophobia with intervention"/>
+<artifact id="EvidenceVariable/297731" key="EvidenceVariable-297731" name="History of Broken Bones"/>
+<artifact id="Evidence/298041" key="Evidence-298041" name="History of Broken Bones with comparator"/>
+<artifact id="Evidence/298040" key="Evidence-298040" name="History of Broken Bones with intervention"/>
+<artifact id="EvidenceVariable/297733" key="EvidenceVariable-297733" name="History of Parachute Use"/>
+<artifact id="Evidence/303341" key="Evidence-303341" name="History of Parachute Use with comparator"/>
+<artifact id="Evidence/303340" key="Evidence-303340" name="History of Parachute Use with intervention"/>
+<artifact id="ValueSet/346299" key="ValueSet-346299" name="ICD-10-GM Terminale Codes"/>
 <artifact id="ActivityDefinition/213" key="ActivityDefinition-213" name="IV remdesivir 200 mg then 100 mg/day for 9 days"/>
+<artifact id="Evidence/318275" key="Evidence-318275" name="Injury Severity Score 30 days after Impact comparing intervention vs. comparator"/>
+<artifact id="Evidence/318267" key="Evidence-318267" name="Injury Severity Score 30 days after Impact with comparator"/>
+<artifact id="Evidence/312176" key="Evidence-312176" name="Injury Severity Score 30 days after Impact with intervention"/>
+<artifact id="Evidence/312181" key="Evidence-312181" name="Injury Severity Score on Impact comparing intervention vs. comparator"/>
+<artifact id="Evidence/318265" key="Evidence-318265" name="Injury Severity Score on Impact with comparator"/>
+<artifact id="Evidence/312174" key="Evidence-312174" name="Injury Severity Score on Impact with intervention"/>
+<artifact id="EvidenceVariable/297736" key="EvidenceVariable-297736" name="International vs Domestic Flight"/>
+<artifact id="Evidence/303347" key="Evidence-303347" name="International vs Domestic Flight with comparator"/>
+<artifact id="Evidence/303346" key="Evidence-303346" name="International vs Domestic Flight with intervention"/>
+<artifact deprecated="true" id="EvidenceVariable/33245" key="EvidenceVariable-33245" name="InterventionDefinition: Bariatric Surgery (RYGB, VSG, LAGB, BPD)"/>
+<artifact id="Group/236532" key="Group-236532" name="InterventionDefinition: Glucagon-Like Peptide-1 (GLP-1) receptor agonists"/>
+<artifact deprecated="true" id="EvidenceVariable/33394" key="EvidenceVariable-33394" name="InterventionDefinition: NOT Bariatric Surgery (RYGB, VSG, LAGB, BPD)"/>
+<artifact id="Group/236769" key="Group-236769" name="InterventionDefinition: Sodium-Glucose Transport Protein 2 (SGLT2) inhibitors"/>
 <artifact id="StructureDefinition/intervention-only-evidence" key="StructureDefinition-intervention-only-evidence" name="InterventionOnlyEvidence"/>
 <artifact id="Evidence/104398" key="Evidence-104398" name="InterventionOnlyEvidence: Additional GI surgical procedure with bariatric surgery (Intervention Group) in JAMA 2018 Norwegian cohort study"/>
 <artifact id="Evidence/104400" key="Evidence-104400" name="InterventionOnlyEvidence: New onset depression with bariatric surgery (Intervention Group) in JAMA 2018 Norwegian cohort study"/>
@@ -222,17 +370,99 @@
 <artifact id="Citation/32137" key="Citation-32137" name="JournalArticleCitation: ADA 2021 Standards of Medical Care 8. Obesity Management for the Treatment of Type 2 Diabetes"/>
 <artifact id="Citation/104116" key="Citation-104116" name="JournalArticleCitation: Association of Bariatric Surgery with Complications and Comorbidities JAMA 2018 Norwegian Cohort"/>
 <artifact deprecated="true" id="Citation/33090" key="Citation-33090" name="JournalArticleCitation: Metabolic Surgery in the Treatment Algorithm for Type 2 Diabetes: A Joint Statement by International Diabetes Organizations"/>
+<artifact id="Group/297488" key="Group-297488" name="Jumping from aircraft with empty backpack"/>
+<artifact id="Group/297486" key="Group-297486" name="Jumping from aircraft with parachute"/>
 <artifact id="ArtifactAssessment/179469" key="ArtifactAssessment-179469" name="Justification for Recommendation: ADA Obesity Management Recommendation 8.16"/>
 <artifact id="ArtifactAssessment/179515" key="ArtifactAssessment-179515" name="Justification for Recommendation: ADA Obesity Management Recommendation 8.17"/>
-<artifact id="Composition/343018" key="Composition-343018" name="M11 Report Template Instructions"/>
+<artifact id="Group/267506" key="Group-267506" name="M11 IGBJ Protocol Example Eligibility Criteria"/>
+<artifact id="Composition/256358" key="Composition-256358" name="M11 IGBJ Protocol Example for EBMonFHIR IG"/>
+<artifact id="Composition/343018" key="Composition-181448" name="M11 Report Template Instructions"/>
 <artifact id="StructureDefinition/m11-report" key="StructureDefinition-m11-report" name="M11Report"/>
+<artifact id="StructureDefinition/m11-research-study" key="StructureDefinition-m11-research-study" name="M11ResearchStudy"/>
+<artifact id="Evidence/236955" key="Evidence-236955" name="MAGIC-derived ComparatorOnlyEvidence: All-cause mortality in GLP-1 RA Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236541" key="Evidence-236541" name="MAGIC-derived ComparatorOnlyEvidence: All-cause mortality in Standard care Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236988" key="Evidence-236988" name="MAGIC-derived ComparatorOnlyEvidence: Body weight in GLP-1 RA Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236568" key="Evidence-236568" name="MAGIC-derived ComparatorOnlyEvidence: Body weight in Standard care Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236958" key="Evidence-236958" name="MAGIC-derived ComparatorOnlyEvidence: Cardiovascular mortality in GLP-1 RA Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236544" key="Evidence-236544" name="MAGIC-derived ComparatorOnlyEvidence: Cardiovascular mortality in Standard care Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236973" key="Evidence-236973" name="MAGIC-derived ComparatorOnlyEvidence: Diabetic ketoacidosis in GLP-1 RA Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236967" key="Evidence-236967" name="MAGIC-derived ComparatorOnlyEvidence: End-stage kidney disease in GLP-1 RA Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236553" key="Evidence-236553" name="MAGIC-derived ComparatorOnlyEvidence: End-stage kidney disease in Standard care Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236979" key="Evidence-236979" name="MAGIC-derived ComparatorOnlyEvidence: Genital infection in GLP-1 RA Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236985" key="Evidence-236985" name="MAGIC-derived ComparatorOnlyEvidence: Health-related quality of life in GLP-1 RA Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236565" key="Evidence-236565" name="MAGIC-derived ComparatorOnlyEvidence: Health-related quality of life in Standard care Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236970" key="Evidence-236970" name="MAGIC-derived ComparatorOnlyEvidence: Heart failure in GLP-1 RA Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236556" key="Evidence-236556" name="MAGIC-derived ComparatorOnlyEvidence: Heart failure in Standard care Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236961" key="Evidence-236961" name="MAGIC-derived ComparatorOnlyEvidence: Nonfatal myocardial infarction in GLP-1 RA Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236547" key="Evidence-236547" name="MAGIC-derived ComparatorOnlyEvidence: Nonfatal myocardial infarction in Standard care Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236964" key="Evidence-236964" name="MAGIC-derived ComparatorOnlyEvidence: Nonfatal stroke in GLP-1 RA Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236550" key="Evidence-236550" name="MAGIC-derived ComparatorOnlyEvidence: Nonfatal stroke in Standard care Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236976" key="Evidence-236976" name="MAGIC-derived ComparatorOnlyEvidence: Serious hyperglycaemia in GLP-1 RA Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236559" key="Evidence-236559" name="MAGIC-derived ComparatorOnlyEvidence: Serious hyperglycaemia in Standard care Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236982" key="Evidence-236982" name="MAGIC-derived ComparatorOnlyEvidence: Severe gastrointestinal events in GLP-1 RA Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236562" key="Evidence-236562" name="MAGIC-derived ComparatorOnlyEvidence: Severe gastrointestinal events in Standard care Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236540" key="Evidence-236540" name="MAGIC-derived Evidence: All-cause mortality with GLP-1 RA vs. Standard care in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236954" key="Evidence-236954" name="MAGIC-derived Evidence: All-cause mortality with SGLT2 inhibitors vs. GLP-1 RA in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236567" key="Evidence-236567" name="MAGIC-derived Evidence: Body weight with GLP-1 RA vs. Standard care in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236987" key="Evidence-236987" name="MAGIC-derived Evidence: Body weight with SGLT2 inhibitors vs. GLP-1 RA in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236543" key="Evidence-236543" name="MAGIC-derived Evidence: Cardiovascular mortality with GLP-1 RA vs. Standard care in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236957" key="Evidence-236957" name="MAGIC-derived Evidence: Cardiovascular mortality with SGLT2 inhibitors vs. GLP-1 RA in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236972" key="Evidence-236972" name="MAGIC-derived Evidence: Diabetic ketoacidosis with SGLT2 inhibitors vs. GLP-1 RA in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236552" key="Evidence-236552" name="MAGIC-derived Evidence: End-stage kidney disease with GLP-1 RA vs. Standard care in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236966" key="Evidence-236966" name="MAGIC-derived Evidence: End-stage kidney disease with SGLT2 inhibitors vs. GLP-1 RA in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236978" key="Evidence-236978" name="MAGIC-derived Evidence: Genital infection with SGLT2 inhibitors vs. GLP-1 RA in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236564" key="Evidence-236564" name="MAGIC-derived Evidence: Health-related quality of life with GLP-1 RA vs. Standard care in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236984" key="Evidence-236984" name="MAGIC-derived Evidence: Health-related quality of life with SGLT2 inhibitors vs. GLP-1 RA in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236555" key="Evidence-236555" name="MAGIC-derived Evidence: Heart failure with GLP-1 RA vs. Standard care in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236969" key="Evidence-236969" name="MAGIC-derived Evidence: Heart failure with SGLT2 inhibitors vs. GLP-1 RA in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236546" key="Evidence-236546" name="MAGIC-derived Evidence: Nonfatal myocardial infarction with GLP-1 RA vs. Standard care in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236960" key="Evidence-236960" name="MAGIC-derived Evidence: Nonfatal myocardial infarction with SGLT2 inhibitors vs. GLP-1 RA in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236549" key="Evidence-236549" name="MAGIC-derived Evidence: Nonfatal stroke with GLP-1 RA vs. Standard care in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236963" key="Evidence-236963" name="MAGIC-derived Evidence: Nonfatal stroke with SGLT2 inhibitors vs. GLP-1 RA in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236558" key="Evidence-236558" name="MAGIC-derived Evidence: Serious hyperglycaemia with GLP-1 RA vs. Standard care in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236975" key="Evidence-236975" name="MAGIC-derived Evidence: Serious hyperglycaemia with SGLT2 inhibitors vs. GLP-1 RA in Adults with type 2 diabetes"/>
+<artifact id="Evidence/236561" key="Evidence-236561" name="MAGIC-derived Evidence: Severe gastrointestinal events with GLP-1 RA vs. Standard care in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/236981" key="Evidence-236981" name="MAGIC-derived Evidence: Severe gastrointestinal events with SGLT2 inhibitors vs. GLP-1 RA in Adults with type 2 diabetes"/>
+<artifact id="Evidence/293872" key="Evidence-293872" name="MAGIC-derived InterventionOnlyEvidence: All-cause mortality in GLP-1 RA Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/293980" key="Evidence-293980" name="MAGIC-derived InterventionOnlyEvidence: All-cause mortality in SGLT2 inhibitors Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/293881" key="Evidence-293881" name="MAGIC-derived InterventionOnlyEvidence: Body weight in GLP-1 RA Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/293991" key="Evidence-293991" name="MAGIC-derived InterventionOnlyEvidence: Body weight in SGLT2 inhibitors Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/293873" key="Evidence-293873" name="MAGIC-derived InterventionOnlyEvidence: Cardiovascular mortality in GLP-1 RA Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/293981" key="Evidence-293981" name="MAGIC-derived InterventionOnlyEvidence: Cardiovascular mortality in SGLT2 inhibitors Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/293986" key="Evidence-293986" name="MAGIC-derived InterventionOnlyEvidence: Diabetic ketoacidosis in SGLT2 inhibitors Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/293876" key="Evidence-293876" name="MAGIC-derived InterventionOnlyEvidence: End-stage kidney disease in GLP-1 RA Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/293984" key="Evidence-293984" name="MAGIC-derived InterventionOnlyEvidence: End-stage kidney disease in SGLT2 inhibitors Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/293988" key="Evidence-293988" name="MAGIC-derived InterventionOnlyEvidence: Genital infection in SGLT2 inhibitors Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/293880" key="Evidence-293880" name="MAGIC-derived InterventionOnlyEvidence: Health-related quality of life in GLP-1 RA Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/293990" key="Evidence-293990" name="MAGIC-derived InterventionOnlyEvidence: Health-related quality of life in SGLT2 inhibitors Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/293877" key="Evidence-293877" name="MAGIC-derived InterventionOnlyEvidence: Heart failure in GLP-1 RA Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/293985" key="Evidence-293985" name="MAGIC-derived InterventionOnlyEvidence: Heart failure in SGLT2 inhibitors Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/293874" key="Evidence-293874" name="MAGIC-derived InterventionOnlyEvidence: Nonfatal myocardial infarction in GLP-1 RA Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/293982" key="Evidence-293982" name="MAGIC-derived InterventionOnlyEvidence: Nonfatal myocardial infarction in SGLT2 inhibitors Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/293875" key="Evidence-293875" name="MAGIC-derived InterventionOnlyEvidence: Nonfatal stroke in GLP-1 RA Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/293983" key="Evidence-293983" name="MAGIC-derived InterventionOnlyEvidence: Nonfatal stroke in SGLT2 inhibitors Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/293878" key="Evidence-293878" name="MAGIC-derived InterventionOnlyEvidence: Serious hyperglycaemia in GLP-1 RA Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/293987" key="Evidence-293987" name="MAGIC-derived InterventionOnlyEvidence: Serious hyperglycaemia in SGLT2 inhibitors Group in Adults with type 2 diabetes"/>
+<artifact id="Evidence/293879" key="Evidence-293879" name="MAGIC-derived InterventionOnlyEvidence: Severe gastrointestinal events in GLP-1 RA Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Evidence/293989" key="Evidence-293989" name="MAGIC-derived InterventionOnlyEvidence: Severe gastrointestinal events in SGLT2 inhibitors Group in Adults with type 2 diabetes"/>
+<artifact id="EvidenceVariable/297516" key="EvidenceVariable-297516" name="Median Age of Parachute Intervention Group"/>
 <artifact id="StructureDefinition/metaanalysis-eligibility-criteria" key="StructureDefinition-metaanalysis-eligibility-criteria" name="MetaanalysisEligibilityCriteria"/>
-<artifact id="Group/175766" key="Group-175766" name="MetaanalysisEligibilityCriteria_Mean_difference_in_HbA1c_effect_of_bariatric_surgery_in_type_2_diabetes_and_elevated_BMI_in_2016_meta_analysis"/>
+<artifact id="Group/175766" key="Group-175766" name="MetaanalysisEligibilityCriteria: Mean difference in HbA1c effect of bariatric surgery in type 2 diabetes and elevated BMI in 2016 meta-analysis"/>
 <artifact id="StructureDefinition/metaanalysis-outcome-definition" key="StructureDefinition-metaanalysis-outcome-definition" name="MetaanalysisOutcomeDefinition"/>
-<artifact id="Group/175765" key="Group-175765" name="MetaanalysisOutcomeDefinition_Mean_difference_in_HbA1c_between_Surgery_and_Medical_Lifestyle_groups_at_end_of_follow_up"/>
+<artifact id="Group/175765" key="Group-175765" name="MetaanalysisOutcomeDefinition: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups at end of follow-up"/>
 <artifact id="StructureDefinition/metaanalysis-study-group" key="StructureDefinition-metaanalysis-study-group" name="MetaanalysisStudyGroup"/>
-<artifact id="Group/179799" key="Group-179799" name="MetaanalysisStudyGroup_Effect_Estimates_for_Mortality_at_14_days_from_COVID19_Remdesivir_vs_Placebo_RCTs"/>
+<artifact id="Group/179799" key="Group-179799" name="MetaanalysisStudyGroup: Effect Estimates for Mortality at 14 days from COVID19 Remdesivir vs. Placebo RCTs"/>
+<artifact id="Group/33395" key="Group-33395" name="MetaanalysisStudyGroup: Study results included in Mean difference in HbA1c effect of bariatric surgery in 2016 meta-analysis"/>
 <artifact id="EvidenceVariable/12719" key="EvidenceVariable-12719" name="Mortality at 14 days"/>
+<artifact id="EvidenceVariable/282897" key="EvidenceVariable-282897" name="NHANES LBDGLUSI: Fasting Glucose (mmol/L)"/>
+<artifact id="Group/282891" key="Group-282891" name="NHANES LBDGLUSI: Fasting Glucose (mmol/L) Variable Definition"/>
+<artifact id="EvidenceVariable/282881" key="EvidenceVariable-282881" name="NHANES LBXGLU: Fasting Glucose (mg/dL)"/>
+<artifact id="Group/282882" key="Group-282882" name="NHANES LBXGLU: Fasting Glucose (mg/dL) Variable Definition"/>
+<artifact id="Composition/282931" key="Composition-282931" name="NHANES Plasma Fasting Glucose (GLU_J) Data Dictionary"/>
+<artifact id="EvidenceVariable/282880" key="EvidenceVariable-282880" name="NHANES SEQN Respondent Sequence Number"/>
+<artifact id="EvidenceVariable/282898" key="EvidenceVariable-282898" name="NHANES WTSAF2YR: Fasting Subsample 2 Year MEC Weight"/>
+<artifact id="Group/282899" key="Group-282899" name="NHANES WTSAF2YR: Fasting Subsample 2 Year MEC Weight) Variable Definition"/>
+<artifact id="Composition/342828" key="Composition-342828" name="NT-proBNP Study Data Dictionary"/>
 <artifact id="StructureDefinition/net-effect-contribution" key="StructureDefinition-net-effect-contribution" name="NetEffectContribution"/>
 <artifact id="Evidence/179591" key="Evidence-179591" name="NetEffectContribution: Additional GI surgical procedure for Example for GIN 2022"/>
 <artifact id="Evidence/179586" key="Evidence-179586" name="NetEffectContribution: All-cause mortality for Example for GIN 2022"/>
@@ -243,10 +473,11 @@
 <artifact id="StructureDefinition/net-effect-contribution-list" key="StructureDefinition-net-effect-contribution-list" name="NetEffectContributionList"/>
 <artifact id="List/179585" key="List-179585" name="NetEffectContributionList: Bariatric Surgery Example for GIN 2022"/>
 <artifact id="StructureDefinition/net-effect-contributions" key="StructureDefinition-net-effect-contributions" name="NetEffectContributions"/>
-<artifact id="Group/179584" key="Group-179584" name="NetEffectContributions_Bariatric_Surgery_Example_for_GIN_2022"/>
+<artifact id="Group/179584" key="Group-179584" name="NetEffectContributions: Bariatric Surgery Example for GIN 2022"/>
 <artifact id="StructureDefinition/net-effect-estimate" key="StructureDefinition-net-effect-estimate" name="NetEffectEstimate"/>
 <artifact id="Evidence/179583" key="Evidence-179583" name="NetEffectEstimate: Bariatric Surgery Example for GIN 2022"/>
 <artifact id="StructureDefinition/non-comparative-evidence" key="StructureDefinition-non-comparative-evidence" name="NonComparativeEvidence"/>
+<artifact id="ResearchStudy/208285" key="ResearchStudy-208285" name="Norwegian Cohort Study Comparing Bariatric Surgery vs Medical Obesity Treatment for Long-term Medical Complications and Obesity-Related Comorbidities"/>
 <artifact id="EvidenceVariable/7753" key="EvidenceVariable-7753" name="Organ support-free days"/>
 <artifact id="ArtifactAssessment/104064" key="ArtifactAssessment-104064" name="Outcome Importance Rating 100 of All-cause mortality"/>
 <artifact id="ArtifactAssessment/104192" key="ArtifactAssessment-104192" name="Outcome Importance Rating 30 of Nonfatal myocardial infarction or stroke"/>
@@ -254,20 +485,52 @@
 <artifact id="ArtifactAssessment/104193" key="ArtifactAssessment-104193" name="Outcome Importance Rating 5 of Remission of diabetes"/>
 <artifact id="ArtifactAssessment/104195" key="ArtifactAssessment-104195" name="Outcome Importance Rating 5 of Treatment with opioids"/>
 <artifact id="ArtifactAssessment/104196" key="ArtifactAssessment-104196" name="Outcome Importance Rating 8 of Additional GI surgical procedure"/>
+<artifact id="Composition/318262" key="Composition-318262" name="Outcome Measure Report: Association of Bariatric Surgery vs Medical Obesity Treatment With Long-term Medical Complications and Obesity-Related Comorbidities (2018 Norwegian Cohort)"/>
+<artifact id="List/307247" key="List-307247" name="Outcome Variables List for PARACHUTE Trial"/>
+<artifact id="EvidenceVariable/297745" key="EvidenceVariable-297745" name="Outcome: Death or Major Traumatic Injury 30 days after Impact"/>
+<artifact id="EvidenceVariable/297743" key="EvidenceVariable-297743" name="Outcome: Death or Major Traumatic Injury on Impact"/>
+<artifact id="EvidenceVariable/297746" key="EvidenceVariable-297746" name="Outcome: Injury Severity Score 30 days after Impact"/>
+<artifact id="EvidenceVariable/297744" key="EvidenceVariable-297744" name="Outcome: Injury Severity Score on Impact"/>
 <artifact id="StructureDefinition/outcome-definition" key="StructureDefinition-outcome-definition" name="OutcomeDefinition"/>
-<artifact id="Group/172480" key="Group-172480" name="OutcomeDefinition_American_Diabetes_Association_composite_triple_end_point_for_metabolic_control"/>
-<artifact id="Group/173252" key="Group-173252" name="OutcomeDefinition_Diabetes_in_remission"/>
-<artifact id="Group/172484" key="Group-172484" name="OutcomeDefinition_HbA1c_at_12_months"/>
-<artifact id="Group/172477" key="Group-172477" name="OutcomeDefinition_HbA1c_at_24_months"/>
-<artifact id="Group/173245" key="Group-173245" name="OutcomeDefinition_HbA1c_at_36_months"/>
-<artifact id="Group/172476" key="Group-172476" name="OutcomeDefinition_HbA1c_at_60_months"/>
-<artifact id="Group/175762" key="Group-175762" name="OutcomeDefinition_HbA1c_at_6_months"/>
-<artifact id="Group/173251" key="Group-173251" name="OutcomeDefinition_New_onset_depression"/>
-<artifact id="Group/173248" key="Group-173248" name="OutcomeDefinition_Nonfatal_myocardial_infarction_or_stroke"/>
+<artifact id="EvidenceVariable/236539" key="EvidenceVariable-236539" name="OutcomeDefinition: All-cause mortality"/>
+<artifact id="EvidenceVariable/236953" key="EvidenceVariable-236953" name="OutcomeDefinition: All-cause mortality"/>
+<artifact id="Group/172480" key="Group-172480" name="OutcomeDefinition: American Diabetes Association composite triple end point for metabolic control"/>
+<artifact id="EvidenceVariable/236566" key="EvidenceVariable-236566" name="OutcomeDefinition: Body weight"/>
+<artifact id="EvidenceVariable/236986" key="EvidenceVariable-236986" name="OutcomeDefinition: Body weight"/>
+<artifact id="EvidenceVariable/236542" key="EvidenceVariable-236542" name="OutcomeDefinition: Cardiovascular mortality"/>
+<artifact id="EvidenceVariable/236956" key="EvidenceVariable-236956" name="OutcomeDefinition: Cardiovascular mortality"/>
+<artifact id="Group/173252" key="Group-173252" name="OutcomeDefinition: Diabetes in remission"/>
+<artifact id="EvidenceVariable/236971" key="EvidenceVariable-236971" name="OutcomeDefinition: Diabetic ketoacidosis"/>
+<artifact id="EvidenceVariable/236551" key="EvidenceVariable-236551" name="OutcomeDefinition: End-stage kidney disease"/>
+<artifact id="EvidenceVariable/236965" key="EvidenceVariable-236965" name="OutcomeDefinition: End-stage kidney disease"/>
+<artifact id="EvidenceVariable/236977" key="EvidenceVariable-236977" name="OutcomeDefinition: Genital infection"/>
+<artifact id="Group/172484" key="Group-172484" name="OutcomeDefinition: HbA1c at 12 months"/>
+<artifact id="Group/172477" key="Group-172477" name="OutcomeDefinition: HbA1c at 24 months"/>
+<artifact id="Group/173245" key="Group-173245" name="OutcomeDefinition: HbA1c at 36 months"/>
+<artifact id="Group/175762" key="Group-175762" name="OutcomeDefinition: HbA1c at 6 months"/>
+<artifact id="Group/172476" key="Group-172476" name="OutcomeDefinition: HbA1c at 60 months"/>
+<artifact id="EvidenceVariable/236563" key="EvidenceVariable-236563" name="OutcomeDefinition: Health-related quality of life"/>
+<artifact id="EvidenceVariable/236983" key="EvidenceVariable-236983" name="OutcomeDefinition: Health-related quality of life"/>
+<artifact id="EvidenceVariable/236554" key="EvidenceVariable-236554" name="OutcomeDefinition: Heart failure"/>
+<artifact id="EvidenceVariable/236968" key="EvidenceVariable-236968" name="OutcomeDefinition: Heart failure"/>
+<artifact id="Group/297750" key="Group-297750" name="OutcomeDefinition: Injury Severity Score on Impact"/>
+<artifact id="Group/291368" key="Group-291368" name="OutcomeDefinition: Mortality at 14 days"/>
+<artifact id="Group/173251" key="Group-173251" name="OutcomeDefinition: New onset depression"/>
+<artifact id="EvidenceVariable/236545" key="EvidenceVariable-236545" name="OutcomeDefinition: Nonfatal myocardial infarction"/>
+<artifact id="EvidenceVariable/236959" key="EvidenceVariable-236959" name="OutcomeDefinition: Nonfatal myocardial infarction"/>
+<artifact id="Group/173248" key="Group-173248" name="OutcomeDefinition: Nonfatal myocardial infarction or stroke"/>
+<artifact id="EvidenceVariable/236548" key="EvidenceVariable-236548" name="OutcomeDefinition: Nonfatal stroke"/>
+<artifact id="EvidenceVariable/236962" key="EvidenceVariable-236962" name="OutcomeDefinition: Nonfatal stroke"/>
+<artifact id="EvidenceVariable/236557" key="EvidenceVariable-236557" name="OutcomeDefinition: Serious hyperglycaemia"/>
+<artifact id="EvidenceVariable/236974" key="EvidenceVariable-236974" name="OutcomeDefinition: Serious hyperglycaemia"/>
+<artifact id="EvidenceVariable/236560" key="EvidenceVariable-236560" name="OutcomeDefinition: Severe gastrointestinal events"/>
+<artifact id="EvidenceVariable/236980" key="EvidenceVariable-236980" name="OutcomeDefinition: Severe gastrointestinal events"/>
 <artifact id="StructureDefinition/outcome-importance" key="StructureDefinition-outcome-importance" name="OutcomeImportance"/>
 <artifact id="StructureDefinition/outcome-list" key="StructureDefinition-outcome-list" name="OutcomeList"/>
 <artifact id="List/179579" key="List-179579" name="OutcomeList: Clinical Outcomes for Effects of Bariatric Surgery"/>
 <artifact deprecated="true" id="StructureDefinition/outcome-measure-evidence" key="StructureDefinition-outcome-measure-evidence" name="OutcomeMeasureEvidence"/>
+<artifact id="StructureDefinition/outcome-measure-report" key="StructureDefinition-outcome-measure-report" name="OutcomeMeasureReport"/>
+<artifact id="Composition/343007" key="Composition-343007" name="OutcomeMeasureReport: GLP-1 RA vs. Standard care in Adults with type 2 diabetes with moderate CV risk"/>
 <artifact deprecated="true" id="StructureDefinition/outcome-variable" key="StructureDefinition-outcome-variable" name="OutcomeVariable"/>
 <artifact id="EvidenceVariable/32143" key="EvidenceVariable-32143" name="OutcomeVariable: American Diabetes Association composite triple end point for metabolic control at 5 years"/>
 <artifact id="EvidenceVariable/173243" key="EvidenceVariable-173243" name="OutcomeVariable: HbA1c at 12 months"/>
@@ -282,15 +545,48 @@
 <artifact id="EvidenceVariable/104120" key="EvidenceVariable-104120" name="OutcomeVariable_Additional_GI_surgical_procedure"/>
 <artifact id="EvidenceVariable/49217" key="EvidenceVariable-49217" name="OutcomeVariable_All_cause_mortality"/>
 <artifact id="EvidenceVariable/104119" key="EvidenceVariable-104119" name="OutcomeVariable_Treatment_with_opioids"/>
-<artifact id="StructureDefinition/participant-flow-measure" key="StructureDefinition-participant-flow-measure" name="Participant Flow Measure"/>
-<artifact id="StructureDefinition/participant-flow" key="StructureDefinition-participant-flow" name="ParticipantFlow"/>
-<artifact id="Evidence/179460" key="Evidence-179460" name="ParticipantFlow: 2018 Norwegian Cohort Excluded from Analysis"/>
+<artifact id="StructureDefinition/outcome-variables-list" key="StructureDefinition-outcome-variables-list" name="OutcomeVariablesList"/>
+<artifact id="List/312205" key="List-312205" name="OutcomeVariablesList: Association of Bariatric Surgery vs Medical Obesity Treatment With Long-term Medical Complications and Obesity-Related Comorbidities (2018 Norwegian Cohort)"/>
+<artifact id="Group/292955" key="Group-292955" name="PARACHUTE Trial Participants"/>
+<artifact id="Group/297489" key="Group-297489" name="PARACHUTE Trial Participants assigned an empty backpack"/>
+<artifact id="EvidenceVariable/297951" key="EvidenceVariable-297951" name="PARACHUTE Trial Participants available for randomization"/>
+<artifact id="EvidenceVariable/297950" key="EvidenceVariable-297950" name="PARACHUTE Trial Participants deemed unsuitable by investigator"/>
+<artifact id="EvidenceVariable/297952" key="EvidenceVariable-297952" name="PARACHUTE Trial Participants randomized into groups"/>
+<artifact id="Evidence/307455" key="Evidence-307455" name="PARACHUTE Trial Participants randomized into groups for screened group"/>
+<artifact id="Evidence/306488" key="Evidence-306488" name="PARACHUTE Trial Participants randomized into groups with comparator"/>
+<artifact id="Evidence/306487" key="Evidence-306487" name="PARACHUTE Trial Participants randomized into groups with intervention"/>
+<artifact id="EvidenceVariable/297955" key="EvidenceVariable-297955" name="PARACHUTE Trial Participants that completed 30 day follow up"/>
+<artifact id="Evidence/312166" key="Evidence-312166" name="PARACHUTE Trial Participants that completed 30 day follow up with comparator"/>
+<artifact id="Evidence/312165" key="Evidence-312165" name="PARACHUTE Trial Participants that completed 30 day follow up with intervention"/>
+<artifact id="EvidenceVariable/297953" key="EvidenceVariable-297953" name="PARACHUTE Trial Participants that completed jump and 5 minute follow-up"/>
+<artifact id="Evidence/312162" key="Evidence-312162" name="PARACHUTE Trial Participants that completed jump and 5 minute follow-up with comparator"/>
+<artifact id="Evidence/312161" key="Evidence-312161" name="PARACHUTE Trial Participants that completed jump and 5 minute follow-up with intervention"/>
+<artifact id="EvidenceVariable/297948" key="EvidenceVariable-297948" name="PARACHUTE Trial Participants that declined randomization"/>
+<artifact id="EvidenceVariable/297954" key="EvidenceVariable-297954" name="PARACHUTE Trial Participants with no contact at 30 days"/>
+<artifact id="Evidence/312164" key="Evidence-312164" name="PARACHUTE Trial Participants with no contact at 30 days with comparator"/>
+<artifact id="Evidence/312163" key="Evidence-312163" name="PARACHUTE Trial Participants with no contact at 30 days with intervention"/>
+<artifact id="Composition/312172" key="Composition-312172" name="PARACHUTE Trial Results"/>
+<artifact id="Composition/307245" key="Composition-307245" name="PARACHUTE Trial baseline characteristics"/>
+<artifact id="Group/307440" key="Group-307440" name="PARACHUTE Trial non participants"/>
+<artifact id="Composition/307248" key="Composition-307248" name="PARACHUTE trial participant flow report"/>
+<artifact id="Group/297487" key="Group-297487" name="PARACHUTE trial participants assigned parachute"/>
+<artifact id="Composition/292951" key="Composition-292951" name="Parachute use to prevent death and major trauma when jumping from aircraft: randomized controlled trial."/>
+<artifact id="EvidenceVariable/306661" key="EvidenceVariable-306661" name="Parachute vs Empty Backpack in PARACHUTE Trial"/>
+<artifact id="List/307246" key="List-307246" name="Participant Flow Variables List for PARACHUTE Trial"/>
+<artifact deprecated="true" id="StructureDefinition/participant-flow" key="StructureDefinition-participant-flow" name="ParticipantFlow"/>
 <artifact id="Evidence/179462" key="Evidence-179462" name="ParticipantFlow: 2018 Norwegian Cohort Included in Analysis"/>
 <artifact id="Evidence/179464" key="Evidence-179464" name="ParticipantFlow: 2018 Norwegian Cohort Medical Group Included in Analysis"/>
 <artifact id="Evidence/179463" key="Evidence-179463" name="ParticipantFlow: 2018 Norwegian Cohort Surgical Group Included in Analysis"/>
+<artifact id="StructureDefinition/participant-flow-evidence" key="StructureDefinition-participant-flow-evidence" name="ParticipantFlowEvidence"/>
+<artifact id="Evidence/179460" key="Evidence-179460" name="ParticipantFlowEvidence: 2018 Norwegian Cohort Excluded from Analysis"/>
+<artifact id="StructureDefinition/participant-flow-evidence-variable" key="StructureDefinition-participant-flow-evidence-variable" name="ParticipantFlowEvidenceVariable"/>
+<artifact deprecated="true" id="StructureDefinition/participant-flow-measure" key="StructureDefinition-participant-flow-measure" name="ParticipantFlowMeasure"/>
 <artifact id="EvidenceVariable/179636" key="EvidenceVariable-179636" name="ParticipantFlowMeasure: Dropout due to stopping intervention"/>
 <artifact id="EvidenceVariable/179459" key="EvidenceVariable-179459" name="ParticipantFlowMeasure: Exclusion from analysis"/>
 <artifact id="EvidenceVariable/179461" key="EvidenceVariable-179461" name="ParticipantFlowMeasure: Inclusion in analysis"/>
+<artifact id="StructureDefinition/participant-flow-report" key="StructureDefinition-participant-flow-report" name="ParticipantFlowReport"/>
+<artifact id="StructureDefinition/participant-flow-variables-list" key="StructureDefinition-participant-flow-variables-list" name="ParticipantFlowVariablesList"/>
+<artifact id="EvidenceVariable/297947" key="EvidenceVariable-297947" name="Participants Excluded from PARACHUTE Study"/>
 <artifact id="Group/7750" key="Group-7750" name="Participants_in_Anticoagulation_for_COVID_19_Combined_ATTACC_ACTIV_4a_and_REMAP_CAP_RCT_hospitalized_not_critically_ill"/>
 <artifact id="Group/7749" key="Group-7749" name="Patients_who_are_hospitalized_for_COVID_19_and_who_are_not_critically_ill"/>
 <artifact id="EvidenceVariable/12718" key="EvidenceVariable-12718" name="Placebo"/>
@@ -298,6 +594,8 @@
 <artifact id="PlanDefinition/179554" key="PlanDefinition-179554" name="PlanDefinition for Recommendation: ADA Obesity Management Recommendation 8.17"/>
 <artifact id="StructureDefinition/preprint-citation" key="StructureDefinition-preprint-citation" name="PreprintCitation"/>
 <artifact id="Citation/5296" key="Citation-5296" name="PreprintCitation: Nigella Sativa for COVID-19 OSF Preprint"/>
+<artifact id="Evidence/318264" key="Evidence-318264" name="Rate of Death or Major Traumatic Injury on Impact with comparator"/>
+<artifact id="Evidence/312173" key="Evidence-312173" name="Rate of Death or Major Traumatic Injury on Impact with intervention"/>
 <artifact id="StructureDefinition/rating" key="StructureDefinition-rating" name="Rating"/>
 <artifact id="StructureDefinition/recommendation" key="StructureDefinition-recommendation" name="Recommendation"/>
 <artifact id="ValueSet/recommendation-justification-classifier" key="ValueSet-recommendation-justification-classifier" name="Recommendation Justification Classifier Codes Value Set"/>
@@ -307,64 +605,121 @@
 <artifact id="Composition/179467" key="Composition-179467" name="Recommendation: ADA Obesity Management Recommendation 8.17"/>
 <artifact id="StructureDefinition/recommendation-action" key="StructureDefinition-recommendation-action" name="RecommendationAction"/>
 <artifact id="StructureDefinition/recommendation-eligibility-criteria" key="StructureDefinition-recommendation-eligibility-criteria" name="RecommendationEligibilityCriteria"/>
+<artifact id="Group/32139" key="Group-32139" name="RecommendationEligibilityCriteria: Eligibility Criteria for Bariatric Surgery (ADA Recommendation 8.16)"/>
+<artifact id="Group/179511" key="Group-179511" name="RecommendationEligibilityCriteria: Eligibility Criteria for Bariatric Surgery (ADA Recommendation 8.17)"/>
 <artifact id="StructureDefinition/recommendation-justification" key="StructureDefinition-recommendation-justification" name="RecommendationJustification"/>
 <artifact id="StructureDefinition/recommendation-plan" key="StructureDefinition-recommendation-plan" name="RecommendationPlan"/>
+<artifact id="StructureDefinition/relates-to" key="StructureDefinition-relates-to" name="RelatesTo"/>
+<artifact id="StructureDefinition/relates-to-with-quotation" key="StructureDefinition-relates-to-with-quotation" name="RelatesToWithQuotation"/>
+<artifact id="StructureDefinition/relative-outcome-importance" key="StructureDefinition-relative-outcome-importance" name="RelativeOutcomeImportance"/>
 <artifact id="EvidenceVariable/12717" key="EvidenceVariable-12717" name="Remdesivir"/>
-<artifact id="Group/179783" key="Group-179783" name="Remdesivir_IV_200_mg_once_then_100_mg_once_daily_for_9_days"/>
+<artifact id="Group/179783" key="Group-179783" name="Remdesivir IV 200 mg once then 100 mg once daily for 9 days"/>
+<artifact id="StructureDefinition/research-study-comparison-group-eligibility" key="StructureDefinition-research-study-comparison-group-eligibility" name="ResearchStudyComparisonGroupEligibility"/>
+<artifact id="StructureDefinition/research-study-data-dictionary" key="StructureDefinition-research-study-data-dictionary" name="ResearchStudyDataDictionary"/>
+<artifact id="StructureDefinition/research-study-excluded-study" key="StructureDefinition-research-study-excluded-study" name="ResearchStudyExcludedStudy"/>
+<artifact id="StructureDefinition/research-study-included-study" key="StructureDefinition-research-study-included-study" name="ResearchStudyIncludedStudy"/>
+<artifact id="StructureDefinition/research-study-number-of-studies-identified" key="StructureDefinition-research-study-number-of-studies-identified" name="ResearchStudyNumberOfStudiesIdentified"/>
+<artifact id="StructureDefinition/research-study-number-of-studies-included" key="StructureDefinition-research-study-number-of-studies-included" name="ResearchStudyNumberOfStudiesIncluded"/>
+<artifact id="StructureDefinition/research-study-outcome-measure" key="StructureDefinition-research-study-outcome-measure" name="ResearchStudyOutcomeMeasure"/>
+<artifact id="StructureDefinition/research-study-result-as-composition" key="StructureDefinition-research-study-result-as-composition" name="ResearchStudyResultAsComposition"/>
+<artifact id="StructureDefinition/research-study-sae-reporting-method" key="StructureDefinition-research-study-sae-reporting-method" name="ResearchStudySaeReportingMethod"/>
+<artifact id="StructureDefinition/research-study-search-strategy" key="StructureDefinition-research-study-search-strategy" name="ResearchStudySearchStrategy"/>
+<artifact id="StructureDefinition/research-study-sponsor-confidentiality-statement" key="StructureDefinition-research-study-sponsor-confidentiality-statement" name="ResearchStudySponsorConfidentialityStatement"/>
+<artifact id="StructureDefinition/research-study-study-amendment" key="StructureDefinition-research-study-study-amendment" name="ResearchStudyStudyAmendment"/>
+<artifact id="StructureDefinition/research-study-systematic-review-eligibility-criteria" key="StructureDefinition-research-study-systematic-review-eligibility-criteria" name="ResearchStudySystematicReviewEligibilityCriteria"/>
 <artifact id="ValueSet/181524" key="ValueSet-risk-of-bias-type" name="Risk Of Bias Type Value Set"/>
 <artifact id="ArtifactAssessment/179692" key="ArtifactAssessment-179692" name="Risk of Bias Assessment of Critically appraised summary of primary outcome of multi-platform RCT of anticoagulation for non-critically ill patients with COVID-19"/>
+<artifact id="ArtifactAssessment/307449" key="ArtifactAssessment-307449" name="Risk of Bias Assessment of PARACHUTE trial"/>
 <artifact id="StructureDefinition/risk-of-bias" key="StructureDefinition-risk-of-bias" name="RiskOfBias"/>
-<artifact id="CodeSystem/181513" key="CodeSystem-181513" name="Scientific Evidence Code System (SEVCO) -- EXAMPLE VERSION for EBMonFHIR Implementation Guide"/>
+<artifact id="Group/236949" key="Group-236949" name="SGLT2 inhibitors Group in Adults with type 2 diabetes"/>
+<artifact deprecated="true" id="CodeSystem/181513" key="CodeSystem-181513" name="Scientific Evidence Code System (SEVCO) -- EXAMPLE VERSION for EBMonFHIR Implementation Guide"/>
+<artifact id="Group/306655" key="Group-306655" name="Screened Group PARACHUTE Trial"/>
+<artifact id="Group/264328" key="Group-264328" name="Search Strategy for NMA_Diabetes"/>
 <artifact id="StructureDefinition/search-results" key="StructureDefinition-search-results" name="SearchResults"/>
 <artifact id="Library/179606" key="Library-179606" name="SearchResults: PubMed search for Wonder Woman"/>
 <artifact id="StructureDefinition/search-strategy" key="StructureDefinition-search-strategy" name="SearchStrategy"/>
-<artifact id="Group/179592" key="Group-179592" name="SearchStrategy_PubMed_and_Embase_search_for_van_Veldhuisen_2022_systematic_review"/>
-<artifact id="Group/179593" key="Group-179593" name="SearchStrategy_PubMed_search_for_Wonder_Woman"/>
-<artifact id="Group/178427" key="Group-178427" name="Severely_Obese_Adults_2018_Norwegian_Cohort"/>
+<artifact id="Group/179592" key="Group-179592" name="SearchStrategy: PubMed and Embase search for van Veldhuisen 2022 systematic review"/>
+<artifact id="Group/179593" key="Group-179593" name="SearchStrategy: PubMed search for Wonder Woman"/>
+<artifact id="ValueSet/265087" key="ValueSet-265087" name="SearchStrategyCharacteristicCode Value Set"/>
+<artifact id="EvidenceVariable/297728" key="EvidenceVariable-297728" name="Sex"/>
+<artifact id="Evidence/303335" key="Evidence-303335" name="Sex with comparator"/>
+<artifact id="Evidence/298049" key="Evidence-298049" name="Sex with intervention"/>
 <artifact id="StructureDefinition/single-study-evidence" key="StructureDefinition-single-study-evidence" name="SingleStudyEvidence"/>
 <artifact id="StructureDefinition/soa-plandefinition" key="StructureDefinition-soa-plandefinition" name="SoaPlanDefinition"/>
 <artifact id="PlanDefinition/181450" key="PlanDefinition-181450" name="SoaPlanDefinition: Follow-up assessment 3 months after study start"/>
 <artifact id="StructureDefinition/software-citation" key="StructureDefinition-software-citation" name="SoftwareCitation"/>
 <artifact id="Citation/179560" key="Citation-179560" name="SoftwareCitation: Computable Publishing®: ClinicalTrials.gov-to-FEvIR Converter"/>
-<artifact id="StructureDefinition/statistic-model-applied" key="StructureDefinition-statistic-model-applied" name="StatisticModelApplied"/>
+<artifact id="Group/236534" key="Group-236534" name="Standard care Group in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="StructureDefinition/statistic-model" key="StructureDefinition-statistic-model" name="StatisticModel"/>
+<artifact deprecated="true" id="StructureDefinition/statistic-model-applied" key="StructureDefinition-statistic-model-applied" name="StatisticModelApplied"/>
 <artifact id="StructureDefinition/statistic-model-expression" key="StructureDefinition-statistic-model-expression" name="StatisticModelExpression"/>
 <artifact id="StructureDefinition/statistic-model-include-if" key="StructureDefinition-statistic-model-include-if" name="StatisticModelIncludeIf"/>
-<artifact id="StructureDefinition/statistic-model-intended" key="StructureDefinition-statistic-model-intended" name="StatisticModelIntended"/>
-<artifact id="StructureDefinition/statistic-model-value-codeableconcept" key="StructureDefinition-statistic-model-value-codeableconcept" name="StatisticModelValueCodeableConcept"/>
-<artifact id="StructureDefinition/statistic-model-value-quantity" key="StructureDefinition-statistic-model-value-quantity" name="StatisticModelValueQuantity"/>
-<artifact id="StructureDefinition/statistic-model-value-range" key="StructureDefinition-statistic-model-value-range" name="StatisticModelValueRange"/>
+<artifact deprecated="true" id="StructureDefinition/statistic-model-intended" key="StructureDefinition-statistic-model-intended" name="StatisticModelIntended"/>
+<artifact deprecated="true" id="StructureDefinition/statistic-model-value-codeableconcept" key="StructureDefinition-statistic-model-value-codeableconcept" name="StatisticModelValueCodeableConcept"/>
+<artifact deprecated="true" id="StructureDefinition/statistic-model-value-quantity" key="StructureDefinition-statistic-model-value-quantity" name="StatisticModelValueQuantity"/>
+<artifact deprecated="true" id="StructureDefinition/statistic-model-value-range" key="StructureDefinition-statistic-model-value-range" name="StatisticModelValueRange"/>
 <artifact id="Citation/33400" key="Citation-33400" name="StudyCitation: 2022 Systematic Review of bariatric surgery mortality effect 35243488"/>
 <artifact id="StructureDefinition/study-eligibility-criteria" key="StructureDefinition-study-eligibility-criteria" name="StudyEligibilityCriteria"/>
+<artifact id="Group/172461" key="Group-172461" name="StudyEligibilityCriteria: Eligibility Criteria for DIBASY Trial"/>
+<artifact id="Group/171819" key="Group-171819" name="StudyEligibilityCriteria: Obese patients ≥ 18 years old"/>
+<artifact id="Group/33398" key="Group-33398" name="StudyEligibilityCriteria: Type 2 diabetes and elevated BMI in 2016 meta-analysis"/>
 <artifact id="Group/170443" key="Group-170443" name="StudyEligibilityCriteria_Eligibility_Criteria_for_Bariatric_Surgery_Randomized_Trial_Diabetes_Surgery_Study"/>
-<artifact id="Group/172461" key="Group-172461" name="StudyEligibilityCriteria_Eligibility_Criteria_for_DIBASY_Trial"/>
-<artifact id="Group/171819" key="Group-171819" name="StudyEligibilityCriteria_Obese_patients_18_years_old"/>
 <artifact id="StructureDefinition/study-group" key="StructureDefinition-study-group" name="StudyGroup"/>
-<artifact id="Group/32145" key="Group-32145" name="StudyGroup_Bariatric_Surgery_Trial_Enrollment_Group"/>
+<artifact id="Group/32145" key="Group-32145" name="StudyGroup: Diabetes Surgery Study Trial Enrollment Group"/>
+<artifact id="Group/178427" key="Group-178427" name="StudyGroup: Severely Obese Adults 2018 Norwegian Cohort"/>
 <artifact id="Group/46117" key="Group-46117" name="StudyGroup_DIBASY_Trial_Enrollment_Group"/>
 <artifact id="StructureDefinition/summary-of-findings" key="StructureDefinition-summary-of-findings" name="SummaryOfFindings"/>
 <artifact id="Composition/104215" key="Composition-104215" name="SummaryOfFindings: Bariatric Surgery Summary of Findings Example for GIN 2022"/>
+<artifact id="Composition/236537" key="Composition-236537" name="SummaryOfFindings: GLP-1 RA vs. Standard care in Adults with type 2 diabetes with moderate CV risk"/>
+<artifact id="Composition/236951" key="Composition-236951" name="SummaryOfFindings: SGLT2 inhibitors vs. GLP-1 RA in Adults with type 2 diabetes"/>
 <artifact id="StructureDefinition/summary-of-net-effect" key="StructureDefinition-summary-of-net-effect" name="SummaryOfNetEffect"/>
 <artifact id="Composition/104383" key="Composition-104383" name="SummaryOfNetEffect: Bariatric Surgery Summary of Net Effect Contributions Example for GIN 2022"/>
+<artifact id="StructureDefinition/systematic-review" key="StructureDefinition-systematic-review" name="SystematicReview"/>
 <artifact id="StructureDefinition/systematic-review-eligibility-criteria" key="StructureDefinition-systematic-review-eligibility-criteria" name="SystematicReviewEligibilityCriteria"/>
-<artifact id="Group/179619" key="Group-179619" name="SystematicReviewEligibilityCriteria_ADT_and_Docetaxel_vs_ADT_alone_for_metastatic_hormone_naive_prostate_cancer"/>
+<artifact id="Group/179619" key="Group-179619" name="SystematicReviewEligibilityCriteria: ADT and Docetaxel vs. ADT alone for metastatic hormone-naive prostate cancer"/>
 <artifact id="StructureDefinition/systematic-review-excluded-studies" key="StructureDefinition-systematic-review-excluded-studies" name="SystematicReviewExcludedStudies"/>
-<artifact id="Library/179632" key="Library-179632" name="SystematicReviewExcludedStudies: ADT and Docetaxel vs. ADT alone for metastatic hormone-naive prostate cancer - Brian S. Alper"/>
+<artifact id="Library/179632" key="Library-179632" name="SystematicReviewExcludedStudies: ADT and Docetaxel vs. ADT alone for metastatic hormone-naive prostate cancer"/>
 <artifact id="StructureDefinition/systematic-review-included-studies" key="StructureDefinition-systematic-review-included-studies" name="SystematicReviewIncludedStudies"/>
 <artifact id="Library/179618" key="Library-179618" name="SystematicReviewIncludedStudies: ADT and Docetaxel vs. ADT alone for metastatic hormone-naive prostate cancer"/>
+<artifact id="StructureDefinition/target-attachment" key="StructureDefinition-target-attachment" name="TargetAttachment"/>
+<artifact id="StructureDefinition/target-canonical" key="StructureDefinition-target-canonical" name="TargetCanonical"/>
+<artifact id="StructureDefinition/target-markdown" key="StructureDefinition-target-markdown" name="TargetMarkdown"/>
+<artifact id="StructureDefinition/target-reference" key="StructureDefinition-target-reference" name="TargetReference"/>
+<artifact id="StructureDefinition/target-uri" key="StructureDefinition-target-uri" name="TargetUri"/>
 <artifact id="EvidenceVariable/7751" key="EvidenceVariable-7751" name="Therapeutic-dose anticoagulation with heparin"/>
-<artifact id="Group/33398" key="Group-33398" name="Type_2_diabetes_and_elevated_BMI_in_2016_meta_analysis"/>
+<artifact id="EvidenceVariable/346800" key="EvidenceVariable-346800" name="Time to integration of results in a recommendation"/>
 <artifact id="StructureDefinition/variable-definition" key="StructureDefinition-variable-definition" name="VariableDefinition"/>
-<artifact id="StructureDefinition/variable-definition-comparator-category" key="StructureDefinition-variable-definition-comparator-category" name="VariableDefinitionComparatorCategory"/>
-<artifact id="StructureDefinition/variable-definition-role-subtype" key="StructureDefinition-variable-definition-role-subtype" name="VariableDefinitionRoleSubtype"/>
-<artifact id="StructureDefinition/variable-definition-variable-role-code" key="StructureDefinition-variable-definition-variable-role-code" name="VariableDefinitionVariableRoleCode"/>
+<artifact id="EvidenceVariable/346296" key="EvidenceVariable-346296" name="VariableDefinition: Comparator"/>
+<artifact id="EvidenceVariable/342831" key="EvidenceVariable-342831" name="VariableDefinition: Condition(s)"/>
+<artifact id="EvidenceVariable/346780" key="EvidenceVariable-346780" name="VariableDefinition: Date of birth"/>
+<artifact id="EvidenceVariable/346781" key="EvidenceVariable-346781" name="VariableDefinition: Date of measurement"/>
+<artifact id="EvidenceVariable/342830" key="EvidenceVariable-342830" name="VariableDefinition: Gender"/>
+<artifact id="EvidenceVariable/346298" key="EvidenceVariable-346298" name="VariableDefinition: NTproBNP"/>
+<artifact id="EvidenceVariable/346297" key="EvidenceVariable-346297" name="VariableDefinition: Unit"/>
+<artifact deprecated="true" id="StructureDefinition/variable-definition-comparator-category" key="StructureDefinition-variable-definition-comparator-category" name="VariableDefinitionComparatorCategory"/>
+<artifact deprecated="true" id="StructureDefinition/variable-definition-role-subtype" key="StructureDefinition-variable-definition-role-subtype" name="VariableDefinitionRoleSubtype"/>
+<artifact deprecated="true" id="StructureDefinition/variable-definition-variable-role-code" key="StructureDefinition-variable-definition-variable-role-code" name="VariableDefinitionVariableRoleCode"/>
+<artifact id="EvidenceVariable/297739" key="EvidenceVariable-297739" name="Velocity"/>
+<artifact id="Evidence/307448" key="Evidence-307448" name="Velocity comparing intervention vs. comparator"/>
+<artifact id="Evidence/307443" key="Evidence-307443" name="Velocity for enrolled group"/>
+<artifact id="Evidence/307441" key="Evidence-307441" name="Velocity for non participant group"/>
+<artifact id="Evidence/298048" key="Evidence-298048" name="Velocity with comparator"/>
+<artifact id="Evidence/298047" key="Evidence-298047" name="Velocity with intervention"/>
 <artifact id="StructureDefinition/web-page-citation" key="StructureDefinition-web-page-citation" name="WebPageCitation"/>
 <artifact id="Citation/179561" key="Citation-179561" name="WebPageCitation: A HEvKA Update Summary"/>
+<artifact id="EvidenceVariable/307244" key="EvidenceVariable-307244" name="Weight"/>
+<artifact id="Evidence/307253" key="Evidence-307253" name="Weight with comparator"/>
+<artifact id="Evidence/307252" key="Evidence-307252" name="Weight with intervention"/>
+<artifact id="Evidence/306479" key="Evidence-306479" name="declined randomization in PARACHUTE Study"/>
+<artifact id="Evidence/307454" key="Evidence-307454" name="deemed unsuitable by investigator in PARACHUTE Trial"/>
+<artifact id="Evidence/307456" key="Evidence-307456" name="randomized into groups for PARACHUTE Trial"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifactassessment" name="ArtifactAssessment Profiles"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="citation" name="Citation Profiles"/>
 <page key="composition" name="Composition Profiles"/>
+<page key="downloads" name="Downloads"/>
 <page key="evidence" name="Evidence Profiles"/>
 <page key="evidencevariable" name="EvidenceVariable Profiles"/>
 <page key="examples" name="Examples"/>
