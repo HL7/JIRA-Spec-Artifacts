@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/ebm/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/ebm" defaultVersion="1.0.0-ballot" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/ebm" url="http://hl7.org/fhir/uv/ebm">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm/2025May" ciUrl="http://build.fhir.org/ig/HL7/ebm" defaultVersion="1.0.0-ballot2" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/ebm" url="http://hl7.org/fhir/uv/ebm">
 <version code="current" url="http://build.fhir.org/ig/HL7/ebm"/>
-<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/ebm/2024Jan"/>
+<version code="1.0.0-ballot2" url="http://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm/2025May"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
@@ -79,7 +79,7 @@
 <artifact id="Citation/7638" key="Citation-7638" name="Citation for FEvIR Evidence 7637: Critically appraised summary of primary outcome of multi-platform RCT of anticoagulation for non-critically ill COVID-19"/>
 <artifact id="StructureDefinition/classification" key="StructureDefinition-classification" name="Classification"/>
 <artifact id="ArtifactAssessment/179448" key="ArtifactAssessment-179448" name="Classification: Study Design for Association of Bariatric Surgery with Complications and Comorbidities JAMA 2018 Norwegian Cohort"/>
-<artifact id="StructureDefinition/cohort-definition" key="StructureDefinition-cohort-definition" name="CohortDefinition"/>
+<artifact id="StructureDefinition/cohort-definition" key="StructureDefinition-cohort-definition" name="Cohort Definition"/>
 <artifact id="Group/179902" key="Group-179902" name="CohortDefinition_At_least_2_risk_factors_for_stroke"/>
 <artifact id="Group/179514" key="Group-179514" name="CohortDefinition_BMI_27_5_32_4_in_Asian_Americans_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery"/>
 <artifact id="Group/179513" key="Group-179513" name="CohortDefinition_BMI_30_34_9_in_persons_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery"/>
@@ -154,7 +154,6 @@
 <artifact id="StructureDefinition/composite-rating" key="StructureDefinition-composite-rating" name="CompositeRating"/>
 <artifact id="Organization/118079" key="Organization-118079" name="Computable_Publishing_LLC"/>
 <artifact id="Evidence/7637" key="Evidence-7637" name="Critically appraised summary of primary outcome of multi-platform RCT of anticoagulation for non-critically ill patients with COVID-19"/>
-<artifact id="StructureDefinition/data-dictionary" key="StructureDefinition-data-dictionary" name="DataDictionary"/>
 <artifact id="CodeSystem/181451" key="CodeSystem-181451" name="DataDictionary: Measuring the Rate of Scientific Knowledge Transfer"/>
 <artifact id="CodeSystem/179650" key="CodeSystem-179650" name="DataDictionary: phs003190"/>
 <artifact id="StructureDefinition/database-citation" key="StructureDefinition-database-citation" name="DatabaseCitation"/>
@@ -174,9 +173,6 @@
 <artifact id="StructureDefinition/evidence-list" key="StructureDefinition-evidence-list" name="EvidenceList"/>
 <artifact id="List/179800" key="List-179800" name="EvidenceList: Effect estimates for meta-analysis (Biegel 2020, Wang 2020, SOLIDARITY)"/>
 <artifact id="List/179470" key="List-179470" name="EvidenceList: Study results included in Mean difference in HbA1c effect of bariatric surgery in 2016 meta-analysis"/>
-<artifact id="StructureDefinition/evidence-map" key="StructureDefinition-evidence-map" name="EvidenceMap"/>
-<artifact id="Composition/104213" key="Composition-104213" name="EvidenceMap: Bariatric Surgery Summary of Findings Example for GIN 2022"/>
-<artifact id="StructureDefinition/evidence-r6" key="StructureDefinition-evidence-r6" name="EvidenceR6"/>
 <artifact id="StructureDefinition/evidence-report" key="StructureDefinition-evidence-report" name="EvidenceReport"/>
 <artifact id="ValueSet/179431" key="ValueSet-179431" name="EvidenceReportSectionCode Value Set"/>
 <artifact id="StructureDefinition/evidence-report-subject" key="StructureDefinition-evidence-report-subject" name="EvidenceReportSubject"/>
@@ -184,7 +180,6 @@
 <artifact id="StructureDefinition/evidence-synthesis-evidence" key="StructureDefinition-evidence-synthesis-evidence" name="EvidenceSynthesisEvidence"/>
 <artifact id="StructureDefinition/evidence-variable-category-value-reference" key="StructureDefinition-evidence-variable-category-value-reference" name="EvidenceVariableCategoryValueReference"/>
 <artifact id="StructureDefinition/evidence-variable-definition" key="StructureDefinition-evidence-variable-definition" name="EvidenceVariableDefinition"/>
-<artifact id="ValueSet/179424" key="ValueSet-179424" name="EvidenceVariableRoleSubtype Value Set"/>
 <artifact id="Evidence/179691" key="Evidence-179691" name="Example EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol - EBMonFHIR IG Version"/>
 <artifact id="StructureDefinition/exposure-definition" key="StructureDefinition-exposure-definition" name="ExposureDefinition"/>
 <artifact id="Group/179786" key="Group-179786" name="ExposureDefinition_Therapeutic_dose_anticoagulation_with_heparin"/>
@@ -214,8 +209,6 @@
 <artifact id="StructureDefinition/guideline" key="StructureDefinition-guideline" name="Guideline"/>
 <artifact id="Composition/179465" key="Composition-179465" name="Guideline: ADA 2021 Standards of Medical Care 8. Obesity Management for the Treatment of Type 2 Diabetes"/>
 <artifact id="ActivityDefinition/213" key="ActivityDefinition-213" name="IV remdesivir 200 mg then 100 mg/day for 9 days"/>
-<artifact id="EvidenceVariable/33245" key="EvidenceVariable-33245" name="InterventionDefinition: Bariatric Surgery (RYGB, VSG, LAGB, BPD)"/>
-<artifact id="EvidenceVariable/33394" key="EvidenceVariable-33394" name="InterventionDefinition: NOT Bariatric Surgery (RYGB, VSG, LAGB, BPD)"/>
 <artifact id="StructureDefinition/intervention-only-evidence" key="StructureDefinition-intervention-only-evidence" name="InterventionOnlyEvidence"/>
 <artifact id="Evidence/104398" key="Evidence-104398" name="InterventionOnlyEvidence: Additional GI surgical procedure with bariatric surgery (Intervention Group) in JAMA 2018 Norwegian cohort study"/>
 <artifact id="Evidence/104400" key="Evidence-104400" name="InterventionOnlyEvidence: New onset depression with bariatric surgery (Intervention Group) in JAMA 2018 Norwegian cohort study"/>
@@ -230,7 +223,7 @@
 <artifact deprecated="true" id="Citation/33090" key="Citation-33090" name="JournalArticleCitation: Metabolic Surgery in the Treatment Algorithm for Type 2 Diabetes: A Joint Statement by International Diabetes Organizations"/>
 <artifact id="ArtifactAssessment/179469" key="ArtifactAssessment-179469" name="Justification for Recommendation: ADA Obesity Management Recommendation 8.16"/>
 <artifact id="ArtifactAssessment/179515" key="ArtifactAssessment-179515" name="Justification for Recommendation: ADA Obesity Management Recommendation 8.17"/>
-<artifact id="Composition/181448" key="Composition-181448" name="M11 Report Template Instructions"/>
+<artifact id="Composition/343018" key="Composition-343018" name="M11 Report Template Instructions"/>
 <artifact id="StructureDefinition/m11-report" key="StructureDefinition-m11-report" name="M11Report"/>
 <artifact id="StructureDefinition/metaanalysis-eligibility-criteria" key="StructureDefinition-metaanalysis-eligibility-criteria" name="MetaanalysisEligibilityCriteria"/>
 <artifact id="Group/175766" key="Group-175766" name="MetaanalysisEligibilityCriteria_Mean_difference_in_HbA1c_effect_of_bariatric_surgery_in_type_2_diabetes_and_elevated_BMI_in_2016_meta_analysis"/>
@@ -288,12 +281,12 @@
 <artifact id="EvidenceVariable/104120" key="EvidenceVariable-104120" name="OutcomeVariable_Additional_GI_surgical_procedure"/>
 <artifact id="EvidenceVariable/49217" key="EvidenceVariable-49217" name="OutcomeVariable_All_cause_mortality"/>
 <artifact id="EvidenceVariable/104119" key="EvidenceVariable-104119" name="OutcomeVariable_Treatment_with_opioids"/>
+<artifact id="StructureDefinition/participant-flow-measure" key="StructureDefinition-participant-flow-measure" name="Participant Flow Measure"/>
 <artifact id="StructureDefinition/participant-flow" key="StructureDefinition-participant-flow" name="ParticipantFlow"/>
 <artifact id="Evidence/179460" key="Evidence-179460" name="ParticipantFlow: 2018 Norwegian Cohort Excluded from Analysis"/>
 <artifact id="Evidence/179462" key="Evidence-179462" name="ParticipantFlow: 2018 Norwegian Cohort Included in Analysis"/>
 <artifact id="Evidence/179464" key="Evidence-179464" name="ParticipantFlow: 2018 Norwegian Cohort Medical Group Included in Analysis"/>
 <artifact id="Evidence/179463" key="Evidence-179463" name="ParticipantFlow: 2018 Norwegian Cohort Surgical Group Included in Analysis"/>
-<artifact id="StructureDefinition/participant-flow-measure" key="StructureDefinition-participant-flow-measure" name="ParticipantFlowMeasure"/>
 <artifact id="EvidenceVariable/179636" key="EvidenceVariable-179636" name="ParticipantFlowMeasure: Dropout due to stopping intervention"/>
 <artifact id="EvidenceVariable/179459" key="EvidenceVariable-179459" name="ParticipantFlowMeasure: Exclusion from analysis"/>
 <artifact id="EvidenceVariable/179461" key="EvidenceVariable-179461" name="ParticipantFlowMeasure: Inclusion in analysis"/>
@@ -371,7 +364,6 @@
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="citation" name="Citation Profiles"/>
 <page key="composition" name="Composition Profiles"/>
-<page key="downloads" name="Downloads"/>
 <page key="evidence" name="Evidence Profiles"/>
 <page key="evidencevariable" name="EvidenceVariable Profiles"/>
 <page key="examples" name="Examples"/>
