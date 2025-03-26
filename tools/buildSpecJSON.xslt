@@ -131,6 +131,9 @@
     <!-- Check cross-specification validation rules -->
     <xsl:for-each select="$ballotSpecs/specification[not(@deprecated='true') and starts-with(@key, 'FHIR-')]">
       <xsl:choose>
+        <xsl:when test="@defaultWorkgroup='uk' and not(starts-with(@gitUrl, 'https://github.com/NHSDigital/'))">
+          <xsl:message terminate="yes" select="concat('ERROR: FHIR HL7 UK specifications that are not deprecated must have a gitUrl attribute that starts with ''https://github.com/NHSDigital/'' ', @key)"/>
+        </xsl:when>
         <xsl:when test="@defaultWorkgroup='eu' and not(starts-with(@gitUrl, 'https://github.com/HL7-eu/'))">
           <xsl:message terminate="yes" select="concat('ERROR: FHIR HL7 EU specifications that are not deprecated must have a gitUrl attribute that starts with ''https://github.com/HL7-eu/'' ', @key)"/>
         </xsl:when>
