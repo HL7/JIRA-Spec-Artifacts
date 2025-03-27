@@ -4,7 +4,7 @@
 	<version code="1.0.0" url="http://hl7.org.au/fhir/core/1.0.0"/>
 	<version code="1.0.0-preview" url="http://hl7.org.au/fhir/core/1.0.0-preview"/>
 	<version code="1.0.0-ballot" url="http://hl7.org.au/fhir/core/1.0.0-ballot"/>
-	<version code="0.4.1-preview" url="http://hl7.org.au/fhir/core/0.4.1-preview"/>  
+	<version code="0.4.1-preview" url="http://hl7.org.au/fhir/core/0.4.1-preview"/>
 	<version code="0.4.0-preview" url="http://hl7.org.au/fhir/core/0.4.0-preview"/>
 	<version code="0.3.0-ballot" url="http://hl7.org.au/fhir/core/0.3.0-ballot"/>
 	<version code="0.2.2-preview" url="http://hl7.org.au/fhir/core/0.2.2-preview"/>
@@ -56,9 +56,13 @@
 	<artifact id="Medication/1active-ingredient" key="Medication-1active-ingredient" name="Medication - Branded pack with one active ingredient" />
 	<artifact id="Medication/2active-ingredients" key="Medication-2active-ingredients" name="Medication - Product with two active ingredients" />
 	<artifact id="Medication/simvastatin" key="Medication-simvastatin" name="Medication - Simvastatin 40 MG Disintegrating Oral Tablet" />
-	<artifact id="MedicationRequest/paracetamol-codeine" key="MedicationRequest-paracetamol-codeine" name="MedicationRequest -active prescription, paracetamol 500 mg + codeine phosphate hemihydrate 30 mg" />
+	<artifact id="MedicationRequest/paracetamol-codeine" key="MedicationRequest-paracetamol-codeine" name="MedicationRequest - active prescription, paracetamol 500 mg + codeine phosphate hemihydrate 30 mg" />
 	<artifact id="MedicationRequest/reaptan" key="MedicationRequest-reaptan" name="MedicationRequest - active prescription, Reaptan" />
 	<artifact id="MedicationRequest/simvastatin" key="MedicationRequest-simvastatin" name="MedicationRequest - active prescription, Simvastatin" />
+	<artifact id="MedicationStatement/active-bisoprolol" key="MedicationStatement-active-bisoprolol" name="MedicationStatement - active use of Bisoprolol 2.5mg" />
+	<artifact id="MedicationStatement/completed-bactrim" key="MedicationStatement-completed-bactrim" name="MedicationStatement - completed use of Bactrim DS" />
+	<artifact id="MedicationStatement/completed-chloramphenicol" key="MedicationStatement-completed-chloramphenicol" name="MedicationStatement - completed use of Chloramphenicol 1% eye ointment" />
+	<artifact id="MedicationStatement/previous-use-diflucan" key="MedicationStatement-previous-use-diflucan" name="MedicationStatement - patient has taken Diflucan in the past but is not taking it any more" />
 	<artifact id="Observation/bloodpressure-1" key="Observation-bloodpressure-1" name="Observation - Blood Pressure (systolic and diastolic)" />
 	<artifact id="Observation/bloodpressure-data-absent" key="Observation-bloodpressure-data-absent" name="Observation - Blood Pressure (data absent for diastolic)" />
 	<artifact id="Observation/bodyheight-1" key="Observation-bodyheight-1" name="Observation - Height" />
@@ -99,7 +103,9 @@
 	<artifact id="Specimen/nasoswab" key="Specimen-nasoswab" name="Specimen - Naso swab (COVID test)" />
 	<artifact id="StructureDefinition/au-core-diagnosticresult-path" key="StructureDefinition-au-core-diagnosticresult-path" name="AU Core Pathology Result Observation" />
 	<artifact id="StructureDefinition/au-core-diagnosticresult" key="StructureDefinition-au-core-diagnosticresult" name="AU Core Diagnostic Result Observation" />
+	<artifact id="StructureDefinition/au-core-medicationstatement" key="StructureDefinition-au-core-medicationstatement" name="AU Core MedicationStatement" />
 	<artifact id="StructureDefinition/au-core-relatedperson" key="StructureDefinition-au-core-relatedperson" name="AU Core RelatedPerson" />
+
 
 	<artifact id="Immunization/covid-2" key="Immunization-covid-2" name="Immunization - COVID Dose 2"  deprecated="true"/>
 	<artifact id="StructureDefinition/au-core-lipid-result" key="StructureDefinition-au-core-lipid-result" name="AU Core Lipid Result" deprecated="true" />
