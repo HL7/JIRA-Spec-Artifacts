@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/pq-cmc-fda/2025Jan" ciUrl="https://build.fhir.org/ig/HL7/FHIR-us-pq-cmc-fda" defaultVersion="1.0.0" defaultWorkgroup="brr" gitUrl="https://github.com/HL7/FHIR-us-pq-cmc" url="http://hl7.org/fhir/us/pq-cmc-fda">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/pq-cmc-fda/2025Jan" ciUrl="https://build.fhir.org/ig/HL7/FHIR-us-pq-cmc-fda" defaultVersion="2.0.0" defaultWorkgroup="brr" gitUrl="https://github.com/HL7/FHIR-us-pq-cmc" url="http://hl7.org/fhir/us/pq-cmc-fda">
 <version code="current" url="https://build.fhir.org/ig/HL7/FHIR-us-pq-cmc-fda"/>
+<version code="2.0.0" url="http://hl7.org/fhir/us/pq-cmc-fda/STU2"/>
 <version code="2.0.0-ballot" url="http://hl7.org/fhir/us/pq-cmc-fda/2025Jan"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/pq-cmc-fda/STU1"/>
 <version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/pq-cmc-fda/2024May"/>
@@ -8,9 +9,20 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact deprecated="true" id="SubstanceDefinition/278736ef-2ddf-49e4-895c-3a9f34db36cf" key="SubstanceDefinition-278736ef-2ddf-49e4-895c-3a9f34db36cf" name="278736ef-2ddf-49e4-895c-3a9f34db36cf"/>
-<artifact id="Bundle/32532fe8-1bfb-4a0a-998d-9294742a9519" key="Bundle-32532fe8-1bfb-4a0a-998d-9294742a9519" name="32532fe8-1bfb-4a0a-998d-9294742a9519"/>
-<artifact id="Bundle/7cdbb042-9275-4599-a1fe-08877846bf94" key="Bundle-7cdbb042-9275-4599-a1fe-08877846bf94" name="7cdbb042-9275-4599-a1fe-08877846bf94"/>
-<artifact id="Bundle/9e8f2d16-66b1-47ec-878d-f50ae021985b" key="Bundle-9e8f2d16-66b1-47ec-878d-f50ae021985b" name="9e8f2d16-66b1-47ec-878d-f50ae021985b"/>
+<artifact id="Bundle/DescriptionCompositionBundle" key="Bundle-DescriptionCompositionBundle" name="3.2.P.1.0 Bundle"/>
+<artifact id="Bundle/BatchFormulaBundle" key="Bundle-BatchFormulaBundle" name="3.2.P.3.2 Bundle for liquid"/>
+<artifact id="Bundle/BatchFormulaBundle2Layer" key="Bundle-BatchFormulaBundle2Layer" name="3.2.P.3.2 Bundle for two-layer tablet"/>
+<artifact id="Bundle/SpecificationExcipientBundle" key="Bundle-SpecificationExcipientBundle" name="3.2.P.4 Bundle"/>
+<artifact id="Bundle/SpecificationProductBundle" key="Bundle-SpecificationProductBundle" name="3.2.P.5.1 Bundle"/>
+<artifact id="Bundle/CharacterisationImpuritiesProductBundle" key="Bundle-CharacterisationImpuritiesProductBundle" name="3.2.P.5.5 Bundle"/>
+<artifact id="Bundle/CharacterisationImpuritiesBundle" key="Bundle-CharacterisationImpuritiesBundle" name="3.2.P.5.5 Bundle 2"/>
+<artifact id="Bundle/GeneralInformationBundle" key="Bundle-GeneralInformationBundle" name="3.2.S.1 Bundle"/>
+<artifact id="Bundle/ControlMaterialsBundle" key="Bundle-ControlMaterialsBundle" name="3.2.S.2.3 Bundle"/>
+<artifact id="Bundle/CharacterisationBundle" key="Bundle-CharacterisationBundle" name="3.2.S.3 Bundle"/>
+<artifact id="Bundle/SpecificationSubstanceBundle" key="Bundle-SpecificationSubstanceBundle" name="3.2.S.4.1 Bundle"/>
+<artifact deprecated="true" id="Bundle/32532fe8-1bfb-4a0a-998d-9294742a9519" key="Bundle-32532fe8-1bfb-4a0a-998d-9294742a9519" name="32532fe8-1bfb-4a0a-998d-9294742a9519"/>
+<artifact deprecated="true" id="Bundle/7cdbb042-9275-4599-a1fe-08877846bf94" key="Bundle-7cdbb042-9275-4599-a1fe-08877846bf94" name="7cdbb042-9275-4599-a1fe-08877846bf94"/>
+<artifact deprecated="true" id="Bundle/9e8f2d16-66b1-47ec-878d-f50ae021985b" key="Bundle-9e8f2d16-66b1-47ec-878d-f50ae021985b" name="9e8f2d16-66b1-47ec-878d-f50ae021985b"/>
 <artifact deprecated="true" id="MedicinalProductDefinition/77ad6922-9c59-43d1-93cb-29d063cc2e8c" key="MedicinalProductDefinition-77ad6922-9c59-43d1-93cb-29d063cc2e8c" name="A DrugProductContainerClosure"/>
 <artifact deprecated="true" id="MedicinalProductDefinition/5772a6f2-cde1-4903-bfcf-1639340205cc" key="MedicinalProductDefinition-5772a6f2-cde1-4903-bfcf-1639340205cc" name="A DrugProductDescription for a multilayer product"/>
 <artifact deprecated="true" id="ManufacturedItemDefinition/a8316fc9-8ca8-4115-81c1-9f8f84c99149" key="ManufacturedItemDefinition-a8316fc9-8ca8-4115-81c1-9f8f84c99149" name="A FinishedProduct profile based on ManufacturedItemDefinition"/>
@@ -28,7 +40,7 @@
 <artifact id="StructureDefinition/cmc-organization" key="StructureDefinition-cmc-organization" name="Basic Organization"/>
 <artifact id="StructureDefinition/pqcmc-batch-formula-product" key="StructureDefinition-pqcmc-batch-formula-product" name="Batch Formula Drug Product Identification"/>
 <artifact id="ValueSet/pqcmc-batch-utilization-terminology" key="ValueSet-pqcmc-batch-utilization-terminology" name="Batch utilization Terminology"/>
-<artifact id="Bundle/30536c0e-456c-4f90-9f02-da7be1d289e9" key="Bundle-30536c0e-456c-4f90-9f02-da7be1d289e9" name="Bundle for 3.2.S.1"/>
+<artifact deprecated="true" id="Bundle/30536c0e-456c-4f90-9f02-da7be1d289e9" key="Bundle-30536c0e-456c-4f90-9f02-da7be1d289e9" name="Bundle for 3.2.S.1"/>
 <artifact id="StructureDefinition/cmc-ectd-document-32p10" key="StructureDefinition-cmc-ectd-document-32p10" name="CMC eCTD 32P10 Document"/>
 <artifact id="StructureDefinition/cmc-ectd-document-32p32" key="StructureDefinition-cmc-ectd-document-32p32" name="CMC eCTD 32P32 Document"/>
 <artifact id="StructureDefinition/cmc-ectd-document-32p55" key="StructureDefinition-cmc-ectd-document-32p55" name="CMC eCTD 32P55 Document"/>
@@ -36,7 +48,7 @@
 <artifact id="StructureDefinition/cmc-ectd-document-32s23" key="StructureDefinition-cmc-ectd-document-32s23" name="CMC eCTD 32S23 Document"/>
 <artifact id="StructureDefinition/cmc-ectd-document-32s3" key="StructureDefinition-cmc-ectd-document-32s3" name="CMC eCTD 32S3 Document"/>
 <artifact id="StructureDefinition/cmc-ectd-document-sp4151" key="StructureDefinition-cmc-ectd-document-sp4151" name="CMC eCTD SP4151 Document"/>
-<artifact id="Bundle/bd0f0a7a-27ea-4884-801d-bd0546e80888" key="Bundle-bd0f0a7a-27ea-4884-801d-bd0546e80888" name="CMCeCTDDocument32P10 bundle"/>
+<artifact deprecated="true" id="Bundle/bd0f0a7a-27ea-4884-801d-bd0546e80888" key="Bundle-bd0f0a7a-27ea-4884-801d-bd0546e80888" name="CMCeCTDDocument32P10 bundle"/>
 <artifact id="ValueSet/capsule-classification-category" key="ValueSet-capsule-classification-category" name="Capsule Shell Classification Terminology"/>
 <artifact deprecated="true" id="PlanDefinition/ab241f8c-d21e-4382-a70a-52190dbdf07e" key="PlanDefinition-ab241f8c-d21e-4382-a70a-52190dbdf07e" name="Carrageenan specification Example"/>
 <artifact id="ValueSet/pqcmc-chemical-structure-datafile-type-terminology" key="ValueSet-pqcmc-chemical-structure-datafile-type-terminology" name="Chemical Structure Data File Type Terminology"/>
@@ -78,8 +90,8 @@
 <artifact deprecated="true" id="ValueSet/evmpd-substance-classification" key="ValueSet-evmpd-substance-classification" name="EVMPD Substance Classification"/>
 <artifact deprecated="true" id="Organization/e875ef93-a730-4c44-bead-53663ae7f501" key="Organization-e875ef93-a730-4c44-bead-53663ae7f501" name="East-West Manufacturing"/>
 <artifact deprecated="true" id="Composition/5dfbbf17-05c0-441d-af66-7a66072f4ae4" key="Composition-5dfbbf17-05c0-441d-af66-7a66072f4ae4" name="EctdComposition32P10 for 2 layer tablet"/>
-<artifact id="Bundle/a242b79e-b706-49d3-93ba-b4364ab2baa3" key="Bundle-a242b79e-b706-49d3-93ba-b4364ab2baa3" name="Example Batch Formula bundle"/>
-<artifact id="Bundle/49d3b79e-b436-a242-93ba-b706b4364ab2" key="Bundle-49d3b79e-b436-a242-93ba-b706b4364ab2" name="Example Batch Formula bundle with two layers"/>
+<artifact deprecated="true" id="Bundle/a242b79e-b706-49d3-93ba-b4364ab2baa3" key="Bundle-a242b79e-b706-49d3-93ba-b4364ab2baa3" name="Example Batch Formula bundle"/>
+<artifact deprecated="true" id="Bundle/49d3b79e-b436-a242-93ba-b706b4364ab2" key="Bundle-49d3b79e-b436-a242-93ba-b706b4364ab2" name="Example Batch Formula bundle with two layers"/>
 <artifact deprecated="true" id="Composition/5c0d341e-6e4f-457c-811d-cfaf3eb62ecd" key="Composition-5c0d341e-6e4f-457c-811d-cfaf3eb62ecd" name="Example Composition for CTD 3.2.S.2.3"/>
 <artifact deprecated="true" id="SubstanceDefinition/5f66b17e-e3c0-4ee4-8106-59faa34d70f7" key="SubstanceDefinition-5f66b17e-e3c0-4ee4-8106-59faa34d70f7" name="Example RoutineSubstanceDefinition"/>
 <artifact deprecated="true" id="SubstanceDefinition/580c28ac-1a2c-49fa-9be3-de997da5edcf" key="SubstanceDefinition-580c28ac-1a2c-49fa-9be3-de997da5edcf" name="Example RoutineSubstanceDefinition - IBUPROFEN"/>
@@ -91,8 +103,8 @@
 <artifact deprecated="true" id="Organization/d9e7c2f7-0f59-4645-bb6d-5a8dd2425049" key="Organization-d9e7c2f7-0f59-4645-bb6d-5a8dd2425049" name="Example of a Supplier Organization"/>
 <artifact id="StructureDefinition/pqcmc-excipient" key="StructureDefinition-pqcmc-excipient" name="Excipient Drug Substance"/>
 <artifact id="ValueSet/pqcmc-excipient-function-terminology" key="ValueSet-pqcmc-excipient-function-terminology" name="Excipient Function Terminology"/>
-<artifact id="Bundle/4a7e17c1-a611-4cc7-9a71-8005a8b427ab" key="Bundle-4a7e17c1-a611-4cc7-9a71-8005a8b427ab" name="FHIR Document example of 3.2.P.5.1."/>
-<artifact id="Bundle/6004e36e-7df9-469d-9b29-8e9f9bd7e95f" key="Bundle-6004e36e-7df9-469d-9b29-8e9f9bd7e95f" name="FHIR Document example of 3.2.S.4.1."/>
+<artifact deprecated="true" id="Bundle/4a7e17c1-a611-4cc7-9a71-8005a8b427ab" key="Bundle-4a7e17c1-a611-4cc7-9a71-8005a8b427ab" name="FHIR Document example of 3.2.P.5.1."/>
+<artifact deprecated="true" id="Bundle/6004e36e-7df9-469d-9b29-8e9f9bd7e95f" key="Bundle-6004e36e-7df9-469d-9b29-8e9f9bd7e95f" name="FHIR Document example of 3.2.S.4.1."/>
 <artifact deprecated="true" id="ValueSet/genc-country-codes" key="ValueSet-genc-country-codes" name="GENC Country Code Values"/>
 <artifact deprecated="true" id="CodeSystem/genc-country-codes-cs" key="CodeSystem-genc-country-codes-cs" name="GENC Country Codes"/>
 <artifact id="ValueSet/pqcmc-genc-and-iso-intersect" key="ValueSet-pqcmc-genc-and-iso-intersect" name="GENC and ISO 3166 Intersection"/>
@@ -114,8 +126,9 @@
 <artifact deprecated="true" id="StructureDefinition/mfg-test-site-organization" key="StructureDefinition-mfg-test-site-organization" name="Manufacturing and/or Test Site Organization"/>
 <artifact id="ValueSet/pqcmc-non-percentage-units" key="ValueSet-pqcmc-non-percentage-units" name="Non-Percentage Units"/>
 <artifact deprecated="true" id="StructureDefinition/optional-denominator" key="StructureDefinition-optional-denominator" name="Optional Denominator"/>
-<artifact id="ValueSet/pqcmc-org-identifier-type-terminology" key="ValueSet-pqcmc-org-identifier-type-terminology" name="Organization-Site Identifier Terminology"/>
-<artifact id="CodeSystem/cmc-hierarchy-supplement" key="CodeSystem-cmc-hierarchy-supplement" name="PQ-CMC-FDA NCIt Hieararchy Supplement"/>
+<artifact deprecated="true" id="ValueSet/pqcmc-org-identifier-type-terminology" key="ValueSet-pqcmc-org-identifier-type-terminology" name="Organization-Site Identifier Terminology"/>
+<artifact id="StructureDefinition/pq-overage-extension" key="StructureDefinition-pq-overage-extension" name="Overage Extension"/>
+<artifact id="CodeSystem/cmc-hierarchy-supplement" key="CodeSystem-cmc-hierarchy-supplement" name="PQ-CMC-FDA NCIt Hierarchy Supplement"/>
 <artifact deprecated="true" id="CodeSystem/temporary" key="CodeSystem-cmc-ncit-dummy" name="PQ-CMC-FDA Temporary Codes"/>
 <artifact id="StructureDefinition/pqcmc-attachment" key="StructureDefinition-pqcmc-attachment" name="PQCMC Attachment"/>
 <artifact id="ValueSet/pqcmc-name-part-terminology" key="ValueSet-pqcmc-name-part-terminology" name="PQCMC Name Part Terminology"/>
@@ -125,7 +138,7 @@
 <artifact id="StructureDefinition/pqcmc-polymorphic-form" key="StructureDefinition-pqcmc-polymorphic-form" name="Polymorphic Form"/>
 <artifact deprecated="true" id="SubstanceDefinition/832f22b4-6f0c-41f8-9b7d-f26f55e9973c" key="SubstanceDefinition-832f22b4-6f0c-41f8-9b7d-f26f55e9973c" name="Polymorphic Form Example"/>
 <artifact id="StructureDefinition/pq-cmc-address" key="StructureDefinition-pq-cmc-address" name="PqAddress"/>
-<artifact id="StructureDefinition/pq-product-batch-ingredient-extension" key="StructureDefinition-pq-product-batch-ingredient-extension" name="Product Batch Ingredient Extension"/>
+<artifact deprecated="true" id="StructureDefinition/pq-product-batch-ingredient-extension" key="StructureDefinition-pq-product-batch-ingredient-extension" name="Product Batch Ingredient Extension"/>
 <artifact id="StructureDefinition/pq-product-batch-strength-textual-extension" key="StructureDefinition-pq-product-batch-strength-textual-extension" name="Product Batch Strength Textual Extension"/>
 <artifact deprecated="true" id="CodeSystem/cmc-product-name-types" key="CodeSystem-cmc-product-name-types" name="Product Name Types Code Types"/>
 <artifact id="ValueSet/cmc-product-name-types-vs" key="ValueSet-cmc-product-name-types-vs" name="Product Name Types Terminology"/>
@@ -139,6 +152,7 @@
 <artifact id="ValueSet/pqcmc-release-profile" key="ValueSet-pqcmc-release-profile" name="Release Profile Terminology"/>
 <artifact id="ValueSet/pqcmc-representation-types" key="ValueSet-pqcmc-representation-types" name="Representation Types"/>
 <artifact deprecated="true" id="StructureDefinition/pqcmc-routine-drug-product" key="StructureDefinition-pqcmc-routine-drug-product" name="Routine Drug Product"/>
+<artifact id="DocumentReference/de75e338-626c-4503-a25d-4fcdd8e39bee" key="DocumentReference-de75e338-626c-4503-a25d-4fcdd8e39bee" name="SDF File in a Structure Reference"/>
 <artifact id="ValueSet/pqcmc-source-type-terminology" key="ValueSet-pqcmc-source-type-terminology" name="Source Type Terminology"/>
 <artifact id="ValueSet/cmc-specification-types-vs" key="ValueSet-cmc-specification-types-vs" name="Specification Section Type Terminology"/>
 <artifact id="StructureDefinition/pq-specification-status-extension" key="StructureDefinition-pq-specification-status-extension" name="Specification Status"/>
@@ -170,18 +184,17 @@
 <artifact deprecated="true" id="ValueSet/pqcmc-units-of-measure-terminology" key="ValueSet-pqcmc-units-of-measure-terminology" name="Units Of Measure Terminology"/>
 <artifact deprecated="true" id="Organization/e99bddfa-c1b5-435b-bbe8-24816b4e23e5" key="Organization-e99bddfa-c1b5-435b-bbe8-24816b4e23e5" name="Vidinaid"/>
 <artifact deprecated="true" id="PlanDefinition/5819b223-d3d2-419f-b617-b3a9a3625b89" key="PlanDefinition-5819b223-d3d2-419f-b617-b3a9a3625b89" name="Water Specification Example"/>
-<artifact id="DocumentReference/de75e338-626c-4503-a25d-4fcdd8e39bee" key="DocumentReference-de75e338-626c-4503-a25d-4fcdd8e39bee" name="de75e338-626c-4503-a25d-4fcdd8e39bee"/>
 <artifact deprecated="true" id="MedicinalProductDefinition/89676a69-1fe7-422c-ab00-92abe4ef6ea9" key="MedicinalProductDefinition-89676a69-1fe7-422c-ab00-92abe4ef6ea9" name="drug product for specification"/>
 <artifact id="StructureDefinition/ectd-composition-32p32" key="StructureDefinition-ectd-composition-32p32" name="eCTD Batch Formula"/>
 <artifact deprecated="true" id="Composition/260f5aa3-23d2-4999-8e5f-70f247390ee5" key="Composition-260f5aa3-23d2-4999-8e5f-70f247390ee5" name="eCTD Composition for 3.2.S.1"/>
-<artifact id="Bundle/7ce2088d-d281-4e2f-9a25-120a1f9805d1" key="Bundle-7ce2088d-d281-4e2f-9a25-120a1f9805d1" name="eCTD Document for 32S23"/>
+<artifact deprecated="true" id="Bundle/7ce2088d-d281-4e2f-9a25-120a1f9805d1" key="Bundle-7ce2088d-d281-4e2f-9a25-120a1f9805d1" name="eCTD Document for 32S23"/>
 <artifact deprecated="true" id="Composition/55d92f43-e328-4011-bbcf-744e3afd954f" key="Composition-55d92f43-e328-4011-bbcf-744e3afd954f" name="eCTD Drug Substance Specification Composition SP4151"/>
-<artifact id="StructureDefinition/ectd-composition-32p55" key="StructureDefinition-ectd-composition-32p55" name="eCTD Product Characterisation of Impurities Composition"/>
+<artifact id="StructureDefinition/ectd-composition-32p55" key="StructureDefinition-ectd-composition-32p55" name="eCTD Product Characterisation of Impurities"/>
 <artifact id="StructureDefinition/ectd-composition-32p10" key="StructureDefinition-ectd-composition-32p10" name="eCTD Product Description and Composition"/>
 <artifact deprecated="true" id="Composition/d332acdf-4874-407b-9950-528f14c6bea2" key="Composition-d332acdf-4874-407b-9950-528f14c6bea2" name="eCTD Product Specification Composition SP4151"/>
-<artifact id="StructureDefinition/ectd-composition-sp4151" key="StructureDefinition-ectd-composition-sp4151" name="eCTD Specification Composition"/>
+<artifact id="StructureDefinition/ectd-composition-sp4151" key="StructureDefinition-ectd-composition-sp4151" name="eCTD Specification"/>
 <artifact id="StructureDefinition/ectd-composition-32s3" key="StructureDefinition-ectd-composition-32s3" name="eCTD Substance Characterisation"/>
-<artifact id="StructureDefinition/ectd-composition-32s23" key="StructureDefinition-ectd-composition-32s23" name="eCTD Substance Control of Materials Composition"/>
+<artifact id="StructureDefinition/ectd-composition-32s23" key="StructureDefinition-ectd-composition-32s23" name="eCTD Substance Control of Materials"/>
 <artifact id="StructureDefinition/ectd-composition-32s10" key="StructureDefinition-ectd-composition-32s10" name="eCTD Substance General Information"/>
 <artifact id="ValueSet/cmc-comp-section-types-vs" key="ValueSet-cmc-comp-section-types-vs" name="eCTD sections Terminology"/>
 <page key="NA" name="(NA)"/>
@@ -189,6 +202,7 @@
 <page deprecated="true" key="profiles" name="(profiles)"/>
 <page key="artifacts" name="Artifact List"/>
 <page key="change_notes" name="Change Notes"/>
+<page key="eCTD32S23" name="Control of Materials (3.2.S.2.3)"/>
 <page key="eCTD32P10" name="Description and Composition of the Drug Product (3.2.P.1)"/>
 <page key="downloads" name="Downloads"/>
 <page key="eCTD32S10" name="General Information (3.2.S.1)"/>
@@ -198,6 +212,5 @@
 <page key="eCTD32P55" name="Product Characterisation of Impurities (3.2.P.5.5)"/>
 <page key="eCTDSP4151" name="Specification (3.2.S.4.1, 3.2.P.4 and 3.2.P.5.1)"/>
 <page key="eCTD32S3" name="Substance Characterisation (3.2.S.3)"/>
-<page key="eCTD32S23" name="Substance Control of Materials (3.2.S.2.3)"/>
 <page key="toc" name="Table of Contents"/>
 </specification>
