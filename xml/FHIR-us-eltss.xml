@@ -1,13 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/eLTSS" url="http://hl7.org/fhir/us/eltss" ciUrl="http://build.fhir.org/ig/HL7/eLTSS" defaultWorkgroup="cbcc" defaultVersion="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="0.1"/>
-  <artifactPageExtension value="-definitions"/>
-  <artifactPageExtension value="-examples"/>
-  <artifactPageExtension value="-mappings"/>
-  <artifact name="CarePlan" key="CarePlan" deprecated="true"/>
-  <artifact name="Claim" key="Claim" deprecated="true"/>
-  <artifact name="ServiceRequest" key="ServiceRequest" deprecated="true"/>
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="(profiles)" key="profiles"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/eltss/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/eLTSS" defaultVersion="2.0.0" defaultWorkgroup="hss" gitUrl="https://github.com/HL7/eLTSS" url="http://hl7.org/fhir/us/eltss">
+<version code="current" url="http://build.fhir.org/ig/HL7/eLTSS"/>
+<version code="2.0.0" url="http://hl7.org/fhir/us/eltss/STU2"/>
+<version code="2.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/eltss/2024Jan"/>
+<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/eltss/STU1"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/eltss/2019May"/>
+<version code="0.1" deprecated="true" url="http://hl7.org/fhir/us/eltss/2019May"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="OperationDefinition/all-eltss-careplan" key="OperationDefinition-all-eltss-careplan" name="All Eltss Careplan"/>
+<artifact deprecated="true" key="CarePlan" name="CarePlan"/>
+<artifact deprecated="true" key="Claim" name="Claim"/>
+<artifact deprecated="true" id="StructureDefinition/eltss-dueTo" key="StructureDefinition-eltss-dueTo" name="ELTSS-dueTo"/>
+<artifact id="ValueSet/eltss-observation-code" key="ValueSet-eltss-observation-code" name="Observation Code Value Set"/>
+<artifact id="PractitionerRole/PractitionerRole-1" key="PractitionerRole-PractitionerRole-1" name="PractitionerRole-1"/>
+<artifact deprecated="true" key="ServiceRequest" name="ServiceRequest"/>
+<artifact id="Task/Task1" key="Task-Task1" name="Task1"/>
+<artifact id="Task/Task2" key="Task-Task2" name="Task2"/>
+<artifact id="Practitioner/caremgr1" key="Practitioner-caremgr1" name="caremgr1"/>
+<artifact id="CarePlan/careplan1" key="CarePlan-careplan1" name="careplan1"/>
+<artifact id="CarePlan/careplan2" key="CarePlan-careplan2" name="careplan2"/>
+<artifact id="Claim/claim1" key="Claim-claim1" name="claim1"/>
+<artifact id="Claim/claim2" key="Claim-claim2" name="claim2"/>
+<artifact id="Claim/claim3" key="Claim-claim3" name="claim3"/>
+<artifact id="Location/communitysite" key="Location-communitysite" name="communitysite"/>
+<artifact id="Contract/contract1" key="Contract-contract1" name="contract1"/>
+<artifact id="Coverage/coverage1" key="Coverage-coverage1" name="coverage1"/>
+<artifact id="StructureDefinition/CarePlan-eltss" key="StructureDefinition-CarePlan-eltss" name="eLTSS CarePlan Profile"/>
+<artifact id="StructureDefinition/Claim-eltss" key="StructureDefinition-Claim-eltss" name="eLTSS Claim Profile"/>
+<artifact id="CapabilityStatement/eltss-client" key="CapabilityStatement-eltss-client" name="eLTSS Client"/>
+<artifact id="CodeSystem/eltss-condition-category-code" key="CodeSystem-eltss-condition-category-code" name="eLTSS Condition Category Code CodeSystem"/>
+<artifact id="StructureDefinition/Condition-eltss" key="StructureDefinition-Condition-eltss" name="eLTSS Condition Profile"/>
+<artifact id="StructureDefinition/Contract-eltss" key="StructureDefinition-Contract-eltss" name="eLTSS Contract Profile"/>
+<artifact id="StructureDefinition/EpisodeOfCare-eltss" key="StructureDefinition-EpisodeOfCare-eltss" name="eLTSS EpisodeOfCare Profile"/>
+<artifact id="StructureDefinition/Goal-eltss" key="StructureDefinition-Goal-eltss" name="eLTSS Goal Profile"/>
+<artifact id="StructureDefinition/Location-eltss" key="StructureDefinition-Location-eltss" name="eLTSS Location Profile"/>
+<artifact id="CodeSystem/eltss-observation-codes-temporary" key="CodeSystem-eltss-observation-codes-temporary" name="eLTSS Observation Code CodeSystem"/>
+<artifact id="StructureDefinition/Observation-eltss" key="StructureDefinition-Observation-eltss" name="eLTSS Observation Profile"/>
+<artifact id="StructureDefinition/Patient-eltss" key="StructureDefinition-Patient-eltss" name="eLTSS Patient Profile"/>
+<artifact id="StructureDefinition/Practitioner-eltss" key="StructureDefinition-Practitioner-eltss" name="eLTSS Practitioner Profile"/>
+<artifact id="StructureDefinition/PractitionerRole-eltss" key="StructureDefinition-PractitionerRole-eltss" name="eLTSS PractitionerRole Profile"/>
+<artifact id="StructureDefinition/Questionnaire-eltss" key="StructureDefinition-Questionnaire-eltss" name="eLTSS Questionnaire Profile"/>
+<artifact id="StructureDefinition/QuestionnaireResponse-eltss" key="StructureDefinition-QuestionnaireResponse-eltss" name="eLTSS QuestionnaireResponse Profile"/>
+<artifact id="StructureDefinition/RelatedPerson-eltss" key="StructureDefinition-RelatedPerson-eltss" name="eLTSS RelatedPerson Profile"/>
+<artifact id="StructureDefinition/eltss-RiskPlan" key="StructureDefinition-eltss-RiskPlan" name="eLTSS Risk Management Plan"/>
+<artifact id="StructureDefinition/RiskAssessment-eltss" key="StructureDefinition-RiskAssessment-eltss" name="eLTSS RiskAssessment Profile"/>
+<artifact id="CapabilityStatement/eltss-server" key="CapabilityStatement-eltss-server" name="eLTSS Server"/>
+<artifact id="StructureDefinition/ServiceRequest-eltss" key="StructureDefinition-ServiceRequest-eltss" name="eLTSS ServiceRequest Profile"/>
+<artifact id="Bundle/2039212f3fa5406bb4ffd4a" key="Bundle-2039212f3fa5406bb4ffd4a" name="eLTSS data elements example"/>
+<artifact id="StructureDefinition/eltss-directedBy" key="StructureDefinition-eltss-directedBy" name="eLTSS self-directed"/>
+<artifact id="EpisodeOfCare/episode1" key="EpisodeOfCare-episode1" name="episode1"/>
+<artifact id="Organization/funding1" key="Organization-funding1" name="funding1"/>
+<artifact id="Goal/goal1" key="Goal-goal1" name="goal1"/>
+<artifact id="Goal/goal2" key="Goal-goal2" name="goal2"/>
+<artifact id="RelatedPerson/guardian1" key="RelatedPerson-guardian1" name="guardian1"/>
+<artifact id="Location/location1" key="Location-location1" name="location1"/>
+<artifact id="Condition/need1" key="Condition-need1" name="need1"/>
+<artifact id="Condition/need2" key="Condition-need2" name="need2"/>
+<artifact id="Condition/need3" key="Condition-need3" name="need3"/>
+<artifact id="Condition/need4" key="Condition-need4" name="need4"/>
+<artifact id="Patient/patientBSJ1" key="Patient-patientBSJ1" name="patientBSJ1"/>
+<artifact id="Practitioner/planner1" key="Practitioner-planner1" name="planner1"/>
+<artifact id="Observation/pref1" key="Observation-pref1" name="pref1"/>
+<artifact id="Organization/provider2a" key="Organization-provider2a" name="provider2a"/>
+<artifact id="Practitioner/provider2b" key="Practitioner-provider2b" name="provider2b"/>
+<artifact id="Practitioner/provider3" key="Practitioner-provider3" name="provider3"/>
+<artifact id="Practitioner/provider4" key="Practitioner-provider4" name="provider4"/>
+<artifact id="Questionnaire/questionnaire1" key="Questionnaire-questionnaire1" name="questionnaire1"/>
+<artifact id="QuestionnaireResponse/questionnaireresponse1" key="QuestionnaireResponse-questionnaireresponse1" name="questionnaireresponse1"/>
+<artifact id="RiskAssessment/risk1" key="RiskAssessment-risk1" name="risk1"/>
+<artifact id="ServiceRequest/service1" key="ServiceRequest-service1" name="service1"/>
+<artifact id="ServiceRequest/service2" key="ServiceRequest-service2" name="service2"/>
+<artifact id="ServiceRequest/service3" key="ServiceRequest-service3" name="service3"/>
+<artifact id="ServiceRequest/service4" key="ServiceRequest-service4" name="service4"/>
+<artifact id="RelatedPerson/son1" key="RelatedPerson-son1" name="son1"/>
+<artifact id="Observation/strength1" key="Observation-strength1" name="strength1"/>
+<artifact id="Observation/strength2" key="Observation-strength2" name="strength2"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="capabilities" name="Capability Statements"/>
+<page key="change_log" name="Changes"/>
+<page deprecated="true" key="dependencies_globals" name="Dependencies and Globals"/>
+<page key="dependencies_globals_CrossVersionAnalysis" name="Dependencies, Globals and Cross FHIR version analysis"/>
+<page deprecated="true" key="cross_version_analysis" name="IG Change History"/>
+<page key="index" name="IG Home Page"/>
+<page key="ip_statement" name="IP statement"/>
+<page key="implementation" name="Implementation Considerations"/>
+<page key="security" name="Security Note"/>
+<page key="toc" name="Table of Contents"/>
+<page deprecated="true" key="taskProcedure" name="Task and Procedure"/>
+<page key="testing" name="Testing FHIR"/>
+<page key="downloads" name="Useful Downloads"/>
+<page key="background" name="eLTSS Background"/>
+<page key="eLTSS_to_FHIR_R4_element" name="eLTSS Dataset to FHIR Release 4"/>
+<page key="examples" name="eLTSS Examples"/>
+<page key="models" name="eLTSS Logical Models"/>
+<page key="mapping" name="eLTSS Mapping to FHIR"/>
+<page key="profiles" name="eLTSS Profiles"/>
+<page key="extensions" name="eLTSS Resource Extensions"/>
+<page key="usecases" name="eLTSS Use Cases"/>
+<page key="vocabulary" name="eLTSS Value Set and code"/>
 </specification>

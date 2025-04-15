@@ -1,22 +1,294 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/VhDir" url="http://hl7.org/fhir/uv/vhdir" ciUrl="http://build.fhir.org/ig/HL7/VhDir" defaultWorkgroup="pa" defaultVersion="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="1.0"/>
-  <artifactPageExtension value="-definitions"/>
-  <artifactPageExtension value="-examples"/>
-  <artifactPageExtension value="-mappings"/>
-  <artifact name="CareTeam" key="CareTeam" deprecated="true"/>
-  <artifact name="EndPoint" key="EndPoint" deprecated="true"/>
-  <artifact name="HealthcareService" key="HealthcareService" deprecated="true"/>
-  <artifact name="Location" key="Location" deprecated="true"/>
-  <artifact name="Organization" key="Organization" deprecated="true"/>
-  <artifact name="OrganizationAffiliation" key="OrganizationRole" deprecated="true"/>
-  <artifact name="Parameters" key="Parameters" deprecated="true"/>
-  <artifact name="Practitioner" key="Practitioner" deprecated="true"/>
-  <artifact name="PractitionerRole" key="PractitionerRole" deprecated="true"/>
-  <artifact name="InsurancePlan" key="ProductPlan" deprecated="true"/>
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="(profiles)" key="profiles"/>
-  <page name="Home (index)" key="index" url="index"/>
-  <page name="documentation" key="documentation" url="documentation" deprecated="true"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/vhdir/2018Sep" ciUrl="http://build.fhir.org/ig/HL7/VhDir" defaultVersion="1.0.0" defaultWorkgroup="pa" gitUrl="https://github.com/HL7/VhDir" url="http://hl7.org/fhir/uv/vhdir">
+<version code="current" url="http://build.fhir.org/ig/HL7/VhDir"/>
+<version code="1.0.0" url="http://hl7.org/fhir/uv/vhdir/STU1"/>
+<version code="0.2.0" url="http://hl7.org/fhir/uv/vhdir/2018Sep"/>
+<version code="0.1.0" url="http://hl7.org/fhir/uv/vhdir/2018Jan"/>
+<version code="1.0" deprecated="true"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="Bundle/womens-shelter" key="Bundle-womens-shelter" name="Bundle/womens-shelter"/>
+<artifact deprecated="true" key="CareTeam" name="CareTeam"/>
+<artifact id="CareTeam/cardiologycareteam1" key="CareTeam-cardiologycareteam1" name="CareTeam/cardiologycareteam1"/>
+<artifact deprecated="true" key="EndPoint" name="EndPoint"/>
+<artifact id="Endpoint/direct321" key="Endpoint-direct321" name="Endpoint/direct321"/>
+<artifact deprecated="true" key="HealthcareService" name="HealthcareService"/>
+<artifact id="HealthcareService/ffcardiology" key="HealthcareService-ffcardiology" name="HealthcareService/ffcardiology"/>
+<artifact id="HealthcareService/hcs-ws" key="HealthcareService-hcs-ws" name="HealthcareService/hcs-ws"/>
+<artifact id="HealthcareService/independencerehab1" key="HealthcareService-independencerehab1" name="HealthcareService/independencerehab1"/>
+<artifact id="HealthcareService/independencerehab2" key="HealthcareService-independencerehab2" name="HealthcareService/independencerehab2"/>
+<artifact deprecated="true" key="ProductPlan" name="InsurancePlan"/>
+<artifact id="InsurancePlan/insuranceplan1" key="InsurancePlan-insuranceplan1" name="InsurancePlan/insuranceplan1"/>
+<artifact deprecated="true" key="Location" name="Location"/>
+<artifact id="Location/loc-ffmh" key="Location-loc-ffmh" name="Location/loc-ffmh"/>
+<artifact id="Location/loc-ffmh-hvi" key="Location-loc-ffmh-hvi" name="Location/loc-ffmh-hvi"/>
+<artifact id="Location/loc-ws" key="Location-loc-ws" name="Location/loc-ws"/>
+<artifact id="Location/wash-dc-metro" key="Location-wash-dc-metro" name="Location/wash-dc-metro"/>
+<artifact deprecated="true" key="Organization" name="Organization"/>
+<artifact id="Organization/foundingfathers" key="Organization-foundingfathers" name="Organization/foundingfathers"/>
+<artifact id="Organization/homeland" key="Organization-homeland" name="Organization/homeland"/>
+<artifact id="Organization/independencerehab" key="Organization-independencerehab" name="Organization/independencerehab"/>
+<artifact id="Organization/monumentHIE" key="Organization-monumentHIE" name="Organization/monumentHIE"/>
+<artifact id="Organization/mtvernon" key="Organization-mtvernon" name="Organization/mtvernon"/>
+<artifact id="Organization/patriotdental" key="Organization-patriotdental" name="Organization/patriotdental"/>
+<artifact id="Organization/patriotppo" key="Organization-patriotppo" name="Organization/patriotppo"/>
+<artifact deprecated="true" key="OrganizationRole" name="OrganizationAffiliation"/>
+<artifact id="OrganizationAffiliation/orgrole1" key="OrganizationAffiliation-orgrole1" name="OrganizationAffiliation/orgrole1"/>
+<artifact id="OrganizationAffiliation/orgrole2" key="OrganizationAffiliation-orgrole2" name="OrganizationAffiliation/orgrole2"/>
+<artifact deprecated="true" key="Parameters" name="Parameters"/>
+<artifact deprecated="true" key="Practitioner" name="Practitioner"/>
+<artifact id="Practitioner/practitioner1" key="Practitioner-practitioner1" name="Practitioner/practitioner1"/>
+<artifact deprecated="true" key="PractitionerRole" name="PractitionerRole"/>
+<artifact id="PractitionerRole/practitionerrole1" key="PractitionerRole-practitionerrole1" name="PractitionerRole/practitionerrole1"/>
+<artifact id="CapabilityStatement/vhdir-server" key="CapabilityStatement-vhdir-server" name="Validated Healthcare Directory Server Capability Statement"/>
+<artifact id="VerificationResult/example-license" key="VerificationResult-example-license" name="VerificationResult/example-license"/>
+<artifact id="StructureDefinition/accessibility" key="StructureDefinition-accessibility" name="VhDir Accessibility"/>
+<artifact id="CodeSystem/accessibility" key="CodeSystem-accessibility" name="VhDir Accessibility Code System"/>
+<artifact id="ValueSet/accessibility" key="ValueSet-accessibility" name="VhDir Accessibility Value Set"/>
+<artifact id="ValueSet/aliastype" key="ValueSet-aliastype" name="VhDir Alias Type Value Set"/>
+<artifact id="ValueSet/attestationmethod" key="ValueSet-attestationmethod" name="VhDir Attestation Method"/>
+<artifact id="ValueSet/benefit-type" key="ValueSet-benefit-type" name="VhDir Benefit Type"/>
+<artifact id="StructureDefinition/vhdir-careteam" key="StructureDefinition-vhdir-careteam" name="VhDir Care Team"/>
+<artifact id="StructureDefinition/careteam-alias" key="StructureDefinition-careteam-alias" name="VhDir Careteam Alias"/>
+<artifact id="ValueSet/certificationedition" key="ValueSet-certificationedition" name="VhDir Certification Edition Value Set"/>
+<artifact id="StructureDefinition/communication-proficiency" key="StructureDefinition-communication-proficiency" name="VhDir Communication Proficiency"/>
+<artifact id="CodeSystem/consent" key="CodeSystem-consent" name="VhDir Consent Code System"/>
+<artifact id="ValueSet/consent" key="ValueSet-consent" name="VhDir Consent Value Set"/>
+<artifact id="StructureDefinition/contactpoint-availabletime" key="StructureDefinition-contactpoint-availabletime" name="VhDir Contactpoint Availabletime"/>
+<artifact id="StructureDefinition/contactpoint-viaintermediary" key="StructureDefinition-contactpoint-viaintermediary" name="VhDir Contactpoint Viaintermediary"/>
+<artifact id="ValueSet/coverage-type" key="ValueSet-coverage-type" name="VhDir Coverage Type"/>
+<artifact id="CodeSystem/credentialstatus" key="CodeSystem-credentialstatus" name="VhDir Credential Status Code System"/>
+<artifact id="CodeSystem/digitalcertificate" key="CodeSystem-digitalcertificate" name="VhDir Digital Certificate Code System"/>
+<artifact id="ValueSet/digitalcertificatestandard" key="ValueSet-digitalcertificatestandard" name="VhDir Digital Certificate Standard Value Set"/>
+<artifact id="ValueSet/digitalcertificatetrustframework" key="ValueSet-digitalcertificatetrustframework" name="VhDir Digital Certificate Trust Framework Value Set"/>
+<artifact id="ValueSet/digitalcertificatetype" key="ValueSet-digitalcertificatetype" name="VhDir Digital Certificate Type Value Set"/>
+<artifact id="ValueSet/digitalcertificateuse" key="ValueSet-digitalcertificateuse" name="VhDir Digital Certificate Use Value Set"/>
+<artifact id="StructureDefinition/digitalcertificate" key="StructureDefinition-digitalcertificate" name="VhDir Digitalcertificate"/>
+<artifact id="StructureDefinition/ehr" key="StructureDefinition-ehr" name="VhDir Ehr"/>
+<artifact id="CodeSystem/ehrcharacteristics" key="CodeSystem-ehrcharacteristics" name="VhDir Ehr Characteristics Code System"/>
+<artifact id="ValueSet/patientaccess" key="ValueSet-patientaccess" name="VhDir Ehr Patient Access Value Set"/>
+<artifact id="StructureDefinition/vhdir-endpoint" key="StructureDefinition-vhdir-endpoint" name="VhDir Endpoint"/>
+<artifact id="StructureDefinition/endpoint-rank" key="StructureDefinition-endpoint-rank" name="VhDir Endpoint Rank"/>
+<artifact id="StructureDefinition/endpoint-usecase" key="StructureDefinition-endpoint-usecase" name="VhDir Endpoint Usecase"/>
+<artifact id="ValueSet/externalvalidationtype" key="ValueSet-externalvalidationtype" name="VhDir External Validation Type Value Set"/>
+<artifact id="ValueSet/failureaction" key="ValueSet-failureaction" name="VhDir Failure Action"/>
+<artifact id="StructureDefinition/vhdir-healthcareservice" key="StructureDefinition-vhdir-healthcareservice" name="VhDir Healthcare Service"/>
+<artifact id="CodeSystem/healthcareservice-characteristic" key="CodeSystem-healthcareservice-characteristic" name="VhDir Healthcare Service Characteristic CodeSystem"/>
+<artifact id="ValueSet/healthcareservice-characteristic" key="ValueSet-healthcareservice-characteristic" name="VhDir Healthcare Service Characteristic ValueSet"/>
+<artifact id="CodeSystem/healthcareservice-eligibility" key="CodeSystem-healthcareservice-eligibility" name="VhDir Healthcare Service Eligibility CodeSystem"/>
+<artifact id="ValueSet/healthcareservice-eligibility" key="ValueSet-healthcareservice-eligibility" name="VhDir Healthcare Service Eligibility ValueSet"/>
+<artifact id="StructureDefinition/healthcareservice-reference" key="StructureDefinition-healthcareservice-reference" name="VhDir Healthcareservice Reference"/>
+<artifact id="StructureDefinition/identifier-status" key="StructureDefinition-identifier-status" name="VhDir Identifier Status"/>
+<artifact id="ValueSet/identifierstatus" key="ValueSet-identifierstatus" name="VhDir Identifier Status Value Set"/>
+<artifact id="ValueSet/identifier-type" key="ValueSet-identifier-type" name="VhDir Identifier Type Value Set"/>
+<artifact id="StructureDefinition/vhdir-insuranceplan" key="StructureDefinition-vhdir-insuranceplan" name="VhDir Insurance Plan"/>
+<artifact id="ValueSet/insuranceplanbenefitcosttype" key="ValueSet-insuranceplanbenefitcosttype" name="VhDir Insurance Plan Benefit Cost Type"/>
+<artifact id="ValueSet/insuranceplanbenefittype" key="ValueSet-insuranceplanbenefittype" name="VhDir Insurance Plan Benefit Type"/>
+<artifact id="CodeSystem/insuranceplan" key="CodeSystem-insuranceplan" name="VhDir Insurance Plan Code System"/>
+<artifact id="ValueSet/insuranceplancostcategory" key="ValueSet-insuranceplancostcategory" name="VhDir Insurance Plan Cost Category"/>
+<artifact id="ValueSet/insuranceplancostqualifier" key="ValueSet-insuranceplancostqualifier" name="VhDir Insurance Plan Cost Qualifier"/>
+<artifact id="ValueSet/insuranceplancosttype" key="ValueSet-insuranceplancosttype" name="VhDir Insurance Plan Cost Type"/>
+<artifact id="ValueSet/insuranceplangroupsize" key="ValueSet-insuranceplangroupsize" name="VhDir Insurance Plan Group Size"/>
+<artifact id="StructureDefinition/insuranceplan-reference" key="StructureDefinition-insuranceplan-reference" name="VhDir Insurance Plan Reference"/>
+<artifact id="ValueSet/insuranceplan-type" key="ValueSet-insuranceplan-type" name="VhDir Insurance Plan Type"/>
+<artifact id="ValueSet/limit-unit" key="ValueSet-limit-unit" name="VhDir Limit Unit"/>
+<artifact id="StructureDefinition/vhdir-location" key="StructureDefinition-vhdir-location" name="VhDir Location"/>
+<artifact id="StructureDefinition/location-reference" key="StructureDefinition-location-reference" name="VhDir Location Reference"/>
+<artifact id="StructureDefinition/vhdir-network" key="StructureDefinition-vhdir-network" name="VhDir Network"/>
+<artifact id="StructureDefinition/network-reference" key="StructureDefinition-network-reference" name="VhDir Network Reference"/>
+<artifact id="CodeSystem/network-type" key="CodeSystem-network-type" name="VhDir Network Type Code System"/>
+<artifact id="ValueSet/network-type" key="ValueSet-network-type" name="VhDir Network Type Value Set"/>
+<artifact id="StructureDefinition/newpatientprofile" key="StructureDefinition-newpatientprofile" name="VhDir New Patient Profile"/>
+<artifact id="StructureDefinition/newpatients" key="StructureDefinition-newpatients" name="VhDir Newpatients"/>
+<artifact id="StructureDefinition/org-alias-period" key="StructureDefinition-org-alias-period" name="VhDir Org Alias Period"/>
+<artifact id="StructureDefinition/org-alias-type" key="StructureDefinition-org-alias-type" name="VhDir Org Alias Type"/>
+<artifact id="StructureDefinition/org-description" key="StructureDefinition-org-description" name="VhDir Org Description"/>
+<artifact id="StructureDefinition/vhdir-organization" key="StructureDefinition-vhdir-organization" name="VhDir Organization"/>
+<artifact id="StructureDefinition/vhdir-organizationaffiliation" key="StructureDefinition-vhdir-organizationaffiliation" name="VhDir Organization Affiliation"/>
+<artifact id="CodeSystem/organizationdemographics" key="CodeSystem-organizationdemographics" name="VhDir Organization Demographics Code System"/>
+<artifact id="CodeSystem/payercharacteristics" key="CodeSystem-payercharacteristics" name="VhDir Payer Characteristics Code System"/>
+<artifact id="ValueSet/plan-type" key="ValueSet-plan-type" name="VhDir Plan Type"/>
+<artifact id="StructureDefinition/vhdir-practitioner" key="StructureDefinition-vhdir-practitioner" name="VhDir Practitioner"/>
+<artifact id="StructureDefinition/endpoint-reference" key="StructureDefinition-endpoint-reference" name="VhDir Practitioner Endpoint Reference"/>
+<artifact id="StructureDefinition/practitioner-qualification" key="StructureDefinition-practitioner-qualification" name="VhDir Practitioner Qualification"/>
+<artifact id="StructureDefinition/vhdir-practitionerrole" key="StructureDefinition-vhdir-practitionerrole" name="VhDir Practitioner Role"/>
+<artifact id="CodeSystem/primarysource" key="CodeSystem-primarysource" name="VhDir Primary Source Code System"/>
+<artifact id="ValueSet/primarysourcefailureaction" key="ValueSet-primarysourcefailureaction" name="VhDir Primary Source Failure Action"/>
+<artifact id="ValueSet/primarysourcepush" key="ValueSet-primarysourcepush" name="VhDir Primary Source Push"/>
+<artifact id="ValueSet/primarysourcepushtype" key="ValueSet-primarysourcepushtype" name="VhDir Primary Source Push Type"/>
+<artifact id="ValueSet/validationneed" key="ValueSet-validationneed" name="VhDir Primary Source Validation Need"/>
+<artifact id="ValueSet/primarysourcevalidationprocess" key="ValueSet-primarysourcevalidationprocess" name="VhDir Primary Source Validation Process"/>
+<artifact id="ValueSet/primarysourcevalidationstatus" key="ValueSet-primarysourcevalidationstatus" name="VhDir Primary Source Validation Status"/>
+<artifact id="ValueSet/primarysourcetype" key="ValueSet-primarysourcetype" name="VhDir Primary Source Validation Type"/>
+<artifact id="StructureDefinition/qualification" key="StructureDefinition-qualification" name="VhDir Qualification"/>
+<artifact id="ValueSet/qualificationstatus" key="ValueSet-qualificationstatus" name="VhDir Qualification Status"/>
+<artifact id="ConceptMap/qualification-status" key="ConceptMap-qualification-status" name="VhDir Qualification Status Value Set – Status Code Mapping"/>
+<artifact id="StructureDefinition/vhdir-restriction" key="StructureDefinition-vhdir-restriction" name="VhDir Restriction"/>
+<artifact id="ValueSet/languageproficiency" key="ValueSet-languageproficiency" name="VhDir Spoken Language Proficiency"/>
+<artifact id="CodeSystem/languageproficiency" key="CodeSystem-languageproficiency" name="VhDir Spoken Language Proficiency Code System"/>
+<artifact id="StructureDefinition/usage-restriction" key="StructureDefinition-usage-restriction" name="VhDir Usage Restriction"/>
+<artifact id="CodeSystem/usecase" key="CodeSystem-usecase" name="VhDir Use Case Code System"/>
+<artifact id="ValueSet/usecasetype" key="ValueSet-usecasetype" name="VhDir Use Case Type"/>
+<artifact id="StructureDefinition/vhdir-validation" key="StructureDefinition-vhdir-validation" name="VhDir Validation"/>
+<artifact id="ValueSet/validationprocess" key="ValueSet-validationprocess" name="VhDir Validation Process"/>
+<artifact id="CodeSystem/validation" key="CodeSystem-validation" name="VhDir Validation Type Code System"/>
+<artifact id="SearchParameter/careteam-category" key="SearchParameter-careteam-category" name="VhDir_sp_careteam_category"/>
+<artifact id="SearchParameter/careteam-endpoint" key="SearchParameter-careteam-endpoint" name="VhDir_sp_careteam_endpoint"/>
+<artifact id="SearchParameter/careteam-identifier" key="SearchParameter-careteam-identifier" name="VhDir_sp_careteam_identifier"/>
+<artifact id="SearchParameter/careteam-identifier-assigner" key="SearchParameter-careteam-identifier-assigner" name="VhDir_sp_careteam_identifier_assigner"/>
+<artifact id="SearchParameter/careteam-location" key="SearchParameter-careteam-location" name="VhDir_sp_careteam_location"/>
+<artifact id="SearchParameter/careteam-participant" key="SearchParameter-careteam-participant" name="VhDir_sp_careteam_member"/>
+<artifact id="SearchParameter/careteam-name" key="SearchParameter-careteam-name" name="VhDir_sp_careteam_name"/>
+<artifact id="SearchParameter/careteam-organization" key="SearchParameter-careteam-organization" name="VhDir_sp_careteam_organization"/>
+<artifact id="SearchParameter/careteam-service" key="SearchParameter-careteam-service" name="VhDir_sp_careteam_service"/>
+<artifact id="SearchParameter/careteam-status" key="SearchParameter-careteam-status" name="VhDir_sp_careteam_status"/>
+<artifact id="SearchParameter/careteam-via-intermediary" key="SearchParameter-careteam-via-intermediary" name="VhDir_sp_careteam_via_intermediary"/>
+<artifact id="SearchParameter/endpoint-connection-type" key="SearchParameter-endpoint-connection-type" name="VhDir_sp_endpoint_connection_type"/>
+<artifact id="SearchParameter/endpoint-identifier" key="SearchParameter-endpoint-identifier" name="VhDir_sp_endpoint_identifier"/>
+<artifact id="SearchParameter/endpoint-identifier-assigner" key="SearchParameter-endpoint-identifier-assigner" name="VhDir_sp_endpoint_identifier_assigner"/>
+<artifact id="SearchParameter/endpoint-mime-type" key="SearchParameter-endpoint-mime-type" name="VhDir_sp_endpoint_mime_type"/>
+<artifact id="SearchParameter/endpoint-organization" key="SearchParameter-endpoint-organization" name="VhDir_sp_endpoint_organization"/>
+<artifact id="SearchParameter/endpoint-payload-type" key="SearchParameter-endpoint-payload-type" name="VhDir_sp_endpoint_payload_type"/>
+<artifact id="SearchParameter/endpoint-status" key="SearchParameter-endpoint-status" name="VhDir_sp_endpoint_status"/>
+<artifact id="SearchParameter/endpoint-usecase-standard" key="SearchParameter-endpoint-usecase-standard" name="VhDir_sp_endpoint_usecase_standard"/>
+<artifact id="SearchParameter/endpoint-usecase-type" key="SearchParameter-endpoint-usecase-type" name="VhDir_sp_endpoint_usecase_type"/>
+<artifact id="SearchParameter/endpoint-via-intermediary" key="SearchParameter-endpoint-via-intermediary" name="VhDir_sp_endpoint_via_intermediary"/>
+<artifact id="SearchParameter/healthcareservice-service-category" key="SearchParameter-healthcareservice-service-category" name="VhDir_sp_healthcareservice_category"/>
+<artifact id="SearchParameter/healthcareservice-characteristic" key="SearchParameter-healthcareservice-characteristic" name="VhDir_sp_healthcareservice_characteristic"/>
+<artifact id="SearchParameter/healthcareservice-coverage-area" key="SearchParameter-healthcareservice-coverage-area" name="VhDir_sp_healthcareservice_coverage_area"/>
+<artifact id="SearchParameter/healthcareservice-eligibility" key="SearchParameter-healthcareservice-eligibility" name="VhDir_sp_healthcareservice_eligibility"/>
+<artifact id="SearchParameter/healthcareservice-endpoint" key="SearchParameter-healthcareservice-endpoint" name="VhDir_sp_healthcareservice_endpoint"/>
+<artifact id="SearchParameter/healthcareservice-identifier" key="SearchParameter-healthcareservice-identifier" name="VhDir_sp_healthcareservice_identifier"/>
+<artifact id="SearchParameter/healthcareservice-identifier-assigner" key="SearchParameter-healthcareservice-identifier-assigner" name="VhDir_sp_healthcareservice_identifier_assigner"/>
+<artifact id="SearchParameter/healthcareservice-location" key="SearchParameter-healthcareservice-location" name="VhDir_sp_healthcareservice_location"/>
+<artifact id="SearchParameter/healthcareservice-name" key="SearchParameter-healthcareservice-name" name="VhDir_sp_healthcareservice_name"/>
+<artifact id="SearchParameter/healthcareservice-new-patient" key="SearchParameter-healthcareservice-new-patient" name="VhDir_sp_healthcareservice_new_patient"/>
+<artifact id="SearchParameter/healthcareservice-new-patient-network" key="SearchParameter-healthcareservice-new-patient-network" name="VhDir_sp_healthcareservice_new_patient_network"/>
+<artifact id="SearchParameter/healthcareservice-organization" key="SearchParameter-healthcareservice-organization" name="VhDir_sp_healthcareservice_organization"/>
+<artifact id="SearchParameter/healthcareservice-specialty" key="SearchParameter-healthcareservice-specialty" name="VhDir_sp_healthcareservice_specialty"/>
+<artifact id="SearchParameter/healthcareservice-service-type" key="SearchParameter-healthcareservice-service-type" name="VhDir_sp_healthcareservice_type"/>
+<artifact id="SearchParameter/healthcareservice-via-intermediary" key="SearchParameter-healthcareservice-via-intermediary" name="VhDir_sp_healthcareservice_via_intermediary"/>
+<artifact id="SearchParameter/insuranceplan-administered-by" key="SearchParameter-insuranceplan-administered-by" name="VhDir_sp_insuranceplan_administered_by"/>
+<artifact id="SearchParameter/insuranceplan-coverage-area" key="SearchParameter-insuranceplan-coverage-area" name="VhDir_sp_insuranceplan_coverage_area"/>
+<artifact id="SearchParameter/insuranceplan-coverage-benefit-type" key="SearchParameter-insuranceplan-coverage-benefit-type" name="VhDir_sp_insuranceplan_coverage_benefit_type"/>
+<artifact id="SearchParameter/insuranceplan-coverage-limit-value" key="SearchParameter-insuranceplan-coverage-limit-value" name="VhDir_sp_insuranceplan_coverage_limit_value"/>
+<artifact id="SearchParameter/insuranceplan-coverage-network" key="SearchParameter-insuranceplan-coverage-network" name="VhDir_sp_insuranceplan_coverage_network"/>
+<artifact id="SearchParameter/insuranceplan-coverage-type" key="SearchParameter-insuranceplan-coverage-type" name="VhDir_sp_insuranceplan_coverage_type"/>
+<artifact id="SearchParameter/insuranceplan-endpoint" key="SearchParameter-insuranceplan-endpoint" name="VhDir_sp_insuranceplan_endpoint"/>
+<artifact id="SearchParameter/insuranceplan-general-cost-groupsize" key="SearchParameter-insuranceplan-general-cost-groupsize" name="VhDir_sp_insuranceplan_general_cost_groupsize"/>
+<artifact id="SearchParameter/insuranceplan-general-cost-type" key="SearchParameter-insuranceplan-general-cost-type" name="VhDir_sp_insuranceplan_general_cost_type"/>
+<artifact id="SearchParameter/insuranceplan-general-cost-value" key="SearchParameter-insuranceplan-general-cost-value" name="VhDir_sp_insuranceplan_general_cost_value"/>
+<artifact id="SearchParameter/insuranceplan-identifier" key="SearchParameter-insuranceplan-identifier" name="VhDir_sp_insuranceplan_identifier"/>
+<artifact id="SearchParameter/insuranceplan-name" key="SearchParameter-insuranceplan-name" name="VhDir_sp_insuranceplan_name"/>
+<artifact id="SearchParameter/insuranceplan-network" key="SearchParameter-insuranceplan-network" name="VhDir_sp_insuranceplan_network"/>
+<artifact id="SearchParameter/insuranceplan-owned-by" key="SearchParameter-insuranceplan-owned-by" name="VhDir_sp_insuranceplan_owned_by"/>
+<artifact id="SearchParameter/insuranceplan-plan-coverage-area" key="SearchParameter-insuranceplan-plan-coverage-area" name="VhDir_sp_insuranceplan_plan_coverage_area"/>
+<artifact id="SearchParameter/insuranceplan-plan-identifier" key="SearchParameter-insuranceplan-plan-identifier" name="VhDir_sp_insuranceplan_plan_identifier"/>
+<artifact id="SearchParameter/insuranceplan-plan-network" key="SearchParameter-insuranceplan-plan-network" name="VhDir_sp_insuranceplan_plan_network"/>
+<artifact id="SearchParameter/insuranceplan-plan-type" key="SearchParameter-insuranceplan-plan-type" name="VhDir_sp_insuranceplan_plan_type"/>
+<artifact id="SearchParameter/insuranceplan-specific-cost-benefit-type" key="SearchParameter-insuranceplan-specific-cost-benefit-type" name="VhDir_sp_insuranceplan_specific_cost_benefit_type"/>
+<artifact id="SearchParameter/insuranceplan-specific-cost-category" key="SearchParameter-insuranceplan-specific-cost-category" name="VhDir_sp_insuranceplan_specific_cost_category"/>
+<artifact id="SearchParameter/insuranceplan-specific-cost-cost-type" key="SearchParameter-insuranceplan-specific-cost-cost-type" name="VhDir_sp_insuranceplan_specific_cost_cost_type"/>
+<artifact id="SearchParameter/insuranceplan-specific-cost-value" key="SearchParameter-insuranceplan-specific-cost-value" name="VhDir_sp_insuranceplan_specific_cost_value"/>
+<artifact id="SearchParameter/insuranceplan-status" key="SearchParameter-insuranceplan-status" name="VhDir_sp_insuranceplan_status"/>
+<artifact id="SearchParameter/insuranceplan-type" key="SearchParameter-insuranceplan-type" name="VhDir_sp_insuranceplan_type"/>
+<artifact id="SearchParameter/location-accessibility" key="SearchParameter-location-accessibility" name="VhDir_sp_location_accessibility"/>
+<artifact id="SearchParameter/location-address" key="SearchParameter-location-address" name="VhDir_sp_location_address"/>
+<artifact id="SearchParameter/location-contains" key="SearchParameter-location-contains" name="VhDir_sp_location_contains"/>
+<artifact id="SearchParameter/location-endpoint" key="SearchParameter-location-endpoint" name="VhDir_sp_location_endpoint"/>
+<artifact id="SearchParameter/location-identifier" key="SearchParameter-location-identifier" name="VhDir_sp_location_identifier"/>
+<artifact id="SearchParameter/location-identifier-assigner" key="SearchParameter-location-identifier-assigner" name="VhDir_sp_location_identifier_assigner"/>
+<artifact id="SearchParameter/location-new-patient" key="SearchParameter-location-new-patient" name="VhDir_sp_location_new_patient"/>
+<artifact id="SearchParameter/location-new-patient-network" key="SearchParameter-location-new-patient-network" name="VhDir_sp_location_new_patient_network"/>
+<artifact id="SearchParameter/location-organization" key="SearchParameter-location-organization" name="VhDir_sp_location_organization"/>
+<artifact id="SearchParameter/location-partof" key="SearchParameter-location-partof" name="VhDir_sp_location_partof"/>
+<artifact id="SearchParameter/location-status" key="SearchParameter-location-status" name="VhDir_sp_location_status"/>
+<artifact id="SearchParameter/location-type" key="SearchParameter-location-type" name="VhDir_sp_location_type"/>
+<artifact id="SearchParameter/location-via-intermediary" key="SearchParameter-location-via-intermediary" name="VhDir_sp_location_via_intermediary"/>
+<artifact id="SearchParameter/organization-coverage-area" key="SearchParameter-organization-coverage-area" name="VhDir_sp_network_coverage_area"/>
+<artifact id="SearchParameter/organization-address" key="SearchParameter-organization-address" name="VhDir_sp_organization_address"/>
+<artifact id="SearchParameter/organization-address-city" key="SearchParameter-organization-address-city" name="VhDir_sp_organization_address_city"/>
+<artifact id="SearchParameter/organization-address-country" key="SearchParameter-organization-address-country" name="VhDir_sp_organization_address_country"/>
+<artifact id="SearchParameter/organization-address-postalcode" key="SearchParameter-organization-address-postalcode" name="VhDir_sp_organization_address_postalcode"/>
+<artifact id="SearchParameter/organization-address-state" key="SearchParameter-organization-address-state" name="VhDir_sp_organization_address_state"/>
+<artifact id="SearchParameter/organization-endpoint" key="SearchParameter-organization-endpoint" name="VhDir_sp_organization_endpoint"/>
+<artifact id="SearchParameter/organization-identifier" key="SearchParameter-organization-identifier" name="VhDir_sp_organization_identifier"/>
+<artifact id="SearchParameter/organization-identifier-assigner" key="SearchParameter-organization-identifier-assigner" name="VhDir_sp_organization_identifier_assigner"/>
+<artifact id="SearchParameter/organization-name" key="SearchParameter-organization-name" name="VhDir_sp_organization_name"/>
+<artifact id="SearchParameter/organization-partof" key="SearchParameter-organization-partof" name="VhDir_sp_organization_partof"/>
+<artifact id="SearchParameter/organization-qualification-code" key="SearchParameter-organization-qualification-code" name="VhDir_sp_organization_qualification_code"/>
+<artifact id="SearchParameter/organization-qualification-issuer" key="SearchParameter-organization-qualification-issuer" name="VhDir_sp_organization_qualification_issuer"/>
+<artifact id="SearchParameter/organization-qualification-status" key="SearchParameter-organization-qualification-status" name="VhDir_sp_organization_qualification_status"/>
+<artifact id="SearchParameter/organization-qualification-wherevalid-code" key="SearchParameter-organization-qualification-wherevalid-code" name="VhDir_sp_organization_qualification_wherevalid_code"/>
+<artifact id="SearchParameter/organization-qualification-wherevalid-location" key="SearchParameter-organization-qualification-wherevalid-location" name="VhDir_sp_organization_qualification_wherevalid_location"/>
+<artifact id="SearchParameter/organization-type" key="SearchParameter-organization-type" name="VhDir_sp_organization_type"/>
+<artifact id="SearchParameter/organization-via-intermediary" key="SearchParameter-organization-via-intermediary" name="VhDir_sp_organization_via_intermediary"/>
+<artifact id="SearchParameter/organizationaffiliation-endpoint" key="SearchParameter-organizationaffiliation-endpoint" name="VhDir_sp_organizationaffiliation_endpoint"/>
+<artifact id="SearchParameter/organizationaffiliation-identifier" key="SearchParameter-organizationaffiliation-identifier" name="VhDir_sp_organizationaffiliation_identifier"/>
+<artifact id="SearchParameter/organizationaffiliation-identifier-assigner" key="SearchParameter-organizationaffiliation-identifier-assigner" name="VhDir_sp_organizationaffiliation_identifier_assigner"/>
+<artifact id="SearchParameter/organizationaffiliation-location" key="SearchParameter-organizationaffiliation-location" name="VhDir_sp_organizationaffiliation_location"/>
+<artifact id="SearchParameter/organizationaffiliation-network" key="SearchParameter-organizationaffiliation-network" name="VhDir_sp_organizationaffiliation_network"/>
+<artifact id="SearchParameter/organizationaffiliation-participating-organization" key="SearchParameter-organizationaffiliation-participating-organization" name="VhDir_sp_organizationaffiliation_participating_organization"/>
+<artifact id="SearchParameter/organizationaffiliation-primary-organization" key="SearchParameter-organizationaffiliation-primary-organization" name="VhDir_sp_organizationaffiliation_primary_organization"/>
+<artifact id="SearchParameter/organizationaffiliation-role" key="SearchParameter-organizationaffiliation-role" name="VhDir_sp_organizationaffiliation_role"/>
+<artifact id="SearchParameter/organizationaffiliation-service" key="SearchParameter-organizationaffiliation-service" name="VhDir_sp_organizationaffiliation_service"/>
+<artifact id="SearchParameter/organizationaffiliation-specialty" key="SearchParameter-organizationaffiliation-specialty" name="VhDir_sp_organizationaffiliation_specialty"/>
+<artifact id="SearchParameter/organizationaffiliation-via-intermediary" key="SearchParameter-organizationaffiliation-via-intermediary" name="VhDir_sp_organizationaffiliation_via_intermediary"/>
+<artifact id="SearchParameter/practitioner-endpoint" key="SearchParameter-practitioner-endpoint" name="VhDir_sp_practitioner_endpoint"/>
+<artifact id="SearchParameter/practitioner-family-name" key="SearchParameter-practitioner-family-name" name="VhDir_sp_practitioner_family_name"/>
+<artifact id="SearchParameter/practitioner-given-name" key="SearchParameter-practitioner-given-name" name="VhDir_sp_practitioner_given_name"/>
+<artifact id="SearchParameter/practitioner-identifier" key="SearchParameter-practitioner-identifier" name="VhDir_sp_practitioner_identifier"/>
+<artifact id="SearchParameter/practitioner-identifier-assigner" key="SearchParameter-practitioner-identifier-assigner" name="VhDir_sp_practitioner_identifier_assigner"/>
+<artifact id="SearchParameter/practitioner-name" key="SearchParameter-practitioner-name" name="VhDir_sp_practitioner_name"/>
+<artifact id="SearchParameter/practitioner-phonetic" key="SearchParameter-practitioner-phonetic" name="VhDir_sp_practitioner_phonetic"/>
+<artifact id="SearchParameter/practitioner-qualification-code" key="SearchParameter-practitioner-qualification-code" name="VhDir_sp_practitioner_qualification_code"/>
+<artifact id="SearchParameter/practitioner-qualification-issuer" key="SearchParameter-practitioner-qualification-issuer" name="VhDir_sp_practitioner_qualification_issuer"/>
+<artifact id="SearchParameter/practitioner-qualification-period" key="SearchParameter-practitioner-qualification-period" name="VhDir_sp_practitioner_qualification_period"/>
+<artifact id="SearchParameter/practitioner-qualification-status" key="SearchParameter-practitioner-qualification-status" name="VhDir_sp_practitioner_qualification_status"/>
+<artifact id="SearchParameter/practitioner-qualification-wherevalid-code" key="SearchParameter-practitioner-qualification-wherevalid-code" name="VhDir_sp_practitioner_qualification_wherevalid_code"/>
+<artifact id="SearchParameter/practitioner-qualification-wherevalid-location" key="SearchParameter-practitioner-qualification-wherevalid-location" name="VhDir_sp_practitioner_qualification_wherevalid_location"/>
+<artifact id="SearchParameter/practitioner-via-intermediary" key="SearchParameter-practitioner-via-intermediary" name="VhDir_sp_practitioner_via_intermediary"/>
+<artifact id="SearchParameter/practitionerrole-endpoint" key="SearchParameter-practitionerrole-endpoint" name="VhDir_sp_practitionerrole_endpoint"/>
+<artifact id="SearchParameter/practitionerrole-identifier" key="SearchParameter-practitionerrole-identifier" name="VhDir_sp_practitionerrole_identifier"/>
+<artifact id="SearchParameter/practitionerrole-identifier-assigner" key="SearchParameter-practitionerrole-identifier-assigner" name="VhDir_sp_practitionerrole_identifier_assigner"/>
+<artifact id="SearchParameter/practitionerrole-location" key="SearchParameter-practitionerrole-location" name="VhDir_sp_practitionerrole_location"/>
+<artifact id="SearchParameter/practitionerrole-network" key="SearchParameter-practitionerrole-network" name="VhDir_sp_practitionerrole_network"/>
+<artifact id="SearchParameter/practitionerrole-new-patient" key="SearchParameter-practitionerrole-new-patient" name="VhDir_sp_practitionerrole_new_patient"/>
+<artifact id="SearchParameter/practitionerrole-new-patient-network" key="SearchParameter-practitionerrole-new-patient-network" name="VhDir_sp_practitionerrole_new_patient_network"/>
+<artifact id="SearchParameter/practitionerrole-organization" key="SearchParameter-practitionerrole-organization" name="VhDir_sp_practitionerrole_organization"/>
+<artifact id="SearchParameter/practitionerrole-practitioner" key="SearchParameter-practitionerrole-practitioner" name="VhDir_sp_practitionerrole_practitioner"/>
+<artifact id="SearchParameter/practitionerrole-qualification-code" key="SearchParameter-practitionerrole-qualification-code" name="VhDir_sp_practitionerrole_qualification_code"/>
+<artifact id="SearchParameter/practitionerrole-qualification-issuer" key="SearchParameter-practitionerrole-qualification-issuer" name="VhDir_sp_practitionerrole_qualification_issuer"/>
+<artifact id="SearchParameter/practitionerrole-qualification-status" key="SearchParameter-practitionerrole-qualification-status" name="VhDir_sp_practitionerrole_qualification_status"/>
+<artifact id="SearchParameter/practitionerrole-qualification-wherevalid-code" key="SearchParameter-practitionerrole-qualification-wherevalid-code" name="VhDir_sp_practitionerrole_qualification_wherevalid_code"/>
+<artifact id="SearchParameter/practitionerrole-qualification-wherevalid-location" key="SearchParameter-practitionerrole-qualification-wherevalid-location" name="VhDir_sp_practitionerrole_qualification_wherevalid_location"/>
+<artifact id="SearchParameter/practitionerrole-role" key="SearchParameter-practitionerrole-role" name="VhDir_sp_practitionerrole_role"/>
+<artifact id="SearchParameter/practitionerrole-service" key="SearchParameter-practitionerrole-service" name="VhDir_sp_practitionerrole_service"/>
+<artifact id="SearchParameter/practitionerrole-specialty" key="SearchParameter-practitionerrole-specialty" name="VhDir_sp_practitionerrole_specialty"/>
+<artifact id="SearchParameter/practitionerrole-via-intermediary" key="SearchParameter-practitionerrole-via-intermediary" name="VhDir_sp_practitionerrole_via_intermediary"/>
+<artifact id="SearchParameter/verificationresult-attestation-method" key="SearchParameter-verificationresult-attestation-method" name="VhDir_sp_verificationresult_attestation_method"/>
+<artifact id="SearchParameter/verificationresult-attestation-onbehalfof" key="SearchParameter-verificationresult-attestation-onbehalfof" name="VhDir_sp_verificationresult_attestation_onbehalfof"/>
+<artifact id="SearchParameter/verificationresult-attestation-who" key="SearchParameter-verificationresult-attestation-who" name="VhDir_sp_verificationresult_attestation_who"/>
+<artifact id="SearchParameter/verificationresult-primarysource-date" key="SearchParameter-verificationresult-primarysource-date" name="VhDir_sp_verificationresult_primarysource_date"/>
+<artifact id="SearchParameter/verificationresult-primarysource-type" key="SearchParameter-verificationresult-primarysource-type" name="VhDir_sp_verificationresult_primarysource_type"/>
+<artifact id="SearchParameter/verificationresult-primarysource-who" key="SearchParameter-verificationresult-primarysource-who" name="VhDir_sp_verificationresult_primarysource_who"/>
+<artifact id="SearchParameter/verificationresult-status-date" key="SearchParameter-verificationresult-status-date" name="VhDir_sp_verificationresult_status_date"/>
+<artifact id="SearchParameter/verificationresult-target" key="SearchParameter-verificationresult-target" name="VhDir_sp_verificationresult_target"/>
+<artifact id="SearchParameter/verificationresult-validation-status" key="SearchParameter-verificationresult-validation-status" name="VhDir_sp_verificationresult_validation_status"/>
+<artifact id="SearchParameter/verificationresult-validator-organization" key="SearchParameter-verificationresult-validator-organization" name="VhDir_sp_verificationresult_validator_organization"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page deprecated="true" key="profiles" name="(profiles)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="bulk-data" name="Bulk Data and Subscriptions"/>
+<page key="change-notes" name="Change Notes"/>
+<page key="downloads" name="Downloads"/>
+<page key="general-guidance" name="General Guidance"/>
+<page key="guidance" name="Guidance"/>
+<page key="index" name="Home (index)" url="index"/>
+<page key="security" name="Security"/>
+<page key="toc" name="Table of Contents"/>
+<page key="technical-guidance" name="Technical Guidance"/>
+<page deprecated="true" key="documentation" name="documentation" url="documentation"/>
 </specification>

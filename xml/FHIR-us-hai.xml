@@ -1,14 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/HAI" url="http://hl7.org/fhir/us/hai" ciUrl="http://build.fhir.org/ig/HL7/HAI" defaultWorkgroup="pher" defaultVersion="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="0.1"/>
-  <artifactPageExtension value="-definitions"/>
-  <artifactPageExtension value="-examples"/>
-  <artifactPageExtension value="-mappings"/>
-  <artifact name="ImplementationGuide" key="ImplementationGuide" deprecated="true"/>
-  <artifact name="Questionnaire" key="Questionnaire" deprecated="true"/>
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="(profiles)" key="profiles"/>
-  <page name="index" key="index" url="index"/>
-  <page name="terminologies-valuesets" key="terminologies-valuesets" url="terminologies-valuesets" deprecated="true"/>
+<specification gitUrl="https://github.com/HL7/HAI" url="http://hl7.org/fhir/us/hai" ciUrl="http://build.fhir.org/ig/HL7/HAI" ballotUrl="http://hl7.org/fhir/us/hai/2019May" defaultWorkgroup="sd" defaultVersion="2.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
+<version code="current" url="http://build.fhir.org/ig/HL7/HAI"/>
+<version code="2.1.0" url="http://hl7.org/fhir/us/hai/STU2.1"/>
+<version code="2.0.0" url="http://hl7.org/fhir/us/hai/STU2"/>
+<version code="1.1.0" url="http://hl7.org/fhir/us/hai/2019May"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/hai/STU1"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/hai/2018May"/>
+<version code="0.1" deprecated="true"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="Device/hai-authoring-device" key="Device-hai-authoring-device" name="Device - HAI Authoring"/>
+<artifact id="Group/hai-group-1" key="Group-hai-group-1" name="Group: HAI Group 1"/>
+<artifact id="StructureDefinition/hai-population-summary-questionnaire" key="StructureDefinition-hai-population-summary-questionnaire" name="Healthcare Associated Infection Population Summary Questionnaire"/>
+<artifact id="StructureDefinition/hai-population-summary-questionnaireresponse" key="StructureDefinition-hai-population-summary-questionnaireresponse" name="Healthcare Associated Infection Population Summary QuestionnaireResponse"/>
+<artifact id="StructureDefinition/hai-single-person-report-questionnaire" key="StructureDefinition-hai-single-person-report-questionnaire" name="Healthcare Associated Infection Single-Person Report Questionnaire"/>
+<artifact id="StructureDefinition/hai-single-person-report-questionnaireresponse" key="StructureDefinition-hai-single-person-report-questionnaireresponse" name="Healthcare Associated Infection Single-Person Report QuestionnaireResponse"/>
+<artifact deprecated="true" key="ImplementationGuide" name="ImplementationGuide"/>
+<artifact id="CodeSystem/CDCNHSN" key="CodeSystem-CDCNHSN" name="NHSN Surveillance System Codes"/>
+<artifact id="ValueSet/nhsn-pathogen-ranking" key="ValueSet-nhsn-pathogen-ranking" name="NHSNPathogenRanking"/>
+<artifact id="Parameters/expansion-parameters-hai" key="Parameters-expansion-parameters-hai" name="Parameters - SNOMED US Version"/>
+<artifact deprecated="true" key="Questionnaire" name="Questionnaire"/>
+<artifact id="Questionnaire/hai-questionnaire-los-denom" key="Questionnaire-hai-questionnaire-los-denom" name="Questionnaire - Late Onset Sepsis/Meningitis Denominator"/>
+<artifact id="Questionnaire/hai-questionnaire-los-event" key="Questionnaire-hai-questionnaire-los-event" name="Questionnaire - Late Onset Sepsis/Meningitis Event (LOS)"/>
+<artifact id="Questionnaire/hai-questionnaire-opc-proc-denom" key="Questionnaire-hai-questionnaire-opc-proc-denom" name="Questionnaire - Outpatient Procedure Component Denominator for Procedure"/>
+<artifact id="Questionnaire/hai-questionnaire-opc-sdom-denom" key="Questionnaire-hai-questionnaire-opc-sdom-denom" name="Questionnaire - Outpatient Procedure Component Denominator for Same Day Outcome Measures Report"/>
+<artifact id="Questionnaire/hai-questionnaire-opc-sdom-event" key="Questionnaire-hai-questionnaire-opc-sdom-event" name="Questionnaire - Outpatient Procedure Component Same Day Outcome Measures Event"/>
+<artifact id="Questionnaire/hai-questionnaire-opc-ssi-event" key="Questionnaire-hai-questionnaire-opc-ssi-event" name="Questionnaire - Outpatient Procedure Component Surgical Site Infection Event"/>
+<artifact id="QuestionnaireResponse/hai-questionnaireresponse-los-denom" key="QuestionnaireResponse-hai-questionnaireresponse-los-denom" name="QuestionnaireResponse - Late Onset Sepsis/Meningitis Denominator"/>
+<artifact id="QuestionnaireResponse/hai-questionnaireresponse-los-event" key="QuestionnaireResponse-hai-questionnaireresponse-los-event" name="QuestionnaireResponse - Late Onset Sepsis/Meningitis Event (LOS)"/>
+<artifact id="QuestionnaireResponse/hai-questionnaireresponse-opc-proc-denom" key="QuestionnaireResponse-hai-questionnaireresponse-opc-proc-denom" name="QuestionnaireResponse - Outpatient Procedure Component Denominator for Procedure"/>
+<artifact id="QuestionnaireResponse/hai-questionnaireresponse-opc-sdom-denom" key="QuestionnaireResponse-hai-questionnaireresponse-opc-sdom-denom" name="QuestionnaireResponse - Outpatient Procedure Component Denominator for Same Day Outcome Measures Report"/>
+<artifact id="QuestionnaireResponse/hai-questionnaireresponse-opc-sdom-event" key="QuestionnaireResponse-hai-questionnaireresponse-opc-sdom-event" name="QuestionnaireResponse - Outpatient Procedure Component Same Day Outcome Measures Event"/>
+<artifact id="QuestionnaireResponse/hai-questionnaireresponse-opc-ssi-event" key="QuestionnaireResponse-hai-questionnaireresponse-opc-ssi-event" name="QuestionnaireResponse - Outpatient Procedure Component Surgical Site Infection Event"/>
+<artifact id="Patient/hai-patient-1" key="Patient-hai-patient-1" name="US Core Patient: HAI Patient 1"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page deprecated="true" key="profiles" name="(profiles)"/>
+<page key="acknowledgements" name="Acknowledgements"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="audience" name="Audience"/>
+<page key="design_considerations" name="Design Considerations"/>
+<page key="downloads" name="Downloads"/>
+<page key="index" name="Home"/>
+<page key="relationship_to_another_standard" name="Relationship to Another Standard"/>
+<page key="release_history" name="Release History"/>
+<page key="toc" name="Table of Contents"/>
+<page key="mapping-los-denom" name="mapping-los-denom"/>
+<page key="mapping-los-event" name="mapping-los-event"/>
+<page key="mapping-opc-proc-denom" name="mapping-opc-proc-denom"/>
+<page key="mapping-opc-sdom-denom" name="mapping-opc-sdom-denom"/>
+<page key="mapping-opc-sdom-event" name="mapping-opc-sdom-event"/>
+<page key="mapping-opc-ssi-event" name="mapping-opc-ssi-event"/>
+<page deprecated="true" key="terminologies-valuesets" name="terminologies-valuesets" url="terminologies-valuesets"/>
 </specification>

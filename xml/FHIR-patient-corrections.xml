@@ -1,16 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl='https://github.com/HL7/fhir-patient-correction'  
-               url="http://hl7.org/fhir/uv/patient-corrections" 
-               ciUrl="http://build.fhir.org/ig/HL7/fhir-patient-correction" 
-               defaultWorkgroup="pe" 
-               defaultVersion="0.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="0.2.0" url="https://build.fhir.org/ig/HL7/fhir-patient-correction" />
-  <artifact name="Patient Correction Request" key="patient-correction-request" id="StructureDefinition/patient-correction-request" />
-  <artifact name="Patient Correction Disagreement" key="patient-correction-disagreement" id="StructureDefinition/patient-correction-disagreement" />
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="IG Home" key="home" url="index"/>
-  <page name="Table of Contents" key="toc" url="toc"/>
-  <page name="Actors and Use Cases" key="actors-and-use-cases" url="actors-and-use-cases"/>
-  <page name="Specification" key="specification" url="specification"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/patient-corrections/2022May" ciUrl="http://build.fhir.org/ig/HL7/fhir-patient-correction" defaultVersion="1.0.0-ballot" defaultWorkgroup="pe" gitUrl="https://github.com/HL7/fhir-patient-correction" url="http://hl7.org/fhir/uv/patient-corrections">
+<version code="current" url="http://build.fhir.org/ig/HL7/fhir-patient-correction"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/patient-corrections/2022May"/>
+<version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/uv/patient-corrections/dev"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="Bundle/BundleExample" key="Bundle-BundleExample" name="BundleExample"/>
+<artifact id="DocumentReference/ex-documentreference" key="DocumentReference-ex-documentreference" name="Dummy DocumentReference example"/>
+<artifact id="Organization/ex-organization" key="Organization-ex-organization" name="Dummy Organization example"/>
+<artifact id="Patient/ex-patient" key="Patient-ex-patient" name="Dummy Patient example"/>
+<artifact id="Observation/ex-smoking" key="Observation-ex-smoking" name="Dummy Patient is smoking"/>
+<artifact id="Practitioner/ex-practitioner2" key="Practitioner-ex-practitioner2" name="Dummy Practitioner (PCP) example"/>
+<artifact id="Practitioner/ex-practitioner" key="Practitioner-ex-practitioner" name="Dummy Practitioner example"/>
+<artifact id="StructureDefinition/patient-correction-bundle" key="StructureDefinition-patient-correction-bundle" name="Patient Correction Bundle"/>
+<artifact id="CodeSystem/PatientCorrectionBusinessStatus" key="CodeSystem-PatientCorrectionBusinessStatus" name="Patient Correction Business Statuses"/>
+<artifact id="StructureDefinition/patient-correction-communication" key="StructureDefinition-patient-correction-communication" name="Patient Correction Communication"/>
+<artifact id="CodeSystem/PatientCorrectionCommunicationTypes" key="CodeSystem-PatientCorrectionCommunicationTypes" name="Patient Correction Communication Types"/>
+<artifact deprecated="true" id="StructureDefinition/patient-correction-disagreement" key="patient-correction-disagreement" name="Patient Correction Disagreement"/>
+<artifact id="CodeSystem/PatientCorrectionOutputTypes" key="CodeSystem-PatientCorrectionOutputTypes" name="Patient Correction Output Types"/>
+<artifact deprecated="true" id="StructureDefinition/patient-correction-request" key="patient-correction-request" name="Patient Correction Request"/>
+<artifact id="StructureDefinition/patient-correction-task" key="StructureDefinition-patient-correction-task" name="Patient Correction Task"/>
+<artifact id="CodeSystem/PatientCorrectionTaskTypes" key="CodeSystem-PatientCorrectionTaskTypes" name="Patient Correction Task Types"/>
+<artifact id="CapabilityStatement/PatientCorrectionCapability" key="CapabilityStatement-PatientCorrectionCapability" name="Patient Request for Corrections Capability Statement"/>
+<artifact id="ValueSet/PatientCorrectionBusinessStatusVS" key="ValueSet-PatientCorrectionBusinessStatusVS" name="PatientCorrectionBusinessStatusVS"/>
+<artifact id="ValueSet/PatientCorrectionCommunicationTypesVS" key="ValueSet-PatientCorrectionCommunicationTypesVS" name="PatientCorrectionCommunicationTypesVS"/>
+<artifact id="ValueSet/PatientCorrectionOutputTypesVS" key="ValueSet-PatientCorrectionOutputTypesVS" name="PatientCorrectionOutputTypesVS"/>
+<artifact id="ValueSet/PatientCorrectionTaskTypesVS" key="ValueSet-PatientCorrectionTaskTypesVS" name="PatientCorrectionTaskTypesVS"/>
+<artifact id="SearchParameter/About" key="SearchParameter-About" name="Search on the PatientCorrectionCommunication.about element"/>
+<artifact id="SearchParameter/ReasonReference" key="SearchParameter-ReasonReference" name="Search on the PatientCorrectionTask.reasonReference element"/>
+<artifact id="Communication/additionalinfoneeded" key="Communication-additionalinfoneeded" name="additionalinfoneeded"/>
+<artifact id="Communication/additionalinfoprovided" key="Communication-additionalinfoprovided" name="additionalinfoprovided"/>
+<artifact id="OperationDefinition/correction-request" key="OperationDefinition-correction-request" name="correction-request"/>
+<artifact id="Task/correctionrequestprocess" key="Task-correctionrequestprocess" name="correctionrequestprocess"/>
+<artifact id="Task/correctionrequestprocess2" key="Task-correctionrequestprocess2" name="correctionrequestprocess2"/>
+<artifact id="Task/correctionrequestprocess3" key="Task-correctionrequestprocess3" name="correctionrequestprocess3"/>
+<artifact id="Task/correctionrequestprocess4" key="Task-correctionrequestprocess4" name="correctionrequestprocess4"/>
+<artifact id="Task/correctionrequestprocess5" key="Task-correctionrequestprocess5" name="correctionrequestprocess5"/>
+<artifact id="Task/correctionrequestprocess6" key="Task-correctionrequestprocess6" name="correctionrequestprocess6"/>
+<artifact id="Communication/initialrequestforcorrection" key="Communication-initialrequestforcorrection" name="initialrequestforcorrection"/>
+<artifact id="Communication/recordamended" key="Communication-recordamended" name="recordamended"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="actors-and-use-cases" name="Actors and Use Cases" url="actors-and-use-cases"/>
+<page key="artifacts" name="Artifacts"/>
+<page key="downloads" name="Downloads"/>
+<page key="examples" name="Examples"/>
+<page key="index" name="Home"/>
+<page deprecated="true" key="home" name="IG Home" url="index"/>
+<page key="specification" name="Specification" url="specification"/>
+<page key="toc" name="Table of Contents" url="toc"/>
 </specification>

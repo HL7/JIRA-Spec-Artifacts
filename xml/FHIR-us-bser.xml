@@ -1,21 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/bser" url="http://hl7.org/fhir/us/bser" ciUrl="http://build.fhir.org/ig/HL7/bser" defaultWorkgroup="pher" defaultVersion="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="0.1"/>
-  <artifactPageExtension value="-definitions"/>
-  <artifactPageExtension value="-examples"/>
-  <artifactPageExtension value="-mappings"/>
-  <artifact name="Composition" key="Composition" deprecated="true"/>
-  <artifact name="Consent" key="Consent" deprecated="true"/>
-  <artifact name="Feed" key="Feed" deprecated="true"/>
-  <artifact name="ImplementationGuide" key="ImplementationGuide" deprecated="true"/>
-  <artifact name="MessageHeader" key="MessageHeader" deprecated="true"/>
-  <artifact name="Observation" key="Observation" deprecated="true"/>
-  <artifact name="Patient" key="Patient" deprecated="true"/>
-  <artifact name="ServiceRequest" key="ServiceRequest" deprecated="true"/>
-  <artifact name="Task" key="Task" deprecated="true"/>
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="(profiles)" key="profiles"/>
-  <page name="documentation" key="documentation" url="documentation" deprecated="true"/>
-  <page name="extensibility" key="extensibility" url="extensibility" deprecated="true"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/bser/2019May" ciUrl="http://build.fhir.org/ig/HL7/bser" defaultVersion="2.0.0-ballot" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/bser" url="http://hl7.org/fhir/us/bser">
+<version code="current" url="http://build.fhir.org/ig/HL7/bser"/>
+<version code="2.0.0-ballot" url="http://hl7.org/fhir/us/bser/2023Sep"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/bser/STU1"/>
+<version code="0.2.0" url="http://hl7.org/fhir/us/bser/2019May"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/bser/2018Sep"/>
+<version code="0.1" deprecated="true"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="AllergyIntolerance/allergyintolerance-us-core-allergyint-eve-everywoman" key="AllergyIntolerance-allergyintolerance-us-core-allergyint-eve-everywoman" name="AllergyIntolerance - Sulfonamide - Eve Everywoman"/>
+<artifact id="Observation/observation-us-core-bmi-mom-everymom" key="Observation-observation-us-core-bmi-mom-everymom" name="BMI - Mom Everymom"/>
+<artifact id="CodeSystem/bser" key="CodeSystem-bser" name="BSeR"/>
+<artifact id="StructureDefinition/bser-bundle-batch-query-referral-supporting-info" key="StructureDefinition-bser-bundle-batch-query-referral-supporting-info" name="BSeR Bundle Batch Query Referral Supporting Information"/>
+<artifact id="StructureDefinition/BSeR-Coverage" key="StructureDefinition-BSeR-Coverage" name="BSeR Coverage"/>
+<artifact id="StructureDefinition/BSeR-PatientConsent" key="StructureDefinition-BSeR-PatientConsent" name="BSeR Patient Consent"/>
+<artifact id="StructureDefinition/BSeR-ReferralActivityStatus" key="StructureDefinition-BSeR-ReferralActivityStatus" name="BSeR Referral Activity Status"/>
+<artifact id="StructureDefinition/BSeR-ReferralFeedbackComposition" key="StructureDefinition-BSeR-ReferralFeedbackComposition" name="BSeR Referral Feedback Composition"/>
+<artifact id="StructureDefinition/BSeR-ReferralFeedbackDocumentBundle" key="StructureDefinition-BSeR-ReferralFeedbackDocumentBundle" name="BSeR Referral Feedback Document Bundle"/>
+<artifact id="StructureDefinition/BSeR-ReferralMessageBundle" key="StructureDefinition-BSeR-ReferralMessageBundle" name="BSeR Referral Message Bundle"/>
+<artifact id="StructureDefinition/BSeR-ReferralMessageHeader" key="StructureDefinition-BSeR-ReferralMessageHeader" name="BSeR Referral Message Header"/>
+<artifact id="StructureDefinition/bser-referral-observation" key="StructureDefinition-bser-referral-observation" name="BSeR Referral Observation"/>
+<artifact id="Observation/observation-bser-referral-observation-endurance-eve-everywoman" key="Observation-observation-bser-referral-observation-endurance-eve-everywoman" name="BSeR Referral Observation - Arthritis Feedback - Endurance Improved - Eve Everywoman"/>
+<artifact id="StructureDefinition/BSeR-ReferralRequestComposition" key="StructureDefinition-BSeR-ReferralRequestComposition" name="BSeR Referral Request Composition"/>
+<artifact id="StructureDefinition/BSeR-ReferralRequestDocumentBundle" key="StructureDefinition-BSeR-ReferralRequestDocumentBundle" name="BSeR Referral Request Document Bundle"/>
+<artifact id="StructureDefinition/BSeR-ReferralServiceRequest" key="StructureDefinition-BSeR-ReferralServiceRequest" name="BSeR Referral Service Request"/>
+<artifact id="StructureDefinition/BSeR-ReferralTask" key="StructureDefinition-BSeR-ReferralTask" name="BSeR Referral Task"/>
+<artifact id="StructureDefinition/BSeR-TelcomCommunicationPreferences" key="StructureDefinition-BSeR-TelcomCommunicationPreferences" name="BSeR Telcom Communication Preferences"/>
+<artifact id="ValueSet/BSeR-TelcomCommunicationPreferencesVS" key="ValueSet-BSeR-TelcomCommunicationPreferencesVS" name="BSeR Telcom Communication Preferences VS"/>
+<artifact id="StructureDefinition/BSeR-TobaccoUseCessationFeedbackMedication" key="StructureDefinition-BSeR-TobaccoUseCessationFeedbackMedication" name="BSeR Tobacco Use Cessation Feedback Medication"/>
+<artifact id="Bundle/bundle-batch-query-arthritis-feedback" key="Bundle-bundle-batch-query-arthritis-feedback" name="Batch Query Bundle - Arthritis Feedback"/>
+<artifact id="Bundle/bundle-batch-query-arthritis-request" key="Bundle-bundle-batch-query-arthritis-request" name="Batch Query Bundle - Arthritis Request Supporting Information Queries"/>
+<artifact id="Bundle/bundle-batch-query-diabetes-prevention-feedback" key="Bundle-bundle-batch-query-diabetes-prevention-feedback" name="Batch Query Bundle - Diabetes Prevention Feedback"/>
+<artifact id="Bundle/bundle-batch-query-diabetes-prevention-request" key="Bundle-bundle-batch-query-diabetes-prevention-request" name="Batch Query Bundle - Diabetes Prevention Request Supporting Information Queries"/>
+<artifact id="Bundle/bundle-batch-query-early-childhood-nutrition-feedback" key="Bundle-bundle-batch-query-early-childhood-nutrition-feedback" name="Batch Query Bundle - Early Childhood Nutrition Feedback"/>
+<artifact id="Bundle/bundle-batch-query-early-childhood-nutrition-request" key="Bundle-bundle-batch-query-early-childhood-nutrition-request" name="Batch Query Bundle - Early Childhood Nutrition Request Supporting Information Queries"/>
+<artifact id="Bundle/bundle-batch-query-hypertension-feedback" key="Bundle-bundle-batch-query-hypertension-feedback" name="Batch Query Bundle - Hypertension Feedback"/>
+<artifact id="Bundle/bundle-batch-query-hypertension-request" key="Bundle-bundle-batch-query-hypertension-request" name="Batch Query Bundle - Hypertension Request Supporting Information Queries"/>
+<artifact id="Bundle/bundle-batch-query-obesity-feedback" key="Bundle-bundle-batch-query-obesity-feedback" name="Batch Query Bundle - Obesity Feedback"/>
+<artifact id="Bundle/bundle-batch-query-obesity-request" key="Bundle-bundle-batch-query-obesity-request" name="Batch Query Bundle - Obesity Request Supporting Information Queries"/>
+<artifact id="Bundle/bundle-batch-query-tobacco-use-cessation-feedback" key="Bundle-bundle-batch-query-tobacco-use-cessation-feedback" name="Batch Query Bundle - Tobacco Use Cessation Feedback"/>
+<artifact id="Bundle/bundle-batch-query-tobacco-use-cessation-request" key="Bundle-bundle-batch-query-tobacco-use-cessation-request" name="Batch Query Bundle - Tobacco Use Cessation Request Supporting Information Queries"/>
+<artifact id="Observation/observation-us-core-blood-pressure-baby-everybaby" key="Observation-observation-us-core-blood-pressure-baby-everybaby" name="Blood Pressure - Baby Everybaby"/>
+<artifact id="Observation/observation-us-core-blood-pressure-mom-everymom" key="Observation-observation-us-core-blood-pressure-mom-everymom" name="Blood Pressure - Mom Everymom"/>
+<artifact id="Observation/observation-us-core-body-height-mom-everymom" key="Observation-observation-us-core-body-height-mom-everymom" name="Body Height - Mom Everymom"/>
+<artifact id="Observation/observation-us-core-body-weight-baby-everybaby" key="Observation-observation-us-core-body-weight-baby-everybaby" name="Body Weight - Baby Everybaby"/>
+<artifact id="Observation/observation-us-core-body-weight-eve-everywoman" key="Observation-observation-us-core-body-weight-eve-everywoman" name="Body Weight - Eve Everywoman"/>
+<artifact id="Observation/observation-us-core-body-weight-mom-everymom" key="Observation-observation-us-core-body-weight-mom-everymom" name="Body Weight - Mom Everymom"/>
+<artifact id="CapabilityStatement/capabilitystatement-bser" key="CapabilityStatement-capabilitystatement-bser" name="Capability Statement -BSeR"/>
+<artifact deprecated="true" key="Composition" name="Composition"/>
+<artifact id="Composition/composition-bser-referral-feedback-nutrition-everybaby" key="Composition-composition-bser-referral-feedback-nutrition-everybaby" name="Composition - Baby Everybaby - Early Childhood Nutrition Referral Feedback"/>
+<artifact id="Composition/composition-bser-referral-request-nutrition-everybaby" key="Composition-composition-bser-referral-request-nutrition-everybaby" name="Composition - Baby Everybaby - Early Childhood Nutrition Referral Request"/>
+<artifact id="Composition/composition-bser-referral-feedback-arthritis-everywoman" key="Composition-composition-bser-referral-feedback-arthritis-everywoman" name="Composition - Eve Everywoman - Arthritis Referral Feedback"/>
+<artifact id="Composition/composition-bser-referral-request-arthritis-everywoman" key="Composition-composition-bser-referral-request-arthritis-everywoman" name="Composition - Eve Everywoman - Arthritis Referral Request"/>
+<artifact id="Composition/composition-bser-referral-request-diabetes-everywoman" key="Composition-composition-bser-referral-request-diabetes-everywoman" name="Composition - Eve Everywoman - Diabetes Prevention Referral Request"/>
+<artifact id="Composition/composition-bser-referral-request-hypertension-everywoman" key="Composition-composition-bser-referral-request-hypertension-everywoman" name="Composition - Eve Everywoman - Hypertension Referral Request"/>
+<artifact id="Composition/composition-bser-referral-request-obesity-everywoman" key="Composition-composition-bser-referral-request-obesity-everywoman" name="Composition - Eve Everywoman - Obesity Referral Request"/>
+<artifact id="Composition/composition-bser-referral-request-tobacco-everywoman" key="Composition-composition-bser-referral-request-tobacco-everywoman" name="Composition - Eve Everywoman - Tobacco Use Cessation Referral Request"/>
+<artifact id="Condition/condition-us-core-cphc-eve-everywoman-hypertension" key="Condition-condition-us-core-cphc-eve-everywoman-hypertension" name="Condition - Hypertension - Eve Everywoman"/>
+<artifact deprecated="true" key="Consent" name="Consent"/>
+<artifact id="Consent/consent-bser-patientconsent-baby-everybaby" key="Consent-consent-bser-patientconsent-baby-everybaby" name="Consent - Baby Everybaby"/>
+<artifact id="Consent/consent-bser-patientconsent-eve-everywoman" key="Consent-consent-bser-patientconsent-eve-everywoman" name="Consent - Eve Everywoman"/>
+<artifact id="Coverage/coverage-bser-coverage-baby-everybaby" key="Coverage-coverage-bser-coverage-baby-everybaby" name="Coverage - Baby Everybaby"/>
+<artifact id="Coverage/coverage-bser-coverage-eve-everywoman" key="Coverage-coverage-bser-coverage-eve-everywoman" name="Coverage - Eve Everywoman"/>
+<artifact id="Bundle/bundle-bser-referral-request-document-bundle-baby-everybaby" key="Bundle-bundle-bser-referral-request-document-bundle-baby-everybaby" name="Document Bundle - Baby Everybaby - Early Childhood Nutrition"/>
+<artifact id="Bundle/bundle-bser-referral-feedback-document-bundle-eve-everywoman" key="Bundle-bundle-bser-referral-feedback-document-bundle-eve-everywoman" name="Document Bundle - Eve Everywoman"/>
+<artifact id="Bundle/bundle-bser-referral-request-document-bundle-eve-everywoman" key="Bundle-bundle-bser-referral-request-document-bundle-eve-everywoman" name="Document Bundle - Eve Everywoman - Arthritis"/>
+<artifact deprecated="true" key="Feed" name="Feed"/>
+<artifact deprecated="true" key="ImplementationGuide" name="ImplementationGuide"/>
+<artifact id="Location/location-us-core-location-st-luke" key="Location-location-us-core-location-st-luke" name="Location - Referral Center A, St. Lukes"/>
+<artifact id="Medication/medication-bser-tobacco-use-cessation-feedback-eve-everywoman" key="Medication-medication-bser-tobacco-use-cessation-feedback-eve-everywoman" name="Medication - bupropion - Eve Everywoman"/>
+<artifact id="MedicationRequest/medicationrequest-us-core-medicationrequest-eve-everywoman" key="MedicationRequest-medicationrequest-us-core-medicationrequest-eve-everywoman" name="MedicationRequest - Amoxicillin - Eve Everywoman"/>
+<artifact id="Bundle/bundle-bser-referral-message-bundle-eve-everywoman" key="Bundle-bundle-bser-referral-message-bundle-eve-everywoman" name="Message Bundle - Eve Everywoman"/>
+<artifact deprecated="true" key="MessageHeader" name="MessageHeader"/>
+<artifact id="MessageHeader/messageheader-bser-referral-messageheader" key="MessageHeader-messageheader-bser-referral-messageheader" name="MessageHeader - Patient Referral - Saint Lukes"/>
+<artifact deprecated="true" key="Observation" name="Observation"/>
+<artifact id="Observation/observation-participationfeedbackobservation-1-eve-everywoman" key="Observation-observation-participationfeedbackobservation-1-eve-everywoman" name="Observation - Appointments Attended - Eve Everywoman"/>
+<artifact id="Observation/observation-participationfeedbackobservation-2-eve-everywoman" key="Observation-observation-participationfeedbackobservation-2-eve-everywoman" name="Observation - Appointments Missed - Eve Everywoman"/>
+<artifact id="Observation/observation-us-core-bmi-eve-everywoman" key="Observation-observation-us-core-bmi-eve-everywoman" name="Observation - BMI - Eve Everywoman"/>
+<artifact id="Observation/observation-bser-telcomcomm-eve-everywoman" key="Observation-observation-bser-telcomcomm-eve-everywoman" name="Observation - Best Day to Call - Eve Everywoman"/>
+<artifact id="Observation/observation-us-core-blood-pressure-eve-everywoman" key="Observation-observation-us-core-blood-pressure-eve-everywoman" name="Observation - Blood Pressure - Eve Everywoman"/>
+<artifact id="Observation/observation-us-core-body-height-baby-everybaby" key="Observation-observation-us-core-body-height-baby-everybaby" name="Observation - Body Height - Baby Everybaby"/>
+<artifact id="Observation/observation-us-core-body-height-eve-everywoman" key="Observation-observation-us-core-body-height-eve-everywoman" name="Observation - Body Height - Eve Everywoman"/>
+<artifact id="Observation/observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman" key="Observation-observation-bser-tobaccousecessationfeedbackobs-1-eve-everywoman" name="Observation - Date for cessation of smoking - Eve Everywoman"/>
+<artifact id="Observation/observation-us-core-social-history-education-eve-everywoman" key="Observation-observation-us-core-social-history-education-eve-everywoman" name="Observation - Education Level - Eve Everywoman"/>
+<artifact id="Observation/observation-us-core-social-history-education-mom-everymom" key="Observation-observation-us-core-social-history-education-mom-everymom" name="Observation - Education Level - Mom Everymom"/>
+<artifact id="Observation/observation-odh-employment-status-eve-everywoman" key="Observation-observation-odh-employment-status-eve-everywoman" name="Observation - Eve Everywoman - Employed"/>
+<artifact id="Observation/observation-bser-referral-observation-lactation-baby-everybaby" key="Observation-observation-bser-referral-observation-lactation-baby-everybaby" name="Observation - Feedback - Decreased lactation - Baby Everybaby"/>
+<artifact id="Observation/observation-us-core-observation-lab-ha1c-eve-everywoman" key="Observation-observation-us-core-observation-lab-ha1c-eve-everywoman" name="Observation - Ha1c - Eve Everywoman"/>
+<artifact id="Observation/observation-bser-nutritionobs-baby-everybaby" key="Observation-observation-bser-nutritionobs-baby-everybaby" name="Observation - Latch to Breast - Baby Everybaby"/>
+<artifact id="Observation/observation-odh-employment-status-mom-everymom" key="Observation-observation-odh-employment-status-mom-everymom" name="Observation - Mom Everymom - Employed"/>
+<artifact id="Observation/observation-bser-referral-observation-pain-mgmt-eve-everywoman" key="Observation-observation-bser-referral-observation-pain-mgmt-eve-everywoman" name="Observation - Pain Management - Eve Everywoman"/>
+<artifact id="Observation/observation-bser-nutritionfeedbackobs-2-baby-everybaby" key="Observation-observation-bser-nutritionfeedbackobs-2-baby-everybaby" name="Observation - Painful lactation - Baby Everybaby"/>
+<artifact id="Observation/observation-bser-referralactivitystatus-baby-everybaby" key="Observation-observation-bser-referralactivitystatus-baby-everybaby" name="Observation - Referral Activity Status - Baby Everybaby"/>
+<artifact id="Observation/observation-bser-referralactivitystatus-eve-everywoman" key="Observation-observation-bser-referralactivitystatus-eve-everywoman" name="Observation - Referral Activity Status - Eve Everywoman"/>
+<artifact id="Observation/observation-bser-tobaccousecessationfeedbackobs-2-eve-everywoman" key="Observation-observation-bser-tobaccousecessationfeedbackobs-2-eve-everywoman" name="Observation - Tobacco free duration - Eve Everywoman"/>
+<artifact id="Organization/organization-us-core-organization-acme-lab" key="Organization-organization-us-core-organization-acme-lab" name="Organization - Acme Lab"/>
+<artifact id="Organization/organization-us-core-organization-saint-luke" key="Organization-organization-us-core-organization-saint-luke" name="Organization - Saint Luke's Hospital of Kansas City"/>
+<artifact id="Parameters/parameters-snomed-us" key="Parameters-parameters-snomed-us" name="Parameters - US SNOMED"/>
+<artifact deprecated="true" key="Patient" name="Patient"/>
+<artifact id="Patient/patient-us-core-patient-baby-everybaby" key="Patient-patient-us-core-patient-baby-everybaby" name="Patient - Baby Everybaby"/>
+<artifact id="Patient/patient-us-core-patient-eve-everywoman" key="Patient-patient-us-core-patient-eve-everywoman" name="Patient - Eve Everywoman"/>
+<artifact id="Patient/patient-us-core-patient-mom-everymom" key="Patient-patient-us-core-patient-mom-everymom" name="Patient - Mom Everymom"/>
+<artifact id="PractitionerRole/practitionerrole-us-core-practitionerrole-referral-initiator" key="PractitionerRole-practitionerrole-us-core-practitionerrole-referral-initiator" name="PracitionerRole - Referral Initiator - Primary Care Clinis St. Luke"/>
+<artifact id="Practitioner/practitioner-us-core-practitioner-hailey-eight" key="Practitioner-practitioner-us-core-practitioner-hailey-eight" name="Practitioner - Hailey Eight"/>
+<artifact id="Practitioner/practitioner-us-core-practitioner-henry-seven" key="Practitioner-practitioner-us-core-practitioner-henry-seven" name="Practitioner - Henry Seven"/>
+<artifact id="PractitionerRole/practitionerrole-us-core-practitionerrole-referral-recipient" key="PractitionerRole-practitionerrole-us-core-practitionerrole-referral-recipient" name="PractitionerRole - Referral Recipient - Hailey Eight"/>
+<artifact id="Procedure/procedure-us-core-procedure-nicotine-replacement-eve-everywoman" key="Procedure-procedure-us-core-procedure-nicotine-replacement-eve-everywoman" name="Procedure - Nicotine replacement therapy - Eve Everywoman"/>
+<artifact id="StructureDefinition/query-description" key="StructureDefinition-query-description" name="QueryDescription"/>
+<artifact id="StructureDefinition/referral-servicerequest" key="StructureDefinition-referral-servicerequest" name="Referral Service Request"/>
+<artifact id="StructureDefinition/referral-task" key="StructureDefinition-referral-task" name="Referral Task"/>
+<artifact id="RelatedPerson/relatedperson-us-core-relatedperson-mother-eve-everywoman" key="RelatedPerson-relatedperson-us-core-relatedperson-mother-eve-everywoman" name="RelatedPerson - Gestational Mother - Eve Everywoman"/>
+<artifact id="RelatedPerson/relatedperson-us-core-relatedperson-mom-everymom" key="RelatedPerson-relatedperson-us-core-relatedperson-mom-everymom" name="RelatedPerson - Gestational Mother - Mom Everymom"/>
+<artifact id="RelatedPerson/relatedperson-us-core-relatedperson-self-eve-everywoman" key="RelatedPerson-relatedperson-us-core-relatedperson-self-eve-everywoman" name="RelatedPerson - Self - Eve Everywoman"/>
+<artifact deprecated="true" key="ServiceRequest" name="ServiceRequest"/>
+<artifact id="ServiceRequest/servicerequest-bser-referral-servicerequest-arthritis" key="ServiceRequest-servicerequest-bser-referral-servicerequest-arthritis" name="ServiceRequest - Arthritis Referral - Eve Everywoman"/>
+<artifact id="ServiceRequest/servicerequest-bser-referral-servicerequest-early-childhood" key="ServiceRequest-servicerequest-bser-referral-servicerequest-early-childhood" name="ServiceRequest - Early Childhood Nutrition Referral - Baby Everybaby"/>
+<artifact id="ServiceRequest/servicerequest-referral-servicerequest" key="ServiceRequest-servicerequest-referral-servicerequest" name="ServiceRequest - Eve Everywoman"/>
+<artifact id="Observation/observation-us-core-smokingstatus-eve-everywoman" key="Observation-observation-us-core-smokingstatus-eve-everywoman" name="Smoking Status - Eve Everywoman"/>
+<artifact deprecated="true" key="Task" name="Task"/>
+<artifact id="Task/task-bser-referral-task" key="Task-task-bser-referral-task" name="Task - Arthritis Referral - Eve Everywoman"/>
+<artifact id="Task/task-referral-task" key="Task-task-referral-task" name="Task - Eve Everywoman"/>
+<artifact id="CodeSystem/TaskBusinessStatusCS" key="CodeSystem-TaskBusinessStatusCS" name="Task Business Status Code System"/>
+<artifact id="ValueSet/TaskBusinessStatusVS" key="ValueSet-TaskBusinessStatusVS" name="Task Business Status VS"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page deprecated="true" key="profiles" name="(profiles)"/>
+<page key="Acknowledgements" name="Acknowledgements"/>
+<page key="adaptation_for_additional_referral_use_cases" name="Adaptation for Additional Referral Use Cases"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="bser_project_team" name="BSeR Project Team"/>
+<page key="bi-directional_service_ereferral_transactions" name="Bi-directional Service eReferral Transactions"/>
+<page key="change_log" name="Change Log"/>
+<page key="Downloads" name="Downloads"/>
+<page key="index" name="Home Page"/>
+<page key="Introduction" name="Introduction"/>
+<page key="referral_participant_resources" name="Referral Participant Resources"/>
+<page key="referral_service_request_feedback_resources" name="Referral Service Request Feedback Resources"/>
+<page key="referral_service_request_resources" name="Referral Service Request Resources"/>
+<page key="resource_profiles" name="Resource Profiles"/>
+<page key="scope_and_context" name="Scope and Context"/>
+<page key="service_request_and_referral_feedback_supporting_information" name="Service Request and Referral Feedback Supporting Information"/>
+<page key="toc" name="Table of Contents"/>
+<page key="transport_options" name="Transport Options"/>
+<page key="workflow_management_resources" name="Workflow Management Resources"/>
+<page deprecated="true" key="documentation" name="documentation" url="documentation"/>
+<page deprecated="true" key="extensibility" name="extensibility" url="extensibility"/>
 </specification>
