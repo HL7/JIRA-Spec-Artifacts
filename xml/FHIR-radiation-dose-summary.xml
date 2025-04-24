@@ -2,19 +2,19 @@
 <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     ballotUrl="http://hl7.org/fhir/uv/radiation-dose-summary/2022Jan"
     ciUrl="http://build.fhir.org/ig/HL7/fhir-radiation-dose-summary-ig"
-    defaultVersion="0.1.0"
+    defaultVersion="1.0.0"
     defaultWorkgroup="ii"
     gitUrl="https://github.com/HL7/fhir-radiation-dose-summary-ig"
     xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
     url="http://hl7.org/fhir/uv/radiation-dose-summary">
     <version code="current" url="http://build.fhir.org/ig/HL7/fhir-radiation-dose-summary-ig"/>
-	<version code="0.1.0" url="http://hl7.org/fhir/uv/radiation-dose-summary/2022Jan"/>
-	<version code="1.0.0" url="http://hl7.org/fhir/uv/radiation-dose-summary/STU1" deprecated="true"/>
-	<version code="0.1" deprecated="true" />
+	<version code="0.1.0" url="http://hl7.org/fhir/uv/radiation-dose-summary/2022Jan" deprecated="true"/>
+	<version code="1.0.0" url="http://hl7.org/fhir/uv/radiation-dose-summary/STU1"/>
+	<version code="0.1" deprecated="true"/>
    <artifactPageExtension value="-definitions"/>
    <artifactPageExtension value="-examples"/>
    <artifactPageExtension value="-mappings"/>
-	<artifact id="ValueSet/component-irradiation-event-vs" key="ValueSet-component-irradiation-event-vs" name="Irradiation Event component type"/>
+	<artifact id="ValueSet/component-irradiation-event-vs" key="ValueSet-component-irradiation-event-vs" name="Irradiation Event component type" deprecated="true"/>
 	<artifact id="ValueSet/component-radiation-dose-summary-vs" key="ValueSet-component-radiation-dose-summary-vs" name="Radiation Dose Summary component type"/>
 	<artifact id="ValueSet/isotope-rds-vs" key="ValueSet-isotope-rds-vs" name="Isotopes Value Set"/>
 	<artifact id="ValueSet/procedure-reported-type-rds-vs" key="ValueSet-procedure-reported-type-rds-vs" name="Procedure Reported Type Value Set"/>
@@ -25,15 +25,15 @@
 	<artifact id="CapabilityStatement/FHIRServer-RDSP" key="CapabilityStatement-FHIRServer-RDSP" name="FHIRServer-RDSP"/>
 	<artifact id="CapabilityStatement/RDSC" key="CapabilityStatement-RDSC" name="RDSC"/>
 	<artifact id="CapabilityStatement/RDSP" key="CapabilityStatement-RDSP" name="RDSP"/>
-	<artifact id="StructureDefinition/irradiation-event-summary" key="StructureDefinition-irradiation-event-summary" name="Irradiation Event Summary"/>
+	<artifact id="StructureDefinition/irradiation-event-summary" key="StructureDefinition-irradiation-event-summary" name="Irradiation Event Summary" deprecated="true"/>
 	<artifact id="StructureDefinition/radiation-dose-summary" key="StructureDefinition-radiation-dose-summary" name="Radiation Dose Summary"/>
-	<artifact id="StructureDefinition/ct-irradiation-event-summary" key="StructureDefinition-ct-irradiation-event-summary" name="CT Irradiation Event Summary"/>
-	<artifact id="StructureDefinition/ct-radiation-dose-summary" key="StructureDefinition-ct-radiation-dose-summary" name="CT Radiation Dose Summary"/>
+	<artifact id="StructureDefinition/ct-irradiation-event-summary" key="StructureDefinition-ct-irradiation-event-summary" name="CT Irradiation Event Summary" deprecated="true"/>
+	<artifact id="StructureDefinition/ct-radiation-dose-summary" key="StructureDefinition-ct-radiation-dose-summary" name="CT Radiation Dose Summary" deprecated="true"/>
 	<artifact id="StructureDefinition/indication-observation" key="StructureDefinition-indication-observation" name="Indication Observation"/>
 	<artifact id="StructureDefinition/modality-device" key="StructureDefinition-modality-device" name="Modality Device"/>
-	<artifact id="StructureDefinition/nm-radiation-dose-summary" key="StructureDefinition-nm-radiation-dose-summary" name="Radiopharmaceutical Radiation Dose Summary"/>
+	<artifact id="StructureDefinition/nm-radiation-dose-summary" key="StructureDefinition-nm-radiation-dose-summary" name="Radiopharmaceutical Radiation Dose Summary" deprecated="true"/>
 	<artifact id="StructureDefinition/radiation-summary-report" key="StructureDefinition-radiation-summary-report" name="Radiation Summary Report"/>
-	<artifact id="StructureDefinition/xray-radiation-dose-summary" key="StructureDefinition-xray-radiation-dose-summary" name="X-Ray Radiation Dose Summary"/>
+	<artifact id="StructureDefinition/xray-radiation-dose-summary" key="StructureDefinition-xray-radiation-dose-summary" name="X-Ray Radiation Dose Summary" deprecated="true"/>
 	<artifact id="Composition/1" key="Composition-RadiationSummaryReport-1" name="RadiationSummaryReport-1"/>
 	<artifact id="Device/12" key="Device-ModalityDevice-12" name="ModalityDevice-12"/>
 	<artifact id="Observation/122" key="Observation-NMRadiationDoseSummary-122" name="NMRadiationDoseSummary-122"/>
@@ -44,11 +44,11 @@
 	<artifact id="Observation/34" key="Observation-PregnancyStatus-1" name="PregnancyStatus-1"/>
 	<artifact id="ImagingStudy/342" key="ImagingStudy-ImagingStudy-342" name="ImagingStudy-342"/>
 	<artifact id="ImagingStudy/344" key="ImagingStudy-ImagingStudy-344" name="ImagingStudy-344"/>
-	<artifact id="Observation/393" key="Observation-CTIrradiationEventSummary-393" name="CTIrradiationEventSummary-393"/>
+	<artifact id="Observation/393" key="Observation-CTIrradiationEventSummary-393" name="CTIrradiationEventSummary-393" deprecated="true"/>
 	<artifact id="Device/539" key="Device-ModalityDevice-539" name="ModalityDevice-539"/>
 	<artifact id="Observation/545" key="Observation-XRayRadiationDoseSummary-545" name="XRayRadiationDoseSummary-545"/>
 	<artifact id="Patient/56" key="Patient-Patient-56" name="Patient-56"/>
-	<artifact id="Observation/839" key="Observation-CTIrradiationEventSummary-839" name="CTIrradiationEventSummary-839"/>
+	<artifact id="Observation/839" key="Observation-CTIrradiationEventSummary-839" name="CTIrradiationEventSummary-839" deprecated="true"/>
 	<artifact id="TestScript/RDS-sharing-verification" key="TestScript-RDS-sharing-verification" name="TestScript_RDS_Sharing_Verification"/>
 	<artifact id="TestScript/RDSC-Simulator" key="TestScript-RDSC-Simulator" name="TestScript_RDSC_Simulator"/>
 	<artifact id="TestScript/RDSP-Simulator" key="TestScript-RDSP-Simulator" name="TestScript_RDSP_Simulator"/>

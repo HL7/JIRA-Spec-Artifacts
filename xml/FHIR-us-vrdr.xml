@@ -1,46 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/vrdr/2021Sep" ciUrl="http://build.fhir.org/ig/HL7/vrdr" defaultVersion="2.2.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/vrdr" url="http://hl7.org/fhir/us/vrdr">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/vrdr/2024May" ciUrl="http://build.fhir.org/ig/HL7/vrdr" defaultVersion="3.0.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/vrdr" url="http://hl7.org/fhir/us/vrdr">
 <version code="current" url="http://build.fhir.org/ig/HL7/vrdr"/>
+<version code="3.0.0" url="http://hl7.org/fhir/us/vrdr/STU3"/>
+<version code="3.0.0-ballot" url="http://hl7.org/fhir/us/vrdr/2024May"/>
 <version code="2.2.0" url="http://hl7.org/fhir/us/vrdr/STU2.2"/>
-<version code="2.1.0" url="http://hl7.org/fhir/us/vrdr/STU2.1"/>
-<version code="2.0.0" url="http://hl7.org/fhir/us/vrdr/STU2"/>
+<version code="2.1.0" deprecated="true" url="http://hl7.org/fhir/us/vrdr/STU2.1"/>
+<version code="2.0.0" deprecated="true" url="http://hl7.org/fhir/us/vrdr/STU2"/>
 <version code="1.2.0" deprecated="true" url="http://hl7.org/fhir/us/vrdr/2021Sep"/>
-<version code="1.0.0"  deprecated="true" url="http://hl7.org/fhir/us/vrdr/STU1"/>
-<version code="0.1.0"  deprecated="true" url="http://hl7.org/fhir/us/vrdr/2019May"/>
+<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/vrdr/STU1"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/vrdr/2019May"/>
 <version code="1.1.0" deprecated="true" url="http://hl7.org/fhir/us/vrdr/STU1.1"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/vrdr-activity-at-time-of-death" key="StructureDefinition-vrdr-activity-at-time-of-death" name="Activity at Time of Death"/>
-<artifact id="CodeSystem/vrdr-activity-at-time-of-death-cs" key="CodeSystem-vrdr-activity-at-time-of-death-cs" name="Activity at Time of Death Codesystem"/>
-<artifact id="ValueSet/vrdr-activity-at-time-of-death-vs" key="ValueSet-vrdr-activity-at-time-of-death-vs" name="Activity at Time of Death VS"/>
-<artifact id="Observation/ActivityAtTimeOfDeath-Example1" key="Observation-ActivityAtTimeOfDeath-Example1" name="ActivityAtTimeOfDeath-Example1"/>
+<artifact id="CodeSystem/vrdr-activity-at-time-of-death-cs" key="CodeSystem-vrdr-activity-at-time-of-death-cs" name="Activity at Time of Death CodeSystem"/>
+<artifact id="ValueSet/vrdr-activity-at-time-of-death-vs" key="ValueSet-vrdr-activity-at-time-of-death-vs" name="Activity at Time of Death ValueSet"/>
 <artifact id="ConceptMap/ActivityAtTimeOfDeathCM" key="ConceptMap-ActivityAtTimeOfDeathCM" name="ActivityAtTimeOfDeath Concept Map"/>
-<artifact id="ValueSet/vrdr-administrative-gender-vs" key="ValueSet-vrdr-administrative-gender-vs" name="Administrative Gender PHVS_Sex_MFU"/>
+<artifact id="Observation/ActivityAtTimeOfDeath-Example1" key="Observation-ActivityAtTimeOfDeath-Example1" name="ActivityAtTimeOfDeath-Example1"/>
+<artifact id="ValueSet/vrdr-administrative-gender-vs" key="ValueSet-vrdr-administrative-gender-vs" name="Administrative Gender ValueSet"/>
+<artifact deprecated="true" id="ValueSet/ValueSet-administrative-gender-max-vs" key="ValueSet-ValueSet-administrative-gender-max-vs" name="Administrative Gender ValueSet - Max"/>
+<artifact deprecated="true" id="ValueSet/vrdr-administrative-gender-old-vs" key="ValueSet-vrdr-administrative-gender-old-vs" name="Administrative Gender ValueSet - Old"/>
 <artifact id="ConceptMap/AdministrativeGenderCM" key="ConceptMap-AdministrativeGenderCM" name="AdministrativeGender Concept Map"/>
+<artifact deprecated="true" id="ConceptMap/AdministrativeGenderOldCM" key="ConceptMap-AdministrativeGenderOldCM" name="AdministrativeGenderOld Concept Map"/>
+<artifact id="Observation/AgeUT-Example1" key="Observation-AgeUT-Example1" name="AgeUT-Example1"/>
 <artifact id="StructureDefinition/AliasStatus" key="StructureDefinition-AliasStatus" name="Alias Status of a Death Roster"/>
+<artifact id="Location/location-death-vr-atlanta-ga-a-freeman" key="Location-location-death-vr-atlanta-ga-a-freeman" name="Atlanta GA Death Location - Freeman"/>
+<artifact id="Location/location-injury-vr-atlanta-ga-a-freeman" key="Location-location-injury-vr-atlanta-ga-a-freeman" name="Atlanta GA Injury Location - Freeman"/>
 <artifact id="StructureDefinition/vrdr-automated-underlying-cause-of-death" key="StructureDefinition-vrdr-automated-underlying-cause-of-death" name="Automated Underlying Cause Of Death"/>
 <artifact id="Observation/AutomatedUnderlyingCauseOfDeath-Example1" key="Observation-AutomatedUnderlyingCauseOfDeath-Example1" name="AutomatedUnderlyingCauseOfDeath-Example1"/>
 <artifact id="StructureDefinition/vrdr-autopsy-performed-indicator" key="StructureDefinition-VRDR-Autopsy-Performed-Indicator" name="Autopsy Performed Indicator"/>
 <artifact deprecated="true" id="Observation/0db13e0d-fea6-4ef1-8285-62d761f61d88" key="Observation-0db13e0d-fea6-4ef1-8285-62d761f61d88" name="Autopsy Performed Indicator Instance Example"/>
 <artifact id="Observation/AutopsyPerformedIndicator-Example1" key="Observation-AutopsyPerformedIndicator-Example1" name="AutopsyPerformedIndicator-Example1"/>
+<artifact id="Observation/AutopsyPerformedIndicatorUT-Example1" key="Observation-AutopsyPerformedIndicatorUT-Example1" name="AutopsyPerformedIndicatorUT-Example1"/>
 <artifact deprecated="true" id="StructureDefinition/AuxiliaryStateIdentifier" key="StructureDefinition-AuxiliaryStateIdentifier" name="Auxiliary State Identifier"/>
-<artifact id="StructureDefinition/AuxiliaryStateIdentifier1" key="StructureDefinition-AuxiliaryStateIdentifier1" name="Auxiliary State Identifier1"/>
-<artifact id="StructureDefinition/AuxiliaryStateIdentifier2" key="StructureDefinition-AuxiliaryStateIdentifier2" name="Auxiliary State Identifier2"/>
-<artifact id="StructureDefinition/vrdr-birth-record-identifier" key="StructureDefinition-VRDR-BirthRecordIdentifier" name="Birth Record Identifier"/>
+<artifact deprecated="true" id="StructureDefinition/AuxiliaryStateIdentifier1" key="StructureDefinition-AuxiliaryStateIdentifier1" name="Auxiliary State Identifier1"/>
+<artifact deprecated="true" id="StructureDefinition/AuxiliaryStateIdentifier2" key="StructureDefinition-AuxiliaryStateIdentifier2" name="Auxiliary State Identifier2 Vital Records"/>
+<artifact id="StructureDefinition/vrdr-birth-record-identifier-child" key="StructureDefinition-vrdr-birth-record-identifier-child" name="Birth Record Identifier Child"/>
 <artifact deprecated="true" id="Observation/6606dd3a-49ba-47a9-a6e7-e7e4ebeddac7" key="Observation-6606dd3a-49ba-47a9-a6e7-e7e4ebeddac7" name="Birth Record Identifier Example"/>
+<artifact id="StructureDefinition/vrdr-birth-record-identifier" key="StructureDefinition-VRDR-BirthRecordIdentifier" name="Birth Record Identifier Infant"/>
+<artifact deprecated="true" id="CodeSystem/CodeSystem-vr-edit-flags" key="CodeSystem-CodeSystem-vr-edit-flags" name="Birth and Death Edit Flags Vital Records"/>
 <artifact id="Observation/BirthRecordIdentifier-Example1" key="Observation-BirthRecordIdentifier-Example1" name="BirthRecordIdentifier-Example1"/>
-<artifact id="ValueSet/vrdr-birthplace-country-vs" key="ValueSet-vrdr-birthplace-country-vs" name="Birthplace Country Value Set"/>
-<artifact id="CodeSystem/vrdr-bypass-edit-flag-cs" key="CodeSystem-vrdr-bypass-edit-flag-cs" name="Bypass Edit Flag Code System"/>
-<artifact id="StructureDefinition/BypassEditFlag" key="StructureDefinition-BypassEditFlag" name="BypassEditFlag"/>
+<artifact id="Observation/BirthRecordIdentifierChild-Example1" key="Observation-BirthRecordIdentifierChild-Example1" name="BirthRecordIdentifierChild-Example1"/>
+<artifact id="Observation/BirthRecordIdentifierUT-Example1" key="Observation-BirthRecordIdentifierUT-Example1" name="BirthRecordIdentifierUT-Example1"/>
+<artifact deprecated="true" id="ValueSet/vrdr-birthplace-country-vs" key="ValueSet-vrdr-birthplace-country-vs" name="Birthplace Country Value Set"/>
+<artifact deprecated="true" id="CodeSystem/vrdr-bypass-edit-flag-cs" key="CodeSystem-vrdr-bypass-edit-flag-cs" name="Bypass Edit Flag Code System"/>
+<artifact deprecated="true" id="StructureDefinition/BypassEditFlag" key="StructureDefinition-BypassEditFlag" name="BypassEditFlag"/>
 <artifact deprecated="true" id="StructureDefinition/CDPH-CareTeam" key="StructureDefinition-CDPH-CareTeam" name="CDPH_CareTeam"/>
-<artifact id="CodeSystem/vrdr-canadian-provinces-cs" key="CodeSystem-vrdr-canadian-provinces-cs" name="Canadian Provinces"/>
-<artifact id="ValueSet/vrdr-canada-provinces-vs" key="ValueSet-vrdr-canada-provinces-vs" name="Canadian Provinces Value Set"/>
+<artifact deprecated="true" id="CodeSystem/vrdr-canadian-provinces-cs" key="CodeSystem-vrdr-canadian-provinces-cs" name="Canadian Provinces"/>
+<artifact deprecated="true" id="ValueSet/vrdr-canada-provinces-vs" key="ValueSet-vrdr-canada-provinces-vs" name="Canadian Provinces Value Set"/>
 <artifact deprecated="true" id="StructureDefinition/vrdr-cause-of-death-condition" key="StructureDefinition-VRDR-Cause-Of-Death-Condition" name="Cause Of Death Condition"/>
 <artifact deprecated="true" id="Condition/f0cbc63d-ac4e-469b-8761-70b6ea8bf666" key="Condition-f0cbc63d-ac4e-469b-8761-70b6ea8bf666" name="Cause Of Death Condition Example"/>
 <artifact id="StructureDefinition/vrdr-cause-of-death-part1" key="StructureDefinition-vrdr-cause-of-death-part1" name="Cause Of Death Part 1"/>
-<artifact id="StructureDefinition/vrdr-cause-of-death-coded-bundle" key="StructureDefinition-vrdr-cause-of-death-coded-content-bundle" name="Cause of Death Coded Content Bundle"/>
+<artifact id="StructureDefinition/vrdr-cause-of-death-coded-content-bundle" key="StructureDefinition-vrdr-cause-of-death-coded-content-bundle" name="Cause of Death Coded Content Bundle"/>
 <artifact id="StructureDefinition/vrdr-cause-of-death-part2" key="StructureDefinition-vrdr-cause-of-death-part2" name="Cause of Death Part 2"/>
 <artifact deprecated="true" id="StructureDefinition/vrdr-cause-of-death-pathway" key="StructureDefinition-VRDR-Cause-of-Death-Pathway" name="Cause of Death Pathway"/>
 <artifact deprecated="true" id="List/60401545-f1e1-4a80-867f-02384ffed857" key="List-60401545-f1e1-4a80-867f-02384ffed857" name="Cause of Death Pathway Example"/>
@@ -49,16 +62,17 @@
 <artifact deprecated="true" id="Observation/CauseOfDeathCondition-Example2" key="Observation-CauseOfDeathCondition-Example2" name="CauseOfDeathCondition-Example2"/>
 <artifact id="Observation/CauseOfDeathPart1-Example1" key="Observation-CauseOfDeathPart1-Example1" name="CauseOfDeathPart1-Example1"/>
 <artifact id="Observation/CauseOfDeathPart1-Example2" key="Observation-CauseOfDeathPart1-Example2" name="CauseOfDeathPart1-Example2"/>
+<artifact id="Observation/CauseOfDeathPart1UT-Example1" key="Observation-CauseOfDeathPart1UT-Example1" name="CauseOfDeathPart1UT-Example1"/>
 <artifact id="Observation/CauseOfDeathPart2-Example1" key="Observation-CauseOfDeathPart2-Example1" name="CauseOfDeathPart2-Example1"/>
 <artifact deprecated="true" id="List/CauseOfDeathPathway-Example1" key="List-CauseOfDeathPathway-Example1" name="CauseOfDeathPathway-Example1"/>
-<artifact id="StructureDefinition/CertificateNumber" key="StructureDefinition-CertificateNumber" name="Certificate Number"/>
-<artifact id="StructureDefinition/vrdr-certifier" key="StructureDefinition-VRDR-Certifier" name="Certifier"/>
+<artifact deprecated="true" id="StructureDefinition/CertificateNumber" key="StructureDefinition-CertificateNumber" name="Certificate Number"/>
 <artifact deprecated="true" id="Practitioner/cb1219bc-785f-431c-9f56-b8fbbe78bc4d" key="Practitioner-cb1219bc-785f-431c-9f56-b8fbbe78bc4d" name="Certifier Instance Example"/>
-<artifact id="ValueSet/vrdr-certifier-types-vs" key="ValueSet-vrdr-certifier-types-vs" name="Certifier Types VS"/>
+<artifact id="ValueSet/vrdr-certifier-types-vs" key="ValueSet-vrdr-certifier-types-vs" name="Certifier Types Value Set"/>
 <artifact id="Practitioner/Certifier-Example1" key="Practitioner-Certifier-Example1" name="Certifier-Example1"/>
+<artifact id="Practitioner/Certifier-Example2-no-NPI" key="Practitioner-Certifier-Example2-no-NPI" name="Certifier-Example2-no-NPI"/>
 <artifact id="ConceptMap/CertifierTypesCM" key="ConceptMap-CertifierTypesCM" name="CertifierTypes Concept Map"/>
-<artifact id="StructureDefinition/CityCode" key="StructureDefinition-CityCode" name="City Code"/>
-<artifact id="StructureDefinition/vrdr-coded-race-and-ethnicity" key="StructureDefinition-vrdr-coded-race-and-ethnicity" name="Coded Race and Ethnicity"/>
+<artifact deprecated="true" id="StructureDefinition/CityCode" key="StructureDefinition-CityCode" name="City Code"/>
+<artifact deprecated="true" id="StructureDefinition/vrdr-coded-race-and-ethnicity" key="StructureDefinition-vrdr-coded-race-and-ethnicity" name="Coded Race and Ethnicity"/>
 <artifact id="Observation/CodedRaceAndEthnicity-Example1" key="Observation-CodedRaceAndEthnicity-Example1" name="CodedRaceAndEthnicity-Example1"/>
 <artifact id="StructureDefinition/vrdr-coding-status-values" key="StructureDefinition-vrdr-coding-status-values" name="Coding Status Values"/>
 <artifact id="Parameters/CodingStatusValues-Example1" key="Parameters-CodingStatusValues-Example1" name="CodingStatusValues-Example1"/>
@@ -66,14 +80,14 @@
 <artifact deprecated="true" id="StructureDefinition/vrdr-condition-contributing-to-death" key="StructureDefinition-VRDR-Condition-Contributing-To-Death" name="Condition Contributing To Death"/>
 <artifact deprecated="true" id="Condition/56b8ce2e-64f8-450b-8885-0699a53fc781" key="Condition-56b8ce2e-64f8-450b-8885-0699a53fc781" name="Condition Contributing To Death Example"/>
 <artifact deprecated="true" id="Observation/ConditionContributingToDeath-Example1" key="Observation-ConditionContributingToDeath-Example1" name="ConditionContributingToDeath-Example1"/>
-<artifact id="ValueSet/vrdr-contributory-tobacco-use-vs" key="ValueSet-vrdr-contributory-tobacco-use-vs" name="Contributory Tobacco Use VS"/>
+<artifact id="ValueSet/vrdr-contributory-tobacco-use-vs" key="ValueSet-vrdr-contributory-tobacco-use-vs" name="Contributory Tobacco Use ValueSet"/>
 <artifact id="ConceptMap/ContributoryTobaccoUseCM" key="ConceptMap-ContributoryTobaccoUseCM" name="ContributoryTobaccoUse Concept Map"/>
-<artifact id="CodeSystem/vrdr-country-code-cs" key="CodeSystem-vrdr-country-code-cs" name="Country Codes"/>
-<artifact id="StructureDefinition/Date-Day" key="StructureDefinition-Date-Day" name="Date Day"/>
+<artifact deprecated="true" id="CodeSystem/vrdr-country-code-cs" key="CodeSystem-vrdr-country-code-cs" name="Country Codes"/>
+<artifact deprecated="true" id="StructureDefinition/Date-Day" key="StructureDefinition-Date-Day" name="Date Day"/>
 <artifact deprecated="true" id="CodeSystem/vrdr-date-methods-cs" key="CodeSystem-vrdr-date-methods-cs" name="Date Methods"/>
-<artifact id="StructureDefinition/Date-Month" key="StructureDefinition-Date-Month" name="Date Month"/>
-<artifact id="StructureDefinition/Date-Time" key="StructureDefinition-Date-Time" name="Date Time"/>
-<artifact id="StructureDefinition/Date-Year" key="StructureDefinition-Date-Year" name="Date Year"/>
+<artifact deprecated="true" id="StructureDefinition/Date-Month" key="StructureDefinition-Date-Month" name="Date Month"/>
+<artifact deprecated="true" id="StructureDefinition/Date-Time" key="StructureDefinition-Date-Time" name="Date Time"/>
+<artifact deprecated="true" id="StructureDefinition/Date-Year" key="StructureDefinition-Date-Year" name="Date Year"/>
 <artifact id="CodeSystem/vrdr-date-of-death-determination-methods-cs" key="CodeSystem-vrdr-date-of-death-determination-methods-cs" name="Date of Death Determination Methods"/>
 <artifact id="ValueSet/vrdr-date-of-death-determination-methods-vs" key="ValueSet-vrdr-date-of-death-determination-methods-vs" name="Date of Death Determination Methods Value Set"/>
 <artifact id="StructureDefinition/vrdr-death-certificate" key="StructureDefinition-VRDR-Death-Certificate" name="Death Certificate"/>
@@ -82,24 +96,28 @@
 <artifact deprecated="true" id="Composition/54fd9b4c-7633-4e34-bf6b-6fbe9d48fd30" key="Composition-54fd9b4c-7633-4e34-bf6b-6fbe9d48fd30" name="Death Certificate Example"/>
 <artifact deprecated="true" id="StructureDefinition/VRDR-Death-Certificate-Reference" key="StructureDefinition-VRDR-Death-Certificate-Reference" name="Death Certificate Reference"/>
 <artifact deprecated="true" id="DocumentReference/bafe16b9-8b50-47e1-829a-a7dbafb45e05" key="DocumentReference-bafe16b9-8b50-47e1-829a-a7dbafb45e05" name="Death Certificate Reference Example"/>
+<artifact id="Composition/DeathCertificateUT-Example1" key="Composition-DeathCertificateUT-Example1" name="Death Certificate for Davis Lineberry Jr"/>
 <artifact deprecated="true" id="StructureDefinition/VRDR-Death-Certification" key="StructureDefinition-VRDR-Death-Certification" name="Death Certification"/>
 <artifact deprecated="true" id="Procedure/219ef5e3-ed0c-4dab-88eb-b114daaebd73" key="Procedure-219ef5e3-ed0c-4dab-88eb-b114daaebd73" name="Death Certification Instance Example"/>
 <artifact id="StructureDefinition/vrdr-death-certification" key="StructureDefinition-vrdr-death-certification" name="Death Certification Procedure"/>
+<artifact id="StructureDefinition/vrdr-certifier" key="StructureDefinition-VRDR-Certifier" name="Death Certifier"/>
 <artifact id="StructureDefinition/vrdr-death-date" key="StructureDefinition-VRDR-Death-Date" name="Death Date"/>
 <artifact deprecated="true" id="Observation/b531cbf7-6290-424c-8155-0549c3fb3243" key="Observation-b531cbf7-6290-424c-8155-0549c3fb3243" name="Death Date Example"/>
 <artifact id="StructureDefinition/vrdr-death-location" key="StructureDefinition-VRDR-Death-Location" name="Death Location"/>
 <artifact deprecated="true" id="Location/b7de6056-817f-4d73-9830-ce566accd044" key="Location-b7de6056-817f-4d73-9830-ce566accd044" name="Death Location Example"/>
 <artifact deprecated="true" id="StructureDefinition/DeathLocationReference" key="StructureDefinition-DeathLocationReference" name="Death Location Reference"/>
+<artifact id="CodeSystem/CodeSystem-death-pregnancy-status" key="CodeSystem-CodeSystem-death-pregnancy-status" name="Death Pregnancy Status Codesystem"/>
+<artifact id="ValueSet/vrdr-death-pregnancy-status-vs" key="ValueSet-ValueSet-death-pregnancy-status" name="Death Pregnancy Status ValueSet"/>
 <artifact deprecated="true" id="StructureDefinition/VRDR-Death-Pronouncement-Performer" key="StructureDefinition-VRDR-Death-Pronouncement-Performer" name="Death Pronouncement Performer"/>
 <artifact deprecated="true" id="Practitioner/9102c234-53ca-4066-8452-42f3ba751c7d" key="Practitioner-9102c234-53ca-4066-8452-42f3ba751c7d" name="Death Pronouncement Performer Example"/>
 <artifact id="Composition/DeathCertificate-Example1" key="Composition-DeathCertificate-Example1" name="DeathCertificate Example1"/>
 <artifact id="Composition/DeathCertificate-Example2" key="Composition-DeathCertificate-Example2" name="DeathCertificate Example2"/>
 <artifact id="Bundle/DeathCertificateDocument-Example1" key="Bundle-DeathCertificateDocument-Example1" name="DeathCertificateDocument-Example1"/>
 <artifact id="Bundle/DeathCertificateDocument-Example2" key="Bundle-DeathCertificateDocument-Example2" name="DeathCertificateDocument-Example2"/>
-<artifact id="Bundle/DeathCertificateDocument-ID-1" key="Bundle-DeathCertificateDocument-ID-1" name="DeathCertificateDocument-ID-1"/>
-<artifact id="Bundle/DeathCertificateDocument-ID-5" key="Bundle-DeathCertificateDocument-ID-5" name="DeathCertificateDocument-ID-5"/>
+<artifact deprecated="true" id="Bundle/DeathCertificateDocument-ID-1" key="Bundle-DeathCertificateDocument-ID-1" name="DeathCertificateDocument-ID-1"/>
+<artifact deprecated="true" id="Bundle/DeathCertificateDocument-ID-5" key="Bundle-DeathCertificateDocument-ID-5" name="DeathCertificateDocument-ID-5"/>
 <artifact deprecated="true" id="Bundle/DeathCertificateDocument-ID-6" key="Bundle-DeathCertificateDocument-ID-6" name="DeathCertificateDocument-ID-6"/>
-<artifact id="Bundle/DeathCertificateDocument-NJ-1" key="Bundle-DeathCertificateDocument-NJ-1" name="DeathCertificateDocument-NJ-1"/>
+<artifact deprecated="true" id="Bundle/DeathCertificateDocument-NJ-1" key="Bundle-DeathCertificateDocument-NJ-1" name="DeathCertificateDocument-NJ-1"/>
 <artifact deprecated="true" id="Bundle/DeathCertificateDocument-Test1" key="Bundle-DeathCertificateDocument-Test1" name="DeathCertificateDocument-Test1"/>
 <artifact id="Bundle/DeathCertificateDocument-UT-1" key="Bundle-DeathCertificateDocument-UT-1" name="DeathCertificateDocument-UT-1"/>
 <artifact id="Procedure/DeathCertification-Example1" key="Procedure-DeathCertification-Example1" name="DeathCertification-Example1"/>
@@ -108,9 +126,11 @@
 <artifact id="Observation/DeathDate-Example2" key="Observation-DeathDate-Example2" name="DeathDate-Example2"/>
 <artifact id="Observation/DeathDate-Example3" key="Observation-DeathDate-Example3" name="DeathDate-Example3"/>
 <artifact id="Observation/DeathDate-Example4" key="Observation-DeathDate-Example4" name="DeathDate-Example4"/>
+<artifact id="Observation/DeathDateUT-Example1" key="Observation-DeathDateUT-Example1" name="DeathDateUT-Example1"/>
 <artifact id="Location/DeathLocation-Example1" key="Location-DeathLocation-Example1" name="DeathLocation-Example1"/>
 <artifact id="Location/DeathLocation-Example2" key="Location-DeathLocation-Example2" name="DeathLocation-Example2"/>
 <artifact id="Location/DeathLocation-Example3" key="Location-DeathLocation-Example3" name="DeathLocation-Example3"/>
+<artifact id="Location/DeathLocationUT-Example1" key="Location-DeathLocationUT-Example1" name="DeathLocationUT-Example1"/>
 <artifact id="StructureDefinition/vrdr-decedent" key="StructureDefinition-VRDR-Decedent" name="Decedent"/>
 <artifact id="StructureDefinition/vrdr-decedent-age" key="StructureDefinition-vrdr-decedent-age" name="Decedent Age"/>
 <artifact deprecated="true" id="Observation/df5a2807-e0b2-4971-9820-efdbbbfcef7b" key="Observation-df5a2807-e0b2-4971-9820-efdbbbfcef7b" name="Decedent Age Example"/>
@@ -125,14 +145,13 @@
 <artifact deprecated="true" id="Observation/636dafac-0d92-4649-b838-004bcf714f5aj" key="Observation-636dafac-0d92-4649-b838-004bcf714f5aj" name="Decedent Military Service Example"/>
 <artifact id="StructureDefinition/vrdr-decedent-mother" key="StructureDefinition-vrdr-decedent-mother" name="Decedent Mother"/>
 <artifact deprecated="true" id="RelatedPerson/89ababc6-8c2a-4e76-9f53-8677822f54a9" key="RelatedPerson-89ababc6-8c2a-4e76-9f53-8677822f54a9" name="Decedent Mother Example"/>
-<artifact deprecated="true" id="StructureDefinition/VRDR-Decedent-Pregnancy" key="StructureDefinition-VRDR-Decedent-Pregnancy" name="Decedent Pregnancy"/>
+<artifact deprecated="true" id="StructureDefinition/vrdr-decedent-pregnancy-status" key="StructureDefinition-VRDR-Decedent-Pregnancy" name="Decedent Pregnancy"/>
 <artifact deprecated="true" id="Observation/092e7b13-224d-46a6-ac31-0d98d4c84126" key="Observation-092e7b13-224d-46a6-ac31-0d98d4c84126" name="Decedent Pregnancy Example"/>
-<artifact id="StructureDefinition/vrdr-decedent-pregnancy-status" key="StructureDefinition-vrdr-decedent-pregnancy-status" name="Decedent Pregnancy Status"/>
 <artifact id="StructureDefinition/vrdr-decedent-spouse" key="StructureDefinition-VRDR-Decedent-Spouse" name="Decedent Spouse"/>
 <artifact deprecated="true" id="RelatedPerson/962fded4-b90a-44f7-950e-3832011ad65f" key="RelatedPerson-962fded4-b90a-44f7-950e-3832011ad65f" name="Decedent Spouse Example"/>
 <artifact deprecated="true" id="StructureDefinition/vrdr-decedent-transportation-role" key="StructureDefinition-VRDR-Decedent-Transportation-Role" name="Decedent Transportation Role"/>
 <artifact deprecated="true" id="Observation/4424113f-69c4-40fe-b88f-d7b03304dfe4" key="Observation-4424113f-69c4-40fe-b88f-d7b03304dfe4" name="Decedent Transportation Role Example"/>
-<artifact id="StructureDefinition/vrdr-decedent-usual-work" key="StructureDefinition-vrdr-decedent-usual-work" name="Decedent Usual Work"/>
+<artifact deprecated="true" id="StructureDefinition/vrdr-decedent-usual-work" key="StructureDefinition-vrdr-decedent-usual-work" name="Decedent Usual Work"/>
 <artifact deprecated="true" id="Observation/48b230c3-c5b5-4844-83bf-ede59170676e" key="Observation-48b230c3-c5b5-4844-83bf-ede59170676e" name="Decedent Usual Work Example"/>
 <artifact deprecated="true" id="StructureDefinition/VRDR-Decedent-Education-Level" key="StructureDefinition-VRDR-Decedent-Education-Level" name="Decedent's Education Level"/>
 <artifact deprecated="true" id="StructureDefinition/VRDR-Decedent-Mother" key="StructureDefinition-VRDR-Decedent-Mother" name="Decedent's Mother"/>
@@ -150,52 +169,67 @@
 <artifact id="Observation/DecedentPregnancyStatus-Example1" key="Observation-DecedentPregnancyStatus-Example1" name="DecedentPregnancyStatus-Example1"/>
 <artifact id="RelatedPerson/DecedentSpouse-Example1" key="RelatedPerson-DecedentSpouse-Example1" name="DecedentSpouse-Example1"/>
 <artifact deprecated="true" id="Observation/DecedentTransportationRole-Example1" key="Observation-DecedentTransportationRole-Example1" name="DecedentTransportationRole-Example1"/>
+<artifact id="Patient/DecedentUT-Example1" key="Patient-DecedentUT-Example1" name="DecedentUT-Example1"/>
 <artifact id="Observation/DecedentUsualWork-Example1" key="Observation-DecedentUsualWork-Example1" name="DecedentUsualWork-Example1"/>
 <artifact id="Observation/DecedentUsualWork-Example2" key="Observation-DecedentUsualWork-Example2" name="DecedentUsualWork-Example2"/>
-<artifact id="StructureDefinition/vrdr-demographic-coded-bundle" key="StructureDefinition-vrdr-demographic-coded-content-bundle" name="Demographic Coded Content Bundle"/>
+<artifact id="StructureDefinition/vrdr-demographic-coded-content-bundle" key="StructureDefinition-vrdr-demographic-coded-content-bundle" name="Demographic Coded Content Bundle"/>
 <artifact id="Bundle/DemographicCodedContentBundle-Example1" key="Bundle-DemographicCodedContentBundle-Example1" name="DemographicCodedContentBundle-Example1"/>
 <artifact id="StructureDefinition/vrdr-disposition-location" key="StructureDefinition-VRDR-Disposition-Location" name="Disposition Location"/>
 <artifact deprecated="true" id="Location/bbe38248-9a8d-414f-996e-58d5fc9eb800" key="Location-bbe38248-9a8d-414f-996e-58d5fc9eb800" name="Disposition Location Example"/>
 <artifact deprecated="true" id="StructureDefinition/DispositionLocationReference" key="StructureDefinition-DispositionLocationReference" name="Disposition Location Reference"/>
 <artifact id="Location/DispositionLocation-Example1" key="Location-DispositionLocation-Example1" name="DispositionLocation-Example1"/>
-<artifact id="StructureDefinition/DistrictCode" key="StructureDefinition-DistrictCode" name="District Code"/>
-<artifact id="CodeSystem/vrdr-document-section-cs" key="CodeSystem-vrdr-document-section-cs" name="Document Section Code System"/>
+<artifact id="Location/DispositionLocationUT-Example1" key="Location-DispositionLocationUT-Example1" name="DispositionLocationUT-Example1"/>
+<artifact id="Observation/DispositionMethodUT-Example1" key="Observation-DispositionMethodUT-Example1" name="DispositionMethodUT-Example1"/>
+<artifact deprecated="true" id="StructureDefinition/DistrictCode" key="StructureDefinition-DistrictCode" name="District Code"/>
+<artifact id="CodeSystem/vrdr-document-section-cs" key="CodeSystem-vrdr-document-section-cs" name="Document Section"/>
 <artifact deprecated="true" key="DocumentReference" name="DocumentReference"/>
 <artifact id="ValueSet/vrdr-edit-bypass-01-vs" key="ValueSet-vrdr-edit-bypass-01-vs" name="Edit Bypass 01"/>
 <artifact id="ValueSet/vrdr-edit-bypass-012-vs" key="ValueSet-vrdr-edit-bypass-012-vs" name="Edit Bypass 012"/>
-<artifact id="ValueSet/vrdr-edit-bypass-01234-vs" key="ValueSet-vrdr-edit-bypass-01234-vs" name="Edit Bypass 01234"/>
+<artifact deprecated="true" id="ValueSet/vrdr-edit-bypass-01234-vs" key="ValueSet-vrdr-edit-bypass-01234-vs" name="Edit Bypass 01234"/>
+<artifact deprecated="true" id="ValueSet/valueset-edit-bypass-01234-vr" key="ValueSet-valueset-edit-bypass-01234-vr" name="Edit Bypass 01234 Vital Records"/>
 <artifact id="ValueSet/vrdr-edit-bypass-0124-vs" key="ValueSet-vrdr-edit-bypass-0124-vs" name="Edit Bypass 0124"/>
-<artifact id="ConceptMap/EditBypass01234CM" key="ConceptMap-EditBypass01234CM" name="EditBypass01234 Concept Map"/>
-<artifact id="ConceptMap/EditBypass0124CM" key="ConceptMap-EditBypass0124CM" name="EditBypass0124 Concept Map"/>
-<artifact id="ConceptMap/EditBypass012CM" key="ConceptMap-EditBypass012CM" name="EditBypass012 Concept Map"/>
 <artifact id="ConceptMap/EditBypass01CM" key="ConceptMap-EditBypass01CM" name="EditBypass01 Concept Map"/>
-<artifact id="ValueSet/vrdr-education-level-vs" key="ValueSet-vrdr-education-level-vs" name="Education Level"/>
-<artifact id="ConceptMap/EducationLevelCM" key="ConceptMap-EducationLevelCM" name="EducationLevel Concept Map"/>
-<artifact id="StructureDefinition/vrdr-emerging-issues" key="StructureDefinition-vrdr-emerging-issues" name="Emerging Issues"/>
+<artifact id="ConceptMap/EditBypass012CM" key="ConceptMap-EditBypass012CM" name="EditBypass012 Concept Map"/>
+<artifact deprecated="true" id="ConceptMap/EditBypass01234CM" key="ConceptMap-EditBypass01234CM" name="EditBypass01234 Concept Map"/>
+<artifact id="ConceptMap/EditBypass0124CM" key="ConceptMap-EditBypass0124CM" name="EditBypass0124 Concept Map"/>
+<artifact deprecated="true" id="ValueSet/vrdr-education-level-vs" key="ValueSet-vrdr-education-level-vs" name="Education Level"/>
+<artifact deprecated="true" id="ConceptMap/EducationLevelCM" key="ConceptMap-EducationLevelCM" name="EducationLevel Concept Map"/>
+<artifact id="Observation/EducationUT-Example1" key="Observation-EducationUT-Example1" name="EducationUT-Example1"/>
+<artifact deprecated="true" id="StructureDefinition/vrdr-emerging-issues" key="StructureDefinition-vrdr-emerging-issues" name="Emerging Issues"/>
 <artifact id="Observation/EmergingIssues-Example1" key="Observation-EmergingIssues-Example1" name="EmergingIssues-Example1"/>
+<artifact id="Observation/EmergingIssuesUT-Example1" key="Observation-EmergingIssuesUT-Example1" name="EmergingIssuesUT-Example1"/>
 <artifact id="StructureDefinition/vrdr-entity-axis-cause-of-death" key="StructureDefinition-vrdr-entity-axis-cause-of-death" name="Entity Axis Cause Of Death"/>
 <artifact id="Observation/EntityAxisCauseOfDeath-Example1" key="Observation-EntityAxisCauseOfDeath-Example1" name="EntityAxisCauseOfDeath-Example1"/>
 <artifact id="Observation/EntityAxisCauseOfDeath-Example2" key="Observation-EntityAxisCauseOfDeath-Example2" name="EntityAxisCauseOfDeath-Example2"/>
 <artifact id="Observation/EntityAxisCauseOfDeath-Example3" key="Observation-EntityAxisCauseOfDeath-Example3" name="EntityAxisCauseOfDeath-Example3"/>
 <artifact id="Observation/EntityAxisCauseOfDeath-Example4" key="Observation-EntityAxisCauseOfDeath-Example4" name="EntityAxisCauseOfDeath-Example4"/>
+<artifact id="ValueSet/vrdr-death-certification-event-vs" key="ValueSet-vrdr-death-certification-event-vs" name="Event Code for Death Certificate Composition"/>
+<artifact id="ValueSet/vrdr-death-certification-event-max-vs" key="ValueSet-vrdr-death-certification-event-max-vs" name="Event Code for Death Certificate Composition - Max"/>
 <artifact id="StructureDefinition/vrdr-examiner-contacted" key="StructureDefinition-VRDR-Examiner-Contacted" name="Examiner Contacted"/>
 <artifact deprecated="true" id="Observation/4aed1450-ab2d-4cb9-858f-227b127323a6" key="Observation-4aed1450-ab2d-4cb9-858f-227b127323a6" name="Examiner Contacted Example"/>
 <artifact id="Observation/ExaminerContacted-Example1" key="Observation-ExaminerContacted-Example1" name="ExaminerContacted-Example1"/>
+<artifact id="Observation/ExaminerContactedUT-Example1" key="Observation-ExaminerContactedUT-Example1" name="ExaminerContactedUT-Example1"/>
+<artifact id="RelatedPerson/FatherUT-Example1" key="RelatedPerson-FatherUT-Example1" name="FatherUT-Example1"/>
+<artifact id="StructureDefinition/vrdr-fetal-death-record-identifier" key="StructureDefinition-vrdr-fetal-death-record-identifier" name="Fetal Death Record Identifier"/>
+<artifact id="Observation/FetalDeathRecordIdentifier-Example1" key="Observation-FetalDeathRecordIdentifier-Example1" name="FetalDeathRecordIdentifier-Example1"/>
 <artifact id="StructureDefinition/FilingFormat" key="StructureDefinition-FilingFormat" name="Filing Format"/>
 <artifact id="ValueSet/vrdr-filing-format-vs" key="ValueSet-vrdr-filing-format-vs" name="Filing Format ValueSet"/>
-<artifact id="CodeSystem/vrdr-filing-format-cs" key="CodeSystem-vrdr-filing-format-cs" name="Filing Formats CodeSystem"/>
+<artifact id="CodeSystem/vrdr-filing-format-cs" key="CodeSystem-vrdr-filing-format-cs" name="Filing Formats"/>
 <artifact id="ConceptMap/FilingFormatCM" key="ConceptMap-FilingFormatCM" name="FilingFormat Concept Map"/>
 <artifact id="StructureDefinition/vrdr-funeral-home" key="StructureDefinition-VRDR-Funeral-Home" name="Funeral Home"/>
 <artifact deprecated="true" id="Organization/6f47da13-0c25-483b-8729-7b96716b17fc" key="Organization-6f47da13-0c25-483b-8729-7b96716b17fc" name="Funeral Home Example"/>
 <artifact deprecated="true" id="StructureDefinition/VRDR-Funeral-Service-Licensee" key="StructureDefinition-VRDR-Funeral-Service-Licensee" name="Funeral Service Licensee"/>
 <artifact deprecated="true" id="PractitionerRole/4b96759f-8395-4093-8417-e1ca3cd26f0a" key="PractitionerRole-4b96759f-8395-4093-8417-e1ca3cd26f0a" name="Funeral Service Licensee Example"/>
 <artifact id="Organization/FuneralHome-Example1" key="Organization-FuneralHome-Example1" name="FuneralHome-Example1"/>
-<artifact id="ValueSet/vrdr-hispanic-no-unknown-vs" key="ValueSet-vrdr-hispanic-no-unknown-vs" name="Hispanic(Yes) No Unknown"/>
-<artifact id="ConceptMap/HispanicNoUnknownCM" key="ConceptMap-HispanicNoUnknownCM" name="HispanicNoUnknown Concept Map"/>
-<artifact id="CodeSystem/vrdr-hispanic-origin-cs" key="CodeSystem-vrdr-hispanic-origin-cs" name="HispanicOrigin CS"/>
-<artifact id="ValueSet/vrdr-hispanic-origin-vs" key="ValueSet-vrdr-hispanic-origin-vs" name="HispanicOrigin Value Set"/>
-<artifact id="ConceptMap/HispanicOriginCM" key="ConceptMap-HispanicOriginCM" name="HispanicOrigin Concept Map"/>
-<artifact id="ValueSet/vrdr-icd10-causes-of-death-vs" key="ValueSet-vrdr-icd10-causes-of-death-vs" name="ICD10 Causes of Death VS"/>
+<artifact id="Organization/FuneralHomeUT-Example1" key="Organization-FuneralHomeUT-Example1" name="FuneralHomeUT-Example1"/>
+<artifact deprecated="true" id="ValueSet/vrdr-hispanic-no-unknown-vs" key="ValueSet-vrdr-hispanic-no-unknown-vs" name="Hispanic(Yes) No Unknown"/>
+<artifact deprecated="true" id="ConceptMap/HispanicNoUnknownCM" key="ConceptMap-HispanicNoUnknownCM" name="HispanicNoUnknown Concept Map"/>
+<artifact deprecated="true" id="CodeSystem/vrdr-hispanic-origin-cs" key="CodeSystem-vrdr-hispanic-origin-cs" name="HispanicOrigin CS"/>
+<artifact deprecated="true" id="ConceptMap/HispanicOriginCM" key="ConceptMap-HispanicOriginCM" name="HispanicOrigin Concept Map"/>
+<artifact deprecated="true" id="ValueSet/vrdr-hispanic-origin-vs" key="ValueSet-vrdr-hispanic-origin-vs" name="HispanicOrigin Value Set"/>
+<artifact id="ValueSet/vrdr-icd10-causes-of-death-vs" key="ValueSet-vrdr-icd10-causes-of-death-vs" name="ICD10 Causes of Death ValueSet"/>
+<artifact id="StructureDefinition/industry-occupation-coded-content-bundle" key="StructureDefinition-industry-occupation-coded-content-bundle" name="Industry Occupation Coded Content Bundle"/>
+<artifact id="Bundle/IndustryOccupationCodedContentBundle-Example1" key="Bundle-IndustryOccupationCodedContentBundle-Example1" name="IndustryOccupationCodedContentBundle-Example1"/>
 <artifact id="StructureDefinition/vrdr-injury-incident" key="StructureDefinition-VRDR-InjuryIncident" name="Injury Incident"/>
 <artifact deprecated="true" id="Observation/37c086a1-05bd-479c-92b4-1234d38bfe5a" key="Observation-37c086a1-05bd-479c-92b4-1234d38bfe5a" name="Injury Incident Example"/>
 <artifact id="StructureDefinition/vrdr-injury-location" key="StructureDefinition-VRDR-Injury-Location" name="Injury Location"/>
@@ -203,96 +237,117 @@
 <artifact deprecated="true" id="StructureDefinition/InjuryLocationReference" key="StructureDefinition-InjuryLocationReference" name="Injury Location Reference"/>
 <artifact id="Observation/InjuryIncident-Example1" key="Observation-InjuryIncident-Example1" name="InjuryIncident-Example1"/>
 <artifact id="Observation/InjuryIncident-Example2" key="Observation-InjuryIncident-Example2" name="InjuryIncident-Example2"/>
+<artifact id="Observation/InjuryIncidentUT-Example1" key="Observation-InjuryIncidentUT-Example1" name="InjuryIncidentUT-Example1"/>
 <artifact id="Location/InjuryLocation-Example1" key="Location-InjuryLocation-Example1" name="InjuryLocation-Example1"/>
-<artifact id="StructureDefinition/vrdr-input-race-and-ethnicity" key="StructureDefinition-vrdr-input-race-and-ethnicity" name="Input Race and Ethnicity"/>
+<artifact deprecated="true" id="StructureDefinition/vrdr-input-race-and-ethnicity" key="StructureDefinition-vrdr-input-race-and-ethnicity" name="Input Race and Ethnicity"/>
 <artifact id="Observation/InputRaceAndEthnicity-Example1" key="Observation-InputRaceAndEthnicity-Example1" name="InputRaceAndEthnicity-Example1"/>
-<artifact id="CodeSystem/vrdr-intentional-reject-cs" key="CodeSystem-vrdr-intentional-reject-cs" name="Intentional Reject CodeSystem"/>
+<artifact id="Observation/InputRaceAndEthnicityUT-Example1" key="Observation-InputRaceAndEthnicityUT-Example1" name="InputRaceAndEthnicityUT-Example1"/>
+<artifact id="CodeSystem/vrdr-intentional-reject-cs" key="CodeSystem-vrdr-intentional-reject-cs" name="Intentional Reject"/>
 <artifact id="ValueSet/vrdr-intentional-reject-vs" key="ValueSet-vrdr-intentional-reject-vs" name="Intentional Reject ValueSet"/>
 <artifact id="ConceptMap/IntentionalRejectCM" key="ConceptMap-IntentionalRejectCM" name="IntentionalReject Concept Map"/>
 <artifact deprecated="true" id="StructureDefinition/VRDR-Interested-Party" key="StructureDefinition-VRDR-Interested-Party" name="Interested Party"/>
 <artifact deprecated="true" id="Organization/1a110397-936f-4be4-ab10-2caed226569d" key="Organization-1a110397-936f-4be4-ab10-2caed226569d" name="Interested Party Instance Example"/>
-<artifact id="ValueSet/vrdr-jurisdiction-vs" key="ValueSet-vrdr-jurisdiction-vs" name="Jurisdictions Value Set"/>
-<artifact id="ValueSet/vrdr-jurisdictions-provinces-vs" key="ValueSet-vrdr-jurisdictions-provinces-vs" name="Jurisdictions and Provinces Value Set"/>
-<artifact id="CodeSystem/vrdr-jurisdictions-cs" key="CodeSystem-vrdr-jurisdictions-cs" name="Jurisdictions that are not US States or Territories"/>
+<artifact deprecated="true" id="ValueSet/vrdr-jurisdiction-vs" key="ValueSet-vrdr-jurisdiction-vs" name="Jurisdictions Value Set"/>
+<artifact deprecated="true" id="ValueSet/vrdr-jurisdictions-provinces-vs" key="ValueSet-vrdr-jurisdictions-provinces-vs" name="Jurisdictions and Provinces Value Set"/>
+<artifact deprecated="true" id="CodeSystem/vrdr-jurisdictions-cs" key="CodeSystem-vrdr-jurisdictions-cs" name="Jurisdictions that are not US States or Territories"/>
 <artifact deprecated="true" id="StructureDefinition/LANES-Condition" key="StructureDefinition-LANES-Condition" name="LANES_Condition"/>
 <artifact deprecated="true" key="List" name="List"/>
 <artifact id="CodeSystem/vrdr-component-cs" key="CodeSystem-vrdr-component-cs" name="Local Component Codes"/>
 <artifact id="CodeSystem/vrdr-observations-cs" key="CodeSystem-vrdr-observations-cs" name="Local Observation Codes"/>
 <artifact id="CodeSystem/vrdr-organization-type-cs" key="CodeSystem-vrdr-organization-type-cs" name="Local Organization Type"/>
 <artifact deprecated="true" key="Location" name="Location"/>
-<artifact id="StructureDefinition/Location-Jurisdiction-Id" key="StructureDefinition-Location-Jurisdiction-Id" name="Location Jurisdiction Id"/>
-<artifact id="CodeSystem/vrdr-location-type-cs" key="CodeSystem-vrdr-location-type-cs" name="Location Type Code System"/>
+<artifact deprecated="true" id="StructureDefinition/Location-Jurisdiction-Id" key="StructureDefinition-Location-Jurisdiction-Id" name="Location Jurisdiction Id"/>
+<artifact deprecated="true" id="StructureDefinition/Extension-jurisdiction-id-vr" key="StructureDefinition-Extension-jurisdiction-id-vr" name="Location Jurisdiction Id Vital Records"/>
+<artifact id="CodeSystem/vrdr-location-type-cs" key="CodeSystem-vrdr-location-type-cs" name="Location Type"/>
+<artifact deprecated="true" id="StructureDefinition/Location-vr" key="StructureDefinition-Location-vr" name="Location for Vital Records"/>
 <artifact id="StructureDefinition/vrdr-manner-of-death" key="StructureDefinition-VRDR-Manner-of-Death" name="Manner of Death"/>
 <artifact deprecated="true" id="Observation/d7c2e459-c7ca-415c-a38c-f78a0f0c5813" key="Observation-d7c2e459-c7ca-415c-a38c-f78a0f0c5813" name="Manner of Death Example"/>
-<artifact id="ValueSet/vrdr-manner-of-death-vs" key="ValueSet-vrdr-Manner-of-Death" name="Manner of Death VS"/>
-<artifact id="Observation/MannerOfDeath-Example1" key="Observation-MannerOfDeath-Example1" name="MannerOfDeath-Example1"/>
+<artifact id="ValueSet/vrdr-manner-of-death-vs" key="ValueSet-vrdr-Manner-of-Death" name="Manner of Death ValueSet"/>
 <artifact id="ConceptMap/MannerOfDeathCM" key="ConceptMap-MannerOfDeathCM" name="MannerOfDeath Concept Map"/>
+<artifact id="Observation/MannerOfDeath-Example1" key="Observation-MannerOfDeath-Example1" name="MannerOfDeath-Example1"/>
+<artifact id="Observation/MannerOfDeathUT-Example1" key="Observation-MannerOfDeathUT-Example1" name="MannerOfDeathUT-Example1"/>
 <artifact id="StructureDefinition/vrdr-manual-underlying-cause-of-death" key="StructureDefinition-vrdr-manual-underlying-cause-of-death" name="Manual Underlying Cause Of Death"/>
 <artifact id="Observation/ManualUnderlyingCauseOfDeath-Example1" key="Observation-ManualUnderlyingCauseOfDeath-Example1" name="ManualUnderlyingCauseOfDeath-Example1"/>
-<artifact id="ValueSet/vrdr-marital-status-vs" key="ValueSet-vrdr-marital-status-vs" name="Marital Status Value Set"/>
-<artifact id="ConceptMap/MaritalStatusCM" key="ConceptMap-MaritalStatusCM" name="MaritalStatus Concept Map"/>
-<artifact id="ValueSet/vrdr-method-of-disposition-vs" key="ValueSet-vrdr-method-of-disposition-vs" name="Method of Disposition VS"/>
+<artifact deprecated="true" id="ValueSet/vrdr-marital-status-vs" key="ValueSet-vrdr-marital-status-vs" name="Marital Status Value Set"/>
+<artifact deprecated="true" id="ValueSet/ValueSet-marital-status-vr" key="ValueSet-ValueSet-marital-status-vr" name="Marital Status Vital Records"/>
+<artifact deprecated="true" id="ConceptMap/MaritalStatusCM" key="ConceptMap-MaritalStatusCM" name="MaritalStatus Concept Map"/>
+<artifact id="ValueSet/vrdr-method-of-disposition-vs" key="ValueSet-vrdr-method-of-disposition-vs" name="Method of Disposition ValueSet"/>
 <artifact id="ConceptMap/MethodOfDispositionCM" key="ConceptMap-MethodOfDispositionCM" name="MethodOfDisposition Concept Map"/>
-<artifact id="CodeSystem/vrdr-missing-value-reason-cs" key="CodeSystem-vrdr-missing-value-reason-cs" name="Missing Value Reason Codesystem"/>
+<artifact id="Observation/MilitaryServiceUT-Example1" key="Observation-MilitaryServiceUT-Example1" name="MilitaryServiceUT-Example1"/>
+<artifact deprecated="true" id="CodeSystem/vrdr-missing-value-reason-cs" key="CodeSystem-vrdr-missing-value-reason-cs" name="Missing Value Reason Codesystem"/>
 <artifact id="StructureDefinition/vrdr-mortality-roster-bundle" key="StructureDefinition-vrdr-mortality-roster-bundle" name="Mortality Roster Bundle"/>
 <artifact id="Bundle/MortalityRosterBundle-Example1" key="Bundle-MortalityRosterBundle-Example1" name="MortalityRosterBundle-Example1"/>
-<artifact deprecated="true" id="StructureDefinition/VRDR-Mortician" key="StructureDefinition-VRDR-Mortician" name="Mortician"/>
+<artifact id="StructureDefinition/vrdr-mortician" key="StructureDefinition-VRDR-Mortician" name="Mortician"/>
 <artifact deprecated="true" id="Practitioner/80db6f45-8a6d-4583-8a03-55a6663523c2" key="Practitioner-80db6f45-8a6d-4583-8a03-55a6663523c2" name="Mortician Example"/>
 <artifact id="Practitioner/Mortician-Example1" key="Practitioner-Mortician-Example1" name="Mortician-Example1"/>
+<artifact id="RelatedPerson/MotherUT-Example1" key="RelatedPerson-MotherUT-Example1" name="MotherUT-Example1"/>
 <artifact deprecated="true" id="StructureDefinition/NVSS-Ethnicity" key="StructureDefinition-NVSS-Ethnicity" name="NVSS Ethnicity"/>
 <artifact deprecated="true" id="StructureDefinition/NVSS-Race" key="StructureDefinition-NVSS-Race" name="NVSS Race"/>
 <artifact id="StructureDefinition/NVSS-SexAtDeath" key="StructureDefinition-NVSS-SexAtDeath" name="NVSS SexAtDeath"/>
 <artifact deprecated="true" id="ValueSet/vrdr-not-applicable-vs" key="ValueSet-vrdr-not-applicable-vs" name="NotApplicable"/>
 <artifact deprecated="true" id="ConceptMap/NotApplicableCM" key="ConceptMap-NotApplicableCM" name="NotApplicable Concept Map"/>
 <artifact deprecated="true" key="Observation" name="Observation"/>
+<artifact deprecated="true" id="StructureDefinition/vrdr-decedent-pregnancy-status-old" key="StructureDefinition-vrdr-decedent-pregnancy-status" name="Observation - Decedent Pregnancy"/>
 <artifact deprecated="true" id="StructureDefinition/Observation-Location" key="StructureDefinition-Observation-Location" name="Observation Location"/>
 <artifact deprecated="true" key="Organization" name="Organization"/>
 <artifact deprecated="true" id="StructureDefinition/vrdr-parameters-2022" key="StructureDefinition-vrdr-parameters-2022" name="Parameters for 2022 Submission"/>
 <artifact deprecated="true" id="Parameters/Parameters2022-Example1" key="Parameters-Parameters2022-Example1" name="Parameters2022-Example1"/>
-<artifact id="StructureDefinition/PartialDate" key="StructureDefinition-PartialDate" name="Partial Date"/>
-<artifact id="StructureDefinition/PartialDateTime" key="StructureDefinition-PartialDateTime" name="Partial Date Time"/>
+<artifact deprecated="true" id="StructureDefinition/PartialDate" key="StructureDefinition-PartialDate" name="Partial Date"/>
+<artifact deprecated="true" id="StructureDefinition/PartialDateTime" key="StructureDefinition-PartialDateTime" name="Partial Date Time"/>
 <artifact deprecated="true" key="Patient" name="Patient"/>
 <artifact id="StructureDefinition/vrdr-place-of-injury" key="StructureDefinition-vrdr-place-of-injury" name="Place Of Injury"/>
-<artifact id="ValueSet/vrdr-place-of-death-vs" key="ValueSet-vrdr-place-of-death-vs" name="Place of Death VS -- PHVS_PlaceOfDeath_NCHS"/>
-<artifact deprecated="true" id="CodeSystem/vrdr-place-of-injury-cs" key="CodeSystem-vrdr-place-of-injury-cs" name="Place of Injury (WHO/ICD)"/>
-<artifact id="ValueSet/vrdr-place-of-injury-vs" key="ValueSet-vrdr-place-of-injury-vs" name="Place of Injury VS"/>
+<artifact id="ValueSet/vrdr-place-of-death-vs" key="ValueSet-vrdr-place-of-death-vs" name="Place of Death ValueSet"/>
+<artifact id="ValueSet/vrdr-place-of-injury-other-vs" key="ValueSet-vrdr-place-of-injury-other-vs" name="Place of Injury - Other ValueSet"/>
+<artifact deprecated="true" id="ValueSet/vrdr-place-of-injury-cs" key="CodeSystem-vrdr-place-of-injury-cs" name="Place of Injury CS"/>
+<artifact id="ValueSet/vrdr-place-of-injury-vs" key="ValueSet-vrdr-place-of-injury-vs" name="Place of Injury ValueSet"/>
 <artifact id="ConceptMap/PlaceOfDeathCM" key="ConceptMap-PlaceOfDeathCM" name="PlaceOfDeath Concept Map"/>
-<artifact id="Observation/PlaceOfInjury-Example1" key="Observation-PlaceOfInjury-Example1" name="PlaceOfInjury-Example1"/>
 <artifact id="ConceptMap/PlaceOfInjuryCM" key="ConceptMap-PlaceOfInjuryCM" name="PlaceOfInjury Concept Map"/>
-<artifact id="StructureDefinition/PostDirectional" key="StructureDefinition-PostDirectional" name="PostDirectional"/>
+<artifact id="Observation/PlaceOfInjury-Example1" key="Observation-PlaceOfInjury-Example1" name="PlaceOfInjury-Example1"/>
+<artifact deprecated="true" id="StructureDefinition/PostDirectional" key="StructureDefinition-PostDirectional" name="PostDirectional"/>
 <artifact deprecated="true" key="Practitioner" name="Practitioner"/>
+<artifact id="Practitioner/practitioner-vital-records-janet-seito" key="Practitioner-practitioner-vital-records-janet-seito" name="Practitioner - Vital Records - Janet Seito"/>
+<artifact id="StructureDefinition/practitioner-role" key="StructureDefinition-practitioner-role" name="Practitioner Role"/>
+<artifact deprecated="true" id="StructureDefinition/practitioner-role-death-certifier" key="StructureDefinition-practitioner-role-death-certifier" name="Practitioner Role - Death Certifier"/>
 <artifact deprecated="true" key="PractitionerRole" name="PractitionerRole"/>
-<artifact id="StructureDefinition/PreDirectional" key="StructureDefinition-PreDirectional" name="PreDirectional"/>
-<artifact id="ValueSet/vrdr-pregnancy-status-vs" key="ValueSet-vrdr-pregnancy-status-vs" name="Pregnancy Status"/>
-<artifact id="CodeSystem/vrdr-pregnancy-status-cs" key="CodeSystem-vrdr-pregnancy-status-cs" name="Pregnancy Status Codes"/>
-<artifact id="ConceptMap/PregnancyStatusCM" key="ConceptMap-PregnancyStatusCM" name="PregnancyStatus Concept Map"/>
+<artifact id="Practitioner/PractitionerUT-Certifier" key="Practitioner-PractitionerUT-Certifier" name="PractitionerUT-Certifier"/>
+<artifact deprecated="true" id="Practitioner/PractitionerUT-Example1" key="Practitioner-PractitionerUT-Example1" name="PractitionerUT-Example1"/>
+<artifact id="Practitioner/PractitionerUT-Pronouncer" key="Practitioner-PractitionerUT-Pronouncer" name="PractitionerUT-Pronouncer"/>
+<artifact deprecated="true" id="StructureDefinition/PreDirectional" key="StructureDefinition-PreDirectional" name="PreDirectional"/>
+<artifact deprecated="true" id="ValueSet/vrdr-pregnancy-status-vs" key="ValueSet-vrdr-pregnancy-status-vs" name="Pregnancy Status"/>
+<artifact deprecated="true" id="CodeSystem/vrdr-pregnancy-status-cs" key="CodeSystem-vrdr-pregnancy-status-cs" name="Pregnancy Status Codes"/>
+<artifact id="ConceptMap/DeathPregnancyStatusCM" key="ConceptMap-PregnancyStatusCM" name="PregnancyStatus Concept Map"/>
+<artifact id="Observation/PregnancyUT-Example1" key="Observation-PregnancyUT-Example1" name="PregnancyUT-Example1"/>
 <artifact deprecated="true" key="Procedure" name="Procedure"/>
-<artifact id="CodeSystem/vrdr-race-code-cs" key="CodeSystem-vrdr-race-code-cs" name="Race Code CS"/>
-<artifact id="ValueSet/vrdr-race-code-vs" key="ValueSet-vrdr-race-code-vs" name="Race Code Value Set"/>
-<artifact id="ValueSet/vrdr-race-missing-value-reason-vs" key="ValueSet-vrdr-race-nissing-value-reason-vs" name="Race Missing Value Reason"/>
-<artifact id="CodeSystem/vrdr-race-recode-40-cs" key="CodeSystem-vrdr-race-recode-40-cs" name="Race Recode 40 CS"/>
-<artifact id="ValueSet/vrdr-race-recode-40-vs" key="ValueSet-vrdr-race-recode-40-vs" name="Race Recode 40 Value Set"/>
-<artifact id="ConceptMap/RaceCodeCM" key="ConceptMap-RaceCodeCM" name="RaceCodes Concept Map"/>
-<artifact id="ConceptMap/RaceMissingValueReasonCM" key="ConceptMap-RaceMissingValueReasonCM" name="RaceMissingValueReason Concept Map"/>
-<artifact id="ConceptMap/RaceRecode40CM" key="ConceptMap-RaceRecode40CM" name="RaceRecode40 Concept Map"/>
+<artifact id="Procedure/procedure-death-certification-vr-a-freeman" key="Procedure-procedure-death-certification-vr-a-freeman" name="Procedure - Death Certification Vital Records - A Freeman"/>
+<artifact id="Procedure/ProcedureDeathCertificationUT-Example1" key="Procedure-ProcedureDeathCertificationUT-Example1" name="ProcedureDeathCertificationUT-Example1"/>
+<artifact id="Practitioner/Pronouncer-Example1" key="Practitioner-Pronouncer-Example1" name="Pronouncer-Example1"/>
+<artifact deprecated="true" id="CodeSystem/vrdr-race-code-cs" key="CodeSystem-vrdr-race-code-cs" name="Race Code CS"/>
+<artifact deprecated="true" id="ValueSet/vrdr-race-code-vs" key="ValueSet-vrdr-race-code-vs" name="Race Code Value Set"/>
+<artifact deprecated="true" id="ValueSet/vrdr-race-missing-value-reason-vs" key="ValueSet-vrdr-race-nissing-value-reason-vs" name="Race Missing Value Reason"/>
+<artifact deprecated="true" id="CodeSystem/vrdr-race-recode-40-cs" key="CodeSystem-vrdr-race-recode-40-cs" name="Race Recode 40 CS"/>
+<artifact deprecated="true" id="ValueSet/vrdr-race-recode-40-vs" key="ValueSet-vrdr-race-recode-40-vs" name="Race Recode 40 Value Set"/>
+<artifact deprecated="true" id="ConceptMap/RaceCodeCM" key="ConceptMap-RaceCodeCM" name="RaceCodes Concept Map"/>
+<artifact deprecated="true" id="ConceptMap/RaceMissingValueReasonCM" key="ConceptMap-RaceMissingValueReasonCM" name="RaceMissingValueReason Concept Map"/>
+<artifact deprecated="true" id="ConceptMap/RaceRecode40CM" key="ConceptMap-RaceRecode40CM" name="RaceRecode40 Concept Map"/>
 <artifact id="StructureDefinition/vrdr-record-axis-cause-of-death" key="StructureDefinition-vrdr-record-axis-cause-of-death" name="Record Axis Cause Of Death"/>
 <artifact id="Observation/RecordAxisCauseOfDeath-Example1" key="Observation-RecordAxisCauseOfDeath-Example1" name="RecordAxisCauseOfDeath-Example1"/>
 <artifact id="Observation/RecordAxisCauseOfDeath-Example2" key="Observation-RecordAxisCauseOfDeath-Example2" name="RecordAxisCauseOfDeath-Example2"/>
 <artifact deprecated="true" key="RelatedPerson" name="RelatedPerson"/>
 <artifact deprecated="true" id="ValueSet/vrdr-related-person-relationship-type-vs" key="ValueSet-vrdr-related-person-relationship-type-vs" name="RelatedPerson Relationship type VS -- PHVS_RelatedPersonRelationshipType_NCHS"/>
 <artifact id="ConceptMap/ReplaceStatusCM" key="ConceptMap-ReplaceStatusCM" name="ReplaceStatus Concept Map"/>
-<artifact id="ValueSet/vrdr-replace-status-vs" key="ValueSet-vrdr-replace-status-vs" name="Replacement Status VS"/>
-<artifact id="CodeSystem/vrdr-replace-status-cs" key="CodeSystem-vrdr-replace-status-cs" name="Replacement Status of Death Record Submission"/>
+<artifact id="ValueSet/vrdr-replace-status-vs" key="ValueSet-vrdr-replace-status-vs" name="Replacement Status ValueSet"/>
+<artifact id="CodeSystem/vrdr-replace-status-cs" key="CodeSystem-vrdr-replace-status-cs" name="Replacement Status of Death Record Submission CodeSystem"/>
 <artifact id="StructureDefinition/ReplaceStatus" key="StructureDefinition-ReplaceStatus" name="Replacement Status of a Death Record (deprecated)"/>
-<artifact id="ValueSet/vrdr-residence-country-vs" key="ValueSet-vrdr-residence-country-vs" name="Residence Country Value Set"/>
-<artifact id="ValueSet/vrdr-spouse-alive-vs" key="ValueSet-vrdr-spouse-alive-vs" name="Spouse Alive Value Set"/>
+<artifact deprecated="true" id="ValueSet/vrdr-residence-country-vs" key="ValueSet-vrdr-residence-country-vs" name="Residence Country Value Set"/>
+<artifact id="ValueSet/vrdr-spouse-alive-vs" key="ValueSet-vrdr-spouse-alive-vs" name="Spouse Alive ValueSet"/>
 <artifact id="StructureDefinition/SpouseAlive" key="StructureDefinition-SpouseAlive" name="Spouse Is Alive"/>
 <artifact id="ConceptMap/SpouseAliveCM" key="ConceptMap-SpouseAliveCM" name="SpouseAlive Concept Map"/>
 <artifact id="StructureDefinition/StateSpecificField" key="StructureDefinition-StateSpecificField" name="State Specific Field"/>
-<artifact id="ValueSet/vrdr-states-territories-provinces-vs" key="ValueSet-vrdr-states-territories-provinces-vs" name="States, Territories and Provinces Value Set"/>
-<artifact id="StructureDefinition/StreetDesignator" key="StructureDefinition-StreetDesignator" name="StreetDesignator"/>
-<artifact id="StructureDefinition/StreetName" key="StructureDefinition-StreetName" name="StreetName"/>
-<artifact id="StructureDefinition/StreetNumber" key="StructureDefinition-StreetNumber" name="StreetNumber"/>
+<artifact deprecated="true" id="ValueSet/vrdr-states-territories-provinces-vs" key="ValueSet-vrdr-states-territories-provinces-vs" name="States, Territories and Provinces Value Set"/>
+<artifact deprecated="true" id="StructureDefinition/StreetDesignator" key="StructureDefinition-StreetDesignator" name="StreetDesignator"/>
+<artifact deprecated="true" id="StructureDefinition/StreetName" key="StructureDefinition-StreetName" name="StreetName"/>
+<artifact deprecated="true" id="StructureDefinition/StreetNumber" key="StructureDefinition-StreetNumber" name="StreetNumber"/>
+<artifact id="CodeSystem/vrdr-system-placeofinjury-cs" key="CodeSystem-vrdr-system-placeofinjury-cs" name="Supermicar Place Of Injury CodeSystem"/>
 <artifact id="StructureDefinition/vrdr-surgery-date" key="StructureDefinition-vrdr-surgery-date" name="Surgery Date"/>
 <artifact id="Observation/SurgeryDate-Example1" key="Observation-SurgeryDate-Example1" name="SurgeryDate-Example1"/>
 <artifact id="CodeSystem/vrdr-system-reject-cs" key="CodeSystem-vrdr-system-reject-cs" name="System Reject Code System"/>
@@ -301,23 +356,26 @@
 <artifact id="StructureDefinition/vrdr-tobacco-use-contributed-to-death" key="StructureDefinition-VRDR-Tobacco-Use-Contributed-To-Death" name="Tobacco Use Contributed To Death"/>
 <artifact deprecated="true" id="Observation/4d0ce010-16f1-44f4-bbf8-3a2030e9de99" key="Observation-4d0ce010-16f1-44f4-bbf8-3a2030e9de99" name="Tobacco Use Contributed To Death Example"/>
 <artifact id="Observation/TobaccoUseContributedToDeath-Example1" key="Observation-TobaccoUseContributedToDeath-Example1" name="TobaccoUseContributedToDeath-Example1"/>
-<artifact id="CodeSystem/vrdr-transax-conversion-cs" key="CodeSystem-vrdr-transax-conversion-cs" name="Transax Conversion Code System"/>
+<artifact id="Observation/TobaccoUseUT-Example1" key="Observation-TobaccoUseUT-Example1" name="TobaccoUseUT-Example1"/>
+<artifact id="CodeSystem/vrdr-transax-conversion-cs" key="CodeSystem-vrdr-transax-conversion-cs" name="Transax Conversion CodeSystem"/>
 <artifact id="ValueSet/vrdr-transax-conversion-vs" key="ValueSet-vrdr-transax-conversion-vs" name="Transax Conversion ValueSet"/>
 <artifact id="ConceptMap/TransaxConversionCM" key="ConceptMap-TransaxConversionCM" name="TransaxConversion Concept Map"/>
-<artifact id="ValueSet/vrdr-transportation-incident-role-vs" key="ValueSet-vrdr-transportation-incident-role-vs" name="Transportation Incident Role"/>
+<artifact id="ValueSet/vrdr-transportation-incident-role-vs" key="ValueSet-vrdr-transportation-incident-role-vs" name="Transportation Incident Role ValueSet"/>
 <artifact id="ConceptMap/TransportationIncidentRoleCM" key="ConceptMap-TransportationIncidentRoleCM" name="TransportationIncidentRole Concept Map"/>
-<artifact id="ValueSet/vrdr-usstates-territories-vs" key="ValueSet-vrdr-usstates-territories-vs" name="US States, Territories Value Set"/>
-<artifact id="StructureDefinition/UnitOrAptNumber" key="StructureDefinition-UnitOrAptNumber" name="UnitOrAptNumber"/>
-<artifact id="ValueSet/vrdr-units-of-age-vs" key="ValueSet-vrdr-units-of-age-vs" name="Units of Age"/>
-<artifact id="ConceptMap/UnitsOfAgeCM" key="ConceptMap-UnitsOfAgeCM" name="UnitsOfAge Concept Map"/>
+<artifact deprecated="true" id="ValueSet/vrdr-usstates-territories-vs" key="ValueSet-vrdr-usstates-territories-vs" name="US States, Territories Value Set"/>
+<artifact id="Patient/us-core-patient-vr-a-freeman" key="Patient-us-core-patient-vr-a-freeman" name="USCorePatient - Patient example [A Freeman]"/>
+<artifact deprecated="true" id="StructureDefinition/UnitOrAptNumber" key="StructureDefinition-UnitOrAptNumber" name="UnitOrAptNumber"/>
+<artifact deprecated="true" id="ValueSet/vrdr-units-of-age-vs" key="ValueSet-vrdr-units-of-age-vs" name="Units of Age"/>
+<artifact deprecated="true" id="ConceptMap/UnitsOfAgeCM" key="ConceptMap-UnitsOfAgeCM" name="UnitsOfAge Concept Map"/>
+<artifact id="Observation/UsualWorkUT-Example1" key="Observation-UsualWorkUT-Example1" name="UsualWorkUT-Example1"/>
 <artifact deprecated="true" id="StructureDefinition/VRDR-Partial-date-part-absent-reason" key="StructureDefinition-VRDR-Partial-date-part-absent-reason" name="VRDR - Partial date part absent reason"/>
-<artifact id="StructureDefinition/WithinCityLimitsIndicator" key="StructureDefinition-Within-City-Limits-Indicator" name="Within City Limits Indicator"/>
+<artifact deprecated="true" id="StructureDefinition/WithinCityLimitsIndicator" key="StructureDefinition-Within-City-Limits-Indicator" name="Within City Limits Indicator"/>
 <artifact deprecated="true" id="ValueSet/vrdr-yes-no-not-applicable-vs" key="ValueSet-vrdr-yes-no-not-applicable-vs" name="Yes No NotApplicable"/>
-<artifact id="ValueSet/vrdr-yes-no-unknown-vs" key="ValueSet-vrdr-yes-no-unknown-vs" name="Yes No Unknown"/>
-<artifact id="ValueSet/vrdr-yes-no-unknown-not-applicable-vs" key="ValueSet-vrdr-yes-no-unknown-not-applicable-vs" name="Yes No Unknown NotApplicable"/>
+<artifact deprecated="true" id="ValueSet/vrdr-yes-no-unknown-vs" key="ValueSet-vrdr-yes-no-unknown-vs" name="Yes No Unknown"/>
+<artifact deprecated="true" id="ValueSet/vrdr-yes-no-unknown-not-applicable-vs" key="ValueSet-vrdr-yes-no-unknown-not-applicable-vs" name="Yes No Unknown NotApplicable"/>
 <artifact deprecated="true" id="ConceptMap/YesNoNotApplicableCM" key="ConceptMap-YesNoNotApplicableCM" name="YesNoNotApplicable Concept Map"/>
-<artifact id="ConceptMap/YesNoUnknownCM" key="ConceptMap-YesNoUnknownCM" name="YesNoUnknown Concept Map"/>
-<artifact id="ConceptMap/YesNoUnknownNotApplicableCM" key="ConceptMap-YesNoUnknownNotApplicableCM" name="YesNoUnknownNotApplicable Concept Map"/>
+<artifact deprecated="true" id="ConceptMap/YesNoUnknownCM" key="ConceptMap-YesNoUnknownCM" name="YesNoUnknown Concept Map"/>
+<artifact deprecated="true" id="ConceptMap/YesNoUnknownNotApplicableCM" key="ConceptMap-YesNoUnknownNotApplicableCM" name="YesNoUnknownNotApplicable Concept Map"/>
 <artifact deprecated="true" id="ConceptMap/place-of-death" key="ConceptMap-place-of-death" name="place-of-death"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
@@ -326,6 +384,7 @@
 <page key="background" name="Background"/>
 <page key="change_log" name="Change Log"/>
 <page key="conformance" name="Conformance"/>
+<page key="content-transitions" name="Content Transitions"/>
 <page key="credits" name="Credits"/>
 <page deprecated="true" key="IJE_File_Layouts_Version_2021_FHIR" name="Data Dictionary"/>
 <page deprecated="true" key="death_certification_resource_profiles" name="Death Certification Resource Profiles"/>
@@ -344,5 +403,6 @@
 <page deprecated="true" key="terminology_bindings" name="Terminology"/>
 <page deprecated="true" key="vrdr_fhir_ig_uml_data_model" name="UML Model"/>
 <page key="usage" name="Usage"/>
+<page key="vrdr_forms_mapping" name="VRDR Forms Mapping"/>
 <page deprecated="true" key="documentation" name="documentation"/>
 </specification>

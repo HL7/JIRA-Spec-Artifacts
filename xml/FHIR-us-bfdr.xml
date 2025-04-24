@@ -1,15 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/bfdr/2021Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-bfdr" defaultVersion="1.1.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-bfdr" url="http://hl7.org/fhir/us/bfdr">
-<version code="current" url="http://build.fhir.org/ig/HL7/bfdr"/>
-<version code="1.1.0" url="http://hl7.org/fhir/us/bfdr/STU1.1"/>
-<version code="1.0.0" url="http://hl7.org/fhir/us/bfdr/STU1"/>
-<version code="0.1.0" url="http://hl7.org/fhir/us/bfdr/2021Jan"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/bfdr/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-bfdr" defaultVersion="2.0.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-bfdr" url="http://hl7.org/fhir/us/bfdr">
+<version code="current" url="http://build.fhir.org/ig/HL7/fhir-bfdr"/>
+<version code="2.0.0" url="http://hl7.org/fhir/us/bfdr/STU2"/>
+<version code="2.0.0-ballot" url="http://hl7.org/fhir/us/bfdr/2024Jan"/>
+<version code="1.1.0" deprecated="true" url="http://hl7.org/fhir/us/bfdr/STU1.1"/>
+<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/bfdr/STU1"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/bfdr/2021Jan"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="ValueSet/ValueSet-apgar-timing" key="ValueSet-ValueSet-apgar-timing" name="APGAR Score Timing"/>
+<artifact deprecated="true" id="StructureDefinition/AuxiliaryStateIdentifier1" key="StructureDefinition-AuxiliaryStateIdentifier1" name="Auxiliary State Identifier1"/>
+<artifact deprecated="true" id="StructureDefinition/AuxiliaryStateIdentifier2" key="StructureDefinition-AuxiliaryStateIdentifier2" name="Auxiliary State Identifier2"/>
+<artifact id="ValueSet/ValueSet-birth-attendant-titles" key="ValueSet-ValueSet-birth-attendant-titles" name="Birth Attendants Titles"/>
+<artifact id="ValueSet/ValueSet-birth-delivery-occurred" key="ValueSet-ValueSet-birth-delivery-occurred" name="Birth Delivery Occurred"/>
+<artifact id="CodeSystem/CodeSystem-edit-flags" key="CodeSystem-CodeSystem-edit-flags" name="Birth Edit Flags"/>
+<artifact id="ValueSet/ValueSet-birth-weight-edit-flags" key="ValueSet-ValueSet-birth-weight-edit-flags" name="Birth Weight Edit Flags (NCHS)"/>
+<artifact id="ValueSet/ValueSet-birth-and-fetal-death-financial-class" key="ValueSet-ValueSet-birth-and-fetal-death-financial-class" name="Birth and Fetal Death Financial Class"/>
+<artifact id="StructureDefinition/Location-bfdr" key="StructureDefinition-Location-bfdr" name="Birth and Fetal Death Location"/>
+<artifact id="ConceptMap/BirthAndFetalDeathFinancialClassCM" key="ConceptMap-BirthAndFetalDeathFinancialClassCM" name="BirthAndFetalDeathFinancialClass Concept Map"/>
+<artifact id="ConceptMap/BirthAttendantTitlesCM" key="ConceptMap-BirthAttendantTitlesCM" name="BirthAttendantTitles Concept Map"/>
+<artifact id="ConceptMap/BirthDeliveryOccurredCM" key="ConceptMap-BirthDeliveryOccurredCM" name="BirthDeliveryOccurred Concept Map"/>
+<artifact id="ConceptMap/BirthWeightEditFlagsCM" key="ConceptMap-BirthWeightEditFlagsCM" name="BirthWeightEditFlags Concept Map"/>
 <artifact deprecated="true" id="Observation/observation-bridged-race-jada-ann-quinn" key="Observation-observation-bridged-race-jada-ann-quinn" name="Bridged Race example [Jada Ann Quinn]"/>
-<artifact id="StructureDefinition/Bundle-document-bfdr" key="StructureDefinition-Bundle-document-bfdr" name="Bundle - Document Birth and Fetal Death"/>
+<artifact id="Bundle/bundle-coded-cause-of-fetal-death-not-named" key="Bundle-bundle-coded-cause-of-fetal-death-not-named" name="Bundle - Coded Cause of Fetal Death - not named"/>
+<artifact deprecated="true" id="StructureDefinition/Bundle-coded-cause-of-fetal-death" key="StructureDefinition-Bundle-coded-cause-of-fetal-death" name="Bundle - Coded Cause of Fetal Death Bundle for BFDR"/>
+<artifact id="Bundle/bundle-coded-industry-occupation-baby-g-quinn" key="Bundle-bundle-coded-industry-occupation-baby-g-quinn" name="Bundle - Coded Industry and Occupation - Baby G Quinn"/>
+<artifact id="Bundle/bundle-coded-race-and-ethnicity-baby-g-quinn" key="Bundle-bundle-coded-race-and-ethnicity-baby-g-quinn" name="Bundle - Coded Race and Ethnicity - Baby G Quinn"/>
+<artifact deprecated="true" id="StructureDefinition/Bundle-demographic-coded-content" key="StructureDefinition-vr-demographic-coded-bundle" name="Bundle - Demographic Coded Content Bundle for BFDR"/>
+<artifact id="StructureDefinition/Bundle-document-birth-report" key="StructureDefinition-Bundle-document-birth-report" name="Bundle - Document Birth Report"/>
+<artifact deprecated="true" id="StructureDefinition/Bundle-document-bfdr" key="StructureDefinition-Bundle-document-bfdr" name="Bundle - Document Birth and Fetal Death"/>
+<artifact id="StructureDefinition/Bundle-document-coded-cause-of-fetal-death" key="StructureDefinition-Bundle-document-coded-cause-of-fetal-death" name="Bundle - Document Coded Cause of Fetal Death"/>
+<artifact id="StructureDefinition/Bundle-document-coded-industry-occupation" key="StructureDefinition-Bundle-document-coded-industry-occupation" name="Bundle - Document Coded Industry and Occupation"/>
+<artifact id="StructureDefinition/Bundle-document-demographic-coded-content" key="StructureDefinition-Bundle-document-demographic-coded-content" name="Bundle - Document Demographic Coded Content"/>
+<artifact id="StructureDefinition/Bundle-document-fetal-death-report" key="StructureDefinition-Bundle-document-fetal-death-report" name="Bundle - Document Fetal Death Report"/>
 <artifact id="Bundle/bundle-jurisdiction-fetal-death-not-named" key="Bundle-bundle-jurisdiction-fetal-death-not-named" name="Bundle - Jurisdiction Fetal Death Report - Fetus Not Named"/>
 <artifact id="Bundle/bundle-jurisdiction-live-birth-babyg-quinn" key="Bundle-bundle-jurisdiction-live-birth-babyg-quinn" name="Bundle - Jurisdiction Live Birth Report - Baby G Quinn"/>
 <artifact deprecated="true" id="StructureDefinition/Bundle-message-bfdr" key="StructureDefinition-Bundle-message-bfdr" name="Bundle - Message Birth and Fetal Death"/>
@@ -18,13 +43,22 @@
 <artifact id="Bundle/bundle-provider-fetal-death-not-named" key="Bundle-bundle-provider-fetal-death-not-named" name="Bundle - Provider Fetal Death Report - Fetus Not Named"/>
 <artifact id="Bundle/bundle-provider-live-birth-babyg-quinn" key="Bundle-bundle-provider-live-birth-babyg-quinn" name="Bundle - Provider Live Birth - Baby G Quinn"/>
 <artifact id="CapabilityStatement/CapabilityStatement-bfdr" key="CapabilityStatement-CapabilityStatement-bfdr" name="CapabilityStatement - Birth and Fetal Death"/>
+<artifact deprecated="true" id="StructureDefinition/CertificateNumber" key="StructureDefinition-CertificateNumber" name="Certificate Number"/>
 <artifact id="ValueSet/cigarette-smoking-before-during-pregnancy" key="ValueSet-cigarette-smoking-before-during-pregnancy" name="Cigarette Smoking Before and During Pregnancy"/>
+<artifact deprecated="true" id="CodeSystem/CodeSystem-abnormal-conditions-newborn" key="CodeSystem-CodeSystem-abnormal-conditions-newborn" name="CodeSystem - Abnormal Conditions Newborn"/>
+<artifact deprecated="true" id="CodeSystem/CodeSystem-vr-birth-delivery-occurred" key="CodeSystem-CodeSystem-vr-birth-delivery-occurred" name="CodeSystem - Birth Delivery Occurred"/>
+<artifact deprecated="true" id="CodeSystem/CodeSystem-vr-birth-and-fetal-death-financial-class" key="CodeSystem-CodeSystem-vr-birth-and-fetal-death-financial-class" name="CodeSystem - Birth and Death Financial Class"/>
+<artifact deprecated="true" id="CodeSystem/CodeSystem-vr-fetal-death-cause-or-condition" key="CodeSystem-CodeSystem-vr-fetal-death-cause-or-condition" name="CodeSystem - Fetal Death Cause or Condition"/>
+<artifact deprecated="true" id="CodeSystem/CodeSystem-informant-relationship-to-mother" key="CodeSystem-CodeSystem-informant-relationship-to-mother" name="CodeSystem - Informant Relationship to Mother"/>
 <artifact deprecated="true" id="CodeSystem/CodeSystem-messageheader-event-bfdr" key="CodeSystem-CodeSystem-messageheader-event-bfdr" name="CodeSystem - MessageHeader Event Birth and Fetal Death"/>
-<artifact id="CodeSystem/CodeSystem-replacement-status" key="CodeSystem-CodeSystem-replacement-status" name="CodeSystem - Replacement Status"/>
+<artifact deprecated="true" id="CodeSystem/CodeSystem-replacement-status" key="CodeSystem-CodeSystem-replacement-status" name="CodeSystem - Replacement Status"/>
 <artifact id="StructureDefinition/Composition-coded-cause-of-fetal-death" key="StructureDefinition-Composition-coded-cause-of-fetal-death" name="Composition - Coded Cause of Fetal Death"/>
 <artifact id="Composition/composition-coded-cause-of-fetal-death-not-named" key="Composition-composition-coded-cause-of-fetal-death-not-named" name="Composition - Coded Cause of Fetal Death - Fetus Not Named"/>
+<artifact id="StructureDefinition/Composition-coded-industry-and-occupation" key="StructureDefinition-Composition-coded-industry-and-occupation" name="Composition - Coded Industry and Occupation"/>
+<artifact id="Composition/composition-coded-industry-and-occupation-baby-g-quinn" key="Composition-composition-coded-industry-and-occupation-baby-g-quinn" name="Composition - Coded Industry and Occuption - Baby G Quinn"/>
 <artifact id="StructureDefinition/Composition-coded-race-and-ethnicity" key="StructureDefinition-Composition-coded-race-and-ethnicity" name="Composition - Coded Race and Ethnicity"/>
-<artifact id="Composition/composition-coded-race-and-ethnicity-not-named" key="Composition-composition-coded-race-and-ethnicity-not-named" name="Composition - Coded Race and Ethnicity - Fetus Not Named"/>
+<artifact id="Composition/composition-coded-race-and-ethnicity-baby-g-quinn" key="Composition-composition-coded-race-and-ethnicity-baby-g-quinn" name="Composition - Coded Race and Ethnicity - Baby G Quinn"/>
+<artifact deprecated="true" id="Composition/composition-coded-race-and-ethnicity-not-named" key="Composition-composition-coded-race-and-ethnicity-not-named" name="Composition - Coded Race and Ethnicity - Fetus Not Named"/>
 <artifact id="StructureDefinition/Composition-jurisdiction-fetal-death-report" key="StructureDefinition-Composition-jurisdiction-fetal-death-report" name="Composition - Jurisdiction Fetal Death Report"/>
 <artifact id="Composition/composition-jurisdiction-fetal-death-not-named" key="Composition-composition-jurisdiction-fetal-death-not-named" name="Composition - Jurisdiction Fetal Death Report - Fetus Not Named"/>
 <artifact id="StructureDefinition/Composition-jurisdiction-live-birth-report" key="StructureDefinition-Composition-jurisdiction-live-birth-report" name="Composition - Jurisdiction Live Birth Report"/>
@@ -45,23 +79,28 @@
 <artifact deprecated="true" id="Condition/condition-abnormal-condition-of-newborn-babyg-quinn" key="Condition-condition-abnormal-condition-of-newborn-babyg-quinn" name="Condition - Abnormal Condition of Newborn example [Baby G Quinn]"/>
 <artifact id="StructureDefinition/Condition-chorioamnionitis" key="StructureDefinition-Condition-chorioamnionitis" name="Condition - Chorioamnionitis"/>
 <artifact id="Condition/condition-chorioamnionitis-jada-ann-quinn" key="Condition-condition-chorioamnionitis-jada-ann-quinn" name="Condition - Chorioamnionitis - Jada Ann Quinn"/>
-<artifact id="Condition/condition-coded-initiating-fetal-death-cause-or-condition" key="Condition-condition-coded-initiating-fetal-death-cause-or-condition" name="Condition - Coded Initiating Cause of Fetal Death"/>
-<artifact id="StructureDefinition/Condition-coded-initiating-fetal-death-cause-or-condition" key="StructureDefinition-Condition-coded-initiating-fetal-death-cause-or-condition" name="Condition - Coded Initiating Fetal Death Cause or Condition"/>
-<artifact id="Condition/condition-coded-other-fetal-death-cause-or-condition-not-named" key="Condition-condition-coded-other-fetal-death-cause-or-condition-not-named" name="Condition - Coded Other Cause of Fetal Death"/>
-<artifact id="StructureDefinition/Condition-coded-other-fetal-death-cause-or-condition" key="StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition" name="Condition - Coded Other Fetal Death Cause or Condition"/>
+<artifact deprecated="true" id="Condition/condition-coded-initiating-fetal-death-cause-or-condition" key="Condition-condition-coded-initiating-fetal-death-cause-or-condition" name="Condition - Coded Initiating Cause of Fetal Death"/>
+<artifact deprecated="true" id="StructureDefinition/Condition-coded-initiating-fetal-death-cause-or-condition" key="StructureDefinition-Condition-coded-initiating-fetal-death-cause-or-condition" name="Condition - Coded Initiating Fetal Death Cause or Condition"/>
+<artifact deprecated="true" id="Condition/condition-coded-other-fetal-death-cause-or-condition-not-named" key="Condition-condition-coded-other-fetal-death-cause-or-condition-not-named" name="Condition - Coded Other Cause of Fetal Death"/>
+<artifact deprecated="true" id="StructureDefinition/Condition-coded-other-fetal-death-cause-or-condition" key="StructureDefinition-Condition-coded-other-fetal-death-cause-or-condition" name="Condition - Coded Other Fetal Death Cause or Condition"/>
 <artifact id="StructureDefinition/Condition-congenital-anomaly-of-newborn" key="StructureDefinition-Condition-congenital-anomaly-of-newborn" name="Condition - Congenital Anomaly of Newborn"/>
 <artifact id="Condition/condition-congenital-anomaly-of-newborn-babyg-quinn-2" key="Condition-condition-congenital-anomaly-of-newborn-babyg-quinn-2" name="Condition - Congenital Anomaly of Newborn - Baby G Quinn"/>
 <artifact id="Condition/condition-congenital-anomaly-of-newborn-babyg-quinn" key="Condition-condition-congenital-anomaly-of-newborn-babyg-quinn" name="Condition - Congenital Anomaly of Newborn - BabyG Quinn"/>
-<artifact id="StructureDefinition/Condition-fetal-death-cause-or-condition" key="StructureDefinition-Condition-fetal-death-cause-or-condition" name="Condition - Fetal Death Cause or Condition"/>
-<artifact id="Condition/condition-fetal-death-cause-or-condition-not-named" key="Condition-condition-fetal-death-cause-or-condition-not-named" name="Condition - Fetal Death Cause or Condition - Fetus Not Named"/>
+<artifact id="StructureDefinition/Condition-eclampsia-hypertension" key="StructureDefinition-Condition-eclampsia-hypertension" name="Condition - Eclampsia Hypertension"/>
+<artifact id="Condition/condition-eclampsia-hypertension-jada-ann-quinn" key="Condition-condition-eclampsia-hypertension-jada-ann-quinn" name="Condition - Eclampsia Hypertension - Jada Ann Quinn"/>
+<artifact deprecated="true" id="StructureDefinition/Condition-fetal-death-cause-or-condition" key="StructureDefinition-Condition-fetal-death-cause-or-condition" name="Condition - Fetal Death Cause or Condition"/>
+<artifact id="StructureDefinition/Condition-fetal-death-initiating-cause-or-condition" key="StructureDefinition-Condition-fetal-death-initiating-cause-or-condition" name="Condition - Fetal Death Initiating Cause or Condition"/>
+<artifact id="Condition/condition-fetal-death-cause-or-condition-not-named" key="Condition-condition-fetal-death-cause-or-condition-not-named" name="Condition - Fetal Death Initiating Cause or Condition - Fetus Not Named"/>
 <artifact id="StructureDefinition/Condition-fetal-death-other-cause-or-condition" key="StructureDefinition-Condition-fetal-death-other-cause-or-condition" name="Condition - Fetal Death Other Cause or Condition"/>
 <artifact id="Condition/condition-fetal-death-other-significant-cause-not-named" key="Condition-condition-fetal-death-other-significant-cause-not-named" name="Condition - Fetal Death Other Cause or Condition - Fetus Not Named"/>
 <artifact deprecated="true" id="StructureDefinition/Condition-fetal-death-other-significant-cause-or-condition" key="StructureDefinition-Condition-fetal-death-other-significant-cause-or-condition" name="Condition - Fetal Death Other Significant Cause or Condition"/>
 <artifact deprecated="true" id="StructureDefinition/Condition-fetal-presentation" key="StructureDefinition-Condition-fetal-presentation" name="Condition - Fetal Presentation at Birth/Delivery"/>
 <artifact deprecated="true" id="Condition/condition-fetal-presentation-babyg-quinn" key="Condition-condition-fetal-presentation-babyg-quinn" name="Condition - Fetal Presentation example [Baby G Quinn]"/>
 <artifact deprecated="true" id="Condition/condition-fetal-presentation-not-named" key="Condition-condition-fetal-presentation-not-named" name="Condition - Fetal Presentation example [Fetus Not Named]"/>
+<artifact id="StructureDefinition/Condition-gestational-diabetes" key="StructureDefinition-Condition-gestational-diabetes" name="Condition - Gestational Diabetes"/>
 <artifact id="Condition/condition-gestational-diabetes-carmen-teresa-lee" key="Condition-condition-gestational-diabetes-carmen-teresa-lee" name="Condition - Gestational Diabetes - Carmen Teresa Lee"/>
 <artifact id="Condition/condition-gestational-diabetes-jada-ann-quinn" key="Condition-condition-gestational-diabetes-jada-ann-quinn" name="Condition - Gestational Diabetes - Jada Ann Quinn"/>
+<artifact id="StructureDefinition/Condition-gestational-hypertension" key="StructureDefinition-Condition-gestational-hypertension" name="Condition - Gestational Hypertension"/>
 <artifact id="Condition/condition-gestational-hypertension-jada-ann-quinn" key="Condition-condition-gestational-hypertension-jada-ann-quinn" name="Condition - Gestational Hypertension - Jada Ann Quinn"/>
 <artifact id="StructureDefinition/Condition-infection-present-during-pregnancy" key="StructureDefinition-Condition-infection-present-during-pregnancy" name="Condition - Infection Present During Pregnancy"/>
 <artifact id="Condition/condition-infection-present-during-pregnancy-jada-ann-quinn" key="Condition-condition-infection-present-during-pregnancy-jada-ann-quinn" name="Condition - Infection Present During Pregnancy - Jada Ann Quinn"/>
@@ -70,56 +109,96 @@
 <artifact deprecated="true" id="Condition/condition-maternal-morbidity-jada-ann-quinn" key="Condition-condition-maternal-morbidity-jada-ann-quinn" name="Condition - Maternal Morbidity example [Jada Ann Quinn]"/>
 <artifact id="StructureDefinition/Condition-perineal-laceration" key="StructureDefinition-Condition-perineal-laceration" name="Condition - Perineal Laceration"/>
 <artifact id="Condition/condition-perineal-laceration-jada-ann-quinn" key="Condition-condition-perineal-laceration-jada-ann-quinn" name="Condition - Perineal Laceration - Jada Ann Quinn"/>
+<artifact id="StructureDefinition/Condition-prepregnancy-diabetes" key="StructureDefinition-Condition-prepregnancy-diabetes" name="Condition - Prepregnancy Diabetes"/>
 <artifact id="Condition/condition-prepregnancy-diabetes-jada-ann-quinn" key="Condition-condition-prepregnancy-diabetes-jada-ann-quinn" name="Condition - Prepregnancy Diabetes - Jada Ann Quinn"/>
+<artifact id="StructureDefinition/Condition-prepregnancy-hypertension" key="StructureDefinition-Condition-prepregnancy-hypertension" name="Condition - Prepregnancy Hypertension"/>
 <artifact id="Condition/condition-prepregnancy-hypertension-carmen-teresa-lee" key="Condition-condition-prepregnancy-hypertension-carmen-teresa-lee" name="Condition - Prepregnancy Hypertension - Carmen Teresa Lee"/>
+<artifact id="Condition/condition-prepregnancy-hypertension-jada-ann-quinn" key="Condition-condition-prepregnancy-hypertension-jada-ann-quinn" name="Condition - Prepregnancy Hypertension - Jada Ann Quinn"/>
 <artifact id="StructureDefinition/Condition-ruptured-uterus" key="StructureDefinition-Condition-ruptured-uterus" name="Condition - Ruptured Uterus"/>
 <artifact id="Condition/condition-ruptured-uterus-jada-ann-quinn" key="Condition-condition-ruptured-uterus-jada-ann-quinn" name="Condition - Ruptured Uterus - Jada Ann Quinn"/>
 <artifact id="StructureDefinition/Condition-seizure" key="StructureDefinition-Condition-seizure" name="Condition - Seizure"/>
 <artifact id="Condition/condition-seizure-babyg-quinn" key="Condition-condition-seizure-babyg-quinn" name="Condition - Seizure - BabyG Quinn"/>
 <artifact deprecated="true" id="StructureDefinition/Condition-coded-other-significant-fetal-death-cause-or-condition" key="StructureDefinition-Condition-coded-other-significant-fetal-death-cause-or-condition" name="Condition - coded other significant fetal death cause or condition"/>
-<artifact id="StructureDefinition/Coverage-principal-payer-for-delivery" key="StructureDefinition-Coverage-principal-payer-for-delivery" name="Coverage - Principal Payer for Delivery"/>
+<artifact id="StructureDefinition/Coverage-principal-payer-delivery" key="StructureDefinition-Coverage-principal-payer-for-delivery" name="Coverage - Principal Payer for Delivery"/>
 <artifact id="Coverage/coverage-principal-payer-for-delivery-jada-ann-quinn" key="Coverage-coverage-principal-payer-for-delivery-jada-ann-quinn" name="Coverage - Principal Payer for Delivery - Jada Ann Quinn"/>
-<artifact id="Observation/observation-edit-birth-weight-babyg-quinn" key="Observation-observation-edit-birth-weight-babyg-quinn" name="Edit Flag - Birth Weight"/>
-<artifact id="Observation/observation-edit-flag-estimate-of-gestation-example" key="Observation-observation-edit-flag-estimate-of-gestation-example" name="Edit Flag - Estimate of Gestation"/>
-<artifact id="Observation/observation-edit-flag-fathers-date-of-birth-example" key="Observation-observation-edit-flag-fathers-date-of-birth-example" name="Edit Flag - Father's Birthdate"/>
-<artifact id="Observation/observation-edit-flag-fathers-education-example" key="Observation-observation-edit-flag-fathers-education-example" name="Edit Flag - Father's Education"/>
-<artifact id="Observation/observation-edit-flag-mothers-date-of-birth-example" key="Observation-observation-edit-flag-mothers-date-of-birth-example" name="Edit Flag - Mother's Birthdate"/>
-<artifact id="Observation/observation-edit-flag-mothers-delivery-weight-example" key="Observation-observation-edit-flag-mothers-delivery-weight-example" name="Edit Flag - Mother's Delivery Weight"/>
-<artifact id="Observation/observation-edit-flag-mothers-education-example" key="Observation-observation-edit-flag-mothers-education-example" name="Edit Flag - Mother's Education"/>
-<artifact id="Observation/observation-edit-flag-mothers-height-example" key="Observation-observation-edit-flag-mothers-height-example" name="Edit Flag - Mother's Height"/>
-<artifact id="Observation/observation-edit-flag-mothers-prepregnancy-weight-example" key="Observation-observation-edit-flag-mothers-prepregnancy-weight-example" name="Edit Flag - Mother's Prepregnancy Weight"/>
-<artifact id="Observation/observation-edit-flag-number-prenatal-care-visits-example" key="Observation-observation-edit-flag-number-prenatal-care-visits-example" name="Edit Flag - Number Prenatal Care Visits"/>
-<artifact id="Observation/observation-edit-flag-number-previous-cesareans-example" key="Observation-observation-edit-flag-number-previous-cesareans-example" name="Edit Flag - Number Previous Cesarians"/>
-<artifact id="Observation/observation-edit-flag-plurality-example" key="Observation-observation-edit-flag-plurality-example" name="Edit Flag - Plurality"/>
+<artifact deprecated="true" key="StructureDefinition-Coverage-principal-payer-delivery" name="Coverage - Principal Payer for Delivery - old"/>
+<artifact id="ValueSet/ValueSet-delivery-routes" key="ValueSet-ValueSet-delivery-routes" name="Delivery Routes"/>
+<artifact id="ConceptMap/DeliveryRoutesCM" key="ConceptMap-DeliveryRoutesCM" name="DeliveryRoutes Concept Map"/>
+<artifact deprecated="true" id="Observation/observation-edit-birth-weight-babyg-quinn" key="Observation-observation-edit-birth-weight-babyg-quinn" name="Edit Flag - Birth Weight"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-estimate-of-gestation-example" key="Observation-observation-edit-flag-estimate-of-gestation-example" name="Edit Flag - Estimate of Gestation"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-fathers-date-of-birth-example" key="Observation-observation-edit-flag-fathers-date-of-birth-example" name="Edit Flag - Father's Birthdate"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-fathers-education-example" key="Observation-observation-edit-flag-fathers-education-example" name="Edit Flag - Father's Education"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-mothers-date-of-birth-example" key="Observation-observation-edit-flag-mothers-date-of-birth-example" name="Edit Flag - Mother's Birthdate"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-mothers-delivery-weight-example" key="Observation-observation-edit-flag-mothers-delivery-weight-example" name="Edit Flag - Mother's Delivery Weight"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-mothers-education-example" key="Observation-observation-edit-flag-mothers-education-example" name="Edit Flag - Mother's Education"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-mothers-height-example" key="Observation-observation-edit-flag-mothers-height-example" name="Edit Flag - Mother's Height"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-mothers-prepregnancy-weight-example" key="Observation-observation-edit-flag-mothers-prepregnancy-weight-example" name="Edit Flag - Mother's Prepregnancy Weight"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-number-prenatal-care-visits-example" key="Observation-observation-edit-flag-number-prenatal-care-visits-example" name="Edit Flag - Number Prenatal Care Visits"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-number-previous-cesareans-example" key="Observation-observation-edit-flag-number-previous-cesareans-example" name="Edit Flag - Number Previous Cesarians"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-plurality-example" key="Observation-observation-edit-flag-plurality-example" name="Edit Flag - Plurality"/>
 <artifact id="StructureDefinition/Encounter-birth" key="StructureDefinition-Encounter-birth" name="Encounter - Birth"/>
 <artifact id="Encounter/encounter-birth-babyg-quinn" key="Encounter-encounter-birth-babyg-quinn" name="Encounter - Birth - Baby G Quinn"/>
 <artifact id="StructureDefinition/Encounter-maternity" key="StructureDefinition-Encounter-maternity" name="Encounter - Maternity"/>
 <artifact id="Encounter/encounter-maternity-carmen-teresa-lee" key="Encounter-encounter-maternity-carmen-teresa-lee" name="Encounter - Maternity - Carmen Teresa Lee"/>
 <artifact id="Encounter/encounter-maternity-jada-ann-quinn" key="Encounter-encounter-maternity-jada-ann-quinn" name="Encounter - Maternity - Jada Ann Quinn"/>
+<artifact id="StructureDefinition/Extension-encounter-maternity-reference" key="StructureDefinition-Extension-encounter-maternity-reference" name="Encounter Maternity Reference"/>
+<artifact id="ValueSet/ValueSet-estimate-of-gestation-edit-flags" key="ValueSet-ValueSet-estimate-of-gestation-edit-flags" name="Estimate of Gestation Edit Flags (NCHS)"/>
+<artifact id="ConceptMap/EstimateOfGestationEditFlagsCM" key="ConceptMap-EstimateOfGestationEditFlagsCM" name="EstimateOfGestationEditFlags Concept Map"/>
 <artifact deprecated="true" id="StructureDefinition/Extension-birth-certificate-file-number" key="StructureDefinition-Extension-birth-certificate-file-number" name="Extension - Birth Certificate File Number example [BCFN]"/>
 <artifact deprecated="true" id="StructureDefinition/Extension-birth-certificate-id" key="StructureDefinition-Extension-birth-certificate-id" name="Extension - Birth Certificate Id example [BCT]"/>
-<artifact id="StructureDefinition/Extension-date-filed-by-registrar" key="StructureDefinition-Extension-date-filed-by-registrar" name="Extension - Date Filed by Registrar"/>
-<artifact id="StructureDefinition/Extension-date-received-by-registrar" key="StructureDefinition-Extension-date-received-by-registrar" name="Extension - Date Received by Registrar"/>
-<artifact id="StructureDefinition/Extension-encounter-maternity-reference" key="StructureDefinition-Extension-encounter-maternity-reference" name="Extension - Encounter Maternity Reference"/>
-<artifact id="StructureDefinition/Extension-fetal-death-local-file-number" key="StructureDefinition-Extension-fetal-death-local-file-number" name="Extension - Fetal Death Local File Number [FDRFN]"/>
+<artifact deprecated="true" id="StructureDefinition/Extension-date-filed-by-registrar" key="StructureDefinition-Extension-date-filed-by-registrar" name="Extension - Date Filed by Registrar"/>
+<artifact deprecated="true" id="StructureDefinition/Extension-date-received-by-registrar" key="StructureDefinition-Extension-date-received-by-registrar" name="Extension - Date received by Registrar"/>
+<artifact deprecated="true" id="StructureDefinition/Extension-fetal-death-local-file-number" key="StructureDefinition-Extension-fetal-death-local-file-number" name="Extension - Fetal Death Local File Number"/>
 <artifact deprecated="true" id="StructureDefinition/Extension-fetal-death-report-file-number" key="StructureDefinition-Extension-fetal-death-report-file-number" name="Extension - Fetal Death Report File Number example [FDRFN]"/>
 <artifact deprecated="true" id="StructureDefinition/Extension-fetal-death-report-id" key="StructureDefinition-Extension-fetal-death-report-id" name="Extension - Fetal Death Report Id example [FDR]"/>
-<artifact id="StructureDefinition/Extension-fetal-death-report-number" key="StructureDefinition-Extension-fetal-death-report-number" name="Extension - Fetal Death Report Number"/>
-<artifact id="StructureDefinition/Extension-live-birth-certificate-number" key="StructureDefinition-Extension-live-birth-certificate-number" name="Extension - Live Birth Certificate Number"/>
-<artifact id="StructureDefinition/Extension-live-birth-local-file-number" key="StructureDefinition-Extension-live-birth-local-file-number" name="Extension - Live Birth Local File Number"/>
-<artifact id="StructureDefinition/Extension-replacement-status" key="StructureDefinition-Extension-replacement-status" name="Extension - Replacement Status"/>
+<artifact deprecated="true" id="StructureDefinition/Extension-fetal-death-report-number" key="StructureDefinition-Extension-fetal-death-report-number" name="Extension - Fetal Death Report Number"/>
+<artifact deprecated="true" id="StructureDefinition/Extension-live-birth-certificate-number" key="StructureDefinition-Extension-live-birth-certificate-number" name="Extension - Live Birth Certificate Number"/>
+<artifact deprecated="true" id="StructureDefinition/Extension-live-birth-local-file-number" key="StructureDefinition-Extension-live-birth-local-file-number" name="Extension - Live Birth Local File Number"/>
+<artifact deprecated="true" id="StructureDefinition/Extension-replacement-status" key="StructureDefinition-Extension-replacement-status" name="Extension - Replacement Status"/>
+<artifact id="StructureDefinition/Extension-role" key="StructureDefinition-Extension-role" name="Extension Parental Role"/>
+<artifact id="ValueSet/ValueSet-fertility-enhancing-drug-therapy-artificial-insem" key="ValueSet-ValueSet-fertility-enhancing-drug-therapy-artificial-insem" name="Fertility Enhancing Drug Therapy and Artificial Insemination Value Set"/>
+<artifact id="ValueSet/ValueSet-fetal-death-cause-or-condition" key="ValueSet-ValueSet-fetal-death-cause-or-condition" name="Fetal Death Cause or Condition"/>
+<artifact id="ValueSet/ValueSet-fetal-death-time-points" key="ValueSet-ValueSet-fetal-death-time-points" name="Fetal Death Time Points"/>
+<artifact id="ValueSet/ValueSet-fetal-presentations" key="ValueSet-ValueSet-fetal-presentations" name="Fetal Presentations"/>
+<artifact id="ValueSet/ValueSet-fetal-presentations-max" key="ValueSet-ValueSet-fetal-presentations-max" name="Fetal Presentations - Max"/>
+<artifact id="ValueSet/ValueSet-fetal-remains-disposition-method" key="ValueSet-ValueSet-fetal-remains-disposition-method" name="Fetal Remains Disposition Method"/>
+<artifact id="ConceptMap/FetalDeathCauseOrConditionCM" key="ConceptMap-FetalDeathCauseOrConditionCM" name="FetalDeathCauseOrCondition Concept Map"/>
+<artifact id="ConceptMap/FetalDeathTimePointsCM" key="ConceptMap-FetalDeathTimePointsCM" name="FetalDeathTimePoints Concept Map"/>
+<artifact id="ConceptMap/FetalPresentationCM" key="ConceptMap-FetalPresentationCM" name="FetalPresentation Concept Map"/>
+<artifact deprecated="true" id="ConceptMap/HistologicalPlacentalExaminationCM" key="ConceptMap-HistologicalPlacentalExaminationCM" name="HistologicalPlacentalExamination Concept Map"/>
+<artifact id="ValueSet/ValueSet-infections-during-pregnancy-live-birth" key="ValueSet-ValueSet-infections-during-pregnancy-live-birth" name="Infections During Pregnancy Live Birth"/>
+<artifact id="ConceptMap/InfectionsDuringPregnancyLiveBirthCM" key="ConceptMap-InfectionsDuringPregnancyLiveBirthCM" name="InfectionsDuringPregnancyLiveBirth Concept Map"/>
+<artifact id="ValueSet/ValueSet-informant-relationship-to-mother" key="ValueSet-ValueSet-informant-relationship-to-mother" name="Informant Relationship to Mother"/>
+<artifact id="StructureDefinition/Extension-jurisdictional-facility-identifier" key="StructureDefinition-Extension-jurisdictional-facility-identifier" name="Jurisdictional Facility Identifier"/>
+<artifact id="CodeSystem/CodeSystem-local-bfdr-codes" key="CodeSystem-CodeSystem-local-bfdr-codes" name="Local BFDR Codes"/>
+<artifact id="Location/location-east-hospital" key="Location-location-east-hospital" name="Location BFDR - East Hospital"/>
+<artifact id="Location/location-north-hospital" key="Location-location-north-hospital" name="Location BFDR - North Hospital"/>
+<artifact id="Location/location-south-hospital" key="Location-location-south-hospital" name="Location BFDR - South Hospital"/>
+<artifact id="ValueSet/ValueSet-location-types" key="ValueSet-ValueSet-location-types" name="Location Types"/>
 <artifact deprecated="true" id="StructureDefinition/MessageHeader-bfdr" key="StructureDefinition-MessageHeader-bfdr" name="MessageHeader - Birth and Fetal Death"/>
+<artifact deprecated="true" id="ValueSet/ValueSet-method-of-disposition" key="ValueSet-ValueSet-method-of-disposition" name="Method of Disposition VS"/>
+<artifact id="ValueSet/ValueSet-newborn-congenital-anomalies" key="ValueSet-ValueSet-newborn-congenital-anomalies" name="Newborn Congenital Anomalies"/>
+<artifact id="ConceptMap/NewbornCongenitalAnomaliesCM" key="ConceptMap-NewbornCongenitalAnomaliesCM" name="NewbornCongenitalAnomalies Concept Map"/>
+<artifact id="ValueSet/ValueSet-number-previous-cesareans-edit-flags" key="ValueSet-ValueSet-number-previous-cesareans-edit-flags" name="Number of Previous Cesareans Edit Flags (NCHS)"/>
+<artifact id="ConceptMap/NumberPreviousCesareansEditFlagsCM" key="ConceptMap-NumberPreviousCesareansEditFlagsCM" name="NumberPreviousCesareansEditFlags Concept Map"/>
+<artifact id="StructureDefinition/Observation-apgar-score" key="StructureDefinition-Observation-apgar-score" name="Observation - APGAR Score"/>
 <artifact id="StructureDefinition/Observation-steroids-fetal-lung-maturation" key="StructureDefinition-Observation-steroids-fetal-lung-maturation" name="Observation - Administration of Steroids for Fetal Lung Maturation"/>
 <artifact id="Observation/observation-steroids-fetal-lung-maturation-jada-ann-quinn" key="Observation-observation-steroids-fetal-lung-maturation-jada-ann-quinn" name="Observation - Administration of Steroids for Fetal Lung Maturation - Jada Ann Quinn"/>
-<artifact id="StructureDefinition/Observation-antibiotics-during-labor" key="StructureDefinition-Observation-antibiotics-during-labor" name="Observation - Antibiotics Administered During Labor"/>
+<artifact id="StructureDefinition/Observation-antibiotics-administered-during-labor" key="StructureDefinition-Observation-antibiotics-during-labor" name="Observation - Antibiotics Administered During Labor"/>
 <artifact id="Observation/observation-antibiotics-during-labor-jada-ann-quinn" key="Observation-observation-antibiotics-during-labor-jada-ann-quinn" name="Observation - Antibiotics Administered During Labor - Jada Ann Quinn"/>
-<artifact id="Observation/observation-apgar-score-babyg-quinn-1-min" key="Observation-observation-apgar-score-babyg-quinn-1-min" name="Observation - Apgar Score - BabyG Quinn: 1 min"/>
+<artifact deprecated="true" id="Observation/observation-apgar-score-babyg-quinn-1-min" key="Observation-observation-apgar-score-babyg-quinn-1-min" name="Observation - Apgar Score - BabyG Quinn: 1 min"/>
+<artifact id="Observation/observation-apgar-score-babyg-quinn-10-min" key="Observation-observation-apgar-score-babyg-quinn-10-min" name="Observation - Apgar Score - BabyG Quinn: 10 min"/>
 <artifact id="Observation/observation-apgar-score-babyg-quinn-5-min" key="Observation-observation-apgar-score-babyg-quinn-5-min" name="Observation - Apgar Score - BabyG Quinn: 5 min"/>
 <artifact id="Observation/observation-autopsy-performed-not-named" key="Observation-observation-autopsy-performed-not-named" name="Observation - Autopsy Performed - Fetus Not Named"/>
+<artifact id="StructureDefinition/Observation-autopsy-performed-indicator" key="StructureDefinition-Observation-autopsy-performed-indicator" name="Observation - Autopsy Performed Indicator"/>
+<artifact id="StructureDefinition/Observation-autopsy-histological-exam-results-used" key="StructureDefinition-Observation-autopsy-histological-exam-results-used" name="Observation - Autopsy or Histological Exam Results Used"/>
 <artifact id="Observation/observation-autopsy-histological-exam-results-used-not-named" key="Observation-observation-autopsy-histological-exam-results-used-not-named" name="Observation - Autopsy or Histological Exam Results Used - Fetus Not Named"/>
-<artifact id="StructureDefinition/Observation-autopsy-histological-exam-results-used" key="StructureDefinition-Observation-autopsy-histological-exam-results-used" name="Observation - Autopsy/Histological Exam Results Used"/>
+<artifact id="StructureDefinition/Observation-birth-plurality-of-pregnancy" key="StructureDefinition-Observation-birth-plurality-of-pregnancy" name="Observation - Birth Plurality of Pregnancy"/>
+<artifact id="StructureDefinition/Observation-birth-weight" key="StructureDefinition-Observation-birth-weight" name="Observation - Birth Weight"/>
 <artifact id="Observation/observation-birth-weight-babyg-quinn" key="Observation-observation-birth-weight-babyg-quinn" name="Observation - Birth Weight - Baby G Quinn"/>
+<artifact id="Observation/observation-birth-weight-babyg-quinn-w-edit" key="Observation-observation-birth-weight-babyg-quinn-w-edit" name="Observation - Birth Weight - Baby G Quinn, with Edit Flag"/>
 <artifact id="Observation/observation-birth-weight-not-named" key="Observation-observation-birth-weight-not-named" name="Observation - Birth Weight - Fetus Not Named"/>
+<artifact id="Observation/observation-birth-weight-not-named-w-edit" key="Observation-observation-birth-weight-not-named-w-edit" name="Observation - Birth Weight - Fetus Not Named, with Edit Flag"/>
 <artifact deprecated="true" id="StructureDefinition/Observation-bridged-race" key="StructureDefinition-Observation-bridged-race" name="Observation - Bridged Race"/>
 <artifact deprecated="true" id="StructureDefinition/Observation-characteristic-of-labor-and-delivery" key="StructureDefinition-Observation-characteristic-of-labor-and-delivery" name="Observation - Characteristic of Labor and Delivery"/>
 <artifact deprecated="true" id="Observation/observation-characteristic-of-labor-and-delivery-babyg-quinn-2" key="Observation-observation-characteristic-of-labor-and-delivery-babyg-quinn-2" name="Observation - Characteristic of Labor and Delivery example [Baby G Quinn: Antibiotics received during labor]"/>
@@ -135,6 +214,12 @@
 <artifact id="Observation/observation-cig-smoking-pregnancy-2-jada-ann-quinn" key="Observation-observation-cig-smoking-pregnancy-2-jada-ann-quinn" name="Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: first 3 months"/>
 <artifact id="Observation/observation-cig-smoking-pregnancy-4-jada-ann-quinn" key="Observation-observation-cig-smoking-pregnancy-4-jada-ann-quinn" name="Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: last 3 months"/>
 <artifact id="Observation/observation-cig-smoking-pregnancy-3-jada-ann-quinn" key="Observation-observation-cig-smoking-pregnancy-3-jada-ann-quinn" name="Observation - Cigarette Smoking Before/During Pregnancy - Jada Ann Quinn: second 3 months"/>
+<artifact id="Observation/observation-coded-initiating-fetal-death-cause-or-condition" key="Observation-observation-coded-initiating-fetal-death-cause-or-condition" name="Observation - Coded Initiating Cause of Fetal Death"/>
+<artifact id="StructureDefinition/Observation-coded-initiating-fetal-death-cause-or-condition" key="StructureDefinition-Observation-coded-initiating-fetal-death-cause-or-condition" name="Observation - Coded Initiating Fetal Death Cause or Condition"/>
+<artifact id="Observation/observation-coded-other-fetal-death-cause-or-condition-not-named" key="Observation-observation-coded-other-fetal-death-cause-or-condition-not-named" name="Observation - Coded Other Cause of Fetal Death"/>
+<artifact id="StructureDefinition/Observation-coded-other-fetal-death-cause-or-condition" key="StructureDefinition-Observation-coded-other-fetal-death-cause-or-condition" name="Observation - Coded Other Fetal Death Cause or Condition"/>
+<artifact id="Observation/observation-coded-race-and-ethnicity-father" key="Observation-observation-coded-race-and-ethnicity-father" name="Observation - CodedRaceAndEthnicity example [Father]"/>
+<artifact id="Observation/observation-coded-race-and-ethnicity-mother" key="Observation-observation-coded-race-and-ethnicity-mother" name="Observation - CodedRaceAndEthnicity example [Mother]"/>
 <artifact id="StructureDefinition/Observation-date-of-first-prenatal-care-visit" key="StructureDefinition-Observation-date-of-first-prenatal-care-visit" name="Observation - Date of First Prenatal Care Visit"/>
 <artifact id="Observation/observation-date-of-first-prenatal-care-visit-carmen-teresa-lee" key="Observation-observation-date-of-first-prenatal-care-visit-carmen-teresa-lee" name="Observation - Date of First Prenatal Care Visit - Carmen Teresa Lee"/>
 <artifact id="Observation/observation-date-of-first-prenatal-care-visit-jada-ann-quinn" key="Observation-observation-date-of-first-prenatal-care-visit-jada-ann-quinn" name="Observation - Date of First Prenatal Care Visit - Jada Ann Quinn"/>
@@ -143,118 +228,202 @@
 <artifact id="Observation/observation-date-of-last-live-birth-jada-ann-quinn" key="Observation-observation-date-of-last-live-birth-jada-ann-quinn" name="Observation - Date of Last Live Birth - Jada Ann Quinn"/>
 <artifact id="StructureDefinition/Observation-date-of-last-other-pregnancy-outcome" key="StructureDefinition-Observation-date-of-last-other-pregnancy-outcome" name="Observation - Date of Last Other Pregnancy Outcome"/>
 <artifact id="Observation/observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn" key="Observation-observation-date-of-last-other-pregnancy-outcome-jada-ann-quinn" name="Observation - Date of Last Other Pregnancy Outcome - Jada Ann Quinn"/>
-<artifact id="StructureDefinition/Observation-edit-flag-birthweight" key="StructureDefinition-Observation-edit-flag-birthweight" name="Observation - Edit Flag Birthweight"/>
-<artifact id="Observation/observation-edit-flag-delivery-wgt-not-named" key="Observation-observation-edit-flag-delivery-wgt-not-named" name="Observation - Edit Flag Delivery Weight - Fetus Not Named"/>
-<artifact id="StructureDefinition/Observation-edit-flag-estimate-of-gestation" key="StructureDefinition-Observation-edit-flag-estimate-of-gestation" name="Observation - Edit Flag Estimate of Gestation"/>
-<artifact id="Observation/observation-edit-flag-est-gestation-not-named" key="Observation-observation-edit-flag-est-gestation-not-named" name="Observation - Edit Flag Estimated Gestational Age - Decedent Not Named"/>
-<artifact id="StructureDefinition/Observation-edit-flag-fathers-date-of-birth" key="StructureDefinition-Observation-edit-flag-fathers-date-of-birth" name="Observation - Edit Flag Father's Date of Birth"/>
-<artifact id="StructureDefinition/Observation-edit-flag-fathers-education" key="StructureDefinition-Observation-edit-flag-fathers-education" name="Observation - Edit Flag Father's Education"/>
-<artifact id="StructureDefinition/Observation-edit-flag-mothers-date-of-birth" key="StructureDefinition-Observation-edit-flag-mothers-date-of-birth" name="Observation - Edit Flag Mother's Date of Birth"/>
-<artifact id="Observation/observation-edit-flag-mothers-dob-not-named" key="Observation-observation-edit-flag-mothers-dob-not-named" name="Observation - Edit Flag Mother's Date of Birth - Fetus Not Named"/>
-<artifact id="StructureDefinition/Observation-edit-flag-mothers-delivery-weight" key="StructureDefinition-Observation-edit-flag-mothers-delivery-weight" name="Observation - Edit Flag Mother's Delivery Weight"/>
-<artifact id="StructureDefinition/Observation-edit-flag-mothers-education" key="StructureDefinition-Observation-edit-flag-mothers-education" name="Observation - Edit Flag Mother's Education"/>
-<artifact id="Observation/observation-edit-flag-mothers-education-not-named" key="Observation-observation-edit-flag-mothers-education-not-named" name="Observation - Edit Flag Mother's Education - Fetus Not Named"/>
-<artifact id="StructureDefinition/Observation-edit-flag-mothers-height" key="StructureDefinition-Observation-edit-flag-mothers-height" name="Observation - Edit Flag Mother's Height"/>
-<artifact id="Observation/observation-edit-flag-mothers-height-not-named" key="Observation-observation-edit-flag-mothers-height-not-named" name="Observation - Edit Flag Mother's Height- Fetus Not Named"/>
-<artifact id="StructureDefinition/Observation-edit-flag-mothers-prepregnancy-weight" key="StructureDefinition-Observation-edit-flag-mothers-prepregnancy-weight" name="Observation - Edit Flag Mother's Prepregnancy Weight"/>
-<artifact id="Observation/observation-edit-flag-mothers-prepreg-wgt-not-named" key="Observation-observation-edit-flag-mothers-prepreg-wgt-not-named" name="Observation - Edit Flag Mother's Prepregnancy Weight - Decedent Not Named"/>
-<artifact id="StructureDefinition/Observation-edit-flag-number-prenatal-care-visits" key="StructureDefinition-Observation-edit-flag-number-prenatal-care-visits" name="Observation - Edit Flag Number Prenatal Care Visits"/>
-<artifact id="StructureDefinition/Observation-edit-flag-number-previous-cesareans" key="StructureDefinition-Observation-edit-flag-number-previous-cesareans" name="Observation - Edit Flag Number of Previous Cesareans"/>
-<artifact id="Observation/observation-edit-flag-nbr-previous-cesareans-not-named" key="Observation-observation-edit-flag-nbr-previous-cesareans-not-named" name="Observation - Edit Flag Number of Previous Cesareans - Decedent Not Named"/>
-<artifact id="StructureDefinition/Observation-edit-flag-plurality" key="StructureDefinition-Observation-edit-flag-plurality" name="Observation - Edit Flag Plurality"/>
-<artifact id="Observation/observation-edit-flag-plurality-not-named" key="Observation-observation-edit-flag-plurality-not-named" name="Observation - Edit Flag Plurality - Fetus Not Named"/>
-<artifact deprecated="true" id="Observation/observation-estimated-fetal-death-time-point-not-named" key="Observation-observation-estimated-fetal-death-time-point-not-named" name="Observation - Estimated Fetal Death Time Point example [Fetus Not Named]"/>
-<artifact id="StructureDefinition/Observation-estimated-fetal-death-time-point" key="StructureDefinition-Observation-estimated-fetal-death-time-point" name="Observation - Fetal Death Time Point"/>
-<artifact id="Observation/observation-fetal-presentation-babyg-quinn" key="Observation-observation-fetal-presentation-babyg-quinn" name="Observation - Fetal Presentation - Baby G Quinn"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-edit-flag-birthweight" key="StructureDefinition-Observation-edit-flag-birthweight" name="Observation - Edit Flag Birthweight"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-delivery-wgt-not-named" key="Observation-observation-edit-flag-delivery-wgt-not-named" name="Observation - Edit Flag Delivery Weight - Fetus Not Named"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-edit-flag-estimate-of-gestation" key="StructureDefinition-Observation-edit-flag-estimate-of-gestation" name="Observation - Edit Flag Estimate of Gestation"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-est-gestation-not-named" key="Observation-observation-edit-flag-est-gestation-not-named" name="Observation - Edit Flag Estimated Gestational Age - Decedent Not Named"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-edit-flag-fathers-date-of-birth" key="StructureDefinition-Observation-edit-flag-fathers-date-of-birth" name="Observation - Edit Flag Father's Date of Birth"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-edit-flag-fathers-education" key="StructureDefinition-Observation-edit-flag-fathers-education" name="Observation - Edit Flag Father's Education"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-edit-flag-mothers-date-of-birth" key="StructureDefinition-Observation-edit-flag-mothers-date-of-birth" name="Observation - Edit Flag Mother's Date of Birth"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-mothers-dob-not-named" key="Observation-observation-edit-flag-mothers-dob-not-named" name="Observation - Edit Flag Mother's Date of Birth - Fetus Not Named"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-edit-flag-mothers-delivery-weight" key="StructureDefinition-Observation-edit-flag-mothers-delivery-weight" name="Observation - Edit Flag Mother's Delivery Weight"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-edit-flag-mothers-education" key="StructureDefinition-Observation-edit-flag-mothers-education" name="Observation - Edit Flag Mother's Education"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-mothers-education-not-named" key="Observation-observation-edit-flag-mothers-education-not-named" name="Observation - Edit Flag Mother's Education - Fetus Not Named"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-edit-flag-mothers-height" key="StructureDefinition-Observation-edit-flag-mothers-height" name="Observation - Edit Flag Mother's Height"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-mothers-height-not-named" key="Observation-observation-edit-flag-mothers-height-not-named" name="Observation - Edit Flag Mother's Height- Fetus Not Named"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-edit-flag-mothers-prepregnancy-weight" key="StructureDefinition-Observation-edit-flag-mothers-prepregnancy-weight" name="Observation - Edit Flag Mother's Prepregnancy Weight"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-mothers-prepreg-wgt-not-named" key="Observation-observation-edit-flag-mothers-prepreg-wgt-not-named" name="Observation - Edit Flag Mother's Prepregnancy Weight - Decedent Not Named"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-edit-flag-number-prenatal-care-visits" key="StructureDefinition-Observation-edit-flag-number-prenatal-care-visits" name="Observation - Edit Flag Number Prenatal Care Visits"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-edit-flag-number-previous-cesareans" key="StructureDefinition-Observation-edit-flag-number-previous-cesareans" name="Observation - Edit Flag Number of Previous Cesareans"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-nbr-previous-cesareans-not-named" key="Observation-observation-edit-flag-nbr-previous-cesareans-not-named" name="Observation - Edit Flag Number of Previous Cesareans - Decedent Not Named"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-edit-flag-plurality" key="StructureDefinition-Observation-edit-flag-plurality" name="Observation - Edit Flag Plurality"/>
+<artifact deprecated="true" id="Observation/observation-edit-flag-plurality-not-named" key="Observation-observation-edit-flag-plurality-not-named" name="Observation - Edit Flag Plurality - Fetus Not Named"/>
+<artifact deprecated="true" id="Observation/obserestimatedvation--fetal-death-time-point-not-named" key="Observation-observation-estimated-fetal-death-time-point-not-named" name="Observation - Estimated Fetal Death Time Point example [Fetus Not Named]"/>
+<artifact id="Observation/observation-present-job-james-brandon-quinn" key="Observation-observation-present-job-james-brandon-quinn" name="Observation - Father Present Job - James Brandon Quinn"/>
+<artifact id="Observation/observation-present-job-james-brandon-quinn-coded" key="Observation-observation-present-job-james-brandon-quinn-coded" name="Observation - Father Present Job - James Brandon Quinn - coded"/>
+<artifact id="Observation/observation-present-job-tom-yan-lee" key="Observation-observation-present-job-tom-yan-lee" name="Observation - Father Present Job - Tom Yan Lee"/>
+<artifact deprecated="true" id="Observation/observation-usual-work-james-brandon-quinn" key="Observation-observation-usual-work-james-brandon-quinn" name="Observation - Father Usual Work - James Brandon Quinn"/>
+<artifact deprecated="true" id="Observation/observation-usual-work-tom-yan-lee" key="Observation-observation-usual-work-tom-yan-lee" name="Observation - Father Usual Work - Tom Yan Lee"/>
+<artifact id="StructureDefinition/Observation-fetal-death-time-point" key="StructureDefinition-Observation-fetal-death-time-point" name="Observation - Fetal Death Time Point"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-estimated-fetal-death-time-point" key="StructureDefinition-Observation-estimated-fetal-death-time-point" name="Observation - Fetal Death Time Point old"/>
 <artifact id="Observation/observation-fetal-presentation-not-named" key="Observation-observation-fetal-presentation-not-named" name="Observation - Fetal Presentation - Fetus Not Named"/>
+<artifact id="Observation/observation-fetal-presentation-babyg-quinn" key="Observation-observation-fetal-presentation-babyg-quinn" name="Observation - Fetal Presentation Baby G Quinn"/>
 <artifact id="StructureDefinition/Observation-fetal-presentation" key="StructureDefinition-Observation-fetal-presentation" name="Observation - Fetal Presentation at Birth/Delivery"/>
+<artifact id="StructureDefinition/Observation-fetal-remains-disposition-method" key="StructureDefinition-Observation-fetal-remains-disposition-method" name="Observation - Fetal Remains Disposition Method"/>
+<artifact id="StructureDefinition/Observation-gestational-age-at-delivery" key="StructureDefinition-Observation-gestational-age-at-delivery" name="Observation - Gestational Age at Delivery"/>
 <artifact id="Observation/observation-gestational-age-at-delivery-babyg-quinn" key="Observation-observation-gestational-age-at-delivery-babyg-quinn" name="Observation - Gestational Age at Delivery - Baby G Quinn"/>
+<artifact id="Observation/observation-gestational-age-at-delivery-babyg-quinn-prem-d" key="Observation-observation-gestational-age-at-delivery-babyg-quinn-prem-d" name="Observation - Gestational Age at Delivery - Baby G Quinn - Premature"/>
+<artifact id="Observation/observation-gestational-age-at-delivery-babyg-quinn-prem-w" key="Observation-observation-gestational-age-at-delivery-babyg-quinn-prem-w" name="Observation - Gestational Age at Delivery - Baby G Quinn - Premature in weeks"/>
+<artifact id="Observation/observation-gestational-age-at-delivery-babyg-quinn-w-edit" key="Observation-observation-gestational-age-at-delivery-babyg-quinn-w-edit" name="Observation - Gestational Age at Delivery - Baby G Quinn, with Edit Flag"/>
 <artifact id="Observation/observation-gestational-age-at-delivery-not-named" key="Observation-observation-gestational-age-at-delivery-not-named" name="Observation - Gestational Age at Delivery - Fetus Not Named"/>
+<artifact id="Observation/observation-gestational-age-at-delivery-not-named-w-edit" key="Observation-observation-gestational-age-at-delivery-not-named-w-edit" name="Observation - Gestational Age at Delivery - Fetus Not Named, with Edit Flag"/>
 <artifact id="StructureDefinition/Observation-histological-placental-exam-performed" key="StructureDefinition-Observation-histological-placental-exam-performed" name="Observation - Histological Placental Exam Performed"/>
 <artifact id="Observation/observation-histological-placental-exam-performed-not-named" key="Observation-observation-histological-placental-exam-performed-not-named" name="Observation - Histological Placental Exam Performed - Fetus Not Named"/>
 <artifact id="StructureDefinition/Observation-icu-admission" key="StructureDefinition-Observation-icu-admission" name="Observation - ICU Admission"/>
 <artifact id="Observation/observation-icu-admission-jada-ann-quinn" key="Observation-observation-icu-admission-jada-ann-quinn" name="Observation - ICU Admission - Jada Ann Quinn"/>
 <artifact id="StructureDefinition/Observation-infant-breastfed-at-discharge" key="StructureDefinition-Observation-infant-breastfed-at-discharge" name="Observation - Infant Breastfed at Discharge"/>
 <artifact id="Observation/observation-infant-breastfed-at-discharge-babyg-quinn" key="Observation-observation-infant-breastfed-at-discharge-babyg-quinn" name="Observation - Infant Breastfed at Discharge - Baby G Quinn"/>
+<artifact id="StructureDefinition/Observation-infant-living" key="StructureDefinition-Observation-infant-living" name="Observation - Infant Living"/>
 <artifact id="Observation/observation-infant-living-babyg-quinn" key="Observation-observation-infant-living-babyg-quinn" name="Observation - Infant Living - Baby G Quinn"/>
+<artifact id="Observation/observation-input-race-and-ethnicity-father" key="Observation-observation-input-race-and-ethnicity-father" name="Observation - InputRaceAndEthnicity example [Father]"/>
+<artifact id="Observation/observation-input-race-and-ethnicity-mother" key="Observation-observation-input-race-and-ethnicity-mother" name="Observation - InputRaceAndEthnicity example [Mother]"/>
+<artifact id="Observation/observation-input-race-and-ethnicity-carmen-teresa-lee" key="Observation-observation-input-race-and-ethnicity-carmen-teresa-lee" name="Observation - InputRaceAndEthnicity example [carmen teresa lee]"/>
+<artifact id="Observation/observation-input-race-and-ethnicity-jada-ann-quinn" key="Observation-observation-input-race-and-ethnicity-jada-ann-quinn" name="Observation - InputRaceAndEthnicity example [jada ann quinn]"/>
+<artifact id="Observation/observation-input-race-and-ethnicity-james-quinn-w-edit" key="Observation-observation-input-race-and-ethnicity-james-quinn-w-edit" name="Observation - InputRaceAndEthnicity example [james-quinn with edit]"/>
+<artifact id="Observation/observation-input-race-and-ethnicity-james-quinn" key="Observation-observation-input-race-and-ethnicity-james-quinn" name="Observation - InputRaceAndEthnicity example [james-quinn]"/>
 <artifact id="StructureDefinition/Observation-labor-trial-attempted" key="StructureDefinition-Observation-labor-trial-attempted" name="Observation - Labor Trial Attempted"/>
 <artifact id="Observation/observation-labor-trial-attempted-babyg-quinn" key="Observation-observation-labor-trial-attempted-babyg-quinn" name="Observation - Labor Trial Attempted - Baby G Quinn"/>
+<artifact id="StructureDefinition/Observation-last-menstrual-period" key="StructureDefinition-Observation-last-menstrual-period" name="Observation - Last Menstrual Period"/>
 <artifact id="Observation/observation-last-menstrual-period-carmen-teresa-lee" key="Observation-observation-last-menstrual-period-carmen-teresa-lee" name="Observation - Last Menstrual Period - Carmen Teresa Lee"/>
 <artifact id="Observation/observation-last-menstrual-period-jada-ann-quinn" key="Observation-observation-last-menstrual-period-jada-ann-quinn" name="Observation - Last Menstrual Period - Jada Ann Quinn"/>
-<artifact id="StructureDefinition/Observation-method-of-disposition" key="StructureDefinition-Observation-method-of-disposition" name="Observation - Method of Disposition"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-method-of-disposition" key="StructureDefinition-Observation-method-of-disposition" name="Observation - Method of Disposition"/>
 <artifact id="Observation/observation-method-of-disposition-not-named" key="Observation-observation-method-of-disposition-not-named" name="Observation - Method of Disposition - Fetus Not Named"/>
+<artifact id="StructureDefinition/Observation-mother-delivery-weight" key="StructureDefinition-Observation-mother-delivery-weight" name="Observation - Mother Delivery Weight (reported in pounds)"/>
 <artifact id="Observation/observation-mother-delivery-weight-jada-ann-quinn" key="Observation-observation-mother-delivery-weight-jada-ann-quinn" name="Observation - Mother Delivery Weight - Jada Ann Quinn"/>
+<artifact id="Observation/observation-mother-delivery-weight-jada-ann-quinn-w-edit" key="Observation-observation-mother-delivery-weight-jada-ann-quinn-w-edit" name="Observation - Mother Delivery Weight - Jada Ann Quinn, with Edit Flag"/>
+<artifact id="StructureDefinition/Observation-mother-height" key="StructureDefinition-Observation-mother-height" name="Observation - Mother Height"/>
 <artifact id="Observation/observation-mother-height-carmen-teresa-lee" key="Observation-observation-mother-height-carmen-teresa-lee" name="Observation - Mother Height - Carmen Teresa Lee"/>
+<artifact id="Observation/observation-mother-height-carmen-teresa-lee-w-edit" key="Observation-observation-mother-height-carmen-teresa-lee-w-edit" name="Observation - Mother Height - Carmen Teresa Lee, with Edit Flag"/>
 <artifact id="Observation/observation-mother-height-jada-ann-quinn" key="Observation-observation-mother-height-jada-ann-quinn" name="Observation - Mother Height - Jada Ann Quinn"/>
+<artifact id="Observation/observation-mother-height-jada-ann-quinn-w-edit" key="Observation-observation-mother-height-jada-ann-quinn-w-edit" name="Observation - Mother Height - Jada Ann Quinn, with Edit Flag"/>
 <artifact id="StructureDefinition/Observation-mother-married-during-pregnancy" key="StructureDefinition-Observation-mother-married-during-pregnancy" name="Observation - Mother Married During Pregnancy"/>
 <artifact id="Observation/observation-mother-married-during-pregnancy-jada-ann-quinn" key="Observation-observation-mother-married-during-pregnancy-jada-ann-quinn" name="Observation - Mother Married During Pregnancy - Jada Ann Quinn"/>
+<artifact id="StructureDefinition/Observation-mother-prepregnancy-weight" key="StructureDefinition-Observation-mother-prepregnancy-weight" name="Observation - Mother Prepregnancy Weight"/>
 <artifact id="Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee" key="Observation-observation-mother-prepregnancy-weight-carmen-teresa-lee" name="Observation - Mother Prepregnancy Weight - Carmen Teresa Lee"/>
+<artifact id="Observation/observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit" key="Observation-observation-mother-prepregnancy-weight-carmen-teresa-lee-w-edit" name="Observation - Mother Prepregnancy Weight - Carmen Teresa Lee, with Edit Flag"/>
 <artifact id="Observation/observation-mother-prepregnancy-weight-jada-ann-quinn" key="Observation-observation-mother-prepregnancy-weight-jada-ann-quinn" name="Observation - Mother Prepregnancy Weight - Jada Ann Quinn"/>
+<artifact id="Observation/observation-mother-prepregnancy-weight-jada-ann-quinn-w-edit" key="Observation-observation-mother-prepregnancy-weight-jada-ann-quinn-w-edit" name="Observation - Mother Prepregnancy Weight - Jada Ann Quinn, with Edit Flag"/>
+<artifact id="Observation/observation-present-job-carmen-teresa-lee" key="Observation-observation-present-job-carmen-teresa-lee" name="Observation - Mother Present Job - Carmen Teresa Lee"/>
+<artifact id="Observation/observation-present-job-jada-ann-quinn" key="Observation-observation-present-job-jada-ann-quinn" name="Observation - Mother Present Job - Jada Ann Quinn"/>
+<artifact id="Observation/observation-present-job-jada-ann-quinn-coded" key="Observation-observation-present-job-jada-ann-quinn-coded" name="Observation - Mother Present Job - Jada Ann Quinn - coded"/>
 <artifact id="Observation/observation-mother-received-wic-food-carmen-teresa-lee" key="Observation-observation-mother-received-wic-food-carmen-teresa-lee" name="Observation - Mother Received WIC Food - Carmen Teresa Lee"/>
 <artifact id="Observation/observation-mother-received-wic-food-jada-ann-quinn" key="Observation-observation-mother-received-wic-food-jada-ann-quinn" name="Observation - Mother Received WIC Food - Jada Ann Quinn"/>
 <artifact id="StructureDefinition/Observation-mother-received-wic-food" key="StructureDefinition-Observation-mother-received-wic-food" name="Observation - Mother Recieved WIC Food"/>
+<artifact deprecated="true" id="Observation/observation-usual-work-carmen-teresa-lee" key="Observation-observation-usual-work-carmen-teresa-lee" name="Observation - Mother Usual Work - Carmen Teresa Lee"/>
+<artifact deprecated="true" id="Observation/observation-usual-work-jada-ann-quinn" key="Observation-observation-usual-work-jada-ann-quinn" name="Observation - Mother Usual Work - Jada Ann Quinn"/>
 <artifact id="StructureDefinition/Observation-nicu-admission" key="StructureDefinition-Observation-nicu-admission" name="Observation - NICU Admission"/>
 <artifact id="Observation/observation-nicu-admission-babyg-quinn" key="Observation-observation-nicu-admission-babyg-quinn" name="Observation - NICU Admission - BabyG Quinn"/>
 <artifact id="StructureDefinition/Observation-none-of-specified-abnormal-conditions-of-newborn" key="StructureDefinition-Observation-none-of-specified-abnormal-conditions-of-newborn" name="Observation - None Of Specified Abnormal Conditions of Newborn"/>
 <artifact id="Observation/observation-none-abnormal-conditions-babyg-quinn" key="Observation-observation-none-abnormal-conditions-babyg-quinn" name="Observation - None Of Specified Abnormal Conditions of Newborn - BabyG Quinn"/>
 <artifact id="StructureDefinition/Observation-none-of-specified-characteristics-labor-delivery" key="StructureDefinition-Observation-none-of-specified-characteristics-labor-delivery" name="Observation - None Of Specified Characteristics of Labor and Delivery"/>
 <artifact id="Observation/observation-none-chars-labor-delivery-jada-ann-quinn" key="Observation-observation-none-chars-labor-delivery-jada-ann-quinn" name="Observation - None Of Specified Characteristics of Labor and Delivery - Jada Ann Quinn"/>
+<artifact id="StructureDefinition/Observation-none-congenital-anomolies-of-the-newborn" key="StructureDefinition-Observation-None-congenital-anomolies-of-the-newborn" name="Observation - None Of Specified Congenital Anomolies Of The Newborn"/>
+<artifact id="Observation/observation-none-congenital-anomolies-babyg-quinn" key="Observation-observation-none-congenital-anomolies-babyg-quinn" name="Observation - None Of Specified Congenital Anomolies of Newborn - BabyG Quinn"/>
+<artifact id="StructureDefinition/Observation-no-infections-present-during-pregnancy" key="StructureDefinition-Observation-no-infections-present-during-pregnancy" name="Observation - None Of Specified Infections During Pregnancy"/>
+<artifact id="Observation/observation-no-infections-present-jada-ann-quinn" key="Observation-observation-no-infections-present-jada-ann-quinn" name="Observation - None Of Specified Infections During Pregnancy - Jada Ann Quinn"/>
 <artifact id="StructureDefinition/Observation-none-of-specified-maternal-morbidities" key="StructureDefinition-Observation-none-of-specified-maternal-morbidities" name="Observation - None Of Specified Maternal Morbidities"/>
 <artifact id="Observation/observation-none-maternal-morbidities-jada-ann-quinn" key="Observation-observation-none-maternal-morbidities-jada-ann-quinn" name="Observation - None Of Specified Maternal Morbidities - Jada Ann Quinn"/>
+<artifact id="StructureDefinition/Observation-none-of-specified-obstetric-procedures" key="StructureDefinition-Observation-none-of-specified-obstetric-procedures" name="Observation - None Of Specified Obstetric Procedures"/>
+<artifact id="Observation/observation-none-obstetric-procedures-jada-ann-quinn" key="Observation-observation-none-obstetric-procedures-jada-ann-quinn" name="Observation - None Of Specified Obstetric Procedures - Jada Ann Quinn"/>
+<artifact id="StructureDefinition/Observation-none-of-specified-pregnancy-risk-factors" key="StructureDefinition-Observation-none-of-specified-pregnancy-risk-factors" name="Observation - None Of Specified Pregnancy Risk Factors"/>
+<artifact id="Observation/observation-none-specified-risk-factors-jada-ann-quinn" key="Observation-observation-none-specified-risk-factors-jada-ann-quinn" name="Observation - None of Specified Risk Factors - Jada Ann Quinn"/>
 <artifact id="Observation/observation-number-births-now-dead-jada-ann-quinn" key="Observation-observation-number-births-now-dead-jada-ann-quinn" name="Observation - Number Births Now Dead - Jada Ann Quinn"/>
 <artifact id="Observation/observation-number-births-now-living-jada-ann-quinn" key="Observation-observation-number-births-now-living-jada-ann-quinn" name="Observation - Number Births Now Living - Jada Ann Quinn"/>
 <artifact id="Observation/observation-number-live-births-this-delivery-carmen-teresa-lee" key="Observation-observation-number-live-births-this-delivery-carmen-teresa-lee" name="Observation - Number Live Births This Delivery - Carmen Teresa Lee"/>
 <artifact id="Observation/observation-number-live-births-this-delivery-jada-ann-quinn" key="Observation-observation-number-live-births-this-delivery-jada-ann-quinn" name="Observation - Number Live Births This Delivery - Jada Ann Quinn"/>
 <artifact id="Observation/observation-number-other-pregnancy-outcomes-jada-ann-quinn" key="Observation-observation-number-other-pregnancy-outcomes-jada-ann-quinn" name="Observation - Number Other Pregnancy Outcomes - Jada Ann Quinn"/>
 <artifact id="Observation/observation-number-prenatal-visits-jada-ann-quinn" key="Observation-observation-number-prenatal-visits-jada-ann-quinn" name="Observation - Number Prenatal Visits - Jada Ann Quinn"/>
+<artifact id="Observation/observation-number-prenatal-visits-jada-ann-quinn-w-edit" key="Observation-observation-number-prenatal-visits-jada-ann-quinn-w-edit" name="Observation - Number Prenatal Visits - Jada Ann Quinn, with Edit Flag"/>
 <artifact id="Observation/observation-number-previous-cesareans-jada-ann-quinn" key="Observation-observation-number-previous-cesareans-jada-ann-quinn" name="Observation - Number Previous Cesareans - Jada Ann Quinn"/>
+<artifact id="Observation/observation-number-previous-cesareans-jada-ann-quinn-w-edit" key="Observation-observation-number-previous-cesareans-jada-ann-quinn-w-edit" name="Observation - Number Previous Cesareans - Jada Ann Quinn, with Edit Flag"/>
+<artifact id="StructureDefinition/Observation-number-births-now-dead" key="StructureDefinition-Observation-number-births-now-dead" name="Observation - Number of Births Now Dead"/>
 <artifact id="Observation/observation-number-births-now-dead-carmen-teresa-lee" key="Observation-observation-number-births-now-dead-carmen-teresa-lee" name="Observation - Number of Births Now Dead - Carmen Teresa Lee"/>
+<artifact id="StructureDefinition/Observation-number-births-now-living" key="StructureDefinition-Observation-number-births-now-living" name="Observation - Number of Births Now Living"/>
 <artifact id="Observation/observation-number-births-now-living-carmen-teresa-lee" key="Observation-observation-number-births-now-living-carmen-teresa-lee" name="Observation - Number of Births Now Living - Carmen Teresa Lee"/>
+<artifact id="StructureDefinition/Observation-number-fetal-deaths-this-delivery" key="StructureDefinition-Observation-number-fetal-deaths-this-delivery" name="Observation - Number of Fetal Deaths This Delivery"/>
 <artifact id="Observation/observation-number-deaths-this-delivery-carmen-teresa-lee" key="Observation-observation-number-deaths-this-delivery-carmen-teresa-lee" name="Observation - Number of Fetal Deaths This Delivery - Carmen Teresa Lee"/>
+<artifact id="StructureDefinition/Observation-number-live-births-this-delivery" key="StructureDefinition-Observation-number-live-births-this-delivery" name="Observation - Number of Live Births This Delivery"/>
+<artifact id="StructureDefinition/Observation-number-other-pregnancy-outcomes" key="StructureDefinition-Observation-number-other-pregnancy-outcomes" name="Observation - Number of Other Pregnancy Outcomes"/>
+<artifact id="StructureDefinition/Observation-number-prenatal-visits" key="StructureDefinition-Observation-number-prenatal-visits" name="Observation - Number of Prenatal Visits"/>
+<artifact id="StructureDefinition/Observation-number-previous-cesareans" key="StructureDefinition-Observation-number-previous-cesareans" name="Observation - Number of Previous Cesareans"/>
 <artifact id="Observation/observation-fetal-death-time-point-not-named" key="Observation-observation-fetal-death-time-point-not-named" name="Observation - Observation Estimated Fetal Death Time Point - Fetus Not Named"/>
 <artifact id="Observation/observation-parent-education-level-carmen-teresa-lee" key="Observation-observation-parent-education-level-carmen-teresa-lee" name="Observation - Parent Education Level - Carmen Teresa Lee"/>
+<artifact id="Observation/observation-parent-education-level-carmen-teresa-lee-w-edit" key="Observation-observation-parent-education-level-carmen-teresa-lee-w-edit" name="Observation - Parent Education Level - Carmen Teresa Lee, with Edit Flag"/>
 <artifact id="Observation/observation-parent-education-level-jada-ann-quinn" key="Observation-observation-parent-education-level-jada-ann-quinn" name="Observation - Parent Education Level - Jada Ann Quinn"/>
+<artifact id="Observation/observation-parent-education-level-jada-ann-quinn-w-edit" key="Observation-observation-parent-education-level-jada-ann-quinn-w-edit" name="Observation - Parent Education Level - Jada Ann Quinn, with Edit Flag"/>
 <artifact id="Observation/observation-parent-education-level-james-quinn" key="Observation-observation-parent-education-level-james-quinn" name="Observation - Parent Education Level - James Quinn"/>
+<artifact id="Observation/observation-parent-education-level-james-quinn-w-edit" key="Observation-observation-parent-education-level-james-quinn-w-edit" name="Observation - Parent Education Level - James Quinn, with Edit Flag"/>
+<artifact id="Observation/observation-parent-education-level-tom-yan-lee" key="Observation-observation-parent-education-level-tom-yan-lee" name="Observation - Parent Education Level - Tom Yan Lee"/>
+<artifact id="Observation/observation-parent-education-level-tom-yan-lee-w-edit" key="Observation-observation-parent-education-level-tom-yan-lee-w-edit" name="Observation - Parent Education Level - Tom Yan Lee, with Edit Flag"/>
 <artifact id="StructureDefinition/Observation-paternity-acknowledgement-signed" key="StructureDefinition-Observation-paternity-acknowledgement-signed" name="Observation - Paternity Acknowledgement Signed"/>
 <artifact id="Observation/observation-paternity-acknowledgement-signed-james-quinn" key="Observation-observation-paternity-acknowledgement-signed-james-quinn" name="Observation - Paternity Acknowledgement Signed - James Quinn"/>
+<artifact id="Observation/observation-paternity-acknowledgement-signed-james-quinn-w-edit" key="Observation-observation-paternity-acknowledgement-signed-james-quinn-w-edit" name="Observation - Paternity Acknowledgement Signed - James Quinn with edit reference"/>
 <artifact id="StructureDefinition/Observation-planned-to-deliver-at-home" key="StructureDefinition-Observation-planned-to-deliver-at-home" name="Observation - Planned to Deliver at Home"/>
 <artifact id="Observation/observation-planned-to-deliver-at-home-babyg-quinn" key="Observation-observation-planned-to-deliver-at-home-babyg-quinn" name="Observation - Planned to Deliver at Home - Baby G Quinn"/>
 <artifact id="Observation/observation-planned-to-deliver-at-home-not-named" key="Observation-observation-planned-to-deliver-at-home-not-named" name="Observation - Planned to Delivery at Home - Fetus Not Named"/>
-<artifact id="Observation/observation-plurality-carmen-teresa-lee" key="Observation-observation-plurality-carmen-teresa-lee" name="Observation - Plurality - Carmen Teresa Lee"/>
-<artifact id="Observation/observation-plurality-jada-ann-quinn" key="Observation-observation-plurality-jada-ann-quinn" name="Observation - Plurality - Jada Ann Quinn"/>
-<artifact id="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-4" key="Observation-observation-pregnancy-risk-factor-jada-ann-quinn-4" name="Observation - Pregnancy Risk Factor - Jada Ann Quinn: Deliveries by Cesarean"/>
+<artifact deprecated="true" id="Observation/observation-plurality-jada-ann-quinn" key="Observation-observation-plurality-jada-ann-quinn" name="Observation - Plurality - Jada Ann Quinn"/>
+<artifact deprecated="true" id="Observation/observation-plurality-carmen-teresa-lee" key="Observation-observation-plurality-carmen-teresa-lee" name="Observation - Plurality of Pregnancy example [Carmen Teresa Lee]"/>
+<artifact deprecated="true" id="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-4" key="Observation-observation-pregnancy-risk-factor-jada-ann-quinn-4" name="Observation - Pregnancy Risk Factor - Jada Ann Quinn: Deliveries by Cesarean"/>
 <artifact deprecated="true" id="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-2" key="Observation-observation-pregnancy-risk-factor-carmen-teresa-lee-2" name="Observation - Pregnancy Risk Factor example [Carmen Teresa Lee: Gestational diabetes mellitus]"/>
 <artifact deprecated="true" id="Observation/observation-pregnancy-risk-factor-carmen-teresa-lee-1" key="Observation-observation-pregnancy-risk-factor-carmen-teresa-lee-1" name="Observation - Pregnancy Risk Factor example [Carmen Teresa Lee: Hypertensive disorder, systemic arterial]"/>
 <artifact deprecated="true" id="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-3" key="Observation-observation-pregnancy-risk-factor-jada-ann-quinn-3" name="Observation - Pregnancy Risk Factor example [Jada Ann Quinn: Assisted fertilization]"/>
 <artifact deprecated="true" id="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-2" key="Observation-observation-pregnancy-risk-factor-jada-ann-quinn-2" name="Observation - Pregnancy Risk Factor example [Jada Ann Quinn: Fertility enhancing drug therapy]"/>
 <artifact deprecated="true" id="Observation/observation-pregnancy-risk-factor-jada-ann-quinn-1" key="Observation-observation-pregnancy-risk-factor-jada-ann-quinn-1" name="Observation - Pregnancy Risk Factor example [Jada Ann Quinn: Pregnancy-induced hypertension]"/>
-<artifact id="Observation/observation-race-carmen-teresa-lee" key="Observation-observation-race-carmen-teresa-lee" name="Observation - Race - Vital Records - Carmen Teresa Lee"/>
-<artifact id="Observation/observation-race-jada-ann-quinn" key="Observation-observation-race-jada-ann-quinn" name="Observation - Race - Vital Records - Jada Ann Quinn"/>
-<artifact id="Observation/observation-race-james-quinn" key="Observation-observation-race-james-quinn" name="Observation - Race - Vital Records - James Quinn"/>
-<artifact id="Observation/observation-race-tom-yan-lee" key="Observation-observation-race-tom-yan-lee" name="Observation - Race - Vital Records - Tom Yan Lee"/>
+<artifact id="StructureDefinition/Observation-present-job" key="StructureDefinition-Observation-present-job" name="Observation - Present Job"/>
+<artifact id="StructureDefinition/Observation-previous-cesarean" key="StructureDefinition-Observation-previous-cesarean" name="Observation - Previous Cesarean"/>
+<artifact id="Observation/observation-previous-cesarean-jada-ann-quinn" key="Observation-observation-previous-cesarean-jada-ann-quinn" name="Observation - Previous Cesarean - Jada Ann Quinn"/>
+<artifact id="StructureDefinition/Observation-previous-preterm-birth" key="StructureDefinition-Observation-previous-preterm-birth" name="Observation - Previous Preterm Birth"/>
+<artifact id="Observation/observation-previous-preterm-births-jada-ann-quinn" key="Observation-observation-previous-preterm-births-jada-ann-quinn" name="Observation - Previous Preterm Births - Jada Ann Quinn"/>
+<artifact deprecated="true" id="Observation/observation-race-carmen-teresa-lee" key="Observation-observation-race-carmen-teresa-lee" name="Observation - Race - Vital Records - Carmen Teresa Lee"/>
+<artifact deprecated="true" id="Observation/observation-race-jada-ann-quinn" key="Observation-observation-race-jada-ann-quinn" name="Observation - Race - Vital Records - Jada Ann Quinn"/>
+<artifact deprecated="true" id="Observation/observation-race-james-quinn" key="Observation-observation-race-james-quinn" name="Observation - Race - Vital Records - James Quinn"/>
+<artifact deprecated="true" id="Observation/observation-race-tom-yan-lee" key="Observation-observation-race-tom-yan-lee" name="Observation - Race - Vital Records - Tom Yan Lee"/>
 <artifact id="Observation/observation-ssn-requested-for-child-babyg-quinn" key="Observation-observation-ssn-requested-for-child-babyg-quinn" name="Observation - SSN Requested for Child - BabyG Quinn"/>
 <artifact id="StructureDefinition/Observation-ssn-requested-for-child" key="StructureDefinition-Observation-ssn-requested-for-child" name="Observation - Social Security Number Requested For Child"/>
 <artifact deprecated="true" id="StructureDefinition/Observation-tabulated-ethnicity" key="StructureDefinition-Observation-tabulated-ethnicity" name="Observation - Tabulated Ethnicity"/>
-<artifact id="Observation/observation-tabulated-ethnicity-carmen-teresa-lee" key="Observation-observation-tabulated-ethnicity-carmen-teresa-lee" name="Observation - Tabulated Ethnicity - Vital Records - Carmen Teresa Lee"/>
-<artifact id="Observation/observation-tabulated-ethnicity-jada-ann-quinn" key="Observation-observation-tabulated-ethnicity-jada-ann-quinn" name="Observation - Tabulated Ethnicity - Vital Records - Jada Ann Quinn"/>
-<artifact id="Observation/observation-tabulated-ethnicity-james-quinn" key="Observation-observation-tabulated-ethnicity-james-quinn" name="Observation - Tabulated Ethnicity - Vital Records - James Quinn"/>
-<artifact id="Observation/observation-tabulated-ethnicity-tom-yan-lee" key="Observation-observation-tabulated-ethnicity-tom-yan-lee" name="Observation - Tabulated Ethnicity - Vital Records - Tom Yan Lee"/>
+<artifact deprecated="true" id="Observation/observation-tabulated-ethnicity-carmen-teresa-lee" key="Observation-observation-tabulated-ethnicity-carmen-teresa-lee" name="Observation - Tabulated Ethnicity - Vital Records - Carmen Teresa Lee"/>
+<artifact deprecated="true" id="Observation/observation-tabulated-ethnicity-jada-ann-quinn" key="Observation-observation-tabulated-ethnicity-jada-ann-quinn" name="Observation - Tabulated Ethnicity - Vital Records - Jada Ann Quinn"/>
+<artifact deprecated="true" id="Observation/observation-tabulated-ethnicity-james-quinn" key="Observation-observation-tabulated-ethnicity-james-quinn" name="Observation - Tabulated Ethnicity - Vital Records - James Quinn"/>
+<artifact deprecated="true" id="Observation/observation-tabulated-ethnicity-tom-yan-lee" key="Observation-observation-tabulated-ethnicity-tom-yan-lee" name="Observation - Tabulated Ethnicity - Vital Records - Tom Yan Lee"/>
+<artifact id="Observation/observation-unknown-route-method-delivery-jada-ann-quinn" key="Observation-observation-unknown-route-method-delivery-jada-ann-quinn" name="Observation - Unknown Final Route Method of Delivery - Jada Ann Quinn"/>
+<artifact id="StructureDefinition/Observation-unknown-final-route-and-method-of-delivery" key="StructureDefinition-Observation-unknown-final-route-and-method-of-delivery" name="Observation - Unknown Final Route and Method of Delivery"/>
 <artifact id="Observation/observation-number-previous-cesareans-carmen-teresa-lee" key="Observation-observation-number-previous-cesareans-carmen-teresa-lee" name="Observations - Number Previous Cesareans - Carmen Teresa Lee"/>
-<artifact id="Patient/patient-child-babyg-quinn" key="Patient-patient-child-babyg-quinn" name="Patient - Child - Vital Records - Baby G Quinn"/>
-<artifact id="Patient/patient-decedent-fetus-not-named" key="Patient-patient-decedent-fetus-not-named" name="Patient - Decedent Fetus - Vital Records - Fetus Not Named"/>
-<artifact id="Patient/patient-mother-carmen-teresa-lee" key="Patient-patient-mother-carmen-teresa-lee" name="Patient - Mother - Vital Records - Carmen Teresa Lee"/>
-<artifact id="Patient/patient-mother-jada-ann-quinn" key="Patient-patient-mother-jada-ann-quinn" name="Patient - Mother - Vital Records - Jada Ann Quinn"/>
+<artifact id="Observation/observation-number-previous-cesareans-carmen-teresa-lee-w-edit" key="Observation-observation-number-previous-cesareans-carmen-teresa-lee-w-edit" name="Observations - Number Previous Cesareans - Carmen Teresa Lee, with Edit Flag"/>
+<artifact id="ValueSet/ValueSet-obstetric-procedure-outcome" key="ValueSet-ValueSet-obstetric-procedure-outcome" name="Obstetric Procedure Outcome"/>
+<artifact id="Patient/patient-child-babyg-quinn" key="Patient-patient-child-babyg-quinn" name="Patient - Child example [Baby G Quinn]"/>
+<artifact id="Patient/patient-child-babyg-quinn-w-edit" key="Patient-patient-child-babyg-quinn-w-edit" name="Patient - Child example [Baby G Quinn], with Edit Flag"/>
+<artifact id="StructureDefinition/Patient-decedent-fetus" key="StructureDefinition-Patient-decedent-fetus" name="Patient - Decedent Fetus"/>
+<artifact id="Patient/patient-decedent-fetus-not-named" key="Patient-patient-decedent-fetus-not-named" name="Patient - Decedent Fetus example [Fetus Not Named]"/>
+<artifact id="Patient/patient-decedent-fetus-not-named-w-edit" key="Patient-patient-decedent-fetus-not-named-w-edit" name="Patient - Decedent Fetus example [Fetus Not Named], with Edit Flag"/>
+<artifact id="Patient/patient-mother-birth-date-part-absent" key="Patient-patient-mother-birth-date-part-absent" name="Patient - Mother Date Part Absent"/>
+<artifact id="Patient/patient-mother-jada-ann-quinn" key="Patient-patient-mother-jada-ann-quinn" name="Patient - Mother Jada Ann Quinn"/>
+<artifact id="Patient/patient-mother-jada-ann-quinn-w-edit" key="Patient-patient-mother-jada-ann-quinn-w-edit" name="Patient - Mother Jada Ann Quinn, with Edit Flag"/>
+<artifact id="Patient/patient-mother-carmen-teresa-lee" key="Patient-patient-mother-carmen-teresa-lee" name="Patient - Mother example [Carmen Teresa Lee]"/>
+<artifact id="Patient/patient-mother-carmen-teresa-lee-w-edit" key="Patient-patient-mother-carmen-teresa-lee-w-edit" name="Patient - Mother example [Carmen Teresa Lee], with Edit Flag"/>
+<artifact id="ValueSet/ValueSet-performed-not-performed-planned" key="ValueSet-ValueSet-performed-not-performed-planned" name="Performed NotPerformed Planned"/>
+<artifact id="ConceptMap/PerformedNotPerformedPlannedCM" key="ConceptMap-PerformedNotPerformedPlannedCM" name="PerformedNotPerformedPlanned Concept Map"/>
+<artifact id="StructureDefinition/Practitioner-birth-attendant" key="StructureDefinition-Practitioner-birth-attendant" name="Practitioner - Birth Attendant"/>
+<artifact id="StructureDefinition/Practitioner-birth-certifier" key="StructureDefinition-Practitioner-birth-certifier" name="Practitioner - Birth Certifier"/>
 <artifact deprecated="true" id="Practitioner/practitioner-live-birth-fetal-death-janet-seito" key="Practitioner-practitioner-live-birth-fetal-death-janet-seito" name="Practitioner - Live Birth Fetal Death example [Janet Seito]"/>
 <artifact deprecated="true" id="Practitioner/practitioner-live-birth-fetal-death-jessica-leung" key="Practitioner-practitioner-live-birth-fetal-death-jessica-leung" name="Practitioner - Live Birth Fetal Death example [Jessica Leung]"/>
 <artifact deprecated="true" id="Practitioner/practitioner-live-birth-fetal-death-avery-jones" key="Practitioner-practitioner-live-birth-fetal-death-avery-jones" name="Practitioner - Live Birth and Fetal Death example [Avery Jones, MD]"/>
 <artifact id="Practitioner/practitioner-vital-records-avery-jones" key="Practitioner-practitioner-vital-records-avery-jones" name="Practitioner - Vital Records - Avery Jones, MD"/>
 <artifact id="Practitioner/practitioner-vital-records-janet-seito" key="Practitioner-practitioner-vital-records-janet-seito" name="Practitioner - Vital Records - Janet Seito"/>
 <artifact id="Practitioner/practitioner-vital-records-jessica-leung" key="Practitioner-practitioner-vital-records-jessica-leung" name="Practitioner - Vital Records - Jessica Leung"/>
+<artifact id="StructureDefinition/practitioner-role-birth-attendant" key="StructureDefinition-practitioner-role-birth-attendant" name="Practitioner Role - Birth Attendant"/>
+<artifact id="StructureDefinition/practitioner-role-birth-certifier" key="StructureDefinition-practitioner-role-birth-certifier" name="Practitioner Role - Certifier"/>
+<artifact id="ValueSet/ValueSet-pregnancy-report-edit-flags" key="ValueSet-ValueSet-pregnancy-report-edit-flags" name="Pregnancy Report Edit Flags (NCHS)"/>
+<artifact id="ConceptMap/PregnancyReportEditFlagsCM" key="ConceptMap-PregnancyReportEditFlagsCM" name="PregnancyReportEditFlags Concept Map"/>
 <artifact id="StructureDefinition/Procedure-antibiotic-suspected-neonatal-sepsis" key="StructureDefinition-Procedure-antibiotic-suspected-neonatal-sepsis" name="Procedure - Antibiotic for Suspected Neonatal Sepsis"/>
 <artifact id="Procedure/procedure-antibiotic-sepsis-babyg-quinn" key="Procedure-procedure-antibiotic-sepsis-babyg-quinn" name="Procedure - Antibiotic for Suspected Neonatal Sepsis - BabyG Quinn"/>
-<artifact id="Procedure/procedure-ventilation-following-babyg-quinn" key="Procedure-procedure-ventilation-following-babyg-quinn" name="Procedure - Assissted Ventilation Following Delivery - BabyG Quinn"/>
-<artifact id="Procedure/procedure-assisted-fertilization-jada-ann-quinn" key="Procedure-procedure-assisted-fertilization-jada-ann-quinn" name="Procedure - Assisted Fertilization - Jada Ann Quinn"/>
+<artifact deprecated="true" id="StructureDefinition/Procedure-artificial-insemination" key="StructureDefinition-Procedure-artificial-insemination" name="Procedure - Artificial Insemination"/>
+<artifact id="Procedure/procedure-artificial-insemination-jada-ann-quinn" key="Procedure-procedure-artificial-insemination-jada-ann-quinn" name="Procedure - Artificial Insemniation - Jada Ann Quinn"/>
+<artifact deprecated="true" id="StructureDefinition/Procedure-assisted-fertilization" key="StructureDefinition-Procedure-assisted-fertilization" name="Procedure - Assisted Fertilization"/>
+<artifact deprecated="true" id="Procedure/procedure-assisted-fertilization-jada-ann-quinn" key="Procedure-procedure-assisted-fertilization-jada-ann-quinn" name="Procedure - Assisted Fertilization - Jada Ann Quinn"/>
+<artifact id="StructureDefinition/Procedure-assisted-reproductive-technology" key="StructureDefinition-Procedure-assisted-reproductive-technology" name="Procedure - Assisted Reproductive Technology"/>
+<artifact id="Procedure/procedure-assisted-reproductive-technology-jada-ann-quinn" key="Procedure-procedure-assisted-reproductive-technology-jada-ann-quinn" name="Procedure - Assisted Reproductive Technology - Jada Ann Quinn"/>
 <artifact id="StructureDefinition/Procedure-assisted-ventilation-following-delivery" key="StructureDefinition-Procedure-assisted-ventilation-following-delivery" name="Procedure - Assisted Ventilation Following Delivery"/>
+<artifact id="Procedure/procedure-ventilation-following-babyg-quinn" key="Procedure-procedure-ventilation-following-babyg-quinn" name="Procedure - Assisted Ventilation Following Delivery - BabyG Quinn"/>
 <artifact id="StructureDefinition/Procedure-assisted-ventilation-more-than-six-hours" key="StructureDefinition-Procedure-assisted-ventilation-more-than-six-hours" name="Procedure - Assisted Ventilation More Than Six Hours"/>
 <artifact id="Procedure/procedure-ventilation-more-6-hours-babyg-quinn" key="Procedure-procedure-ventilation-more-6-hours-babyg-quinn" name="Procedure - Assisted Ventilation More Than Six Hours - BabyG Quinn"/>
 <artifact id="StructureDefinition/Procedure-augmentation-of-labor" key="StructureDefinition-Procedure-augmentation-of-labor" name="Procedure - Augmentation of Labor"/>
@@ -263,11 +432,13 @@
 <artifact id="Procedure/procedure-blood-transfusion-jada-ann-quinn" key="Procedure-procedure-blood-transfusion-jada-ann-quinn" name="Procedure - Blood Transfusion - Jada Ann Quinn"/>
 <artifact id="StructureDefinition/Procedure-epidural-or-spinal-anesthesia" key="StructureDefinition-Procedure-epidural-or-spinal-anesthesia" name="Procedure - Epidural or Spinal Anesthesia"/>
 <artifact id="Procedure/procedure-epidural-or-spinal-anesthesia-jada-ann-quinn" key="Procedure-procedure-epidural-or-spinal-anesthesia-jada-ann-quinn" name="Procedure - Epidural or Spinal Anesthesia - Jada Ann Quinn"/>
+<artifact id="StructureDefinition/Procedure-fertility-enhancing-drug-therapy-artificial-insem" key="StructureDefinition-Procedure-fertility-enhancing-drug-therapy-artificial-insem" name="Procedure - Fertility Enhancing Drug Therapy, Artificial or Intrauterine Insemination"/>
 <artifact id="Procedure/procedure-final-route-method-delivery-not-named" key="Procedure-procedure-final-route-method-delivery-not-named" name="Procedure - Final Route / Method of Delivery - Fetus Not Named"/>
 <artifact id="StructureDefinition/Procedure-final-route-method-delivery" key="StructureDefinition-Procedure-final-route-method-delivery" name="Procedure - Final Route and Method of Delivery"/>
 <artifact id="Procedure/procedure-final-route-method-delivery-babyg-quinn" key="Procedure-procedure-final-route-method-delivery-babyg-quinn" name="Procedure - Final Route and Method of Delivery - Baby G Quinn"/>
 <artifact id="StructureDefinition/Procedure-induction-of-labor" key="StructureDefinition-Procedure-induction-of-labor" name="Procedure - Induction of Labor"/>
 <artifact id="Procedure/procedure-induction-of-labor-jada-ann-quinn" key="Procedure-procedure-induction-of-labor-jada-ann-quinn" name="Procedure - Induction of Labor - Jada Ann Quinn"/>
+<artifact id="StructureDefinition/Procedure-infertility-treatment" key="StructureDefinition-Procedure-infertility-treatment" name="Procedure - Infertility Treatment"/>
 <artifact id="Procedure/procedure-infertility-treatment-jada-ann-quinn" key="Procedure-procedure-infertility-treatment-jada-ann-quinn" name="Procedure - Infertility Treatment - Jada Ann Quinn"/>
 <artifact id="StructureDefinition/Procedure-obstetric" key="StructureDefinition-Procedure-obstetric" name="Procedure - Obstetric"/>
 <artifact id="Procedure/procedure-obstetric-procedure-jada-ann-quinn" key="Procedure-procedure-obstetric-procedure-jada-ann-quinn" name="Procedure - Obstetric Procedure - Jada Ann Quinn"/>
@@ -282,47 +453,64 @@
 <artifact id="QuestionnaireResponse/QuestionnaireResponse-mothers-live-birth-jada-quinn" key="QuestionnaireResponse-QuestionnaireResponse-mothers-live-birth-jada-quinn" name="QuestionnaireResponse - Mother's Worksheet for Child's Birth Certificate: Jada Ann Quinn"/>
 <artifact id="QuestionnaireResponse/QuestionnaireResponse-patients-fetal-death-carmen-lee" key="QuestionnaireResponse-QuestionnaireResponse-patients-fetal-death-carmen-lee" name="QuestionnaireResponse - Patient's Fetal Death Worksheet: Carmen Lee"/>
 <artifact id="RelatedPerson/relatedperson-father-natural-james-brandon-quinn" key="RelatedPerson-relatedperson-father-natural-james-brandon-quinn" name="RelatedPerson - Father Natural - Vital Records - James Brandon Quinn"/>
+<artifact id="RelatedPerson/relatedperson-father-natural-james-brandon-quinn-w-edit" key="RelatedPerson-relatedperson-father-natural-james-brandon-quinn-w-edit" name="RelatedPerson - Father Natural - Vital Records - James Brandon Quinn, with Edit Flag"/>
 <artifact id="RelatedPerson/relatedperson-father-natural-tom-yan-lee" key="RelatedPerson-relatedperson-father-natural-tom-yan-lee" name="RelatedPerson - Father Natural - Vital Records - Tom Yan Lee"/>
+<artifact id="RelatedPerson/relatedperson-father-natural-tom-yan-lee-w-edit" key="RelatedPerson-relatedperson-father-natural-tom-yan-lee-w-edit" name="RelatedPerson - Father Natural - Vital Records - Tom Yan Lee, with Edit Flag"/>
 <artifact deprecated="true" id="RelatedPerson/relatedperson-father-james-brandon-quinn" key="RelatedPerson-relatedperson-father-james-brandon-quinn" name="RelatedPerson - Father example [James Brandon Quinn]"/>
 <artifact deprecated="true" id="RelatedPerson/relatedperson-father-tom-yan-lee" key="RelatedPerson-relatedperson-father-tom-yan-lee" name="RelatedPerson - Father example [Tom Yan Lee]"/>
 <artifact id="RelatedPerson/relatedperson-mother-carmen-teresa-lee" key="RelatedPerson-relatedperson-mother-carmen-teresa-lee" name="RelatedPerson - Mother Gestational - Vital Records - Carmen Teresa Lee"/>
 <artifact id="RelatedPerson/relatedperson-mother-jada-ann-quinn" key="RelatedPerson-relatedperson-mother-jada-ann-quinn" name="RelatedPerson - Mother Gestational - Vital Records - Jada Ann Quinn"/>
 <artifact deprecated="true" id="StructureDefinition/Task-bfdr" key="StructureDefinition-Task-bfdr" name="Task - Birth and Fetal Death"/>
-<artifact id="Location/location-east-hospital" key="Location-location-east-hospital" name="US Core Location - East Hospital"/>
-<artifact id="Location/location-north-hospital" key="Location-location-north-hospital" name="US Core Location - North Hospital"/>
-<artifact id="Location/location-south-hospital" key="Location-location-south-hospital" name="US Core Location - South Hospital"/>
 <artifact id="Organization/organization-jurisdictional-vital-records-office" key="Organization-organization-jurisdictional-vital-records-office" name="US Core Organization - Jurisdictional Vital Records Office"/>
 <artifact id="Organization/organization-nchs" key="Organization-organization-nchs" name="US Core Organization - National Center for Health Statistics [NCHS]"/>
 <artifact id="Organization/organization-south-hospital" key="Organization-organization-south-hospital" name="US Core Organization - South Hospital"/>
-<artifact id="Parameters/expansion-parameters-bfdr" key="Parameters-expansion-parameters" name="USA SNOMED-CT"/>
+<artifact id="Parameters/expansion-parameters" key="Parameters-expansion-parameters" name="USA SNOMED-CT"/>
+<artifact id="ValueSet/ValueSet-units-of-gestational-age" key="ValueSet-ValueSet-units-of-gestational-age" name="Units of Gestational Age"/>
 <artifact deprecated="true" id="ValueSet/ValueSet-cigarette-smoking-before-during-pregnancy" key="ValueSet-ValueSet-cigarette-smoking-before-during-pregnancy" name="Value Set - Cigarette Smoking Before and During Pregnancy"/>
+<artifact deprecated="true" id="ValueSet/ValueSet-fathers-date-of-birth-edit-flags" key="ValueSet-ValueSet-fathers-date-of-birth-edit-flags" name="ValueSet - Fathers Date of Birth Edit Flags (NCHS)"/>
+<artifact deprecated="true" id="ValueSet/ValueSet-histological-placental-examination" key="ValueSet-ValueSet-histological-placental-examination" name="ValueSet - Histological Placental Examination"/>
 <artifact deprecated="true" id="ValueSet/ValueSet-messageheader-event-bfdr" key="ValueSet-ValueSet-messageheader-event-bfdr" name="ValueSet - MessageHeader Event Birth and Fetal Death"/>
-<artifact id="ValueSet/ValueSet-replacement-status" key="ValueSet-ValueSet-replacement-status" name="ValueSet - Replacement Status"/>
-<artifact id="ValueSet/ValueSet-yes-no-not-applicable" key="ValueSet-ValueSet-yes-no-not-applicable" name="ValueSet - Yes No NotApplicable"/>
+<artifact deprecated="true" id="ValueSet/ValueSet-mothers-date-of-birth-edit-flags" key="ValueSet-ValueSet-mothers-date-of-birth-edit-flags" name="ValueSet - Mothers Date of Birth Edit Flags (NCHS)"/>
+<artifact deprecated="true" id="ValueSet/ValueSet-obstetric-procedure" key="ValueSet-ValueSet-obstetric-procedure" name="ValueSet - Obstetric Procedures"/>
+<artifact deprecated="true" id="ValueSet/ValueSet-plurality-edit-flags" key="ValueSet-ValueSet-plurality-edit-flags" name="ValueSet - Plurality Edit Flags (NCHS)"/>
+<artifact deprecated="true" id="ValueSet/ValueSet-replacement-status" key="ValueSet-ValueSet-replacement-status" name="ValueSet - Replacement Status"/>
+<artifact deprecated="true" id="ValueSet/ValueSet-yes-no-not-applicable" key="ValueSet-ValueSet-yes-no-not-applicable" name="ValueSet - Yes No NotApplicable"/>
 <artifact deprecated="true" id="Composition/composition-void-fetal-death-not-named" key="Composition-composition-void-fetal-death-not-named" name="Void fetal death report Document"/>
 <artifact deprecated="true" id="Composition/composition-void-live-birth-certificate-babyg-quinn" key="Composition-composition-void-live-birth-certificate-babyg-quinn" name="Voided Live Birth Certificate Document"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="appendices" name="Appendices"/>
-<page key="appendix_a__example_facility_worksheet_for_the_live_birth_certificate" name="Appendix A - Example Facility Worksheet for the Live Birth Certificate"/>
-<page key="appendix_b__example_live_birth_certificate" name="Appendix B - Example Live Birth Certificate"/>
-<page key="appendix_c__example_facility_worksheet_for_the_fetal_death_report" name="Appendix C - Example Facility Worksheet for the Fetal Death Report"/>
-<page key="appendix_d__example_fetal_death_report" name="Appendix D - Example Fetal Death Report"/>
+<page deprecated="true" key="appendix_a__example_facility_worksheet_for_the_live_birth_certificate" name="Appendix A - Example Facility Worksheet for the Live Birth Certificate"/>
+<page deprecated="true" key="appendix_b__example_live_birth_certificate" name="Appendix B - Example Live Birth Certificate"/>
+<page deprecated="true" key="appendix_c__example_facility_worksheet_for_the_fetal_death_report" name="Appendix C - Example Facility Worksheet for the Fetal Death Report"/>
+<page deprecated="true" key="appendix_d__example_fetal_death_report" name="Appendix D - Example Fetal Death Report"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="index" name="Birth and Fetal Death Reporting Home"/>
 <page key="change_log" name="Change Log"/>
 <page deprecated="true" key="coded_cause_of_fetal_death" name="Coded Cause of Fetal Death"/>
 <page deprecated="true" key="coded_race_and_ethnicity" name="Coded Race and Ethnicity"/>
+<page key="content-transitions" name="Content Transitions"/>
+<page key="credits" name="Credits"/>
+<page key="ije_mapping_fetalDeath" name="Data Dictionary Fetal Death"/>
+<page key="ije_mapping_natality" name="Data Dictionary Natality"/>
 <page key="downloads" name="Downloads"/>
+<page deprecated="true" key="appendix_d_-_example_fetal_death_report" name="Example Fetal Death Report"/>
+<page deprecated="true" key="appendix_b_-_example_live_birth_certificate" name="Example Live Birth Certificate"/>
 <page deprecated="true" key="examples" name="Examples"/>
 <page deprecated="true" key="examples_for_jurisdiction_fetal_death_report" name="Examples for Jurisdiction Fetal Death Report"/>
 <page deprecated="true" key="examples_for_jurisdiction_live_birth_report" name="Examples for Jurisdiction Live Birth Report"/>
 <page deprecated="true" key="examples_for_provider_facility_fetal_death_report" name="Examples for Provider Facility Fetal Death Report"/>
 <page deprecated="true" key="examples_for_provider_facility_live_birth_report" name="Examples for Provider Facility Live Birth Report"/>
-<page key="index" name="Home Page"/>
+<page key="vr_ig_harmonization" name="FHIR Implementation Guide Harmonization Plan"/>
+<page deprecated="true" key="appendix_c_-_example_facility_worksheet_for_the_fetal_death_report" name="Facility Worksheet for Fetal Death"/>
+<page deprecated="true" key="appendix_a_-_example_facility_worksheet_for_the_live_birth_certificate" name="Facility Worksheet for Live Birth"/>
+<page key="example_fetal_death" name="Fetal Death Report Example - Not Named"/>
 <page deprecated="true" key="ihe_specification_relationship_and_guidance" name="IHE Specification Relationship and Guidance"/>
-<page key="ije_mapping" name="IJE Mapping"/>
+<page deprecated="true" key="ije_mapping" name="IJE Mapping"/>
 <page deprecated="true" key="jurisdication_fetal_death_report" name="Jurisdication Fetal Death Report"/>
 <page deprecated="true" key="jurisdiction_live_birth_report" name="Jurisdiction Live Birth Report"/>
+<page key="example_baby_g_quinn" name="Live Birth Report Example - Baby G Quinn"/>
+<page key="EHR_Data_mapping" name="Mapping Electronic Health Record Data to the Birth and Fetal Death Record Data Elements"/>
 <page deprecated="true" key="notice_to_ballot_commenters" name="Notice to Ballot Commenters"/>
 <page key="patient_worksheet_questionnaires" name="Patient Worksheet Questionnaires"/>
 <page deprecated="true" key="provider_facility_fetal_death_report" name="Provider Facility Fetal Death Report"/>
@@ -331,11 +519,14 @@
 <page deprecated="true" key="provider_live_birth_report" name="Provider Live Birth Report"/>
 <page deprecated="true" key="provider_mothers_fetal_death_report" name="Provider Mother's Fetal Death Report"/>
 <page deprecated="true" key="provider_mothers_live_birth_report" name="Provider Mother's Live Birth Report"/>
+<page key="the_specification" name="Specification"/>
 <page key="toc" name="Table of Contents"/>
-<page key="terminology" name="Terminology"/>
-<page deprecated="true" key="the_specification" name="The Specification"/>
+<page deprecated="true" key="terminology" name="Terminology"/>
 <page deprecated="true" key="transport" name="Transport"/>
+<page key="usage" name="Usage"/>
 <page key="use_cases" name="Use Cases"/>
-<page key="vital_records_forms_mapping" name="Vital Records Forms Mapping"/>
+<page key="categories" name="Use of Categories"/>
+<page key="vital_records_form_mapping" name="Vital Records Form Mapping"/>
+<page deprecated="true" key="vital_records_forms_mapping" name="Vital Records Forms Mapping"/>
 <page deprecated="true" key="void_certificate_report" name="Void Certificate Report"/>
 </specification>

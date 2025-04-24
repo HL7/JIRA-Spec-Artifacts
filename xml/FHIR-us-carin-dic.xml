@@ -1,52 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/insurance-card/2022Jan" ciUrl="http://build.fhir.org/ig/HL7/carin-digital-insurance-card" defaultVersion="1.0.0" defaultWorkgroup="pie" gitUrl="https://github.com/HL7/carin-digital-insurance-card" url="http://hl7.org/fhir/us/insurance-card">
-<version code="current" url="http://build.fhir.org/ig/HL7/carin-digital-insurance-card"/>
-<version code="1.0.0" url="http://hl7.org/fhir/us/insurance-card/STU1"/>
-<version code="0.1.0" url="http://hl7.org/fhir/us/insurance-card/2022Jan"/>
-<artifactPageExtension value="-definitions"/>
-<artifactPageExtension value="-examples"/>
-<artifactPageExtension value="-mappings"/>
-<artifact id="StructureDefinition/C4DIC-AdditionalCardInformation-extension" key="StructureDefinition-C4DIC-AdditionalCardInformation-extension" name="Additional Insurance Card Information"/>
-<artifact id="StructureDefinition/C4DIC-BackgroundColor-extension" key="StructureDefinition-C4DIC-BackgroundColor-extension" name="Background Color"/>
-<artifact id="StructureDefinition/C4DIC-Barcode-extension" key="StructureDefinition-C4DIC-Barcode-extension" name="Barcode"/>
-<artifact id="StructureDefinition/C4DIC-BeneficiaryCostString-extension" key="StructureDefinition-C4DIC-BeneficiaryCostString-extension" name="Beneficiary Cost as String"/>
-<artifact deprecated="true" id="StructureDefinition/C4DIC-BeneficiaryCosts-extension" key="StructureDefinition-C4DIC-BeneficiaryCosts-extension" name="Beneficiary Costs"/>
-<artifact id="CapabilityStatement/c4dic" key="CapabilityStatement-c4dic" name="C4DIC CapabilityStatement"/>
-<artifact id="ValueSet/C4DICContactTypeVS" key="ValueSet-C4DICContactTypeVS" name="C4DIC Contact Type"/>
-<artifact id="ValueSet/C4DICCopayTypeVS" key="ValueSet-C4DICCopayTypeVS" name="C4DIC Copay Type"/>
-<artifact id="StructureDefinition/C4DIC-Coverage" key="StructureDefinition-C4DIC-Coverage" name="C4DIC Coverage"/>
-<artifact id="ValueSet/C4DICCoverageClassVS" key="ValueSet-C4DICCoverageClassVS" name="C4DIC Coverage Class"/>
-<artifact id="ValueSet/C4DICCoverageIdentifierType" key="ValueSet-C4DICCoverageIdentifierType" name="C4DIC Coverage Identifier Type"/>
-<artifact id="CodeSystem/C4DICExtendedContactTypeCS" key="CodeSystem-C4DICExtendedContactTypeCS" name="C4DIC Extended Contact Type"/>
-<artifact id="CodeSystem/C4DICExtendedCopayTypeCS" key="CodeSystem-C4DICExtendedCopayTypeCS" name="C4DIC Extended Copay Type"/>
-<artifact id="CodeSystem/C4DICExtendedCoverageClassCS" key="CodeSystem-C4DICExtendedCoverageClassCS" name="C4DIC Extended Coverage Class"/>
-<artifact id="ValueSet/ISOColorVS" key="ValueSet-ISOColorVS" name="C4DIC ISO Color"/>
-<artifact deprecated="true" id="CodeSystem/ISOColorCS" key="CodeSystem-ISOColorCS" name="C4DIC ISO Color Codes"/>
-<artifact id="CodeSystem/C4DICIdentifierType" key="CodeSystem-C4DICIdentifierType" name="C4DIC Identifier Type"/>
-<artifact id="StructureDefinition/C4DIC-Organization" key="StructureDefinition-C4DIC-Organization" name="C4DIC Organization"/>
-<artifact id="StructureDefinition/C4DIC-Patient" key="StructureDefinition-C4DIC-Patient" name="C4DIC Patient"/>
-<artifact id="StructureDefinition/C4DIC-CardIssueDate-extension" key="StructureDefinition-C4DIC-CardIssueDate-extension" name="Card Issue Date"/>
-<artifact id="Coverage/Example-Coverage1" key="Coverage-Example-Coverage1" name="Coverage Example 1"/>
-<artifact id="Coverage/Example-Coverage-FSH" key="Coverage-Example-Coverage-FSH" name="Example-Coverage-FSH"/>
-<artifact id="StructureDefinition/C4DIC-HighlightColor-extension" key="StructureDefinition-C4DIC-HighlightColor-extension" name="Highlight Color"/>
-<artifact id="StructureDefinition/C4DIC-Logo-extension" key="StructureDefinition-C4DIC-Logo-extension" name="Logo"/>
-<artifact id="Patient/Example-Patient1" key="Patient-Example-Patient1" name="Patient Example 1"/>
-<artifact id="Patient/Example-Patient2" key="Patient-Example-Patient2" name="Patient Example 2"/>
-<artifact id="Organization/Example-PayerOrganization1" key="Organization-Example-PayerOrganization1" name="Payer Organization Example 1"/>
-<artifact id="StructureDefinition/C4DIC-PlanBeneficiaries-extension" key="StructureDefinition-C4DIC-PlanBeneficiaries-extension" name="Plan Beneficiaries"/>
-<artifact id="StructureDefinition/C4DIC-QRCode-extension" key="StructureDefinition-C4DIC-QRCode-extension" name="QR Code"/>
-<artifact id="StructureDefinition/C4DIC-SupportingImage-extension" key="StructureDefinition-C4DIC-SupportingImage-extension" name="Supporting image"/>
-<page key="NA" name="(NA)"/>
-<page key="many" name="(many)"/>
-<page key="artifacts" name="Artifacts Summary"/>
-<page key="Authorization_Authentication_and_Registration" name="Authorization, Authentication and Registration"/>
-<page key="Background" name="Background"/>
-<page key="downloads" name="Downloads"/>
-<page key="General_Guidance" name="General Guidance"/>
-<page key="index" name="Home"/>
-<page key="Physical_Insurance_Card_Data_Elements" name="Physical Insurance Card Data Elements"/>
-<page key="Search_Parameters" name="Search Parameters"/>
-<page key="toc" name="Table of Contents"/>
-<page deprecated="true" key="Terminology_Licensure" name="Terminology Licensure"/>
-<page key="Use_Case" name="Use Case"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/insurance-card/2022Jan" ciUrl="http://build.fhir.org/ig/HL7/carin-digital-insurance-card" defaultVersion="1.1.0" defaultWorkgroup="pie" gitUrl="https://github.com/HL7/carin-digital-insurance-card" url="http://hl7.org/fhir/us/insurance-card">
+    <version code="current" url="http://build.fhir.org/ig/HL7/carin-digital-insurance-card"/>
+    <version code="1.1.0" url="http://hl7.org/fhir/us/insurance-card/STU1.1"/>
+    <version code="1.0.0" url="http://hl7.org/fhir/us/insurance-card/STU1"/>
+    <version code="0.1.0" url="http://hl7.org/fhir/us/insurance-card/2022Jan"/>
+    <artifactPageExtension value="-definitions"/>
+    <artifactPageExtension value="-examples"/>
+    <artifactPageExtension value="-mappings"/>
+    <artifact id="StructureDefinition/C4DIC-AdditionalCardInformation-extension" key="StructureDefinition-C4DIC-AdditionalCardInformation-extension" name="Additional Insurance Card Information"/>
+    <artifact id="StructureDefinition/C4DIC-BackgroundColor-extension" key="StructureDefinition-C4DIC-BackgroundColor-extension" name="Background Color"/>
+    <artifact id="StructureDefinition/C4DIC-Barcode-extension" key="StructureDefinition-C4DIC-Barcode-extension" name="Barcode"/>
+    <artifact id="StructureDefinition/C4DIC-BeneficiaryCostString-extension" key="StructureDefinition-C4DIC-BeneficiaryCostString-extension" name="Beneficiary Cost as String"/>
+    <artifact deprecated="true" id="StructureDefinition/C4DIC-BeneficiaryCosts-extension" key="StructureDefinition-C4DIC-BeneficiaryCosts-extension" name="Beneficiary Costs"/>
+    <artifact id="CapabilityStatement/c4dic" key="CapabilityStatement-c4dic" name="C4DIC CapabilityStatement"/>
+    <artifact id="ValueSet/C4DICContactTypeVS" key="ValueSet-C4DICContactTypeVS" name="C4DIC Contact Type"/>
+    <artifact id="ValueSet/C4DICCopayTypeVS" key="ValueSet-C4DICCopayTypeVS" name="C4DIC Copay Type"/>
+    <artifact id="StructureDefinition/C4DIC-Coverage" key="StructureDefinition-C4DIC-Coverage" name="C4DIC Coverage"/>
+    <artifact id="ValueSet/C4DICCoverageClassVS" key="ValueSet-C4DICCoverageClassVS" name="C4DIC Coverage Class"/>
+    <artifact id="ValueSet/C4DICCoverageIdentifierType" key="ValueSet-C4DICCoverageIdentifierType" name="C4DIC Coverage Identifier Type"/>
+    <artifact id="CodeSystem/C4DICExtendedContactTypeCS" key="CodeSystem-C4DICExtendedContactTypeCS" name="C4DIC Extended Contact Type"/>
+    <artifact id="CodeSystem/C4DICExtendedCopayTypeCS" key="CodeSystem-C4DICExtendedCopayTypeCS" name="C4DIC Extended Copay Type"/>
+    <artifact id="CodeSystem/C4DICExtendedCoverageClassCS" key="CodeSystem-C4DICExtendedCoverageClassCS" name="C4DIC Extended Coverage Class"/>
+    <artifact id="ValueSet/ISOColorVS" key="ValueSet-ISOColorVS" name="C4DIC ISO Color"/>
+    <artifact deprecated="true" id="CodeSystem/ISOColorCS" key="CodeSystem-ISOColorCS" name="C4DIC ISO Color Codes"/>
+    <artifact id="CodeSystem/C4DICIdentifierType" key="CodeSystem-C4DICIdentifierType" name="C4DIC Identifier Type"/>
+    <artifact id="StructureDefinition/C4DIC-Organization" key="StructureDefinition-C4DIC-Organization" name="C4DIC Organization"/>
+    <artifact id="StructureDefinition/C4DIC-Patient" key="StructureDefinition-C4DIC-Patient" name="C4DIC Patient"/>
+    <artifact id="StructureDefinition/C4DIC-CardIssueDate-extension" key="StructureDefinition-C4DIC-CardIssueDate-extension" name="Card Issue Date"/>
+    <artifact id="StructureDefinition/C4DIC-ColorPalette-extension" key="StructureDefinition-C4DIC-ColorPalette-extension" name="Color Palette"/>
+    <artifact id="Coverage/Example-Coverage1" key="Coverage-Example-Coverage1" name="Coverage Example 1"/>
+    <artifact id="Coverage/Example-Coverage-FSH" key="Coverage-Example-Coverage-FSH" name="Example-Coverage-FSH"/>
+    <artifact id="StructureDefinition/C4DIC-ForegroundColor-extension" key="StructureDefinition-C4DIC-ForegroundColor-extension" name="Foreground Color"/>
+    <artifact id="StructureDefinition/C4DIC-HighlightColor-extension" key="StructureDefinition-C4DIC-HighlightColor-extension" name="Highlight Color"/>
+    <artifact id="StructureDefinition/C4DIC-Logo-extension" key="StructureDefinition-C4DIC-Logo-extension" name="Logo"/>
+    <artifact id="Patient/Example-Patient1" key="Patient-Example-Patient1" name="Patient Example 1"/>
+    <artifact id="Patient/Example-Patient2" key="Patient-Example-Patient2" name="Patient Example 2"/>
+    <artifact id="Organization/Example-PayerOrganization1" key="Organization-Example-PayerOrganization1" name="Payer Organization Example 1"/>
+    <artifact id="StructureDefinition/C4DIC-PlanBeneficiaries-extension" key="StructureDefinition-C4DIC-PlanBeneficiaries-extension" name="Plan Beneficiaries"/>
+    <artifact id="StructureDefinition/C4DIC-QRCode-extension" key="StructureDefinition-C4DIC-QRCode-extension" name="QR Code"/>
+    <artifact id="StructureDefinition/C4DIC-SupportingImage-extension" key="StructureDefinition-C4DIC-SupportingImage-extension" name="Supporting image"/>
+    <page key="NA" name="(NA)"/>
+    <page key="many" name="(many)"/>
+    <page key="artifacts" name="Artifacts Summary"/>
+    <page key="Authorization_Authentication_and_Registration" name="Authorization, Authentication and Registration"/>
+    <page key="Background" name="Background"/>
+    <page key="ImplementationGuide-hl7.fhir.us.insurance-card" name="CARIN Digital Insurance Card Implementation Guide"/>
+    <page key="ChangeHistory" name="Change Notes"/>
+    <page key="downloads" name="Downloads"/>
+    <page key="General_Guidance" name="General Guidance"/>
+    <page key="index" name="Home"/>
+    <page key="Physical_Insurance_Card_Data_Elements" name="Physical Insurance Card Data Elements"/>
+    <page key="Search_Parameters" name="Search Parameters"/>
+    <page key="toc" name="Table of Contents"/>
+    <page deprecated="true" key="Terminology_Licensure" name="Terminology Licensure"/>
+    <page key="Use_Case" name="Use Case"/>
 </specification>

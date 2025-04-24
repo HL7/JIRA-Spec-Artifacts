@@ -11,7 +11,8 @@
   <specification key="fhircast" name="FHIRCast"/>
   <specification key="fhirpath" name="FHIRPath"/>
   <specification key="cds-hooks" name="CDS Hooks"/>
-  <specification key="cds-hooks-patient-view" name="CDS Hooks patient-view"/>
+  <specification key="cds-hooks-library" name="CDS Hooks Library"/>
+  <specification key="cds-hooks-patient-view" name="CDS Hooks patient-view" deprecated="true"/>
   <specification key="smart" name="SMART on FHIR"/>
   <specification key="smart-web-messaging" name="SMART Web Messaging"/>
   <specification key="bulkdata" name="Bulk Data"/>
@@ -19,7 +20,9 @@
   <specification key="cdisc-mapping" name="CDISC Mappings"/>
   <specification key="cpg" name="Clinical Guidelines"/>
   <specification key="cql" name="Clinical Quality Language"/>
+  <specification key="cow" name="Clinical Order Workflow"/>
   <specification key="crmi" name="Canonical Resource Management Infrastructure"/>
+  <specification key="dicom-sr" name="DICOM SR to FHIR Resource Mapping IG"/>
   <specification key="extensions" name="FHIR Extensions Pack"/>
   <specification key="fhir-for-fair" name="FHIR for FAIR"/>
   <specification key="genomics-reporting" name="Genomics Reporting"/>
@@ -33,49 +36,55 @@
   <specification key="patient-corrections" name="Patient Corrections"/>
   <specification key="pddi" name="Potential Drug-Drug Interaction (PDDI)"/>
   <specification key="phd" name="Personal Healthcare Devices"/>
+  <specification key="phr" name="Personal Health Record"/>
   <specification key="pocd" name="Point of Care Devices"/>
+  <specification key="qm" name="Quality Measures"/>
   <specification key="radiation-dose-summary" name="Radiation Dose Summary for Diagnostic Procedures on FHIR"/>
   <specification key="rtls" name="Real Time Location Services"/>
   <specification key="saner" name="Situation Awareness for Novel Epidemic Response"/>
   <specification key="sdc" name="Structured Data Capture (SDC)"/>
   <specification key="sdc-de" name="Structured Data Capture (SDC-DE)"/>
-  <specification key="shorthand" name="Shorthand" />
-  <specification key="shc-vaccination" name="SMART Health Cards: Vaccination and Testing" />
+  <specification key="sphr" name="Standard Personal Health Record" deprecated="true" />
+  <specification key="shorthand" name="Shorthand"/>
+  <specification key="shc-vaccination" name="SMART Health Cards: Vaccination and Testing"/>
   <specification key="subscriptions-backport" name="FHIR R5 Subscriptions Backport"/>
+  <specification key="tools" name="Tooling Extensions"/>
   <specification key="vhdir" name="Validated Healthcare Directory"/>
   <specification key="us-core" name="US Core"/>
   <specification key="us-breastcancerradiology" name="US Breast Cancer Radiology Reporting"/>
   <specification key="us-bser" name="US Bidirectional Services eReferrals (BSeR)"/>
-  <specification key="us-carin-bb" name="US CARIN Blue Button"/>
-  <specification key="us-carin-dic" name="US CARIN Digital Insurance Card (DIC)"/>
-  <specification key="us-carin-rtpbc" name="US CARIN Real-time Pharmacy Benefit Check (RTPBC)"/>
-  <specification key="us-codex-radiation-therapy" name="CodeX™ Radiation Therapy"/>
+  <specification key="us-carin-bb" name="US CARIN Blue Button" accelerator="carin"/>
+  <specification key="us-carin-dic" name="US CARIN Digital Insurance Card (DIC)" accelerator="carin"/>
+  <specification key="us-carin-rtpbc" name="US CARIN Real-time Pharmacy Benefit Check (RTPBC)" accelerator="carin"/>
+  <specification key="us-codex-radiation-therapy" name="CodeX™ Radiation Therapy" accelerator="codex"/>
   <specification key="us-ccda" name="US C-CDA on FHIR"/>
   <specification key="us-cdmh" name="US Common Data Model Harmonization for Research (CDMH)"/>
   <specification key="us-covid19library" name="COVID 19 FHIR Profile Library IG"/>
+  <specification key="us-cql" name="Common CQL Assets for FHIR (US-Based)" accelerator="davinci"/>
   <specification key="us-crn" name="US Coordinated Registry Network (CRN)"/>
   <specification key="us-daf-research" name="US DAF Research"/>
-  <specification key="us-davinci-alerts" name="US Da Vinci Alerts"/>
-  <specification key="us-davinci-atr" name="US Da Vinci ATR"/>
-  <specification key="us-davinci-cdex" name="US Da Vinci CDex"/>
-  <specification key="us-davinci-crd" name="US Da Vinci CRD"/>
-  <specification key="us-davinci-deqm" name="US Da Vinci DEQM"/>
-  <specification key="us-davinci-df" name="US Da Vinci Drug Formulary"/>
-  <specification key="us-davinci-dtr" name="US Da Vinci DTR"/>
-  <specification key="us-davinci-hrex" name="US Da Vinci HRex"/>
-  <specification key="us-davinci-pas" name="US Da Vinci PAS"/>
-  <specification key="us-davinci-pcde" name="US Da Vinci PCDE"/>
-  <specification key="us-davinci-pct" name="US Da Vinci Patient Cost Transparency (PCT)"/>
-  <specification key="us-davinci-pdex" name="US Da Vinci PDex"/>
-  <specification key="us-davinci-plannet" name="US Da Vinci PDex Plan Net"/>
-  <specification key="us-davinci-ra" name="US Da Vinci Risk Adjustment"/>
-  <specification key="us-davinci-vbpr" name="US Da Vinci Value-Based Performance Reporting"/>
-  <specification key="us-directory-exchange" name="US National Directory"/>
-  <specification key="us-directory-query" name="US National Directory Query"/>
-  <specification key="us-directory-attestation" name="US National Directory Attestation and Verification"/>
-  <specification key="us-fhir-directory-exchange" name="US National Healthcare Directory" deprecated="true"/>
+  <specification key="us-davinci-alerts" name="US Da Vinci Alerts" accelerator="davinci"/>
+  <specification key="us-davinci-atr" name="US Da Vinci ATR" accelerator="davinci"/>
+  <specification key="us-davinci-cdex" name="US Da Vinci CDex" accelerator="davinci"/>
+  <specification key="us-davinci-crd" name="US Da Vinci CRD" accelerator="davinci"/>
+  <specification key="us-davinci-deqm" name="US Da Vinci DEQM" accelerator="davinci"/>
+  <specification key="us-davinci-df" name="US Da Vinci Drug Formulary" accelerator="davinci"/>
+  <specification key="us-davinci-dtr" name="US Da Vinci DTR" accelerator="davinci"/>
+  <specification key="us-davinci-hrex" name="US Da Vinci HRex" accelerator="davinci"/>
+  <specification key="us-davinci-pas" name="US Da Vinci PAS" accelerator="davinci"/>
+  <specification key="us-davinci-pcde" name="US Da Vinci PCDE" accelerator="davinci"/>
+  <specification key="us-davinci-pct" name="US Da Vinci Patient Cost Transparency (PCT)" accelerator="davinci"/>
+  <specification key="us-davinci-pdex" name="US Da Vinci PDex" accelerator="davinci"/>
+  <specification key="us-davinci-plannet" name="US Da Vinci PDex Plan Net" accelerator="davinci"/>
+  <specification key="us-davinci-pr" name="US Da Vinci Postable Remittance" accelerator="davinci"/>
+  <specification key="us-davinci-ra" name="US Da Vinci Risk Adjustment" accelerator="davinci"/>
+  <specification key="us-davinci-vbpr" name="US Da Vinci Value-Based Performance Reporting" accelerator="davinci"/>
+  <specification key="us-directory-exchange" name="US National Directory" accelerator="fast"/>
+  <specification key="us-directory-query" name="US National Directory Query" accelerator="fast"/>
+  <specification key="us-directory-attestation" name="US National Directory Attestation and Verification" accelerator="fast"/>
+  <specification key="us-fhir-directory-exchange" name="US National Healthcare Directory" accelerator="fast" deprecated="true"/>
   <specification key="us-fhir-directory-query" name="US National Healthcare Directory Query" deprecated="true"/>
-  <specification key="us-fhir-directory-attestation" name="US National Healthcare Directory Attestation and Verification" deprecated="true"/>
+  <specification key="us-fhir-directory-attestation" name="US National Healthcare Directory Attestation and Verification" accelerator="fast" deprecated="true"/>
   <specification key="us-eltss" name="US Electronic Long-Term Services &amp; Supports (ELTSS)"/>
   <specification key="us-hai" name="US Healthcare Associated Infections"/>
   <specification key="us-hai-ltcf" name="US Healthcare Associated Infection Reports Long Term Care Facilities (HAI-LTCF)"/>
@@ -91,6 +100,7 @@
   <specification key="us-pacio-fs" name="US PACIO Functional Status"/>
   <specification key="us-pacio-pfe" name="US PACIO Personal Functioning and Engagement"/>
   <specification key="us-pacio-rt" name="US PACIO Re-Assessment Timepoints"/>
+  <specification key="us-pco" name="US Person-Centered Outcomes (PCO)"/>
   <specification key="us-pharmacy" name="US Medication FHIR Implementation Guide"/>
   <specification key="us-pharmcp" name="US Pharmacist Care Plan Document"/>
   <specification key="us-physical-activity" name="US Physical Activity"/>
@@ -100,11 +110,12 @@
   <specification key="us-qicore" name="US QI Core"/>
   <specification key="us-qm" name="US Quality Measures"/>
   <specification key="us-qr" name="US FHIR Guidance - Quality Reporting"/>
-  <specification key="us-sdoh-cc" name="US SDOH Clinical Care"/>
+  <specification key="us-safr" name="US Situational Awareness Framework for Reporting (US SAFR)"/>
+  <specification key="us-sdoh-cc" name="US SDOH Clinical Care" accelerator="gravity"/>
   <specification key="us-sirb" name="Single Institutional Review Board (sIRB)"/>
   <specification key="us-spl" name="US Structured Product Labeling Mapping"/>
-  <specification key="us-udap-security" name="US UDAP Security"/>
-  <specification key="us-identity-matching" name="Interoperable Digital Identity and Patient Matching"/>
+  <specification key="us-udap-security" name="US UDAP Security" accelerator="fast"/>
+  <specification key="us-identity-matching" name="Interoperable Digital Identity and Patient Matching" accelerator="fast"/>
   <specification key="us-vitals" name="US Vital Signs with Qualifying Extensions"/>
   <specification key="us-vrdr" name="US Vital Records Death Reporting (VRDR)"/>
   <specification key="cqif" name="Clinical Quality Information Framework (CQIF)" deprecated="true"/>
@@ -118,7 +129,7 @@
   <specification key="us-cancer-reporting" name="Cancer Pathology Data Sharing"/>
   <specification key="us-dentalreferral" name="US Dental Data Exchange" deprecated="false"/>
   <specification key="us-ecr" name="Electronic Case Reporting"/>
-  <specification key="us-exchange-routing" name="US Hybrid/Intermediary Exchange"/>
+  <specification key="us-exchange-routing" name="US Hybrid/Intermediary Exchange" accelerator="fast"/>
   <specification key="us-icsr-ae-reporting" name="US ICSR Transfusion and Vaccination Adverse Event Detection and Reporting"/>
   <specification key="us-lab" name="US Lab" deprecated="true"/>
   <specification key="us-mdi" name="Medicolegal Death Investigation (MDI)"/>
@@ -130,20 +141,45 @@
   <specification key="uv-cancer-pathology-common-libraries" name="Cancer Pathology Common Profiles Library"/>
   <specification key="uv-eyecare" name="Ophthalmology Retinal"/>
   <specification key="ihe-sdc-ecc" name="IHE SDC/eCC on FHIR"/>
-  <specification key="us-fhir-registry-protocols-ig" name="Protocols for Clinical Registry Extraction and Data Submission" />
+  <specification key="us-fhir-registry-protocols-ig" name="Protocols for Clinical Registry Extraction and Data Submission"/>
   <specification key="us-mihr" name="Maternal and Infant Health Research"/>
   <specification key="us-home-lab-report" name="At-Home In-Vitro Test Report"/>
   <specification key="us-ph-library" name="US Public Health Profiles Library"/>
-  <specification key="uv-vulcan-rwd"  name="Retrieval of Real World Data for Clinical Research" />
-  <specification key="uv-vulcan-schedule" name="Clinical Study Schedule of Activities" />
-  <specification key="us-mcc" name="Multiple Chronic Condition Care Plan" />
-  <specification key="uv-emedicinal-product-info" name="Electronic Medicinal Product Information"/>
-  <specification key="us-hsds" name="Human Services Directory" />  
-  <specification key="ae-research-ig" name="Adverse Event Clinical Research" />
-  <specification key="ae-research-backport-ig" name="Adverse Event Clinical Research R4 Backport"/>
+  <specification key="uv-vulcan-rwd" name="Retrieval of Real World Data for Clinical Research" accelerator="vulcan"/>
+  <specification key="uv-vulcan-schedule" name="Clinical Study Schedule of Activities" accelerator="vulcan"/>
+  <specification key="us-mcc" name="Multiple Chronic Condition Care Plan"/>
+  <specification key="uv-emedicinal-product-info" name="Electronic Medicinal Product Information" accelerator="vulcan"/>
+  <specification key="uv-cql" name="Using CQL With FHIR"/>
+  <specification key="us-hsds" name="Human Services Directory"/>
+  <specification key="ae-research-ig" name="Adverse Event Clinical Research" accelerator="vulcan"/>
+  <specification key="ae-research-backport-ig" name="Adverse Event Clinical Research R4 Backport" accelerator="vulcan"/>
   <specification key="v2mappings" name="HL7 Version 2 to FHIR"/>
   <specification key="us-ndh" name="National Directory of Healthcare Providers and Services (NDH)"/>
   <specification key="ibcm" name="International Birth And Child Model"/>
   <specification key="us-pdmp" name="US Prescription Drug Monitoring Program (PDMP)"/>
   <specification key="eu-laboratory" name="EU Laboratory Report"/>
+  <specification key="eu-extensions" name="EU Extensions"/>
+  <specification key="eu-base" name="EU Base and Core (R4)"/>
+  <specification key="eu-base-r5" name="EU Base and Core (R5)"/>
+  <specification key="eu-r5-extensions" name="EU Extensions (R5)" deprecated="true"/>
+  <specification key="us-resp-net" name="US Respiratory Virus Hospitalization Surveillance Network (RESP-NET) FHIR IG"/>
+  <specification key="pharm-quality" name="Pharmaceutical Quality (Industry)"/>
+  <specification key="ebm" name="Evidence Based Medicine FHIR implementation guide"/>
+  <specification key="au-base" name="AU Base"/>
+  <specification key="au-core" name="AU Core"/>
+  <specification key="au-erequesting" name="AU eRequesting"/>
+  <specification key="au-pd" name="AU Provider Directory"/>
+  <specification key="au-ps" name="AU Patient Summary"/>
+  <specification key="us-medication-rems" name="US Medication Risk Evaluation and Mitigation Strategies (REMS) FHIR IG"/>
+  <specification key="cardx-htn-mng" name="CardX Hypertension Management" accelerator="codex"/>
+  <specification key="termchangeset" name="Terminology Change Set Exchange"/>
+  <specification key="uv-smart-health-cards-and-links" name="SMART Health Cards and Links"/>
+  <specification key="us-smp" name="US Standardized Medication Profile (SMP)"/>
+  <specification key="fhir-clinical-document" name="FHIR Clinical Documents" />
+  <specification key="application-feature" name="FHIR Application Feature Framework Implementation Guide"/>
+  <specification key="us-nhsn-dqm" name="National Healthcare Safety Network (NHSN) Digital Quality Measure (dQM) Reporting Implementation Guide"/>
+  <specification key="lab-report" name="Laboratory Report"/>
+  <specification key="uv-cgm" name="Continuous Glucose Monitoring (CGM)"/>
+  <specification key="us-helios-bulk" name="US Helios Bulk Data for Immunizations" accelerator="helios"/>
+  <specification key="us-pacio-toc" name="PACIO Transitions of Care Implementation Guide"/>
 </specifications>

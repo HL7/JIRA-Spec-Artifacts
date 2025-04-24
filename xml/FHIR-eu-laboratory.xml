@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/laboratory/0.1.0-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/laboratory" defaultVersion="0.1.0-ballot" defaultWorkgroup="eu" gitUrl="https://github.com/HL7-eu/laboratory" url="http://hl7.eu/fhir/laboratory">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/laboratory/0.1.0-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/laboratory" defaultVersion="0.1.1" defaultWorkgroup="eu" gitUrl="https://github.com/HL7-eu/laboratory" url="http://hl7.eu/fhir/laboratory">
 <version code="current" url="https://build.fhir.org/ig/hl7-eu/laboratory"/>
-<version code="0.1.0-ballot" url="http://hl7.eu/fhir/laboratory/0.1.0-ballot"/>
+<version code="0.1.1" url="http://hl7.eu/fhir/laboratory/0.1.1"/>
+<version code="0.1.0" url="http://hl7.eu/fhir/laboratory/0.1.0"/>
+<version code="0.1.0-ballot" deprecated="true" url="http://hl7.eu/fhir/laboratory/0.1.0-ballot"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/LabReport" key="StructureDefinition-LabReport" name="A - Laboratory Report"/>
 <artifact id="ConceptMap/labRpt2FHIR-eu-lab" key="ConceptMap-labRpt2FHIR-eu-lab" name="A - Laboratory Report model to this guide"/>
+<artifact id="StructureDefinition/Subject" key="StructureDefinition-Subject" name="A.1.1, A.1.2 - Subject of care"/>
 <artifact id="ConceptMap/subject2FHIR-eu-lab" key="ConceptMap-subject2FHIR-eu-lab" name="A.1.1, A.1.2 - Subject of care model to this guide"/>
 <artifact id="StructureDefinition/Payer" key="StructureDefinition-Payer" name="A.1.3 - Health insurance and payment information"/>
 <artifact id="ConceptMap/payer2FHIR-eu-lab" key="ConceptMap-payer2FHIR-eu-lab" name="A.1.3 - Health insurance and payment information model to this guide"/>
@@ -18,46 +21,54 @@
 <artifact id="ConceptMap/legalAuth2FHIR-eu-lab" key="ConceptMap-legalAuth2FHIR-eu-lab" name="A.1.6 - Legal authenticator model to this guide"/>
 <artifact id="StructureDefinition/Validator" key="StructureDefinition-Validator" name="A.1.7 - Result validator"/>
 <artifact id="ConceptMap/validator2FHIR-eu-lab" key="ConceptMap-validator2FHIR-eu-lab" name="A.1.7 - Result validator model to this guide"/>
+<artifact id="StructureDefinition/Order" key="StructureDefinition-Order" name="A.2, A.3 - Order"/>
 <artifact id="ConceptMap/order2FHIR-eu-lab" key="ConceptMap-order2FHIR-eu-lab" name="A.2, A.3 - Order model to this guide"/>
 <artifact id="StructureDefinition/SpecimenLab" key="StructureDefinition-SpecimenLab" name="A.4 - Specimen information"/>
 <artifact id="ConceptMap/specimen2FHIR-eu-lab" key="ConceptMap-specimen2FHIR-eu-lab" name="A.4 - Specimen information model to this guide"/>
 <artifact id="StructureDefinition/Result" key="StructureDefinition-Result" name="A.5 - Results data elements"/>
 <artifact id="ConceptMap/result2FHIR-eu-lab" key="ConceptMap-result2FHIR-eu-lab" name="A.5 - Results data elements model to this guide"/>
-<artifact id="StructureDefinition/Subject" key="StructureDefinition-Subject" name="A1.1, A1.2 - Subject of care"/>
-<artifact id="StructureDefinition/Order" key="StructureDefinition-Order" name="A2, A3 - Order"/>
 <artifact id="ActorDefinition/actor-consumer-eu-lab" key="ActorDefinition-actor-consumer-eu-lab" name="Actor Laboratory Report Consumer"/>
 <artifact id="ActorDefinition/actor-creator-eu-lab" key="ActorDefinition-actor-creator-eu-lab" name="Actor Laboratory Report Creator"/>
 <artifact id="ActorDefinition/actor-repos-eu-lab" key="ActorDefinition-actor-repos-eu-lab" name="Actor Laboratory Report Repository"/>
 <artifact id="StructureDefinition/Address-eu" key="StructureDefinition-Address-eu" name="Address (EU)"/>
-<artifact id="Bundle/IT-CDA2FHIR-17e2cad1-c3e3-4901-adb1-c35a0b82b883" key="Bundle-IT-CDA2FHIR-17e2cad1-c3e3-4901-adb1-c35a0b82b883" name="Bundle Converted from CDA"/>
-<artifact id="Bundle/BundleHepatitisPanel" key="Bundle-BundleHepatitisPanel" name="Bundle Hepatitis Panel"/>
-<artifact id="Bundle/BundleLabResultReportPOC" key="Bundle-BundleLabResultReportPOC" name="Bundle Laboratory Result Report for POC"/>
-<artifact id="Bundle/BundleLabResultMicroCultureSusc" key="Bundle-BundleLabResultMicroCultureSusc" name="Bundle Microbiology Culture + Susceptibility Lab Result"/>
+<artifact id="ValueSet/lab-laterality-eu-lab" key="ValueSet-lab-laterality-eu-lab" name="Body Structure Laterality"/>
+<artifact id="ValueSet/lab-siteQualifier-eu-lab" key="ValueSet-lab-siteQualifier-eu-lab" name="Body Structure Qualifier"/>
+<artifact id="StructureDefinition/BodyStructure-eu-lab" key="StructureDefinition-BodyStructure-eu-lab" name="Body structure: Laboratory"/>
+<artifact id="Bundle/BundleHepatitisPanel" key="Bundle-BundleHepatitisPanel" name="Bundle: Hepatitis Panel"/>
 <artifact id="StructureDefinition/Bundle-eu-lab" key="StructureDefinition-Bundle-eu-lab" name="Bundle: Laboratory Report"/>
+<artifact id="Bundle/BundleLabResultMicroCultureSusc" key="Bundle-BundleLabResultMicroCultureSusc" name="Bundle: Microbiology Culture + Susceptibility"/>
+<artifact id="Bundle/BundleLabResultReportPOC" key="Bundle-BundleLabResultReportPOC" name="Bundle: MyHealth@EU Proof Of Concept"/>
+<artifact id="Bundle/IT-CDA2FHIR-17e2cad1-c3e3-4901-adb1-c35a0b82b883" key="Bundle-IT-CDA2FHIR-17e2cad1-c3e3-4901-adb1-c35a0b82b883" name="Bundle: converted from CDA"/>
+<artifact id="Bundle/SimpleChemistryResultReport" key="Bundle-SimpleChemistryResultReport" name="Bundle: two sections"/>
+<artifact id="StructureDefinition/observation-certifiedRefMaterialCodeable" key="StructureDefinition-observation-certifiedRefMaterialCodeable" name="Certified Reference Material: CodeableConcept"/>
+<artifact id="StructureDefinition/observation-certifiedRefMaterialIdentifer" key="StructureDefinition-observation-certifiedRefMaterialIdentifer" name="Certified Reference Material: Identifier"/>
 <artifact id="StructureDefinition/Composition-eu-lab" key="StructureDefinition-Composition-eu-lab" name="Composition: Laboratory Report"/>
 <artifact id="Composition/comp-lab-example" key="Composition-comp-lab-example" name="Composition: example"/>
+<artifact id="StructureDefinition/observation-deviceLabTestKit" key="StructureDefinition-observation-deviceLabTestKit" name="Device Laboratory Test Kit"/>
 <artifact id="ConceptMap/ConceptMap-eu-diagRptStatus2CompStatus" key="ConceptMap-ConceptMap-eu-diagRptStatus2CompStatus" name="DiagnosticReport to Composition status"/>
 <artifact id="StructureDefinition/DiagnosticReport-eu-lab" key="StructureDefinition-DiagnosticReport-eu-lab" name="DiagnosticReport: Laboratory Report"/>
 <artifact id="DiagnosticReport/dr-lab-example" key="DiagnosticReport-dr-lab-example" name="DiagnosticReport: example"/>
-<artifact id="StructureDefinition/composition-basedOn-order-or-requisition" key="StructureDefinition-composition-basedOn-order-or-requisition" name="Document Based On Order"/>
+<artifact deprecated="true" id="StructureDefinition/composition-basedOn-order-or-requisition" key="StructureDefinition-composition-basedOn-order-or-requisition" name="Document Based On Order"/>
+<artifact id="StructureDefinition/composition-diagnosticReportReference" key="StructureDefinition-composition-diagnosticReportReference" name="Document DiagnosticReport Reference"/>
 <artifact id="StructureDefinition/HumanName-obl-eu-lab" key="StructureDefinition-HumanName-obl-eu-lab" name="Human Name Obligations"/>
 <artifact id="StructureDefinition/HumanName-eu" key="StructureDefinition-HumanName-eu" name="HumanName (Eu)"/>
-<artifact id="StructureDefinition/information-recipient" key="StructureDefinition-information-recipient" name="Information recipient"/>
-<artifact id="ValueSet/lab-specimenAdditive-eu-lab" key="ValueSet-lab-specimenAdditive-eu-lab" name="Lab Specimen Additive"/>
-<artifact id="ValueSet/lab-specimenContainer-eu-lab" key="ValueSet-lab-specimenContainer-eu-lab" name="Lab Specimen Container"/>
-<artifact id="ValueSet/lab-orderCodes-eu-lab" key="ValueSet-lab-orderCodes-eu-lab" name="Laboratory Order [LOINC]"/>
+<artifact deprecated="true" id="StructureDefinition/information-recipient" key="StructureDefinition-information-recipient" name="Information recipient"/>
+<artifact id="ValueSet/lab-certifiedRefMaterial-eu-lab" key="ValueSet-lab-certifiedRefMaterial-eu-lab" name="Laboratory Certified Reference Material"/>
+<artifact id="ValueSet/lab-obsCode-eu-lab" key="ValueSet-lab-obsCode-eu-lab" name="Laboratory Code"/>
+<artifact id="ValueSet/lab-obsCode-loinc-eu-lab" key="ValueSet-lab-obsCode-loinc-eu-lab" name="Laboratory Code: LOINC"/>
+<artifact id="ValueSet/lab-obsCode-npu-eu-lab" key="ValueSet-lab-obsCode-npu-eu-lab" name="Laboratory Code: NPU"/>
+<artifact id="CodeSystem/lab-localCs-eu-lab" key="CodeSystem-lab-localCs-eu-lab" name="Laboratory Code: example"/>
+<artifact id="ValueSet/lab-orderCodes-eu-lab" key="ValueSet-lab-orderCodes-eu-lab" name="Laboratory Order"/>
 <artifact id="ValueSet/lab-reportType-eu-lab" key="ValueSet-lab-reportType-eu-lab" name="Laboratory Report Types"/>
-<artifact id="Bundle/SimpleChemistryResultReport" key="Bundle-SimpleChemistryResultReport" name="Laboratory Result Report"/>
 <artifact id="ValueSet/lab-specialty-eu-lab" key="ValueSet-lab-specialty-eu-lab" name="Laboratory Specialty"/>
-<artifact id="ValueSet/lab-specimenType-eu-lab" key="ValueSet-lab-specimenType-eu-lab" name="Laboratory Specimen Types"/>
 <artifact id="ValueSet/lab-studyType-eu-lab" key="ValueSet-lab-studyType-eu-lab" name="Laboratory Study Types"/>
 <artifact id="ValueSet/lab-technique-eu-lab" key="ValueSet-lab-technique-eu-lab" name="Laboratory Techniques"/>
-<artifact id="CodeSystem/lab-localCs-eu-lab" key="CodeSystem-lab-localCs-eu-lab" name="Laboratory local codes Code System"/>
-<artifact id="ValueSet/lab-npu-vs" key="ValueSet-lab-npu-vs" name="NPU Laboratory Codes VS"/>
+<artifact deprecated="true" id="ValueSet/lab-npu-vs" key="ValueSet-lab-npu-vs" name="NPU Laboratory Codes VS"/>
+<artifact id="StructureDefinition/Observation-obl-eu-lab" key="StructureDefinition-Observation-obl-eu-lab" name="Observation Obligations"/>
 <artifact id="StructureDefinition/Observation-resultslab-eu-lab" key="StructureDefinition-Observation-resultslab-eu-lab" name="Observation Results: laboratory"/>
-<artifact id="Observation/d29b286d-b99c-410f-af4e-9455ea49d0af" key="Observation-d29b286d-b99c-410f-af4e-9455ea49d0af" name="Observation with ratio result type"/>
 <artifact id="Observation/obs-aerobic-culture" key="Observation-obs-aerobic-culture" name="Observation: Aerobic Culture example"/>
 <artifact id="Observation/obs-anaerobic-culture" key="Observation-obs-anaerobic-culture" name="Observation: Anaerobic Culture example"/>
+<artifact id="Observation/obs-gram-stain" key="Observation-obs-gram-stain" name="Observation: Gram Staining example"/>
 <artifact id="Observation/obs-gs-org1" key="Observation-obs-gs-org1" name="Observation: Gram-positive cocci example"/>
 <artifact id="Observation/obs-gs-org1-quant" key="Observation-obs-gs-org1-quant" name="Observation: Gram-positive cocci, observed quantity, example"/>
 <artifact id="Observation/obs-wbc" key="Observation-obs-wbc" name="Observation: Leukocytes Presence example"/>
@@ -68,9 +79,11 @@
 <artifact id="Observation/obs-org-id1" key="Observation-obs-org-id1" name="Observation: Staphylococcus aureus identified example"/>
 <artifact id="Observation/obs-org-id1-susc-2" key="Observation-obs-org-id1-susc-2" name="Observation: Staphylococcus aureus levoFLOXacin susceptibility example"/>
 <artifact id="Observation/obs-org-id1-susc-panel" key="Observation-obs-org-id1-susc-panel" name="Observation: Staphylococcus aureus susceptibility panel example"/>
-<artifact id="Observation/obs-gram-stain" key="Observation-obs-gram-stain" name="Observation: gram staining example"/>
+<artifact id="Observation/4335db48-7090-45b3-a2c2-45b45f94a67c" key="Observation-4335db48-7090-45b3-a2c2-45b45f94a67c" name="Observation: certified reference material"/>
+<artifact id="Observation/d29b286d-b99c-410f-af4e-9455ea49d0af" key="Observation-d29b286d-b99c-410f-af4e-9455ea49d0af" name="Observation: ratio example"/>
 <artifact id="StructureDefinition/Patient-obl-eu-lab" key="StructureDefinition-Patient-obl-eu-lab" name="Patient Obligations"/>
 <artifact id="StructureDefinition/Patient-animal-eu-lab" key="StructureDefinition-Patient-animal-eu-lab" name="Patient: Animal"/>
+<artifact id="Patient/nl-core-NameInformation-complete" key="Patient-nl-core-NameInformation-complete" name="Patient: Dutch complete name"/>
 <artifact id="StructureDefinition/Patient-eu-lab" key="StructureDefinition-Patient-eu-lab" name="Patient: Person"/>
 <artifact id="Patient/Patient-animal-example" key="Patient-Patient-animal-example" name="Patient: animal example"/>
 <artifact id="Patient/pat-lab-example" key="Patient-pat-lab-example" name="Patient: example"/>
@@ -78,23 +91,32 @@
 <artifact id="Practitioner/pr-lab-example" key="Practitioner-pr-lab-example" name="Practitioner: example"/>
 <artifact id="StructureDefinition/PractitionerRole-eu-lab" key="StructureDefinition-PractitionerRole-eu-lab" name="PractitionerRole: Laboratory Report"/>
 <artifact id="PractitionerRole/prrole-lab-example" key="PractitionerRole-prrole-lab-example" name="PractitionerRole: example"/>
-<artifact id="StructureDefinition/Quantity-eu-lab" key="StructureDefinition-Quantity-eu-lab" name="Quantity (Eu) for lab observations"/>
-<artifact id="StructureDefinition/Ratio-eu-lab" key="StructureDefinition-Ratio-eu-lab" name="Ratio (Eu) for lab observations"/>
+<artifact id="StructureDefinition/Quantity-eu-lab" key="StructureDefinition-Quantity-eu-lab" name="Quantity (Eu Lab)"/>
+<artifact id="StructureDefinition/Ratio-eu-lab" key="StructureDefinition-Ratio-eu-lab" name="Ratio (Eu Lab)"/>
+<artifact id="StructureDefinition/ServiceRequest-obl-eu-lab" key="StructureDefinition-ServiceRequest-obl-eu-lab" name="ServiceRequest Obligations"/>
 <artifact id="StructureDefinition/ServiceRequest-eu-lab" key="StructureDefinition-ServiceRequest-eu-lab" name="ServiceRequest: Laboratory Order"/>
 <artifact id="ServiceRequest/srv-request-example" key="ServiceRequest-srv-request-example" name="ServiceRequest: example"/>
+<artifact id="ValueSet/lab-specimenAdditive-eu-lab" key="ValueSet-lab-specimenAdditive-eu-lab" name="Specimen Additive"/>
+<artifact id="ValueSet/lab-specimenContainer-eu-lab" key="ValueSet-lab-specimenContainer-eu-lab" name="Specimen Container"/>
+<artifact id="StructureDefinition/Specimen-obl-eu-lab" key="StructureDefinition-Specimen-obl-eu-lab" name="Specimen Obligations"/>
+<artifact id="ValueSet/lab-specimenType-eu-lab" key="ValueSet-lab-specimenType-eu-lab" name="Specimen Types"/>
 <artifact id="StructureDefinition/Specimen-eu-lab" key="StructureDefinition-Specimen-eu-lab" name="Specimen: Laboratory"/>
 <artifact id="Specimen/Specimen-animal-example" key="Specimen-Specimen-animal-example" name="Specimen: animal example"/>
-<artifact id="ValueSet/lab-result-standard-eu-lab" key="ValueSet-lab-result-standard-eu-lab" name="Standard Laboratory Codes"/>
-<artifact id="StructureDefinition/specimen-additive-substance-eu-lab" key="StructureDefinition-specimen-additive-substance-eu-lab" name="Substance: Specimen Additive Substance"/>
+<artifact deprecated="true" id="ValueSet/lab-result-standard-eu-lab" key="ValueSet-lab-result-standard-eu-lab" name="Standard Laboratory Codes"/>
+<artifact id="StructureDefinition/Substance-additive-eu-lab" key="StructureDefinition-specimen-additive-substance-eu-lab" name="Substance: Specimen Additive Substance"/>
+<artifact id="ValueSet/lab-speciesType-eu-vs" key="ValueSet-lab-speciesType-eu-vs" name="Types of species"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="contributors" name="Authors and contributors"/>
 <page key="background" name="Background"/>
+<page key="crm" name="Certified reference material"/>
 <page key="challenges" name="Challenges"/>
 <page key="design-choice" name="Design choices"/>
 <page key="downloads" name="Downloads"/>
 <page key="index" name="Home"/>
+<page key="notes" name="Implementation notes"/>
+<page key="knownIusses" name="Known Issues"/>
 <page key="scenarios" name="Laboratory Report scenarios"/>
 <page key="status-mgmt" name="Managing Laboratory Report statuses"/>
 <page key="obligations" name="Obligations"/>
