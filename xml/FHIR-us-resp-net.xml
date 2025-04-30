@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/resp-net/2024Jan" ciUrl="https://build.fhir.org/ig/HL7/fhir-resp-net-ig" defaultVersion="1.0.0-ballot" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-resp-net-ig" url="http://hl7.org/fhir/us/resp-net">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/resp-net/2024Jan" ciUrl="https://build.fhir.org/ig/HL7/fhir-resp-net-ig" defaultVersion="1.0.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-resp-net-ig" url="http://hl7.org/fhir/us/resp-net">
 <version code="current" url="https://build.fhir.org/ig/HL7/fhir-resp-net-ig"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/resp-net/STU1"/>
 <version code="1.0.0-ballot" url="http://hl7.org/fhir/us/resp-net/2024Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -15,30 +16,42 @@
 <artifact id="Bundle/resp-net-specification-bundle-example" key="Bundle-resp-net-specification-bundle-example" name="Example of a Specification Bundle containing PlanDefinition"/>
 <artifact id="Endpoint/example-healthcare-endpoint" key="Endpoint-example-healthcare-endpoint" name="Healthcare Organization Endpoint example"/>
 <artifact id="Organization/example-healthcare-org" key="Organization-example-healthcare-org" name="Healthcare Organization Example"/>
-<artifact id="Location/location-ecr-salem-medical-center" key="Location-location-ecr-salem-medical-center" name="Location Example"/>
+<artifact id="Location/location-salem-medical-center" key="Location-location-ecr-salem-medical-center" name="Location Example"/>
 <artifact id="MedicationRequest/self-tylenol" key="MedicationRequest-self-tylenol" name="MedicationRequest Example"/>
 <artifact id="MedicationStatement/example" key="MedicationStatement-example" name="MedicationStatement Example"/>
 <artifact id="MessageHeader/messageheader-example-reportheader" key="MessageHeader-messageheader-example-reportheader" name="MessageHeader example used in the RESP-NET Bundle sent to a RESP-NET site"/>
-<artifact id="Organization/organization-ecr-salem-medical-center" key="Organization-organization-ecr-salem-medical-center" name="Organization Example"/>
+<artifact id="Organization/organization-salem-medical-center" key="Organization-organization-ecr-salem-medical-center" name="Organization Example"/>
 <artifact id="Endpoint/example-ph-endpoint" key="Endpoint-example-ph-endpoint" name="Public Health Organization Endpoint example"/>
 <artifact id="Organization/example-pha-org" key="Organization-example-pha-org" name="Public Health Organization Example"/>
+<artifact id="ValueSet/resp-net-ari-test-codes" key="ValueSet-resp-net-ari-test-codes" name="RESP-NET ARI codes"/>
 <artifact id="StructureDefinition/resp-net-composition" key="StructureDefinition-resp-net-composition" name="RESP-NET Composition"/>
 <artifact id="StructureDefinition/resp-net-content-bundle" key="StructureDefinition-resp-net-content-bundle" name="RESP-NET Content Bundle"/>
+<artifact id="ValueSet/resp-net-labtest-covid-codes" key="ValueSet-resp-net-labtest-covid-codes" name="RESP-NET Covid test codes"/>
 <artifact id="CapabilityStatement/resp-net-data-source" key="CapabilityStatement-resp-net-data-source" name="RESP-NET EHR Capability Statement"/>
 <artifact id="Encounter/resp-net-encounter-example" key="Encounter-resp-net-encounter-example" name="RESP-NET Encounter Example"/>
+<artifact id="ValueSet/resp-net-labtest-flu-codes" key="ValueSet-resp-net-labtest-flu-codes" name="RESP-NET Flu test codes"/>
+<artifact id="ValueSet/resp-net-labtest-flu-rsv-covid-codes" key="ValueSet-resp-net-labtest-flu-rsv-covid-codes" name="RESP-NET Flu, Rsv and Covid test codes"/>
 <artifact id="Immunization/flu" key="Immunization-flu" name="RESP-NET Immunization Example"/>
 <artifact id="MedicationAdministration/medicationadministration-oseltamivir" key="MedicationAdministration-medicationadministration-oseltamivir" name="RESP-NET Medication Administration Example"/>
+<artifact id="StructureDefinition/resp-net-medicationstatement" key="StructureDefinition-resp-net-medicationstatement" name="RESP-NET Medication Statement"/>
+<artifact id="ValueSet/resp-net-negative-result-codes" key="ValueSet-resp-net-negative-result-codes" name="RESP-NET Negative test result codes"/>
 <artifact id="Observation/influenza" key="Observation-influenza" name="RESP-NET Observation Example"/>
-<artifact id="StructureDefinition/resp-net-plandefinition" key="StructureDefinition-resp-net-plandefinition" name="RESP-NET PlanDefinition"/>
+<artifact id="StructureDefinition/respnet-plandefinition" key="StructureDefinition-resp-net-plandefinition" name="RESP-NET PlanDefinition"/>
 <artifact id="PlanDefinition/plandefinition-example" key="PlanDefinition-plandefinition-example" name="RESP-NET PlanDefinition Example"/>
+<artifact id="ValueSet/resp-net-positive-result-codes" key="ValueSet-resp-net-positive-result-codes" name="RESP-NET Positive test result codes"/>
+<artifact id="ValueSet/respnet-report-context-codes" key="ValueSet-respnet-report-context-codes" name="RESP-NET Report Context Codes"/>
+<artifact id="CodeSystem/respnet-report-context" key="CodeSystem-respnet-report-context" name="RESP-NET Report Context Codes"/>
+<artifact id="StructureDefinition/respnet-report-context-extension" key="StructureDefinition-respnet-report-context-extension" name="RESP-NET Report Context Extension"/>
 <artifact id="StructureDefinition/resp-net-reporting-bundle" key="StructureDefinition-resp-net-reporting-bundle" name="RESP-NET Reporting Bundle"/>
 <artifact id="Bundle/resp-net-reporting-bundle-example" key="Bundle-resp-net-reporting-bundle-example" name="RESP-NET Reporting Bundle Example"/>
-<artifact id="StructureDefinition/resp-net-medicationstatement" key="StructureDefinition-resp-net-medicationstatement" name="RESPNETMedicationStatement"/>
+<artifact id="ValueSet/resp-net-labtest-rsv-codes" key="ValueSet-resp-net-labtest-rsv-codes" name="RESP-NET Rsv test codes"/>
+<artifact id="Library/respnet-valuesets" key="Library-respnet-valuesets" name="RESP-NET list of value sets"/>
+<artifact id="Library/respnet-valuesets-example" key="Library-respnet-valuesets-example" name="RESPNet ValueSet Library Example"/>
 <artifact id="ServiceRequest/example" key="ServiceRequest-example" name="ServiceRequest Example"/>
 <artifact id="Practitioner/practitioner-us-core-henry-seven" key="Practitioner-practitioner-us-core-henry-seven" name="US Core Practitioner Example: Henry Seven"/>
 <artifact id="PractitionerRole/practitionerrole-henry-seven" key="PractitionerRole-practitionerrole-henry-seven" name="US Core Practitioner Role Example: Henry Seven"/>
-<artifact id="StructureDefinition/us-ph-patient" key="StructureDefinition-us-ph-patient" name="US Public Health Patient"/>
-<artifact id="Patient/patient-ecr-eve-everywoman" key="Patient-patient-ecr-eve-everywoman" name="US Public Health Patient Example"/>
+<artifact deprecated="true" id="StructureDefinition/us-ph-patient" key="StructureDefinition-us-ph-patient" name="US Public Health Patient"/>
+<artifact id="Patient/patient-respnet-eve-everywoman" key="Patient-patient-ecr-eve-everywoman" name="US Public Health Patient Example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
@@ -47,6 +60,7 @@
 <page key="changes" name="IG Change History"/>
 <page key="index" name="Respiratory Virus Hospitalization Surveillance Network (RESP-NET) Content IG Home"/>
 <page key="toc" name="Table of Contents"/>
+<page key="dataelements" name="Use Case Data Element Mappings"/>
 <page key="usecases" name="Use Cases"/>
 <page key="downloads" name="Useful Downloads"/>
 </specification>
