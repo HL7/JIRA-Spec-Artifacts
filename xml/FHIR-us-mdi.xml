@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/mdi/2025Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-mdi-ig" defaultVersion="1.1.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-mdi-ig" url="http://hl7.org/fhir/us/mdi">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/mdi/STU2" ciUrl="http://build.fhir.org/ig/HL7/fhir-mdi-ig" defaultVersion="2.0.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-mdi-ig" url="http://hl7.org/fhir/us/mdi">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-mdi-ig"/>
-<version code="2.0.0-ballot2" url="http://hl7.org/fhir/us/mdi/2025Jan"/>
+<version code="2.0.0" url="http://hl7.org/fhir/us/mdi/STU2"/>
+<version code="2.0.0-snapshot2" deprecated="true" url="http://hl7.org/fhir/us/mdi/2.0.0-snapshot2"/>
+<version code="2.0.0-ballot2" deprecated="true" url="http://hl7.org/fhir/us/mdi/2025Jan"/>
 <version code="2.0.0-snapshot1" deprecated="true" url="http://hl7.org/fhir/us/mdi/2.0.0-snapshot1"/>
 <version code="2.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/mdi/2024May"/>
 <version code="1.1.0" url="http://hl7.org/fhir/us/mdi/STU1.1"/>
@@ -24,35 +26,36 @@
 <artifact id="CapabilityStatement/CapabilityStatement-forensic-toxicology-laboratory-server" key="CapabilityStatement-CapabilityStatement-forensic-toxicology-laboratory-server" name="CapabilityStatement - Forensic Toxicology Laboratory Server"/>
 <artifact id="CapabilityStatement/CapabilityStatement-mdi-cms-server" key="CapabilityStatement-CapabilityStatement-mdi-cms-server" name="CapabilityStatement - MDI CMS Server"/>
 <artifact deprecated="true" id="CapabilityStatement/CapabilityStatement-medical-examiner-coroner-server" key="CapabilityStatement-CapabilityStatement-medical-examiner-coroner-server" name="CapabilityStatement - Medical Examiner/Coroner Server"/>
+<artifact id="ValueSet/vs-certified-workflow" key="ValueSet-vs-certified-workflow" name="Certified Workflow"/>
 <artifact deprecated="true" id="CodeSystem/CodeSystem-death-pregnancy-status" key="CodeSystem-CodeSystem-death-pregnancy-status" name="CodeSystem - Death Pregnancy Status"/>
 <artifact deprecated="true" id="CodeSystem/CodeSystem-local-component-codes" key="CodeSystem-CodeSystem-local-component-codes" name="CodeSystem - Local Component Codes"/>
 <artifact deprecated="true" id="CodeSystem/CodeSystem-vr-codes" key="CodeSystem-CodeSystem-mdi-codes" name="CodeSystem - MDI"/>
 <artifact id="StructureDefinition/Composition-mdi-dcr" key="StructureDefinition-Composition-mdi-dcr" name="Composition - Death Certificate Review"/>
 <artifact id="StructureDefinition/Composition-mdi-and-edrs" key="StructureDefinition-Composition-mdi-and-edrs" name="Composition - MDI and EDRS"/>
 <artifact deprecated="true" id="StructureDefinition/Composition-mdi-to-edrs" key="StructureDefinition-Composition-mdi-to-edrs" name="Composition - MDI to EDRS"/>
+<artifact id="StructureDefinition/Extension-cremation-clearance-status" key="StructureDefinition-Extension-cremation-clearance-status" name="Cremation Clearance Authorization Status"/>
+<artifact id="StructureDefinition/Extension-cremation-clearance-coroner" key="StructureDefinition-Extension-cremation-clearance-coroner" name="Cremation Clearance Coroner Status"/>
+<artifact id="StructureDefinition/Extension-cremation-clearance-signature" key="StructureDefinition-Extension-cremation-clearance-signature" name="Cremation Clearance Signature Status"/>
+<artifact id="ValueSet/vs-cremation-clearance-status" key="ValueSet-vs-cremation-clearance-status" name="Cremation Clearance Status"/>
 <artifact id="CodeSystem/cs-death-cert-review-example" key="CodeSystem-cs-death-cert-review-example" name="Death Certificate Review Example"/>
+<artifact id="ValueSet/vs-dcr-reason" key="ValueSet-vs-dcr-reason" name="Death Certificate Review Reason"/>
 <artifact id="Composition/composition-mdi-ccr-ex3" key="Composition-composition-mdi-ccr-ex3" name="Death Certificate Review example for cremation clearance request (example 3)"/>
 <artifact id="Composition/composition-mdi-ccr-ex4" key="Composition-composition-mdi-ccr-ex4" name="Death Certificate Review example for cremation clearance response (example 4)"/>
 <artifact id="Composition/composition-mdi-dcr-ex1" key="Composition-composition-mdi-dcr-ex1" name="Death Certificate Review example for death data review request (example 1)"/>
 <artifact id="Composition/composition-mdi-dcr-ex2" key="Composition-composition-mdi-dcr-ex2" name="Death Certificate Review example for death data review response (example 2)"/>
+<artifact id="StructureDefinition/Extension-death-certificate-status" key="StructureDefinition-Extension-death-certificate-status" name="Death Certificate Status"/>
 <artifact id="Composition/vrdr-death-certificate-dcr-ex1" key="Composition-vrdr-death-certificate-dcr-ex1" name="Death Certificate for review for cremation clearance request"/>
 <artifact id="StructureDefinition/DiagnosticReport-toxicology-to-mdi" key="StructureDefinition-DiagnosticReport-toxicology-to-mdi" name="DiagnosticReport - Toxicology Lab Result to MDI"/>
 <artifact id="DiagnosticReport/diagnosticreport-mdi-toxicology-lab-a-freeman" key="DiagnosticReport-diagnosticreport-mdi-toxicology-lab-a-freeman" name="DiagnosticReport - Toxicology Lab Result to MDI - Freeman"/>
 <artifact id="StructureDefinition/DocumentReference-mdi-report" key="StructureDefinition-DocumentReference-mdi-report" name="DocumentReference - MDI Report"/>
 <artifact id="DocumentReference/documentreference-mdi-autopsy-report-ex" key="DocumentReference-documentreference-mdi-autopsy-report-ex" name="DocumentReference - MDI Report - Autopsy Report example"/>
 <artifact id="DocumentReference/documentreference-mdi-investigator-narrative-ex" key="DocumentReference-documentreference-mdi-investigator-narrative-ex" name="DocumentReference - MDI Report - Investigator's Narrative example"/>
-<artifact id="StructureDefinition/Extension-cremation-clearance-status" key="StructureDefinition-Extension-cremation-clearance-status" name="Extension - Cremation Clearance Authorization Status"/>
-<artifact id="StructureDefinition/Extension-cremation-clearance-coroner" key="StructureDefinition-Extension-cremation-clearance-coroner" name="Extension - Cremation Clearance Coroner Status"/>
-<artifact id="StructureDefinition/Extension-cremation-clearance-signature" key="StructureDefinition-Extension-cremation-clearance-signature" name="Extension - Cremation Clearance Signature Status"/>
 <artifact deprecated="true" id="StructureDefinition/Extension-date-day" key="StructureDefinition-Extension-date-day" name="Extension - Date Day"/>
 <artifact deprecated="true" id="StructureDefinition/Extension-date-month" key="StructureDefinition-Extension-date-month" name="Extension - Date Month"/>
 <artifact deprecated="true" id="StructureDefinition/Extension-date-time" key="StructureDefinition-Extension-date-time" name="Extension - Date Time"/>
 <artifact deprecated="true" id="StructureDefinition/Extension-date-year" key="StructureDefinition-Extension-date-year" name="Extension - Date Year"/>
-<artifact id="StructureDefinition/Extension-death-certificate-status" key="StructureDefinition-Extension-death-certificate-status" name="Extension - Death Certificate Status"/>
 <artifact deprecated="true" id="StructureDefinition/Extension-observation-location" key="StructureDefinition-Extension-observation-location" name="Extension - Location"/>
-<artifact id="StructureDefinition/Extension-me-certification-affirmation" key="StructureDefinition-Extension-me-certification-affirmation" name="Extension - Medical Examiner Certification Affirmation"/>
 <artifact deprecated="true" id="StructureDefinition/Extension-partial-date-time" key="StructureDefinition-Extension-partial-date-time" name="Extension - Partial DateTime"/>
-<artifact id="StructureDefinition/Extension-tracking-number" key="StructureDefinition-Extension-tracking-number" name="Extension - Tracking Number"/>
 <artifact deprecated="true" id="StructureDefinition/List-cause-of-death-pathway" key="StructureDefinition-List-cause-of-death-pathway" name="List - Cause of Death Pathway"/>
 <artifact deprecated="true" id="List/list-cause-of-death-pathway-a-freeman" key="List-list-cause-of-death-pathway-a-freeman" name="List - Cause of Death Pathway - Freeman"/>
 <artifact deprecated="true" id="Location/us-core-location-atlanta-ga-death-location-a-freeman" key="Location-us-core-location-atlanta-ga-death-location-a-freeman" name="Location - Atlanta GA Death Location - Freeman"/>
@@ -69,6 +72,9 @@
 <artifact id="Composition/composition-mdi-and-edrs-draft" key="Composition-composition-mdi-and-edrs-draft" name="MDI and EDRS Composition - draft"/>
 <artifact deprecated="true" id="Composition/composition-mdi-to-edrs-a-freeman" key="Composition-composition-mdi-to-edrs-a-freeman" name="MDI to EDRS Composition - Freeman"/>
 <artifact deprecated="true" id="Composition/composition-mdi-to-edrs-draft" key="Composition-composition-mdi-to-edrs-draft" name="MDI to EDRS Composition - draft"/>
+<artifact id="ValueSet/vs-med-dq-review" key="ValueSet-vs-med-dq-review" name="Medical Data Quality Review"/>
+<artifact id="StructureDefinition/Extension-me-certification-affirmation" key="StructureDefinition-Extension-me-certification-affirmation" name="Medical Examiner Certification Affirmation"/>
+<artifact id="ValueSet/vs-me-cert-affirmation" key="ValueSet-vs-me-cert-affirmation" name="Medical Examiner Certification Status"/>
 <artifact id="CodeSystem/cs-mdi-codes" key="CodeSystem-cs-mdi-codes" name="Medicolegal Death Investigation Codes"/>
 <artifact id="MessageDefinition/MessageDefinition-toxicology-system" key="MessageDefinition-MessageDefinition-toxicology-system" name="MessageDefinition - Toxicology System"/>
 <artifact id="StructureDefinition/MessageHeader-death-certificate-review" key="StructureDefinition-MessageHeader-death-certificate-review" name="MessageHeader - Death Certificate Review"/>
@@ -125,10 +131,13 @@
 <artifact id="StructureDefinition/Organization-crematorium" key="StructureDefinition-Organization-crematorium" name="Organization - Crematorium"/>
 <artifact id="Organization/organization-crematorium-ex1" key="Organization-organization-crematorium-ex1" name="Organization – Crematorium example"/>
 <artifact id="Parameters/expansion-parameters-mdi" key="Parameters-expansion-parameters-mdi" name="Parameters - SNOMED US Version"/>
+<artifact id="ValueSet/vs-per-dq-review" key="ValueSet-vs-per-dq-review" name="Personal Data Quality Review"/>
 <artifact id="Practitioner/vr-practitioner-s-jones" key="Practitioner-vr-practitioner-s-jones" name="Practitioner - Vital Records - Dr. Sam Jones"/>
 <artifact deprecated="true" id="StructureDefinition/Procedure-death-certification" key="StructureDefinition-Procedure-death-certification" name="Procedure - Death Certification"/>
 <artifact deprecated="true" id="Procedure/procedure-death-certification-a-freeman" key="Procedure-procedure-death-certification-a-freeman" name="Procedure - Death Certification - Freeman"/>
-<artifact id="ValueSet/vs-registration-example" key="ValueSet-vs-registration-example" name="Registration example"/>
+<artifact id="ValueSet/vs-registration" key="ValueSet-vs-registration" name="Registration"/>
+<artifact deprecated="true" id="ValueSet/vs-registration-example" key="ValueSet-vs-registration-example" name="Registration example"/>
+<artifact id="ValueSet/vs-signature-status" key="ValueSet-vs-signature-status" name="Signature Status"/>
 <artifact id="StructureDefinition/Specimen-toxicology-lab" key="StructureDefinition-Specimen-toxicology-lab" name="Specimen - Toxicology Lab"/>
 <artifact id="Specimen/specimen-bile-toxicology-a-freeman" key="Specimen-specimen-bile-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Bile"/>
 <artifact id="Specimen/specimen-blood-toxicology-a-freeman" key="Specimen-specimen-blood-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Blood"/>
@@ -136,6 +145,7 @@
 <artifact id="Specimen/specimen-stomach-contents-toxicology-a-freeman" key="Specimen-specimen-stomach-contents-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Stomach Contents"/>
 <artifact id="Specimen/specimen-urine-toxicology-a-freeman" key="Specimen-specimen-urine-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Urine"/>
 <artifact id="Specimen/specimen-vitreous-humor-toxicology-a-freeman" key="Specimen-specimen-vitreous-humor-toxicology-a-freeman" name="Specimen - Toxicology Lab - Freeman Vitreous Humor"/>
+<artifact id="StructureDefinition/Extension-tracking-number" key="StructureDefinition-Extension-tracking-number" name="Tracking Number"/>
 <artifact id="ValueSet/vs-tracking-number-type" key="ValueSet-vs-tracking-number-type" name="Tracking Number Type"/>
 <artifact id="Organization/us-core-organization-ga-dph" key="Organization-us-core-organization-ga-dph" name="US Core Organization - GA Dept Public Health"/>
 <artifact id="Organization/us-core-organization-tox-lab" key="Organization-us-core-organization-tox-lab" name="US Core Organization - UF Health Pathology Labs, Forensic Toxicology Laboratory"/>
@@ -185,22 +195,22 @@
 <artifact id="Practitioner/vrdr-mortician-dcr-ex1" key="Practitioner-vrdr-mortician-dcr-ex1" name="VRDR Mortician"/>
 <artifact id="Observation/vrdr-tobacco-use-dcr-ex1" key="Observation-vrdr-tobacco-use-dcr-ex1" name="VRDR Tobacco Use Contributed To Death"/>
 <artifact id="Observation/vrdr-tobacco-use-a-freeman" key="Observation-vrdr-tobacco-use-a-freeman" name="VRDR Tobacco Use Contributed To Death - Freeman"/>
-<artifact id="ValueSet/vs-certified-workflow-example" key="ValueSet-vs-certified-workflow-example" name="ValueSet - Certified Workflow example"/>
+<artifact deprecated="true" id="ValueSet/vs-certified-workflow-example" key="ValueSet-vs-certified-workflow-example" name="ValueSet - Certified Workflow example"/>
 <artifact deprecated="true" id="ValueSet/ValueSet-certifier-types" key="ValueSet-ValueSet-certifier-types" name="ValueSet - Certifier Types"/>
 <artifact deprecated="true" id="ValueSet/ValueSet-contributory-tobacco-use" key="ValueSet-ValueSet-contributory-tobacco-use" name="ValueSet - Contributory Tobacco Use"/>
-<artifact id="ValueSet/vs-cremation-clearance-observations-example" key="ValueSet-vs-cremation-clearance-observations-example" name="ValueSet - Cremation Clearance Observations example"/>
-<artifact id="ValueSet/vs-cremation-clearance-signed-example" key="ValueSet-vs-cremation-clearance-signed-example" name="ValueSet - Cremation Clearance Signed example"/>
-<artifact id="ValueSet/vs-cremation-clearance-status-example" key="ValueSet-vs-cremation-clearance-status-example" name="ValueSet - Cremation Clearance Status example"/>
+<artifact deprecated="true" id="ValueSet/vs-cremation-clearance-observations-example" key="ValueSet-vs-cremation-clearance-observations-example" name="ValueSet - Cremation Clearance Observations example"/>
+<artifact deprecated="true" id="ValueSet/vs-cremation-clearance-signed-example" key="ValueSet-vs-cremation-clearance-signed-example" name="ValueSet - Cremation Clearance Signed example"/>
+<artifact deprecated="true" id="ValueSet/vs-cremation-clearance-status-example" key="ValueSet-vs-cremation-clearance-status-example" name="ValueSet - Cremation Clearance Status example"/>
 <artifact deprecated="true" id="ValueSet/ValueSet-date-establishment-approach" key="ValueSet-ValueSet-date-establishment-approach" name="ValueSet - Date Establishment Approach"/>
 <artifact deprecated="true" id="ValueSet/ValueSet-date-establishment-methods" key="ValueSet-ValueSet-date-establishment-methods" name="ValueSet - Date Establishment Methods"/>
-<artifact id="ValueSet/vs-death-certificate-review-observations-example" key="ValueSet-vs-death-certificate-review-observations-example" name="ValueSet - Death Certificate Review Observations example"/>
-<artifact id="ValueSet/vs-dcr-reason-example" key="ValueSet-vs-dcr-reason-example" name="ValueSet - Death Certificate Review Reason example"/>
+<artifact deprecated="true" id="ValueSet/vs-death-certificate-review-observations-example" key="ValueSet-vs-death-certificate-review-observations-example" name="ValueSet - Death Certificate Review Observations example"/>
+<artifact deprecated="true" id="ValueSet/vs-dcr-reason-example" key="ValueSet-vs-dcr-reason-example" name="ValueSet - Death Certificate Review Reason example"/>
 <artifact deprecated="true" id="ValueSet/ValueSet-death-pregnancy-status" key="ValueSet-ValueSet-death-pregnancy-status" name="ValueSet - Death Pregnancy Status"/>
-<artifact id="ValueSet/vs-embalmed-example" key="ValueSet-vs-embalmed-example" name="ValueSet - Embalmed example"/>
+<artifact deprecated="true" id="ValueSet/vs-embalmed-example" key="ValueSet-vs-embalmed-example" name="ValueSet - Embalmed example"/>
 <artifact deprecated="true" id="ValueSet/ValueSet-manner-of-death" key="ValueSet-ValueSet-manner-of-death" name="ValueSet - Manner of Death"/>
-<artifact id="ValueSet/vs-med-dq-review-example" key="ValueSet-vs-med-dq-review-example" name="ValueSet - Medical Data Quality Review example"/>
-<artifact id="ValueSet/vs-me-cert-affirmation-example" key="ValueSet-vs-me-cert-affirmation-example" name="ValueSet - Medical Examiner Certification Affirmation example"/>
-<artifact id="ValueSet/vs-per-dq-review-example" key="ValueSet-vs-per-dq-review-example" name="ValueSet - Personal Data Quality Review example"/>
+<artifact deprecated="true" id="ValueSet/vs-med-dq-review-example" key="ValueSet-vs-med-dq-review-example" name="ValueSet - Medical Data Quality Review example"/>
+<artifact deprecated="true" id="ValueSet/vs-me-cert-affirmation-example" key="ValueSet-vs-me-cert-affirmation-example" name="ValueSet - Medical Examiner Certification Affirmation example"/>
+<artifact deprecated="true" id="ValueSet/vs-per-dq-review-example" key="ValueSet-vs-per-dq-review-example" name="ValueSet - Personal Data Quality Review example"/>
 <artifact deprecated="true" id="ValueSet/ValueSet-place-of-death" key="ValueSet-ValueSet-place-of-death" name="ValueSet - Place of Death"/>
 <artifact deprecated="true" id="ValueSet/ValueSet-tracking-number-type" key="ValueSet-ValueSet-tracking-number-type" name="ValueSet - Tracking Number Type"/>
 <artifact deprecated="true" id="ValueSet/ValueSet-transportation-incident-role" key="ValueSet-ValueSet-transportation-incident-role" name="ValueSet - Transportation Incident Role"/>
