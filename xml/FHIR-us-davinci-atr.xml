@@ -9,35 +9,35 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="RelatedPerson/1" key="RelatedPerson-1" name="A Related Person used as a Subscriber in Coverage"/>
 <artifact id="StructureDefinition/atr-any-resource-extension" key="StructureDefinition-atr-any-resource-extension" name="ATR Any Resource Extension"/>
 <artifact id="StructureDefinition/atr-intended-recipient-identifier-extension" key="StructureDefinition-atr-intended-recipient-identifier-extension" name="ATR Intended Recipient Identifier Extension"/>
-<artifact id="StructureDefinition/atr-coverage" key="StructureDefinition-davinci-atr-coverage" name="ATRCoverage"/>
-<artifact id="StructureDefinition/atr-group" key="StructureDefinition-davinci-atr-group" name="ATRGroup"/>
-<artifact id="StructureDefinition/atr-location" key="StructureDefinition-davinci-atr-location" name="ATRLocation"/>
-<artifact id="StructureDefinition/atr-organization" key="StructureDefinition-davinci-atr-organization" name="ATROrganization"/>
-<artifact id="StructureDefinition/atr-patient" key="StructureDefinition-davinci-atr-patient" name="ATRPatient"/>
-<artifact id="StructureDefinition/atr-practitioner" key="StructureDefinition-davinci-atr-practitioner" name="ATRPractitioner"/>
-<artifact id="StructureDefinition/atr-practitionerrole" key="StructureDefinition-davinci-atr-practitionerrole" name="ATRPractitionerRole"/>
-<artifact id="StructureDefinition/atr-relatedperson" key="StructureDefinition-davinci-atr-relatedperson" name="ATRRelatedPerson"/>
-<artifact id="StructureDefinition/ext-attributedProvider" key="StructureDefinition-ext-attributedProvider" name="AttributedProvider"/>
+<artifact id="StructureDefinition/ext-attributedProvider" key="StructureDefinition-ext-attributedProvider" name="Attributed Provider"/>
+<artifact id="StructureDefinition/ext-attributionListStatus" key="StructureDefinition-ext-attributionListStatus" name="Attribution List Status"/>
 <artifact id="OperationDefinition/attribution-status" key="OperationDefinition-attribution-status" name="Attribution Status"/>
-<artifact id="StructureDefinition/ext-attributionListStatus" key="StructureDefinition-ext-attributionListStatus" name="AttributionListStatus"/>
-<artifact id="StructureDefinition/ext-changeType" key="StructureDefinition-ext-changeType" name="ChangeType"/>
 <artifact id="OperationDefinition/confirm-attribution-list" key="OperationDefinition-confirm-attribution-list" name="Confirm Attribution List"/>
-<artifact id="StructureDefinition/ext-contractValidityPeriod" key="StructureDefinition-ext-contractValidityPeriod" name="ContractValidityPeriod"/>
+<artifact id="StructureDefinition/ext-contractValidityPeriod" key="StructureDefinition-ext-contractValidityPeriod" name="Contract Validity Period"/>
 <artifact id="Coverage/1" key="Coverage-1" name="Coverage For Patient 1 - Example"/>
 <artifact id="Coverage/2" key="Coverage-2" name="Coverage For Patient 2 - Example"/>
 <artifact id="Coverage/3" key="Coverage-3" name="Coverage For Patient 3 - Example"/>
-<artifact id="StructureDefinition/ext-coverageReference" key="StructureDefinition-ext-coverageReference" name="CoverageReference"/>
+<artifact id="StructureDefinition/ext-coverageReference" key="StructureDefinition-ext-coverageReference" name="Coverage Reference"/>
 <artifact id="CodeSystem/atr-changetype" key="CodeSystem-atr-changetype" name="DaVinci ATR Change Type Codes"/>
 <artifact id="ValueSet/atr-changetype" key="ValueSet-atr-changetype" name="DaVinci ATR Change Types"/>
 <artifact id="CapabilityStatement/atr-consumer" key="CapabilityStatement-davinci-atr-consumer" name="DaVinci ATR Consumer"/>
+<artifact id="StructureDefinition/atr-coverage" key="StructureDefinition-davinci-atr-coverage" name="DaVinci ATR Coverage 3.1"/>
 <artifact id="CapabilityStatement/atr-producer" key="CapabilityStatement-davinci-atr-producer" name="DaVinci ATR Producer"/>
 <artifact id="ValueSet/atr-attribution-list-status" key="ValueSet-atr-attribution-list-status" name="DaVinci Attribution List Status"/>
 <artifact id="CodeSystem/atr-attribution-list-status" key="CodeSystem-atr-attribution-list-status" name="DaVinci Attribution List Status Codes"/>
 <artifact id="OperationDefinition/davinci-data-export" key="OperationDefinition-davinci-data-export" name="DaVinci Data Export"/>
 <artifact id="ValueSet/davinci-group-characteristic" key="ValueSet-davinci-group-characteristic" name="DaVinci Group Characteristic"/>
 <artifact id="StructureDefinition/davinci-patient-list" key="StructureDefinition-davinci-patient-list" name="DaVinci Patient List"/>
+<artifact id="StructureDefinition/atr-group" key="StructureDefinition-davinci-atr-group" name="Davinci ATR Group"/>
+<artifact id="StructureDefinition/atr-location" key="StructureDefinition-davinci-atr-location" name="Davinci ATR Location"/>
+<artifact id="StructureDefinition/atr-organization" key="StructureDefinition-davinci-atr-organization" name="Davinci ATR Organization"/>
+<artifact id="StructureDefinition/atr-patient" key="StructureDefinition-davinci-atr-patient" name="Davinci ATR Patient"/>
+<artifact id="StructureDefinition/atr-practitioner" key="StructureDefinition-davinci-atr-practitioner" name="Davinci ATR Practitioner"/>
+<artifact id="StructureDefinition/atr-practitionerrole" key="StructureDefinition-davinci-atr-practitionerrole" name="Davinci ATR PractitionerRole"/>
+<artifact id="StructureDefinition/atr-relatedperson" key="StructureDefinition-davinci-atr-relatedperson" name="Davinci ATR RelatedPerson 3.1"/>
 <artifact id="CodeSystem/davinci-group-characteristic-codes" key="CodeSystem-davinci-group-characteristic-codes" name="Davinci Group Characteristic Codes"/>
 <artifact deprecated="true" id="Group/MemberAttributionListExample" key="Group-MemberAttributionListExample" name="Example - Group member attribution list"/>
 <artifact deprecated="true" id="InsurancePlan/SampleContract" key="InsurancePlan-SampleContract" name="Example - Insurance plan simple sample contract"/>
@@ -47,7 +47,8 @@
 <artifact deprecated="true" id="Patient/pat2" key="Patient-pat2" name="Example - Patient pat2"/>
 <artifact deprecated="true" id="SearchParameter/Group-characteristic-value-reference" key="SearchParameter-Group-characteristic-value-reference" name="Group Characteristic Value Reference Search Parameter"/>
 <artifact id="Group/fullexample" key="Group-fullexample" name="Group Member Attribution List example"/>
-<artifact id="StructureDefinition/ext-insuranceProductType" key="StructureDefinition-ext-insuranceProductType" name="InsuranceProductType"/>
+<artifact id="StructureDefinition/ext-changeType" key="StructureDefinition-ext-changeType" name="Group Member Change Information"/>
+<artifact id="StructureDefinition/ext-insuranceProductType" key="StructureDefinition-ext-insuranceProductType" name="Insurance Product Type"/>
 <artifact id="Location/1" key="Location-1" name="Location - Example"/>
 <artifact id="OperationDefinition/member-add" key="OperationDefinition-member-add" name="Member Add"/>
 <artifact id="StructureDefinition/atr-list-change-subscription" key="StructureDefinition-atr-list-change-subscription" name="Member Attribution List Change Subscription"/>
@@ -62,8 +63,7 @@
 <artifact deprecated="true" id="StructureDefinition/ext-planReference" key="StructureDefinition-ext-planReference" name="PlanReference"/>
 <artifact id="Practitioner/1" key="Practitioner-1" name="Practitioner - Example"/>
 <artifact id="PractitionerRole/1" key="PractitionerRole-1" name="PractitionerRole - Example"/>
-<artifact id="RelatedPerson/1" key="RelatedPerson-1" name="Related Person (1) used as a Subscriber in Coverage"/>
-<artifact id="RelatedPerson/2" key="RelatedPerson-2" name="Related Person (2) used as a Subscriber in Coverage"/>
+<artifact id="RelatedPerson/2" key="RelatedPerson-2" name="Related Person playing the role of a Subscriber in Coverage"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="exchanging" name="Approaches to Exchanging FHIR Data"/>
