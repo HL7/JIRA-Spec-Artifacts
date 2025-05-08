@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-ra/2023May" ciUrl="http://build.fhir.org/ig/HL7/davinci-ra" defaultVersion="1.0.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/davinci-ra" url="http://hl7.org/fhir/us/davinci-ra">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-ra/2023May" ciUrl="http://build.fhir.org/ig/HL7/davinci-ra" defaultVersion="2.0.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/davinci-ra" url="http://hl7.org/fhir/us/davinci-ra">
 <version code="current" url="http://build.fhir.org/ig/HL7/davinci-ra"/>
+<version code="2.0.0" url="http://hl7.org/fhir/us/davinci-ra/STU2"/>
 <version code="2.0.0-ballot" url="http://hl7.org/fhir/us/davinci-ra/2023May"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-ra/STU1"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-ra/2022Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="StructureDefinition/ra-annotation" key="StructureDefinition-ra-annotation" name="Annotation"/>
-<artifact id="ValueSet/coding-gap-annotation" key="ValueSet-coding-gap-annotation" name="Coding Gap Annotation"/>
-<artifact id="CodeSystem/coding-gap-annotation" key="CodeSystem-coding-gap-annotation" name="Coding Gap Annotation CodeSystem"/>
-<artifact id="CodeSystem/coding-gap-task-reason" key="CodeSystem-coding-gap-task-reason" name="Coding Gap Task Reason CodeSystem"/>
-<artifact id="ValueSet/coding-gap-task-reason" key="ValueSet-coding-gap-task-reason" name="Coding Gap Task Reason ValueSet"/>
-<artifact id="ValueSet/coding-gap-task-status" key="ValueSet-coding-gap-task-status" name="Coding Gap Task Status ValueSet"/>
+<artifact deprecated="true" id="StructureDefinition/ra-annotation" key="StructureDefinition-ra-annotation" name="Annotation"/>
+<artifact deprecated="true" id="ValueSet/coding-gap-annotation" key="ValueSet-coding-gap-annotation" name="Coding Gap Annotation"/>
+<artifact deprecated="true" id="CodeSystem/coding-gap-annotation" key="CodeSystem-coding-gap-annotation" name="Coding Gap Annotation CodeSystem"/>
+<artifact id="ValueSet/coding-gap-remark" key="ValueSet-coding-gap-remark" name="Coding Gap Remark"/>
+<artifact id="CodeSystem/coding-gap-remark" key="CodeSystem-coding-gap-remark" name="Coding Gap Remark CodeSystem"/>
+<artifact deprecated="true" id="CodeSystem/coding-gap-task-reason" key="CodeSystem-coding-gap-task-reason" name="Coding Gap Task Reason CodeSystem"/>
+<artifact deprecated="true" id="ValueSet/coding-gap-task-reason" key="ValueSet-coding-gap-task-reason" name="Coding Gap Task Reason ValueSet"/>
+<artifact deprecated="true" id="ValueSet/coding-gap-task-status" key="ValueSet-coding-gap-task-status" name="Coding Gap Task Status ValueSet"/>
+<artifact id="StructureDefinition/ra-ccRemark" key="StructureDefinition-ra-ccRemark" name="Condition Category Remark"/>
 <artifact deprecated="true" id="Condition/ra-condition01" key="Condition-ra-condition01" name="Condition01: Type 2 diabetes with unspecified manisfestations"/>
 <artifact id="Condition/ra-condition01pat03" key="Condition-ra-condition01pat03" name="Condition01pat03: Other artificial openings of gastrointestinal tract status"/>
 <artifact deprecated="true" id="Condition/ra-condition02" key="Condition-ra-condition02" name="Condition02: Major Depressive Disorder, Single episode"/>
@@ -44,6 +48,7 @@
 <artifact id="Condition/ra-conditionR01pat01" key="Condition-ra-conditionR01pat01" name="ConditionR01pat01: Cystic fibrosis with other intestinal manifestations"/>
 <artifact id="StructureDefinition/ra-confidenceScale" key="StructureDefinition-ra-confidenceScale" name="Confidence Scale"/>
 <artifact id="ValueSet/confidence-scale" key="ValueSet-confidence-scale" name="Confidence Scale Value Set"/>
+<artifact id="StructureDefinition/ra-dxCode" key="StructureDefinition-ra-dxCode" name="Diagnosis Code"/>
 <artifact id="DocumentReference/ra-documentreference01pat01" key="DocumentReference-ra-documentreference01pat01" name="Documentreference01pat01: Outpatient Note"/>
 <artifact id="Encounter/ra-encounter44pat01" key="Encounter-ra-encounter44pat01" name="Encounter on 20170118"/>
 <artifact id="Encounter/ra-encounter08pat01" key="Encounter-ra-encounter08pat01" name="Encounter on 20170203"/>
@@ -55,6 +60,7 @@
 <artifact id="Encounter/ra-encounter15pat03" key="Encounter-ra-encounter15pat03" name="Encounter on 20200808"/>
 <artifact id="Encounter/ra-encounter06pat03" key="Encounter-ra-encounter06pat03" name="Encounter on 20200917"/>
 <artifact id="Encounter/ra-encounter11pat01" key="Encounter-ra-encounter11pat01" name="Encounter on 20201102"/>
+<artifact id="Encounter/ra-encounter04pat03" key="Encounter-ra-encounter04pat03" name="Encounter on 20201218"/>
 <artifact id="Encounter/ra-encounter46pat01" key="Encounter-ra-encounter46pat01" name="Encounter on 2021-10-15"/>
 <artifact id="Encounter/ra-encounter21pat03" key="Encounter-ra-encounter21pat03" name="Encounter on 20210130"/>
 <artifact id="Encounter/ra-encounter02pat01" key="Encounter-ra-encounter02pat01" name="Encounter on 20210131"/>
@@ -66,13 +72,13 @@
 <artifact id="Encounter/ra-encounter31pat02" key="Encounter-ra-encounter31pat02" name="Encounter on 20210806"/>
 <artifact id="Encounter/ra-encounter19pat03" key="Encounter-ra-encounter19pat03" name="Encounter on 20210823"/>
 <artifact id="Encounter/ra-encounter03pat01" key="Encounter-ra-encounter03pat01" name="Encounter on 20210926"/>
-<artifact id="Encounter/ra-encounter04pat03" key="Encounter-ra-encounter04pat03" name="Encounter on 20211218"/>
 <artifact id="OperationDefinition/ra.evaluate-measure" key="OperationDefinition-ra.evaluate-measure" name="Evaluate Measure"/>
 <artifact id="StructureDefinition/ra-evidenceStatus" key="StructureDefinition-ra-evidenceStatus" name="Evidence Status"/>
 <artifact deprecated="true" id="ValueSet/example-cmshcc" key="ValueSet-example-cmshcc" name="Example CMS Hierarchical Condition Category Value Set"/>
 <artifact id="StructureDefinition/ra-groupReference" key="StructureDefinition-ra-groupReference" name="Group Reference"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hiearchicalStatus" key="StructureDefinition-ra-hiearchicalStatus" name="Hiearchical Status Extension"/>
 <artifact id="StructureDefinition/ra-hierarchicalStatus" key="StructureDefinition-ra-hierarchicalStatus" name="Hierarchical Status"/>
+<artifact id="Organization/ra-laboratory01" key="Organization-ra-laboratory01" name="Laboratory01: XYZ Laboratory"/>
 <artifact id="Observation/ra-obs01pat03" key="Observation-ra-obs01pat03" name="Observation: Creatinine Result from 20210728"/>
 <artifact id="Observation/ra-obs02pat03" key="Observation-ra-obs02pat03" name="Observation: PHQ9 from 20190823"/>
 <artifact id="Observation/ra-obs01pat02" key="Observation-ra-obs01pat02" name="Observation: Trypsin [Mass/volume] in Serum or Plasma result from 20190617"/>
@@ -87,15 +93,28 @@
 <artifact id="Patient/ra-patient02" key="Patient-ra-patient02" name="Patient02: Adam Everyman"/>
 <artifact id="Patient/ra-patient03" key="Patient-ra-patient03" name="Patient03: Nelda Nuclear"/>
 <artifact deprecated="true" id="Patient/ra-patient04" key="Patient-ra-patient04" name="Patient04: Jane Doh"/>
+<artifact id="StructureDefinition/ra-payerCodingGapReportId" key="StructureDefinition-ra-payerCodingGapReportId" name="Payer Coding Gap Report Id"/>
 <artifact id="Practitioner/ra-prac01pat01" key="Practitioner-ra-prac01pat01" name="Practitioner: Harold Hippocrates"/>
 <artifact id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner: Otto Osler"/>
 <artifact id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner: Patrick Pump"/>
+<artifact id="StructureDefinition/ra-parameters-cc-remark-patch" key="StructureDefinition-ra-parameters-cc-remark-patch" name="RA Parameters ccRemark Patch Profile"/>
+<artifact id="ValueSet/remark-reason" key="ValueSet-remark-reason" name="Remark Reason"/>
+<artifact id="CodeSystem/remark-reason" key="CodeSystem-remark-reason" name="Remark Reason CodeSystem"/>
 <artifact deprecated="true" id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
+<artifact id="StructureDefinition/ra-reportingVendor" key="StructureDefinition-ra-reportingVendor" name="Reporting Vendor Extension"/>
+<artifact id="Parameters/ra-measurereport01-patch" key="Parameters-ra-measurereport01-patch" name="Risk Adjustement Measure Report Patch"/>
+<artifact id="Parameters/ra-measurereport01-patch-mult" key="Parameters-ra-measurereport01-patch-mult" name="Risk Adjustement Measure Report Patch With Multiple Values"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
 <artifact id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Risk Adjustment Clinical Data Collection Deadline"/>
-<artifact id="StructureDefinition/ra-clinical-evaluation-evidence-task" key="StructureDefinition-ra-clinical-evaluation-evidence-task" name="Risk Adjustment Clinical Evaluation Evidence Task"/>
+<artifact deprecated="true" id="StructureDefinition/ra-clinical-evaluation-evidence-task" key="StructureDefinition-ra-clinical-evaluation-evidence-task" name="Risk Adjustment Clinical Evaluation Evidence Task"/>
 <artifact id="StructureDefinition/ra-measurereport" key="StructureDefinition-ra-measurereport" name="Risk Adjustment Coding Gap MeasureReport"/>
 <artifact id="StructureDefinition/ra-measurereport-bundle" key="StructureDefinition-ra-measurereport-bundle" name="Risk Adjustment Coding Gap Report Bundle"/>
+<artifact id="StructureDefinition/ra-ccType" key="StructureDefinition-ra-ccType" name="Risk Adjustment Condition Category Type"/>
+<artifact id="CodeSystem/cc-type" key="CodeSystem-cc-type" name="Risk Adjustment Condition Category Type CodeSystem"/>
+<artifact id="ValueSet/cc-type" key="ValueSet-cc-type" name="Risk Adjustment Condition Category Type ValueSet"/>
+<artifact id="StructureDefinition/ra-datax-measurereport" key="StructureDefinition-ra-datax-measurereport" name="Risk Adjustment Data Exchange MeasureReport"/>
+<artifact id="CapabilityStatement/ra-data-submission-client" key="CapabilityStatement-ra-data-submission-client" name="Risk Adjustment Data Submission Client Capability Statement"/>
+<artifact id="CapabilityStatement/ra-data-submission-server" key="CapabilityStatement-ra-data-submission-server" name="Risk Adjustment Data Submission Server Capability Statement"/>
 <artifact id="CodeSystem/evidence-status" key="CodeSystem-evidence-status" name="Risk Adjustment Evidence Status CodeSystem"/>
 <artifact id="StructureDefinition/ra-evidenceStatusDate" key="StructureDefinition-ra-evidenceStatusDate" name="Risk Adjustment Evidence Status Date"/>
 <artifact id="ValueSet/evidence-status" key="ValueSet-evidence-status" name="Risk Adjustment Evidence Status ValueSet"/>
@@ -107,32 +126,38 @@
 <artifact id="Measure/RAModelExample02" key="Measure-RAModelExample02" name="Risk Adjustment Model Version 21 - CMS Hierarchical Category Condition (CMS-HCC)"/>
 <artifact id="Measure/RAModelExample01" key="Measure-RAModelExample01" name="Risk Adjustment Model Version 24 - CMS Hierarchical Category Condition (CMS-HCC)"/>
 <artifact id="Measure/RAModelExample03" key="Measure-RAModelExample03" name="Risk Adjustment Model Version 5 - CMS Prescribing Drug Hierarchical Category Condition (CMS-HCC)"/>
-<artifact id="CapabilityStatement/ra-remediation-client" key="CapabilityStatement-ra-remediation-client" name="Risk Adjustment Remediation Client Capability Statement"/>
-<artifact id="CapabilityStatement/ra-remediation-server" key="CapabilityStatement-ra-remediation-server" name="Risk Adjustment Remediation Server Capability Statement"/>
+<artifact deprecated="true" id="CapabilityStatement/ra-remediation-client" key="CapabilityStatement-ra-remediation-client" name="Risk Adjustment Remediation Client Capability Statement"/>
+<artifact deprecated="true" id="CapabilityStatement/ra-remediation-server" key="CapabilityStatement-ra-remediation-server" name="Risk Adjustment Remediation Server Capability Statement"/>
 <artifact id="CapabilityStatement/ra-reporting-client" key="CapabilityStatement-ra-reporting-client" name="Risk Adjustment Reporting Client Capability Statement"/>
 <artifact id="CapabilityStatement/ra-reporting-server" key="CapabilityStatement-ra-reporting-server" name="Risk Adjustment Reporting Server Capability Statement"/>
-<artifact id="StructureDefinition/ra-searchset-bundle" key="StructureDefinition-ra-searchset-bundle" name="Risk Adjustment SearchSet Bundle"/>
+<artifact deprecated="true" id="StructureDefinition/ra-searchset-bundle" key="StructureDefinition-ra-searchset-bundle" name="Risk Adjustment SearchSet Bundle"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-server" key="CapabilityStatement-ra-server" name="Risk Adjustment Server Capability Statement"/>
-<artifact id="StructureDefinition/ra-suspectType" key="StructureDefinition-ra-suspectType" name="Risk Adjustment Suspect Type"/>
-<artifact id="CodeSystem/suspect-type" key="CodeSystem-suspect-type" name="Risk Adjustment Suspect Type CodeSystem"/>
-<artifact id="ValueSet/suspect-type" key="ValueSet-suspect-type" name="Risk Adjustment Suspect Type ValueSet"/>
+<artifact deprecated="true" id="StructureDefinition/ra-suspectType" key="StructureDefinition-ra-suspectType" name="Risk Adjustment Suspect Type"/>
+<artifact deprecated="true" id="CodeSystem/suspect-type" key="CodeSystem-suspect-type" name="Risk Adjustment Suspect Type CodeSystem"/>
+<artifact deprecated="true" id="ValueSet/suspect-type" key="ValueSet-suspect-type" name="Risk Adjustment Suspect Type ValueSet"/>
 <artifact id="ValueSet/sample-cmshcc" key="ValueSet-sample-cmshcc" name="Sample CMS Hierarchical Condition Category"/>
-<artifact id="CodeSystem/task-label" key="CodeSystem-task-label" name="Task Label CodeSystem"/>
-<artifact id="Task/ra-task01measurereport01group003" key="Task-ra-task01measurereport01group003" name="Task: Clinical Evaluation Task"/>
+<artifact id="Parameters/ra-submit-data" key="Parameters-ra-submit-data" name="Submit Data for Risk Adjustement Data Exchange MeasureReport"/>
+<artifact deprecated="true" id="CodeSystem/task-label" key="CodeSystem-task-label" name="Task Label CodeSystem"/>
+<artifact deprecated="true" id="Task/ra-task01measurereport01group003" key="Task-ra-task01measurereport01group003" name="Task: Clinical Evaluation Task"/>
 <artifact id="Observation/ra-obs21pat01" key="Observation-ra-obs21pat01" name="Trypsin [Mass/volume] in Serum or Plasma from 20170617"/>
+<artifact id="Organization/ra-vendor01" key="Organization-ra-vendor01" name="Vendor01: Best RA Vendor"/>
+<artifact id="SearchParameter/measurereport-category" key="SearchParameter-measurereport-category" name="measurereport-category"/>
 <artifact id="Bundle/ra-bundle01" key="Bundle-ra-bundle01" name="ra-bundle01: Risk Adjustment Bundle"/>
+<artifact id="MeasureReport/ra-datax-measurereport01" key="MeasureReport-ra-datax-measurereport01" name="ra-datax-measurereport01: Risk Adjustment Data Exchange Measure Report"/>
 <artifact id="Group/ra-group01" key="Group-ra-group01" name="ra-group01: Risk Adjustment Patient Group"/>
 <artifact id="Group/ra-group02" key="Group-ra-group02" name="ra-group02: Risk Adjustment Patient Group"/>
-<artifact id="MeasureReport/ra-measurereport01-with-annotation" key="MeasureReport-ra-measurereport01-with-annotation" name="ra-measurereport01-with-annotation: Risk Adjustment Measure Report with Annotation"/>
+<artifact deprecated="true" id="MeasureReport/ra-measurereport01-with-annotation" key="MeasureReport-ra-measurereport01-with-annotation" name="ra-measurereport01-with-annotation: Risk Adjustment Measure Report with Annotation"/>
+<artifact id="MeasureReport/ra-measurereport01-with-remark" key="MeasureReport-ra-measurereport01-with-remark" name="ra-measurereport01-with-remark: Risk Adjustment Measure Report with Condition Category Remark"/>
 <artifact id="MeasureReport/ra-measurereport01" key="MeasureReport-ra-measurereport01" name="ra-measurereport01: Risk Adjustment Measure Report"/>
 <artifact id="MeasureReport/ra-measurereport02" key="MeasureReport-ra-measurereport02" name="ra-measurereport02: Risk Adjustment Measure Report"/>
 <artifact id="MeasureReport/ra-measurereport03" key="MeasureReport-ra-measurereport03" name="ra-measurereport03: Risk Adjustment Measure Report for HCC V24 for Patient 02"/>
 <artifact id="MeasureReport/ra-measurereport04" key="MeasureReport-ra-measurereport04" name="ra-measurereport04: Risk Adjustment Measure Report for HCC V21 for Patient 03"/>
 <artifact id="MeasureReport/ra-measurereport05" key="MeasureReport-ra-measurereport05" name="ra-measurereport05: Risk Adjustment Measure Report for RxHCC V5 for Patient03"/>
 <artifact id="MeasureReport/ra-measurereport06" key="MeasureReport-ra-measurereport06" name="ra-measurereport06: Risk Adjustment Measure Report for RxHCC V5 for Patient02"/>
-<artifact id="Bundle/ra-searchsetbundle01pat01" key="Bundle-ra-searchsetbundle01pat01" name="ra-searchsetbundle01pat01: SearchSet Bundle Pat1 MeasureReport01 group003"/>
+<artifact deprecated="true" id="Bundle/ra-searchsetbundle01pat01" key="Bundle-ra-searchsetbundle01pat01" name="ra-searchsetbundle01pat01: SearchSet Bundle Pat1 MeasureReport01 group003"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
+<page key="cc-remark" name="Add Remark to Condition Category"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="capabilities" name="Capability Statement"/>
 <page deprecated="true" key="changes" name="Change History"/>
@@ -148,10 +173,11 @@
 <page key="methodology" name="Methodology"/>
 <page key="operations" name="Operation"/>
 <page key="profiles" name="Profiles"/>
-<page key="remediation" name="Remediation"/>
-<page key="report-annotation" name="Report Annotation"/>
+<page deprecated="true" key="remediation" name="Remediation"/>
+<page deprecated="true" key="report-annotation" name="Report Annotation"/>
 <page key="report-generation" name="Report Generation"/>
 <page key="report-query" name="Report Query"/>
+<page key="submit-data-to-payer" name="Submit Data To Payer"/>
 <page key="toc" name="Table of Contents"/>
 <page key="terminology" name="Terminology"/>
 </specification>

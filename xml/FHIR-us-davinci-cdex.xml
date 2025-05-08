@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-cdex/2022Sep" ciUrl="http://build.fhir.org/ig/HL7/davinci-ecdx" defaultVersion="2.0.0" defaultWorkgroup="pc" gitUrl="https://github.com/HL7/davinci-ecdx" url="http://hl7.org/fhir/us/davinci-cdex">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-cdex/STU2.1-snapshot" ciUrl="http://build.fhir.org/ig/HL7/davinci-ecdx" defaultVersion="2.1.0" defaultWorkgroup="pie" gitUrl="https://github.com/HL7/davinci-ecdx" url="http://hl7.org/fhir/us/davinci-cdex">
 <version code="current" url="http://build.fhir.org/ig/HL7/davinci-ecdx"/>
+<version code="2.1.0" url="http://hl7.org/fhir/us/davinci-cdex/STU2.1"/>
+<version code="2.1.0-snapshot" url="http://hl7.org/fhir/us/davinci-cdex/STU2.1-snapshot"/>
 <version code="2.0.0" url="http://hl7.org/fhir/us/davinci-cdex/STU2"/>
-<version code="2.0.0-ballot" url="http://hl7.org/fhir/us/davinci-cdex/2022Sep"/>
+<version code="2.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/davinci-cdex/2022Sep"/>
 <version code="1.1.0" url="http://hl7.org/fhir/us/davinci-cdex/STU1.1"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-cdex/STU1"/>
 <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-cdex/2021Jan"/>
@@ -14,19 +16,37 @@
 <artifactPageExtension value="-mappings"/>
 <artifact id="Bundle/cdex-document-digital-sig-example" key="Bundle-cdex-document-digital-sig-example" name="CDEX Document with Digital Signature Example"/>
 <artifact id="Bundle/cdex-electronic-sig-example" key="Bundle-cdex-electronic-sig-example" name="CDEX Document with Electronic Signature Example"/>
-<artifact id="Bundle/cdex-searchset-digital-sig-example" key="Bundle-cdex-searchset-digital-sig-example" name="CDEX SearchSet Bundle with Digital Signature Example"/>
+<artifact id="Bundle/cdex-searchbundle-digital-sig-example" key="Bundle-cdex-searchset-digital-sig-example" name="CDEX SearchSet Bundle with Digital Signature Example"/>
 <artifact deprecated="true" id="ValueSet/cdex-attachment-reason" key="ValueSet-cdex-attachment-reason" name="CDex Attachment Reason Value Set"/>
-<artifact id="ValueSet/cdex-attachment-task-code" key="ValueSet-cdex-attachment-task-code" name="CDex Attachment Task Code Value Set"/>
+<artifact deprecated="true" id="ValueSet/cdex-attachment-task-code" key="ValueSet-cdex-attachment-task-code" name="CDex Attachment Task Code Value Set"/>
+<artifact id="Bundle/cdex-bundle-inline-example-858p" key="Bundle-cdex-bundle-inline-example-858p" name="CDex Bundle Inline Example 858p"/>
 <artifact id="ValueSet/cdex-claim-use" key="ValueSet-cdex-claim-use" name="CDex Claim Use Value Set"/>
+<artifact id="Condition/cdex-condition-inline-example-858" key="Condition-cdex-condition-inline-example-858" name="CDex Condition Inline Example 858"/>
 <artifact id="ValueSet/cdex-data-request-task-code" key="ValueSet-cdex-data-request-task-code" name="CDex Data Request Task Code Value Set"/>
 <artifact id="ValueSet/cdex-identifier-types" key="ValueSet-cdex-identifier-types" name="CDex Identifier Types Value Set"/>
+<artifact id="OperationOutcome/cdex-operationoutcome-inline-example1" key="OperationOutcome-cdex-operationoutcome-inline-example1" name="CDex Inline OperationOutcome Example 1"/>
+<artifact id="Task/cdex-task-inline-example1" key="Task-cdex-task-inline-example1" name="CDex Inline Task Example 1"/>
+<artifact id="Task/cdex-task-inline-example10" key="Task-cdex-task-inline-example10" name="CDex Inline Task Example 10"/>
+<artifact id="Task/cdex-task-inline-example11" key="Task-cdex-task-inline-example11" name="CDex Inline Task Example 11"/>
+<artifact id="Task/cdex-task-inline-example13" key="Task-cdex-task-inline-example13" name="CDex Inline Task Example 13"/>
+<artifact id="Task/cdex-task-inline-example15" key="Task-cdex-task-inline-example15" name="CDex Inline Task Example 15"/>
+<artifact id="Task/cdex-task-inline-example17" key="Task-cdex-task-inline-example17" name="CDex Inline Task Example 17"/>
+<artifact id="Task/cdex-task-inline-example19" key="Task-cdex-task-inline-example19" name="CDex Inline Task Example 19"/>
+<artifact id="Task/cdex-task-inline-example21" key="Task-cdex-task-inline-example21" name="CDex Inline Task Example 21"/>
+<artifact id="Task/cdex-task-inline-example22" key="Task-cdex-task-inline-example22" name="CDex Inline Task Example 22"/>
+<artifact id="Task/cdex-task-inline-example26" key="Task-cdex-task-inline-example26" name="CDex Inline Task Example 26"/>
+<artifact id="Task/cdex-task-inline-example4" key="Task-cdex-task-inline-example4" name="CDex Inline Task Example 4"/>
+<artifact id="ValueSet/cdex-loinc-attachment-codes" key="ValueSet-cdex-loinc-attachment-codes" name="CDex LOINC Attachment Codes Value Set"/>
+<artifact id="ValueSet/cdex-pwk01-attachment-report-type-code" key="ValueSet-cdex-pwk01-attachment-report-type-code" name="CDex PWK01 Attachment Report Type Code Value Set"/>
+<artifact id="Parameters/cdex-parameters-example1" key="Parameters-cdex-parameters-example1" name="CDex Parameters Example 1"/>
 <artifact id="Parameters/cdex-parameters-example2" key="Parameters-cdex-parameters-example2" name="CDex Parameters Example 2"/>
 <artifact id="Parameters/cdex-parameters-example3" key="Parameters-cdex-parameters-example3" name="CDex Parameters Example 3"/>
 <artifact id="Parameters/cdex-parameters-example4" key="Parameters-cdex-parameters-example4" name="CDex Parameters Example 4"/>
 <artifact id="Parameters/cdex-parameters-example5" key="Parameters-cdex-parameters-example5" name="CDex Parameters Example 5"/>
-<artifact id="Parameters/cdex-parameters-example1" key="Parameters-cdex-parameters-example1" name="CDex Parameters Example1"/>
+<artifact id="StructureDefinition/cdex-parameters-submit-attachment" key="StructureDefinition-cdex-parameters-submit-attachment" name="CDex Parameters Submit Attachment Profile"/>
 <artifact id="StructureDefinition/cdex-patient-demographics" key="StructureDefinition-cdex-patient-demographics" name="CDex Patient Demographics Profile"/>
 <artifact id="StructureDefinition/cdex-practitionerrole" key="StructureDefinition-cdex-practitionerrole" name="CDex PractitionerRole Profile"/>
+<artifact id="Provenance/cdex-provenance-inline-example-858" key="Provenance-cdex-provenance-inline-example-858" name="CDex Provenance Inline Example 858"/>
 <artifact id="ValueSet/cdex-POU" key="ValueSet-cdex-POU" name="CDex Purpose of Use Value Set"/>
 <artifact id="Questionnaire/cdex-questionnaire-example1" key="Questionnaire-cdex-questionnaire-example1" name="CDex Questionnaire Example1"/>
 <artifact id="Questionnaire/cdex-questionnaire-example2" key="Questionnaire-cdex-questionnaire-example2" name="CDex Questionnaire Example2"/>
@@ -34,6 +54,7 @@
 <artifact id="QuestionnaireResponse/cdex-questionnaireresponse-example2" key="QuestionnaireResponse-cdex-questionnaireresponse-example2" name="CDex QuestionnaireResponse Example2"/>
 <artifact id="QuestionnaireResponse/cdex-questionnaireresponse-example3" key="QuestionnaireResponse-cdex-questionnaireresponse-example3" name="CDex QuestionnaireResponse Example3"/>
 <artifact id="QuestionnaireResponse/cdex-questionnaireresponse-example4" key="QuestionnaireResponse-cdex-questionnaireresponse-example4" name="CDex QuestionnaireResponse Example4"/>
+<artifact id="QuestionnaireResponse/cdex-questionnaireresponse-inline-example1" key="QuestionnaireResponse-cdex-questionnaireresponse-inline-example1" name="CDex Questionnaireresponse Inline Example 1"/>
 <artifact id="StructureDefinition/cdex-sdc-questionnaireresponse" key="StructureDefinition-cdex-sdc-questionnaireresponse" name="CDex SDC QuestionnaireResponse Profile"/>
 <artifact id="StructureDefinition/cdex-signature-bundle" key="StructureDefinition-cdex-signature-bundle" name="CDex Signature Bundle Profile"/>
 <artifact id="StructureDefinition/cdex-signature" key="StructureDefinition-cdex-signature" name="CDex Signature Profile"/>
@@ -71,14 +92,23 @@
 <artifact id="Task/cdex-task-example7" key="Task-cdex-task-example7" name="CDex Task Example 7"/>
 <artifact id="Task/cdex-task-example8" key="Task-cdex-task-example8" name="CDex Task Example 8"/>
 <artifact id="Task/cdex-task-example9" key="Task-cdex-task-example9" name="CDex Task Example 9"/>
+<artifact id="Task/cdex-task-inline-example6" key="Task-cdex-task-inline-example6" name="CDex Task Inline Example 6"/>
 <artifact id="CodeSystem/cdex-temp" key="CodeSystem-cdex-temp" name="CDex Temporary Code System"/>
 <artifact id="ValueSet/cdex-work-queue" key="ValueSet-cdex-work-queue" name="CDex Work Queue Value Set"/>
 <artifact id="CapabilityStatement/data-consumer-client" key="CapabilityStatement-data-consumer-client" name="Data Consumer Client CapabilityStatement"/>
 <artifact id="CapabilityStatement/data-consumer-server" key="CapabilityStatement-data-consumer-server" name="Data Consumer Server CapabilityStatement"/>
 <artifact id="CapabilityStatement/data-source-client" key="CapabilityStatement-data-source-client" name="Data Source Client CapabilityStatement"/>
 <artifact id="CapabilityStatement/data-source-server" key="CapabilityStatement-data-source-server" name="Data Source Server CapabilityStatement"/>
+<artifact id="Bundle/cdex-searchbundle-provenance-example" key="Bundle-cdex-searchbundle-provenance-example" name="Direct Query Response Including Provenance"/>
+<artifact id="Bundle/cdex-searchbundle-scenario1-example" key="Bundle-cdex-searchbundle-scenario1-example" name="Direct Query for Patient's Active Conditions"/>
+<artifact id="Bundle/cdex-searchbundle-scenario2-example" key="Bundle-cdex-searchbundle-scenario2-example" name="Direct Query for Patient's HbA1c Test Results"/>
+<artifact id="Bundle/cdex-searchbundle-scenario3-example" key="Bundle-cdex-searchbundle-scenario3-example" name="Direct Query for Patient's Progress Notes"/>
 <artifact deprecated="true" id="Task/cdex-example1s-query-withsig-completed" key="Task-cdex-example1s-query-withsig-completed" name="Example of Completed Task Request for Signed Data"/>
 <artifact deprecated="true" id="Task/cdex-example1s-query-requested-withsig" key="Task-cdex-example1s-query-requested-withsig" name="Example of Task Request for Signed Data"/>
+<artifact id="CommunicationRequest/cdex-task-inline-communicationrequest-example1" key="CommunicationRequest-cdex-task-inline-communicationrequest-example1" name="Inline CDex Task Inline Communicationrequest Example 1"/>
+<artifact id="Subscription/cdex-task-inline-scenario1-subscription-active" key="Subscription-cdex-task-inline-scenario1-subscription-active" name="Inline Subscription Task Scenario1 Subscription Active"/>
+<artifact id="Bundle/cdex-task-inline-scenario1-subscription-notification" key="Bundle-cdex-task-inline-scenario1-subscription-notification" name="Inline Subscription Task Scenario1 Subscription Notification"/>
+<artifact id="Subscription/cdex-task-inline-scenario1-subscription-requested" key="Subscription-cdex-task-inline-scenario1-subscription-requested" name="Inline Subscription Task Scenario1 Subscription Requested"/>
 <artifact deprecated="true" id="Task/cdex-example1-query-completed" key="Task-cdex-example1-query-completed" name="Scenario 1 Completed Example"/>
 <artifact deprecated="true" id="Task/cdex-example1-free-text-completed" key="Task-cdex-example1-free-text-completed" name="Scenario 1 Completed Free Text Example"/>
 <artifact deprecated="true" id="Task/cdex-example1-query-completed-contained" key="Task-cdex-example1-query-completed-contained" name="Scenario 1 Contained Example"/>
@@ -93,6 +123,7 @@
 <artifact deprecated="true" id="Task/cdex-example3-query-completed" key="Task-cdex-example3-query-completed" name="Scenario 4 Completed Task Example"/>
 <artifact deprecated="true" id="Task/cdex-example3-query-requested" key="Task-cdex-example3-query-requested" name="Scenario 4 Task Example"/>
 <artifact id="OperationDefinition/submit-attachment" key="OperationDefinition-submit-attachment" name="Submit Attachment Operation"/>
+<artifact id="CapabilityStatement/cdex-capabilitystatement-inline-example" key="CapabilityStatement-cdex-capabilitystatement-inline-example" name="cdex-capabilitystatement-inline-example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
@@ -109,7 +140,7 @@
 <page deprecated="true" key="exchanging-clinical-data" name="Exchanging Clinical Data"/>
 <page deprecated="true" key="framework_old" name="Framework Old"/>
 <page deprecated="true" key="general-guidance" name="General Guidance"/>
-<page key="index" name="Home"/>
+<page key="index" name="IG Home"/>
 <page deprecated="true" key="profiles" name="Profiles"/>
 <page deprecated="true" key="requesting-attachments" name="Requesting Attachments"/>
 <page key="requesting-attachments-code" name="Requesting Attachments Using Attachments Codes"/>

@@ -58,6 +58,7 @@
     <xslt in="xml/_families.xml" out="json/SPECS.json" style="tools/buildSpecJSON.xslt" classpathref="saxon.path">
       <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
+    <copy file="json/SPECS.json" tofile="json/SPECS-copy.json"/>
     <echo file="tools/temp/actualcount.txt" message="CDA-${count.cda}&#x0a;"/>
     <echo file="tools/temp/actualcount.txt" message="FHIR-${count.fhir}&#x0a;" append="true"/>
     <echo file="tools/temp/actualcount.txt" message="OTHER-${count.other}&#x0a;" append="true"/>
