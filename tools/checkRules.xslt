@@ -27,6 +27,11 @@
           </xsl:when>
         </xsl:choose>
       </xsl:if>
+      <xsl:for-each select="page">
+        <xsl:if test="contains(@name, '\')">
+            <xsl:message terminate="yes" select="concat('Specification ', ancestor::specification/@key, ' page ', @name, ' contains the character ''\'' which is not allowed.')"/>
+        </xsl:if>
+      </xsl:for-each>
     </xsl:for-each>
 	</xsl:template>
 </xsl:stylesheet>

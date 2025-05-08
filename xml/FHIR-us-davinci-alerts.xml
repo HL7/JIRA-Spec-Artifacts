@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-alerts/2020Feb" ciUrl="http://build.fhir.org/ig/HL7/davinci-alerts" defaultVersion="1.0.0" defaultWorkgroup="inm" gitUrl="https://github.com/HL7/davinci-alerts" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" url="http://hl7.org/fhir/us/davinci-alerts"><version code="current" url="http://build.fhir.org/ig/HL7/davinci-alerts"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-alerts/STU1.1-snapshot" ciUrl="http://build.fhir.org/ig/HL7/davinci-alerts" defaultVersion="1.1.0" defaultWorkgroup="inm" gitUrl="https://github.com/HL7/davinci-alerts" url="http://hl7.org/fhir/us/davinci-alerts">
+<version code="current" url="http://build.fhir.org/ig/HL7/davinci-alerts"/>
+<version code="1.1.0" url="http://hl7.org/fhir/us/davinci-alerts/STU1.1"/>
+<version code="1.1.0-preview" url="http://hl7.org/fhir/us/davinci-alerts/STU1.1-snapshot"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-alerts/STU1"/>
+<version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-alerts/2020Feb"/>
 <version code="0.2.1" deprecated="true"/>
-<version code="0.2.0" url="http://hl7.org/fhir/us/davinci-alerts/2020Feb" deprecated="true"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-alerts/2019Sep"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
@@ -14,28 +17,31 @@
 <artifact id="Bundle/admit-notification-intermediate-translate-bundle" key="Bundle-admit-notification-intermediate-translate-bundle" name="Admit Notification Intermediate Translate Bundle"/>
 <artifact id="Bundle/admit-notification-intermediate-transmit-bundle" key="Bundle-admit-notification-intermediate-transmit-bundle" name="Admit Notification Intermediate Transmit Bundle"/>
 <artifact id="Bundle/admit-notification-message-bundle-01" key="Bundle-admit-notification-message-bundle-01" name="Admit Notification Message Bundle 01"/>
-<artifact id="MessageHeader/admit-notification-messageheader-01" key="MessageHeader-admit-notification-messageheader-01" name="Admit Notification Messageheader 01"/>
-<artifact id="Condition/adt-notification-condition-01" key="Condition-adt-notification-condition-01" name="Admit/Transfer/Discharge Notification Condition 01"/>
-<artifact id="Coverage/adt-notification-coverage-01" key="Coverage-adt-notification-coverage-01" name="Admit/Transfer/Discharge Notification Coverage 01"/>
-<artifact id="Encounter/adt-notification-encounter-01" key="Encounter-adt-notification-encounter-01" name="Admit/Transfer/Discharge Notification Encounter 01"/>
-<artifact id="ValueSet/notification-admit-event" key="ValueSet-notification-admit-event" name="Da Vinci Admit Notification Event ValueSet"/>
+<artifact id="Bundle/admit-notification-message-bundle-02" key="Bundle-admit-notification-message-bundle-02" name="Admit Notification Message Bundle 02"/>
+<artifact deprecated="true" id="MessageHeader/admit-notification-messageheader-01" key="MessageHeader-admit-notification-messageheader-01" name="Admit Notification Messageheader 01"/>
+<artifact deprecated="true" id="Condition/adt-notification-condition-01" key="Condition-adt-notification-condition-01" name="Admit/Transfer/Discharge Notification Condition 01"/>
+<artifact deprecated="true" id="Coverage/adt-notification-coverage-01" key="Coverage-adt-notification-coverage-01" name="Admit/Transfer/Discharge Notification Coverage 01"/>
+<artifact deprecated="true" id="Encounter/adt-notification-encounter-01" key="Encounter-adt-notification-encounter-01" name="Admit/Transfer/Discharge Notification Encounter 01"/>
 <artifact id="StructureDefinition/admit-notification-messageheader" key="StructureDefinition-admit-notification-messageheader" name="Da Vinci Admit Notification MessageHeader Profile"/>
 <artifact deprecated="true" id="StructureDefinition/admit-discharge-notification-condition" key="StructureDefinition-admit-discharge-notification-condition" name="Da Vinci Admit/Discharge Notification Condition Profile"/>
 <artifact deprecated="true" id="StructureDefinition/admit-discharge-notification-coverage" key="StructureDefinition-admit-discharge-notification-coverage" name="Da Vinci Admit/Discharge Notification Coverage Profile"/>
 <artifact deprecated="true" id="StructureDefinition/admit-discharge-notification-encounter" key="StructureDefinition-admit-discharge-notification-encounter" name="Da Vinci Admit/Discharge Notification Encounter Profile"/>
-<artifact id="StructureDefinition/adt-notification-condition" key="StructureDefinition-adt-notification-condition" name="Da Vinci Admit/Transfer/Discharge Notification Condition Profile"/>
-<artifact id="StructureDefinition/adt-notification-coverage" key="StructureDefinition-adt-notification-coverage" name="Da Vinci Admit/Transfer/Discharge Notification Coverage Profile"/>
-<artifact id="StructureDefinition/adt-notification-encounter" key="StructureDefinition-adt-notification-encounter" name="Da Vinci Admit/Transfer/Discharge Notification Encounter Profile"/>
-<artifact id="StructureDefinition/transfer-notification-messageheader" key="StructureDefinition-discharge-notification-messageheader" name="Da Vinci Discharge Notification MessageHeader Profile"/>
+<artifact id="StructureDefinition/adt-notification-condition" key="StructureDefinition-adt-notification-condition" name="Da Vinci Admit/Discharge/Transfer Notification Condition Profile"/>
+<artifact id="StructureDefinition/adt-notification-coverage" key="StructureDefinition-adt-notification-coverage" name="Da Vinci Admit/Discharge/Transfer Notification Coverage Profile"/>
+<artifact id="StructureDefinition/adt-notification-encounter" key="StructureDefinition-adt-notification-encounter" name="Da Vinci Admit/Discharge/Transfer Notification Encounter Profile"/>
+<artifact id="StructureDefinition/discharge-notification-messageheader" key="StructureDefinition-discharge-notification-messageheader" name="Da Vinci Discharge Notification MessageHeader Profile"/>
 <artifact id="CodeSystem/notification-event" key="CodeSystem-notification-event" name="Da Vinci Event CodeSystem Notification"/>
+<artifact id="ValueSet/notification-admit-event" key="ValueSet-notification-admit-event" name="Da Vinci Notification Admit Event ValueSet"/>
+<artifact id="ValueSet/notification-discharge-event" key="ValueSet-notification-discharge-event" name="Da Vinci Notification Discharge Event ValueSet"/>
 <artifact id="ValueSet/notification-event" key="ValueSet-notification-event" name="Da Vinci Notification Event ValueSet"/>
-<artifact id="ValueSet/notification-discharge-event" key="ValueSet-notification-discharge-event" name="Da Vinci Notification discharge Event ValueSet"/>
-<artifact id="ValueSet/notification-transfer-event" key="ValueSet-notification-transfer-event" name="Da Vinci Notification transfer Event ValueSet"/>
+<artifact id="ValueSet/notification-transfer-event" key="ValueSet-notification-transfer-event" name="Da Vinci Notification Transfer Event ValueSet"/>
 <artifact id="StructureDefinition/notifications-bundle" key="StructureDefinition-notifications-bundle" name="Da Vinci Notifications Bundle Profile"/>
 <artifact id="StructureDefinition/notifications-messageheader" key="StructureDefinition-notifications-messageheader" name="Da Vinci Notifications MessageHeader Profile"/>
-<artifact id="Bundle/discharge-notification-message-bundle-01" key="Bundle-discharge-notification-message-bundle-01" name="Discharge Notification Message Bundle 01"/>
-<artifact id="MessageHeader/discharge-notification-messageheader-01" key="MessageHeader-discharge-notification-messageheader-01" name="Discharge Notification Messageheader 01"/>
-<artifact id="Organization/anthem" key="Organization-anthem" name="Example Payor Organization"/>
+<artifact id="StructureDefinition/transfer-notification-messageheader" key="StructureDefinition-transfer-notification-messageheader" name="Da Vinci Transfer Notification MessageHeader Profile"/>
+<artifact id="ConceptMap/direct-alerts" key="ConceptMap-direct-alerts" name="Direct ADT to Da Vinci Alerts ConceptMap"/>
+<artifact id="Bundle/discharge-notification-message-bundle-01" key="Bundle-discharge-notification-message-bundle-01" name="Discharge Notification Message Bundle"/>
+<artifact deprecated="true" id="MessageHeader/discharge-notification-messageheader-01" key="MessageHeader-discharge-notification-messageheader-01" name="Discharge Notification Messageheader 01"/>
+<artifact deprecated="true" id="Organization/anthem" key="Organization-anthem" name="Example Payor Organization"/>
 <artifact deprecated="true" id="GraphDefinition/admit-discharge" key="GraphDefinition-admit-discharge" name="GraphDefinition Admit Discharge"/>
 <artifact deprecated="true" id="MessageDefinition/notification-admit" key="MessageDefinition-notification-admit" name="MessageDefinition Notification Admit"/>
 <artifact deprecated="true" id="MessageDefinition/notification-discharge" key="MessageDefinition-notification-discharge" name="MessageDefinition Notification Discharge"/>
@@ -46,23 +52,27 @@
 <artifact deprecated="true" id="CapabilityStatement/query-responder" key="CapabilityStatement-query-responder" name="Query Responder CapabilityStatement"/>
 <artifact deprecated="true" id="StructureDefinition/notifications-graphdefinition" key="StructureDefinition-notifications-graphdefinition" name="StructureDefinition Notifications GraphDefinition"/>
 <artifact deprecated="true" id="StructureDefinition/notifications-messagedefinition" key="StructureDefinition-notifications-messagedefinition" name="StructureDefinition Notifications MessageDefinition"/>
-<artifact id="Bundle/transfer-notification-message-bundle-01" key="Bundle-transfer-notification-message-bundle-01" name="Transfer Notification Message Bundle 01"/>
-<artifact id="MessageHeader/transfer-notification-messageheader-01" key="MessageHeader-transfer-notification-messageheader-01" name="Transfer Notification Messageheader 01"/>
+<artifact id="Bundle/transfer-notification-message-bundle-01" key="Bundle-transfer-notification-message-bundle-01" name="Transfer Notification Message Bundle"/>
+<artifact deprecated="true" id="MessageHeader/transfer-notification-messageheader-01" key="MessageHeader-transfer-notification-messageheader-01" name="Transfer Notification Messageheader 01"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page deprecated="true" key="methodology" name="(methodology)"/>
-<page key="all-examples" name="All Examples" url="all-examples"/>
+<page key="usecases" name="Admit/Discharge/Transfer Use Case"/>
+<page deprecated="true" key="all-examples" name="All Examples" url="all-examples"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page deprecated="true" key="bundles" name="Bundle Definitions" url="bundles"/>
-<page key="capstatements" name="Capability Statements" url="capstatements"/>
+<page deprecated="true" key="capstatements" name="Capability Statements" url="capstatements"/>
 <page key="change-notes" name="Change Log" url="change-notes"/>
-<page key="usecases" name="Da Vinci Notifications Patient Admit/Transfer/Discharge Use Case"/>
 <page key="downloads" name="Downloads" url="downloads"/>
 <page key="guidance" name="Framework" url="guidance"/>
 <page key="index" name="Home (index)" url="index"/>
 <page deprecated="true" key="iglist" name="Implementation Registry (registry/iglist)" url="registry"/>
-<page key="profiles" name="Profiles and Extensions"/>
-<page key="security" name="Security" url="security"/>
+<page key="security" name="Privacy, Safety, and Security"/>
+<page deprecated="true" key="profiles" name="Profiles and Extensions"/>
+<page key="roles" name="Roles and Actors"/>
+<page key="scope" name="Scope and Usage"/>
 <page key="toc" name="Table of Contents" url="toc"/>
-<page key="terminology" name="Terminology" url="terminology"/>
+<page deprecated="true" key="terminology" name="Terminology" url="terminology"/>
+<page key="ImplementationGuide-hl7.fhir.us.davinci-alerts" name="Unsolicited Notification ImplementationGuide Resource"/>
+<page key="workflow" name="Workflow"/>
 </specification>

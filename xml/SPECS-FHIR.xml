@@ -11,7 +11,8 @@
   <specification key="fhircast" name="FHIRCast"/>
   <specification key="fhirpath" name="FHIRPath"/>
   <specification key="cds-hooks" name="CDS Hooks"/>
-  <specification key="cds-hooks-patient-view" name="CDS Hooks patient-view"/>
+  <specification key="cds-hooks-library" name="CDS Hooks Library"/>
+  <specification key="cds-hooks-patient-view" name="CDS Hooks patient-view" deprecated="true"/>
   <specification key="smart" name="SMART on FHIR"/>
   <specification key="smart-web-messaging" name="SMART Web Messaging"/>
   <specification key="bulkdata" name="Bulk Data"/>
@@ -19,6 +20,7 @@
   <specification key="cdisc-mapping" name="CDISC Mappings"/>
   <specification key="cpg" name="Clinical Guidelines"/>
   <specification key="cql" name="Clinical Quality Language"/>
+  <specification key="cow" name="Clinical Order Workflow"/>
   <specification key="crmi" name="Canonical Resource Management Infrastructure"/>
   <specification key="dicom-sr" name="DICOM SR to FHIR Resource Mapping IG"/>
   <specification key="extensions" name="FHIR Extensions Pack"/>
@@ -34,12 +36,15 @@
   <specification key="patient-corrections" name="Patient Corrections"/>
   <specification key="pddi" name="Potential Drug-Drug Interaction (PDDI)"/>
   <specification key="phd" name="Personal Healthcare Devices"/>
+  <specification key="phr" name="Personal Health Record"/>
   <specification key="pocd" name="Point of Care Devices"/>
+  <specification key="qm" name="Quality Measures"/>
   <specification key="radiation-dose-summary" name="Radiation Dose Summary for Diagnostic Procedures on FHIR"/>
   <specification key="rtls" name="Real Time Location Services"/>
   <specification key="saner" name="Situation Awareness for Novel Epidemic Response"/>
   <specification key="sdc" name="Structured Data Capture (SDC)"/>
   <specification key="sdc-de" name="Structured Data Capture (SDC-DE)"/>
+  <specification key="sphr" name="Standard Personal Health Record" deprecated="true" />
   <specification key="shorthand" name="Shorthand"/>
   <specification key="shc-vaccination" name="SMART Health Cards: Vaccination and Testing"/>
   <specification key="subscriptions-backport" name="FHIR R5 Subscriptions Backport"/>
@@ -55,6 +60,7 @@
   <specification key="us-ccda" name="US C-CDA on FHIR"/>
   <specification key="us-cdmh" name="US Common Data Model Harmonization for Research (CDMH)"/>
   <specification key="us-covid19library" name="COVID 19 FHIR Profile Library IG"/>
+  <specification key="us-cql" name="Common CQL Assets for FHIR (US-Based)" accelerator="davinci"/>
   <specification key="us-crn" name="US Coordinated Registry Network (CRN)"/>
   <specification key="us-daf-research" name="US DAF Research"/>
   <specification key="us-davinci-alerts" name="US Da Vinci Alerts" accelerator="davinci"/>
@@ -70,6 +76,7 @@
   <specification key="us-davinci-pct" name="US Da Vinci Patient Cost Transparency (PCT)" accelerator="davinci"/>
   <specification key="us-davinci-pdex" name="US Da Vinci PDex" accelerator="davinci"/>
   <specification key="us-davinci-plannet" name="US Da Vinci PDex Plan Net" accelerator="davinci"/>
+  <specification key="us-davinci-pr" name="US Da Vinci Postable Remittance" accelerator="davinci"/>
   <specification key="us-davinci-ra" name="US Da Vinci Risk Adjustment" accelerator="davinci"/>
   <specification key="us-davinci-vbpr" name="US Da Vinci Value-Based Performance Reporting" accelerator="davinci"/>
   <specification key="us-directory-exchange" name="US National Directory" accelerator="fast"/>
@@ -93,6 +100,7 @@
   <specification key="us-pacio-fs" name="US PACIO Functional Status"/>
   <specification key="us-pacio-pfe" name="US PACIO Personal Functioning and Engagement"/>
   <specification key="us-pacio-rt" name="US PACIO Re-Assessment Timepoints"/>
+  <specification key="us-pco" name="US Person-Centered Outcomes (PCO)"/>
   <specification key="us-pharmacy" name="US Medication FHIR Implementation Guide"/>
   <specification key="us-pharmcp" name="US Pharmacist Care Plan Document"/>
   <specification key="us-physical-activity" name="US Physical Activity"/>
@@ -102,10 +110,11 @@
   <specification key="us-qicore" name="US QI Core"/>
   <specification key="us-qm" name="US Quality Measures"/>
   <specification key="us-qr" name="US FHIR Guidance - Quality Reporting"/>
+  <specification key="us-safr" name="US Situational Awareness Framework for Reporting (US SAFR)"/>
   <specification key="us-sdoh-cc" name="US SDOH Clinical Care" accelerator="gravity"/>
   <specification key="us-sirb" name="Single Institutional Review Board (sIRB)"/>
   <specification key="us-spl" name="US Structured Product Labeling Mapping"/>
-  <specification key="us-udap-security" name="US UDAP Security"/>
+  <specification key="us-udap-security" name="US UDAP Security" accelerator="fast"/>
   <specification key="us-identity-matching" name="Interoperable Digital Identity and Patient Matching" accelerator="fast"/>
   <specification key="us-vitals" name="US Vital Signs with Qualifying Extensions"/>
   <specification key="us-vrdr" name="US Vital Records Death Reporting (VRDR)"/>
@@ -150,6 +159,9 @@
   <specification key="us-pdmp" name="US Prescription Drug Monitoring Program (PDMP)"/>
   <specification key="eu-laboratory" name="EU Laboratory Report"/>
   <specification key="eu-extensions" name="EU Extensions"/>
+  <specification key="eu-base" name="EU Base and Core (R4)"/>
+  <specification key="eu-base-r5" name="EU Base and Core (R5)"/>
+  <specification key="eu-r5-extensions" name="EU Extensions (R5)" deprecated="true"/>
   <specification key="us-resp-net" name="US Respiratory Virus Hospitalization Surveillance Network (RESP-NET) FHIR IG"/>
   <specification key="pharm-quality" name="Pharmaceutical Quality (Industry)"/>
   <specification key="ebm" name="Evidence Based Medicine FHIR implementation guide"/>
@@ -157,6 +169,7 @@
   <specification key="au-core" name="AU Core"/>
   <specification key="au-erequesting" name="AU eRequesting"/>
   <specification key="au-pd" name="AU Provider Directory"/>
+  <specification key="au-ps" name="AU Patient Summary"/>
   <specification key="us-medication-rems" name="US Medication Risk Evaluation and Mitigation Strategies (REMS) FHIR IG"/>
   <specification key="cardx-htn-mng" name="CardX Hypertension Management" accelerator="codex"/>
   <specification key="termchangeset" name="Terminology Change Set Exchange"/>
@@ -165,4 +178,8 @@
   <specification key="fhir-clinical-document" name="FHIR Clinical Documents" />
   <specification key="application-feature" name="FHIR Application Feature Framework Implementation Guide"/>
   <specification key="us-nhsn-dqm" name="National Healthcare Safety Network (NHSN) Digital Quality Measure (dQM) Reporting Implementation Guide"/>
+  <specification key="lab-report" name="Laboratory Report"/>
+  <specification key="uv-cgm" name="Continuous Glucose Monitoring (CGM)"/>
+  <specification key="us-helios-bulk" name="US Helios Bulk Data for Immunizations" accelerator="helios"/>
+  <specification key="us-pacio-toc" name="PACIO Transitions of Care Implementation Guide"/>
 </specifications>
