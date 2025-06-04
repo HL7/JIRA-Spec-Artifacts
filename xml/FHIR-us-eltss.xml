@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/eltss/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/eLTSS" defaultVersion="1.0.0" defaultWorkgroup="hss" gitUrl="https://github.com/HL7/eLTSS" url="http://hl7.org/fhir/us/eltss">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/eltss/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/eLTSS" defaultVersion="2.0.0" defaultWorkgroup="hss" gitUrl="https://github.com/HL7/eLTSS" url="http://hl7.org/fhir/us/eltss">
 <version code="current" url="http://build.fhir.org/ig/HL7/eLTSS"/>
-<version code="2.0.0-ballot" url="http://hl7.org/fhir/us/eltss/2024Jan"/>
+<version code="2.0.0" url="http://hl7.org/fhir/us/eltss/STU2"/>
+<version code="2.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/eltss/2024Jan"/>
 <version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/eltss/STU1"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/eltss/2019May"/>
 <version code="0.1" deprecated="true" url="http://hl7.org/fhir/us/eltss/2019May"/>
@@ -11,7 +12,7 @@
 <artifact id="OperationDefinition/all-eltss-careplan" key="OperationDefinition-all-eltss-careplan" name="All Eltss Careplan"/>
 <artifact deprecated="true" key="CarePlan" name="CarePlan"/>
 <artifact deprecated="true" key="Claim" name="Claim"/>
-<artifact id="StructureDefinition/eltss-dueTo" key="StructureDefinition-eltss-dueTo" name="ELTSS-dueTo"/>
+<artifact deprecated="true" id="StructureDefinition/eltss-dueTo" key="StructureDefinition-eltss-dueTo" name="ELTSS-dueTo"/>
 <artifact id="ValueSet/eltss-observation-code" key="ValueSet-eltss-observation-code" name="Observation Code Value Set"/>
 <artifact id="PractitionerRole/PractitionerRole-1" key="PractitionerRole-PractitionerRole-1" name="PractitionerRole-1"/>
 <artifact deprecated="true" key="ServiceRequest" name="ServiceRequest"/>
@@ -29,6 +30,7 @@
 <artifact id="StructureDefinition/CarePlan-eltss" key="StructureDefinition-CarePlan-eltss" name="eLTSS CarePlan Profile"/>
 <artifact id="StructureDefinition/Claim-eltss" key="StructureDefinition-Claim-eltss" name="eLTSS Claim Profile"/>
 <artifact id="CapabilityStatement/eltss-client" key="CapabilityStatement-eltss-client" name="eLTSS Client"/>
+<artifact id="CodeSystem/eltss-condition-category-code" key="CodeSystem-eltss-condition-category-code" name="eLTSS Condition Category Code CodeSystem"/>
 <artifact id="StructureDefinition/Condition-eltss" key="StructureDefinition-Condition-eltss" name="eLTSS Condition Profile"/>
 <artifact id="StructureDefinition/Contract-eltss" key="StructureDefinition-Contract-eltss" name="eLTSS Contract Profile"/>
 <artifact id="StructureDefinition/EpisodeOfCare-eltss" key="StructureDefinition-EpisodeOfCare-eltss" name="eLTSS EpisodeOfCare Profile"/>
@@ -46,6 +48,7 @@
 <artifact id="StructureDefinition/RiskAssessment-eltss" key="StructureDefinition-RiskAssessment-eltss" name="eLTSS RiskAssessment Profile"/>
 <artifact id="CapabilityStatement/eltss-server" key="CapabilityStatement-eltss-server" name="eLTSS Server"/>
 <artifact id="StructureDefinition/ServiceRequest-eltss" key="StructureDefinition-ServiceRequest-eltss" name="eLTSS ServiceRequest Profile"/>
+<artifact id="Bundle/2039212f3fa5406bb4ffd4a" key="Bundle-2039212f3fa5406bb4ffd4a" name="eLTSS data elements example"/>
 <artifact id="StructureDefinition/eltss-directedBy" key="StructureDefinition-eltss-directedBy" name="eLTSS self-directed"/>
 <artifact id="EpisodeOfCare/episode1" key="EpisodeOfCare-episode1" name="episode1"/>
 <artifact id="Organization/funding1" key="Organization-funding1" name="funding1"/>
@@ -79,18 +82,18 @@
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="capabilities" name="Capability Statements"/>
 <page key="change_log" name="Changes"/>
-<page key="dependencies_globals" name="Dependencies and Globals"/>
-<page key="cross_version_analysis" name="IG Change History"/>
+<page deprecated="true" key="dependencies_globals" name="Dependencies and Globals"/>
+<page key="dependencies_globals_CrossVersionAnalysis" name="Dependencies, Globals and Cross FHIR version analysis"/>
+<page deprecated="true" key="cross_version_analysis" name="IG Change History"/>
 <page key="index" name="IG Home Page"/>
 <page key="ip_statement" name="IP statement"/>
-<page key="implementation" name="Implementation"/>
+<page key="implementation" name="Implementation Considerations"/>
 <page key="security" name="Security Note"/>
 <page key="toc" name="Table of Contents"/>
-<page key="taskProcedure" name="Task and Procedure"/>
+<page deprecated="true" key="taskProcedure" name="Task and Procedure"/>
 <page key="testing" name="Testing FHIR"/>
 <page key="downloads" name="Useful Downloads"/>
 <page key="background" name="eLTSS Background"/>
-<page key="vocabulary" name="eLTSS Code Systems and Value Sets"/>
 <page key="eLTSS_to_FHIR_R4_element" name="eLTSS Dataset to FHIR Release 4"/>
 <page key="examples" name="eLTSS Examples"/>
 <page key="models" name="eLTSS Logical Models"/>
@@ -98,4 +101,5 @@
 <page key="profiles" name="eLTSS Profiles"/>
 <page key="extensions" name="eLTSS Resource Extensions"/>
 <page key="usecases" name="eLTSS Use Cases"/>
+<page key="vocabulary" name="eLTSS Value Set and code"/>
 </specification>

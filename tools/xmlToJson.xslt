@@ -4,6 +4,12 @@
 	<xsl:template match="workgroups">
     <xsl:call-template name="doArray">
       <xsl:with-param name="name" select="'workgroup'"/>
+      <xsl:with-param name="markDeprecated" select="true()"/>
+    </xsl:call-template>
+	</xsl:template>
+	<xsl:template match="accelerators">
+    <xsl:call-template name="doArray">
+      <xsl:with-param name="name" select="'accelerator'"/>
     </xsl:call-template>
 	</xsl:template>
 	<xsl:template match="families">
@@ -78,11 +84,15 @@
     <xsl:value-of select="concat('&quot;', @value, '&quot;')"/>
 	</xsl:template>
 	<xsl:template match="*">
+    <xsl:param name="markDeprecated"/>
     <xsl:text>{</xsl:text>
-    <xsl:call-template name="doAttributes"/>
+    <xsl:call-template name="doAttributes">
+      <xsl:with-param name="markDeprecated" select="$markDeprecated"/>
+    </xsl:call-template>
     <xsl:text>}</xsl:text>	
 	</xsl:template>
 	<xsl:template name="doAttributes">
+    <xsl:param name="markDeprecated"/>
     <xsl:for-each select="@*[not(contains(name(.), ':'))]">
       <xsl:choose>
         <xsl:when test="local-name(.)=('deprecated')">
@@ -96,6 +106,9 @@
           <xsl:call-template name="escapeText">
             <xsl:with-param name="text" select="."/>
           </xsl:call-template>
+          <xsl:if test="local-name(.)='name' and $markDeprecated and parent::*/@deprecated='true'">
+            <xsl:text> [deprecated]</xsl:text>
+          </xsl:if>
           <xsl:text>"</xsl:text>
         </xsl:otherwise>
       </xsl:choose>
@@ -126,9 +139,12 @@
   </xsl:template>
 	<xsl:template name="doArray">
     <xsl:param name="name"/>
+    <xsl:param name="markDeprecated"/>
     <xsl:text>[</xsl:text>
     <xsl:for-each select="*[local-name(.)=$name]">
-      <xsl:apply-templates select="."/>
+      <xsl:apply-templates select=".">
+        <xsl:with-param name="markDeprecated" select="$markDeprecated"/>
+      </xsl:apply-templates>
       <xsl:if test="position()!=last()">,</xsl:if>
     </xsl:for-each>
     <xsl:text>]</xsl:text>
