@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/hdr/0.1.0-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/hdr" defaultVersion="0.1.0-ballot" defaultWorkgroup="eu" gitUrl="https://github.com/HL7-eu/hdr" url="http://hl7.eu/fhir/hdr">
+<version code="current" url="https://build.fhir.org/ig/hl7-eu/hdr"/>
+<version code="0.1.0-ballot" url="http://hl7.eu/fhir/hdr/0.1.0-ballot"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/HospitalDischargeReport" key="StructureDefinition-HospitalDischargeReport" name="A - Hospital Discharge Report (eHN)"/>
+<artifact id="StructureDefinition/Header" key="StructureDefinition-Header" name="A.1 - Hospital Discharge Report header data element"/>
+<artifact id="StructureDefinition/Subject" key="StructureDefinition-Subject" name="A.1.1 - Identification and A.1.2 - related contact information of the Patient/subject"/>
+<artifact id="StructureDefinition/AdvanceDirectives" key="StructureDefinition-AdvanceDirectives" name="A.2.1 - Advance Directives (eHN)"/>
+<artifact id="StructureDefinition/Alerts" key="StructureDefinition-Alerts" name="A.2.2 - Alerts (eHN)"/>
+<artifact id="StructureDefinition/InPatientEncounter" key="StructureDefinition-InPatientEncounter" name="A.2.3 - Encounter (eHN)"/>
+<artifact id="StructureDefinition/AdmissionEvaluation" key="StructureDefinition-AdmissionEvaluation" name="A.2.4 - Admission evaluation (eHN)"/>
+<artifact id="StructureDefinition/PatientHistory" key="StructureDefinition-PatientHistory" name="A.2.5 - Patient history (eHN)"/>
+<artifact id="StructureDefinition/HospitalStay" key="StructureDefinition-HospitalStay" name="A.2.6 - Hospital stay (eHN)"/>
+<artifact id="StructureDefinition/DischargeDetails" key="StructureDefinition-DischargeDetails" name="A.2.7 - Discharge details (eHN)"/>
+<artifact id="StructureDefinition/ObjectiveFindings" key="StructureDefinition-ObjectiveFindings" name="A.2.7.1 - Objective findings"/>
+<artifact id="StructureDefinition/FunctionalStatus" key="StructureDefinition-FunctionalStatus" name="A.2.7.2 - Functional status"/>
+<artifact id="StructureDefinition/PlanOfCare" key="StructureDefinition-PlanOfCare" name="A.2.8.1 - Care plan"/>
+<artifact id="StructureDefinition/MedicationSummary" key="StructureDefinition-MedicationSummary" name="A.2.8.2 - Medication summary"/>
+<artifact id="ValueSet/admission-urgency-eu-hdr" key="ValueSet-admission-urgency-eu-hdr" name="Admission Urgency Value Set"/>
+<artifact id="ValueSet/allergens-eu-hdr" key="ValueSet-allergens-eu-hdr" name="Allergens Value Set"/>
+<artifact id="ValueSet/allergy-intolerance-substances-eu-hdr" key="ValueSet-allergy-intolerance-substances-eu-hdr" name="Allergy Intolerance"/>
+<artifact id="StructureDefinition/allergyIntolerance-eu-hdr" key="StructureDefinition-allergyIntolerance-eu-hdr" name="Allergy Intolerance (HDR)"/>
+<artifact id="ValueSet/allergy-intolerance-eu-hdr" key="ValueSet-allergy-intolerance-eu-hdr" name="Allergy Intolerance (with exceptions)"/>
+<artifact id="StructureDefinition/allergyIntolerance-obl-eu-hdr" key="StructureDefinition-allergyIntolerance-obl-eu-hdr" name="Allergy Intolerance: obligations"/>
+<artifact id="AllergyIntolerance/penicillin-allergy" key="AllergyIntolerance-penicillin-allergy" name="AllergyIntolerance: Critical Allergy to Penicillin"/>
+<artifact id="StructureDefinition/bundle-eu-hdr" key="StructureDefinition-bundle-eu-hdr" name="Bundle (HDR)"/>
+<artifact id="Bundle/HDR-Luigi-De-Luca-Example" key="Bundle-HDR-Luigi-De-Luca-Example" name="Bundle: complete HL7 Europe Hospital Discharge Report (1)"/>
+<artifact id="Bundle/HDR-Reijer-Wolff-Example" key="Bundle-HDR-Reijer-Wolff-Example" name="Bundle: complete HL7 Europe Hospital Discharge Report (2)"/>
+<artifact id="Bundle/HDR-Paolo-Marcheschi-Example" key="Bundle-HDR-Paolo-Marcheschi-Example" name="Bundle: complete HL7 Europe Hospital Discharge Report (3)"/>
+<artifact id="Bundle/bundle-swart" key="Bundle-bundle-swart" name="Bundle: complete HL7 Europe Hospital Discharge Report (4)"/>
+<artifact id="StructureDefinition/bundle-obl-eu-hdr" key="StructureDefinition-bundle-obl-eu-hdr" name="Bundle: obligations"/>
+<artifact id="StructureDefinition/carePlan-eu-hdr" key="StructureDefinition-carePlan-eu-hdr" name="Care Plan (HDR)"/>
+<artifact id="StructureDefinition/carePlan-obl-eu-hdr" key="StructureDefinition-carePlan-obl-eu-hdr" name="Care Plan: obligations"/>
+<artifact id="CarePlan/b84038f8-9541-4c5b-93b0-a7f1b8e55bd3" key="CarePlan-b84038f8-9541-4c5b-93b0-a7f1b8e55bd3" name="CarePlan: Diabetes Management Care Plan"/>
+<artifact id="StructureDefinition/composition-eu-hdr" key="StructureDefinition-composition-eu-hdr" name="Composition (HDR)"/>
+<artifact id="Composition/b9dc409d-ec81-4556-9fac-4dc3f731c199" key="Composition-b9dc409d-ec81-4556-9fac-4dc3f731c199" name="Composition: HDR (1)"/>
+<artifact id="StructureDefinition/composition-obl-eu-hdr" key="StructureDefinition-composition-obl-eu-hdr" name="Composition: obligations"/>
+<artifact id="StructureDefinition/condition-eu-hdr" key="StructureDefinition-condition-eu-hdr" name="Condition (HDR)"/>
+<artifact id="ValueSet/condition-eu-hdr" key="ValueSet-condition-eu-hdr" name="Condition Value Set"/>
+<artifact id="Condition/a5bf69e4-24db-48a8-9eda-71516dcaf1d9" key="Condition-a5bf69e4-24db-48a8-9eda-71516dcaf1d9" name="Condition: Type 2 Diabetes Mellitus"/>
+<artifact id="StructureDefinition/condition-obl-eu-hdr" key="StructureDefinition-condition-obl-eu-hdr" name="Condition: obligations"/>
+<artifact id="StructureDefinition/consent-eu-hdr" key="StructureDefinition-consent-eu-hdr" name="Consent (Advance Directives HDR)"/>
+<artifact id="Consent/example-consent-dnr" key="Consent-example-consent-dnr" name="Consent: Advance Directive DNR"/>
+<artifact id="StructureDefinition/consent-obl-eu-hdr" key="StructureDefinition-consent-obl-eu-hdr" name="Consent: obligations"/>
+<artifact id="StructureDefinition/device-eu-hdr" key="StructureDefinition-device-eu-hdr" name="Device (HDR)"/>
+<artifact id="Device/pacemaker-001" key="Device-pacemaker-001" name="Device: Implantable Pacemaker"/>
+<artifact id="StructureDefinition/device-obl-eu-hdr" key="StructureDefinition-device-obl-eu-hdr" name="Device: obligations"/>
+<artifact id="StructureDefinition/deviceUseStatement-eu-hdr" key="StructureDefinition-deviceUseStatement-eu-hdr" name="DeviceUseStatement (HDR)"/>
+<artifact id="DeviceUseStatement/example-deviceusestatement-euhdr" key="DeviceUseStatement-example-deviceusestatement-euhdr" name="DeviceUseStatement: Implanted Pacemaker"/>
+<artifact id="StructureDefinition/deviceUseStatement-obl-eu-hdr" key="StructureDefinition-deviceUseStatement-obl-eu-hdr" name="DeviceUseStatement: obligations"/>
+<artifact id="StructureDefinition/encounter-eu-hdr" key="StructureDefinition-encounter-eu-hdr" name="Encounter (HDR)"/>
+<artifact id="ValueSet/hdr-encounterClass-eu-hdr" key="ValueSet-hdr-encounterClass-eu-hdr" name="Encounter Class Value Set"/>
+<artifact id="ValueSet/admission-voluntary-status-vs" key="ValueSet-admission-voluntary-status-vs" name="Encounter Voluntary Status Value Set"/>
+<artifact id="Encounter/12fef60c-1fe7-4988-8286-af691889a3f3" key="Encounter-12fef60c-1fe7-4988-8286-af691889a3f3" name="Encounter: Hospital Admission and Discharge"/>
+<artifact id="StructureDefinition/encounter-obl-eu-hdr" key="StructureDefinition-encounter-obl-eu-hdr" name="Encounter: obligations"/>
+<artifact id="ValueSet/exposureAgent-eu-hdr" key="ValueSet-exposureAgent-eu-hdr" name="Exposure of transmissible agents"/>
+<artifact id="StructureDefinition/familyMemberHistory-eu-hdr" key="StructureDefinition-familyMemberHistory-eu-hdr" name="FamilyMemberHistory (HDR)"/>
+<artifact id="FamilyMemberHistory/635c22e7-d7f1-45ad-9b4d-d4fe35239085" key="FamilyMemberHistory-635c22e7-d7f1-45ad-9b4d-d4fe35239085" name="FamilyMemberHistory: Family History of Type 2 Diabetes Mellitus - Mother"/>
+<artifact id="StructureDefinition/familyMemberHistory-obl-eu-hdr" key="StructureDefinition-familyMemberHistory-obl-eu-hdr" name="FamilyMemberHistory: obligations"/>
+<artifact id="StructureDefinition/flag-eu-hdr" key="StructureDefinition-flag-eu-hdr" name="Flag (HDR)"/>
+<artifact id="Flag/example-flag-allergy" key="Flag-example-flag-allergy" name="Flag: Critical Allergy to Penicillin"/>
+<artifact id="Flag/example-flag-no-left-arm" key="Flag-example-flag-no-left-arm" name="Flag: Do Not Use Left Arm"/>
+<artifact id="StructureDefinition/flag-obl-eu-hdr" key="StructureDefinition-flag-obl-eu-hdr" name="Flag: obligations"/>
+<artifact id="ActorDefinition/actor-consumer-eu-hdr" key="ActorDefinition-actor-consumer-eu-hdr" name="HDR Consumer"/>
+<artifact id="ActorDefinition/actor-creator-eu-hdr" key="ActorDefinition-actor-creator-eu-hdr" name="HDR Creator"/>
+<artifact id="ActorDefinition/actor-repos-eu-hdr" key="ActorDefinition-actor-repos-eu-hdr" name="HDR Repository"/>
+<artifact id="StructureDefinition/humanName-obl-eu-hdr" key="StructureDefinition-humanName-obl-eu-hdr" name="Human Name: obligations"/>
+<artifact id="StructureDefinition/immunization-eu-hdr" key="StructureDefinition-immunization-eu-hdr" name="Immunization (HDR)"/>
+<artifact id="StructureDefinition/immunization-administeredProduct" key="StructureDefinition-immunization-administeredProduct" name="Immunization AdministeredProduct"/>
+<artifact id="Immunization/example-covid19-vax-admin" key="Immunization-example-covid19-vax-admin" name="Immunization: COVID-19"/>
+<artifact id="StructureDefinition/immunization-obl-eu-hdr" key="StructureDefinition-immunization-obl-eu-hdr" name="Immunization: obligations"/>
+<artifact id="StructureDefinition/immunizationRecommendation-eu-hdr" key="StructureDefinition-immunizationRecommendation-eu-hdr" name="ImmunizationRecommendation (HDR)"/>
+<artifact id="ImmunizationRecommendation/example-covid19-vax-recommendation" key="ImmunizationRecommendation-example-covid19-vax-recommendation" name="ImmunizationRecommendation: COVID-19"/>
+<artifact id="StructureDefinition/immunizationRecommendation-obl-eu-hdr" key="StructureDefinition-immunizationRecommendation-obl-eu-hdr" name="ImmunizationRecommendation: obligations"/>
+<artifact id="ValueSet/encounter-status-eu-hdr" key="ValueSet-encounter-status-eu-hdr" name="In-patient Encounter Status Value Set"/>
+<artifact id="ValueSet/hdr-encounter-type-eu-hdr" key="ValueSet-hdr-encounter-type-eu-hdr" name="In-patient Encounter Type Value Set"/>
+<artifact id="ValueSet/medical-devices-eu-hdr" key="ValueSet-medical-devices-eu-hdr" name="Medical Devices (SNOMED CT)"/>
+<artifact id="ValueSet/medical-devices-snomed-absent-unknown-eu-hdr" key="ValueSet-medical-devices-snomed-absent-unknown-eu-hdr" name="Medical Devices - SNOMED CT + Absent/Unknown - IPS"/>
+<artifact id="StructureDefinition/medication-eu-hdr" key="StructureDefinition-medication-eu-hdr" name="Medication (HDR)"/>
+<artifact id="Medication/01A-Cefuroxime1500GenericExplicit" key="Medication-01A-Cefuroxime1500GenericExplicit" name="Medication: 01A-Cefuroxime1500GenericExplicit"/>
+<artifact id="Medication/01C-Cefuroxime1500Branded" key="Medication-01C-Cefuroxime1500Branded" name="Medication: 01C-Cefuroxime1500Branded"/>
+<artifact id="StructureDefinition/medication-obl-eu-hdr" key="StructureDefinition-medication-obl-eu-hdr" name="Medication: obligations"/>
+<artifact id="StructureDefinition/medicationAdministration-eu-hdr" key="StructureDefinition-medicationAdministration-eu-hdr" name="MedicationAdministration (HDR)"/>
+<artifact id="MedicationAdministration/1bcfb26f-6958-4604-a40b-712170c1e536" key="MedicationAdministration-1bcfb26f-6958-4604-a40b-712170c1e536" name="MedicationAdministration: Paracetamol"/>
+<artifact id="StructureDefinition/medicationAdministration-obl-eu-hdr" key="StructureDefinition-medicationAdministration-obl-eu-hdr" name="MedicationAdministration: obligations"/>
+<artifact id="StructureDefinition/medicationDispense-eu-hdr" key="StructureDefinition-medicationDispense-eu-hdr" name="MedicationDispense (HDR)"/>
+<artifact id="MedicationDispense/400D-dispense-1" key="MedicationDispense-400D-dispense-1" name="MedicationDispense: 400D-dispense-1"/>
+<artifact id="StructureDefinition/medicationDispense-obl-eu-hdr" key="StructureDefinition-medicationDispense-obl-eu-hdr" name="MedicationDispense: obligations"/>
+<artifact id="StructureDefinition/medicationRequest-eu-hdr" key="StructureDefinition-medicationRequest-eu-hdr" name="MedicationRequest (HDR)"/>
+<artifact id="MedicationRequest/400C-prescription-cefuroxime-singleline" key="MedicationRequest-400C-prescription-cefuroxime-singleline" name="MedicationRequest: 400C-prescription-cefuroxime-singleline"/>
+<artifact id="StructureDefinition/medicationRequest-obl-eu-hdr" key="StructureDefinition-medicationRequest-obl-eu-hdr" name="MedicationRequest: obligations"/>
+<artifact id="StructureDefinition/medicationStatement-eu-hdr" key="StructureDefinition-medicationStatement-eu-hdr" name="MedicationStatement (HDR)"/>
+<artifact id="MedicationStatement/example-medicationstatement-euhdr" key="MedicationStatement-example-medicationstatement-euhdr" name="MedicationStatement: Enalapril"/>
+<artifact id="StructureDefinition/medicationStatement-obl-eu-hdr" key="StructureDefinition-medicationStatement-obl-eu-hdr" name="MedicationStatement: obligations"/>
+<artifact id="Observation/lab-swart-3" key="Observation-lab-swart-3" name="Observation: ABO group"/>
+<artifact id="Observation/gewicht-swart" key="Observation-gewicht-swart" name="Observation: Body weight"/>
+<artifact id="Observation/example-img-finding-lung-nodule" key="Observation-example-img-finding-lung-nodule" name="Observation: Imaging Finding"/>
+<artifact id="StructureDefinition/observation-imgFinding-eu-hdr" key="StructureDefinition-observation-imgFinding-eu-hdr" name="Observation: Imaging Finding (HDR)"/>
+<artifact id="StructureDefinition/observation-infectious-contact-eu-hdr" key="StructureDefinition-observation-infectious-contact-eu-hdr" name="Observation: Infectious Contact (HDR)"/>
+<artifact id="Observation/example-infectious-contact" key="Observation-example-infectious-contact" name="Observation: Infectious Contact: COVID-19 Exposure"/>
+<artifact id="StructureDefinition/observation-infectious-contact-obl-eu-hdr" key="StructureDefinition-observation-infectious-contact-obl-eu-hdr" name="Observation: Infectious Contact: obligations"/>
+<artifact id="StructureDefinition/observation-sdoh-eu-hdr" key="StructureDefinition-observation-sdoh-eu-hdr" name="Observation: SDOH (HDR)"/>
+<artifact id="Observation/example-sdoh-transportation" key="Observation-example-sdoh-transportation" name="Observation: SDOH Transportation Insecurity"/>
+<artifact id="StructureDefinition/observation-sdoh-obl-eu-hdr" key="StructureDefinition-observation-sdoh-obl-eu-hdr" name="Observation: SDOH: obligations"/>
+<artifact id="Observation/example-travel-history" key="Observation-example-travel-history" name="Observation: Travel History"/>
+<artifact id="StructureDefinition/observation-travel-eu-hdr" key="StructureDefinition-observation-travel-eu-hdr" name="Observation: country visited (HDR)"/>
+<artifact id="StructureDefinition/observation-travel-obl-eu-hdr" key="StructureDefinition-observation-travel-obl-eu-hdr" name="Observation: country visited: obligations"/>
+<artifact id="Organization/organization-sophia" key="Organization-organization-sophia" name="Organization: Erasmus MC"/>
+<artifact id="Patient/patient-swart" key="Patient-patient-swart" name="Patient: Dutch Patient"/>
+<artifact id="StructureDefinition/patient-obl-eu-hdr" key="StructureDefinition-patient-obl-eu-hdr" name="Patient: obligations"/>
+<artifact id="StructureDefinition/procedure-eu-hdr" key="StructureDefinition-procedure-eu-hdr" name="Procedure (HDR)"/>
+<artifact id="ValueSet/procedure-snomed-eu-hdr" key="ValueSet-procedure-snomed-eu-hdr" name="Procedure codes: Snomed CT"/>
+<artifact id="Procedure/sectio-swart" key="Procedure-sectio-swart" name="Procedure: Sectio caesarea"/>
+<artifact id="StructureDefinition/procedure-obl-eu-hdr" key="StructureDefinition-procedure-obl-eu-hdr" name="Procedure: obligations"/>
+<artifact id="ValueSet/procedures-snomed-absent-unknown-eu-hdr" key="ValueSet-procedures-snomed-absent-unknown-eu-hdr" name="Procedures - SNOMED CT + Absent/Unknown - IPS"/>
+<artifact id="ValueSet/sdoh-obs-snomed-loinc-eu-hdr" key="ValueSet-sdoh-obs-snomed-loinc-eu-hdr" name="SDOH Observation codes"/>
+<artifact id="StructureDefinition/specimen-obl-eu-hdr" key="StructureDefinition-specimen-obl-eu-hdr" name="Specimen: obligations"/>
+<artifact id="CodeSystem/temporarySystem-hdr-eu" key="CodeSystem-temporarySystem-hdr-eu" name="Temporary HDR Code System"/>
+<artifact id="ValueSet/eHDSIConditionPOA" key="ValueSet-eHDSIConditionPOA" name="eHDSI Condition Present On Admission"/>
+<artifact id="ValueSet/eHDSITreatmentClass" key="ValueSet-eHDSITreatmentClass" name="eHDSI Treatment Class"/>
+<artifact id="ConceptMap/admissionEvaluation2FHIR-eu-hdr" key="ConceptMap-admissionEvaluation2FHIR-eu-hdr" name="eHN Admission Evaluation Model to this guide Map"/>
+<artifact id="ConceptMap/advanceDirectives2FHIR-eu-hdr" key="ConceptMap-advanceDirectives2FHIR-eu-hdr" name="eHN Advance Directives Model to this guide Map"/>
+<artifact id="ConceptMap/alerts2FHIR-eu-hdr" key="ConceptMap-alerts2FHIR-eu-hdr" name="eHN Alerts Model to this guide Map"/>
+<artifact id="ConceptMap/encounter2FHIR-eu-hdr" key="ConceptMap-encounter2FHIR-eu-hdr" name="eHN Encounter Model to this guide Map"/>
+<artifact id="ConceptMap/functionalStatus2FHIR-eu-hdr" key="ConceptMap-functionalStatus2FHIR-eu-hdr" name="eHN Functional Status Model to this guide Map"/>
+<artifact id="ConceptMap/hdr2FHIR-eu-hdr" key="ConceptMap-hdr2FHIR-eu-hdr" name="eHN HDR Model to this guide Map"/>
+<artifact id="ConceptMap/hdrHeader2FHIR-eu-hdr" key="ConceptMap-hdrHeader2FHIR-eu-hdr" name="eHN Header Model to this guide Map"/>
+<artifact id="ConceptMap/hospitalStay2FHIR-eu-hdr" key="ConceptMap-hospitalStay2FHIR-eu-hdr" name="eHN Hospital Stay Model to this guide Map"/>
+<artifact id="ConceptMap/medicationSummary2FHIR-eu-hdr" key="ConceptMap-medicationSummary2FHIR-eu-hdr" name="eHN Medication Summary Model to this guide Map"/>
+<artifact id="ConceptMap/objectiveFindings2FHIR-eu-hdr" key="ConceptMap-objectiveFindings2FHIR-eu-hdr" name="eHN Objective Findings Model to this guide Map"/>
+<artifact id="ConceptMap/patientHistory2FHIR-eu-hdr" key="ConceptMap-patientHistory2FHIR-eu-hdr" name="eHN Patient History Model to this guide Map"/>
+<artifact id="ConceptMap/planOfCare2FHIR-eu-hdr" key="ConceptMap-planOfCare2FHIR-eu-hdr" name="eHN Plan of Care Model to this guide Map"/>
+<artifact id="ConceptMap/subject2FHIR-eu-hdr" key="ConceptMap-subject2FHIR-eu-hdr" name="eHN Subject Model to this guide Map"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="AdmissionEvaluation-map" name="AdmissionEvaluation Relationships"/>
+<page key="AdvanceDirectives-map" name="AdvanceDirectives Relationships"/>
+<page key="Alerts-map" name="Alerts Relationships"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="contributors" name="Authors and contributors"/>
+<page key="background" name="Background"/>
+<page key="challenges" name="Challenges"/>
+<page key="copyright" name="Copyright"/>
+<page key="x-version" name="Cross version analysis"/>
+<page key="dependencies" name="Dependencies"/>
+<page key="design" name="Design Approach"/>
+<page key="downloads" name="Downloads"/>
+<page key="FunctionalStatus-map" name="FunctionalStatus Relationships"/>
+<page key="Header-map" name="Header Relationships"/>
+<page key="index" name="Home"/>
+<page key="hdr-mindmap" name="Hospital Discharge Report"/>
+<page key="HospitalDischargeReport-map" name="HospitalDischargeReport Relationships"/>
+<page key="HospitalStay-map" name="HospitalStay Relationships"/>
+<page key="InPatientEncounter-map" name="InPatientEncounter Relationships"/>
+<page key="knownIssues" name="Known Issues"/>
+<page key="logicalModel" name="Logical Models"/>
+<page key="MedicationSummary-map" name="MedicationSummary Relationships"/>
+<page key="model-map" name="Model Maps"/>
+<page key="ObjectiveFindings-map" name="ObjectiveFindings Relationships"/>
+<page key="obligations" name="Obligations"/>
+<page key="PatientHistory-map" name="PatientHistory Relationships"/>
+<page key="PlanOfCare-map" name="PlanOfCare Relationships"/>
+<page key="references" name="References"/>
+<page key="scope" name="Scope and content"/>
+<page key="Subject-map" name="Subject Relationships"/>
+<page key="toc" name="Table of Contents"/>
+<page key="ehn-guidelines" name="eHN guideline data set"/>
+</specification>
