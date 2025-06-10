@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/mpd/0.1.0-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/mpd" defaultVersion="0.1.0-ballot" defaultWorkgroup="eu" url="http://hl7.eu/fhir/mpd" gitUrl="https://github.com/HL7-eu/mpd" >
+<version code="current" url="https://build.fhir.org/ig/hl7-eu/mpd"/>
+<version code="0.1.0-ballot" url="http://hl7.eu/fhir/mpd/0.1.0-ballot"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="Medication/01A-Cefuroxime1500GenericExplicit" key="Medication-01A-Cefuroxime1500GenericExplicit" name="01A-Cefuroxime1500GenericExplicit"/>
+<artifact id="Medication/01B-Cefuroxime1500GenericConcept" key="Medication-01B-Cefuroxime1500GenericConcept" name="01B-Cefuroxime1500GenericConcept"/>
+<artifact id="Medication/01C-Cefuroxime1500Branded" key="Medication-01C-Cefuroxime1500Branded" name="01C-Cefuroxime1500Branded"/>
+<artifact id="Medication/01D-Cefuroxime750Branded" key="Medication-01D-Cefuroxime750Branded" name="01D-Cefuroxime750Branded"/>
+<artifact id="Medication/02A-ClotrimazoleCanifugCremolum" key="Medication-02A-ClotrimazoleCanifugCremolum" name="02A-ClotrimazoleCanifugCremolum"/>
+<artifact id="Medication/02A1-CanifugCremolumCreamItem" key="Medication-02A1-CanifugCremolumCreamItem" name="02A1-CanifugCremolumCreamItem"/>
+<artifact id="Medication/02A2-CanifugCremolumPessaryItem" key="Medication-02A2-CanifugCremolumPessaryItem" name="02A2-CanifugCremolumPessaryItem"/>
+<artifact id="Medication/03B-VitaminBComplexBranded" key="Medication-03B-VitaminBComplexBranded" name="03B-VitaminBComplexBranded"/>
+<artifact id="Medication/04A-FirmagonBranded" key="Medication-04A-FirmagonBranded" name="04A-FirmagonBranded"/>
+<artifact id="Medication/05A-Tilidin-Branded" key="Medication-05A-Tilidin-Branded" name="05A-Tilidin-Branded"/>
+<artifact id="Bundle/100A-multiitem-prescription-with-orchestration" key="Bundle-100A-multiitem-prescription-with-orchestration" name="100A-multiitem-prescription-with-orchestration"/>
+<artifact id="RequestGroup/100B-RequestOrchestration" key="RequestGroup-100B-RequestOrchestration" name="100B-RequestOrchestration"/>
+<artifact id="MedicationRequest/100C-3-medication-prescription-request1" key="MedicationRequest-100C-3-medication-prescription-request1" name="100C-3-medication-prescription-request1"/>
+<artifact id="MedicationRequest/100C-3-medication-prescription-request2" key="MedicationRequest-100C-3-medication-prescription-request2" name="100C-3-medication-prescription-request2"/>
+<artifact id="MedicationRequest/100C-3-medication-prescription-request3" key="MedicationRequest-100C-3-medication-prescription-request3" name="100C-3-medication-prescription-request3"/>
+<artifact id="Bundle/200A-multiitem-prescription-without-orchestration" key="Bundle-200A-multiitem-prescription-without-orchestration" name="200A-multiitem-prescription-without-orchestration"/>
+<artifact id="MedicationRequest/200C-2-medication-prescription-request1" key="MedicationRequest-200C-2-medication-prescription-request1" name="200C-2-medication-prescription-request1"/>
+<artifact id="MedicationRequest/200C-2-medication-prescription-request2" key="MedicationRequest-200C-2-medication-prescription-request2" name="200C-2-medication-prescription-request2"/>
+<artifact id="Bundle/300A-multiitem-prescription-with-orchestration" key="Bundle-300A-multiitem-prescription-with-orchestration" name="300A-multiitem-prescription-with-orchestration"/>
+<artifact id="RequestGroup/300B-RequestOrchestration" key="RequestGroup-300B-RequestOrchestration" name="300B-RequestOrchestration"/>
+<artifact id="MedicationRequest/300C-2-medication-prescription-request1" key="MedicationRequest-300C-2-medication-prescription-request1" name="300C-2-medication-prescription-request1"/>
+<artifact id="MedicationRequest/300C-2-medication-prescription-request2" key="MedicationRequest-300C-2-medication-prescription-request2" name="300C-2-medication-prescription-request2"/>
+<artifact id="MedicationDispense/300D-dispense-for-2-requests" key="MedicationDispense-300D-dispense-for-2-requests" name="300D-dispense-for-2-requests"/>
+<artifact id="MedicationRequest/400C-prescription-cefuroxime-singleline" key="MedicationRequest-400C-prescription-cefuroxime-singleline" name="400C-prescription-cefuroxime-singleline"/>
+<artifact id="MedicationDispense/400D-dispense-1" key="MedicationDispense-400D-dispense-1" name="400D-dispense-1"/>
+<artifact id="MedicationDispense/400D-dispense-2" key="MedicationDispense-400D-dispense-2" name="400D-dispense-2"/>
+<artifact id="MedicationDispense/400E-refused-dispense" key="MedicationDispense-400E-refused-dispense" name="400E-refused-dispense"/>
+<artifact id="StructureDefinition/Prescription" key="StructureDefinition-Prescription" name="A - Prescription"/>
+<artifact id="StructureDefinition/Subject" key="StructureDefinition-Subject" name="A.1.1 Patient administrative data"/>
+<artifact id="StructureDefinition/MedicinalProduct" key="StructureDefinition-MedicinalProduct" name="A1.4 Identification of the prescribed product"/>
+<artifact id="StructureDefinition/Dispensation" key="StructureDefinition-Dispensation" name="B.1 Dispensation information (provided by the dispensing pharmacy)"/>
+<artifact id="StructureDefinition/Medication-eu-mpd" key="StructureDefinition-Medication-eu-mpd" name="Medication: MPD"/>
+<artifact id="StructureDefinition/MedicationDispense-eu-mpd" key="StructureDefinition-MedicationDispense-eu-mpd" name="MedicationDispense: MPD"/>
+<artifact id="StructureDefinition/MedicationRequest-eu-mpd" key="StructureDefinition-MedicationRequest-eu-mpd" name="MedicationRequest: MPD"/>
+<artifact id="PractitionerRole/doctor1" key="PractitionerRole-doctor1" name="doctor1"/>
+<artifact id="Organization/organization1" key="Organization-organization1" name="organization1"/>
+<artifact id="Organization/organization2" key="Organization-organization2" name="organization2"/>
+<artifact id="Patient/patient1" key="Patient-patient1" name="patient1"/>
+<artifact id="Patient/patient2" key="Patient-patient2" name="patient2"/>
+<artifact id="PractitionerRole/pharmacist1" key="PractitionerRole-pharmacist1" name="pharmacist1"/>
+<artifact id="Practitioner/practitioner1" key="Practitioner-practitioner1" name="practitioner1"/>
+<artifact id="Practitioner/practitioner2" key="Practitioner-practitioner2" name="practitioner2"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="authors" name="Authors and Contributors"/>
+<page key="background" name="Background"/>
+<page key="challenges" name="Challenges"/>
+<page key="copyright" name="Copyright"/>
+<page key="crossversionanalysis" name="Cross-version Analysis"/>
+<page key="dependencies" name="Dependencies"/>
+<page key="designchoices" name="Design Choices"/>
+<page key="downloads" name="Downloads"/>
+<page key="examples" name="Examples"/>
+<page key="index" name="Home"/>
+<page key="implementationnotes" name="Implementation Considerations"/>
+<page key="knownissues" name="Known Issues"/>
+<page key="logicalmodels" name="Logical Models"/>
+<page key="profiles" name="Mapping to Profiles"/>
+<page key="medicationconcepts" name="Medication Concepts"/>
+<page key="scope" name="Scope and Content"/>
+<page key="references" name="Source and Additional Information"/>
+<page key="toc" name="Table of Contents"/>
+<page key="terminology" name="Terminology Considerations"/>
+<page key="usecases" name="Use Cases"/>
+</specification>
