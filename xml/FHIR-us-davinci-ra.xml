@@ -3,55 +3,56 @@
 <version code="current" url="http://build.fhir.org/ig/HL7/davinci-ra"/>
 <version code="2.1.0" url="http://hl7.org/fhir/us/davinci-ra/STU2.1"/>
 <version code="2.0.0" url="http://hl7.org/fhir/us/davinci-ra/STU2"/>
-<version code="2.0.0-ballot" url="http://hl7.org/fhir/us/davinci-ra/2023May"/>
+<version code="2.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/davinci-ra/2023May"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-ra/STU1"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-ra/2022Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact deprecated="true" id="StructureDefinition/ra-annotation" key="StructureDefinition-ra-annotation" name="Annotation"/>
-<artifact id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Clinical Data Collection Deadline"/>
+<artifact id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Clinical Data Collection Deadline Extension"/>
 <artifact deprecated="true" id="ValueSet/coding-gap-annotation" key="ValueSet-coding-gap-annotation" name="Coding Gap Annotation"/>
 <artifact deprecated="true" id="CodeSystem/coding-gap-annotation" key="CodeSystem-coding-gap-annotation" name="Coding Gap Annotation CodeSystem"/>
-<artifact id="CodeSystem/coding-gap-remark" key="ValueSet-coding-gap-remark" name="Coding Gap Remark"/>
-<artifact deprecated="true" id="CodeSystem/coding-gap-remark" key="CodeSystem-coding-gap-remark" name="Coding Gap Remark CodeSystem"/>
+<artifact id="ValueSet/coding-gap-remark" key="ValueSet-coding-gap-remark" name="Coding Gap Remark"/>
+<artifact id="CodeSystem/coding-gap-remark" key="CodeSystem-coding-gap-remark" name="Coding Gap Remark Codes"/>
 <artifact deprecated="true" id="CodeSystem/coding-gap-task-reason" key="CodeSystem-coding-gap-task-reason" name="Coding Gap Task Reason CodeSystem"/>
 <artifact deprecated="true" id="ValueSet/coding-gap-task-reason" key="ValueSet-coding-gap-task-reason" name="Coding Gap Task Reason ValueSet"/>
 <artifact deprecated="true" id="ValueSet/coding-gap-task-status" key="ValueSet-coding-gap-task-status" name="Coding Gap Task Status ValueSet"/>
-<artifact id="StructureDefinition/ra-ccRemark" key="StructureDefinition-ra-ccRemark" name="Condition Category Remark"/>
-<artifact id="StructureDefinition/ra-ccType" key="StructureDefinition-ra-ccType" name="Condition Category Type"/>
+<artifact id="StructureDefinition/ra-ccRemark" key="StructureDefinition-ra-ccRemark" name="Condition Category Remark Extension"/>
+<artifact id="ValueSet/cc-type" key="ValueSet-cc-type" name="Condition Category Type"/>
+<artifact id="StructureDefinition/ra-ccType" key="StructureDefinition-ra-ccType" name="Condition Category Type Extension"/>
 <artifact deprecated="true" id="Condition/ra-condition01" key="Condition-ra-condition01" name="Condition01: Type 2 diabetes with unspecified manisfestations"/>
-<artifact id="Condition/ra-condition01pat03" key="Condition-ra-condition01pat03" name="Condition01Pat03 Example"/>
+<artifact id="Condition/ra-condition01pat03" key="Condition-ra-condition01pat03" name="Condition01Pat03: Other artificial openings of gastrointestinal tract status"/>
 <artifact deprecated="true" id="Condition/ra-condition02" key="Condition-ra-condition02" name="Condition02: Major Depressive Disorder, Single episode"/>
-<artifact id="Condition/ra-condition02pat01" key="Condition-ra-condition02pat01" name="Condition02Pat02 Example"/>
-<artifact id="Condition/ra-condition03pat01" key="Condition-ra-condition03pat01" name="Condition03Pat01 Example"/>
-<artifact id="Condition/ra-condition04pat03" key="Condition-ra-condition04pat03" name="Condition04Pat03 Example"/>
-<artifact id="Condition/ra-condition05pat03" key="Condition-ra-condition05pat03" name="Condition05Pat03 Example"/>
-<artifact id="Condition/ra-condition06pat03" key="Condition-ra-condition06pat03" name="Condition06Pat03 Example"/>
-<artifact id="Condition/ra-condition07pat03" key="Condition-ra-condition07pat03" name="Condition07Pat03 Example"/>
-<artifact id="Condition/ra-condition08pat01" key="Condition-ra-condition08pat01" name="Condition08Pat01 Example"/>
-<artifact id="Condition/ra-condition09pat01" key="Condition-ra-condition09pat01" name="Condition09Pat01 Example"/>
-<artifact id="Condition/ra-condition10pat01" key="Condition-ra-condition10pat01" name="Condition10Pat01 Example"/>
-<artifact id="Condition/ra-condition11pat01" key="Condition-ra-condition11pat01" name="Condition11Pat01 Example"/>
-<artifact id="Condition/ra-condition12pat01" key="Condition-ra-condition12pat01" name="Condition12Pat01 Example"/>
-<artifact id="Condition/ra-condition15pat03" key="Condition-ra-condition15pat03" name="Condition15Pat03 Example"/>
-<artifact id="Condition/ra-condition16pat03" key="Condition-ra-condition16pat03" name="Condition16Pat03 Example"/>
-<artifact id="Condition/ra-condition17pat01" key="Condition-ra-condition17pat01" name="Condition17Pat01 Example"/>
-<artifact id="Condition/ra-condition18pat01" key="Condition-ra-condition18pat01" name="Condition18Pat01 Example"/>
-<artifact id="Condition/ra-condition21pat03" key="Condition-ra-condition21pat03" name="Condition21Pat03 Example"/>
-<artifact id="Condition/ra-condition22pat03" key="Condition-ra-condition22pat03" name="Condition22Pat03 Example"/>
-<artifact id="Condition/ra-condition23pat03" key="Condition-ra-condition23pat03" name="Condition23Pat03 Example"/>
-<artifact id="Condition/ra-condition31pat02" key="Condition-ra-condition31pat02" name="Condition31Pat02 Example"/>
-<artifact id="Condition/ra-condition32pat03" key="Condition-ra-condition32pat03" name="Condition32Pat03 Example"/>
-<artifact id="Condition/ra-condition33pat01" key="Condition-ra-condition33pat01" name="Condition33Pat01 Example"/>
-<artifact id="Condition/ra-condition35pat03" key="Condition-ra-condition35pat03" name="Condition35Pat03 Example"/>
-<artifact id="Condition/ra-condition42pat03" key="Condition-ra-condition42pat03" name="Condition42Pat03 Example"/>
-<artifact id="Condition/ra-condition43pat01" key="Condition-ra-condition43pat01" name="Condition43Pat01 Example"/>
-<artifact id="Condition/ra-condition44pat01" key="Condition-ra-condition44pat01" name="Condition44Pat01 Example"/>
-<artifact id="Condition/ra-conditionR01pat01" key="Condition-ra-conditionR01pat01" name="ConditionR01Pat01 Example"/>
-<artifact id="StructureDefinition/ra-confidenceScale" key="StructureDefinition-ra-confidenceScale" name="Confidence Scale"/>
-<artifact id="MeasureReport/ra-datax-measurereport01" key="MeasureReport-ra-datax-measurereport01" name="DataExchange MeasureReport01 Example (ra-datax-measurereport01)"/>
-<artifact id="StructureDefinition/ra-dxCode" key="StructureDefinition-ra-dxCode" name="Diagnosis Code"/>
+<artifact id="Condition/ra-condition02pat01" key="Condition-ra-condition02pat01" name="Condition02Pat02: Diabetes mellitus due to underlying condition with other diabetic kidney complication"/>
+<artifact id="Condition/ra-condition03pat01" key="Condition-ra-condition03pat01" name="Condition03Pat01: Chronic obstructive pulmonary disease with (acute) exacerbation"/>
+<artifact id="Condition/ra-condition04pat03" key="Condition-ra-condition04pat03" name="Condition04Pat03: Chronic obstructive pulmonary disease with (acute) exacerbation"/>
+<artifact id="Condition/ra-condition05pat03" key="Condition-ra-condition05pat03" name="Condition05Pat03: Unspecified protein-calorie malnutrition"/>
+<artifact id="Condition/ra-condition06pat03" key="Condition-ra-condition06pat03" name="Condition06Pat03: Crohn’s disease of large intestine with unspecified complications"/>
+<artifact id="Condition/ra-condition07pat03" key="Condition-ra-condition07pat03" name="Condition07Pat03: Other persistent atrial fibrillation"/>
+<artifact id="Condition/ra-condition08pat01" key="Condition-ra-condition08pat01" name="Condition08Pat01: Bipolar disorder, current episode mixed, mild"/>
+<artifact id="Condition/ra-condition09pat01" key="Condition-ra-condition09pat01" name="Condition09Pat01: Allergic bronchopulmonary aspergillosis"/>
+<artifact id="Condition/ra-condition10pat01" key="Condition-ra-condition10pat01" name="Condition10Pat01: Long term (current) use of insulin"/>
+<artifact id="Condition/ra-condition11pat01" key="Condition-ra-condition11pat01" name="Condition11Pat01: Acute pulmonary edema"/>
+<artifact id="Condition/ra-condition12pat01" key="Condition-ra-condition12pat01" name="Condition12Pat01: Manic episode, unspecified"/>
+<artifact id="Condition/ra-condition15pat03" key="Condition-ra-condition15pat03" name="Condition15Pat03: Diabetes mellitus due to underlying condition with diabetic chronic kidney disease"/>
+<artifact id="Condition/ra-condition16pat03" key="Condition-ra-condition16pat03" name="Condition16Pat03: Dependence on renal dialysis"/>
+<artifact id="Condition/ra-condition17pat01" key="Condition-ra-condition17pat01" name="Condition17Pat01: Body mass index (BMI) 45.0-49.9, adult"/>
+<artifact id="Condition/ra-condition18pat01" key="Condition-ra-condition18pat01" name="Condition18Pat01: Longstanding persistent atrial fibrillation"/>
+<artifact id="Condition/ra-condition21pat03" key="Condition-ra-condition21pat03" name="Condition21Pat03: Type 2 diabetes mellitus without complications"/>
+<artifact id="Condition/ra-condition22pat03" key="Condition-ra-condition22pat03" name="Condition22Pat03: Other acute kidney failure"/>
+<artifact id="Condition/ra-condition23pat03" key="Condition-ra-condition23pat03" name="Condition23Pat03: Chronic kidney disease, stage 5"/>
+<artifact id="Condition/ra-condition31pat02" key="Condition-ra-condition31pat02" name="Condition31Pat02: Typical atrial flutter"/>
+<artifact id="Condition/ra-condition32pat03" key="Condition-ra-condition32pat03" name="Condition32Pat03: Chronic pulmonary embolism"/>
+<artifact id="Condition/ra-condition33pat01" key="Condition-ra-condition33pat01" name="Condition33Pat01: Respiratory arrest"/>
+<artifact id="Condition/ra-condition35pat03" key="Condition-ra-condition35pat03" name="Condition35Pat03: Type 2 diabetes mellitus with diabetic peripheral angiopathy without gangrene"/>
+<artifact id="Condition/ra-condition42pat03" key="Condition-ra-condition42pat03" name="Condition42Pat03: Other artificial openings of gastrointestinal tract status"/>
+<artifact id="Condition/ra-condition43pat01" key="Condition-ra-condition43pat01" name="Condition43Pat01: Diabetes mellitus due to underlying condition with other diabetic kidney"/>
+<artifact id="Condition/ra-condition44pat01" key="Condition-ra-condition44pat01" name="Condition44Pat01: Allergic bronchopulmonary aspergillosis"/>
+<artifact id="Condition/ra-conditionR01pat01" key="Condition-ra-conditionR01pat01" name="ConditionR01Pat01: Cystic fibrosis with other intestinal manifestations"/>
+<artifact id="StructureDefinition/ra-confidenceScale" key="StructureDefinition-ra-confidenceScale" name="Confidence Scale Extension"/>
+<artifact id="MeasureReport/ra-datax-measurereport01" key="MeasureReport-ra-datax-measurereport01" name="Data Exchange MeasureReport Example01"/>
+<artifact id="StructureDefinition/ra-dxCode" key="StructureDefinition-ra-dxCode" name="Diagnosis Code Extension"/>
 <artifact id="Encounter/ra-encounter44pat01" key="Encounter-ra-encounter44pat01" name="Encounter with Dr Hippocrates on 2017-01-18 for Patient 01"/>
 <artifact id="Encounter/ra-encounter08pat01" key="Encounter-ra-encounter08pat01" name="Encounter with Dr Hippocrates on 2017-02-03 for Patient 03"/>
 <artifact id="Encounter/ra-encounter45pat01" key="Encounter-ra-encounter45pat01" name="Encounter with Dr Hippocrates on 2018-07-21 for Patient 01"/>
@@ -74,69 +75,69 @@
 <artifact id="Encounter/ra-encounter16pat03" key="Encounter-ra-encounter16pat03" name="Encounter with Dr Osler on 2021-07-27 for Patient 03"/>
 <artifact id="Encounter/ra-encounter15pat03" key="Encounter-ra-encounter15pat03" name="Encounter with Dr Osler on 2021-08-08 for Patient 03"/>
 <artifact id="Encounter/ra-encounter31pat02" key="Encounter-ra-encounter31pat02" name="Encounter with Dr Pump on 2021-08-06 for Patient 02"/>
-<artifact id="DocumentReference/ra-documentreference01pat01" key="DocumentReference-ra-documentreference01pat01" name="Episode Summary Example"/>
 <artifact id="OperationDefinition/ra.evaluate-measure" key="OperationDefinition-ra.evaluate-measure" name="Evaluate Measure"/>
-<artifact id="StructureDefinition/ra-evidenceStatus" key="StructureDefinition-ra-evidenceStatus" name="Evidence Status"/>
-<artifact id="StructureDefinition/ra-evidenceStatusDate" key="StructureDefinition-ra-evidenceStatusDate" name="Evidence Status Date"/>
+<artifact id="ValueSet/evidence-status" key="StructureDefinition-ra-evidenceStatus" name="Evidence Status"/>
+<artifact id="StructureDefinition/ra-evidenceStatusDate" key="StructureDefinition-ra-evidenceStatusDate" name="Evidence Status Date Extension"/>
+<artifact id="StructureDefinition/ra-evidenceStatus" key="StructureDefinition-ra-evidenceStatus" name="Evidence Status Extension"/>
 <artifact deprecated="true" id="ValueSet/example-cmshcc" key="ValueSet-example-cmshcc" name="Example CMS Hierarchical Condition Category Value Set"/>
-<artifact id="StructureDefinition/ra-groupReference" key="StructureDefinition-ra-groupReference" name="Group Reference"/>
+<artifact id="StructureDefinition/ra-groupReference" key="StructureDefinition-ra-groupReference" name="Group Reference Extension"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hiearchicalStatus" key="StructureDefinition-ra-hiearchicalStatus" name="Hiearchical Status Extension"/>
-<artifact id="StructureDefinition/ra-hierarchicalStatus" key="StructureDefinition-ra-hierarchicalStatus" name="Hierarchical Status"/>
-<artifact id="Organization/ra-laboratory01" key="Organization-ra-laboratory01" name="Laboratory"/>
+<artifact id="ValueSet/hierarchical-status" key="StructureDefinition-ra-hierarchicalStatus" name="Hierarchical Status"/>
+<artifact id="StructureDefinition/ra-hierarchicalStatus" key="StructureDefinition-ra-hierarchicalStatus" name="Hierarchical Status Extension"/>
 <artifact id="SearchParameter/measurereport-category" key="SearchParameter-measurereport-category" name="MeasureReportCategory"/>
-<artifact id="Organization/ra-org02pat02" key="Organization-ra-org02pat02" name="Organization"/>
-<artifact id="Organization/ra-org01pat01" key="Organization-ra-org01pat01" name="Organization for Patient 1"/>
-<artifact id="Organization/ra-org03pat03" key="Organization-ra-org03pat03" name="Organization for Patient 3"/>
-<artifact id="Observation/ra-obs02pat03" key="Observation-ra-obs02pat03" name="PHQ9 for Pat03"/>
-<artifact id="Parameters/ra-measurereport01-patch-mult" key="Parameters-ra-measurereport01-patch-mult" name="Patch Example01-ra-measurereport01-multi"/>
-<artifact id="Parameters/ra-measurereport01-patch" key="Parameters-ra-measurereport01-patch" name="Patch Example02-ra-measurereport01"/>
-<artifact id="Patient/ra-patient01" key="Patient-ra-patient01" name="Patient Example01"/>
-<artifact id="Patient/ra-patient02" key="Patient-ra-patient02" name="Patient Example02"/>
-<artifact id="Patient/ra-patient03" key="Patient-ra-patient03" name="Patient Example03"/>
+<artifact id="Organization/ra-laboratory01" key="Organization-ra-laboratory01" name="Organization Example: XYZ Laboratory"/>
+<artifact id="Organization/ra-payer01" key="Organization-ra-payer01" name="Organization: ABC Payer"/>
+<artifact id="Organization/ra-vendor01" key="Organization-ra-vendor01" name="Organization: Best RA Vendor"/>
+<artifact id="Organization/ra-org03pat03" key="Organization-ra-org03pat03" name="Organization: Community HealthCenter"/>
+<artifact id="Organization/ra-org01pat01" key="Organization-ra-org01pat01" name="Organization: Community Urgent Care"/>
+<artifact id="Organization/ra-org02pat02" key="Organization-ra-org02pat02" name="Organization: GHH Outpatient Clinic"/>
+<artifact id="Organization/ra-org-author" key="Organization-ra-org-author" name="Organization: Risk Adjustment Author"/>
+<artifact id="DocumentReference/ra-documentreference01pat01" key="DocumentReference-ra-documentreference01pat01" name="Outpatient Note for Patient01 Eve Everywoman"/>
+<artifact id="Observation/ra-obs02pat03" key="Observation-ra-obs02pat03" name="PHQ9 Total Score for Patient 03"/>
+<artifact id="Parameters/ra-measurereport01-patch-mult" key="Parameters-ra-measurereport01-patch-mult" name="Patch Example01 with multiple value (ra-measurereport01)"/>
+<artifact id="Parameters/ra-measurereport01-patch" key="Parameters-ra-measurereport01-patch" name="Patch Example02 (ra-measurereport01)"/>
 <artifact id="StructureDefinition/ra-patient-group" key="StructureDefinition-ra-patient-group" name="Patient Group"/>
-<artifact id="Group/ra-group01" key="Group-ra-group01" name="Patient Group Example01"/>
-<artifact id="Group/ra-group02" key="Group-ra-group02" name="Patient Group Example02"/>
+<artifact id="Group/ra-group01" key="Group-ra-group01" name="Patient Group Example 1"/>
+<artifact id="Group/ra-group02" key="Group-ra-group02" name="Patient Group Example 2"/>
+<artifact id="Patient/ra-patient01" key="Patient-ra-patient01" name="Patient01: Eve Everywoman"/>
 <artifact deprecated="true" id="Parameters/Patient-ra-patient01-report" key="Parameters-Patient-ra-patient01-report" name="Patient01: Report"/>
+<artifact id="Patient/ra-patient02" key="Patient-ra-patient02" name="Patient02: Adam Everyman"/>
+<artifact id="Patient/ra-patient03" key="Patient-ra-patient03" name="Patient03: Nelda Nuclear"/>
 <artifact deprecated="true" id="Patient/ra-patient04" key="Patient-ra-patient04" name="Patient04: Jane Doh"/>
-<artifact id="Organization/ra-payer01" key="Organization-ra-payer01" name="Payer"/>
-<artifact id="StructureDefinition/ra-payerCodingGapReportId" key="StructureDefinition-ra-payerCodingGapReportId" name="Payer Coding Gap Report Id"/>
-<artifact id="Practitioner/ra-prac01pat01" key="Practitioner-ra-prac01pat01" name="Practitioner Example (ra-prac01pat01)"/>
-<artifact id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner Example02"/>
-<artifact id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner Example03"/>
-<artifact id="ValueSet/coding-gap-remark" key="ValueSet-coding-gap-remark" name="RA Coding Gap Remark"/>
-<artifact id="ValueSet/cc-type" key="ValueSet-cc-type" name="RA Condition Category Type"/>
+<artifact id="StructureDefinition/ra-payerCodingGapReportId" key="StructureDefinition-ra-payerCodingGapReportId" name="Payer Coding Gap Report Id Extension"/>
+<artifact id="Practitioner/ra-prac01pat01" key="Practitioner-ra-prac01pat01" name="Practitioner01: Harold Hippocrates"/>
+<artifact id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner02: Patrick Pump"/>
+<artifact id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner03: Otto Osler"/>
+<artifact id="MeasureReport/ra-measurereport01" key="MeasureReport-ra-measurereport01" name="RA Coding Gap MeasureReport Example01 with RA Model CMS-HCC V24 for Patient01 Eve Everywoman"/>
+<artifact id="MeasureReport/ra-measurereport02" key="MeasureReport-ra-measurereport02" name="RA Coding Gap MeasureReport Example02 with RA Model CMS-RxHCC V5 for Patient01 Eve Everywoman"/>
+<artifact id="MeasureReport/ra-measurereport03" key="MeasureReport-ra-measurereport03" name="RA Coding Gap MeasureReport Example03 with RA Model CMS-HCC V24 for Patient02 Adam Everyman"/>
+<artifact id="MeasureReport/ra-measurereport04" key="MeasureReport-ra-measurereport04" name="RA Coding Gap MeasureReport Example04 with RA Model CMS-HCC V21 for Patient03 Nelda Nuclear"/>
+<artifact id="MeasureReport/ra-measurereport05" key="MeasureReport-ra-measurereport05" name="RA Coding Gap MeasureReport Example05 with RA Model CMS-RxHCC V5 for Patient03 Nelda Nuclear"/>
+<artifact id="MeasureReport/ra-measurereport06" key="MeasureReport-ra-measurereport06" name="RA Coding Gap MeasureReport Example06 with RA Model CMS-RxHCC V5 for Patient02 Adam Everyman"/>
 <artifact id="ValueSet/confidence-scale" key="ValueSet-confidence-scale" name="RA Confidence Scale"/>
-<artifact id="ValueSet/evidence-status" key="ValueSet-evidence-status" name="RA Evidence Status"/>
-<artifact id="ValueSet/hierarchical-status" key="ValueSet-hierarchical-status" name="RA Hierarchical Status"/>
-<artifact id="MeasureReport/ra-measurereport01" key="MeasureReport-ra-measurereport01" name="RA MeasureReport Example01"/>
-<artifact id="MeasureReport/ra-measurereport02" key="MeasureReport-ra-measurereport02" name="RA MeasureReport Example02"/>
-<artifact id="MeasureReport/ra-measurereport03" key="MeasureReport-ra-measurereport03" name="RA MeasureReport Example03"/>
-<artifact id="MeasureReport/ra-measurereport04" key="MeasureReport-ra-measurereport04" name="RA MeasureReport Example04"/>
-<artifact id="MeasureReport/ra-measurereport05" key="MeasureReport-ra-measurereport05" name="RA MeasureReport Example05"/>
-<artifact id="MeasureReport/ra-measurereport06" key="MeasureReport-ra-measurereport06" name="RA MeasureReport Example06"/>
 <artifact id="MeasureReport/ra-measurereport01-with-remark" key="MeasureReport-ra-measurereport01-with-remark" name="RA MeasureReport with Remark Example (ra-measurereport01-with-remark)"/>
-<artifact id="Measure/RAModelExample01" key="Measure-RAModelExample01" name="RA Model Example01"/>
-<artifact id="Measure/RAModelExample02" key="Measure-RAModelExample02" name="RA Model Example02"/>
-<artifact id="Measure/RAModelExample03" key="Measure-RAModelExample03" name="RA Model Example03"/>
+<artifact id="Measure/RAModelExample01" key="Measure-RAModelExample01" name="RA Model Example01 CMS-HCC version 24"/>
+<artifact id="Measure/RAModelExample02" key="Measure-RAModelExample02" name="RA Model Example02 CMS-HCC version 21"/>
+<artifact id="Measure/RAModelExample03" key="Measure-RAModelExample03" name="RA Model Example03 CMS-RxHCC version 5"/>
 <artifact id="StructureDefinition/ra-parameters-cc-remark-patch" key="StructureDefinition-ra-parameters-cc-remark-patch" name="RA Parameters ccRemark Patch Profile"/>
-<artifact id="ValueSet/remark-reason" key="ValueSet-remark-reason" name="RA Remark Reason"/>
-<artifact id="CodeSystem/remark-reason" key="CodeSystem-remark-reason" name="Remark Reason CodeSystem"/>
+<artifact id="ValueSet/remark-reason" key="ValueSet-remark-reason" name="Remark Reason"/>
+<artifact id="CodeSystem/remark-reason" key="CodeSystem-remark-reason" name="Remark Reason Codes"/>
 <artifact deprecated="true" id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
-<artifact id="StructureDefinition/ra-reportingVendor" key="StructureDefinition-ra-reportingVendor" name="Reporting Vendor"/>
-<artifact id="Organization/ra-org-author" key="Organization-ra-org-author" name="Risk Adjustment Author"/>
+<artifact id="StructureDefinition/ra-reportingVendor" key="StructureDefinition-ra-reportingVendor" name="Reporting Vendor Extension"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
 <artifact deprecated="true" id="StructureDefinition/ra-clinical-evaluation-evidence-task" key="StructureDefinition-ra-clinical-evaluation-evidence-task" name="Risk Adjustment Clinical Evaluation Evidence Task"/>
 <artifact id="StructureDefinition/ra-measurereport" key="StructureDefinition-ra-measurereport" name="Risk Adjustment Coding Gap MeasureReport"/>
 <artifact id="StructureDefinition/ra-measurereport-bundle" key="StructureDefinition-ra-measurereport-bundle" name="Risk Adjustment Coding Gap Report Bundle"/>
-<artifact id="CodeSystem/cc-type" key="StructureDefinition-ra-ccType" name="Risk Adjustment Condition Category Type"/>
-<artifact deprecated="true" id="CodeSystem/cc-type" key="CodeSystem-cc-type" name="Risk Adjustment Condition Category Type CodeSystem"/>
+<artifact id="CodeSystem/cc-type" key="CodeSystem-cc-type" name="Risk Adjustment Condition Category Type Codes"/>
 <artifact id="StructureDefinition/ra-datax-measurereport" key="StructureDefinition-ra-datax-measurereport" name="Risk Adjustment Data Exchange MeasureReport"/>
 <artifact id="CapabilityStatement/ra-data-submission-client" key="CapabilityStatement-ra-data-submission-client" name="Risk Adjustment Data Submission Client Capability Statement"/>
 <artifact id="CapabilityStatement/ra-data-submission-server" key="CapabilityStatement-ra-data-submission-server" name="Risk Adjustment Data Submission Server Capability Statement"/>
-<artifact id="CodeSystem/evidence-status" key="CodeSystem-evidence-status" name="Risk Adjustment Evidence Status"/>
+<artifact id="CodeSystem/evidence-status" key="CodeSystem-evidence-status" name="Risk Adjustment Evidence Status Codes"/>
+<artifact deprecated="true" id="ValueSet/evidence-status" key="ValueSet-evidence-status" name="Risk Adjustment Evidence Status ValueSet"/>
 <artifact deprecated="true" id="CodeSystem/hiearchical-status" key="CodeSystem-hiearchical-status" name="Risk Adjustment Hiearchical Status Code System"/>
 <artifact deprecated="true" id="ValueSet/hiearchical-status" key="ValueSet-hiearchical-status" name="Risk Adjustment Hiearchical Status Value Set"/>
-<artifact id="CodeSystem/hierarchical-status" key="CodeSystem-hierarchical-status" name="Risk Adjustment Hierarchical Status CodeSystem"/>
+<artifact id="CodeSystem/hierarchical-status" key="CodeSystem-hierarchical-status" name="Risk Adjustment Hierarchical Status Codes"/>
+<artifact deprecated="true" id="ValueSet/hierarchical-status" key="ValueSet-hierarchical-status" name="Risk Adjustment Hierarchical Status ValueSet"/>
 <artifact id="Bundle/ra-bundle01" key="Bundle-ra-bundle01" name="Risk Adjustment MeasureReport Bundle example, MeasureReport01: Patient01"/>
 <artifact id="StructureDefinition/ra-model-measure" key="StructureDefinition-ra-model-measure" name="Risk Adjustment Model Measure"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-remediation-client" key="CapabilityStatement-ra-remediation-client" name="Risk Adjustment Remediation Client Capability Statement"/>
@@ -149,13 +150,12 @@
 <artifact deprecated="true" id="CodeSystem/suspect-type" key="CodeSystem-suspect-type" name="Risk Adjustment Suspect Type CodeSystem"/>
 <artifact deprecated="true" id="ValueSet/suspect-type" key="ValueSet-suspect-type" name="Risk Adjustment Suspect Type ValueSet"/>
 <artifact id="ValueSet/sample-cmshcc" key="ValueSet-sample-cmshcc" name="Sample CMS Hierarchical Condition Category"/>
-<artifact id="Observation/ra-obs01pat03" key="Observation-ra-obs01pat03" name="Serum Creatinine for Pat03"/>
-<artifact id="Parameters/ra-submit-data" key="Parameters-ra-submit-data" name="Submit Data for RA Data Exchange MeasureReport Example (ra-submit-data)"/>
+<artifact id="Observation/ra-obs01pat03" key="Observation-ra-obs01pat03" name="Serum Creatinine for Patient 03"/>
+<artifact id="Parameters/ra-submit-data" key="Parameters-ra-submit-data" name="Submit Data example for sending a C-CDA document"/>
 <artifact deprecated="true" id="CodeSystem/task-label" key="CodeSystem-task-label" name="Task Label CodeSystem"/>
 <artifact deprecated="true" id="Task/ra-task01measurereport01group003" key="Task-ra-task01measurereport01group003" name="Task: Clinical Evaluation Task"/>
-<artifact id="Observation/ra-obs21pat01" key="Observation-ra-obs21pat01" name="Trypsin [Mass/volume] in Serum or Plasma for Pat01"/>
-<artifact id="Observation/ra-obs01pat02" key="Observation-ra-obs01pat02" name="Trypsin [Mass/volume] in Serum or Plasma for Pat02"/>
-<artifact id="Organization/ra-vendor01" key="Organization-ra-vendor01" name="Vendor"/>
+<artifact id="Observation/ra-obs21pat01" key="Observation-ra-obs21pat01" name="Trypsin [Mass/volume] in Serum or Plasma for Patient 01"/>
+<artifact id="Observation/ra-obs01pat02" key="Observation-ra-obs01pat02" name="Trypsin [Mass/volume] in Serum or Plasma for Patient 02"/>
 <artifact deprecated="true" id="MeasureReport/ra-measurereport01-with-annotation" key="MeasureReport-ra-measurereport01-with-annotation" name="ra-measurereport01-with-annotation: Risk Adjustment Measure Report with Annotation"/>
 <artifact deprecated="true" id="Bundle/ra-searchsetbundle01pat01" key="Bundle-ra-searchsetbundle01pat01" name="ra-searchsetbundle01pat01: SearchSet Bundle Pat1 MeasureReport01 group003"/>
 <page key="NA" name="(NA)"/>
