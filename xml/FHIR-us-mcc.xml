@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/mcc/2023Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-us-mcc" defaultVersion="1.0.0-ballot2" defaultWorkgroup="pc" gitUrl="https://github.com/HL7/mcc" url="http://hl7.org/fhir/us/mcc">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/mcc/2023Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-us-mcc" defaultVersion="1.0.0" defaultWorkgroup="pc" gitUrl="https://github.com/HL7/mcc" url="http://hl7.org/fhir/us/mcc">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-us-mcc"/>
-<version code="1.0.0-ballot2" url="http://hl7.org/fhir/us/mcc/2023Sep"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/mcc/STU1"/>
+<version code="1.0.0-ballot2" deprecated="true" url="http://hl7.org/fhir/us/mcc/2023Sep"/>
 <version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/mcc/2023Jan"/>
-<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/mcc/2023Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
@@ -16,6 +16,7 @@
 <artifact id="CareTeam/careteam-of-noelle" key="CareTeam-careteam-of-noelle" name="MCC Care Team Example"/>
 <artifact id="Observation/caregiver-feelings-condition-status" key="Observation-caregiver-feelings-condition-status" name="MCC Caregiver Feelings on Condition Observation example"/>
 <artifact id="Condition/ConditionCKD" key="Condition-ConditionCKD" name="MCC Chronic Condition - CKD Example"/>
+<artifact id="StructureDefinition/MCCChronCondHealthConcern" key="StructureDefinition-MCCChronCondHealthConcern" name="MCC Chronic Condition and Health Concern Profile"/>
 <artifact id="Observation/pulse-intensity-palpation" key="Observation-pulse-intensity-palpation" name="MCC Clinical Result Observation example"/>
 <artifact id="DiagnosticReport/BoneSurvey" key="DiagnosticReport-BoneSurvey" name="MCC Diagnostic Report and Note Example"/>
 <artifact id="DocumentReference/PACP" key="DocumentReference-PACP" name="MCC Document Reference to Advance Directives Example"/>
@@ -43,7 +44,7 @@
 <artifact id="CareTeam/MCCCareTeamexample" key="CareTeam-MCCCareTeamexample" name="Multiple Chronic Condition Care Plan Care Team"/>
 <artifact id="StructureDefinition/MCCCaregiverConsiderationsObservation" key="StructureDefinition-MCCCaregiverConsiderationsObservation" name="Multiple Chronic Condition Care Plan Caregiver Considerations Observation"/>
 <artifact deprecated="true" id="StructureDefinition/MCCCaregiverOnCareTeam" key="StructureDefinition-MCCCaregiverOnCareTeam" name="Multiple Chronic Condition Care Plan Caregiver on Care Team"/>
-<artifact id="StructureDefinition/MCCChronicDisease" key="StructureDefinition-MCCChronicDisease" name="Multiple Chronic Condition Care Plan Chronic Disease Conditions"/>
+<artifact deprecated="true" id="StructureDefinition/MCCChronicDisease" key="StructureDefinition-MCCChronicDisease" name="Multiple Chronic Condition Care Plan Chronic Disease Conditions"/>
 <artifact id="StructureDefinition/MCCImagingObservation" key="StructureDefinition-MCCImagingObservation" name="Multiple Chronic Condition Care Plan Clinical Imaging Observation"/>
 <artifact id="StructureDefinition/MCCClinicalImpression" key="StructureDefinition-MCCClinicalImpression" name="Multiple Chronic Condition Care Plan Clinical Impression"/>
 <artifact id="ClinicalImpression/clinical-impression-example" key="ClinicalImpression-clinical-impression-example" name="Multiple Chronic Condition Care Plan Clinical Impression Example"/>
@@ -71,6 +72,81 @@
 <artifact deprecated="true" id="CareTeam/caregiveronteam-of-noelle" key="CareTeam-caregiveronteam-of-noelle" name="Multiple Chronic Condition Care Plan example of MCC CaregiverOnCareTeam"/>
 <artifact id="ServiceRequest/foodpantry-referral" key="ServiceRequest-foodpantry-referral" name="Multiple Chronic Condition Service Request - Food Pantry"/>
 <artifact id="Observation/MCCweight" key="Observation-MCCweight" name="US-Core MCC Weight Example"/>
+<artifact id="Goal/access-affordable-healthy-food" key="Goal-access-affordable-healthy-food" name="access-affordable-healthy-food"/>
+<artifact id="Observation/albumin-serum-observation" key="Observation-albumin-serum-observation" name="albumin-serum-observation"/>
+<artifact id="Observation/anion-gap-serum-observation" key="Observation-anion-gap-serum-observation" name="anion-gap-serum-observation"/>
+<artifact id="Goal/appetite-to-normal" key="Goal-appetite-to-normal" name="appetite-to-normal"/>
+<artifact id="Observation/arterial-blood-gas-panel" key="Observation-arterial-blood-gas-panel" name="arterial-blood-gas-panel"/>
+<artifact id="Observation/better-diet" key="Observation-better-diet" name="better-diet"/>
+<artifact id="Observation/bicarbonate-serum-observation" key="Observation-bicarbonate-serum-observation" name="bicarbonate-serum-observation"/>
+<artifact id="Observation/blood-ketones-observation" key="Observation-blood-ketones-observation" name="blood-ketones-observation"/>
+<artifact id="Goal/bmi-normal-range" key="Goal-bmi-normal-range" name="bmi-normal-range"/>
+<artifact id="Observation/carbon-dioxide-serum-observation" key="Observation-carbon-dioxide-serum-observation" name="carbon-dioxide-serum-observation"/>
+<artifact id="PractitionerRole/careCoordinator-1" key="PractitionerRole-careCoordinator-1" name="careCoordinator-1"/>
+<artifact id="Practitioner/careCoordinator1" key="Practitioner-careCoordinator1" name="careCoordinator1"/>
+<artifact id="Condition/careTeam-concerns-1" key="Condition-careTeam-concerns-1" name="careTeam-concerns-1"/>
+<artifact id="Condition/careTeam-concerns-2" key="Condition-careTeam-concerns-2" name="careTeam-concerns-2"/>
+<artifact id="Condition/careTeam-concerns-3" key="Condition-careTeam-concerns-3" name="careTeam-concerns-3"/>
+<artifact id="Condition/careTeam-concerns-4" key="Condition-careTeam-concerns-4" name="careTeam-concerns-4"/>
+<artifact id="Condition/careTeam-concerns-5" key="Condition-careTeam-concerns-5" name="careTeam-concerns-5"/>
+<artifact id="CarePlan/careplan-for-bundle" key="CarePlan-careplan-for-bundle" name="careplan-for-bundle"/>
+<artifact id="CareTeam/careteam-for-bundle" key="CareTeam-careteam-for-bundle" name="careteam-for-bundle"/>
+<artifact id="Condition/chilblain-found" key="Condition-chilblain-found" name="chilblain-found"/>
+<artifact id="Condition/chilblain-resolved" key="Condition-chilblain-resolved" name="chilblain-resolved"/>
+<artifact id="Observation/chloride-serum-observation" key="Observation-chloride-serum-observation" name="chloride-serum-observation"/>
+<artifact id="Procedure/ckd-app-education" key="Procedure-ckd-app-education" name="ckd-app-education"/>
+<artifact id="Location/communitysite" key="Location-communitysite" name="communitysite"/>
+<artifact id="ServiceRequest/counseling-1x-wk" key="ServiceRequest-counseling-1x-wk" name="counseling-1x-wk"/>
+<artifact id="RelatedPerson/daughter1" key="RelatedPerson-daughter1" name="daughter1"/>
+<artifact id="Procedure/dialysis-for-bundle" key="Procedure-dialysis-for-bundle" name="dialysis-for-bundle"/>
+<artifact id="Procedure/dialysis-for-bundle2" key="Procedure-dialysis-for-bundle2" name="dialysis-for-bundle2"/>
+<artifact id="Procedure/dialysis-for-bundle3" key="Procedure-dialysis-for-bundle3" name="dialysis-for-bundle3"/>
+<artifact id="ServiceRequest/dialysis-request" key="ServiceRequest-dialysis-request" name="dialysis-request"/>
+<artifact id="Procedure/dietitian-consult" key="Procedure-dietitian-consult" name="dietitian-consult"/>
+<artifact id="ServiceRequest/dietitian-referral" key="ServiceRequest-dietitian-referral" name="dietitian-referral"/>
+<artifact id="PractitionerRole/dr-vince-jones" key="PractitionerRole-dr-vince-jones" name="dr-vince-jones"/>
+<artifact id="Goal/electrolyte-protein-normal-range" key="Goal-electrolyte-protein-normal-range" name="electrolyte-protein-normal-range"/>
+<artifact id="Condition/encounter-diag-1" key="Condition-encounter-diag-1" name="encounter-diag-1"/>
+<artifact id="Organization/funding1" key="Organization-funding1" name="funding1"/>
+<artifact id="Observation/glomerular-filtration-observation" key="Observation-glomerular-filtration-observation" name="glomerular-filtration-observation"/>
+<artifact id="Observation/hco3-arterial-observation" key="Observation-hco3-arterial-observation" name="hco3-arterial-observation"/>
+<artifact id="Bundle/long-covid-and-ckd-bundle" key="Bundle-long-covid-and-ckd-bundle" name="long-covid-and-ckd-bundle"/>
+<artifact id="ServiceRequest/long-covid-request" key="ServiceRequest-long-covid-request" name="long-covid-request"/>
+<artifact id="Goal/lower-pain-minimal-opioids" key="Goal-lower-pain-minimal-opioids" name="lower-pain-minimal-opioids"/>
+<artifact id="MedicationRequest/med-for-chilblains" key="MedicationRequest-med-for-chilblains" name="med-for-chilblains"/>
+<artifact id="Task/meditation-7x-wk" key="Task-meditation-7x-wk" name="meditation-7x-wk"/>
+<artifact id="Observation/obs-response-moca" key="Observation-obs-response-moca" name="obs-response-moca"/>
+<artifact id="Observation/obs-response-moca-original" key="Observation-obs-response-moca-original" name="obs-response-moca-original"/>
+<artifact id="Observation/observation-moca" key="Observation-observation-moca" name="observation-moca"/>
+<artifact id="Observation/observation-moca-original" key="Observation-observation-moca-original" name="observation-moca-original"/>
+<artifact id="Observation/pCO2-arterial-observation" key="Observation-pCO2-arterial-observation" name="pCO2-arterial-observation"/>
+<artifact id="Observation/pO2-arterial-observation" key="Observation-pO2-arterial-observation" name="pO2-arterial-observation"/>
+<artifact id="Condition/patient-health-concern-1" key="Condition-patient-health-concern-1" name="patient-health-concern-1"/>
+<artifact id="Condition/patient-health-concern-2" key="Condition-patient-health-concern-2" name="patient-health-concern-2"/>
+<artifact id="Condition/patient-health-concern-3" key="Condition-patient-health-concern-3" name="patient-health-concern-3"/>
+<artifact id="Condition/patient-health-concern-4" key="Condition-patient-health-concern-4" name="patient-health-concern-4"/>
+<artifact id="Observation/ph-lab-observation" key="Observation-ph-lab-observation" name="ph-lab-observation"/>
+<artifact id="Observation/potassium-serum-observation" key="Observation-potassium-serum-observation" name="potassium-serum-observation"/>
+<artifact id="Practitioner/practitionerMCC-3v" key="Practitioner-practitionerMCC-3v" name="practitionerMCC-3v"/>
+<artifact id="Practitioner/practitionerMCC-V" key="Practitioner-practitionerMCC-V" name="practitionerMCC-V"/>
+<artifact id="Condition/problem-list-1" key="Condition-problem-list-1" name="problem-list-1"/>
+<artifact id="Condition/problem-list-2" key="Condition-problem-list-2" name="problem-list-2"/>
+<artifact id="Observation/protein-serum-observation" key="Observation-protein-serum-observation" name="protein-serum-observation"/>
+<artifact id="ServiceRequest/pt-3x-wk" key="ServiceRequest-pt-3x-wk" name="pt-3x-wk"/>
+<artifact id="QuestionnaireResponse/questionnnaire-res-moca" key="QuestionnaireResponse-questionnnaire-res-moca" name="questionnnaire-res-moca"/>
+<artifact id="QuestionnaireResponse/questionnnaire-res-moca-original" key="QuestionnaireResponse-questionnnaire-res-moca-original" name="questionnnaire-res-moca-original"/>
+<artifact id="Observation/reduced-pain" key="Observation-reduced-pain" name="reduced-pain"/>
+<artifact id="Observation/serum-electrolytes-panel" key="Observation-serum-electrolytes-panel" name="serum-electrolytes-panel"/>
+<artifact id="Observation/serum-lactate-observation" key="Observation-serum-lactate-observation" name="serum-lactate-observation"/>
+<artifact id="Observation/sodium-serum-observation" key="Observation-sodium-serum-observation" name="sodium-serum-observation"/>
+<artifact id="Observation/symptom2" key="Observation-symptom2" name="symptom2"/>
+<artifact id="Observation/symptom3" key="Observation-symptom3" name="symptom3"/>
+<artifact id="Observation/symptom4" key="Observation-symptom4" name="symptom4"/>
+<artifact id="Observation/symptom5" key="Observation-symptom5" name="symptom5"/>
+<artifact id="Observation/symptom6" key="Observation-symptom6" name="symptom6"/>
+<artifact id="Observation/symptom7" key="Observation-symptom7" name="symptom7"/>
+<artifact id="Observation/symptom8" key="Observation-symptom8" name="symptom8"/>
+<artifact id="Observation/symptom9" key="Observation-symptom9" name="symptom9"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="careplanAggregation" name="Alternatives for Transmitting/Collecting Aggregated Care Plans"/>
@@ -80,14 +156,15 @@
 <page key="downloads" name="Downloads"/>
 <page key="index" name="Home Page"/>
 <page key="mcc_care_plan_sdoh_guidance" name="MCC Care Plan SDOH Guidance"/>
-<page key="mcc_chronic_condition_value_sets" name="MCC Chronic Condition Value Sets"/>
+<page key="mcc_chronic_condition_value_sets" name="MCC Chronic Condition and Health Concern Value Sets"/>
 <page key="mcc_clinical_test_value_sets" name="MCC Clinical Test Value Sets"/>
 <page deprecated="true" key="mcc_diagnostic_report_value_sets" name="MCC Diagnostic Report Value Sets"/>
+<page key="mcc_diagnostic_report_and_note_imaging_value_sets" name="MCC Diagnostic Report and Note Imaging Value Sets"/>
 <page key="mcc_goal_value_sets" name="MCC Goal Value Sets"/>
 <page key="mcc_laboratory_result_value_sets" name="MCC Laboratory Result Value Sets"/>
 <page key="mcc_medication_request_value_sets" name="MCC Medication Request Value Sets"/>
 <page key="mcc_mustsupport" name="MCC Must-support"/>
-<page key="mcc_observation_imaging_value_sets" name="MCC Observation Imaging Value Sets"/>
+<page deprecated="true" key="mcc_observation_imaging_value_sets" name="MCC Observation Imaging Value Sets"/>
 <page key="mcc_observation_sdoh_assessment_value_sets" name="MCC Observation SDOH Assessment Value Sets"/>
 <page key="mcc_procedure_and_service_request_value_sets" name="MCC Procedure and Service Request Value Sets"/>
 <page key="mcc_questionnaire_response_value_sets" name="MCC Questionnaire Response Value Sets"/>

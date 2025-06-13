@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/pacio-pfe/2022Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-pacio-pfe" defaultVersion="1.0.0" defaultWorkgroup="pc" gitUrl="https://github.com/HL7/fhir-pacio-pfe" url="http://hl7.org/fhir/us/pacio-pfe">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/pacio-pfe/2024Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-pacio-pfe" defaultVersion="2.0.0" defaultWorkgroup="pc" gitUrl="https://github.com/HL7/fhir-pacio-pfe" url="http://hl7.org/fhir/us/pacio-pfe">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-pacio-pfe"/>
-<version code="1.0.0" url="http://hl7.org/fhir/us/pacio-pfe/STU1"/>
-<version code="1.0.0-ballot" url="http://hl7.org/fhir/us/pacio-pfe/2022Sep"/>
+<version code="2.0.0" url="http://hl7.org/fhir/us/pacio-pfe/STU2"/>
+<version code="2.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/pacio-pfe/2024Sep"/>
+<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/pacio-pfe/STU1"/>
+<version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/pacio-pfe/2022Sep"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/assistance-required" key="StructureDefinition-assistance-required" name="AssistanceRequired"/>
+<artifact deprecated="true" id="SearchParameter/Condition-bodySite" key="SearchParameter-Condition-bodySite" name="Condition-bodySite"/>
+<artifact deprecated="true" id="SearchParameter/Condition-code" key="SearchParameter-Condition-code" name="Condition-code"/>
+<artifact deprecated="true" id="SearchParameter/Condition-identifier" key="SearchParameter-Condition-identifier" name="Condition-identifier"/>
+<artifact deprecated="true" id="SearchParameter/Condition-recordedDate" key="SearchParameter-Condition-recordedDate" name="Condition-recordedDate"/>
 <artifact id="StructureDefinition/device-patient-used" key="StructureDefinition-device-patient-used" name="DevicePatientUsed"/>
+<artifact deprecated="true" id="SearchParameter/Goal-achievementStatus" key="SearchParameter-Goal-achievementStatus" name="Goal-achievementStatus"/>
+<artifact id="SearchParameter/Goal-addresses" key="SearchParameter-Goal-addresses" name="Goal-addresses"/>
+<artifact deprecated="true" id="SearchParameter/Goal-identifier" key="SearchParameter-Goal-identifier" name="Goal-identifier"/>
+<artifact deprecated="true" id="SearchParameter/NutritionOrder-encounter" key="SearchParameter-NutritionOrder-encounter" name="NutritionOrder-encounter"/>
+<artifact deprecated="true" id="SearchParameter/NutritionOrder-identifier" key="SearchParameter-NutritionOrder-identifier" name="NutritionOrder-identifier"/>
+<artifact id="SearchParameter/NutritionOrder-orderer" key="SearchParameter-NutritionOrder-orderer" name="NutritionOrder-orderer"/>
+<artifact deprecated="true" id="SearchParameter/NutritionOrder-subject" key="SearchParameter-NutritionOrder-subject" name="NutritionOrder-subject"/>
 <artifact id="StructureDefinition/event-location" key="StructureDefinition-event-location" name="ObservationEventLocation"/>
+<artifact id="AllergyIntolerance/PFEIG-AllergyACE" key="AllergyIntolerance-PFEIG-AllergyACE" name="PFEIG-AllergyACE"/>
 <artifact id="Device/PFEIG-CMS-Device-BedsideRails" key="Device-PFEIG-CMS-Device-BedsideRails" name="PFEIG-CMS-Device-BedsideRails"/>
 <artifact id="Device/PFEIG-CMS-Device-Eyeglasses" key="Device-PFEIG-CMS-Device-Eyeglasses" name="PFEIG-CMS-Device-Eyeglasses"/>
 <artifact id="Device/PFEIG-CMS-Device-HandleBars" key="Device-PFEIG-CMS-Device-HandleBars" name="PFEIG-CMS-Device-HandleBars"/>
@@ -57,6 +71,17 @@
 <artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-27" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-27" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-27"/>
 <artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-28" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-28" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-28"/>
 <artifact id="Observation/PFEIG-CSC-SNF-PHQ9-1-Ob-Question-29" key="Observation-PFEIG-CSC-SNF-PHQ9-1-Ob-Question-29" name="PFEIG-CSC-SNF-PHQ9-1-Ob-Question-29"/>
+<artifact id="Condition/PFEIG-Condition-AnemiaDiagnosis" key="Condition-PFEIG-Condition-AnemiaDiagnosis" name="PFEIG-Condition-AnemiaDiagnosis"/>
+<artifact id="Condition/PFEIG-Condition-Decondition" key="Condition-PFEIG-Condition-Decondition" name="PFEIG-Condition-Decondition"/>
+<artifact id="Condition/PFEIG-Condition-DiabetesDiagnosis" key="Condition-PFEIG-Condition-DiabetesDiagnosis" name="PFEIG-Condition-DiabetesDiagnosis"/>
+<artifact id="Condition/PFEIG-Condition-DressingConcern" key="Condition-PFEIG-Condition-DressingConcern" name="PFEIG-Condition-DressingConcern"/>
+<artifact id="Condition/PFEIG-Condition-HemiparesisDiagnosis" key="Condition-PFEIG-Condition-HemiparesisDiagnosis" name="PFEIG-Condition-HemiparesisDiagnosis"/>
+<artifact id="Condition/PFEIG-Condition-Hyperlipidemia" key="Condition-PFEIG-Condition-Hyperlipidemia" name="PFEIG-Condition-Hyperlipidemia"/>
+<artifact id="Condition/PFEIG-Condition-KidneyDisease" key="Condition-PFEIG-Condition-KidneyDisease" name="PFEIG-Condition-KidneyDisease"/>
+<artifact id="Condition/PFEIG-Condition-RightWeak" key="Condition-PFEIG-Condition-RightWeak" name="PFEIG-Condition-RightWeak"/>
+<artifact id="Condition/PFEIG-Condition-StrokeDiagnosis" key="Condition-PFEIG-Condition-StrokeDiagnosis" name="PFEIG-Condition-StrokeDiagnosis"/>
+<artifact id="Condition/PFEIG-Condition-UndressingConcern" key="Condition-PFEIG-Condition-UndressingConcern" name="PFEIG-Condition-UndressingConcern"/>
+<artifact id="DiagnosticReport/PFEIG-DiagnosticReport" key="DiagnosticReport-PFEIG-DiagnosticReport" name="PFEIG-DiagnosticReport"/>
 <artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1" name="PFEIG-FSC-Hospital-Admission-Mobility-1"/>
 <artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-1"/>
 <artifact id="Observation/PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11" key="Observation-PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11" name="PFEIG-FSC-Hospital-Admission-Mobility-1-Ob-Question-11"/>
@@ -108,15 +133,23 @@
 <artifact id="Observation/PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27" key="Observation-PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27" name="PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-27"/>
 <artifact id="Observation/PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3" key="Observation-PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3" name="PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-3"/>
 <artifact id="Observation/PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7" key="Observation-PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7" name="PFEIG-FSC-SNF-Admission-Mobility-SelfCare-1-Ob-Question-7"/>
+<artifact id="Goal/PFEIG-Goal-DressingGoal" key="Goal-PFEIG-Goal-DressingGoal" name="PFEIG-Goal-DressingGoal"/>
+<artifact id="Goal/PFEIG-Goal-StandingGoal" key="Goal-PFEIG-Goal-StandingGoal" name="PFEIG-Goal-StandingGoal"/>
+<artifact id="Goal/PFEIG-Goal-WalkingGoal" key="Goal-PFEIG-Goal-WalkingGoal" name="PFEIG-Goal-WalkingGoal"/>
 <artifact id="DiagnosticReport/PFEIG-Narrative-History-Cognitive-Status-1" key="Observation-PFEIG-Narrative-History-Cognitive-Status-1" name="PFEIG-Narrative-History-Cognitive-Status-1"/>
-<artifact id="DiagnosticReport/PFEIG-Narrative-History-Functional-Status-1" key="Observation-PFEIG-Narrative-History-Functional-Status-1" name="PFEIG-Narrative-History-Functional-Status-1"/>
+<artifact deprecated="true" id="DiagnosticReport/PFEIG-Narrative-History-Functional-Status-1" key="Observation-PFEIG-Narrative-History-Functional-Status-1" name="PFEIG-Narrative-History-Functional-Status-1"/>
 <artifact id="Observation/PFEIG-Nested-Collection-Mobility" key="Observation-PFEIG-Nested-Collection-Mobility" name="PFEIG-Nested-Collection-Mobility"/>
+<artifact id="NutritionOrder/PFEIG-NutritionOrder-SNFDischargeDiet" key="NutritionOrder-PFEIG-NutritionOrder-SNFDischargeDiet" name="PFEIG-NutritionOrder-SNFDischargeDiet"/>
 <artifact id="Organization/PFEIG-Org-01" key="Organization-PFEIG-Org-01" name="PFEIG-Org-01"/>
 <artifact id="Organization/PFEIG-Org-02" key="Organization-PFEIG-Org-02" name="PFEIG-Org-02"/>
 <artifact id="Organization/PFEIG-Org-03" key="Organization-PFEIG-Org-03" name="PFEIG-Org-03"/>
 <artifact id="Location/PFEIG-Org-Loc-01" key="Location-PFEIG-Org-Loc-01" name="PFEIG-Org-Loc-01"/>
 <artifact id="Location/PFEIG-Org-Loc-02" key="Location-PFEIG-Org-Loc-02" name="PFEIG-Org-Loc-02"/>
 <artifact id="Location/PFEIG-Org-Loc-03" key="Location-PFEIG-Org-Loc-03" name="PFEIG-Org-Loc-03"/>
+<artifact id="Location/PFEIG-Org-Loc-Primary-Care-Michigan" key="Location-PFEIG-Org-Loc-Primary-Care-Michigan" name="PFEIG-Org-Loc-Primary-Care-Michigan"/>
+<artifact id="Organization/PFEIG-Org-Primary-Care-Michigan" key="Organization-PFEIG-Org-Primary-Care-Michigan" name="PFEIG-Org-Primary-Care-Michigan"/>
+<artifact id="Practitioner/PFEIG-Practioner-GeraldPark" key="Practitioner-PFEIG-Practioner-GeraldPark" name="PFEIG-Practioner-GeraldPark"/>
+<artifact id="Practitioner/PFEIG-Practitioner-AnitaChu" key="Practitioner-PFEIG-Practitioner-AnitaChu" name="PFEIG-Practitioner-AnitaChu"/>
 <artifact id="Practitioner/PFEIG-Practitioner-DanielGranger" key="Practitioner-PFEIG-Practitioner-DanielGranger" name="PFEIG-Practitioner-DanielGranger"/>
 <artifact id="Practitioner/PFEIG-Practitioner-HoneyJones" key="Practitioner-PFEIG-Practitioner-HoneyJones" name="PFEIG-Practitioner-HoneyJones"/>
 <artifact id="Practitioner/PFEIG-Practitioner-JenCadbury" key="Practitioner-PFEIG-Practitioner-JenCadbury" name="PFEIG-Practitioner-JenCadbury"/>
@@ -137,6 +170,7 @@
 <artifact id="QuestionnaireResponse/PFEIG-QResponse-SNF-CAM-Admission-1" key="QuestionnaireResponse-PFEIG-QResponse-SNF-CAM-Admission-1" name="PFEIG-QResponse-SNF-CAM-Admission-1"/>
 <artifact id="QuestionnaireResponse/PFEIG-QResponse-SNF-PHQ9-1" key="QuestionnaireResponse-PFEIG-QResponse-SNF-PHQ9-1" name="PFEIG-QResponse-SNF-PHQ9-1"/>
 <artifact id="PractitionerRole/PFEIG-Role-Audio-JillBradley" key="PractitionerRole-PFEIG-Role-Audio-JillBradley" name="PFEIG-Role-Audio-JillBradley"/>
+<artifact id="PractitionerRole/PFEIG-Role-IMMD-AnitaChu" key="PractitionerRole-PFEIG-Role-IMMD-AnitaChu" name="PFEIG-Role-IMMD-AnitaChu"/>
 <artifact id="PractitionerRole/PFEIG-Role-OT-DanielGranger" key="PractitionerRole-PFEIG-Role-OT-DanielGranger" name="PFEIG-Role-OT-DanielGranger"/>
 <artifact id="PractitionerRole/PFEIG-Role-OT-JenCadbury" key="PractitionerRole-PFEIG-Role-OT-JenCadbury" name="PFEIG-Role-OT-JenCadbury"/>
 <artifact deprecated="true" id="PractitionerRole/PFEIG-Role-PT-LunaBaskins" key="PractitionerRole-PFEIG-Role-PT-LunaBaskins" name="PFEIG-Role-PT-LunaBaskins"/>
@@ -146,7 +180,15 @@
 <artifact id="PractitionerRole/PFEIG-Role-SLP-HoneyJones" key="PractitionerRole-PFEIG-Role-SLP-HoneyJones" name="PFEIG-Role-SLP-HoneyJones"/>
 <artifact id="PractitionerRole/PFEIG-Role-SLP-JennyGlass" key="PractitionerRole-PFEIG-Role-SLP-JennyGlass" name="PFEIG-Role-SLP-JennyGlass"/>
 <artifact id="PractitionerRole/PFEIG-Role-SLP-LunaBaskins" key="PractitionerRole-PFEIG-Role-SLP-LunaBaskins" name="PFEIG-Role-SLP-LunaBaskins"/>
+<artifact id="PractitionerRole/PFEIG-Role-SNFDoc-GeraldPark" key="PractitionerRole-PFEIG-Role-SNFDoc-GeraldPark" name="PFEIG-Role-SNFDoc-GeraldPark"/>
 <artifact id="Observation/PFEIG-SPLASCH-Hearingtonethresh-01-Obs-L250" key="Observation-PFEIG-SPLASCH-Hearingtonethresh-01-Obs-L250" name="PFEIG-SPLASCH-Hearingtonethresh-01-Obs-L250"/>
+<artifact id="ServiceRequest/PFEIG-ServiceRequest-PCPFollowUp" key="ServiceRequest-PFEIG-ServiceRequest-PCPFollowUp" name="PFEIG-ServiceRequest-PCPFollowUp"/>
+<artifact id="ServiceRequest/PFEIG-ServiceRequest-SNFDischargeCallOTRefer" key="ServiceRequest-PFEIG-ServiceRequest-SNFDischargeCallOTRefer" name="PFEIG-ServiceRequest-SNFDischargeCallOTRefer"/>
+<artifact id="ServiceRequest/PFEIG-ServiceRequest-SNFDischargeCallOrder" key="ServiceRequest-PFEIG-ServiceRequest-SNFDischargeCallOrder" name="PFEIG-ServiceRequest-SNFDischargeCallOrder"/>
+<artifact id="ServiceRequest/PFEIG-ServiceRequest-SNFDischargeCallSLPRefer" key="ServiceRequest-PFEIG-ServiceRequest-SNFDischargeCallSLPRefer" name="PFEIG-ServiceRequest-SNFDischargeCallSLPRefer"/>
+<artifact id="ServiceRequest/PFEIG-ServiceRequest-SNFDischargeLabOrderBMP" key="ServiceRequest-PFEIG-ServiceRequest-SNFDischargeLabOrderBMP" name="PFEIG-ServiceRequest-SNFDischargeLabOrderBMP"/>
+<artifact id="ServiceRequest/PFEIG-ServiceRequest-SNFDischargeLabOrderCBC" key="ServiceRequest-PFEIG-ServiceRequest-SNFDischargeLabOrderCBC" name="PFEIG-ServiceRequest-SNFDischargeLabOrderCBC"/>
+<artifact id="ServiceRequest/PFEIG-ServiceRequest-SNFDischargePTRefer" key="ServiceRequest-PFEIG-ServiceRequest-SNFDischargePTRefer" name="PFEIG-ServiceRequest-SNFDischargePTRefer"/>
 <artifact id="Patient/PFEIG-patientBSJ1" key="Patient-PFEIG-patientBSJ1" name="PFEIG-patientBSJ1"/>
 <artifact id="Organization/PFEIG-provider-org-01" key="Organization-PFEIG-provider-org-01" name="PFEIG-provider-org-01"/>
 <artifact id="Organization/PFEIG-provider-org-16" key="Organization-PFEIG-provider-org-16" name="PFEIG-provider-org-16"/>
@@ -154,20 +196,24 @@
 <artifact id="Location/PFEIG-provider-org-loc-16" key="Location-PFEIG-provider-org-loc-16" name="PFEIG-provider-org-loc-16"/>
 <artifact id="PractitionerRole/PFEIG-provider-role-neurologist" key="PractitionerRole-PFEIG-provider-role-neurologist" name="PFEIG-provider-role-neurologist"/>
 <artifact id="PractitionerRole/PFEIG-provider-role-pcp" key="PractitionerRole-PFEIG-provider-role-pcp" name="PFEIG-provider-role-pcp"/>
-<artifact id="StructureDefinition/pfe-observation-abstract" key="StructureDefinition-pfe-observation-abstract" name="Personal Functioning and Engagement Abstract Observation"/>
+<artifact deprecated="true" id="StructureDefinition/pfe-observation-abstract" key="StructureDefinition-pfe-observation-abstract" name="Personal Functioning and Engagement Abstract Observation"/>
 <artifact id="ValueSet/pfe-body-structures-vs" key="ValueSet-pfe-body-structures-vs" name="Personal Functioning and Engagement Body Structures Value Set"/>
 <artifact id="CapabilityStatement/pacio-pfe-cap" key="CapabilityStatement-pacio-pfe-cap" name="Personal Functioning and Engagement Capability Statement"/>
-<artifact id="CodeSystem/pfe-category-cs" key="CodeSystem-pfe-category-cs" name="Personal Functioning and Engagement Category"/>
+<artifact deprecated="true" id="CodeSystem/pfe-category-cs" key="CodeSystem-pfe-category-cs" name="Personal Functioning and Engagement Category"/>
 <artifact id="ValueSet/pfe-category-vs" key="ValueSet-pfe-category-vs" name="Personal Functioning and Engagement Category Value Set"/>
 <artifact id="StructureDefinition/pfe-observation-clinicaltest" key="StructureDefinition-pfe-observation-clinicaltest" name="Personal Functioning and Engagement Clinical Test Observation"/>
 <artifact id="StructureDefinition/pfe-collection" key="StructureDefinition-pfe-collection" name="Personal Functioning and Engagement Collection"/>
 <artifact id="ValueSet/pfe-communication-vs" key="ValueSet-pfe-communication-vs" name="Personal Functioning and Engagement Communication Value Set"/>
+<artifact id="StructureDefinition/pfe-condition-encounter-diagnosis" key="StructureDefinition-pfe-condition-encounter-diagnosis" name="Personal Functioning and Engagement Condition Encounter Diagnosis Profile"/>
+<artifact id="StructureDefinition/pfe-condition-problems-health-concerns" key="StructureDefinition-pfe-condition-problems-health-concerns" name="Personal Functioning and Engagement Condition Problems and Health Concerns Profile"/>
+<artifact id="StructureDefinition/pfe-diagnostic-report-note-exchange" key="StructureDefinition-pfe-diagnostic-report-note-exchange" name="Personal Functioning and Engagement Diagnostic Report Note Exchange Profile"/>
 <artifact id="ValueSet/pfe-domestic-life-vs" key="ValueSet-pfe-domestic-life-vs" name="Personal Functioning and Engagement Domestic Life Value Set"/>
-<artifact id="ValueSet/pfe-example-obs-vs" key="ValueSet-pfe-example-obs-vs" name="Personal Functioning and Engagement Example Observations Value Set"/>
-<artifact id="CodeSystem/pfe-functioning-cs" key="CodeSystem-pfe-functioning-cs" name="Personal Functioning and Engagement Functioning Category Code System"/>
+<artifact deprecated="true" id="ValueSet/pfe-example-obs-vs" key="ValueSet-pfe-example-obs-vs" name="Personal Functioning and Engagement Example Observations Value Set"/>
+<artifact deprecated="true" id="CodeSystem/pfe-functioning-cs" key="CodeSystem-pfe-functioning-cs" name="Personal Functioning and Engagement Functioning Category Code System"/>
 <artifact id="ValueSet/pfe-functions-of-digestive-vs" key="ValueSet-pfe-functions-of-digestive-vs" name="Personal Functioning and Engagement Functions Of Digestive, Metabolic, and Endocrine Systems Value Set"/>
 <artifact id="ValueSet/pfe-skin-functions-vs" key="ValueSet-pfe-skin-functions-vs" name="Personal Functioning and Engagement Functions of Skin and Related Structures Value Set"/>
 <artifact id="ValueSet/pfe-genitourinary-vs" key="ValueSet-pfe-genitourinary-vs" name="Personal Functioning and Engagement Genitourinary and Reproductive Functions Value Set"/>
+<artifact id="StructureDefinition/pfe-goal" key="StructureDefinition-pfe-goal" name="Personal Functioning and Engagement Goal Profile"/>
 <artifact id="ValueSet/pfe-goals-mobility-vs" key="ValueSet-pfe-goals-mobility-vs" name="Personal Functioning and Engagement Goals Mobility Value Set"/>
 <artifact id="ValueSet/pfe-goals-panel-vs" key="ValueSet-pfe-goals-panel-vs" name="Personal Functioning and Engagement Goals Panel Value Set"/>
 <artifact id="ValueSet/pfe-goals-self-care-vs" key="ValueSet-pfe-goals-self-care-vs" name="Personal Functioning and Engagement Goals Self-Care Value Set"/>
@@ -176,17 +222,25 @@
 <artifact id="ValueSet/pfe-mobility-vs" key="ValueSet-pfe-mobility-vs" name="Personal Functioning and Engagement Mobility Value Set"/>
 <artifact id="StructureDefinition/pfe-narrative-history-of-status" key="StructureDefinition-pfe-narrative-history-of-status" name="Personal Functioning and Engagement Narrative History of Status"/>
 <artifact id="ValueSet/pfe-neuromusculoskeletal-vs" key="ValueSet-pfe-neuromusculoskeletal-vs" name="Personal Functioning and Engagement Neuromusculoskeletal and Movement Related Functions Value Set"/>
+<artifact id="StructureDefinition/pfe-nutrition-order" key="StructureDefinition-pfe-nutrition-order" name="Personal Functioning and Engagement Nutrition Order Profile"/>
 <artifact deprecated="true" id="StructureDefinition/pfe-observation" key="StructureDefinition-pfe-observation" name="Personal Functioning and Engagement Observation"/>
 <artifact id="ValueSet/pfe-panel-vs" key="ValueSet-pfe-panel-vs" name="Personal Functioning and Engagement Panel Value Set"/>
 <artifact id="ValueSet/pfe-products-and-technology-vs" key="ValueSet-pfe-products-and-technology-vs" name="Personal Functioning and Engagement Products and Technology Value Set"/>
 <artifact id="ValueSet/pfe-self-care-vs" key="ValueSet-pfe-self-care-vs" name="Personal Functioning and Engagement Self-Care Value Set"/>
 <artifact id="ValueSet/pfe-sensory-functions-pain-clinical-test-vs" key="ValueSet-pfe-sensory-functions-pain-clinical-test-vs" name="Personal Functioning and Engagement Sensory Functions and Pain Clinical Test Value Set"/>
 <artifact id="ValueSet/pfe-sensory-functions-pain-vs" key="ValueSet-pfe-sensory-functions-pain-vs" name="Personal Functioning and Engagement Sensory Functions and Pain Value Set"/>
+<artifact id="StructureDefinition/pfe-service-request" key="StructureDefinition-pfe-service-request" name="Personal Functioning and Engagement Service Request Profile"/>
 <artifact id="StructureDefinition/pfe-observation-single" key="StructureDefinition-pfe-observation-single" name="Personal Functioning and Engagement Single Observation"/>
 <artifact id="ValueSet/pfe-structures-voice-and-speech-vs" key="ValueSet-pfe-structures-voice-and-speech-vs" name="Personal Functioning and Engagement Structures Involved in Voice and Speech Value Set"/>
+<artifact id="ValueSet/pfe-survey-category-vs" key="ValueSet-pfe-survey-category-vs" name="Personal Functioning and Engagement Survey Value Set"/>
+<artifact id="ValueSet/pfe-us-core-category-vs" key="ValueSet-pfe-us-core-category-vs" name="Personal Functioning and Engagement US Core Value Set"/>
 <artifact id="StructureDefinition/pfe-use-of-device" key="StructureDefinition-pfe-use-of-device" name="Personal Functioning and Engagement Use of Device"/>
 <artifact deprecated="true" id="ValueSet/pfe-loinc-snomed-vs" key="ValueSet-pfe-loinc-snomed-vs" name="Personal Functioning and Engagement ValueSet LOINC SNOMED"/>
 <artifact id="ValueSet/pfe-voice-and-speech-vs" key="ValueSet-pfe-voice-and-speech-vs" name="Personal Functioning and Engagement Voice and Speech Functions Value Set"/>
+<artifact deprecated="true" id="SearchParameter/ServiceRequest-code" key="SearchParameter-ServiceRequest-code" name="ServiceRequest-code"/>
+<artifact deprecated="true" id="SearchParameter/ServiceRequest-identifier" key="SearchParameter-ServiceRequest-identifier" name="ServiceRequest-identifier"/>
+<artifact id="SearchParameter/ServiceRequest-reason-reference" key="SearchParameter-ServiceRequest-reason-reference" name="ServiceRequest-reason-reference"/>
+<artifact deprecated="true" id="SearchParameter/ServiceRequest-reasonReference" key="SearchParameter-ServiceRequest-reasonReference" name="ServiceRequest-reasonReference"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page deprecated="true" key="profiles" name="(profiles)"/>

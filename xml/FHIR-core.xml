@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2014 rel. 2 sp1 (x64) (http://www.altova.com) by Lloyd McKenzie (private) -->
 <specification gitUrl="https://github.com/HL7/fhir" url="http://hl7.org/fhir" ciUrl="http://build.fhir.org" defaultWorkgroup="fhir-i" defaultVersion="R5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="R6"/>
-  <version code="R5"/>
-  <version code="R4B"/>
-  <version code="R4"/>
-  <version code="STU3"/>
-  <version code="DSTU2"/>
-  <version code="DSTU1"/>
-  <version code="Initial_Draft"/>
+  <version code="R6" url="http://hl7.org/fhir/R6"/>
+  <version code="R5" url="http://hl7.org/fhir/R5"/>
+  <version code="R4B" url="http://hl7.org/fhir/R4B"/>
+  <version code="R4" url="http://hl7.org/fhir/R4"/>
+  <version code="STU3" url="http://hl7.org/fhir/STU3"/>
+  <version code="DSTU2" url="http://hl7.org/fhir/DSTU2"/>
+  <version code="DSTU1" deprecated="true"/>
+  <version code="Initial_Draft" deprecated="true"/>
   <artifactPageExtension value="-definitions"/>
   <artifactPageExtension value="-examples"/>
   <artifactPageExtension value="-mappings"/>
@@ -61,6 +61,7 @@
   <artifact name="DecisionSupportServiceModule" key="DecisionSupportServiceModule" id="StructureDefinition/DecisionSupportServiceModule" workgroup="cds" deprecated="true"/>
   <artifact name="DetectedIssue" key="Alert" id="StructureDefinition/Alert" workgroup="cds"/>
   <artifact name="Device" key="Device" id="StructureDefinition/Device" workgroup="oo"/>
+  <artifact name="DeviceAlert" key="DeviceAlert" id="StructureDefinition/DeviceAlert" workgroup="dev"/>
   <artifact name="DeviceComponent" key="DeviceComponent" id="StructureDefinition/DeviceComponent" workgroup="dev" deprecated="true"/>
   <artifact name="DeviceAssociation" key="DeviceAssociation" id="StructureDefinition/DeviceAssociation" workgroup="oo"/>
   <artifact name="DeviceDefinition" key="DeviceDefinition" id="StructureDefinition/DeviceDefinition" workgroup="oo"/>
@@ -133,6 +134,7 @@
   <artifact name="MessageDefinition" key="MessageDefinition" id="StructureDefinition/MessageDefinition" workgroup="fhir-i"/>
   <artifact name="MessageHeader" key="MessageHeader" id="StructureDefinition/MessageHeader" workgroup="fhir-i"/>
   <artifact name="MolecularSequence (was Sequence)" key="Sequence" id="StructureDefinition/Sequence" workgroup="cg"/>
+  <artifact name="MolecularDefinition" key="MolecularDefinition" id="StructureDefinition/MolecularDefinition" workgroup="cg"/>
   <artifact name="NamingSystem" key="NamingSystem" id="StructureDefinition/NamingSystem" workgroup="fhir-i"/>
   <artifact name="NutritionIntake" key="NutritionIntake" id="StructureDefinition/NutritionIntake" workgroup="oo"/>
   <artifact name="NutritionOrder (was NutritionRequest)" key="NutritionRequest" id="StructureDefinition/NutritionRequest" workgroup="oo"/>
@@ -212,7 +214,7 @@
   <artifact name="Request Pattern" key="_Request" id="StructureDefinition/Request" workgroup="fhir-i"/>
   <page name="(NA)" key="NA"/>
   <page name="(many)" key="many"/>
-  <page name="(methodology)" key="methodology" workgroup="mnm"/>
+  <page name="(methodology)" key="methodology" workgroup="fhir-i"/>
   <page name="(profiles)" key="profiles"/>
   <page name="Schemas &amp; Schematrons" key="schemas-schematrons" workgroup="fhir-i"/>
   <page name="Administration Module" key="administration-module" url="administration-module" workgroup="pa"/>
@@ -260,7 +262,7 @@
   <page name="cqif-topics-definitional-resources" key="cqif-topics-definitional-resources" url="cqif-topics-definitional-resources" workgroup="cds"/>
   <page name="cqif-topics-using-expressions" key="cqif-topics-using-expressions" url="cqif-topics-using-expressions" workgroup="cds"/>
   <page name="Credits" key="credits" url="credits" workgroup="fhir-i"/>
-  <page name="Datatypes" key="datatypes" url="datatypes" workgroup="mnm">
+  <page name="Datatypes" key="datatypes" url="datatypes" workgroup="fhir-i">
     <otherpage url="datatypes-definitions"/>
     <otherpage url="datatypes-examples"/>
     <otherpage url="datatypes-extras"/>

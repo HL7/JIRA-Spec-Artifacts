@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/home-lab-report/2022Sep" ciUrl="http://build.fhir.org/ig/HL7/home-lab-report" defaultVersion="1.0.0" defaultWorkgroup="oo" gitUrl="https://github.com/HL7/home-lab-report"
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/home-lab-report/2022Sep" ciUrl="http://build.fhir.org/ig/HL7/home-lab-report" defaultVersion="1.1.0" defaultWorkgroup="oo" gitUrl="https://github.com/HL7/home-lab-report"
   url="http://hl7.org/fhir/us/home-lab-report">
   <version code="current" url="http://build.fhir.org/ig/HL7/home-lab-report" />
+  <version code="1.1.0" url="http://hl7.org/fhir/us/home-lab-report/STU1.1"/>
   <version code="1.0.0" url="http://hl7.org/fhir/us/home-lab-report/STU1" />
   <version code="1.0.0-ballot" url="http://hl7.org/fhir/us/home-lab-report/2022Sep" />
   <version deprecated="true" code="1.0.0-ballot1" url="http://hl7.org/fhir/us/home-lab-report/2022Sept" />
@@ -12,7 +13,7 @@
   <artifact id="Bundle/bundle-at-home-in-vitro-test-results-p-noelle" key="Bundle-bundle-at-home-in-vitro-test-results-p-noelle" name="Bundle - At-Home In-Vitro Test Results - P Noelle"/>
   <artifact id="Bundle/bundle-at-home-in-vitro-test-results-s-trevor" key="Bundle-bundle-at-home-in-vitro-test-results-s-trevor" name="Bundle - At-Home In-Vitro Test Results - S Trevor"/>
   <artifact deprecated="true" id="CodeSystem/codesystem-at-home-in-vitro-test" key="CodeSystem-codesystem-at-home-in-vitro-test" name="CodeSystem - At-Home In-Vitro Test"/>
-  <artifact id="CodeSystem/codesystem-sex-for-clinical-use" key="CodeSystem-codesystem-sex-for-clinical-use" name="CodeSystem - Sex for Clinical Use"/>
+  <artifact deprecated="true" id="CodeSystem/codesystem-sex-for-clinical-use" key="CodeSystem-codesystem-sex-for-clinical-use" name="CodeSystem - Sex for Clinical Use"/>
   <artifact id="Device/device-hometest1-s-trevor" key="Device-device-hometest1-s-trevor" name="Device - Acme Home Test"/>
   <artifact id="StructureDefinition/Device-at-home-in-vitro-test" key="StructureDefinition-Device-at-home-in-vitro-test" name="Device - At-Home In-Vitro Test"/>
   <artifact id="Device/device-fast-sars-antigen-test" key="Device-device-fast-sars-antigen-test" name="Device - Fast SARS Antigen Test"/>
@@ -24,7 +25,7 @@
   <artifact id="StructureDefinition/Extension-at-home-in-vitro-test-proctored-info" key="StructureDefinition-Extension-at-home-in-vitro-test-proctored-info" name="Extension - At-Home In-Vitro Test Proctored Info"/>
   <artifact id="StructureDefinition/Extension-at-home-in-vitro-test-source-software-info" key="StructureDefinition-Extension-at-home-in-vitro-test-source-software-info" name="Extension - At-Home In-Vitro Test Source Software Information"/>
   <artifact id="StructureDefinition/Extension-at-home-in-vitro-test-supporting-info" key="StructureDefinition-Extension-at-home-in-vitro-test-supporting-info" name="Extension - At-Home In-Vitro Test Supporting Info"/>
-  <artifact id="StructureDefinition/Extension-sex-for-clinical-use" key="StructureDefinition-Extension-sex-for-clinical-use" name="Extension - Sex For Clinical Use"/>
+  <artifact deprecated="true" id="StructureDefinition/Extension-sex-for-clinical-use" key="StructureDefinition-Extension-sex-for-clinical-use" name="Extension - Sex For Clinical Use"/>
   <artifact id="MessageDefinition/MessageDefinition-at-home-in-vitro-test-results" key="MessageDefinition-MessageDefinition-at-home-in-vitro-test-results" name="MessageDefinition - At-Home In-Vitro Test Results"/>
   <artifact id="MessageHeader/messageheader-at-home-in-vitro-test-p-noelle" key="MessageHeader-messageheader-at-home-in-vitro-test-p-noelle" name="MessageHeader - At-Home In-Vitro Results - COVID-19 - P Noelle"/>
   <artifact id="StructureDefinition/MessageHeader-at-home-in-vitro-test-results" key="StructureDefinition-MessageHeader-at-home-in-vitro-test-results" name="MessageHeader - At-Home In-Vitro Test Results"/>
@@ -43,6 +44,8 @@
   <artifact id="Observation/observation-patient-answer-symptoms-present-covid-s-trevor" key="Observation-observation-patient-answer-symptoms-present-covid-s-trevor" name="Observation - Patient Answer - Symptoms Present - S Trevor"/>
   <artifact id="Observation/observation-patient-answer-symptoms-present-covid-p-noelle" key="Observation-observation-patient-answer-symptoms-present-covid-p-noelle" name="Observation - Patient Answer - Symptoms Present COVID-19 P Noelle"/>
   <artifact id="StructureDefinition/Observation-patient-question-answer" key="StructureDefinition-Observation-patient-question-answer" name="Observation - Patient Question Answer"/>
+  <artifact id="Organization/us-core-organization-aphl-aims-prd" key="Organization-us-core-organization-aphl-aims-prd" name="Organization - US Core - APHL AIMS Production"/>
+  <artifact id="Organization/us-core-organization-abbot" key="Organization-us-core-organization-abbot" name="Organization - US Core - Abbot"/>
   <artifact id="Organization/us-core-organization-acme-corporation" key="Organization-us-core-organization-acme-corporation" name="Organization - US Core - Acme Corporation"/>
   <artifact id="Organization/us-core-organization-proctor" key="Organization-us-core-organization-proctor" name="Organization - US Core - Proctor"/>
   <artifact id="Organization/us-core-organization-reliable-informatics" key="Organization-us-core-organization-reliable-informatics" name="Organization - US Core - Reliable Informatics"/>
@@ -60,16 +63,18 @@
   <artifact deprecated="true" id="ValueSet/ValueSet-at-home-in-vitro-test-results-covid" key="ValueSet-ValueSet-at-home-in-vitro-test-results-covid" name="ValueSet - At-Home In-Vitro Test Results - COVID-19"/>
   <artifact deprecated="true" id="ValueSet/ValueSet-at-home-in-vitro-test-specimen-types-covid" key="ValueSet-ValueSet-at-home-in-vitro-test-specimen-types-covid" name="ValueSet - At-Home In-Vitro Test Specimen Types - COVID-19"/>
   <artifact deprecated="true" id="ValueSet/ValueSet-at-home-in-vitro-test-types-covid" key="ValueSet-ValueSet-at-home-in-vitro-test-types-covid" name="ValueSet - At-Home In-Vitro Test Types - COVID-19"/>
-  <artifact id="ValueSet/valueset-sex-for-clinical-use" key="ValueSet-valueset-sex-for-clinical-use" name="ValueSet - Sex for Clinical Use Codes"/>
+  <artifact deprecated="true" id="ValueSet/valueset-sex-for-clinical-use" key="ValueSet-valueset-sex-for-clinical-use" name="ValueSet - Sex for Clinical Use Codes"/>
   <artifact deprecated="true" id="ValueSet/ValueSet-yes-no-unknown-snomed" key="ValueSet-ValueSet-yes-no-unknown-snomed" name="ValueSet - Yes No Unknown SNOMED"/>
   <artifact id="Parameters/expansion-parameters-at-home" key="Parameters-expansion-parameters-at-home" name="expansion-parameters-at-home"/>
   <page key="NA" name="(NA)"/>
   <page key="many" name="(many)"/>
   <page key="artifacts" name="Artifacts Summary"/>
-  <page key="at-home_in-vitro_test_over_the_counter_purchase_v2_example" name="At-Home In-Vitro Test Over the Counter Purchase V2 Example"/>
-  <page key="at-home_in-vitro_test_with_prescription_v2_example" name="At-Home In-Vitro Test with Prescription V2 Example"/>
+  <page deprecated="true" key="at-home_in-vitro_test_over_the_counter_purchase_v2_example" name="At-Home In-Vitro Test Over the Counter Purchase V2 Example"/>
+  <page deprecated="true" key="at-home_in-vitro_test_with_prescription_v2_example" name="At-Home In-Vitro Test with Prescription V2 Example"/>
+  <page key="change_log" name="Change Log"/>
   <page key="downloads" name="Downloads"/>
-  <page key="hl7_v2_fields_and_example_messages" name="HL7 V2 Fields and Example Messages"/>
+  <page key="getting_started" name="Getting Started"/>
+  <page deprecated="true" key="hl7_v2_fields_and_example_messages" name="HL7 V2 Fields and Example Messages"/>
   <page deprecated="true" key="hl7_v2_fields_and_otc_example_message" name="HL7 V2 Fields and OTC Example Message"/>
   <page key="index" name="Home Page"/>
   <page key="implementation_guide" name="Implementation Guide"/>
