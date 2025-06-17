@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cql/2025Jan" ciUrl="http://build.fhir.org/ig/HL7/cql-ig" defaultVersion="1.0.0" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/cql-ig" url="http://hl7.org/fhir/uv/cql">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cql/2025Jan" ciUrl="http://build.fhir.org/ig/HL7/cql-ig" defaultVersion="2.0.0" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/cql-ig" url="http://hl7.org/fhir/uv/cql">
 <version code="current" url="http://build.fhir.org/ig/HL7/cql-ig"/>
-<version code="2.0.0-ballot" url="http://hl7.org/fhir/uv/cql/2025Jan"/>
-<version code="1.0.0" url="http://hl7.org/fhir/uv/cql/STU1"/>
-<version code="1.0.0-snapshot" url="http://hl7.org/fhir/uv/cql/1.0.0-snapshot"/>
+<version code="2.0.0" url="http://hl7.org/fhir/uv/cql/STU2"/>
+<version code="2.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/cql/2025Jan"/>
+<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/uv/cql/STU1"/>
+<version code="1.0.0-snapshot" deprecated="true" url="http://hl7.org/fhir/uv/cql/1.0.0-snapshot"/>
 <version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/cql/2024Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -41,20 +42,25 @@
 <artifact id="ValueSet/publishable-example" key="ValueSet-publishable-example" name="Example Danger signs Codes Grouper"/>
 <artifact id="Parameters/cql-evaluationresult-example" key="Parameters-cql-evaluationresult-example" name="Example Evaluation Result Parameters"/>
 <artifact id="Library/module-example" key="Library-module-example" name="Example Logic Library - Module Definition"/>
-<artifact id="Parameters/qicore-modelinfosettings" key="Parameters-qicore-modelinfosettings" name="Example ModelInfo Settings Parameters"/>
+<artifact deprecated="true" id="Parameters/qicore-modelinfosettings" key="Parameters-qicore-modelinfosettings" name="Example ModelInfo Settings Parameters"/>
+<artifact id="Parameters/qicore-modelinfo-settings" key="Parameters-qicore-modelinfo-settings" name="Example ModelInfo Settings Parameters for the QICore Implementation Guide"/>
+<artifact id="Parameters/uscore-modelinfo-settings" key="Parameters-uscore-modelinfo-settings" name="Example ModelInfo Settings Parameters for the USCore Implementation Guide"/>
 <artifact id="Observation/negation-example" key="Observation-negation-example" name="Example Negation Observation"/>
 <artifact id="Patient/example" key="Patient-example" name="Example Patient"/>
 <artifact id="ValueSet/shareable-example" key="ValueSet-shareable-example" name="Example Specific health concern(s) Codes"/>
 <artifact id="Parameters/cql-typemappingexampleresult" key="Parameters-cql-typemappingexampleresult" name="Example Type Mapping Evaluation Result Parameters"/>
 <artifact id="Library/FHIRCommon" key="Library-FHIRCommon" name="FHIR Common"/>
+<artifact id="Library/FHIRCommonTests" key="Library-FHIRCommonTests" name="FHIR Common Tests"/>
 <artifact id="Library/FHIRHelpers" key="Library-FHIRHelpers" name="FHIR Helpers"/>
 <artifact id="Library/FHIRHelpersTests" key="Library-FHIRHelpersTests" name="FHIR HelpersTests"/>
 <artifact id="Library/FHIR-ModelInfo" key="Library-FHIR-ModelInfo" name="FHIR Model Definition"/>
+<artifact id="Parameters/fhir-modelinfo-settings" key="Parameters-fhir-modelinfo-settings" name="FHIR ModelInfo Settings"/>
 <artifact id="CapabilityStatement/cql-evaluation-service-example" key="CapabilityStatement-cql-evaluation-service-example" name="Library Evaluation Service Capability Statement Example"/>
 <artifact id="Library/ParameterExample" key="Library-ParameterExample" name="Parameter Example"/>
 <artifact id="StructureDefinition/cql-specifichealthconcerns-profile-example" key="StructureDefinition-cql-specifichealthconcerns-profile-example" name="Specific health concern(s)"/>
 <artifact id="Library/TypeMappingExample" key="Library-TypeMappingExample" name="Type Mapping Example"/>
-<artifact id="Library/USCore-ModelInfo" key="Library-modelinfo-example" name="USCore Model Definition"/>
+<artifact id="Library/USCoreExample-ModelInfo" key="Library-USCoreExample-ModelInfo" name="USCore Example Model Definition"/>
+<artifact deprecated="true" id="Library/USCore-ModelInfo" key="Library-modelinfo-example" name="USCore Model Definition"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page deprecated="true" key="acknowledgements" name="Acknowledgements"/>
@@ -64,6 +70,7 @@
 <page key="conformance" name="Conformance"/>
 <page key="downloads" name="Downloads"/>
 <page key="extensions" name="Extensions"/>
+<page key="fhir-modelinfo" name="FHIR ModelInfo"/>
 <page key="index" name="Home"/>
 <page key="operations" name="Operations"/>
 <page key="patterns" name="Patterns"/>
