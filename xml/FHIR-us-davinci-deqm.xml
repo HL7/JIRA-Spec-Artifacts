@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-deqm/2024Sep" ciUrl="http://build.fhir.org/ig/HL7/davinci-deqm" defaultVersion="4.0.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/davinci-deqm" url="http://hl7.org/fhir/us/davinci-deqm">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-deqm/2024Sep" ciUrl="http://build.fhir.org/ig/HL7/davinci-deqm" defaultVersion="5.0.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/davinci-deqm" url="http://hl7.org/fhir/us/davinci-deqm">
 <version code="current" url="http://build.fhir.org/ig/HL7/davinci-deqm"/>
-<version code="5.0.0-ballot" url="http://hl7.org/fhir/us/davinci-deqm/2024Sep"/>
+<version code="5.0.0" url="http://hl7.org/fhir/us/davinci-deqm/STU5"/>
+<version code="5.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2024Sep"/>
 <version code="4.0.0" url="http://hl7.org/fhir/us/davinci-deqm/STU4"/>
 <version code="4.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2023Jan"/>
 <version code="3.1.0" url="http://hl7.org/fhir/us/davinci-deqm/STU3.1"/>
@@ -16,14 +17,20 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="Organization/ad-hoc-organization" key="Organization-ad-hoc-organization" name="Ad Hoc Operation Input Example"/>
 <artifact id="MeasureReport/sde-example" key="MeasureReport-sde-example" name="Additional Supplemental Data Example"/>
 <artifact id="Bundle/sde-example-artifact-bundle" key="Bundle-sde-example-artifact-bundle" name="Additional Supplemental Data Example - Artifact Bundle"/>
 <artifact id="Bundle/sde-example-patient-data-bundle" key="Bundle-sde-example-patient-data-bundle" name="Additional Supplemental Data Example - Patient Bundle"/>
 <artifact id="OperationDefinition/bulk-submit-data" key="OperationDefinition-bulk-submit-data" name="Bulk Submit Data"/>
 <artifact id="CodeSystem/care-gap-reason" key="CodeSystem-care-gap-reason" name="Care Gap Reasons Code System"/>
 <artifact id="ValueSet/care-gap-reason" key="ValueSet-care-gap-reason" name="Care Gap Reasons Value Set"/>
+<artifact id="CodeSystem/care-gap-remark" key="CodeSystem-care-gap-remark" name="Care Gap Remark Code System"/>
+<artifact id="ValueSet/care-gap-remark" key="ValueSet-care-gap-remark" name="Care Gap Remark Value Set"/>
 <artifact id="OperationDefinition/care-gaps" key="OperationDefinition-care-gaps" name="Care Gaps Operation"/>
-<artifact id="Parameters/col-submit-collect-obs" key="Parameters-col-submit-collect-obs" name="Col Submit Collect Obs"/>
+<artifact id="Parameters/col-collect-obs" key="Parameters-col-collect-obs" name="Col Collect Obs"/>
+<artifact deprecated="true" id="Parameters/col-submit-collect-obs" key="Parameters-col-submit-collect-obs" name="Col Submit Collect Obs"/>
+<artifact id="Parameters/col-submit-obs" key="Parameters-col-submit-obs" name="Col Submit Obs"/>
+<artifact id="OperationDefinition/collect-data" key="OperationDefinition-collect-data" name="Collect Data"/>
 <artifact id="Condition/nhsn-iip-con101" key="Condition-nhsn-iip-con101" name="Condition nhsn-iip-con101"/>
 <artifact id="CapabilityStatement/consumer-client" key="CapabilityStatement-consumer-client" name="Consumer Client CapabilityStatement"/>
 <artifact id="CapabilityStatement/consumer-server" key="CapabilityStatement-consumer-server" name="Consumer Server CapabilityStatement"/>
@@ -32,8 +39,9 @@
 <artifact deprecated="true" id="Coverage/coverage03" key="Coverage-coverage03" name="Coverage03"/>
 <artifact id="StructureDefinition/extension-alternateScoreType" key="StructureDefinition-extension-alternateScoreType" name="DEQM Alternate Score Type Extension"/>
 <artifact id="StructureDefinition/extension-calculatedDate" key="StructureDefinition-extension-calculatedDate" name="DEQM Calculated Date Extension"/>
+<artifact id="StructureDefinition/extension-careGapRemark" key="StructureDefinition-extension-careGapRemark" name="DEQM Care Gap Remark Extension"/>
 <artifact id="StructureDefinition/extension-certificationIdentifier" key="StructureDefinition-extension-certificationIdentifier" name="DEQM Certification Identifier Extension"/>
-<artifact id="OperationDefinition/deqm.collect-data" key="OperationDefinition-deqm.collect-data" name="DEQM Collect Data"/>
+<artifact deprecated="true" id="OperationDefinition/deqm.collect-data" key="OperationDefinition-deqm.collect-data" name="DEQM Collect Data"/>
 <artifact deprecated="true" id="StructureDefinition/coverage-deqm" key="StructureDefinition-coverage-deqm" name="DEQM Coverage Profile"/>
 <artifact id="StructureDefinition/extension-criteriaReference" key="StructureDefinition-extension-criteriaReference" name="DEQM Criteria Reference Extension"/>
 <artifact id="StructureDefinition/datax-measurereport-deqm" key="StructureDefinition-datax-measurereport-deqm" name="DEQM Data Exchange MeasureReport Profile"/>
@@ -56,7 +64,7 @@
 <artifact deprecated="true" id="StructureDefinition/medicationadministration-deqm" key="StructureDefinition-medicationadministration-deqm" name="DEQM MedicationAdministration Profile"/>
 <artifact deprecated="true" id="StructureDefinition/organization-deqm" key="StructureDefinition-organization-deqm" name="DEQM Organization Profile"/>
 <artifact id="StructureDefinition/extension-populationDescription" key="StructureDefinition-extension-populationDescription" name="DEQM Population Description"/>
-<artifact id="StructureDefinition/extension-populationReference" key="StructureDefinition-extension-populationReference" name="DEQM Population Reference Extension"/>
+<artifact deprecated="true" id="StructureDefinition/extension-populationReference" key="StructureDefinition-extension-populationReference" name="DEQM Population Reference Extension"/>
 <artifact deprecated="true" id="StructureDefinition/practitioner-deqm" key="StructureDefinition-practitioner-deqm" name="DEQM Practitioner Profile"/>
 <artifact id="StructureDefinition/extension-reporterGroup" key="StructureDefinition-extension-reporterGroup" name="DEQM Reporter Group Extension"/>
 <artifact id="StructureDefinition/extension-reportingProgram" key="StructureDefinition-extension-reportingProgram" name="DEQM Reporting Program Extension"/>
@@ -64,17 +72,17 @@
 <artifact id="StructureDefinition/extension-reportingVendor" key="StructureDefinition-extension-reportingVendor" name="DEQM Reporting Vendor Extension"/>
 <artifact id="Device/deqm-software-system-example" key="Device-deqm-software-system-example" name="DEQM Software System Example"/>
 <artifact id="StructureDefinition/subjectlist-measurereport-deqm" key="StructureDefinition-subjectlist-measurereport-deqm" name="DEQM Subject List MeasureReport"/>
-<artifact id="OperationDefinition/deqm.submit-data" key="OperationDefinition-deqm.submit-data" name="DEQM Submit Data"/>
+<artifact deprecated="true" id="OperationDefinition/deqm.submit-data" key="OperationDefinition-deqm.submit-data" name="DEQM Submit Data"/>
 <artifact id="StructureDefinition/extension-submitDataUpdateType" key="StructureDefinition-extension-submitDataUpdateType" name="DEQM Submit Data Update Type Extension"/>
 <artifact id="StructureDefinition/summary-measurereport-deqm" key="StructureDefinition-summary-measurereport-deqm" name="DEQM Summary MeasureReport Profile"/>
-<artifact id="StructureDefinition/extension-supplementalData" key="StructureDefinition-extension-supplementalData" name="DEQM Supplemental Data Extension"/>
+<artifact deprecated="true" id="StructureDefinition/extension-supplementalData" key="StructureDefinition-extension-supplementalData" name="DEQM Supplemental Data Extension"/>
 <artifact id="CodeSystem/update-type" key="CodeSystem-update-type" name="DEQM Update Type Code System"/>
 <artifact id="ValueSet/update-type" key="ValueSet-update-type" name="DEQM Update Type Value Set"/>
 <artifact id="Observation/DNA-occultblood" key="Observation-DNA-occultblood" name="DNA Occult Blood"/>
 <artifact id="MeasureReport/datax-measurereport01" key="MeasureReport-datax-measurereport01" name="Datax Measurereport01"/>
 <artifact id="MeasureReport/datax-measurereport02" key="MeasureReport-datax-measurereport02" name="Datax Measurereport02"/>
 <artifact id="MeasureReport/datax-measurereport03" key="MeasureReport-datax-measurereport03" name="Datax Measurereport03"/>
-<artifact id="StructureDefinition/cqf-denominatorMembership" key="StructureDefinition-cqf-denominatorMembership" name="Denominator Membership"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-denominatorMembership" key="StructureDefinition-cqf-denominatorMembership" name="Denominator Membership"/>
 <artifact id="StructureDefinition/gaps-guidanceresponse-detailedcaregap" key="StructureDefinition-gaps-guidanceresponse-detailedcaregap" name="Detailed Care Gap Guidance Response"/>
 <artifact id="GuidanceResponse/detailedguidanceresponse01" key="GuidanceResponse-detailedguidanceresponse01" name="DetailedGuidanceResponse01"/>
 <artifact id="GuidanceResponse/detailedguidanceresponse02" key="GuidanceResponse-detailedguidanceresponse02" name="DetailedGuidanceResponse02"/>
@@ -108,6 +116,7 @@
 <artifact id="MeasureReport/gaps-indv-measurereport04" key="MeasureReport-gaps-indv-measurereport04" name="Gaps Individual MeasureReport04"/>
 <artifact id="Parameters/multiple-gaps-indv-report01" key="Parameters-multiple-gaps-indv-report01" name="Gaps Multiple Parameters Individual MeasureReports01"/>
 <artifact id="Parameters/multiple-gaps-indv-report02" key="Parameters-multiple-gaps-indv-report02" name="Gaps Multiple Parameters Individual MeasureReports02"/>
+<artifact id="Bundle/non-document-gaps-in-care" key="Bundle-non-document-gaps-in-care" name="Gaps Non-Document Gaps In Care Report"/>
 <artifact id="Parameters/single-gaps-closed-indv-report01" key="Parameters-single-gaps-closed-indv-report01" name="Gaps Parameters Closed Individual MeasureReport01"/>
 <artifact id="Parameters/single-gaps-closed-indv-report02" key="Parameters-single-gaps-closed-indv-report02" name="Gaps Parameters Closed Individual MeasureReport02"/>
 <artifact id="Parameters/single-gaps-open-indv-report01" key="Parameters-single-gaps-open-indv-report01" name="Gaps Parameters Open Individual MeasureReports"/>
@@ -119,6 +128,7 @@
 <artifact id="Organization/gaps-organization-reportingvendor" key="Organization-gaps-organization-reportingvendor" name="Gaps Reporting Vendor Organization"/>
 <artifact id="Group/group01" key="Group-group01" name="Group01"/>
 <artifact id="GuidanceResponse/guidanceresponse01" key="GuidanceResponse-guidanceresponse01" name="Guidance Response Example"/>
+<artifact id="Measure/attestation-boolean-example" key="Measure-attestation-boolean-example" name="Immunization Registry Reporting"/>
 <artifact id="MeasureReport/indv-measurereport01" key="MeasureReport-indv-measurereport01" name="Indv Measurereport01"/>
 <artifact id="MeasureReport/indv-measurereport02" key="MeasureReport-indv-measurereport02" name="Indv Measurereport02"/>
 <artifact id="MeasureReport/indv-measurereport03" key="MeasureReport-indv-measurereport03" name="Indv Measurereport03"/>
@@ -127,35 +137,42 @@
 <artifact id="Library/library-exm130-example" key="Library-library-exm130-example" name="Library Colorectal Cancer Screening (EXM130)"/>
 <artifact id="Library/library-mrp-example" key="Library-library-mrp-example" name="Library Mrp Example"/>
 <artifact id="Library/library-exm108-example" key="Library-library-exm108-example" name="Library Venous Thromboembolism Prophylaxis (EXM108)"/>
+<artifact id="Bundle/Location-Aware-example" key="Bundle-Location-Aware-example" name="Location Aware example"/>
 <artifact id="Location/nhsn-iip-loc101" key="Location-nhsn-iip-loc101" name="Location nhsn-iip-loc101"/>
 <artifact id="Location/location01" key="Location-location01" name="Location01"/>
 <artifact id="Location/location02" key="Location-location02" name="Location02"/>
 <artifact id="Location/location03" key="Location-location03" name="Location03"/>
-<artifact id="Measure/measure-exm124-example" key="Measure-measure-exm124-example" name="Measure Cervical Cancer Screening (EXM124)"/>
-<artifact id="Measure/measure-exm130-example" key="Measure-measure-exm130-example" name="Measure Colorectal Cancer Screening (EXM130)"/>
+<artifact deprecated="true" id="Measure/measure-exm124-example" key="Measure-measure-exm124-example" name="Measure Cervical Cancer Screening (EXM124)"/>
+<artifact deprecated="true" id="Measure/measure-exm130-example" key="Measure-measure-exm130-example" name="Measure Colorectal Cancer Screening (EXM130)"/>
 <artifact id="Measure/date-of-last-power-outage" key="Measure-date-of-last-power-outage" name="Measure Date of Last Power Outage"/>
 <artifact id="Measure/measure-mrp-example" key="Measure-measure-mrp-example" name="Measure Mrp Example"/>
-<artifact id="StructureDefinition/cqf-measurePopulationMembership" key="StructureDefinition-cqf-measurePopulationMembership" name="Measure Population Membership"/>
-<artifact id="Measure/measure-exm108-example" key="Measure-measure-exm108-example" name="Measure Venous Thromboembolism Prophylaxis (EXM108)"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-measurePopulationMembership" key="StructureDefinition-cqf-measurePopulationMembership" name="Measure Population Membership"/>
+<artifact id="SearchParameter/measurereport-category" key="SearchParameter-measurereport-category" name="Measure Report Category Search Parameter"/>
+<artifact deprecated="true" id="Measure/measure-exm108-example" key="Measure-measure-exm108-example" name="Measure Venous Thromboembolism Prophylaxis (EXM108)"/>
 <artifact deprecated="true" key="MeasureReport" name="MeasureReport"/>
+<artifact id="Parameters/measurereport01-patch" key="Parameters-measurereport01-patch" name="MeasureReport 01 Patch"/>
+<artifact id="Parameters/measurereport01-patch-mult" key="Parameters-measurereport01-patch-mult" name="MeasureReport 01 Patch Mult"/>
+<artifact id="MeasureReport/attestation-boolean-example" key="MeasureReport-attestation-boolean-example" name="MeasureReport Attestation Boolean"/>
 <artifact id="MeasureReport/MeasureReport-PI-example" key="MeasureReport-MeasureReport-PI-example" name="MeasureReport-PI-example"/>
 <artifact id="MeasureReport/summ-contained-supplemental" key="MeasureReport-summ-contained-supplemental" name="Measurereport with contained data"/>
 <artifact id="MedicationRequest/nhsn-iip-add101" key="MedicationRequest-nhsn-iip-add101" name="MedicationRequest nhsn-iip-add101"/>
 <artifact id="MedicationRequest/nhsn-iip-add101-10" key="MedicationRequest-nhsn-iip-add101-10" name="MedicationRequest nhsn-iip-add101-10"/>
 <artifact id="Parameters/mrp-submit-obs" key="Parameters-mrp-submit-obs" name="Mrp Submit Obs"/>
 <artifact id="Parameters/mrp-submit-task" key="Parameters-mrp-submit-task" name="Mrp Submit Task"/>
+<artifact deprecated="true" id="MeasureReport/summary-multirate-measurereport" key="MeasureReport-summary-multirate-measurereport" name="Multi-rate Summary Measure Report Example"/>
 <artifact id="Bundle/multiple-indv-mrp-obs-report" key="Bundle-multiple-indv-mrp-obs-report" name="Multiple Indv Mrp Obs Report"/>
 <artifact id="Bundle/multiple-indv-mrp-task-report" key="Bundle-multiple-indv-mrp-task-report" name="Multiple Indv Mrp Task Report"/>
 <artifact id="Bundle/multiple-summ-report" key="Bundle-multiple-summ-report" name="Multiple Summ Report"/>
-<artifact id="StructureDefinition/cqf-numeratorMembership" key="StructureDefinition-cqf-numeratorMembership" name="Numerator Membership"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-numeratorMembership" key="StructureDefinition-cqf-numeratorMembership" name="Numerator Membership"/>
 <artifact id="Observation/observation01" key="Observation-observation01" name="Observation01"/>
 <artifact id="Observation/observation02" key="Observation-observation02" name="Observation02"/>
 <artifact id="Observation/observation03" key="Observation-observation03" name="Observation03"/>
 <artifact deprecated="true" key="Organization" name="Organization"/>
-<artifact id="Organization/organization01" key="Organization-organization01" name="Organization01"/>
+<artifact id="Organization/organization01" key="Organization-organization01" name="Organization01-001"/>
 <artifact id="Organization/organization02" key="Organization-organization02" name="Organization02"/>
 <artifact id="Organization/organization03" key="Organization-organization03" name="Organization03"/>
 <artifact id="Organization/organization04" key="Organization-organization04" name="Organization04"/>
+<artifact id="StructureDefinition/parameters-caregap-remark-patch" key="StructureDefinition-parameters-caregap-remark-patch" name="Parameters Care Gap Remark Patch Profile"/>
 <artifact id="Patient/nhsn-iip-ip101" key="Patient-nhsn-iip-ip101" name="Patient nhsn-iip-ip101"/>
 <artifact id="Patient/patient01" key="Patient-patient01" name="Patient01"/>
 <artifact id="Patient/patient02" key="Patient-patient02" name="Patient02"/>
@@ -168,6 +185,8 @@
 <artifact id="CapabilityStatement/producer-server" key="CapabilityStatement-producer-server" name="Producer Server CapabilityStatement"/>
 <artifact id="StructureDefinition/reasonDetail" key="StructureDefinition-reasonDetail" name="Reason Detail"/>
 <artifact id="CapabilityStatement/receiver-server" key="CapabilityStatement-receiver-server" name="Receiver Server CapabilityStatement"/>
+<artifact id="ValueSet/remark-reason" key="ValueSet-remark-reason" name="Remark Reason"/>
+<artifact id="CodeSystem/remark-reason" key="CodeSystem-remark-reason" name="Remark Reason CodeSystem"/>
 <artifact id="CapabilityStatement/reporter-client" key="CapabilityStatement-reporter-client" name="Reporter Client CapabilityStatement"/>
 <artifact id="Bundle/single-indv-col-obs-report" key="Bundle-single-indv-col-obs-report" name="Single Indv Col Obs Report"/>
 <artifact id="Bundle/single-indv-mrp-obs-report" key="Bundle-single-indv-mrp-obs-report" name="Single Indv Mrp Obs Report"/>
@@ -175,12 +194,13 @@
 <artifact id="Bundle/single-indv-vte-report-option1" key="Bundle-single-indv-vte-report-option1" name="Single Indv Vte Report Option 1"/>
 <artifact id="Bundle/single-indv-vte-report-option7" key="Bundle-single-indv-vte-report-option7" name="Single Indv Vte Report Option 7"/>
 <artifact id="MeasureReport/subjectlist-measurereport01" key="MeasureReport-subjectlist-measurereport01" name="Subject List MeasureReport01"/>
-<artifact id="MeasureReport/summ-attestation" key="MeasureReport-summ-attestation" name="Summ Attestation"/>
+<artifact id="OperationDefinition/submit-data" key="OperationDefinition-submit-data" name="Submit Data"/>
+<artifact deprecated="true" id="MeasureReport/summ-attestation" key="MeasureReport-summ-attestation" name="Summ Attestation"/>
 <artifact id="MeasureReport/summ-measurereport01" key="MeasureReport-summ-measurereport01" name="Summ Measurereport01"/>
 <artifact id="MeasureReport/summ-measurereport02" key="MeasureReport-summ-measurereport02" name="Summ Measurereport02"/>
 <artifact id="MeasureReport/summ-medicare-stratification-example" key="MeasureReport-summ-medicare-stratification-example" name="Summ Medicare Stratification Example"/>
 <artifact id="MeasureReport/date-of-last-power-outage" key="MeasureReport-date-of-last-power-outage" name="Summary MeasureReport Date of Last Power Outage"/>
-<artifact id="StructureDefinition/measurereport-supplementalData" key="StructureDefinition-measurereport-supplementalData" name="Supplemental Data Extension"/>
+<artifact deprecated="true" id="StructureDefinition/measurereport-supplementalData" key="StructureDefinition-measurereport-supplementalData" name="Supplemental Data Extension"/>
 <artifact id="Task/task01" key="Task-task01" name="Task01"/>
 <artifact id="Task/task02" key="Task-task02" name="Task02"/>
 <artifact id="Task/task03" key="Task-task03" name="Task03"/>
@@ -190,6 +210,7 @@
 <page key="many" name="(many)"/>
 <page key="all-examples" name="All Examples"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="background" name="Background"/>
 <page key="capstatements" name="Capability Statements"/>
 <page key="change-notes" name="Change Notes"/>
 <page key="col" name="Colorectal Cancer Screening (COL)"/>
@@ -200,6 +221,7 @@
 <page key="gaps-examples" name="Gaps in Care Example Use Cases"/>
 <page key="gaps-in-care-reporting" name="Gaps in Care Reporting"/>
 <page key="guidance" name="General Guidance"/>
+<page key="glossary" name="Glossary"/>
 <page key="index" name="Home"/>
 <page key="indv-reporting" name="Individual Reporting"/>
 <page key="mrp" name="Medication Reconciliation Post-Discharge (MRP)"/>

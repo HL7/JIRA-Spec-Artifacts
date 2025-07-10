@@ -1,47 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/fhir-clinical-document/2024Sep" ciUrl="https://build.fhir.org/ig/HL7/fhir-clinical-document/index.html" defaultVersion="1.0.0-ballot" defaultWorkgroup="sd" gitUrl="https://github.com/HL7/fhir-clinical-document" url="http://hl7.org/fhir/uv/fhir-clinical-document">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/fhir-clinical-document/2024Sep" ciUrl="https://build.fhir.org/ig/HL7/fhir-clinical-document/index.html" defaultVersion="1.0.0" defaultWorkgroup="sd" gitUrl="https://github.com/HL7/fhir-clinical-document" url="http://hl7.org/fhir/uv/fhir-clinical-document">
 <version code="current" url="https://build.fhir.org/ig/HL7/fhir-clinical-document/index.html"/>
-<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/fhir-clinical-document/2024Sep"/>
+<version code="1.0.0" url="http://hl7.org/fhir/uv/fhir-clinical-document/STU1"/>
+<version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/fhir-clinical-document/2024Sep"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="MedicationRequest/124a6916-5d84-4b8c-b250-10cefb8e6e86" key="MedicationRequest-124a6916-5d84-4b8c-b250-10cefb8e6e86" name="124a6916-5d84-4b8c-b250-10cefb8e6e86"/>
-<artifact id="AllergyIntolerance/47600e0f-b6b5-4308-84b5-5dec157f7637" key="AllergyIntolerance-47600e0f-b6b5-4308-84b5-5dec157f7637" name="47600e0f-b6b5-4308-84b5-5dec157f7637"/>
-<artifact id="Observation/541a72a8-df75-4484-ac89-ac4923f03b81" key="Observation-541a72a8-df75-4484-ac89-ac4923f03b81" name="541a72a8-df75-4484-ac89-ac4923f03b81"/>
-<artifact id="MedicationStatement/673f8db5-0ffd-4395-9657-6da00420bbc1" key="MedicationStatement-673f8db5-0ffd-4395-9657-6da00420bbc1" name="673f8db5-0ffd-4395-9657-6da00420bbc1"/>
-<artifact id="ValueSet/clinical-doc-participant-types-vs" key="ValueSet-clinical-doc-participant-types-vs" name="Clinical Document Participant Types Value set"/>
-<artifact id="ValueSet/clinical-doc-information-recipient-vs" key="ValueSet-clinical-doc-information-recipient-vs" name="Clinical Document Participant Types that are information recipients"/>
-<artifact id="ValueSet/clinical-doc-participant-vs" key="ValueSet-clinical-doc-participant-vs" name="Clinical Document Participant Value set"/>
+<artifact deprecated="true" id="MedicationRequest/124a6916-5d84-4b8c-b250-10cefb8e6e86" key="MedicationRequest-124a6916-5d84-4b8c-b250-10cefb8e6e86" name="124a6916-5d84-4b8c-b250-10cefb8e6e86"/>
+<artifact deprecated="true" id="AllergyIntolerance/47600e0f-b6b5-4308-84b5-5dec157f7637" key="AllergyIntolerance-47600e0f-b6b5-4308-84b5-5dec157f7637" name="47600e0f-b6b5-4308-84b5-5dec157f7637"/>
+<artifact deprecated="true" id="Observation/541a72a8-df75-4484-ac89-ac4923f03b81" key="Observation-541a72a8-df75-4484-ac89-ac4923f03b81" name="541a72a8-df75-4484-ac89-ac4923f03b81"/>
+<artifact deprecated="true" id="MedicationStatement/673f8db5-0ffd-4395-9657-6da00420bbc1" key="MedicationStatement-673f8db5-0ffd-4395-9657-6da00420bbc1" name="673f8db5-0ffd-4395-9657-6da00420bbc1"/>
+<artifact id="AllergyIntolerance/AllergyIntolerance-47600e0f-b6b5-4308-84b5-5dec157f7637" key="AllergyIntolerance-AllergyIntolerance-47600e0f-b6b5-4308-84b5-5dec157f7637" name="AllergyIntolerance-47600e0f-b6b5-4308-84b5-5dec157f7637"/>
+<artifact id="StructureDefinition/ChangeMade" key="StructureDefinition-ChangeMade" name="Change Made"/>
+<artifact deprecated="true" id="ValueSet/clinical-doc-participant-types-vs" key="ValueSet-clinical-doc-participant-types-vs" name="Clinical Document Participant Types Value set"/>
+<artifact deprecated="true" id="ValueSet/clinical-doc-information-recipient-vs" key="ValueSet-clinical-doc-information-recipient-vs" name="Clinical Document Participant Types that are information recipients"/>
+<artifact deprecated="true" id="ValueSet/clinical-doc-participant-vs" key="ValueSet-clinical-doc-participant-vs" name="Clinical Document Participant Value set"/>
 <artifact id="StructureDefinition/consent-extension" key="StructureDefinition-consent-extension" name="Consent Extension"/>
 <artifact id="OperationDefinition/convert-to-transaction-bundle" key="OperationDefinition-convert-to-transaction-bundle" name="Convert to transaction bundle"/>
 <artifact id="StructureDefinition/data-enterer-extension" key="StructureDefinition-data-enterer-extension" name="Data Enterer Extension"/>
 <artifact id="Composition/clinical-document-composition-example1" key="Composition-clinical-document-composition-example1" name="Discharge Summary"/>
 <artifact id="Composition/clinical-document-composition-revision" key="Composition-clinical-document-composition-revision" name="Discharge Summary Revision"/>
+<artifact id="Practitioner/Doctor1" key="Practitioner-Doctor1" name="Doctor1"/>
+<artifact id="Practitioner/Doctor2" key="Practitioner-Doctor2" name="Doctor2"/>
 <artifact id="StructureDefinition/clinical-document-bundle" key="StructureDefinition-clinical-document-bundle" name="FHIR Clinical Document Bundle Profile"/>
 <artifact id="StructureDefinition/clinical-document-composition" key="StructureDefinition-clinical-document-composition" name="FHIR Clinical Document Composition Profile"/>
 <artifact id="StructureDefinition/informant-extension" key="StructureDefinition-informant-extension" name="Informant Extension"/>
 <artifact id="StructureDefinition/information-recipient-extension" key="StructureDefinition-information-recipient-extension" name="Information Recipient Extension"/>
-<artifact id="StructureDefinition/OrderExtension" key="StructureDefinition-OrderExtension" name="Order Extension"/>
+<artifact id="MedicationRequest/MedRequest-124a6916-5d84-4b8c-b250-10cefb8e6e86" key="MedicationRequest-MedRequest-124a6916-5d84-4b8c-b250-10cefb8e6e86" name="MedRequest-124a6916-5d84-4b8c-b250-10cefb8e6e86"/>
+<artifact id="MedicationStatement/MedStatement-673f8db5-0ffd-4395-9657-6da00420bbc1" key="MedicationStatement-MedStatement-673f8db5-0ffd-4395-9657-6da00420bbc1" name="MedStatement-673f8db5-0ffd-4395-9657-6da00420bbc1"/>
+<artifact id="Observation/Observation-541a72a8-df75-4484-ac89-ac4923f03b81" key="Observation-Observation-541a72a8-df75-4484-ac89-ac4923f03b81" name="Observation-541a72a8-df75-4484-ac89-ac4923f03b81"/>
+<artifact deprecated="true" id="StructureDefinition/OrderExtension" key="StructureDefinition-OrderExtension" name="Order Extension"/>
 <artifact id="StructureDefinition/ParticipantExtension" key="StructureDefinition-ParticipantExtension" name="Participant Extension"/>
-<artifact id="Bundle/clinical-document-as-transaction-bundle" key="Bundle-clinical-document-as-transaction-bundle" name="clinical-document-as-transaction-bundle"/>
+<artifact deprecated="true" id="Bundle/clinical-document-as-transaction-bundle" key="Bundle-clinical-document-as-transaction-bundle" name="clinical-document-as-transaction-bundle"/>
 <artifact id="Bundle/clinical-document-bundle-example1" key="Bundle-clinical-document-bundle-example1" name="clinical-document-bundle-example1"/>
 <artifact id="Bundle/clinical-document-bundle-revision" key="Bundle-clinical-document-bundle-revision" name="clinical-document-bundle-revision"/>
+<artifact id="Bundle/clinical-document-to-transaction-bundle" key="Bundle-clinical-document-to-transaction-bundle" name="clinical-document-to-transaction-bundle"/>
 <artifact id="Consent/consent1" key="Consent-consent1" name="consent1"/>
 <artifact id="Organization/custodianOrganization" key="Organization-custodianOrganization" name="custodianOrganization"/>
-<artifact id="Patient/d1" key="Patient-d1" name="d1"/>
-<artifact id="Encounter/doc-example" key="Encounter-doc-example" name="doc-example"/>
-<artifact id="Practitioner/example" key="Practitioner-example" name="example"/>
-<artifact id="Practitioner/example2" key="Practitioner-example2" name="example2"/>
-<artifact id="MedicationRequest/revised-124a6916-5d84-4b8c-b250-10cefb8e6e86" key="MedicationRequest-revised-124a6916-5d84-4b8c-b250-10cefb8e6e86" name="revised-124a6916-5d84-4b8c-b250-10cefb8e6e86"/>
-<artifact id="AllergyIntolerance/revised-47600e0f-b6b5-4308-84b5-5dec157f7637" key="AllergyIntolerance-revised-47600e0f-b6b5-4308-84b5-5dec157f7637" name="revised-47600e0f-b6b5-4308-84b5-5dec157f7637"/>
-<artifact id="Observation/revised-541a72a8-df75-4484-ac89-ac4923f03b81" key="Observation-revised-541a72a8-df75-4484-ac89-ac4923f03b81" name="revised-541a72a8-df75-4484-ac89-ac4923f03b81"/>
-<artifact id="MedicationStatement/revised-673f8db5-0ffd-4395-9657-6da00420bbc1" key="MedicationStatement-revised-673f8db5-0ffd-4395-9657-6da00420bbc1" name="revised-673f8db5-0ffd-4395-9657-6da00420bbc1"/>
+<artifact deprecated="true" id="Patient/d1" key="Patient-d1" name="d1"/>
+<artifact deprecated="true" id="Encounter/doc-example" key="Encounter-doc-example" name="doc-example"/>
+<artifact id="Encounter/encounter-example" key="Encounter-encounter-example" name="encounter-example"/>
+<artifact deprecated="true" id="Practitioner/example" key="Practitioner-example" name="example"/>
+<artifact deprecated="true" id="Practitioner/example2" key="Practitioner-example2" name="example2"/>
+<artifact id="Patient/patient-example" key="Patient-patient-example" name="patient-example"/>
+<artifact deprecated="true" id="MedicationRequest/revised-124a6916-5d84-4b8c-b250-10cefb8e6e86" key="MedicationRequest-revised-124a6916-5d84-4b8c-b250-10cefb8e6e86" name="revised-124a6916-5d84-4b8c-b250-10cefb8e6e86"/>
+<artifact deprecated="true" id="AllergyIntolerance/revised-47600e0f-b6b5-4308-84b5-5dec157f7637" key="AllergyIntolerance-revised-47600e0f-b6b5-4308-84b5-5dec157f7637" name="revised-47600e0f-b6b5-4308-84b5-5dec157f7637"/>
+<artifact deprecated="true" id="Observation/revised-541a72a8-df75-4484-ac89-ac4923f03b81" key="Observation-revised-541a72a8-df75-4484-ac89-ac4923f03b81" name="revised-541a72a8-df75-4484-ac89-ac4923f03b81"/>
+<artifact deprecated="true" id="MedicationStatement/revised-673f8db5-0ffd-4395-9657-6da00420bbc1" key="MedicationStatement-revised-673f8db5-0ffd-4395-9657-6da00420bbc1" name="revised-673f8db5-0ffd-4395-9657-6da00420bbc1"/>
+<artifact id="AllergyIntolerance/revised-AllergyIntolerance-47600e0f-b6b5-4308-84b5-5dec157f7637" key="AllergyIntolerance-revised-AllergyIntolerance-47600e0f-b6b5-4308-84b5-5dec157f7637" name="revised-AllergyIntolerance-47600e0f-b6b5-4308-84b5-5dec157f7637"/>
+<artifact id="MedicationRequest/revised-MedRequest-124a6916-5d84-4b8c-b250-10cefb8e6e86" key="MedicationRequest-revised-MedRequest-124a6916-5d84-4b8c-b250-10cefb8e6e86" name="revised-MedRequest-124a6916-5d84-4b8c-b250-10cefb8e6e86"/>
+<artifact id="MedicationStatement/revised-MedStatement-673f8db5-0ffd-4395-9657-6da00420bbc1" key="MedicationStatement-revised-MedStatement-673f8db5-0ffd-4395-9657-6da00420bbc1" name="revised-MedStatement-673f8db5-0ffd-4395-9657-6da00420bbc1"/>
+<artifact id="Observation/revised-Observation-541a72a8-df75-4484-ac89-ac4923f03b81" key="Observation-revised-Observation-541a72a8-df75-4484-ac89-ac4923f03b81" name="revised-Observation-541a72a8-df75-4484-ac89-ac4923f03b81"/>
+<artifact id="Patient/revised-Patient" key="Patient-revised-Patient" name="revised-Patient"/>
 <artifact id="Consent/revised-consent1" key="Consent-revised-consent1" name="revised-consent1"/>
 <artifact id="Organization/revised-custodianOrganization" key="Organization-revised-custodianOrganization" name="revised-custodianOrganization"/>
-<artifact id="Patient/revised-d1" key="Patient-revised-d1" name="revised-d1"/>
-<artifact id="Encounter/revised-doc-example" key="Encounter-revised-doc-example" name="revised-doc-example"/>
-<artifact id="Practitioner/revised-example" key="Practitioner-revised-example" name="revised-example"/>
-<artifact id="Practitioner/revised-example2" key="Practitioner-revised-example2" name="revised-example2"/>
+<artifact deprecated="true" id="Patient/revised-d1" key="Patient-revised-d1" name="revised-d1"/>
+<artifact deprecated="true" id="Encounter/revised-doc-example" key="Encounter-revised-doc-example" name="revised-doc-example"/>
+<artifact id="Encounter/revised-encounter-example" key="Encounter-revised-encounter-example" name="revised-encounter-example"/>
+<artifact deprecated="true" id="Practitioner/revised-example" key="Practitioner-revised-example" name="revised-example"/>
+<artifact deprecated="true" id="Practitioner/revised-example2" key="Practitioner-revised-example2" name="revised-example2"/>
 <artifact id="ServiceRequest/revised-service1" key="ServiceRequest-revised-service1" name="revised-service1"/>
 <artifact id="ServiceRequest/service1" key="ServiceRequest-service1" name="service1"/>
 <page key="NA" name="(NA)"/>
@@ -49,6 +66,7 @@
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="mapping" name="CDA Mapping"/>
 <page key="capabilitystatements" name="Capabilitystatements"/>
+<page key="versioning" name="Clinical Document Succession Management"/>
 <page key="dependencies_globals_CrossVersionAnalysis" name="Dependencies Globals Cross Version Analysis"/>
 <page key="downloads" name="Downloads"/>
 <page key="index" name="Home"/>
@@ -58,5 +76,4 @@
 <page key="security" name="Security"/>
 <page key="toc" name="Table of Contents"/>
 <page key="testing" name="Testing"/>
-<page key="versioning" name="Versioning"/>
 </specification>

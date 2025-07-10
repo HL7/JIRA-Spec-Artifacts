@@ -1,5 +1,6 @@
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/5.0.0" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-base" defaultVersion="5.0.0" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-base" url="http://hl7.org.au/fhir">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/5.1.0-preview" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-base" defaultVersion="5.0.0" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-base" url="http://hl7.org.au/fhir">
 	<version code="current" url="https://build.fhir.org/ig/hl7au/au-fhir-base"/>
+	<version code="5.1.0-preview" url="http://hl7.org.au/fhir/5.1.0-preview"/>
 	<version code="5.0.0" url="http://hl7.org.au/fhir/5.0.0"/>
 	<version code="4.2.2-ballot" url="http://hl7.org.au/fhir/4.2.2-ballot"/>
 	<version code="4.2.1-preview" url="http://hl7.org.au/fhir/4.2.1-preview"/>
@@ -17,6 +18,7 @@
 	<artifact id="CodeSystem/au-coverage-selfpay" key="CodeSystem-au-coverage-selfpay" name="Coverage SelfPay Codes AU" deprecated="true"/>
 	<artifact id="ValueSet/au-coverage-type-extended" key="ValueSet-au-coverage-type-extended" name="Coverage Type and Self-Pay Codes - AU Extended"  deprecated="true"/>
 	<artifact id="ValueSet/au-coverage-selfpay-extended" key="ValueSet-au-coverage-selfpay-extended" name="Coverage SelfPay Codes - AU Extended" deprecated="true"/>
+	<artifact id="ValueSet/rsg-source-document-jurisdiction" key="ValueSet-rsg-source-document-jurisdiction" name="AU Recorded Sex or Gender (RSG) Source Document Jurisdiction" deprecated="true" />
 
 
 	<artifact id="SearchParameter/encounter-discharge-disposition" key="SearchParameter-encounter-discharge-disposition" name="EncounterDischargeDisposition" />
@@ -152,9 +154,9 @@
 	<artifact id="CodeSystem/rsg-type" key="CodeSystem-rsg-type" name="AU Recorded Sex or Gender Type Codes" />
 	<artifact id="ValueSet/name-context" key="ValueSet-name-context" name="Name Context Valueset" />
 	<artifact id="CodeSystem/name-context" key="CodeSystem-name-context" name="Name Context Codes"/>
-	<artifact id="ValueSet/rsg-source-document-jurisdiction" key="ValueSet-rsg-source-document-jurisdiction" name="AU Recorded Sex or Gender (RSG) Source Document Jurisdiction" />
+	<artifact id="ValueSet/au-jurisdiction-extended" key="ValueSet-au-jurisdiction-extended" name="Jurisdiction ValueSet - AU Extended" />
 	<artifact id="ValueSet/rsg-source-document-type" key="ValueSet-rsg-source-document-type" name="AU Recorded Sex or Gender (RSG) Source Document Type" />
-	<artifact id="ValueSet/rsg-type" key="ValueSet-rsg-type" name="AU Recorded Sex or Gender Type"/>
+	<artifact id="ValueSet/rsg-type" key="ValueSet-rsg-type" name="AU Recorded Sex or Gender Type Value"/>
 	<artifact id="StructureDefinition/au-timezone" key="StructureDefinition-au-timezone" name="Australian Time Zone" />
 	<artifact id="StructureDefinition/name-context" key="StructureDefinition-name-context" name="Name Context"/>
 	<artifact id="StructureDefinition/au-procedure" key="StructureDefinition-au-procedure" name="AU Base Procedure" />
@@ -269,6 +271,7 @@
 	<artifact id="List/example2" key="List-example2" name="List - Medicine list with changes" />
 	<artifact id="List/example3" key="List-example3" name="List - Medicine list authored by a related person" />
 	<artifact id="StructureDefinition/au-diagnosticrequest" key="StructureDefinition-au-diagnosticrequest" name="AU Base Diagnostic Request" />
+	<artifact id="StructureDefinition/au-servicerequest" key="StructureDefinition-au-servicerequest" name="AU Base Service Request" />
 	<artifact id="StructureDefinition/date-of-arrival" key="StructureDefinition-date-of-arrival" name="Date of Arrival in Australia" />
 	<artifact id="StructureDefinition/au-localorderidentifier" key="StructureDefinition-au-localorderidentifier" name="AU Local Order Identifier" />
 	<artifact id="StructureDefinition/au-localreportidentifier" key="StructureDefinition-au-localreportidentifier" name="AU Local Report Identifier" />
@@ -298,6 +301,8 @@
 	<page key="sexgender" name="Sex and Gender"/>
 	<page key="relationship" name="Relationship with other IGs"/>
 	<page key="future" name="Future of AU Base"/>
+	<page key="fhirartefacts" name="FHIR Artefacts"/>
+	<page key="artifacts" name="Artefacts Summary"/>
 	<page key="profiles-and-extensions" name="Profiles and Extensions"/>
 	<page key="search-parameters" name="Search Parameters"/>
 	<page key="terminology" name="Terminology"/>
