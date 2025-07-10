@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/lab-report/2024Sep" ciUrl="https://github.com/HL7/uv-lab-rep-ig" defaultVersion="1.0.0-ballot" defaultWorkgroup="oo" url="http://hl7.org/fhir/uv/lab-report" gitUrl="https://github.com/HL7/uv-lab-rep-ig">
-<version code="current" url="https://github.com/HL7/uv-lab-rep-ig"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/lab-report/2024Sep" ciUrl="https://build.fhir.org/ig/HL7/uv-lab-rep-ig" defaultVersion="1.0.0-ballot" defaultWorkgroup="oo" gitUrl="https://github.com/HL7/uv-lab-rep-ig" url="http://hl7.org/fhir/uv/lab-report">
+<version code="current" url="https://build.fhir.org/ig/HL7/uv-lab-rep-ig"/>
 <version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/lab-report/2024Sep"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -8,10 +8,12 @@
 <artifact id="ActorDefinition/actor-consumer-uv-lab" key="ActorDefinition-actor-consumer-uv-lab" name="Actor Laboratory Report Consumer"/>
 <artifact id="ActorDefinition/actor-creator-uv-lab" key="ActorDefinition-actor-creator-uv-lab" name="Actor Laboratory Report Creator"/>
 <artifact id="ActorDefinition/actor-repos-uv-lab" key="ActorDefinition-actor-repos-uv-lab" name="Actor Laboratory Report Repository"/>
-<artifact id="ValueSet/laterality-uv-lab" key="ValueSet-laterality-uv-lab" name="Body Structure Laterality"/>
-<artifact id="ValueSet/siteQualifier-uv-lab" key="ValueSet-siteQualifier-uv-lab" name="Body Structure Qualifier"/>
+<artifact id="ValueSet/laterality-uv-lab" key="ValueSet-lab-laterality-uv-lab" name="Body Structure Laterality"/>
+<artifact id="ValueSet/siteQualifier-uv-lab" key="ValueSet-lab-siteQualifier-uv-lab" name="Body Structure Qualifier"/>
 <artifact id="StructureDefinition/BodyStructure-uv-lab" key="StructureDefinition-BodyStructure-uv-lab" name="Body structure: Laboratory"/>
+<artifact id="BodyStructure/bodystruct-example" key="BodyStructure-bodystruct-example" name="BodyStructure: example"/>
 <artifact id="Bundle/BundleHepatitisPanel" key="Bundle-BundleHepatitisPanel" name="Bundle: Hepatitis Panel"/>
+<artifact id="Bundle/BundleHepatitisPanelWithoutComposition" key="Bundle-BundleHepatitisPanelWithoutComposition" name="Bundle: Hepatitis Panel without Composition"/>
 <artifact id="StructureDefinition/Bundle-uv-lab" key="StructureDefinition-Bundle-uv-lab" name="Bundle: Laboratory Report"/>
 <artifact id="Bundle/BundleLabResultMicroCultureSusc" key="Bundle-BundleLabResultMicroCultureSusc" name="Bundle: Microbiology Culture + Susceptibility"/>
 <artifact id="Bundle/BundleLabResultReportPOC" key="Bundle-BundleLabResultReportPOC" name="Bundle: MyHealth@EU Proof Of Concept"/>
@@ -22,22 +24,23 @@
 <artifact id="StructureDefinition/Composition-uv-lab" key="StructureDefinition-Composition-uv-lab" name="Composition: Laboratory Report"/>
 <artifact id="Composition/comp-lab-example" key="Composition-comp-lab-example" name="Composition: example"/>
 <artifact id="StructureDefinition/observation-deviceLabTestKit" key="StructureDefinition-observation-deviceLabTestKit" name="Device Laboratory Test Kit"/>
-<artifact id="ConceptMap/ConceptMap-diagRptStatus2CompStatus-uv-lab" key="ConceptMap-ConceptMap-diagRptStatus2CompStatus-uv-lab" name="DiagnosticReport to Composition status"/>
+<artifact id="ConceptMap/ConceptMap-diagRptStatus2CompStatus-uv-lab" key="ConceptMap-ConceptMap-eu-diagRptStatus2CompStatus" name="DiagnosticReport to Composition status"/>
 <artifact id="StructureDefinition/DiagnosticReport-uv-lab" key="StructureDefinition-DiagnosticReport-uv-lab" name="DiagnosticReport: Laboratory Report"/>
 <artifact id="DiagnosticReport/dr-lab-example" key="DiagnosticReport-dr-lab-example" name="DiagnosticReport: example"/>
 <artifact id="StructureDefinition/composition-basedOn-order-or-requisition" key="StructureDefinition-composition-basedOn-order-or-requisition" name="Document Based On Order"/>
 <artifact id="StructureDefinition/composition-diagnosticReportReference" key="StructureDefinition-composition-diagnosticReportReference" name="Document DiagnosticReport Reference"/>
 <artifact id="StructureDefinition/information-recipient" key="StructureDefinition-information-recipient" name="Information recipient"/>
-<artifact id="ValueSet/certifiedRefMaterial-uv-lab" key="ValueSet-certifiedRefMaterial-uv-lab" name="Laboratory Certified Reference Material"/>
-<artifact id="ValueSet/obsCode-uv-lab" key="ValueSet-obsCode-uv-lab" name="Laboratory Code"/>
-<artifact id="ValueSet/obsCode-loinc-uv-lab" key="ValueSet-obsCode-loinc-uv-lab" name="Laboratory Code: LOINC"/>
-<artifact id="ValueSet/obsCode-npu-uv-lab" key="ValueSet-obsCode-npu-uv-lab" name="Laboratory Code: NPU"/>
-<artifact id="CodeSystem/localCs-uv-lab" key="CodeSystem-localCs-uv-lab" name="Laboratory Code: example"/>
-<artifact id="ValueSet/orderCodes-uv-lab" key="ValueSet-orderCodes-uv-lab" name="Laboratory Order"/>
-<artifact id="ValueSet/reportType-uv-lab" key="ValueSet-reportType-uv-lab" name="Laboratory Report Types"/>
-<artifact id="ValueSet/specialty-uv-lab" key="ValueSet-specialty-uv-lab" name="Laboratory Specialty"/>
-<artifact id="ValueSet/studyType-uv-lab" key="ValueSet-studyType-uv-lab" name="Laboratory Study Types"/>
-<artifact id="ValueSet/technique-uv-lab" key="ValueSet-technique-uv-lab" name="Laboratory Techniques"/>
+<artifact id="ValueSet/certifiedRefMaterial-uv-lab" key="ValueSet-lab-certifiedRefMaterial-uv-lab" name="Laboratory Certified Reference Material"/>
+<artifact id="ValueSet/obsCode-uv-lab" key="ValueSet-lab-obsCode-uv-lab" name="Laboratory Code"/>
+<artifact id="ValueSet/obsCode-loinc-uv-lab" key="ValueSet-lab-obsCode-loinc-uv-lab" name="Laboratory Code: LOINC"/>
+<artifact id="ValueSet/obsCode-npu-uv-lab" key="ValueSet-lab-obsCode-npu-uv-lab" name="Laboratory Code: NPU"/>
+<artifact id="CodeSystem/localCs-uv-lab" key="CodeSystem-lab-localCs-uv-lab" name="Laboratory Code: example"/>
+<artifact id="ValueSet/orderCodes-uv-lab" key="ValueSet-lab-orderCodes-uv-lab" name="Laboratory Order"/>
+<artifact id="ValueSet/reportBundleType-uv-lab" key="ValueSet-reportBundleType-uv-lab" name="Laboratory Report Bundle Types"/>
+<artifact id="ValueSet/reportType-uv-lab" key="ValueSet-lab-reportType-uv-lab" name="Laboratory Report Types"/>
+<artifact id="ValueSet/specialty-uv-lab" key="ValueSet-lab-specialty-uv-lab" name="Laboratory Specialty"/>
+<artifact id="ValueSet/studyType-uv-lab" key="ValueSet-lab-studyType-uv-lab" name="Laboratory Study Types"/>
+<artifact id="ValueSet/technique-uv-lab" key="ValueSet-lab-technique-uv-lab" name="Laboratory Techniques"/>
 <artifact id="StructureDefinition/Observation-obl-uv-lab" key="StructureDefinition-Observation-obl-uv-lab" name="Observation Obligations"/>
 <artifact id="StructureDefinition/Observation-resultslab-uv-lab" key="StructureDefinition-Observation-resultslab-uv-lab" name="Observation Results: laboratory"/>
 <artifact id="Observation/obs-aerobic-culture" key="Observation-obs-aerobic-culture" name="Observation: Aerobic Culture example"/>
@@ -70,14 +73,15 @@
 <artifact id="StructureDefinition/ServiceRequest-obl-uv-lab" key="StructureDefinition-ServiceRequest-obl-uv-lab" name="ServiceRequest Obligations"/>
 <artifact id="StructureDefinition/ServiceRequest-uv-lab" key="StructureDefinition-ServiceRequest-uv-lab" name="ServiceRequest: Laboratory Order"/>
 <artifact id="ServiceRequest/srv-request-example" key="ServiceRequest-srv-request-example" name="ServiceRequest: example"/>
-<artifact id="ValueSet/specimenAdditive-uv-lab" key="ValueSet-specimenAdditive-uv-lab" name="Specimen Additive"/>
-<artifact id="ValueSet/specimenContainer-uv-lab" key="ValueSet-specimenContainer-uv-lab" name="Specimen Container"/>
+<artifact id="ValueSet/specimenAdditive-uv-lab" key="ValueSet-lab-specimenAdditive-uv-lab" name="Specimen Additive"/>
+<artifact id="ValueSet/specimenContainer-uv-lab" key="ValueSet-lab-specimenContainer-uv-lab" name="Specimen Container"/>
 <artifact id="StructureDefinition/Specimen-obl-uv-lab" key="StructureDefinition-Specimen-obl-uv-lab" name="Specimen Obligations"/>
-<artifact id="ValueSet/specimenType-uv-lab" key="ValueSet-specimenType-uv-lab" name="Specimen Types"/>
+<artifact id="ValueSet/specimenType-uv-lab" key="ValueSet-lab-specimenType-uv-lab" name="Specimen Types"/>
 <artifact id="StructureDefinition/Specimen-uv-lab" key="StructureDefinition-Specimen-uv-lab" name="Specimen: Laboratory"/>
 <artifact id="Specimen/Specimen-animal-example" key="Specimen-Specimen-animal-example" name="Specimen: animal example"/>
 <artifact id="StructureDefinition/Substance-additive-uv-lab" key="StructureDefinition-Substance-additive-uv-lab" name="Substance: Specimen Additive Substance"/>
-<artifact id="ValueSet/speciesType-uv-lab" key="ValueSet-speciesType-uv-lab" name="Types of species"/>
+<artifact id="Substance/substance-example" key="Substance-substance-example" name="Substance: example"/>
+<artifact id="ValueSet/speciesType-uv-lab" key="ValueSet-lab-speciesType-eu-vs" name="Types of species"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>

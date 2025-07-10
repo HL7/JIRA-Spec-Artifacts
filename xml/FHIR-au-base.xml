@@ -1,5 +1,6 @@
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/4.2.2-ballot" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-base" defaultVersion="4.1.0" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-base" url="http://hl7.org.au/fhir">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/5.0.0" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-base" defaultVersion="5.0.0" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-base" url="http://hl7.org.au/fhir">
 	<version code="current" url="https://build.fhir.org/ig/hl7au/au-fhir-base"/>
+	<version code="5.0.0" url="http://hl7.org.au/fhir/5.0.0"/>
 	<version code="4.2.2-ballot" url="http://hl7.org.au/fhir/4.2.2-ballot"/>
 	<version code="4.2.1-preview" url="http://hl7.org.au/fhir/4.2.1-preview"/>
 	<version code="4.2.0-preview" url="http://hl7.org.au/fhir/4.2.0-preview"/>
@@ -13,6 +14,10 @@
 	<artifact id="ValueSet/recorded-sex-or-gender-type" key="ValueSet-recorded-sex-or-gender-type" name="Recorded Sex Or Gender Type" deprecated="true"/>
 	<artifact id="StructureDefinition/individual-pronouns" key="StructureDefinition-individual-pronouns" name="Individual Pronouns" deprecated="true"/>
 	<artifact id="ValueSet/pronouns" key="ValueSet-pronouns" name="Personal Pronouns" deprecated="true"/>
+	<artifact id="CodeSystem/au-coverage-selfpay" key="CodeSystem-au-coverage-selfpay" name="Coverage SelfPay Codes AU" deprecated="true"/>
+	<artifact id="ValueSet/au-coverage-type-extended" key="ValueSet-au-coverage-type-extended" name="Coverage Type and Self-Pay Codes - AU Extended"  deprecated="true"/>
+	<artifact id="ValueSet/au-coverage-selfpay-extended" key="ValueSet-au-coverage-selfpay-extended" name="Coverage SelfPay Codes - AU Extended" deprecated="true"/>
+
 
 	<artifact id="SearchParameter/encounter-discharge-disposition" key="SearchParameter-encounter-discharge-disposition" name="EncounterDischargeDisposition" />
 	<artifact id="SearchParameter/indigenous-status" key="SearchParameter-indigenous-status" name="AustralianIndigenousStatus" />
@@ -112,15 +117,12 @@
 	<artifact id="StructureDefinition/ahpraregistration-details" key="StructureDefinition-ahpraregistration-details" name="Ahpra Registration Details" />
 	<artifact id="StructureDefinition/ahpraprofession-details" key="StructureDefinition-ahpraprofession-details" name="Ahpra Profession Details" />
 	<artifact id="StructureDefinition/au-substance" key="StructureDefinition-au-substance" name="AU Base Substance" />
-	<artifact id="CodeSystem/au-coverage-selfpay" key="CodeSystem-au-coverage-selfpay" name="Coverage SelfPay Codes AU" />
-	<artifact id="ValueSet/au-coverage-type-extended" key="ValueSet-au-coverage-type-extended" name="Coverage Type and Self-Pay Codes - AU Extended" />
-	<artifact id="ValueSet/au-coverage-selfpay-extended" key="ValueSet-au-coverage-selfpay-extended" name="Coverage SelfPay Codes - AU Extended" />
-	<artifact id="ValueSet/contact-purpose" key="ValueSet-contact-purpose" name="Contact Purpose Valueset"/>
+	<artifact id="ValueSet/contact-purpose" key="ValueSet-contact-purpose" name="Contact Purpose ValueSet"/>
 	<artifact id="ValueSet/au-v3-ActEncounterCode-extended" key="ValueSet-au-v3-ActEncounterCode-extended" name="ActEncounterCode - AU Extended" />
 	<artifact id="ValueSet/au-v2-0203-extended" key="ValueSet-au-v2-0203-extended" name="hl7VS-identifierType - AU Extended" />
 	<artifact id="ValueSet/au-v2-0360-extended" key="ValueSet-au-v2-0360-extended" name="hl7VS-degreeLicenseCertificate - AU Extended" />
 	<artifact id="ValueSet/au-v2-0443-extended" key="ValueSet-au-v2-0443-extended" name="hl7VS-providerRole - AU Extended" />
-	<artifact id="ValueSet/service-provision-conditions" key="ValueSet-service-provision-conditions" name="Service Provision Conditions Australian Concepts Valueset" />
+	<artifact id="ValueSet/service-provision-conditions" key="ValueSet-service-provision-conditions" name="Service Provision Conditions Australian Concepts" />
 	<artifact id="CodeSystem/pbs-item-external" key="CodeSystem-pbs-item-external" name="PBS Item Codes" />
 	<artifact id="ValueSet/pbs-item" key="ValueSet-pbs-item" name="PBS Item Codes Valueset"/>
 	<artifact id="ValueSet/mims" key="ValueSet-mims" name="MIMS" />
@@ -131,7 +133,7 @@
 	<artifact id="ValueSet/accession-number-type" key="ValueSet-accession-number-type" name="Accession Number Type" />
 	<artifact id="ValueSet/order-identifier-type" key="ValueSet-order-identifier-type" name="Order Identifier Type" />
 	<artifact id="CodeSystem/medication-type" key="CodeSystem-medication-type" name="Medication Type Codes"/>
-	<artifact id="CodeSystem/service-provision-conditions" key="CodeSystem-service-provision-conditions" name="Service Provision Conditions Australian Concepts"/>
+	<artifact id="CodeSystem/service-provision-conditions" key="CodeSystem-service-provision-conditions" name="Service Provision Conditions Australian Concepts Codes"/>
 	<artifact id="CodeSystem/contact-purpose" key="CodeSystem-contact-purpose" name="Contact Purpose Codes"/>
 	<artifact id="CodeSystem/au-v3-ActCode" key="CodeSystem-au-v3-ActCode" name="ActCode AU" />
 	<artifact id="CodeSystem/au-v2-0203" key="CodeSystem-au-v2-0203" name="IdentifierType AU" />
@@ -293,6 +295,7 @@
 	<page key="index" name="Home"/>
 	<page key="guidance" name="Guidance"/>
 	<page key="generalguidance" name="General Guidance"/>
+	<page key="sexgender" name="Sex and Gender"/>
 	<page key="relationship" name="Relationship with other IGs"/>
 	<page key="future" name="Future of AU Base"/>
 	<page key="profiles-and-extensions" name="Profiles and Extensions"/>
