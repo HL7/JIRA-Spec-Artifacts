@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-pas/2.1.0-preview" ciUrl="http://build.fhir.org/ig/HL7/davinci-pas" defaultVersion="2.1.0" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-pas" url="http://hl7.org/fhir/us/davinci-pas">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-pas/2025Sep" ciUrl="http://build.fhir.org/ig/HL7/davinci-pas" defaultVersion="2.1.0" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-pas" url="http://hl7.org/fhir/us/davinci-pas">
 <version code="current" url="http://build.fhir.org/ig/HL7/davinci-pas"/>
+<version code="2.2.0-ballot" url="http://hl7.org/fhir/us/davinci-pas/2025Sep"/>
 <version code="2.1.0" url="http://hl7.org/fhir/us/davinci-pas/STU2.1"/>
 <version code="2.1.0-preview" deprecated="true" url="http://hl7.org/fhir/us/davinci-pas/2.1.0-preview"/>
 <version code="2.0.1" deprecated="true" url="http://hl7.org/fhir/us/davinci-pas/STU2"/>
@@ -37,6 +38,7 @@
 <artifact id="StructureDefinition/extension-timingdeliverypattern" key="StructureDefinition-extension-timingdeliverypattern" name="DeliveryPattern"/>
 <artifact id="DeviceRequest/DeviceRequestExample" key="DeviceRequest-DeviceRequestExample" name="Device Request Example"/>
 <artifact id="StructureDefinition/extension-diagnosisRecordedDate" key="StructureDefinition-extension-diagnosisRecordedDate" name="DiagnosisRecordedDate"/>
+<artifact id="StructureDefinition/extension-documentInformation" key="StructureDefinition-extension-documentInformation" name="DocumentInformation"/>
 <artifact id="CapabilityStatement/EHRCapabilities" key="CapabilityStatement-EHRCapabilities" name="EHR PAS Capabilities"/>
 <artifact id="StructureDefinition/extension-epsdtIndicator" key="StructureDefinition-extension-epsdtIndicator" name="EPSDTIndicator"/>
 <artifact id="Encounter/SurgicalEncounterExample" key="Encounter-EncounterExample" name="Encounter Example"/>
@@ -47,8 +49,8 @@
 <artifact id="StructureDefinition/extension-errorPath" key="StructureDefinition-extension-errorPath" name="ErrorPath"/>
 <artifact id="StructureDefinition/extension-homeHealthCareInformation" key="StructureDefinition-extension-homeHealthCareInformation" name="HomeHealthCareInformation"/>
 <artifact id="Bundle/HomecareAuthorizationBundleExample" key="Bundle-HomecareAuthorizationBundleExample" name="Homecare Authorization Bundle Example"/>
-<artifact id="Bundle/HomecareAuthorizationDifferentialBundleExample" key="Bundle-HomecareAuthorizationDifferentialBundleExample" name="Homecare Authorization Differential Update Bundle Example"/>
-<artifact id="Claim/HomecareAuthorizationDifferentialExample" key="Claim-HomecareAuthorizationDifferentialExample" name="Homecare Authorization Differential Update Example"/>
+<artifact deprecated="true" id="Bundle/HomecareAuthorizationDifferentialBundleExample" key="Bundle-HomecareAuthorizationDifferentialBundleExample" name="Homecare Authorization Differential Update Bundle Example"/>
+<artifact deprecated="true" id="Claim/HomecareAuthorizationDifferentialExample" key="Claim-HomecareAuthorizationDifferentialExample" name="Homecare Authorization Differential Update Example"/>
 <artifact id="Claim/HomecareAuthorizationExample" key="Claim-HomecareAuthorizationExample" name="Homecare Authorization Example"/>
 <artifact id="Bundle/HomecareAuthorizationUpdateBundleExample" key="Bundle-HomecareAuthorizationUpdateBundleExample" name="Homecare Authorization Update Bundle Example"/>
 <artifact id="Claim/HomecareAuthorizationUpdateExample" key="Claim-HomecareAuthorizationUpdateExample" name="Homecare Authorization Update Example"/>
@@ -57,6 +59,7 @@
 <artifact id="StructureDefinition/modifierextension-infoCancelled" key="StructureDefinition-modifierextension-infoCancelled" name="InfoCancelledFlag"/>
 <artifact id="StructureDefinition/extension-infoChanged" key="StructureDefinition-extension-infoChanged" name="InfoChanged"/>
 <artifact id="CapabilityStatement/IntermediaryCapabilities" key="CapabilityStatement-IntermediaryCapabilities" name="Intermediary PAS Capabilities"/>
+<artifact id="OperationOutcome/InvalidRequestResponse" key="OperationOutcome-InvalidRequestResponse" name="Invalid Request Response"/>
 <artifact deprecated="true" id="StructureDefinition/extension-itemAuthorizedDate" key="StructureDefinition-extension-itemAuthorizedDate" name="ItemAuthorizedDate"/>
 <artifact id="StructureDefinition/extension-itemAuthorizedDetail" key="StructureDefinition-extension-itemAuthorizedDetail" name="ItemAuthorizedDetail"/>
 <artifact id="StructureDefinition/extension-itemAuthorizedProvider" key="StructureDefinition-extension-itemAuthorizedProvider" name="ItemAuthorizedProvider"/>
@@ -73,7 +76,7 @@
 <artifact id="StructureDefinition/extension-nursingHomeLevelOfCare" key="StructureDefinition-extension-nursingHomeLevelOfCare" name="NursingHomeLevelOfCare"/>
 <artifact id="StructureDefinition/extension-nursingHomeResidentialStatus" key="StructureDefinition-extension-nursingHomeResidentialStatus" name="NursingHomeResidentialStatus"/>
 <artifact id="NutritionOrder/NutritionOrderExample" key="NutritionOrder-NutritionOrderExample" name="Nutrition Order Example"/>
-<artifact id="StructureDefinition/extension-paLineNumber" key="StructureDefinition-extension-paLineNumber" name="PALineNumber"/>
+<artifact deprecated="true" id="StructureDefinition/extension-paLineNumber" key="StructureDefinition-extension-paLineNumber" name="PALineNumber"/>
 <artifact id="StructureDefinition/profile-beneficiary" key="StructureDefinition-profile-beneficiary" name="PAS Beneficiary Patient"/>
 <artifact id="StructureDefinition/profile-claim" key="StructureDefinition-profile-claim" name="PAS Claim"/>
 <artifact id="StructureDefinition/profile-claim-base" key="StructureDefinition-profile-claim-base" name="PAS Claim Base"/>
@@ -89,6 +92,8 @@
 <artifact id="StructureDefinition/profile-coverage" key="StructureDefinition-profile-coverage" name="PAS Coverage"/>
 <artifact id="StructureDefinition/profile-devicerequest" key="StructureDefinition-profile-devicerequest" name="PAS Device Request"/>
 <artifact deprecated="true" id="CodeSystem/PASDiagnosisType" key="CodeSystem-PASDiagnosisType" name="PAS Diagnosis Type"/>
+<artifact id="StructureDefinition/profile-documentreference" key="StructureDefinition-profile-documentreference" name="PAS Document Reference"/>
+<artifact id="DocumentReference/DocumentReferenceExample" key="DocumentReference-DocumentReferenceExample" name="PAS Document Reference Example"/>
 <artifact id="StructureDefinition/profile-encounter" key="StructureDefinition-profile-encounter" name="PAS Encounter"/>
 <artifact id="StructureDefinition/profile-identifier" key="StructureDefinition-profile-identifier" name="PAS Identifier"/>
 <artifact deprecated="true" id="CodeSystem/PASInformationChangeMode" key="CodeSystem-PASInformationChangeMode" name="PAS Information Change Mode Code System"/>
@@ -184,6 +189,7 @@
 <page key="specification" name="Formal Specification"/>
 <page key="regulations" name="HIPAA Regulations"/>
 <page key="metrics" name="PAS Metrics"/>
+<page key="terminology" name="PAS Terminology"/>
 <page key="epaWorkflow" name="PAS ePA Coordinator Information"/>
 <page key="index" name="Prior Authorization Implementation Guide Home Page"/>
 <page key="privacy" name="Privacy &amp; Security"/>
