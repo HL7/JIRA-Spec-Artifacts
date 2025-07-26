@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/pco/2025May" ciUrl="https://build.fhir.org/ig/HL7/pco-ig" defaultVersion="1.0.0-ballot" defaultWorkgroup="pc" gitUrl="https://github.com/HL7/pco-ig" url="http://hl7.org/fhir/us/pco">
+<version code="current" url="https://build.fhir.org/ig/HL7/pco-ig"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/us/pco/2025May"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="CarePlan/pcoSocialConnectionsCarePlanExample" key="CarePlan-pcoSocialConnectionsCarePlanExample" name="Care Plan for person-centered goal"/>
+<artifact id="ServiceRequest/pcoMindfulnessSupportProgram" key="ServiceRequest-pcoMindfulnessSupportProgram" name="Care Plan: Action step for mindfulness program"/>
+<artifact id="Library/FHIRHelpers" key="Library-FHIRHelpers" name="FHIRHelpers"/>
+<artifact id="Observation/pcoPROMScoreAnxietyBaseline" key="Observation-pcoPROMScoreAnxietyBaseline" name="GAD-7 PROM Baseline Score"/>
+<artifact id="Observation/pcoPROMScoreAnxietyFollowUp" key="Observation-pcoPROMScoreAnxietyFollowUp" name="GAD-7 PROM Follow-up Score"/>
+<artifact id="Observation/pcoGASScoreBaselineExample" key="Observation-pcoGASScoreBaselineExample" name="GAS Baseline Score"/>
+<artifact id="Observation/pcoGASScorePatientFollowupExample" key="Observation-pcoGASScorePatientFollowupExample" name="GAS Patient Follow-up Score"/>
+<artifact id="Observation/pcoGASScorePractitionerFollowupExample" key="Observation-pcoGASScorePractitionerFollowupExample" name="GAS Practitioner Follow-up Score"/>
+<artifact id="Questionnaire/69737-5" key="Questionnaire-69737-5" name="Generalized Anxiety Disorder (GAD-7)"/>
+<artifact id="ValueSet/goal-attainment-scaling-score" key="ValueSet-goal-attainment-scaling-score" name="Goal Attainment Scaling (GAS) Score"/>
+<artifact id="StructureDefinition/pco-gas-score-observation" key="StructureDefinition-pco-gas-score-observation" name="Goal Attainment Scaling (GAS) score observation"/>
+<artifact id="StructureDefinition/pco-goal-attainment-scaling" key="StructureDefinition-pco-goal-attainment-scaling" name="Goal Attainment Scaling Extension"/>
+<artifact id="StructureDefinition/pco-goal-barrier" key="StructureDefinition-pco-goal-barrier" name="Goal Barrier"/>
+<artifact id="ValueSet/goal-barrier-codes" key="ValueSet-goal-barrier-codes" name="Goal Barrier Assessment Codes"/>
+<artifact id="ValueSet/pco-goal-barrier-types-example-vs" key="ValueSet-pco-goal-barrier-types-example-vs" name="Goal Barrier Types Example"/>
+<artifact id="Observation/pcoBarrierAnxietyCodedValue" key="Observation-pcoBarrierAnxietyCodedValue" name="Goal Barrier: Anxiety in social situations, coded value"/>
+<artifact id="Observation/pcoBarrierFreeTextValue" key="Observation-pcoBarrierFreeTextValue" name="Goal Barrier: Don't like to drive"/>
+<artifact id="Goal/pcoGoalAnxietyExample" key="Goal-pcoGoalAnxietyExample" name="Goal with GAD-7 PROM Outcome"/>
+<artifact id="Goal/pcoGoalSocialConnectionsWithGAS" key="Goal-pcoGoalSocialConnectionsWithGAS" name="Goal with GAS"/>
+<artifact id="Goal/pcoGoalSocialConnectionsWithoutExtensions" key="Goal-pcoGoalSocialConnectionsWithoutExtensions" name="Goal without GAS Extensions"/>
+<artifact id="Library/GoalAttainmentLogic" key="Library-GoalAttainmentLogic" name="GoalAttainmentLogic"/>
+<artifact id="Library/GoalFollowUpMeasure" key="Library-GoalFollowUpMeasure" name="GoalFollowUpMeasure"/>
+<artifact id="Library/GoalIdentificationMeasure" key="Library-GoalIdentificationMeasure" name="GoalIdentificationMeasure"/>
+<artifact id="ValueSet/pco-goal-domain-categories" key="ValueSet-pco-goal-domain-categories" name="PCO Goal Domain Categories"/>
+<artifact id="CodeSystem/pco-goal-domains-temporary" key="CodeSystem-pco-goal-domains-temporary" name="PCO Goal Domains"/>
+<artifact id="Library/PCOCommon" key="Library-PCOCommon" name="PCOCommon"/>
+<artifact id="Questionnaire/44249-1" key="Questionnaire-44249-1" name="PHQ-9 Depression Assessment"/>
+<artifact id="ValueSet/prom-target-measures" key="ValueSet-prom-target-measures" name="PROM Target Measure Scores"/>
+<artifact id="Patient/pcoPatientJones" key="Patient-pcoPatientJones" name="Patient Dorothy Jones"/>
+<artifact id="StructureDefinition/pco-prom-score-observation" key="StructureDefinition-pco-prom-score-observation" name="Patient-Reported Outcome Measure (PROM) score observation"/>
+<artifact id="StructureDefinition/pco-care-plan" key="StructureDefinition-pco-care-plan" name="Person-Centered Care Plan"/>
+<artifact id="ValueSet/pco-categories" key="ValueSet-pco-categories" name="Person-Centered Categories"/>
+<artifact id="StructureDefinition/pco-gas-goal-profile" key="StructureDefinition-pco-gas-goal-profile" name="Person-Centered GAS Goal"/>
+<artifact id="StructureDefinition/pco-goal-profile" key="StructureDefinition-pco-goal-profile" name="Person-Centered Goal"/>
+<artifact id="Measure/GoalFollowUpMeasure" key="Measure-GoalFollowUpMeasure" name="Person-Centered Goal Follow-Up"/>
+<artifact id="Measure/GoalIdentificationMeasure" key="Measure-GoalIdentificationMeasure" name="Person-Centered Goal Identification"/>
+<artifact id="CodeSystem/pco-concepts-temporary" key="CodeSystem-pco-concepts-temporary" name="Person-Centered Outcome Concepts"/>
+<artifact id="StructureDefinition/pco-prom-goal-profile" key="StructureDefinition-pco-prom-goal-profile" name="Person-Centered PROM Goal"/>
+<artifact id="Questionnaire/health-inventory-example" key="Questionnaire-health-inventory-example" name="Personal Health Inventory"/>
+<artifact id="CodeSystem/personal-health-inventory-temporary" key="CodeSystem-personal-health-inventory-temporary" name="Personal Health Inventory Concepts"/>
+<artifact id="List/pcoPrioritiesList" key="List-pcoPrioritiesList" name="Personal Priorities List"/>
+<artifact id="StructureDefinition/pco-personal-priorities-organizer" key="StructureDefinition-pco-personal-priorities-organizer" name="Personal Priorities Organizer"/>
+<artifact id="Practitioner/pcoPractitionerGonzalez" key="Practitioner-pcoPractitionerGonzalez" name="Practitioner Health &amp; Wellness Coach"/>
+<artifact id="Practitioner/pcoPractitionerAnderson" key="Practitioner-pcoPractitionerAnderson" name="Practitioner Primary Care Physician"/>
+<artifact id="StructureDefinition/pco-readiness-assessment" key="StructureDefinition-pco-readiness-assessment" name="Readiness Assessment"/>
+<artifact id="ValueSet/readiness-assessment-codes" key="ValueSet-readiness-assessment-codes" name="Readiness Assessment Codes"/>
+<artifact id="CodeSystem/readiness-assessment-concepts-temporary" key="CodeSystem-readiness-assessment-concepts-temporary" name="Readiness Assessment Concepts"/>
+<artifact id="Observation/pcoReadinessAssessmentPanel" key="Observation-pcoReadinessAssessmentPanel" name="Readiness Assessment panel"/>
+<artifact id="Observation/pcoReadinessAssessmentConfidence" key="Observation-pcoReadinessAssessmentConfidence" name="Readiness Assessment: Confidence"/>
+<artifact id="Observation/pcoReadinessAssessmentImportance" key="Observation-pcoReadinessAssessmentImportance" name="Readiness Assessment: Importance"/>
+<artifact id="ValueSet/wellbeing-domains-example" key="ValueSet-wellbeing-domains-example" name="Well-Being Domains Example"/>
+<artifact id="StructureDefinition/pco-what-matters-assessment" key="StructureDefinition-pco-what-matters-assessment" name="What Matters Assessment"/>
+<artifact id="ValueSet/what-matters-codes-example" key="ValueSet-what-matters-codes-example" name="What Matters Codes Example"/>
+<artifact id="CodeSystem/what-matters-concepts-temporary" key="CodeSystem-what-matters-concepts-temporary" name="What Matters Concepts"/>
+<artifact id="Observation/pcoWhatMattersFocusAreaExample" key="Observation-pcoWhatMattersFocusAreaExample" name="What Matters Focus: Family &amp; Friends"/>
+<artifact id="Observation/pcoWhatMattersStatementExample" key="Observation-pcoWhatMattersStatementExample" name="What Matters Statement as Free-Text"/>
+<artifact id="Observation/pcoWhatMattersRelationshipsExample" key="Observation-pcoWhatMattersRelationshipsExample" name="What Matters: Family &amp; Friends (Panel)"/>
+<artifact id="Observation/pcoWhatMattersRelationshipsExampleFutureChanges" key="Observation-pcoWhatMattersRelationshipsExampleFutureChanges" name="What Matters: Family &amp; Friends, Future Changes"/>
+<artifact id="Observation/pcoWhatMattersRelationshipsExampleFutureRating" key="Observation-pcoWhatMattersRelationshipsExampleFutureRating" name="What Matters: Family &amp; Friends, Future Rating"/>
+<artifact id="Observation/pcoWhatMattersRelationshipsExampleNowRating" key="Observation-pcoWhatMattersRelationshipsExampleNowRating" name="What Matters: Family &amp; Friends, Now Rating"/>
+<artifact id="Observation/pcoWhatMattersFoodExample" key="Observation-pcoWhatMattersFoodExample" name="What Matters: Food and Drink (Panel)"/>
+<artifact id="Observation/pcoWhatMattersFoodExampleFutureRating" key="Observation-pcoWhatMattersFoodExampleFutureRating" name="What Matters: Food and Drink, Future Rating"/>
+<artifact id="Observation/pcoWhatMattersFoodExampleNowRating" key="Observation-pcoWhatMattersFoodExampleNowRating" name="What Matters: Food and Drink, Now Rating"/>
+<artifact id="Observation/pcoWhatMattersFoodExampleNowReasons" key="Observation-pcoWhatMattersFoodExampleNowReasons" name="What Matters: Food and Drink, Now Reasons"/>
+<artifact id="Library/WhatMattersLogic" key="Library-WhatMattersLogic" name="WhatMattersLogic"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="dependencies" name="Dependencies"/>
+<page key="downloads" name="Downloads"/>
+<page key="formal_specification" name="Formal Specification"/>
+<page key="index" name="Home"/>
+<page key="related-fhir-igs" name="Related FHIR IGs"/>
+<page key="toc" name="Table of Contents"/>
+<page key="underlying_technologies" name="Underlying Technologies"/>
+<page key="user_stories" name="User Stories"/>
+</specification>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-drug-formulary/2022Jan" ciUrl="http://build.fhir.org/ig/HL7/davinci-pdex-formulary" defaultVersion="2.0.1" defaultWorkgroup="pharm" gitUrl="https://github.com/HL7/davinci-pdex-formulary" url="http://hl7.org/fhir/us/davinci-drug-formulary">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-drug-formulary/2022Jan" ciUrl="http://build.fhir.org/ig/HL7/davinci-pdex-formulary" defaultVersion="2.1.0" defaultWorkgroup="pharm" gitUrl="https://github.com/HL7/davinci-pdex-formulary" url="http://hl7.org/fhir/us/davinci-drug-formulary">
 <version code="current" url="http://build.fhir.org/ig/HL7/davinci-pdex-formulary"/>
+<version code="2.1.0" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU2.1"/>
 <version code="2.0.1" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU2.0.1"/>
 <version code="2.0.0" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU2"/>
 <version code="1.2.0" url="http://hl7.org/fhir/us/davinci-drug-formulary/2022Jan"/>
@@ -74,6 +75,7 @@
 <artifact id="Basic/FormularyItem-D3002-1000091" key="Basic-FormularyItem-D3002-1000091" name="FormularyItem-D3002-1000091"/>
 <artifact id="Basic/FormularyItem-D3004t-1049640" key="Basic-FormularyItem-D3004t-1049640" name="FormularyItem-D3004t-1049640"/>
 <artifact deprecated="true" id="GraphDefinition/Formulary-GraphDefinition" key="GraphDefinition-Formulary-GraphDefinition" name="Formulary_GraphDefinition"/>
+<artifact id="StructureDefinition/insurance-plan-coverage" key="StructureDefinition-insurance-plan-coverage" name="Insurance Plan Coverage"/>
 <artifact id="StructureDefinition/usdf-InsurancePlanLocation" key="StructureDefinition-usdf-InsurancePlanLocation" name="Insurance Plan Location"/>
 <artifact id="ValueSet/InsuranceItemTypeVS" key="ValueSet-InsuranceItemTypeVS" name="Insurance item type"/>
 <artifact id="SearchParameter/InsurancePlan-coverage-area" key="SearchParameter-InsurancePlan-coverage-area" name="InsurancePlan-coverage-area"/>
@@ -85,6 +87,7 @@
 <artifact id="SearchParameter/InsurancePlan-period" key="SearchParameter-InsurancePlan-period" name="InsurancePlan-period"/>
 <artifact id="SearchParameter/InsurancePlan-status" key="SearchParameter-InsurancePlan-status" name="InsurancePlan-status"/>
 <artifact id="SearchParameter/InsurancePlan-type" key="SearchParameter-InsurancePlan-type" name="InsurancePlan-type"/>
+<artifact id="Coverage/InsurancePlanCoverageExample" key="Coverage-InsurancePlanCoverageExample" name="InsurancePlanCoverageExample"/>
 <artifact deprecated="true" id="StructureDefinition/usdf-MailOrder-extension" key="StructureDefinition-usdf-MailOrder-extension" name="Mail Order"/>
 <artifact deprecated="true" id="StructureDefinition/usdf-MarketingURL-extension" key="StructureDefinition-usdf-MarketingURL-extension" name="Marketing URL"/>
 <artifact id="SearchParameter/MedicationKnowledge-code" key="SearchParameter-MedicationKnowledge-code" name="MedicationKnowledge-code"/>
@@ -93,6 +96,7 @@
 <artifact id="SearchParameter/MedicationKnowledge-lastupdated" key="SearchParameter-MedicationKnowledge-lastupdated" name="MedicationKnowledge-lastupdated"/>
 <artifact id="SearchParameter/MedicationKnowledge-status" key="SearchParameter-MedicationKnowledge-status" name="MedicationKnowledge-status"/>
 <artifact deprecated="true" id="StructureDefinition/usdf-Network-extension" key="StructureDefinition-usdf-Network-extension" name="Network"/>
+<artifact id="ValueSet/NonPackSemanticDrugVS" key="ValueSet-NonPackSemanticDrugVS" name="Non-Pack Semantic Drug Codes"/>
 <artifact id="StructureDefinition/usdf-PayerInsurancePlan" key="StructureDefinition-usdf-PayerInsurancePlan" name="Payer Insurance Plan"/>
 <artifact id="StructureDefinition/usdf-PayerInsurancePlanBulkDataGraphDefinition" key="StructureDefinition-usdf-PayerInsurancePlanBulkDataGraphDefinition" name="Payer Insurance Plan Bulk Data Graph Definition"/>
 <artifact id="InsurancePlan/PayerInsurancePlanA1002" key="InsurancePlan-PayerInsurancePlanA1002" name="PayerInsurancePlanA1002"/>
@@ -123,19 +127,27 @@
 <artifact id="ValueSet/PlanContactTypeVS" key="ValueSet-PlanContactTypeVS" name="Type of plan contact"/>
 <artifact id="CapabilityStatement/usdf-server" key="CapabilityStatement-usdf-server" name="US Drug Formulary Server Capability Statement"/>
 <artifact id="Location/UnitedStatesLocation" key="Location-UnitedStatesLocation" name="UnitedStatesLocation"/>
+<artifact id="Organization/acme-payer" key="Organization-acme-payer" name="acme-payer"/>
+<artifact id="Patient/example" key="Patient-example" name="example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="background" name="Background"/>
 <page key="change_notes" name="Change Notes"/>
-<page key="credits" name="Credits"/>
+<page key="confexpectations" name="Conformance Expectations"/>
+<page deprecated="true" key="credits" name="Credits"/>
 <page key="downloads" name="Downloads"/>
 <page deprecated="true" key="examples" name="Examples"/>
 <page key="index" name="Home"/>
+<page key="security" name="Privacy, Safety, and Security"/>
 <page deprecated="true" key="profiles" name="Profiles"/>
+<page key="project" name="Project and Participants"/>
 <page key="queries" name="Queries"/>
+<page key="reading" name="Reading this IG"/>
 <page key="search_parameters" name="Search Parameters"/>
+<page key="specification" name="Specification"/>
 <page key="toc" name="Table of Contents"/>
 <page key="ImplementationGuide-hl7.fhir.us.davinci-drug-formulary" name="US Drug Formulary ImplementationGuide Resource"/>
-<page key="use_cases_and_overview" name="Use Cases and Overview"/>
+<page deprecated="true" key="use_cases_and_overview" name="Use Cases and Overview"/>
 <page deprecated="true" key="methodology" name="methodology"/>
 </specification>

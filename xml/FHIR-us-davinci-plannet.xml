@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification 
-               gitUrl="https://github.com/HL7/davinci-pdex-plan-net" 
-               url="http://hl7.org/fhir/us/davinci-pdex-plan-net"
-               ciUrl="http://build.fhir.org/HL7/ig/davinci-pdex-plan-net"
-               defaultWorkgroup="fm"
-               defaultVersion="1.1.0"
-               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-pdex-plan-net/2020Feb" ciUrl="http://build.fhir.org/ig/HL7/davinci-pdex-plan-net" defaultVersion="1.2.0" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-pdex-plan-net" url="http://hl7.org/fhir/us/davinci-pdex-plan-net">
 <version code="current" url="http://build.fhir.org/ig/HL7/davinci-pdex-plan-net"/>
+<version code="1.2.0" url="http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.2"/>
 <version code="1.1.0" url="http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.1"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1"/>
-<version code="0.1.0" url="http://hl7.org/fhir/us/davinci-pdex-plan-net/2020Feb" deprecated="true"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-pdex-plan-net/2020Feb"/>
 <version code="0.1" deprecated="true"/>
-
-  <artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="ValueSet/AcceptingPatientsVS" key="ValueSet-AcceptingPatientsVS" name="Accepting Patients Codes VS"/>
 <artifact id="CodeSystem/AcceptingPatientsCS" key="CodeSystem-AcceptingPatientsCS" name="Accepting Patients Codes"/>
+<artifact id="ValueSet/AcceptingPatientsVS" key="ValueSet-AcceptingPatientsVS" name="Accepting Patients Codes VS"/>
 <artifact deprecated="true" key="AcceptingPatients" name="AcceptingPatients"/>
 <artifact id="StructureDefinition/accessibility" key="StructureDefinition-accessibility" name="Accessibility"/>
-<artifact id="ValueSet/AccessibilityVS" key="ValueSet-AccessibilityVS" name="Accessibility VS"/>
 <artifact id="CodeSystem/AccessibilityCS" key="CodeSystem-AccessibilityCS" name="Accessibility CS"/>
+<artifact id="ValueSet/AccessibilityVS" key="ValueSet-AccessibilityVS" name="Accessibility VS"/>
 <artifact id="Organization/Acme" key="Organization-Acme" name="Acme"/>
 <artifact id="Endpoint/AcmeOfCTPortalEndpoint" key="Endpoint-AcmeOfCTPortalEndpoint" name="AcmeOfCTPortalEndpoint"/>
 <artifact id="InsurancePlan/AcmeQHPBronze" key="InsurancePlan-AcmeQHPBronze" name="AcmeQHPBronze"/>
@@ -42,13 +36,12 @@
 <artifact id="Practitioner/Counselor" key="Practitioner-Counselor" name="Counselor"/>
 <artifact id="PractitionerRole/CounselorRole1" key="PractitionerRole-CounselorRole1" name="CounselorRole1"/>
 <artifact id="StructureDefinition/delivery-method" key="StructureDefinition-delivery-method" name="Delivery Method"/>
-<artifact id="ValueSet/DeliveryMethodVS" key="ValueSet-DeliveryMethodVS" name="Delivery Methods VS"/>
 <artifact id="CodeSystem/DeliveryMethodCS" key="CodeSystem-DeliveryMethodCS" name="Delivery Methods"/>
-<artifact deprecated="true" id="StructureDefinition/plannet-Endpoint" key="Endpoint" name="Plan-Net Endpoint"/>
-<artifact id="ValueSet/EndpointConnectionTypeVS" key="ValueSet-EndpointConnectionTypeVS" name="Endpoint Connection Types VS"/>
+<artifact id="ValueSet/DeliveryMethodVS" key="ValueSet-DeliveryMethodVS" name="Delivery Methods VS"/>
 <artifact id="CodeSystem/EndpointConnectionTypeCS" key="CodeSystem-EndpointConnectionTypeCS" name="Endpoint Connection Types (additional)"/>
-<artifact id="ValueSet/EndpointPayloadTypeVS" key="ValueSet-EndpointPayloadTypeVS" name="Endpoint Payload Types VS"/>
+<artifact id="ValueSet/EndpointConnectionTypeVS" key="ValueSet-EndpointConnectionTypeVS" name="Endpoint Connection Types VS"/>
 <artifact id="CodeSystem/EndpointPayloadTypeCS" key="CodeSystem-EndpointPayloadTypeCS" name="Endpoint Payload Types"/>
+<artifact id="ValueSet/EndpointPayloadTypeVS" key="ValueSet-EndpointPayloadTypeVS" name="Endpoint Payload Types VS"/>
 <artifact deprecated="true" id="StructureDefinition/plannet-EndpointUseCase-extension" key="EndpointUseCase" name="Endpoint Use Case"/>
 <artifact id="StructureDefinition/endpoint-usecase" key="StructureDefinition-endpoint-usecase" name="Endpoint Usecase"/>
 <artifact id="ValueSet/EndpointUsecaseVS" key="ValueSet-EndpointUsecaseVS" name="Endpoint Usecases VS"/>
@@ -62,9 +55,8 @@
 <artifact id="OrganizationAffiliation/HartfordOrthopedicAffil" key="OrganizationAffiliation-HartfordOrthopedicAffil" name="HartfordOrthopedicAffil"/>
 <artifact id="HealthcareService/HartfordOrthopedicServices" key="HealthcareService-HartfordOrthopedicServices" name="HartfordOrthopedicServices"/>
 <artifact id="Organization/HartfordOrthopedics" key="Organization-HartfordOrthopedics" name="HartfordOrthopedics"/>
-<artifact id="ValueSet/HealthcareServiceCategoryVS" key="ValueSet-HealthcareServiceCategoryVS" name="Healthcare Service CategoryVS"/>
 <artifact id="CodeSystem/HealthcareServiceCategoryCS" key="CodeSystem-HealthcareServiceCategoryCS" name="Healthcare Service Category"/>
-<artifact deprecated="true" id="StructureDefinition/plannet-HealthcareService" key="HealthCareService" name="Plan-Net HealthcareService"/>
+<artifact id="ValueSet/HealthcareServiceCategoryVS" key="ValueSet-HealthcareServiceCategoryVS" name="Healthcare Service CategoryVS"/>
 <artifact id="ValueSet/HealthcareServiceTypeVS" key="ValueSet-HealthcareServiceTypeVS" name="HealthcareService Types VS"/>
 <artifact id="HealthcareService/HospERService" key="HealthcareService-HospERService" name="HospERService"/>
 <artifact id="Location/HospLoc1" key="Location-HospLoc1" name="HospLoc1"/>
@@ -72,34 +64,29 @@
 <artifact id="Organization/Hospital" key="Organization-Hospital" name="Hospital"/>
 <artifact id="ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS" key="ValueSet-IndividualSpecialtyAndDegreeLicenseCertificateVS" name="Individual Specialties, Degrees, Licenses, and Certificates VS"/>
 <artifact id="ValueSet/IndividualAndGroupSpecialtiesVS" key="ValueSet-IndividualAndGroupSpecialtiesVS" name="Individual and Group Specialties"/>
-<artifact id="ValueSet/InsurancePlanTypeVS" key="ValueSet-InsurancePlanTypeVS" name="Insurance Plan TypeVS"/>
 <artifact id="CodeSystem/InsurancePlanTypeCS" key="CodeSystem-InsurancePlanTypeCS" name="Insurance Plan Type"/>
-<artifact id="ValueSet/InsuranceProductTypeVS" key="ValueSet-InsuranceProductTypeVS" name="Insurance Product Type VS"/>
+<artifact id="ValueSet/InsurancePlanTypeVS" key="ValueSet-InsurancePlanTypeVS" name="Insurance Plan TypeVS"/>
 <artifact id="CodeSystem/InsuranceProductTypeCS" key="CodeSystem-InsuranceProductTypeCS" name="Insurance Product Type"/>
-<artifact deprecated="true" id="StructureDefinition/plannet-InsurancePlan" key="InsurancePlan" name="Plan-Net InsurancePlan"/>
+<artifact id="ValueSet/InsuranceProductTypeVS" key="ValueSet-InsuranceProductTypeVS" name="Insurance Product Type VS"/>
 <artifact id="Practitioner/JoeSmith" key="Practitioner-JoeSmith" name="JoeSmith"/>
 <artifact id="PractitionerRole/JoeSmithRole1" key="PractitionerRole-JoeSmithRole1" name="JoeSmithRole1"/>
 <artifact id="PractitionerRole/JoeSmithRole2" key="PractitionerRole-JoeSmithRole2" name="JoeSmithRole2"/>
 <artifact id="PractitionerRole/JoeSmithRole3" key="PractitionerRole-JoeSmithRole3" name="JoeSmithRole3"/>
-<artifact id="ValueSet/LanguageProficiencyVS" key="ValueSet-LanguageProficiencyVS" name="Language Proficiency VS"/>
 <artifact id="CodeSystem/LanguageProficiencyCS" key="CodeSystem-LanguageProficiencyCS" name="Language Proficiency CS"/>
-<artifact deprecated="true" id="StructureDefinition/plannet-Location" key="Location" name="Plan-Net Location"/>
+<artifact id="ValueSet/LanguageProficiencyVS" key="ValueSet-LanguageProficiencyVS" name="Language Proficiency VS"/>
 <artifact id="StructureDefinition/location-reference" key="StructureDefinition-location-reference" name="Location Reference"/>
 <artifact deprecated="true" id="StructureDefinition/plannet-Location-reference-extension" key="LocationReference" name="Location- reference"/>
 <artifact id="ValueSet/MinEndpointConnectionTypeVS" key="ValueSet-MinEndpointConnectionTypeVS" name="Minimum Endpoint Connection Types VS"/>
 <artifact deprecated="true" id="StructureDefinition/plannet-Network-reference-extension" key="FromNetwork" name="Netowrk - reference"/>
-<artifact deprecated="true" id="StructureDefinition/plannet-Network" key="Network" name="Plan-Net Network"/>
 <artifact id="StructureDefinition/network-reference" key="StructureDefinition-network-reference" name="Network Reference"/>
 <artifact id="ValueSet/NetworkTypeVS" key="ValueSet-NetworkTypeVS" name="Network Type VS"/>
 <artifact id="StructureDefinition/newpatients" key="NewPatients" name="New Patients"/>
 <artifact id="ValueSet/NonIndividualSpecialtiesVS" key="ValueSet-NonIndividualSpecialtiesVS" name="Non-Individual Specialties"/>
 <artifact id="ValueSet/NonIndividualSpecialtyAndDegreeLicenseCertificateVS" key="ValueSet-NonIndividualSpecialtyAndDegreeLicenseCertificateVS" name="Non-Individual Specialties, Degrees, Licenses, and Certificates VS"/>
 <artifact id="StructureDefinition/org-description" key="StructureDefinition-org-description" name="Org Description"/>
-<artifact deprecated="true" id="StructureDefinition/plannet-Organization" key="Organization" name="Plan-Net Organization"/>
 <artifact id="CodeSystem/OrganizationAffiliationRoleCS" key="CodeSystem-OrganizationAffiliationRoleCS" name="Organization Affiliation Role"/>
-<artifact id="ValueSet/OrgTypeVS" key="ValueSet-OrgTypeVS" name="Organization Type VS"/>
 <artifact id="CodeSystem/OrgTypeCS" key="CodeSystem-OrgTypeCS" name="Organization Type"/>
-<artifact deprecated="true" id="StructureDefinition/plannet-OrganizationAffiliation" key="OrganizationAffiliation" name="Plan-Net OrganizationAffiliation"/>
+<artifact id="ValueSet/OrgTypeVS" key="ValueSet-OrgTypeVS" name="Organization Type VS"/>
 <artifact id="ValueSet/OrganizationAffiliationRoleVS" key="ValueSet-OrganizationAffiliationRoleVS" name="OrganizationAffiliation Roles"/>
 <artifact deprecated="true" key="ParticipatingNetwork" name="ParticipatingNetwork"/>
 <artifact id="Organization/PharmChain" key="Organization-PharmChain" name="PharmChain"/>
@@ -114,9 +101,19 @@
 <artifact id="Location/PharmLoc3" key="Location-PharmLoc3" name="PharmLoc3"/>
 <artifact id="Location/PharmLoc4" key="Location-PharmLoc4" name="PharmLoc4"/>
 <artifact id="CapabilityStatement/plan-net" key="CapabilityStatement-plan-net" name="Plan-Net CapabilityStatement"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-Endpoint" key="Endpoint" name="Plan-Net Endpoint"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-HealthcareService" key="HealthCareService" name="Plan-Net HealthcareService"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-InsurancePlan" key="InsurancePlan" name="Plan-Net InsurancePlan"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-Location" key="Location" name="Plan-Net Location"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-Network" key="Network" name="Plan-Net Network"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-Organization" key="Organization" name="Plan-Net Organization"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-OrganizationAffiliation" key="OrganizationAffiliation" name="Plan-Net OrganizationAffiliation"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-Practitioner" key="Practitioner" name="Plan-Net Practitioner"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-PractitionerRole" key="PractitionerRole" name="Plan-Net PractitionerRole"/>
 <artifact id="SearchParameter/endpoint-organization" key="SearchParameter-endpoint-organization" name="Plannet_sp_endpoint_organization"/>
 <artifact id="SearchParameter/healthcareservice-service-category" key="SearchParameter-healthcareservice-service-category" name="Plannet_sp_healthcareservice_category"/>
 <artifact id="SearchParameter/healthcareservice-coverage-area" key="SearchParameter-healthcareservice-coverage-area" name="Plannet_sp_healthcareservice_coverage_area"/>
+<artifact id="SearchParameter/healthcareservice-delivery-method" key="SearchParameter-healthcareservice-delivery-method" name="Plannet_sp_healthcareservice_delivery_method"/>
 <artifact id="SearchParameter/healthcareservice-endpoint" key="SearchParameter-healthcareservice-endpoint" name="Plannet_sp_healthcareservice_endpoint"/>
 <artifact id="SearchParameter/healthcareservice-location" key="SearchParameter-healthcareservice-location" name="Plannet_sp_healthcareservice_location"/>
 <artifact id="SearchParameter/healthcareservice-name" key="SearchParameter-healthcareservice-name" name="Plannet_sp_healthcareservice_name"/>
@@ -127,6 +124,7 @@
 <artifact id="SearchParameter/insuranceplan-coverage-area" key="SearchParameter-insuranceplan-coverage-area" name="Plannet_sp_insuranceplan_coverage_area"/>
 <artifact id="SearchParameter/insuranceplan-identifier" key="SearchParameter-insuranceplan-identifier" name="Plannet_sp_insuranceplan_identifier"/>
 <artifact id="SearchParameter/insuranceplan-name" key="SearchParameter-insuranceplan-name" name="Plannet_sp_insuranceplan_name"/>
+<artifact id="SearchParameter/insuranceplan-network" key="SearchParameter-insuranceplan-network" name="Plannet_sp_insuranceplan_network"/>
 <artifact id="SearchParameter/insuranceplan-owned-by" key="SearchParameter-insuranceplan-owned-by" name="Plannet_sp_insuranceplan_owned_by"/>
 <artifact id="SearchParameter/insuranceplan-plan-type" key="SearchParameter-insuranceplan-plan-type" name="Plannet_sp_insuranceplan_plan_type"/>
 <artifact id="SearchParameter/insuranceplan-type" key="SearchParameter-insuranceplan-type" name="Plannet_sp_insuranceplan_type"/>
@@ -134,6 +132,7 @@
 <artifact id="SearchParameter/location-address-city" key="SearchParameter-location-address-city" name="Plannet_sp_location_address_city"/>
 <artifact id="SearchParameter/location-address-postalcode" key="SearchParameter-location-address-postalcode" name="Plannet_sp_location_address_postalcode"/>
 <artifact id="SearchParameter/location-address-state" key="SearchParameter-location-address-state" name="Plannet_sp_location_address_state"/>
+<artifact id="SearchParameter/location-endpoint" key="SearchParameter-location-endpoint" name="Plannet_sp_location_endpoint"/>
 <artifact id="SearchParameter/location-organization" key="SearchParameter-location-organization" name="Plannet_sp_location_organization"/>
 <artifact id="SearchParameter/location-partof" key="SearchParameter-location-partof" name="Plannet_sp_location_partof"/>
 <artifact id="SearchParameter/location-type" key="SearchParameter-location-type" name="Plannet_sp_location_type"/>
@@ -142,7 +141,9 @@
 <artifact id="SearchParameter/organization-endpoint" key="SearchParameter-organization-endpoint" name="Plannet_sp_organization_endpoint"/>
 <artifact id="SearchParameter/organization-name" key="SearchParameter-organization-name" name="Plannet_sp_organization_name"/>
 <artifact id="SearchParameter/organization-partof" key="SearchParameter-organization-partof" name="Plannet_sp_organization_partof"/>
+<artifact id="SearchParameter/organization-period" key="SearchParameter-organization-period" name="Plannet_sp_organization_period"/>
 <artifact id="SearchParameter/organization-type" key="SearchParameter-organization-type" name="Plannet_sp_organization_type"/>
+<artifact id="SearchParameter/organizationaffiliation-endpoint" key="SearchParameter-organizationaffiliation-endpoint" name="Plannet_sp_organizationaffiliation_endpoint"/>
 <artifact id="SearchParameter/organizationaffiliation-location" key="SearchParameter-organizationaffiliation-location" name="Plannet_sp_organizationaffiliation_location"/>
 <artifact id="SearchParameter/organizationaffiliation-network" key="SearchParameter-organizationaffiliation-network" name="Plannet_sp_organizationaffiliation_network"/>
 <artifact id="SearchParameter/organizationaffiliation-participating-organization" key="SearchParameter-organizationaffiliation-participating-organization" name="Plannet_sp_organizationaffiliation_participating_organization"/>
@@ -154,6 +155,7 @@
 <artifact id="SearchParameter/practitioner-family-name" key="SearchParameter-practitioner-family-name" name="Plannet_sp_practitioner_family_name"/>
 <artifact id="SearchParameter/practitioner-given-name" key="SearchParameter-practitioner-given-name" name="Plannet_sp_practitioner_given_name"/>
 <artifact id="SearchParameter/practitioner-name" key="SearchParameter-practitioner-name" name="Plannet_sp_practitioner_name"/>
+<artifact id="SearchParameter/practitioner-period" key="SearchParameter-practitioner-period" name="Plannet_sp_practitioner_period"/>
 <artifact id="SearchParameter/practitionerrole-endpoint" key="SearchParameter-practitionerrole-endpoint" name="Plannet_sp_practitionerrole_endpoint"/>
 <artifact id="SearchParameter/practitionerrole-location" key="SearchParameter-practitionerrole-location" name="Plannet_sp_practitionerrole_location"/>
 <artifact id="SearchParameter/practitionerrole-network" key="SearchParameter-practitionerrole-network" name="Plannet_sp_practitionerrole_network"/>
@@ -163,32 +165,34 @@
 <artifact id="SearchParameter/practitionerrole-role" key="SearchParameter-practitionerrole-role" name="Plannet_sp_practitionerrole_role"/>
 <artifact id="SearchParameter/practitionerrole-service" key="SearchParameter-practitionerrole-service" name="Plannet_sp_practitionerrole_service"/>
 <artifact id="SearchParameter/practitionerrole-specialty" key="SearchParameter-practitionerrole-specialty" name="Plannet_sp_practitionerrole_specialty"/>
-<artifact deprecated="true" id="StructureDefinition/plannet-Practitioner" key="Practitioner" name="Plan-Net Practitioner"/>
+<artifact id="StructureDefinition/practitioner-period" key="StructureDefinition-practitioner-period" name="Practitioner Description"/>
 <artifact id="StructureDefinition/practitioner-qualification" key="StructureDefinition-practitioner-qualification" name="Practitioner Qualification"/>
-<artifact deprecated="true" id="StructureDefinition/plannet-PractitionerRole" key="PractitionerRole" name="Plan-Net PractitionerRole"/>
 <artifact id="ValueSet/PractitionerRoleVS" key="ValueSet-PractitionerRoleVS" name="PractitionerRole Code VS"/>
 <artifact id="CodeSystem/ProviderRoleCS" key="CodeSystem-ProviderRoleCS" name="Provider Role Codes"/>
 <artifact id="StructureDefinition/qualification" key="StructureDefinition-qualification" name="Qualification"/>
-<artifact id="ValueSet/QualificationStatusVS" key="ValueSet-QualificationStatusVS" name="Qualification Status VS"/>
 <artifact id="CodeSystem/QualificationStatusCS" key="CodeSystem-QualificationStatusCS" name="Qualification Status"/>
+<artifact id="ValueSet/QualificationStatusVS" key="ValueSet-QualificationStatusVS" name="Qualification Status VS"/>
 <artifact id="ValueSet/SpecialtiesVS" key="ValueSet-SpecialtiesVS" name="Specialties VS"/>
 <artifact id="ValueSet/SpecialtyAndDegreeLicenseCertificateVS" key="ValueSet-SpecialtyAndDegreeLicenseCertificateVS" name="Specialties, Degrees, Licenses, and Certificates VS"/>
 <artifact id="Location/StateOfCTLocation" key="Location-StateOfCTLocation" name="StateOfCTLocation"/>
-<artifact id="SearchParameter/location-endpoint" key="SearchParameter-location-endpoint" name="Plannet_sp_location_endpoint"/>
-<artifact id="SearchParameter/organizationaffiliation-endpoint" key="SearchParameter-organizationaffiliation-endpoint" name="Plannet_sp_organizationaffiliation_endpoint"/>
 <artifact id="StructureDefinition/via-intermediary" key="CViaIntermediary" name="Via Intermediary"/>
-<artifact id="ValueSet/VirtualModalitiesVS" key="ValueSet-VirtualModalitiesVS" name="Virtual Modalities VS"/>
 <artifact id="CodeSystem/VirtualModalitiesCS" key="CodeSystem-VirtualModalitiesCS" name="Virtual Modalities"/>
+<artifact id="ValueSet/VirtualModalitiesVS" key="ValueSet-VirtualModalitiesVS" name="Virtual Modalities VS"/>
 <artifact id="HealthcareService/VirtualCounselService" key="HealthcareService-VirtualCounselService" name="VirtualCounselService"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="background" name="Background"/>
 <page key="ChangeHistory" name="Change History"/>
+<page key="confexpectations" name="Confexpectations"/>
 <page key="downloads" name="Downloads"/>
 <page key="examples" name="Examples"/>
 <page key="index" name="Home"/>
 <page key="implementation" name="Implementation"/>
-<page key="profiles" name="Profiles"/>
+<page deprecated="true" key="profiles" name="Profiles"/>
+<page key="project" name="Project"/>
+<page key="reading" name="Reading"/>
+<page key="security" name="Security"/>
 <page key="toc" name="Table of Contents"/>
 <page deprecated="true" key="codesystems" name="codesystems"/>
 <page deprecated="true" key="extensions" name="extensions"/>
