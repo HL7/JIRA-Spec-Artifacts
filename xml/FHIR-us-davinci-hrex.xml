@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-hrex/2024Sep" ciUrl="http://build.fhir.org/ig/HL7/davinci-ehrx" defaultVersion="1.0.0" defaultWorkgroup="cic" gitUrl="https://github.com/HL7/deavinci-ehrx" url="http://hl7.org/fhir/us/davinci-hrex">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-hrex/2024Sep" ciUrl="http://build.fhir.org/ig/HL7/davinci-ehrx" defaultVersion="1.1.0" defaultWorkgroup="cic" gitUrl="https://github.com/HL7/deavinci-ehrx" url="http://hl7.org/fhir/us/davinci-hrex">
 <version code="current" url="http://build.fhir.org/ig/HL7/davinci-ehrx"/>
-<version code="1.1.0-ballot" url="http://hl7.org/fhir/us/davinci-hrex/2024Sep"/>
+<version code="1.1.0" url="http://hl7.org/fhir/us/davinci-hrex/STU1.1"/>
+<version code="1.1.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/davinci-hrex/2024Sep"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/davinci-hrex/STU1"/>
 <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-hrex/2020Sep"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-hrex/2019Jun"/>
@@ -12,34 +13,39 @@
 <artifact id="Parameters/member-match-out" key="Parameters-member-match-out" name="$member-match example response"/>
 <artifact id="Parameters/member-match-in" key="Parameters-member-match-in" name="$member-match payer example request"/>
 <artifact id="Parameters/member-match-in-provider" key="Parameters-member-match-in-provider" name="$member-match provider example request"/>
-<artifact id="StructureDefinition/extension-itemAuthorizedDate" key="StructureDefinition-extension-itemAuthorizedDate" name="Authorized Date"/>
-<artifact id="StructureDefinition/extension-itemAuthorizedProvider" key="StructureDefinition-extension-itemAuthorizedProvider" name="Authorized Provider"/>
+<artifact deprecated="true" id="StructureDefinition/extension-itemAuthorizedDate" key="StructureDefinition-extension-itemAuthorizedDate" name="Authorized Date"/>
+<artifact deprecated="true" id="StructureDefinition/extension-itemAuthorizedProvider" key="StructureDefinition-extension-itemAuthorizedProvider" name="Authorized Provider"/>
+<artifact id="StructureDefinition/extension-CoverageDavinciWellknownLocation" key="StructureDefinition-extension-CoverageDavinciWellknownLocation" name="Coverage Da Vinci Wellknown Endpoint"/>
 <artifact id="SearchParameter/hrex-coverage-identifier" key="SearchParameter-hrex-coverage-identifier" name="Coverage identifier Search Parameter"/>
 <artifact id="SearchParameter/hrex-coverage-patient" key="SearchParameter-hrex-coverage-patient" name="Coverage patient Search Parameter"/>
 <artifact id="SearchParameter/hrex-coverage-payor" key="SearchParameter-hrex-coverage-payor" name="Coverage payer Search Parameter"/>
 <artifact id="SearchParameter/hrex-coverage-subscriber" key="SearchParameter-hrex-coverage-subscriber" name="Coverage subscriber Search Parameter"/>
 <artifact id="SearchParameter/hrex-coverage-subscriberId" key="SearchParameter-hrex-coverage-subscriberId" name="Coverage subscriberId Search Parameter"/>
+<artifact id="StructureDefinition/HRexWellknownDefinition" key="StructureDefinition-HRexWellknownDefinition" name="Da Vinci .well-known File Definition"/>
+<artifact id="Binary/Wellknown" key="Binary-Wellknown" name="Example Wellknown endpoint"/>
 <artifact id="ValueSet/hrex-consent-policy" key="ValueSet-hrex-consent-policy" name="HRex Consent Policy ValueSet"/>
 <artifact id="StructureDefinition/hrex-consent" key="StructureDefinition-hrex-consent" name="HRex Consent Profile"/>
-<artifact id="StructureDefinition/hrex-coverage" key="StructureDefinition-hrex-coverage" name="HRex Coverage Profile"/>
 <artifact id="ValueSet/hrex-coverage-relationship" key="ValueSet-hrex-coverage-relationship" name="HRex Coverage Relationship ValueSet"/>
 <artifact id="Coverage/full" key="Coverage-full" name="HRex Coverage full example"/>
 <artifact id="Coverage/min" key="Coverage-min" name="HRex Coverage minimal example"/>
+<artifact id="ValueSet/hrex-endpoint-name" key="ValueSet-hrex-endpoint-name" name="HRex Endpoint Name"/>
 <artifact id="StructureDefinition/hrex-reference-id" key="StructureDefinition-hrex-reference-id" name="HRex Identifier Reference Profile"/>
+<artifact id="StructureDefinition/hrex-coverage" key="StructureDefinition-hrex-coverage" name="HRex Member Match Coverage Profile"/>
 <artifact id="OperationDefinition/member-match" key="OperationDefinition-member-match" name="HRex Member Match Operation"/>
+<artifact id="StructureDefinition/hrex-patient-demographics" key="StructureDefinition-hrex-patient-demographics" name="HRex Member Match Patient"/>
+<artifact id="StructureDefinition/hrex-identifier-namespaced" key="StructureDefinition-hrex-identifier-namespaced" name="HRex Namespaced Identifier"/>
 <artifact id="StructureDefinition/hrex-organization" key="StructureDefinition-hrex-organization" name="HRex Organization Profile"/>
 <artifact id="Organization/full" key="Organization-full" name="HRex Organization full example"/>
 <artifact id="Organization/min" key="Organization-min" name="HRex Organization minimal example"/>
 <artifact id="StructureDefinition/hrex-parameters-member-match-in" key="StructureDefinition-hrex-parameters-member-match-in" name="HRex Parameters - Member Match Request Profile"/>
 <artifact id="StructureDefinition/hrex-parameters-member-match-out" key="StructureDefinition-hrex-parameters-member-match-out" name="HRex Parameters - Member Match Response Profile"/>
-<artifact id="StructureDefinition/hrex-patient-demographics" key="StructureDefinition-hrex-patient-demographics" name="HRex Patient Demographics"/>
-<artifact id="StructureDefinition/hrex-practitioner" key="StructureDefinition-hrex-practitioner" name="HRex Practitioner Profile"/>
-<artifact id="Practitioner/full" key="Practitioner-full" name="HRex Practitioner full example"/>
-<artifact id="Practitioner/min" key="Practitioner-min" name="HRex Practitioner minimal example"/>
+<artifact deprecated="true" id="StructureDefinition/hrex-practitioner" key="StructureDefinition-hrex-practitioner" name="HRex Practitioner Profile"/>
+<artifact deprecated="true" id="Practitioner/full" key="Practitioner-full" name="HRex Practitioner full example"/>
+<artifact deprecated="true" id="Practitioner/min" key="Practitioner-min" name="HRex Practitioner minimal example"/>
 <artifact id="StructureDefinition/hrex-practitionerrole" key="StructureDefinition-hrex-practitionerrole" name="HRex PractitionerRole Profile"/>
 <artifact id="PractitionerRole/full" key="PractitionerRole-full" name="HRex PractitionerRole full example"/>
 <artifact id="PractitionerRole/min" key="PractitionerRole-min" name="HRex PractitionerRole min example"/>
-<artifact id="StructureDefinition/hrex-claimresponse" key="StructureDefinition-hrex-claimresponse" name="HRex Prior authorization"/>
+<artifact deprecated="true" id="StructureDefinition/hrex-claimresponse" key="StructureDefinition-hrex-claimresponse" name="HRex Prior authorization"/>
 <artifact id="StructureDefinition/hrex-provenance" key="StructureDefinition-hrex-provenance" name="HRex Provenance Profile"/>
 <artifact id="Provenance/full" key="Provenance-full" name="HRex Provenance full example"/>
 <artifact id="Provenance/min" key="Provenance-min" name="HRex Provenance min example"/>
@@ -56,12 +62,12 @@
 <artifact id="Task/min" key="Task-min" name="HRex Task minimal example"/>
 <artifact id="Bundle/task-poll-response" key="Bundle-task-poll-response" name="HRex Task polling response"/>
 <artifact id="CodeSystem/hrex-temp" key="CodeSystem-hrex-temp" name="HRex Temporary Code System"/>
-<artifact id="StructureDefinition/extension-itemTraceNumber" key="StructureDefinition-extension-itemTraceNumber" name="Item Trace Number"/>
+<artifact deprecated="true" id="StructureDefinition/extension-itemTraceNumber" key="StructureDefinition-extension-itemTraceNumber" name="Item Trace Number"/>
 <artifact id="ConceptMap/NUCC-CareTeamMemberFunction" key="ConceptMap-NUCC-CareTeamMemberFunction" name="NUCC to SNOMED Care Team Member Function Map"/>
-<artifact id="StructureDefinition/extension-itemPreAuthIssueDate" key="StructureDefinition-extension-itemPreAuthIssueDate" name="Pre Authorized Issue Date"/>
+<artifact deprecated="true" id="StructureDefinition/extension-itemPreAuthIssueDate" key="StructureDefinition-extension-itemPreAuthIssueDate" name="Pre Authorized Issue Date"/>
 <artifact id="SearchParameter/hrex-provenance-target" key="SearchParameter-hrex-provenance-target" name="Provenance target Search Parameter"/>
 <artifact id="ConceptMap/CareTeamMember-NUCCFunction" key="ConceptMap-CareTeamMember-NUCCFunction" name="SNOMED Care Team Member Function to NUCC Map"/>
-<artifact id="ClaimResponse/UnsolicitedReferralAuthorizationResponseExample" key="ClaimResponse-UnsolicitedReferralAuthorizationResponseExample" name="Unsolicited Prior Authorization example"/>
+<artifact deprecated="true" id="ClaimResponse/UnsolicitedReferralAuthorizationResponseExample" key="ClaimResponse-UnsolicitedReferralAuthorizationResponseExample" name="Unsolicited Prior Authorization example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="exchanging" name="Approaches to Exchanging FHIR Data"/>
@@ -80,10 +86,10 @@
 <page deprecated="true" key="exchanging-polling" name="Exchanging with polling"/>
 <page key="fhir" name="FHIR Introduction"/>
 <page key="index" name="Home"/>
-<page key="goodpractice" name="IG Practices"/>
+<page deprecated="true" key="goodpractice" name="IG Practices"/>
 <page key="validation" name="Managing Instance Validation"/>
 <page key="credits" name="Participants and Credits"/>
-<page key="profiles" name="Profile overview"/>
+<page deprecated="true" key="profiles" name="Profile overview"/>
 <page key="searchparameters" name="Search Parameters overview"/>
 <page key="security" name="Security and Privacy"/>
 <page key="toc" name="Table of Contents"/>

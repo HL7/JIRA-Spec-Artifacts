@@ -18,7 +18,7 @@ Source content is found in the `xml` folder:
     * For some specifications, alignment will be checked as part of the specification publication process.
     * Specification files are maintained independently (rather than as part of the SPECS files) to allow independent maintenance.
 
-Each type of XML file has a corresponding schema in the [`schemas`](shemas) folder.  The [`xml/_workgroups.xml`](xml/_workgroups.xml) file is also converted to a schema to aid validation.
+Each type of XML file has a corresponding schema in the [`schemas`](schemas) folder.  The [`xml/_workgroups.xml`](xml/_workgroups.xml) file is also converted to a schema to aid validation.
 
 The json files used by the [Jira Elements Connect (formerly nFeed) plugin](https://marketplace.atlassian.com/apps/23337/elements-connect-formerly-nfeed) to manage dropdowns are auto-generated into the json folder.
 There is one file for each product family plus a single "combined" file that covers all specifications and is used by the ballot projects
