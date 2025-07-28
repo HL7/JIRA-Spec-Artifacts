@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-dtr/2.1.0-preview" ciUrl="http://build.fhir.org/ig/HL7/davinci-dtr" defaultVersion="2.1.0" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/davinci-dtr" url="http://hl7.org/fhir/us/davinci-dtr">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-dtr/2022May" ciUrl="http://build.fhir.org/ig/HL7/davinci-dtr" defaultVersion="2.2.0-ballot" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/davinci-dtr" url="http://hl7.org/fhir/us/davinci-dtr">
 <version code="current" url="http://build.fhir.org/ig/HL7/davinci-dtr"/>
+<version code="2.2.0-ballot" url="http://hl7.org/fhir/us/davinci-dtr/2025Sep"/>
 <version code="2.1.0" url="http://hl7.org/fhir/us/davinci-dtr/STU2.1"/>
 <version code="2.1.0-preview" deprecated="true" url="http://hl7.org/fhir/us/davinci-dtr/2.1.0-preview"/>
 <version code="2.0.1" deprecated="true" url="http://hl7.org/fhir/us/davinci-dtr/STU2"/>
@@ -22,13 +23,18 @@
 <artifact id="StructureDefinition/activeRole" key="StructureDefinition-activeRole" name="Active Role"/>
 <artifact id="Questionnaire/AdaptiveSearchExample" key="Questionnaire-AdaptiveSearchExample" name="AdaptiveSearchExample"/>
 <artifact id="StructureDefinition/alternativeExpression" key="StructureDefinition-alternativeExpression" name="Alternative Expression"/>
-<artifact id="Questionnaire/dtr-base-questionnaire" key="Questionnaire-dtr-base-questionnaire" name="Base Questionnaire"/>
+<artifact id="ValueSet/questionnaireAudience" key="ValueSet-questionnaireAudience" name="Audience Value Set"/>
+<artifact deprecated="true" id="Questionnaire/dtr-base-questionnaire" key="Questionnaire-dtr-base-questionnaire" name="Base Questionnaire"/>
 <artifact id="StructureDefinition/containedReference" key="StructureDefinition-containedReference" name="Contained Reference"/>
 <artifact id="Coverage/CoverageExample" key="Coverage-CoverageExample" name="CoverageExample"/>
+<artifact id="StructureDefinition/dtr-base-questionnaire" key="StructureDefinition-dtr-base-questionnaire" name="DTR Base Questionnaire"/>
 <artifact deprecated="true" id="StructureDefinition/dtr-coverage-r4" key="StructureDefinition-dtr-coverage-r4" name="DTR Coverage R4"/>
 <artifact deprecated="true" id="StructureDefinition/dtr-documentreference-r4" key="StructureDefinition-dtr-documentreference-r4" name="DTR Document Reference R4"/>
+<artifact id="CodeSystem/dtr-informationorigin-codes" key="CodeSystem-dtr-informationorigin-codes" name="DTR Information Origin Codes"/>
+<artifact id="CodeSystem/dtr-intendedaudience-codes" key="CodeSystem-dtr-intendedaudience-codes" name="DTR Intended Audience Codes"/>
 <artifact id="OperationDefinition/log-questionnaire-errors" key="OperationDefinition-log-questionnaire-errors" name="DTR Log Questionnaire Errors"/>
 <artifact id="StructureDefinition/dtr-log-errors-input-parameters" key="StructureDefinition-dtr-log-errors-input-parameters" name="DTR Log Questionnaire Errors Input Parameters"/>
+<artifact id="CodeSystem/dtr-metric-codes" key="CodeSystem-dtr-metric-codes" name="DTR Metric Codes"/>
 <artifact id="StructureDefinition/DTRMetricData" key="StructureDefinition-DTRMetricData" name="DTR Metric Data"/>
 <artifact id="StructureDefinition/dtr-next-question-input-parameters" key="StructureDefinition-dtr-next-question-input-parameters" name="DTR Next Question Input Parameters"/>
 <artifact id="OperationDefinition/DTR-Questionnaire-next-question" key="OperationDefinition-DTR-Questionnaire-next-question" name="DTR Next Question Operation"/>
@@ -42,6 +48,7 @@
 <artifact id="StructureDefinition/dtr-qpackage-output-parameters" key="StructureDefinition-dtr-qpackage-output-parameters" name="DTR Questionnaire Package Output Parameters"/>
 <artifact id="StructureDefinition/dtr-questionnaireresponse" key="StructureDefinition-dtr-questionnaireresponse-r4" name="DTR Questionnaire Response"/>
 <artifact id="StructureDefinition/DTR-QRBundle" key="StructureDefinition-DTR-QRBundle" name="DTR Questionnaire Response Bundle"/>
+<artifact id="StructureDefinition/dtr-questionnaireresponse-adapt" key="StructureDefinition-dtr-questionnaireresponse-adapt" name="DTR Questionnaire Response for adaptive form"/>
 <artifact id="StructureDefinition/dtr-questionnaire-adapt" key="StructureDefinition-dtr-sdc-questionnaire-adapt" name="DTR Questionnaire for adaptive form"/>
 <artifact id="StructureDefinition/dtr-questionnaire-adapt-search" key="StructureDefinition-dtr-questionnaire-adapt-search" name="DTR Questionnaire for adaptive form Search"/>
 <artifact deprecated="true" id="StructureDefinition/dtr-sdc-questionnaire" key="StructureDefinition-dtr-sdc-questionnaire" name="DTR SDC Questionnaire"/>
@@ -50,7 +57,8 @@
 <artifact id="StructureDefinition/DTRSupportedPayers" key="StructureDefinition-DTRSupportedPayers" name="DTR Supported Payers"/>
 <artifact deprecated="true" id="StructureDefinition/dtr-task-r4" key="StructureDefinition-dtr-task-r4" name="DTR Task - R4"/>
 <artifact deprecated="true" id="Task/blood-gass-panel-task-r4" key="Task-blood-gass-panel-task-r4" name="DTR Task Example - R4"/>
-<artifact id="CodeSystem/temp" key="CodeSystem-temp" name="DTR Temporary Codes"/>
+<artifact deprecated="true" id="CodeSystem/temp" key="CodeSystem-temp" name="DTR Temporary Codes"/>
+<artifact id="OperationDefinition/DTR-ValueSet-expand" key="OperationDefinition-DTR-ValueSet-expand" name="DTR Value Set Expansion"/>
 <artifact deprecated="true" id="Coverage/DTRCoverage1002" key="Coverage-DTRCoverage1002" name="DTRCoverage1002"/>
 <artifact deprecated="true" id="OperationDefinition/Questionnaire-for-Order" key="OperationDefinition-Questionnaire-for-Order" name="DTRQuestionnaireOperation"/>
 <artifact deprecated="true" id="CapabilityStatement/full-dtr-ehr" key="CapabilityStatement-full-dtr-ehr" name="Full DTR EHR"/>
@@ -74,14 +82,17 @@
 <artifact deprecated="true" id="StructureDefinition/endpoint" key="StructureDefinition-endpoint" name="PayerEndpoint"/>
 <artifact id="Practitioner/PractitionerExample" key="Practitioner-PractitionerExample" name="PractitionerExample"/>
 <artifact id="Library/library-quick-model-definition" key="Library-library-quick-model-definition" name="QUICK Model Definition"/>
+<artifact id="StructureDefinition/questionnaireAudience" key="StructureDefinition-questionnaireAudience" name="Questionnaire Audience"/>
 <artifact id="Bundle/DTRQuestionnairePackageOperationResultComplex" key="Bundle-DTRQuestionnairePackageOperationResultComplex" name="Questionnaire Package Operation Results - Complex"/>
 <artifact id="Bundle/DTRQuestionnairePackageOperationResultSimple" key="Bundle-DTRQuestionnairePackageOperationResultSimple" name="Questionnaire Package Operation Results - Simple"/>
 <artifact id="StructureDefinition/qr-context" key="StructureDefinition-context" name="Questionnaire Response Context"/>
+<artifact id="StructureDefinition/qr-coverage" key="StructureDefinition-qr-coverage" name="Questionnaire Response Coverage"/>
 <artifact id="Questionnaire/referred-questionnaire" key="Questionnaire-referred-questionnaire" name="Referred Questionnaire for QuestionnaireResponse"/>
 <artifact id="CapabilityStatement/smart-dtr-client" key="CapabilityStatement-smart-dtr-client" name="SMART DTR Client"/>
 <artifact deprecated="true" id="CapabilityStatement/smart-dtr-client-311" key="CapabilityStatement-smart-dtr-client-311" name="SMART DTR Client - USCDI 1"/>
 <artifact deprecated="true" id="CapabilityStatement/smart-dtr-client-610" key="CapabilityStatement-smart-dtr-client-610" name="SMART DTR Client - USCDI 3"/>
 <artifact id="ServiceRequest/ServiceRequestExample" key="ServiceRequest-ServiceRequestExample" name="ServiceRequestExample"/>
+<artifact id="Questionnaire/dtr-questionnaire" key="Questionnaire-dtr-questionnaire" name="Simple Questionnaire"/>
 <artifact deprecated="true" id="Contract/contract1001" key="Contract-contract1001" name="contract1001"/>
 <artifact deprecated="true" id="Coverage/coverage1001" key="Coverage-coverage1001" name="coverage1001"/>
 <artifact deprecated="true" id="DeviceRequest/deviceRequest0001" key="DeviceRequest-deviceRequest0001" name="deviceRequest0001"/>
@@ -121,6 +132,7 @@
 <page deprecated="true" key="resources__home-o2-prepopulation" name="Home Oxygen Therapy Questionnaire Prepopulation CQL"/>
 <page deprecated="true" key="specification__behaviors__passing_information_other_exchanges" name="How DTR passes information to PAS, PAO or other exchanges"/>
 <page deprecated="true" key="specification__behaviors__launch_outside_of_CRD" name="Launch outside of CRD"/>
+<page key="issues" name="Open Issues"/>
 <page deprecated="true" key="specification__behaviors__persisting_application_state" name="Persisting Application State"/>
 <page deprecated="true" key="specification__behaviors__persisting_results" name="Persisting Results"/>
 <page deprecated="true" key="specification__behaviors__privacy_safety_and_security" name="Privacy, Safety and Security"/>
