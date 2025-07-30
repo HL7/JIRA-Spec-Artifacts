@@ -1,30 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/pacio-adi/2022Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-pacio-adi" defaultVersion="1.0.0" defaultWorkgroup="pe" gitUrl="https://github.com/HL7/pacio-adi" url="http://hl7.org/fhir/us/pacio-adi">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/pacio-adi/STU2" ciUrl="http://build.fhir.org/ig/HL7/fhir-pacio-adi" defaultVersion="1.0.0" defaultWorkgroup="pe" gitUrl="https://github.com/HL7/pacio-adi" url="http://hl7.org/fhir/us/pacio-adi">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-pacio-adi"/>
+<version code="2.0.0-ballot" url="http://hl7.org/fhir/us/pacio-adi/STU2"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/pacio-adi/STU1"/>
-<version code="0.1.0" url="http://hl7.org/fhir/us/pacio-adi/2022Jan"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/pacio-adi/2022Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/ADI-AutopsyObservation" key="StructureDefinition-PADI-AutopsyObservation" name="ADI Autopsy Observation"/>
+<artifact id="StructureDefinition/ADI-Bundle" key="StructureDefinition-ADI-Bundle" name="ADI Bundle"/>
 <artifact id="CapabilityStatement/adi" key="CapabilityStatement-adi" name="ADI CapabilityStatement"/>
-<artifact id="StructureDefinition/ADI-CareExperiencePreference" key="StructureDefinition-PADI-CareExperiencePreference" name="ADI Care Experience Preference"/>
+<artifact id="StructureDefinition/adi-condition-code-extension" key="StructureDefinition-adi-condition-code-extension" name="ADI Care Plan Condition Codes"/>
 <artifact id="StructureDefinition/ADI-Composition-Header" key="StructureDefinition-ADI-Composition-Header" name="ADI Composition Header"/>
+<artifact id="ValueSet/ADICompositionStatusVS" key="ValueSet-ADICompositionStatusVS" name="ADI Composition Status"/>
 <artifact deprecated="true" id="ValueSet/PADIConsentActorRoleVS" key="ValueSet-PADIConsentActorRoleVS" name="ADI Consent Actor Role"/>
+<artifact id="StructureDefinition/ADI-DecisionalCapacity" key="StructureDefinition-ADI-DecisionalCapacity" name="ADI Decisional Capacity"/>
 <artifact id="StructureDefinition/ADI-DocumentReference" key="StructureDefinition-ADI-DocumentReference" name="ADI Document Reference"/>
+<artifact id="ValueSet/ADIDocumentReferenceStatusVS" key="ValueSet-ADIDocumentReferenceStatusVS" name="ADI Document Reference Status"/>
+<artifact id="ValueSet/ADIDocumentRevokeStatusVS" key="ValueSet-ADIDocumentRevokeStatusVS" name="ADI Document Revoke Status"/>
 <artifact id="StructureDefinition/ADI-DocumentationObservation" key="StructureDefinition-PADI-DocumentationObservation" name="ADI Documentation Observation"/>
+<artifact id="StructureDefinition/adi-expiration-date-extension" key="StructureDefinition-adi-expiration-date-extension" name="ADI Expiration Date"/>
+<artifact id="StructureDefinition/ADI-Facilitator" key="StructureDefinition-ADI-Facilitator" name="ADI Facilitator"/>
 <artifact deprecated="true" id="StructureDefinition/PADI-Goal" key="StructureDefinition-PADI-Goal" name="ADI Goal"/>
 <artifact id="CodeSystem/ADIPreferenceCategoryCS" key="CodeSystem-PADIGoalCategoryCS" name="ADI Goal Category Code System"/>
+<artifact id="StructureDefinition/ADI-HealthcareAgentConsent" key="StructureDefinition-ADI-HealthcareAgentConsent" name="ADI Healthcare Agent Consent"/>
+<artifact id="StructureDefinition/ADI-ADIConsentDeny" key="StructureDefinition-ADI-ADIConsentDeny" name="ADI Healthcare Agent Consent Deny"/>
+<artifact id="StructureDefinition/ADI-ADIConsentPermit" key="StructureDefinition-ADI-ADIConsentPermit" name="ADI Healthcare Agent Consent Permit"/>
+<artifact id="StructureDefinition/ADI-HealthcareAgentParticipant" key="StructureDefinition-ADI-HealthcareAgentParticipant" name="ADI Healthcare Agent Participant"/>
+<artifact id="StructureDefinition/ADI-Jurisdiction" key="StructureDefinition-ADI-Jurisdiction" name="ADI Jurisdiction"/>
+<artifact id="StructureDefinition/ADI-ADIMinimalSourceFormInformation" key="StructureDefinition-ADI-ADIMinimalSourceFormInformation" name="ADI Minimal Source Form"/>
 <artifact id="StructureDefinition/ADI-Notary" key="StructureDefinition-ADI-Notary" name="ADI Notary"/>
 <artifact id="StructureDefinition/ADI-OrganDonationObservation" key="StructureDefinition-PADI-OrganDonationObservation" name="ADI Organ Donation"/>
-<artifact id="StructureDefinition/ADI-Participant" key="StructureDefinition-PADI-Participant" name="ADI Participant"/>
-<artifact id="StructureDefinition/ADI-ParticipantConsent" key="StructureDefinition-PADI-ParticipantConsent" name="ADI Participant Consent"/>
-<artifact id="StructureDefinition/ADI-PACPComposition" key="StructureDefinition-PADI-PACPComposition" name="ADI Personal Advance Care Plan Composition"/>
+<artifact id="StructureDefinition/ADI-PMOAdditionalOrdersOrInstructionsServiceRequest" key="StructureDefinition-ADI-PMOAdditionalOrdersOrInstructionsServiceRequest" name="ADI PMO Additional orders or instructions ServiceRequest"/>
+<artifact id="StructureDefinition/ADI-PMOCPRServiceRequest" key="StructureDefinition-ADI-PMOCPRServiceRequest" name="ADI PMO Cardiopulmonary Resuscitation ServiceRequest"/>
+<artifact id="StructureDefinition/ADI-PMOCarePlan" key="StructureDefinition-ADI-PMOCarePlan" name="ADI PMO Care Plan"/>
+<artifact id="StructureDefinition/ADI-PMOComposition" key="StructureDefinition-ADI-PMOComposition" name="ADI PMO Composition"/>
+<artifact id="StructureDefinition/ADI-PMOHospiceObservation" key="StructureDefinition-ADI-PMOHospiceObservation" name="ADI PMO Hospice Observation"/>
+<artifact id="StructureDefinition/ADI-PMOInitialTreatmentServiceRequest" key="StructureDefinition-ADI-PMOInitialTreatmentServiceRequest" name="ADI PMO Initial Treatment ServiceRequest"/>
+<artifact id="StructureDefinition/ADI-PMOMedicallyAssistedHydrationServiceRequest" key="StructureDefinition-ADI-PMOMedicallyAssistedHydrationServiceRequest" name="ADI PMO Medically Assisted Hydration Service Request"/>
+<artifact id="StructureDefinition/ADI-PMOMedicallyAssistedNutritionServiceRequest" key="StructureDefinition-ADI-PMOMedicallyAssistedNutritionServiceRequest" name="ADI PMO Medically Assisted Nutrition Service Request"/>
+<artifact id="StructureDefinition/ADI-PMOParticipantObservation" key="StructureDefinition-ADI-PMOParticipantObservation" name="ADI PMO Participant Observation"/>
+<artifact id="StructureDefinition/ADI-PMOProcedure" key="StructureDefinition-ADI-PMOProcedure" name="ADI PMO Procedure"/>
+<artifact id="StructureDefinition/ADI-PMOReviewObservation" key="StructureDefinition-ADI-PMOReviewObservation" name="ADI PMO Review Observation"/>
+<artifact id="StructureDefinition/ADI-PMOServiceRequest" key="StructureDefinition-ADI-PMOServiceRequest" name="ADI PMO ServiceRequest"/>
+<artifact deprecated="true" id="StructureDefinition/ADI-Participant" key="StructureDefinition-PADI-Participant" name="ADI Participant"/>
+<artifact deprecated="true" id="StructureDefinition/ADI-ParticipantConsent" key="StructureDefinition-PADI-ParticipantConsent" name="ADI Participant Consent"/>
 <artifact id="StructureDefinition/ADI-PersonalGoal" key="StructureDefinition-PADI-PersonalGoal" name="ADI Personal Goal"/>
 <artifact id="StructureDefinition/ADI-PersonalPrioritiesOrganizer" key="StructureDefinition-PADI-PersonalPrioritiesOrganizer" name="ADI Personal Priorities Organizer"/>
-<artifact id="StructureDefinition/ADI-PreferenceCarePlan" key="StructureDefinition-PADI-PreferenceCarePlan" name="ADI Preference Care Plan"/>
 <artifact id="StructureDefinition/ADI-Provenance" key="StructureDefinition-ADI-Provenance" name="ADI Provenance"/>
+<artifact id="StructureDefinition/ADI-CareExperiencePreference" key="StructureDefinition-PADI-CareExperiencePreference" name="ADI PtAuthored Care Experience Preference"/>
+<artifact id="StructureDefinition/ADI-PreferenceCarePlan" key="StructureDefinition-PADI-PreferenceCarePlan" name="ADI PtAuthored Care Plan"/>
+<artifact id="StructureDefinition/ADI-PACPComposition" key="StructureDefinition-PADI-PACPComposition" name="ADI PtAuthored Composition"/>
+<artifact id="StructureDefinition/ADI-PersonalInterventionPreference" key="StructureDefinition-PADI-PersonalInterventionPreference" name="ADI PtAuthored Personal Intervention Preference"/>
+<artifact id="CodeSystem/ADIRevokeStatusCS" key="CodeSystem-ADIRevokeStatusCS" name="ADI Revoke Status Code System"/>
+<artifact id="CodeSystem/adi-temp-cs" key="CodeSystem-adi-temp-cs" name="ADI Temporary Code System"/>
+<artifact id="StructureDefinition/ADI-UponDeathPreferences" key="StructureDefinition-ADI-UponDeathPreferences" name="ADI Upon Death Preferences"/>
 <artifact id="StructureDefinition/ADI-Witness" key="StructureDefinition-ADI-Witness" name="ADI Witness"/>
+<artifact id="PractitionerRole/ADI-Facilitator-MSW-MargaretReynolds" key="PractitionerRole-ADI-Facilitator-MSW-MargaretReynolds" name="ADI-Facilitator-MSW-MargaretReynolds"/>
 <artifact deprecated="true" id="ValueSet/PADIAdvanceDirectiveCategoriesVS" key="ValueSet-PADIAdvanceDirectiveCategoriesVS" name="Advance Directive Categories"/>
 <artifact deprecated="true" id="StructureDefinition/padi-attestationInformation-extension" key="StructureDefinition-padi-attestationInformation-extension" name="Attestation Information"/>
 <artifact id="ValueSet/ADIAttesterRoleTypeVS" key="ValueSet-PADIAttesterRoleTypeVS" name="Attester Role"/>
@@ -34,15 +66,17 @@
 <artifact id="SearchParameter/Bundle-timestamp" key="SearchParameter-Bundle-timestamp" name="Bundle-timestamp"/>
 <artifact id="SearchParameter/Bundle-type" key="SearchParameter-Bundle-type" name="Bundle-type"/>
 <artifact deprecated="true" id="ValueSet/PADICareExperiencePreferencesVS" key="ValueSet-PADICareExperiencePreferencesVS" name="Care Experience Preferences"/>
+<artifact id="CarePlan/Example-Smith-Johnson-PMOCarePlan1" key="CarePlan-Example-Smith-Johnson-PMOCarePlan1" name="Care Plan for Cerebrovascular accident"/>
 <artifact id="CarePlan/Example-Smith-Johnson-PreferenceCarePlan2" key="CarePlan-Example-Smith-Johnson-PreferenceCarePlan2" name="Care Plan for Permanent, severe brain damage"/>
 <artifact id="CarePlan/Example-Smith-Johnson-PreferenceCarePlan3" key="CarePlan-Example-Smith-Johnson-PreferenceCarePlan3" name="Care Plan for Terminal illness, lack of meaningful interaction"/>
-<artifact id="CarePlan/Example-McBee-PreferenceCarePlan1" key="CarePlan-Example-McBee-PreferenceCarePlan1" name="Care Plan for Unconscious, vegetative state, coma for McBee"/>
+<artifact deprecated="true" id="CarePlan/Example-McBee-PreferenceCarePlan1" key="CarePlan-Example-McBee-PreferenceCarePlan1" name="Care Plan for Unconscious, vegetative state, coma for McBee"/>
 <artifact id="CarePlan/Example-Smith-Johnson-PreferenceCarePlan1" key="CarePlan-Example-Smith-Johnson-PreferenceCarePlan1" name="Care Plan for Unconscious, vegetative state, coma for Smith-Johnson"/>
 <artifact id="StructureDefinition/adi-clause-extension" key="StructureDefinition-padi-clause-extension" name="Clause"/>
-<artifact id="ValueSet/ADIConsentTypeVS" key="ValueSet-PADIConsentTypeVS" name="Consent Type"/>
+<artifact deprecated="true" id="ValueSet/ADIConsentTypeVS" key="ValueSet-PADIConsentTypeVS" name="Consent Type"/>
 <artifact id="SearchParameter/Consent-id" key="SearchParameter-Consent-id" name="Consent-id"/>
 <artifact deprecated="true" id="StructureDefinition/padi-contextualValue-extension" key="StructureDefinition-padi-contextualValue-extension" name="Contextual Value"/>
 <artifact id="StructureDefinition/adi-dataEnterer-extension" key="StructureDefinition-padi-dataEnterer-extension" name="Data Enterer"/>
+<artifact id="StructureDefinition/adi-document-location" key="StructureDefinition-adi-document-location" name="Document Location"/>
 <artifact id="SearchParameter/DocumentReference-authenticator" key="SearchParameter-DocumentReference-authenticator" name="DocumentReference-authenticator"/>
 <artifact id="SearchParameter/DocumentReference-author" key="SearchParameter-DocumentReference-author" name="DocumentReference-author"/>
 <artifact id="SearchParameter/DocumentReference-category" key="SearchParameter-DocumentReference-category" name="DocumentReference-category"/>
@@ -69,41 +103,50 @@
 <artifact id="SearchParameter/DocumentReference-subject" key="SearchParameter-DocumentReference-subject" name="DocumentReference-subject"/>
 <artifact id="SearchParameter/DocumentReference-type" key="SearchParameter-DocumentReference-type" name="DocumentReference-type"/>
 <artifact id="ValueSet/ADIDocumentationTypeVS" key="ValueSet-PADIDocumentationTypeVS" name="Documentation Types"/>
-<artifact id="StructureDefinition/adi-effective-date-extension" key="StructureDefinition-padi-effective-date-extension" name="Effective Date"/>
+<artifact deprecated="true" id="StructureDefinition/adi-effective-date-extension" key="StructureDefinition-padi-effective-date-extension" name="Effective Date"/>
 <artifact id="StructureDefinition/adi-enclosedPrecondition-extension" key="StructureDefinition-adi-enclosedPrecondition-extension" name="Enclosed Precondition"/>
-<artifact id="RelatedPerson/Example-McBee-ADINotary" key="RelatedPerson-Example-McBee-ADINotary" name="Example-McBee-ADINotary"/>
-<artifact id="RelatedPerson/Example-McBee-ADIWitness" key="RelatedPerson-Example-McBee-ADIWitness" name="Example-McBee-ADIWitness"/>
-<artifact id="Observation/Example-McBee-AutopsyObservation1" key="Observation-Example-McBee-AutopsyObservation1" name="Example-McBee-AutopsyObservation1"/>
-<artifact id="Bundle/Example-McBee-Bundle1" key="Bundle-Example-McBee-Bundle1" name="Example-McBee-Bundle1"/>
-<artifact id="Observation/Example-McBee-CareExperiencePreference1" key="Goal-Example-McBee-CareExperiencePreference1" name="Example-McBee-CareExperiencePreference1"/>
-<artifact id="Observation/Example-McBee-CareExperiencePreference2" key="Goal-Example-McBee-CareExperiencePreference2" name="Example-McBee-CareExperiencePreference2"/>
-<artifact id="Observation/Example-McBee-CareExperiencePreference3" key="Goal-Example-McBee-CareExperiencePreference3" name="Example-McBee-CareExperiencePreference3"/>
-<artifact id="Observation/Example-McBee-CareExperiencePreference4" key="Goal-Example-McBee-CareExperiencePreference4" name="Example-McBee-CareExperiencePreference4"/>
-<artifact id="RelatedPerson/Example-McBee-HealthcareAgent1" key="RelatedPerson-Example-McBee-HealthcareAgent1" name="Example-McBee-HealthcareAgent1"/>
-<artifact id="RelatedPerson/Example-McBee-HealthcareAgent2" key="RelatedPerson-Example-McBee-HealthcareAgent2" name="Example-McBee-HealthcareAgent2"/>
-<artifact id="Consent/Example-McBee-HealthcareAgentConsent" key="Consent-Example-McBee-HealthcareAgentConsent" name="Example-McBee-HealthcareAgentConsent"/>
-<artifact id="Observation/Example-McBee-OrganDonationObservation1" key="Observation-Example-McBee-OrganDonationObservation1" name="Example-McBee-OrganDonationObservation1"/>
-<artifact id="Organization/Example-McBee-OrganizationAssembler1" key="Organization-Example-McBee-OrganizationAssembler1" name="Example-McBee-OrganizationAssembler1"/>
-<artifact id="Organization/Example-McBee-OrganizationCustodian1" key="Organization-Example-McBee-OrganizationCustodian1" name="Example-McBee-OrganizationCustodian1"/>
-<artifact id="Provenance/Example-McBee-PACPProvenance1" key="Provenance-Example-McBee-PACPProvenance1" name="Example-McBee-PACPProvenance1"/>
-<artifact id="Patient/Example-McBee-Patient1" key="Patient-Example-McBee-Patient1" name="Example-McBee-Patient1"/>
-<artifact id="Goal/Example-McBee-PersonalGoal1" key="Goal-Example-McBee-PersonalGoal1" name="Example-McBee-PersonalGoal1"/>
-<artifact id="Goal/Example-McBee-PersonalGoal2" key="Goal-Example-McBee-PersonalGoal2" name="Example-McBee-PersonalGoal2"/>
-<artifact id="Goal/Example-McBee-PersonalGoal3" key="Goal-Example-McBee-PersonalGoal3" name="Example-McBee-PersonalGoal3"/>
-<artifact id="Goal/Example-McBee-PersonalGoal4" key="Goal-Example-McBee-PersonalGoal4" name="Example-McBee-PersonalGoal4"/>
-<artifact id="Goal/Example-McBee-PersonalGoal5" key="Goal-Example-McBee-PersonalGoal5" name="Example-McBee-PersonalGoal5"/>
-<artifact id="Goal/Example-McBee-PersonalGoal6" key="Goal-Example-McBee-PersonalGoal6" name="Example-McBee-PersonalGoal6"/>
-<artifact id="Goal/Example-McBee-PersonalGoal7" key="Goal-Example-McBee-PersonalGoal7" name="Example-McBee-PersonalGoal7"/>
-<artifact id="Observation/Example-McBee-PersonalInterventionPreference1" key="Goal-Example-McBee-PersonalInterventionPreference1" name="Example-McBee-PersonalInterventionPreference1"/>
-<artifact id="Observation/Example-McBee-PersonalInterventionPreference2" key="Goal-Example-McBee-PersonalInterventionPreference2" name="Example-McBee-PersonalInterventionPreference2"/>
-<artifact id="Observation/Example-McBee-PersonalInterventionPreference3" key="Goal-Example-McBee-PersonalInterventionPreference3" name="Example-McBee-PersonalInterventionPreference3"/>
-<artifact id="Observation/Example-McBee-PersonalInterventionPreference4" key="Goal-Example-McBee-PersonalInterventionPreference4" name="Example-McBee-PersonalInterventionPreference4"/>
-<artifact id="Observation/Example-McBee-PersonalInterventionPreference5" key="Goal-Example-McBee-PersonalInterventionPreference5" name="Example-McBee-PersonalInterventionPreference5"/>
-<artifact id="Observation/Example-McBee-PersonalInterventionPreference6" key="Goal-Example-McBee-PersonalInterventionPreference6" name="Example-McBee-PersonalInterventionPreference6"/>
-<artifact id="Observation/Example-McBee-PersonalInterventionPreference7" key="Goal-Example-McBee-PersonalInterventionPreference7" name="Example-McBee-PersonalInterventionPreference7"/>
-<artifact id="Observation/Example-McBee-PersonalInterventionPreference8" key="Goal-Example-McBee-PersonalInterventionPreference8" name="Example-McBee-PersonalInterventionPreference8"/>
+<artifact id="Practitioner/Example-Kyle-Anydoc-Practitioner" key="Practitioner-Example-Kyle-Anydoc-Practitioner" name="Example-Kyle-Anydoc-Practitioner"/>
+<artifact id="PractitionerRole/Example-Kyle-Anydoc-PractitionerRole1" key="PractitionerRole-Example-Kyle-Anydoc-PractitionerRole1" name="Example-Kyle-Anydoc-PractitionerRole1"/>
+<artifact deprecated="true" id="RelatedPerson/Example-McBee-ADINotary" key="RelatedPerson-Example-McBee-ADINotary" name="Example-McBee-ADINotary"/>
+<artifact deprecated="true" id="RelatedPerson/Example-McBee-ADIWitness" key="RelatedPerson-Example-McBee-ADIWitness" name="Example-McBee-ADIWitness"/>
+<artifact deprecated="true" id="Observation/Example-McBee-AutopsyObservation1" key="Observation-Example-McBee-AutopsyObservation1" name="Example-McBee-AutopsyObservation1"/>
+<artifact deprecated="true" id="Bundle/Example-McBee-Bundle1" key="Bundle-Example-McBee-Bundle1" name="Example-McBee-Bundle1"/>
+<artifact deprecated="true" id="Observation/Example-McBee-CareExperiencePreference1" key="Goal-Example-McBee-CareExperiencePreference1" name="Example-McBee-CareExperiencePreference1"/>
+<artifact deprecated="true" id="Observation/Example-McBee-CareExperiencePreference2" key="Goal-Example-McBee-CareExperiencePreference2" name="Example-McBee-CareExperiencePreference2"/>
+<artifact deprecated="true" id="Observation/Example-McBee-CareExperiencePreference3" key="Goal-Example-McBee-CareExperiencePreference3" name="Example-McBee-CareExperiencePreference3"/>
+<artifact deprecated="true" id="Observation/Example-McBee-CareExperiencePreference4" key="Goal-Example-McBee-CareExperiencePreference4" name="Example-McBee-CareExperiencePreference4"/>
+<artifact deprecated="true" id="RelatedPerson/Example-McBee-HealthcareAgent1" key="RelatedPerson-Example-McBee-HealthcareAgent1" name="Example-McBee-HealthcareAgent1"/>
+<artifact deprecated="true" id="RelatedPerson/Example-McBee-HealthcareAgent2" key="RelatedPerson-Example-McBee-HealthcareAgent2" name="Example-McBee-HealthcareAgent2"/>
+<artifact deprecated="true" id="Consent/Example-McBee-HealthcareAgentConsent" key="Consent-Example-McBee-HealthcareAgentConsent" name="Example-McBee-HealthcareAgentConsent"/>
+<artifact deprecated="true" id="Observation/Example-McBee-OrganDonationObservation1" key="Observation-Example-McBee-OrganDonationObservation1" name="Example-McBee-OrganDonationObservation1"/>
+<artifact deprecated="true" id="Organization/Example-McBee-OrganizationAssembler1" key="Organization-Example-McBee-OrganizationAssembler1" name="Example-McBee-OrganizationAssembler1"/>
+<artifact deprecated="true" id="Organization/Example-McBee-OrganizationCustodian1" key="Organization-Example-McBee-OrganizationCustodian1" name="Example-McBee-OrganizationCustodian1"/>
+<artifact deprecated="true" id="Provenance/Example-McBee-PACPProvenance1" key="Provenance-Example-McBee-PACPProvenance1" name="Example-McBee-PACPProvenance1"/>
+<artifact deprecated="true" id="Patient/Example-McBee-Patient1" key="Patient-Example-McBee-Patient1" name="Example-McBee-Patient1"/>
+<artifact deprecated="true" id="Goal/Example-McBee-PersonalGoal1" key="Goal-Example-McBee-PersonalGoal1" name="Example-McBee-PersonalGoal1"/>
+<artifact deprecated="true" id="Goal/Example-McBee-PersonalGoal2" key="Goal-Example-McBee-PersonalGoal2" name="Example-McBee-PersonalGoal2"/>
+<artifact deprecated="true" id="Goal/Example-McBee-PersonalGoal3" key="Goal-Example-McBee-PersonalGoal3" name="Example-McBee-PersonalGoal3"/>
+<artifact deprecated="true" id="Goal/Example-McBee-PersonalGoal4" key="Goal-Example-McBee-PersonalGoal4" name="Example-McBee-PersonalGoal4"/>
+<artifact deprecated="true" id="Goal/Example-McBee-PersonalGoal5" key="Goal-Example-McBee-PersonalGoal5" name="Example-McBee-PersonalGoal5"/>
+<artifact deprecated="true" id="Goal/Example-McBee-PersonalGoal6" key="Goal-Example-McBee-PersonalGoal6" name="Example-McBee-PersonalGoal6"/>
+<artifact deprecated="true" id="Goal/Example-McBee-PersonalGoal7" key="Goal-Example-McBee-PersonalGoal7" name="Example-McBee-PersonalGoal7"/>
+<artifact deprecated="true" id="Observation/Example-McBee-PersonalInterventionPreference1" key="Goal-Example-McBee-PersonalInterventionPreference1" name="Example-McBee-PersonalInterventionPreference1"/>
+<artifact deprecated="true" id="Observation/Example-McBee-PersonalInterventionPreference2" key="Goal-Example-McBee-PersonalInterventionPreference2" name="Example-McBee-PersonalInterventionPreference2"/>
+<artifact deprecated="true" id="Observation/Example-McBee-PersonalInterventionPreference3" key="Goal-Example-McBee-PersonalInterventionPreference3" name="Example-McBee-PersonalInterventionPreference3"/>
+<artifact deprecated="true" id="Observation/Example-McBee-PersonalInterventionPreference4" key="Goal-Example-McBee-PersonalInterventionPreference4" name="Example-McBee-PersonalInterventionPreference4"/>
+<artifact deprecated="true" id="Observation/Example-McBee-PersonalInterventionPreference5" key="Goal-Example-McBee-PersonalInterventionPreference5" name="Example-McBee-PersonalInterventionPreference5"/>
+<artifact deprecated="true" id="Observation/Example-McBee-PersonalInterventionPreference6" key="Goal-Example-McBee-PersonalInterventionPreference6" name="Example-McBee-PersonalInterventionPreference6"/>
+<artifact deprecated="true" id="Observation/Example-McBee-PersonalInterventionPreference7" key="Goal-Example-McBee-PersonalInterventionPreference7" name="Example-McBee-PersonalInterventionPreference7"/>
+<artifact deprecated="true" id="Observation/Example-McBee-PersonalInterventionPreference8" key="Goal-Example-McBee-PersonalInterventionPreference8" name="Example-McBee-PersonalInterventionPreference8"/>
+<artifact id="Observation/Example-Smith-Johnson-ADIJurisdiction1" key="Observation-Example-Smith-Johnson-ADIJurisdiction1" name="Example-Smith-Johnson-ADIJurisdiction1"/>
+<artifact id="RelatedPerson/Example-Smith-Johnson-ADINotary2" key="RelatedPerson-Example-Smith-Johnson-ADINotary2" name="Example-Smith-Johnson-ADINotary2"/>
+<artifact id="Observation/Example-Smith-Johnson-ADIPMOParticipantObservation1" key="Observation-Example-Smith-Johnson-ADIPMOParticipantObservation1" name="Example-Smith-Johnson-ADIPMOParticipantObservation1"/>
+<artifact id="Procedure/Example-Smith-Johnson-ADIPMOProcedure1" key="Procedure-Example-Smith-Johnson-ADIPMOProcedure1" name="Example-Smith-Johnson-ADIPMOProcedure1"/>
+<artifact id="Observation/Example-Smith-Johnson-ADIPMOReviewObservation1" key="Observation-Example-Smith-Johnson-ADIPMOReviewObservation1" name="Example-Smith-Johnson-ADIPMOReviewObservation1"/>
+<artifact id="RelatedPerson/Example-Smith-Johnson-ADIWitness1" key="RelatedPerson-Example-Smith-Johnson-ADIWitness1" name="Example-Smith-Johnson-ADIWitness1"/>
 <artifact id="Observation/Example-Smith-Johnson-AutopsyObservation1" key="Observation-Example-Smith-Johnson-AutopsyObservation1" name="Example-Smith-Johnson-AutopsyObservation1"/>
-<artifact id="Bundle/Example-Smith-Johnson-Bundle1" key="Bundle-Example-Smith-Johnson-Bundle1" name="Example-Smith-Johnson-Bundle1"/>
+<artifact deprecated="true" id="Bundle/Example-Smith-Johnson-Bundle1" key="Bundle-Example-Smith-Johnson-Bundle1" name="Example-Smith-Johnson-Bundle1"/>
+<artifact id="ServiceRequest/Example-Smith-Johnson-CPR-ServiceRequest1" key="ServiceRequest-Example-Smith-Johnson-CPR-ServiceRequest1" name="Example-Smith-Johnson-CPR-ServiceRequest1"/>
 <artifact id="Observation/Example-Smith-Johnson-CareExperiencePreference1" key="Goal-Example-Smith-Johnson-CareExperiencePreference1" name="Example-Smith-Johnson-CareExperiencePreference1"/>
 <artifact id="Observation/Example-Smith-Johnson-CareExperiencePreference2" key="Goal-Example-Smith-Johnson-CareExperiencePreference2" name="Example-Smith-Johnson-CareExperiencePreference2"/>
 <artifact id="Observation/Example-Smith-Johnson-CareExperiencePreference3" key="Goal-Example-Smith-Johnson-CareExperiencePreference3" name="Example-Smith-Johnson-CareExperiencePreference3"/>
@@ -112,19 +155,35 @@
 <artifact id="Observation/Example-Smith-Johnson-CareExperiencePreference6" key="Goal-Example-Smith-Johnson-CareExperiencePreference6" name="Example-Smith-Johnson-CareExperiencePreference6"/>
 <artifact id="Observation/Example-Smith-Johnson-CareExperiencePreference7" key="Goal-Example-Smith-Johnson-CareExperiencePreference7" name="Example-Smith-Johnson-CareExperiencePreference7"/>
 <artifact id="Observation/Example-Smith-Johnson-CareExperiencePreference8" key="Goal-Example-Smith-Johnson-CareExperiencePreference8" name="Example-Smith-Johnson-CareExperiencePreference8"/>
+<artifact id="Observation/Example-Smith-Johnson-DecisionalCapacity1" key="Observation-Example-Smith-Johnson-DecisionalCapacity1" name="Example-Smith-Johnson-DecisionalCapacity1"/>
 <artifact deprecated="true" id="Binary/Example-Smith-Johnson-DocRef-Binary1" key="Binary-Example-Smith-Johnson-DocRef-Binary1" name="Example-Smith-Johnson-DocRef-Binary1"/>
 <artifact id="DocumentReference/Example-Smith-Johnson-DocRef-Bundle" key="DocumentReference-Example-Smith-Johnson-DocRef-Bundle" name="Example-Smith-Johnson-DocRef-Bundle"/>
 <artifact id="Device/Example-Smith-Johnson-DocRef-Device1" key="Device-Example-Smith-Johnson-DocRef-Device1" name="Example-Smith-Johnson-DocRef-Device1"/>
 <artifact id="DocumentReference/Example-Smith-Johnson-DocRef-DocumentReference" key="DocumentReference-Example-Smith-Johnson-DocRef-DocumentReference" name="Example-Smith-Johnson-DocRef-DocumentReference"/>
 <artifact id="Observation/Example-Smith-Johnson-DocumentationObservation1" key="Observation-Example-Smith-Johnson-DocumentationObservation1" name="Example-Smith-Johnson-DocumentationObservation1"/>
+<artifact id="Observation/Example-Smith-Johnson-DocumentationObservation2" key="Observation-Example-Smith-Johnson-DocumentationObservation2" name="Example-Smith-Johnson-DocumentationObservation2"/>
+<artifact id="Endpoint/Example-Smith-Johnson-Endpoint1" key="Endpoint-Example-Smith-Johnson-Endpoint1" name="Example-Smith-Johnson-Endpoint1"/>
+<artifact id="Endpoint/Example-Smith-Johnson-Endpoint2" key="Endpoint-Example-Smith-Johnson-Endpoint2" name="Example-Smith-Johnson-Endpoint2"/>
 <artifact id="RelatedPerson/Example-Smith-Johnson-HealthcareAgent1" key="RelatedPerson-Example-Smith-Johnson-HealthcareAgent1" name="Example-Smith-Johnson-HealthcareAgent1"/>
 <artifact id="RelatedPerson/Example-Smith-Johnson-HealthcareAgent2" key="RelatedPerson-Example-Smith-Johnson-HealthcareAgent2" name="Example-Smith-Johnson-HealthcareAgent2"/>
+<artifact id="RelatedPerson/Example-Smith-Johnson-HealthcareAgent3" key="RelatedPerson-Example-Smith-Johnson-HealthcareAgent3" name="Example-Smith-Johnson-HealthcareAgent3"/>
 <artifact id="Consent/Example-Smith-Johnson-HealthcareAgentConsent" key="Consent-Example-Smith-Johnson-HealthcareAgentConsent" name="Example-Smith-Johnson-HealthcareAgentConsent"/>
+<artifact id="Consent/Example-Smith-Johnson-HealthcareAgentConsent-Deny" key="Consent-Example-Smith-Johnson-HealthcareAgentConsent-Deny" name="Example-Smith-Johnson-HealthcareAgentConsent-Deny"/>
+<artifact id="Consent/Example-Smith-Johnson-HealthcareAgentConsent-Permit" key="Consent-Example-Smith-Johnson-HealthcareAgentConsent-Permit" name="Example-Smith-Johnson-HealthcareAgentConsent-Permit"/>
+<artifact id="Consent/Example-Smith-Johnson-HealthcareAgentConsent2" key="Consent-Example-Smith-Johnson-HealthcareAgentConsent2" name="Example-Smith-Johnson-HealthcareAgentConsent2"/>
 <artifact id="RelatedPerson/Example-Smith-Johnson-Notary1" key="RelatedPerson-Example-Smith-Johnson-Notary1" name="Example-Smith-Johnson-Notary1"/>
+<artifact id="RelatedPerson/Example-Smith-Johnson-Notary2" key="RelatedPerson-Example-Smith-Johnson-Notary2" name="Example-Smith-Johnson-Notary2"/>
 <artifact id="Observation/Example-Smith-Johnson-OrganDonationObservation1" key="Observation-Example-Smith-Johnson-OrganDonationObservation1" name="Example-Smith-Johnson-OrganDonationObservation1"/>
 <artifact id="Organization/Example-Smith-Johnson-OrganizationAssembler1" key="Organization-Example-Smith-Johnson-OrganizationAssembler1" name="Example-Smith-Johnson-OrganizationAssembler1"/>
 <artifact id="Organization/Example-Smith-Johnson-OrganizationCustodian1" key="Organization-Example-Smith-Johnson-OrganizationCustodian1" name="Example-Smith-Johnson-OrganizationCustodian1"/>
-<artifact id="Provenance/Example-Smith-Johnson-PACPProvenance1" key="Provenance-Example-Smith-Johnson-PACPProvenance1" name="Example-Smith-Johnson-PACPProvenance1"/>
+<artifact id="Bundle/Example-Smith-Johnson-PACP-Bundle1" key="Bundle-Example-Smith-Johnson-PACP-Bundle1" name="Example-Smith-Johnson-PACP-Bundle1"/>
+<artifact deprecated="true" id="Provenance/Example-Smith-Johnson-PACPProvenance1" key="Provenance-Example-Smith-Johnson-PACPProvenance1" name="Example-Smith-Johnson-PACPProvenance1"/>
+<artifact id="ServiceRequest/Example-Smith-Johnson-PMOAdditionalOrdersServiceRequest1" key="ServiceRequest-Example-Smith-Johnson-PMOAdditionalOrdersServiceRequest1" name="Example-Smith-Johnson-PMOAdditionalOrdersServiceRequest1"/>
+<artifact id="Observation/Example-Smith-Johnson-PMOHospiceObservation1" key="Observation-Example-Smith-Johnson-PMOHospiceObservation1" name="Example-Smith-Johnson-PMOHospiceObservation1"/>
+<artifact id="ServiceRequest/Example-Smith-Johnson-PMOHydrationServiceRequest1" key="ServiceRequest-Example-Smith-Johnson-PMOHydrationServiceRequest1" name="Example-Smith-Johnson-PMOHydrationServiceRequest1"/>
+<artifact id="ServiceRequest/Example-Smith-Johnson-PMOInitialTreatmentServiceRequest1" key="ServiceRequest-Example-Smith-Johnson-PMOInitialTreatmentServiceRequest1" name="Example-Smith-Johnson-PMOInitialTreatmentServiceRequest1"/>
+<artifact id="ServiceRequest/Example-Smith-Johnson-PMONutritionServiceRequest1" key="ServiceRequest-Example-Smith-Johnson-PMONutritionServiceRequest1" name="Example-Smith-Johnson-PMONutritionServiceRequest1"/>
+<artifact id="Provenance/Example-Smith-Johnson-PMOProvenance1" key="Provenance-Example-Smith-Johnson-PMOProvenance1" name="Example-Smith-Johnson-PMOProvenance1"/>
 <artifact id="Patient/Example-Smith-Johnson-Patient1" key="Patient-Example-Smith-Johnson-Patient1" name="Example-Smith-Johnson-Patient1"/>
 <artifact id="Goal/Example-Smith-Johnson-PersonalGoal1" key="Goal-Example-Smith-Johnson-PersonalGoal1" name="Example-Smith-Johnson-PersonalGoal1"/>
 <artifact id="Goal/Example-Smith-Johnson-PersonalGoal2" key="Goal-Example-Smith-Johnson-PersonalGoal2" name="Example-Smith-Johnson-PersonalGoal2"/>
@@ -135,47 +194,72 @@
 <artifact id="Observation/Example-Smith-Johnson-PersonalInterventionPreference4" key="Observation-Example-Smith-Johnson-PersonalInterventionPreference4" name="Example-Smith-Johnson-PersonalInterventionPreference4"/>
 <artifact id="Observation/Example-Smith-Johnson-PersonalInterventionPreference5" key="Goal-Example-Smith-Johnson-PersonalInterventionPreference5" name="Example-Smith-Johnson-PersonalInterventionPreference5"/>
 <artifact id="Observation/Example-Smith-Johnson-PersonalInterventionPreference6" key="Goal-Example-Smith-Johnson-PersonalInterventionPreference6" name="Example-Smith-Johnson-PersonalInterventionPreference6"/>
+<artifact id="Observation/Example-Smith-Johnson-UponDeathPreference1" key="Observation-Example-Smith-Johnson-UponDeathPreference1" name="Example-Smith-Johnson-UponDeathPreference1"/>
+<artifact id="Organization/Example-organization-good-health-clinic" key="Organization-Example-organization-good-health-clinic" name="Example-organization-good-health-clinic"/>
 <artifact id="StructureDefinition/adi-goal-order-by-descending-priority-extension" key="StructureDefinition-padi-goal-order-by-descending-priority-extension" name="Goal Order by Descending Priority"/>
 <artifact deprecated="true" id="ValueSet/PADIHealthGoalsVS" key="ValueSet-PADIHealthGoalsVS" name="Health Goals"/>
 <artifact id="CodeSystem/ADIHCADecisionsCS" key="CodeSystem-PADIHCADecisionsCS" name="Healthcare Agent Decision Codes"/>
 <artifact id="ValueSet/ADIHCADecisionsVS" key="ValueSet-PADIHCADecisionsVS" name="Healthcare Agent Decisions"/>
 <artifact id="StructureDefinition/adi-informant-extension" key="StructureDefinition-padi-informant-extension" name="Informant"/>
 <artifact deprecated="true" id="StructureDefinition/padi-informationRecipient-extension" key="StructureDefinition-padi-informationRecipient-extension" name="Information Recipient"/>
-<artifact id="ValueSet/ADIInterventionPreferencesVS" key="ValueSet-PADIInterventionPreferencesVS" name="Intervention Preferences"/>
+<artifact id="ValueSet/ADIInitialTreatmentPMOOptionsVS" key="ValueSet-ADIInitialTreatmentPMOOptionsVS" name="Initial Treatment Portable Medical Order Options"/>
+<artifact deprecated="true" id="ValueSet/ADIInterventionPreferencesVS" key="ValueSet-PADIInterventionPreferencesVS" name="Intervention Preferences"/>
 <artifact deprecated="true" id="ValueSet/PADIInterventionPreferencesNarrativeVS" key="ValueSet-PADIInterventionPreferencesNarrativeVS" name="Intervention Preferences - Narrative"/>
 <artifact id="ValueSet/ADIInterventionPreferencesOrdinalVS" key="ValueSet-PADIInterventionPreferencesOrdinalVS" name="Intervention Preferences - Ordinal"/>
 <artifact id="StructureDefinition/adi-jurisdiction-extension" key="StructureDefinition-padi-jurisdiction-extension" name="Jurisdiction"/>
-<artifact id="List/Example-McBee-PersonalPrioritiesOrganizer1" key="List-Example-McBee-PersonalPrioritiesOrganizer1" name="My Advance Care Goals"/>
+<artifact id="ValueSet/LOINCPOLSTCPRAnswerList" key="ValueSet-LOINCPOLSTCPRAnswerList" name="LOINC POLST CPR Answer List"/>
+<artifact id="ValueSet/LOINCPOLSTInitialTxAnswerList" key="ValueSet-LOINCPOLSTInitialTxAnswerList" name="LOINC POLST Initial Tx Answer List"/>
+<artifact id="ValueSet/LOINCPOLSTMedAssistNutrAnswerList" key="ValueSet-LOINCPOLSTMedAssistNutrAnswerList" name="LOINC POLST Med assist nutr Answer List"/>
+<artifact id="ValueSet/LOINCPOLSTDiscussPartAnswerList" key="ValueSet-LOINCPOLSTDiscussPartAnswerList" name="LOINC POLST discuss part List"/>
+<artifact id="ValueSet/LOINCPOLSTReviewAnswerList" key="ValueSet-LOINCPOLSTReviewAnswerList" name="LOINC POLST review Answer List"/>
+<artifact id="Binary/MHAD-Example-Smith-Johnson-Binary" key="Binary-MHAD-Example-Smith-Johnson-Binary" name="MHAD-Example-Smith-Johnson-Binary"/>
+<artifact id="Bundle/MHAD-Example-Smith-Johnson-Bundle3" key="Bundle-MHAD-Example-Smith-Johnson-Bundle3" name="MHAD-Example-Smith-Johnson-Bundle3"/>
+<artifact id="ValueSet/ADIDMedicallyAssistedHydrationNutritionOrderVS" key="ValueSet-ADIDMedicallyAssistedHydrationNutritionOrderVS" name="Medically Assisted Hydration Order"/>
+<artifact id="ValueSet/ADIDMedicallyAssistedHydrationNutritionOrderGroupingVS" key="ValueSet-ADIDMedicallyAssistedHydrationNutritionOrderGroupingVS" name="Medically Assisted Hydration Order Grouping"/>
+<artifact id="Composition/MHAD-Example-Smith-Johnson-Composition" key="Composition-MHAD-Example-Smith-Johnson-Composition" name="Mental Health Directive (Maryland)"/>
+<artifact deprecated="true" id="List/Example-McBee-PersonalPrioritiesOrganizer1" key="List-Example-McBee-PersonalPrioritiesOrganizer1" name="My Advance Care Goals"/>
 <artifact id="ValueSet/ADINoHealthcareAgentIncludedReasonVS" key="ValueSet-PADINoHealthcareAgentIncludedReasonVS" name="No Healthcare Agent Included Reason"/>
 <artifact id="StructureDefinition/adi-notaryInformation-extension" key="StructureDefinition-adi-notaryInformation-extension" name="Notary Information"/>
 <artifact deprecated="true" id="StructureDefinition/PADI-DocumentReference" key="StructureDefinition-PADI-DocumentReference" name="PACIO ADI Document Reference"/>
 <artifact deprecated="true" id="StructureDefinition/PADI-Header" key="StructureDefinition-PADI-Header" name="PACIO ADI Header"/>
 <artifact deprecated="true" id="StructureDefinition/PADI-Provenance" key="StructureDefinition-PADI-Provenance" name="PACIO ADI Provenance"/>
 <artifact deprecated="true" id="CapabilityStatement/padi" key="CapabilityStatement-padi" name="PADI CapabilityStatement"/>
-<artifact id="StructureDefinition/adi-participant-extension" key="StructureDefinition-padi-participant-extension" name="Participant"/>
+<artifact id="Bundle/PMO-Example-Smith-Johnson-Bundle2" key="Bundle-PMO-Example-Smith-Johnson-Bundle2" name="PMO-Example-Smith-Johnson-Bundle2"/>
+<artifact id="StructureDefinition/adi-healthcareAgentParticipant-extension" key="StructureDefinition-padi-participant-extension" name="Participant"/>
 <artifact deprecated="true" id="ValueSet/PADIParticipantRelationshipVS" key="ValueSet-PADIParticipantRelationshipVS" name="Participant Relationships"/>
 <artifact id="StructureDefinition/adi-performer-extension" key="StructureDefinition-padi-performer-extension" name="Performer"/>
 <artifact id="Composition/Example-Smith-Johnson-PACPComposition1" key="Composition-Example-Smith-Johnson-PACPComposition1" name="Personal Advance Care Plan"/>
-<artifact id="Composition/Example-McBee-PACPComposition1" key="Composition-Example-McBee-PACPComposition1" name="Personal Advance Care Plan Document for Roger McBee"/>
+<artifact deprecated="true" id="Composition/Example-McBee-PACPComposition1" key="Composition-Example-McBee-PACPComposition1" name="Personal Advance Care Plan Document for Roger McBee"/>
 <artifact id="ValueSet/ADIPersonalAndLegalRelationshipRoleTypeVS" key="ValueSet-PADIPersonalAndLegalRelationshipRoleTypeVS" name="Personal And Legal Relationship Role Type"/>
-<artifact id="StructureDefinition/ADI-PersonalInterventionPreference" key="StructureDefinition-PADI-PersonalInterventionPreference" name="Personal Intervention Preference"/>
+<artifact id="Composition/PMO-Example-Smith-Johnson-PMOComposition1" key="Composition-PMO-Example-Smith-Johnson-PMOComposition1" name="Portable Medical Order"/>
+<artifact id="ValueSet/ADIPMOConsentCategoriesVS" key="ValueSet-ADIPMOConsentCategoriesVS" name="Portable Medical Order Categories"/>
+<artifact id="Practitioner/Practitioner-MargaretReynolds" key="Practitioner-Practitioner-MargaretReynolds" name="Practitioner-MargaretReynolds"/>
 <artifact deprecated="true" id="ValueSet/PADIPresenceIndicatorVS" key="ValueSet-PADIPresenceIndicatorVS" name="Presence Indicator"/>
 <artifact id="List/Example-Smith-Johnson-PersonalPrioritiesOrganizer1" key="List-Example-Smith-Johnson-PersonalPrioritiesOrganizer1" name="Priorities for Goals and Preferences"/>
+<artifact id="StructureDefinition/adi-document-revoke-status" key="StructureDefinition-adi-document-revoke-status" name="Revoke Status"/>
 <artifact deprecated="true" id="ValueSet/PADIClauseTypeVS" key="ValueSet-PADIClauseTypeVS" name="Type of clause"/>
 <artifact deprecated="true" id="ValueSet/PADIUponDeathPreferencesVS" key="ValueSet-PADIUponDeathPreferencesVS" name="Upon Death Preferences"/>
-<artifact id="StructureDefinition/adi-versionNumber-extension" key="StructureDefinition-padi-versionNumber-extension" name="Version Number"/>
+<artifact id="StructureDefinition/adi-docVersionNumber-extension" key="StructureDefinition-padi-versionNumber-extension" name="Version Number"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="change_log" name="Change Log"/>
 <page key="downloads" name="Downloads"/>
 <page key="artifacts" name="FHIR Artifacts"/>
 <page key="formal_specification" name="Formal Specification"/>
 <page key="general_guidance" name="General Guidance"/>
 <page key="index" name="Home"/>
 <page key="key_terms_and_acronyms" name="Key Terms and Acronyms"/>
-<page key="patient_stories_and_personas" name="Patient Stories and Personas"/>
+<page key="content_type1_mhad_guidance" name="MHAD Guidance"/>
+<page key="content_type1_pacp_guidance" name="PACP Guidance"/>
+<page key="content_type3_pmo_guidance" name="PMO Guidance"/>
+<page key="package_dependencies" name="Package Dependencies"/>
+<page deprecated="true" key="patient_stories_and_personas" name="Patient Stories and Personas"/>
+<page key="artifact_resource_type" name="Profiles by Resource Type"/>
 <page key="search_parameters" name="Recommended Search Parameters"/>
 <page key="security_privacy_consent" name="Security, Privacy, and Consent"/>
 <page key="signatures" name="Signatures"/>
+<page key="system_use_cases" name="System Use Cases"/>
 <page key="toc" name="Table of Contents"/>
-<page key="use_cases" name="Use Cases"/>
+<page deprecated="true" key="use_cases" name="Use Cases"/>
 </specification>
