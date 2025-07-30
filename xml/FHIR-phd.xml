@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/phd/2024Sep" ciUrl="http://build.fhir.org/ig/HL7/phd" defaultVersion="1.1.0" defaultWorkgroup="dev" gitUrl="https://github.com/HL7/PHD" url="http://hl7.org/fhir/uv/phd">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/phd/2025Sep" ciUrl="http://build.fhir.org/ig/HL7/phd" defaultVersion="2.0.0-ballot2" defaultWorkgroup="dev" gitUrl="https://github.com/HL7/PHD" url="http://hl7.org/fhir/uv/phd">
 <version code="current" url="http://build.fhir.org/ig/HL7/phd"/>
+<version code="2.0.0-ballot2" url="http://hl7.org/fhir/uv/phd/2025Sep"/>
+<version code="2.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/phd/2024Sep"/>
 <version code="1.1.0" url="http://hl7.org/fhir/uv/phd/STU1.1"/>
-<version code="2.0.0-ballot" url="http://hl7.org/fhir/uv/phd/2024Sep"/>
 <version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/uv/phd/STU1"/>
 <version code="0.3.0" deprecated="true" url="http://hl7.org/fhir/uv/phd/2019May"/>
 <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/uv/phd/2019Jan"/>
@@ -11,123 +12,167 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="CodeSystem/ASN1EventOrState" key="CodeSystem-ASN1EventOrState" name="11073 ASN1 Event Or State"/>
-<artifact id="CodeSystem/ASN1ToHL7" key="CodeSystem-ASN1ToHL7" name="ASN1ToHL7"/>
+<artifact deprecated="true" id="CodeSystem/ASN1EventOrState" key="CodeSystem-ASN1EventOrState" name="11073 ASN1 Event Or State"/>
+<artifact id="CodeSystem/ACMEIncPrivateMDCCodes" key="CodeSystem-ACMEIncPrivateMDCCodes" name="ACME Inc Private MDC Codes"/>
+<artifact id="ValueSet/ASN1ClockBits" key="ValueSet-ASN1ClockBits" name="ANS1ToHL7 codes defined for Boolean Clock attributes"/>
+<artifact id="ValueSet/ASN1DeviceBits" key="ValueSet-ASN1DeviceBits" name="ANS1ToHL7 codes defined for non-measurement attributes"/>
+<artifact id="ValueSet/ASN1MeasurementBits" key="ValueSet-ASN1MeasurementBits" name="ANS1ToHL7 codes for measurement attributes"/>
+<artifact id="CodeSystem/ASN1ToHL7" key="CodeSystem-ASN1ToHL7" name="ASN1 bits to HL7 enumerated values"/>
 <artifact deprecated="true" id="CodeSystem/ASN1ToHL7Concepts" key="CodeSystem-ASN1ToHL7Concepts" name="ASN1ToHL7Concepts"/>
-<artifact id="ValueSet/ASN1attribute" key="ValueSet-ASN1attribute" name="ASN1attribute"/>
-<artifact id="ValueSet/ASN1measurement" key="ValueSet-ASN1measurement" name="ASN1measurement"/>
-<artifact id="ValueSet/CodeableConcept11073MDC" key="ValueSet-CodeableConcept11073MDC" name="CodeableConcept11073MDC"/>
-<artifact id="CodeSystem/ContinuaDeviceIdentifiers" key="CodeSystem-ContinuaDeviceIdentifiers" name="ContinuaDeviceIdentifiers"/>
-<artifact id="CodeSystem/ContinuaHFS" key="CodeSystem-ContinuaHFS" name="ContinuaHFS"/>
-<artifact id="CodeSystem/ContinuaPHD" key="CodeSystem-ContinuaPHD" name="ContinuaPHD"/>
+<artifact deprecated="true" id="ValueSet/ASN1attribute" key="ValueSet-ASN1attribute" name="ASN1attribute"/>
+<artifact deprecated="true" id="ValueSet/ASN1measurement" key="ValueSet-ASN1measurement" name="ASN1measurement"/>
+<artifact deprecated="true" id="ValueSet/CodeableConcept11073MDC" key="ValueSet-CodeableConcept11073MDC" name="CodeableConcept11073MDC"/>
+<artifact id="StructureDefinition/CoincidentTimeStampReference" key="StructureDefinition-CoincidentTimeStampReference" name="Coincident Timestamp Reference"/>
+<artifact id="StructureDefinition/Confidence95" key="StructureDefinition-Confidence95" name="Confidence 95 range"/>
+<artifact id="CodeSystem/ContinuaDeviceIdentifiers" key="CodeSystem-ContinuaDeviceIdentifiers" name="Continua Device Identifiers"/>
+<artifact id="CodeSystem/ContinuaPHDInterfaceIDs" key="CodeSystem-ContinuaPHDInterfaceIDs" name="Continua Device Interface Identifiers"/>
+<artifact id="CodeSystem/ContinuaHFS" key="CodeSystem-ContinuaHFS" name="Continua Health and Fitness Service Interfaces"/>
+<artifact id="ValueSet/ContinuaPHDInterfaces" key="ValueSet-ContinuaPHDInterfaces" name="Continua PHD-PHG Device Interfaces ValueSet"/>
+<artifact id="ValueSet/ContinuaPHGInterfaces" key="ValueSet-ContinuaPHGInterfaces" name="Continua PHG-HFS Interfaces ValueSet"/>
+<artifact deprecated="true" id="CodeSystem/ContinuaPHD" key="CodeSystem-ContinuaPHD" name="ContinuaPHD"/>
 <artifact deprecated="true" key="Device" name="Device"/>
-<artifact id="ValueSet/DeviceSystemIdIdentifier" key="ValueSet-DeviceSystemIdIdentifier" name="Device System Id Identifier"/>
-<artifact id="ValueSet/DeviceTransportIdentifiers" key="ValueSet-DeviceTransportIdentifiers" name="Device Transport Address Identifiers"/>
+<artifact deprecated="true" id="ValueSet/DeviceSystemIdIdentifier" key="ValueSet-DeviceSystemIdIdentifier" name="Device System Id Identifier"/>
+<artifact deprecated="true" id="ValueSet/DeviceTransportIdentifiers" key="ValueSet-DeviceTransportIdentifiers" name="Device Transport Address Identifiers"/>
 <artifact id="ValueSet/DeviceTypes11073MDC" key="ValueSet-DeviceTypes11073MDC" name="Device Type Specialization IEEE 11073-10101 Nomenclature Codes"/>
+<artifact id="Observation/rtsa-example" key="Observation-rtsa-example" name="Example 1 of an RTSA"/>
+<artifact id="Observation/rtsa-example-2" key="Observation-rtsa-example-2" name="Example 2 of an RTSA"/>
 <artifact id="Bundle/bundle-continuousnonin" key="Bundle-bundle-continuousnonin" name="Example Bundled upload"/>
+<artifact id="DeviceMetric/bp-devicemetric-example" key="DeviceMetric-bp-devicemetric-example" name="Example Phd Device Metric"/>
 <artifact deprecated="true" id="Observation/bloodPress-1.0.1" key="Observation-bloodPress-1.0.1" name="Example of Compound measurement"/>
 <artifact id="Device/phd-74E8FFFEFF051C00.001C05FFE874" key="Device-phd-74E8FFFEFF051C00.001C05FFE874" name="Example of PHD Device"/>
-<artifact id="Observation/stringenum-1234" key="Observation-stringenum-1234" name="Example of String measurement"/>
-<artifact id="Observation/bits-1.0.0.40" key="Observation-bits-1.0.0.40" name="Example of a ASN1 BITs measurement"/>
+<artifact id="Observation/stringenum-1234" key="Observation-stringenum-1234" name="Example of String measurement 1"/>
+<artifact id="Observation/string-observation-1" key="Observation-string-observation-1" name="Example of String measurement 2"/>
+<artifact deprecated="true" id="Observation/bits-1.0.0.40" key="Observation-bits-1.0.0.40" name="Example of a ASN1 BITs measurement"/>
+<artifact id="Observation/bits-observation" key="Observation-bits-observation" name="Example of a ASN1 BITs measurement from a Pulse Oximeter"/>
+<artifact id="Observation/bpm-status" key="Observation-bpm-status" name="Example of a BPM status report"/>
 <artifact id="Device/phd-711000FEFF5F49B0.B0495F001071" key="Device-phd-711000FEFF5F49B0.B0495F001071" name="Example of a Blood Pressure PHD"/>
-<artifact deprecated="true" id="Observation/coin-example-1" key="Observation-coin-example-1" name="Example of a Coincident Time Stamp"/>
-<artifact id="Observation/coin-20181119202022" key="Observation-coin-20181119202022" name="Example of a Coincident Time Stamp PHG better synchronized"/>
 <artifact deprecated="true" id="Observation/coin-1234" key="Observation-coin-1234" name="Example of a Coincident Time Stamp referenced by the Glucose Meal Context Observation"/>
-<artifact id="Observation/coin-20181119174911" key="Observation-coin-20181119174911" name="Example of a Coincident Time Stamp referenced from BP observation"/>
-<artifact id="Observation/coin-fault20" key="Observation-coin-fault20" name="Example of a Coincident Time Stamp with a Time Fault"/>
+<artifact deprecated="true" id="Observation/coin-fault20" key="Observation-coin-fault20" name="Example of a Coincident Time Stamp with a Time Fault"/>
+<artifact deprecated="true" id="Observation/coin-example-1" key="Observation-coin-example-1" name="Example of a Coincident Timestamp"/>
+<artifact id="Observation/coin-20181119202022" key="Observation-coin-20181119202022" name="Example of a Coincident Timestamp PHG better synchronized"/>
+<artifact id="Observation/coin-20181119174911" key="Observation-coin-20181119174911" name="Example of a Coincident Timestamp referenced from BP observation"/>
+<artifact id="Observation/coin-example-timefault" key="Observation-coin-example-timefault" name="Example of a Coincident Timestamp with a Time Fault"/>
 <artifact id="Device/phg-ecde3d4e58532d31.000000000000" key="Device-phg-ecde3d4e58532d31.000000000000" name="Example of a Gateway"/>
+<artifact id="Device/phg-example" key="Device-phg-example" name="Example of a Gateway 2"/>
 <artifact id="Device/phd-00601900010E9234.F45EABA80832" key="Device-phd-00601900010E9234.F45EABA80832" name="Example of a Glucose Monitor PHD"/>
-<artifact id="Observation/nan-1.0.0.42" key="Observation-nan-1.0.0.42" name="Example of a NaN case"/>
-<artifact id="Patient/sisansarahId.1.2.3.4.5.6.7.8.10" key="Patient-sisansarahId.1.2.3.4.5.6.7.8.10" name="Example of a Patient"/>
-<artifact deprecated="true" id="Observation/compound-numeric-observation" key="Observation-compound-numeric-observation" name="Example of a compound numeric observation"/>
-<artifact id="Bundle/nonin-hdp-1542718631721" key="Bundle-nonin-hdp-1542718631721" name="Example of a first time Bundle upload"/>
-<artifact id="Observation/spotnumeric-1.0.0.3" key="Observation-spotnumeric-1.0.0.3" name="Example of a numeric."/>
-<artifact id="Observation/rtsa-1234" key="Observation-rtsa-1234" name="Example of an Rtsa."/>
-<artifact id="Observation/glucose-1.0.0.4" key="Observation-glucose-1.0.0.4" name="Example of coded enumeration"/>
+<artifact id="Observation/numeric-observation-not-a-number" key="Observation-nan-1.0.0.42" name="Example of a NaN case"/>
+<artifact deprecated="true" id="Patient/sisansarahId.1.2.3.4.5.6.7.8.10" key="Patient-sisansarahId.1.2.3.4.5.6.7.8.10" name="Example of a Patient"/>
+<artifact deprecated="true" id="Observation/compound-numeric-blood-pressure" key="Observation-compound-numeric-observation" name="Example of a compound numeric observation"/>
+<artifact id="Observation/compound-numeric-blood-pressure-no-mean" key="Observation-compound-numeric-blood-pressure-no-mean" name="Example of a compound numeric observation with one component value absent"/>
+<artifact id="Observation/compound-observation-glucose" key="Observation-compound-observation-glucose" name="Example of a compound observation"/>
+<artifact id="Bundle/bundle-example-1" key="Bundle-nonin-hdp-1542718631721" name="Example of a first time Bundle upload"/>
+<artifact id="Patient/patientExample-1" key="Patient-patientExample-1" name="Example of a known Patient"/>
+<artifact id="Observation/temperature-observation" key="Observation-temperature-observation" name="Example of a numeric body temperature observation."/>
+<artifact id="Observation/glucose-observation" key="Observation-glucose-observation" name="Example of a numeric glucose observation."/>
+<artifact id="Observation/numeric-spo2-alarm" key="Observation-numeric-spo2-alarm" name="Example of a numeric with an alert."/>
+<artifact id="Observation/numeric-spotnumeric" key="Observation-spotnumeric-1.0.0.3" name="Example of a numeric."/>
+<artifact deprecated="true" id="Observation/rtsa-1234" key="Observation-rtsa-1234" name="Example of an Rtsa."/>
+<artifact id="Patient/patientExample-2" key="Patient-patientExample-2" name="Example of an unknown Patient"/>
+<artifact id="Observation/meal-context-observation" key="Observation-glucose-1.0.0.4" name="Example of coded enumeration"/>
 <artifact id="ValueSet/MDCobject" key="ValueSet-MDCobject" name="IEEE 11073 MDC Object infrastructure and Device nomenclature"/>
-<artifact id="ValueSet/MDCnotObject" key="ValueSet-MDCnotObject" name="MDCnotObject"/>
+<artifact id="ValueSet/MDCClockResolutionTypes" key="ValueSet-MDCClockResolutionTypes" name="MDC Clock Resolution Types"/>
+<artifact id="ValueSet/MDCClockTypes" key="ValueSet-MDCClockTypes" name="MDC Clock Types"/>
+<artifact id="ValueSet/MDCDeviceIdentifierTypes" key="ValueSet-MDCDeviceIdentifierTypes" name="MDC Device Identifier Types"/>
+<artifact id="ValueSet/MDCDeviceVersionTypes" key="ValueSet-MDCDeviceVersionTypes" name="MDC Device Version Type codes"/>
+<artifact id="ValueSet/MDCnotObject" key="ValueSet-MDCnotObject" name="MDC Non-Object codes"/>
+<artifact id="ValueSet/MDCTimeSyncMethods" key="ValueSet-MDCTimeSyncMethods" name="MDC Time Synchronization Methods"/>
+<artifact id="ValueSet/MDCValueSet" key="ValueSet-MDCValueSet" name="MDC Value Set"/>
 <artifact deprecated="true" id="CodeSystem/measurement-status" key="CodeSystem-measurement-status" name="Measurement status codes"/>
+<artifact id="CodeSystem/MissingMDCCodes" key="CodeSystem-MissingMDCCodes" name="Missing MDC Codes"/>
+<artifact id="StructureDefinition/Accuracy" key="StructureDefinition-Accuracy" name="Numeric Accuracy"/>
 <artifact deprecated="true" key="Observation" name="Observation"/>
+<artifact id="CodeSystem/PhdObservationCategories" key="CodeSystem-PhdObservationCategories" name="PHD Observation Categories Code System"/>
 <artifact id="StructureDefinition/PhdBaseObservation" key="StructureDefinition-PhdBaseObservation" name="PhdBaseObservation"/>
 <artifact id="StructureDefinition/PhdBitsEnumerationObservation" key="StructureDefinition-PhdBitsEnumerationObservation" name="PhdBitsEnumerationObservation"/>
 <artifact id="StructureDefinition/PhdCodedEnumerationObservation" key="StructureDefinition-PhdCodedEnumerationObservation" name="PhdCodedEnumerationObservation"/>
 <artifact id="StructureDefinition/PhdCoincidentTimeStampObservation" key="StructureDefinition-PhdCoincidentTimeStampObservation" name="PhdCoincidentTimeStampObservation"/>
 <artifact id="StructureDefinition/PhdCompoundNumericObservation" key="StructureDefinition-PhdCompoundNumericObservation" name="PhdCompoundNumericObservation"/>
+<artifact id="StructureDefinition/PhdCompoundObservation" key="StructureDefinition-PhdCompoundObservation" name="PhdCompoundObservation"/>
 <artifact id="StructureDefinition/PhdDevice" key="StructureDefinition-PhdDevice" name="PhdDevice"/>
+<artifact id="StructureDefinition/PhdDeviceMetric" key="StructureDefinition-PhdDeviceMetric" name="PhdDeviceMetric"/>
+<artifact id="CapabilityStatement/PhdFHIRServer" key="CapabilityStatement-PhdFHIRServer" name="PhdFHIRServer"/>
 <artifact id="StructureDefinition/PhdNumericObservation" key="StructureDefinition-PhdNumericObservation" name="PhdNumericObservation"/>
-<artifact id="CodeSystem/PhdObservationCategories" key="CodeSystem-PhdObservationCategories" name="PhdObservationCategories"/>
 <artifact id="StructureDefinition/PhdPatient" key="StructureDefinition-PhdPatient" name="PhdPatient"/>
 <artifact id="StructureDefinition/PhdRtsaObservation" key="StructureDefinition-PhdRtsaObservation" name="PhdRtsaObservation"/>
-<artifact id="CapabilityStatement/PhdServerCapabilityStatement" key="CapabilityStatement-PhdServerCapabilityStatement" name="PhdServerCapabilityStatement"/>
-<artifact id="StructureDefinition/PhdStringEnumerationObservation" key="StructureDefinition-PhdStringEnumerationObservation" name="PhdStringEnumerationObservation"/>
+<artifact deprecated="true" id="CapabilityStatement/PhdServerCapabilityStatement" key="CapabilityStatement-PhdServerCapabilityStatement" name="PhdServerCapabilityStatement"/>
+<artifact deprecated="true" id="StructureDefinition/PhdStringEnumerationObservation" key="StructureDefinition-PhdStringEnumerationObservation" name="PhdStringEnumerationObservation"/>
+<artifact id="StructureDefinition/PhdStringObservation" key="StructureDefinition-PhdStringObservation" name="PhdStringObservation"/>
 <artifact id="StructureDefinition/PhgDevice" key="StructureDefinition-PhgDevice" name="PhgDevice"/>
-<artifact id="ValueSet/Quantity11073MDC" key="ValueSet-Quantity11073MDC" name="Quantity11073MDC"/>
-<artifact id="ValueSet/Range11073MDC" key="ValueSet-Range11073MDC" name="Range11073MDC"/>
-<artifact id="ValueSet/String11073MDC" key="ValueSet-String11073MDC" name="String11073MDC"/>
+<artifact deprecated="true" id="ValueSet/Quantity11073MDC" key="ValueSet-Quantity11073MDC" name="Quantity11073MDC"/>
+<artifact deprecated="true" id="ValueSet/Range11073MDC" key="ValueSet-Range11073MDC" name="Range11073MDC"/>
+<artifact id="ValueSet/SimpleAlertOperationalStates" key="ValueSet-SimpleAlertOperationalStates" name="Simple Alert Operational States Value Set"/>
+<artifact id="StructureDefinition/SimpleAlerting" key="StructureDefinition-SimpleAlerting" name="Simple Alerting"/>
+<artifact id="CodeSystem/SimpleAlertOperationalStatesCS" key="CodeSystem-SimpleAlertOperationalStatesCS" name="SimpleAlertOperationalStates CodeSystem"/>
+<artifact deprecated="true" id="ValueSet/String11073MDC" key="ValueSet-String11073MDC" name="String11073MDC"/>
 <artifact deprecated="true" key="StructureDefinition" name="StructureDefinition"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
-<page key="EnumString" name="A measurement that is a human readable string (Enumeration String)"/>
-<page key="ASN1BITsCodeSystem" name="ASN1 BITs Code System"/>
-<page key="ASN1ToHL7Codes" name="ASN1 BITs Codes"/>
-<page key="phgExample" name="Android Gateway example"/>
-<page key="Appendices" name="Appendices"/>
+<page deprecated="true" key="EnumString" name="A measurement that is a human readable string (Enumeration String)"/>
+<page deprecated="true" key="ASN1BITsCodeSystem" name="ASN1 BITs Code System"/>
+<page deprecated="true" key="ASN1ToHL7Codes" name="ASN1 BITs Codes"/>
+<page deprecated="true" key="phgExample" name="Android Gateway example"/>
+<page deprecated="true" key="Appendices" name="Appendices"/>
+<page key="Appendix" name="Appendix"/>
 <page key="artifacts" name="Artifact List"/>
-<page key="Audience" name="Audience"/>
+<page deprecated="true" key="Audience" name="Audience"/>
 <page deprecated="true" key="BITsDevSensor" name="BITs measurement; Device-Sensor status"/>
 <page deprecated="true" key="BaseObservationProfile" name="Base Observation Profile"/>
 <page deprecated="true" key="bundleExample" name="Bundled upload of Patient, Device, and Observation resources"/>
 <page key="changes" name="Change Log"/>
-<page key="CodeableConcepts" name="Codeable Concepts"/>
-<page key="glucoseEnum" name="Coded Enumeration"/>
-<page key="CoincidentTimeStamp" name="Coincident Time Stamp"/>
+<page deprecated="true" key="CodeableConcepts" name="Codeable Concepts"/>
+<page deprecated="true" key="glucoseEnum" name="Coded Enumeration"/>
+<page deprecated="true" key="CoincidentTimeStamp" name="Coincident Time Stamp"/>
 <page deprecated="true" key="coinFault" name="Coincident Time Stamp with a time fault"/>
 <page deprecated="true" key="coincidentTime" name="Coincident Time Stamp: PHG best synchronized"/>
 <page deprecated="true" key="bloodPress" name="Compound Measurement"/>
 <page key="ProfileConsumers" name="Consuming the PHD Profile FHIR Resources"/>
-<page key="DIMtoFHIRMapping" name="DIM to FHIR Mapping: Basics"/>
-<page key="DIMtoFHIRMappingDetails" name="DIM to FHIR Mapping: Details"/>
-<page key="DefinitionMetricMsmt" name="Definition of a Metric Measurement"/>
-<page key="DeviceIdentifierCodes" name="Device Identifier codes"/>
-<page key="phdExample" name="Device example from a Blood Pressure PHD"/>
-<page key="downloads" name="Downloads"/>
-<page key="GeneralNotestoConsumers" name="General Notes to Consumers of FHIR Data"/>
-<page key="GeneratingtheReportedTimeStampIdentifier" name="Generating the PHD Reported Time Stamp Identifier"/>
-<page key="ContinuaPersonalAreaNetworkCodes" name="Generating the PHD codes"/>
+<page key="DIMtoFHIRMapping" name="DIM to FHIR Mapping"/>
+<page deprecated="true" key="DIMtoFHIRMappingDetails" name="DIM to FHIR Mapping: Details"/>
+<page deprecated="true" key="DefinitionMetricMsmt" name="Definition of a Metric Measurement"/>
+<page deprecated="true" key="DeviceIdentifierCodes" name="Device Identifier codes"/>
+<page deprecated="true" key="phdExample" name="Device example from a Blood Pressure PHD"/>
+<page deprecated="true" key="downloads" name="Downloads"/>
+<page deprecated="true" key="GeneralNotestoConsumers" name="General Notes to Consumers of FHIR Data"/>
+<page deprecated="true" key="GeneratingtheReportedTimeStampIdentifier" name="Generating the PHD Reported Time Stamp Identifier"/>
+<page key="GeneratingtheTimeStampPartIdentifier" name="Generating the PHD Reported Timestamp Identifier"/>
+<page deprecated="true" key="ContinuaPersonalAreaNetworkCodes" name="Generating the PHD codes"/>
 <page key="GenericModel" name="Generic and Extensible Model"/>
-<page key="MderFLOATsandSFLOATs" name="Mder FLOATs and SFLOATs"/>
-<page key="MetricAttributesofNoInterest" name="Metric Protocol-Only Attributes"/>
+<page key="Glossary" name="Glossary"/>
+<page key="FLOATS" name="IEEE 11073 FLOATs and SFLOATs"/>
+<page key="Nomenclaturecodes" name="IEEE 11073-10101 MDC Nomenclature codes"/>
+<page deprecated="true" key="MderFLOATsandSFLOATs" name="Mder FLOATs and SFLOATs"/>
+<page deprecated="true" key="MetricAttributesofNoInterest" name="Metric Protocol-Only Attributes"/>
 <page deprecated="true" key="NumericNaN" name="NaN Example"/>
-<page key="Nomenclaturecodes" name="Nomenclature codes"/>
 <page deprecated="true" key="Non11073PHDDevices" name="Non IEEE 11073 PHD Devices"/>
 <page deprecated="true" key="Non1107320601Devices" name="Non IEEE 11073-20601 Devices"/>
-<page key="ObtainObservationCode" name="Obtaining the Observation Code"/>
-<page key="ObtainUnitCode" name="Obtaining the Unit Code"/>
+<page deprecated="true" key="ObtainObservationCode" name="Obtaining the Observation Code"/>
+<page deprecated="true" key="ObtainUnitCode" name="Obtaining the Unit Code"/>
 <page deprecated="true" key="Organization" name="Organization"/>
-<page key="overview" name="Overview"/>
-<page key="BITsEnumerationObservationProfile" name="PHD BITs Coded Enumeration Observation Profile"/>
-<page key="CodedEnumerationObservationProfile" name="PHD Coded Enumeration Observation Profile"/>
-<page key="CoincidentTimeStampObservationProfile" name="PHD Coincident Time Stamp Observation Profile"/>
-<page key="CompoundNumericObservationProfile" name="PHD Compound Numeric Observation Profile"/>
-<page key="PhdDeviceProfile" name="PHD Device Profile"/>
-<page key="NumericObservationProfile" name="PHD Numeric Observation Profile"/>
-<page key="PhdPatientProfile" name="PHD Patient Profile"/>
-<page key="RtsaObservationProfile" name="PHD Real Time Sample Array Observation Profile"/>
-<page key="StringEnumerationObservationProfile" name="PHD String Enumeration Observation Profile"/>
-<page key="PhgDeviceProfile" name="PHG (Personal Health Gateway) Device Profile"/>
+<page key="Organizations" name="Organizations"/>
+<page deprecated="true" key="overview" name="Overview"/>
+<page deprecated="true" key="BITsEnumerationObservationProfile" name="PHD BITs Coded Enumeration Observation Profile"/>
+<page deprecated="true" key="CodedEnumerationObservationProfile" name="PHD Coded Enumeration Observation Profile"/>
+<page deprecated="true" key="CoincidentTimeStampObservationProfile" name="PHD Coincident Time Stamp Observation Profile"/>
+<page deprecated="true" key="CompoundNumericObservationProfile" name="PHD Compound Numeric Observation Profile"/>
+<page deprecated="true" key="PhdDeviceProfile" name="PHD Device Profile"/>
+<page deprecated="true" key="NumericObservationProfile" name="PHD Numeric Observation Profile"/>
+<page deprecated="true" key="PhdPatientProfile" name="PHD Patient Profile"/>
+<page deprecated="true" key="RtsaObservationProfile" name="PHD Real Time Sample Array Observation Profile"/>
+<page deprecated="true" key="StringEnumerationObservationProfile" name="PHD String Enumeration Observation Profile"/>
+<page deprecated="true" key="PhgDeviceProfile" name="PHG (Personal Health Gateway) Device Profile"/>
 <page key="TechnicalImplementationGuidance" name="PHG Implementation Guidance"/>
-<page key="patientExample" name="Patient example containing optional patient name"/>
+<page deprecated="true" key="patientExample" name="Patient example containing optional patient name"/>
 <page key="index" name="Personal Health Device Implementation Guide Home Page"/>
-<page key="profiles" name="Profiles"/>
+<page deprecated="true" key="profiles" name="Profiles"/>
 <page key="ProfilesOverview" name="Profiles Overview"/>
-<page key="Purpose" name="Purpose"/>
-<page key="Rtsa" name="Real Time Sample Array; Pleth wave"/>
+<page deprecated="true" key="Purpose" name="Purpose"/>
+<page deprecated="true" key="Rtsa" name="Real Time Sample Array; Pleth wave"/>
 <page key="RemotePatientMonitoringConsiderations" name="Remote Patient Monitoring Considerations"/>
-<page key="Scope" name="Scope"/>
+<page deprecated="true" key="Scope" name="Scope"/>
 <page deprecated="true" key="spotNumeric" name="Simple numeric with supplemental types"/>
 <page key="toc" name="Table of Contents"/>
-<page key="terminology" name="Terminology"/>
-<page key="ObservationIdentifier" name="The Observation Identifier"/>
+<page deprecated="true" key="terminology" name="Terminology"/>
+<page deprecated="true" key="ObservationIdentifier" name="The Observation Identifier"/>
 <page key="UseCases" name="Use Cases"/>
 <page deprecated="true" key="languages" name="languages" url="languages"/>
 </specification>
