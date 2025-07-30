@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cardx-cied/2025Sep" ciUrl="http://build.fhir.org/ig/HL7/cardx-cied" defaultVersion="1.0.0-ballot" defaultWorkgroup="cic" gitUrl="https://github.com/HL7/CardX-CIED" url="http://hl7.org/fhir/uv/cardx-cied">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cardx-cied/2025Sep" ciUrl="http://build.fhir.org/ig/HL7/cardx-cied" defaultVersion="1.0.0-ballot" defaultWorkgroup="cic" url="http://hl7.org/fhir/uv/cardx-cied">
 <version code="current" url="http://build.fhir.org/ig/HL7/cardx-cied"/>
 <version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/cardx-cied/2025Sep"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="CapabilityStatement/cied-data-sender" key="CapabilityStatement-cied-data-sender" name="CardX CIED Connectivity Server Capability Statement"/>
-<artifact id="StructureDefinition/cied-monitor" key="StructureDefinition-cied-monitor" name="CIED Monitor Profile"/>
-<artifact id="StructureDefinition/cied-device" key="StructureDefinition-cied-device" name="Device - Cardiovascular Implantable Electronic Device (CIED)"/>
-<artifact id="StructureDefinition/cied-connectivity-status" key="StructureDefinition-cied-connectivity-status" name="Observation - CIED Connectivity"/>
-<artifact id="StructureDefinition/cied-patient" key="StructureDefinition-cied-patient" name="Patient - CIED Patient Profile"/>
-<artifact id="StructureDefinition/cied-device-extension" key="StructureDefinition-cied-device-extension" name="CIED Device Extension"/>
 <artifact id="ValueSet/cied-connectivity-state-modifier-vs" key="ValueSet-cied-connectivity-state-modifier-vs" name="CIED Connectivity Status Modifier Value Set"/>
 <artifact id="ValueSet/cied-connectivity-state-vs" key="ValueSet-cied-connectivity-state-vs" name="CIED Connectivity Status Value Set"/>
+<artifact id="CodeSystem/CIEDconnectivity" key="CodeSystem-CIEDconnectivity" name="CIED Connectivity Status Values"/>
+<artifact id="StructureDefinition/cied-device-extension" key="StructureDefinition-cied-device-extension" name="CIED Device Extension"/>
 <artifact id="ValueSet/cied-monitor-types-vs" key="ValueSet-cied-monitor-types-vs" name="CIED Monitor Types"/>
 <artifact id="ValueSet/cied-patient-identifier" key="ValueSet-cied-patient-identifier" name="CIED Patient Identifier"/>
+<artifact id="CapabilityStatement/cied-data-sender" key="CapabilityStatement-cied-data-sender" name="CardX CIED Connectivity Server Capability Statement"/>
+<artifact id="StructureDefinition/cied-monitor" key="StructureDefinition-cied-monitor" name="Device - CIED Monitor Profile"/>
+<artifact id="StructureDefinition/cied-device" key="StructureDefinition-cied-device" name="Device - Cardiovascular Implantable Electronic Device (CIED)"/>
 <artifact id="ValueSet/11073-10103-DeviceType" key="ValueSet-11073-10103-DeviceType" name="IEEE 11073-10103 Device Type"/>
 <artifact id="ValueSet/11073-10103-SessionType" key="ValueSet-11073-10103-SessionType" name="IEEE 11073-10103 Session Type"/>
-<artifact id="CodeSystem/CIEDconnectivity" key="CodeSystem-CIEDconnectivity" name="CIED Connectivity Status Values"/>
 <artifact id="CodeSystem/IDC" key="CodeSystem-IDC" name="ISO/IEEE-11073-10103"/>
+<artifact id="StructureDefinition/cied-connectivity-status" key="StructureDefinition-cied-connectivity-status" name="Observation - CIED Connectivity"/>
+<artifact id="StructureDefinition/cied-patient" key="StructureDefinition-cied-patient" name="Patient - CIED Patient Profile"/>
 <artifact id="Device/uc1ACMEICD" key="Device-uc1ACMEICD" name="uc1ACMEICD"/>
 <artifact id="Patient/uc1ACMEPatient" key="Patient-uc1ACMEPatient" name="uc1ACMEPatient"/>
 <artifact id="Observation/uc1ConnectivityACME" key="Observation-uc1ConnectivityACME" name="uc1ConnectivityACME"/>
@@ -40,9 +40,10 @@
 <artifact id="Observation/uc5ConnectivityACME" key="Observation-uc5ConnectivityACME" name="uc5ConnectivityACME"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
-<page key="Background" name="CardX Background"/>
-<page key="index" name="Home"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="Background" name="Background"/>
 <page key="connectivity-status" name="Connectivity Status"/>
-<page key="artifacts" name="Artifacts"/>
-<page key="CapabilityStatement-cied-data-sender" name="Capability Statement"/>
+<page key="index" name="Home"/>
+<page key="toc" name="Table of Contents"/>
+<page key="user-stories" name="User Stories"/>
 </specification>
