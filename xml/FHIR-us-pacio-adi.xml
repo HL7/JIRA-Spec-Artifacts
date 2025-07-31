@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="1.0.0" defaultWorkgroup="pe" gitUrl="https://github.com/HL7/pacio-adi" url="http://hl7.org/fhir/us/fhir-pacio-adi">
-<version code="current" url=""/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/pacio-adi/2025Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-pacio-adi" defaultVersion="1.0.0" defaultWorkgroup="pe" gitUrl="https://github.com/HL7/pacio-adi" url="http://hl7.org/fhir/us/pacio-adi">
+<version code="current" url="http://build.fhir.org/ig/HL7/fhir-pacio-adi"/>
+<version code="2.0.0-ballot" url="http://hl7.org/fhir/us/pacio-adi/2025Sep"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/pacio-adi/STU1"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/pacio-adi/2022Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
@@ -14,7 +16,6 @@
 <artifact deprecated="true" id="ValueSet/PADIConsentActorRoleVS" key="ValueSet-PADIConsentActorRoleVS" name="ADI Consent Actor Role"/>
 <artifact id="StructureDefinition/ADI-DecisionalCapacity" key="StructureDefinition-ADI-DecisionalCapacity" name="ADI Decisional Capacity"/>
 <artifact id="StructureDefinition/ADI-DocumentReference" key="StructureDefinition-ADI-DocumentReference" name="ADI Document Reference"/>
-<artifact id="StructureDefinition/adi-document-reference-extension" key="StructureDefinition-adi-document-reference-extension" name="ADI Document Reference Extension"/>
 <artifact id="ValueSet/ADIDocumentReferenceStatusVS" key="ValueSet-ADIDocumentReferenceStatusVS" name="ADI Document Reference Status"/>
 <artifact id="ValueSet/ADIDocumentRevokeStatusVS" key="ValueSet-ADIDocumentRevokeStatusVS" name="ADI Document Revoke Status"/>
 <artifact id="StructureDefinition/ADI-DocumentationObservation" key="StructureDefinition-PADI-DocumentationObservation" name="ADI Documentation Observation"/>
@@ -144,7 +145,7 @@
 <artifact id="Observation/Example-Smith-Johnson-ADIPMOReviewObservation1" key="Observation-Example-Smith-Johnson-ADIPMOReviewObservation1" name="Example-Smith-Johnson-ADIPMOReviewObservation1"/>
 <artifact id="RelatedPerson/Example-Smith-Johnson-ADIWitness1" key="RelatedPerson-Example-Smith-Johnson-ADIWitness1" name="Example-Smith-Johnson-ADIWitness1"/>
 <artifact id="Observation/Example-Smith-Johnson-AutopsyObservation1" key="Observation-Example-Smith-Johnson-AutopsyObservation1" name="Example-Smith-Johnson-AutopsyObservation1"/>
-<artifact id="Bundle/Example-Smith-Johnson-Bundle1" key="Bundle-Example-Smith-Johnson-Bundle1" name="Example-Smith-Johnson-Bundle1"/>
+<artifact deprecated="true" id="Bundle/Example-Smith-Johnson-Bundle1" key="Bundle-Example-Smith-Johnson-Bundle1" name="Example-Smith-Johnson-Bundle1"/>
 <artifact id="ServiceRequest/Example-Smith-Johnson-CPR-ServiceRequest1" key="ServiceRequest-Example-Smith-Johnson-CPR-ServiceRequest1" name="Example-Smith-Johnson-CPR-ServiceRequest1"/>
 <artifact id="Observation/Example-Smith-Johnson-CareExperiencePreference1" key="Goal-Example-Smith-Johnson-CareExperiencePreference1" name="Example-Smith-Johnson-CareExperiencePreference1"/>
 <artifact id="Observation/Example-Smith-Johnson-CareExperiencePreference2" key="Goal-Example-Smith-Johnson-CareExperiencePreference2" name="Example-Smith-Johnson-CareExperiencePreference2"/>
@@ -161,17 +162,27 @@
 <artifact id="DocumentReference/Example-Smith-Johnson-DocRef-DocumentReference" key="DocumentReference-Example-Smith-Johnson-DocRef-DocumentReference" name="Example-Smith-Johnson-DocRef-DocumentReference"/>
 <artifact id="Observation/Example-Smith-Johnson-DocumentationObservation1" key="Observation-Example-Smith-Johnson-DocumentationObservation1" name="Example-Smith-Johnson-DocumentationObservation1"/>
 <artifact id="Observation/Example-Smith-Johnson-DocumentationObservation2" key="Observation-Example-Smith-Johnson-DocumentationObservation2" name="Example-Smith-Johnson-DocumentationObservation2"/>
+<artifact id="Endpoint/Example-Smith-Johnson-Endpoint1" key="Endpoint-Example-Smith-Johnson-Endpoint1" name="Example-Smith-Johnson-Endpoint1"/>
+<artifact id="Endpoint/Example-Smith-Johnson-Endpoint2" key="Endpoint-Example-Smith-Johnson-Endpoint2" name="Example-Smith-Johnson-Endpoint2"/>
 <artifact id="RelatedPerson/Example-Smith-Johnson-HealthcareAgent1" key="RelatedPerson-Example-Smith-Johnson-HealthcareAgent1" name="Example-Smith-Johnson-HealthcareAgent1"/>
 <artifact id="RelatedPerson/Example-Smith-Johnson-HealthcareAgent2" key="RelatedPerson-Example-Smith-Johnson-HealthcareAgent2" name="Example-Smith-Johnson-HealthcareAgent2"/>
+<artifact id="RelatedPerson/Example-Smith-Johnson-HealthcareAgent3" key="RelatedPerson-Example-Smith-Johnson-HealthcareAgent3" name="Example-Smith-Johnson-HealthcareAgent3"/>
 <artifact id="Consent/Example-Smith-Johnson-HealthcareAgentConsent" key="Consent-Example-Smith-Johnson-HealthcareAgentConsent" name="Example-Smith-Johnson-HealthcareAgentConsent"/>
 <artifact id="Consent/Example-Smith-Johnson-HealthcareAgentConsent-Deny" key="Consent-Example-Smith-Johnson-HealthcareAgentConsent-Deny" name="Example-Smith-Johnson-HealthcareAgentConsent-Deny"/>
 <artifact id="Consent/Example-Smith-Johnson-HealthcareAgentConsent-Permit" key="Consent-Example-Smith-Johnson-HealthcareAgentConsent-Permit" name="Example-Smith-Johnson-HealthcareAgentConsent-Permit"/>
+<artifact id="Consent/Example-Smith-Johnson-HealthcareAgentConsent2" key="Consent-Example-Smith-Johnson-HealthcareAgentConsent2" name="Example-Smith-Johnson-HealthcareAgentConsent2"/>
 <artifact id="RelatedPerson/Example-Smith-Johnson-Notary1" key="RelatedPerson-Example-Smith-Johnson-Notary1" name="Example-Smith-Johnson-Notary1"/>
+<artifact id="RelatedPerson/Example-Smith-Johnson-Notary2" key="RelatedPerson-Example-Smith-Johnson-Notary2" name="Example-Smith-Johnson-Notary2"/>
 <artifact id="Observation/Example-Smith-Johnson-OrganDonationObservation1" key="Observation-Example-Smith-Johnson-OrganDonationObservation1" name="Example-Smith-Johnson-OrganDonationObservation1"/>
 <artifact id="Organization/Example-Smith-Johnson-OrganizationAssembler1" key="Organization-Example-Smith-Johnson-OrganizationAssembler1" name="Example-Smith-Johnson-OrganizationAssembler1"/>
 <artifact id="Organization/Example-Smith-Johnson-OrganizationCustodian1" key="Organization-Example-Smith-Johnson-OrganizationCustodian1" name="Example-Smith-Johnson-OrganizationCustodian1"/>
+<artifact id="Bundle/Example-Smith-Johnson-PACP-Bundle1" key="Bundle-Example-Smith-Johnson-PACP-Bundle1" name="Example-Smith-Johnson-PACP-Bundle1"/>
 <artifact deprecated="true" id="Provenance/Example-Smith-Johnson-PACPProvenance1" key="Provenance-Example-Smith-Johnson-PACPProvenance1" name="Example-Smith-Johnson-PACPProvenance1"/>
+<artifact id="ServiceRequest/Example-Smith-Johnson-PMOAdditionalOrdersServiceRequest1" key="ServiceRequest-Example-Smith-Johnson-PMOAdditionalOrdersServiceRequest1" name="Example-Smith-Johnson-PMOAdditionalOrdersServiceRequest1"/>
 <artifact id="Observation/Example-Smith-Johnson-PMOHospiceObservation1" key="Observation-Example-Smith-Johnson-PMOHospiceObservation1" name="Example-Smith-Johnson-PMOHospiceObservation1"/>
+<artifact id="ServiceRequest/Example-Smith-Johnson-PMOHydrationServiceRequest1" key="ServiceRequest-Example-Smith-Johnson-PMOHydrationServiceRequest1" name="Example-Smith-Johnson-PMOHydrationServiceRequest1"/>
+<artifact id="ServiceRequest/Example-Smith-Johnson-PMOInitialTreatmentServiceRequest1" key="ServiceRequest-Example-Smith-Johnson-PMOInitialTreatmentServiceRequest1" name="Example-Smith-Johnson-PMOInitialTreatmentServiceRequest1"/>
+<artifact id="ServiceRequest/Example-Smith-Johnson-PMONutritionServiceRequest1" key="ServiceRequest-Example-Smith-Johnson-PMONutritionServiceRequest1" name="Example-Smith-Johnson-PMONutritionServiceRequest1"/>
 <artifact id="Provenance/Example-Smith-Johnson-PMOProvenance1" key="Provenance-Example-Smith-Johnson-PMOProvenance1" name="Example-Smith-Johnson-PMOProvenance1"/>
 <artifact id="Patient/Example-Smith-Johnson-Patient1" key="Patient-Example-Smith-Johnson-Patient1" name="Example-Smith-Johnson-Patient1"/>
 <artifact id="Goal/Example-Smith-Johnson-PersonalGoal1" key="Goal-Example-Smith-Johnson-PersonalGoal1" name="Example-Smith-Johnson-PersonalGoal1"/>
@@ -183,6 +194,8 @@
 <artifact id="Observation/Example-Smith-Johnson-PersonalInterventionPreference4" key="Observation-Example-Smith-Johnson-PersonalInterventionPreference4" name="Example-Smith-Johnson-PersonalInterventionPreference4"/>
 <artifact id="Observation/Example-Smith-Johnson-PersonalInterventionPreference5" key="Goal-Example-Smith-Johnson-PersonalInterventionPreference5" name="Example-Smith-Johnson-PersonalInterventionPreference5"/>
 <artifact id="Observation/Example-Smith-Johnson-PersonalInterventionPreference6" key="Goal-Example-Smith-Johnson-PersonalInterventionPreference6" name="Example-Smith-Johnson-PersonalInterventionPreference6"/>
+<artifact id="Observation/Example-Smith-Johnson-UponDeathPreference1" key="Observation-Example-Smith-Johnson-UponDeathPreference1" name="Example-Smith-Johnson-UponDeathPreference1"/>
+<artifact id="Organization/Example-organization-good-health-clinic" key="Organization-Example-organization-good-health-clinic" name="Example-organization-good-health-clinic"/>
 <artifact id="StructureDefinition/adi-goal-order-by-descending-priority-extension" key="StructureDefinition-padi-goal-order-by-descending-priority-extension" name="Goal Order by Descending Priority"/>
 <artifact deprecated="true" id="ValueSet/PADIHealthGoalsVS" key="ValueSet-PADIHealthGoalsVS" name="Health Goals"/>
 <artifact id="CodeSystem/ADIHCADecisionsCS" key="CodeSystem-PADIHCADecisionsCS" name="Healthcare Agent Decision Codes"/>
@@ -199,8 +212,11 @@
 <artifact id="ValueSet/LOINCPOLSTMedAssistNutrAnswerList" key="ValueSet-LOINCPOLSTMedAssistNutrAnswerList" name="LOINC POLST Med assist nutr Answer List"/>
 <artifact id="ValueSet/LOINCPOLSTDiscussPartAnswerList" key="ValueSet-LOINCPOLSTDiscussPartAnswerList" name="LOINC POLST discuss part List"/>
 <artifact id="ValueSet/LOINCPOLSTReviewAnswerList" key="ValueSet-LOINCPOLSTReviewAnswerList" name="LOINC POLST review Answer List"/>
+<artifact id="Binary/MHAD-Example-Smith-Johnson-Binary" key="Binary-MHAD-Example-Smith-Johnson-Binary" name="MHAD-Example-Smith-Johnson-Binary"/>
+<artifact id="Bundle/MHAD-Example-Smith-Johnson-Bundle3" key="Bundle-MHAD-Example-Smith-Johnson-Bundle3" name="MHAD-Example-Smith-Johnson-Bundle3"/>
 <artifact id="ValueSet/ADIDMedicallyAssistedHydrationNutritionOrderVS" key="ValueSet-ADIDMedicallyAssistedHydrationNutritionOrderVS" name="Medically Assisted Hydration Order"/>
 <artifact id="ValueSet/ADIDMedicallyAssistedHydrationNutritionOrderGroupingVS" key="ValueSet-ADIDMedicallyAssistedHydrationNutritionOrderGroupingVS" name="Medically Assisted Hydration Order Grouping"/>
+<artifact id="Composition/MHAD-Example-Smith-Johnson-Composition" key="Composition-MHAD-Example-Smith-Johnson-Composition" name="Mental Health Directive (Maryland)"/>
 <artifact deprecated="true" id="List/Example-McBee-PersonalPrioritiesOrganizer1" key="List-Example-McBee-PersonalPrioritiesOrganizer1" name="My Advance Care Goals"/>
 <artifact id="ValueSet/ADINoHealthcareAgentIncludedReasonVS" key="ValueSet-PADINoHealthcareAgentIncludedReasonVS" name="No Healthcare Agent Included Reason"/>
 <artifact id="StructureDefinition/adi-notaryInformation-extension" key="StructureDefinition-adi-notaryInformation-extension" name="Notary Information"/>
@@ -226,9 +242,10 @@
 <artifact id="StructureDefinition/adi-docVersionNumber-extension" key="StructureDefinition-padi-versionNumber-extension" name="Version Number"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
 <page key="change_log" name="Change Log"/>
 <page key="downloads" name="Downloads"/>
-<page key="artifacts" name="FHIR Artifacts"/>
+<page key="artifact_adi" name="FHIR Artifacts"/>
 <page key="formal_specification" name="Formal Specification"/>
 <page key="general_guidance" name="General Guidance"/>
 <page key="index" name="Home"/>
