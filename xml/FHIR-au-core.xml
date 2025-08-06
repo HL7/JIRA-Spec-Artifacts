@@ -1,5 +1,7 @@
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/core/1.1.0-preview" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-core" defaultVersion="1.0.0" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-core" url="http://hl7.org.au/fhir/core">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/core/2.0.0-ballot" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-core" defaultVersion="1.0.0" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-core" url="http://hl7.org.au/fhir/core">
 	<version code="current" url="https://build.fhir.org/ig/hl7au/au-fhir-core"/>
+	<version code="2.0.0-ballot" url="http://hl7.org.au/fhir/core/2.0.0-ballot"/>
+	<version code="2.0.0-draft" url="http://hl7.org.au/fhir/core/2.0.0-draft"/>
 	<version code="1.1.0-preview" url="http://hl7.org.au/fhir/core/1.1.0-preview"/>
 	<version code="1.0.0" url="http://hl7.org.au/fhir/core/1.0.0"/>
 	<version code="1.0.0-preview" url="http://hl7.org.au/fhir/core/1.0.0-preview"/>
@@ -105,141 +107,138 @@
 	<artifact id="StructureDefinition/au-core-diagnosticresult" key="StructureDefinition-au-core-diagnosticresult" name="AU Core Diagnostic Result Observation" />
 	<artifact id="StructureDefinition/au-core-medicationstatement" key="StructureDefinition-au-core-medicationstatement" name="AU Core MedicationStatement" />
 	<artifact id="StructureDefinition/au-core-relatedperson" key="StructureDefinition-au-core-relatedperson" name="AU Core RelatedPerson" />
-
-
-	<artifact id="Immunization/covid-2" key="Immunization-covid-2" name="Immunization - COVID Dose 2"  deprecated="true"/>
-	<artifact id="StructureDefinition/au-core-lipid-result" key="StructureDefinition-au-core-lipid-result" name="AU Core Lipid Result" deprecated="true" />
-	<artifact id="Observation/oxygensat-1" key="Observation-oxygensat-1" name="Observation - Oxygen saturation"  deprecated="true"/>
-	<artifact id="Condition/cellulitis" key="Condition-cellulitis" name="Condition - Cellulitis of Right Knee"  deprecated="true"/>
-	<artifact id="Encounter/consultation" key="Encounter-consultation" name="Encounter - consultation"  deprecated="true"/>
+	<artifact id="Immunization/covid-2" key="Immunization-covid-2" name="Immunization - COVID Dose 2" deprecated="true"/>
+	<artifact id="StructureDefinition/au-core-lipid-result" key="StructureDefinition-au-core-lipid-result" name="AU Core Lipid Result" deprecated="true"/>
+	<artifact id="Observation/oxygensat-1" key="Observation-oxygensat-1" name="Observation - Oxygen saturation" deprecated="true"/>
+	<artifact id="Condition/cellulitis" key="Condition-cellulitis" name="Condition - Cellulitis of Right Knee" deprecated="true"/>
+	<artifact id="Encounter/consultation" key="Encounter-consultation" name="Encounter - consultation" deprecated="true"/>
 	<artifact id="Location/mitchells-hill-audiology" key="Location-mitchells-hill-audiology" name="Location - Mitchells Hill Audiology" deprecated="true"/>
-	<artifact id="Patient/dan-harry" key="Patient-dan-harry" name="Patient - Mr. Harry Dan"  deprecated="true"/>
-	<artifact id="CapabilityStatement/au-core-server" key="CapabilityStatement-au-core-server" name="AU Core Server CapabilityStatement"  deprecated="true"/>
-	<artifact id="CapabilityStatement/au-core-client" key="CapabilityStatement-au-core-client" name="AU Core Client CapabilityStatement"  deprecated="true"/>
-	<artifact id="SearchParameter/au-core-coverage-patient" key="SearchParameter-au-core-coverage-patient" name="AUCoreCoveragePatient"  deprecated="true"/>
+	<artifact id="Patient/dan-harry" key="Patient-dan-harry" name="Patient - Mr. Harry Dan" deprecated="true"/>
+	<artifact id="CapabilityStatement/au-core-server" key="CapabilityStatement-au-core-server" name="AU Core Server CapabilityStatement" deprecated="true"/>
+	<artifact id="CapabilityStatement/au-core-client" key="CapabilityStatement-au-core-client" name="AU Core Client CapabilityStatement" deprecated="true"/>
+	<artifact id="SearchParameter/au-core-coverage-patient" key="SearchParameter-au-core-coverage-patient" name="AUCoreCoveragePatient" deprecated="true"/>
 	<artifact id="SearchParameter/au-core-specimen-patient" key="SearchParameter-au-core-specimen-patient" name="AUCoreSpecimenPatient" deprecated="true"/>
-	<artifact id="StructureDefinition/au-core-diagnosticreport" key="StructureDefinition-au-core-diagnosticreport" name="AU Core DiagnosticReport"  deprecated="true"/>
-	<artifact id="StructureDefinition/au-core-documentreference" key="StructureDefinition-au-core-documentreference" name="AU Core DocumentReference"  deprecated="true"/>
-	<artifact id="StructureDefinition/au-core-healthcareservice" key="StructureDefinition-au-core-healthcareservice" name="AU Core HealthcareService"  deprecated="true"/>
-	<artifact id="StructureDefinition/au-core-observation" key="StructureDefinition-au-core-observation" name="AU Core Observation"  deprecated="true"/>
-	<artifact id="StructureDefinition/au-core-provenance" key="StructureDefinition-au-core-provenance" name="AU Core Provenance"  deprecated="true"/>
-	<artifact id="StructureDefinition/au-core-vitalspanel" key="StructureDefinition-au-core-vitalspanel" name="AU Core Vitals Panel"  deprecated="true"/>
-	<artifact id="StructureDefinition/au-core-oxygensat" key="StructureDefinition-au-core-oxygensat" name="AU Core Oxygen Saturation"  deprecated="true"/>
-	<artifact id="StructureDefinition/au-core-bmi" key="StructureDefinition-au-core-bmi" name="AU Core BMI"  deprecated="true"/>
-	<artifact id="StructureDefinition/au-core-headcircum" key="StructureDefinition-au-core-headcircum" name="AU Core Head Circumference"  deprecated="true"/>
-	<artifact id="ValueSet/lipid-result-reporting" key="ValueSet-lipid-result-reporting" name="Lipid Result Reporting"  deprecated="true"/>
-	<artifact id="AllergyIntolerance/nkda" key="AllergyIntolerance-nkda" name="AllergyIntolerance - No known drug allergy"  deprecated="true"/>
-	<artifact id="AllergyIntolerance/dust" key="AllergyIntolerance-dust" name="AllergyIntolerance - Dust allergy"  deprecated="true"/>
-	<artifact id="AllergyIntolerance/wasp" key="AllergyIntolerance-wasp" name="AllergyIntolerance - Wasp venom allergy"  deprecated="true"/>
-	<artifact id="AllergyIntolerance/egg" key="AllergyIntolerance-egg" name="AllergyIntolerance - Egg allergy"  deprecated="true"/>
-	<artifact id="BodyStructure/right-knee" key="BodyStructure-right-knee" name="BodyStructure - Right Knee"  deprecated="true"/>
-	<artifact id="BodyStructure/left-knee" key="BodyStructure-left-knee" name="BodyStructure - Left Knee"  deprecated="true"/>
-	<artifact id="BodyStructure/tumour-spleen" key="BodyStructure-tumour-spleen" name="BodyStructure - Splenic mass"  deprecated="true"/>
-	<artifact id="Condition/aci" key="Condition-aci" name="Condition - Acute myocardial infarction of anterior wall"  deprecated="true"/>
-	<artifact id="Condition/coronary-syndrome" key="Condition-coronary-syndrome" name="Condition - Acute coronary syndrome"  deprecated="true"/>
-	<artifact id="Condition/fever" key="Condition-fever" name="Condition - Fever"  deprecated="true"/>
-	<artifact id="Condition/nailwound" key="Condition-nailwound" name="Condition - Nail wound"  deprecated="true"/>
-	<artifact id="Condition/jaundice" key="Condition-jaundice" name="Condition - Neonatal jaundice"  deprecated="true"/>
-	<artifact id="Condition/cleftpalate" key="Condition-cleftpalate" name="Condition - Cleft palate"  deprecated="true"/>
-	<artifact id="Condition/clefttongue" key="Condition-clefttongue" name="Condition - Cleft tongue"  deprecated="true"/>
-	<artifact id="Condition/bipolar" key="Condition-bipolar" name="Condition - Bipolar Disorder"  deprecated="true"/>
-	<artifact id="Condition/zinc" key="Condition-zinc" name="Condition - Zinc Depletion Syndrome"  deprecated="true"/>
-	<artifact id="Condition/lymphoma" key="Condition-lymphoma" name="Condition - Diffuse B-cell lymphoma of the Brain"  deprecated="true"/>
-	<artifact id="Condition/vkc" key="Condition-vkc" name="Condition - Vernal keratoconjunctivitis"  deprecated="true"/>
-	<artifact id="DiagnosticReport/lipid-panel" key="DiagnosticReport-lipid-panel" name="DiagnosticReport - Lipid Panel"  deprecated="true"/>
-	<artifact id="DocumentReference/acp" key="DocumentReference-acp" name="DocumentReference - Advance Care Plan"  deprecated="true"/>
-	<artifact id="DocumentReference/mental-health-crisis-plan" key="DocumentReference-mental-health-crisis-plan" name="DocumentReference - Mental health crisis plan"  deprecated="true"/>
-	<artifact id="Encounter/annualvisit-1" key="Encounter-annualvisit-1" name="Encounter - Annual check up 1"  deprecated="true"/>
-	<artifact id="Encounter/annualvisit-2" key="Encounter-annualvisit-2" name="Encounter - Annual check up 2"  deprecated="true"/>
-	<artifact id="Encounter/covid-admin-2" key="Encounter-covid-admin-2" name="Encounter - COVID 19 Vaccine Administration 2"  deprecated="true"/>
-	<artifact id="Encounter/delivery" key="Encounter-delivery" name="Encounter - Delivery"  deprecated="true"/>
-	<artifact id="Encounter/emergency" key="Encounter-emergency" name="Encounter - in progress emergency"  deprecated="true"/>
-	<artifact id="Encounter/home-meds-review" key="Encounter-home-meds-review" name="Encounter - Home Medicines Review"  deprecated="true"/>
-	<artifact id="Encounter/nailwound" key="Encounter-nailwound" name="Encounter - presentation at GP for nail wound"  deprecated="true"/>
-	<artifact id="FamilyMemberHistory/father" key="FamilyMemberHistory-father" name="FamilyMemberHistory - Father (part of multiple chronic condition care plan)"  deprecated="true"/>
-	<artifact id="Goal/hpt-wnl" key="Goal-hpt-wnl" name="Goal - Systolic blood pressure (part of multiple chronic condition care plan)"  deprecated="true"/>
-	<artifact id="Goal/wgt-loss" key="Goal-wgt-loss" name="Goal - Weight loss (part of multiple chronic condition care plan)"  deprecated="true"/>
-	<artifact id="HealthcareService/bobrester-medical-center" key="HealthcareService-bobrester-medical-center" name="HealthcareService - Bobrester Medical Centre"  deprecated="true"/>
-	<artifact id="HealthcareService/lge-priv-xray" key="HealthcareService-lge-priv-xray" name="HealthcareService - Private X-Ray"  deprecated="true"/>
-	<artifact id="Immunization/air-covid-1" key="Immunization-air-covid-1" name="Immunization - Australian Immunisaton Register Record of COVID Dose 1"  deprecated="true"/>
-	<artifact id="Immunization/air-covid-2" key="Immunization-air-covid-2" name="Immunization - Australian Immunisation Register Record of COVID Dose 2"  deprecated="true"/>
-	<artifact id="Immunization/hepb-1" key="Immunization-hepb-1" name="Immunization - Administration of Hepatitis B vaccination at birth"  deprecated="true"/>
-	<artifact id="Location/au-hospital" key="Location-au-hospital" name="Location - Hospital Site"  deprecated="true"/>
-	<artifact id="Location/au-hospital-pharm-out" key="Location-au-hospital-pharm-out" name="Location - Friends Pharmacy"  deprecated="true"/>
-	<artifact id="Location/au-hospital-sw-physio" key="Location-au-hospital-sw-physio" name="Location - Physiotherapy Offices - AU Hospital"  deprecated="true"/>
-	<artifact id="Location/au-jurisdiction" key="Location-au-jurisdiction" name="Location - Jurisdiction of Australia"  deprecated="true"/>
-	<artifact id="Location/pharmacy" key="Location-pharmacy" name="Location - Pharmacy building"  deprecated="true"/>
-	<artifact id="Medication/4active-ingredients" key="Medication-4active-ingredients" name="Medication - Product with four active ingredients"  deprecated="true"/>
-	<artifact id="MedicationStatement/active-amiodarone" key="MedicationStatement-active-amiodarone" name="MedicationStatement - practitioner records active use of Amiodarone 200mg"  deprecated="true"/>
-	<artifact id="MedicationStatement/completed-aldara" key="MedicationStatement-completed-aldara" name="MedicationStatement - practitioner records completed use of Aldara 5% cream"  deprecated="true"/>
-	<artifact id="MedicationStatement/intended-coq10" key="MedicationStatement-intended-coq10" name="MedicationStatement - practitioner records intended use of CoQ10 150mg"  deprecated="true"/>
-	<artifact id="MedicationStatement/previous-use" key="MedicationStatement-previous-use" name="MedicationStatement - practitioner reported previous use of Diflucan"  deprecated="true"/>
-	<artifact id="MedicationStatement/simvastatin" key="MedicationStatement-simvastatin" name="MedicationStatement - current use of Simvastatin"  deprecated="true"/>
-	<artifact id="Observation/bloodpressure-2" key="Observation-bloodpressure-2" name="Observation - Blood Pressure 2"  deprecated="true"/>
-	<artifact id="Observation/bmi-1" key="Observation-bmi-1" name="Observation - BMI 1"  deprecated="true"/>
-	<artifact id="Observation/bodyheight-2" key="Observation-bodyheight-2" name="Observation - Length 2"  deprecated="true"/>
-	<artifact id="Observation/bodyheight-3" key="Observation-bodyheight-3" name="Observation - Length 3"  deprecated="true"/>
-	<artifact id="Observation/bodyheight-4" key="Observation-bodyheight-4" name="Observation - Height 4"  deprecated="true"/>
-	<artifact id="Observation/bodytemp-fever" key="Observation-bodytemp-fever" name="Observation - Temperature (fever)"  deprecated="true"/>
-	<artifact id="Observation/bodyweight-2" key="Observation-bodyweight-2" name="Observation - Body weight 2"  deprecated="true"/>
-	<artifact id="Observation/bodyweight-3" key="Observation-bodyweight-3" name="Observation - Body weight 3"  deprecated="true"/>
-	<artifact id="Observation/bodyweight-mcc" key="Observation-bodyweight-mcc" name="Observation - Body weight (part of multiple chronic condition care plan)"  deprecated="true"/>
-	<artifact id="Observation/bonedensity-simple-precon" key="Observation-bonedensity-simple-precon" name="Observation - Bone Density of Left Femur (pre-coordinated body site code)"  deprecated="true"/>
-	<artifact id="Observation/bonedensity-simple-contained" key="Observation-bonedensity-simple-contained" name="Observation - Bone Density of Left Femur (contained BodyStructure)"  deprecated="true"/>
-	<artifact id="Observation/bun-mcc" key="Observation-bun-mcc" name="Observation - Urea nitrogen [Mass/volume] in Serum or Plasma (part of multiple chronic condition care plan)"  deprecated="true"/>
-	<artifact id="Observation/headcircum-1" key="Observation-headcircum-1" name="Observation - Head circumference"  deprecated="true"/>
-	<artifact id="Observation/lipid-chol-1" key="Observation-lipid-chol-1" name="Observation - Cholesterol"  deprecated="true"/>
-	<artifact id="Observation/lipid-non-hdlc-1" key="Observation-lipid-non-hdlc-1" name="Observation - Non HDL Cholesterol"  deprecated="true"/>
-	<artifact id="Observation/sex-at-birth-intersex" key="Observation-sex-at-birth-intersex" name="Observation - Intersex at birth"  deprecated="true"/>
-	<artifact id="Observation/sex-at-birth-female" key="Observation-sex-at-birth-female" name="Observation - Female at birth"  deprecated="true"/>
-	<artifact id="Observation/sex-at-birth-male" key="Observation-sex-at-birth-male" name="Observation - Male at birth"  deprecated="true"/>
-	<artifact id="Observation/vitalspanel-1" key="Observation-vitalspanel-1" name="Observation - Vital signs panel"  deprecated="true"/>
-	<artifact id="Organization/aaaaaia-insurer" key="Organization-aaaaaia-insurer" name="Organization - AAAAAIA HI PTY LTD"  deprecated="true"/>
-	<artifact id="Organization/adv-hearing-care" key="Organization-adv-hearing-care" name="Organization - Audiology Advanced Hearing Care"  deprecated="true"/>
-	<artifact id="Organization/dva-au" key="Organization-dva-au" name="Organization - Department of Veterans' Affairs"  deprecated="true"/>
-	<artifact id="Organization/health-au" key="Organization-health-au" name="Organization - Department of Health and Aged Care"  deprecated="true"/>
-	<artifact id="Organization/hospital-au" key="Organization-hospital-au" name="Organization - Hospitals Australia"  deprecated="true"/>
-	<artifact id="Organization/hospital-int" key="Organization-hospital-int" name="Organization - Hospitals International"  deprecated="true"/>
-	<artifact id="Organization/pharmacy" key="Organization-pharmacy" name="Organization - Retail Pharmacy"  deprecated="true"/>
-	<artifact id="Organization/services-au" key="Organization-services-au" name="Organization - Services Australia"  deprecated="true"/>
-	<artifact id="Patient/baby-smith-john" key="Patient-baby-smith-john" name="Patient - Baby patient"  deprecated="true"/>
-	<artifact id="Patient/italia-sofia" key="Patient-italia-sofia" name="Patient - Ms. Sofia Italia (foreign tourist)"  deprecated="true"/>
-	<artifact id="Patient/smith-emma" key="Patient-smith-emma" name="Patient - Ms. Emma SMITH"  deprecated="true"/>
-	<artifact id="Practitioner/bradley-jill" key="Practitioner-bradley-jill" name="Practitioner - Jill Bradley"  deprecated="true"/>
-	<artifact id="Practitioner/cardy-igist" key="Practitioner-cardy-igist" name="Practitioner - Dr. Igist Cardy"  deprecated="true"/>
-	<artifact id="Practitioner/levin-henry" key="Practitioner-levin-henry" name="Practitioner - Dr Henry Levin VII (part of multiple chronic condition care plan)"  deprecated="true"/>
-	<artifact id="Practitioner/nurse-nancy" key="Practitioner-nurse-nancy" name="Practitioner - RNP Nancy Nurse (part of multiple chronic condition care plan)"  deprecated="true"/>
-	<artifact id="Practitioner/pharmacist" key="Practitioner-pharmacist" name="Practitioner - Mr Representative Pharmacist"  deprecated="true"/>
-	<artifact id="Practitioner/primary-peter" key="Practitioner-primary-peter" name="Practitioner - Dr Peter Primary (part of multiple chronic condition care plan)"  deprecated="true"/>
-	<artifact id="Practitioner/sandyson-sandy" key="Practitioner-sandyson-sandy" name="Practitioner - Ms. Sandy Sandyson"  deprecated="true"/>
-	<artifact id="Practitioner/surgeon-david" key="Practitioner-surgeon-david" name="Practitioner - Dr. David Surgeon"  deprecated="true"/>
-	<artifact id="PractitionerRole/audiologist-bradley-jill" key="PractitionerRole-audiologist-bradley-jill" name="PractitionerRole - Audiologist"  deprecated="true"/>
-	<artifact id="PractitionerRole/cardiologist-cardy-igist" key="PractitionerRole-cardiologist-cardy-igist" name="PractitionerRole - Cardiologist"  deprecated="true"/>
-	<artifact id="PractitionerRole/dietician-tan-patricia" key="PractitionerRole-dietician-tan-patricia" name="PractitionerRole - Dietician"  deprecated="true"/>
-	<artifact id="PractitionerRole/gp-primary-peter" key="PractitionerRole-gp-primary-peter" name="PractitionerRole - General Practitioner (part of multiple chronic condition care plan)"  deprecated="true"/>
-	<artifact id="PractitionerRole/nephrologist-levin-henry" key="PractitionerRole-nephrologist-levin-henry" name="PractitionerRole - Nephrologist (part of multiple chronic condition care plan)"  deprecated="true"/>
-	<artifact id="PractitionerRole/np-nurse-nancy" key="PractitionerRole-np-nurse-nancy" name="PractitionerRole - Registered nurse (part of multiple chronic condition care plan)"  deprecated="true"/>
-	<artifact id="PractitionerRole/retail-pharmacist" key="PractitionerRole-retail-pharmacist" name="PractitionerRole - Retail pharmacist"  deprecated="true"/>
-	<artifact id="PractitionerRole/sandyson-sandy-nurse" key="PractitionerRole-sandyson-sandy-nurse" name="PractitionerRole - Registered nurse"  deprecated="true"/>
-	<artifact id="PractitionerRole/surgeon-david-surgeon" key="PractitionerRole-surgeon-david-surgeon" name="PractitionerRole - Surgeon"  deprecated="true"/>
-	<artifact id="Procedure/cryotherapy" key="Procedure-cryotherapy" name="Procedure - Cryotherapy"  deprecated="true"/>
-	<artifact id="Provenance/delete" key="Provenance-delete" name="Provenance - delete a specific document reference version"  deprecated="true"/>
-	<artifact id="Provenance/signature" key="Provenance-signature" name="Provenance - Signature for advance care plan"  deprecated="true"/>
-	<artifact id="RelatedPerson/smith-emma-john" key="RelatedPerson-smith-emma-john" name="RelatedPerson - Mother of John Smith"  deprecated="true"/>
-	<artifact id="RelatedPerson/rabbit-peter" key="RelatedPerson-rabbit-peter" name="RelatedPerson - Friend of Mr Li Wang"  deprecated="true"/>
-	<artifact id="ServiceRequest/order-chestct" key="ServiceRequest-order-chestct" name="ServiceRequest - Chest CT order"  deprecated="true"/>
-	<artifact id="ServiceRequest/order-chestxray" key="ServiceRequest-order-chestxray" name="ServiceRequest - Chest X-ray order"  deprecated="true"/>
-	<artifact id="ServiceRequest/order-ct-abpelcontrast" key="ServiceRequest-order-ct-abpelcontrast" name="ServiceRequest - CT of abdomen and pelvis with contrast order"  deprecated="true"/>
-	<artifact id="ServiceRequest/order-covid" key="ServiceRequest-order-covid" name="ServiceRequest - 2019-Novel Coronavirus PCR order"  deprecated="true"/>
-	<artifact id="ServiceRequest/order-lipid" key="ServiceRequest-order-lipid" name="ServiceRequest - Lipid Panel order"  deprecated="true"/>
-	<artifact id="ServiceRequest/order-lk-ctcontrast" key="ServiceRequest-order-lk-ctcontrast" name="ServiceRequest - Left Knee CT with contrast order"  deprecated="true"/>
-	<artifact id="ServiceRequest/order-lkxray" key="ServiceRequest-order-lkxray" name="ServiceRequest - Left Knee X-ray order"  deprecated="true"/>
-	<artifact id="ServiceRequest/order-rk-ctcontrast" key="ServiceRequest-order-rk-ctcontrast" name="ServiceRequest - Right Knee CT with contrast order"  deprecated="true"/>
-	<artifact id="ServiceRequest/order-rkxray" key="ServiceRequest-order-rkxray" name="ServiceRequest - Right Knee X-ray order"  deprecated="true"/>
-	<artifact id="StructureDefinition/au-core-diagnosticresult-imag" key="StructureDefinition-au-core-diagnosticresult-imag" name="AU Core Diagnostic Imaging Result Observation"  deprecated="true"/>
-	<artifact id="StructureDefinition/au-core-servicerequest" key="StructureDefinition-au-core-servicerequest" name="AU Core ServiceRequest"  deprecated="true"/>
-	<artifact id="StructureDefinition/au-core-sexassignedatbirth" key="StructureDefinition-au-core-sexassignedatbirth" name="AU Core Biological Sex Assigned at Birth"  deprecated="true"/>
-
+	<artifact id="StructureDefinition/au-core-diagnosticreport" key="StructureDefinition-au-core-diagnosticreport" name="AU Core DiagnosticReport" deprecated="true"/>
+	<artifact id="StructureDefinition/au-core-documentreference" key="StructureDefinition-au-core-documentreference" name="AU Core DocumentReference" deprecated="true"/>
+	<artifact id="StructureDefinition/au-core-healthcareservice" key="StructureDefinition-au-core-healthcareservice" name="AU Core HealthcareService" deprecated="true"/>
+	<artifact id="StructureDefinition/au-core-observation" key="StructureDefinition-au-core-observation" name="AU Core Observation" deprecated="true"/>
+	<artifact id="StructureDefinition/au-core-provenance" key="StructureDefinition-au-core-provenance" name="AU Core Provenance" deprecated="true"/>
+	<artifact id="StructureDefinition/au-core-vitalspanel" key="StructureDefinition-au-core-vitalspanel" name="AU Core Vitals Panel" deprecated="true"/>
+	<artifact id="StructureDefinition/au-core-oxygensat" key="StructureDefinition-au-core-oxygensat" name="AU Core Oxygen Saturation" deprecated="true"/>
+	<artifact id="StructureDefinition/au-core-bmi" key="StructureDefinition-au-core-bmi" name="AU Core BMI" deprecated="true"/>
+	<artifact id="StructureDefinition/au-core-headcircum" key="StructureDefinition-au-core-headcircum" name="AU Core Head Circumference" deprecated="true"/>
+	<artifact id="ValueSet/lipid-result-reporting" key="ValueSet-lipid-result-reporting" name="Lipid Result Reporting" deprecated="true"/>
+	<artifact id="AllergyIntolerance/nkda" key="AllergyIntolerance-nkda" name="AllergyIntolerance - No known drug allergy" deprecated="true"/>
+	<artifact id="AllergyIntolerance/dust" key="AllergyIntolerance-dust" name="AllergyIntolerance - Dust allergy" deprecated="true"/>
+	<artifact id="AllergyIntolerance/wasp" key="AllergyIntolerance-wasp" name="AllergyIntolerance - Wasp venom allergy" deprecated="true"/>
+	<artifact id="AllergyIntolerance/egg" key="AllergyIntolerance-egg" name="AllergyIntolerance - Egg allergy" deprecated="true"/>
+	<artifact id="BodyStructure/right-knee" key="BodyStructure-right-knee" name="BodyStructure - Right Knee" deprecated="true"/>
+	<artifact id="BodyStructure/left-knee" key="BodyStructure-left-knee" name="BodyStructure - Left Knee" deprecated="true"/>
+	<artifact id="BodyStructure/tumour-spleen" key="BodyStructure-tumour-spleen" name="BodyStructure - Splenic mass" deprecated="true"/>
+	<artifact id="Condition/aci" key="Condition-aci" name="Condition - Acute myocardial infarction of anterior wall" deprecated="true"/>
+	<artifact id="Condition/coronary-syndrome" key="Condition-coronary-syndrome" name="Condition - Acute coronary syndrome" deprecated="true"/>
+	<artifact id="Condition/fever" key="Condition-fever" name="Condition - Fever" deprecated="true"/>
+	<artifact id="Condition/nailwound" key="Condition-nailwound" name="Condition - Nail wound" deprecated="true"/>
+	<artifact id="Condition/jaundice" key="Condition-jaundice" name="Condition - Neonatal jaundice" deprecated="true"/>
+	<artifact id="Condition/cleftpalate" key="Condition-cleftpalate" name="Condition - Cleft palate" deprecated="true"/>
+	<artifact id="Condition/clefttongue" key="Condition-clefttongue" name="Condition - Cleft tongue" deprecated="true"/>
+	<artifact id="Condition/bipolar" key="Condition-bipolar" name="Condition - Bipolar Disorder" deprecated="true"/>
+	<artifact id="Condition/zinc" key="Condition-zinc" name="Condition - Zinc Depletion Syndrome" deprecated="true"/>
+	<artifact id="Condition/lymphoma" key="Condition-lymphoma" name="Condition - Diffuse B-cell lymphoma of the Brain" deprecated="true"/>
+	<artifact id="Condition/vkc" key="Condition-vkc" name="Condition - Vernal keratoconjunctivitis" deprecated="true"/>
+	<artifact id="DiagnosticReport/lipid-panel" key="DiagnosticReport-lipid-panel" name="DiagnosticReport - Lipid Panel" deprecated="true"/>
+	<artifact id="DocumentReference/acp" key="DocumentReference-acp" name="DocumentReference - Advance Care Plan" deprecated="true"/>
+	<artifact id="DocumentReference/mental-health-crisis-plan" key="DocumentReference-mental-health-crisis-plan" name="DocumentReference - Mental health crisis plan" deprecated="true"/>
+	<artifact id="Encounter/annualvisit-1" key="Encounter-annualvisit-1" name="Encounter - Annual check up 1" deprecated="true"/>
+	<artifact id="Encounter/annualvisit-2" key="Encounter-annualvisit-2" name="Encounter - Annual check up 2" deprecated="true"/>
+	<artifact id="Encounter/covid-admin-2" key="Encounter-covid-admin-2" name="Encounter - COVID 19 Vaccine Administration 2" deprecated="true"/>
+	<artifact id="Encounter/delivery" key="Encounter-delivery" name="Encounter - Delivery" deprecated="true"/>
+	<artifact id="Encounter/emergency" key="Encounter-emergency" name="Encounter - in progress emergency" deprecated="true"/>
+	<artifact id="Encounter/home-meds-review" key="Encounter-home-meds-review" name="Encounter - Home Medicines Review" deprecated="true"/>
+	<artifact id="Encounter/nailwound" key="Encounter-nailwound" name="Encounter - presentation at GP for nail wound" deprecated="true"/>
+	<artifact id="FamilyMemberHistory/father" key="FamilyMemberHistory-father" name="FamilyMemberHistory - Father (part of multiple chronic condition care plan)" deprecated="true"/>
+	<artifact id="Goal/hpt-wnl" key="Goal-hpt-wnl" name="Goal - Systolic blood pressure (part of multiple chronic condition care plan)" deprecated="true"/>
+	<artifact id="Goal/wgt-loss" key="Goal-wgt-loss" name="Goal - Weight loss (part of multiple chronic condition care plan)" deprecated="true"/>
+	<artifact id="HealthcareService/bobrester-medical-center" key="HealthcareService-bobrester-medical-center" name="HealthcareService - Bobrester Medical Centre" deprecated="true"/>
+	<artifact id="HealthcareService/lge-priv-xray" key="HealthcareService-lge-priv-xray" name="HealthcareService - Private X-Ray" deprecated="true"/>
+	<artifact id="Immunization/air-covid-1" key="Immunization-air-covid-1" name="Immunization - Australian Immunisaton Register Record of COVID Dose 1" deprecated="true"/>
+	<artifact id="Immunization/air-covid-2" key="Immunization-air-covid-2" name="Immunization - Australian Immunisation Register Record of COVID Dose 2" deprecated="true"/>
+	<artifact id="Immunization/hepb-1" key="Immunization-hepb-1" name="Immunization - Administration of Hepatitis B vaccination at birth" deprecated="true"/>
+	<artifact id="Location/au-hospital" key="Location-au-hospital" name="Location - Hospital Site" deprecated="true"/>
+	<artifact id="Location/au-hospital-pharm-out" key="Location-au-hospital-pharm-out" name="Location - Friends Pharmacy" deprecated="true"/>
+	<artifact id="Location/au-hospital-sw-physio" key="Location-au-hospital-sw-physio" name="Location - Physiotherapy Offices - AU Hospital" deprecated="true"/>
+	<artifact id="Location/au-jurisdiction" key="Location-au-jurisdiction" name="Location - Jurisdiction of Australia" deprecated="true"/>
+	<artifact id="Location/pharmacy" key="Location-pharmacy" name="Location - Pharmacy building" deprecated="true"/>
+	<artifact id="Medication/4active-ingredients" key="Medication-4active-ingredients" name="Medication - Product with four active ingredients" deprecated="true"/>
+	<artifact id="MedicationStatement/active-amiodarone" key="MedicationStatement-active-amiodarone" name="MedicationStatement - practitioner records active use of Amiodarone 200mg" deprecated="true"/>
+	<artifact id="MedicationStatement/completed-aldara" key="MedicationStatement-completed-aldara" name="MedicationStatement - practitioner records completed use of Aldara 5% cream" deprecated="true"/>
+	<artifact id="MedicationStatement/intended-coq10" key="MedicationStatement-intended-coq10" name="MedicationStatement - practitioner records intended use of CoQ10 150mg" deprecated="true"/>
+	<artifact id="MedicationStatement/previous-use" key="MedicationStatement-previous-use" name="MedicationStatement - practitioner reported previous use of Diflucan" deprecated="true"/>
+	<artifact id="MedicationStatement/simvastatin" key="MedicationStatement-simvastatin" name="MedicationStatement - current use of Simvastatin" deprecated="true"/>
+	<artifact id="Observation/bloodpressure-2" key="Observation-bloodpressure-2" name="Observation - Blood Pressure 2" deprecated="true"/>
+	<artifact id="Observation/bmi-1" key="Observation-bmi-1" name="Observation - BMI 1" deprecated="true"/>
+	<artifact id="Observation/bodyheight-2" key="Observation-bodyheight-2" name="Observation - Length 2" deprecated="true"/>
+	<artifact id="Observation/bodyheight-3" key="Observation-bodyheight-3" name="Observation - Length 3" deprecated="true"/>
+	<artifact id="Observation/bodyheight-4" key="Observation-bodyheight-4" name="Observation - Height 4" deprecated="true"/>
+	<artifact id="Observation/bodytemp-fever" key="Observation-bodytemp-fever" name="Observation - Temperature (fever)" deprecated="true"/>
+	<artifact id="Observation/bodyweight-2" key="Observation-bodyweight-2" name="Observation - Body weight 2" deprecated="true"/>
+	<artifact id="Observation/bodyweight-3" key="Observation-bodyweight-3" name="Observation - Body weight 3" deprecated="true"/>
+	<artifact id="Observation/bodyweight-mcc" key="Observation-bodyweight-mcc" name="Observation - Body weight (part of multiple chronic condition care plan)" deprecated="true"/>
+	<artifact id="Observation/bonedensity-simple-precon" key="Observation-bonedensity-simple-precon" name="Observation - Bone Density of Left Femur (pre-coordinated body site code)" deprecated="true"/>
+	<artifact id="Observation/bonedensity-simple-contained" key="Observation-bonedensity-simple-contained" name="Observation - Bone Density of Left Femur (contained BodyStructure)" deprecated="true"/>
+	<artifact id="Observation/bun-mcc" key="Observation-bun-mcc" name="Observation - Urea nitrogen [Mass/volume] in Serum or Plasma (part of multiple chronic condition care plan)" deprecated="true"/>
+	<artifact id="Observation/headcircum-1" key="Observation-headcircum-1" name="Observation - Head circumference" deprecated="true"/>
+	<artifact id="Observation/lipid-chol-1" key="Observation-lipid-chol-1" name="Observation - Cholesterol" deprecated="true"/>
+	<artifact id="Observation/lipid-non-hdlc-1" key="Observation-lipid-non-hdlc-1" name="Observation - Non HDL Cholesterol" deprecated="true"/>
+	<artifact id="Observation/sex-at-birth-intersex" key="Observation-sex-at-birth-intersex" name="Observation - Intersex at birth" deprecated="true"/>
+	<artifact id="Observation/sex-at-birth-female" key="Observation-sex-at-birth-female" name="Observation - Female at birth" deprecated="true"/>
+	<artifact id="Observation/sex-at-birth-male" key="Observation-sex-at-birth-male" name="Observation - Male at birth" deprecated="true"/>
+	<artifact id="Observation/vitalspanel-1" key="Observation-vitalspanel-1" name="Observation - Vital signs panel" deprecated="true"/>
+	<artifact id="Organization/aaaaaia-insurer" key="Organization-aaaaaia-insurer" name="Organization - AAAAAIA HI PTY LTD" deprecated="true"/>
+	<artifact id="Organization/adv-hearing-care" key="Organization-adv-hearing-care" name="Organization - Audiology Advanced Hearing Care" deprecated="true"/>
+	<artifact id="Organization/dva-au" key="Organization-dva-au" name="Organization - Department of Veterans' Affairs" deprecated="true"/>
+	<artifact id="Organization/health-au" key="Organization-health-au" name="Organization - Department of Health and Aged Care" deprecated="true"/>
+	<artifact id="Organization/hospital-au" key="Organization-hospital-au" name="Organization - Hospitals Australia" deprecated="true"/>
+	<artifact id="Organization/hospital-int" key="Organization-hospital-int" name="Organization - Hospitals International" deprecated="true"/>
+	<artifact id="Organization/pharmacy" key="Organization-pharmacy" name="Organization - Retail Pharmacy" deprecated="true"/>
+	<artifact id="Organization/services-au" key="Organization-services-au" name="Organization - Services Australia" deprecated="true"/>
+	<artifact id="Patient/baby-smith-john" key="Patient-baby-smith-john" name="Patient - Baby patient" deprecated="true"/>
+	<artifact id="Patient/italia-sofia" key="Patient-italia-sofia" name="Patient - Ms. Sofia Italia (foreign tourist)" deprecated="true"/>
+	<artifact id="Patient/smith-emma" key="Patient-smith-emma" name="Patient - Ms. Emma SMITH" deprecated="true"/>
+	<artifact id="Practitioner/bradley-jill" key="Practitioner-bradley-jill" name="Practitioner - Jill Bradley" deprecated="true"/>
+	<artifact id="Practitioner/cardy-igist" key="Practitioner-cardy-igist" name="Practitioner - Dr. Igist Cardy" deprecated="true"/>
+	<artifact id="Practitioner/levin-henry" key="Practitioner-levin-henry" name="Practitioner - Dr Henry Levin VII (part of multiple chronic condition care plan)" deprecated="true"/>
+	<artifact id="Practitioner/nurse-nancy" key="Practitioner-nurse-nancy" name="Practitioner - RNP Nancy Nurse (part of multiple chronic condition care plan)" deprecated="true"/>
+	<artifact id="Practitioner/pharmacist" key="Practitioner-pharmacist" name="Practitioner - Mr Representative Pharmacist" deprecated="true"/>
+	<artifact id="Practitioner/primary-peter" key="Practitioner-primary-peter" name="Practitioner - Dr Peter Primary (part of multiple chronic condition care plan)" deprecated="true"/>
+	<artifact id="Practitioner/sandyson-sandy" key="Practitioner-sandyson-sandy" name="Practitioner - Ms. Sandy Sandyson" deprecated="true"/>
+	<artifact id="Practitioner/surgeon-david" key="Practitioner-surgeon-david" name="Practitioner - Dr. David Surgeon" deprecated="true"/>
+	<artifact id="PractitionerRole/audiologist-bradley-jill" key="PractitionerRole-audiologist-bradley-jill" name="PractitionerRole - Audiologist" deprecated="true"/>
+	<artifact id="PractitionerRole/cardiologist-cardy-igist" key="PractitionerRole-cardiologist-cardy-igist" name="PractitionerRole - Cardiologist" deprecated="true"/>
+	<artifact id="PractitionerRole/dietician-tan-patricia" key="PractitionerRole-dietician-tan-patricia" name="PractitionerRole - Dietician" deprecated="true"/>
+	<artifact id="PractitionerRole/gp-primary-peter" key="PractitionerRole-gp-primary-peter" name="PractitionerRole - General Practitioner (part of multiple chronic condition care plan)" deprecated="true"/>
+	<artifact id="PractitionerRole/nephrologist-levin-henry" key="PractitionerRole-nephrologist-levin-henry" name="PractitionerRole - Nephrologist (part of multiple chronic condition care plan)" deprecated="true"/>
+	<artifact id="PractitionerRole/np-nurse-nancy" key="PractitionerRole-np-nurse-nancy" name="PractitionerRole - Registered nurse (part of multiple chronic condition care plan)" deprecated="true"/>
+	<artifact id="PractitionerRole/retail-pharmacist" key="PractitionerRole-retail-pharmacist" name="PractitionerRole - Retail pharmacist" deprecated="true"/>
+	<artifact id="PractitionerRole/sandyson-sandy-nurse" key="PractitionerRole-sandyson-sandy-nurse" name="PractitionerRole - Registered nurse" deprecated="true"/>
+	<artifact id="PractitionerRole/surgeon-david-surgeon" key="PractitionerRole-surgeon-david-surgeon" name="PractitionerRole - Surgeon" deprecated="true"/>
+	<artifact id="Procedure/cryotherapy" key="Procedure-cryotherapy" name="Procedure - Cryotherapy" deprecated="true"/>
+	<artifact id="Provenance/delete" key="Provenance-delete" name="Provenance - delete a specific document reference version" deprecated="true"/>
+	<artifact id="Provenance/signature" key="Provenance-signature" name="Provenance - Signature for advance care plan" deprecated="true"/>
+	<artifact id="RelatedPerson/smith-emma-john" key="RelatedPerson-smith-emma-john" name="RelatedPerson - Mother of John Smith" deprecated="true"/>
+	<artifact id="RelatedPerson/rabbit-peter" key="RelatedPerson-rabbit-peter" name="RelatedPerson - Friend of Mr Li Wang" deprecated="true"/>
+	<artifact id="ServiceRequest/order-chestct" key="ServiceRequest-order-chestct" name="ServiceRequest - Chest CT order" deprecated="true"/>
+	<artifact id="ServiceRequest/order-chestxray" key="ServiceRequest-order-chestxray" name="ServiceRequest - Chest X-ray order" deprecated="true"/>
+	<artifact id="ServiceRequest/order-ct-abpelcontrast" key="ServiceRequest-order-ct-abpelcontrast" name="ServiceRequest - CT of abdomen and pelvis with contrast order" deprecated="true"/>
+	<artifact id="ServiceRequest/order-covid" key="ServiceRequest-order-covid" name="ServiceRequest - 2019-Novel Coronavirus PCR order" deprecated="true"/>
+	<artifact id="ServiceRequest/order-lipid" key="ServiceRequest-order-lipid" name="ServiceRequest - Lipid Panel order" deprecated="true"/>
+	<artifact id="ServiceRequest/order-lk-ctcontrast" key="ServiceRequest-order-lk-ctcontrast" name="ServiceRequest - Left Knee CT with contrast order" deprecated="true"/>
+	<artifact id="ServiceRequest/order-lkxray" key="ServiceRequest-order-lkxray" name="ServiceRequest - Left Knee X-ray order" deprecated="true"/>
+	<artifact id="ServiceRequest/order-rk-ctcontrast" key="ServiceRequest-order-rk-ctcontrast" name="ServiceRequest - Right Knee CT with contrast order" deprecated="true"/>
+	<artifact id="ServiceRequest/order-rkxray" key="ServiceRequest-order-rkxray" name="ServiceRequest - Right Knee X-ray order" deprecated="true"/>
+	<artifact id="StructureDefinition/au-core-diagnosticresult-imag" key="StructureDefinition-au-core-diagnosticresult-imag" name="AU Core Diagnostic Imaging Result Observation" deprecated="true"/>
+	<artifact id="StructureDefinition/au-core-servicerequest" key="StructureDefinition-au-core-servicerequest" name="AU Core ServiceRequest" deprecated="true"/>
+	<artifact id="StructureDefinition/au-core-sexassignedatbirth" key="StructureDefinition-au-core-sexassignedatbirth" name="AU Core Biological Sex Assigned at Birth" deprecated="true"/>
 	<page key="NA" name="(NA)"/>
 	<page key="many" name="(many)"/>
 	<page key="toc" name="Table of Contents"/>
@@ -251,8 +250,7 @@
 	<page key="general-guidance" name="General Guidance"/>
 	<page key="medicine-information" name="Medicine Information"/>
 	<page key="sex-and-gender" name="Sex and Gender"/>
-	<page key="must-support" name="Must Support" deprecated="true" />
-	<page key="aucdi" name="AUCDI"/>
+	<page key="aucdi" name="AU Core Data for Interoperability"/>
 	<page key="relationship" name="Relationship with other IGs"/>
 	<page key="comparison" name="Comparison with other national and international IGs"/>
 	<page key="variance" name="AU Variance Statement"/>

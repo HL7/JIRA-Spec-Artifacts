@@ -1,16 +1,13 @@
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-erequesting" defaultVersion="0.3.0-preview" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-erequesting" url="http://hl7.org.au/fhir/ereq">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/ereq/2.0.1" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-erequesting" defaultVersion="1.0.0-ballot" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-erequesting" url="http://hl7.org.au/fhir/ereq">
 	<version code="current" url="https://build.fhir.org/ig/hl7au/au-fhir-erequesting"/>
+	<version code="1.0.0-ballot" url="http://hl7.org.au/fhir/ereq/1.0.0-ballot"/>
+	<version code="0.4.0-preview" url="http://hl7.org.au/fhir/ereq/0.4.0-preview"/>
 	<version code="0.3.0-preview" url="http://hl7.org.au/fhir/ereq/0.3.0-preview"/>
 	<version code="0.2.0-preview" url="http://hl7.org.au/fhir/ereq/0.2.0-preview"/>
 	<version code="0.1.0-ballot" url="http://hl7.org.au/fhir/ereq/0.1.0-ballot"/>
 	<artifactPageExtension value="-definitions"/>
 	<artifactPageExtension value="-examples"/>
 	<artifactPageExtension value="-mapping"/>
-	<artifact id="ActorDefinition/au-erequesting-actor-patientaccess" key="ActorDefinition-au-erequesting-actor-patientaccess" name="AU eRequesting Patient Access" deprecated="true"/>
-	<artifact id="CapabilityStatement/au-erequesting-patientaccess" key="CapabilityStatement-au-erequesting-patientaccess" name="AU eRequesting Patient Access CapabilityStatement" deprecated="true"/>
-	<artifact id="StructureDefinition/au-erequesting-servicerequest" key="StructureDefinition-au-erequesting-servicerequest" name="AU eRequesting ServiceRequest" deprecated="true"/>
-
-
 	<artifact id="Practitioner/aimee-herbert" key="Practitioner-aimee-herbert" name="Practitioner - Aimee Herbert" />
 	<artifact id="PractitionerRole/aimee-herbert-pathologist" key="PractitionerRole-aimee-herbert-pathologist" name="PractitionerRole - Pathologist" />
 	<artifact id="StructureDefinition/au-erequesting-communicationrequest-copyto" key="StructureDefinition-au-erequesting-communicationrequest-copyto" name="AU eRequesting Communication Request CopyTo" />
@@ -50,6 +47,9 @@
 	<artifact id="ServiceRequest/order-fbc-1" key="ServiceRequest-order-fbc-1" name="ServiceRequest - Full Blood Count" />
 	<artifact id="ServiceRequest/order-xray-1" key="ServiceRequest-order-xray-1" name="ServiceRequest - X-Ray" />
 	<artifact id="ValueSet/ranzcr-radiology-referral" key="ValueSet-ranzcr-radiology-referral" name="RANZCR Radiology Referral" />
+	<artifact id="ActorDefinition/au-erequesting-actor-patientaccess" key="ActorDefinition-au-erequesting-actor-patientaccess" name="AU eRequesting Patient Access" deprecated="true"/>
+	<artifact id="CapabilityStatement/au-erequesting-patientaccess" key="CapabilityStatement-au-erequesting-patientaccess" name="AU eRequesting Patient Access CapabilityStatement" deprecated="true"/>
+	<artifact id="StructureDefinition/au-erequesting-servicerequest" key="StructureDefinition-au-erequesting-servicerequest" name="AU eRequesting ServiceRequest" deprecated="true"/>
 	<page key="NA" name="(NA)"/>
 	<page key="many" name="(many)"/>
 	<page key="toc" name="Table of Contents"/>
@@ -57,7 +57,7 @@
 	<page key="conformance" name="Conformance"/>
 	<page key="guidance" name="Guidance"/>
 	<page key="sex-and-gender" name="Sex and Gender"/>
-	<page key="auereqdi" name="AU eRequesting Data for Interoperability"/>	
+	<page key="auereqdi" name="AU eRequesting Data for Interoperability"/>
 	<page key="relationship" name="Relationship with other IGs"/>
 	<page key="variance" name="AU Variance Statement"/>
 	<page key="future" name="Future of AU eRequesting Page"/>
@@ -65,16 +65,13 @@
 	<page key="fhirartifacts" name="FHIR Artefacts"/>
 	<page key="artifacts" name="Artefacts Summary"/>
 	<page key="profiles-and-extensions" name="Profiles and Extensions"/>
-	<page key="capability-statements" name="Capability Statements"/>
 	<page key="terminology" name="Terminology"/>
-
+	<page key="capability-statements" name="Capability Statements"/>
 	<page key="examples" name="Examples"/>
 	<page key="support" name="Support"/>
 	<page key="downloads" name="Downloads"/>
 	<page key="license" name="License"/>
 	<page key="changes" name="Change Log"/>
-
-
 	<page key="search-parameters-and-operations" name="Search Parameters and Operations" deprecated="true"/>
 	<page key="artefacts" name="FHIR artefacts" deprecated="true"/>
 	<page key="actors" name="Actor Definitions" deprecated="true"/>
