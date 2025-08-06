@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/patient-corrections/2022May" ciUrl="http://build.fhir.org/ig/HL7/fhir-patient-correction" defaultVersion="1.0.0-ballot" defaultWorkgroup="pe" gitUrl="https://github.com/HL7/fhir-patient-correction" url="http://hl7.org/fhir/uv/patient-corrections">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/patient-corrections/2022May" ciUrl="http://build.fhir.org/ig/HL7/fhir-patient-correction" defaultVersion="1.0.0" defaultWorkgroup="pe" gitUrl="https://github.com/HL7/fhir-patient-correction" url="http://hl7.org/fhir/uv/patient-corrections">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-patient-correction"/>
-<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/patient-corrections/2022May"/>
+<version code="1.0.0" url="http://hl7.org/fhir/uv/patient-corrections/STU1"/>
+<version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/patient-corrections/2022May"/>
 <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/uv/patient-corrections/dev"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -14,24 +15,24 @@
 <artifact id="Practitioner/ex-practitioner2" key="Practitioner-ex-practitioner2" name="Dummy Practitioner (PCP) example"/>
 <artifact id="Practitioner/ex-practitioner" key="Practitioner-ex-practitioner" name="Dummy Practitioner example"/>
 <artifact id="StructureDefinition/patient-correction-bundle" key="StructureDefinition-patient-correction-bundle" name="Patient Correction Bundle"/>
+<artifact id="ValueSet/PatientCorrectionBusinessStatusVS" key="ValueSet-PatientCorrectionBusinessStatusVS" name="Patient Correction Business Status"/>
 <artifact id="CodeSystem/PatientCorrectionBusinessStatus" key="CodeSystem-PatientCorrectionBusinessStatus" name="Patient Correction Business Statuses"/>
 <artifact id="StructureDefinition/patient-correction-communication" key="StructureDefinition-patient-correction-communication" name="Patient Correction Communication"/>
 <artifact id="CodeSystem/PatientCorrectionCommunicationTypes" key="CodeSystem-PatientCorrectionCommunicationTypes" name="Patient Correction Communication Types"/>
+<artifact id="ValueSet/PatientCorrectionCommunicationTypesVS" key="ValueSet-PatientCorrectionCommunicationTypesVS" name="Patient Correction Communication Types Value Set"/>
 <artifact deprecated="true" id="StructureDefinition/patient-correction-disagreement" key="patient-correction-disagreement" name="Patient Correction Disagreement"/>
 <artifact id="CodeSystem/PatientCorrectionOutputTypes" key="CodeSystem-PatientCorrectionOutputTypes" name="Patient Correction Output Types"/>
+<artifact id="ValueSet/PatientCorrectionOutputTypesVS" key="ValueSet-PatientCorrectionOutputTypesVS" name="Patient Correction Output Types Value Set"/>
 <artifact deprecated="true" id="StructureDefinition/patient-correction-request" key="patient-correction-request" name="Patient Correction Request"/>
+<artifact id="OperationDefinition/correction-request" key="OperationDefinition-correction-request" name="Patient Correction Request Operation"/>
 <artifact id="StructureDefinition/patient-correction-task" key="StructureDefinition-patient-correction-task" name="Patient Correction Task"/>
 <artifact id="CodeSystem/PatientCorrectionTaskTypes" key="CodeSystem-PatientCorrectionTaskTypes" name="Patient Correction Task Types"/>
+<artifact id="ValueSet/PatientCorrectionTaskTypesVS" key="ValueSet-PatientCorrectionTaskTypesVS" name="Patient Correction Task Types Values Set"/>
 <artifact id="CapabilityStatement/PatientCorrectionCapability" key="CapabilityStatement-PatientCorrectionCapability" name="Patient Request for Corrections Capability Statement"/>
-<artifact id="ValueSet/PatientCorrectionBusinessStatusVS" key="ValueSet-PatientCorrectionBusinessStatusVS" name="PatientCorrectionBusinessStatusVS"/>
-<artifact id="ValueSet/PatientCorrectionCommunicationTypesVS" key="ValueSet-PatientCorrectionCommunicationTypesVS" name="PatientCorrectionCommunicationTypesVS"/>
-<artifact id="ValueSet/PatientCorrectionOutputTypesVS" key="ValueSet-PatientCorrectionOutputTypesVS" name="PatientCorrectionOutputTypesVS"/>
-<artifact id="ValueSet/PatientCorrectionTaskTypesVS" key="ValueSet-PatientCorrectionTaskTypesVS" name="PatientCorrectionTaskTypesVS"/>
 <artifact id="SearchParameter/About" key="SearchParameter-About" name="Search on the PatientCorrectionCommunication.about element"/>
 <artifact id="SearchParameter/ReasonReference" key="SearchParameter-ReasonReference" name="Search on the PatientCorrectionTask.reasonReference element"/>
 <artifact id="Communication/additionalinfoneeded" key="Communication-additionalinfoneeded" name="additionalinfoneeded"/>
 <artifact id="Communication/additionalinfoprovided" key="Communication-additionalinfoprovided" name="additionalinfoprovided"/>
-<artifact id="OperationDefinition/correction-request" key="OperationDefinition-correction-request" name="correction-request"/>
 <artifact id="Task/correctionrequestprocess" key="Task-correctionrequestprocess" name="correctionrequestprocess"/>
 <artifact id="Task/correctionrequestprocess2" key="Task-correctionrequestprocess2" name="correctionrequestprocess2"/>
 <artifact id="Task/correctionrequestprocess3" key="Task-correctionrequestprocess3" name="correctionrequestprocess3"/>
@@ -45,9 +46,10 @@
 <page key="actors-and-use-cases" name="Actors and Use Cases" url="actors-and-use-cases"/>
 <page key="artifacts" name="Artifacts"/>
 <page key="downloads" name="Downloads"/>
-<page key="examples" name="Examples"/>
+<page deprecated="true" key="examples" name="Examples"/>
 <page key="index" name="Home"/>
 <page deprecated="true" key="home" name="IG Home" url="index"/>
 <page key="specification" name="Specification" url="specification"/>
 <page key="toc" name="Table of Contents" url="toc"/>
+<page key="techanalysis" name="Technical Analysis"/>
 </specification>

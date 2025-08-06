@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/nhsn-dqm/2024Sep" ciUrl="http://build.fhir.org/ig/HL7/nhsn-dqm" defaultVersion="1.0.0-ballot" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/nhsn-dqm" url="http://hl7.org/fhir/us/nhsn-dqm">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/nhsn-dqm/2024Sep" ciUrl="http://build.fhir.org/ig/HL7/nhsn-dqm" defaultVersion="1.0.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/nhsn-dqm" url="http://hl7.org/fhir/us/nhsn-dqm">
 <version code="current" url="http://build.fhir.org/ig/HL7/nhsn-dqm"/>
-<version code="1.0.0-ballot" url="http://hl7.org/fhir/us/nhsn-dqm/2024Sep"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/nhsn-dqm/STU1"/>
+<version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/nhsn-dqm/2024Sep"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
@@ -9,7 +10,7 @@
 <artifact id="ValueSet/ach-encounter-status" key="ValueSet-ach-encounter-status" name="Acute Care Hospital Encounter Status ValueSet"/>
 <artifact id="Library/NHSNdQMAcuteCareHospitalInitialPopulationLibrary" key="Library-NHSNdQMAcuteCareHospitalInitialPopulationLibrary" name="Acute Care Hospital Initial Population Library"/>
 <artifact id="Measure/NHSNdQMAcuteCareHospitalInitialPopulation" key="Measure-NHSNdQMAcuteCareHospitalInitialPopulation" name="Acute Care Hospital Initial Population Measure"/>
-<artifact id="Library/BedCapacityMeasureLibrary" key="Library-BedCapacityMeasureLibrary" name="BedCapacityMeasureLibrary"/>
+<artifact deprecated="true" id="Library/BedCapacityMeasureLibrary" key="Library-BedCapacityMeasureLibrary" name="BedCapacityMeasureLibrary"/>
 <artifact id="Device/cqf-tooling" key="Device-cqf-tooling" name="CQF Tooling Device"/>
 <artifact id="Condition/condition-example-diagnosis-ach-pass1" key="Condition-condition-example-diagnosis-ach-pass1" name="Condition - Example Diagnosis ACH Pass1"/>
 <artifact id="Condition/condition-example-diagnosis-ach-pass2" key="Condition-condition-example-diagnosis-ach-pass2" name="Condition - Example Diagnosis ACH Pass2"/>
@@ -33,23 +34,25 @@
 <artifact id="Encounter/encounter-example-ach-ach-pass3-acute" key="Encounter-encounter-example-ach-ach-pass3-acute" name="Encounter - Example ACH Pass3 - Acute"/>
 <artifact id="Encounter/encounter-example-ach-ach-pass3-short-stay" key="Encounter-encounter-example-ach-ach-pass3-short-stay" name="Encounter - Example ACH Pass3 - Short Stay"/>
 <artifact id="Bundle/submission-full-example1" key="Bundle-submission-full-example1" name="Full Submission Bundle Example 1"/>
-<artifact id="CodeSystem/healthcare-capacity-codes" key="CodeSystem-healthcare-capacity-codes" name="Healthcare Capacity Reporting Code System"/>
-<artifact id="Bundle/jurisdiction-bed-capacity-report-example" key="Bundle-jurisdiction-bed-capacity-report-example" name="Jurisdiction Capacity Full Report Bundle Example"/>
+<artifact deprecated="true" id="CodeSystem/healthcare-capacity-codes" key="CodeSystem-healthcare-capacity-codes" name="Healthcare Capacity Reporting Code System"/>
+<artifact deprecated="true" id="Bundle/jurisdiction-bed-capacity-report-example" key="Bundle-jurisdiction-bed-capacity-report-example" name="Jurisdiction Capacity Full Report Bundle Example"/>
 <artifact id="List/list-example-ach-individual-measurereport-list" key="List-list-example-ach-individual-measurereport-list" name="List - Example ACH Individual Measure Report List"/>
 <artifact id="List/list-example-ach-patients-of-interest" key="List-list-example-ach-patients-of-interest" name="List - Example ACH Patients Of Interest"/>
 <artifact id="List/list-example-patients-of-interest" key="List-list-example-patients-of-interest" name="List - Example Patients of Interest List 1"/>
-<artifact id="Location/location-example-ach-crit" key="Location-location-example-ach-crit" name="Location - Example ACH - Crit"/>
+<artifact deprecated="true" id="Location/location-example-ach-crit" key="Location-location-example-ach-crit" name="Location - Example ACH - Crit"/>
 <artifact id="Location/location-example-ach-emergency" key="Location-location-example-ach-emergency" name="Location - Example ACH - Emergency"/>
 <artifact id="Location/location-example-ach-inpatient" key="Location-location-example-ach-inpatient" name="Location - Example ACH - Inpatient"/>
+<artifact id="Location/location-example-ach-critical-care" key="Location-location-example-ach-critical-care" name="Location - Example ACH - Medical Critical Care"/>
 <artifact id="Location/location-example-ach-medsurg" key="Location-location-example-ach-medsurg" name="Location - Example ACH - Medsurg"/>
-<artifact id="Location/location-example-ach-nicu-level-iii" key="Location-location-example-ach-nicu-level-iii" name="Location - Example ACH - Nicu"/>
-<artifact id="MeasureReport/bed-capacity-measurereport-example-chld" key="MeasureReport-bed-capacity-measurereport-example-chld" name="MeasureReport - Children's Hospital Bed Capacity Individual Measure Report"/>
+<artifact id="Location/location-example-ach-nicu-level-iii" key="Location-location-example-ach-nicu-level-iii" name="Location - Example ACH - NICU"/>
+<artifact id="Bundle/measure-bundle-example" key="Bundle-measure-bundle-example" name="Measure Bundle Example"/>
+<artifact deprecated="true" id="MeasureReport/bed-capacity-measurereport-example-chld" key="MeasureReport-bed-capacity-measurereport-example-chld" name="MeasureReport - Children's Hospital Bed Capacity Individual Measure Report"/>
 <artifact id="MeasureReport/measurereport-example-ach-subjectlist1" key="MeasureReport-measurereport-example-ach-subjectlist1" name="MeasureReport - Example ACH Subject List 1"/>
 <artifact id="MeasureReport/measurereport-example-individual-ach-ach-pass1" key="MeasureReport-measurereport-example-individual-ach-ach-pass1" name="MeasureReport - Example Individual ACH Pass1 - LOS/MEN"/>
 <artifact id="MeasureReport/measurereport-example-individual-ach-ach-pass2" key="MeasureReport-measurereport-example-individual-ach-ach-pass2" name="MeasureReport - Example Individual ACH Pass2 - Hypo"/>
 <artifact id="MeasureReport/measurereport-example-individual-ach-ach-pass3" key="MeasureReport-measurereport-example-individual-ach-ach-pass3" name="MeasureReport - Example Individual ACH Pass3 - C. diff"/>
-<artifact id="MeasureReport/bed-capacity-measurereport-example-hosp" key="MeasureReport-bed-capacity-measurereport-example-hosp" name="MeasureReport - Hospital Bed Capacity Individual Measure Report"/>
-<artifact id="MeasureReport/bed-capacity-measurereport-example-ipf" key="MeasureReport-bed-capacity-measurereport-example-ipf" name="MeasureReport - Inpatient Psychiatric Facility Bed Capacity Individual Measure Report"/>
+<artifact deprecated="true" id="MeasureReport/bed-capacity-measurereport-example-hosp" key="MeasureReport-bed-capacity-measurereport-example-hosp" name="MeasureReport - Hospital Bed Capacity Individual Measure Report"/>
+<artifact deprecated="true" id="MeasureReport/bed-capacity-measurereport-example-ipf" key="MeasureReport-bed-capacity-measurereport-example-ipf" name="MeasureReport - Inpatient Psychiatric Facility Bed Capacity Individual Measure Report"/>
 <artifact id="Medication/medication-example-cipro-500" key="Medication-medication-example-cipro-500" name="Medication - Example Cipro 500"/>
 <artifact id="Medication/medication-example-dex4-tablet" key="Medication-medication-example-dex4-tablet" name="Medication - Example Dex4 Tablet"/>
 <artifact id="Medication/medication-example-enoxaparin" key="Medication-medication-example-enoxaparin" name="Medication - Example Enoxaparin"/>
@@ -78,15 +81,16 @@
 <artifact id="MedicationRequest/medicationrequest-example-ach-pass3-cipro" key="MedicationRequest-medicationrequest-example-ach-pass3-cipro" name="MedicationRequest - Example ACH Pass3 Cipro"/>
 <artifact id="MedicationRequest/medicationrequest-example-ach-pass3-enoxaparin" key="MedicationRequest-medicationrequest-example-ach-pass3-enoxaparin" name="MedicationRequest - Example ACH Pass3 Enoxaparin"/>
 <artifact id="MedicationRequest/medicationrequest-example-ach-pass3-metronidazole" key="MedicationRequest-medicationrequest-example-ach-pass3-metronidazole" name="MedicationRequest - Example ACH Pass3 Metronidazole"/>
-<artifact id="CapabilityStatement/NHSNCapabilityStatementDataAggregator" key="CapabilityStatement-NHSNCapabilityStatementDataAggregator" name="NHSN Data Aggregator CapabilityStatement"/>
+<artifact deprecated="true" id="CapabilityStatement/NHSNCapabilityStatementDataAggregator" key="CapabilityStatement-NHSNCapabilityStatementDataAggregator" name="NHSN Data Aggregator CapabilityStatement"/>
 <artifact id="CapabilityStatement/NHSNCapabilityStatementEvaluationEngine" key="CapabilityStatement-NHSNCapabilityStatementEvaluationEngine" name="NHSN Data Evaluation Engine CapabilityStatement"/>
 <artifact id="CapabilityStatement/NHSNCapabilityStatementDataSource" key="CapabilityStatement-NHSNCapabilityStatementDataSource" name="NHSN Data Source CapabilityStatement"/>
+<artifact id="StructureDefinition/nhsn-measure-bundle" key="StructureDefinition-nhsn-measure-bundle" name="NHSN Measure Bundle"/>
 <artifact id="CapabilityStatement/NHSNCapabilityStatementMeasureSource" key="CapabilityStatement-NHSNCapabilityStatementMeasureSource" name="NHSN Measure Source CapabilityStatement"/>
 <artifact id="StructureDefinition/nhsn-measurereport-bundle" key="StructureDefinition-nhsn-measurereport-bundle" name="NHSN MeasureReport Bundle"/>
 <artifact id="CapabilityStatement/NHSNCapabilityStatementMeasureReportRecipient" key="CapabilityStatement-NHSNCapabilityStatementMeasureReportRecipient" name="NHSN MeasureReport Recipient CapabilityStatement"/>
 <artifact id="StructureDefinition/nhsn-submitting-device" key="StructureDefinition-nhsn-submitting-device" name="NHSN Submitting Device"/>
 <artifact id="StructureDefinition/nhsn-submitting-organization" key="StructureDefinition-nhsn-submitting-organization" name="NHSN Submitting Organization"/>
-<artifact id="Measure/BedCapacityMeasure" key="Measure-BedCapacityMeasure" name="NHSN dQM Bed Capacity"/>
+<artifact deprecated="true" id="Measure/BedCapacityMeasure" key="Measure-BedCapacityMeasure" name="NHSN dQM Bed Capacity"/>
 <artifact id="Observation/observation-example-ach-pass1-blood" key="Observation-observation-example-ach-pass1-blood" name="Observation - Example ACH Pass1 Blood"/>
 <artifact id="Observation/observation-example-ach-pass1-csf" key="Observation-observation-example-ach-pass1-csf" name="Observation - Example ACH Pass1 Csf"/>
 <artifact id="Observation/observation-example-ach-pass1-gestational-age" key="Observation-observation-example-ach-pass1-gestational-age" name="Observation - Example ACH Pass1 Gestational Age"/>
