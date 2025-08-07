@@ -1,26 +1,17 @@
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/5.1.0-preview" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-base" defaultVersion="5.0.0" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-base" url="http://hl7.org.au/fhir">
-	<version code="current" url="https://build.fhir.org/ig/hl7au/au-fhir-base"/>
-	<version code="5.1.0-preview" url="http://hl7.org.au/fhir/5.1.0-preview"/>
-	<version code="5.0.0" url="http://hl7.org.au/fhir/5.0.0"/>
-	<version code="4.2.2-ballot" url="http://hl7.org.au/fhir/4.2.2-ballot"/>
-	<version code="4.2.1-preview" url="http://hl7.org.au/fhir/4.2.1-preview"/>
-	<version code="4.2.0-preview" url="http://hl7.org.au/fhir/4.2.0-preview"/>
-	<version code="4.1.2-preview" url="http://hl7.org.au/fhir/4.1.2-preview"/>
-	<version code="4.1.0" url="http://hl7.org.au/fhir/4.1.0"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/6.0.0-ballot" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-base" defaultVersion="5.0.0" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-base" url="http://hl7.org.au/fhir">
+	<version code="current" url="https://build.fhir.org/ig/hl7au/au-fhir-base"/>  
+    <version code="6.0.0-ballot" url="http://hl7.org.au/fhir/6.0.0-ballot"/>  
+    <version code="6.0.0-draft" deprecated="true" url="http://hl7.org.au/fhir/6.0.0-draft"/>  
+    <version code="5.1.0-preview" deprecated="true" url="http://hl7.org.au/fhir/5.1.0-preview"/>  
+    <version code="5.0.0" url="http://hl7.org.au/fhir/5.0.0"/>  
+    <version code="4.2.2-ballot" deprecated="true" url="http://hl7.org.au/fhir/4.2.2-ballot"/>  
+    <version code="4.2.1-preview" deprecated="true" url="http://hl7.org.au/fhir/4.2.1-preview"/>  
+    <version code="4.2.0-preview" deprecated="true" url="http://hl7.org.au/fhir/4.2.0-preview"/>  
+    <version code="4.1.2-preview" deprecated="true" url="http://hl7.org.au/fhir/4.1.2-preview"/>  
+    <version code="4.1.0" deprecated="true" url="http://hl7.org.au/fhir/4.1.0"/>	
 	<artifactPageExtension value="-definitions"/>
 	<artifactPageExtension value="-examples"/>
 	<artifactPageExtension value="-mapping"/>
-	<artifact id="SearchParameter/patient-gender-identity" key="SearchParameter-patient-gender-identity" name="PatientGenderIdentity" deprecated="true"/>
-	<artifact id="StructureDefinition/individual-recordedSexOrGender" key="StructureDefinition-individual-recordedSexOrGender" name="Person Recorded Sex Or Gender" deprecated="true"/>
-	<artifact id="ValueSet/recorded-sex-or-gender-type" key="ValueSet-recorded-sex-or-gender-type" name="Recorded Sex Or Gender Type" deprecated="true"/>
-	<artifact id="StructureDefinition/individual-pronouns" key="StructureDefinition-individual-pronouns" name="Individual Pronouns" deprecated="true"/>
-	<artifact id="ValueSet/pronouns" key="ValueSet-pronouns" name="Personal Pronouns" deprecated="true"/>
-	<artifact id="CodeSystem/au-coverage-selfpay" key="CodeSystem-au-coverage-selfpay" name="Coverage SelfPay Codes AU" deprecated="true"/>
-	<artifact id="ValueSet/au-coverage-type-extended" key="ValueSet-au-coverage-type-extended" name="Coverage Type and Self-Pay Codes - AU Extended"  deprecated="true"/>
-	<artifact id="ValueSet/au-coverage-selfpay-extended" key="ValueSet-au-coverage-selfpay-extended" name="Coverage SelfPay Codes - AU Extended" deprecated="true"/>
-	<artifact id="ValueSet/rsg-source-document-jurisdiction" key="ValueSet-rsg-source-document-jurisdiction" name="AU Recorded Sex or Gender (RSG) Source Document Jurisdiction" deprecated="true" />
-
-
 	<artifact id="SearchParameter/encounter-discharge-disposition" key="SearchParameter-encounter-discharge-disposition" name="EncounterDischargeDisposition" />
 	<artifact id="SearchParameter/indigenous-status" key="SearchParameter-indigenous-status" name="AustralianIndigenousStatus" />
 	<artifact id="SearchParameter/gender-identity" key="SearchParameter-gender-identity" name="GenderIdentity" />
@@ -38,7 +29,6 @@
 	<artifact id="StructureDefinition/medication-strength" key="StructureDefinition-medication-strength" name="Medication Strength" />
 	<artifact id="StructureDefinition/medication-brand-name" key="StructureDefinition-medication-brand-name" name="Medication Brand Name" />
 	<artifact id="StructureDefinition/medication-generic-name" key="StructureDefinition-medication-generic-name" name="Medication Generic Drug Name" />
-	<artifact id="StructureDefinition/ethnicity" key="StructureDefinition-ethnicity" name="Ethnicity" />
 	<artifact id="StructureDefinition/closing-the-gap-registration" key="StructureDefinition-closing-the-gap-registration" name="Closing the Gap Registration" />
 	<artifact id="StructureDefinition/associated-healthcareservice" key="StructureDefinition-associated-healthcareservice" name="Associated Healthcare Service" />
 	<artifact id="StructureDefinition/subsidised-concurrent-supply" key="StructureDefinition-subsidised-concurrent-supply" name="Subsidised Concurrent Supply" />
@@ -57,13 +47,12 @@
 	<artifact id="StructureDefinition/result-copies-to" key="StructureDefinition-result-copies-to" name="Result Copies To" />
 	<artifact id="StructureDefinition/au-patient" key="StructureDefinition-au-patient" name="AU Base Patient" />
 	<artifact id="StructureDefinition/au-practitioner" key="StructureDefinition-au-practitioner" name="AU Base Practitioner" />
-	<artifact id="StructureDefinition/au-practitionerrole" key="StructureDefinition-au-practitionerrole" name="AU Base Practitioner Role" />
-	<artifact id="StructureDefinition/au-relatedperson" key="StructureDefinition-au-relatedperson" name="AU Base Related Person" />
-	<artifact id="StructureDefinition/au-organization" key="StructureDefinition-au-organization" name="AU Base Organisation" />
+	<artifact id="StructureDefinition/au-practitionerrole" key="StructureDefinition-au-practitionerrole" name="AU Base PractitionerRole" />
+	<artifact id="StructureDefinition/au-relatedperson" key="StructureDefinition-au-relatedperson" name="AU Base RelatedPerson" />
+	<artifact id="StructureDefinition/au-organization" key="StructureDefinition-au-organization" name="AU Base Organization" />
 	<artifact id="StructureDefinition/au-medication" key="StructureDefinition-au-medication" name="AU Base Medication" />
 	<artifact id="StructureDefinition/au-encounter" key="StructureDefinition-au-encounter" name="AU Base Encounter" />
 	<artifact id="StructureDefinition/au-address" key="StructureDefinition-au-address" name="Australian Address" />
-	<artifact id="StructureDefinition/au-healthprogramparticipation" key="StructureDefinition-au-healthprogramparticipation" name="AU Health Program Participation Summary" />
 	<artifact id="StructureDefinition/au-ihi" key="StructureDefinition-au-ihi" name="AU IHI" />
 	<artifact id="StructureDefinition/au-nationalprovideridentifieratorganisation" key="StructureDefinition-au-nationalprovideridentifieratorganisation" name="AU National Provider Identifier At Organisation" />
 	<artifact id="StructureDefinition/au-medicarecardnumber" key="StructureDefinition-au-medicarecardnumber" name="AU Medicare Card Number" />
@@ -94,21 +83,21 @@
 	<artifact id="StructureDefinition/au-localdispenseidentifier" key="StructureDefinition-au-localdispenseidentifier" name="AU Local Dispense Identifier" />
 	<artifact id="StructureDefinition/au-medlist" key="StructureDefinition-au-medlist" name="AU Medicine List" />
 	<artifact id="StructureDefinition/au-composition" key="StructureDefinition-au-composition" name="AU Base Composition" />
-	<artifact id="StructureDefinition/au-immunization" key="StructureDefinition-au-immunization" name="AU Base Immunisation" />
-	<artifact id="StructureDefinition/au-medicationstatement" key="StructureDefinition-au-medicationstatement" name="AU Base Medication Statement" />
-	<artifact id="StructureDefinition/au-medicationadministration" key="StructureDefinition-au-medicationadministration" name="AU Base Medication Administration" />
-	<artifact id="StructureDefinition/au-medicationdispense" key="StructureDefinition-au-medicationdispense" name="AU Base Medication Dispense" />
-	<artifact id="StructureDefinition/au-medicationrequest" key="StructureDefinition-au-medicationrequest" name="AU Base Medication Request" />
+	<artifact id="StructureDefinition/au-immunization" key="StructureDefinition-au-immunization" name="AU Base Immunization" />
+	<artifact id="StructureDefinition/au-medicationstatement" key="StructureDefinition-au-medicationstatement" name="AU Base MedicationStatement" />
+	<artifact id="StructureDefinition/au-medicationadministration" key="StructureDefinition-au-medicationadministration" name="AU Base MedicationAdministration" />
+	<artifact id="StructureDefinition/au-medicationdispense" key="StructureDefinition-au-medicationdispense" name="AU Base MedicationDispense" />
+	<artifact id="StructureDefinition/au-medicationrequest" key="StructureDefinition-au-medicationrequest" name="AU Base MedicationRequest" />
 	<artifact id="StructureDefinition/au-dosage" key="StructureDefinition-au-dosage" name="AU Base Dosage" />
 	<artifact id="StructureDefinition/au-location" key="StructureDefinition-au-location" name="AU Base Location" />
-	<artifact id="StructureDefinition/au-healthcareservice" key="StructureDefinition-au-healthcareservice" name="AU Base Healthcare Service" />
-	<artifact id="StructureDefinition/au-allergyintolerance" key="StructureDefinition-au-allergyintolerance" name="AU Base Allergy Intolerance" />
-	<artifact id="StructureDefinition/au-bodystructure" key="StructureDefinition-au-bodystructure" name="AU Base Body Structure" />
+	<artifact id="StructureDefinition/au-healthcareservice" key="StructureDefinition-au-healthcareservice" name="AU Base HealthcareService" />
+	<artifact id="StructureDefinition/au-allergyintolerance" key="StructureDefinition-au-allergyintolerance" name="AU Base AllergyIntolerance" />
+	<artifact id="StructureDefinition/au-bodystructure" key="StructureDefinition-au-bodystructure" name="AU Base BodyStructure" />
 	<artifact id="StructureDefinition/au-diagnosticresult" key="StructureDefinition-au-diagnosticresult" name="AU Base Diagnostic Result" />
 	<artifact id="StructureDefinition/au-pathologyresult" key="StructureDefinition-au-pathologyresult" name="AU Base Pathology Result" />
 	<artifact id="StructureDefinition/au-imagingresult" key="StructureDefinition-au-imagingresult" name="AU Base Diagnostic Imaging Result" />
 	<artifact id="StructureDefinition/au-imagingreport" key="StructureDefinition-au-imagingreport" name="AU Base Diagnostic Imaging Report" />
-	<artifact id="StructureDefinition/au-diagnosticreport" key="StructureDefinition-au-diagnosticreport" name="AU Base Diagnostic Report" />
+	<artifact id="StructureDefinition/au-diagnosticreport" key="StructureDefinition-au-diagnosticreport" name="AU Base DiagnosticReport" />
 	<artifact id="StructureDefinition/au-pathologyreport" key="StructureDefinition-au-pathologyreport" name="AU Base Pathology Report" />
 	<artifact id="StructureDefinition/au-specimen" key="StructureDefinition-au-specimen" name="AU Base Specimen" />
 	<artifact id="StructureDefinition/contact-purpose" key="StructureDefinition-contact-purpose" name="Contact Purpose" />
@@ -119,24 +108,25 @@
 	<artifact id="StructureDefinition/ahpraregistration-details" key="StructureDefinition-ahpraregistration-details" name="Ahpra Registration Details" />
 	<artifact id="StructureDefinition/ahpraprofession-details" key="StructureDefinition-ahpraprofession-details" name="Ahpra Profession Details" />
 	<artifact id="StructureDefinition/au-substance" key="StructureDefinition-au-substance" name="AU Base Substance" />
-	<artifact id="ValueSet/contact-purpose" key="ValueSet-contact-purpose" name="Contact Purpose ValueSet"/>
+	<artifact id="StructureDefinition/au-pi" key="StructureDefinition-au-pi" name="AU Patient Internal Identifier" />
+	<artifact id="ValueSet/contact-purpose" key="ValueSet-contact-purpose" name="Contact Purpose ValueSet" />
 	<artifact id="ValueSet/au-v3-ActEncounterCode-extended" key="ValueSet-au-v3-ActEncounterCode-extended" name="ActEncounterCode - AU Extended" />
 	<artifact id="ValueSet/au-v2-0203-extended" key="ValueSet-au-v2-0203-extended" name="hl7VS-identifierType - AU Extended" />
 	<artifact id="ValueSet/au-v2-0360-extended" key="ValueSet-au-v2-0360-extended" name="hl7VS-degreeLicenseCertificate - AU Extended" />
 	<artifact id="ValueSet/au-v2-0443-extended" key="ValueSet-au-v2-0443-extended" name="hl7VS-providerRole - AU Extended" />
 	<artifact id="ValueSet/service-provision-conditions" key="ValueSet-service-provision-conditions" name="Service Provision Conditions Australian Concepts" />
 	<artifact id="CodeSystem/pbs-item-external" key="CodeSystem-pbs-item-external" name="PBS Item Codes" />
-	<artifact id="ValueSet/pbs-item" key="ValueSet-pbs-item" name="PBS Item Codes Valueset"/>
+	<artifact id="ValueSet/pbs-item" key="ValueSet-pbs-item" name="PBS Item Codes Valueset" />
 	<artifact id="ValueSet/mims" key="ValueSet-mims" name="MIMS" />
 	<artifact id="CodeSystem/mims-external" key="CodeSystem-mims-external" name="Monthly Index of Medical Specialties (MIMS)" />
 	<artifact id="ValueSet/amt-mp-codes" key="ValueSet-amt-mp-codes" name="AMT Medicinal Product and Substances" />
-	<artifact id="ValueSet/medication-type" key="ValueSet-medication-type" name="Medication Type ValueSet"/>
+	<artifact id="ValueSet/medication-type" key="ValueSet-medication-type" name="Medication Type ValueSet" />
 	<artifact id="ValueSet/dva-entitlement" key="ValueSet-dva-entitlement" name="DVA Entitlement" />
 	<artifact id="ValueSet/accession-number-type" key="ValueSet-accession-number-type" name="Accession Number Type" />
 	<artifact id="ValueSet/order-identifier-type" key="ValueSet-order-identifier-type" name="Order Identifier Type" />
-	<artifact id="CodeSystem/medication-type" key="CodeSystem-medication-type" name="Medication Type Codes"/>
-	<artifact id="CodeSystem/service-provision-conditions" key="CodeSystem-service-provision-conditions" name="Service Provision Conditions Australian Concepts Codes"/>
-	<artifact id="CodeSystem/contact-purpose" key="CodeSystem-contact-purpose" name="Contact Purpose Codes"/>
+	<artifact id="CodeSystem/medication-type" key="CodeSystem-medication-type" name="Medication Type Codes" />
+	<artifact id="CodeSystem/service-provision-conditions" key="CodeSystem-service-provision-conditions" name="Service Provision Conditions Australian Concepts Codes" />
+	<artifact id="CodeSystem/contact-purpose" key="CodeSystem-contact-purpose" name="Contact Purpose Codes" />
 	<artifact id="CodeSystem/au-v3-ActCode" key="CodeSystem-au-v3-ActCode" name="ActCode AU" />
 	<artifact id="CodeSystem/au-v2-0203" key="CodeSystem-au-v2-0203" name="IdentifierType AU" />
 	<artifact id="CodeSystem/au-v2-0360" key="CodeSystem-au-v2-0360" name="DegreeLicenseCertificate AU" />
@@ -146,19 +136,21 @@
 	<artifact id="CodeSystem/au-location-type" key="CodeSystem-au-location-type" name="Location Type AU" />
 	<artifact id="ValueSet/au-v3-ServiceDeliveryLocationRoleType-extended" key="ValueSet-au-v3-ServiceDeliveryLocationRoleType-extended" name="ServiceDeliveryLocationRoleType - AU Extended" />
 	<artifact id="CodeSystem/medicine-item-change" key="CodeSystem-medicine-item-change" name="Medicine Item Change" />
-	<artifact id="ValueSet/medicine-item-change" key="ValueSet-medicine-item-change" name="Medicine Item Change Valueset"/>
+	<artifact id="ValueSet/medicine-item-change" key="ValueSet-medicine-item-change" name="Medicine Item Change Valueset" />
 	<artifact id="ValueSet/au-timezone" key="ValueSet-au-timezone" name="AU Time Zone" />
-	<artifact id="CodeSystem/au-observation-category" key="CodeSystem-au-observation-category" name="Observation Category Codes AU" />
-	<artifact id="ValueSet/au-observation-category-extended" key="ValueSet-au-observation-category-extended" name="Observation Category Codes - AU Extended" />
 	<artifact id="CodeSystem/rsg-source-document-type" key="CodeSystem-rsg-source-document-type" name="AU Recorded Sex or Gender Source Document Type" />
 	<artifact id="CodeSystem/rsg-type" key="CodeSystem-rsg-type" name="AU Recorded Sex or Gender Type Codes" />
 	<artifact id="ValueSet/name-context" key="ValueSet-name-context" name="Name Context Valueset" />
-	<artifact id="CodeSystem/name-context" key="CodeSystem-name-context" name="Name Context Codes"/>
+	<artifact id="CodeSystem/name-context" key="CodeSystem-name-context" name="Name Context Codes" />
+	<artifact id="CodeSystem/resource-tag" key="CodeSystem-resource-tag" name="Resource Tag" />
+	<artifact id="CodeSystem/communicationrequest-reason" key="CodeSystem-communicationrequest-reason" name="Communication Request Reason" />
+	<artifact id="CodeSystem/task-business-status" key="CodeSystem-task-business-status" name="Task Business Status" />
 	<artifact id="ValueSet/au-jurisdiction-extended" key="ValueSet-au-jurisdiction-extended" name="Jurisdiction ValueSet - AU Extended" />
 	<artifact id="ValueSet/rsg-source-document-type" key="ValueSet-rsg-source-document-type" name="AU Recorded Sex or Gender (RSG) Source Document Type" />
-	<artifact id="ValueSet/rsg-type" key="ValueSet-rsg-type" name="AU Recorded Sex or Gender Type Value"/>
+	<artifact id="ValueSet/rsg-type" key="ValueSet-rsg-type" name="AU Recorded Sex or Gender Type Value" />
 	<artifact id="StructureDefinition/au-timezone" key="StructureDefinition-au-timezone" name="Australian Time Zone" />
-	<artifact id="StructureDefinition/name-context" key="StructureDefinition-name-context" name="Name Context"/>
+	<artifact id="StructureDefinition/au-timezone-usage" key="StructureDefinition-au-timezone-usage" name="Australian Time Zone Usage" />
+	<artifact id="StructureDefinition/name-context" key="StructureDefinition-name-context" name="Name Context" />
 	<artifact id="StructureDefinition/au-procedure" key="StructureDefinition-au-procedure" name="AU Base Procedure" />
 	<artifact id="Observation/specimen-hepatitis-b-serology" key="Observation-specimen-hepatitis-b-serology" name="Observation - Measurement of Hepatitis B surface antibody" />
 	<artifact id="Specimen/serum" key="Specimen-serum" name="Specimen - Serum sample" />
@@ -193,7 +185,7 @@
 	<artifact id="PractitionerRole/example3" key="PractitionerRole-example3" name="PractitionerRole - a typical Practitioner Role as a General Practitioner" />
 	<artifact id="HealthcareService/example3" key="HealthcareService-example3" name="HealthcareService - general practice" />
 	<artifact id="Patient/example-sex-and-gender" key="Patient-example-sex-and-gender" name="Patient - Transgender Person Example" />
-	<artifact id="Patient/example0" key="Patient-example0" name="Patient - with IHI, Medicare Card Number and the extension for Indigenous Status" />
+	<artifact id="Patient/example0" key="Patient-example0" name="Patient - with IHI, Medicare Card Number, patient internal identifier and the extension for Indigenous Status" />
 	<artifact id="Patient/example1" key="Patient-example1" name="Patient - with IHI, DVA Number (with specific card colour) and the extension for Indigenous Status" />
 	<artifact id="Patient/example2" key="Patient-example2" name="Patient - with no birth date, and is eligible for Closing the Gap registration" />
 	<artifact id="Patient/example3" key="Patient-example3" name="Patient - with birth date and birth time" />
@@ -233,14 +225,10 @@
 	<artifact id="Observation/norelevantfinding-example1" key="Observation-norelevantfinding-example1" name="Observation - of no relevant finding of immunisations" />
 	<artifact id="Observation/norelevantfinding-example2" key="Observation-norelevantfinding-example2" name="Observation - of no relevant finding of known history of conditions" />
 	<artifact id="Observation/norelevantfinding-example3" key="Observation-norelevantfinding-example3" name="Observation - of no relevant finding of patient taking any medications" />
-	<artifact id="Observation/healthprogramparticipation-example0" key="Observation-healthprogramparticipation-example0" name="Observation - active participation in 12 step alcohol program" />
-	<artifact id="Observation/healthprogramparticipation-example1" key="Observation-healthprogramparticipation-example1" name="Observation - deferred BreastScreen Australia screening due to travel" />
 	<artifact id="Patient/address-example0" key="Patient-address-example0" name="Patient - structured Australian Address" />
 	<artifact id="Patient/address-example1" key="Patient-address-example1" name="Patient - unstructured Australian Address" />
 	<artifact id="Patient/address-example2" key="Patient-address-example2" name="Patient - Australian No Fixed Address" />
 	<artifact id="Patient/address-example3" key="Patient-address-example3" name="Patient - Australian address with identifiers" />
-	<artifact id="Patient/example-patient-name-context" key="Patient-example-patient-name-context" name="Patient - indicate IHI validation name context" />
-	<artifact id="Practitioner/example-practitioner-name-context" key="Practitioner-example-practitioner-name-context" name="Practitioner - indicate HPI-I validation name context" />
 	<artifact id="Medication/DoseBased" key="Medication-DoseBased" name="Medication - dose based" />
 	<artifact id="Medication/UnbrandedProduct0" key="Medication-UnbrandedProduct0" name="Medication - Unbranded Product of clarithromycin 500mg tablet" />
 	<artifact id="Medication/UnbrandedProduct1" key="Medication-UnbrandedProduct1" name="Medication - Unbranded Product of esomeprazole 20mg tablet" />
@@ -253,6 +241,9 @@
 	<artifact id="Medication/TwoActiveIngredientsProduct0" key="Medication-TwoActiveIngredientsProduct0" name="Medication - with two active ingredients product" />
 	<artifact id="Medication/FourOrMoreActiveIngredientsProduct0" key="Medication-FourOrMoreActiveIngredientsProduct0" name="Medication - with four or more active ingredients" />
 	<artifact id="Medication/BrandProductwithBatchDetails0" key="Medication-BrandProductwithBatchDetails0" name="Medication - Branded Pack with Batch Details" />
+	<artifact id="Medication/StrengthExtension0" key="Medication-StrengthExtension0" name="Medication - with Generic Name and Medication Strength Extensions" />
+	<artifact id="Medication/StrengthExtension1" key="Medication-StrengthExtension1" name="Medication - with Medication Strength Extension" />
+	<artifact id="Medication/IngredientStrengthExtension0" key="Medication-IngredientStrengthExtension0" name="Medication - with backported R5 Ingredient Strength Element" />
 	<artifact id="Composition/multiple-information-recipients" key="Composition-multiple-information-recipients" name="Composition - with multiple information recipients" />
 	<artifact id="Composition/different-authors" key="Composition-different-authors" name="​Composition - with some sections having a different section author to the composition author" />
 	<artifact id="Composition/example0" key="Composition-example0" name="Composition - Patient’s preference upon death" />
@@ -264,14 +255,13 @@
 	<artifact id="MedicationRequest/example2" key="MedicationRequest-example2" name="MedicationRequest - Prescription with brand and generic name extensions" />
 	<artifact id="Encounter/example0" key="Encounter-example0" name="Encounter - with description" />
 	<artifact id="Encounter/example1" key="Encounter-example1" name="Encounter - with narative description" />
-	<artifact id="Encounter/example2" key="Encounter-example2" name="Encounter - Annual check up" />
 	<artifact id="List/example0" key="List-example0" name="List - Medicine list with referenced entries" />
 	<artifact id="List/example1" key="List-example1" name="List - Medicine list with no known current medicine" />
 	<artifact id="Bundle/example0" key="Bundle-example0" name="Bundle - Medicine list in a bundle" />
 	<artifact id="List/example2" key="List-example2" name="List - Medicine list with changes" />
 	<artifact id="List/example3" key="List-example3" name="List - Medicine list authored by a related person" />
 	<artifact id="StructureDefinition/au-diagnosticrequest" key="StructureDefinition-au-diagnosticrequest" name="AU Base Diagnostic Request" />
-	<artifact id="StructureDefinition/au-servicerequest" key="StructureDefinition-au-servicerequest" name="AU Base Service Request" />
+	<artifact id="StructureDefinition/au-servicerequest" key="StructureDefinition-au-servicerequest" name="AU Base ServiceRequest" />
 	<artifact id="StructureDefinition/date-of-arrival" key="StructureDefinition-date-of-arrival" name="Date of Arrival in Australia" />
 	<artifact id="StructureDefinition/au-localorderidentifier" key="StructureDefinition-au-localorderidentifier" name="AU Local Order Identifier" />
 	<artifact id="StructureDefinition/au-localreportidentifier" key="StructureDefinition-au-localreportidentifier" name="AU Local Report Identifier" />
@@ -292,6 +282,25 @@
 	<artifact id="Procedure/example0" key="Procedure-example0" name="Procedure - Cryotherapy" />
 	<artifact id="Procedure/example1" key="Procedure-example1" name="Procedure - Cardiac catheterisation" />
 	<artifact id="Procedure/example2" key="Procedure-example2" name="Procedure - Stent placement" />
+	<artifact id="SearchParameter/servicerequest-supporting-info" key="SearchParameter-servicerequest-supporting-info" name="ServiceRequestSupportingInfo" />
+	<artifact id="ValueSet/au-coverage-type-extended" key="ValueSet-au-coverage-type-extended" name="Coverage Type and Self-Pay Codes - AU Extended" />
+	<artifact id="StructureDefinition/ethnicity" key="StructureDefinition-ethnicity" name="Ethnicity" deprecated="true"/>
+	<artifact id="SearchParameter/patient-gender-identity" key="SearchParameter-patient-gender-identity" name="PatientGenderIdentity" deprecated="true"/>
+	<artifact id="StructureDefinition/individual-recordedSexOrGender" key="StructureDefinition-individual-recordedSexOrGender" name="Person Recorded Sex Or Gender" deprecated="true"/>
+	<artifact id="ValueSet/recorded-sex-or-gender-type" key="ValueSet-recorded-sex-or-gender-type" name="Recorded Sex Or Gender Type" deprecated="true"/>
+	<artifact id="StructureDefinition/individual-pronouns" key="StructureDefinition-individual-pronouns" name="Individual Pronouns" deprecated="true"/>
+	<artifact id="ValueSet/pronouns" key="ValueSet-pronouns" name="Personal Pronouns" deprecated="true"/>
+	<artifact id="CodeSystem/au-coverage-selfpay" key="CodeSystem-au-coverage-selfpay" name="Coverage SelfPay Codes AU" deprecated="true"/>
+	<artifact id="ValueSet/au-coverage-selfpay-extended" key="ValueSet-au-coverage-selfpay-extended" name="Coverage SelfPay Codes - AU Extended" deprecated="true"/>
+	<artifact id="ValueSet/rsg-source-document-jurisdiction" key="ValueSet-rsg-source-document-jurisdiction" name="AU Recorded Sex or Gender (RSG) Source Document Jurisdiction" deprecated="true"/>
+	<artifact id="Encounter/example2" key="Encounter-example2" name="Encounter - Annual check up" deprecated="true"/>
+	<artifact id="StructureDefinition/au-healthprogramparticipation" key="StructureDefinition-au-healthprogramparticipation" name="AU Health Program Participation Summary" deprecated="true"/>
+	<artifact id="CodeSystem/au-observation-category" key="CodeSystem-au-observation-category" name="Observation Category Codes AU" deprecated="true"/>
+	<artifact id="ValueSet/au-observation-category-extended" key="ValueSet-au-observation-category-extended" name="Observation Category Codes - AU Extended" deprecated="true"/>
+	<artifact id="Observation/healthprogramparticipation-example0" key="Observation-healthprogramparticipation-example0" name="Observation - active participation in 12 step alcohol program" deprecated="true"/>
+	<artifact id="Observation/healthprogramparticipation-example1" key="Observation-healthprogramparticipation-example1" name="Observation - deferred BreastScreen Australia screening due to travel" deprecated="true"/>
+	<artifact id="Practitioner/example-practitioner-name-context" key="Practitioner-example-practitioner-name-context" name="Practitioner - indicate HPI-I validation name context" deprecated="true"/>
+	<artifact id="Patient/example-patient-name-context" key="Patient-example-patient-name-context" name="Patient - indicate IHI validation name context" deprecated="true"/>
 	<page key="NA" name="(NA)"/>
 	<page key="many" name="(many)"/>
 	<page key="toc" name="Table of Contents"/>
@@ -312,3 +321,4 @@
 	<page key="license" name="License and Legal"/>
 	<page key="changes" name="Change Log"/>
 </specification>
+        
