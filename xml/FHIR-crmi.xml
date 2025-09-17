@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/crmi/2025Sep" ciUrl="http://build.fhir.org/ig/HL7/crmi-ig" defaultVersion="1.0.0" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/crmi-ig" url="http://hl7.org/fhir/uv/crmi">
+<version code="current" url="http://build.fhir.org/ig/HL7/crmi-ig"/>
+<version code="2.0.0-ballot" url="http://hl7.org/fhir/uv/crmi/2025Sep"/>
+<version code="1.0.0" url="http://hl7.org/fhir/uv/crmi/STU1"/>
+<version code="1.0.0-snapshot" deprecated="true" url="http://hl7.org/fhir/uv/crmi/1.0.0-snapshot"/>
+<version code="1.0.0-ballot2" deprecated="true" url="http://hl7.org/fhir/uv/crmi/2024Jan"/>
+<version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/crmi/2023Sep"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="Library/ANCCohort" key="Library-ANCCohort" name="ANC Cohort"/>
+<artifact id="Questionnaire/publishable-example" key="Questionnaire-publishable-example" name="ANC.B5 Quick check (Publishable Example)"/>
+<artifact id="Questionnaire/shareable-example" key="Questionnaire-shareable-example" name="ANC.B5 Quick check (Shareable Example)"/>
+<artifact id="PlanDefinition/publishable-example" key="PlanDefinition-publishable-example" name="ANC.DT.01 Danger signs (Publishable Example)"/>
+<artifact id="PlanDefinition/shareable-example" key="PlanDefinition-shareable-example" name="ANC.DT.01 Danger signs (Shareable Example)"/>
+<artifact id="Measure/publishable-example" key="Measure-publishable-example" name="ANC.IND.01 Percentage of pregnant women with first ANC contact in the first trimester (Publishable Example)"/>
+<artifact id="Measure/shareable-example" key="Measure-shareable-example" name="ANC.IND.01 Percentage of pregnant women with first ANC contact in the first trimester (Shareable Example)"/>
+<artifact id="CodeSystem/shareable-example" key="CodeSystem-shareable-example" name="ANCM Activity Codes (Shareable Example)"/>
+<artifact id="CodeSystem/publishable-example" key="CodeSystem-publishable-example" name="ANCM Concept Codes (Publishable Example)"/>
+<artifact id="Library/manifest-example" key="Library-manifest-example" name="ANCM Danger Signs Package"/>
+<artifact deprecated="true" id="ValueSet/all-resource-types" key="ValueSet-all-resource-types" name="All Resource Types"/>
+<artifact deprecated="true" id="StructureDefinition/artifact-approvalDate" key="StructureDefinition-artifact-approvalDate" name="Artifact Approval Date"/>
+<artifact deprecated="true" id="StructureDefinition/artifact-canonicalReference" key="StructureDefinition-artifact-canonicalReference" name="Artifact Canonical Reference"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-artifactComment" key="StructureDefinition-cqf-artifactComment" name="Artifact Comment"/>
+<artifact deprecated="true" id="ValueSet/artifact-comment-type" key="ValueSet-artifact-comment-type" name="Artifact Comment Type"/>
+<artifact deprecated="true" id="StructureDefinition/artifact-effectivePeriod" key="StructureDefinition-artifact-effectivePeriod" name="Artifact Effective Period"/>
+<artifact deprecated="true" id="StructureDefinition/artifact-isOwned" key="StructureDefinition-artifact-isOwned" name="Artifact Is Owned"/>
+<artifact deprecated="true" id="StructureDefinition/artifact-lastReviewDate" key="StructureDefinition-artifact-lastReviewDate" name="Artifact Last Review Date"/>
+<artifact deprecated="true" id="StructureDefinition/artifact-releaseDescription" key="StructureDefinition-artifact-releaseDescription" name="Artifact Release Description"/>
+<artifact deprecated="true" id="StructureDefinition/artifact-releaseLabel" key="StructureDefinition-artifact-releaseLabel" name="Artifact Release Label"/>
+<artifact id="ValueSet/artifact-resource-types" key="ValueSet-ArtifactResourceTypes" name="Artifact Resource Types"/>
+<artifact deprecated="true" id="StructureDefinition/artifact-uriReference" key="StructureDefinition-artifact-uriReference" name="Artifact URI Reference"/>
+<artifact deprecated="true" id="StructureDefinition/artifact-usage" key="StructureDefinition-artifact-usage" name="Artifact Usage"/>
+<artifact deprecated="true" id="StructureDefinition/artifact-versionAlgorithm" key="StructureDefinition-artifact-versionAlgorithm" name="Artifact Version Algorithm"/>
+<artifact deprecated="true" id="StructureDefinition/artifact-versionPolicy" key="StructureDefinition-artifact-versionPolicy" name="Artifact Version Policy"/>
+<artifact deprecated="true" id="CodeSystem/artifact-version-policy-codes" key="CodeSystem-artifact-version-policy-codes" name="Artifact Version Policy Codes"/>
+<artifact deprecated="true" id="ValueSet/artifact-version-policy" key="ValueSet-artifact-version-policy" name="Artifact Version Policy Values"/>
+<artifact deprecated="true" id="CapabilityStatement/shareable-measure-repository" key="CapabilityStatement-shareable-measure-repository" name="CQF Measures Shareable Measure Repository Capability Statement"/>
+<artifact id="Device/cqf-tooling" key="Device-cqf-tooling" name="CQF Tooling Device"/>
+<artifact id="OperationDefinition/crmi-approve" key="OperationDefinition-crmi-approve" name="CRMI Approve Operation"/>
+<artifact id="OperationDefinition/crmi-artifact-diff" key="OperationDefinition-crmi-artifact-diff" name="CRMI Artifact Diff Operation"/>
+<artifact id="StructureDefinition/crmi-artifact-signature" key="StructureDefinition-crmi-artifact-signature" name="CRMI Artifact Signature Extension"/>
+<artifact id="CapabilityStatement/crmi-artifact-terminology-service" key="CapabilityStatement-crmi-artifact-terminology-service" name="CRMI Artifact Terminology Service"/>
+<artifact id="CapabilityStatement/crmi-authoring-artifact-repository" key="CapabilityStatement-crmi-authoring-artifact-repository" name="CRMI Authoring Artifact Repository"/>
+<artifact deprecated="true" id="CapabilityStatement/authoring-artifact-repository" key="CapabilityStatement-authoring-artifact-repository" name="CRMI Authoring Artifact Repository Capability Statement"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-capabilitystatement" key="StructureDefinition-crmi-capabilitystatement" name="CRMI Capability Statement"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-careteamdefinition" key="StructureDefinition-crmi-careteamdefinition" name="CRMI CareTeamDefinition"/>
+<artifact id="OperationDefinition/crmi-clone" key="OperationDefinition-crmi-clone" name="CRMI Clone Operation"/>
+<artifact id="StructureDefinition/crmi-computablelibrary" key="StructureDefinition-crmi-computablelibrary" name="CRMI Computable Library"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-computablemeasure" key="StructureDefinition-crmi-computablemeasure" name="CRMI Computable Measure"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-computableplandefinition" key="StructureDefinition-crmi-computableplandefinition" name="CRMI Computable Plan Definition"/>
+<artifact id="StructureDefinition/crmi-computablevalueset" key="StructureDefinition-crmi-computablevalueset" name="CRMI Computable ValueSet"/>
+<artifact id="StructureDefinition/crmi-configurationEndpoint" key="StructureDefinition-crmi-configurationEndpoint" name="CRMI Configuration Endpoint"/>
+<artifact id="StructureDefinition/crmi-configurationFor" key="StructureDefinition-crmi-configurationFor" name="CRMI Configuration For"/>
+<artifact id="OperationDefinition/crmi-data-requirements" key="OperationDefinition-crmi-data-requirements" name="CRMI Data Requirements Operation"/>
+<artifact id="OperationDefinition/crmi-draft" key="OperationDefinition-crmi-draft" name="CRMI Draft Operation"/>
+<artifact id="StructureDefinition/crmi-effectiveDataRequirements" key="StructureDefinition-crmi-effectiveDataRequirements" name="CRMI Effective Data Requirements"/>
+<artifact id="StructureDefinition/crmi-endpointConfiguration" key="StructureDefinition-crmi-endpointConfiguration" name="CRMI Endpoint Configuration"/>
+<artifact id="StructureDefinition/crmi-endpointconfigurationparameters" key="StructureDefinition-crmi-endpointconfigurationparameters" name="CRMI Endpoint Configuration Parameters"/>
+<artifact id="StructureDefinition/crmi-endpointSupportsPost" key="StructureDefinition-crmi-endpointSupportsPost" name="CRMI Endpoint Supports POST"/>
+<artifact id="StructureDefinition/crmi-evaluationresultparameters" key="StructureDefinition-crmi-evaluationresultparameters" name="CRMI Evaluation Result Parameters"/>
+<artifact id="StructureDefinition/crmi-executablelibrary" key="StructureDefinition-crmi-executablelibrary" name="CRMI Executable Library"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-executablemeasure" key="StructureDefinition-crmi-executablemeasure" name="CRMI Executable Measure"/>
+<artifact id="StructureDefinition/crmi-expandedvalueset" key="StructureDefinition-crmi-executablevalueset" name="CRMI Expanded ValueSet"/>
+<artifact id="OperationDefinition/crmi-valueset-expand" key="OperationDefinition-ValueSet-expand" name="CRMI Extension of Value Set Expansion"/>
+<artifact id="OperationDefinition/crmi-valueset-validate-code" key="OperationDefinition-crmi-valueset-validate-code" name="CRMI Extension of Value Set based Validation"/>
+<artifact id="StructureDefinition/crmi-groupdefinition" key="StructureDefinition-crmi-groupdefinition" name="CRMI GroupDefinition"/>
+<artifact id="StructureDefinition/crmi-implementationguide" key="StructureDefinition-crmi-implementationguide" name="CRMI ImplementationGuide"/>
+<artifact id="StructureDefinition/crmi-license-detail" key="StructureDefinition-crmi-license-detail" name="CRMI License Detail Extension"/>
+<artifact id="StructureDefinition/crmi-license" key="StructureDefinition-crmi-license" name="CRMI License Extension"/>
+<artifact id="OperationDefinition/crmi-license-requirements" key="OperationDefinition-crmi-license-requirements" name="CRMI License Requirements Operation"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-locationdefinition" key="StructureDefinition-crmi-locationdefinition" name="CRMI LocationDefinition"/>
+<artifact id="StructureDefinition/crmi-manifestlibrary" key="StructureDefinition-crmi-manifestlibrary" name="CRMI Manifest Library"/>
+<artifact id="StructureDefinition/crmi-manifestparameters" key="StructureDefinition-crmi-manifestparameters" name="CRMI Manifest Parameters"/>
+<artifact id="StructureDefinition/crmi-medicationdefinition" key="StructureDefinition-crmi-medicationdefinition" name="CRMI MedicationDefinition"/>
+<artifact id="StructureDefinition/crmi-medicationknowledgedefinition" key="StructureDefinition-crmi-medicationknowledgedefinition" name="CRMI MedicationKnowledge Definition"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-modelinfolibrary" key="StructureDefinition-crmi-modelinfolibrary" name="CRMI Model Info Library"/>
+<artifact id="StructureDefinition/crmi-moduleconfigurationlibrary" key="StructureDefinition-crmi-moduleconfigurationlibrary" name="CRMI Module Configuration Library"/>
+<artifact id="StructureDefinition/crmi-moduledefinitionlibrary" key="StructureDefinition-crmi-moduledefinitionlibrary" name="CRMI Module Definition Library"/>
+<artifact id="StructureDefinition/crmi-artifact-endpoint-configurable-operation" key="StructureDefinition-crmi-artifact-endpoint-configurable-operation" name="CRMI Operation Profile: Artifact Endpoint Configurable"/>
+<artifact id="StructureDefinition/crmi-artifact-operation" key="StructureDefinition-crmi-artifact-operation" name="CRMI Operation Profile: Artifact Operation"/>
+<artifact id="StructureDefinition/crmi-artifact-version-bindable-operation" key="StructureDefinition-crmi-artifact-version-bindable-operation" name="CRMI Operation Profile: Artifact Version Bindable"/>
+<artifact id="StructureDefinition/crmi-canonical-version-bindable-operation" key="StructureDefinition-crmi-canonical-version-bindable-operation" name="CRMI Operation Profile: Canonical Version Bindable"/>
+<artifact id="StructureDefinition/crmi-manifestable-operation" key="StructureDefinition-crmi-manifestable-operation" name="CRMI Operation Profile: Manifestable"/>
+<artifact id="StructureDefinition/crmi-pageable-operation" key="StructureDefinition-crmi-pageable-operation" name="CRMI Operation Profile: Pageable"/>
+<artifact id="OperationDefinition/crmi-package" key="OperationDefinition-crmi-package" name="CRMI Package Operation"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-practitionerroledefinition" key="StructureDefinition-crmi-practitionerroledefinition" name="CRMI PractitionerRoleDefinition"/>
+<artifact id="OperationDefinition/crmi-profiled-operation-example" key="OperationDefinition-crmi-profiled-operation-example" name="CRMI Profiled Operation Example"/>
+<artifact id="OperationDefinition/crmi-publish" key="OperationDefinition-crmi-publish" name="CRMI Publish Operation"/>
+<artifact id="StructureDefinition/crmi-publishableactivitydefinition" key="StructureDefinition-crmi-publishableactivitydefinition" name="CRMI Publishable ActivityDefinition"/>
+<artifact id="CapabilityStatement/crmi-publishable-artifact-repository" key="CapabilityStatement-crmi-publishable-artifact-repository" name="CRMI Publishable Artifact Repository"/>
+<artifact deprecated="true" id="CapabilityStatement/publishable-artifat-repository" key="CapabilityStatement-publishable-artifat-repository" name="CRMI Publishable Artifact Repository Capability Statement"/>
+<artifact id="StructureDefinition/crmi-publishable-bundle" key="StructureDefinition-crmi-publishable-bundle" name="CRMI Publishable Bundle"/>
+<artifact id="StructureDefinition/crmi-publishablecapabilitystatement" key="StructureDefinition-crmi-publishablecapabilitystatement" name="CRMI Publishable CapabilityStatement"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-publishablecareteam" key="StructureDefinition-crmi-publishablecareteam" name="CRMI Publishable CareTeam"/>
+<artifact id="StructureDefinition/crmi-publishablecodesystem" key="StructureDefinition-crmi-publishablecodesystem" name="CRMI Publishable CodeSystem"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-publishablecompartmentdefinition" key="StructureDefinition-crmi-publishablecompartmentdefinition" name="CRMI Publishable CompartmentDefinition"/>
+<artifact id="StructureDefinition/crmi-publishableconceptmap" key="StructureDefinition-crmi-publishableconceptmap" name="CRMI Publishable ConceptMap"/>
+<artifact id="StructureDefinition/crmi-publishablegraphdefinition" key="StructureDefinition-crmi-publishablegraphdefinition" name="CRMI Publishable GraphDefinition"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-publishablegroup" key="StructureDefinition-crmi-publishablegroup" name="CRMI Publishable Group"/>
+<artifact id="StructureDefinition/crmi-publishableimplementationguide" key="StructureDefinition-crmi-publishableimplementationguide" name="CRMI Publishable ImplementationGuide"/>
+<artifact id="StructureDefinition/crmi-publishablelibrary" key="StructureDefinition-crmi-publishablelibrary" name="CRMI Publishable Library"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-publishablelocation" key="StructureDefinition-crmi-publishablelocation" name="CRMI Publishable Location"/>
+<artifact id="StructureDefinition/crmi-publishablemeasure" key="StructureDefinition-crmi-publishablemeasure" name="CRMI Publishable Measure"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-publishablemedication" key="StructureDefinition-crmi-publishablemedication" name="CRMI Publishable Medication"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-publishablemedicationknowledge" key="StructureDefinition-crmi-publishablemedicationknowledge" name="CRMI Publishable MedicationKnowledge"/>
+<artifact id="StructureDefinition/crmi-publishablenamingsystem" key="StructureDefinition-crmi-publishablenamingsystem" name="CRMI Publishable NamingSystem"/>
+<artifact id="StructureDefinition/crmi-publishableoperationdefinition" key="StructureDefinition-crmi-publishableoperationdefinition" name="CRMI Publishable OperationDefinition"/>
+<artifact id="StructureDefinition/crmi-publishableplandefinition" key="StructureDefinition-crmi-publishableplandefinition" name="CRMI Publishable PlanDefinition"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-publishablepractitionerrole" key="StructureDefinition-crmi-publishablepractitionerrole" name="CRMI Publishable PractitionerRole"/>
+<artifact id="StructureDefinition/crmi-publishablequestionnaire" key="StructureDefinition-crmi-publishablequestionnaire" name="CRMI Publishable Questionnaire"/>
+<artifact id="StructureDefinition/crmi-publishablesearchparameter" key="StructureDefinition-crmi-publishablesearchparameter" name="CRMI Publishable SearchParameter"/>
+<artifact id="StructureDefinition/crmi-publishablestructuredefinition" key="StructureDefinition-crmi-publishablestructuredefinition" name="CRMI Publishable StructureDefinition"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-publishablestructuremap" key="StructureDefinition-crmi-publishablestructuremap" name="CRMI Publishable StructureMap"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-publishablesubstance" key="StructureDefinition-crmi-publishablesubstance" name="CRMI Publishable Substance"/>
+<artifact id="StructureDefinition/crmi-publishableterminologycapabilities" key="StructureDefinition-crmi-publishableterminologycapabilities" name="CRMI Publishable TerminologyCapabilities"/>
+<artifact id="StructureDefinition/crmi-publishablevalueset" key="StructureDefinition-crmi-publishablevalueset" name="CRMI Publishable ValueSet"/>
+<artifact id="StructureDefinition/crmi-referenceSource" key="StructureDefinition-crmi-referenceSource" name="CRMI Reference Source"/>
+<artifact id="ValueSet/crmi-release-experimental-behavior" key="ValueSet-crmi-release-experimental-behavior" name="CRMI Release Experimental Behavior"/>
+<artifact id="CodeSystem/crmi-release-experimental-behavior-codes" key="CodeSystem-crmi-release-experimental-behavior-codes" name="CRMI Release Experimental Behavior Codes"/>
+<artifact id="OperationDefinition/crmi-release" key="OperationDefinition-crmi-release" name="CRMI Release Operation"/>
+<artifact id="ValueSet/crmi-release-version-behavior" key="ValueSet-crmi-release-version-behavior" name="CRMI Release Version Behavior"/>
+<artifact id="CodeSystem/crmi-release-version-behavior-codes" key="CodeSystem-crmi-release-version-behavior-codes" name="CRMI Release Version Behavior Codes"/>
+<artifact id="OperationDefinition/crmi-resolve" key="OperationDefinition-crmi-resolve" name="CRMI Resolve"/>
+<artifact id="OperationDefinition/crmi-review" key="OperationDefinition-crmi-review" name="CRMI Review Operation"/>
+<artifact deprecated="true" id="OperationDefinition/crmi-revise" key="OperationDefinition-crmi-revise" name="CRMI Revise Operation"/>
+<artifact id="StructureDefinition/crmi-shareableactivitydefinition" key="StructureDefinition-crmi-shareableactivitydefinition" name="CRMI Shareable ActivityDefinition"/>
+<artifact id="CapabilityStatement/crmi-shareable-artifact-repository" key="CapabilityStatement-crmi-shareable-artifact-repository" name="CRMI Shareable Artifact Repository"/>
+<artifact id="StructureDefinition/crmi-shareablecapabilitystatement" key="StructureDefinition-crmi-shareablecapabilitystatement" name="CRMI Shareable CapabilityStatement"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-shareablecareteam" key="StructureDefinition-crmi-shareablecareteam" name="CRMI Shareable CareTeam"/>
+<artifact id="StructureDefinition/crmi-shareablecodesystem" key="StructureDefinition-crmi-shareablecodesystem" name="CRMI Shareable CodeSystem"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-shareablecompartmentdefinition" key="StructureDefinition-crmi-shareablecompartmentdefinition" name="CRMI Shareable CompartmentDefinition"/>
+<artifact id="StructureDefinition/crmi-shareableconceptmap" key="StructureDefinition-crmi-shareableconceptmap" name="CRMI Shareable ConceptMap"/>
+<artifact id="StructureDefinition/crmi-shareablegraphdefinition" key="StructureDefinition-crmi-shareablegraphdefinition" name="CRMI Shareable GraphDefinition"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-shareablegroup" key="StructureDefinition-crmi-shareablegroup" name="CRMI Shareable Group"/>
+<artifact id="StructureDefinition/crmi-shareableimplementationguide" key="StructureDefinition-crmi-shareableimplementationguide" name="CRMI Shareable ImplementationGuide"/>
+<artifact id="StructureDefinition/crmi-shareablelibrary" key="StructureDefinition-crmi-shareablelibrary" name="CRMI Shareable Library"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-shareablelocation" key="StructureDefinition-crmi-shareablelocation" name="CRMI Shareable Location"/>
+<artifact id="StructureDefinition/crmi-shareablemeasure" key="StructureDefinition-crmi-shareablemeasure" name="CRMI Shareable Measure"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-shareablemedication" key="StructureDefinition-crmi-shareablemedication" name="CRMI Shareable Medication"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-shareablemedicationknowledge" key="StructureDefinition-crmi-shareablemedicationknowledge" name="CRMI Shareable MedicationKnowledge"/>
+<artifact id="StructureDefinition/crmi-shareablenamingsystem" key="StructureDefinition-crmi-shareablenamingsystem" name="CRMI Shareable NamingSystem"/>
+<artifact id="StructureDefinition/crmi-shareableoperationdefinition" key="StructureDefinition-crmi-shareableoperationdefinition" name="CRMI Shareable OperationDefinition"/>
+<artifact id="StructureDefinition/crmi-shareableplandefinition" key="StructureDefinition-crmi-shareableplandefinition" name="CRMI Shareable PlanDefinition"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-shareablepractitionerrole" key="StructureDefinition-crmi-shareablepractitionerrole" name="CRMI Shareable PractitionerRole"/>
+<artifact id="StructureDefinition/crmi-shareablequestionnaire" key="StructureDefinition-crmi-shareablequestionnaire" name="CRMI Shareable Questionnaire"/>
+<artifact id="StructureDefinition/crmi-shareablesearchparameter" key="StructureDefinition-crmi-shareablesearchparameter" name="CRMI Shareable SearchParameter"/>
+<artifact id="StructureDefinition/crmi-shareablestructuredefinition" key="StructureDefinition-crmi-shareablestructuredefinition" name="CRMI Shareable StructureDefinition"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-shareablestructuremap" key="StructureDefinition-crmi-shareablestructuremap" name="CRMI Shareable StructureMap"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-shareablesubstance" key="StructureDefinition-crmi-shareablesubstance" name="CRMI Shareable Substance"/>
+<artifact id="StructureDefinition/crmi-shareableterminologycapabilities" key="StructureDefinition-crmi-shareableterminologycapabilities" name="CRMI Shareable TerminologyCapabilities"/>
+<artifact id="StructureDefinition/crmi-shareablevalueset" key="StructureDefinition-crmi-shareablevalueset" name="CRMI Shareable ValueSet"/>
+<artifact id="StructureDefinition/crmi-softwaresystem" key="StructureDefinition-crmi-softwaresystem" name="CRMI Software System"/>
+<artifact id="StructureDefinition/crmi-softwaresystemdevice" key="StructureDefinition-crmi-softwaresystemdevice" name="CRMI Software System Device"/>
+<artifact id="StructureDefinition/crmi-substancedefinition" key="StructureDefinition-crmi-substancedefinition" name="CRMI SubstanceDefinition"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-versionmanifest" key="StructureDefinition-crmi-versionmanifest" name="CRMI Version Manifest"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-artifact-reference" key="StructureDefinition-crmi-artifact-reference" name="CRMIArtifactReference"/>
+<artifact deprecated="true" id="StructureDefinition/crmi-profile-reference" key="StructureDefinition-crmi-profile-reference" name="CRMIProfileReference"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-configurationEndpoint" key="StructureDefinition-cqf-configurationEndpoint" name="Configuration Endpoint"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-configurationFor" key="StructureDefinition-cqf-configurationFor" name="Configuration For"/>
+<artifact id="ValueSet/anc-b5-de51" key="ValueSet-anc-b5-de51" name="Danger Signs - Central cyanosis Codes (Example)"/>
+<artifact id="ValueSet/anc-b5-de49" key="ValueSet-anc-b5-de49" name="Danger Signs - No danger signs Codes (Example)"/>
+<artifact id="StructureDefinition/publishable-example" key="StructureDefinition-publishable-example" name="Danger signs (Publishable Example)"/>
+<artifact id="ValueSet/anc-b5-de50" key="ValueSet-anc-b5-de50" name="Danger signs Codes (Example)"/>
+<artifact id="ValueSet/computable-example" key="ValueSet-computable-example" name="Danger signs Codes Grouper (Computable Example)"/>
+<artifact id="ValueSet/expanded-example" key="ValueSet-executable-example" name="Danger signs Codes Grouper (Expanded Example)"/>
+<artifact id="ValueSet/publishable-example" key="ValueSet-publishable-example" name="Danger signs Codes Grouper (Publishable Example)"/>
+<artifact deprecated="true" id="OperationDefinition/DataRequirementsOperation" key="OperationDefinition-DataRequirementsOperation" name="Data Requirement Operation"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-defaultValue" key="StructureDefinition-cqf-defaultValue" name="Default Value"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-definitionTerm" key="StructureDefinition-cqf-definitionTerm" name="Definition Term"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-effectiveDataRequirements" key="StructureDefinition-cqf-effectiveDataRequirements" name="Effective Data Requirements"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-endpointSupportsPost" key="StructureDefinition-cqf-endpointSupportsPost" name="Endpoint Supports POST"/>
+<artifact id="Parameters/endpoints" key="Parameters-endpoints" name="Example Endpoint Configuration Parameters"/>
+<artifact id="Parameters/crmi-evaluationresult-example" key="Parameters-crmi-evaluationresult-example" name="Example Evaluation Result Parameters"/>
+<artifact id="Group/definition-example" key="Group-definition-example" name="Example Group Definition"/>
+<artifact id="Library/moduledefinition-example" key="Library-moduledefinition-example" name="Example Logic Library - Module Definition"/>
+<artifact id="Parameters/manifestparameters-example" key="Parameters-manifestparameters-example" name="Example Manifest Parameters"/>
+<artifact id="MeasureReport/result-example" key="MeasureReport-result-example" name="Example MeasureReport"/>
+<artifact id="Medication/definition-example" key="Medication-definition-example" name="Example Medication Definition"/>
+<artifact id="MedicationKnowledge/definition-example" key="MedicationKnowledge-definition-example" name="Example MedicationKnowledge Definition"/>
+<artifact id="Bundle/example-publishable-bundle" key="Bundle-example-publishable-bundle" name="Example Publishable Bundle"/>
+<artifact id="TerminologyCapabilities/publishable-example" key="TerminologyCapabilities-publishable-example" name="Example Publishable TerminologyCapabilities"/>
+<artifact id="TerminologyCapabilities/shareable-example" key="TerminologyCapabilities-shareable-example" name="Example Shareable TerminologyCapabilities"/>
+<artifact id="Substance/artifact-reference-example" key="Substance-definition-example" name="Example Substance Definition"/>
+<artifact id="Group/testcase-example" key="Group-testcase-example" name="Example TestCase Group"/>
+<artifact id="OperationDefinition/crmi-canonical-version-bindable-example" key="OperationDefinition-crmi-canonical-version-bindable-example" name="Example of a Canonical Version Bindable and Pageable Operation Definition"/>
+<artifact id="Library/ExampleLicensedLibrary" key="Library-ExampleLicensedLibrary" name="ExampleLicensedLibrary"/>
+<artifact id="Library/ExampleSignatureLibrary" key="Library-ExampleSignatureLibrary" name="ExampleSignatureLibrary"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-expansionParameters" key="StructureDefinition-cqf-expansionParameters" name="Expansion Parameters"/>
+<artifact id="Library/computable-example" key="Library-computable-example" name="FHIR Common (Computable Example)"/>
+<artifact id="Library/FHIRCommon" key="Library-FHIRCommon" name="FHIR Common (Example)"/>
+<artifact id="Library/executable-example" key="Library-executable-example" name="FHIR Common (Executable Example)"/>
+<artifact id="Library/publishable-example" key="Library-publishable-example" name="FHIR Common (Publishable Example)"/>
+<artifact id="Library/shareable-example" key="Library-shareable-example" name="FHIR Common (Shareable Example)"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-fhirQueryPattern" key="StructureDefinition-cqf-fhirQueryPattern" name="FHIR Query Pattern"/>
+<artifact id="OperationDefinition/get-package" key="OperationDefinition-get-package" name="Get Package"/>
+<artifact id="ImplementationGuide/example" key="ImplementationGuide-example" name="ImplementationGuide Example"/>
+<artifact id="Parameters/manifest" key="Parameters-manifest" name="Input Expansion Parameters"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-isPrimaryCitation" key="StructureDefinition-cqf-isPrimaryCitation" name="Is Primary Citation"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-isSelective" key="StructureDefinition-cqf-isSelective" name="Is Selective"/>
+<artifact deprecated="true" id="CodeSystem/knowledge-capability" key="CodeSystem-knowledge-capability" name="Knowledge Capability Codes"/>
+<artifact deprecated="true" id="ValueSet/knowledge-capability" key="ValueSet-knowledge-capability" name="Knowledge Capability Values"/>
+<artifact deprecated="true" id="CodeSystem/knowledge-representation-level" key="CodeSystem-knowledge-representation-level" name="Knowledge Representation Level Codes"/>
+<artifact deprecated="true" id="ValueSet/knowledge-representation-level" key="ValueSet-knowledge-representation-level" name="Knowledge Representation Level Values"/>
+<artifact deprecated="true" id="CapabilityStatement/measure-calculation-service-example" key="CapabilityStatement-measure-calculation-service-example" name="Measure Calculation Service Capability Statement Example"/>
+<artifact deprecated="true" id="CapabilityStatement/measure-terminology-service" key="CapabilityStatement-measure-terminology-service" name="Measure Terminology Service Capability Statement"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-messages" key="StructureDefinition-cqf-messages" name="Messages"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-modelInfo-isIncluded" key="StructureDefinition-cqf-modelInfo-isIncluded" name="ModelInfo Is Included"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-modelInfo-isRetrievable" key="StructureDefinition-cqf-modelInfo-isRetrievable" name="ModelInfo Is Retrievable"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-modelInfo-label" key="StructureDefinition-cqf-modelInfo-label" name="ModelInfo Label"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-modelInfo-primaryCodePath" key="StructureDefinition-cqf-modelInfo-primaryCodePath" name="ModelInfo Primary Code Path"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-modelInfoSettings" key="StructureDefinition-cqf-modelInfoSettings" name="ModelInfo Settings"/>
+<artifact id="Library/OpioidCDSREC10ModuleConfiguration" key="Library-OpioidCDSREC10ModuleConfiguration" name="Module Configuration Example Library for Recommendation 10 (Endpoint-specific prefetch configuration)"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-notDoneValueSet" key="StructureDefinition-cqf-notDoneValueSet" name="Not Done ValueSet"/>
+<artifact id="Library/outcome-manifest-example" key="Library-outcome-manifest-example" name="Outcome Manifest for ANCM Danger Signs Package"/>
+<artifact deprecated="true" id="OperationDefinition/PackageOperation" key="OperationDefinition-PackageOperation" name="Package Operation"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-partOf" key="StructureDefinition-cqf-partOf" name="Part Of"/>
+<artifact id="Patient/example-1" key="Patient-example-1" name="Patient Example 1"/>
+<artifact id="Patient/example-2" key="Patient-example-2" name="Patient Example 2"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-publicationDate" key="StructureDefinition-cqf-publicationDate" name="Publication Date"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-publicationStatus" key="StructureDefinition-cqf-publicationStatus" name="Publication Status"/>
+<artifact id="ActivityDefinition/publishable-example" key="ActivityDefinition-publishable-example" name="Publishable ActivityDefinition Example"/>
+<artifact id="CapabilityStatement/publishable-example" key="CapabilityStatement-publishable-example" name="Publishable Capability Statement Example"/>
+<artifact id="ConceptMap/publishable-example" key="ConceptMap-publishable-example" name="Publishable Concept Map Example"/>
+<artifact id="ImplementationGuide/publishable-example" key="ImplementationGuide-publishable-example" name="Publishable ImplementationGuide Example"/>
+<artifact deprecated="true" id="StructureDefinition/publishablelibrary" key="StructureDefinition-publishablelibrary" name="Publishable Library"/>
+<artifact id="OperationDefinition/publishable-example" key="OperationDefinition-publishable-example" name="Publishable OperationDefinition Example"/>
+<artifact id="StructureMap/publishable-example" key="StructureMap-publishable-example" name="Publishable StructureMap Example"/>
+<artifact id="GraphDefinition/publishable-example" key="GraphDefinition-publishable-example" name="PublishableGraphDefinitionExample"/>
+<artifact deprecated="true" id="Group/publishable-example" key="Group-publishable-example" name="PublishableGroupExample"/>
+<artifact id="SearchParameter/publishable-example" key="SearchParameter-publishable-example" name="PublishableSearchParameterExample"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-resourceType" key="StructureDefinition-cqf-resourceType" name="Resource Type"/>
+<artifact id="NamingSystem/publishable-example" key="NamingSystem-publishable-example" name="SNOMEDCTExample"/>
+<artifact id="NamingSystem/shareable-example" key="NamingSystem-shareable-example" name="SNOMEDCTShareable"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-scope" key="StructureDefinition-cqf-scope" name="Scope"/>
+<artifact id="ActivityDefinition/shareable-example" key="ActivityDefinition-shareable-example" name="Shareable ActivityDefinition Example"/>
+<artifact id="ActivityDefinition/shareable-example-artifact-reference" key="ActivityDefinition-shareable-example-artifact-reference" name="Shareable ActivityDefinition Example Artifact Reference"/>
+<artifact id="CapabilityStatement/shareable-example" key="CapabilityStatement-shareable-example" name="Shareable Capability Statement Example"/>
+<artifact id="ConceptMap/shareable-example" key="ConceptMap-shareable-example" name="Shareable Concept Map Example"/>
+<artifact id="ImplementationGuide/shareable-example" key="ImplementationGuide-shareable-example" name="Shareable ImplementationGuide Example"/>
+<artifact id="OperationDefinition/shareable-example" key="OperationDefinition-shareable-example" name="Shareable OperationDefinition Example"/>
+<artifact id="StructureMap/shareable-example" key="StructureMap-shareable-example" name="Shareable Structure Map Example"/>
+<artifact id="GraphDefinition/shareable-example" key="GraphDefinition-shareable-example" name="ShareableGraphDefinitionExample"/>
+<artifact id="Group/shareable-example" key="Group-shareable-example" name="ShareableGroupExample"/>
+<artifact id="SearchParameter/shareable-example" key="SearchParameter-shareable-example" name="ShareableSearchParameterExample"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-shouldTraceDependency" key="StructureDefinition-cqf-shouldTraceDependency" name="Should Trace Dependency"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-softwaresystem" key="StructureDefinition-cqf-softwaresystem" name="Software System"/>
+<artifact deprecated="true" id="ValueSet/software-system-type" key="ValueSet-software-system-type" name="Software System Type"/>
+<artifact deprecated="true" id="CodeSystem/software-system-type-codes" key="CodeSystem-software-system-type" name="Software System Type Codes"/>
+<artifact id="StructureDefinition/shareable-example" key="StructureDefinition-shareable-example" name="Specific health concern(s) (Shareable Example)"/>
+<artifact id="ValueSet/shareable-example" key="ValueSet-shareable-example" name="Specific health concern(s) Codes (Shareable Example)"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-testArtifact" key="StructureDefinition-cqf-testArtifact" name="Test Artifact"/>
+<artifact deprecated="true" id="StructureDefinition/cqf-valueFilter" key="StructureDefinition-cqf-valueFilter" name="Value Filter"/>
+<artifact deprecated="true" id="ValueSet/value-filter-comparator" key="ValueSet-value-filter-comparator" name="Value Filter Comparator"/>
+<artifact deprecated="true" id="CareTeam/definition-example" key="CareTeam-definition-example" name="definition-example-careteam"/>
+<artifact deprecated="true" id="Location/definition-example" key="Location-definition-example" name="definition-example-location"/>
+<artifact deprecated="true" id="PractitionerRole/definition-example" key="PractitionerRole-definition-example" name="definition-example-practitionerrole"/>
+<artifact id="Library/manifest-example-initial-draft" key="Library-manifest-example-initial-draft" name="eCQM Annual Update 2024"/>
+<artifact deprecated="true" id="Patient/example" key="Patient-example" name="example"/>
+<artifact deprecated="true" id="CapabilityStatement/library-evaluation-service-example" key="CapabilityStatement-library-evaluation-service-example" name="library-evaluation-service-example"/>
+<artifact deprecated="true" id="Library/modelinfo-example" key="Library-modelinfo-example" name="modelinfo-example"/>
+<artifact deprecated="true" id="Observation/negation-example" key="Observation-negation-example" name="negation-example"/>
+<artifact id="Medication/publishable-example" key="Medication-publishable-example" name="Publishable Medication Example"/>
+<artifact id="MedicationKnowledge/publishable-example" key="MedicationKnowledge-publishable-example" name="Publishable MedicationKnowledge Example"/>
+<artifact id="Substance/publishable-example" key="Substance-publishable-example" name="Publishable Substance Example"/>
+<artifact deprecated="true" id="CareTeam/publishable-example" key="CareTeam-publishable-example" name="publishable-example-careteam"/>
+<artifact deprecated="true" id="CompartmentDefinition/publishable-example" key="CompartmentDefinition-publishable-example" name="publishable-example-compartmentdefinition"/>
+<artifact deprecated="true" id="Location/publishable-example" key="Location-publishable-example" name="publishable-example-location"/>
+<artifact deprecated="true" id="PractitionerRole/publishable-example" key="PractitionerRole-publishable-example" name="publishable-example-practitionerrole"/>
+<artifact deprecated="true" id="Parameters/qicore-modelinfosettings" key="Parameters-qicore-modelinfosettings" name="qicore-modelinfosettings"/>
+<artifact id="Medication/shareable-example" key="Medication-shareable-example" name="Shareable Medication Example"/>
+<artifact id="MedicationKnowledge/shareable-example" key="MedicationKnowledge-shareable-example" name="Shareable MedicationKnowledge Example"/>
+<artifact id="Substance/shareable-example" key="Substance-shareable-example" name="Shareable Substance Example"/>
+<artifact deprecated="true" id="CareTeam/shareable-example" key="CareTeam-shareable-example" name="shareable-example-careteam"/>
+<artifact deprecated="true" id="CompartmentDefinition/shareable-example" key="CompartmentDefinition-shareable-example" name="shareable-example-compartmentdefinition"/>
+<artifact deprecated="true" id="Location/shareable-example" key="Location-shareable-example" name="shareable-example-location"/>
+<artifact deprecated="true" id="PractitionerRole/shareable-example" key="PractitionerRole-shareable-example" name="shareable-example-practitionerrole"/>
+<artifact deprecated="true" id="Device/software-system-example" key="Device-software-system-example" name="software-system-example"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page deprecated="true" key="acknowledgements" name="Acknowledgements"/>
+<page deprecated="true" key="artifact-conformance" name="Artifact Conformance"/>
+<page key="artifact-conventions" name="Artifact Conventions"/>
+<page key="artifact-lifecycle" name="Artifact Lifecycle"/>
+<page key="version-manifest" name="Artifact Manifest"/>
+<page key="artifact-repository-service" name="Artifact Repository Service"/>
+<page key="artifact-signing" name="Artifact Signing"/>
+<page key="artifact-terminology-service" name="Artifact Terminology Service"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page deprecated="true" key="bibliography" name="Bibliography"/>
+<page key="capabilities" name="Capabilities"/>
+<page deprecated="true" key="content-lifecycle" name="Content Lifecycle"/>
+<page key="distribution" name="Distribution"/>
+<page key="downloads" name="Downloads"/>
+<page key="extensions" name="Extensions"/>
+<page deprecated="true" key="glossary" name="Glossary"/>
+<page key="index" name="Home"/>
+<page key="introduction" name="Introduction"/>
+<page deprecated="true" key="naming-conventions" name="Naming Conventions"/>
+<page key="operations" name="Operations"/>
+<page key="packaging" name="Packaging"/>
+<page key="profiles" name="Profiles"/>
+<page key="publishing" name="Publishing"/>
+<page key="publishing-fhir-package" name="Publishing and Downloading FHIR (NPM) Packages"/>
+<page deprecated="true" key="references" name="References"/>
+<page key="toc" name="Table of Contents"/>
+<page key="terminology" name="Terminology"/>
+<page key="testing" name="Testing"/>
+<page deprecated="true" key="using-cql" name="Using Cql"/>
+<page key="changes" name="Version History"/>
+</specification>

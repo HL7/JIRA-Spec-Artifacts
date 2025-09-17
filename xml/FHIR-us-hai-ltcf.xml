@@ -1,31 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification gitUrl="https://github.com/HL7/HAI-LTCF" url="http://hl7.org/fhir/us/hai-ltcf" ciUrl="http://build.fhir.org/ig/HL7/HAI-LTCF" defaultWorkgroup="pher" defaultVersion="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="0.1"/>
-  <artifactPageExtension value="-definitions"/>
-  <artifactPageExtension value="-examples"/>
-  <artifactPageExtension value="-mappings"/>
-  <artifact name="Questionnaire" key="Questionnaire" deprecated="true"/>
-  <artifact name="QuestionnaireAnswers" key="QuestionnaireAnswers" deprecated="true"/>
-  <artifact name="Authoring Device example for Long Term Care Facility" key="Device-hai-ltcf-authoring-device" id="Device/hai-ltcf-authoring-device"/>
-  <artifact name="Long Term Care Facility Group example" key="Group-hai-ltcf-group-1" id="Group/hai-ltcf-group-1"/>
-  <artifact name="Long Term Care Facility Resident example" key="Patient-hai-ltcf-resident-1" id="Patient/hai-ltcf-resident-1"/>
-  <artifact name="HAI Laboratory Identified MDRO or CDI Event Report for LTCF" key="Questionnaire-hai-ltcf-questionnaire-mdro-cdi-event" id="Questionnaire/hai-ltcf-questionnaire-mdro-cdi-event"/>
-  <artifact name="MDRO and CDI LabID Event Reporting Monthly Summary Data for LTCF" key="Questionnaire-hai-ltcf-questionnaire-mdro-cdi-summary" id="Questionnaire/hai-ltcf-questionnaire-mdro-cdi-summary"/>
-  <artifact name="MDRO and CDI Monthly Summary Data for LTCF" key="QuestionnaireResponse-hai-ltcf-questionnaireresponse-mdro-cdi-summary" id="QuestionnaireResponse/hai-ltcf-questionnaireresponse-mdro-cdi-summary"/>
-  <artifact name="MDRO and CDI Event Report for LTCF" key="QuestionnaireResponse-hai-ltcf-questionnaireresponse-mdro-cdi-event" id="QuestionnaireResponse/hai-ltcf-questionnaireresponse-mdro-cdi-event"/>
-  <artifact name="Healthcare Associated Infection for Long Term Care Population Summary Questionnaire" key="StructureDefinition-hai-ltc-population-summary-questionnaire" id="StructureDefinition/hai-ltc-population-summary-questionnaire"/>
-  <artifact name="Healthcare Associated Infection for Long Term Care Population Summary QuestionnaireResponse" key="StructureDefinition-hai-ltc-population-summary-questionnaireresponse" id="StructureDefinition/hai-ltc-population-summary-questionnaireresponse"/>
-  <artifact name="Healthcare Associated Infection for Long Term Care Single-Person Report Questionnaire" key="StructureDefinition-hai-ltc-single-person-report-questionnaire" id="StructureDefinition/hai-ltc-single-person-report-questionnaire"/>
-  <artifact name="Healthcare Associated Infection for Long Term Care Single-Person Report QuestionnaireResponse" key="StructureDefinition-hai-ltc-single-person-report-questionnaireresponse" id="StructureDefinition/hai-ltc-single-person-report-questionnaireresponse"/>
-  <artifact name="LTCCapabilityStatementServer" key="CapabilityStatement-hair-ltcf-capability-server" id="CapabilityStatement/hair-ltcf-capability-server"/>
-  <artifact name="LTCCapabilityStatementClient" key="CapabilityStatement-hair-ltcf-capability-client" id="CapabilityStatement/hair-ltcf-capability-client"/>
-  <page name="Healthcare Associated Infection Reports (FHIR)" key="index"/>
-  <page name="Background" key="background"/>
-  <page name="This Specificiation" key="this_specificiation"/>
-  <page name="Downloads" key="downloads"/>
-  <page name="(NA)" key="NA"/>
-  <page name="(many)" key="many"/>
-  <page name="(profiles)" key="profiles"/>
-  <page name="mappings" key="mappings"/>
-  <page name="terminologies" key="terminologies"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/hai-ltcf/2019Sep" ciUrl="http://build.fhir.org/ig/HL7/HAI-LTCF" defaultVersion="1.1.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/HAI-LTCF" url="http://hl7.org/fhir/us/hai-ltcf">
+  <version code="current" url="http://build.fhir.org/ig/HL7/HAI-LTCF" />
+  <version code="1.1.0" url="http://hl7.org/fhir/us/hai-ltcf/STU1.1"/>
+  <version code="1.0.0" url="http://hl7.org/fhir/us/hai-ltcf/STU1"/>
+  <version code="0.1.0" url="http://hl7.org/fhir/us/hai-ltcf/2019Sep"/>
+  <version code="0.1" deprecated="true" />
+  <artifactPageExtension value="-definitions" />
+  <artifactPageExtension value="-examples" />
+  <artifactPageExtension value="-mappings" />
+  <artifact id="Device/hai-ltcf-authoring-device" key="Device-hai-ltcf-authoring-device" name="Authoring Device example for Long Term Care Facility" />
+  <artifact id="Questionnaire/hai-ltcf-questionnaire-mdro-cdi-event" key="Questionnaire-hai-ltcf-questionnaire-mdro-cdi-event" name="HAI Laboratory Identified MDRO or CDI Event Report for LTCF" />
+  <artifact id="StructureDefinition/hai-ltc-single-person-report-questionnaireresponse" key="StructureDefinition-hai-ltc-single-person-report-questionnaireresponse" name="Healthcare Associated Infection for Long Term Care Single-Person Report QuestionnaireResponse" />
+  <artifact id="StructureDefinition/hai-ltc-population-summary-questionnaire" key="StructureDefinition-hai-ltc-population-summary-questionnaire" name="Healthcare Associated Infection for Long Term Care Population Summary Questionnaire" />
+  <artifact id="StructureDefinition/hai-ltc-population-summary-questionnaireresponse" key="StructureDefinition-hai-ltc-population-summary-questionnaireresponse" name="Healthcare Associated Infection for Long Term Care Population Summary QuestionnaireResponse" />
+  <artifact id="StructureDefinition/hai-ltc-single-person-report-questionnaire" key="StructureDefinition-hai-ltc-single-person-report-questionnaire" name="Healthcare Associated Infection for Long Term Care Single-Person Report Questionnaire" />
+  <artifact id="CapabilityStatement/hair-ltcf-capability-client" key="CapabilityStatement-hair-ltcf-capability-client" name="LTCCapabilityStatementClient" />
+  <artifact id="CapabilityStatement/hair-ltcf-capability-server" key="CapabilityStatement-hair-ltcf-capability-server" name="LTCCapabilityStatementServer" />
+  <artifact id="Group/hai-ltcf-group-1" key="Group-hai-ltcf-group-1" name="Long Term Care Facility Group example" />
+  <artifact id="Patient/hai-ltcf-resident-1" key="Patient-hai-ltcf-resident-1" name="Long Term Care Facility Resident example" />
+  <artifact id="QuestionnaireResponse/hai-ltcf-questionnaireresponse-mdro-cdi-event" key="QuestionnaireResponse-hai-ltcf-questionnaireresponse-mdro-cdi-event" name="MDRO and CDI Event Report for LTCF" />
+  <artifact id="Questionnaire/hai-ltcf-questionnaire-mdro-cdi-summary" key="Questionnaire-hai-ltcf-questionnaire-mdro-cdi-summary" name="MDRO and CDI LabID Event Reporting Monthly Summary Data for LTCF" />
+  <artifact id="QuestionnaireResponse/hai-ltcf-questionnaireresponse-mdro-cdi-summary" key="QuestionnaireResponse-hai-ltcf-questionnaireresponse-mdro-cdi-summary" name="MDRO and CDI Monthly Summary Data for LTCF" />
+  <artifact deprecated="true" id="CodeSystem/hsloc" key="CodeSystem-hsloc" name="NHSN Healthcare Facility Patient Care Location (HSLOC)" />
+  <artifact deprecated="true" id="ValueSet/nhsn-healthcare-service-location-code" key="ValueSet-nhsn-healthcare-service-location-code" name="NHSN Healthcare Service Location Code" />
+  <artifact deprecated="true" id="ValueSet/nhsn-population-summary-report-type-code" key="ValueSet-nhsn-population-summary-report-type-code" name="NHSN Population Summary Report Type Code" />
+  <artifact deprecated="true" id="ValueSet/nhsn-primary-resident-service-type" key="ValueSet-nhsn-primary-resident-service-type" name="NHSN Primary Resident Service Type" />
+  <artifact deprecated="true" id="CodeSystem/cdcnhsn" key="CodeSystem-cdcnhsn" name="NHSN Surveillance System Codes (CDCNHSN)" />
+  <artifact deprecated="true" key="Questionnaire" name="Questionnaire" />
+  <artifact deprecated="true" key="QuestionnaireAnswers" name="QuestionnaireAnswers" />
+  <artifact id="Parameters/expansion-parameters-lctf" key="Parameters-expansion-parameters-lctf" name="expansion-parameters-lctf" />
+  <page key="NA" name="(NA)" />
+  <page key="many" name="(many)" />
+  <page deprecated="true" key="profiles" name="(profiles)" />
+  <page key="artifacts" name="Artifacts Summary" />
+  <page key="background" name="Background" />
+  <page key="downloads" name="Downloads" />
+  <page key="index" name="Home" />
+  <page key="toc" name="Table of Contents" />
+  <page deprecated="true" key="this_specificiation" name="This Specificiation" />
+  <page key="this_specification" name="This Specification" />
+  <page deprecated="true" key="mappings" name="mappings" />
+  <page deprecated="true" key="terminologies" name="terminologies" />
 </specification>

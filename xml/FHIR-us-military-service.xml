@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    ballotUrl="http://hl7.org/fhir/us/military-service/2021Sep" 
-    ciUrl="http://build.fhir.org/ig/HL7/fhir-military-service" 
-    defaultVersion="0.1.0" 
-    defaultWorkgroup="cgp" 
-    gitUrl="https://github.com/HL7/fhir-military-service" 
-    url="http://hl7.org/fhir/us/military-service">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/military-service/2021Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-military-service" defaultVersion="1.0.0" defaultWorkgroup="cgp" gitUrl="https://github.com/HL7/fhir-military-service" url="http://hl7.org/fhir/us/military-service">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-military-service"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/military-service/STU1"/>
 <version code="0.1.0" url="http://hl7.org/fhir/us/military-service/2021Sep"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -43,11 +38,12 @@
 <artifact deprecated="true" id="ValueSet/mcode-condition-status-trend-vs" key="condition-status-trend-value-set" name="Condition Status Trend Value Set"/>
 <artifact deprecated="true" id="StructureDefinition/mcode-condition-related" key="StructureDefinition-mcode-condition-related" name="Condition related to resource"/>
 <artifact deprecated="true" id="ValueSet/mcode-dna-change-type-vs" key="ValueSet-mcode-dna-change-type-vs" name="DNA Change Type Value Set"/>
-<artifact id="StructureDefinition/deploymentepisode" key="StructureDefinition-deploymentepisode" name="Deployment Episode"/>
+<artifact deprecated="true" id="StructureDefinition/deploymentepisode" key="StructureDefinition-deploymentepisode" name="Deployment Episode"/>
 <artifact id="ValueSet/military-service-deployment-episode-mission-vs" key="ValueSet-military-service-deployment-episode-mission-vs" name="Deployment Episode Type Value Set"/>
-<artifact id="Observation/DeploymentEpisode1" key="Observation-DeploymentEpisode1" name="DeploymentEpisode1"/>
-<artifact id="Observation/DeploymentEpisode2" key="Observation-DeploymentEpisode2" name="DeploymentEpisode2"/>
-<artifact id="Observation/DeploymentEpisode" key="Observation-DeploymentEpisode" name="DeploymentEpisode3"/>
+<artifact id="StructureDefinition/deployment-history-episode" key="StructureDefinition-deploymenthistoryepisode" name="Deployment History Episode"/>
+<artifact deprecated="true" id="Observation/DeploymentEpisode1" key="Observation-DeploymentEpisode1" name="DeploymentEpisode1"/>
+<artifact deprecated="true" id="Observation/DeploymentEpisode2" key="Observation-DeploymentEpisode2" name="DeploymentEpisode2"/>
+<artifact deprecated="true" id="Observation/DeploymentEpisode" key="Observation-DeploymentEpisode" name="DeploymentEpisode3"/>
 <artifact id="ValueSet/military-service-discharge-status-vs" key="ValueSet-military-service-discharge-status-vs" name="Discharge Status Value Set"/>
 <artifact deprecated="true" id="StructureDefinition/mcode-ecog-performance-status" key="ecog-performance-status" name="ECOG Performance Status"/>
 <artifact deprecated="true" id="ValueSet/elixhauser-alcohol-abuse-vs" key="ValueSet-elixhauser-alcohol-abuse-vs" name="Elixhauser Comorbid Condition Value Set for Alcohol Abuse"/>
@@ -89,7 +85,7 @@
 <artifact deprecated="true" id="ValueSet/elixhauser-cancer-solid-tumor-in-situ-vs" key="ValueSet-elixhauser-cancer-solid-tumor-in-situ-vs" name="Elixhauser Comorbid Condition Value Set for malignant solid tumors in situ"/>
 <artifact deprecated="true" id="ValueSet/elixhauser-cancer-solid-tumor-malignant-vs" key="ValueSet-elixhauser-cancer-solid-tumor-malignant-vs" name="Elixhauser Comorbid Condition Value Set for malignant solid tumors without metastases"/>
 <artifact deprecated="true" id="CodeSystem/comorbidities-elixhauser-cs" key="CodeSystem-comorbidities-elixhauser-cs" name="Elixhauser Comorbidity Categories"/>
-<artifact id="StructureDefinition/odh-EmploymentHistoryEpisode" key="StructureDefinition-odh-EmploymentHistoryEpisode" name="Employment History Episode"/>
+<artifact deprecated="true" id="StructureDefinition/odh-EmploymentHistoryEpisode" key="StructureDefinition-odh-EmploymentHistoryEpisode" name="Employment History Episode"/>
 <artifact deprecated="true" id="StructureDefinition/mcode-evidence-type" key="StructureDefinition-mcode-evidence-type" name="Evidence Type"/>
 <artifact deprecated="true" id="Extension/mcode-evidence-type-extension" key="evidence-type-extension" name="Evidence Type Extension"/>
 <artifact deprecated="true" id="StructureDefinition/mcode-genetic-specimen" key="genetic-specimen" name="Genetic Specimen"/>
@@ -111,13 +107,14 @@
 <artifact id="StructureDefinition/military-service-Occupation" key="StructureDefinition-military-service-Occupation" name="Military Occupation"/>
 <artifact id="ValueSet/military-service-military-occupation-vs" key="ValueSet-military-service-military-occupation-vs" name="Military Occupation Value Set"/>
 <artifact id="StructureDefinition/military-service-episode" key="StructureDefinition-military-service-episode" name="Military Service Episode"/>
-<artifact id="Observation/MilitaryServiceEpisode1" key="Observation-MilitaryServiceEpisode1" name="MilitaryServiceEpisode1"/>
+<artifact id="CodeSystem/military-service-code-system" key="CodeSystem-military-service-code-system" name="Military Service History and Status Code System"/>
+<artifact deprecated="true" id="Observation/MilitaryServiceEpisode1" key="Observation-MilitaryServiceEpisode1" name="MilitaryServiceEpisode1"/>
 <artifact deprecated="true" key="Observation" name="Observation"/>
 <artifact deprecated="true" id="ValueSet/mcode-observation-codes-distant-metastases-vs" key="ValueSet-mcode-observation-codes-distant-metastases-vs" name="Observation Codes for Distant Metastases Category"/>
 <artifact deprecated="true" id="ValueSet/mcode-observation-codes-primary-tumor-vs" key="ValueSet-mcode-observation-codes-primary-tumor-vs" name="Observation Codes for Primary Tumor Category"/>
 <artifact deprecated="true" id="ValueSet/mcode-observation-codes-regional-nodes-vs" key="ValueSet-mcode-observation-codes-regional-nodes-vs" name="Observation Codes for Regional Node Category"/>
 <artifact deprecated="true" id="ValueSet/mcode-observation-codes-stage-group-vs" key="ValueSet-mcode-observation-codes-stage-group-vs" name="Observation Codes for Stage Group Category"/>
-<artifact id="ValueSet/military-service-paygrade-vs" key="ValueSet-military-service-paygrade-vs" name="Pay Grade Code Value Set"/>
+<artifact deprecated="true" id="ValueSet/military-service-paygrade-vs" key="ValueSet-military-service-paygrade-vs" name="Pay Grade Code Value Set"/>
 <artifact deprecated="true" id="ValueSet/mcode-present-absent-unknown" key="ValueSet-mcode-present-absent-unknown" name="Present-Absent-Unknown"/>
 <artifact deprecated="true" id="StructureDefinition/mcode-primary-cancer-condition" key="primary-cancer-condition" name="Primary Cancer Condition"/>
 <artifact deprecated="true" id="ValueSet/mcode-primary-or-uncertain-behavior-cancer-disorder-vs" key="primary-or-uncertain-behavior-cancer-disorder-value-set" name="Primary or Uncertain Behavior Cancer Disorder Value Set"/>
@@ -140,7 +137,7 @@
 <artifact deprecated="true" id="StructureDefinition/mcode-radiotherapy-volume" key="StructureDefinition-mcode-radiotherapy-volume" name="Radiotherapy Volume"/>
 <artifact deprecated="true" id="ValueSet/mcode-radiotherapy-volume-type-vs" key="ValueSet-mcode-radiotherapy-volume-type-vs" name="Radiotherapy Volume Type Value Set"/>
 <artifact deprecated="true" id="Extension/mcode-related-primary-cancer-condition-extension" key="related-primary-cancer-condition-extension" name="Related Primary Cancer Condition Extension"/>
-<artifact id="CodeSystem/military-service-solor-extension" key="CodeSystem-military-service-solor-extension" name="SOLOR Military Service History and Status"/>
+<artifact deprecated="true" id="CodeSystem/military-service-solor-extension" key="CodeSystem-military-service-solor-extension" name="SOLOR Military Service History and Status"/>
 <artifact deprecated="true" id="SearchParameter/Patient-id" key="SearchParameter-Patient-id" name="Search by _id in Patients with multipleOr"/>
 <artifact deprecated="true" id="SearchParameter/Condition-code" key="SearchParameter-Condition-code" name="Search by code:in in Conditions"/>
 <artifact deprecated="true" id="StructureDefinition/mcode-secondary-cancer-condition" key="secondary-cancer-condition" name="Secondary Cancer Condition"/>
@@ -183,7 +180,7 @@
 <artifact deprecated="true" id="ValueSet/mcode-units-of-length-value-set" key="units-of-length-value-set" name="Units of Length Value Set"/>
 <artifact deprecated="true" id="ValueSet/mcode-tumor-size-units-vs" key="ValueSet-mcode-tumor-size-units-vs" name="Units of tumor size value set"/>
 <artifact deprecated="true" key="ValueSet" name="ValueSet"/>
-<artifact id="OperationDefinition/VeteranStatus" key="OperationDefinition-VeteranStatus" name="Veteran Status Verification and Confirmation - Operation"/>
+<artifact deprecated="true" id="OperationDefinition/VeteranStatus" key="OperationDefinition-VeteranStatus" name="Veteran Status Verification and Confirmation - Operation"/>
 <artifact deprecated="true" id="Observation/binet-stage-group-A" key="Observation-binet-stage-group-A" name="binet-stage-group-A"/>
 <artifact deprecated="true" id="Observation/bodyheight-jenny-m-2018-03-06" key="Observation-bodyheight-jenny-m-2018-03-06" name="bodyheight-jenny-m-2018-03-06"/>
 <artifact deprecated="true" id="Observation/bodyweight-jenny-m-2018-03-16" key="Observation-bodyweight-jenny-m-2018-03-16" name="bodyweight-jenny-m-2018-03-16"/>
@@ -220,6 +217,8 @@
 <artifact deprecated="true" id="Specimen/genetic-specimen-lung" key="Specimen-genetic-specimen-lung" name="genetic-specimen-lung"/>
 <artifact deprecated="true" id="Observation/genomic-region-studied-jenny-m" key="Observation-genomic-region-studied-jenny-m" name="genomic-region-studied-jenny-m"/>
 <artifact deprecated="true" id="Observation/genomic-region-studied-stk11" key="Observation-genomic-region-studied-stk11" name="genomic-region-studied-stk11"/>
+<artifact id="Patient/huffman-crystal-example-veteran" key="Patient-huffman-crystal-example-veteran" name="huffman-crystal-example-veteran"/>
+<artifact id="Patient/hugo-cross-example-veteran" key="Patient-hugo-cross-example-veteran" name="hugo-cross-example-veteran"/>
 <artifact deprecated="true" id="BodyStructure/jenny-m-chest-wall-lymph-nodes-treatment-volume" key="BodyStructure-jenny-m-chest-wall-lymph-nodes-treatment-volume" name="jenny-m-chest-wall-lymph-nodes-treatment-volume"/>
 <artifact deprecated="true" id="BodyStructure/jenny-m-chest-wall-treatment-volume" key="BodyStructure-jenny-m-chest-wall-treatment-volume" name="jenny-m-chest-wall-treatment-volume"/>
 <artifact deprecated="true" id="BodyStructure/john-anyperson-treatment-volume" key="BodyStructure-john-anyperson-treatment-volume" name="john-anyperson-treatment-volume"/>
@@ -271,12 +270,16 @@
 <artifact deprecated="true" id="CapabilityStatement/mcode-sender-patients-in-group" key="CapabilityStatement-mcode-sender-patients-in-group" name="mcode-sender-patients-in-group"/>
 <artifact deprecated="true" id="CapabilityStatement/mcode-sender-patients-with-cancer-condition" key="CapabilityStatement-mcode-sender-patients-with-cancer-condition" name="mcode-sender-patients-with-cancer-condition"/>
 <artifact deprecated="true" id="Observation/observation-smoking-history-jenny-m" key="Observation-observation-smoking-history-jenny-m" name="observation-smoking-history-jenny-m"/>
+<artifact id="Observation/philip-scott-example-deployment-history-episode" key="Observation-philip-scott-example-deployment-history-episode" name="philip-scott-example-deployment-history-episode"/>
+<artifact id="Observation/philip-scott-example-military-occupation" key="Observation-philip-scott-example-military-occupation" name="philip-scott-example-military-occupation"/>
+<artifact id="Observation/philip-scott-example-military-service-episode" key="Observation-philip-scott-example-military-service-episode" name="philip-scott-example-military-service-episode"/>
+<artifact id="Patient/philip-scott-example-veteran" key="Patient-philip-scott-example-veteran" name="philip-scott-example-veteran"/>
 <artifact deprecated="true" id="Condition/primary-cancer-condition-breast" key="Condition-primary-cancer-condition-breast" name="primary-cancer-condition-breast"/>
 <artifact deprecated="true" id="Condition/primary-cancer-condition-cll" key="Condition-primary-cancer-condition-cll" name="primary-cancer-condition-cll"/>
 <artifact deprecated="true" id="Condition/primary-cancer-condition-jenny-m" key="Condition-primary-cancer-condition-jenny-m" name="primary-cancer-condition-jenny-m"/>
 <artifact deprecated="true" id="Condition/primary-cancer-condition-nsclc" key="Condition-primary-cancer-condition-nsclc" name="primary-cancer-condition-nsclc"/>
 <artifact deprecated="true" id="Procedure/radiotherapy-treatment-summary-chest-wall-jenny-m" key="Procedure-radiotherapy-treatment-summary-chest-wall-jenny-m" name="radiotherapy-treatment-summary-chest-wall-jenny-m"/>
-<artifact id="Patient/sam-share-ssgt-veteran" key="Patient-sam-share-ssgt-veteran" name="sam-share-ssgt-veteran"/>
+<artifact deprecated="true" id="Patient/sam-share-ssgt-veteran" key="Patient-sam-share-ssgt-veteran" name="sam-share-ssgt-veteran"/>
 <artifact deprecated="true" id="Condition/secondary-cancer-condition-brain-mets" key="Condition-secondary-cancer-condition-brain-mets" name="secondary-cancer-condition-brain-mets"/>
 <artifact deprecated="true" id="Procedure/teleradiotherapy-treatment-phase-boost-jenny-m" key="Procedure-teleradiotherapy-treatment-phase-boost-jenny-m" name="teleradiotherapy-treatment-phase-boost-jenny-m"/>
 <artifact deprecated="true" id="Procedure/teleradiotherapy-treatment-phase-chest-wall-jenny-m" key="Procedure-teleradiotherapy-treatment-phase-chest-wall-jenny-m" name="teleradiotherapy-treatment-phase-chest-wall-jenny-m"/>
@@ -333,7 +336,7 @@
 <page key="conformance-general" name="Conformance Expectations"/>
 <page deprecated="true" key="dictionary" name="Data Dictionary"/>
 <page deprecated="true" key="group-disease" name="Disease Characterization"/>
-<page deprecated="true" key="downloads" name="Download Specification"/>
+<page key="downloads" name="Downloads"/>
 <page key="examples" name="Examples"/>
 <page deprecated="true" key="extensions" name="Extensions"/>
 <page deprecated="true" key="group-genomics" name="Genomics"/>
@@ -341,6 +344,7 @@
 <page key="index" name="Home"/>
 <page deprecated="true" key="conformance-patients" name="Identifying mCODE Patients"/>
 <page deprecated="true" key="implementationnotes" name="Implementation Notes"/>
+<page key="militaryhistory" name="Military History"/>
 <page deprecated="true" key="group-outcome" name="Outcomes"/>
 <page deprecated="true" key="group-patient" name="Patient Information"/>
 <page key="conformance-profiles" name="Profile Conformance"/>
@@ -348,4 +352,5 @@
 <page key="terminology" name="Terminology"/>
 <page deprecated="true" key="group-treatment" name="Treatments"/>
 <page deprecated="true" key="valuesets" name="Value Sets"/>
+<page key="veteran" name="Veteran"/>
 </specification>
