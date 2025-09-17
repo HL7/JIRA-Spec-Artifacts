@@ -7,6 +7,7 @@
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:include schemaLocation="workgroups.xsd"/>
+  <xs:include schemaLocation="accelerators.xsd"/>
   <xs:element name="specification">
     <xs:annotation>
       <xs:documentation>All content related to a single HL7 specification.</xs:documentation>
@@ -80,6 +81,11 @@
             <xs:attribute name="workgroup" type="WorkGroup" use="optional">
               <xs:annotation>
                 <xs:documentation>The work group typically responsible for issues relating to this artifact</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="accellerator" type="Accelerator" use="optional">
+              <xs:annotation>
+                <xs:documentation>The accelerator associated with this specification (if any)</xs:documentation>
               </xs:annotation>
             </xs:attribute>
             <xs:attribute name="deprecated" type="xs:boolean" default="false">

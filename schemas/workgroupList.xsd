@@ -32,7 +32,7 @@
               </xs:annotation>
               <xs:simpleType>
                 <xs:restriction base="xs:NMTOKEN">
-                  <xs:pattern value="[a-z][a-z0-9\-]+"/>
+                  <xs:pattern value="(Vocab)|([a-z][a-z0-9\-]+)"/>
                 </xs:restriction>
               </xs:simpleType>
             </xs:attribute>
@@ -50,6 +50,16 @@
               <xs:annotation>
                 <xs:documentation>This is set to true for groups that can no longer be assigned responsibility for tracker items, but which may have had responsibility for historical items</xs:documentation>
               </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="listserv" use="optional">
+              <xs:annotation>
+                <xs:documentation>The email address used for the work group on the HL7 website.</xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="[^@]+@[^\.]+\..+"/>
+                </xs:restriction>
+              </xs:simpleType>
             </xs:attribute>
           </xs:complexType>
         </xs:element>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  When this schema is changed, the following code must be updated to align:
+  - Scriptrunner REST Endpoints: uploadBallotSpreadsheet
+  - BALDEF Workflow (1 class)
+  -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="accelerators">
+    <xs:annotation>
+      <xs:documentation>Collector for all HL7 accelerators that can be responsible for specifications</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="accelerator" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>A single accelerator that can have responsibility for an HL7 specification item</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:attribute name="key" use="required">
+              <xs:annotation>
+                <xs:documentation>The key stored in the JIRA project.  This should not change or be removed even if a accelerator is renamed or dissolved</xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:NMTOKEN">
+                  <xs:pattern value="[a-z][a-z0-9\-]+"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="webcode" use="optional">
+              <xs:annotation>
+                <xs:documentation>The code used for the work group on the HL7 website.</xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="[a-z][a-z0-9\-]+(/[a-z][a-z0-9\-]+)?"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="name" use="required">
+              <xs:annotation>
+                <xs:documentation>The display name for the accelerator.  This can be update if the accelerator changes its name.</xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="[A-Z][^\s]+([\s][^\s]+)*"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="deprecated" type="xs:boolean" default="false">
+              <xs:annotation>
+                <xs:documentation>This is set to true for accelerators that can no longer be assigned responsibility for tracker items, but which may have had responsibility for historical items</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="listserv" use="optional">
+              <xs:annotation>
+                <xs:documentation>The primary email address used for the accelerator on the HL7 website.</xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="[^@]+@[^\.]+\..+"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:unique name="key-unique">
+      <xs:selector xpath="accelerator"/>
+      <xs:field xpath="@key"/>
+    </xs:unique>
+    <xs:unique name="name-unique">
+      <xs:selector xpath="accelerator"/>
+      <xs:field xpath="@name"/>
+    </xs:unique>
+  </xs:element>
+</xs:schema>

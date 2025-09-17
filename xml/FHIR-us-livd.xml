@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/livd/2021Jan" ciUrl="http://build.fhir.org/ig/HL7/livd" defaultVersion="0.3.0" defaultWorkgroup="oo" gitUrl="https://github.com/HL7/livd" url="http://hl7.org/fhir/uv/livd">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/livd/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/livd" defaultVersion="1.0.0" defaultWorkgroup="oo" gitUrl="https://github.com/HL7/livd" url="http://hl7.org/fhir/uv/livd">
 <version code="current" url="http://build.fhir.org/ig/HL7/livd"/>
-<version code="0.3.0" url="http://hl7.org/fhir/uv/livd/2021Jan"/>
+<version code="1.0.0" url="http://hl7.org/fhir/uv/livd/STU1"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/livd/2024Jan"/>
+<version code="0.3.0" deprecated="true" url="http://hl7.org/fhir/uv/livd/2021Jan"/>
 <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/uv/livd/2019Sep"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/uv/livd/2018Sep"/>
 <version code="0.1" deprecated="true"/>
@@ -13,34 +15,34 @@
 <artifact id="StructureDefinition/catalog-uv-livd" key="StructureDefinition-catalog-uv-livd" name="LIVD Catalog"/>
 <artifact id="StructureDefinition/ext-device" key="StructureDefinition-ext-device" name="LIVD Device"/>
 <artifact id="StructureDefinition/devicedefinition-uv-livd" key="StructureDefinition-devicedefinition-uv-livd" name="LIVD DeviceDefinition"/>
-<artifact id="StructureDefinition/codesystem-loinc-frag-uv-livd" key="StructureDefinition-codesystem-loinc-frag-uv-livd" name="LIVD LOINC Fragment CodeSystem"/>
+<artifact deprecated="true" id="StructureDefinition/codesystem-loinc-frag-uv-livd" key="StructureDefinition-codesystem-loinc-frag-uv-livd" name="LIVD LOINC Fragment CodeSystem"/>
 <artifact id="StructureDefinition/observationdefinition-uv-livd" key="ObservationDefinition" name="LIVD ObservationDefinition"/>
 <artifact id="StructureDefinition/ext-region" key="StructureDefinition-ext-region" name="LIVD Region"/>
-<artifact id="StructureDefinition/conceptmap-resultvalue-uv-livd" key="StructureDefinition-conceptmap-resultvalue-uv-livd" name="LIVD Result Value ConceptMap"/>
-<artifact id="ValueSet/resultvalue-mappings-livd" key="ValueSet-resultvalue-mappings-livd" name="LIVD Result Value Mappings value set"/>
-<artifact id="ValueSet/resultvalue-livd" key="ValueSet-resultvalue-livd" name="LIVD Result Value value set"/>
-<artifact id="StructureDefinition/codesystem-snomed-frag-uv-livd" key="StructureDefinition-codesystem-snomed-frag-uv-livd" name="LIVD SNOMED CT Fragment CodeSystem"/>
+<artifact deprecated="true" id="StructureDefinition/conceptmap-resultvalue-uv-livd" key="StructureDefinition-conceptmap-resultvalue-uv-livd" name="LIVD Result Value ConceptMap"/>
+<artifact deprecated="true" id="ValueSet/resultvalue-mappings-livd" key="ValueSet-resultvalue-mappings-livd" name="LIVD Result Value Mappings value set"/>
+<artifact deprecated="true" id="ValueSet/resultvalue-livd" key="ValueSet-resultvalue-livd" name="LIVD Result Value value set"/>
+<artifact deprecated="true" id="StructureDefinition/codesystem-snomed-frag-uv-livd" key="StructureDefinition-codesystem-snomed-frag-uv-livd" name="LIVD SNOMED CT Fragment CodeSystem"/>
 <artifact id="StructureDefinition/ext-analyte" key="StructureDefinition-ext-capability" name="LIVD Test Analyte"/>
 <artifact id="StructureDefinition/conceptmap-testcode-uv-livd" key="StructureDefinition-conceptmap-uv-livd" name="LIVD Test Code ConceptMap"/>
 <artifact id="ValueSet/testcode-mappings-livd" key="ValueSet-loinc-livd" name="LIVD Test Code Mappings value set"/>
 <artifact id="StructureDefinition/valueset-uv-livd" key="StructureDefinition-valueset-uv-livd" name="LIVD ValueSet"/>
 <artifact id="StructureDefinition/ext-vendorReferenceIdentifier" key="StructureDefinition-ext-vendorReferenceIdentifier" name="LIVD Vendor Reference Identifier"/>
-<artifact id="StructureDefinition/codesystem-vendor-result-frag-uv-livd" key="StructureDefinition-codesystem-vendor-result-frag-uv-livd" name="LIVD Vendor Result Code Fragment CodeSystem"/>
+<artifact deprecated="true" id="StructureDefinition/codesystem-vendor-result-frag-uv-livd" key="StructureDefinition-codesystem-vendor-result-frag-uv-livd" name="LIVD Vendor Result Code Fragment CodeSystem"/>
 <artifact id="ValueSet/livd-bundle-type" key="ValueSet-livd-bundle-type" name="LIVD bundle type value set"/>
 <artifact id="CodeSystem/livd-device-type" key="CodeSystem-livd-device-type" name="LIVD device type code system"/>
 <artifact id="ValueSet/livd-device-type" key="ValueSet-livd-device-type" name="LIVD device type value set"/>
 <artifact id="DeviceDefinition/1faf1d64-df18-4d7a-b45d-3872ddd3f165" key="DeviceDefinition-1faf1d64-df18-4d7a-b45d-3872ddd3f165" name="LIVD example DeviceDefinition"/>
 <artifact id="ObservationDefinition/b87458ca-b29a-4244-b347-39111caf9ef2" key="ObservationDefinition-b87458ca-b29a-4244-b347-39111caf9ef2" name="LIVD example ObservationDefinition"/>
-<artifact id="ConceptMap/99797ef5-1ba3-4a6b-9b30-cf1e58c77b94" key="ConceptMap-99797ef5-1ba3-4a6b-9b30-cf1e58c77b94" name="LIVD example Result ValueConceptMap"/>
+<artifact deprecated="true" id="ConceptMap/99797ef5-1ba3-4a6b-9b30-cf1e58c77b94" key="ConceptMap-99797ef5-1ba3-4a6b-9b30-cf1e58c77b94" name="LIVD example Result ValueConceptMap"/>
 <artifact id="ConceptMap/66a4034b-6cc6-46ed-be83-343dfc51f2d7" key="ConceptMap-66a4034b-6cc6-46ed-be83-343dfc51f2d7" name="LIVD example Test Code ConceptMap"/>
 <artifact id="Bundle/livd-example" key="Bundle-livd-example" name="LIVD example bundle"/>
 <artifact id="CodeSystem/livd-section-type" key="CodeSystem-livd-section-type" name="LIVD section type code system"/>
 <artifact id="ValueSet/livd-section-type" key="ValueSet-livd-section-type" name="LIVD section type value set"/>
-<artifact id="CodeSystem/loinc-fragment-livd" key="CodeSystem-loinc-fragment-livd" name="LOINC code system fragment for LIVD"/>
+<artifact deprecated="true" id="CodeSystem/loinc-fragment-livd" key="CodeSystem-loinc-fragment-livd" name="LOINC code system fragment for LIVD"/>
 <artifact id="Bundle/livd-example-roche-qual" key="Bundle-livd-example-roche-qual" name="Roche qualitative LIVD example bundle"/>
 <artifact id="Bundle/livd-example-roche-quant" key="Bundle-livd-example-roche-quant" name="Roche quantitative LIVD example bundle"/>
-<artifact id="CodeSystem/snomed-fragment-livd" key="CodeSystem-snomed-fragment-livd" name="SNOMED CT code system fragment for LIVD"/>
-<artifact id="CodeSystem/vendor-result-fragment-livd" key="CodeSystem-vendor-result-fragment-livd" name="Vendor Result Code code system fragment for LIVD"/>
+<artifact deprecated="true" id="CodeSystem/snomed-fragment-livd" key="CodeSystem-snomed-fragment-livd" name="SNOMED CT code system fragment for LIVD"/>
+<artifact deprecated="true" id="CodeSystem/vendor-result-fragment-livd" key="CodeSystem-vendor-result-fragment-livd" name="Vendor Result Code code system fragment for LIVD"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page deprecated="true" key="profiles" name="(profiles)"/>
@@ -48,6 +50,7 @@
 <page key="artifacts" name="Artifact List"/>
 <page key="downloads" name="Downloads"/>
 <page key="glossary" name="Glossary"/>
+<page key="analysis" name="IP Acknowledgements &amp; IG Analysis"/>
 <page key="general-implementation" name="Implementation Considerations"/>
 <page key="general-concepts" name="LIVD Concepts"/>
 <page key="general-definitions" name="LIVD Data Definitions"/>

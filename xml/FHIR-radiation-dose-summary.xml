@@ -1,65 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    ballotUrl="http://hl7.org/fhir/uv/radiation-dose-summary/2022Jan"
-    ciUrl="http://build.fhir.org/ig/HL7/fhir-radiation-dose-summary-ig"
-    defaultVersion="0.1.0"
-    defaultWorkgroup="ii"
-    gitUrl="https://github.com/HL7/fhir-radiation-dose-summary-ig"
-    xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
-    url="http://hl7.org/fhir/uv/radiation-dose-summary">
+               ballotUrl="http://hl7.org/fhir/uv/radiation-dose-summary/2022Jan"
+               ciUrl="http://build.fhir.org/ig/HL7/fhir-radiation-dose-summary-ig"
+               defaultVersion="1.0.0"
+               defaultWorkgroup="ii"
+               gitUrl="https://github.com/HL7/fhir-radiation-dose-summary-ig"
+               url="http://hl7.org/fhir/uv/radiation-dose-summary">
     <version code="current" url="http://build.fhir.org/ig/HL7/fhir-radiation-dose-summary-ig"/>
-	<version code="0.1.0" url="http://hl7.org/fhir/uv/radiation-dose-summary/2022Jan"/>
-	<version code="1.0.0" url="http://hl7.org/fhir/uv/radiation-dose-summary/STU1" deprecated="true"/>
-	<version code="0.1" deprecated="true" />
-   <artifactPageExtension value="-definitions"/>
-   <artifactPageExtension value="-examples"/>
-   <artifactPageExtension value="-mappings"/>
-	<artifact id="ValueSet/component-irradiation-event-vs" key="ValueSet-component-irradiation-event-vs" name="Irradiation Event component type"/>
-	<artifact id="ValueSet/component-radiation-dose-summary-vs" key="ValueSet-component-radiation-dose-summary-vs" name="Radiation Dose Summary component type"/>
-	<artifact id="ValueSet/isotope-rds-vs" key="ValueSet-isotope-rds-vs" name="Isotopes Value Set"/>
-	<artifact id="ValueSet/procedure-reported-type-rds-vs" key="ValueSet-procedure-reported-type-rds-vs" name="Procedure Reported Type Value Set"/>
-	<artifact id="ValueSet/radiopharmaceutical-rds-vs" key="ValueSet-radiopharmaceutical-rds-vs" name="Radiopharmaceuticals Value Set"/>
-	<artifact id="CodeSystem/dicom-identifier-type" key="CodeSystem-dicom-identifier-type" name="DICOM Identifier Type"/>
-	<artifact id="CapabilityStatement/FHIRServer" key="CapabilityStatement-FHIRServer" name="FHIRServer"/>
-	<artifact id="CapabilityStatement/FHIRServer-RDSC" key="CapabilityStatement-FHIRServer-RDSC" name="FHIRServer-RDSC"/>
-	<artifact id="CapabilityStatement/FHIRServer-RDSP" key="CapabilityStatement-FHIRServer-RDSP" name="FHIRServer-RDSP"/>
-	<artifact id="CapabilityStatement/RDSC" key="CapabilityStatement-RDSC" name="RDSC"/>
-	<artifact id="CapabilityStatement/RDSP" key="CapabilityStatement-RDSP" name="RDSP"/>
-	<artifact id="StructureDefinition/irradiation-event-summary" key="StructureDefinition-irradiation-event-summary" name="Irradiation Event Summary"/>
-	<artifact id="StructureDefinition/radiation-dose-summary" key="StructureDefinition-radiation-dose-summary" name="Radiation Dose Summary"/>
-	<artifact id="StructureDefinition/ct-irradiation-event-summary" key="StructureDefinition-ct-irradiation-event-summary" name="CT Irradiation Event Summary"/>
-	<artifact id="StructureDefinition/ct-radiation-dose-summary" key="StructureDefinition-ct-radiation-dose-summary" name="CT Radiation Dose Summary"/>
-	<artifact id="StructureDefinition/indication-observation" key="StructureDefinition-indication-observation" name="Indication Observation"/>
-	<artifact id="StructureDefinition/modality-device" key="StructureDefinition-modality-device" name="Modality Device"/>
-	<artifact id="StructureDefinition/nm-radiation-dose-summary" key="StructureDefinition-nm-radiation-dose-summary" name="Radiopharmaceutical Radiation Dose Summary"/>
-	<artifact id="StructureDefinition/radiation-summary-report" key="StructureDefinition-radiation-summary-report" name="Radiation Summary Report"/>
-	<artifact id="StructureDefinition/xray-radiation-dose-summary" key="StructureDefinition-xray-radiation-dose-summary" name="X-Ray Radiation Dose Summary"/>
-	<artifact id="Composition/1" key="Composition-RadiationSummaryReport-1" name="RadiationSummaryReport-1"/>
-	<artifact id="Device/12" key="Device-ModalityDevice-12" name="ModalityDevice-12"/>
-	<artifact id="Observation/122" key="Observation-NMRadiationDoseSummary-122" name="NMRadiationDoseSummary-122"/>
-	<artifact id="Observation/139" key="Observation-CTRadiationDoseSummary-139" name="CTRadiationDoseSummary-139"/>
-	<artifact id="ImagingStudy/22" key="ImagingStudy-ImagingStudy-22" name="ImagingStudy-22"/>
-	<artifact id="Practitioner/33" key="Practitioner-Practitioner-33" name="Practitioner-33"/>
-	<artifact id="Observation/33" key="Observation-Indications-1" name="Indications-1"/>
-	<artifact id="Observation/34" key="Observation-PregnancyStatus-1" name="PregnancyStatus-1"/>
-	<artifact id="ImagingStudy/342" key="ImagingStudy-ImagingStudy-342" name="ImagingStudy-342"/>
-	<artifact id="ImagingStudy/344" key="ImagingStudy-ImagingStudy-344" name="ImagingStudy-344"/>
-	<artifact id="Observation/393" key="Observation-CTIrradiationEventSummary-393" name="CTIrradiationEventSummary-393"/>
-	<artifact id="Device/539" key="Device-ModalityDevice-539" name="ModalityDevice-539"/>
-	<artifact id="Observation/545" key="Observation-XRayRadiationDoseSummary-545" name="XRayRadiationDoseSummary-545"/>
-	<artifact id="Patient/56" key="Patient-Patient-56" name="Patient-56"/>
-	<artifact id="Observation/839" key="Observation-CTIrradiationEventSummary-839" name="CTIrradiationEventSummary-839"/>
-	<artifact id="TestScript/RDS-sharing-verification" key="TestScript-RDS-sharing-verification" name="TestScript_RDS_Sharing_Verification"/>
-	<artifact id="TestScript/RDSC-Simulator" key="TestScript-RDSC-Simulator" name="TestScript_RDSC_Simulator"/>
-	<artifact id="TestScript/RDSP-Simulator" key="TestScript-RDSP-Simulator" name="TestScript_RDSP_Simulator"/>
-	<artifact id="Bundle/Bundle-RDS-resources" key="Bundle-Bundle-RDS-resources" name="Bundle_RDS_resources"/>
-	<page key="NA" name="(NA)"/>
-	<page key="many" name="(many)"/>
-	<page key="Home" name="Home"/>
-	<page key="Background" name="Background"/>
-	<page key="downloads" name="Downloads"/>
-	<page key="Architecture" name="Architecture and Implementation"/>
-	<page key="Testing" name="Testing and Conformance"/>
-	<page key="artifacts" name="Artifacts Summary"/>
-	<page key="toc" name="Table of Contents"/>
+    <version code="1.0.0" url="http://hl7.org/fhir/uv/radiation-dose-summary/STU1"/>
+    <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/uv/radiation-dose-summary/2022Jan"/>
+    <version code="0.1" deprecated="true"/>
+    <artifactPageExtension value="-definitions"/>
+    <artifactPageExtension value="-examples"/>
+    <artifactPageExtension value="-mappings"/>
+    <artifact id="Bundle/Bundle-RDS-resources" key="Bundle-Bundle-RDS-resources" name="Bundle_RDS_resources"/>
+    <artifact deprecated="true" id="StructureDefinition/ct-irradiation-event-summary" key="StructureDefinition-ct-irradiation-event-summary" name="CT Irradiation Event Summary"/>
+    <artifact deprecated="true" id="StructureDefinition/ct-radiation-dose-summary" key="StructureDefinition-ct-radiation-dose-summary" name="CT Radiation Dose Summary"/>
+    <artifact deprecated="true" id="Observation/393" key="Observation-CTIrradiationEventSummary-393" name="CTIrradiationEventSummary-393"/>
+    <artifact deprecated="true" id="Observation/839" key="Observation-CTIrradiationEventSummary-839" name="CTIrradiationEventSummary-839"/>
+    <artifact id="CodeSystem/dicom-identifier-type" key="CodeSystem-dicom-identifier-type" name="DICOM Identifier Type"/>
+    <artifact id="CapabilityStatement/FHIRServer-RDSC" key="CapabilityStatement-FHIRServer-RDSC" name="FHIR Server supporting FHIR operations in order to interact with RDSC Actor"/>
+    <artifact id="CapabilityStatement/FHIRServer" key="CapabilityStatement-FHIRServer" name="FHIR Server supporting FHIR operations in order to interact with RDSC and RDSP Actors"/>
+    <artifact id="CapabilityStatement/FHIRServer-RDSP" key="CapabilityStatement-FHIRServer-RDSP" name="FHIR Server supporting FHIR operations in order to interact with RDSP Actor"/>
+    <artifact id="ImagingStudy/22" key="ImagingStudy-ImagingStudy-22" name="ImagingStudy-22"/>
+    <artifact id="ImagingStudy/342" key="ImagingStudy-ImagingStudy-342" name="ImagingStudy-342"/>
+    <artifact id="ImagingStudy/344" key="ImagingStudy-ImagingStudy-344" name="ImagingStudy-344"/>
+    <artifact id="StructureDefinition/indication-observation" key="StructureDefinition-indication-observation" name="Indication Observation"/>
+    <artifact id="Observation/33" key="Observation-Indications-1" name="Indications-1"/>
+    <artifact deprecated="true" id="StructureDefinition/irradiation-event-summary" key="StructureDefinition-irradiation-event-summary" name="Irradiation Event Summary"/>
+    <artifact deprecated="true" id="ValueSet/component-irradiation-event-vs" key="ValueSet-component-irradiation-event-vs" name="Irradiation Event component type"/>
+    <artifact id="ValueSet/isotope-rds-vs" key="ValueSet-isotope-rds-vs" name="Isotopes Value Set"/>
+    <artifact id="StructureDefinition/modality-device" key="StructureDefinition-modality-device" name="Modality Device"/>
+    <artifact id="Device/12" key="Device-ModalityDevice-12" name="ModalityDevice-12"/>
+    <artifact id="Device/539" key="Device-ModalityDevice-539" name="ModalityDevice-539"/>
+    <artifact id="Patient/56" key="Patient-Patient-56" name="Patient-56"/>
+    <artifact id="Practitioner/33" key="Practitioner-Practitioner-33" name="Practitioner-33"/>
+    <artifact id="Observation/34" key="Observation-PregnancyStatus-1" name="PregnancyStatus-1"/>
+    <artifact id="ValueSet/procedure-reported-type-rds-vs" key="ValueSet-procedure-reported-type-rds-vs" name="Procedure Reported Type Value Set"/>
+    <artifact id="CapabilityStatement/RDSC" key="CapabilityStatement-RDSC" name="RDSC Actor requirements"/>
+    <artifact id="CapabilityStatement/RDSP" key="CapabilityStatement-RDSP" name="RDSP Actor minimal requirements"/>
+    <artifact id="StructureDefinition/radiation-dose-summary" key="StructureDefinition-radiation-dose-summary" name="Radiation Dose Summary"/>
+    <artifact id="ValueSet/component-radiation-dose-summary-vs" key="ValueSet-component-radiation-dose-summary-vs" name="Radiation Dose Summary component type"/>
+    <artifact id="StructureDefinition/radiation-summary-report" key="StructureDefinition-radiation-summary-report" name="Radiation Summary Report"/>
+    <artifact id="Composition/1" key="Composition-RadiationSummaryReport-1" name="Radiation exposure and protection information"/>
+    <artifact id="Observation/122" key="Observation-NMRadiationDoseSummary-122" name="RadiationDoseSummary-122"/>
+    <artifact id="Observation/139" key="Observation-CTRadiationDoseSummary-139" name="RadiationDoseSummary-139"/>
+    <artifact id="Observation/545" key="Observation-XRayRadiationDoseSummary-545" name="RadiationDoseSummary-545"/>
+    <artifact deprecated="true" id="StructureDefinition/nm-radiation-dose-summary" key="StructureDefinition-nm-radiation-dose-summary" name="Radiopharmaceutical Radiation Dose Summary"/>
+    <artifact id="ValueSet/radiopharmaceutical-rds-vs" key="ValueSet-radiopharmaceutical-rds-vs" name="Radiopharmaceuticals Value Set"/>
+    <artifact id="TestScript/RDSC-Simulator" key="TestScript-RDSC-Simulator" name="TestScript_RDSC_Simulator"/>
+    <artifact id="TestScript/RDSP-Simulator" key="TestScript-RDSP-Simulator" name="TestScript_RDSP_Simulator"/>
+    <artifact id="TestScript/RDS-sharing-verification" key="TestScript-RDS-sharing-verification" name="TestScript_RDS_Sharing_Verification"/>
+    <artifact deprecated="true" id="StructureDefinition/xray-radiation-dose-summary" key="StructureDefinition-xray-radiation-dose-summary" name="X-Ray Radiation Dose Summary"/>
+    <page key="NA" name="(NA)"/>
+    <page key="many" name="(many)"/>
+    <page key="Architecture" name="Architecture and Implementation"/>
+    <page key="artifacts" name="Artifacts Summary"/>
+    <page key="Background" name="Background"/>
+    <page key="downloads" name="Downloads"/>
+    <page key="Home" name="Home"/>
+    <page key="toc" name="Table of Contents"/>
+    <page key="Testing" name="Testing and Conformance"/>
 </specification>

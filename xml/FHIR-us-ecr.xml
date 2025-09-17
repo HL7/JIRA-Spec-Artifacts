@@ -1,330 +1,312 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd" ballotUrl="http://hl7.org/fhir/us/ecr/2021Jan"
-    gitUrl="https://github.com/HL7/case-reporting" url="http://hl7.org/fhir/us/ecr" ciUrl="http://build.fhir.org/ig/HL7/case-reporting" defaultWorkgroup="pher" defaultVersion="2.0.0">
-    <version code="current" url="http://build.fhir.org/ig/HL7/case-reporting" />
-    <version code="2.0.0" url="http://hl7.org/fhir/us/ecr/STU2" />
-    <version code="1.1.0" url="http://hl7.org/fhir/us/ecr/2021Jan" />
-    <version code="1.0.0" url="http://hl7.org/fhir/us/ecr/STU1" />
-    <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/us/ecr/2018Sep" />
-    <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/uv/ecr/2018Jan" />
-    <version code="0.1" deprecated="true" />
-    <artifactPageExtension value="-definitions" />
-    <artifactPageExtension value="-examples" />
-    <artifactPageExtension value="-mappings" />
-    <artifact deprecated="true" id="StructureDefinition/characteristics-of-home-environment" key="StructureDefinition-characteristics-of-home-environment" name="Characteristics of Home Environment" />
-    <artifact id="ValueSet/valueset-chlamydia-example" key="ValueSet-valueset-chlamydia-example" name="Chlamydia Example" />
-    <artifact deprecated="true" id="CodeSystem/codesystem-task-businessStatus" key="CodeSystem-codesystem-task-businessStatus" name="Code System Task Business Status" />
-    <artifact deprecated="true" id="CodeSystem/codesystem-reald-race-ethnicity" key="CodeSystem-codesystem-reald-race-ethnicity" name="CodeSystem REALD Race Ethnicity" />
-    <artifact id="Observation/observation-country-of-nationality-eve-everywoman" key="Observation-observation-country-of-nationality-eve-everywoman" name="Country of Nationality Observation Example: Eve Everywoman" />
-    <artifact id="Observation/observation-country-of-residence-eve-everywoman" key="Observation-observation-country-of-residence-eve-everywoman" name="Country of Residence Observation Example: Eve Everywoman" />
-    <artifact deprecated="true" id="StructureDefinition/date-determined-extension" key="StructureDefinition-date-determined-extension" name="Date Determined Extension" />
-    <artifact deprecated="true" id="StructureDefinition/date-recorded-extension" key="StructureDefinition-date-recorded-extension" name="Date Recorded Extension" />
-    <artifact id="Device/device-ecmo" key="Device-device-ecmo" name="Device Example: ECMO" />
-    <artifact deprecated="true" id="StructureDefinition/disability-status" key="StructureDefinition-disability-status" name="Disability Status" />
-    <artifact id="Observation/observation-disability-status-eve-everywoman" key="Observation-observation-disability-status-eve-everywoman" name="Disability Status Example: Eve Everywoman" />
-    <artifact id="Endpoint/endpoint-ecr-salem-medical-center" key="Endpoint-endpoint-ecr-salem-medical-center" name="Endpoint Example: endpoint-ecr-salem-medical-center" />
-    <artifact id="Endpoint/endpoint-ecr-ymca" key="Endpoint-endpoint-ecr-ymca" name="Endpoint Example: endpoint-ecr-ymca" />
-    <artifact id="ValueSet/valueset-pctc-example" key="ValueSet-valueset-pctc-example" name="Example Procedure Triggers for Public Health Reporting" />
-    <artifact id="ValueSet/valueset-dxtc-example" key="ValueSet-valueset-dxtc-example" name="Example ValueSet: Diagnosis Problem Triggers for Public Health Reporting" />
-    <artifact deprecated="true" id="ValueSet/valueset-iztc-example" key="ValueSet-valueset-iztc-example" name="Example ValueSet: Immunizations Triggers for Public Health Reporting" />
-    <artifact id="ValueSet/valueset-lrtc-example" key="ValueSet-valueset-lrtc-example" name="Example ValueSet: Lab Observation Test Name Triggers for Public Health Reporting" />
-    <artifact id="ValueSet/valueset-lotc-example" key="ValueSet-valueset-lotc-example" name="Example ValueSet: Lab Order Test Triggers for Public Health Reporting" />
-    <artifact id="ValueSet/valueset-mrtc-example" key="ValueSet-valueset-mrtc-example" name="Example ValueSet: Medications Triggers for Public Health Reporting" />
-    <artifact id="ValueSet/valueset-ostc-example" key="ValueSet-valueset-ostc-example" name="Example ValueSet: Organism Substance Triggers for Public Health Reporting" />
-    <artifact id="ValueSet/valueset-sdtc-example" key="ValueSet-valueset-sdtc-example" name="Example ValueSet: Suspected Disorder Triggers for Public Health Reporting" />
-    <artifact deprecated="true" id="CodeSystem/executabletask-type" key="CodeSystem-executabletask-type" name="Executable Task Types Code System" />
-    <artifact id="ValueSet/2.16.840.1.113762.1.4.1099.24" key="ValueSet-2.16.840.1.113762.1.4.1099.24" name="Extended Pregnancy Status Value Set" />
-    <artifact deprecated="true" id="Library/FHIRHelpers" key="Library-FHIRHelpers" name="FHIR Helpers Library" />
-    <artifact deprecated="true" id="Library/FHIR-ModelInfo" key="Library-FHIR-ModelInfo" name="FHIR Model Definition" />
-    <artifact id="Immunization/immunization-ecr-pneumo" key="Immunization-immunization-ecr-pneumo" name="Immunization Example: immunization-ecr-pneumo" />
-    <artifact id="Observation/observation-last-menstrual-period-eve-everywoman" key="Observation-observation-last-menstrual-period-eve-everywoman"
-        name="Last Menstrual Period Example: observation-last-menstrual-period-eve-everywoman" />
-    <artifact id="OperationDefinition/operationdefinition-library-package" key="OperationDefinition-operationdefinition-library-package" name="Library Packaging" />
-    <artifact id="Location/location-ecr-city-football-stadium" key="Location-location-ecr-city-football-stadium" name="Location Example: City Football Stadium" />
-    <artifact id="MedicationAdministration/medicationadministration-eve-everywoman-azithromycin" key="MedicationAdministration-medicationadministration-eve-everywoman-azithromycin"
-        name="MedicationAdministration Example: Eve Everywoman, azithromycin" />
-    <artifact id="MedicationAdministration/medicationadministration-eve-everywoman-naloxone-response" key="MedicationAdministration-medicationadministration-eve-everywoman-naloxone-response"
-        name="MedicationAdministration Example: Eve Everywoman, naloxone response" />
-    <artifact id="CodeSystem/codesystem-messageHeader-event" key="CodeSystem-codesystem-messageHeader-event" name="MessageHeader Event Code System" />
-    <artifact id="Observation/observation-odh-past-or-present-job-eve-everywoman" key="Observation-observation-odh-past-or-present-job-eve-everywoman"
-        name="ODH Past or Present Job Example: observation-odh-past-or-present-job-eve-everywoman" />
-    <artifact id="Observation/observation-odh-usual-work-eve-everywoman" key="Observation-observation-odh-usual-work-eve-everywoman" name="ODH Usual Work Example: observation-odh-usual-work-eve-everywoman" />
-    <artifact id="Observation/observation-rr-summary" key="Observation-observation-rr-summary" name="Observation RR Summary example" />
-    <artifact deprecated="true" id="StructureDefinition/postpartum-status" key="StructureDefinition-postpartum-status" name="Postpartum Status" />
-    <artifact deprecated="true" id="StructureDefinition/pregnancy-outcome-observation" key="StructureDefinition-pregnancy-outcome-observation" name="Pregnancy Outcome Observation" />
-    <artifact deprecated="true" id="ValueSet/pregnancy-status" key="ValueSet-pregnancy-status" name="Pregnancy Status" />
-    <artifact deprecated="true" id="StructureDefinition/pregnancy-status-observation" key="StructureDefinition-pregnancy-status-observation" name="Pregnancy Status Observation" />
-    <artifact deprecated="true" id="StructureDefinition/rr-communication" key="StructureDefinition-rr-communication" name="RR Communication" />
-    <artifact deprecated="true" id="Bundle/bundle-rr-collection-communication" key="Bundle-bundle-rr-collection-communication" name="RR Communication Collection Bundle Example: bundle-rr-collection-communication" />
-    <artifact deprecated="true" id="Communication/communication-rr-one-cond-one-pha" key="Communication-communication-rr-one-cond-one-pha" name="RR Communication profile example: One condition, one PHA" />
-    <artifact deprecated="true" id="Communication/communication-rr-single-single-html-validation-output" key="Communication-communication-rr-single-single-html-validation-output"
-        name="RR Communication profile example: One condition, one PHA, with validation output" />
-    <artifact id="StructureDefinition/rr-composition" key="StructureDefinition-rr-composition" name="RR Composition" />
-    <artifact deprecated="true" id="StructureDefinition/rr-determination-of-reportability-extension" key="StructureDefinition-rr-determination-of-reportability-extension"
-        name="RR Determination of Reportability Extension" />
-    <artifact deprecated="true" id="StructureDefinition/rr-determination-of-reportability-reason-extension" key="StructureDefinition-rr-determination-of-reportability-reason-extension"
-        name="RR Determination of Reportability Reason Extension" />
-    <artifact deprecated="true" id="StructureDefinition/rr-determination-of-reportability-rule-extension" key="StructureDefinition-rr-determination-of-reportability-rule-extension"
-        name="RR Determination of Reportability Rule Extension" />
-    <artifact id="StructureDefinition/rr-document-bundle" key="StructureDefinition-rr-document-bundle" name="RR Document Bundle" />
-    <artifact id="Bundle/bundle-rr-document-one-cond-one-pha" key="Bundle-bundle-rr-document-one-cond-one-pha" name="RR Document Bundle Example: One Condition, One PHA" />
-    <artifact id="StructureDefinition/rr-documentreference" key="StructureDefinition-rr-documentreference" name="RR DocumentReference" />
-    <artifact id="DocumentReference/documentreference-add-reporting-needs-pdf" key="DocumentReference-documentreference-add-reporting-needs-pdf" name="RR DocumentReference example: Additional reporting needs" />
-    <artifact id="DocumentReference/documentreference-zika-follow-up-pdf" key="DocumentReference-documentreference-zika-follow-up-pdf" name="RR DocumentReference example: Zika follow-up" />
-    <artifact id="DocumentReference/documentreference-zika-info-pdf" key="DocumentReference-documentreference-zika-info-pdf" name="RR DocumentReference example: Zika info" />
-    <artifact id="StructureDefinition/rr-external-resource-extension" key="StructureDefinition-rr-external-resource-extension" name="RR External Resource Extension" />
-    <artifact deprecated="true" id="StructureDefinition/rr-external-resource-type-extension" key="StructureDefinition-rr-external-resource-type-extension" name="RR External Resource Type Extension" />
-    <artifact deprecated="true" id="StructureDefinition/rr-location-relevance-extension" key="StructureDefinition-rr-location-relevance-extension" name="RR Location Relevance Extension" />
-    <artifact id="StructureDefinition/rr-priority-extension" key="StructureDefinition-rr-priority-extension" name="RR Priority Extension" />
-    <artifact id="StructureDefinition/rr-relevant-reportable-condition-observation" key="StructureDefinition-rr-relevant-reportable-condition-observation" name="RR Relevant Reportable Condition Observation" />
-    <artifact id="Observation/observation-rr-relevant-reportable-condition-observation" key="Observation-observation-rr-relevant-reportable-condition-observation"
-        name="RR Relevant Reportable Condition Observation Example" />
-    <artifact deprecated="true" id="PlanDefinition/plandefinition-rr-relevant-reportable-condition" key="PlanDefinition-plandefinition-rr-relevant-reportable-condition"
-        name="RR Relevant Reportable Condition PlanDefinition Example" />
-    <artifact deprecated="true" id="StructureDefinition/rr-relevant-reportable-condition-plandefinition" key="StructureDefinition-rr-relevant-reportable-condition-plandefinition"
-        name="RR Relevant Reportable Condition Plandefinition" />
-    <artifact id="StructureDefinition/rr-reportability-information-observation" key="StructureDefinition-rr-reportability-information-observation" name="RR Reportability Information Observation" />
-    <artifact id="Observation/observation-rr-reportability-information-observation" key="Observation-observation-rr-reportability-information-observation" name="RR Reportability Information Observation Example" />
-    <artifact id="StructureDefinition/rr-responsible-agency-organization" key="StructureDefinition-rr-responsible-agency-organization" name="RR Responsible Agency Organization" />
-    <artifact id="Organization/organization-rr-responsible-agency-haw" key="Organization-organization-rr-responsible-agency-haw" name="RR Responsible Agency Organization Example: Health Authority West Responsible Agency" />
-    <artifact deprecated="true" id="StructureDefinition/rr-responsible-agency-organization-extension" key="StructureDefinition-rr-responsible-agency-organization-extension"
-        name="RR Responsible Agency Organization Extension" />
-    <artifact id="StructureDefinition/rr-routing-entity-organization" key="StructureDefinition-rr-routing-entity-organization" name="RR Routing Entity Organization" />
-    <artifact id="Organization/organization-rr-routing-entity-haw" key="Organization-organization-rr-routing-entity-haw" name="RR Routing Entity Organization Example: Health Authority West Routing Entity" />
-    <artifact deprecated="true" id="StructureDefinition/rr-routing-entity-organization-extension" key="StructureDefinition-rr-routing-entity-organization-extension" name="RR Routing Entity Organization Extension" />
-    <artifact id="StructureDefinition/rr-rules-authoring-agency-organization" key="StructureDefinition-rr-rules-authoring-agency-organization" name="RR Rules Authoring Agency Organization" />
-    <artifact id="Organization/organization-rr-rules-authoring-agency-haw" key="Organization-organization-rr-rules-authoring-agency-haw"
-        name="RR Rules Authoring Agency Organization Example: Health Authority West Rules Authoring Agency" />
-    <artifact deprecated="true" id="StructureDefinition/rr-rules-authoring-agency-organization-extension" key="StructureDefinition-rr-rules-authoring-agency-organization-extension"
-        name="RR Rules Authoring Agency Organization Extension" />
-    <artifact id="StructureDefinition/rr-summary" key="StructureDefinition-rr-summary" name="RR Summary" />
-    <artifact id="Observation/observation-rr-eicr-processing-status" key="Observation-observation-rr-eicr-processing-status" name="RR eICR Processing Status Example: observation-rr-eicr-processing-status" />
-    <artifact id="StructureDefinition/rr-eicr-processing-status-extension" key="StructureDefinition-rr-eicr-processing-status-extension" name="RR eICR Processing Status Extension" />
-    <artifact id="StructureDefinition/rr-eicr-processing-status-observation" key="StructureDefinition-rr-eicr-processing-status-observation" name="RR eICR Processing Status Observation" />
-    <artifact id="Observation/observation-rr-eicr-processing-status-reason" key="Observation-observation-rr-eicr-processing-status-reason"
-        name="RR eICR Processing Status Reason Example: observation-rr-eicr-processing-status-reason" />
-    <artifact id="StructureDefinition/rr-eicr-processing-status-reason-observation" key="StructureDefinition-rr-eicr-processing-status-reason-observation" name="RR eICR Processing Status Reason Observation" />
-    <artifact id="StructureDefinition/rr-eicr-receipt-time-extension" key="StructureDefinition-rr-eicr-receipt-time-extension" name="RR eICR Receipt Time Extension" />
-    <artifact deprecated="true" id="StructureDefinition/real-d-race-ethnicity-extension" key="StructureDefinition-real-d-race-ethnicity-extension"
-        name="Race, Ethnicity, Language, and Disability (REAL D) Race and Ethnicity Extension" />
-    <artifact deprecated="true" id="StructureDefinition/relates-to-extension" key="StructureDefinition-relates-to-extension" name="Relates To Extension" />
-    <artifact id="Composition/composition-rr-single-single-html-validation-output" key="Composition-composition-rr-single-single-html-validation-output"
-        name="Reportability Response - One Condition/One PHA with eICR Validation Output example" />
-    <artifact id="Composition/composition-rr-one-cond-one-pha" key="Composition-composition-rr-one-cond-one-pha" name="Reportability Response Composition - One Condition/One PHA example" />
-    <artifact id="Library/library-rctc-example" key="Library-library-rctc-example" name="Reportable Condition Trigger Codes (RCTC) Example Library" />
-    <artifact id="Library/RuleFilters" key="Library-RuleFilters" name="Rule Filters Example Library" />
-    <artifact id="StructureDefinition/therapeutic-medication-response-extension" key="StructureDefinition-therapeutic-medication-response-extension" name="Therapeutic Medication Response Extension" />
-    <artifact deprecated="true" id="StructureDefinition/address-extension" key="StructureDefinition-address-extension" name="Travel History Address Extension" />
-    <artifact deprecated="true" id="StructureDefinition/travel-history-observation" key="StructureDefinition-travel-history-observation" name="Travel History Observation" />
-    <artifact id="Observation/observation-travel-history-eve-everywoman-1999" key="Observation-observation-travel-history-eve-everywoman-1999"
-        name="Travel History Observation Example: observation-travel-history-eve-everywoman-1999" />
-    <artifact id="Observation/observation-travel-history-eve-everywoman-201610" key="Observation-observation-travel-history-eve-everywoman-201610"
-        name="Travel History Observation Example: observation-travel-history-eve-everywoman-201610" />
-    <artifact id="Observation/observation-travel-history-eve-everywoman-201801" key="Observation-observation-travel-history-eve-everywoman-201801"
-        name="Travel History Observation Example: observation-travel-history-eve-everywoman-201801" />
-    <artifact deprecated="true" id="StructureDefinition/tribal-affiliation-extension" key="StructureDefinition-tribal-affiliation-extension" name="Tribal Affiliation Extension" />
-    <artifact deprecated="true" id="Device/us-core-device-ecmo" key="Device-us-core-device-ecmo" name="US Core Device Example: ECMO" />
-    <artifact id="Practitioner/practitioner-us-core-henry-seven" key="Practitioner-practitioner-us-core-henry-seven" name="US Core Practitioner Example: Henry Seven" />
-    <artifact id="Observation/observation-us-core-results-eve-everywoman-lymphocytes" key="Observation-observation-us-core-results-eve-everywoman-lymphocytes"
-        name="US Core Results Example: observation-us-core-results-eve-everywoman-lymphocytes" />
-    <artifact id="Observation/observation-us-core-results-eve-everywoman-pertussis" key="Observation-observation-us-core-results-eve-everywoman-pertussis"
-        name="US Core Results Example: observation-us-core-results-eve-everywoman-pertussis" />
-    <artifact id="Observation/observation-blood-pressure-eve-everywoman" key="Observation-observation-blood-pressure-eve-everywoman" name="US Core Vital Sign Observation example" />
-    <artifact id="Encounter/encounter-eicr-eve-everywoman-completed-inpatient" key="Encounter-encounter-eicr-eve-everywoman-completed-inpatient"
-        name="US PH Encounter Example: encounter-eicr-eve-everywoman-completed-inpatient" />
-    <artifact id="Encounter/encounter-eicr-eve-everywoman-current-inpatient" key="Encounter-encounter-eicr-eve-everywoman-current-inpatient" name="US PH Encounter Example: encounter-eicr-eve-everywoman-current-inpatient" />
-    <artifact id="Encounter/encounter-eicr-eve-everywoman-external-encounter" key="Encounter-encounter-eicr-eve-everywoman-external-encounter"
-        name="US PH Encounter Example: encounter-eicr-eve-everywoman-external-encounter" />
-    <artifact id="Encounter/encounter-eicr-eve-everywoman-external-historical" key="Encounter-encounter-eicr-eve-everywoman-external-historical"
-        name="US PH Encounter Example: encounter-eicr-eve-everywoman-external-historical" />
-    <artifact id="Encounter/encounter-eicr-eve-everywoman-outpatient" key="Encounter-encounter-eicr-eve-everywoman-outpatient" name="US PH Encounter Example: encounter-eicr-eve-everywoman-outpatient" />
-    <artifact id="Location/location-ecr-salem-medical-center" key="Location-location-ecr-salem-medical-center" name="US PH Location Example: Clinic Bldg A, Salem Medical Center" />
-    <artifact id="Organization/organization-ecr-acme-laboratory" key="Organization-organization-ecr-acme-laboratory" name="US PH Organization Example: Acme Labs" />
-    <artifact id="Organization/organization-ecr-health-authority-west" key="Organization-organization-ecr-health-authority-west" name="US PH Organization Example: Health Authority West" />
-    <artifact id="Organization/organization-ecr-salem-medical-center" key="Organization-organization-ecr-salem-medical-center" name="US PH Organization Example: Salem Medical Center" />
-    <artifact id="Organization/organization-ecr-ymca-center" key="Organization-organization-ecr-ymca-center" name="US PH Organization Example: YMCA" />
-    <artifact id="Patient/patient-ecr-eve-everywoman" key="Patient-patient-ecr-eve-everywoman" name="US PH Patient Example: Eve Everywoman" />
-    <artifact id="PractitionerRole/practitionerrole-henry-seven" key="PractitionerRole-practitionerrole-henry-seven" name="US PH PractitionerRole Example: Henry Seven" />
-    <artifact id="StructureDefinition/us-ph-address-extension" key="StructureDefinition-us-ph-address-extension" name="US Public Health Address Extension" />
-    <artifact id="StructureDefinition/us-ph-alternative-expression-extension" key="StructureDefinition-us-ph-alternativeExpression" name="US Public Health Alternative Expression Extension" />
-    <artifact id="StructureDefinition/us-ph-characteristics-of-home-environment" key="StructureDefinition-us-ph-characteristics-of-home-environment" name="US Public Health Characteristics of Home Environment" />
-    <artifact id="Observation/observation-characteristics-of-home-environment-eve-everywoman" key="Observation-observation-characteristics-of-home-environment-eve-everywoman"
-        name="US Public Health Characteristics of Home Environment Example: Eve Everywoman" />
-    <artifact id="StructureDefinition/us-ph-codesystem" key="StructureDefinition-us-ph-codesystem" name="US Public Health CodeSystem" />
-    <artifact id="StructureDefinition/us-ph-codesystem-property-binding-extension" key="StructureDefinition-us-ph-codesystem-property-binding-extension" name="US Public Health CodeSystem Property Binding Extension" />
-    <artifact id="StructureDefinition/us-ph-composition" key="StructureDefinition-us-ph-composition" name="US Public Health Composition" />
-    <artifact id="StructureDefinition/us-ph-computable-library" key="StructureDefinition-us-ph-computablelibrary" name="US Public Health Computable Library" />
-    <artifact id="StructureDefinition/us-ph-computable-valueset" key="StructureDefinition-us-ph-computablevalueset" name="US Public Health Computable ValueSet" />
-    <artifact id="StructureDefinition/us-ph-condition" key="StructureDefinition-us-ph-condition" name="US Public Health Condition" />
-    <artifact id="StructureDefinition/us-ph-content-bundle" key="StructureDefinition-us-ph-content-bundle" name="US Public Health Content Bundle" />
-    <artifact id="StructureDefinition/us-ph-data-encrypted-extension" key="StructureDefinition-us-ph-data-encrypted-extension" name="US Public Health Data Encrypted Extension" />
-    <artifact id="StructureDefinition/us-ph-date-determined-extension" key="StructureDefinition-us-ph-date-determined-extension" name="US Public Health Date Determined Extension" />
-    <artifact id="StructureDefinition/us-ph-date-recorded-extension" key="StructureDefinition-us-ph-date-recorded-extension" name="US Public Health Date Recorded Extension" />
-    <artifact id="StructureDefinition/us-ph-determination-of-reportability-extension" key="StructureDefinition-us-ph-determination-of-reportability-extension"
-        name="US Public Health Determination of Reportability Extension" />
-    <artifact id="StructureDefinition/us-ph-determination-of-reportability-reason-extension" key="StructureDefinition-us-ph-determination-of-reportability-reason-extension"
-        name="US Public Health Determination of Reportability Reason Extension" />
-    <artifact id="StructureDefinition/us-ph-determination-of-reportability-rule-extension" key="StructureDefinition-us-ph-determination-of-reportability-rule-extension"
-        name="US Public Health Determination of Reportability Rule Extension" />
-    <artifact id="StructureDefinition/us-ph-disability-status" key="StructureDefinition-us-ph-disability-status" name="US Public Health Disability Status" />
-    <artifact id="StructureDefinition/us-ph-document-bundle" key="StructureDefinition-us-ph-document-bundle" name="US Public Health Document Bundle" />
-    <artifact id="StructureDefinition/us-ph-emergency-outbreak-information" key="StructureDefinition-us-ph-emergency-outbreak-information" name="US Public Health Emergency Outbreak Information" />
-    <artifact id="Observation/observation-us-ph-emergency-outbreak-info-eve-everywoman" key="Observation-observation-us-ph-emergency-outbreak-info-eve-everywoman"
-        name="US Public Health Emergency Outbreak Information Example: Eve Everywoman" />
-    <artifact id="StructureDefinition/us-ph-encounter" key="StructureDefinition-us-ph-encounter" name="US Public Health Encounter" />
-    <artifact id="StructureDefinition/us-ph-endpoint" key="StructureDefinition-us-ph-endpoint" name="US Public Health Endpoint" />
-    <artifact id="StructureDefinition/us-ph-executable-library" key="StructureDefinition-us-ph-executablelibrary" name="US Public Health Executable Library" />
-    <artifact id="StructureDefinition/us-ph-executable-valueset" key="StructureDefinition-us-ph-executablevalueset" name="US Public Health Executable ValueSet" />
-    <artifact id="StructureDefinition/us-ph-expansion-parameters-extension" key="StructureDefinition-us-ph-expansion-parameters-extension" name="US Public Health Expansion Parameters Extension" />
-    <artifact id="StructureDefinition/us-ph-exposure-contact-information" key="StructureDefinition-us-ph-exposure-contact-information" name="US Public Health Exposure Contact Information" />
-    <artifact id="Observation/observation-us-ph-exposure-contact-info-football-game" key="Observation-observation-us-ph-exposure-contact-info-football-game"
-        name="US Public Health Exposure Contact Information Example: Football Game" />
-    <artifact id="StructureDefinition/us-ph-fhirquerypattern-extension" key="StructureDefinition-us-ph-fhirquerypattern-extension" name="US Public Health FHIR Query Pattern Extension" />
-    <artifact id="StructureDefinition/us-ph-information-recipient-extension" key="StructureDefinition-us-ph-information-recipient-extension" name="US Public Health Information Recipient Extension" />
-    <artifact id="StructureDefinition/us-ph-initiation-reason-extension" key="StructureDefinition-us-ph-initiation-reason-extension" name="US Public Health Initiation Reason Extension" />
-    <artifact id="StructureDefinition/us-ph-location" key="StructureDefinition-us-ph-location" name="US Public Health Location" />
-    <artifact id="StructureDefinition/us-ph-message-processing-category-extension" key="StructureDefinition-us-ph-message-processing-category-extension" name="US Public Health Message Processing Category Extension" />
-    <artifact id="ValueSet/us-ph-message-significance-category" key="ValueSet-us-ph-message-significance-category" name="US Public Health Message Significance Category" />
-    <artifact id="CodeSystem/us-ph-message-types-codesystem" key="CodeSystem-us-ph-message-types-codesystem" name="US Public Health Message Types CodeSystem" />
-    <artifact id="ValueSet/us-ph-message-types-valueset" key="ValueSet-us-ph-message-types-valueset" name="US Public Health Message Types ValueSet" />
-    <artifact id="StructureDefinition/us-ph-messageheader" key="StructureDefinition-us-ph-messageheader" name="US Public Health MessageHeader" />
-    <artifact deprecated="true" id="StructureDefinition/us-ph-namedEventType" key="StructureDefinition-us-ph-namedEventType" name="US Public Health Named Event Type" />
-    <artifact id="StructureDefinition/us-ph-named-eventtype-extension" key="StructureDefinition-us-ph-named-eventtype-extension" name="US Public Health Named Event Type Extension" />
-    <artifact id="StructureDefinition/us-ph-organization" key="StructureDefinition-us-ph-organization" name="US Public Health Organization" />
-    <artifact id="StructureDefinition/us-ph-patient" key="StructureDefinition-us-ph-patient" name="US Public Health Patient" />
-    <artifact id="StructureDefinition/us-ph-plandefinition" key="StructureDefinition-us-ph-plandefinition" name="US Public Health PlanDefinition" />
-    <artifact id="ValueSet/us-ph-plandefinition-action" key="ValueSet-us-ph-plandefinition-action" name="US Public Health PlanDefinition Action" />
-    <artifact id="CodeSystem/us-ph-plandefinition-actions" key="CodeSystem-us-ph-plandefinition-actions" name="US Public Health PlanDefinition Action Codes" />
-    <artifact id="PlanDefinition/plandefinition-us-public-health-example" key="PlanDefinition-plandefinition-us-public-health-example" name="US Public Health PlanDefinition Example" />
-    <artifact id="StructureDefinition/us-ph-postpartum-status" key="StructureDefinition-us-ph-postpartum-status" name="US Public Health Postpartum Status" />
-    <artifact id="Observation/observation-postpartum-status-eve-everywoman" key="Observation-observation-postpartum-status-eve-everywoman"
-        name="US Public Health Postpartum Status Example: observation-postpartum-status-eve-everywoman" />
-    <artifact id="StructureDefinition/us-ph-practitionerrole" key="StructureDefinition-us-ph-practitionerrole" name="US Public Health Practitioner Role" />
-    <artifact id="StructureDefinition/us-ph-pregnancy-outcome-observation" key="StructureDefinition-us-ph-pregnancy-outcome-observation" name="US Public Health Pregnancy Outcome Observation" />
-    <artifact id="Observation/observation-pregnancy-outcome-eve-everywoman" key="Observation-observation-pregnancy-outcome-eve-everywoman" name="US Public Health Pregnancy Outcome Observation Example: Eve Everywoman" />
-    <artifact id="ValueSet/us-ph-pregnancy-status" key="ValueSet-us-ph-pregnancy-status" name="US Public Health Pregnancy Status" />
-    <artifact id="StructureDefinition/us-ph-pregnancy-status-observation" key="StructureDefinition-us-ph-pregnancy-status-observation" name="US Public Health Pregnancy Status Observation" />
-    <artifact id="Observation/observation-pregnancy-status-eve-everywoman" key="Observation-observation-pregnancy-status-eve-everywoman" name="US Public Health Pregnancy Status Observation Example: Eve Everywoman" />
-    <artifact deprecated="true" id="StructureDefinition/us-ph-procedure" key="StructureDefinition-us-ph-procedure" name="US Public Health Procedure" />
-    <artifact id="StructureDefinition/us-ph-receiver-address-extension" key="StructureDefinition-us-ph-receiver-address-extension" name="US Public Health Receiver Address Extension" />
-    <artifact id="StructureDefinition/us-ph-reporting-bundle" key="StructureDefinition-us-ph-reporting-bundle" name="US Public Health Reporting Bundle" />
-    <artifact id="Bundle/bundle-ecr-message-zika" key="Bundle-bundle-ecr-message-zika" name="US Public Health Reporting Bundle Example: bundle-ecr-message-zika" />
-    <artifact deprecated="true" id="StructureDefinition/us-ph-specification-bundle" key="StructureDefinition-us-ph-specification-bundle" name="US Public Health Specification Bundle" />
-    <artifact id="StructureDefinition/us-ph-specification-library" key="StructureDefinition-us-ph-specification-library" name="US Public Health Specification Library" />
-    <artifact id="Library/library-us-ph-specification-library-example" key="Library-library-us-ph-specification-library-example" name="US Public Health Specification Library Example" />
-    <artifact deprecated="true" id="StructureDefinition/us-ph-supplemental-bundle" key="StructureDefinition-us-ph-supplemental-bundle" name="US Public Health Supplemental Bundle" />
-    <artifact id="StructureDefinition/us-ph-supplemental-library" key="StructureDefinition-us-ph-supplemental-library" name="US Public Health Supplemental Library" />
-    <artifact id="Library/library-us-ph-supplemental-library-example" key="Library-library-us-ph-supplemental-library-example" name="US Public Health Supplemental Library Example" />
-    <artifact id="StructureDefinition/us-ph-supplemental-valueset" key="StructureDefinition-us-ph-supplemental-valueset" name="US Public Health Supplemental Value Set" />
-    <artifact id="Library/library-us-ph-supplemental-valueset-library-example" key="Library-library-us-ph-supplemental-valueset-library-example" name="US Public Health Supplemental ValueSet Library Example" />
-    <artifact id="ValueSet/valueset-us-ph-supplemental-valueset-example" key="ValueSet-valueset-us-ph-supplemental-valueset-example" name="US Public Health Supplemental Valueset Example" />
-    <artifact id="StructureDefinition/us-ph-supplemental-valueset-library" key="StructureDefinition-us-ph-supplemental-valueset-library" name="US Public Health Supplemental Valueset Library" />
-    <artifact id="StructureDefinition/us-ph-transportation-details" key="StructureDefinition-us-ph-transportation-details" name="US Public Health Transportation Details" />
-    <artifact id="Observation/observation-us-ph-transportation-details-eve-everywoman" key="Observation-observation-us-ph-transportation-details-eve-everywoman"
-        name="US Public Health Transportation Example: Eve Everywoman" />
-    <artifact id="StructureDefinition/us-ph-travel-history" key="StructureDefinition-us-ph-travel-history" name="US Public Health Travel History" />
-    <artifact id="StructureDefinition/us-ph-tribal-affiliation-extension" key="StructureDefinition-us-ph-tribal-affiliation-extension" name="US Public Health Tribal Affiliation Extension" />
-    <artifact id="CodeSystem/us-ph-triggerdefinition-namedevents" key="CodeSystem-us-ph-triggerdefinition-namedevents" name="US Public Health TriggerDefinition Named Events" />
-    <artifact id="ValueSet/us-ph-triggerdefinition-namedevent" key="ValueSet-us-ph-triggerdefinition-namedevent" name="US Public Health TriggerDefinition NamedEvent" />
-    <artifact id="StructureDefinition/us-ph-triggering-valueset" key="StructureDefinition-us-ph-triggering-valueset" name="US Public Health Triggering Value Set" />
-    <artifact id="StructureDefinition/us-ph-triggering-valueset-library" key="StructureDefinition-us-ph-triggering-valueset-library" name="US Public Health Triggering Valueset Library" />
-    <artifact id="CodeSystem/us-ph-usage-context" key="CodeSystem-us-ph-usage-context" name="US Public Health Usage Context" />
-    <artifact id="CodeSystem/us-ph-usage-context-type" key="CodeSystem-us-ph-usage-context-type" name="US Public Health Usage Context Type" />
-    <artifact id="StructureDefinition/us-ph-usagewarning-extension" key="StructureDefinition-us-ph-usagewarning-extension" name="US Public Health Usage Warning Extension" />
-    <artifact id="StructureDefinition/us-ph-valueset" key="StructureDefinition-us-ph-valueset" name="US Public Health Value Set" />
-    <artifact id="Library/library-us-ph-valueset-library-example" key="Library-library-us-ph-valueset-library-example" name="US Public Health ValueSet Library Example" />
-    <artifact id="Library/library-us-ph-valueset-library-expansion-parameters-example" key="Library-library-us-ph-valueset-library-expansion-parameters-example"
-        name="US Public Health ValueSet Library Expansion Parameters Example" />
-    <artifact id="StructureDefinition/us-ph-valueset-library" key="StructureDefinition-us-ph-valueset-library" name="US Public Health Valueset Library" />
-    <artifact deprecated="true" id="Bundle/bundle-us-ph-specification-bundle-example" key="Bundle-bundle-us-ph-specification-bundle-example" name="USPublicHealthSpecificationBundleExample" />
-    <artifact deprecated="true" id="Bundle/bundle-us-ph-supplemental-bundle-example" key="Bundle-bundle-us-ph-supplemental-bundle-example" name="USPublicHealthSupplementalBundleExample" />
-    <artifact deprecated="true" id="StructureDefinition/us-ph-usageWarning" key="StructureDefinition-us-ph-usageWarning" name="Usage Warning" />
-    <artifact deprecated="true" id="ValueSet/valueset-ecr-task-businessstatus" key="ValueSet-valueset-ecr-task-businessstatus" name="Value Set eCR Task BusinessStatus" />
-    <artifact deprecated="true" id="ValueSet/valueset-reald-race-ethnicity" key="ValueSet-valueset-reald-race-ethnicity" name="ValueSet REALD Race Ethnicity" />
-    <artifact id="CapabilityStatement/capabilitystatement-ecr" key="CapabilityStatement-capabilitystatement-ecr" name="eCR CapabilityStatement" />
-    <artifact id="Device/device-ecr-software-ymca" key="Device-device-ecr-software-ymca" name="eCR Device Example: device-ecr-software-ymca" />
-    <artifact deprecated="true" id="StructureDefinition/ecr-message-bundle" key="StructureDefinition-ecr-message-bundle" name="eCR Message Bundle" />
-    <artifact id="StructureDefinition/ecr-messageheader" key="StructureDefinition-ecr-messageheader" name="eCR MessageHeader" />
-    <artifact id="ValueSet/valueset-ecr-messageheader-event" key="ValueSet-valueset-ecr-messageheader-event" name="eCR MessageHeader Event" />
-    <artifact id="MessageHeader/messageheader-ecr-requested-eicr" key="MessageHeader-messageheader-ecr-requested-eicr" name="eCR MessageHeader Example: Requested eICR" />
-    <artifact deprecated="true" id="StructureDefinition/ecr-task" key="StructureDefinition-ecr-task" name="eCR Task" />
-    <artifact deprecated="true" id="Task/task-ecr-ehr-requested-eicr" key="Task-task-ecr-ehr-requested-eicr" name="eCR Task Example: task-ecr-ehr-requested-eicr" />
-    <artifact id="StructureDefinition/eicr-composition" key="StructureDefinition-eicr-composition" name="eICR Composition" />
-    <artifact id="Composition/composition-eicr-pertussis-zika" key="Composition-composition-eicr-pertussis-zika" name="eICR Composition Example: Initial Public Health Case Report - Eve Everywoman, Pertussis and Zika" />
-    <artifact id="Composition/composition-eicr-zika" key="Composition-composition-eicr-zika" name="eICR Composition Example: Initial Public Health Case Report - Eve Everywoman, Zika" />
-    <artifact id="Composition/composition-eicr-zika-manual-initiation" key="Composition-composition-eicr-zika-manual-initiation"
-        name="eICR Composition Example: Initial Public Health Case Report - Eve Everywoman, Zika, Manual Initiation" />
-    <artifact deprecated="true" id="StructureDefinition/eicr-condition" key="StructureDefinition-eicr-condition" name="eICR Condition" />
-    <artifact id="Condition/condition-eicr-eve-everywoman-diabetes" key="Condition-condition-eicr-eve-everywoman-diabetes" name="eICR Condition example: Eve Everywoman - diabetes" />
-    <artifact id="Condition/condition-eicr-eve-everywoman-pertussis" key="Condition-condition-eicr-eve-everywoman-pertussis" name="eICR Condition example: Eve Everywoman - pertussis" />
-    <artifact id="Condition/condition-eicr-eve-everywoman-zika" key="Condition-condition-eicr-eve-everywoman-zika" name="eICR Condition example: Eve Everywoman - zika" />
-    <artifact id="Condition/condition-eicr-eve-everywoman-common-cold" key="Condition-condition-eicr-eve-everywoman-common-cold" name="eICR Condition example: Eve Everywoman- common cold" />
-    <artifact id="StructureDefinition/eicr-country-of-nationality" key="StructureDefinition-eicr-country-of-nationality" name="eICR Country of Nationality Observation" />
-    <artifact id="StructureDefinition/eicr-country-of-residence" key="StructureDefinition-eicr-country-of-residence" name="eICR Country of Residence Observation" />
-    <artifact id="StructureDefinition/eicr-document-bundle" key="StructureDefinition-eicr-document-bundle" name="eICR Document Bundle" />
-    <artifact deprecated="true" id="Bundle/bundle-eicr-document-pertussis-zika" key="Bundle-bundle-eicr-document-pertussis-zika" name="eICR Document Bundle Example: bundle-eicr-document-pertussis-zika" />
-    <artifact id="Bundle/bundle-eicr-document-zika" key="Bundle-bundle-eicr-document-zika" name="eICR Document Bundle Example: bundle-eicr-document-zika" />
-    <artifact id="StructureDefinition/eicr-encounter" key="StructureDefinition-eicr-encounter" name="eICR Encounter" />
-    <artifact deprecated="true" id="StructureDefinition/eicr-initiation-reason-extension" key="StructureDefinition-eicr-initiation-reason-extension" name="eICR Initiation Reason Extension" />
-    <artifact id="StructureDefinition/eicr-initiation-type-extension" key="StructureDefinition-eicr-initiation-type-extension" name="eICR Initiation Type Extension" />
-    <artifact id="StructureDefinition/eicr-procedure" key="StructureDefinition-eicr-procedure" name="eICR Procedure" />
-    <artifact id="Procedure/us-ph-procedure-ecmo" key="Procedure-us-ph-procedure-ecmo" name="eICR Procedure Example: ECMO" />
-    <artifact id="StructureDefinition/eicr-servicerequest" key="StructureDefinition-eicr-servicerequest" name="eICR ServiceRequest" />
-    <artifact id="ServiceRequest/servicerequest-eicr-zika" key="ServiceRequest-servicerequest-eicr-zika" name="eICR ServiceRequest Example" />
-    <artifact id="ServiceRequest/servicerequest-eicr-eve-everywoman-zika" key="ServiceRequest-servicerequest-eicr-eve-everywoman-zika" name="eICR ServiceRequest Example: Eve Everywoman - Zika" />
-    <artifact id="StructureDefinition/eicr-trigger-code-flag-extension" key="StructureDefinition-eicr-trigger-code-flag-extension" name="eICR Trigger Code Flag Extension" />
-    <artifact id="StructureDefinition/eicr-vaccine-credential-patient-assertion" key="StructureDefinition-eicr-vaccine-credential-patient-assertion" name="eICR Vaccine Credential Patient Assertion Observation" />
-    <artifact id="Observation/observation-vaccine-credential-assertion-eve-everywoman" key="Observation-observation-vaccine-credential-assertion-eve-everywoman"
-        name="eICR Vaccine Credential Patient Assertion Observation Example: Eve Everywoman" />
-    <artifact deprecated="true" id="Bundle/bundle-eRSD" key="Bundle-bundle-eRSD" name="eRSD Bundle Example: bundle-eRSD" />
-    <artifact id="CapabilityStatement/capabilitystatement-ersd-client" key="CapabilityStatement-capabilitystatement-ersd-client" name="eRSD Client CapabilityStatement" />
-    <artifact id="CodeSystem/ersd-endpoint-connection-type" key="CodeSystem-ersd-endpoint-connection-type" name="eRSD Endpoint Connection Type" />
-    <artifact id="ValueSet/valueset-ersd-endpoint-connection-type" key="ValueSet-valueset-ersd-endpoint-connection-type" name="eRSD Endpoint Connection Type Codes" />
-    <artifact id="CodeSystem/ersd-jurisdiction-types" key="CodeSystem-ersd-jurisdiction-types" name="eRSD JurisdictionTypes" />
-    <artifact id="CodeSystem/ersd-jurisdictions-example" key="CodeSystem-ersd-jurisdictions-example" name="eRSD Jurisdictions Example" />
-    <artifact id="StructureDefinition/ersd-plandefinition" key="StructureDefinition-ersd-plandefinition" name="eRSD PlanDefinition" />
-    <artifact id="PlanDefinition/plandefinition-ersd-instance-example" key="PlanDefinition-plandefinition-ersd-instance-example" name="eRSD PlanDefinition Instance Example" />
-    <artifact id="PlanDefinition/plandefinition-ersd-instance-namedEvent-example" key="PlanDefinition-plandefinition-ersd-instance-namedEvent-example" name="eRSD PlanDefinition Instance NamedEvent Example" />
-    <artifact id="PlanDefinition/plandefinition-ersd-instance-simple-example" key="PlanDefinition-plandefinition-ersd-instance-simple-example" name="eRSD PlanDefinition Instance Simple Example" />
-    <artifact deprecated="true" id="PlanDefinition/plandefinition-ersd-instance" key="PlanDefinition-plandefinition-ersd-instance" name="eRSD PlanDefinition Instance: plandefinition-ersd-instance" />
-    <artifact deprecated="true" id="StructureDefinition/ersd-specification-bundle" key="StructureDefinition-ersd-specification-bundle" name="eRSD Specification Bundle" />
-    <artifact deprecated="true" id="Bundle/bundle-ersd-specification-bundle" key="Bundle-bundle-ersd-specification-bundle" name="eRSD Specification Bundle example" />
-    <artifact id="Library/library-ersd-specification-library-example" key="Library-library-ersd-specification-library-example" name="eRSD Specification Library Example" />
-    <artifact deprecated="true" id="StructureDefinition/ersd-supplemental-bundle" key="StructureDefinition-ersd-supplemental-bundle" name="eRSD Supplemental Bundle" />
-    <artifact deprecated="true" id="Bundle/bundle-ersd-supplemental-bundle" key="Bundle-bundle-ersd-supplemental-bundle" name="eRSD Supplemental Bundle example" />
-    <artifact id="StructureDefinition/ersd-supplemental-library" key="StructureDefinition-ersd-supplemental-library" name="eRSD Supplemental Library" />
-    <artifact id="Library/library-ersd-supplemental-library-example" key="Library-library-ersd-supplemental-library-example" name="eRSD Supplemental Library Example" />
-    <artifact id="Parameters/expansion-parameters-ecr" key="Parameters-expansion-parameters-ecr" name="expansion-parameters-ecr" />
-    <artifact deprecated="true" id="Library/library-rctc" key="Library-library-rctc" name="library-rctc" />
-    <artifact id="Subscription/subscription-dxtc" key="Subscription-subscription-dxtc" name="subscription-dxtc" />
-    <artifact id="Subscription/subscription-lotc" key="Subscription-subscription-lotc" name="subscription-lotc" />
-    <artifact id="Subscription/subscription-ostc" key="Subscription-subscription-ostc" name="subscription-ostc" />
-    <page key="NA" name="(NA)" />
-    <page key="many" name="(many)" />
-    <page key="acknowledgements" name="Acknowledgements" />
-    <page key="acronyms_and_abbreviations" name="Acronyms and Abbreviations" />
-    <page key="artifacts" name="Artifacts Summary" />
-    <page key="design_considerations" name="Design Considerations" />
-    <page key="downloads" name="Downloads" />
-    <page key="electronic_initial_case_report_eicr_transaction_and_profiles" name="Electronic Initial Case Report (eICR) Transaction and Profiles" />
-    <page key="electronic_reporting_and_surveillance_distribution_ersd_transaction_and_profiles" name="Electronic Reporting and Surveillance Distribution (eRSD) Transaction and Profiles" />
-    <page key="index" name="Home Page" />
-    <page key="implementation_guidance" name="Implementation Guidance" />
-    <page deprecated="true" key="notice_to_ballot_commenters" name="Notice to Ballot Commenters" />
-    <page key="relationship_to_other_standards" name="Relationship to Other Standards" />
-    <page key="reportability_response_rr_transaction_and_profiles" name="Reportability Response (RR) Transaction and Profiles" />
-    <page key="reportability_response_narrative_guidance" name="Reportability Response Narrative Guidance" />
-    <page key="rule_filter_generation" name="Rule Filter Generation" />
-    <page key="subscription_service" name="Subscription Service" />
-    <page key="toc" name="Table of Contents" />
-    <page key="terminology" name="Terminology" />
-    <page key="the_specification" name="The Specification" />
-    <page key="transaction_profiles" name="Transaction Profiles" />
-    <page key="transport_options" name="Transport Options" />
-    <page key="eicr_data_elements" name="eICR Data Elements" />
-    <page deprecated="true" key="ersd_jurisdictions_codesystem_configuration" name="eRSD Jurisdictions CodeSystem Configuration" />
-    <page key="ersd_jurisdictions_codesystem_description" name="eRSD Jurisdictions CodeSystem Description" />
-    <page key="ersd_jurisdictions_codesystem_query" name="eRSD Jurisdictions CodeSystem Query" />
-    <page deprecated="true" key="ersd_narrative_guidance" name="eRSD Narrative Guidance" />
-    <page key="ersd_plandefinition_datarequirement_fhir_query" name="eRSD PlanDefinition DataRequirement FHIR Queries" />
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/ecr/2021Jan" ciUrl="http://build.fhir.org/ig/HL7/case-reporting" defaultVersion="2.1.2" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/case-reporting" url="http://hl7.org/fhir/us/ecr">
+  <version code="current" url="http://build.fhir.org/ig/HL7/case-reporting" />
+  <version code="2.1.2" url="http://hl7.org/fhir/us/ecr/STU2.1" />
+  <version code="2.1.1" deprecated="true" url="http://hl7.org/fhir/us/ecr/STU2.1.1" />
+  <version code="2.1.0" deprecated="true" url="http://hl7.org/fhir/us/ecr/STU2.1" />
+  <version code="2.0.0" deprecated="true" url="http://hl7.org/fhir/us/ecr/STU2" />
+  <version code="1.1.0" deprecated="true" url="http://hl7.org/fhir/us/ecr/2021Jan" />
+  <version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/ecr/STU1" />
+  <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/us/ecr/2018Sep" />
+  <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/uv/ecr/2018Jan" />
+  <version code="0.1" deprecated="true" />
+  <artifactPageExtension value="-definitions"/>
+  <artifactPageExtension value="-examples"/>
+  <artifactPageExtension value="-mappings"/>
+  <artifact deprecated="true" id="StructureDefinition/characteristics-of-home-environment" key="StructureDefinition-characteristics-of-home-environment" name="Characteristics of Home Environment"/>
+  <artifact id="ValueSet/valueset-chlamydia-example" key="ValueSet-valueset-chlamydia-example" name="Chlamydia Example"/>
+  <artifact deprecated="true" id="CodeSystem/codesystem-task-businessStatus" key="CodeSystem-codesystem-task-businessStatus" name="Code System Task Business Status"/>
+  <artifact deprecated="true" id="CodeSystem/codesystem-reald-race-ethnicity" key="CodeSystem-codesystem-reald-race-ethnicity" name="CodeSystem REALD Race Ethnicity"/>
+  <artifact id="Observation/observation-country-of-nationality-eve-everywoman" key="Observation-observation-country-of-nationality-eve-everywoman" name="Country of Nationality Observation Example: Eve Everywoman"/>
+  <artifact id="Observation/observation-country-of-residence-eve-everywoman" key="Observation-observation-country-of-residence-eve-everywoman" name="Country of Residence Observation Example: Eve Everywoman"/>
+  <artifact deprecated="true" id="StructureDefinition/date-determined-extension" key="StructureDefinition-date-determined-extension" name="Date Determined Extension"/>
+  <artifact deprecated="true" id="StructureDefinition/date-recorded-extension" key="StructureDefinition-date-recorded-extension" name="Date Recorded Extension"/>
+  <artifact id="Device/device-ecmo" key="Device-device-ecmo" name="Device Example: ECMO"/>
+  <artifact deprecated="true" id="StructureDefinition/disability-status" key="StructureDefinition-disability-status" name="Disability Status"/>
+  <artifact id="Observation/observation-disability-status-eve-everywoman" key="Observation-observation-disability-status-eve-everywoman" name="Disability Status Example: Eve Everywoman"/>
+  <artifact id="Endpoint/endpoint-ecr-salem-medical-center" key="Endpoint-endpoint-ecr-salem-medical-center" name="Endpoint Example: endpoint-ecr-salem-medical-center"/>
+  <artifact id="Endpoint/endpoint-ecr-ymca" key="Endpoint-endpoint-ecr-ymca" name="Endpoint Example: endpoint-ecr-ymca"/>
+  <artifact id="ValueSet/valueset-pctc-example" key="ValueSet-valueset-pctc-example" name="Example Procedure Triggers for Public Health Reporting"/>
+  <artifact id="ValueSet/valueset-dxtc-example" key="ValueSet-valueset-dxtc-example" name="Example ValueSet: Diagnosis Problem Triggers for Public Health Reporting"/>
+  <artifact deprecated="true" id="ValueSet/valueset-iztc-example" key="ValueSet-valueset-iztc-example" name="Example ValueSet: Immunizations Triggers for Public Health Reporting"/>
+  <artifact id="ValueSet/valueset-lrtc-example" key="ValueSet-valueset-lrtc-example" name="Example ValueSet: Lab Observation Test Name Triggers for Public Health Reporting"/>
+  <artifact id="ValueSet/valueset-lotc-example" key="ValueSet-valueset-lotc-example" name="Example ValueSet: Lab Order Test Triggers for Public Health Reporting"/>
+  <artifact id="ValueSet/valueset-mrtc-example" key="ValueSet-valueset-mrtc-example" name="Example ValueSet: Medications Triggers for Public Health Reporting"/>
+  <artifact id="ValueSet/valueset-ostc-example" key="ValueSet-valueset-ostc-example" name="Example ValueSet: Organism Substance Triggers for Public Health Reporting"/>
+  <artifact deprecated="true" id="ValueSet/valueset-sdltc-example" key="ValueSet-valueset-sdltc-example" name="Example ValueSet: Suspected Disorder Lab Obs Triggers for Public Health Reporting"/>
+  <artifact deprecated="true" id="ValueSet/valueset-sdmtc-example" key="ValueSet-valueset-sdmtc-example" name="Example ValueSet: Suspected Disorder Medication Order Triggers for Public Health Reporting"/>
+  <artifact id="ValueSet/valueset-sdtc-example" key="ValueSet-valueset-sdtc-example" name="Example ValueSet: Suspected Disorder Triggers for Public Health Reporting"/>
+  <artifact deprecated="true" id="CodeSystem/executabletask-type" key="CodeSystem-executabletask-type" name="Executable Task Types Code System"/>
+  <artifact deprecated="true" id="ValueSet/2.16.840.1.113762.1.4.1099.24" key="ValueSet-2.16.840.1.113762.1.4.1099.24" name="Extended Pregnancy Status Value Set"/>
+  <artifact deprecated="true" id="Library/FHIRHelpers" key="Library-FHIRHelpers" name="FHIR Helpers Library"/>
+  <artifact deprecated="true" id="Library/FHIR-ModelInfo" key="Library-FHIR-ModelInfo" name="FHIR Model Definition"/>
+  <artifact id="Immunization/immunization-ecr-pneumo" key="Immunization-immunization-ecr-pneumo" name="Immunization Example: immunization-ecr-pneumo"/>
+  <artifact id="Observation/observation-last-menstrual-period-eve-everywoman" key="Observation-observation-last-menstrual-period-eve-everywoman" name="Last Menstrual Period Example: observation-last-menstrual-period-eve-everywoman"/>
+  <artifact id="OperationDefinition/operationdefinition-library-package" key="OperationDefinition-operationdefinition-library-package" name="Library Packaging"/>
+  <artifact id="Location/location-ecr-city-football-stadium" key="Location-location-ecr-city-football-stadium" name="Location Example: City Football Stadium"/>
+  <artifact id="MedicationAdministration/medicationadministration-eve-everywoman-azithromycin" key="MedicationAdministration-medicationadministration-eve-everywoman-azithromycin" name="MedicationAdministration Example: Eve Everywoman, azithromycin"/>
+  <artifact id="MedicationAdministration/medicationadministration-eve-everywoman-naloxone-response" key="MedicationAdministration-medicationadministration-eve-everywoman-naloxone-response" name="MedicationAdministration Example: Eve Everywoman, naloxone response"/>
+  <artifact id="CodeSystem/codesystem-messageHeader-event" key="CodeSystem-codesystem-messageHeader-event" name="MessageHeader Event Code System"/>
+  <artifact id="Observation/observation-odh-employment-status-ecr-eve-everywoman" key="Observation-observation-odh-employment-status-ecr-eve-everywoman" name="ODH Employment Status Example: observation-odh-employment-status-ecr-eve-everywoman"/>
+  <artifact id="Observation/observation-odh-past-or-present-job-eve-everywoman" key="Observation-observation-odh-past-or-present-job-eve-everywoman" name="ODH Past or Present Job Example: observation-odh-past-or-present-job-eve-everywoman"/>
+  <artifact id="Observation/observation-odh-usual-work-eve-everywoman" key="Observation-observation-odh-usual-work-eve-everywoman" name="ODH Usual Work Example: observation-odh-usual-work-eve-everywoman"/>
+  <artifact id="Observation/observation-rr-summary" key="Observation-observation-rr-summary" name="Observation RR Summary example"/>
+  <artifact deprecated="true" id="StructureDefinition/postpartum-status" key="StructureDefinition-postpartum-status" name="Postpartum Status"/>
+  <artifact deprecated="true" id="StructureDefinition/pregnancy-outcome-observation" key="StructureDefinition-pregnancy-outcome-observation" name="Pregnancy Outcome Observation"/>
+  <artifact deprecated="true" id="ValueSet/pregnancy-status" key="ValueSet-pregnancy-status" name="Pregnancy Status"/>
+  <artifact deprecated="true" id="StructureDefinition/pregnancy-status-observation" key="StructureDefinition-pregnancy-status-observation" name="Pregnancy Status Observation"/>
+  <artifact deprecated="true" id="StructureDefinition/rr-communication" key="StructureDefinition-rr-communication" name="RR Communication"/>
+  <artifact deprecated="true" id="Bundle/bundle-rr-collection-communication" key="Bundle-bundle-rr-collection-communication" name="RR Communication Collection Bundle Example: bundle-rr-collection-communication"/>
+  <artifact deprecated="true" id="Communication/communication-rr-one-cond-one-pha" key="Communication-communication-rr-one-cond-one-pha" name="RR Communication profile example: One condition, one PHA"/>
+  <artifact deprecated="true" id="Communication/communication-rr-single-single-html-validation-output" key="Communication-communication-rr-single-single-html-validation-output" name="RR Communication profile example: One condition, one PHA, with validation output"/>
+  <artifact id="StructureDefinition/rr-composition" key="StructureDefinition-rr-composition" name="RR Composition"/>
+  <artifact deprecated="true" id="StructureDefinition/rr-determination-of-reportability-extension" key="StructureDefinition-rr-determination-of-reportability-extension" name="RR Determination of Reportability Extension"/>
+  <artifact deprecated="true" id="StructureDefinition/rr-determination-of-reportability-reason-extension" key="StructureDefinition-rr-determination-of-reportability-reason-extension" name="RR Determination of Reportability Reason Extension"/>
+  <artifact deprecated="true" id="StructureDefinition/rr-determination-of-reportability-rule-extension" key="StructureDefinition-rr-determination-of-reportability-rule-extension" name="RR Determination of Reportability Rule Extension"/>
+  <artifact id="StructureDefinition/rr-document-bundle" key="StructureDefinition-rr-document-bundle" name="RR Document Bundle"/>
+  <artifact id="Bundle/bundle-rr-document-one-cond-one-pha" key="Bundle-bundle-rr-document-one-cond-one-pha" name="RR Document Bundle Example: One Condition, One PHA"/>
+  <artifact id="StructureDefinition/rr-documentreference" key="StructureDefinition-rr-documentreference" name="RR DocumentReference"/>
+  <artifact id="DocumentReference/documentreference-add-reporting-needs-pdf" key="DocumentReference-documentreference-add-reporting-needs-pdf" name="RR DocumentReference example: Additional reporting needs"/>
+  <artifact id="DocumentReference/documentreference-zika-follow-up-pdf" key="DocumentReference-documentreference-zika-follow-up-pdf" name="RR DocumentReference example: Zika follow-up"/>
+  <artifact id="DocumentReference/documentreference-zika-info-pdf" key="DocumentReference-documentreference-zika-info-pdf" name="RR DocumentReference example: Zika info"/>
+  <artifact id="StructureDefinition/rr-external-resource-extension" key="StructureDefinition-rr-external-resource-extension" name="RR External Resource Extension"/>
+  <artifact deprecated="true" id="StructureDefinition/rr-external-resource-type-extension" key="StructureDefinition-rr-external-resource-type-extension" name="RR External Resource Type Extension"/>
+  <artifact deprecated="true" id="StructureDefinition/rr-location-relevance-extension" key="StructureDefinition-rr-location-relevance-extension" name="RR Location Relevance Extension"/>
+  <artifact id="StructureDefinition/rr-priority-extension" key="StructureDefinition-rr-priority-extension" name="RR Priority Extension"/>
+  <artifact id="StructureDefinition/rr-relevant-reportable-condition-observation" key="StructureDefinition-rr-relevant-reportable-condition-observation" name="RR Relevant Reportable Condition Observation"/>
+  <artifact id="Observation/observation-rr-relevant-reportable-condition-observation" key="Observation-observation-rr-relevant-reportable-condition-observation" name="RR Relevant Reportable Condition Observation Example"/>
+  <artifact deprecated="true" id="PlanDefinition/plandefinition-rr-relevant-reportable-condition" key="PlanDefinition-plandefinition-rr-relevant-reportable-condition" name="RR Relevant Reportable Condition PlanDefinition Example"/>
+  <artifact deprecated="true" id="StructureDefinition/rr-relevant-reportable-condition-plandefinition" key="StructureDefinition-rr-relevant-reportable-condition-plandefinition" name="RR Relevant Reportable Condition Plandefinition"/>
+  <artifact id="StructureDefinition/rr-reportability-information-observation" key="StructureDefinition-rr-reportability-information-observation" name="RR Reportability Information Observation"/>
+  <artifact id="Observation/observation-rr-reportability-information-observation" key="Observation-observation-rr-reportability-information-observation" name="RR Reportability Information Observation Example"/>
+  <artifact id="StructureDefinition/rr-responsible-agency-organization" key="StructureDefinition-rr-responsible-agency-organization" name="RR Responsible Agency Organization"/>
+  <artifact id="Organization/organization-rr-responsible-agency-haw" key="Organization-organization-rr-responsible-agency-haw" name="RR Responsible Agency Organization Example: Health Authority West Responsible Agency"/>
+  <artifact deprecated="true" id="StructureDefinition/rr-responsible-agency-organization-extension" key="StructureDefinition-rr-responsible-agency-organization-extension" name="RR Responsible Agency Organization Extension"/>
+  <artifact id="StructureDefinition/rr-routing-entity-organization" key="StructureDefinition-rr-routing-entity-organization" name="RR Routing Entity Organization"/>
+  <artifact id="Organization/organization-rr-routing-entity-haw" key="Organization-organization-rr-routing-entity-haw" name="RR Routing Entity Organization Example: Health Authority West Routing Entity"/>
+  <artifact deprecated="true" id="StructureDefinition/rr-routing-entity-organization-extension" key="StructureDefinition-rr-routing-entity-organization-extension" name="RR Routing Entity Organization Extension"/>
+  <artifact id="StructureDefinition/rr-rules-authoring-agency-organization" key="StructureDefinition-rr-rules-authoring-agency-organization" name="RR Rules Authoring Agency Organization"/>
+  <artifact id="Organization/organization-rr-rules-authoring-agency-haw" key="Organization-organization-rr-rules-authoring-agency-haw" name="RR Rules Authoring Agency Organization Example: Health Authority West Rules Authoring Agency"/>
+  <artifact deprecated="true" id="StructureDefinition/rr-rules-authoring-agency-organization-extension" key="StructureDefinition-rr-rules-authoring-agency-organization-extension" name="RR Rules Authoring Agency Organization Extension"/>
+  <artifact id="StructureDefinition/rr-summary" key="StructureDefinition-rr-summary" name="RR Summary"/>
+  <artifact id="Observation/observation-rr-eicr-processing-status" key="Observation-observation-rr-eicr-processing-status" name="RR eICR Processing Status Example: observation-rr-eicr-processing-status"/>
+  <artifact id="StructureDefinition/rr-eicr-processing-status-extension" key="StructureDefinition-rr-eicr-processing-status-extension" name="RR eICR Processing Status Extension"/>
+  <artifact id="StructureDefinition/rr-eicr-processing-status-observation" key="StructureDefinition-rr-eicr-processing-status-observation" name="RR eICR Processing Status Observation"/>
+  <artifact id="Observation/observation-rr-eicr-processing-status-reason" key="Observation-observation-rr-eicr-processing-status-reason" name="RR eICR Processing Status Reason Example: observation-rr-eicr-processing-status-reason"/>
+  <artifact id="StructureDefinition/rr-eicr-processing-status-reason-observation" key="StructureDefinition-rr-eicr-processing-status-reason-observation" name="RR eICR Processing Status Reason Observation"/>
+  <artifact id="StructureDefinition/rr-eicr-receipt-time-extension" key="StructureDefinition-rr-eicr-receipt-time-extension" name="RR eICR Receipt Time Extension"/>
+  <artifact deprecated="true" id="StructureDefinition/real-d-race-ethnicity-extension" key="StructureDefinition-real-d-race-ethnicity-extension" name="Race, Ethnicity, Language, and Disability (REAL D) Race and Ethnicity Extension"/>
+  <artifact deprecated="true" id="StructureDefinition/relates-to-extension" key="StructureDefinition-relates-to-extension" name="Relates To Extension"/>
+  <artifact id="Composition/composition-rr-single-single-html-validation-output" key="Composition-composition-rr-single-single-html-validation-output" name="Reportability Response - One Condition/One PHA with eICR Validation Output example"/>
+  <artifact id="Composition/composition-rr-one-cond-one-pha" key="Composition-composition-rr-one-cond-one-pha" name="Reportability Response Composition - One Condition/One PHA example"/>
+  <artifact id="Library/library-rctc-example" key="Library-library-rctc-example" name="Reportable Condition Trigger Codes (RCTC) Example Library"/>
+  <artifact id="Library/RuleFilters" key="Library-RuleFilters" name="Rule Filters Example Library"/>
+  <artifact deprecated="true" id="StructureDefinition/therapeutic-medication-response-extension" key="StructureDefinition-therapeutic-medication-response-extension" name="Therapeutic Medication Response Extension"/>
+  <artifact deprecated="true" id="StructureDefinition/address-extension" key="StructureDefinition-address-extension" name="Travel History Address Extension"/>
+  <artifact deprecated="true" id="StructureDefinition/travel-history-observation" key="StructureDefinition-travel-history-observation" name="Travel History Observation"/>
+  <artifact id="Observation/observation-travel-history-eve-everywoman-1999" key="Observation-observation-travel-history-eve-everywoman-1999" name="Travel History Observation Example: observation-travel-history-eve-everywoman-1999"/>
+  <artifact id="Observation/observation-travel-history-eve-everywoman-201610" key="Observation-observation-travel-history-eve-everywoman-201610" name="Travel History Observation Example: observation-travel-history-eve-everywoman-201610"/>
+  <artifact id="Observation/observation-travel-history-eve-everywoman-201801" key="Observation-observation-travel-history-eve-everywoman-201801" name="Travel History Observation Example: observation-travel-history-eve-everywoman-201801"/>
+  <artifact deprecated="true" id="StructureDefinition/tribal-affiliation-extension" key="StructureDefinition-tribal-affiliation-extension" name="Tribal Affiliation Extension"/>
+  <artifact deprecated="true" id="Device/us-core-device-ecmo" key="Device-us-core-device-ecmo" name="US Core Device Example: ECMO"/>
+  <artifact id="Practitioner/practitioner-us-core-henry-seven" key="Practitioner-practitioner-us-core-henry-seven" name="US Core Practitioner Example: Henry Seven"/>
+  <artifact deprecated="true" id="Observation/observation-us-core-results-eve-everywoman-lymphocytes" key="Observation-observation-us-core-results-eve-everywoman-lymphocytes" name="US Core Results Example: observation-us-core-results-eve-everywoman-lymphocytes"/>
+  <artifact deprecated="true" id="Observation/observation-us-core-results-eve-everywoman-pertussis" key="Observation-observation-us-core-results-eve-everywoman-pertussis" name="US Core Results Example: observation-us-core-results-eve-everywoman-pertussis"/>
+  <artifact id="Observation/observation-us-ph-lab-result-eve-everywoman-pertussis" key="Observation-observation-us-ph-lab-result-eve-everywoman-pertussis" name="US Core Results Example: observation-us-ph-lab-result-eve-everywoman-pertussis"/>
+  <artifact id="Observation/observation-blood-pressure-eve-everywoman" key="Observation-observation-blood-pressure-eve-everywoman" name="US Core Vital Sign Observation example"/>
+  <artifact id="Encounter/encounter-eicr-eve-everywoman-completed-inpatient" key="Encounter-encounter-eicr-eve-everywoman-completed-inpatient" name="US PH Encounter Example: encounter-eicr-eve-everywoman-completed-inpatient"/>
+  <artifact id="Encounter/encounter-eicr-eve-everywoman-current-inpatient" key="Encounter-encounter-eicr-eve-everywoman-current-inpatient" name="US PH Encounter Example: encounter-eicr-eve-everywoman-current-inpatient"/>
+  <artifact id="Encounter/encounter-eicr-eve-everywoman-external-encounter" key="Encounter-encounter-eicr-eve-everywoman-external-encounter" name="US PH Encounter Example: encounter-eicr-eve-everywoman-external-encounter"/>
+  <artifact id="Encounter/encounter-eicr-eve-everywoman-external-historical" key="Encounter-encounter-eicr-eve-everywoman-external-historical" name="US PH Encounter Example: encounter-eicr-eve-everywoman-external-historical"/>
+  <artifact id="Encounter/encounter-eicr-eve-everywoman-outpatient" key="Encounter-encounter-eicr-eve-everywoman-outpatient" name="US PH Encounter Example: encounter-eicr-eve-everywoman-outpatient"/>
+  <artifact id="Location/location-ecr-salem-medical-center" key="Location-location-ecr-salem-medical-center" name="US PH Location Example: Clinic Bldg A, Salem Medical Center"/>
+  <artifact id="Organization/organization-ecr-acme-laboratory" key="Organization-organization-ecr-acme-laboratory" name="US PH Organization Example: Acme Labs"/>
+  <artifact id="Organization/organization-ecr-health-authority-west" key="Organization-organization-ecr-health-authority-west" name="US PH Organization Example: Health Authority West"/>
+  <artifact id="Organization/organization-ecr-salem-medical-center" key="Organization-organization-ecr-salem-medical-center" name="US PH Organization Example: Salem Medical Center"/>
+  <artifact id="Organization/organization-ecr-ymca-center" key="Organization-organization-ecr-ymca-center" name="US PH Organization Example: YMCA"/>
+  <artifact id="Patient/patient-ecr-eve-everywoman" key="Patient-patient-ecr-eve-everywoman" name="US PH Patient Example: Eve Everywoman"/>
+  <artifact id="PractitionerRole/practitionerrole-henry-seven" key="PractitionerRole-practitionerrole-henry-seven" name="US PH PractitionerRole Example: Henry Seven"/>
+  <artifact id="StructureDefinition/us-ph-address-extension" key="StructureDefinition-us-ph-address-extension" name="US Public Health Address Extension"/>
+  <artifact id="StructureDefinition/us-ph-alternative-expression-extension" key="StructureDefinition-us-ph-alternativeExpression" name="US Public Health Alternative Expression Extension"/>
+  <artifact id="StructureDefinition/us-ph-characteristics-of-home-environment" key="StructureDefinition-us-ph-characteristics-of-home-environment" name="US Public Health Characteristics of Home Environment"/>
+  <artifact id="Observation/observation-characteristics-of-home-environment-eve-everywoman" key="Observation-observation-characteristics-of-home-environment-eve-everywoman" name="US Public Health Characteristics of Home Environment Example: Eve Everywoman"/>
+  <artifact id="StructureDefinition/us-ph-codesystem" key="StructureDefinition-us-ph-codesystem" name="US Public Health CodeSystem"/>
+  <artifact id="StructureDefinition/us-ph-codesystem-property-binding-extension" key="StructureDefinition-us-ph-codesystem-property-binding-extension" name="US Public Health CodeSystem Property Binding Extension"/>
+  <artifact id="StructureDefinition/us-ph-composition" key="StructureDefinition-us-ph-composition" name="US Public Health Composition"/>
+  <artifact id="StructureDefinition/us-ph-computable-library" key="StructureDefinition-us-ph-computablelibrary" name="US Public Health Computable Library"/>
+  <artifact id="StructureDefinition/us-ph-computable-valueset" key="StructureDefinition-us-ph-computablevalueset" name="US Public Health Computable ValueSet"/>
+  <artifact id="ValueSet/us-ph-computable-valueset-example" key="ValueSet-us-ph-computable-valueset-example" name="US Public Health Computable Valueset Example"/>
+  <artifact id="StructureDefinition/us-ph-condition" key="StructureDefinition-us-ph-condition" name="US Public Health Condition"/>
+  <artifact id="StructureDefinition/us-ph-content-bundle" key="StructureDefinition-us-ph-content-bundle" name="US Public Health Content Bundle"/>
+  <artifact id="StructureDefinition/us-ph-data-encrypted-extension" key="StructureDefinition-us-ph-data-encrypted-extension" name="US Public Health Data Encrypted Extension"/>
+  <artifact id="StructureDefinition/us-ph-date-determined-extension" key="StructureDefinition-us-ph-date-determined-extension" name="US Public Health Date Determined Extension"/>
+  <artifact id="StructureDefinition/us-ph-date-recorded-extension" key="StructureDefinition-us-ph-date-recorded-extension" name="US Public Health Date Recorded Extension"/>
+  <artifact id="StructureDefinition/us-ph-determination-of-reportability-extension" key="StructureDefinition-us-ph-determination-of-reportability-extension" name="US Public Health Determination of Reportability Extension"/>
+  <artifact id="StructureDefinition/us-ph-determination-of-reportability-reason-extension" key="StructureDefinition-us-ph-determination-of-reportability-reason-extension" name="US Public Health Determination of Reportability Reason Extension"/>
+  <artifact id="StructureDefinition/us-ph-determination-of-reportability-rule-extension" key="StructureDefinition-us-ph-determination-of-reportability-rule-extension" name="US Public Health Determination of Reportability Rule Extension"/>
+  <artifact id="StructureDefinition/us-ph-disability-status" key="StructureDefinition-us-ph-disability-status" name="US Public Health Disability Status"/>
+  <artifact id="StructureDefinition/us-ph-document-bundle" key="StructureDefinition-us-ph-document-bundle" name="US Public Health Document Bundle"/>
+  <artifact id="StructureDefinition/us-ph-emergency-outbreak-information" key="StructureDefinition-us-ph-emergency-outbreak-information" name="US Public Health Emergency Outbreak Information"/>
+  <artifact id="Observation/observation-us-ph-emergency-outbreak-info-eve-everywoman" key="Observation-observation-us-ph-emergency-outbreak-info-eve-everywoman" name="US Public Health Emergency Outbreak Information Example: Eve Everywoman"/>
+  <artifact id="StructureDefinition/us-ph-encounter" key="StructureDefinition-us-ph-encounter" name="US Public Health Encounter"/>
+  <artifact id="StructureDefinition/us-ph-endpoint" key="StructureDefinition-us-ph-endpoint" name="US Public Health Endpoint"/>
+  <artifact id="StructureDefinition/us-ph-executable-library" key="StructureDefinition-us-ph-executablelibrary" name="US Public Health Executable Library"/>
+  <artifact id="StructureDefinition/us-ph-executable-valueset" key="StructureDefinition-us-ph-executablevalueset" name="US Public Health Executable ValueSet"/>
+  <artifact id="StructureDefinition/us-ph-expansion-parameters-extension" key="StructureDefinition-us-ph-expansion-parameters-extension" name="US Public Health Expansion Parameters Extension"/>
+  <artifact id="StructureDefinition/us-ph-exposure-contact-information" key="StructureDefinition-us-ph-exposure-contact-information" name="US Public Health Exposure Contact Information"/>
+  <artifact id="Observation/observation-us-ph-exposure-contact-info-football-game" key="Observation-observation-us-ph-exposure-contact-info-football-game" name="US Public Health Exposure Contact Information Example: Football Game"/>
+  <artifact id="StructureDefinition/us-ph-fhirquerypattern-extension" key="StructureDefinition-us-ph-fhirquerypattern-extension" name="US Public Health FHIR Query Pattern Extension"/>
+  <artifact id="StructureDefinition/us-ph-genderidentity-extension" key="StructureDefinition-us-ph-genderidentity-extension" name="US Public Health Gender Identity Extension"/>
+  <artifact id="StructureDefinition/us-ph-information-recipient-extension" key="StructureDefinition-us-ph-information-recipient-extension" name="US Public Health Information Recipient Extension"/>
+  <artifact id="StructureDefinition/us-ph-initiation-reason-extension" key="StructureDefinition-us-ph-initiation-reason-extension" name="US Public Health Initiation Reason Extension"/>
+  <artifact id="Observation/observation-us-ph-lab-result-eve-everywoman-lymphocytes" key="Observation-observation-us-ph-lab-result-eve-everywoman-lymphocytes" name="US Public Health Lab Result Observation Example: observation-us-ph-lab-result-eve-everywoman-lymphocytes"/>
+  <artifact id="StructureDefinition/us-ph-lab-result-observation" key="StructureDefinition-us-ph-lab-result-observation" name="US Public Health Laboratory Result Observation Profile"/>
+  <artifact id="StructureDefinition/us-ph-location" key="StructureDefinition-us-ph-location" name="US Public Health Location"/>
+  <artifact id="StructureDefinition/us-ph-medicationadministration" key="StructureDefinition-us-ph-medicationadministration" name="US Public Health MedicationAdministration"/>
+  <artifact id="StructureDefinition/us-ph-message-processing-category-extension" key="StructureDefinition-us-ph-message-processing-category-extension" name="US Public Health Message Processing Category Extension"/>
+  <artifact id="ValueSet/us-ph-message-significance-category" key="ValueSet-us-ph-message-significance-category" name="US Public Health Message Significance Category"/>
+  <artifact id="CodeSystem/us-ph-message-types-codesystem" key="CodeSystem-us-ph-message-types-codesystem" name="US Public Health Message Types CodeSystem"/>
+  <artifact id="ValueSet/us-ph-message-types-valueset" key="ValueSet-us-ph-message-types-valueset" name="US Public Health Message Types ValueSet"/>
+  <artifact id="StructureDefinition/us-ph-messageheader" key="StructureDefinition-us-ph-messageheader" name="US Public Health MessageHeader"/>
+  <artifact deprecated="true" id="StructureDefinition/us-ph-namedEventType" key="StructureDefinition-us-ph-namedEventType" name="US Public Health Named Event Type"/>
+  <artifact id="StructureDefinition/us-ph-named-eventtype-extension" key="StructureDefinition-us-ph-named-eventtype-extension" name="US Public Health Named Event Type Extension"/>
+  <artifact id="StructureDefinition/us-ph-organization" key="StructureDefinition-us-ph-organization" name="US Public Health Organization"/>
+  <artifact id="StructureDefinition/us-ph-patient" key="StructureDefinition-us-ph-patient" name="US Public Health Patient"/>
+  <artifact id="StructureDefinition/us-ph-plandefinition" key="StructureDefinition-us-ph-plandefinition" name="US Public Health PlanDefinition"/>
+  <artifact id="ValueSet/us-ph-plandefinition-action" key="ValueSet-us-ph-plandefinition-action" name="US Public Health PlanDefinition Action"/>
+  <artifact id="CodeSystem/us-ph-plandefinition-actions" key="CodeSystem-us-ph-plandefinition-actions" name="US Public Health PlanDefinition Action Codes"/>
+  <artifact id="PlanDefinition/plandefinition-us-public-health-example" key="PlanDefinition-plandefinition-us-public-health-example" name="US Public Health PlanDefinition Example"/>
+  <artifact id="StructureDefinition/us-ph-postpartum-status" key="StructureDefinition-us-ph-postpartum-status" name="US Public Health Postpartum Status"/>
+  <artifact id="Observation/observation-postpartum-status-eve-everywoman" key="Observation-observation-postpartum-status-eve-everywoman" name="US Public Health Postpartum Status Example: observation-postpartum-status-eve-everywoman"/>
+  <artifact id="StructureDefinition/us-ph-practitionerrole" key="StructureDefinition-us-ph-practitionerrole" name="US Public Health Practitioner Role"/>
+  <artifact id="StructureDefinition/us-ph-pregnancy-outcome-observation" key="StructureDefinition-us-ph-pregnancy-outcome-observation" name="US Public Health Pregnancy Outcome Observation"/>
+  <artifact id="Observation/observation-pregnancy-outcome-eve-everywoman" key="Observation-observation-pregnancy-outcome-eve-everywoman" name="US Public Health Pregnancy Outcome Observation Example: Eve Everywoman"/>
+  <artifact id="ValueSet/us-ph-pregnancy-status" key="ValueSet-us-ph-pregnancy-status" name="US Public Health Pregnancy Status"/>
+  <artifact id="StructureDefinition/us-ph-pregnancy-status-observation" key="StructureDefinition-us-ph-pregnancy-status-observation" name="US Public Health Pregnancy Status Observation"/>
+  <artifact id="Observation/observation-pregnancy-status-eve-everywoman" key="Observation-observation-pregnancy-status-eve-everywoman" name="US Public Health Pregnancy Status Observation Example: Eve Everywoman"/>
+  <artifact deprecated="true" id="StructureDefinition/us-ph-procedure" key="StructureDefinition-us-ph-procedure" name="US Public Health Procedure"/>
+  <artifact id="StructureDefinition/us-ph-receiver-address-extension" key="StructureDefinition-us-ph-receiver-address-extension" name="US Public Health Receiver Address Extension"/>
+  <artifact id="StructureDefinition/us-ph-relateddata-extension" key="StructureDefinition-us-ph-relateddata-extension" name="US Public Health Related Data Extension"/>
+  <artifact id="StructureDefinition/us-ph-reporting-bundle" key="StructureDefinition-us-ph-reporting-bundle" name="US Public Health Reporting Bundle"/>
+  <artifact id="Bundle/bundle-ecr-message-zika" key="Bundle-bundle-ecr-message-zika" name="US Public Health Reporting Bundle Example: bundle-ecr-message-zika"/>
+  <artifact deprecated="true" id="StructureDefinition/us-ph-specification-bundle" key="StructureDefinition-us-ph-specification-bundle" name="US Public Health Specification Bundle"/>
+  <artifact id="StructureDefinition/us-ph-specification-library" key="StructureDefinition-us-ph-specification-library" name="US Public Health Specification Library"/>
+  <artifact id="Library/library-us-ph-specification-library-example" key="Library-library-us-ph-specification-library-example" name="US Public Health Specification Library Example"/>
+  <artifact deprecated="true" id="StructureDefinition/us-ph-supplemental-bundle" key="StructureDefinition-us-ph-supplemental-bundle" name="US Public Health Supplemental Bundle"/>
+  <artifact id="StructureDefinition/us-ph-supplemental-library" key="StructureDefinition-us-ph-supplemental-library" name="US Public Health Supplemental Library"/>
+  <artifact id="Library/library-us-ph-supplemental-library-example" key="Library-library-us-ph-supplemental-library-example" name="US Public Health Supplemental Library Example"/>
+  <artifact id="StructureDefinition/us-ph-supplemental-valueset" key="StructureDefinition-us-ph-supplemental-valueset" name="US Public Health Supplemental Value Set"/>
+  <artifact id="Library/library-us-ph-supplemental-valueset-library-example" key="Library-library-us-ph-supplemental-valueset-library-example" name="US Public Health Supplemental ValueSet Library Example"/>
+  <artifact id="ValueSet/valueset-us-ph-supplemental-valueset-example" key="ValueSet-valueset-us-ph-supplemental-valueset-example" name="US Public Health Supplemental Valueset Example"/>
+  <artifact id="StructureDefinition/us-ph-supplemental-valueset-library" key="StructureDefinition-us-ph-supplemental-valueset-library" name="US Public Health Supplemental Valueset Library"/>
+  <artifact id="StructureDefinition/us-ph-therapeutic-medication-response-extension" key="StructureDefinition-us-ph-therapeutic-medication-response-extension" name="US Public Health Therapeutic Medication Response Extension"/>
+  <artifact id="StructureDefinition/us-ph-transportation-details" key="StructureDefinition-us-ph-transportation-details" name="US Public Health Transportation Details"/>
+  <artifact id="Observation/observation-us-ph-transportation-details-eve-everywoman" key="Observation-observation-us-ph-transportation-details-eve-everywoman" name="US Public Health Transportation Example: Eve Everywoman"/>
+  <artifact id="StructureDefinition/us-ph-travel-history" key="StructureDefinition-us-ph-travel-history" name="US Public Health Travel History"/>
+  <artifact id="StructureDefinition/us-ph-tribal-affiliation-extension" key="StructureDefinition-us-ph-tribal-affiliation-extension" name="US Public Health Tribal Affiliation Extension"/>
+  <artifact id="CodeSystem/us-ph-triggerdefinition-namedevents" key="CodeSystem-us-ph-triggerdefinition-namedevents" name="US Public Health TriggerDefinition Named Events"/>
+  <artifact id="ValueSet/us-ph-triggerdefinition-namedevent" key="ValueSet-us-ph-triggerdefinition-namedevent" name="US Public Health TriggerDefinition NamedEvent"/>
+  <artifact id="StructureDefinition/us-ph-triggering-valueset" key="StructureDefinition-us-ph-triggering-valueset" name="US Public Health Triggering Value Set"/>
+  <artifact id="StructureDefinition/us-ph-triggering-valueset-library" key="StructureDefinition-us-ph-triggering-valueset-library" name="US Public Health Triggering Valueset Library"/>
+  <artifact id="CodeSystem/us-ph-usage-context" key="CodeSystem-us-ph-usage-context" name="US Public Health Usage Context"/>
+  <artifact id="CodeSystem/us-ph-usage-context-type" key="CodeSystem-us-ph-usage-context-type" name="US Public Health Usage Context Type"/>
+  <artifact id="StructureDefinition/us-ph-usagewarning-extension" key="StructureDefinition-us-ph-usagewarning-extension" name="US Public Health Usage Warning Extension"/>
+  <artifact id="StructureDefinition/us-ph-valueset" key="StructureDefinition-us-ph-valueset" name="US Public Health Value Set"/>
+  <artifact id="Library/library-us-ph-valueset-library-example" key="Library-library-us-ph-valueset-library-example" name="US Public Health ValueSet Library Example"/>
+  <artifact id="Library/library-us-ph-valueset-library-expansion-parameters-example" key="Library-library-us-ph-valueset-library-expansion-parameters-example" name="US Public Health ValueSet Library Expansion Parameters Example"/>
+  <artifact id="ValueSet/us-ph-valueset-priority" key="ValueSet-us-ph-valueset-priority" name="US Public Health ValueSet Priority"/>
+  <artifact id="ValueSet/us-ph-valueset-example" key="ValueSet-us-ph-valueset-example" name="US Public Health Valueset Example"/>
+  <artifact id="StructureDefinition/us-ph-valueset-library" key="StructureDefinition-us-ph-valueset-library" name="US Public Health Valueset Library"/>
+  <artifact deprecated="true" id="Bundle/bundle-us-ph-specification-bundle-example" key="Bundle-bundle-us-ph-specification-bundle-example" name="USPublicHealthSpecificationBundleExample"/>
+  <artifact deprecated="true" id="Bundle/bundle-us-ph-supplemental-bundle-example" key="Bundle-bundle-us-ph-supplemental-bundle-example" name="USPublicHealthSupplementalBundleExample"/>
+  <artifact deprecated="true" id="StructureDefinition/us-ph-usageWarning" key="StructureDefinition-us-ph-usageWarning" name="Usage Warning"/>
+  <artifact deprecated="true" id="ValueSet/valueset-ecr-task-businessstatus" key="ValueSet-valueset-ecr-task-businessstatus" name="Value Set eCR Task BusinessStatus"/>
+  <artifact deprecated="true" id="ValueSet/valueset-reald-race-ethnicity" key="ValueSet-valueset-reald-race-ethnicity" name="ValueSet REALD Race Ethnicity"/>
+  <artifact id="CapabilityStatement/capabilitystatement-ecr" key="CapabilityStatement-capabilitystatement-ecr" name="eCR CapabilityStatement"/>
+  <artifact id="Device/device-ecr-software-ymca" key="Device-device-ecr-software-ymca" name="eCR Device Example: device-ecr-software-ymca"/>
+  <artifact deprecated="true" id="StructureDefinition/ecr-message-bundle" key="StructureDefinition-ecr-message-bundle" name="eCR Message Bundle"/>
+  <artifact id="StructureDefinition/ecr-messageheader" key="StructureDefinition-ecr-messageheader" name="eCR MessageHeader"/>
+  <artifact id="ValueSet/valueset-ecr-messageheader-event" key="ValueSet-valueset-ecr-messageheader-event" name="eCR MessageHeader Event"/>
+  <artifact id="MessageHeader/messageheader-ecr-requested-eicr" key="MessageHeader-messageheader-ecr-requested-eicr" name="eCR MessageHeader Example: Requested eICR"/>
+  <artifact deprecated="true" id="StructureDefinition/ecr-task" key="StructureDefinition-ecr-task" name="eCR Task"/>
+  <artifact deprecated="true" id="Task/task-ecr-ehr-requested-eicr" key="Task-task-ecr-ehr-requested-eicr" name="eCR Task Example: task-ecr-ehr-requested-eicr"/>
+  <artifact id="StructureDefinition/eicr-composition" key="StructureDefinition-eicr-composition" name="eICR Composition"/>
+  <artifact id="Composition/composition-eicr-pertussis-zika" key="Composition-composition-eicr-pertussis-zika" name="eICR Composition Example: Initial Public Health Case Report - Eve Everywoman, Pertussis and Zika"/>
+  <artifact id="Composition/composition-eicr-zika" key="Composition-composition-eicr-zika" name="eICR Composition Example: Initial Public Health Case Report - Eve Everywoman, Zika"/>
+  <artifact id="Composition/composition-eicr-zika-manual-initiation" key="Composition-composition-eicr-zika-manual-initiation" name="eICR Composition Example: Initial Public Health Case Report - Eve Everywoman, Zika, Manual Initiation"/>
+  <artifact deprecated="true" id="StructureDefinition/eicr-condition" key="StructureDefinition-eicr-condition" name="eICR Condition"/>
+  <artifact id="Condition/condition-eicr-eve-everywoman-diabetes" key="Condition-condition-eicr-eve-everywoman-diabetes" name="eICR Condition example: Eve Everywoman - diabetes"/>
+  <artifact id="Condition/condition-eicr-eve-everywoman-pertussis" key="Condition-condition-eicr-eve-everywoman-pertussis" name="eICR Condition example: Eve Everywoman - pertussis"/>
+  <artifact id="Condition/condition-eicr-eve-everywoman-zika" key="Condition-condition-eicr-eve-everywoman-zika" name="eICR Condition example: Eve Everywoman - zika"/>
+  <artifact id="Condition/condition-eicr-eve-everywoman-common-cold" key="Condition-condition-eicr-eve-everywoman-common-cold" name="eICR Condition example: Eve Everywoman- common cold"/>
+  <artifact id="StructureDefinition/eicr-country-of-nationality" key="StructureDefinition-eicr-country-of-nationality" name="eICR Country of Nationality Observation"/>
+  <artifact id="StructureDefinition/eicr-country-of-residence" key="StructureDefinition-eicr-country-of-residence" name="eICR Country of Residence Observation"/>
+  <artifact id="StructureDefinition/eicr-document-bundle" key="StructureDefinition-eicr-document-bundle" name="eICR Document Bundle"/>
+  <artifact deprecated="true" id="Bundle/bundle-eicr-document-pertussis-zika" key="Bundle-bundle-eicr-document-pertussis-zika" name="eICR Document Bundle Example: bundle-eicr-document-pertussis-zika"/>
+  <artifact id="Bundle/bundle-eicr-document-zika" key="Bundle-bundle-eicr-document-zika" name="eICR Document Bundle Example: bundle-eicr-document-zika"/>
+  <artifact id="StructureDefinition/eicr-encounter" key="StructureDefinition-eicr-encounter" name="eICR Encounter"/>
+  <artifact deprecated="true" id="StructureDefinition/eicr-initiation-reason-extension" key="StructureDefinition-eicr-initiation-reason-extension" name="eICR Initiation Reason Extension"/>
+  <artifact id="StructureDefinition/eicr-initiation-type-extension" key="StructureDefinition-eicr-initiation-type-extension" name="eICR Initiation Type Extension"/>
+  <artifact id="StructureDefinition/eicr-procedure" key="StructureDefinition-eicr-procedure" name="eICR Procedure"/>
+  <artifact id="Procedure/us-ph-procedure-ecmo" key="Procedure-us-ph-procedure-ecmo" name="eICR Procedure Example: ECMO"/>
+  <artifact id="StructureDefinition/eicr-servicerequest" key="StructureDefinition-eicr-servicerequest" name="eICR ServiceRequest"/>
+  <artifact id="ServiceRequest/servicerequest-eicr-zika" key="ServiceRequest-servicerequest-eicr-zika" name="eICR ServiceRequest Example"/>
+  <artifact id="ServiceRequest/servicerequest-eicr-eve-everywoman-zika" key="ServiceRequest-servicerequest-eicr-eve-everywoman-zika" name="eICR ServiceRequest Example: Eve Everywoman - Zika"/>
+  <artifact id="StructureDefinition/eicr-trigger-code-flag-extension" key="StructureDefinition-eicr-trigger-code-flag-extension" name="eICR Trigger Code Flag Extension"/>
+  <artifact id="StructureDefinition/eicr-vaccine-credential-patient-assertion" key="StructureDefinition-eicr-vaccine-credential-patient-assertion" name="eICR Vaccine Credential Patient Assertion Observation"/>
+  <artifact id="Observation/observation-vaccine-credential-assertion-eve-everywoman" key="Observation-observation-vaccine-credential-assertion-eve-everywoman" name="eICR Vaccine Credential Patient Assertion Observation Example: Eve Everywoman"/>
+  <artifact deprecated="true" id="Bundle/bundle-eRSD" key="Bundle-bundle-eRSD" name="eRSD Bundle Example: bundle-eRSD"/>
+  <artifact id="CapabilityStatement/capabilitystatement-ersd-client" key="CapabilityStatement-capabilitystatement-ersd-client" name="eRSD Client CapabilityStatement"/>
+  <artifact id="CodeSystem/ersd-endpoint-connection-type" key="CodeSystem-ersd-endpoint-connection-type" name="eRSD Endpoint Connection Type"/>
+  <artifact id="ValueSet/valueset-ersd-endpoint-connection-type" key="ValueSet-valueset-ersd-endpoint-connection-type" name="eRSD Endpoint Connection Type Codes"/>
+  <artifact id="CodeSystem/ersd-jurisdiction-types" key="CodeSystem-ersd-jurisdiction-types" name="eRSD JurisdictionTypes"/>
+  <artifact id="CodeSystem/ersd-jurisdictions-example" key="CodeSystem-ersd-jurisdictions-example" name="eRSD Jurisdictions Example"/>
+  <artifact id="StructureDefinition/ersd-plandefinition" key="StructureDefinition-ersd-plandefinition" name="eRSD PlanDefinition"/>
+  <artifact id="PlanDefinition/plandefinition-ersd-instance-example" key="PlanDefinition-plandefinition-ersd-instance-example" name="eRSD PlanDefinition Instance Example"/>
+  <artifact id="PlanDefinition/plandefinition-ersd-instance-namedEvent-example" key="PlanDefinition-plandefinition-ersd-instance-namedEvent-example" name="eRSD PlanDefinition Instance NamedEvent Example"/>
+  <artifact id="PlanDefinition/plandefinition-ersd-instance-simple-example" key="PlanDefinition-plandefinition-ersd-instance-simple-example" name="eRSD PlanDefinition Instance Simple Example"/>
+  <artifact deprecated="true" id="PlanDefinition/plandefinition-ersd-instance" key="PlanDefinition-plandefinition-ersd-instance" name="eRSD PlanDefinition Instance: plandefinition-ersd-instance"/>
+  <artifact deprecated="true" id="StructureDefinition/ersd-specification-bundle" key="StructureDefinition-ersd-specification-bundle" name="eRSD Specification Bundle"/>
+  <artifact id="Bundle/bundle-ersd-specification-example" key="Bundle-bundle-ersd-specification-example" name="eRSD Specification Bundle Example"/>
+  <artifact deprecated="true" id="Bundle/bundle-ersd-specification-bundle" key="Bundle-bundle-ersd-specification-bundle" name="eRSD Specification Bundle example"/>
+  <artifact id="Library/library-ersd-specification-library-example" key="Library-library-ersd-specification-library-example" name="eRSD Specification Library Example"/>
+  <artifact deprecated="true" id="StructureDefinition/ersd-supplemental-bundle" key="StructureDefinition-ersd-supplemental-bundle" name="eRSD Supplemental Bundle"/>
+  <artifact id="Bundle/bundle-ersd-supplemental-example" key="Bundle-bundle-ersd-supplemental-example" name="eRSD Supplemental Bundle Example"/>
+  <artifact deprecated="true" id="Bundle/bundle-ersd-supplemental-bundle" key="Bundle-bundle-ersd-supplemental-bundle" name="eRSD Supplemental Bundle example"/>
+  <artifact id="StructureDefinition/ersd-supplemental-library" key="StructureDefinition-ersd-supplemental-library" name="eRSD Supplemental Library"/>
+  <artifact id="Library/library-ersd-supplemental-library-example" key="Library-library-ersd-supplemental-library-example" name="eRSD Supplemental Library Example"/>
+  <artifact id="Parameters/expansion-parameters-ecr" key="Parameters-expansion-parameters-ecr" name="expansion-parameters-ecr"/>
+  <artifact deprecated="true" id="Library/library-rctc" key="Library-library-rctc" name="library-rctc"/>
+  <artifact id="Subscription/subscription-dxtc" key="Subscription-subscription-dxtc" name="subscription-dxtc"/>
+  <artifact id="Subscription/subscription-lotc" key="Subscription-subscription-lotc" name="subscription-lotc"/>
+  <artifact id="Subscription/subscription-ostc" key="Subscription-subscription-ostc" name="subscription-ostc"/>
+  <page key="NA" name="(NA)"/>
+  <page key="many" name="(many)"/>
+  <page key="acknowledgements" name="Acknowledgements"/>
+  <page key="acronyms_and_abbreviations" name="Acronyms and Abbreviations"/>
+  <page key="artifacts" name="Artifacts Summary"/>
+  <page key="change_log" name="Change Log"/>
+  <page key="design_considerations" name="Design Considerations"/>
+  <page key="downloads" name="Downloads"/>
+  <page key="electronic_initial_case_report_eicr_transaction_and_profiles" name="Electronic Initial Case Report (eICR) Transaction and Profiles"/>
+  <page key="electronic_reporting_and_surveillance_distribution_ersd_transaction_and_profiles" name="Electronic Reporting and Surveillance Distribution (eRSD) Transaction and Profiles"/>
+  <page key="index" name="Home Page"/>
+  <page key="implementation_guidance" name="Implementation Guidance"/>
+  <page deprecated="true" key="notice_to_ballot_commenters" name="Notice to Ballot Commenters"/>
+  <page key="relationship_to_other_standards" name="Relationship to Other Standards"/>
+  <page key="reportability_response_rr_transaction_and_profiles" name="Reportability Response (RR) Transaction and Profiles"/>
+  <page key="reportability_response_narrative_guidance" name="Reportability Response Narrative Guidance"/>
+  <page key="rule_filter_generation" name="Rule Filter Generation"/>
+  <page key="subscription_service" name="Subscription Service"/>
+  <page key="toc" name="Table of Contents"/>
+  <page key="terminology" name="Terminology"/>
+  <page key="the_specification" name="The Specification"/>
+  <page key="transaction_profiles" name="Transaction Profiles"/>
+  <page key="transport_options" name="Transport Options"/>
+  <page key="eicr_data_elements" name="eICR Data Elements"/>
+  <page deprecated="true" key="ersd_jurisdictions_codesystem_configuration" name="eRSD Jurisdictions CodeSystem Configuration"/>
+  <page key="ersd_jurisdictions_codesystem_description" name="eRSD Jurisdictions CodeSystem Description"/>
+  <page key="ersd_jurisdictions_codesystem_query" name="eRSD Jurisdictions CodeSystem Query"/>
+  <page deprecated="true" key="ersd_narrative_guidance" name="eRSD Narrative Guidance"/>
+  <page key="ersd_plandefinition_datarequirement_fhir_query" name="eRSD PlanDefinition DataRequirement FHIR Queries"/>
 </specification>
