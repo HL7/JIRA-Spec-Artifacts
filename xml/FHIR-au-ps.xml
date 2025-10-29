@@ -1,9 +1,13 @@
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-ps" defaultVersion="0.1.0-preview" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-ps" url="http://hl7.org.au/fhir/ps">
-	<version code="current" url="https://build.fhir.org/ig/hl7au/au-fhir-ps"/>
-	<version code="0.1.0-preview" url="http://hl7.org.au/fhir/ps/0.1.0-preview"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/ps/0.3.0-ballot" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-ps" defaultVersion="0.3.0-ballot" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-ps" url="http://hl7.org.au/fhir/ps">
+	<version code="current" url="https://build.fhir.org/ig/hl7au/au-fhir-ps"/>  
+    <version code="0.3.0-ballot" url="http://hl7.org.au/fhir/ps/0.3.0-ballot"/>  
+    <version code="0.2.0-preview" deprecated="true" url="http://hl7.org.au/fhir/ps/0.2.0-preview"/>  
+    <version code="0.1.0-preview" deprecated="true" url="http://hl7.org.au/fhir/ps/0.1.0-preview"/>	
 	<artifactPageExtension value="-definitions"/>
 	<artifactPageExtension value="-examples"/>
 	<artifactPageExtension value="-mapping"/>
+	<artifact id="ActorDefinition/au-ps-actor-consumer" key="ActorDefinition-au-ps-actor-consumer" name="AU PS Consumer" />
+	<artifact id="ActorDefinition/au-ps-actor-producer" key="ActorDefinition-au-ps-actor-producer" name="AU PS Producer" />
 	<artifact id="StructureDefinition/au-ps-allergyintolerance" key="StructureDefinition-au-ps-allergyintolerance" name="AU PS AllergyIntolerance" />
 	<artifact id="StructureDefinition/au-ps-bundle" key="StructureDefinition-au-ps-bundle" name="AU PS Bundle" />
 	<artifact id="StructureDefinition/au-ps-composition" key="StructureDefinition-au-ps-composition" name="AU PS Composition" />
@@ -18,9 +22,16 @@
 	<artifact id="StructureDefinition/au-ps-practitionerrole" key="StructureDefinition-au-ps-practitionerrole" name="AU PS PractitionerRole" />
 	<artifact id="StructureDefinition/au-ps-procedure" key="StructureDefinition-au-ps-procedure" name="AU PS Procedure" />
 	<artifact id="StructureDefinition/au-ps-relatedperson" key="StructureDefinition-au-ps-relatedperson" name="AU PS RelatedPerson" />
-	<artifact id="Bundle/section-emptyreason" key="Bundle-section-emptyreason" name="Bundle - Section empty reason" />
-	<artifact id="Bundle/basicsummary" key="Bundle-basicsummary" name="Bundle - Basic summary" />
+	<artifact id="StructureDefinition/au-ps-smokingstatus" key="StructureDefinition-au-ps-smokingstatus" name="AU PS Smoking Status" />
+	<artifact id="StructureDefinition/au-ps-diagnosticresult-path" key="StructureDefinition-au-ps-diagnosticresult-path" name="AU PS Pathology Result Observation" />
+	<artifact id="Bundle/aups-section-emptyreason" key="Bundle-aups-section-emptyreason" name="Bundle - Section empty reason" />
+	<artifact id="Bundle/aups-basicsummary" key="Bundle-aups-basicsummary" name="Bundle - Basic summary" />
+	<artifact id="Bundle/aups-referral-endoconsult-curated" key="Bundle-aups-referral-endoconsult-curated" name="Bundle - Patient Summary for Joyce Johnson as of 28 OCT 2024 (with electronic signature)" />
+	<artifact id="Bundle/aups-referral-endoconsult-autogen" key="Bundle-aups-referral-endoconsult-autogen" name="Bundle - Patient Summary for Joyce Johnson as of 07 NOV 2024 (with digital signature)" />
+	<artifact id="Bundle/aups-gpvisit-retrieval" key="Bundle-aups-gpvisit-retrieval" name="Bundle - Jeramy’s Patient Summary as of 27 May 2025" />
 	<artifact id="StructureDefinition/au-ps-patient" key="StructureDefinition-au-ps-patient" name="AU PS Patient" />
+	<artifact id="Bundle/section-emptyreason" key="Bundle-section-emptyreason" name="Bundle - Section empty reason." deprecated="true"/>
+	<artifact id="Bundle/basicsummary" key="Bundle-basicsummary" name="Bundle - Basic summary." deprecated="true"/>
 	<page key="NA" name="(NA)"/>
 	<page key="many" name="(many)"/>
 	<page key="toc" name="Table of Contents"/>
@@ -28,25 +39,29 @@
 	<page key="conformance" name="Conformance"/>
 	<page key="general-requirements" name="General Requirements"/>
 	<page key="declaring-conformance" name="Declaring Conformance"/>
+	<page key="the-aups" name="The AU PS"/>
 	<page key="guidance" name="Guidance"/>
 	<page key="general-guidance" name="General Guidance"/>
+	<page key="generation-and-access" name="Generation and Access"/>
 	<page key="sex-and-gender" name="Sex and Gender"/>
-	<page key="aucdi" name="AU Core Data for Interoperability"/>
-	<page key="relationship" name="Relationship with other IGs"/>
-	<page key="comparison" name="Comparison with other national and international IGs"/>
+	<page key="aucdi" name="AUCDI"/>
+	<page key="relationship" name="Relationship With Other IGs"/>
+	<page key="comparison" name="Comparison With Other National and International IGs"/>
 	<page key="variance" name="AU Variance Statement"/>
 	<page key="future" name="Future of AU Patient Summary"/>
-	<page key="usecase" name="Use Cases"/>
+	<page key="usecase" name="Example Use Cases"/>
 	<page key="uc-interstate" name="Interstate GP Visit"/>
-	<page key="uc-emergency" name="Emergency Hospital Attendance"/>
-	<page key="uc-referral" name="Referral Specialist and Allied Health"/>
+	<page key="uc-referral" name="Referral to Specialist and Allied Health"/>
 	<page key="security" name="Security and Privacy"/>
 	<page key="artefacts" name="FHIR artefacts"/>
 	<page key="artifacts" name="Artefacts Summary"/>
 	<page key="profiles-and-extensions" name="Profiles and Extensions"/>
 	<page key="terminology" name="Terminology"/>
+	<page key="actors" name="Actor Definitions"/>
 	<page key="examples" name="Examples"/>
 	<page key="support" name="Support"/>
 	<page key="downloads" name="Downloads"/>
 	<page key="license" name="License and Legal"/>
+	<page key="uc-emergency" name="Emergency Hospital Attendance" deprecated="true"/>
 </specification>
+        
