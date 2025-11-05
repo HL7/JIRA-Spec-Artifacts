@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="http://build.fhir.org/ig/HL7/fhir-consent-management" defaultVersion="current" defaultWorkgroup="cbcc" url="http://hl7.org/fhir/us/consent-management" gitUrl="https://github.com/HL7/fhir-consent-management">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/consent-management/2026Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-consent-management" defaultVersion="1.0.0-ballot" defaultWorkgroup="cbcc" gitUrl="https://github.com/HL7/fhir-consent-management" url="http://hl7.org/fhir/us/consent-management">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-consent-management"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/us/consent-management/2026Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
@@ -15,6 +16,7 @@
 <artifact id="Requirements/conformance-client-admin-service" key="Requirements-conformance-client-admin-service" name="Conformance Client Admin Service"/>
 <artifact id="CapabilityStatement/ConsentAdministrativeServerCapabilities" key="CapabilityStatement-ConsentAdministrativeServerCapabilities" name="Consent Administrative Server Capabilities"/>
 <artifact id="CapabilityStatement/ConsentClientCapabilities" key="CapabilityStatement-ConsentClientCapabilities" name="Consent Client Capabilities"/>
+<artifact id="AuditEvent/ConsentAuditEventExample" key="AuditEvent-ConsentAuditEventExample" name="ConsentAuditEventExample"/>
 <artifact id="Consent/ConsentExample" key="Consent-ConsentExample" name="ConsentExample"/>
 <artifact id="DocumentReference/DocumentReferenceExample" key="DocumentReference-DocumentReferenceExample" name="DocumentReferenceExample"/>
 <artifact id="Requirements/extended-operations-client-admin-service" key="Requirements-extended-operations-client-admin-service" name="Extended Operations Client Admin Service"/>
@@ -37,8 +39,10 @@
 <artifact id="QuestionnaireResponse/QuestionnaireResponseExample" key="QuestionnaireResponse-QuestionnaireResponseExample" name="QuestionnaireResponseExample"/>
 <artifact id="StructureDefinition/RecordDisclosureParameters" key="StructureDefinition-RecordDisclosureParameters" name="Record Disclosure Operation Parameters"/>
 <artifact id="OperationDefinition/record-disclosure" key="OperationDefinition-record-disclosure" name="RecordDisclosure"/>
+<artifact id="Parameters/RecordDisclosureExample" key="Parameters-RecordDisclosureExample" name="RecordDisclosureExample"/>
 <artifact id="StructureDefinition/RevokeConsentParameters" key="StructureDefinition-RevokeConsentParameters" name="Revoke Consent Operation Parameters"/>
 <artifact id="OperationDefinition/revoke-consent" key="OperationDefinition-revoke-consent" name="Revoke a Consent"/>
+<artifact id="Parameters/RevokeConsentExample" key="Parameters-RevokeConsentExample" name="RevokeConsentExample"/>
 <artifact id="Requirements/search-parameters-client-admin-service" key="Requirements-search-parameters-client-admin-service" name="Search Parameters Client Admin Service"/>
 <artifact id="Requirements/structure-definitions-client-admin-service" key="Requirements-structure-definitions-client-admin-service" name="Structure Definitions Client Admin Service"/>
 <artifact id="Requirements/subscriptiontopic-fastconsentsubscriptiontopic-admin-service" key="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-admin-service" name="SubscriptionTopic FASTConsentSubscriptionTopic Admin Service"/>
