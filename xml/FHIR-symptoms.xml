@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="http://build.fhir.org/ig/HL7/fhir-symptoms-ig" defaultVersion="current" defaultWorkgroup="cic" url="http://hl7.org/fhir/uv/symptoms" gitUrl="https://github.com/HL7/fhir-symptoms-ig">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/symptoms/2026Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-symptoms-ig" defaultVersion="1.0.0-ballot" defaultWorkgroup="cic" gitUrl="https://github.com/HL7/fhir-symptoms-ig" url="http://hl7.org/fhir/uv/symptoms">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-symptoms-ig"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/symptoms/2026Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
@@ -33,7 +34,8 @@
 <artifact id="Observation/HearingLossSymptom" key="Observation-HearingLossSymptom" name="HearingLossSymptom"/>
 <artifact id="Patient/JaneDoe" key="Patient-JaneDoe" name="JaneDoe"/>
 <artifact id="Patient/JohnDoe" key="Patient-JohnDoe" name="JohnDoe"/>
-<artifact id="Observation/NaueaSymptomAbsence" key="Observation-NaueaSymptomAbsence" name="NaueaSymptomAbsence"/>
+<artifact deprecated="true" id="Observation/NaueaSymptomAbsence" key="Observation-NaueaSymptomAbsence" name="NaueaSymptomAbsence"/>
+<artifact id="Observation/NauseaSymptomAbsence" key="Observation-NauseaSymptomAbsence" name="NauseaSymptomAbsence"/>
 <artifact id="CodeSystem/openEHR-EHR-CLUSTER.symptom-sign.v2.at0186" key="CodeSystem-openEHR-EHR-CLUSTER.symptom-sign.v2.at0186" name="OccurrenceCS"/>
 <artifact id="ValueSet/openEHR-EHR-CLUSTER.symptom-sign.v2.at0186" key="ValueSet-openEHR-EHR-CLUSTER.symptom-sign.v2.at0186" name="OccurrenceVS"/>
 <artifact id="ValueSet/OtherEventCodes" key="ValueSet-OtherEventCodes" name="Other Event Codes"/>
@@ -66,8 +68,10 @@
 <page key="conformance" name="Conformance Expectations"/>
 <page key="exchange" name="Exchange Patterns"/>
 <page key="index" name="IG Home"/>
+<page key="profile" name="Logical Model, OpenEHR Archetype, and FHIR Profile"/>
 <page key="acknowledgements" name="Project and Participants"/>
 <page key="background" name="Reading This IG"/>
+<page key="diagnosis" name="Symptom/Diagnosis Relationship"/>
 <page key="toc" name="Table of Contents"/>
 <page key="terminology" name="Terminology"/>
 <page key="usecases" name="Use Cases"/>
