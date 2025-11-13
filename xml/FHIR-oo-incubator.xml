@@ -4,291 +4,134 @@
     url="http://hl7.org/fhir/uv/oo-incubator"
     ciUrl="http://build.fhir.org/ig/HL7/fhir-oo-incubator"
     defaultWorkgroup="oo"
-    defaultVersion="current"
+    defaultVersion="current" 
     xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
     <version code="current" url="http://build.fhir.org/ig/HL7/fhir-oo-incubator"/>
     <artifactPageExtension value="-definitions"/>
     <artifactPageExtension value="-examples"/>
     <artifactPageExtension value="-mappings"/>
-    <!-- <artifact name="Laboratory service type CodeSystem"
-        key="CodeSystem-laboratory-service-definition-type"
-        id="CodeSystem/laboratory-service-definition-type"/>
-    <artifact name="Laboratory service reimbursability categories CodeSystem"
-        key="CodeSystem-laboratory-service-reimbursability"
-        id="CodeSystem/laboratory-service-reimbursability"/>
-    <artifact name="Catalog Message Event CodeSystem"
-        key="CodeSystem-catalog-message-events"
-        id="CodeSystem/catalog-message-events"/>
-    <artifact name="Laboratory service type ValueSet"
-        key="ValueSet-laboratory-service-type"
-        id="ValueSet/laboratory-service-type"/>
-    <artifact name="Laboratory service reimbursability categories ValueSet"
-        key="ValueSet-laboratory-service-reimbursability-vs"
-        id="ValueSet/laboratory-service-reimbursability-vs"/>
-    <artifact name="Bibliographic artifact ValueSet"
-        key="ValueSet-bibliography-artifact-type"
-        id="ValueSet/bibliography-artifact-type"/>
-    <artifact name="Order catalog message event ValueSet"
-        key="ValueSet-catalog-message-events-vs"
-        id="ValueSet/catalog-message-events-vs"/>
-    <artifact name="Validity Period Extension"
-        key="StructureDefinition-ValidityPeriod"
-        id="StructureDefinition/ValidityPeriod"/>
-    <artifact name="Reference to catalog Extension"
-        key="StructureDefinition-CatalogReference"
-        id="StructureDefinition/CatalogReference"/>
-    <artifact name="Billing summary Extension"
-        key="StructureDefinition-BillingSummary"
-        id="StructureDefinition/BillingSummary"/>
-    <artifact name="Schedule summary Extension"
-        key="StructureDefinition-ScheduleSummary"
-        id="StructureDefinition/ScheduleSummary"/>
-    <artifact name="Limitation summary Extension"
-        key="StructureDefinition-LimitationSummary"
-        id="StructureDefinition/LimitationSummary"/>
-    <artifact name="Regulatory summary Extension"
-        key="StructureDefinition-RegulatorySummary"
-        id="StructureDefinition/RegulatorySummary"/>
-    <artifact name="Service billing code Extension"
-        key="StructureDefinition-ServiceBillingCode"
-        id="StructureDefinition/ServiceBillingCode"/>
-    <artifact name="Specimen requested for a PlanDefiniton top-level action"
-        key="StructureDefinition-SpecimenRequested"
-        id="StructureDefinition/SpecimenRequested"/>
-    <artifact name="Service billing code and rules Profile"
-        key="StructureDefinition-LabChargeItemDefinition"
-        id="StructureDefinition/LabChargeItemDefinition"/>
-    <artifact name="Catalog Header Profile"
-        key="StructureDefinition-CatalogHeader"
-        id="StructureDefinition/CatalogHeader"/>
-    <artifact name="Laboratory service Profile"
-        key="StructureDefinition-LabServiceDefinition"
-        id="StructureDefinition/LabServiceDefinition"/>
-    <artifact name="Laboratory procedure Profile"
-        key="StructureDefinition-LabProcedureDefinition"
-        id="StructureDefinition/LabProcedureDefinition"/>
-    <artifact name="Laboratory specimen Profile"
-        key="StructureDefinition-LabSpecimenDefinition"
-        id="StructureDefinition/LabSpecimenDefinition"/>
-    <artifact name="Input observation Profile"
-        key="StructureDefinition-InputObservationDefinition"
-        id="StructureDefinition/InputObservationDefinition"/>
-    <artifact name="Laboratory observation Profile"
-        key="StructureDefinition-LabObservationDefinition"
-        id="StructureDefinition/LabObservationDefinition"/>
-    <artifact name="ValueSet Profile used by ObservationDefinition"
-        key="StructureDefinition-ObservationValueSet"
-        id="StructureDefinition/ObservationValueSet"/>
-    <artifact name="MessageDefinition for catalog messages"
-        key="StructureDefinition-CatalogMessageDefinition"
-        id="StructureDefinition/CatalogMessageDefinition"/>
-    <artifact name="Transaction Bundle request on catalog content"
-        key="StructureDefinition-ItemTransactionRequest"
-        id="StructureDefinition/ItemTransactionRequest"/>
-    <artifact name="Transaction Bundle response on catalog content"
-        key="StructureDefinition-ItemTransactionResponse"
-        id="StructureDefinition/ItemTransactionResponse"/>
-    <artifact name="A clinical laboratory catalog"
-        key="Composition-example-lab-compendium-header"
-        id="Composition/example-lab-compendium-header"/>
-    <artifact name="Lab service serum K"
-        key="PlanDefinition-example-lab-service-potassium-serum"
-        id="PlanDefinition/example-lab-service-potassium-serum"/>
-    <artifact name="Lab service blood electrolyte"
-        key="PlanDefinition-example-lab-panel-blood-electrolyte"
-        id="PlanDefinition/example-lab-panel-blood-electrolyte"/>
-    <artifact name="Lab service 24H urine creat"
-        key="PlanDefinition-example-lab-panel-urine24h-creatinine"
-        id="PlanDefinition/example-lab-panel-urine24h-creatinine"/>
-    <artifact name="Lab service serum creat"
-        key="PlanDefinition-example-lab-test-serum-creatinine"
-        id="PlanDefinition/example-lab-test-serum-creatinine"/>
-    <artifact name="Lab service creat renal clearance"
-        key="PlanDefinition-example-lab-panel-urine24h-creatinine-clearance"
-        id="PlanDefinition/example-lab-panel-urine24h-creatinine-clearance"/>
-    <artifact name="Lab service vitamin D"
-        key="PlanDefinition-example-lab-service-vitamind-serum"
-        id="PlanDefinition/example-lab-service-vitamind-serum"/>
-    <artifact name="Lab service HSV 2 IgM titer"
-        key="PlanDefinition-example-lab-service-hsvt2-serum"
-        id="PlanDefinition/example-lab-service-hsvt2-serum"/>
-    <artifact name="Lab service HSV 1 IgM titer"
-        key="PlanDefinition-example-lab-service-hsvt1-serum"
-        id="PlanDefinition/example-lab-service-hsvt1-serum"/>
-    <artifact name="Lab service HSV IgM"
-        key="PlanDefinition-example-lab-service-hsv-serum"
-        id="PlanDefinition/example-lab-service-hsv-serum"/>
-    <artifact name="Lab service CMV IgM"
-        key="PlanDefinition-example-lab-service-cmv-serum"
-        id="PlanDefinition/example-lab-service-cmv-serum"/>
-    <artifact name="Lab service Rubella IgM"
-        key="PlanDefinition-example-lab-service-rubella-serum"
-        id="PlanDefinition/example-lab-service-rubella-serum"/>
-    <artifact name="Lab service Toxoplasma gondii Antibody"
-        key="PlanDefinition-example-lab-service-toxoplasma-serum"
-        id="PlanDefinition/example-lab-service-toxoplasma-serum"/>
-    <artifact name="Lab service TORCH panel"
-        key="PlanDefinition-example-lab-service-torch"
-        id="PlanDefinition/example-lab-service-torch"/>
-    <artifact name="Lab procedure 24H urine creat"
-        key="ActivityDefinition-example-lab-urine24h-creatinine"
-        id="ActivityDefinition/example-lab-urine24h-creatinine"/>
-    <artifact name="Lab procedure serum creatinine"
-        key="ActivityDefinition-example-lab-procedure-serum-creatinine"
-        id="ActivityDefinition/example-lab-procedure-serum-creatinine"/>
-    <artifact name="Lab procedure serum K"
-        key="ActivityDefinition-example-lab-procedure-potassium-serum"
-        id="ActivityDefinition/example-lab-procedure-potassium-serum"/>
-    <artifact name="Lab procedure blood electrolyte"
-        key="ActivityDefinition-example-lab-blood-electrolyte"
-        id="ActivityDefinition/example-lab-blood-electrolyte"/>
-    <artifact name="Lab procedure creat renal clearance"
-        key="ActivityDefinition-example-lab-urine24h-creatinine-clearance"
-        id="ActivityDefinition/example-lab-urine24h-creatinine-clearance"/>
-    <artifact name="Lab procedure vitamin D"
-        key="ActivityDefinition-example-lab-procedure-vitamind-serum"
-        id="ActivityDefinition/example-lab-procedure-vitamind-serum"/>
-    <artifact name="Lab procedure Toxoplasma gondii"
-        key="ActivityDefinition-example-lab-procedure-toxoplasma"
-        id="ActivityDefinition/example-lab-procedure-toxoplasma"/>
-    <artifact name="Lab procedure Rubella IgM"
-        key="ActivityDefinition-example-lab-procedure-rubella"
-        id="ActivityDefinition/example-lab-procedure-rubella"/>
-    <artifact name="Lab procedure CMV IgM"
-        key="ActivityDefinition-example-lab-procedure-cmv"
-        id="ActivityDefinition/example-lab-procedure-cmv"/>
-    <artifact name="Lab procedure HSV serology"
-        key="ActivityDefinition-example-lab-procedure-hsv"
-        id="ActivityDefinition/example-lab-procedure-hsv"/>
-    <artifact name="Lab procedure HSV 1 IgM titer"
-        key="ActivityDefinition-example-lab-procedure-hsvt1"
-        id="ActivityDefinition/example-lab-procedure-hsvt1"/>
-    <artifact name="Lab procedure HSV 2 IgM titer"
-        key="ActivityDefinition-example-lab-procedure-hsvt2"
-        id="ActivityDefinition/example-lab-procedure-hsvt2"/>
-    <artifact name="Lab specimen - venous serum 1 test"
-        key="SpecimenDefinition-example-specimen-venous-serum-single-test"
-        id="SpecimenDefinition/example-specimen-venous-serum-single-test"/>
-    <artifact name="Lab specimen - capillary serum 1 test"
-        key="SpecimenDefinition-example-specimen-capillary-serum-single-test"
-        id="SpecimenDefinition/example-specimen-capillary-serum-single-test"/>
-    <artifact name="Lab specimen - serum/plasma"
-        key="SpecimenDefinition-example-specimen-serum-plasma"
-        id="SpecimenDefinition/example-specimen-serum-plasma"/>
-    <artifact name="Lab specimen - 24H urine"
-        key="SpecimenDefinition-example-specimen-urine-24h"
-        id="SpecimenDefinition/example-specimen-urine-24h"/>
-    <artifact name="Lab specimen - venous serum 3 mL"
-        key="SpecimenDefinition-example-specimen-3ml-serum"
-        id="SpecimenDefinition/example-specimen-3ml-serum"/>
-    <artifact name="Lab specimen - venous serum 2 mL"
-        key="SpecimenDefinition-example-specimen-2ml-serum"
-        id="SpecimenDefinition/example-specimen-2ml-serum"/>
-    <artifact name="Lab input observation - reason"
-        key="ObservationDefinition-example-input-observation-reason-for-ordering"
-        id="ObservationDefinition/example-input-observation-reason-for-ordering"/>
-    <artifact name="Lab input observation - vitamin d"
-        key="ObservationDefinition-example-input-observation-context-for-vitamin-d"
-        id="ObservationDefinition/example-input-observation-context-for-vitamin-d"/>
-    <artifact name="Lab observation serum Na"
-        key="ObservationDefinition-example-observation-serum-sodium"
-        id="ObservationDefinition/example-observation-serum-sodium"/>
-    <artifact name="Lab observation serum K"
-        key="ObservationDefinition-example-observation-serum-potassium"
-        id="ObservationDefinition/example-observation-serum-potassium"/>
-    <artifact name="Lab observation serum Cl"
-        key="ObservationDefinition-example-observation-serum-chloride"
-        id="ObservationDefinition/example-observation-serum-chloride"/>
-    <artifact name="Lab observation collection duration"
-        key="ObservationDefinition-example-observation-collection-duration"
-        id="ObservationDefinition/example-observation-collection-duration"/>
-    <artifact name="Lab observation urine volume"
-        key="ObservationDefinition-example-observation-collection-volume"
-        id="ObservationDefinition/example-observation-collection-volume"/>
-    <artifact name="Lab observation urine creat"
-        key="ObservationDefinition-example-observation-urine24h-creatinine"
-        id="ObservationDefinition/example-observation-urine24h-creatinine"/>
-    <artifact name="Lab observation serum/plasma creat"
-        key="ObservationDefinition-example-observation-serum-creatinine"
-        id="ObservationDefinition/example-observation-serum-creatinine"/>
-    <artifact name="Lab observation creat renal clearance"
-        key="ObservationDefinition-example-observation-creatinine-renal-clearance"
-        id="ObservationDefinition/example-observation-creatinine-renal-clearance"/>
-    <artifact name="Lab observation vitamin D"
-        key="ObservationDefinition-example-observation-vitamin-d"
-        id="ObservationDefinition/example-observation-vitamin-d"/>
-    <artifact name="Lab observation HSV 2 IgM titer"
-        key="ObservationDefinition-example-observation-hsv2igmt"
-        id="ObservationDefinition/example-observation-hsv2igmt"/>
-    <artifact name="Lab observation HSV 1 IgM titer"
-        key="ObservationDefinition-example-observation-hsv1igmt"
-        id="ObservationDefinition/example-observation-hsv1igmt"/>
-    <artifact name="Lab observation HSV 2 IgM presence"
-        key="ObservationDefinition-example-observation-hsv2igmp"
-        id="ObservationDefinition/example-observation-hsv2igmp"/>
-    <artifact name="Lab observation HSV 1 IgM presence"
-        key="ObservationDefinition-example-observation-hsv1igmp"
-        id="ObservationDefinition/example-observation-hsv1igmp"/>
-    <artifact name="Lab observation Rubella IgM"
-        key="ObservationDefinition-example-observation-rubigm"
-        id="ObservationDefinition/example-observation-rubigm"/>
-    <artifact name="Lab observation CMV IgM"
-        key="ObservationDefinition-example-observation-cmvigm"
-        id="ObservationDefinition/example-observation-cmvigm"/>
-    <artifact name="Lab observation Toxoplasma IgM"
-        key="ObservationDefinition-example-observation-toxoigm"
-        id="ObservationDefinition/example-observation-toxoigm"/>
-    <artifact name="Lab observation Toxoplasma IgG"
-        key="ObservationDefinition-example-observation-toxoigg"
-        id="ObservationDefinition/example-observation-toxoigg"/>
-    <artifact name="Lab observation Toxoplasma Ab interpretation"
-        key="ObservationDefinition-example-observation-toxoint"
-        id="ObservationDefinition/example-observation-toxoint"/>
-    <artifact name="Laboratory Organization"
-        key="Organization-example-lab-organization"
-        id="Organization/example-lab-organization"/>
-    <artifact name="Lab billing code and rule for vitamin D"
-        key="ChargeItemDefinition-example-lab-billing-vitamind-focus"
-        id="ChargeItemDefinition/example-lab-billing-vitamind-focus"/>
-    <artifact name="Lab normal clinical focus for billing vitamin D"
-        key="ValueSet-example-normal-contexts-vitamin-d"
-        id="ValueSet/example-normal-contexts-vitamin-d"/>
-    <artifact name="Lab contexts possibly associated with vitamin D testing"
-        key="ValueSet-example-clinical-focus-vitamin-d"
-        id="ValueSet/example-clinical-focus-vitamin-d"/>
-    <artifact name="Valid coded reasons for ordering a lab service"
-        key="ValueSet-example-reasons-for-order"
-        id="ValueSet/example-reasons-for-order"/>
-    <artifact name="Message definition for messaging a new catalog"
-        key="MessageDefinition-example-message-definition-initialize"
-        id="MessageDefinition/example-message-definition-initialize"/>
-    <artifact name="Message definition for messaging a catalog update"
-        key="MessageDefinition-example-message-definition-update"
-        id="MessageDefinition/example-message-definition-update"/>
-    <artifact name="Create test in laboratory compendium"
-        key="Bundle-example-lab-test-creation-transaction-request"
-        id="Bundle/example-lab-test-creation-transaction-request"/>
-    <artifact name="Test created in laboratory compendium"
-        key="Bundle-example-lab-test-creation-transaction-response"
-        id="Bundle/example-lab-test-creation-transaction-response"/> -->
-   <!--  <page name="(NA)" key="NA"/>
-    <page name="(many)" key="many"/>
-    <page name="Table of Contents" key="toc"/> -->
+    <artifact id="StructureDefinition/Transport" key="StructureDefinition-Transport" name="Transport"/>
+    <artifact id="CodeSystem/transport-code" key="CodeSystem-transport-code" name="Transport Code"/>
+    <artifact id="CodeSystem/transport-intent" key="CodeSystem-transport-intent" name="Transport Intent"/>
+    <artifact id="CodeSystem/transport-status" key="CodeSystem-transport-status" name="Transport Status"/>
+    <artifact id="CodeSystem/transport-status-reason" key="CodeSystem-transport-status-reason" name="Transport Status Reason"/>
+    <artifact id="ValueSet/transport-code" key="ValueSet-transport-code" name="Transport Code"/>
+    <artifact id="ValueSet/transport-intent" key="ValueSet-transport-intent" name="Transport Intent"/>
+    <artifact id="ValueSet/transport-status" key="ValueSet-transport-status" name="Transport Status"/>
+    <artifact id="ValueSet/transport-status-reason" key="ValueSet-transport-status-reason" name="Transport Status Reason"/>
+    <artifact id="ValueSet/transport-type" key="ValueSet-transport-type" name="Transport Type"/>
+    <artifact id="ValueSet/transport-reason" key="ValueSet-transport-reason" name="Transport Reason"/>
+    <artifact id="List/Transport-examples" key="List-Transport-examples" name="Transport-examples"/>
+    <artifact id="List/Transport-operations" key="List-Transport-operations" name="Transport-operations"/>
+    <artifact id="SearchParameter/Transport-identifier" key="SearchParameter-Transport-identifier" name="TransportIdentifierSearchParam"/>
+    <artifact id="SearchParameter/transport-status" key="SearchParameter-transport-status" name="TransportStatusSearchParam"/>
+    <artifact id="SearchParameter/Transport-patient" key="SearchParameter-Transport-patient" name="TransportPatientSearchParam"/>
+    <artifact id="Transport/simpledelivery" key="Transport-simpledelivery" name="Simple Delivery Example"/>
+    <artifact id="Location/hospital-lab" key="Location-hospital-lab" name="Hospital Lab Location"/>
+    <artifact id="Location/lab-a" key="Location-lab-a" name="Lab A Location"/>
+    <artifact id="SearchParameter/Transport-subject" key="SearchParameter-Transport-subject" name="Transport-subjectSearchParam"/>
+    <artifact id="BiologicallyDerivedProductDispense/example" key="BiologicallyDerivedProductDispense-example" name="example"/>
+    <artifact id="List/BiologicallyDerivedProductDispense-examples" key="List-BiologicallyDerivedProductDispense-examples" name="BiologicallyDerivedProductDispense-examples"/>
+    <artifact id="List/BiologicallyDerivedProductDispense-operations" key="List-BiologicallyDerivedProductDispense-operations" name="BiologicallyDerivedProductDispense-operations"/>
+    <artifact id="List/BiologicallyDerivedProductDispense-packs" key="List-BiologicallyDerivedProductDispense-packs" name="BiologicallyDerivedProductDispense-packs"/>
+    <artifact id="List/DeviceRequest-examples" key="List-DeviceRequest-examples" name="DeviceRequest-examples"/>
+    <artifact id="List/DeviceRequest-packs" key="List-DeviceRequest-packs" name="DeviceRequest-packs"/>
+    <artifact id="List/DeviceRequest-operations" key="List-DeviceRequest-operations" name="DeviceRequest-operations"/>
+    <artifact id="List/DeviceUsage-packs" key="List-DeviceUsage-packs" name="DeviceUsage-packs"/>
+    <artifact id="List/DeviceUsage-examples" key="List-DeviceUsage-examples" name="DeviceUsage-examples"/>
+    <artifact id="List/DeviceUsage-operations" key="List-DeviceUsage-operations" name="DeviceUsage-operations"/>
+    <artifact id="List/InventoryReport-examples" key="List-InventoryReport-examples" name="InventoryReport-examples"/>
+    <artifact id="List/InventoryReport-packs" key="List-InventoryReport-packs" name="InventoryReport-packs"/>
+    <artifact id="List/InventoryReport-operations" key="List-InventoryReport-operations" name="InventoryReport-operations"/>
+    <artifact id="List/InventoryItem-operations" key="List-InventoryItem-operations" name="InventoryItem-operations"/>
+    <artifact id="List/InventoryItem-examples" key="List-InventoryItem-examples" name="InventoryItem-examples"/>
+    <artifact id="List/InventoryItem-packs" key="List-InventoryItem-packs" name="InventoryItem-packs"/>
+    <artifact id="List/SupplyDelivery-examples" key="List-SupplyDelivery-examples" name="SupplyDelivery-examples"/>
+    <artifact id="List/SupplyDelivery-operations" key="List-SupplyDelivery-operations" name="SupplyDelivery-operations"/>
+    <artifact id="List/SupplyDelivery-packs" key="List-SupplyDelivery-packs" name="SupplyDelivery-packs"/>
+    <artifact id="List/SupplyRequest-operations" key="List-SupplyRequest-operations" name="SupplyRequest-operations"/>
+    <artifact id="List/SupplyRequest-packs" key="List-SupplyRequest-packs" name="SupplyRequest-packs"/>
+    <artifact id="List/SupplyRequest-examples" key="List-SupplyRequest-examples" name="SupplyRequest-examples"/>
+    <artifact id="StructureDefinition/BiologicallyDerivedProductDispense" key="StructureDefinition-BiologicallyDerivedProductDispense" name="BiologicallyDerivedProductDispense"/>
+    <artifact id="StructureDefinition/DeviceRequest" key="StructureDefinition-DeviceRequest" name="DeviceRequest"/>
+    <artifact id="StructureDefinition/DeviceUsage" key="StructureDefinition-DeviceUsage" name="DeviceUsage"/>
+    <artifact id="StructureDefinition/InventoryReport" key="StructureDefinition-InventoryReport" name="InventoryReport"/>
+    <artifact id="StructureDefinition/InventoryItem" key="StructureDefinition-InventoryItem" name="InventoryItem"/>
+    <artifact id="StructureDefinition/SupplyDelivery" key="StructureDefinition-SupplyDelivery" name="SupplyDelivery"/>
+    <artifact id="StructureDefinition/SupplyRequest" key="StructureDefinition-SupplyRequest" name="SupplyRequest"/>
+    <artifact id="SearchParameter/BiologicallyDerivedProductDispense-code" key="SearchParameter-BiologicallyDerivedProductDispense-code" name="BiologicallyDerivedProductDispense-codeSearchParam"/>
+    <artifact id="SearchParameter/BiologicallyDerivedProductDispense-patient" key="SearchParameter-BiologicallyDerivedProductDispense-patient" name="BiologicallyDerivedProductDispense-patientSearchParam"/>
+    <artifact id="SearchParameter/BiologicallyDerivedProductDispense-subject" key="SearchParameter-BiologicallyDerivedProductDispense-subject" name="BiologicallyDerivedProductDispense-subjectSearchParam"/>
+    <artifact id="SearchParameter/BiologicallyDerivedProductDispense-performer" key="SearchParameter-BiologicallyDerivedProductDispense-performer" name="BiologicallyDerivedProductDispense-performerSearchParam"/>
+    <artifact id="SearchParameter/BiologicallyDerivedProductDispense-status" key="SearchParameter-BiologicallyDerivedProductDispense-status" name="BiologicallyDerivedProductDispense-statusSearchParam"/>
+    <artifact id="SearchParameter/BiologicallyDerivedProductDispense-identifier" key="SearchParameter-BiologicallyDerivedProductDispense-identifier" name="BiologicallyDerivedProductDispense-identifierSearchParam"/>
+    <artifact id="SearchParameter/BiologicallyDerivedProductDispense-based-on" key="SearchParameter-BiologicallyDerivedProductDispense-based-on" name="BiologicallyDerivedProductDispense-based-onSearchParam"/>
+    <artifact id="SearchParameter/BiologicallyDerivedProductDispense-part-of" key="SearchParameter-BiologicallyDerivedProductDispense-part-of" name="BiologicallyDerivedProductDispense-part-ofSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-authored-on" key="SearchParameter-DeviceRequest-authored-on" name="DeviceRequest-authored-onSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-based-on" key="SearchParameter-DeviceRequest-based-on" name="DeviceRequest-based-onSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-product" key="SearchParameter-DeviceRequest-product" name="DeviceRequest-productSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-device" key="SearchParameter-DeviceRequest-device" name="DeviceRequest-deviceSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-encounter" key="SearchParameter-DeviceRequest-encounter" name="DeviceRequest-encounterSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-event-date" key="SearchParameter-DeviceRequest-event-date" name="DeviceRequest-event-dateSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-group-identifier" key="SearchParameter-DeviceRequest-group-identifier" name="DeviceRequest-group-identifierSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-identifier" key="SearchParameter-DeviceRequest-identifier" name="DeviceRequest-identifierSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-insurance" key="SearchParameter-DeviceRequest-insurance" name="DeviceRequest-insuranceSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-intent" key="SearchParameter-DeviceRequest-intent" name="DeviceRequest-intentSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-patient" key="SearchParameter-DeviceRequest-patient" name="DeviceRequest-patientSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-performer" key="SearchParameter-DeviceRequest-performer" name="DeviceRequest-performerSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-performer-code" key="SearchParameter-DeviceRequest-performer-code" name="DeviceRequest-performer-codeSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-prior-request" key="SearchParameter-DeviceRequest-prior-request" name="DeviceRequest-prior-requestSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-requester" key="SearchParameter-DeviceRequest-requester" name="DeviceRequest-requesterSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-status" key="SearchParameter-DeviceRequest-status" name="DeviceRequest-statusSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-subject" key="SearchParameter-DeviceRequest-subject" name="DeviceRequest-subjectSearchParam"/>
+    <artifact id="SearchParameter/DeviceRequest-location-code" key="SearchParameter-DeviceRequest-location-code" name="DeviceRequest-location-codeSearchParam"/>
+    <artifact id="SearchParameter/DeviceUsage-device" key="SearchParameter-DeviceUsage-device" name="DeviceUsage-deviceSearchParam"/>
+    <artifact id="SearchParameter/DeviceUsage-identifier" key="SearchParameter-DeviceUsage-identifier" name="DeviceUsage-identifierSearchParam"/>
+    <artifact id="SearchParameter/DeviceUsage-patient" key="SearchParameter-DeviceUsage-patient" name="DeviceUsage-patientSearchParam"/>
+    <artifact id="SearchParameter/DeviceUsage-subject" key="SearchParameter-DeviceUsage-subject" name="DeviceUsage-subjectSearchParam"/>
+    <artifact id="SearchParameter/DeviceUsage-status" key="SearchParameter-DeviceUsage-status" name="DeviceUsage-statusSearchParam"/>
+    <artifact id="SearchParameter/DeviceUsage-body-structure-reference" key="SearchParameter-DeviceUsage-body-structure-reference" name="DeviceUsage-body-structure-referenceSearchParam"/>
+    <artifact id="SearchParameter/DeviceUsage-body-structure-code" key="SearchParameter-DeviceUsage-body-structure-code" name="DeviceUsage-body-structure-codeSearchParam"/>
+    <artifact id="SearchParameter/InventoryReport-identifier" key="SearchParameter-InventoryReport-identifier" name="InventoryReport-identifierSearchParam"/>
+    <artifact id="SearchParameter/InventoryReport-status" key="SearchParameter-InventoryReport-status" name="InventoryReport-statusSearchParam"/>
+    <artifact id="SearchParameter/InventoryReport-item" key="SearchParameter-InventoryReport-item" name="InventoryReport-itemSearchParam"/>
+    <artifact id="SearchParameter/InventoryReport-item-reference" key="SearchParameter-InventoryReport-item-reference" name="InventoryReport-item-referenceSearchParam"/>
+    <artifact id="SearchParameter/InventoryItem-code" key="SearchParameter-InventoryItem-code" name="InventoryItem-codeSearchParam"/>
+    <artifact id="SearchParameter/InventoryItem-subject" key="SearchParameter-InventoryItem-subject" name="InventoryItem-subjectSearchParam"/>
+    <artifact id="SearchParameter/InventoryItem-status" key="SearchParameter-InventoryItem-status" name="InventoryItem-statusSearchParam"/>
+    <artifact id="SearchParameter/InventoryItem-identifier" key="SearchParameter-InventoryItem-identifier" name="InventoryItem-identifierSearchParam"/>
+    <artifact id="SearchParameter/SupplyDelivery-identifier" key="SearchParameter-SupplyDelivery-identifier" name="SupplyDelivery-identifierSearchParam"/>
+    <artifact id="SearchParameter/SupplyDelivery-patient" key="SearchParameter-SupplyDelivery-patient" name="SupplyDelivery-patientSearchParam"/>
+    <artifact id="SearchParameter/SupplyDelivery-subject" key="SearchParameter-SupplyDelivery-subject" name="SupplyDelivery-subjectSearchParam"/>
+    <artifact id="SearchParameter/SupplyDelivery-receiver" key="SearchParameter-SupplyDelivery-receiver" name="SupplyDelivery-receiverSearchParam"/>
+    <artifact id="SearchParameter/SupplyDelivery-status" key="SearchParameter-SupplyDelivery-status" name="SupplyDelivery-statusSearchParam"/>
+    <artifact id="SearchParameter/SupplyDelivery-supplier" key="SearchParameter-SupplyDelivery-supplier" name="SupplyDelivery-supplierSearchParam"/>
+    <artifact id="SearchParameter/SupplyRequest-category" key="SearchParameter-SupplyRequest-category" name="SupplyRequest-categorySearchParam"/>
+    <artifact id="SearchParameter/SupplyRequest-date" key="SearchParameter-SupplyRequest-date" name="SupplyRequest-dateSearchParam"/>
+    <artifact id="SearchParameter/SupplyRequest-identifier" key="SearchParameter-SupplyRequest-identifier" name="SupplyRequest-identifierSearchParam"/>
+    <artifact id="SearchParameter/ServiceRequest-replaces" key="SearchParameter-ServiceRequest-replaces" name="ServiceRequest-replacesSearchParam"/>
+    <artifact id="SearchParameter/SupplyRequest-requester" key="SearchParameter-SupplyRequest-requester" name="SupplyRequest-requesterSearchParam"/>
+    <artifact id="SearchParameter/SupplyRequest-patient" key="SearchParameter-SupplyRequest-patient" name="SupplyRequest-patientSearchParam"/>
+    <artifact id="SearchParameter/SupplyRequest-status" key="SearchParameter-SupplyRequest-status" name="SupplyRequest-statusSearchParam"/>
+    <artifact id="SearchParameter/SupplyRequest-subject" key="SearchParameter-SupplyRequest-subject" name="SupplyRequest-subjectSearchParam"/>
+    <artifact id="SearchParameter/SupplyRequest-supplier" key="SearchParameter-SupplyRequest-supplier" name="SupplyRequest-supplierSearchParam"/>
+    <artifact id="DeviceRequest/example" key="DeviceRequest-example" name="example"/>
+    <artifact id="DeviceRequest/insulinpump" key="DeviceRequest-insulinpump" name="insulinpump"/>
+    <artifact id="DeviceUsage/example" key="DeviceUsage-example" name="example"/>
+    <artifact id="InventoryReport/example" key="InventoryReport-example" name="example"/>
+    <artifact id="InventoryItem/example" key="InventoryItem-example" name="example"/>
+    <artifact id="SupplyDelivery/mphodelivery" key="SupplyDelivery-mphodelivery" name="mphodelivery"/>
+    <artifact id="SupplyDelivery/simpledelivery" key="SupplyDelivery-simpledelivery" name="simpledelivery"/>
+    <artifact id="SupplyDelivery/pumpdelivery" key="SupplyDelivery-pumpdelivery" name="pumpdelivery"/>
+    <artifact id="SupplyDelivery/ISBT128" key="SupplyDelivery-ISBT128" name="ISBT128"/>
+    <artifact id="SupplyRequest/simpleorder" key="SupplyRequest-simpleorder" name="simpleorder"/>
+    <artifact id="SupplyRequest/example" key="SupplyRequest-example" name="example"/>
+    <page key="NA" name="(NA)"/>
+    <page key="many" name="(many)"/>
+    <page key="artifacts" name="Artifacts Summary"/>
+    <page key="background" name="Background"/>
+    <page key="changes" name="Change Log"/>
+    <page key="index" name="IG Home"/>
+    <page key="toc" name="Table of Contents"/>
     <page name="OO Incubator Home Page" key="index"/>
-    <!-- <page name="Use cases - Laboratory services" key="uclabservices"/>
-    <page name="Use cases - Order sets" key="ucordersets"/>
-    <page name="Use cases - Medications" key="ucdrugs"/>
-    <page name="Use cases - Devices" key="ucdevices"/>
-    <page name="Spec - Laboratory services" key="labservices"/>
-    <page name="Spec - Order sets" key="ordersets"/>
-    <page name="Spec - Medications" key="drugs"/>
-    <page name="Spec - Devices" key="devices"/>
-    <page name="Interaction framework" key="interactions"/>
-    <page name="Examples - Laboratory services" key="exlabservices"/>
-    <page name="Examples - Order sets" key="exordersets"/>
-    <page name="Examples - Medications" key="exdrugs"/>
-    <page name="Examples - Devices" key="exdevices"/>
-    <page name="Useful Downloads" key="downloads"/>
-    <page name="IG Change History" key="changes"/>
-    <page name="Artifacts Summary" key="artifacts"/>  -->
 </specification>
