@@ -47,7 +47,7 @@
 <artifact id="ValueSet/2.16.840.1.113762.1.4.1146.6-example" key="ValueSet-2.16.840.1.113762.1.4.1146.6-example" name="Diphtheria (Disorders) (SNOMED)"/>
 <artifact id="ValueSet/2.16.840.1.113762.1.4.1146.1435-example" key="ValueSet-2.16.840.1.113762.1.4.1146.1435-example" name="Diphtheria [Suspected] (Disorders) (SNOMED)"/>
 <artifact deprecated="true" id="StructureDefinition/disability-status" key="StructureDefinition-disability-status" name="Disability Status"/>
-<artifact id="Observation/observation-disability-status-eve-everywoman" key="Observation-observation-disability-status-eve-everywoman" name="Disability Status Example: Eve Everywoman"/>
+<artifact id="DocumentReference/documentreference-eicr-example" key="DocumentReference-documentreference-eicr-example" name="DocumentReference - Electronic Initial Case Report"/>
 <artifact id="ValueSet/2.16.840.1.113762.1.4.1146.1181-example" key="ValueSet-2.16.840.1.113762.1.4.1146.1181-example" name="Eastern Equine Encephalitis Virus Disease (Tests for Eastern Equine Encephalitis Virus Antibody [Quantitative])"/>
 <artifact id="Encounter/encounter-eicr-eve-everywoman-completed-inpatient" key="Encounter-encounter-eicr-eve-everywoman-completed-inpatient" name="Encounter - Completed Inpatient Visit for Eve Everywoman"/>
 <artifact id="Encounter/encounter-eicr-eve-everywoman-current-inpatient" key="Encounter-encounter-eicr-eve-everywoman-current-inpatient" name="Encounter - Current Inpatient Visit for Eve Everywoman"/>
@@ -105,13 +105,14 @@
 <artifact id="ValueSet/2.16.840.1.113762.1.4.1146.762-example" key="ValueSet-2.16.840.1.113762.1.4.1146.762-example" name="Mumps (Test Panels for mumps virus IgM IgG Antibody)"/>
 <artifact id="ValueSet/2.16.840.1.113762.1.4.1146.761-example" key="ValueSet-2.16.840.1.113762.1.4.1146.761-example" name="Mumps (Test Panels for mumps virus Nucleic Acid)"/>
 <artifact id="ValueSet/2.16.840.1.113762.1.4.1146.1034-example" key="ValueSet-2.16.840.1.113762.1.4.1146.1034-example" name="Negative or Undetected Lab Result Value"/>
-<artifact id="Observation/observation-odh-employment-status-ecr-eve-everywoman" key="Observation-observation-odh-employment-status-ecr-eve-everywoman" name="ODH Employment Status Example: observation-odh-employment-status-ecr-eve-everywoman"/>
 <artifact id="Observation/observation-blood-pressure-eve-everywoman" key="Observation-observation-blood-pressure-eve-everywoman" name="Observation - Blood Pressure for Eve Everywoman"/>
 <artifact id="Observation/observation-characteristics-of-home-environment-eve-everywoman" key="Observation-observation-characteristics-of-home-environment-eve-everywoman" name="Observation - Characteristics of Home Environment for Eve Everywoman"/>
+<artifact id="Observation/observation-disability-status-eve-everywoman" key="Observation-observation-disability-status-eve-everywoman" name="Observation - Disability Status for Eve Everywoman"/>
 <artifact id="Observation/observation-us-ph-lab-result-eve-everywoman-lymphocytes" key="Observation-observation-us-ph-lab-result-eve-everywoman-lymphocytes" name="Observation - Lab Result Lymphocytes for Eve Everywoman"/>
 <artifact id="Observation/observation-us-ph-lab-result-eve-everywoman-pertussis" key="Observation-observation-us-ph-lab-result-eve-everywoman-pertussis" name="Observation - Lab Result Pertussis Antibody for Eve Everywoman"/>
 <artifact id="Observation/observation-last-menstrual-period-eve-everywoman" key="Observation-observation-last-menstrual-period-eve-everywoman" name="Observation - Last Menstrual Period for Eve Everywoman"/>
 <artifact id="Observation/observation-eicr-organism-susceptibility-meropenem" key="Observation-observation-eicr-organism-susceptibility-meropenem" name="Observation - Meropenem Susceptibility for Eve Everywoman"/>
+<artifact id="Observation/observation-odh-employment-status-ecr-eve-everywoman" key="Observation-observation-odh-employment-status-ecr-eve-everywoman" name="Observation - ODH Employment Status for Eve Everywoman"/>
 <artifact id="Observation/observation-odh-past-or-present-job-eve-everywoman" key="Observation-observation-odh-past-or-present-job-eve-everywoman" name="Observation - ODH Past or Present Job for Eve Everywoman"/>
 <artifact id="Observation/observation-odh-usual-work-eve-everywoman" key="Observation-observation-odh-usual-work-eve-everywoman" name="Observation - ODH Usual Work for Eve Everywoman"/>
 <artifact id="Observation/observation-eicr-organism-detected-klebsiella-oxytoca" key="Observation-observation-eicr-organism-detected-klebsiella-oxytoca" name="Observation - Organism Detected Klebsiella-oxytoca for Eve Everywoman"/>
@@ -298,7 +299,6 @@
 <artifact id="StructureDefinition/eicr-document-bundle" key="StructureDefinition-eicr-document-bundle" name="eICR Document Bundle"/>
 <artifact deprecated="true" id="Bundle/bundle-eicr-document-pertussis-zika" key="Bundle-bundle-eicr-document-pertussis-zika" name="eICR Document Bundle Example: bundle-eicr-document-pertussis-zika"/>
 <artifact id="StructureDefinition/eicr-encounter" key="StructureDefinition-eicr-encounter" name="eICR Encounter"/>
-<artifact id="DocumentReference/documentreference-eicr-example" key="DocumentReference-documentreference-eicr-example" name="eICR Example DocumentReference - Electronic Initial Case Report"/>
 <artifact deprecated="true" id="StructureDefinition/eicr-initiation-reason-extension" key="StructureDefinition-eicr-initiation-reason-extension" name="eICR Initiation Reason Extension"/>
 <artifact id="StructureDefinition/eicr-initiation-type-extension" key="StructureDefinition-eicr-initiation-type-extension" name="eICR Initiation Type Extension"/>
 <artifact id="StructureDefinition/eicr-organism-detected-observation" key="StructureDefinition-eicr-organism-detected-observation" name="eICR Organism Detected Observation"/>
@@ -337,6 +337,7 @@
 <page key="many" name="(many)"/>
 <page key="acknowledgements" name="Acknowledgements"/>
 <page key="acronyms_and_abbreviations" name="Acronyms and Abbreviations"/>
+<page key="artifact-overview" name="Artifact Overview"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="change_log" name="Change Log"/>
 <page key="design_considerations" name="Design Considerations"/>
