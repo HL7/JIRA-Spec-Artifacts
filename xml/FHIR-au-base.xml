@@ -1,5 +1,6 @@
 <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/6.0.0-ballot" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-base" defaultVersion="5.0.0" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-base" url="http://hl7.org.au/fhir">
 	<version code="current" url="https://build.fhir.org/ig/hl7au/au-fhir-base"/>  
+    <version code="6.0.0-preview" url="http://hl7.org.au/fhir/6.0.0-preview"/>  
     <version code="6.0.0-ballot" url="http://hl7.org.au/fhir/6.0.0-ballot"/>  
     <version code="6.0.0-draft" deprecated="true" url="http://hl7.org.au/fhir/6.0.0-draft"/>  
     <version code="5.1.0-preview" deprecated="true" url="http://hl7.org.au/fhir/5.1.0-preview"/>  
@@ -139,12 +140,14 @@
 	<artifact id="ValueSet/medicine-item-change" key="ValueSet-medicine-item-change" name="Medicine Item Change Valueset" />
 	<artifact id="ValueSet/au-timezone" key="ValueSet-au-timezone" name="AU Time Zone" />
 	<artifact id="CodeSystem/rsg-source-document-type" key="CodeSystem-rsg-source-document-type" name="AU Recorded Sex or Gender Source Document Type" />
+	<artifact id="CodeSystem/au-digital-health-source-system" key="CodeSystem-au-digital-health-source-system" name="AU Digital Health Source System" />
 	<artifact id="CodeSystem/rsg-type" key="CodeSystem-rsg-type" name="AU Recorded Sex or Gender Type Codes" />
 	<artifact id="ValueSet/name-context" key="ValueSet-name-context" name="Name Context Valueset" />
 	<artifact id="CodeSystem/name-context" key="CodeSystem-name-context" name="Name Context Codes" />
 	<artifact id="CodeSystem/resource-tag" key="CodeSystem-resource-tag" name="Resource Tag" />
 	<artifact id="CodeSystem/communicationrequest-reason" key="CodeSystem-communicationrequest-reason" name="Communication Request Reason" />
 	<artifact id="CodeSystem/task-business-status" key="CodeSystem-task-business-status" name="Task Business Status" />
+	<artifact id="CodeSystem/communication-request-category" key="CodeSystem-communication-request-category" name="Communication Request Category" />
 	<artifact id="ValueSet/au-jurisdiction-extended" key="ValueSet-au-jurisdiction-extended" name="Jurisdiction ValueSet - AU Extended" />
 	<artifact id="ValueSet/rsg-source-document-type" key="ValueSet-rsg-source-document-type" name="AU Recorded Sex or Gender (RSG) Source Document Type" />
 	<artifact id="ValueSet/rsg-type" key="ValueSet-rsg-type" name="AU Recorded Sex or Gender Type Value" />
@@ -284,6 +287,7 @@
 	<artifact id="Procedure/example2" key="Procedure-example2" name="Procedure - Stent placement" />
 	<artifact id="SearchParameter/servicerequest-supporting-info" key="SearchParameter-servicerequest-supporting-info" name="ServiceRequestSupportingInfo" />
 	<artifact id="ValueSet/au-coverage-type-extended" key="ValueSet-au-coverage-type-extended" name="Coverage Type and Self-Pay Codes - AU Extended" />
+	<artifact id="ValueSet/rsg-source" key="ValueSet-rsg-source" name="AU Recorded Sex or Gender (RSG) Source" />
 	<artifact id="StructureDefinition/ethnicity" key="StructureDefinition-ethnicity" name="Ethnicity" deprecated="true"/>
 	<artifact id="SearchParameter/patient-gender-identity" key="SearchParameter-patient-gender-identity" name="PatientGenderIdentity" deprecated="true"/>
 	<artifact id="StructureDefinition/individual-recordedSexOrGender" key="StructureDefinition-individual-recordedSexOrGender" name="Person Recorded Sex Or Gender" deprecated="true"/>

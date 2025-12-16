@@ -1,5 +1,6 @@
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/ereq/2.0.1" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-erequesting" defaultVersion="1.0.0-ballot" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-erequesting" url="http://hl7.org.au/fhir/ereq">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/ereq/1.0.0-ballot" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-erequesting" defaultVersion="1.0.0-ballot" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-erequesting" url="http://hl7.org.au/fhir/ereq">
 	<version code="current" url="https://build.fhir.org/ig/hl7au/au-fhir-erequesting"/>  
+    <version code="1.0.0-preview" url="http://hl7.org.au/fhir/ereq/1.0.0-preview"/>  
     <version code="1.0.0-ballot" url="http://hl7.org.au/fhir/ereq/1.0.0-ballot"/>  
     <version code="0.4.0-preview" deprecated="true" url="http://hl7.org.au/fhir/ereq/0.4.0-preview"/>  
     <version code="0.3.0-preview" deprecated="true" url="http://hl7.org.au/fhir/ereq/0.3.0-preview"/>  
@@ -10,6 +11,7 @@
 	<artifactPageExtension value="-mapping"/>
 	<artifact id="StructureDefinition/au-erequesting-clinicalcontext-documentreference" key="StructureDefinition-au-erequesting-clinicalcontext-documentreference" name="AU eRequesting Clinical Context DocumentReference" />
 	<artifact id="StructureDefinition/au-erequesting-communicationrequest" key="StructureDefinition-au-erequesting-communicationrequest" name="AU eRequesting CommunicationRequest" />
+	<artifact id="ValueSet/au-erequesting-communicationrequest-category" key="ValueSet-au-erequesting-communicationrequest-category" name="AU eRequesting CommunicationRequest Category" />
 	<artifact id="StructureDefinition/au-erequesting-communicationrequest-copyto" key="StructureDefinition-au-erequesting-communicationrequest-copyto" name="AU eRequesting CommunicationRequest CopyTo" />
 	<artifact id="StructureDefinition/au-erequesting-communicationrequest-patient" key="StructureDefinition-au-erequesting-communicationrequest-patient" name="AU eRequesting CommunicationRequest Patient" />
 	<artifact id="ValueSet/au-erequesting-communicationrequest-patientcategory" key="ValueSet-au-erequesting-communicationrequest-patientcategory" name="AU eRequesting CommunicationRequest Patient Category" />
@@ -20,17 +22,22 @@
 	<artifact id="ValueSet/au-erequesting-coverage-type" key="ValueSet-au-erequesting-coverage-type" name="AU eRequesting Coverage Type and Self-Pay Codes" />
 	<artifact id="StructureDefinition/au-erequesting-diagnosticrequest" key="StructureDefinition-au-erequesting-diagnosticrequest" name="AU eRequesting Diagnostic Request" />
 	<artifact id="StructureDefinition/au-erequesting-displaysequence" key="StructureDefinition-au-erequesting-displaysequence" name="AU eRequesting Display Sequence" />
+	<artifact id="StructureDefinition/au-erequesting-encounter" key="StructureDefinition-au-erequesting-encounter" name="AU eRequesting Encounter" />
 	<artifact id="StructureDefinition/au-erequesting-fastingprecondition" key="StructureDefinition-au-erequesting-fastingprecondition" name="AU eRequesting Fasting Precondition" />
 	<artifact id="ActorDefinition/au-erequesting-actor-filler" key="ActorDefinition-au-erequesting-actor-filler" name="AU eRequesting Filler" />
 	<artifact id="CapabilityStatement/au-erequesting-filler" key="CapabilityStatement-au-erequesting-filler" name="AU eRequesting Filler CapabilityStatement" />
 	<artifact id="ValueSet/au-erequesting-fulfilment-task-tags" key="ValueSet-au-erequesting-fulfilment-task-tags" name="AU eRequesting Fulfilment Task Tags" />
 	<artifact id="StructureDefinition/au-erequesting-servicerequest-imag" key="StructureDefinition-au-erequesting-servicerequest-imag" name="AU eRequesting Imaging Request" />
 	<artifact id="StructureDefinition/au-erequesting-mhrconsentwithdrawal" key="StructureDefinition-au-erequesting-mhrconsentwithdrawal" name="AU eRequesting MHR Consent Withdrawal" />
+	<artifact id="StructureDefinition/au-erequesting-organization" key="StructureDefinition-au-erequesting-organization" name="AU eRequesting Organization" />
 	<artifact id="StructureDefinition/au-erequesting-servicerequest-path" key="StructureDefinition-au-erequesting-servicerequest-path" name="AU eRequesting Pathology Request" />
-	<artifact id="ActorDefinition/au-erequesting-actor-patient" key="ActorDefinition-au-erequesting-actor-patient" name="AU eRequesting Patient" />
+	<artifact id="StructureDefinition/au-erequesting-patient" key="StructureDefinition-au-erequesting-patient" name="AU eRequesting Patient" />
+	<artifact id="ActorDefinition/au-erequesting-actor-patient" key="ActorDefinition-au-erequesting-actor-patient" name="AU eRequesting Patient Actor" />
 	<artifact id="CapabilityStatement/au-erequesting-patient" key="CapabilityStatement-au-erequesting-patient" name="AU eRequesting Patient CapabilityStatement" />
 	<artifact id="ActorDefinition/au-erequesting-actor-placer" key="ActorDefinition-au-erequesting-actor-placer" name="AU eRequesting Placer" />
 	<artifact id="CapabilityStatement/au-erequesting-placer" key="CapabilityStatement-au-erequesting-placer" name="AU eRequesting Placer CapabilityStatement" />
+	<artifact id="StructureDefinition/au-erequesting-practitioner" key="StructureDefinition-au-erequesting-practitioner" name="AU eRequesting Practitioner" />
+	<artifact id="StructureDefinition/au-erequesting-practitionerrole" key="StructureDefinition-au-erequesting-practitionerrole" name="AU eRequesting PractitionerRole" />
 	<artifact id="ValueSet/au-erequesting-request-status" key="ValueSet-au-erequesting-request-status" name="AU eRequesting RequestStatus" />
 	<artifact id="ActorDefinition/au-erequesting-actor-server" key="ActorDefinition-au-erequesting-actor-server" name="AU eRequesting Server" />
 	<artifact id="CapabilityStatement/au-erequesting-server" key="CapabilityStatement-au-erequesting-server" name="AU eRequesting Server CapabilityStatement" />
@@ -51,11 +58,11 @@
 	<artifact id="Coverage/coverage-dva" key="Coverage-coverage-dva" name="Coverage - DVA" />
 	<artifact id="PractitionerRole/diagnostic-mclaughlin-kimberlee" key="PractitionerRole-diagnostic-mclaughlin-kimberlee" name="PractitionerRole - Radiologist" />
 	<artifact id="DocumentReference/documentreference-clinical-context" key="DocumentReference-documentreference-clinical-context" name="DocumentReference - Clinical Context" />
-	<artifact id="Organization/elimbah-medical-center" key="Organization-elimbah-medical-center" name="Organization - Elimbah Medical Center" />
+	<artifact id="Organization/elimbah-medical-centre" key="Organization-elimbah-medical-centre" name="Organization - Elimbah Medical Centre" />
 	<artifact id="PractitionerRole/generalpractitioner-guthridge-jarred" key="PractitionerRole-generalpractitioner-guthridge-jarred" name="PractitionerRole - General practitioner" />
+	<artifact id="Encounter/gp-consult-finger-pain" key="Encounter-gp-consult-finger-pain" name="Encounter - Finger Pain Consultation" />
 	<artifact id="Encounter/gp-consultation" key="Encounter-gp-consultation" name="Encounter - Consultation" />
 	<artifact id="Practitioner/herbert-aimee" key="Practitioner-herbert-aimee" name="Practitioner - Aimee Herbert" />
-	<artifact id="Patient/irvine-ronny-lawrence" key="Patient-irvine-ronny-lawrence" name="Patient - Ronny Lawrence Irvine" />
 	<artifact id="Organization/kioma-pathology" key="Organization-kioma-pathology" name="Organization - Kioma Pathology Laboratory" />
 	<artifact id="Practitioner/losch-sallie" key="Practitioner-losch-sallie" name="Practitioner - Sallie Losch" />
 	<artifact id="Practitioner/mclaughlin-kimberlee" key="Practitioner-mclaughlin-kimberlee" name="Practitioner - Kimberlee McLaughlin" />
@@ -71,14 +78,18 @@
 	<artifact id="ServiceRequest/order-obsus-1" key="ServiceRequest-order-obsus-1" name="ServiceRequest - Obstetric Ultrasound (Second Trimester)" />
 	<artifact id="ServiceRequest/order-urinemcs-1" key="ServiceRequest-order-urinemcs-1" name="ServiceRequest - Urine Microscopy, Culture and Sensitivity" />
 	<artifact id="ServiceRequest/order-xray-1" key="ServiceRequest-order-xray-1" name="ServiceRequest - X-ray" />
+	<artifact id="ServiceRequest/order-xray-2" key="ServiceRequest-order-xray-2" name="ServiceRequest - Hand X-ray (with coded body site)" />
 	<artifact id="PractitionerRole/pathologist-herbert-aimee" key="PractitionerRole-pathologist-herbert-aimee" name="PractitionerRole - Pathologist" />
 	<artifact id="Practitioner/practitioner-guthridge-jarred" key="Practitioner-practitioner-guthridge-jarred" name="Practitioner - Dr. Jarred Guthridge" />
 	<artifact id="Patient/roberts-fred" key="Patient-roberts-fred" name="Patient - Fred Roberts" />
+	<artifact id="Patient/scott-elijah-ken" key="Patient-scott-elijah-ken" name="Patient - Elijah KEN SCOTT" />
 	<artifact id="Task/task-communicationrequest-urgent-results-to-provider" key="Task-task-communicationrequest-urgent-results-to-provider" name="Task - Communication Request - Urgent results communication to provider" />
 	<artifact id="Task/taskfulfilment-imaging-1" key="Task-taskfulfilment-imaging-1" name="Task - Imaging Fulfilment Task" />
 	<artifact id="Task/taskfulfilment-pathology-1" key="Task-taskfulfilment-pathology-1" name="Task - Pathology Fulfilment Task" />
 	<artifact id="Task/taskgroup-imaging-1" key="Task-taskgroup-imaging-1" name="Task - Imaging Task Group" />
 	<artifact id="Task/taskgroup-pathology-1" key="Task-taskgroup-pathology-1" name="Task - Pathology Task Group" />
+	<artifact id="Organization/elimbah-medical-center" key="Organization-elimbah-medical-center" name="Organization - Elimbah Medical Center" deprecated="true"/>
+	<artifact id="Patient/irvine-ronny-lawrence" key="Patient-irvine-ronny-lawrence" name="Patient - Ronny Lawrence Irvine" deprecated="true"/>
 	<artifact id="CodeSystem/au-erequesting-communication-request-reason" key="CodeSystem-au-erequesting-communication-request-reason" name="AU eRequesting Communication Request Reason" deprecated="true"/>
 	<artifact id="CodeSystem/au-erequesting-task-tag" key="CodeSystem-au-erequesting-task-tag" name="AU eRequesting Task Tag" deprecated="true"/>
 	<artifact id="Encounter/consultation" key="Encounter-consultation" name="Encounter - Plain Consultation" deprecated="true"/>
