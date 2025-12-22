@@ -1,95 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/health-care-surveys-reporting/2025Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-health-care-surveys-reporting-ig" defaultVersion="1.0.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-health-care-surveys-reporting-ig" url="http://hl7.org/fhir/us/health-care-surveys-reporting">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/health-care-surveys-reporting/2025Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-health-care-surveys-reporting-ig" defaultVersion="2.0.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-health-care-surveys-reporting-ig" url="http://hl7.org/fhir/us/health-care-surveys-reporting">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-health-care-surveys-reporting-ig"/>
+<version code="2.0.0" url="http://hl7.org/fhir/us/health-care-surveys-reporting/STU2"/>
 <version code="2.0.0-ballot" url="http://hl7.org/fhir/us/health-care-surveys-reporting/2025Sep"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/health-care-surveys-reporting/STU1"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/health-care-surveys-reporting/2022Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="AllergyIntolerance/allergyintolerance-sulfonamide" key="AllergyIntolerance-example" name="AllergyIntolerance Example"/>
-<artifact id="Observation/observation-bmi-example" key="Observation-observation-bmi-example" name="BMI Example"/>
-<artifact id="Observation/observation-bp-example" key="Observation-observation-bp-example" name="Blood Pressure Example"/>
-<artifact id="Observation/observation-height-example" key="Observation-observation-height-example" name="Body Height Example"/>
-<artifact id="Observation/observation-clinical-example" key="Observation-observation-clinical-example" name="Body Temperature Clinical Observation Example"/>
-<artifact id="Observation/observation-temperature-example" key="Observation-observation-temperature-example" name="Body Temperature Example"/>
-<artifact id="Observation/observation-weight-example" key="Observation-observation-weight-example" name="Body Weight Example"/>
+<artifact id="AllergyIntolerance/allergyintolerance-sulfonamide-example" key="AllergyIntolerance-allergyintolerance-sulfonamide-example" name="AllergyIntolerance - Sulfonamide"/>
+<artifact deprecated="true" id="AllergyIntolerance/allergyintolerance-sulfonamide" key="AllergyIntolerance-example" name="AllergyIntolerance Example"/>
+<artifact deprecated="true" id="Observation/observation-bmi-example" key="Observation-observation-bmi-example" name="BMI Example"/>
+<artifact id="Bundle/hcs-content-bundle-example" key="Bundle-hcs-content-bundle-example" name="Bundle - Healthcare Surveys Content Bundle"/>
+<artifact id="Bundle/healthcare-surveys-reporting-bundle" key="Bundle-reporting-bundle-example" name="Bundle - Healthcare Surveys Reporting Message"/>
 <artifact deprecated="true" id="CarePlan/careplan-example" key="CarePlan-careplan-example" name="Care Plan Example"/>
-<artifact id="CareTeam/careteam-example" key="CareTeam-careteam-example" name="Care Team Example"/>
 <artifact deprecated="true" id="ValueSet/2.16.840.1.113762.1.4.1099.27" key="ValueSet-2.16.840.1.113762.1.4.1099.27" name="Care Team Member Function (SNOMEDCT)"/>
-<artifact id="Observation/observation-clinical-result-example" key="Observation-observation-clinical-result-example" name="Clinical Observation Example"/>
-<artifact id="Composition/hcs-composition-example" key="Composition-hcs-composition-example" name="Composition Example"/>
-<artifact id="Condition/condition-problem" key="Condition-example" name="Condition Example"/>
-<artifact id="Coverage/coverage-example" key="Coverage-coverage-example" name="Coverage Example"/>
-<artifact id="Coverage/coverage-upmc" key="Coverage-coverage-upmc" name="Coverage Example 1"/>
-<artifact id="DiagnosticReport/diagnosticreport-example" key="DiagnosticReport-diagnosticreport-example" name="Diagnostic CBC Report Laboratory Example"/>
-<artifact id="DiagnosticReport/diagnosticreport-lab-example" key="DiagnosticReport-diagnosticreport-lab-example" name="Diagnostic Report Laboratory Example"/>
-<artifact id="DiagnosticReport/diagnosticreport-note-example" key="DiagnosticReport-diagnosticreport-note-example" name="Diagnostic Report Note Example"/>
-<artifact id="DocumentReference/documentreference-example" key="DocumentReference-documentreference-example" name="Document Reference Example"/>
-<artifact id="Condition/condition-encounter-diagnosis" key="Condition-condition-encounter-diagnosis" name="Encounter Diagnosis Example"/>
-<artifact id="Encounter/encounter-ambulatory" key="Encounter-example-1" name="Encounter Example"/>
-<artifact id="Bundle/hcs-content-bundle-example" key="Bundle-hcs-content-bundle-example" name="Example of a Content Bundle containing Composition resource"/>
+<artifact id="CareTeam/careteam-example" key="CareTeam-careteam-example" name="CareTeam - Respiratory Care Team"/>
+<artifact id="Composition/hcs-composition-example" key="Composition-hcs-composition-example" name="Composition - National Healthcare Surveys Report"/>
+<artifact id="Condition/condition-encounter-diagnosis-example" key="Condition-condition-encounter-diagnosis-example" name="Condition - Acute Bronchitis (Encounter Diagnosis)"/>
+<artifact id="Condition/condition-problem-pharyngitis-example" key="Condition-condition-problem-pharyngitis-example" name="Condition - Acute Viral Pharyngitis"/>
+<artifact id="Condition/condition-problem-liveborn-example" key="Condition-condition-problem-liveborn-example" name="Condition - Single Liveborn in Hospital"/>
+<artifact deprecated="true" id="Condition/condition-problem" key="Condition-example" name="Condition Example"/>
+<artifact id="Coverage/coverage-bcbs-example" key="Coverage-coverage-bcbs-example" name="Coverage - Blue Cross Blue Shield HMO"/>
+<artifact id="Coverage/coverage-upmc-example" key="Coverage-coverage-upmc-example" name="Coverage - UPMC Health Plan"/>
+<artifact deprecated="true" id="Coverage/coverage-example" key="Coverage-coverage-example" name="Coverage Example"/>
+<artifact deprecated="true" id="Coverage/coverage-upmc" key="Coverage-coverage-upmc" name="Coverage Example 1"/>
+<artifact id="Device/device-example" key="Device-device-example" name="Device - Cardiac Pacemaker"/>
+<artifact deprecated="true" id="DiagnosticReport/diagnosticreport-example" key="DiagnosticReport-diagnosticreport-example" name="Diagnostic CBC Report Laboratory Example"/>
+<artifact id="DiagnosticReport/diagnosticreport-lab-example" key="DiagnosticReport-diagnosticreport-lab-example" name="DiagnosticReport - CBC Panel Laboratory"/>
+<artifact id="DiagnosticReport/diagnosticreport-note-example" key="DiagnosticReport-diagnosticreport-note-example" name="DiagnosticReport - Chest X-ray Radiology Note"/>
+<artifact id="DocumentReference/documentreference-example" key="DocumentReference-documentreference-example" name="DocumentReference - Consultation Note"/>
+<artifact id="Encounter/encounter-ambulatory" key="Encounter-example-1" name="Encounter - Ambulatory Office Visit"/>
+<artifact deprecated="true" id="Condition/condition-encounter-diagnosis" key="Condition-condition-encounter-diagnosis" name="Encounter Diagnosis Example"/>
+<artifact id="Endpoint/endpoint-healthcare-example" key="Endpoint-endpoint-healthcare-example" name="Endpoint - Healthcare Organization FHIR Server"/>
+<artifact id="Endpoint/endpoint-pha-example" key="Endpoint-endpoint-pha-example" name="Endpoint - Public Health Agency FHIR Server"/>
 <artifact deprecated="true" id="Bundle/content-bundle-example" key="Bundle-content-bundle-example" name="Example of a Content Bundle containing Patient Data"/>
 <artifact deprecated="true" id="Bundle/healthcare-survey-specification-bundle-example" key="Bundle-healthcare-survey-specification-bundle-example" name="Example of a Specification Bundle containing PlanDefinition"/>
-<artifact id="Goal/goal-example" key="Goal-goal-example" name="Goal Example"/>
+<artifact id="Goal/goal-example" key="Goal-goal-example" name="Goal - Resolution of Acute Bronchitis"/>
 <artifact deprecated="true" id="Group/group-example-survey" key="Group-group-example-survey" name="Group example showing Providers participating in health care surveys"/>
-<artifact id="StructureDefinition/hcs-medicationadministration" key="StructureDefinition-hcs-medicationadministration" name="HCS Medication Administration"/>
-<artifact id="MedicationAdministration/medicationadministration-example" key="MedicationAdministration-medicationadministration-example" name="HCS Medication Administration Example"/>
-<artifact id="StructureDefinition/hcs-medicationrequest" key="StructureDefinition-hcs-medicationrequest" name="HCS Medication Request"/>
+<artifact deprecated="true" id="StructureDefinition/hcs-medicationrequest" key="StructureDefinition-hcs-medicationrequest" name="HCS Medication Request"/>
 <artifact deprecated="true" id="PlanDefinition/plandefinition-example" key="PlanDefinition-plandefinition-example" name="HCS PlanDefinition Example"/>
-<artifact id="Bundle/healthcare-surveys-reporting-bundle" key="Bundle-reporting-bundle-example" name="HCS Reporting Bundle Example"/>
 <artifact deprecated="true" id="StructureDefinition/hcs-medicationstatement" key="StructureDefinition-hcs-medicationstatement" name="HcsMedicationStatement"/>
 <artifact deprecated="true" id="StructureDefinition/hcs-servicerequest" key="StructureDefinition-hcs-servicerequest" name="HcsServiceRequest"/>
-<artifact id="StructureDefinition/hcs-composition" key="StructureDefinition-hcs-composition" name="Health Care Survey Report Composition"/>
-<artifact id="StructureDefinition/hcs-diagnosticreport" key="StructureDefinition-hcs-diagnosticreport" name="Health Care Survey Report Diagnostic Report"/>
+<artifact deprecated="true" id="StructureDefinition/hcs-diagnosticreport" key="StructureDefinition-hcs-diagnosticreport" name="Health Care Survey Report Diagnostic Report"/>
+<artifact id="StructureDefinition/hcs-composition" key="StructureDefinition-hcs-composition" name="Health Care Surveys Composition"/>
 <artifact id="StructureDefinition/hcs-content-bundle" key="StructureDefinition-hcs-content-bundle" name="Health Care Surveys Content Bundle"/>
 <artifact id="CapabilityStatement/health-care-surveys-reporting-data-source" key="CapabilityStatement-health-care-surveys-reporting-ehr" name="Health Care Surveys EHR Capability Statement"/>
+<artifact id="StructureDefinition/hcs-medicationadministration" key="StructureDefinition-hcs-medicationadministration" name="Health Care Surveys Medication Administration"/>
 <artifact id="StructureDefinition/hcs-plandefinition" key="StructureDefinition-hcs-plandefinition" name="Health Care Surveys PlanDefinition"/>
 <artifact id="StructureDefinition/hcs-reporting-bundle" key="StructureDefinition-hcs-reporting-bundle" name="Health Care Surveys Reporting Bundle"/>
-<artifact id="Condition/problem-healthconcern-example" key="Condition-problem-healthconcern-example" name="Health Concern Example"/>
-<artifact id="Endpoint/healthcare-endpoint" key="Endpoint-example-healthcare-endpoint" name="Healthcare Organization Endpoint example"/>
-<artifact id="Organization/organization-healthcare" key="Organization-example-healthcare-org" name="Healthcare Organization Example"/>
-<artifact id="Observation/observation-heartrate-example" key="Observation-observation-heartrate-example" name="Heart Rate Example"/>
-<artifact id="Immunization/immunization-example" key="Immunization-immunization-example" name="Immunization Example"/>
-<artifact id="Device/device-example" key="Device-device-example" name="Implantable Device Example"/>
-<artifact id="Observation/observation-lab-example" key="Observation-observation-lab-example" name="Laboratory Observation Example"/>
-<artifact id="Location/location-example" key="Location-location-example" name="Location Example"/>
-<artifact id="MedicationAdministration/medicationadministrationone-example" key="MedicationAdministration-medicationadministrationone-example" name="Medication Administration Example"/>
-<artifact id="MedicationRequest/hcs-MedicationRequestone-example" key="MedicationRequest-hcs-MedicationRequestone-example" name="Medication Request Example"/>
-<artifact id="MedicationRequest/hcs-MedicationRequest" key="MedicationRequest-self-tylenol" name="MedicationRequest Example"/>
+<artifact deprecated="true" id="Condition/problem-healthconcern-example" key="Condition-problem-healthconcern-example" name="Health Concern Example"/>
+<artifact deprecated="true" id="Endpoint/healthcare-endpoint" key="Endpoint-example-healthcare-endpoint" name="Healthcare Organization Endpoint example"/>
+<artifact id="Immunization/immunization-example" key="Immunization-immunization-example" name="Immunization - Influenza Vaccine"/>
+<artifact id="Location/location-example" key="Location-location-example" name="Location - General Hospital Main Campus"/>
+<artifact deprecated="true" id="MedicationRequest/hcs-MedicationRequestone-example" key="MedicationRequest-hcs-MedicationRequestone-example" name="Medication Request Example"/>
+<artifact id="MedicationAdministration/medicationadministrationone-example" key="MedicationAdministration-medicationadministrationone-example" name="MedicationAdministration - Lantus Insulin"/>
+<artifact id="MedicationAdministration/medicationadministration-example" key="MedicationAdministration-medicationadministration-example" name="MedicationAdministration - Lantus Subcutaneous"/>
+<artifact id="MedicationRequest/MedicationRequest-example" key="MedicationRequest-MedicationRequest-example" name="MedicationRequest - Amoxicillin (Entered in Error)"/>
+<artifact deprecated="true" id="MedicationRequest/hcs-MedicationRequest" key="MedicationRequest-self-tylenol" name="MedicationRequest Example"/>
 <artifact deprecated="true" id="MedicationStatement/example" key="MedicationStatement-example" name="MedicationStatement Example"/>
-<artifact id="MessageHeader/messageheader-example-reportheader" key="MessageHeader-messageheader-example-reportheader" name="MessageHeader example used in the HCS Bundle sent from Healthcare org to PHA"/>
+<artifact id="MessageHeader/messageheader-example-reportheader" key="MessageHeader-messageheader-example-reportheader" name="MessageHeader - Healthcare Survey Report Header"/>
 <artifact id="PlanDefinition/hcs-plandefinition-example" key="PlanDefinition-hcs-plandefinition-example" name="National Health Care Surveys PlanDefinition"/>
-<artifact id="Organization/organization-example" key="Organization-organization-example" name="Organization Example"/>
-<artifact id="Observation/observation-screening-example" key="Observation-observation-screening-example" name="PHQ9 Screening Assessment Example"/>
+<artifact id="Observation/observation-bp-example" key="Observation-observation-bp-example" name="Observation - Blood Pressure"/>
+<artifact id="Observation/observation-height-example" key="Observation-observation-height-example" name="Observation - Body Height"/>
+<artifact id="Observation/observation-temperature-example" key="Observation-observation-temperature-example" name="Observation - Body Temperature"/>
+<artifact id="Observation/observation-clinical-result-example" key="Observation-observation-clinical-result-example" name="Observation - Body Temperature (Alternate Profile)"/>
+<artifact id="Observation/observation-clinical-example" key="Observation-observation-clinical-example" name="Observation - Body Temperature (Clinical Result)"/>
+<artifact id="Observation/observation-weight-example" key="Observation-observation-weight-example" name="Observation - Body Weight"/>
+<artifact id="Observation/observation-clinical-result-xray-example" key="Observation-observation-clinical-result-xray-example" name="Observation - Chest X-ray Clinical Result"/>
+<artifact id="Observation/observation-heartrate-example" key="Observation-observation-heartrate-example" name="Observation - Heart Rate"/>
+<artifact id="Observation/observation-lab-example" key="Observation-observation-lab-example" name="Observation - Leukocytes Laboratory Result"/>
+<artifact id="Observation/observation-occupation-example" key="Observation-observation-occupation-example" name="Observation - Occupation and Industry"/>
+<artifact id="Observation/observation-screening-example" key="Observation-observation-screening-example" name="Observation - PHQ-9 Depression Screening"/>
+<artifact id="Observation/observation-screening-assessment-example" key="Observation-observation-screening-assessment-example" name="Observation - PHQ-9 Screening (Alternate Profile)"/>
+<artifact id="Observation/observation-pregnancy-intent-example" key="Observation-observation-pregnancy-intent-example" name="Observation - Pregnancy Intent"/>
+<artifact id="Observation/observation-pregnancy-status-example" key="Observation-observation-pregnancy-status-example" name="Observation - Pregnancy Status"/>
+<artifact id="Observation/observation-oximetry-example" key="Observation-observation-oximetry-example" name="Observation - Pulse Oximetry"/>
+<artifact id="Observation/observation-resprate-example" key="Observation-observation-resprate-example" name="Observation - Respiratory Rate"/>
+<artifact id="Observation/observation-smoking-example" key="Observation-observation-smoking-example" name="Observation - Smoking Status"/>
+<artifact id="Organization/organization-healthcare" key="Organization-example-healthcare-org" name="Organization - Example Healthcare Organization"/>
+<artifact id="Organization/organization-pha" key="Organization-example-pha-org" name="Organization - Example Public Health Agency"/>
+<artifact id="Organization/organization-example" key="Organization-organization-example" name="Organization - General Hospital"/>
 <artifact deprecated="true" id="ValueSet/2.16.840.1.113883.1.11.10267" key="ValueSet-2.16.840.1.113883.1.11.10267" name="ParticipationFunction"/>
-<artifact id="Patient/patient-ledner" key="Patient-1" name="Patient 1 - Example"/>
-<artifact id="Patient/patient-baxter" key="Patient-example" name="Patient Example"/>
-<artifact id="Organization/organization-payer-2" key="Organization-organization-payer-2" name="Payer 2"/>
-<artifact id="Organization/organization-payer-example" key="Organization-organization-payer-example" name="Payer Organization Example"/>
-<artifact id="Practitioner/practitioner-1" key="Practitioner-1" name="Practitioner Example"/>
-<artifact id="Observation/observation-pregnancy-intent-example" key="Observation-observation-pregnancy-intent-example" name="Pregnancy Intent Example"/>
-<artifact id="Observation/observation-pregnancy-status-example" key="Observation-observation-pregnancy-status-example" name="Pregnancy Status Example"/>
-<artifact id="Procedure/procedure-example" key="Procedure-procedure-example" name="Procedure Example"/>
-<artifact id="Endpoint/ph-endpoint" key="Endpoint-example-ph-endpoint" name="Public Health Organization Endpoint example"/>
-<artifact id="Organization/organization-pha" key="Organization-example-pha-org" name="Public Health Organization Example"/>
-<artifact id="Observation/observation-oximetry-example" key="Observation-observation-oximetry-example" name="Pulse Oximetry Example"/>
-<artifact id="Observation/observation-resprate-example" key="Observation-observation-resprate-example" name="Respiratory Rate Example"/>
-<artifact id="Observation/observation-screening-assessment-example" key="Observation-observation-screening-assessment-example" name="Screening Assessment Example"/>
-<artifact id="ServiceRequest/servicerequest-example" key="ServiceRequest-servicerequest-example" name="Service Request Example"/>
-<artifact id="ServiceRequest/example" key="ServiceRequest-example" name="ServiceRequest Example"/>
-<artifact id="Observation/observation-smoking-example" key="Observation-observation-smoking-example" name="Smoking Status Example"/>
-<artifact id="DiagnosticReport/hcs-diagnosticreport" key="DiagnosticReport-hcs-diagnosticreport" name="hcs-diagnosticreport"/>
+<artifact id="Patient/patient-baxter" key="Patient-example" name="Patient - Amy Baxter"/>
+<artifact id="Patient/patient-ledner" key="Patient-1" name="Patient - Dominique Ledner"/>
+<artifact deprecated="true" id="Organization/organization-payer-2" key="Organization-organization-payer-2" name="Payer 2"/>
+<artifact deprecated="true" id="Organization/organization-payer-example" key="Organization-organization-payer-example" name="Payer Organization Example"/>
+<artifact id="Organization/organization-payer-bcbs" key="Organization-organization-payer-bcbs" name="Payer Organization Example - Blue Cross Blue Shield"/>
+<artifact id="Organization/organization-payer-upmc" key="Organization-organization-payer-upmc" name="Payer Organization Example - UPMC"/>
+<artifact id="Practitioner/practitioner-nichols" key="Practitioner-practitioner-nichols" name="Practitioner - Dr. Joseph Nichols"/>
+<artifact deprecated="true" id="Practitioner/practitioner-1" key="Practitioner-1" name="Practitioner Example"/>
+<artifact id="Procedure/procedure-example" key="Procedure-procedure-example" name="Procedure - Appendectomy"/>
+<artifact deprecated="true" id="Endpoint/ph-endpoint" key="Endpoint-example-ph-endpoint" name="Public Health Organization Endpoint example"/>
+<artifact id="ServiceRequest/servicerequest-example" key="ServiceRequest-servicerequest-example" name="ServiceRequest - CT Chest Evaluation"/>
+<artifact id="ServiceRequest/example" key="ServiceRequest-example" name="ServiceRequest - Chest CT Order"/>
+<artifact deprecated="true" id="DiagnosticReport/hcs-diagnosticreport" key="DiagnosticReport-hcs-diagnosticreport" name="hcs-diagnosticreport"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
-<page key="changelog" name="Changelog"/>
-<page key="changes" name="Changes"/>
-<page key="credits" name="Credits"/>
+<page key="background" name="Background"/>
+<page key="changelog" name="Change Log"/>
+<page deprecated="true" key="changes" name="Changes"/>
+<page deprecated="true" key="credits" name="Credits"/>
 <page key="downloads" name="Downloads"/>
 <page key="index" name="Home"/>
-<page key="spec" name="Spec"/>
+<page deprecated="true" key="spec" name="Spec"/>
+<page key="specification" name="Specification"/>
 <page key="toc" name="Table of Contents"/>
-<page key="usecase" name="Usecase"/>
-<page key="usecases" name="Usecases"/>
+<page deprecated="true" key="usecase" name="Usecase"/>
+<page deprecated="true" key="usecases" name="Usecases"/>
 </specification>
