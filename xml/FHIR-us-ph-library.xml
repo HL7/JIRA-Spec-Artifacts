@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/ph-library/2025Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-us-ph-library" defaultVersion="1.0.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-us-ph-library" url="http://hl7.org/fhir/us/ph-library">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/ph-library/2025Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-us-ph-library" defaultVersion="2.0.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-us-ph-library" url="http://hl7.org/fhir/us/ph-library">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-us-ph-library"/>
-<version code="2.0.0-ballot" url="http://hl7.org/fhir/us/ph-library/2025Sep"/>
-<version code="1.0.0" url="http://hl7.org/fhir/us/ph-library/STU1"/>
+<version code="2.0.0" url="http://hl7.org/fhir/us/ph-library/2.0.0"/>
+<version code="2.0.0-snapshot" deprecated="true" url="http://hl7.org/fhir/us/ph-library/2.0.0-snapshot"/>
+<version code="2.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/ph-library/2025Sep"/>
+<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/ph-library/STU1"/>
 <version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/ph-library/2022Sep"/>
 <version code="1.0.0-ballot1" deprecated="true" url="http://hl7.org/fhir/us/ph-library/2022Sep"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="Library/cql-library-rule-filters" key="Library-cql-library-rule-filters" name="CQL Library - Rule Filters Example"/>
+<artifact id="ValueSet/CommonSymptomCodes" key="ValueSet-CommonSymptomCodes" name="Common Set of Symptom Codes"/>
 <artifact id="Device/device-software-ymca" key="Device-device-software-ymca" name="Device - Software YMCA"/>
 <artifact deprecated="true" id="Parameters/expansion-parameters-us-ph" key="Parameters-expansion-parameters-us-ph" name="Parameters - SNOMED US Version"/>
 <artifact id="Location/us-core-location-city-football-stadium" key="Location-us-core-location-city-football-stadium" name="US Core Location - City Football Stadium"/>
 <artifact id="Practitioner/us-core-practitioner-henry-seven" key="Practitioner-us-core-practitioner-henry-seven" name="US Core Practitioner - Henry Seven"/>
 <artifact id="StructureDefinition/us-ph-address-extension" key="StructureDefinition-us-ph-address-extension" name="US Public Health Address Extension"/>
-<artifact id="StructureDefinition/us-ph-alternative-expression-extension" key="StructureDefinition-us-ph-alternative-expression-extension" name="US Public Health Alternative Expression Extension"/>
+<artifact deprecated="true" id="StructureDefinition/us-ph-alternative-expression-extension" key="StructureDefinition-us-ph-alternative-expression-extension" name="US Public Health Alternative Expression Extension"/>
 <artifact id="StructureDefinition/us-ph-async-indicator-extension" key="StructureDefinition-us-ph-async-indicator-extension" name="US Public Health Async Indicator Extension"/>
 <artifact id="StructureDefinition/us-ph-characteristics-of-home-environment" key="StructureDefinition-us-ph-characteristics-of-home-environment" name="US Public Health Characteristics of Home Environment"/>
 <artifact id="Observation/us-ph-char-home-environment-eve-everywoman" key="Observation-us-ph-characteristics-of-home-environment-eve-everywoman" name="US Public Health Characteristics of Home Environment - Eve Everywoman"/>
@@ -22,21 +26,21 @@
 <artifact id="StructureDefinition/us-ph-codesystem" key="StructureDefinition-us-ph-codesystem" name="US Public Health CodeSystem"/>
 <artifact id="CodeSystem/us-ph-codesystem-endpoint-connection-type-example" key="CodeSystem-us-ph-codesystem-endpoint-connection-type-example" name="US Public Health CodeSystem - Endpoint Connection Type Example"/>
 <artifact id="CodeSystem/us-ph-codesystem-jurisdiction-types-example" key="CodeSystem-us-ph-codesystem-jurisdiction-types-example" name="US Public Health CodeSystem - Jurisdiction Types Example"/>
+<artifact id="CodeSystem/us-ph-codesystem-jurisdictions-example" key="CodeSystem-us-ph-codesystem-jurisdictions-example" name="US Public Health CodeSystem - Jurisdictions Example"/>
 <artifact id="CodeSystem/us-ph-codesystem-message-types" key="CodeSystem-us-ph-codesystem-message-types" name="US Public Health CodeSystem - Message Types"/>
 <artifact id="CodeSystem/us-ph-codesystem-plandefinition-actions" key="CodeSystem-us-ph-codesystem-plandefinition-actions" name="US Public Health CodeSystem - PlanDefinition Actions"/>
-<artifact id="CodeSystem/us-ph-codesystem-report-initiation-types" key="CodeSystem-us-ph-codesystem-report-initiation-types" name="US Public Health CodeSystem - Report Initiation Type Codes"/>
+<artifact id="CodeSystem/us-ph-codesystem-properties-example" key="CodeSystem-us-ph-codesystem-properties-example" name="US Public Health CodeSystem - Properties Example"/>
+<artifact id="CodeSystem/us-ph-codesystem-report-initiation-types" key="CodeSystem-us-ph-codesystem-report-initiation-types" name="US Public Health CodeSystem - Report Initiation Types"/>
 <artifact id="CodeSystem/us-ph-codesystem-triggerdefinition-namedevents" key="CodeSystem-us-ph-codesystem-triggerdefinition-namedevents" name="US Public Health CodeSystem - Trigger Definition Named Events"/>
 <artifact id="CodeSystem/us-ph-codesystem-usage-context" key="CodeSystem-us-ph-codesystem-usage-context" name="US Public Health CodeSystem - Usage Context"/>
 <artifact id="CodeSystem/us-ph-codesystem-usage-context-type" key="CodeSystem-us-ph-codesystem-usage-context-type" name="US Public Health CodeSystem - Usage Context Type"/>
-<artifact id="CodeSystem/us-ph-codesystem-jurisdictions-example" key="CodeSystem-us-ph-codesystem-jurisdictions-example" name="US Public Health CodeSystem Jurisdictions Example"/>
-<artifact id="CodeSystem/us-ph-codesystem-properties-example" key="CodeSystem-us-ph-codesystem-properties-example" name="US Public Health CodeSystem Properties Example"/>
+<artifact id="CodeSystem/us-ph-codesystem-valueset-use-context" key="CodeSystem-us-ph-codesystem-valueset-use-context" name="US Public Health CodeSystem - ValueSet Use Context"/>
 <artifact deprecated="true" id="StructureDefinition/us-ph-codesystem-property-binding-extension" key="StructureDefinition-us-ph-codesystem-property-binding-extension" name="US Public Health CodeSystem Property Binding Extension"/>
-<artifact id="StructureDefinition/us-ph-codesystem-property-required-binding-extension" key="StructureDefinition-us-ph-codesystem-property-required-binding-extension" name="US Public Health CodeSystem Property Required Binding Extension"/>
-<artifact id="CodeSystem/us-ph-codesystem-valueset-use-context" key="CodeSystem-us-ph-codesystem-valueset-use-context" name="US Public Health CodeSystem for ValueSet Use Context"/>
+<artifact deprecated="true" id="StructureDefinition/us-ph-codesystem-property-required-binding-extension" key="StructureDefinition-us-ph-codesystem-property-required-binding-extension" name="US Public Health CodeSystem Property Required Binding Extension"/>
 <artifact id="StructureDefinition/us-ph-composition" key="StructureDefinition-us-ph-composition" name="US Public Health Composition"/>
 <artifact id="Composition/us-ph-composition-example" key="Composition-us-ph-composition-example" name="US Public Health Composition - Eve Everywoman"/>
-<artifact id="StructureDefinition/us-ph-computable-library" key="StructureDefinition-us-ph-computable-library" name="US Public Health Computable Library"/>
-<artifact id="StructureDefinition/us-ph-computable-valueset" key="StructureDefinition-us-ph-computable-valueset" name="US Public Health Computable ValueSet"/>
+<artifact deprecated="true" id="StructureDefinition/us-ph-computable-library" key="StructureDefinition-us-ph-computable-library" name="US Public Health Computable Library"/>
+<artifact deprecated="true" id="StructureDefinition/us-ph-computable-valueset" key="StructureDefinition-us-ph-computable-valueset" name="US Public Health Computable ValueSet"/>
 <artifact deprecated="true" id="ValueSet/us-ph-computable-valueset-example" key="ValueSet-us-ph-computable-valueset-example" name="US Public Health Computable ValueSet Example"/>
 <artifact deprecated="true" id="StructureDefinition/us-ph-condition" key="StructureDefinition-us-ph-condition" name="US Public Health Condition"/>
 <artifact deprecated="true" id="Condition/us-ph-condition-eve-everywoman-diabetes" key="Condition-us-ph-condition-eve-everywoman-diabetes" name="US Public Health Condition - Eve Everywoman - Diabetes"/>
@@ -70,18 +74,18 @@
 <artifact id="Endpoint/us-ph-endpoint-salem-medical-center" key="Endpoint-us-ph-endpoint-salem-medical-center" name="US Public Health Endpoint - Salem Medical Center"/>
 <artifact id="Endpoint/us-ph-endpoint-ymca" key="Endpoint-us-ph-endpoint-ymca" name="US Public Health Endpoint - YMCA"/>
 <artifact deprecated="true" id="CodeSystem/us-ph-endpoint-connection-type-example" key="CodeSystem-us-ph-endpoint-connection-type-example" name="US Public Health Endpoint Connection Type Example"/>
-<artifact id="StructureDefinition/us-ph-executable-library" key="StructureDefinition-us-ph-executable-library" name="US Public Health Executable Library"/>
-<artifact id="Library/us-ph-executable-library-rule-filters" key="Library-us-ph-executable-library-rule-filters" name="US Public Health Executable Library - Rule Filters - Chlamydia Example"/>
-<artifact id="StructureDefinition/us-ph-executable-valueset" key="StructureDefinition-us-ph-executable-valueset" name="US Public Health Executable ValueSet"/>
+<artifact deprecated="true" id="StructureDefinition/us-ph-executable-library" key="StructureDefinition-us-ph-executable-library" name="US Public Health Executable Library"/>
+<artifact deprecated="true" id="Library/us-ph-executable-library-rule-filters" key="Library-us-ph-executable-library-rule-filters" name="US Public Health Executable Library - Rule Filters - Chlamydia Example"/>
+<artifact deprecated="true" id="StructureDefinition/us-ph-executable-valueset" key="StructureDefinition-us-ph-executable-valueset" name="US Public Health Executable ValueSet"/>
 <artifact deprecated="true" id="ValueSet/us-ph-executable-valueset-chlamydia-example" key="ValueSet-us-ph-executable-valueset-chlamydia-example" name="US Public Health Executable ValueSet - Chlamydia Example"/>
-<artifact id="StructureDefinition/us-ph-expansion-parameters-extension" key="StructureDefinition-us-ph-expansion-parameters-extension" name="US Public Health Expansion Parameters Extension"/>
+<artifact deprecated="true" id="StructureDefinition/us-ph-expansion-parameters-extension" key="StructureDefinition-us-ph-expansion-parameters-extension" name="US Public Health Expansion Parameters Extension"/>
 <artifact id="StructureDefinition/us-ph-expected-response-time-extension" key="StructureDefinition-us-ph-expected-response-time-extension" name="US Public Health Expected Response Time Extension"/>
 <artifact id="StructureDefinition/us-ph-exposure-contact-information" key="StructureDefinition-us-ph-exposure-contact-information" name="US Public Health Exposure Contact Information"/>
 <artifact id="Observation/us-ph-exposure-contact-info-football-game" key="Observation-us-ph-exposure-contact-info-football-game" name="US Public Health Exposure Contact Information - Football Game"/>
 <artifact id="Observation/us-ph-exposure-contact-info-redhill" key="Observation-us-ph-exposure-contact-info-redhill" name="US Public Health Exposure Contact Information - Red Hill"/>
-<artifact id="StructureDefinition/us-ph-fhirquerypattern-extension" key="StructureDefinition-us-ph-fhirquerypattern-extension" name="US Public Health FHIR Query Pattern Extension"/>
+<artifact deprecated="true" id="StructureDefinition/us-ph-fhirquerypattern-extension" key="StructureDefinition-us-ph-fhirquerypattern-extension" name="US Public Health FHIR Query Pattern Extension"/>
 <artifact deprecated="true" id="StructureDefinition/us-ph-genderidentity-extension" key="StructureDefinition-us-ph-genderidentity-extension" name="US Public Health Gender Identity Extension"/>
-<artifact id="StructureDefinition/us-ph-information-recipient-extension" key="StructureDefinition-us-ph-information-recipient-extension" name="US Public Health Information Recipient Extension"/>
+<artifact deprecated="true" id="StructureDefinition/us-ph-information-recipient-extension" key="StructureDefinition-us-ph-information-recipient-extension" name="US Public Health Information Recipient Extension"/>
 <artifact id="StructureDefinition/us-ph-initiation-reason-extension" key="StructureDefinition-us-ph-initiation-reason-extension" name="US Public Health Initiation Reason Extension"/>
 <artifact id="StructureDefinition/us-ph-report-initiation-type-extension" key="StructureDefinition-us-ph-report-initiation-type-extension" name="US Public Health Initiation Type Extension"/>
 <artifact id="StructureDefinition/us-ph-is-postpartum" key="StructureDefinition-us-ph-is-postpartum" name="US Public Health Is Postpartum"/>
@@ -150,7 +154,7 @@
 <artifact id="StructureDefinition/us-ph-survey-practitioner-group" key="StructureDefinition-us-ph-survey-practitioner-group" name="US Public Health Survey Practitioner Group"/>
 <artifact id="Group/us-ph-survey-practitioner-group-example" key="Group-us-ph-survey-practitioner-group-example" name="US Public Health Survey Practitioner Group - Practitioner in Survey"/>
 <artifact id="StructureDefinition/us-ph-symptom-observation" key="StructureDefinition-us-ph-symptom-observation" name="US Public Health Symptom Observation"/>
-<artifact id="Observation/us-ph-symptom-observation-headache-eve-everywoman" key="Observation-us-ph-symptom-observation-headache-eve-everywoman" name="US Public Health Symptom Observation Example: Eve Everywoman"/>
+<artifact id="Observation/us-ph-symptom-observation-dizziness-eve-everywoman" key="Observation-us-ph-symptom-observation-headache-eve-everywoman" name="US Public Health Symptom Observation Example: Eve Everywoman"/>
 <artifact id="StructureDefinition/us-ph-therapeutic-medication-response-extension" key="StructureDefinition-us-ph-therapeutic-medication-response-extension" name="US Public Health Therapeutic Medication Response Extension"/>
 <artifact id="StructureDefinition/us-ph-transportation-details" key="StructureDefinition-us-ph-transportation-details" name="US Public Health Transportation Details"/>
 <artifact id="Observation/us-ph-transportation-details-eve-everywoman" key="Observation-us-ph-transportation-details-eve-everywoman" name="US Public Health Transportation Details - Eve Everywoman"/>
@@ -168,27 +172,29 @@
 <artifact id="StructureDefinition/us-ph-trust-service-endpoint-extension" key="StructureDefinition-us-ph-trust-service-endpoint-extension" name="US Public Health Trust Service Endpoint Extension"/>
 <artifact deprecated="true" id="CodeSystem/us-ph-usage-context" key="CodeSystem-us-ph-usage-context" name="US Public Health Usage Context"/>
 <artifact deprecated="true" id="CodeSystem/us-ph-usage-context-type" key="CodeSystem-us-ph-usage-context-type" name="US Public Health Usage Context Type"/>
-<artifact id="StructureDefinition/us-ph-usagewarning-extension" key="StructureDefinition-us-ph-usagewarning-extension" name="US Public Health Usage Warning Extension"/>
+<artifact deprecated="true" id="StructureDefinition/us-ph-usagewarning-extension" key="StructureDefinition-us-ph-usagewarning-extension" name="US Public Health Usage Warning Extension"/>
 <artifact id="StructureDefinition/us-ph-vaccine-credential-patient-assertion" key="StructureDefinition-us-ph-vaccine-credential-patient-assertion" name="US Public Health Vaccine Credential Patient Assertion"/>
 <artifact id="Observation/us-ph-vaccine-credential-assertion-eve-everywoman" key="Observation-us-ph-vaccine-credential-assertion-eve-everywoman" name="US Public Health Vaccine Credential Patient Assertion Observation Example: Eve Everywoman"/>
 <artifact id="StructureDefinition/us-ph-valueset" key="StructureDefinition-us-ph-valueset" name="US Public Health ValueSet"/>
 <artifact id="ValueSet/us-ph-valueset-chlamydia-example" key="ValueSet-us-ph-valueset-chlamydia-example" name="US Public Health ValueSet - Chlamydia Example"/>
-<artifact id="ValueSet/us-ph-valueset-computable-example" key="ValueSet-us-ph-valueset-computable-example" name="US Public Health ValueSet - Computable Example"/>
+<artifact deprecated="true" id="ValueSet/us-ph-valueset-computable-example" key="ValueSet-us-ph-valueset-computable-example" name="US Public Health ValueSet - Computable Example"/>
+<artifact id="ValueSet/us-ph-valueset-jurisdiction-types-example" key="ValueSet-us-ph-valueset-jurisdiction-types-example" name="US Public Health ValueSet - Jurisdiction Types Example"/>
 <artifact id="ValueSet/us-ph-valueset-message-significance-category" key="ValueSet-us-ph-valueset-message-significance-category" name="US Public Health ValueSet - Message Significance Category"/>
+<artifact id="ValueSet/us-ph-valueset-message-types" key="ValueSet-us-ph-valueset-message-types" name="US Public Health ValueSet - Message Types"/>
+<artifact id="ValueSet/us-ph-valueset-plandefinition-action" key="ValueSet-us-ph-valueset-plandefinition-action" name="US Public Health ValueSet - PlanDefinition Action"/>
+<artifact id="ValueSet/us-ph-valueset-priority" key="ValueSet-us-ph-valueset-priority" name="US Public Health ValueSet - Priority"/>
 <artifact id="ValueSet/us-ph-valueset-report-initiation-type" key="ValueSet-us-ph-valueset-report-initiation-type" name="US Public Health ValueSet - Report Initiation Type"/>
-<artifact id="ValueSet/us-ph-valueset-executable-chlamydia-example" key="ValueSet-us-ph-valueset-executable-chlamydia-example" name="US Public Health ValueSet Executable - Chlamydia Example"/>
+<artifact id="ValueSet/us-ph-valueset-supplemental-example" key="ValueSet-us-ph-valueset-supplemental-example" name="US Public Health ValueSet - Supplemental Example"/>
+<artifact id="ValueSet/us-ph-valueset-triggerdefinition-namedevent" key="ValueSet-us-ph-valueset-triggerdefinition-namedevent" name="US Public Health ValueSet - TriggerDefinition NamedEvent"/>
+<artifact id="ValueSet/us-ph-valueset-triggering-chlamydia-example" key="ValueSet-us-ph-valueset-triggering-chlamydia-example" name="US Public Health ValueSet - Triggering Chlamydia Example"/>
+<artifact deprecated="true" id="ValueSet/us-ph-valueset-executable-chlamydia-example" key="ValueSet-us-ph-valueset-executable-chlamydia-example" name="US Public Health ValueSet Executable - Chlamydia Example"/>
 <artifact id="StructureDefinition/us-ph-valueset-library" key="StructureDefinition-us-ph-valueset-library" name="US Public Health ValueSet Library"/>
 <artifact id="Library/us-ph-valueset-library-example" key="Library-us-ph-valueset-library-example" name="US Public Health ValueSet Library Example"/>
 <artifact id="Library/us-ph-valueset-library-expansion-parameters-example" key="Library-us-ph-valueset-library-expansion-parameters-example" name="US Public Health ValueSet Library Expansion Parameters - Chlamydia Example"/>
-<artifact id="ValueSet/us-ph-valueset-priority" key="ValueSet-us-ph-valueset-priority" name="US Public Health ValueSet Priority"/>
-<artifact id="ValueSet/us-ph-valueset-message-types" key="ValueSet-us-ph-valueset-message-types" name="US Public Health VaueSet - Message Types"/>
-<artifact id="ValueSet/us-ph-valueset-plandefinition-action" key="ValueSet-us-ph-valueset-plandefinition-action" name="US Public Health VaueSet - PlanDefinition Action"/>
 <artifact deprecated="true" id="ValueSet/us-ph-valueset-pregnancy-status" key="ValueSet-us-ph-valueset-pregnancy-status" name="US Public Health VaueSet - Pregnancy Status"/>
-<artifact id="ValueSet/us-ph-valueset-supplemental-example" key="ValueSet-us-ph-valueset-supplemental-example" name="US Public Health VaueSet - Supplemental Example"/>
-<artifact id="ValueSet/us-ph-valueset-triggerdefinition-namedevent" key="ValueSet-us-ph-valueset-triggerdefinition-namedevent" name="US Public Health VaueSet - TriggerDefinition NamedEvent"/>
-<artifact id="ValueSet/us-ph-valueset-triggering-chlamydia-example" key="ValueSet-us-ph-valueset-triggering-chlamydia-example" name="US Public Health VaueSet - Triggering Chlamydia Example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
+<page key="artifact-overview" name="Artifacts Overview"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="change-log" name="Change Log"/>
 <page key="downloads" name="Downloads"/>
