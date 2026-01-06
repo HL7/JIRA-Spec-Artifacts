@@ -1,57 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/central-cancer-registry-reporting/2022Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-central-cancer-registry-reporting" defaultVersion="1.0.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-central-cancer-registry-reporting" url="http://hl7.org/fhir/us/central-cancer-registry-reporting">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/central-cancer-registry-reporting/2026Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-central-cancer-registry-reporting" defaultVersion="1.0.0" defaultWorkgroup="pher" gitUrl="https://github.com/HL7/fhir-central-cancer-registry-reporting" url="http://hl7.org/fhir/us/central-cancer-registry-reporting">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-central-cancer-registry-reporting"/>
+<version code="2.0.0-ballot" url="http://hl7.org/fhir/us/central-cancer-registry-reporting/2026Jan"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/central-cancer-registry-reporting/STU1"/>
-<version code="0.1.0" url="http://hl7.org/fhir/us/central-cancer-registry-reporting/2022Jan"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/central-cancer-registry-reporting/2022Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="AllergyIntolerance/example" key="AllergyIntolerance-example" name="Allergy Intolerance - Example"/>
+<artifact deprecated="true" id="AllergyIntolerance/example" key="AllergyIntolerance-example" name="Allergy Intolerance - Example"/>
+<artifact id="Composition/ccrr-composition-example" key="Composition-ccrr-composition-example" name="CCRR Composition - Example"/>
+<artifact id="PlanDefinition/plandefinition-central-cancer-registry-reporting-example" key="PlanDefinition-plandefinition-central-cancer-registry-reporting-example" name="CCRR PlanDefinition - Example"/>
+<artifact id="Bundle/reporting-bundle-example" key="Bundle-reporting-bundle-example" name="CCRR Reporting Bundle - Example"/>
+<artifact id="Bundle/central-cancer-registry-reporting-specification-bundle-example" key="Bundle-central-cancer-registry-reporting-specification-bundle-example" name="CCRR Specification Bundle - Example"/>
 <artifact id="ValueSet/cancer-core-reportability-codes" key="ValueSet-cancer-core-reportability-codes" name="Cancer Core Reportability Codes"/>
-<artifact id="StructureDefinition/cancer-encounter" key="StructureDefinition-cancer-encounter" name="Cancer Encounter"/>
-<artifact id="Encounter/encounter-cancer-example" key="Encounter-encounter-cancer-example" name="Cancer Encounter - Example"/>
-<artifact id="Patient/example" key="Patient-example" name="Cancer Patient - Example"/>
-<artifact id="MedicationAdministration/cancer-related-medication-administration-example" key="MedicationAdministration-cancer-related-medication-administration-example" name="Cancer Related Medication Administration - Example"/>
-<artifact id="StructureDefinition/cancer-patient" key="StructureDefinition-cancer-patient" name="CancerPatient"/>
+<artifact deprecated="true" id="StructureDefinition/cancer-encounter" key="StructureDefinition-cancer-encounter" name="Cancer Encounter"/>
+<artifact id="MedicationAdministration/cancer-med-admin-docetaxel-example" key="MedicationAdministration-cancer-related-medication-administration-example" name="Cancer Related Medication Administration - Example"/>
+<artifact id="StructureDefinition/cancer-status-evidence-type" key="StructureDefinition-cancer-status-evidence-type" name="Cancer Status Evidence Type Extension"/>
+<artifact id="Procedure/cancer-related-surgical-procedure-lumpectomy" key="Procedure-cancer-related-surgical-procedure-lumpectomy" name="Cancer-related Surgical Procedure - Example"/>
+<artifact deprecated="true" id="StructureDefinition/cancer-patient" key="StructureDefinition-cancer-patient" name="CancerPatient"/>
 <artifact id="Endpoint/example-ph-endpoint" key="Endpoint-example-ph-endpoint" name="Central Cancer Registry Endpoint - Example"/>
-<artifact id="PlanDefinition/plandefinition-central-cancer-registry-reporting-example" key="PlanDefinition-plandefinition-central-cancer-registry-reporting-example" name="Central Cancer Registry PlanDefinition - Example"/>
-<artifact id="StructureDefinition/ccrr-composition" key="StructureDefinition-ccrr-composition" name="Central Cancer Registry Report Composition"/>
 <artifact id="StructureDefinition/ccrr-reporting-bundle" key="StructureDefinition-ccrr-reporting-bundle" name="Central Cancer Registry Reporting Bundle"/>
-<artifact id="Bundle/reporting-bundle-example" key="Bundle-reporting-bundle-example" name="Central Cancer Registry Reporting Bundle - Example"/>
-<artifact id="Composition/ccrr-composition-example" key="Composition-ccrr-composition-example" name="Central Cancer Registry Reporting Composition - Example"/>
+<artifact id="StructureDefinition/ccrr-composition" key="StructureDefinition-ccrr-composition" name="Central Cancer Registry Reporting Composition"/>
 <artifact id="StructureDefinition/ccrr-content-bundle" key="StructureDefinition-ccrr-content-bundle" name="Central Cancer Registry Reporting Content Bundle"/>
-<artifact id="Bundle/ccrr-content-bundle-example" key="Bundle-ccrr-content-bundle-example" name="Central Cancer Registry Reporting Content Bundle - Example"/>
-<artifact id="CapabilityStatement/central-cancer-registry-reporting-ehr" key="CapabilityStatement-central-cancer-registry-reporting-ehr" name="Central Cancer Registry Reporting EHR Capability Statement"/>
+<artifact id="CapabilityStatement/central-cancer-registry-reporting-ehr" key="CapabilityStatement-central-cancer-registry-reporting-ehr" name="Central Cancer Registry Reporting Data Source Capability Statement"/>
+<artifact id="StructureDefinition/central-cancer-registry-reporting-encounter" key="StructureDefinition-central-cancer-registry-reporting-encounter" name="Central Cancer Registry Reporting Encounter"/>
+<artifact id="Encounter/encounter-cancer-example" key="Encounter-encounter-cancer-example" name="Central Cancer Registry Reporting Encounter - Example"/>
+<artifact id="Encounter/encounter-cancer-example-radiation" key="Encounter-encounter-cancer-example-radiation" name="Central Cancer Registry Reporting Encounter for Radiation - Example"/>
+<artifact id="Encounter/encounter-cancer-example-surgery" key="Encounter-encounter-cancer-example-surgery" name="Central Cancer Registry Reporting Encounter for Surgery - Example"/>
 <artifact id="StructureDefinition/central-cancer-registry-reporting-messageheader" key="StructureDefinition-central-cancer-registry-reporting-messageheader" name="Central Cancer Registry Reporting Message Header"/>
 <artifact id="MessageHeader/messageheader-example-reportheader" key="MessageHeader-messageheader-example-reportheader" name="Central Cancer Registry Reporting Message Header - Example"/>
+<artifact id="StructureDefinition/central-cancer-registry-reporting-organization" key="StructureDefinition-central-cancer-registry-reporting-organization" name="Central Cancer Registry Reporting Organization"/>
+<artifact id="Organization/example-cancer-org" key="Organization-example-cancer-org" name="Central Cancer Registry Reporting Organization - Example"/>
+<artifact id="StructureDefinition/central-cancer-registry-reporting-patient" key="StructureDefinition-central-cancer-registry-reporting-patient" name="Central Cancer Registry Reporting Patient"/>
+<artifact id="Patient/example" key="Patient-example" name="Central Cancer Registry Reporting Patient - Example"/>
 <artifact id="StructureDefinition/ccrr-plandefinition" key="StructureDefinition-ccrr-plandefinition" name="Central Cancer Registry Reporting PlanDefinition"/>
 <artifact id="StructureDefinition/central-cancer-registry-primary-cancer-condition" key="StructureDefinition-central-cancer-registry-primary-cancer-condition" name="Central Cancer Registry Reporting Primary Cancer Condition"/>
 <artifact id="Condition/primary-cancer-condition-breast" key="Condition-primary-cancer-condition-breast" name="Central Cancer Registry Reporting Primary Cancer Condition - Example"/>
-<artifact id="Bundle/central-cancer-registry-reporting-specification-bundle-example" key="Bundle-central-cancer-registry-reporting-specification-bundle-example" name="Central Cancer Registry Reporting Specifiation Bundle (Knowledge Artifact)- Example"/>
 <artifact deprecated="true" id="Bundle/content-bundle-example" key="Bundle-content-bundle-example" name="Content Bundle - Example"/>
 <artifact deprecated="true" id="Encounter/encounter-eve-everywoman-external-encounter" key="Encounter-encounter-eve-everywoman-external-encounter" name="Encounter - Example"/>
-<artifact id="Organization/example-healthcare-org" key="Organization-example-healthcare-org" name="Healthcare Organization - Example"/>
+<artifact id="Bundle/ccrr-encounter-based-content-bundle-example" key="Bundle-ccrr-encounter-based-content-bundle-example" name="Encounter based CCRR Content Bundle - Example"/>
+<artifact deprecated="true" id="Organization/example-healthcare-org" key="Organization-example-healthcare-org" name="Healthcare Organization - Example"/>
 <artifact id="Endpoint/example-healthcare-endpoint" key="Endpoint-example-healthcare-endpoint" name="Healthcare Organization Endpoint - Example"/>
+<artifact id="Bundle/ccrr-content-bundle-example" key="Bundle-ccrr-content-bundle-example" name="Initial CCRR Content Bundle - Example"/>
+<artifact id="Bundle/ccrr-non-encounter-based-content-bundle-example" key="Bundle-ccrr-non-encounter-based-content-bundle-example" name="Non Encounter based CCRR Content Bundle - Example"/>
+<artifact id="Observation/odh-usual-work" key="Observation-odh-usual-work" name="ODH - Example"/>
 <artifact id="Organization/example-pha-org" key="Organization-example-pha-org" name="PHA Organization - Example"/>
 <artifact deprecated="true" id="Patient/patient-eve-everywoman" key="Patient-patient-eve-everywoman" name="Patient - Example"/>
 <artifact id="Practitioner/1" key="Practitioner-1" name="Practitioner - Example"/>
+<artifact id="Condition/problem-list-diabetes" key="Condition-problem-list-diabetes" name="Problem List Condition - Example"/>
+<artifact id="Observation/non-smoker" key="Observation-non-smoker" name="Smoking Status - Example"/>
 <artifact deprecated="true" id="StructureDefinition/us-ph-encounter" key="StructureDefinition-us-ph-encounter" name="US Public Health Encounter"/>
-<artifact id="StructureDefinition/us-ph-patient" key="StructureDefinition-us-ph-patient" name="US Public Health Patient"/>
-<artifact id="StructureDefinition/us-ph-tribal-affiliation-extension" key="StructureDefinition-us-ph-tribal-affiliation-extension" name="US Public Health Tribal Affiliation Extension"/>
+<artifact deprecated="true" id="StructureDefinition/us-ph-patient" key="StructureDefinition-us-ph-patient" name="US Public Health Patient"/>
+<artifact deprecated="true" id="StructureDefinition/us-ph-tribal-affiliation-extension" key="StructureDefinition-us-ph-tribal-affiliation-extension" name="US Public Health Tribal Affiliation Extension"/>
 <artifact id="Observation/cancer-stage-group-example" key="Observation-cancer-stage-group-example" name="mCODE Cancer Stage Group - Example"/>
 <artifact id="Procedure/radiotherapy-example" key="Procedure-radiotherapy-example" name="mCODE Radiotherapy Course Summary - Example"/>
-<artifact id="BodyStructure/jenny-m-chest-wall-lymph-nodes-treatment-volume" key="BodyStructure-jenny-m-chest-wall-lymph-nodes-treatment-volume" name="mCODE Radiotherapy Lymph Nodes Treatment Volume - Example"/>
-<artifact id="BodyStructure/jenny-m-chest-wall-treatment-volume" key="BodyStructure-jenny-m-chest-wall-treatment-volume" name="mCODE Radiotherapy Volume - Example"/>
+<artifact deprecated="true" id="BodyStructure/jenny-m-chest-wall-lymph-nodes-treatment-volume" key="BodyStructure-jenny-m-chest-wall-lymph-nodes-treatment-volume" name="mCODE Radiotherapy Lymph Nodes Treatment Volume - Example"/>
+<artifact deprecated="true" id="BodyStructure/jenny-m-chest-wall-treatment-volume" key="BodyStructure-jenny-m-chest-wall-treatment-volume" name="mCODE Radiotherapy Volume - Example"/>
 <artifact id="Observation/tnm-clinical-distant-metastases-category-cM0" key="Observation-tnm-clinical-distant-metastases-category-cM0" name="mCODE TNM Clinical Distant Metastases Category - Example"/>
-<artifact id="Observation/tnm-clinical-primary-tumor-category-cT3" key="Observation-tnm-clinical-primary-tumor-category-cT3" name="mCODE TNM Clinical Primary Tumor Category - Example"/>
-<artifact id="Observation/tnm-clinical-regional-nodes-category-cN3" key="Observation-tnm-clinical-regional-nodes-category-cN3" name="mCODE TNM Clinical Regional Nodes Category - Example"/>
+<artifact id="Observation/tnm-clinical-primary-tumor-category-cT2" key="Observation-tnm-clinical-primary-tumor-category-cT3" name="mCODE TNM Clinical Primary Tumor Category - Example"/>
+<artifact id="Observation/tnm-clinical-regional-nodes-category-cN0" key="Observation-tnm-clinical-regional-nodes-category-cN3" name="mCODE TNM Clinical Regional Nodes Category - Example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="index" name="Central Cancer Registry Reporting Content IG Home"/>
+<page key="changes" name="Change Log"/>
 <page key="credits" name="Credits"/>
 <page key="spec" name="Detailed Specification"/>
-<page key="changes" name="IG Change History"/>
 <page key="toc" name="Table of Contents"/>
 <page key="usecases" name="Use Cases"/>
 <page key="downloads" name="Useful Downloads"/>

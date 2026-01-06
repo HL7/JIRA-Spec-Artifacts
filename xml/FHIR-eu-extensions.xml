@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/extensions/0.1.1-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/extensions" defaultVersion="0.1.0" defaultWorkgroup="eu" gitUrl="https://github.com/HL7-eu/extensions" url="http://hl7.eu/fhir/extensions">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/extensions/0.1.1-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/extensions" defaultVersion="1.2.0" defaultWorkgroup="eu" gitUrl="https://github.com/HL7-eu/extensions" url="http://hl7.eu/fhir/extensions">
 <version code="current" url="https://build.fhir.org/ig/hl7-eu/extensions"/>
-<version code="0.1.1-ballot" url="http://hl7.eu/fhir/extensions/0.1.1-ballot"/>
-<version code="0.1.0" url="http://hl7.eu/fhir/extensions/0.1.0"/>
+<version code="1.2.0" url="http://hl7.eu/fhir/extensions/1.2.0"/>
+<version code="0.1.1" url="http://hl7.eu/fhir/extensions/0.1.1"/>
+<version code="0.1.1-ballot" deprecated="true" url="http://hl7.eu/fhir/extensions/0.1.1-ballot"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.eu/fhir/extensions/0.1.0"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/composition-basedOn-order-or-requisition" key="StructureDefinition-composition-basedOn-order-or-requisition" name="Composition: Based On Order"/>
 <artifact id="StructureDefinition/information-recipient" key="StructureDefinition-information-recipient" name="Composition: Information recipient"/>
-<artifact id="StructureDefinition/presentedForm" key="StructureDefinition-presentedForm" name="Composition: Presented Form"/>
+<artifact deprecated="true" id="StructureDefinition/presentedForm" key="StructureDefinition-presentedForm" name="Composition: Presented Form"/>
 <artifact id="Composition/comp-example" key="Composition-comp-example" name="Composition: example with extensions"/>
+<artifact id="Condition/condition-example" key="Condition-condition-example" name="Condition: example with extensions"/>
 <artifact id="StructureDefinition/consent-relatedCondition" key="StructureDefinition-consent-relatedCondition" name="Consent: Related Condition"/>
 <artifact id="Consent/consent-example" key="Consent-consent-example" name="Consent: example with extensions"/>
+<artifact id="StructureDefinition/composition-diagnosticReportReference" key="StructureDefinition-composition-diagnosticReportReference" name="Document DiagnosticReport Reference"/>
 <artifact id="StructureDefinition/encounter-legalStatus" key="StructureDefinition-encounter-legalStatus" name="Encounter: Legal Status"/>
 <artifact id="Encounter/enc-example" key="Encounter-enc-example" name="Encounter: example with extensions."/>
+<artifact id="ValueSet/example-legal-status-vs" key="ValueSet-example-legal-status-vs" name="Example of Legal Status at admission Value Set"/>
+<artifact id="StructureDefinition/periods-of-life" key="StructureDefinition-periods-of-life" name="Many: Periods of Life"/>
 <artifact deprecated="true" id="StructureDefinition/ihe-ext-medication-characteristic" key="StructureDefinition-ihe-ext-medication-characteristic" name="Medication: Characteristic"/>
 <artifact deprecated="true" id="StructureDefinition/ihe-ext-medication-classification" key="StructureDefinition-ihe-ext-medication-classification" name="Medication: Classification"/>
 <artifact deprecated="true" id="StructureDefinition/ihe-ext-medication-device" key="StructureDefinition-ihe-ext-medication-device" name="Medication: Device"/>
@@ -26,16 +32,20 @@
 <artifact deprecated="true" id="StructureDefinition/ihe-ext-offLabel" key="StructureDefinition-ihe-ext-offLabel" name="MedicationRequest: Off-label use"/>
 <artifact deprecated="true" id="StructureDefinition/ihe-ext-medicationrequest-prescribedQuantity" key="StructureDefinition-ihe-ext-medicationrequest-prescribedQuantity" name="MedicationRequest: Prescribed Quantity"/>
 <artifact deprecated="true" id="MedicationRequest/medicationrequest-example" key="MedicationRequest-medicationrequest-example" name="MedicationRequest: example with extensions."/>
+<artifact id="ValueSet/periods-of-life-vs" key="ValueSet-periods-of-life-vs" name="Periods of Life Value Set"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="authors" name="Authors and Contributors"/>
+<page key="changes" name="Change Log"/>
 <page key="copyright" name="Copyright"/>
 <page key="crossversionanalysis" name="Cross-version Analysis"/>
 <page key="dependencies" name="Dependencies"/>
+<page key="design" name="Design Choices"/>
 <page key="downloads" name="Downloads"/>
 <page key="index" name="Home"/>
-<page key="introduction" name="Introduction"/>
+<page deprecated="true" key="introduction" name="Introduction"/>
 <page key="knownissues" name="Known Issues"/>
+<page key="scope" name="Scope and Content"/>
 <page key="toc" name="Table of Contents"/>
 </specification>

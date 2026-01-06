@@ -1,27 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/rtls/2023May" ciUrl="https://build.fhir.org/ig/HL7/rtls-ig" defaultVersion="1.0.0-ballot" defaultWorkgroup="pa" url="http://hl7.org/fhir/uv/rtls" gitUrl="https://github.com/HL7/rtls-ig">
-<version code="current" url="https://build.fhir.org/ig/HL7/rtls-ig"/>
-<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/rtls/2023May"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/rtls/2025Sep" ciUrl="http://build.fhir.org/ig/HL7/rtls-ig" defaultVersion="1.0.0-ballot2" defaultWorkgroup="pa" gitUrl="https://github.com/HL7/rtls-ig" url="http://hl7.org/fhir/uv/rtls">
+<version code="current" url="http://build.fhir.org/ig/HL7/rtls-ig"/>
+<version code="1.0.0-ballot2" url="http://hl7.org/fhir/uv/rtls/2025Sep"/>
+<version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/rtls/2023May"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="Bundle/EnrollTagExample-MessageBundle" key="Bundle-EnrollTagExample-MessageBundle" name="Enroll Tag Event example"/>
-<artifact id="Bundle/LocationUpdateExample-MessageBundle1" key="Bundle-LocationUpdateExample-MessageBundle1" name="Location Update Event example"/>
-<artifact id="Device/rtlsTagExample" key="Device-rtlsTagExample" name="RTLS Device example"/>
+<artifact id="Bundle/EnrollTagExample-MessageBundle" key="Bundle-EnrollTagExample-MessageBundle" name="Enroll Tag Event Example"/>
+<artifact id="Bundle/LocationUpdateExample-MessageBundle" key="Bundle-LocationUpdateExample-MessageBundle" name="Location Update Event Example"/>
+<artifact deprecated="true" id="Bundle/LocationUpdateExample-MessageBundle1" key="Bundle-LocationUpdateExample-MessageBundle1" name="Location Update Event example"/>
+<artifact id="OperationDefinition/rtlsAuxiliaryFunction" key="OperationDefinition-rtlsAuxiliaryFunction" name="RTLS Auxiliary Function Operation"/>
+<artifact id="Device/rtlsTagExample" key="Device-rtlsTagExample" name="RTLS Device Example"/>
+<artifact id="StructureDefinition/rtlsMessageBundleEnroll" key="StructureDefinition-rtlsMessageBundleEnroll" name="RTLS Enrollment Message Profile"/>
+<artifact id="Location/rtlsLocationExample" key="Location-rtlsLocationExample" name="RTLS Location Example"/>
 <artifact id="StructureDefinition/rtlsLocation" key="StructureDefinition-rtlsLocation" name="RTLS Location Resource Profile"/>
-<artifact id="Location/rtlsLocationExample" key="Location-rtlsLocationExample" name="RTLS Location example"/>
-<artifact id="StructureDefinition/rtlsMessageBundle" key="StructureDefinition-rtlsMessageBundle" name="RTLS Message Bundle Profile"/>
+<artifact id="StructureDefinition/rtlsMessageBundleLocationUpdate" key="StructureDefinition-rtlsMessageBundleLocationUpdate" name="RTLS Location Update Message Profile"/>
+<artifact deprecated="true" id="StructureDefinition/rtlsMessageBundle" key="StructureDefinition-rtlsMessageBundle" name="RTLS Message Bundle Profile"/>
+<artifact id="StructureDefinition/rtlsMessageEnrollmentHeader" key="StructureDefinition-rtlsMessageEnrollmentHeader" name="RTLS Message Enrollment Header Resource Profile"/>
 <artifact id="CodeSystem/rtlsMessageEvents" key="CodeSystem-rtlsMessageEvents" name="RTLS Message Events"/>
 <artifact id="ValueSet/rtlsMessageEvents" key="ValueSet-rtlsMessageEvents" name="RTLS Message Events Valueset"/>
-<artifact id="StructureDefinition/rtlsMessageHeader" key="StructureDefinition-rtlsMessageHeader" name="RTLS Message Header Resource Profile"/>
-<artifact id="StructureDefinition/rtlsSubscription" key="StructureDefinition-rtlsSubscription" name="RTLS Subscription"/>
-<artifact id="CodeSystem/rtlsSubscriptionEvents" key="CodeSystem-rtlsSubscriptionEvents" name="RTLS Subscription Events"/>
-<artifact id="StructureDefinition/rtlsSubscriptionStatus" key="StructureDefinition-rtlsSubscriptionStatus" name="RTLS Subscription Status Profile"/>
-<artifact id="ValueSet/rtlsSubscriptionTopicEvents" key="ValueSet-rtlsSubscriptionTopicEvents" name="RTLS Subscription Topic Events Valueset"/>
-<artifact id="StructureDefinition/rtlsSubscriptionTopic" key="StructureDefinition-rtlsSubscriptionTopic" name="RTLS Subscription Topic Profile"/>
-<artifact id="Subscription/rtlsSubscriptionExample" key="Subscription-rtlsSubscriptionExample" name="RTLS Subscription example"/>
+<artifact deprecated="true" id="StructureDefinition/rtlsMessageHeader" key="StructureDefinition-rtlsMessageHeader" name="RTLS Message Header Resource Profile"/>
+<artifact id="StructureDefinition/rtlsMessageLocationUpdateHeader" key="StructureDefinition-rtlsMessageLocationUpdateHeader" name="RTLS Message Location Update Header Header Resource Profile"/>
+<artifact id="StructureDefinition/rtlsMessageUnenrollmentHeader" key="StructureDefinition-rtlsMessageUnenrollmentHeader" name="RTLS Message Unenrollment Header Resource Profile"/>
+<artifact deprecated="true" id="StructureDefinition/rtlsSubscription" key="StructureDefinition-rtlsSubscription" name="RTLS Subscription"/>
+<artifact deprecated="true" id="CodeSystem/rtlsSubscriptionEvents" key="CodeSystem-rtlsSubscriptionEvents" name="RTLS Subscription Events"/>
+<artifact deprecated="true" id="StructureDefinition/rtlsSubscriptionStatus" key="StructureDefinition-rtlsSubscriptionStatus" name="RTLS Subscription Status Profile"/>
+<artifact deprecated="true" id="ValueSet/rtlsSubscriptionTopicEvents" key="ValueSet-rtlsSubscriptionTopicEvents" name="RTLS Subscription Topic Events Valueset"/>
+<artifact deprecated="true" id="StructureDefinition/rtlsSubscriptionTopic" key="StructureDefinition-rtlsSubscriptionTopic" name="RTLS Subscription Topic Profile"/>
+<artifact deprecated="true" id="Subscription/rtlsSubscriptionExample" key="Subscription-rtlsSubscriptionExample" name="RTLS Subscription example"/>
 <artifact id="StructureDefinition/rtlsDevice" key="StructureDefinition-rtlsDevice" name="RTLS Tag Device Profile"/>
-<artifact id="Bundle/UnenrollTagExample-MessageBundle" key="Bundle-UnenrollTagExample-MessageBundle" name="Unenroll Tag Event example"/>
+<artifact id="StructureDefinition/rtlsMessageBundleUnenroll" key="StructureDefinition-rtlsMessageBundleUnenroll" name="RTLS Unenrollment Message Profile"/>
+<artifact id="Parameters/StaffDuressInputExample-Parameters" key="Parameters-StaffDuressInputExample-Parameters" name="Staff Duress Parameters Input Example"/>
+<artifact id="Parameters/StaffDuressOutputExample-Parameters" key="Parameters-StaffDuressOutputExample-Parameters" name="Staff Duress Parameters Output Example"/>
+<artifact id="Bundle/UnenrollTagExample-MessageBundle" key="Bundle-UnenrollTagExample-MessageBundle" name="Unenroll Tag Event Example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>

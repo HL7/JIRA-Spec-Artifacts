@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/cancer-reporting/2025May" ciUrl="http://build.fhir.org/ig/HL7/cancer-reporting" defaultVersion="1.0.1" defaultWorkgroup="oo" gitUrl="https://github.com/HL7/cancer-reporting" url="http://hl7.org/fhir/us/cancer-reporting">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/cancer-reporting/2025May" ciUrl="http://build.fhir.org/ig/HL7/cancer-reporting" defaultVersion="2.0.0" defaultWorkgroup="oo" gitUrl="https://github.com/HL7/cancer-reporting" url="http://hl7.org/fhir/us/cancer-reporting">
 <version code="current" url="http://build.fhir.org/ig/HL7/cancer-reporting"/>
-<version code="2.0.0-ballot" url="http://hl7.org/fhir/us/cancer-reporting/2025May"/>
+<version code="2.0.0" url="http://hl7.org/fhir/us/cancer-reporting/STU2"/>
+<version code="2.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/cancer-reporting/2025May"/>
 <version code="1.0.1" url="http://hl7.org/fhir/us/cancer-reporting/STU1.0.1"/>
-<version code="1.0.0" url="http://hl7.org/fhir/us/cancer-reporting/STU1"/>
+<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/cancer-reporting/STU1"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/cancer-reporting/2021Sep"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -17,11 +18,16 @@
 <artifact id="Observation/observation-special-studies-breast-biomarker" key="Observation-observation-special-studies-breast-biomarker" name="Breast Biomarker Testing Performed on Previous Biopsy"/>
 <artifact id="Specimen/specimen-breast" key="Specimen-specimen-breast" name="Breast Specimen Example"/>
 <artifact id="Observation/observation-procedure-breast-excision" key="Observation-observation-procedure-breast-excision" name="Breast Tissue Excision Observation Example"/>
-<artifact id="ValueSet/cap-ecc-answer-codes" key="ValueSet-cap-ecc-answer-codes" name="CAP eCC Answer Codes"/>
-<artifact id="CodeSystem/cap-ecc-codesystem" key="CodeSystem-cap-ecc-codesystem" name="CAP eCC CodeSystem"/>
-<artifact id="ValueSet/cap-ecc-form-codes" key="ValueSet-cap-ecc-form-codes" name="CAP eCC Form Codes"/>
-<artifact id="ValueSet/cap-ecc-question-codes" key="ValueSet-cap-ecc-question-codes" name="CAP eCC Question Codes"/>
-<artifact id="ValueSet/cap-ecc-section-codes" key="ValueSet-cap-ecc-section-codes" name="CAP eCC Section Codes"/>
+<artifact deprecated="true" id="ValueSet/cap-ecc-answer-codes" key="ValueSet-cap-ecc-answer-codes" name="CAP eCC Answer Codes"/>
+<artifact deprecated="true" id="CodeSystem/cap-ecc-codesystem" key="CodeSystem-cap-ecc-codesystem" name="CAP eCC CodeSystem"/>
+<artifact deprecated="true" id="ValueSet/cap-ecc-form-codes" key="ValueSet-cap-ecc-form-codes" name="CAP eCC Form Codes"/>
+<artifact deprecated="true" id="ValueSet/cap-ecc-question-codes" key="ValueSet-cap-ecc-question-codes" name="CAP eCC Question Codes"/>
+<artifact deprecated="true" id="ValueSet/cap-ecc-section-codes" key="ValueSet-cap-ecc-section-codes" name="CAP eCC Section Codes"/>
+<artifact id="ValueSet/cap-ecp-answer-codes" key="ValueSet-cap-ecp-answer-codes" name="CAP eCP Answer Codes"/>
+<artifact deprecated="true" id="CodeSystem/cap-ecp-codesystem" key="CodeSystem-cap-ecp-codesystem" name="CAP eCP CodeSystem"/>
+<artifact id="ValueSet/cap-ecp-form-codes" key="ValueSet-cap-ecp-form-codes" name="CAP eCP Form Codes"/>
+<artifact id="ValueSet/cap-ecp-question-codes" key="ValueSet-cap-ecp-question-codes" name="CAP eCP Question Codes"/>
+<artifact id="ValueSet/cap-ecp-section-codes" key="ValueSet-cap-ecp-section-codes" name="CAP eCP Section Codes"/>
 <artifact id="CapabilityStatement/capabilitystatement-central-cancer-registry-reporting-ehr-path" key="CapabilityStatement-central-cancer-registry-reporting-ehr-pathology" name="Central Cancer Registry Reporting Pathology EHR Capability Statement"/>
 <artifact id="Observation/observation-margins-closest-margin-to-invasive-carcinoma" key="Observation-observation-margins-closest-margin-to-invasive-carcinoma" name="Closest Margin(s) to Invasive Carcinoma example"/>
 <artifact id="Observation/observation-section-comments" key="Observation-observation-section-comments" name="Comments Section"/>
@@ -125,7 +131,8 @@
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="background" name="Background"/>
-<page key="cancerreport" name="Cancerreport"/>
+<page key="cancer_pathology_observation_example" name="Cancer Pathology Observation Example"/>
+<page deprecated="true" key="cancerreport" name="Cancerreport"/>
 <page key="change_notes" name="Change Notes"/>
 <page key="downloads" name="Downloads"/>
 <page key="index" name="Home"/>
