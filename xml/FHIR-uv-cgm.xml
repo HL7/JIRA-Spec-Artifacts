@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cgm/2025May" ciUrl="http://build.fhir.org/ig/HL7/cgm" defaultVersion="1.0.0-ballot" defaultWorkgroup="oo" gitUrl="https://github.com/HL7/cgm" url="http://hl7.org/fhir/uv/cgm">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cgm/2025May" ciUrl="http://build.fhir.org/ig/HL7/cgm" defaultVersion="1.0.0" defaultWorkgroup="oo" gitUrl="https://github.com/HL7/cgm" url="http://hl7.org/fhir/uv/cgm">
 <version code="current" url="http://build.fhir.org/ig/HL7/cgm"/>
-<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/cgm/2025May"/>
+<version code="1.0.0" url="http://hl7.org/fhir/uv/cgm/STU1"/>
+<version code="1.0.0-ballot"  deprecated="true" url="http://hl7.org/fhir/uv/cgm/2025May"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="CapabilityStatement/cgm-data-receiver" key="CapabilityStatement-cgm-data-receiver" name="CGM Data Receiver Capability Statement"/>
 <artifact id="StructureDefinition/cgm-data-submission-bundle" key="StructureDefinition-cgm-data-submission-bundle" name="CGM Data Submission Bundle"/>
 <artifact id="Bundle/cgmDataSubmissionBundle" key="Bundle-cgmDataSubmissionBundle" name="CGM Data Submission Bundle Example"/>
+<artifact id="StructureDefinition/cgm-data-submission-one-time-order" key="StructureDefinition-cgm-data-submission-one-time-order" name="CGM Data Submission One-Time Order"/>
 <artifact id="StructureDefinition/cgm-data-submission-standing-order" key="StructureDefinition-cgm-data-submission-standing-order" name="CGM Data Submission Standing Order"/>
 <artifact id="StructureDefinition/cgm-device" key="StructureDefinition-cgm-device" name="CGM Device"/>
 <artifact id="Device/cgmDeviceExample" key="Device-cgmDeviceExample" name="CGM Device Example"/>
@@ -15,25 +17,29 @@
 <artifact id="Observation/cgmSensorReadingMassPerVolumeExample" key="Observation-cgmSensorReadingMassPerVolumeExample" name="CGM Sensor Reading (Mass) Example"/>
 <artifact id="StructureDefinition/cgm-sensor-reading-moles-per-volume" key="StructureDefinition-cgm-sensor-reading-moles-per-volume" name="CGM Sensor Reading (Molar)"/>
 <artifact id="Observation/cgmSensorReadingMolesPerVolumeExample" key="Observation-cgmSensorReadingMolesPerVolumeExample" name="CGM Sensor Reading (Molar) Example"/>
-<artifact id="CodeSystem/cgm-summary-codes-temporary" key="CodeSystem-cgm-summary-codes-temporary" name="CGM Summary Code System"/>
+<artifact deprecated="true" id="CodeSystem/cgm-summary-codes-temporary" key="CodeSystem-cgm-summary-codes-temporary" name="CGM Summary Code System"/>
 <artifact id="Observation/cgmSummaryExample" key="Observation-cgmSummaryExample" name="CGM Summary Example"/>
 <artifact id="StructureDefinition/cgm-summary" key="StructureDefinition-cgm-summary" name="CGM Summary Observation"/>
 <artifact id="StructureDefinition/cgm-summary-pdf" key="StructureDefinition-cgm-summary-pdf" name="CGM Summary PDF Report"/>
 <artifact id="DiagnosticReport/cgmSummaryPDFExample" key="DiagnosticReport-cgmSummaryPDFExample" name="CGM Summary PDF Report Example"/>
-<artifact id="StructureDefinition/cgm-summary-times-in-ranges" key="StructureDefinition-cgm-summary-times-in-ranges" name="CGM Summary Times in Ranges"/>
 <artifact id="Observation/cgmSummaryTimesInRangesExample" key="Observation-cgmSummaryTimesInRangesExample" name="CGM Summary Times in Ranges Example"/>
+<artifact id="StructureDefinition/cgm-summary-times-in-ranges" key="StructureDefinition-cgm-summary-times-in-ranges" name="CGM Times in Ranges"/>
 <artifact id="CodeSystem/cgm" key="CodeSystem-cgm" name="Codes for CGM"/>
 <artifact id="StructureDefinition/cgm-summary-coefficient-of-variation" key="StructureDefinition-cgm-summary-coefficient-of-variation" name="Coefficient of Variation (CV)"/>
 <artifact id="Observation/cgmSummaryCoefficientOfVariationExample" key="Observation-cgmSummaryCoefficientOfVariationExample" name="Coefficient of Variation Example"/>
+<artifact id="StructureDefinition/data-submission-one-time-order" key="StructureDefinition-data-submission-one-time-order" name="Data Submission One-Time Order"/>
+<artifact id="StructureDefinition/data-submission-one-time-spec" key="StructureDefinition-data-submission-one-time-spec" name="Data Submission One-Time Specification"/>
 <artifact id="StructureDefinition/data-submission-schedule" key="StructureDefinition-data-submission-schedule" name="Data Submission Schedule"/>
 <artifact id="StructureDefinition/data-submission-standing-order" key="StructureDefinition-data-submission-standing-order" name="Data Submission Standing Order"/>
 <artifact id="StructureDefinition/cgm-summary-days-of-wear" key="StructureDefinition-cgm-summary-days-of-wear" name="Days of Wear"/>
 <artifact id="Observation/cgmSummaryDaysOfWearExample" key="Observation-cgmSummaryDaysOfWearExample" name="Days of Wear Example"/>
+<artifact id="ServiceRequest/cgmDataSubmissionOneTimeOrderExample" key="ServiceRequest-cgmDataSubmissionOneTimeOrderExample" name="Example CGM Data Submission One-Time Order"/>
+<artifact id="ServiceRequest/cgmDataSubmissionOneTimeOrder30DayExample" key="ServiceRequest-cgmDataSubmissionOneTimeOrder30DayExample" name="Example CGM Data Submission One-Time Order (30 Days)"/>
 <artifact id="ServiceRequest/cgmDataSubmissionStandingOrderExample" key="ServiceRequest-cgmDataSubmissionStandingOrderExample" name="Example CGM Data Submission Standing Order"/>
 <artifact id="Patient/patientExample" key="Patient-patientExample" name="Example Patient"/>
 <artifact id="Observation/cgmSummaryGMIExample" key="Observation-cgmSummaryGMIExample" name="GMI Example"/>
 <artifact id="StructureDefinition/cgm-summary-gmi" key="StructureDefinition-cgm-summary-gmi" name="Glucose Management Indicator (GMI)"/>
-<artifact id="ConceptMap/CGMSummaryToLoinc" key="ConceptMap-CGMSummaryToLoinc" name="Mapping from CGM Temporary Codes to LOINC"/>
+<artifact deprecated="true" id="ConceptMap/CGMSummaryToLoinc" key="ConceptMap-CGMSummaryToLoinc" name="Mapping from CGM Temporary Codes to LOINC"/>
 <artifact id="StructureDefinition/cgm-summary-mean-glucose-mass-per-volume" key="StructureDefinition-cgm-summary-mean-glucose-mass-per-volume" name="Mean Glucose (Mass)"/>
 <artifact id="Observation/cgmSummaryMeanGlucoseMassPerVolumeExample" key="Observation-cgmSummaryMeanGlucoseMassPerVolumeExample" name="Mean Glucose (Mass) Example"/>
 <artifact id="StructureDefinition/cgm-summary-mean-glucose-moles-per-volume" key="StructureDefinition-cgm-summary-mean-glucose-moles-per-volume" name="Mean Glucose (Molar)"/>
