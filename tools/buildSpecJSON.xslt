@@ -159,7 +159,7 @@
         <xsl:when test="starts-with(@defaultWorkgroup,'au-') and not(starts-with(@ballotUrl, 'http://hl7.org.au/'))">
           <xsl:message terminate="yes" select="concat('ERROR: If present, ballotUrl must start with ''http://hl7.org.au/'' ', @key, ' - actual was: ', @ballotUrl)"/>
         </xsl:when>
-        <xsl:when test="not(@defaultWorkgroup='eu') and not(starts-with(@defaultWorkgroup,'au-')) and not(starts-with(@ballotUrl, 'http://hl7.org/'))">
+        <xsl:when test="not(@defaultWorkgroup='eu') and not(starts-with(@defaultWorkgroup,'au-')) and not(starts-with(@ballotUrl, 'http://hl7.org/') or starts-with(@ballotUrl, 'http://cds-hooks.hl7.org/'))">
           <xsl:message terminate="yes" select="concat('ERROR: If present, ballotUrl must start with ''http://hl7.org/'' ', @key, ' - actual was: ', @ballotUrl)"/>
         </xsl:when>
       </xsl:choose>

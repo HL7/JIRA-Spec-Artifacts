@@ -29,8 +29,8 @@
   <artifact name="AuditEvent" key="AuditEvent" id="StructureDefinition/AuditEvent" workgroup="security"/>
   <artifact name="Basic" key="Basic" id="StructureDefinition/Basic" workgroup="fhir-i"/>
   <artifact name="Binary" key="Binary" id="StructureDefinition/Binary" workgroup="fhir-i"/>
-  <artifact name="BiologicallyDerivedProduct" key="BiologicallyDerivedProduct" id="StructureDefinition/BiologicallyDerivedProduct" workgroup="brr"/>
-  <artifact name="BiologicallyDerivedProductDispense" key="BiologicallyDerivedProductDispense" id="StructureDefinition/BiologicallyDerivedProductDispense" workgroup="brr"/>
+  <artifact name="BiologicallyDerivedProduct" key="BiologicallyDerivedProduct" id="StructureDefinition/BiologicallyDerivedProduct" workgroup="oo"/>
+  <artifact name="BiologicallyDerivedProductDispense (moved to OO Incubator)" key="BiologicallyDerivedProductDispense" id="StructureDefinition/BiologicallyDerivedProductDispense" workgroup="oo" deprecated="true"/>
   <artifact name="BodyStructure" key="BodySite" id="StructureDefinition/BodySite" workgroup="oo"/>
   <artifact name="Bundle" key="Feed" id="StructureDefinition/Feed" workgroup="fhir-i"/>
   <artifact name="CapabilityStatement (Conformance)" key="Conformance" id="StructureDefinition/Conformance" workgroup="fhir-i"/>
@@ -67,13 +67,13 @@
   <artifact name="DeviceDefinition" key="DeviceDefinition" id="StructureDefinition/DeviceDefinition" workgroup="oo"/>
   <artifact name="DeviceMetric" key="DeviceMetric" id="StructureDefinition/DeviceMetric" workgroup="dev"/>
   <artifact name="DeviceObservationReport" key="DeviceObservationReport" id="StructureDefinition/DeviceObservationReport" workgroup="dev" deprecated="true"/>
-  <artifact name="DeviceRequest (was DeviceUseRequest)" key="DeviceUseRequest" id="StructureDefinition/DeviceUseRequest" workgroup="oo"/>
-  <artifact name="DeviceDispense" key="DeviceDispense" id="StructureDefinition/DeviceDispense" workgroup="oo"/>
-  <artifact name="DeviceUsage (DeviceUseStatement)" key="DeviceUseStatement" id="StructureDefinition/DeviceUseStatement" workgroup="oo"/>
+  <artifact name="DeviceRequest" key="DeviceUseRequest" id="StructureDefinition/DeviceRequest" workgroup="oo"/>
+  <artifact name="DeviceDispense (moved to OO Incubator)" key="DeviceDispense" id="StructureDefinition/DeviceDispense" workgroup="oo" deprecated="true"/>
+  <artifact name="DeviceUsage (moved to OO Incubator)" key="DeviceUseStatement" id="StructureDefinition/DeviceUsage" workgroup="oo" deprecated="true"/>
   <artifact name="DiagnosticReport" key="DiagnosticReport" id="StructureDefinition/DiagnosticReport" workgroup="oo"/>
   <artifact name="DiagnosticRequest (see ServiceRequest)" key="DiagnosticRequest" id="StructureDefinition/DiagnosticRequest" workgroup="oo" deprecated="true"/>
   <artifact name="DocumentManifest (See List)" key="DocumentManifest" id="StructureDefinition/DocumentManifest" workgroup="sd" deprecated="true"/>
-  <artifact name="DocumentReference" key="DocumentReference" id="StructureDefinition/DocumentReference" workgroup="sd"/>
+  <artifact name="DocumentReference" key="DocumentReference" id="StructureDefinition/DocumentReference" workgroup="oo"/>
   <artifact name="Encounter" key="Encounter" id="StructureDefinition/Encounter" workgroup="pa"/>
   <artifact name="EncounterHistory" key="EncounterHistory" id="StructureDefinition/EncounterHistory" workgroup="pa"/>
   <artifact name="EndPoint" key="EndPoint" id="StructureDefinition/EndPoint" workgroup="pa"/>
@@ -106,8 +106,8 @@
   <artifact name="ImplementationGuide" key="ImplementationGuide" id="StructureDefinition/ImplementationGuide" workgroup="fhir-i"/>
   <artifact name="Ingredient" key="MedicinalProductIngredient" id="StructureDefinition/Ingredient" workgroup="brr"/>
   <artifact name="InsurancePlan" key="ProductPlan" id="StructureDefinition/ProductPlan" workgroup="pa"/>
-  <artifact name="InventoryReport" key="InventoryReport" id="StructureDefinition/InventoryReport" workgroup="oo"/>
-  <artifact name="InventoryItem" key="InventoryItem" id="StructureDefinition/InventoryItem" workgroup="oo"/>
+  <artifact name="InventoryReport (moved to OO Incubator)" key="InventoryReport" id="StructureDefinition/InventoryReport" workgroup="oo" deprecated="true"/>
+  <artifact name="InventoryItem (moved to OO Incubator)" key="InventoryItem" id="StructureDefinition/InventoryItem" workgroup="oo" deprecated="true"/>
   <artifact name="Invoice" key="Invoice" id="StructureDefinition/Invoice" workgroup="fm"/>
   <artifact name="ItemInstance (deprecated)" key="ItemInstance" id="StructureDefinition/ItemInstance" workgroup="oo" deprecated="true"/>
   <artifact name="Library" key="Library" id="StructureDefinition/Library" workgroup="cds"/>
@@ -137,7 +137,7 @@
   <artifact name="MolecularDefinition" key="MolecularDefinition" id="StructureDefinition/MolecularDefinition" workgroup="cg"/>
   <artifact name="NamingSystem" key="NamingSystem" id="StructureDefinition/NamingSystem" workgroup="fhir-i"/>
   <artifact name="NutritionIntake" key="NutritionIntake" id="StructureDefinition/NutritionIntake" workgroup="oo"/>
-  <artifact name="NutritionOrder (was NutritionRequest)" key="NutritionRequest" id="StructureDefinition/NutritionRequest" workgroup="oo"/>
+  <artifact name="NutritionOrder" key="NutritionRequest" id="StructureDefinition/NutritionOrder" workgroup="oo"/>
   <artifact name="NutritionProduct" key="NutritionProduct" id="StructureDefinition/NutritionProduct" workgroup="oo"/>
   <artifact name="Observation" key="Observation" id="StructureDefinition/Observation" workgroup="oo"/>
   <artifact name="ObservationDefinition" key="ObservationDefinition" id="StructureDefinition/ObservationDefinition" workgroup="oo"/>
@@ -179,7 +179,7 @@
   <artifact name="Schedule" key="Schedule" id="StructureDefinition/Schedule" workgroup="pa"/>
   <artifact name="SearchParameter" key="SearchParameter" id="StructureDefinition/SearchParameter" workgroup="fhir-i"/>
   <artifact name="ServiceDefinition" key="ServiceDefinition" id="StructureDefinition/ServiceDefinition" workgroup="cds" deprecated="true"/>
-  <artifact name="ServiceRequest (Diagnostic/Procedure/ReferralRequest)" key="ServiceRequest" id="StructureDefinition/ServiceRequest" workgroup="oo"/>
+  <artifact name="ServiceRequest" key="ServiceRequest" id="StructureDefinition/ServiceRequest" workgroup="oo"/>
   <artifact name="Slot" key="Slot" id="StructureDefinition/Slot" workgroup="pa"/>
   <artifact name="Specimen" key="Specimen" id="StructureDefinition/Specimen" workgroup="oo"/>
   <artifact name="SpecimenDefinition" key="SpecimenDefinition" id="StructureDefinition/SpecimenDefinition" workgroup="oo"/>
@@ -195,8 +195,8 @@
   <artifact name="SubstanceProtein" key="SubstanceProtein" id="StructureDefinition/SubstanceProtein" workgroup="oo"/>
   <artifact name="SubstanceReferenceInformation" key="SubstanceReferenceInformation" id="StructureDefinition/SubstanceReferenceInformation" workgroup="oo"/>
   <artifact name="SubstanceSourceMaterial" key="SubstanceSourceMaterial" id="StructureDefinition/SubstanceSourceMaterial" workgroup="oo"/>
-  <artifact name="SupplyDelivery (was Supply)" key="Supply" id="StructureDefinition/Supply" workgroup="oo"/>
-  <artifact name="SupplyRequest" key="SupplyRequest" id="StructureDefinition/SupplyRequest" workgroup="oo"/>
+  <artifact name="SupplyDelivery (moved to OO Incubator)" key="Supply" id="StructureDefinition/SupplyDelivery" workgroup="oo" deprecated="true"/>
+  <artifact name="SupplyRequest (moved to OO Incubator)" key="SupplyRequest" id="StructureDefinition/SupplyRequest" workgroup="oo" deprecated="true"/>
   <artifact name="SupportingDocumentation" key="SupportingDocumentation" id="StructureDefinition/SupportingDocumentation" workgroup="fm" deprecated="true"/>
   <artifact name="Task" key="Task" id="StructureDefinition/Task" workgroup="oo"/>
   <artifact name="TerminologyCapabilities" key="TerminologyCapabilities" id="StructureDefinition/TerminologyCapabilities" workgroup="vocab"/>
@@ -204,7 +204,7 @@
   <artifact name="TestReport" key="TestReport" id="StructureDefinition/TestReport" workgroup="fhir-i"/>
   <artifact name="TestScript" key="TestScript" id="StructureDefinition/TestScript" workgroup="fhir-i"/>
   <artifact name="Topic (see SubscriptionTopic)" key="Topic" id="StructureDefinition/Topic" workgroup="fhir-i" deprecated="true"/>
-  <artifact name="Transport" key="Transport" id="StructureDefinition/Transport" workgroup="oo"/>
+  <artifact name="Transport (moved to OO Incubator)" key="Transport" id="StructureDefinition/Transport" workgroup="oo" deprecated="true"/>
   <artifact name="UserSession" key="UserSession" id="StructureDefinition/UserSession" workgroup="security" deprecated="true"/>
   <artifact name="ValueSet" key="ValueSet" id="StructureDefinition/ValueSet" workgroup="vocab"/>
   <artifact name="VerificationResult" key="VerificationResult" id="StructureDefinition/VerificationResult" workgroup="pa"/>
