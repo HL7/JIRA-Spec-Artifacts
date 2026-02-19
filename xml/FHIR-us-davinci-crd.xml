@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-crd/2025Sep" ciUrl="http://build.fhir.org/ig/HL7/davinci-crd" defaultVersion="2.1.0" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-crd" url="http://hl7.org/fhir/us/davinci-crd">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-crd/STU2.2.0-snapshot" ciUrl="http://build.fhir.org/ig/HL7/davinci-crd" defaultVersion="2.1.0" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-crd" url="http://hl7.org/fhir/us/davinci-crd">
 <version code="current" url="http://build.fhir.org/ig/HL7/davinci-crd"/>
-<version code="2.2.0-ballot" url="http://hl7.org/fhir/us/davinci-crd/2025Sep"/>
+<version code="2.2.0-snapshot" url="http://hl7.org/fhir/us/davinci-crd/STU2.2.0-snapshot"/>
+<version code="2.2.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/davinci-crd/2025Sep"/>
 <version code="2.1.0" url="http://hl7.org/fhir/us/davinci-crd/STU2.1"/>
 <version code="2.1.0-preview" deprecated="true" url="http://hl7.org/fhir/us/davinci-crd/STU2.1-preview"/>
 <version code="2.0.1" deprecated="true" url="http://hl7.org/fhir/us/davinci-crd/STU2"/>
@@ -23,14 +24,16 @@
 <artifact deprecated="true" id="Task/action-example" key="Task-action-example" name="CDS Hook deferred action example"/>
 <artifact id="ValueSet/cardActions" key="ValueSet-cardActions" name="CDS Hooks Card Suggestion Action Types Value Set"/>
 <artifact id="StructureDefinition/CDSHookServiceRequestExtensionRequestConfig" key="StructureDefinition-CDSHookServiceRequestExtensionRequestConfig" name="CDS Hooks Service Request Configuration Extension"/>
+<artifact id="StructureDefinition/CDSHookServiceRequestExtensionRequestCRDVersion" key="StructureDefinition-CDSHookServiceRequestExtensionRequestCRDVersion" name="CDS Hooks Service Request Requested CRD Version Extension"/>
 <artifact id="StructureDefinition/CDSHookServiceResponseExtensionAssociatedResource" key="StructureDefinition-CDSHookServiceResponseExtensionAssociatedResource" name="CDS Hooks Service Response Associated Resource Extension"/>
 <artifact id="StructureDefinition/CDSHookServiceResponseExtensionIfNoneExist" key="StructureDefinition-CDSHookServiceResponseExtensionIfNoneExist" name="CDS Hooks Service Response If-None-Exist Extension"/>
 <artifact id="StructureDefinition/CDSHookServicesExtensionConfiguration" key="StructureDefinition-CDSHookServicesExtensionConfig" name="CDS Hooks Services Configuration Extension"/>
+<artifact id="StructureDefinition/CDSHookServicesExtensionCRDVersion" key="StructureDefinition-CDSHookServicesExtensionCRDVersion" name="CDS Hooks Services Discovery CRD Version Extension"/>
 <artifact deprecated="true" id="StructureDefinition/CDSHookAppointmentBookContext" key="StructureDefinition-CDSHookAppointmentBookContext" name="CDS Hooks Specific Context for appointment-book (Logical Definition)"/>
 <artifact deprecated="true" id="StructureDefinition/CDSHookEncounterStartContext" key="StructureDefinition-CDSHookEncounterStartContext" name="CDS Hooks Specific Context for encounter-start (Logical Definition)"/>
 <artifact deprecated="true" id="StructureDefinition/CDSHookOrderDispatchContext" key="StructureDefinition-CDSHookOrderDispatchContext" name="CDS Hooks Specific Context for order-dispatch (Logical Definition)"/>
 <artifact id="ValueSet/cmslocationcodes" key="ValueSet-cmslocationcodes" name="CMS Location Codes Value Set"/>
-<artifact id="ValueSet/CMSMappableLocationCodes" key="ValueSet-CMSMappableLocationCodes" name="CMS Mappable Location Codes Value Set"/>
+<artifact deprecated="true" id="ValueSet/CMSMappableLocationCodes" key="ValueSet-CMSMappableLocationCodes" name="CMS Mappable Location Codes Value Set"/>
 <artifact deprecated="true" id="ValueSet/afterCompletionCode" key="ValueSet-afterCompletionCode" name="CRD After Completion Code Value Set"/>
 <artifact deprecated="true" id="StructureDefinition/profile-appointment" key="StructureDefinition-profile-appointment" name="CRD Appointment"/>
 <artifact id="StructureDefinition/profile-appointment-with-order" key="StructureDefinition-profile-appointment-with-order" name="CRD Appointment with Order"/>
@@ -57,18 +60,18 @@
 <artifact id="StructureDefinition/CRDHooksResponse" key="StructureDefinition-CRDHooksResponse" name="CRD CDSHooks Response (Logical Definition)"/>
 <artifact id="StructureDefinition/CRDHooksResponse-launchSMART" key="StructureDefinition-CRDHooksResponse-launchSMART" name="CRD CDSHooks SMART App Response (Logical Definition)"/>
 <artifact deprecated="true" id="CodeSystem/cardType" key="CodeSystem-cardType" name="CRD Card Types Code System"/>
-<artifact id="ValueSet/cardType" key="ValueSet-cardType" name="CRD Card Types Value Set"/>
-<artifact deprecated="true" id="CapabilityStatement/crd-client" key="CapabilityStatement-crd-client" name="CRD Client"/>
+<artifact deprecated="true" id="ActorDefinition/crd-client" key="CapabilityStatement-crd-client" name="CRD Client"/>
+<artifact id="ActorDefinition/crd-client-org" key="ActorDefinition-crd-client-org" name="CRD Client Organization"/>
 <artifact id="CapabilityStatement/crd-client3.1" key="CapabilityStatement-crd-client3.1" name="CRD Client USCDI 1"/>
 <artifact id="CapabilityStatement/crd-client6.1" key="CapabilityStatement-crd-client6.1" name="CRD Client USCDI 3"/>
 <artifact id="CapabilityStatement/crd-client7.0" key="CapabilityStatement-crd-client7.0" name="CRD Client USCDI 4"/>
 <artifact id="StructureDefinition/profile-communicationrequest" key="StructureDefinition-profile-communicationrequest" name="CRD Communication Request"/>
 <artifact id="ValueSet/configTypes" key="ValueSet-configTypes" name="CRD Configuration Code Data Types Value Set"/>
+<artifact id="ValueSet/cs-categories" key="ValueSet-cs-categories" name="CRD Conformance Statement Categories"/>
 <artifact id="StructureDefinition/profile-coverage" key="StructureDefinition-profile-coverage" name="CRD Coverage"/>
 <artifact id="ValueSet/coverageAssertionReasons" key="ValueSet-coverageAssertionReasons" name="CRD Coverage Assertion Reasons Value Set"/>
 <artifact id="ValueSet/coverageClass" key="ValueSet-coverageClass" name="CRD Coverage Classes Value Set"/>
 <artifact id="ValueSet/coverageDetailCategories" key="ValueSet-coverageDetailCategories" name="CRD Coverage Detail Categories Value Set"/>
-<artifact id="ValueSet/coverageDetail" key="ValueSet-coverageDetail" name="CRD Coverage Detail Codes Value Set"/>
 <artifact id="ValueSet/AdditionalDocumentation" key="ValueSet-AdditionalDocumentation" name="CRD Coverage Information Additional Documentation Value Set"/>
 <artifact id="ValueSet/coverageInfo" key="ValueSet-coverageInfo" name="CRD Coverage Information Covered Value Set"/>
 <artifact id="ValueSet/DocReason" key="ValueSet-crdDocReason" name="CRD Coverage Information Documentation Reason Value Set"/>
@@ -95,6 +98,9 @@
 <artifact id="StructureDefinition/profile-patient" key="StructureDefinition-profile-patient" name="CRD Patient"/>
 <artifact deprecated="true" id="StructureDefinition/profile-practitioner" key="StructureDefinition-profile-practitioner" name="CRD Practitioner"/>
 <artifact id="StructureDefinition/profile-taskquestionnaire" key="StructureDefinition-profile-taskquestionnaire" name="CRD Questionnaire Task"/>
+<artifact id="ValueSet/cardType" key="ValueSet-cardType" name="CRD Response Types Value Set"/>
+<artifact id="ActorDefinition/crd-server" key="ActorDefinition-crd-server" name="CRD Server"/>
+<artifact id="ActorDefinition/crd-server-org" key="ActorDefinition-crd-server-org" name="CRD Server Organization"/>
 <artifact deprecated="true" id="CapabilityStatement/crd-server3.1" key="CapabilityStatement-crd-server3.1" name="CRD Server USCDI 1"/>
 <artifact deprecated="true" id="CapabilityStatement/crd-server" key="CapabilityStatement-crd-server" name="CRD Server USCDI 1, 3, 4"/>
 <artifact deprecated="true" id="CapabilityStatement/crd-server6.1" key="CapabilityStatement-crd-server6.1" name="CRD Server USCDI 3"/>
@@ -102,6 +108,7 @@
 <artifact id="ValueSet/serviceRequestCodes" key="ValueSet-serviceRequestCodes" name="CRD Service Request Codes Value Set"/>
 <artifact deprecated="true" id="ValueSet/taskReason" key="ValueSet-taskReasonCode" name="CRD Task Reason Codes Value Set"/>
 <artifact id="CodeSystem/temp" key="CodeSystem-temp" name="CRD Temporary Codes"/>
+<artifact id="StructureDefinition/profile-timing" key="StructureDefinition-profile-timing" name="CRD Timing Data Type"/>
 <artifact id="StructureDefinition/profile-visionprescription" key="StructureDefinition-profile-visionprescription" name="CRD Vision Prescription"/>
 <artifact deprecated="true" id="StructureDefinition/profile-crdcardtask" key="StructureDefinition-profile-crdcardtask" name="CRDCardTask"/>
 <artifact deprecated="true" id="StructureDefinition/profile-claimresponse" key="StructureDefinition-profile-claimresponse" name="ClaimResponse"/>
@@ -115,30 +122,39 @@
 <artifact deprecated="true" id="StructureDefinition/profile-coverage-deident" key="StructureDefinition-profile-coverage-deident" name="CoverageDeident"/>
 <artifact deprecated="true" id="Coverage/deident-example" key="Coverage-deident-example" name="De-identified Coverage example"/>
 <artifact deprecated="true" id="Patient/deident-example" key="Patient-deident-example" name="De-identified Patient example"/>
+<artifact id="ValueSet/coverageDetail" key="ValueSet-coverageDetail" name="Deprecated CRD Coverage Detail Codes Value Set"/>
 <artifact id="Device/example" key="Device-example" name="Device example"/>
 <artifact deprecated="true" id="SearchParameter/devicerequest-insurance" key="SearchParameter-devicerequest-insurance" name="DeviceRequest Insurance Search Parameter"/>
 <artifact id="DeviceRequest/example" key="DeviceRequest-example" name="DeviceRequest example"/>
+<artifact id="ValueSet/diet-type" key="ValueSet-diet-type" name="Diet Codes"/>
 <artifact id="Task/task-dispatch-example" key="Task-task-dispatch-example" name="Dispatch Task example"/>
 <artifact deprecated="true" id="SearchParameter/encounter-insurance" key="SearchParameter-encounter-insurance" name="Encounter Insurance Search Parameter"/>
 <artifact id="Encounter/example" key="Encounter-example" name="Encounter example"/>
+<artifact id="Binary/CRDServices" key="Binary-CRDServices" name="Example CRD Discovery Response"/>
+<artifact id="Binary/CRDServiceRequest3" key="Binary-CRDServiceRequest3" name="Example CRD Request with CommunicationRequest"/>
+<artifact id="Binary/CRDServiceRequest2" key="Binary-CRDServiceRequest2" name="Example CRD Request with MedicationRequests"/>
+<artifact id="Binary/CRDServiceRequest" key="Binary-CRDServiceRequest" name="Example CRD Request with ServiceRequests"/>
+<artifact id="Binary/CRDServiceRequest4" key="Binary-CRDServiceRequest4" name="Example CRD Request with appointment-book"/>
 <artifact id="Binary/CRDServiceResponse3" key="Binary-CRDServiceResponse3" name="Example CRD Response with simple Coverage Information"/>
 <artifact id="Binary/CRDServiceResponse" key="Binary-CRDServiceResponse" name="Example CRD Response with: Links, Information, Coverage Information, and Order Replacement example"/>
 <artifact id="Binary/CRDServiceResponse2" key="Binary-CRDServiceResponse2" name="Example CRD Response with: Order Replacement, Order supplement, Form Completion, Coverage Update, SMART launch"/>
-<artifact id="Binary/CRDServiceRequest3" key="Binary-CRDServiceRequest3" name="Example CRD Service Request with CommunicationRequest"/>
-<artifact id="Binary/CRDServiceRequest2" key="Binary-CRDServiceRequest2" name="Example CRD Service Request with MedicationRequests"/>
-<artifact id="Binary/CRDServiceRequest4" key="Binary-CRDServiceRequest4" name="Example CRD Service Request with appointment-book"/>
-<artifact id="Binary/CRDServiceRequest" key="Binary-CRDServiceRequest" name="Example CRD Service Requestion with ServiceRequests"/>
-<artifact id="Binary/CRDServices" key="Binary-CRDServices" name="Example CRD Services Response"/>
-<artifact id="Bundle/search-response" key="Bundle-search-response" name="Example EHR response"/>
-<artifact id="Bundle/search-request" key="Bundle-search-request" name="Example EHR search"/>
-<artifact id="ConceptMap/HL7Location-CRDTemp" key="ConceptMap-HL7Location-CRDTemp" name="HL7 Location code to CMS location code"/>
+<artifact deprecated="true" id="Bundle/search-response" key="Bundle-search-response" name="Example EHR response"/>
+<artifact deprecated="true" id="Bundle/search-request" key="Bundle-search-request" name="Example EHR search"/>
+<artifact deprecated="true" id="ConceptMap/HL7Location-CRDTemp" key="ConceptMap-HL7Location-CRDTemp" name="HL7 Location code to CMS location code"/>
+<artifact id="ValueSet/ICD10CM" key="ValueSet-ICD10CM" name="ICD10CM Disease codes"/>
 <artifact deprecated="true" id="StructureDefinition/ext-insurance" key="StructureDefinition-ext-insurance" name="InsuranceExtension"/>
 <artifact id="Location/example" key="Location-example" name="Location example"/>
 <artifact deprecated="true" id="SearchParameter/medicationrequest-insurance" key="SearchParameter-medicationrequest-insurance" name="MedicationRequest Insurance Search Parameter"/>
 <artifact id="MedicationRequest/annotated-example" key="MedicationRequest-annotated-example" name="MedicationRequest annotated example"/>
 <artifact id="MedicationRequest/example" key="MedicationRequest-example" name="MedicationRequest example"/>
+<artifact id="ValueSet/NUBCTypeOfBill" key="ValueSet-NUBCTypeOfBill" name="NUBC Type of Bill"/>
+<artifact id="ValueSet/NUCCCareProviderTaxonomyIndividualOrGroups" key="ValueSet-NUCCCareProviderTaxonomyIndividualOrGroups" name="NUCC Healthcare Provider Taxonomy Individual or Groups"/>
+<artifact id="ValueSet/NUCCCareProviderTaxonomyNonIndividual" key="ValueSet-NUCCCareProviderTaxonomyNonIndividual" name="NUCC Healthcare Provider Taxonomy Non-Individual"/>
+<artifact id="Requirements/fromNarrative" key="Requirements-fromNarrative" name="Narrative Conformance Statements"/>
+<artifact id="ValueSet/nutrient-code" key="ValueSet-nutrient-code" name="Nutrient Codes"/>
 <artifact deprecated="true" id="SearchParameter/nutritionorder-insurance" key="SearchParameter-nutritionorder-insurance" name="NutritionOrder Insurance Search Parameter"/>
 <artifact id="NutritionOrder/example" key="NutritionOrder-example" name="NutritionOrder example"/>
+<artifact id="ValueSet/coverageDetailNew" key="ValueSet-coverageDetailNew" name="Official CRD Coverage Detail Codes Value Set"/>
 <artifact id="Organization/example" key="Organization-example" name="Organization example"/>
 <artifact id="Patient/example" key="Patient-example" name="Patient example"/>
 <artifact deprecated="true" id="StructureDefinition/profile-patient-deident" key="StructureDefinition-profile-patient-deident" name="PatientDident"/>
@@ -146,10 +162,13 @@
 <artifact id="Practitioner/full" key="Practitioner-full" name="Practitioner full example"/>
 <artifact deprecated="true" id="ClaimResponse/priorauth-example" key="ClaimResponse-priorauth-example" name="Prior Authorization example"/>
 <artifact id="Task/questionnaire-example" key="Task-questionnaire-example" name="Questionnaire Task example"/>
+<artifact id="StructureDefinition/ext-request-category" key="StructureDefinition-ext-request-category" name="Request Category"/>
 <artifact deprecated="true" id="SearchParameter/servicerequest-insurance" key="SearchParameter-servicerequest-insurance" name="ServiceRequest Insurance Search Parameter"/>
 <artifact id="ServiceRequest/example" key="ServiceRequest-example" name="ServiceRequest example"/>
 <artifact deprecated="true" key="SupplyRequest" name="SupplyRequest"/>
+<artifact id="ValueSet/edible-substance-type" key="ValueSet-edible-substance-type" name="Types of Edible Substances"/>
 <artifact id="VisionPrescription/visionprescription-example" key="VisionPrescription-visionprescription-example" name="VisionPrescription example"/>
+<artifact id="ValueSet/X12ServiceType" key="ValueSet-X12ServiceType" name="X12 Service Type"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page deprecated="true" key="profiles" name="(profiles)"/>
@@ -160,12 +179,14 @@
 <page key="index" name="CRD IG Home Page"/>
 <page key="metrics" name="CRD Metrics"/>
 <page key="history" name="Change History"/>
+<page key="conformancedetails" name="Conformance Details"/>
 <page key="conformance" name="Conformance Expectations"/>
 <page key="downloads" name="Downloads"/>
 <page key="allartifacts" name="FHIR Artifacts"/>
 <page key="foundation" name="Foundational Requirements"/>
 <page key="implementation" name="Implementation Considerations"/>
-<page key="issues" name="Open Issues"/>
+<page deprecated="true" key="issues" name="Open Issues"/>
+<page key="operational" name="Operational Considerations"/>
 <page key="security" name="Privacy, Safety, and Security"/>
 <page key="credits" name="Project and Participants"/>
 <page key="background" name="Reading this IG"/>
