@@ -1,7 +1,8 @@
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/6.0.0-ballot" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-base" defaultVersion="5.0.0" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-base" url="http://hl7.org.au/fhir">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/6.0.0-ballot" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-base" defaultVersion="6.0.0" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-base" url="http://hl7.org.au/fhir">
 	<version code="current" url="https://build.fhir.org/ig/hl7au/au-fhir-base"/>  
-    <version code="6.0.0-preview" url="http://hl7.org.au/fhir/6.0.0-preview"/>  
-    <version code="6.0.0-ballot" url="http://hl7.org.au/fhir/6.0.0-ballot"/>  
+    <version code="6.0.0" url="http://hl7.org.au/fhir/6.0.0"/>  
+    <version code="6.0.0-preview" deprecated="true" url="http://hl7.org.au/fhir/6.0.0-preview"/>  
+    <version code="6.0.0-ballot" deprecated="true" url="http://hl7.org.au/fhir/6.0.0-ballot"/>  
     <version code="6.0.0-draft" deprecated="true" url="http://hl7.org.au/fhir/6.0.0-draft"/>  
     <version code="5.1.0-preview" deprecated="true" url="http://hl7.org.au/fhir/5.1.0-preview"/>  
     <version code="5.0.0" url="http://hl7.org.au/fhir/5.0.0"/>  
@@ -140,12 +141,11 @@
 	<artifact id="ValueSet/medicine-item-change" key="ValueSet-medicine-item-change" name="Medicine Item Change Valueset" />
 	<artifact id="ValueSet/au-timezone" key="ValueSet-au-timezone" name="AU Time Zone" />
 	<artifact id="CodeSystem/rsg-source-document-type" key="CodeSystem-rsg-source-document-type" name="AU Recorded Sex or Gender Source Document Type" />
-	<artifact id="CodeSystem/au-digital-health-source-system" key="CodeSystem-au-digital-health-source-system" name="AU Digital Health Source System" />
+	<artifact id="CodeSystem/au-digital-health-source-system" key="CodeSystem-au-digital-health-source-system" name="Australian Digital Health Source System" />
 	<artifact id="CodeSystem/rsg-type" key="CodeSystem-rsg-type" name="AU Recorded Sex or Gender Type Codes" />
 	<artifact id="ValueSet/name-context" key="ValueSet-name-context" name="Name Context Valueset" />
 	<artifact id="CodeSystem/name-context" key="CodeSystem-name-context" name="Name Context Codes" />
 	<artifact id="CodeSystem/resource-tag" key="CodeSystem-resource-tag" name="Resource Tag" />
-	<artifact id="CodeSystem/communicationrequest-reason" key="CodeSystem-communicationrequest-reason" name="Communication Request Reason" />
 	<artifact id="CodeSystem/task-business-status" key="CodeSystem-task-business-status" name="Task Business Status" />
 	<artifact id="CodeSystem/communication-request-category" key="CodeSystem-communication-request-category" name="Communication Request Category" />
 	<artifact id="ValueSet/au-jurisdiction-extended" key="ValueSet-au-jurisdiction-extended" name="Jurisdiction ValueSet - AU Extended" />
@@ -158,7 +158,7 @@
 	<artifact id="Observation/specimen-hepatitis-b-serology" key="Observation-specimen-hepatitis-b-serology" name="Observation - Measurement of Hepatitis B surface antibody" />
 	<artifact id="Specimen/serum" key="Specimen-serum" name="Specimen - Serum sample" />
 	<artifact id="ServiceRequest/hepatitis-b-antibody" key="ServiceRequest-hepatitis-b-antibody" name="ServiceRequest - for Hepatitis B surface antibody measurement" />
-	<artifact id="ServiceRequest/path-example0" key="ServiceRequest-path-example0" name="ServiceRequest - with multiple result copies to indicated" />
+	<artifact id="ServiceRequest/path-example0" key="ServiceRequest-path-example0" name="ServiceRequest - full blood count, and sex parameter for clinical use" />
 	<artifact id="Condition/example0" key="Condition-example0" name="Condition - with evidence and onset date-time" />
 	<artifact id="Coverage/dva" key="Coverage-dva" name="Coverage - DVA Gold Card" />
 	<artifact id="Coverage/private" key="Coverage-private" name="Coverage - private health insurer" />
@@ -181,13 +181,13 @@
 	<artifact id="HealthcareService/example1" key="HealthcareService-example1" name="HealthcareService - a typical Healthcare Service the Radiologist belongs to" />
 	<artifact id="Practitioner/example3" key="Practitioner-example3" name="Practitioner - a typical Practitioner as a General Practitioner" />
 	<artifact id="Practitioner/example4" key="Practitioner-example4" name="Practitioner - a typical Ahpra registered professional" />
-	<artifact id="Practitioner/example-sex-and-gender" key="Practitioner-example-sex-and-gender" name="Practitioner - for use in sex and gender" />
+	<artifact id="Practitioner/example-sex-and-gender" key="Practitioner-example-sex-and-gender" name="Practitioner - sex and gender" />
 	<artifact id="Endpoint/example0" key="Endpoint-example0" name="Endpoint - a secure messaging endpoint example" />
 	<artifact id="Location/example3" key="Location-example3" name="Location - of a Practitioner as a General Practitioner" />
 	<artifact id="Organization/example3" key="Organization-example3" name="Organization - a typical Organisation the General Practitioner belongs to" />
 	<artifact id="PractitionerRole/example3" key="PractitionerRole-example3" name="PractitionerRole - a typical Practitioner Role as a General Practitioner" />
 	<artifact id="HealthcareService/example3" key="HealthcareService-example3" name="HealthcareService - general practice" />
-	<artifact id="Patient/example-sex-and-gender" key="Patient-example-sex-and-gender" name="Patient - Transgender Person Example" />
+	<artifact id="Patient/example-sex-and-gender" key="Patient-example-sex-and-gender" name="Patient - as transgender person with sex and gender and sex parameter for clinical use" />
 	<artifact id="Patient/example0" key="Patient-example0" name="Patient - with IHI, Medicare Card Number, patient internal identifier and the extension for Indigenous Status" />
 	<artifact id="Patient/example1" key="Patient-example1" name="Patient - with IHI, DVA Number (with specific card colour) and the extension for Indigenous Status" />
 	<artifact id="Patient/example2" key="Patient-example2" name="Patient - with no birth date, and is eligible for Closing the Gap registration" />
@@ -201,7 +201,7 @@
 	<artifact id="Organization/example0" key="Organization-example0" name="Organization - with HPI-O" />
 	<artifact id="Organization/example6" key="Organization-example6" name="Organization - a Pathology organisation with NATA Number, ARBN, ABN, ACN, HPI-O and PAI-O" />
 	<artifact id="Organization/5-8631-1" key="Organization-5-8631-1" name="Organization - a Pathology organisation with HPI-O and is a parent organization" />
-	<artifact id="HealthcareService/example0" key="HealthcareService-example0" name="HealthcareService - with HPI-O and eligibility" />
+	<artifact id="HealthcareService/example0" key="HealthcareService-example0" name="HealthcareService - with HPI-O with varied contact details" />
 	<artifact id="Location/example0" key="Location-example0" name="Location - a hospital location with managing organisation of example0" />
 	<artifact id="Patient/DateAccuracyIndicatorAAAexample0" key="Patient-DateAccuracyIndicatorAAAexample0" name="Patient - with Birth Date Accuracy Indicator of AAA" />
 	<artifact id="Patient/DateAccuracyIndicatorAAUexample1" key="Patient-DateAccuracyIndicatorAAUexample1" name="Patient - with Birth Date Accuracy Indicator of AAU" />
@@ -217,12 +217,12 @@
 	<artifact id="HealthcareService/example2" key="HealthcareService-example2" name="HealthcareService - of a Pathologist" />
 	<artifact id="Practitioner/example2" key="Practitioner-example2" name="Practitioner - as a Pathologist" />
 	<artifact id="PractitionerRole/example4" key="PractitionerRole-example4" name="PractitionerRole - with assigning authority" />
-	<artifact id="Organization/example4" key="Organization-example4" name="Organization - with source" />
+	<artifact id="Organization/example4" key="Organization-example4" name="Organization - a hospital with an HPIO" />
 	<artifact id="RelatedPerson/example0" key="RelatedPerson-example0" name="RelatedPerson - as attester party" />
 	<artifact id="RelatedPerson/example1" key="RelatedPerson-example1" name="RelatedPerson - as a carer for an older patient" />
 	<artifact id="RelatedPerson/example2" key="RelatedPerson-example2" name="RelatedPerson - as a mother for the patient in example 4" />
 	<artifact id="RelatedPerson/example3" key="RelatedPerson-example3" name="RelatedPerson - as father" />
-	<artifact id="RelatedPerson/example-sex-and-gender" key="RelatedPerson-example-sex-and-gender" name="RelatedPerson - as family member, for use in sex and gender" />
+	<artifact id="RelatedPerson/example-sex-and-gender" key="RelatedPerson-example-sex-and-gender" name="RelatedPerson - as family member with sex and gender" />
 	<artifact id="Patient/example8" key="Patient-example8" name="Patient - male born in 1949 with address and contact details" />
 	<artifact id="Observation/norelevantfinding-example0" key="Observation-norelevantfinding-example0" name="Observation - of no relevant finding of procedure" />
 	<artifact id="Observation/norelevantfinding-example1" key="Observation-norelevantfinding-example1" name="Observation - of no relevant finding of immunisations" />
@@ -257,7 +257,7 @@
 	<artifact id="MedicationRequest/example1" key="MedicationRequest-example1" name="MedicationRequest - a prescription for Stribild tablet" />
 	<artifact id="MedicationRequest/example2" key="MedicationRequest-example2" name="MedicationRequest - Prescription with brand and generic name extensions" />
 	<artifact id="Encounter/example0" key="Encounter-example0" name="Encounter - with description" />
-	<artifact id="Encounter/example1" key="Encounter-example1" name="Encounter - with narative description" />
+	<artifact id="Encounter/example1" key="Encounter-example1" name="Encounter - Annual check up" />
 	<artifact id="List/example0" key="List-example0" name="List - Medicine list with referenced entries" />
 	<artifact id="List/example1" key="List-example1" name="List - Medicine list with no known current medicine" />
 	<artifact id="Bundle/example0" key="Bundle-example0" name="Bundle - Medicine list in a bundle" />
@@ -272,7 +272,7 @@
 	<artifact id="MedicationDispense/example0" key="MedicationDispense-example0" name="MedicationDispense - First dispense for Reaptan" />
 	<artifact id="StructureDefinition/au-residentialagedcareserviceidentifier" key="StructureDefinition-au-residentialagedcareserviceidentifier" name="AU Residential Aged Care Service Identifier" />
 	<artifact id="HealthcareService/example4" key="HealthcareService-example4" name="HealthcareService - Leafy Grove Home for the Aged" />
-	<artifact id="HealthcareService/example5" key="HealthcareService-example5" name="HealthcareService - Leafy Grove Home for the Not Very Aged" />
+	<artifact id="HealthcareService/example5" key="HealthcareService-example5" name="HealthcareService - Honourable Mark's Home For Aged Men" />
 	<artifact id="Location/example8" key="Location-example8" name="Location - Leafy Grove Home for the Aged" />
 	<artifact id="Location/example9" key="Location-example9" name="Location - Leafy Grove Home for the Not Very Aged" />
 	<artifact id="MedicationDispense/example1" key="MedicationDispense-example1" name="MedicationDispense - Second dispense for Reaptan" />
@@ -288,7 +288,8 @@
 	<artifact id="SearchParameter/servicerequest-supporting-info" key="SearchParameter-servicerequest-supporting-info" name="ServiceRequestSupportingInfo" />
 	<artifact id="ValueSet/au-coverage-type-extended" key="ValueSet-au-coverage-type-extended" name="Coverage Type and Self-Pay Codes - AU Extended" />
 	<artifact id="ValueSet/rsg-source" key="ValueSet-rsg-source" name="AU Recorded Sex or Gender (RSG) Source" />
-	<artifact id="StructureDefinition/ethnicity" key="StructureDefinition-ethnicity" name="Ethnicity" deprecated="true"/>
+	<artifact id="CodeSystem/communicationrequest-reason" key="CodeSystem-communicationrequest-reason" name="Communication Request Reason" deprecated="true"/>
+	<artifact id="StructureDefinition/ethnicity" key="StructureDefinition-ethnicity" name="Ethnicity"/>
 	<artifact id="SearchParameter/patient-gender-identity" key="SearchParameter-patient-gender-identity" name="PatientGenderIdentity" deprecated="true"/>
 	<artifact id="StructureDefinition/individual-recordedSexOrGender" key="StructureDefinition-individual-recordedSexOrGender" name="Person Recorded Sex Or Gender" deprecated="true"/>
 	<artifact id="ValueSet/recorded-sex-or-gender-type" key="ValueSet-recorded-sex-or-gender-type" name="Recorded Sex Or Gender Type" deprecated="true"/>
@@ -297,7 +298,7 @@
 	<artifact id="CodeSystem/au-coverage-selfpay" key="CodeSystem-au-coverage-selfpay" name="Coverage SelfPay Codes AU" deprecated="true"/>
 	<artifact id="ValueSet/au-coverage-selfpay-extended" key="ValueSet-au-coverage-selfpay-extended" name="Coverage SelfPay Codes - AU Extended" deprecated="true"/>
 	<artifact id="ValueSet/rsg-source-document-jurisdiction" key="ValueSet-rsg-source-document-jurisdiction" name="AU Recorded Sex or Gender (RSG) Source Document Jurisdiction" deprecated="true"/>
-	<artifact id="Encounter/example2" key="Encounter-example2" name="Encounter - Annual check up" deprecated="true"/>
+	<artifact id="Encounter/example2" key="Encounter-example2" name="Encounter - Annual check up deprecated" deprecated="true"/>
 	<artifact id="StructureDefinition/au-healthprogramparticipation" key="StructureDefinition-au-healthprogramparticipation" name="AU Health Program Participation Summary" deprecated="true"/>
 	<artifact id="CodeSystem/au-observation-category" key="CodeSystem-au-observation-category" name="Observation Category Codes AU" deprecated="true"/>
 	<artifact id="ValueSet/au-observation-category-extended" key="ValueSet-au-observation-category-extended" name="Observation Category Codes - AU Extended" deprecated="true"/>
