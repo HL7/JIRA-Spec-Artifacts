@@ -1,8 +1,9 @@
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/ps/0.3.0-ballot" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-ps" defaultVersion="0.3.0-ballot" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-ps" url="http://hl7.org.au/fhir/ps">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/ps/1.0.0-ballot" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-ps" defaultVersion="1.0.0-ballot" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-ps" url="http://hl7.org.au/fhir/ps">
 	<version code="current" url="https://build.fhir.org/ig/hl7au/au-fhir-ps"/>  
-    <version code="0.5.0-preview" url="http://hl7.org.au/fhir/ps/0.5.0-preview"/>  
-    <version code="0.4.0-draft" url="http://hl7.org.au/fhir/ps/0.4.0-draft"/>  
-    <version code="0.3.0-ballot" url="http://hl7.org.au/fhir/ps/0.3.0-ballot"/>  
+    <version code="1.0.0-ballot" url="http://hl7.org.au/fhir/ps/1.0.0-ballot"/>  
+    <version code="0.5.0-preview" deprecated="true" url="http://hl7.org.au/fhir/ps/0.5.0-preview"/>  
+    <version code="0.4.0-draft" deprecated="true" url="http://hl7.org.au/fhir/ps/0.4.0-draft"/>  
+    <version code="0.3.0-ballot" deprecated="true" url="http://hl7.org.au/fhir/ps/0.3.0-ballot"/>  
     <version code="0.2.0-preview" deprecated="true" url="http://hl7.org.au/fhir/ps/0.2.0-preview"/>  
     <version code="0.1.0-preview" deprecated="true" url="http://hl7.org.au/fhir/ps/0.1.0-preview"/>	
 	<artifactPageExtension value="-definitions"/>
@@ -26,12 +27,12 @@
 	<artifact id="StructureDefinition/au-ps-relatedperson" key="StructureDefinition-au-ps-relatedperson" name="AU PS RelatedPerson" />
 	<artifact id="StructureDefinition/au-ps-smokingstatus" key="StructureDefinition-au-ps-smokingstatus" name="AU PS Smoking Status" />
 	<artifact id="StructureDefinition/au-ps-diagnosticresult-path" key="StructureDefinition-au-ps-diagnosticresult-path" name="AU PS Pathology Result Observation" />
-	<artifact id="Bundle/aups-section-emptyreason" key="Bundle-aups-section-emptyreason" name="Bundle - Section empty reason" />
-	<artifact id="Bundle/aups-noknownx" key="Bundle-aups-noknownx" name="Bundle - No Known X" />
-	<artifact id="Bundle/aups-basicsummary" key="Bundle-aups-basicsummary" name="Bundle - Basic summary" />
-	<artifact id="Bundle/aups-referral-endoconsult-curated" key="Bundle-aups-referral-endoconsult-curated" name="Bundle - Patient Summary for Joyce Johnson as of 28 OCT 2024 (with electronic signature)" />
-	<artifact id="Bundle/aups-referral-endoconsult-autogen" key="Bundle-aups-referral-endoconsult-autogen" name="Bundle - Patient Summary for Joyce Johnson as of 07 NOV 2024 (with digital signature)" />
-	<artifact id="Bundle/aups-gpvisit-retrieval" key="Bundle-aups-gpvisit-retrieval" name="Bundle - Jeramy’s Patient Summary as of 27 May 2025" />
+	<artifact id="Bundle/aups-section-emptyreason" key="Bundle-aups-section-emptyreason" name="Section empty reason" />
+	<artifact id="Bundle/aups-noknownx" key="Bundle-aups-noknownx" name="No Known X" />
+	<artifact id="Bundle/aups-basicsummary" key="Bundle-aups-basicsummary" name="Basic Summary" />
+	<artifact id="Bundle/aups-referral-endoconsult-curated" key="Bundle-aups-referral-endoconsult-curated" name="Joyce 28 October" />
+	<artifact id="Bundle/aups-referral-endoconsult-autogen" key="Bundle-aups-referral-endoconsult-autogen" name="Joyce 07 November 2024" />
+	<artifact id="Bundle/aups-gpvisit-retrieval" key="Bundle-aups-gpvisit-retrieval" name="Jeramy 27 May" />
 	<artifact id="StructureDefinition/au-ps-patient" key="StructureDefinition-au-ps-patient" name="AU PS Patient" />
 	<artifact id="Bundle/section-emptyreason" key="Bundle-section-emptyreason" name="Bundle - Section empty reason." deprecated="true"/>
 	<artifact id="Bundle/basicsummary" key="Bundle-basicsummary" name="Bundle - Basic summary." deprecated="true"/>
@@ -52,7 +53,7 @@
 	<page key="comparison" name="Comparison With Other National and International IGs"/>
 	<page key="variance" name="AU Variance Statement"/>
 	<page key="future" name="Future of AU Patient Summary"/>
-	<page key="usecase" name="Example Use Cases"/>
+	<page key="usecase" name="Use Cases"/>
 	<page key="uc-interstate" name="Interstate GP Visit"/>
 	<page key="uc-referral" name="Referral to Specialist and Allied Health"/>
 	<page key="security" name="Security and Privacy"/>
