@@ -1,7 +1,8 @@
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/core/2.0.0-ballot" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-core" defaultVersion="1.0.0" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-core" url="http://hl7.org.au/fhir/core">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/core/2.0.0-ballot" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-core" defaultVersion="2.0.0" defaultWorkgroup="au-fhir" gitUrl="https://github.com/hl7au/au-fhir-core" url="http://hl7.org.au/fhir/core">
 	<version code="current" url="https://build.fhir.org/ig/hl7au/au-fhir-core"/>  
-    <version code="2.0.0-preview" url="http://hl7.org.au/fhir/core/2.0.0-preview"/>  
-    <version code="2.0.0-ballot" url="http://hl7.org.au/fhir/core/2.0.0-ballot"/>  
+    <version code="2.0.0" url="http://hl7.org.au/fhir/core/2.0.0"/>  
+    <version code="2.0.0-preview" deprecated="true" url="http://hl7.org.au/fhir/core/2.0.0-preview"/>  
+    <version code="2.0.0-ballot" deprecated="true" url="http://hl7.org.au/fhir/core/2.0.0-ballot"/>  
     <version code="2.0.0-draft" deprecated="true" url="http://hl7.org.au/fhir/core/2.0.0-draft"/>  
     <version code="1.1.0-preview" deprecated="true" url="http://hl7.org.au/fhir/core/1.1.0-preview"/>  
     <version code="1.0.0" url="http://hl7.org.au/fhir/core/1.0.0"/>  
@@ -60,7 +61,7 @@
 	<artifact id="Medication/1active-ingredient" key="Medication-1active-ingredient" name="Medication - Branded pack with one active ingredient" />
 	<artifact id="Medication/2active-ingredients" key="Medication-2active-ingredients" name="Medication - Product with two active ingredients" />
 	<artifact id="Medication/simvastatin" key="Medication-simvastatin" name="Medication - Simvastatin 40 MG Disintegrating Oral Tablet" />
-	<artifact id="MedicationRequest/paracetamol-codeine" key="MedicationRequest-paracetamol-codeine" name="MedicationRequest - active prescription, paracetamol 500 mg + codeine phosphate hemihydrate 30 mg" />
+	<artifact id="MedicationRequest/paracetamol-codeine" key="MedicationRequest-paracetamol-codeine" name="MedicationRequest - prescription, paracetamol 500 mg + codeine phosphate hemihydrate 30 mg" />
 	<artifact id="MedicationRequest/reaptan" key="MedicationRequest-reaptan" name="MedicationRequest - active prescription, Reaptan" />
 	<artifact id="MedicationRequest/simvastatin" key="MedicationRequest-simvastatin" name="MedicationRequest - active prescription, Simvastatin" />
 	<artifact id="MedicationStatement/active-bisoprolol" key="MedicationStatement-active-bisoprolol" name="MedicationStatement - active use of Bisoprolol 2.5mg" />
@@ -87,7 +88,7 @@
 	<artifact id="Organization/bobrester-medical-center" key="Organization-bobrester-medical-center" name="Organization - Bobrester Medical Centre" />
 	<artifact id="Organization/murrabit-hospital" key="Organization-murrabit-hospital" name="Organization - Murrabit Public Hospital" />
 	<artifact id="Organization/mitchells-hill-audiology" key="Organization-mitchells-hill-audiology" name="Organization - Mitchells Hill Audiology" />
-	<artifact id="Patient/ronny-irvine" key="Patient-ronny-irvine" name="Patient - Ronny Lawrence Irvine (missing data for birth date)" />
+	<artifact id="Patient/ronny-irvine" key="Patient-ronny-irvine" name="Patient - Ronny Lawrence Irvine" />
 	<artifact id="Patient/bennelong-anne" key="Patient-bennelong-anne" name="Patient - Mrs. Anne Bennelong" />
 	<artifact id="Patient/wang-li" key="Patient-wang-li" name="Patient - Mr. Li Wang" />
 	<artifact id="Patient/banks-mia-leanne" key="Patient-banks-mia-leanne" name="Patient - Mia Leanne Banks" />
@@ -97,8 +98,8 @@
 	<artifact id="Practitioner/chau-fryer" key="Practitioner-chau-fryer" name="Practitioner - Dr. Chau FRYER" />
 	<artifact id="Practitioner/darleen-mackay" key="Practitioner-darleen-mackay" name="Practitioner - Darleen MACKAY" />
 	<artifact id="PractitionerRole/bobrester-bob-gp" key="PractitionerRole-bobrester-bob-gp" name="PractitionerRole - General practitioner" />
-	<artifact id="PractitionerRole/cardiologist-sallie-sutherland" key="PractitionerRole-cardiologist-sallie-sutherland" name="PractitionerRole - Cardiologist1" />
-	<artifact id="PractitionerRole/surgeon-chau-fryer" key="PractitionerRole-surgeon-chau-fryer" name="PractitionerRole - Surgeon Fryer" />
+	<artifact id="PractitionerRole/cardiologist-sallie-sutherland" key="PractitionerRole-cardiologist-sallie-sutherland" name="PractitionerRole - Cardiologist" />
+	<artifact id="PractitionerRole/surgeon-chau-fryer" key="PractitionerRole-surgeon-chau-fryer" name="PractitionerRole - Surgeon" />
 	<artifact id="PractitionerRole/nephrologist-darleen-mackay" key="PractitionerRole-nephrologist-darleen-mackay" name="PractitionerRole - Nephrologist" />
 	<artifact id="Procedure/dialysis" key="Procedure-dialysis" name="Procedure - Dialysis" />
 	<artifact id="Procedure/stentinsertion" key="Procedure-stentinsertion" name="Procedure - Stent insertion" />
@@ -217,14 +218,14 @@
 	<artifact id="Practitioner/sandyson-sandy" key="Practitioner-sandyson-sandy" name="Practitioner - Ms. Sandy Sandyson" deprecated="true"/>
 	<artifact id="Practitioner/surgeon-david" key="Practitioner-surgeon-david" name="Practitioner - Dr. David Surgeon" deprecated="true"/>
 	<artifact id="PractitionerRole/audiologist-bradley-jill" key="PractitionerRole-audiologist-bradley-jill" name="PractitionerRole - Audiologist" deprecated="true"/>
-	<artifact id="PractitionerRole/cardiologist-cardy-igist" key="PractitionerRole-cardiologist-cardy-igist" name="PractitionerRole - Cardiologist" deprecated="true"/>
+	<artifact id="PractitionerRole/cardiologist-cardy-igist" key="PractitionerRole-cardiologist-cardy-igist" name="PractitionerRole - Cardiologist Deprecated" deprecated="true"/>
 	<artifact id="PractitionerRole/dietician-tan-patricia" key="PractitionerRole-dietician-tan-patricia" name="PractitionerRole - Dietician" deprecated="true"/>
 	<artifact id="PractitionerRole/gp-primary-peter" key="PractitionerRole-gp-primary-peter" name="PractitionerRole - General Practitioner (part of multiple chronic condition care plan)" deprecated="true"/>
 	<artifact id="PractitionerRole/nephrologist-levin-henry" key="PractitionerRole-nephrologist-levin-henry" name="PractitionerRole - Nephrologist (part of multiple chronic condition care plan)" deprecated="true"/>
 	<artifact id="PractitionerRole/np-nurse-nancy" key="PractitionerRole-np-nurse-nancy" name="PractitionerRole - Registered nurse (part of multiple chronic condition care plan)" deprecated="true"/>
 	<artifact id="PractitionerRole/retail-pharmacist" key="PractitionerRole-retail-pharmacist" name="PractitionerRole - Retail pharmacist" deprecated="true"/>
 	<artifact id="PractitionerRole/sandyson-sandy-nurse" key="PractitionerRole-sandyson-sandy-nurse" name="PractitionerRole - Registered nurse" deprecated="true"/>
-	<artifact id="PractitionerRole/surgeon-david-surgeon" key="PractitionerRole-surgeon-david-surgeon" name="PractitionerRole - Surgeon" deprecated="true"/>
+	<artifact id="PractitionerRole/surgeon-david-surgeon" key="PractitionerRole-surgeon-david-surgeon" name="PractitionerRole - Surgeon Deprecated" deprecated="true"/>
 	<artifact id="Procedure/cryotherapy" key="Procedure-cryotherapy" name="Procedure - Cryotherapy" deprecated="true"/>
 	<artifact id="Provenance/delete" key="Provenance-delete" name="Provenance - delete a specific document reference version" deprecated="true"/>
 	<artifact id="Provenance/signature" key="Provenance-signature" name="Provenance - Signature for advance care plan" deprecated="true"/>
