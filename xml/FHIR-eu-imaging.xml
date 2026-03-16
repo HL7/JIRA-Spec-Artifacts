@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/imaging/1.0.0-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/imaging-r4" defaultVersion="1.0.0-ballot" defaultWorkgroup="eu" gitUrl="https://github.com/HL7-eu/imaging-r4" url="http://hl7.eu/fhir/imaging">
+<version code="current" url="https://build.fhir.org/ig/hl7-eu/imaging-r4"/>
+<version code="1.0.0-ballot" url="http://hl7.eu/fhir/imaging/1.0.0-ballot"/>
+<version code="1.0.0-alpha" deprecated="true" url="http://hl7.eu/fhir/imaging/xtehr"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="ActorDefinition/EuImagingReportConsumer" key="ActorDefinition-EuImagingReportConsumer" name="ActorDefinition: Imaging Report Consumer"/>
+<artifact id="ActorDefinition/EuImagingReportProducer" key="ActorDefinition-EuImagingReportProducer" name="ActorDefinition: Imaging Report Producer"/>
+<artifact id="StructureDefinition/AdverseEventEuImaging" key="StructureDefinition-AdverseEventEuImaging" name="AdverseEvent: Imaging Adverse Event"/>
+<artifact id="StructureDefinition/SrInstanceImagingSelectionEuImaging" key="StructureDefinition-SrInstanceImagingSelectionEuImaging" name="Basic-ImagingSelection: DICOM SR Instance"/>
+<artifact id="StructureDefinition/ImagingSelectionEuImaging" key="StructureDefinition-ImagingSelectionEuImaging" name="Basic-ImagingSelection: General"/>
+<artifact id="Binary/BinarySemistructuredReport" key="Binary-BinarySemistructuredReport" name="Binary Semistructured Report"/>
+<artifact id="Binary/BinaryStructuredReport" key="Binary-BinaryStructuredReport" name="Binary Structured Report"/>
+<artifact id="Binary/BinaryUnstructuredReport" key="Binary-BinaryUnstructuredReport" name="Binary Unstructured Report"/>
+<artifact id="StructureDefinition/BundleReportEuImaging" key="StructureDefinition-BundleReportEuImaging" name="Bundle: Imaging Report"/>
+<artifact id="StructureDefinition/BundleReportMinimalMetadataEuImaging" key="StructureDefinition-BundleReportMinimalMetadataEuImaging" name="Bundle: Imaging Report Minimal Metadata"/>
+<artifact id="Bundle/bundle-report-minimal-metadata-unstructured" key="Bundle-bundle-report-minimal-metadata-unstructured" name="Bundle: Imaging Report minimal metadata (unstructured example)"/>
+<artifact id="Bundle/bundle-report-semi-structured" key="Bundle-bundle-report-semi-structured" name="Bundle: Imaging Report semi-structured"/>
+<artifact id="Bundle/bundle-report-structured" key="Bundle-bundle-report-structured" name="Bundle: Imaging Report structured"/>
+<artifact id="StructureDefinition/CompositionEuImaging" key="StructureDefinition-CompositionEuImaging" name="Composition: Imaging Report"/>
+<artifact id="StructureDefinition/composition-obligation-eu-imaging" key="StructureDefinition-composition-obligation-eu-imaging" name="Composition: Imaging Report: Obligations"/>
+<artifact id="Composition/CompositionSemiStructured" key="Composition-CompositionSemiStructured" name="Composition: semi-structured"/>
+<artifact id="Composition/CompositionStructured" key="Composition-CompositionStructured" name="Composition: structured report"/>
+<artifact id="StructureDefinition/DeviceEuImaging" key="StructureDefinition-DeviceEuImaging" name="Device: Imaging Device"/>
+<artifact id="StructureDefinition/DiagnosticReportEuImaging" key="StructureDefinition-DiagnosticReportEuImaging" name="DiagnosticReport: Imaging Report"/>
+<artifact id="StructureDefinition/DiagnosticReportEuImagingMinimalMetadata" key="StructureDefinition-DiagnosticReportEuImagingMinimalMetadata" name="DiagnosticReport: Imaging Report Minimal Metadata"/>
+<artifact id="StructureDefinition/diagnostic-report-obligation-eu-imaging" key="StructureDefinition-diagnostic-report-obligation-eu-imaging" name="DiagnosticReport: Imaging Report: Obligations"/>
+<artifact id="DiagnosticReport/DiagnosticReportSemiStructured" key="DiagnosticReport-DiagnosticReportSemiStructured" name="DiagnosticReport: semi-structured report"/>
+<artifact id="DiagnosticReport/DiagnosticReportStructured" key="DiagnosticReport-DiagnosticReportStructured" name="DiagnosticReport: structured report"/>
+<artifact id="DiagnosticReport/DiagnosticReportMinimalMetadata" key="DiagnosticReport-DiagnosticReportMinimalMetadata" name="DiagnosticReport: unstructured minimal metadata"/>
+<artifact id="StructureDefinition/DocumentReferenceKeyImageEuImaging" key="StructureDefinition-DocumentReferenceKeyImageEuImaging" name="DocumentReference: Key Image"/>
+<artifact id="DocumentReference/DocumentReferenceSemiStructured" key="DocumentReference-DocumentReferenceSemiStructured" name="DocumentReference: Renderable format semi-structured"/>
+<artifact id="DocumentReference/DocumentReferenceStructuredReport" key="DocumentReference-DocumentReferenceStructuredReport" name="DocumentReference: Renderable format structured"/>
+<artifact id="DocumentReference/RenderableFormatWithBasicMetadata" key="DocumentReference-RenderableFormatWithBasicMetadata" name="DocumentReference: Renderable format with basic metadata"/>
+<artifact id="DocumentReference/StructuredKeyImageRest" key="DocumentReference-StructuredKeyImageRest" name="DocumentReference: key image rest"/>
+<artifact id="DocumentReference/StructuredKeyImageStress" key="DocumentReference-StructuredKeyImageStress" name="DocumentReference: key image stress"/>
+<artifact id="DocumentReference/WMSIImage" key="DocumentReference-WMSIImage" name="DocumentReference: structured report WMSI image"/>
+<artifact id="CapabilityStatement/EehrxfImagingDocumentAccessProvider" key="CapabilityStatement-EehrxfImagingDocumentAccessProvider" name="EEHRxF Imaging Report Document Access Provider CapabilityStatement"/>
+<artifact id="CapabilityStatement/EehrxfImagingReportDocumentConsumer" key="CapabilityStatement-EehrxfImagingReportDocumentConsumer" name="EEHRxF Imaging Report Document Consumer CapabilityStatement"/>
+<artifact id="CapabilityStatement/EeehrxfImagingReportResourceAccessProvider" key="CapabilityStatement-EeehrxfImagingReportResourceAccessProvider" name="EEHRxF Imaging Report Resource Access Provider CapabilityStatement"/>
+<artifact id="CapabilityStatement/EeehrxfImagingReportResourceConsumer" key="CapabilityStatement-EeehrxfImagingReportResourceConsumer" name="EEHRxF Imaging Report Resource Consumer CapabilityStatement"/>
+<artifact id="StructureDefinition/DocumentReferenceImagingReport" key="StructureDefinition-DocumentReferenceImagingReport" name="EEHRxF MHD DocumentReference Profile for Imaging Reports"/>
+<artifact id="StructureDefinition/care-plan-obligation-eu-imaging" key="StructureDefinition-care-plan-obligation-eu-imaging" name="EuCarePlan: Obligations"/>
+<artifact id="StructureDefinition/AnatomicalRegionExtension" key="StructureDefinition-AnatomicalRegionExtension" name="Extension: Anatomical Region"/>
+<artifact id="StructureDefinition/DeviceAttesterExt" key="StructureDefinition-DeviceAttesterExt" name="Extension: Device Attester"/>
+<artifact id="StructureDefinition/im-documentreference-content-profile" key="StructureDefinition-im-documentreference-content-profile" name="Extension: DocumentReference content profile"/>
+<artifact id="StructureDefinition/HL7IDRCommunication" key="StructureDefinition-HL7IDRCommunication" name="Extension: HL7IDR Communication"/>
+<artifact id="StructureDefinition/HL7IDRComparisonStudy" key="StructureDefinition-HL7IDRComparisonStudy" name="Extension: HL7IDR DiagnosticReport Comparison Study"/>
+<artifact id="StructureDefinition/HL7IDRImagingProcedure" key="StructureDefinition-HL7IDRImagingProcedure" name="Extension: HL7IDR Imaging Procedure"/>
+<artifact id="StructureDefinition/HL7IDRImpression" key="StructureDefinition-HL7IDRImpression" name="Extension: HL7IDR Impression"/>
+<artifact id="StructureDefinition/HL7IDRFinding" key="StructureDefinition-HL7IDRFinding" name="Extension: HL7IDR KeyImage Finding"/>
+<artifact id="StructureDefinition/HL7IDRPatientHistory" key="StructureDefinition-HL7IDRPatientHistory" name="Extension: HL7IDR Patient History"/>
+<artifact id="StructureDefinition/HL7IDRRecommendation" key="StructureDefinition-HL7IDRRecommendation" name="Extension: HL7IDR Recommendation"/>
+<artifact id="StructureDefinition/ImagingStudyEuImagingInstanceDescription" key="StructureDefinition-ImagingStudyEuImagingInstanceDescription" name="Extension: Instance Description"/>
+<artifact id="StructureDefinition/NumberOfFrames" key="StructureDefinition-NumberOfFrames" name="Extension: Number of Frames"/>
+<artifact id="StructureDefinition/RadiationDose" key="StructureDefinition-RadiationDose" name="Extension: Radiation Dose"/>
+<artifact id="StructureDefinition/AccessionNumberIdentifierEuImaging" key="StructureDefinition-AccessionNumberIdentifierEuImaging" name="Identifier: Accession Number"/>
+<artifact id="StructureDefinition/SopInstanceUidIdentifierEuImaging" key="StructureDefinition-SopInstanceUidIdentifierEuImaging" name="Identifier: SOP Instance UID"/>
+<artifact id="StructureDefinition/StudyInstanceUidIdentifierEuImaging" key="StructureDefinition-StudyInstanceUidIdentifierEuImaging" name="Identifier: Study Instance UID"/>
+<artifact id="StructureDefinition/ImagingStudyEuImaging" key="StructureDefinition-ImagingStudyEuImaging" name="ImagingStudy: General"/>
+<artifact id="StructureDefinition/imaging-study-obligation-eu-imaging" key="StructureDefinition-imaging-study-obligation-eu-imaging" name="ImagingStudy: General: Obligations"/>
+<artifact id="ImagingStudy/ImagingStudySemiStructuredReport1" key="ImagingStudy-ImagingStudySemiStructuredReport1" name="ImagingStudy: semi-structured report 1"/>
+<artifact id="ImagingStudy/ImagingStudySemiStructuredReport2" key="ImagingStudy-ImagingStudySemiStructuredReport2" name="ImagingStudy: semi-structured report 2"/>
+<artifact id="ImagingStudy/ImagingStudStructuredReport" key="ImagingStudy-ImagingStudStructuredReport" name="ImagingStudy: structured-report study"/>
+<artifact id="StructureDefinition/ImagingSelectionKeyImageEuImaging" key="StructureDefinition-ImagingSelectionKeyImageEuImaging" name="Key images represented as an ImagingSelection for R4"/>
+<artifact id="StructureDefinition/medication-administration-obligation-eu-imaging" key="StructureDefinition-medication-administration-obligation-eu-imaging" name="MedicationAdministration: Obligations"/>
+<artifact id="Observation/ObservationAnchor" key="Observation-ObservationAnchor" name="Observation Anchor"/>
+<artifact id="StructureDefinition/ObservationGestationalAgeEuImaging" key="StructureDefinition-ObservationGestationalAgeEuImaging" name="Observation: Gestational Age"/>
+<artifact id="StructureDefinition/ObservationFindingEuImaging" key="StructureDefinition-ObservationFindingEuImaging" name="Observation: Imaging Finding"/>
+<artifact id="StructureDefinition/observation-finding-obligation-eu-imaging" key="StructureDefinition-observation-finding-obligation-eu-imaging" name="Observation: Imaging Finding: Obligations"/>
+<artifact id="StructureDefinition/ObservationRadiationDoseEuImaging" key="StructureDefinition-ObservationRadiationDoseEuImaging" name="Observation: Radiation Dose"/>
+<artifact id="Observation/RestWmsi17" key="Observation-RestWmsi17" name="Observation: WMSI apex at rest - normal"/>
+<artifact id="Observation/StressWmsi17" key="Observation-StressWmsi17" name="Observation: WMSI apex under stress - normal"/>
+<artifact id="Observation/RestWmsi13" key="Observation-RestWmsi13" name="Observation: WMSI apical anterior at rest - normal"/>
+<artifact id="Observation/StressWmsi13" key="Observation-StressWmsi13" name="Observation: WMSI apical anterior under stress - normal"/>
+<artifact id="Observation/RestWmsi15" key="Observation-RestWmsi15" name="Observation: WMSI apical inferior at rest - normal"/>
+<artifact id="Observation/StressWmsi15" key="Observation-StressWmsi15" name="Observation: WMSI apical inferior under stress - normal"/>
+<artifact id="Observation/RestWmsi16" key="Observation-RestWmsi16" name="Observation: WMSI apical lateral at rest - normal"/>
+<artifact id="Observation/StressWmsi16" key="Observation-StressWmsi16" name="Observation: WMSI apical lateral under stress - normal"/>
+<artifact id="Observation/RestWmsi14" key="Observation-RestWmsi14" name="Observation: WMSI apical septum at rest - normal"/>
+<artifact id="Observation/StressWmsi14" key="Observation-StressWmsi14" name="Observation: WMSI apical septum under stress - normal"/>
+<artifact id="Observation/RestWmsi01" key="Observation-RestWmsi01" name="Observation: WMSI basal anterior at rest - hypokinetic"/>
+<artifact id="Observation/RestWmsi06" key="Observation-RestWmsi06" name="Observation: WMSI basal anterior lateral at rest - normal"/>
+<artifact id="Observation/StressWmsi06" key="Observation-StressWmsi06" name="Observation: WMSI basal anterior lateral under stress - normal"/>
+<artifact id="Observation/RestWmsi02" key="Observation-RestWmsi02" name="Observation: WMSI basal anterior septum at rest - normal"/>
+<artifact id="Observation/StressWmsi02" key="Observation-StressWmsi02" name="Observation: WMSI basal anterior septum under stress - normal"/>
+<artifact id="Observation/StressWmsi01" key="Observation-StressWmsi01" name="Observation: WMSI basal anterior under stress - hypokinetic"/>
+<artifact id="Observation/RestWmsi04" key="Observation-RestWmsi04" name="Observation: WMSI basal inferior at rest - normal"/>
+<artifact id="Observation/RestWmsi05" key="Observation-RestWmsi05" name="Observation: WMSI basal inferior lateral at rest - hypokinetic"/>
+<artifact id="Observation/StressWmsi05" key="Observation-StressWmsi05" name="Observation: WMSI basal inferior lateral under stress - mildly hypokinetic"/>
+<artifact id="Observation/RestWmsi03" key="Observation-RestWmsi03" name="Observation: WMSI basal inferior septum at rest - normal"/>
+<artifact id="Observation/StressWmsi03" key="Observation-StressWmsi03" name="Observation: WMSI basal inferior septum under stress - normal"/>
+<artifact id="Observation/StressWmsi04" key="Observation-StressWmsi04" name="Observation: WMSI basal inferior under stress - normal"/>
+<artifact id="Observation/RestWmsi07" key="Observation-RestWmsi07" name="Observation: WMSI mid anterior at rest - normal"/>
+<artifact id="Observation/RestWmsi12" key="Observation-RestWmsi12" name="Observation: WMSI mid anterior lateral at rest - normal"/>
+<artifact id="Observation/StressWmsi12" key="Observation-StressWmsi12" name="Observation: WMSI mid anterior lateral under stress - normal"/>
+<artifact id="Observation/RestWmsi08" key="Observation-RestWmsi08" name="Observation: WMSI mid anterior septum at rest - normal"/>
+<artifact id="Observation/StressWmsi08" key="Observation-StressWmsi08" name="Observation: WMSI mid anterior septum under stress - normal"/>
+<artifact id="Observation/StressWmsi07" key="Observation-StressWmsi07" name="Observation: WMSI mid anterior under stress - normal"/>
+<artifact id="Observation/RestWmsi10" key="Observation-RestWmsi10" name="Observation: WMSI mid inferior at rest - normal"/>
+<artifact id="Observation/RestWmsi11" key="Observation-RestWmsi11" name="Observation: WMSI mid inferior lateral at rest - normal"/>
+<artifact id="Observation/StressWmsi11" key="Observation-StressWmsi11" name="Observation: WMSI mid inferior lateral under stress - normal"/>
+<artifact id="Observation/RestWmsi09" key="Observation-RestWmsi09" name="Observation: WMSI mid inferior septum at rest - normal"/>
+<artifact id="Observation/StressWmsi09" key="Observation-StressWmsi09" name="Observation: WMSI mid inferior septum under stress - normal"/>
+<artifact id="Observation/StressWmsi10" key="Observation-StressWmsi10" name="Observation: WMSI mid inferior under stress - normal"/>
+<artifact id="Observation/BPObservation" key="Observation-BPObservation" name="Observation: patient blood pressure"/>
+<artifact id="Observation/HRObservation" key="Observation-HRObservation" name="Observation: patient heart rate"/>
+<artifact id="Observation/HeightObservation" key="Observation-HeightObservation" name="Observation: patient height"/>
+<artifact id="Observation/WeightObservation" key="Observation-WeightObservation" name="Observation: patient weight"/>
+<artifact id="StructureDefinition/observation-radiation-dose-obligation-eu-imaging" key="StructureDefinition-observation-radiation-dose-obligation-eu-imaging" name="ObservationRadiationDoseEuImaging: Obligations"/>
+<artifact id="OperationDefinition/DiagnosticReport-fhir-report" key="OperationDefinition-DiagnosticReport-fhir-report" name="OperationDefinition: $document on DiagnosticReport"/>
+<artifact id="Organization/OrganizationSemiStructuredReport" key="Organization-OrganizationSemiStructuredReport" name="Organization: semi-structured"/>
+<artifact id="Organization/OrganizationStructuredReport" key="Organization-OrganizationStructuredReport" name="Organization: structured report"/>
+<artifact id="Organization/OrganizationUnstructuredReport" key="Organization-OrganizationUnstructuredReport" name="Organization: unstructured report"/>
+<artifact id="Patient/PatientSemiStructuredReport" key="Patient-PatientSemiStructuredReport" name="Patient: semi-structured report"/>
+<artifact id="Patient/PatientStructuredReport" key="Patient-PatientStructuredReport" name="Patient: structured report"/>
+<artifact id="Patient/PatientUnstructuredReport" key="Patient-PatientUnstructuredReport" name="Patient: unstructured report"/>
+<artifact id="Practitioner/PractitionerSemiStructuredReportAuthor" key="Practitioner-PractitionerSemiStructuredReportAuthor" name="Practitioner: semi-structured report."/>
+<artifact id="Practitioner/PractitionerStructuredReportAuthor" key="Practitioner-PractitionerStructuredReportAuthor" name="Practitioner: structured report"/>
+<artifact id="PractitionerRole/PractitionerRoleSemiStructuredReportAuthor" key="PractitionerRole-PractitionerRoleSemiStructuredReportAuthor" name="PractitionerRole: semi-structured"/>
+<artifact id="PractitionerRole/PractitionerRoleStructuredReportAuthor" key="PractitionerRole-PractitionerRoleStructuredReportAuthor" name="PractitionerRole: structured report"/>
+<artifact id="StructureDefinition/ProcedureEuImaging" key="StructureDefinition-ProcedureEuImaging" name="Procedure: Imaging Acquisition"/>
+<artifact id="StructureDefinition/procedure-obligation-eu-imaging" key="StructureDefinition-procedure-obligation-eu-imaging" name="ProcedureEuImaging: Obligations"/>
+<artifact id="SearchParameter/SearchParameterDocumentReferenceBodySite" key="SearchParameter-SearchParameterDocumentReferenceBodySite" name="SearchParameterDocumentReferenceBodySite"/>
+<artifact id="SearchParameter/SearchParameterDocumentReferenceModality" key="SearchParameter-SearchParameterDocumentReferenceModality" name="SearchParameterDocumentReferenceModality"/>
+<artifact id="StructureDefinition/ServiceRequestOrderEuImaging" key="StructureDefinition-ServiceRequestOrderEuImaging" name="ServiceRequest: Imaging Order"/>
+<artifact id="StructureDefinition/service-request-order-obligation-eu-imaging" key="StructureDefinition-service-request-order-obligation-eu-imaging" name="ServiceRequest: Imaging Order: Obligations"/>
+<artifact id="ServiceRequest/ComeBackNextYearServiceRequest" key="ServiceRequest-ComeBackNextYearServiceRequest" name="ServiceRequest: structured report recommendation"/>
+<artifact id="ValueSet/im-anatomical-region-valueset" key="ValueSet-im-anatomical-region-valueset" name="ValueSet: Anatomical Region"/>
+<artifact id="CodeSystem/codesystem-diagnostic-report-support-info" key="CodeSystem-codesystem-diagnostic-report-support-info" name="ValueSet: Diagnostic Report Support Info Code System"/>
+<artifact id="ValueSet/valueset-diagnosticreport-report-support-info" key="ValueSet-valueset-diagnosticreport-report-support-info" name="ValueSet: DiagnosticReport supportInfo codes"/>
+<artifact id="ValueSet/DeviceEuImagingType" key="ValueSet-DeviceEuImagingType" name="ValueSet: Imaging Device Type"/>
+<artifact id="ValueSet/im-procedure-type" key="ValueSet-im-procedure-type" name="ValueSet: Imaging Procedure Type"/>
+<artifact id="ValueSet/im-imaging-study-performer-type" key="ValueSet-im-imaging-study-performer-type" name="ValueSet: Imaging Study Performer Type Value Set"/>
+<artifact id="CodeSystem/codesystem-missing-dicom-terminology" key="CodeSystem-codesystem-missing-dicom-terminology" name="ValueSet: Missing DICOM Terminology"/>
+<artifact id="ValueSet/ImagingReportTypesEuVSEuImaging" key="ValueSet-ImagingReportTypesEuVSEuImaging" name="ValueSet: Radiology Report Types"/>
+<artifact id="ValueSet/SectionEmptyReasonEuImaging" key="ValueSet-SectionEmptyReasonEuImaging" name="ValueSet: Reasons a section in an imaging report is empty."/>
+<artifact id="ValueSet/valueset-diagnosticreport-notes" key="ValueSet-valueset-diagnosticreport-notes" name="ValueSet: Section codes used to label annotations."/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="adapting" name="Adapting Guidelines for Country use"/>
+<page key="artifacts-intro" name="Artifacts"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="contributors" name="Authors and contributors"/>
+<page key="changes" name="Changes"/>
+<page key="copyright" name="Copyright"/>
+<page key="current-status" name="Current status"/>
+<page key="data-formats" name="Data formats"/>
+<page key="dependencies" name="Dependencies"/>
+<page key="design-considerations" name="Design considerations"/>
+<page key="api" name="EU Health Data API for Imaging Reports"/>
+<page key="example-unstructured" name="Example report with renderable content and minimal metadata"/>
+<page key="example-semi-structured" name="Example semi structured report"/>
+<page key="example-structured" name="Example structured report"/>
+<page key="examples" name="Examples"/>
+<page key="index" name="Home"/>
+<page key="imaging-report" name="Imaging Report"/>
+<page key="artifacts-obligations" name="Obligations"/>
+<page key="patterns-and-guidelines" name="Patterns and Guidelines"/>
+<page key="references" name="References"/>
+<page key="artifacts-structural" name="Structural artifacts"/>
+<page key="actors-and-transactions" name="System actors"/>
+<page key="toc" name="Table of Contents"/>
+<page key="use-cases" name="Use Cases"/>
+<page key="xtehr-mapping" name="Xt-EHR mapping"/>
+</specification>
