@@ -145,8 +145,8 @@
         </xsl:when>
       </xsl:choose>
     </xsl:for-each>
-    <xsl:for-each select="$ballotSpecs/specification[not(starts-with(@ciUrl, 'http://build.fhir.org')) and not(@deprecated='true') and starts-with(@key, 'FHIR-')]">
-      <xsl:message select="concat('WARNING: FHIR specifications that are not deprecated SHOULD have a ciUrl attribute that starts with ''http://build.fhir.org'' ', @key, ' - actual was: ', @ciUrl)"/>
+    <xsl:for-each select="$ballotSpecs/specification[not((starts-with(@ciUrl, 'http://build.fhir.org')) or starts-with(@ciUrl, 'https://build.fhir.org')) and not(@deprecated='true') and starts-with(@key, 'FHIR-')]">
+      <xsl:message select="concat('WARNING: FHIR specifications that are not deprecated SHOULD have a ciUrl attribute that starts with ''https://build.fhir.org'' ', @key, ' - actual was: ', @ciUrl)"/>
     </xsl:for-each>
     <xsl:for-each select="$ballotSpecs/specification[not(starts-with(@url, 'http://hl7.org/fhir')) and not(@deprecated='true') and starts-with(@key, 'FHIR-')]">
       <xsl:message select="concat('WARNING: FHIR specifications that are not deprecated SHOULD have a url attribute that starts with ''http://hl7.org/fhir'' ', @key, ' - actual was: ', @url)"/>
