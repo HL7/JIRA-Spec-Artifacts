@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/health-data-api/1.0.0-ballot" ciUrl="https://build.fhir.org/ig/euridice-org/eu-health-data-api" defaultVersion="1.0.0-ballot" defaultWorkgroup="eu" url="http://hl7.eu/fhir/health-data-api" gitUrl="https://github.com/HL7-eu/health-data-api">
+<version code="current" url="https://build.fhir.org/ig/euridice-org/eu-health-data-api"/>
+<version code="1.0.0-ballot" url="http://hl7.eu/fhir/health-data-api/1.0.0-ballot"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="ActorDefinition/EEHRxF-DocumentAccessProvider-Actor" key="ActorDefinition-EEHRxF-DocumentAccessProvider-Actor" name="EEHRxF Document Access Provider"/>
+<artifact id="CapabilityStatement/EEHRxF-DocumentAccessProvider-SubmissionOption" key="CapabilityStatement-EEHRxF-DocumentAccessProvider-SubmissionOption" name="EEHRxF Document Access Provider - Document Submission Option"/>
+<artifact id="CapabilityStatement/EEHRxF-DocumentAccessProvider" key="CapabilityStatement-EEHRxF-DocumentAccessProvider" name="EEHRxF Document Access Provider CapabilityStatement"/>
+<artifact id="ActorDefinition/EEHRxF-DocumentConsumer-Actor" key="ActorDefinition-EEHRxF-DocumentConsumer-Actor" name="EEHRxF Document Consumer"/>
+<artifact id="CapabilityStatement/EEHRxF-DocumentConsumer" key="CapabilityStatement-EEHRxF-DocumentConsumer" name="EEHRxF Document Consumer CapabilityStatement"/>
+<artifact id="CodeSystem/eehrxf-document-priority-category-cs" key="CodeSystem-eehrxf-document-priority-category-cs" name="EEHRxF Document Priority Category CodeSystem"/>
+<artifact id="ActorDefinition/EEHRxF-DocumentPublisher-Actor" key="ActorDefinition-EEHRxF-DocumentPublisher-Actor" name="EEHRxF Document Publisher"/>
+<artifact id="CapabilityStatement/EEHRxF-DocumentPublisher" key="CapabilityStatement-EEHRxF-DocumentPublisher" name="EEHRxF Document Publisher CapabilityStatement"/>
+<artifact id="ValueSet/eehrxf-document-type-vs" key="ValueSet-eehrxf-document-type-vs" name="EEHRxF Document Type ValueSet"/>
+<artifact id="ValueSet/eehrxf-document-type-discharge-report-vs" key="ValueSet-eehrxf-document-type-discharge-report-vs" name="EEHRxF Document Type ValueSet for Discharge Reports"/>
+<artifact id="ValueSet/eehrxf-document-type-laboratory-report-vs" key="ValueSet-eehrxf-document-type-laboratory-report-vs" name="EEHRxF Document Type ValueSet for Laboratory Reports"/>
+<artifact id="ValueSet/eehrxf-document-type-medical-imaging-vs" key="ValueSet-eehrxf-document-type-medical-imaging-vs" name="EEHRxF Document Type ValueSet for Medical Imaging"/>
+<artifact id="ValueSet/eehrxf-document-type-patient-summary-vs" key="ValueSet-eehrxf-document-type-patient-summary-vs" name="EEHRxF Document Type ValueSet for Patient Summaries"/>
+<artifact id="ActorDefinition/EEHRxF-DocumentPublisherAccessProvider-Actor" key="ActorDefinition-EEHRxF-DocumentPublisherAccessProvider-Actor" name="EEHRxF Grouped Document Publisher/Access Provider"/>
+<artifact id="CapabilityStatement/EEHRxF-DocumentPublisherAccessProvider" key="CapabilityStatement-EEHRxF-DocumentPublisherAccessProvider" name="EEHRxF Grouped Document Publisher/Access Provider CapabilityStatement"/>
+<artifact id="ConceptMap/EehrxfMhdDocumentReferenceCM" key="ConceptMap-EehrxfMhdDocumentReferenceCM" name="EEHRxF MHD DocumentReference ConceptMap"/>
+<artifact id="StructureDefinition/EehrxfMhdDocumentReference" key="StructureDefinition-EehrxfMhdDocumentReference" name="EEHRxF MHD DocumentReference Profile"/>
+<artifact id="ActorDefinition/EEHRxF-ResourceAccessProvider-Actor" key="ActorDefinition-EEHRxF-ResourceAccessProvider-Actor" name="EEHRxF Resource Access Provider"/>
+<artifact id="CapabilityStatement/EEHRxF-ResourceAccessProvider" key="CapabilityStatement-EEHRxF-ResourceAccessProvider" name="EEHRxF Resource Access Provider CapabilityStatement"/>
+<artifact id="ActorDefinition/EEHRxF-ResourceConsumer-Actor" key="ActorDefinition-EEHRxF-ResourceConsumer-Actor" name="EEHRxF Resource Consumer"/>
+<artifact id="CapabilityStatement/EEHRxF-ResourceConsumer" key="CapabilityStatement-EEHRxF-ResourceConsumer" name="EEHRxF Resource Consumer CapabilityStatement"/>
+<artifact id="DocumentReference/ExampleDocumentReferenceEPS" key="DocumentReference-ExampleDocumentReferenceEPS" name="Example - European Patient Summary DocumentReference"/>
+<artifact id="DocumentReference/ExampleDocumentReferenceHDR" key="DocumentReference-ExampleDocumentReferenceHDR" name="Example - Hospital Discharge Report DocumentReference"/>
+<artifact id="DocumentReference/ExampleDocumentReferenceImagingReport" key="DocumentReference-ExampleDocumentReferenceImagingReport" name="Example - Imaging Report DocumentReference"/>
+<artifact id="DocumentReference/ExampleDocumentReferenceImagingManifestKOS" key="DocumentReference-ExampleDocumentReferenceImagingManifestKOS" name="Example - Imaging Study Manifest (DICOM KOS)"/>
+<artifact id="DocumentReference/ExampleDocumentReferenceImagingManifestFHIR" key="DocumentReference-ExampleDocumentReferenceImagingManifestFHIR" name="Example - Imaging Study Manifest (FHIR)"/>
+<artifact id="DocumentReference/ExampleDocumentReferenceLaboratory" key="DocumentReference-ExampleDocumentReferenceLaboratory" name="Example - Laboratory Report DocumentReference"/>
+<artifact id="CapabilityStatement/EEHRxF-DocumentAccessProvider-Example" key="CapabilityStatement-EEHRxF-DocumentAccessProvider-Example" name="Example: Document Access Provider Supporting EPS and Laboratory"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="about" name="About"/>
+<page key="actors" name="Actors and Transactions"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="authorization" name="Authorization"/>
+<page key="contributors" name="Authors and contributors"/>
+<page key="background" name="Background"/>
+<page key="capability-discovery" name="Capability Discovery"/>
+<page key="changes" name="Change Log"/>
+<page key="copyright" name="Copyright"/>
+<page key="document-exchange" name="Document Exchange"/>
+<page key="ehds-annex-ii" name="EHDS Annex II - Essential Requirements"/>
+<page key="fhir-documents-vs-resources" name="FHIR Documents and Resources"/>
+<page key="functional" name="Functional Requirements"/>
+<page key="index" name="Home"/>
+<page key="priority-area-hdr" name="Hospital Discharge Report"/>
+<page key="implementation" name="Implementation"/>
+<page key="priority-area-imaging-manifest" name="Medical Imaging Manifest"/>
+<page key="priority-area-imaging-report" name="Medical Imaging Report"/>
+<page key="priority-area-laboratory" name="Medical Test Results (Laboratory)"/>
+<page key="member-state-architectures" name="Member State Architectures"/>
+<page key="open-issues" name="Open Issues"/>
+<page key="patient-match" name="Patient Matching"/>
+<page key="priority-area-eps" name="Patient Summary (EPS)"/>
+<page key="priority-categories" name="Priority Categories"/>
+<page key="references" name="References"/>
+<page key="regulatoryAnchors" name="Regulatory Anchors"/>
+<page key="resource-access" name="Resource Access"/>
+<page key="resourceExchange" name="Resource Exchange Patterns"/>
+<page key="example-patient-summary" name="Retrieve a European Patient Summary"/>
+<page key="toc" name="Table of Contents"/>
+<page key="usecase-cross-border-ncp" name="Use Case - Cross-Border via NCP"/>
+<page key="usecase-health-data-portal" name="Use Case - Health Data Access Service"/>
+<page key="usecase-health-professional-portal" name="Use Case - Health Professional Access Service"/>
+<page key="priority-area-mpd" name="ePrescription / eDispensation (MPD)"/>
+</specification>
