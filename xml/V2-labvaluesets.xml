@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <specification defaultWorkgroup="oo" defaultVersion="R1" url="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=413" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/specification.xsd">
-  <version code="R1"/>
+  <version code="E2_2026May" deprecated="false"/>
+  <version code="R1" deprecated="true"/>
   <artifact name="US Lab Value Set Summary Spreadsheet" key="labvaluesetsummary" id="valueset/summary"/>
   <artifact name="US Lab OIDs Summary Spreadsheet" key="laboidsummary" id="oid/summary"/>
   <artifact name="HL70001 - Administrative Sex" key="HL70001_AdministrativeSex" id="valueset/HL70001AdministrativeSex"/>
+  <artifact name="HL70002 - Marital Status" key="HL70002_MaritalStatus" id="valueset/HL70002MaritalStatus"/>
   <artifact name="HL70003 - Event Type" key="HL70003_EventType" id="valueset/HL70003EventType"/>
   <artifact name="HL70004 - Patient Class" key="HL70004_PatientClass" id="valueset/HL70004PatientClass"/>
   <artifact name="HL70005 - Race" key="HL70005_Race" id="valueset/HL70005Race"/>
+  <artifact name="HL70006 - Religion" key="HL70006_Religion" id="valueset/HL70006Religion"/>
   <artifact name="HL70007 - Admission Type" key="HL70007_AdmissionType" id="valueset/HL70007AdmissionType"/>
   <artifact name="HL70008 - Acknowledgment Code" key="HL70008_AcknowledgmentCode" id="valueset/HL70008AcknowledgmentCode"/>
   <artifact name="HL70045 - Courtesy Code" key="HL70045_CourtesyCode" id="valueset/HL70045CourtesyCode"/>
@@ -32,6 +35,7 @@
   <artifact name="HL70132 - Transaction Code" key="HL70132_TransactionCode" id="valueset/HL70132TransactionCode"/>
   <artifact name="HL70136 - Yes/no Indicator" key="HL70136_YesNoIndicator" id="valueset/HL70136YesNoIndicator"/>
   <artifact name="HL70155 - Accept/Application Acknowledgment Conditions" key="HL70155_AcceptApplicationAcknowledgmentConditions" id="valueset/HL70155AcceptApplicationAcknowledgmentConditions"/>
+  <artifact name="HL70171 - Citizenship" key="HL70171Citizenship" id="valueset/HL70171Citizenship"/>
   <artifact name="HL70174 - Nature of Service/Test/Observation" key="HL70174_NatureofServiceTestObservation" id="valueset/HL70174NatureofServiceTestObservation"/>
   <artifact name="HL70175 - Master File Identifier Code" key="HL70175_MasterFileIdentifierCode" id="valueset/HL70175MasterFileIdentifierCode"/>
   <artifact name="HL70178 - File Level Event Code" key="HL70178_FileLevelEventCode" id="valueset/HL70178FileLevelEventCode"/>
@@ -46,6 +50,7 @@
   <artifact name="HL70206 - Segment Action Code" key="HL70206_SegmentActionCode" id="valueset/HL70206SegmentActionCode"/>
   <artifact name="HL70287 - Problem/Goal Action Code" key="HL70287_ProblemGoalActionCode" id="valueset/HL70287ProblemGoalActionCode"/>
   <artifact name="HL70291 - Subtype of Referenced Data" key="HL70291_SubtypeofReferencedData" id="valueset/HL70291SubtypeofReferencedData"/>
+  <artifact name="HL70296 - Primary Language" key="HL70296_PrimaryLanguage" id="valueset/HL70296PrimaryLanguage"/>
   <artifact name="HL70299 - Encoding" key="HL70299_Encoding" id="valueset/HL70299Encoding"/>
   <artifact name="HL70301 - Universal ID Type" key="HL70301_UniversalIDType" id="valueset/HL70301UniversalIDType"/>
   <artifact name="HL70339 - Advanced Beneficiary Notice Code" key="HL70339_AdvancedBeneficiaryNoticeCode" id="valueset/HL70339AdvancedBeneficiaryNoticeCode"/>
@@ -61,6 +66,7 @@
   <artifact name="HL70396 - Coding System" key="HL70396_CodingSystem" id="valueset/HL70396CodingSystem"/>
   <artifact name="HL70399 - Country Codes (ISO-3166-1)" key="HL70399_CountryCodes" id="valueset/HL70399CountryCodes"/>
   <artifact name="HL70411 - Supplemental Service Information Values" key="HL70411_SupplementalServiceInformationValues" id="valueset/HL70411SupplementalServiceInformationValues"/>
+  <artifact name="HL70445 - Identity Reliability Code" key="HL70445_IdentityREliabilityCode" id="valueset/HL70445IdentityReliabilityCode"/>
   <artifact name="HL70485 - Extended Priority Codes" key="HL70485_ExtendedPriorityCodes" id="valueset/HL70485ExtendedPriorityCodes"/>
   <artifact name="HL70487 - Specimen Type" key="HL70487_SpecimenType" id="valueset/HL70487SpecimenType"/>
   <artifact name="HL70488 - Specimen Collection Method" key="HL70488_SpecimenCollectionMethod" id="valueset/HL70488SpecimenCollectionMethod"/>
@@ -80,7 +86,9 @@
   <artifact name="HL70939 - Communication Location" key="HL70939_CommunicationLocation" id="valueset/HL70939CommunicationLocation"/>
   <artifact name="HL70941 - Procedure Code" key="HL70941_ProcedureCode" id="valueset/HL70941ProcedureCode"/>
   <artifact name="HL70960 - Observation Value Absent Reason" key="HL70960_ObservationValueAbsentReason" id="valueset/HL70960ObservationValueAbsentReason"/>
+  <artifact name="HL70961 - Device Type" key="HL70961_DeviceType" id="valueset/HL70961DeviceType"/>
   <artifact name="HL79999 - EXTERNAL CODE SET" key="HL79999_EXTERNALCODESET" id="valueset/HL79999EXTERNALCODESET"/>
+  <artifact name="ICD-O-3 - ICD Oncology" key="ICD-O-3_ICDOncology" id="valueset/ICD-O-3ICDOncology"/>
   <artifact name="FIPS 6-4 - Parish Codes" key="FIPS6-4_ParishCodes" id="valueset/FIPS6-4ParishCodes"/>
   <artifact name="LOINC - LOINC" key="LOINC_LOINC" id="valueset/LOINCLOINC"/>
   <artifact name="SNOMED CT - SNOMED CT" key="SNOMEDCT" id="valueset/SNOMEDCT"/>
