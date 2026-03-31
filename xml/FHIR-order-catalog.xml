@@ -1,296 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    gitUrl="https://github.com/HL7/fhir-order-catalog"
-    url="http://hl7.org/fhir/uv/order-catalog"
-    ciUrl="http://build.fhir.org/ig/HL7/fhir-order-catalog"
-    defaultWorkgroup="oo"
-    defaultVersion="current"
-    xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
-    ballotUrl="http://hl7.org/fhir/uv/order-catalog/2020Sep">
-    <version code="current" url="http://build.fhir.org/ig/HL7/fhir-order-catalog"/>
-    <version code="0.1.0" url="http://hl7.org/fhir/uv/order-catalog/2020Sep"/>
-    <artifactPageExtension value="-definitions"/>
-    <artifactPageExtension value="-examples"/>
-    <artifactPageExtension value="-mappings"/>
-    <artifact name="Laboratory service type CodeSystem"
-        key="CodeSystem-laboratory-service-definition-type"
-        id="CodeSystem/laboratory-service-definition-type"/>
-    <artifact name="Laboratory service reimbursability categories CodeSystem"
-        key="CodeSystem-laboratory-service-reimbursability"
-        id="CodeSystem/laboratory-service-reimbursability"/>
-    <artifact name="Catalog Message Event CodeSystem"
-        key="CodeSystem-catalog-message-events"
-        id="CodeSystem/catalog-message-events"/>
-    <artifact name="Laboratory service type ValueSet"
-        key="ValueSet-laboratory-service-type"
-        id="ValueSet/laboratory-service-type"/>
-    <artifact name="Laboratory service reimbursability categories ValueSet"
-        key="ValueSet-laboratory-service-reimbursability-vs"
-        id="ValueSet/laboratory-service-reimbursability-vs"/>
-    <artifact name="Bibliographic artifact ValueSet"
-        key="ValueSet-bibliography-artifact-type"
-        id="ValueSet/bibliography-artifact-type"/>
-    <artifact name="Order catalog message event ValueSet"
-        key="ValueSet-catalog-message-events-vs"
-        id="ValueSet/catalog-message-events-vs"/>
-    <artifact name="Validity Period Extension"
-        key="StructureDefinition-ValidityPeriod"
-        id="StructureDefinition/ValidityPeriod"/>
-    <artifact name="Reference to catalog Extension"
-        key="StructureDefinition-CatalogReference"
-        id="StructureDefinition/CatalogReference"/>
-    <artifact name="Billing summary Extension"
-        key="StructureDefinition-BillingSummary"
-        id="StructureDefinition/BillingSummary"/>
-    <artifact name="Schedule summary Extension"
-        key="StructureDefinition-ScheduleSummary"
-        id="StructureDefinition/ScheduleSummary"/>
-    <artifact name="Limitation summary Extension"
-        key="StructureDefinition-LimitationSummary"
-        id="StructureDefinition/LimitationSummary"/>
-    <artifact name="Regulatory summary Extension"
-        key="StructureDefinition-RegulatorySummary"
-        id="StructureDefinition/RegulatorySummary"/>
-    <artifact name="Service billing code Extension"
-        key="StructureDefinition-ServiceBillingCode"
-        id="StructureDefinition/ServiceBillingCode"/>
-    <artifact name="Specimen requested for a PlanDefiniton top-level action"
-        key="StructureDefinition-SpecimenRequested"
-        id="StructureDefinition/SpecimenRequested"/>
-    <artifact name="Service billing code and rules Profile"
-        key="StructureDefinition-LabChargeItemDefinition"
-        id="StructureDefinition/LabChargeItemDefinition"/>
-    <artifact name="Catalog Header Profile"
-        key="StructureDefinition-CatalogHeader"
-        id="StructureDefinition/CatalogHeader"/>
-    <artifact name="Laboratory service Profile"
-        key="StructureDefinition-LabServiceDefinition"
-        id="StructureDefinition/LabServiceDefinition"/>
-    <artifact name="Laboratory procedure Profile"
-        key="StructureDefinition-LabProcedureDefinition"
-        id="StructureDefinition/LabProcedureDefinition"/>
-    <artifact name="Laboratory specimen Profile"
-        key="StructureDefinition-LabSpecimenDefinition"
-        id="StructureDefinition/LabSpecimenDefinition"/>
-    <artifact name="Input observation Profile"
-        key="StructureDefinition-InputObservationDefinition"
-        id="StructureDefinition/InputObservationDefinition"/>
-    <artifact name="Laboratory observation Profile"
-        key="StructureDefinition-LabObservationDefinition"
-        id="StructureDefinition/LabObservationDefinition"/>
-    <artifact name="ValueSet Profile used by ObservationDefinition"
-        key="StructureDefinition-ObservationValueSet"
-        id="StructureDefinition/ObservationValueSet"/>
-    <artifact name="MessageDefinition for catalog messages"
-        key="StructureDefinition-CatalogMessageDefinition"
-        id="StructureDefinition/CatalogMessageDefinition"/>
-    <artifact name="Transaction Bundle request on catalog content"
-        key="StructureDefinition-ItemTransactionRequest"
-        id="StructureDefinition/ItemTransactionRequest"/>
-    <artifact name="Transaction Bundle response on catalog content"
-        key="StructureDefinition-ItemTransactionResponse"
-        id="StructureDefinition/ItemTransactionResponse"/>
-    <artifact name="A clinical laboratory catalog"
-        key="Composition-example-lab-compendium-header"
-        id="Composition/example-lab-compendium-header"/>
-    <artifact name="Lab service serum K"
-        key="PlanDefinition-example-lab-service-potassium-serum"
-        id="PlanDefinition/example-lab-service-potassium-serum"/>
-    <artifact name="Lab service blood electrolyte"
-        key="PlanDefinition-example-lab-panel-blood-electrolyte"
-        id="PlanDefinition/example-lab-panel-blood-electrolyte"/>
-    <artifact name="Lab service 24H urine creat"
-        key="PlanDefinition-example-lab-panel-urine24h-creatinine"
-        id="PlanDefinition/example-lab-panel-urine24h-creatinine"/>
-    <artifact name="Lab service serum creat"
-        key="PlanDefinition-example-lab-test-serum-creatinine"
-        id="PlanDefinition/example-lab-test-serum-creatinine"/>
-    <artifact name="Lab service creat renal clearance"
-        key="PlanDefinition-example-lab-panel-urine24h-creatinine-clearance"
-        id="PlanDefinition/example-lab-panel-urine24h-creatinine-clearance"/>
-    <artifact name="Lab service vitamin D"
-        key="PlanDefinition-example-lab-service-vitamind-serum"
-        id="PlanDefinition/example-lab-service-vitamind-serum"/>
-    <artifact name="Lab service HSV 2 IgM titer"
-        key="PlanDefinition-example-lab-service-hsvt2-serum"
-        id="PlanDefinition/example-lab-service-hsvt2-serum"/>
-    <artifact name="Lab service HSV 1 IgM titer"
-        key="PlanDefinition-example-lab-service-hsvt1-serum"
-        id="PlanDefinition/example-lab-service-hsvt1-serum"/>
-    <artifact name="Lab service HSV IgM"
-        key="PlanDefinition-example-lab-service-hsv-serum"
-        id="PlanDefinition/example-lab-service-hsv-serum"/>
-    <artifact name="Lab service CMV IgM"
-        key="PlanDefinition-example-lab-service-cmv-serum"
-        id="PlanDefinition/example-lab-service-cmv-serum"/>
-    <artifact name="Lab service Rubella IgM"
-        key="PlanDefinition-example-lab-service-rubella-serum"
-        id="PlanDefinition/example-lab-service-rubella-serum"/>
-    <artifact name="Lab service Toxoplasma gondii Antibody"
-        key="PlanDefinition-example-lab-service-toxoplasma-serum"
-        id="PlanDefinition/example-lab-service-toxoplasma-serum"/>
-    <artifact name="Lab service TORCH panel"
-        key="PlanDefinition-example-lab-service-torch"
-        id="PlanDefinition/example-lab-service-torch"/>
-    <artifact name="Lab procedure 24H urine creat"
-        key="ActivityDefinition-example-lab-urine24h-creatinine"
-        id="ActivityDefinition/example-lab-urine24h-creatinine"/>
-    <artifact name="Lab procedure serum creatinine"
-        key="ActivityDefinition-example-lab-procedure-serum-creatinine"
-        id="ActivityDefinition/example-lab-procedure-serum-creatinine"/>
-    <artifact name="Lab procedure serum K"
-        key="ActivityDefinition-example-lab-procedure-potassium-serum"
-        id="ActivityDefinition/example-lab-procedure-potassium-serum"/>
-    <artifact name="Lab procedure blood electrolyte"
-        key="ActivityDefinition-example-lab-blood-electrolyte"
-        id="ActivityDefinition/example-lab-blood-electrolyte"/>
-    <artifact name="Lab procedure creat renal clearance"
-        key="ActivityDefinition-example-lab-urine24h-creatinine-clearance"
-        id="ActivityDefinition/example-lab-urine24h-creatinine-clearance"/>
-    <artifact name="Lab procedure vitamin D"
-        key="ActivityDefinition-example-lab-procedure-vitamind-serum"
-        id="ActivityDefinition/example-lab-procedure-vitamind-serum"/>
-    <artifact name="Lab procedure Toxoplasma gondii"
-        key="ActivityDefinition-example-lab-procedure-toxoplasma"
-        id="ActivityDefinition/example-lab-procedure-toxoplasma"/>
-    <artifact name="Lab procedure Rubella IgM"
-        key="ActivityDefinition-example-lab-procedure-rubella"
-        id="ActivityDefinition/example-lab-procedure-rubella"/>
-    <artifact name="Lab procedure CMV IgM"
-        key="ActivityDefinition-example-lab-procedure-cmv"
-        id="ActivityDefinition/example-lab-procedure-cmv"/>
-    <artifact name="Lab procedure HSV serology"
-        key="ActivityDefinition-example-lab-procedure-hsv"
-        id="ActivityDefinition/example-lab-procedure-hsv"/>
-    <artifact name="Lab procedure HSV 1 IgM titer"
-        key="ActivityDefinition-example-lab-procedure-hsvt1"
-        id="ActivityDefinition/example-lab-procedure-hsvt1"/>
-    <artifact name="Lab procedure HSV 2 IgM titer"
-        key="ActivityDefinition-example-lab-procedure-hsvt2"
-        id="ActivityDefinition/example-lab-procedure-hsvt2"/>
-    <artifact name="Lab specimen - venous serum 1 test"
-        key="SpecimenDefinition-example-specimen-venous-serum-single-test"
-        id="SpecimenDefinition/example-specimen-venous-serum-single-test"/>
-    <artifact name="Lab specimen - capillary serum 1 test"
-        key="SpecimenDefinition-example-specimen-capillary-serum-single-test"
-        id="SpecimenDefinition/example-specimen-capillary-serum-single-test"/>
-    <artifact name="Lab specimen - serum/plasma"
-        key="SpecimenDefinition-example-specimen-serum-plasma"
-        id="SpecimenDefinition/example-specimen-serum-plasma"/>
-    <artifact name="Lab specimen - 24H urine"
-        key="SpecimenDefinition-example-specimen-urine-24h"
-        id="SpecimenDefinition/example-specimen-urine-24h"/>
-    <artifact name="Lab specimen - venous serum 3 mL"
-        key="SpecimenDefinition-example-specimen-3ml-serum"
-        id="SpecimenDefinition/example-specimen-3ml-serum"/>
-    <artifact name="Lab specimen - venous serum 2 mL"
-        key="SpecimenDefinition-example-specimen-2ml-serum"
-        id="SpecimenDefinition/example-specimen-2ml-serum"/>
-    <artifact name="Lab input observation - reason"
-        key="ObservationDefinition-example-input-observation-reason-for-ordering"
-        id="ObservationDefinition/example-input-observation-reason-for-ordering"/>
-    <artifact name="Lab input observation - vitamin d"
-        key="ObservationDefinition-example-input-observation-context-for-vitamin-d"
-        id="ObservationDefinition/example-input-observation-context-for-vitamin-d"/>
-    <artifact name="Lab observation serum Na"
-        key="ObservationDefinition-example-observation-serum-sodium"
-        id="ObservationDefinition/example-observation-serum-sodium"/>
-    <artifact name="Lab observation serum K"
-        key="ObservationDefinition-example-observation-serum-potassium"
-        id="ObservationDefinition/example-observation-serum-potassium"/>
-    <artifact name="Lab observation serum Cl"
-        key="ObservationDefinition-example-observation-serum-chloride"
-        id="ObservationDefinition/example-observation-serum-chloride"/>
-    <artifact name="Lab observation collection duration"
-        key="ObservationDefinition-example-observation-collection-duration"
-        id="ObservationDefinition/example-observation-collection-duration"/>
-    <artifact name="Lab observation urine volume"
-        key="ObservationDefinition-example-observation-collection-volume"
-        id="ObservationDefinition/example-observation-collection-volume"/>
-    <artifact name="Lab observation urine creat"
-        key="ObservationDefinition-example-observation-urine24h-creatinine"
-        id="ObservationDefinition/example-observation-urine24h-creatinine"/>
-    <artifact name="Lab observation serum/plasma creat"
-        key="ObservationDefinition-example-observation-serum-creatinine"
-        id="ObservationDefinition/example-observation-serum-creatinine"/>
-    <artifact name="Lab observation creat renal clearance"
-        key="ObservationDefinition-example-observation-creatinine-renal-clearance"
-        id="ObservationDefinition/example-observation-creatinine-renal-clearance"/>
-    <artifact name="Lab observation vitamin D"
-        key="ObservationDefinition-example-observation-vitamin-d"
-        id="ObservationDefinition/example-observation-vitamin-d"/>
-    <artifact name="Lab observation HSV 2 IgM titer"
-        key="ObservationDefinition-example-observation-hsv2igmt"
-        id="ObservationDefinition/example-observation-hsv2igmt"/>
-    <artifact name="Lab observation HSV 1 IgM titer"
-        key="ObservationDefinition-example-observation-hsv1igmt"
-        id="ObservationDefinition/example-observation-hsv1igmt"/>
-    <artifact name="Lab observation HSV 2 IgM presence"
-        key="ObservationDefinition-example-observation-hsv2igmp"
-        id="ObservationDefinition/example-observation-hsv2igmp"/>
-    <artifact name="Lab observation HSV 1 IgM presence"
-        key="ObservationDefinition-example-observation-hsv1igmp"
-        id="ObservationDefinition/example-observation-hsv1igmp"/>
-    <artifact name="Lab observation Rubella IgM"
-        key="ObservationDefinition-example-observation-rubigm"
-        id="ObservationDefinition/example-observation-rubigm"/>
-    <artifact name="Lab observation CMV IgM"
-        key="ObservationDefinition-example-observation-cmvigm"
-        id="ObservationDefinition/example-observation-cmvigm"/>
-    <artifact name="Lab observation Toxoplasma IgM"
-        key="ObservationDefinition-example-observation-toxoigm"
-        id="ObservationDefinition/example-observation-toxoigm"/>
-    <artifact name="Lab observation Toxoplasma IgG"
-        key="ObservationDefinition-example-observation-toxoigg"
-        id="ObservationDefinition/example-observation-toxoigg"/>
-    <artifact name="Lab observation Toxoplasma Ab interpretation"
-        key="ObservationDefinition-example-observation-toxoint"
-        id="ObservationDefinition/example-observation-toxoint"/>
-    <artifact name="Laboratory Organization"
-        key="Organization-example-lab-organization"
-        id="Organization/example-lab-organization"/>
-    <artifact name="Lab billing code and rule for vitamin D"
-        key="ChargeItemDefinition-example-lab-billing-vitamind-focus"
-        id="ChargeItemDefinition/example-lab-billing-vitamind-focus"/>
-    <artifact name="Lab normal clinical focus for billing vitamin D"
-        key="ValueSet-example-normal-contexts-vitamin-d"
-        id="ValueSet/example-normal-contexts-vitamin-d"/>
-    <artifact name="Lab contexts possibly associated with vitamin D testing"
-        key="ValueSet-example-clinical-focus-vitamin-d"
-        id="ValueSet/example-clinical-focus-vitamin-d"/>
-    <artifact name="Valid coded reasons for ordering a lab service"
-        key="ValueSet-example-reasons-for-order"
-        id="ValueSet/example-reasons-for-order"/>
-    <artifact name="Message definition for messaging a new catalog"
-        key="MessageDefinition-example-message-definition-initialize"
-        id="MessageDefinition/example-message-definition-initialize"/>
-    <artifact name="Message definition for messaging a catalog update"
-        key="MessageDefinition-example-message-definition-update"
-        id="MessageDefinition/example-message-definition-update"/>
-    <artifact name="Create test in laboratory compendium"
-        key="Bundle-example-lab-test-creation-transaction-request"
-        id="Bundle/example-lab-test-creation-transaction-request"/>
-    <artifact name="Test created in laboratory compendium"
-        key="Bundle-example-lab-test-creation-transaction-response"
-        id="Bundle/example-lab-test-creation-transaction-response"/>
-    <page name="(NA)" key="NA"/>
-    <page name="(many)" key="many"/>
-    <page name="Table of Contents" key="toc"/>
-    <page name="Order Catalog Home Page" key="index"/>
-    <page name="Use cases - Laboratory services" key="uclabservices"/>
-    <page name="Use cases - Order sets" key="ucordersets"/>
-    <page name="Use cases - Medications" key="ucdrugs"/>
-    <page name="Use cases - Devices" key="ucdevices"/>
-    <page name="Spec - Laboratory services" key="labservices"/>
-    <page name="Spec - Order sets" key="ordersets"/>
-    <page name="Spec - Medications" key="drugs"/>
-    <page name="Spec - Devices" key="devices"/>
-    <page name="Interaction framework" key="interactions"/>
-    <page name="Examples - Laboratory services" key="exlabservices"/>
-    <page name="Examples - Order sets" key="exordersets"/>
-    <page name="Examples - Medications" key="exdrugs"/>
-    <page name="Examples - Devices" key="exdevices"/>
-    <page name="Useful Downloads" key="downloads"/>
-    <page name="IG Change History" key="changes"/>
-    <page name="Artifacts Summary" key="artifacts"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/order-catalog/2020Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-order-catalog" defaultVersion="0.1.0" defaultWorkgroup="oo" gitUrl="https://github.com/HL7/fhir-order-catalog" url="http://hl7.org/fhir/uv/order-catalog">
+<version code="current" url="http://build.fhir.org/ig/HL7/fhir-order-catalog"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/order-catalog/2025Jan"/>
+<version code="0.1.0" url="http://hl7.org/fhir/uv/order-catalog/2020Sep"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="Composition/example-lab-compendium-header" key="Composition-example-lab-compendium-header" name="A clinical laboratory catalog"/>
+<artifact id="Composition/example-device-catalog-header" key="Composition-example-device-catalog-header" name="A medical device catalog"/>
+<artifact id="ValueSet/bibliography-artifact-type" key="ValueSet-bibliography-artifact-type" name="Bibliographic artifact ValueSet"/>
+<artifact id="StructureDefinition/BillingSummary" key="StructureDefinition-BillingSummary" name="BillingSummary Extension"/>
+<artifact id="StructureDefinition/Catalog" key="StructureDefinition-Catalog" name="Catalog Profile"/>
+<artifact id="CodeSystem/catalog-message-events" key="CodeSystem-catalog-message-events" name="Catalog message events CodeSystem"/>
+<artifact id="StructureDefinition/CatalogHeader" key="StructureDefinition-CatalogHeader" name="CatalogHeader Profile"/>
+<artifact id="StructureDefinition/CatalogMessageDefinition" key="StructureDefinition-CatalogMessageDefinition" name="CatalogMessageDefinition Profile"/>
+<artifact id="StructureDefinition/CatalogReference" key="StructureDefinition-CatalogReference" name="CatalogReference Extension"/>
+<artifact id="MedicationKnowledge/example-drug-clarithromycin-25mg-granule-suspension" key="MedicationKnowledge-example-drug-clarithromycin-25mg-granule-suspension" name="Clarithromycin oral antibacterial"/>
+<artifact id="PackagedProductDefinition/example-drug-package-clarithromycin" key="PackagedProductDefinition-example-drug-package-clarithromycin" name="Clarithromycin package"/>
+<artifact id="ClinicalUseDefinition/example-allergy-contraindication" key="ClinicalUseDefinition-example-allergy-contraindication" name="Contraindication Allergy to Clarithromycin"/>
+<artifact id="StructureDefinition/ContraindicationDefinition" key="StructureDefinition-ContraindicationDefinition" name="ContraindicationDefinition Profile"/>
+<artifact id="CapabilityStatement/cs-lab-service-custodian" key="CapabilityStatement-cs-lab-service-custodian" name="Custodian of laboratory service catalog"/>
+<artifact id="CapabilityStatement/cs-device-custodian" key="CapabilityStatement-cs-device-custodian" name="Custodian of medical device catalog"/>
+<artifact id="CapabilityStatement/cs-drug-custodian" key="CapabilityStatement-cs-drug-custodian" name="Custodian of medication catalog"/>
+<artifact id="DeviceDefinition/example-devicemodel-breast-pump" key="DeviceDefinition-example-devicemodel-breast-pump" name="Device model of breast pump"/>
+<artifact id="DeviceDefinition/example-devicemodel-interbody-fusion-system" key="DeviceDefinition-example-devicemodel-interbody-fusion-system" name="Device model of interbody fusion system"/>
+<artifact id="DeviceDefinition/example-devicemodel-presthetics-accessories" key="DeviceDefinition-example-devicemodel-presthetics-accessories" name="Device model of presthetics-accessories"/>
+<artifact id="StructureDefinition/DeviceModel" key="StructureDefinition-DeviceModel" name="DeviceModel Profile"/>
+<artifact id="StructureDefinition/DrugKnowledge" key="StructureDefinition-DrugKnowledge" name="DrugKnowledge Profile"/>
+<artifact id="StructureDefinition/DrugPackage" key="StructureDefinition-DrugPackage" name="DrugPackage Profile"/>
+<artifact id="CodeSystem/example-cpt" key="CodeSystem-example-cpt" name="Example CPT Codes"/>
+<artifact id="Composition/example-catalog" key="Composition-example-catalog" name="Example Catalog"/>
+<artifact id="ClinicalUseDefinition/example-interaction" key="ClinicalUseDefinition-example-interaction" name="Example Interaction"/>
+<artifact id="ClinicalUseDefinition/example-bacterial-pharyngitis-indication" key="ClinicalUseDefinition-example-bacterial-pharyngitis-indication" name="Indication Acute Bacterial Pharyngitis"/>
+<artifact id="ClinicalUseDefinition/example-bacterial-sinusitis-indication" key="ClinicalUseDefinition-example-bacterial-sinusitis-indication" name="Indication Acute Bacterial Sinusitis"/>
+<artifact id="ClinicalUseDefinition/example-acute-otitis-media-indication" key="ClinicalUseDefinition-example-acute-otitis-media-indication" name="Indication Acute Otitis Media"/>
+<artifact id="StructureDefinition/IndicationDefinition" key="StructureDefinition-IndicationDefinition" name="IndicationDefinition Profile"/>
+<artifact id="StructureDefinition/InputObservationDefinition" key="StructureDefinition-InputObservationDefinition" name="InputObservationDefinition Profile"/>
+<artifact id="StructureDefinition/InteractionDefinition" key="StructureDefinition-InteractionDefinition" name="InteractionDefinition Profile"/>
+<artifact id="StructureDefinition/ItemTransactionRequest" key="StructureDefinition-ItemTransactionRequest" name="ItemTransactionRequest Profile"/>
+<artifact id="StructureDefinition/ItemTransactionResponse" key="StructureDefinition-ItemTransactionResponse" name="ItemTransactionResponse Profile"/>
+<artifact id="ChargeItemDefinition/example-lab-billing-vitamind-focus" key="ChargeItemDefinition-example-lab-billing-vitamind-focus" name="Lab billing code and rule for vitamin D"/>
+<artifact id="Bundle/example-lab-test-creation-transaction-request" key="Bundle-example-lab-test-creation-transaction-request" name="Lab compendium Create test"/>
+<artifact id="Bundle/example-lab-test-creation-transaction-response" key="Bundle-example-lab-test-creation-transaction-response" name="Lab compendium test created"/>
+<artifact deprecated="true" id="ValueSet/example-clinical-focus-vitamin-d" key="ValueSet-example-clinical-focus-vitamin-d" name="Lab contexts possibly associated with vitamin D testing"/>
+<artifact id="ObservationDefinition/example-input-observation-reason-for-ordering" key="ObservationDefinition-example-input-observation-reason-for-ordering" name="Lab input observation - reason"/>
+<artifact id="ObservationDefinition/example-input-observation-context-for-vitamin-d" key="ObservationDefinition-example-input-observation-context-for-vitamin-d" name="Lab input observation - vitamin d"/>
+<artifact id="ValueSet/example-normal-contexts-vitamin-d" key="ValueSet-example-normal-contexts-vitamin-d" name="Lab normal clinical focus for billing vitamin D"/>
+<artifact id="ObservationDefinition/example-observation-cmvigm" key="ObservationDefinition-example-observation-cmvigm" name="Lab observation CMV IgM"/>
+<artifact id="ObservationDefinition/example-observation-hsv1igmp" key="ObservationDefinition-example-observation-hsv1igmp" name="Lab observation HSV 1 IgM presence"/>
+<artifact id="ObservationDefinition/example-observation-hsv1igmt" key="ObservationDefinition-example-observation-hsv1igmt" name="Lab observation HSV 1 IgM titer"/>
+<artifact id="ObservationDefinition/example-observation-hsv2igmp" key="ObservationDefinition-example-observation-hsv2igmp" name="Lab observation HSV 2 IgM presence"/>
+<artifact id="ObservationDefinition/example-observation-hsv2igmt" key="ObservationDefinition-example-observation-hsv2igmt" name="Lab observation HSV 2 IgM titer"/>
+<artifact id="ObservationDefinition/example-observation-rubigm" key="ObservationDefinition-example-observation-rubigm" name="Lab observation Rubella IgM"/>
+<artifact id="ObservationDefinition/example-observation-toxoint" key="ObservationDefinition-example-observation-toxoint" name="Lab observation Toxoplasma Ab interpretation"/>
+<artifact id="ObservationDefinition/example-observation-toxoigg" key="ObservationDefinition-example-observation-toxoigg" name="Lab observation Toxoplasma IgG"/>
+<artifact id="ObservationDefinition/example-observation-toxoigm" key="ObservationDefinition-example-observation-toxoigm" name="Lab observation Toxoplasma IgM"/>
+<artifact id="ObservationDefinition/example-observation-collection-duration" key="ObservationDefinition-example-observation-collection-duration" name="Lab observation collection duration"/>
+<artifact id="ObservationDefinition/example-observation-creatinine-renal-clearance" key="ObservationDefinition-example-observation-creatinine-renal-clearance" name="Lab observation creat renal clearance"/>
+<artifact id="ObservationDefinition/example-observation-serum-chloride" key="ObservationDefinition-example-observation-serum-chloride" name="Lab observation serum Cl"/>
+<artifact id="ObservationDefinition/example-observation-serum-potassium" key="ObservationDefinition-example-observation-serum-potassium" name="Lab observation serum K"/>
+<artifact id="ObservationDefinition/example-observation-serum-sodium" key="ObservationDefinition-example-observation-serum-sodium" name="Lab observation serum Na"/>
+<artifact id="ObservationDefinition/example-observation-serum-creatinine" key="ObservationDefinition-example-observation-serum-creatinine" name="Lab observation serum/plasma creat"/>
+<artifact id="ObservationDefinition/example-observation-urine24h-creatinine" key="ObservationDefinition-example-observation-urine24h-creatinine" name="Lab observation urine creat"/>
+<artifact id="ObservationDefinition/example-observation-collection-volume" key="ObservationDefinition-example-observation-collection-volume" name="Lab observation urine volume"/>
+<artifact id="ObservationDefinition/example-observation-vitamin-d" key="ObservationDefinition-example-observation-vitamin-d" name="Lab observation vitamin D"/>
+<artifact id="ActivityDefinition/example-lab-urine24h-creatinine" key="ActivityDefinition-example-lab-urine24h-creatinine" name="Lab procedure 24H urine creat"/>
+<artifact id="ActivityDefinition/example-lab-procedure-cmv" key="ActivityDefinition-example-lab-procedure-cmv" name="Lab procedure CMV IgM"/>
+<artifact id="ActivityDefinition/example-lab-procedure-hsvt1" key="ActivityDefinition-example-lab-procedure-hsvt1" name="Lab procedure HSV 1 IgM titer"/>
+<artifact id="ActivityDefinition/example-lab-procedure-hsvt2" key="ActivityDefinition-example-lab-procedure-hsvt2" name="Lab procedure HSV 2 IgM titer"/>
+<artifact id="ActivityDefinition/example-lab-procedure-hsv" key="ActivityDefinition-example-lab-procedure-hsv" name="Lab procedure HSV serology"/>
+<artifact id="ActivityDefinition/example-lab-procedure-rubella" key="ActivityDefinition-example-lab-procedure-rubella" name="Lab procedure Rubella IgM"/>
+<artifact id="ActivityDefinition/example-lab-procedure-toxoplasma" key="ActivityDefinition-example-lab-procedure-toxoplasma" name="Lab procedure Toxoplasma gondii"/>
+<artifact id="ActivityDefinition/example-lab-blood-electrolyte" key="ActivityDefinition-example-lab-blood-electrolyte" name="Lab procedure blood electrolyte"/>
+<artifact id="ActivityDefinition/example-lab-urine24h-creatinine-clearance" key="ActivityDefinition-example-lab-urine24h-creatinine-clearance" name="Lab procedure creatinine clearance"/>
+<artifact id="ActivityDefinition/example-lab-procedure-potassium-serum" key="ActivityDefinition-example-lab-procedure-potassium-serum" name="Lab procedure serum K"/>
+<artifact id="ActivityDefinition/example-lab-procedure-serum-creatinine" key="ActivityDefinition-example-lab-procedure-serum-creatinine" name="Lab procedure serum creatinine"/>
+<artifact id="ActivityDefinition/example-lab-procedure-vitamind-serum" key="ActivityDefinition-example-lab-procedure-vitamind-serum" name="Lab procedure vitamin D"/>
+<artifact id="PlanDefinition/example-lab-panel-urine24h-creatinine" key="PlanDefinition-example-lab-panel-urine24h-creatinine" name="Lab service 24H urine creat"/>
+<artifact id="PlanDefinition/example-lab-service-cmv-serum" key="PlanDefinition-example-lab-service-cmv-serum" name="Lab service CMV IgM"/>
+<artifact id="PlanDefinition/example-lab-service-hsvt1-serum" key="PlanDefinition-example-lab-service-hsvt1-serum" name="Lab service HSV 1 IgM titer"/>
+<artifact id="PlanDefinition/example-lab-service-hsvt2-serum" key="PlanDefinition-example-lab-service-hsvt2-serum" name="Lab service HSV 2 IgM titer"/>
+<artifact id="PlanDefinition/example-lab-service-hsv-serum" key="PlanDefinition-example-lab-service-hsv-serum" name="Lab service HSV IgM"/>
+<artifact id="PlanDefinition/example-lab-service-rubella-serum" key="PlanDefinition-example-lab-service-rubella-serum" name="Lab service Rubella IgM"/>
+<artifact id="PlanDefinition/example-lab-service-torch" key="PlanDefinition-example-lab-service-torch" name="Lab service TORCH panel"/>
+<artifact id="PlanDefinition/example-lab-service-toxoplasma-serum" key="PlanDefinition-example-lab-service-toxoplasma-serum" name="Lab service Toxoplasma gondii Ab"/>
+<artifact id="PlanDefinition/example-lab-panel-blood-electrolyte" key="PlanDefinition-example-lab-panel-blood-electrolyte" name="Lab service blood electrolyte"/>
+<artifact id="PlanDefinition/example-lab-panel-urine24h-creatinine-clearance" key="PlanDefinition-example-lab-panel-urine24h-creatinine-clearance" name="Lab service creat renal clearance"/>
+<artifact id="PlanDefinition/example-lab-service-potassium-serum" key="PlanDefinition-example-lab-service-potassium-serum" name="Lab service serum K"/>
+<artifact id="PlanDefinition/example-lab-test-serum-creatinine" key="PlanDefinition-example-lab-test-serum-creatinine" name="Lab service serum creat"/>
+<artifact id="PlanDefinition/example-lab-service-vitamind-serum" key="PlanDefinition-example-lab-service-vitamind-serum" name="Lab service vitamin D"/>
+<artifact id="SpecimenDefinition/example-specimen-urine-24h" key="SpecimenDefinition-example-specimen-urine-24h" name="Lab specimen 24H urine"/>
+<artifact id="SpecimenDefinition/example-specimen-capillary-serum-single-test" key="SpecimenDefinition-example-specimen-capillary-serum-single-test" name="Lab specimen capillary serum"/>
+<artifact id="SpecimenDefinition/example-specimen-serum-plasma" key="SpecimenDefinition-example-specimen-serum-plasma" name="Lab specimen serum/plasma"/>
+<artifact id="SpecimenDefinition/example-specimen-venous-serum-single-test" key="SpecimenDefinition-example-specimen-venous-serum-single-test" name="Lab specimen venous serum"/>
+<artifact id="SpecimenDefinition/example-specimen-2ml-serum" key="SpecimenDefinition-example-specimen-2ml-serum" name="Lab specimen venous serum 2 mL"/>
+<artifact id="SpecimenDefinition/example-specimen-3ml-serum" key="SpecimenDefinition-example-specimen-3ml-serum" name="Lab specimen venous serum 3 mL"/>
+<artifact id="StructureDefinition/LabChargeItemDefinition" key="StructureDefinition-LabChargeItemDefinition" name="LabChargeItemDefinition Profile"/>
+<artifact id="StructureDefinition/LabObservationDefinition" key="StructureDefinition-LabObservationDefinition" name="LabObservationDefinition Profile"/>
+<artifact id="StructureDefinition/LabProcedureDefinition" key="StructureDefinition-LabProcedureDefinition" name="LabProcedureDefinition Profile"/>
+<artifact id="StructureDefinition/LabServiceDefinition" key="StructureDefinition-LabServiceDefinition" name="LabServiceDefinition Profile"/>
+<artifact id="StructureDefinition/LabSpecimenDefinition" key="StructureDefinition-LabSpecimenDefinition" name="LabSpecimenDefinition Profile"/>
+<artifact id="Organization/example-lab-organization" key="Organization-example-lab-organization" name="Laboratory Organization"/>
+<artifact id="CodeSystem/laboratory-service-reimbursability" key="CodeSystem-laboratory-service-reimbursability" name="Laboratory service reimbursability categories CodeSystem"/>
+<artifact id="ValueSet/laboratory-service-reimbursability-vs" key="ValueSet-laboratory-service-reimbursability-vs" name="Laboratory service reimbursability categories ValueSet"/>
+<artifact id="CodeSystem/laboratory-service-definition-type" key="CodeSystem-laboratory-service-definition-type" name="Laboratory service types CodeSystem"/>
+<artifact id="ValueSet/laboratory-service-type" key="ValueSet-laboratory-service-type" name="Laboratory service types ValueSet"/>
+<artifact id="StructureDefinition/LimitationSummary" key="StructureDefinition-LimitationSummary" name="LimitationSummary Extension"/>
+<artifact id="Composition/example-medication-catalog-header" key="Composition-example-medication-catalog-header" name="Medications authorized for prescription in Healthyland"/>
+<artifact id="MessageDefinition/example-message-definition-update" key="MessageDefinition-example-message-definition-update" name="Message definition catalog update"/>
+<artifact id="MessageDefinition/example-message-definition-initialize" key="MessageDefinition-example-message-definition-initialize" name="Message definition new catalog"/>
+<artifact id="ValueSet/catalog-message-events-vs" key="ValueSet-catalog-message-events-vs" name="Order catalog message events ValueSet"/>
+<artifact id="ValueSet/example-clinical-focus" key="ValueSet-example-clinical-focus" name="Possible contexts for any lab test order"/>
+<artifact id="StructureDefinition/RegulatorySummary" key="StructureDefinition-RegulatorySummary" name="RegulatorySummary Extension"/>
+<artifact id="StructureDefinition/ResultInterpretationSummary" key="StructureDefinition-ResultInterpretationSummary" name="ResultInterpretationSummary Extension"/>
+<artifact id="StructureDefinition/ScheduleSummary" key="StructureDefinition-ScheduleSummary" name="ScheduleSummary Extension"/>
+<artifact id="StructureDefinition/ServiceBillingCode" key="StructureDefinition-ServiceBillingCode" name="ServiceBillingCode Extension"/>
+<artifact id="StructureDefinition/SpecimenRequested" key="StructureDefinition-SpecimenRequested" name="SpecimenRequested Extension"/>
+<artifact id="ClinicalUseDefinition/example-undesirable-effect" key="ClinicalUseDefinition-example-undesirable-effect" name="Undesirable Effect Example"/>
+<artifact id="StructureDefinition/UndesirableEffectDefinition" key="StructureDefinition-UndesirableEffectDefinition" name="UndesirableEffectDefinition Profile"/>
+<artifact id="ValueSet/example-reasons-for-order" key="ValueSet-example-reasons-for-order" name="Valid coded reasons for ordering a lab service"/>
+<artifact id="StructureDefinition/ValidityPeriod" key="StructureDefinition-ValidityPeriod" name="ValidityPeriod Extension"/>
+<artifact deprecated="true" id="StructureDefinition/ObservationValueSet" key="StructureDefinition-ObservationValueSet" name="ValueSet Profile used by ObservationDefinition"/>
+<artifact id="ClinicalUseDefinition/example-warning" key="ClinicalUseDefinition-example-warning" name="Warning Example"/>
+<artifact id="StructureDefinition/WarningDefinition" key="StructureDefinition-WarningDefinition" name="WarningDefinition Profile"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="exdevices" name="Examples - Devices"/>
+<page key="exlabservices" name="Examples - Laboratory services"/>
+<page key="exdrugs" name="Examples - Medications"/>
+<page key="exordersets" name="Examples - Order sets"/>
+<page key="changes" name="IG Change History"/>
+<page key="interactions" name="Interaction framework"/>
+<page key="index" name="Order Catalog Home Page"/>
+<page key="devices" name="Spec - Devices"/>
+<page key="labservices" name="Spec - Laboratory services"/>
+<page key="drugs" name="Spec - Medications"/>
+<page key="ordersets" name="Spec - Order sets"/>
+<page key="toc" name="Table Content"/>
+<page key="ucdevices" name="Use cases - Devices"/>
+<page key="uclabservices" name="Use cases - Laboratory services"/>
+<page key="ucdrugs" name="Use cases - Medications"/>
+<page key="ucordersets" name="Use cases - Order sets"/>
+<page key="downloads" name="Useful Downloads"/>
 </specification>
