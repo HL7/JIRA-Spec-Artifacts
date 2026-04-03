@@ -9,8 +9,6 @@ defaultWorkgroup="brr" gitUrl="https://github.com/HL7/vulcan-udp-ig" url="http:/
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact deprecated="true" id="ValueSet/ddf-study-title-type-vs" key="ValueSet-ddf-study-title-type-vs" name="CDISC DDF Study Title Type Value Set"/>
-<artifact deprecated="true" id="ValueSet/cdisc-yes-no-vs" key="ValueSet-cdisc-yes-no-vs" name="CDISC Yes No Unknown Not Applicable Value Set"/>
 <artifact id="ResearchStudy/Exemplar-ResearchStudy-Current-Amendment" key="ResearchStudy-Exemplar-ResearchStudy-Current-Amendment" name="Current amendments details"/>
 <artifact id="Composition/Narrative-Complex" key="Composition-Narrative-Complex" name="Example Narrative Complex - Other Patterns and Non M11 Content Suggestion"/>
 <artifact id="Composition/Narrative-Composition-per-M11-Section-1" key="Composition-Narrative-Composition-per-M11-Section-1" name="Example Narrative Composition per M11 Section - Section 1"/>
@@ -34,7 +32,7 @@ defaultWorkgroup="brr" gitUrl="https://github.com/HL7/vulcan-udp-ig" url="http:/
 <artifact id="ValueSet/m11-amendment-details-statement-vs" key="ValueSet-m11-amendment-details-statement-vs" name="ICH M11 Amendment Details Statement Value Set Terminology"/>
 <artifact id="ValueSet/m11-amendment-scope-enrollment-vs" key="ValueSet-m11-amendment-scope-enrollment-vs" name="ICH M11 Amendment Scope Enrollment Description Value Set Terminology"/>
 <artifact id="ValueSet/m11-study-amendment-scope-vs" key="ValueSet-m11-study-amendment-scope-vs" name="ICH M11 Amendment Scope Value Set Terminology"/>
-<artifact id="ValueSet/m11-yes-no-vs" key="ValueSet-m11-yes-no-vs" name="ICH M11 No Yes Value Set Terminology"/>
+<artifact id="ValueSet/m11-yes-no-vs" key="ValueSet-cdisc-yes-no-vs" name="ICH M11 No Yes Value Set Terminology"/>
 <artifact id="ValueSet/m11-study-amendment-reason-vs" key="ValueSet-m11-study-amendment-reason-vs" name="ICH M11 Reason for Amendment Value Set Terminology"/>
 <artifact id="ValueSet/m11-country-region-vs" key="ValueSet-m11-country-region-vs" name="ICH M11 Study Amendment Country Value Set"/>
 <artifact id="ValueSet/m11-blinded-roles-vs" key="ValueSet-m11-blinded-roles-vs" name="ICH M11 Trial Blinding Role Value Set Terminology"/>
@@ -55,60 +53,44 @@ defaultWorkgroup="brr" gitUrl="https://github.com/HL7/vulcan-udp-ig" url="http:/
 <artifact id="ResearchStudy/JPMA0001-eng" key="ResearchStudy-JPMA0001-eng" name="JPMA0001 Provided Example - English Language"/>
 <artifact id="ResearchStudy/JPMA0001-jpn" key="ResearchStudy-JPMA0001-jpn" name="JPMA0001 Provided Example - Japanese Language"/>
 <artifact id="Group/JPMA0001-Criteria-JPN" key="Group-JPMA0001-Criteria-JPN" name="Japanese Protocol from Vulcan UDP Eligibility Criteria"/>
-<artifact deprecated="true" id="ValueSet/m11-identifier-type-vs" key="ValueSet-m11-identifier-type-vs" name="M11 Identifier Type Value Set"/>
 <artifact id="StructureDefinition/m11-research-study" key="StructureDefinition-m11-research-study" name="M11 Research Study Extension"/>
 <artifact id="StructureDefinition/m11-research-study-profile" key="StructureDefinition-m11-research-study-profile" name="M11 Research Study Profile"/>
-<artifact deprecated="true" id="ValueSet/m11-section-codes-vs" key="ValueSet-m11-section-codes-vs" name="M11 Section Codes Value Set"/>
-<artifact id="StructureDefinition/m11-amendment-detail" key="StructureDefinition-m11-amendment-detail" name="M11_AmendmentDetails"/>
-<artifact id="StructureDefinition/m11-amendment-scope-impact" key="StructureDefinition-m11-amendment-scope-impact" name="M11_AmendmentScopeImpact"/>
+<artifact id="StructureDefinition/m11-amendment-detail" key="StructureDefinition-protocol-amendment-detail" name="M11_AmendmentDetails"/>
+<artifact id="StructureDefinition/m11-amendment-scope-impact" key="StructureDefinition-ResearchStudyStudyAmendmentScopeImpact" name="M11_AmendmentScopeImpact"/>
 <artifact id="StructureDefinition/m11-approval" key="StructureDefinition-m11-approval" name="M11_Approval"/>
 <artifact id="StructureDefinition/m11-confidentiality-statement" key="StructureDefinition-m11-confidentiality-statement" name="M11_ConfidentialityStatement"/>
 <artifact id="StructureDefinition/m11-protocol-amendment" key="StructureDefinition-protocol-amendment" name="M11_ProtocolAmendment"/>
-<artifact deprecated="true" id="ValueSet/nci-study-role-vs" key="ValueSet-nci-study-role-vs" name="NCI Study Role Value Set"/>
 <artifact id="Organization/Narrative-Organization" key="Organization-Narrative-Organization" name="Narrative Author Organization"/>
 <artifact id="StructureDefinition/narrative-elements" key="StructureDefinition-narrative-elements" name="Narrative Elements"/>
 <artifact deprecated="true" id="CodeSystem/narrative-elements-cs" key="CodeSystem-narrative-elements-cs" name="Narrative Elements Code System"/>
-<artifact deprecated="true" id="ValueSet/narrative-elements-vs" key="ValueSet-narrative-elements-vs" name="Narrative Elements Value Set"/>
 <artifact id="StructureDefinition/m11-research-study-narratives" key="StructureDefinition-m11-research-study-narratives" name="Research Study Narratives"/>
-<artifact deprecated="true" id="StructureDefinition/protocol-amendment-detail" key="StructureDefinition-protocol-amendment-detail" name="ResearchStudyStudyAmendmentDetails"/>
-<artifact deprecated="true" id="StructureDefinition/ResearchStudyStudyAmendmentScopeImpact" key="StructureDefinition-ResearchStudyStudyAmendmentScopeImpact" name="ResearchStudyStudyAmendmentScopeImpact"/>
 <artifact id="ResearchStudy/Exemplar-ResearchStudy-001" key="ResearchStudy-Exemplar-ResearchStudy-001" name="START HERE: Exemplar Research Study with narrative"/>
 <artifact deprecated="true" id="StructureDefinition/study-design" key="StructureDefinition-study-design" name="StudyDesign"/>
 <artifact id="Group/DIBASY-Eligibility" key="Group-DIBASY-Eligibility" name="StudyEligibilityCriteria: Eligibility Criteria for DIBASY Trial"/>
 <artifact id="ValueSet/udp-address-purpose-type-vs" key="ValueSet-udp-address-purpose-type-vs" name="UDP Address Purpose Type Value Set"/>
-<artifact id="ValueSet/udp-identifier-type-vs" key="ValueSet-udp-identifier-type-vs" name="UDP Identifier Type Value Set"/>
-<artifact id="ValueSet/udp-narrative-elements-vs" key="ValueSet-udp-narrative-elements-vs" name="UDP Narrative Elements Value Set using NCIT codes to create a FHIR value set."/>
-<artifact id="ValueSet/udp-party-role-type-vs" key="ValueSet-udp-party-role-type-vs" name="UDP Party Role Type Value Set"/>
+<artifact id="ValueSet/udp-identifier-type-vs" key="ValueSet-m11-identifier-type-vs" name="UDP Identifier Type Value Set"/>
+<artifact id="ValueSet/udp-narrative-elements-vs" key="ValueSet-narrative-elements-vs" name="UDP Narrative Elements Value Set using NCIT codes to create a FHIR value set."/>
+<artifact id="ValueSet/udp-party-role-type-vs" key="ValueSet-nci-study-role-vs" name="UDP Party Role Type Value Set"/>
 <artifact id="ValueSet/udp-related-artifact-type-vs" key="ValueSet-udp-related-artifact-type-vs" name="UDP Related Artifact Type Value Set"/>
-<artifact id="ValueSet/udp-section-codes-vs" key="ValueSet-udp-section-codes-vs" name="UDP Section Codes Value Set"/>
-<artifact id="ValueSet/udp-study-title-type-vs" key="ValueSet-udp-study-title-type-vs" name="UDP Study Title Type Value Set"/>
+<artifact id="ValueSet/udp-section-codes-vs" key="ValueSet-m11-section-codes-vs" name="UDP Section Codes Value Set"/>
+<artifact id="ValueSet/udp-study-title-type-vs" key="ValueSet-ddf-study-title-type-vs" name="UDP Study Title Type Value Set"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
-<page deprecated="true" key="02-background" name="02 Background"/>
-<page deprecated="true" key="03-best-practice" name="03 Best Practice"/>
-<page deprecated="true" key="04-use-cases" name="04 Use Cases"/>
-<page deprecated="true" key="05-protocol-preparation" name="05 Protocol Preparation"/>
-<page deprecated="true" key="06-info-models" name="06 Info Models"/>
-<page deprecated="true" key="07-fhir-representation" name="07 Fhir Representation"/>
-<page deprecated="true" key="08-bundles" name="08 Bundles"/>
-<page deprecated="true" key="09-links" name="09 Links"/>
-<page deprecated="true" key="10-credits" name="10 Credits"/>
-<page deprecated="true" key="11-changes" name="11 Changes"/>
-<page key="acknowledgements" name="Acknowledgements"/>
+<page key="10-credits" name="Acknowledgements"/>
 <page key="artifacts" name="Artifacts Summary"/>
-<page key="background" name="Background"/>
-<page key="best-practice" name="Best Practice"/>
-<page key="bundles" name="Bundles"/>
-<page key="changes" name="Changes"/>
+<page key="02-background" name="Background"/>
+<page key="03-best-practice" name="Best Practice"/>
+<page key="08-bundles" name="Bundles"/>
+<page key="11-changes" name="Changes"/>
 <page key="crossreferences" name="Crossreferences"/>
 <page key="downloads" name="Downloads"/>
-<page key="fhir-representation" name="Fhir Representation"/>
+<page key="07-fhir-representation" name="Fhir Representation"/>
 <page key="index" name="Home"/>
-<page key="info-models" name="Info Models"/>
+<page key="06-info-models" name="Info Models"/>
 <page key="licenses" name="Licenses"/>
-<page key="links" name="Links"/>
-<page key="protocol-preparation" name="Protocol Preparation"/>
+<page key="09-links" name="Links"/>
+<page key="05-protocol-preparation" name="Protocol Preparation"/>
 <page key="toc" name="Table of Contents"/>
 <page key="terminology" name="Terminology"/>
-<page key="use-cases" name="Use Cases"/>
+<page key="04-use-cases" name="Use Cases"/>
 </specification>
