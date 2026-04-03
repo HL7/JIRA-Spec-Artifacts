@@ -1,50 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/pharmaceutical-research-protocol/2025Sep" ciUrl="https://github.com/HL7/vulcan-udp-ig" defaultVersion="1.0.0-ballot" defaultWorkgroup="brr" url="http://hl7.org/fhir/uv/pharmaceutical-research-protocol" gitUrl="https://github.com/HL7/vulcan-udp-ig">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ballotUrl="http://hl7.org/fhir/uv/clinical-study-protocol/2026May" 
+ciUrl="https://github.com/HL7/vulcan-udp-ig" defaultVersion="1.0.0-ballot2" 
+defaultWorkgroup="brr" gitUrl="https://github.com/HL7/vulcan-udp-ig" url="http://hl7.org/fhir/uv/clinical-study-protocol">
 <version code="current" url="https://github.com/HL7/vulcan-udp-ig"/>
-<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/pharmaceutical-research-protocol/2025Sep"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/pharmaceutical-research-protocol/2025Sep" deprecated="true"/>
+<version code="1.0.0-ballot2" url="http://hl7.org/fhir/uv/clinical-study-protocol/2026May"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="ValueSet/ddf-study-title-type-vs" key="ValueSet-ddf-study-title-type-vs" name="CDISC DDF Study Title Type Value Set"/>
-<artifact id="ValueSet/cdisc-yes-no-vs" key="ValueSet-cdisc-yes-no-vs" name="CDISC Yes No Unknown Not Applicable Value Set"/>
-<artifact id="MedicinalProductDefinition/IGBJ-MedicinalProduct" key="MedicinalProductDefinition-IGBJ-MedicinalProduct" name="IGBJ Medicinal Product"/>
-<artifact id="Organization/IGBJ-Organization" key="Organization-IGBJ-Organization" name="IGBJ Organization"/>
-<artifact id="Composition/IGBJ-Narrative-1.3" key="Composition-IGBJ-Narrative-1.3" name="IGBJ Protocol Narrative 1.3 - Schedule of Activities"/>
-<artifact id="Composition/IGBJ-Narrative-2.1" key="Composition-IGBJ-Narrative-2.1" name="IGBJ Protocol Narrative 2.1"/>
-<artifact id="Composition/IGBJ-Narrative-5.1" key="Composition-IGBJ-Narrative-5.1" name="IGBJ Protocol Narrative 5.1"/>
-<artifact id="Composition/IGBJ-Narrative-9" key="Composition-IGBJ-Narrative-9" name="IGBJ Protocol Narrative 9"/>
-<artifact id="ResearchStudy/IGBJ-ResearchStudy" key="ResearchStudy-IGBJ-ResearchStudy" name="IGBJ Research Study with narrative"/>
-<artifact id="ValueSet/m11-identifier-type-vs" key="ValueSet-m11-identifier-type-vs" name="M11 Identifier Type Value Set"/>
-<artifact id="ValueSet/m11-phase-vs" key="ValueSet-m11-phase-vs" name="M11 Phase Value Set"/>
-<artifact id="StructureDefinition/m11-research-study-profile" key="StructureDefinition-m11-research-study-profile" name="M11 Research Study"/>
-<artifact id="ValueSet/m11-section-codes-vs" key="ValueSet-m11-section-codes-vs" name="M11 Section Codes Value Set"/>
-<artifact id="StructureDefinition/protocol-amendment" key="StructureDefinition-protocol-amendment" name="M11_ProtocolAmendment"/>
-<artifact id="ValueSet/nci-study-role-vs" key="ValueSet-nci-study-role-vs" name="NCI Study Role Value Set"/>
+<artifact deprecated="true" id="ValueSet/ddf-study-title-type-vs" key="ValueSet-ddf-study-title-type-vs" name="CDISC DDF Study Title Type Value Set"/>
+<artifact deprecated="true" id="ValueSet/cdisc-yes-no-vs" key="ValueSet-cdisc-yes-no-vs" name="CDISC Yes No Unknown Not Applicable Value Set"/>
+<artifact id="ResearchStudy/Exemplar-ResearchStudy-Current-Amendment" key="ResearchStudy-Exemplar-ResearchStudy-Current-Amendment" name="Current amendments details"/>
+<artifact id="Composition/Narrative-Complex" key="Composition-Narrative-Complex" name="Example Narrative Complex - Other Patterns and Non M11 Content Suggestion"/>
+<artifact id="Composition/Narrative-Composition-per-M11-Section-1" key="Composition-Narrative-Composition-per-M11-Section-1" name="Example Narrative Composition per M11 Section - Section 1"/>
+<artifact id="Composition/Narrative-Composition-per-M11-Section-2" key="Composition-Narrative-Composition-per-M11-Section-2" name="Example Narrative Composition per M11 Section - Section 2"/>
+<artifact id="Composition/Narrative-Composition-per-M11-Section-3" key="Composition-Narrative-Composition-per-M11-Section-3" name="Example Narrative Composition per M11 Section - Section 3"/>
+<artifact id="Composition/Narrative-Single-Composition" key="Composition-Narrative-Single-Composition" name="Example Narrative Single Composition"/>
+<artifact id="Composition/Narrative-Composition-Section-per-Section" key="Composition-Narrative-Composition-Section-per-Section" name="Example Narrative Single Composition with a Section for Each M11 Section"/>
+<artifact id="Organization/Exemplar-CoSponsor-Organization" key="Organization-Exemplar-CoSponsor-Organization" name="Exemplar CoSponsor Organization"/>
+<artifact id="Practitioner/Exemplar-CoSponsor-Practitioner" key="Practitioner-Exemplar-CoSponsor-Practitioner" name="Exemplar CoSponsor Practitioner"/>
+<artifact id="Organization/Exemplar-Devices-Organization" key="Organization-Exemplar-Devices-Organization" name="Exemplar Devices Organization"/>
+<artifact id="Organization/Exemplar-Local-Sponsor-Organization" key="Organization-Exemplar-Local-Sponsor-Organization" name="Exemplar Local Sponsor Organization"/>
+<artifact id="Practitioner/Exemplar-Local-Sponsor-Practitioner" key="Practitioner-Exemplar-Local-Sponsor-Practitioner" name="Exemplar Local Sponsor Practitioner"/>
+<artifact id="MedicinalProductDefinition/Exemplar-MedicinalProduct" key="MedicinalProductDefinition-Exemplar-MedicinalProduct" name="Exemplar Medicinal Product"/>
+<artifact id="Composition/Exemplar-Narrative" key="Composition-Exemplar-Narrative" name="Exemplar Protocol Narrative"/>
+<artifact id="Composition/Exemplar-Narrative-2.1" key="Composition-Exemplar-Narrative-2.1" name="Exemplar Protocol Narrative 2.1"/>
+<artifact id="Organization/Exemplar-Regulator-Organization" key="Organization-Exemplar-Regulator-Organization" name="Exemplar Regulating Authority (ERA)"/>
+<artifact id="Practitioner/Exemplar-Sponsor-Expert-Practitioner" key="Practitioner-Exemplar-Sponsor-Expert-Practitioner" name="Exemplar Sponsor Expert Medical Practitioner"/>
+<artifact id="Organization/Exemplar-Sponsor-Organization" key="Organization-Exemplar-Sponsor-Organization" name="Exemplar Sponsor Organization"/>
+<artifact id="Practitioner/Exemplar-Sponsor-Practitioner" key="Practitioner-Exemplar-Sponsor-Practitioner" name="Exemplar Sponsor Practitioner"/>
+<artifact id="CodeSystem/ncit-cs" key="CodeSystem-ncit-cs" name="Fragment of NCIT Code System"/>
+<artifact id="ValueSet/m11-amendment-details-statement-vs" key="ValueSet-m11-amendment-details-statement-vs" name="ICH M11 Amendment Details Statement Value Set Terminology"/>
+<artifact id="ValueSet/m11-amendment-scope-enrollment-vs" key="ValueSet-m11-amendment-scope-enrollment-vs" name="ICH M11 Amendment Scope Enrollment Description Value Set Terminology"/>
+<artifact id="ValueSet/m11-study-amendment-scope-vs" key="ValueSet-m11-study-amendment-scope-vs" name="ICH M11 Amendment Scope Value Set Terminology"/>
+<artifact id="ValueSet/m11-yes-no-vs" key="ValueSet-m11-yes-no-vs" name="ICH M11 No Yes Value Set Terminology"/>
+<artifact id="ValueSet/m11-study-amendment-reason-vs" key="ValueSet-m11-study-amendment-reason-vs" name="ICH M11 Reason for Amendment Value Set Terminology"/>
+<artifact id="ValueSet/m11-country-region-vs" key="ValueSet-m11-country-region-vs" name="ICH M11 Study Amendment Country Value Set"/>
+<artifact id="ValueSet/m11-blinded-roles-vs" key="ValueSet-m11-blinded-roles-vs" name="ICH M11 Trial Blinding Role Value Set Terminology"/>
+<artifact id="ValueSet/m11-phase-vs" key="ValueSet-m11-phase-vs" name="ICH M11 Trial Phase Value Set Terminology"/>
+<artifact deprecated="true" id="MedicinalProductDefinition/IGBJ-MedicinalProduct" key="MedicinalProductDefinition-IGBJ-MedicinalProduct" name="IGBJ Medicinal Product"/>
+<artifact deprecated="true" id="Organization/IGBJ-Organization" key="Organization-IGBJ-Organization" name="IGBJ Organization"/>
+<artifact deprecated="true" id="Composition/IGBJ-Narrative-1.3" key="Composition-IGBJ-Narrative-1.3" name="IGBJ Protocol Narrative 1.3 - Schedule of Activities"/>
+<artifact deprecated="true" id="Composition/IGBJ-Narrative-2.1" key="Composition-IGBJ-Narrative-2.1" name="IGBJ Protocol Narrative 2.1"/>
+<artifact deprecated="true" id="Composition/IGBJ-Narrative-5.1" key="Composition-IGBJ-Narrative-5.1" name="IGBJ Protocol Narrative 5.1"/>
+<artifact deprecated="true" id="Composition/IGBJ-Narrative-9" key="Composition-IGBJ-Narrative-9" name="IGBJ Protocol Narrative 9"/>
+<artifact id="ResearchStudy/ResearchStudy-Composition-Section-Per-Section-001" key="ResearchStudy-ResearchStudy-Composition-Section-Per-Section-001" name="IGBJ Research Study with Composition Section for Each M11 Section"/>
+<artifact id="ResearchStudy/ResearchStudy-Narrative-Complex-001" key="ResearchStudy-ResearchStudy-Narrative-Complex-001" name="IGBJ Research Study with complex narrative"/>
+<artifact id="ResearchStudy/ResearchStudy-Narrative-Comp-Per-M11-001" key="ResearchStudy-ResearchStudy-Narrative-Comp-Per-M11-001" name="IGBJ Research Study with composition for each M11 narrative section"/>
+<artifact deprecated="true" id="ResearchStudy/IGBJ-ResearchStudy" key="ResearchStudy-IGBJ-ResearchStudy" name="IGBJ Research Study with narrative"/>
+<artifact id="ResearchStudy/ResearchStudy-Single-Composition-001" key="ResearchStudy-ResearchStudy-Single-Composition-001" name="IGBJ Research Study with narrative as Single Composition"/>
+<artifact id="Organization/JPMA-Organization" key="Organization-JPMA-Organization" name="JPMA Organization"/>
+<artifact id="Composition/JPMA0001-Section5-jpn" key="Composition-JPMA0001-Section5-jpn" name="JPMA0001 Inclusion/Exclusion Narrative"/>
+<artifact id="ResearchStudy/JPMA0001-eng" key="ResearchStudy-JPMA0001-eng" name="JPMA0001 Provided Example - English Language"/>
+<artifact id="ResearchStudy/JPMA0001-jpn" key="ResearchStudy-JPMA0001-jpn" name="JPMA0001 Provided Example - Japanese Language"/>
+<artifact id="Group/JPMA0001-Criteria-JPN" key="Group-JPMA0001-Criteria-JPN" name="Japanese Protocol from Vulcan UDP Eligibility Criteria"/>
+<artifact deprecated="true" id="ValueSet/m11-identifier-type-vs" key="ValueSet-m11-identifier-type-vs" name="M11 Identifier Type Value Set"/>
+<artifact id="StructureDefinition/m11-research-study" key="StructureDefinition-m11-research-study" name="M11 Research Study Extension"/>
+<artifact id="StructureDefinition/m11-research-study-profile" key="StructureDefinition-m11-research-study-profile" name="M11 Research Study Profile"/>
+<artifact deprecated="true" id="ValueSet/m11-section-codes-vs" key="ValueSet-m11-section-codes-vs" name="M11 Section Codes Value Set"/>
+<artifact id="StructureDefinition/m11-amendment-detail" key="StructureDefinition-m11-amendment-detail" name="M11_AmendmentDetails"/>
+<artifact id="StructureDefinition/m11-amendment-scope-impact" key="StructureDefinition-m11-amendment-scope-impact" name="M11_AmendmentScopeImpact"/>
+<artifact id="StructureDefinition/m11-approval" key="StructureDefinition-m11-approval" name="M11_Approval"/>
+<artifact id="StructureDefinition/m11-confidentiality-statement" key="StructureDefinition-m11-confidentiality-statement" name="M11_ConfidentialityStatement"/>
+<artifact id="StructureDefinition/m11-protocol-amendment" key="StructureDefinition-protocol-amendment" name="M11_ProtocolAmendment"/>
+<artifact deprecated="true" id="ValueSet/nci-study-role-vs" key="ValueSet-nci-study-role-vs" name="NCI Study Role Value Set"/>
+<artifact id="Organization/Narrative-Organization" key="Organization-Narrative-Organization" name="Narrative Author Organization"/>
 <artifact id="StructureDefinition/narrative-elements" key="StructureDefinition-narrative-elements" name="Narrative Elements"/>
-<artifact id="CodeSystem/narrative-elements-cs" key="CodeSystem-narrative-elements-cs" name="Narrative Elements Code System"/>
-<artifact id="ValueSet/narrative-elements-vs" key="ValueSet-narrative-elements-vs" name="Narrative Elements Value Set"/>
+<artifact deprecated="true" id="CodeSystem/narrative-elements-cs" key="CodeSystem-narrative-elements-cs" name="Narrative Elements Code System"/>
+<artifact deprecated="true" id="ValueSet/narrative-elements-vs" key="ValueSet-narrative-elements-vs" name="Narrative Elements Value Set"/>
 <artifact id="StructureDefinition/m11-research-study-narratives" key="StructureDefinition-m11-research-study-narratives" name="Research Study Narratives"/>
-<artifact id="StructureDefinition/protocol-amendment-detail" key="StructureDefinition-protocol-amendment-detail" name="ResearchStudyStudyAmendmentDetails"/>
-<artifact id="StructureDefinition/ResearchStudyStudyAmendmentScopeImpact" key="StructureDefinition-ResearchStudyStudyAmendmentScopeImpact" name="ResearchStudyStudyAmendmentScopeImpact"/>
-<artifact id="ValueSet/m11-country-region-vs" key="ValueSet-m11-country-region-vs" name="Study Amendment Country Value Set"/>
-<artifact id="ValueSet/m11-study-amendment-reason-vs" key="ValueSet-m11-study-amendment-reason-vs" name="Study Amendment Reason Value Set"/>
-<artifact id="ValueSet/m11-amendment-scope-enrollment-vs" key="ValueSet-m11-amendment-scope-enrollment-vs" name="Study Amendment Scope Enrollment Value Set"/>
-<artifact id="ValueSet/m11-study-amendment-scope-vs" key="ValueSet-m11-study-amendment-scope-vs" name="Study Amendment Scope Value Set"/>
-<artifact id="StructureDefinition/study-design" key="StructureDefinition-study-design" name="StudyDesign"/>
+<artifact deprecated="true" id="StructureDefinition/protocol-amendment-detail" key="StructureDefinition-protocol-amendment-detail" name="ResearchStudyStudyAmendmentDetails"/>
+<artifact deprecated="true" id="StructureDefinition/ResearchStudyStudyAmendmentScopeImpact" key="StructureDefinition-ResearchStudyStudyAmendmentScopeImpact" name="ResearchStudyStudyAmendmentScopeImpact"/>
+<artifact id="ResearchStudy/Exemplar-ResearchStudy-001" key="ResearchStudy-Exemplar-ResearchStudy-001" name="START HERE: Exemplar Research Study with narrative"/>
+<artifact deprecated="true" id="StructureDefinition/study-design" key="StructureDefinition-study-design" name="StudyDesign"/>
+<artifact id="Group/DIBASY-Eligibility" key="Group-DIBASY-Eligibility" name="StudyEligibilityCriteria: Eligibility Criteria for DIBASY Trial"/>
+<artifact id="ValueSet/udp-address-purpose-type-vs" key="ValueSet-udp-address-purpose-type-vs" name="UDP Address Purpose Type Value Set"/>
+<artifact id="ValueSet/udp-identifier-type-vs" key="ValueSet-udp-identifier-type-vs" name="UDP Identifier Type Value Set"/>
+<artifact id="ValueSet/udp-narrative-elements-vs" key="ValueSet-udp-narrative-elements-vs" name="UDP Narrative Elements Value Set using NCIT codes to create a FHIR value set."/>
+<artifact id="ValueSet/udp-party-role-type-vs" key="ValueSet-udp-party-role-type-vs" name="UDP Party Role Type Value Set"/>
+<artifact id="ValueSet/udp-related-artifact-type-vs" key="ValueSet-udp-related-artifact-type-vs" name="UDP Related Artifact Type Value Set"/>
+<artifact id="ValueSet/udp-section-codes-vs" key="ValueSet-udp-section-codes-vs" name="UDP Section Codes Value Set"/>
+<artifact id="ValueSet/udp-study-title-type-vs" key="ValueSet-udp-study-title-type-vs" name="UDP Study Title Type Value Set"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
-<page key="02-background" name="02 Background"/>
-<page key="03-best-practice" name="03 Best Practice"/>
-<page key="04-use-cases" name="04 Use Cases"/>
-<page key="05-protocol-preparation" name="05 Protocol Preparation"/>
-<page key="06-info-models" name="06 Info Models"/>
-<page key="07-fhir-representation" name="07 Fhir Representation"/>
-<page key="08-bundles" name="08 Bundles"/>
-<page key="09-links" name="09 Links"/>
-<page key="10-credits" name="10 Credits"/>
-<page key="11-changes" name="11 Changes"/>
+<page deprecated="true" key="02-background" name="02 Background"/>
+<page deprecated="true" key="03-best-practice" name="03 Best Practice"/>
+<page deprecated="true" key="04-use-cases" name="04 Use Cases"/>
+<page deprecated="true" key="05-protocol-preparation" name="05 Protocol Preparation"/>
+<page deprecated="true" key="06-info-models" name="06 Info Models"/>
+<page deprecated="true" key="07-fhir-representation" name="07 Fhir Representation"/>
+<page deprecated="true" key="08-bundles" name="08 Bundles"/>
+<page deprecated="true" key="09-links" name="09 Links"/>
+<page deprecated="true" key="10-credits" name="10 Credits"/>
+<page deprecated="true" key="11-changes" name="11 Changes"/>
+<page key="acknowledgements" name="Acknowledgements"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="background" name="Background"/>
+<page key="best-practice" name="Best Practice"/>
+<page key="bundles" name="Bundles"/>
+<page key="changes" name="Changes"/>
+<page key="crossreferences" name="Crossreferences"/>
 <page key="downloads" name="Downloads"/>
+<page key="fhir-representation" name="Fhir Representation"/>
 <page key="index" name="Home"/>
+<page key="info-models" name="Info Models"/>
+<page key="licenses" name="Licenses"/>
+<page key="links" name="Links"/>
+<page key="protocol-preparation" name="Protocol Preparation"/>
 <page key="toc" name="Table of Contents"/>
+<page key="terminology" name="Terminology"/>
+<page key="use-cases" name="Use Cases"/>
 </specification>
