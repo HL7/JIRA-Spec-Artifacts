@@ -141,7 +141,7 @@
           <xsl:message terminate="yes" select="concat('ERROR: FHIR HL7 AU specifications that are not deprecated must have a gitUrl attribute that starts with ''https://github.com/hl7au/'' ', @key)"/>
         </xsl:when>
         <xsl:when test="not(@defaultWorkgroup='eu') and not(starts-with(@defaultWorkgroup,'au-')) and not(starts-with(@gitUrl, 'https://github.com/HL7/') or starts-with(@gitUrl, 'https://github.com/FHIR/'))">
-          <xsl:message terminate="yes" select="concat('ERROR: FHIR HL7 International specifications that are not deprecated must have a gitUrl attribute that starts with ''https://github.com/HL7/'' ', @key)"/>
+          <xsl:message terminate="yes" select="concat('ERROR: FHIR HL7 International specifications that are not deprecated must have a gitUrl attribute that starts with ''https://github.com/HL7/''.  Found ', @gitUrl, ' for spec ', @key)"/>
         </xsl:when>
       </xsl:choose>
     </xsl:for-each>
@@ -164,8 +164,8 @@
         </xsl:when>
       </xsl:choose>
     </xsl:for-each>
-    <xsl:for-each select="distinct-values($ballotSpecs/specification/@gitUrl)">
-      <xsl:if test="count($ballotSpecs/specification[@gitUrl=current()])!=1">
+    <xsl:for-each select="distinct-values($ballotSpecs/specification[not(@deprecated='true')]/@gitUrl)">
+      <xsl:if test="count($ballotSpecs/specification[not(@deprecated='true') and @gitUrl=current()])!=1">
         <xsl:variable name="dupSpecs" select="string-join($ballotSpecs/specification[@gitUrl=current()]/@key, ', ')"/>
         <xsl:message select="concat('WARNING: Multiple FHIR specifications with the same gitUrl of ''', ., ''': ', $dupSpecs)"/>
       </xsl:if>
@@ -176,26 +176,20 @@
     <xsl:for-each select="$ballotSpecs/specification[@gitUrl[not(starts-with(., 'https://github.com/HL7/'))]]">
       <xsl:message select="concat('WARNING: GitUrl for specification ', @key, ' SHOULD must start with ''https://github.com/HL7/'': ', @gitUrl)"/>
     </xsl:for-each>
-    <xsl:for-each select="distinct-values($ballotSpecs/specification/@url)">
-      <xsl:if test="count($ballotSpecs/specification[@url=current()])!=1">
+    <xsl:for-each select="distinct-values($ballotSpecs/specification[not(@deprecated='true')]/@url)">
+      <xsl:if test="count($ballotSpecs/specification[not(@deprecated='true') and @url=current()])!=1">
         <xsl:variable name="dupSpecs" select="string-join($ballotSpecs/specification[@url=current()]/@key, ', ')"/>
         <xsl:message terminate="yes" select="concat('ERROR: Multiple FHIR specifications with the same url of ''', ., ''': ', $dupSpecs)"/>
       </xsl:if>
     </xsl:for-each>
-    <xsl:for-each select="distinct-values($ballotSpecs/specification/@ciUrl)">
-      <xsl:if test="count($ballotSpecs/specification[@ciUrl=current()])!=1">
+    <xsl:for-each select="distinct-values($ballotSpecs/specification[not(@deprecated='true')]/@ciUrl)">
+      <xsl:if test="count($ballotSpecs/specification[not(@deprecated='true') and @ciUrl=current()])!=1">
         <xsl:variable name="dupSpecs" select="string-join($ballotSpecs/specification[@ciUrl=current()]/@key, ', ')"/>
         <xsl:message terminate="yes" select="concat('ERROR: Multiple FHIR specifications with the same ciUrl of ''', ., ''': ', $dupSpecs)"/>
       </xsl:if>
     </xsl:for-each>
-    <xsl:for-each select="distinct-values($ballotSpecs/specification/@ballotUrl)">
-      <xsl:if test="count($ballotSpecs/specification[@ballotUrl=current()])!=1">
-        <xsl:variable name="dupSpecs" select="string-join($ballotSpecs/specification[@ballotUrl=current()]/@key, ', ')"/>
-        <xsl:message terminate="yes" select="concat('ERROR: Multiple FHIR specifications with the same ballotUrl of ''', ., ''': ', $dupSpecs)"/>
-      </xsl:if>
-    </xsl:for-each>
-    <xsl:for-each select="distinct-values($ballotSpecs/specification/@ballotUrl)">
-      <xsl:if test="count($ballotSpecs/specification[@ballotUrl=current()])!=1">
+    <xsl:for-each select="distinct-values($ballotSpecs/specification[not(@deprecated='true')]/@ballotUrl)">
+      <xsl:if test="count($ballotSpecs/specification[not(@deprecated='true') and @ballotUrl=current()])!=1">
         <xsl:variable name="dupSpecs" select="string-join($ballotSpecs/specification[@ballotUrl=current()]/@key, ', ')"/>
         <xsl:message terminate="yes" select="concat('ERROR: Multiple FHIR specifications with the same ballotUrl of ''', ., ''': ', $dupSpecs)"/>
       </xsl:if>
