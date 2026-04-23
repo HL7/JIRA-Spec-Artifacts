@@ -1,0 +1,106 @@
+name: Claude PR Triage (Private Email)
+
+on:
+  workflow_run:
+    workflows: ["pull-request-build"]
+    types: [completed]
+
+permissions:
+  contents: read
+  pull-requests: read
+  actions: read   # needed to read the triggering workflow's metadata
+
+jobs:
+  triage:
+    # Only run if validation succeeded AND it was triggered by a PR
+    if: >
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'pull_request'
+    runs-on: ubuntu-latest
+    environment: claude-triage   # <-- gated environment, see below
+
+    steps:
+      - name: Get PR number
+        id: pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prs = context.payload.workflow_run.pull_requests;
+            if (!prs || prs.length === 0) {
+              core.setFailed('No PR associated with this workflow run');
+              return;
+            }
+            const pr = prs[0];
+            core.setOutput('number', pr.number);
+            core.setOutput('head_sha', pr.head.sha);
+            core.setOutput('html_url',
+              `https://github.com/${context.repo.owner}/${context.repo.repo}/pull/${pr.number}`);
+
+      - name: Checkout PR code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.pr.outputs.head_sha }}
+          fetch-depth: 0
+
+      - name: Claude analyzes PR
+        id: claude
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: '--model claude-opus-4-7'
+          prompt: |
+            Read REVIEW_PROFILE.md for the user's review patterns.
+            Analyze PR #${{ steps.pr.outputs.number }} against those patterns.
+
+            DO NOT post any comments on the PR. Output only a JSON object
+            to a file at /tmp/triage.json with these fields:
+              recommendation: "approve" | "request_changes" | "discuss"
+              suggestedResponse: any questions or issues that need to be addressed before approval. This will be sent as an email, so format it accordingly (e.g. use HTML).
+              confidence: "high" | "medium" | "low"
+
+      - name: Parse triage output
+        id: parse
+        run: |
+          RECOMMENDATION=$(jq -r .recommendation /tmp/triage.json)
+          CONFIDENCE=$(jq -r .confidence /tmp/triage.json)
+          echo "recommendation=$RECOMMENDATION" >> $GITHUB_OUTPUT
+          echo "confidence=$CONFIDENCE" >> $GITHUB_OUTPUT
+
+          # Pick link target and label based on recommendation.
+          # request_changes -> straight to files diff for line-level review.
+          # approve / discuss -> PR conversation page (merge/comment lives there).
+          if [ "$RECOMMENDATION" = "request_changes" ]; then
+            LINK_URL="${{ steps.pr.outputs.html_url }}/files"
+            LINK_LABEL="Open review page →"
+          else
+            LINK_URL="${{ steps.pr.outputs.html_url }}"
+            LINK_LABEL="Open PR →"
+          fi
+          echo "link_url=$LINK_URL" >> $GITHUB_OUTPUT
+          echo "link_label=$LINK_LABEL" >> $GITHUB_OUTPUT
+
+          {
+            echo "html_body<<EOF"
+            jq -r '
+              "<h2>Recommendation: " + (.recommendation | ascii_upcase) + "</h2>" +
+              "<p><strong>Confidence:</strong> " + .confidence + "</p>" +
+              "<p>" + .suggestedResponse + "</p>"
+            ' /tmp/triage.json
+            echo EOF
+          } >> $GITHUB_OUTPUT
+
+      - name: Send email via Resend
+        run: |
+          # Build the payload with jq so quotes, newlines, and backslashes
+          # in Claude's output are escaped correctly.
+          PAYLOAD=$(jq -n \
+            --arg from "Claude Triage <claude-triage@lmckenzie.com>" \
+            --arg to "lloyd@lmckenzie.com" \
+            --arg subject "[JiraSpec triage] PR #${{ steps.pr.outputs.number }} — ${{ steps.parse.outputs.recommendation }}" \
+            --arg html "${{ steps.parse.outputs.html_body }} <p><a href='${{ steps.parse.outputs.link_url }}'>${{ steps.parse.outputs.link_label }}</a></p>" \
+            '{from: $from, to: [$to], subject: $subject, html: $html}')
+
+          curl -X POST https://api.resend.com/emails \
+            -H "Authorization: Bearer ${{ secrets.RESEND_API_KEY }}" \
+            -H "Content-Type: application/json" \
+            -d "$PAYLOAD"
