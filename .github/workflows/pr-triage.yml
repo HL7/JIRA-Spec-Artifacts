@@ -1,4 +1,19 @@
+# This workflow performs triage on JiraSpec PRs using Claude. It's triggered by three events:
+# 1. A successful build on a PR (via workflow_run)
+# 2. A draft PR being marked ready for review (via pull_request)
+# 3. The PR author responding to an admin comment (via issue_comment)
+# Based on the trigger and PR content, it generates a triage recommendation and sends it via email.
 name: Claude PR Triage (Private Email)
+run-name: >-
+  Triage for ${{
+    (github.event_name == 'pull_request' || github.event_name == 'pull_request_target') &&
+      format('PR #{0}: {1}', github.event.pull_request.number, github.event.pull_request.title) ||
+    github.event_name == 'issue_comment' &&
+      format('PR #{0} (comment by {1})', github.event.issue.number, github.event.comment.user.login) ||
+    github.event_name == 'workflow_run' &&
+      format('build {0} on {1}', github.event.workflow_run.display_title, github.event.workflow_run.head_branch) ||
+    'unknown'
+  }}
 
 on:
   # Path 1: build just completed. Triage if the PR is no longer a draft.
@@ -6,21 +21,21 @@ on:
     workflows: ["pull-request-build"]
     types: [completed]
 
-  # Path 2: draft was marked ready for review. Triage if the most recent
-  # build on the head SHA passed.
-  pull_request:
+  # Path 2: draft was marked ready for review. Uses pull_request_target
+  # so fork PRs can run with full permissions.
+  pull_request_target:
     types: [ready_for_review]
 
-  # Path 3: a comment was added. Triage if build passed, not a draft, an
-  # admin commented earlier, and this comment is from the PR author.
+  # Path 3: a comment was added.
   issue_comment:
     types: [created]
 
 permissions:
   contents: read
-  pull-requests: read
-  actions: read     # needed to query workflow runs
-  id-token: write   # needed by claude-code-action
+  pull-requests: write   # claude-code-action needs this even though our prompt forbids commenting
+  issues: write          # claude-code-action needs this internally
+  actions: read          # needed to query workflow runs
+  id-token: write        # needed by claude-code-action even when using github_token (harmless)
 
 jobs:
   eligibility:
@@ -49,15 +64,28 @@ jobs:
                 core.setOutput('should_triage', 'false');
                 return;
               }
-              const prs = wr.pull_requests;
+
+              let prs = wr.pull_requests;
               if (!prs || prs.length === 0) {
-                core.notice('workflow_run had no associated PR');
+                const headOwner = wr.head_repository && wr.head_repository.owner
+                  ? wr.head_repository.owner.login
+                  : owner;
+                const { data: found } = await github.rest.pulls.list({
+                  owner, repo,
+                  state: 'open',
+                  head: `${headOwner}:${wr.head_branch}`,
+                });
+                prs = found;
+              }
+
+              if (!prs || prs.length === 0) {
+                core.notice(`No PR found for ${wr.head_branch} at ${wr.head_sha}`);
                 core.setOutput('should_triage', 'false');
                 return;
               }
               prNumber = prs[0].number;
 
-            } else if (eventName === 'pull_request') {
+            } else if (eventName === 'pull_request_target') {
               prNumber = context.payload.pull_request.number;
 
             } else if (eventName === 'issue_comment') {
@@ -87,7 +115,7 @@ jobs:
             if (eventName === 'workflow_run') {
               triggerKind = 'build_passed';
 
-            } else if (eventName === 'pull_request') {
+            } else if (eventName === 'pull_request_target') {
               const { data: runs } = await github.rest.actions.listWorkflowRunsForRepo({
                 owner, repo,
                 event: 'pull_request',
@@ -192,11 +220,29 @@ jobs:
           ref: ${{ needs.eligibility.outputs.head_sha }}
           fetch-depth: 0
 
+      - name: Add PR context to run summary
+        env:
+          PR_NUMBER: ${{ needs.eligibility.outputs.pr_number }}
+          PR_URL: ${{ needs.eligibility.outputs.html_url }}
+          TRIGGER_KIND: ${{ needs.eligibility.outputs.trigger_kind }}
+        run: |
+          {
+            echo "## Triage run context"
+            echo ""
+            echo "- **PR:** [#$PR_NUMBER]($PR_URL)"
+            echo "- **Trigger:** $TRIGGER_KIND"
+          } >> $GITHUB_STEP_SUMMARY
+
       - name: Claude analyzes PR
         id: claude
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Supplying github_token makes the action skip OIDC + Claude GitHub
+          # App token exchange, which fails for fork-triggered workflow_run
+          # events. The built-in GITHUB_TOKEN has whatever permissions the
+          # top-level `permissions:` block grants, which is sufficient.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           claude_args: >-
             --model claude-opus-4-7
             --allowedTools "Read,Bash(gh:*),Glob,Grep"
@@ -222,6 +268,7 @@ jobs:
               recommendation: "approve" | "request_changes" | "discuss"
               suggestedResponse: questions or issues that need to be addressed before approval, formatted as HTML for email. Empty string if no issues.
               confidence: "high" | "medium" | "low"
+              changeSummary: A detailed overview of the changes made in the PR, describing them in terms of the profiles and value sets being modified
 
       - name: Parse triage output
         id: parse
@@ -251,13 +298,11 @@ jobs:
             exit 1
           fi
 
-          # Extract the last valid JSON object containing "recommendation"
-          # from Claude's output. Handles prose, fences, and bare JSON.
           JSON_TEXT=$(echo "$CLAUDE_OUTPUT" | python3 -c '
           import sys, re, json
           text = sys.stdin.read()
-          # Match balanced {...} blocks, shallowest nesting. Good enough for our schema.
-          candidates = re.findall(r"\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}", text, re.DOTALL)
+          pattern = r"\{(?:[^{}]|\{(?:[^{}]|\{[^{}]*\})*\})*\}"
+          candidates = re.findall(pattern, text, re.DOTALL)
           for candidate in reversed(candidates):
               try:
                   parsed = json.loads(candidate)
@@ -281,6 +326,7 @@ jobs:
           RECOMMENDATION=$(echo "$JSON_TEXT" | jq -r .recommendation)
           CONFIDENCE=$(echo "$JSON_TEXT" | jq -r .confidence)
           SUGGESTED_RESPONSE=$(echo "$JSON_TEXT" | jq -r .suggestedResponse)
+          CHANGE_SUMMARY=$(echo "$JSON_TEXT" | jq -r .changeSummary)
 
           echo "recommendation=$RECOMMENDATION" >> $GITHUB_OUTPUT
           echo "confidence=$CONFIDENCE" >> $GITHUB_OUTPUT
@@ -313,6 +359,7 @@ jobs:
             echo "<h2>Recommendation: $RECOMMENDATION_UPPER</h2>"
             echo "<p><strong>Confidence:</strong> $CONFIDENCE</p>"
             echo "<p>$BODY_TEXT</p>"
+            echo "<p><strong>Change Summary:</strong> $CHANGE_SUMMARY</p>"
             echo "HTMLEOF"
           } >> $GITHUB_OUTPUT
 
