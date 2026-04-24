@@ -234,12 +234,23 @@ jobs:
       - name: Parse triage output
         id: parse
         env:
-          RECOMMENDATION: ${{ fromJSON(steps.claude.outputs.structured_output).recommendation }}
-          CONFIDENCE: ${{ fromJSON(steps.claude.outputs.structured_output).confidence }}
-          SUGGESTED_RESPONSE: ${{ fromJSON(steps.claude.outputs.structured_output).suggestedResponse }}
+          CLAUDE_OUTPUT: ${{ steps.claude.outputs.structured_output }}
           HTML_URL: ${{ needs.eligibility.outputs.html_url }}
           TRIGGER_KIND: ${{ needs.eligibility.outputs.trigger_kind }}
         run: |
+          echo "=== Raw Claude output ==="
+          echo "$CLAUDE_OUTPUT"
+          echo "=== End raw output ==="
+
+          if [ -z "$CLAUDE_OUTPUT" ]; then
+            echo "ERROR: structured_output is empty. The claude-code-action may expose its result under a different output name. Check the 'Claude analyzes PR' step logs above for the actual output names."
+            exit 1
+          fi
+
+          RECOMMENDATION=$(echo "$CLAUDE_OUTPUT" | jq -r .recommendation)
+          CONFIDENCE=$(echo "$CLAUDE_OUTPUT" | jq -r .confidence)
+          SUGGESTED_RESPONSE=$(echo "$CLAUDE_OUTPUT" | jq -r .suggestedResponse)
+
           echo "recommendation=$RECOMMENDATION" >> $GITHUB_OUTPUT
           echo "confidence=$CONFIDENCE" >> $GITHUB_OUTPUT
 
@@ -260,8 +271,12 @@ jobs:
           esac
           echo "subject_tag=$SUBJECT_TAG" >> $GITHUB_OUTPUT
 
-          # Build HTML body using env vars so shell quoting doesn't mangle it.
-          BODY_TEXT="${SUGGESTED_RESPONSE:-No issues found.}"
+          # jq -r returns literal "null" for null JSON fields; coerce to default.
+          if [ -z "$SUGGESTED_RESPONSE" ] || [ "$SUGGESTED_RESPONSE" = "null" ]; then
+            BODY_TEXT="No issues found."
+          else
+            BODY_TEXT="$SUGGESTED_RESPONSE"
+          fi
           RECOMMENDATION_UPPER=$(echo "$RECOMMENDATION" | tr '[:lower:]' '[:upper:]')
           {
             echo "html_body<<EOF"
