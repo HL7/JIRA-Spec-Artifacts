@@ -1,46 +1,207 @@
 name: Claude PR Triage (Private Email)
 
 on:
+  # Path 1: build just completed. Triage if the PR is no longer a draft.
   workflow_run:
     workflows: ["pull-request-build"]
     types: [completed]
 
+  # Path 2: draft was marked ready for review. Triage if the most recent
+  # build on the head SHA passed.
+  pull_request:
+    types: [ready_for_review]
+
+  # Path 3: a comment was added. Triage if build passed, not a draft, an
+  # admin commented earlier, and this comment is from the PR author.
+  issue_comment:
+    types: [created]
+
 permissions:
   contents: read
   pull-requests: read
-  actions: read   # needed to read the triggering workflow's metadata
-  id-token: write  # needed to authenticate to Resend using OIDC
+  actions: read     # needed to query workflow runs
+  id-token: write   # needed by claude-code-action
 
 jobs:
-  triage:
-    # Only run if validation succeeded AND it was triggered by a PR
-    if: >
-      github.event.workflow_run.conclusion == 'success' &&
-      github.event.workflow_run.event == 'pull_request'
+  eligibility:
     runs-on: ubuntu-latest
-    environment: claude-triage   # <-- gated environment, see below
+    outputs:
+      should_triage: ${{ steps.check.outputs.should_triage }}
+      pr_number: ${{ steps.check.outputs.pr_number }}
+      head_sha: ${{ steps.check.outputs.head_sha }}
+      html_url: ${{ steps.check.outputs.html_url }}
+      trigger_kind: ${{ steps.check.outputs.trigger_kind }}
 
     steps:
-      - name: Get PR number
-        id: pr
+      - name: Evaluate trigger eligibility
+        id: check
         uses: actions/github-script@v7
         with:
           script: |
-            const prs = context.payload.workflow_run.pull_requests;
-            if (!prs || prs.length === 0) {
-              core.setFailed('No PR associated with this workflow run');
+            const eventName = context.eventName;
+            const { owner, repo } = context.repo;
+            let prNumber, headSha, htmlUrl;
+
+            // --- Determine which PR we're acting on and basic facts ---
+            if (eventName === 'workflow_run') {
+              const wr = context.payload.workflow_run;
+              if (wr.conclusion !== 'success' || wr.event !== 'pull_request') {
+                core.notice(`workflow_run not eligible (conclusion=${wr.conclusion}, event=${wr.event})`);
+                core.setOutput('should_triage', 'false');
+                return;
+              }
+              const prs = wr.pull_requests;
+              if (!prs || prs.length === 0) {
+                core.notice('workflow_run had no associated PR');
+                core.setOutput('should_triage', 'false');
+                return;
+              }
+              prNumber = prs[0].number;
+
+            } else if (eventName === 'pull_request') {
+              // Only the ready_for_review activity reaches us (per `on:` filter).
+              prNumber = context.payload.pull_request.number;
+
+            } else if (eventName === 'issue_comment') {
+              if (!context.payload.issue.pull_request) {
+                core.notice('issue_comment was on an issue, not a PR');
+                core.setOutput('should_triage', 'false');
+                return;
+              }
+              prNumber = context.payload.issue.number;
+            }
+
+            // --- Fetch authoritative PR state ---
+            const { data: pr } = await github.rest.pulls.get({
+              owner, repo, pull_number: prNumber,
+            });
+
+            if (pr.draft) {
+              core.notice(`PR #${prNumber} is still a draft — skipping.`);
+              core.setOutput('should_triage', 'false');
               return;
             }
-            const pr = prs[0];
-            core.setOutput('number', pr.number);
-            core.setOutput('head_sha', pr.head.sha);
-            core.setOutput('html_url',
-              `https://github.com/${context.repo.owner}/${context.repo.repo}/pull/${pr.number}`);
 
+            headSha = pr.head.sha;
+            htmlUrl = pr.html_url;
+
+            // --- Path-specific eligibility ---
+            let triggerKind;
+
+            if (eventName === 'workflow_run') {
+              // Build just passed AND PR is not a draft. Go.
+              triggerKind = 'build_passed';
+
+            } else if (eventName === 'pull_request') {
+              // Draft → ready. Confirm the latest build on head SHA passed.
+              const { data: runs } = await github.rest.actions.listWorkflowRunsForRepo({
+                owner, repo,
+                event: 'pull_request',
+                head_sha: headSha,
+                per_page: 20,
+              });
+              const buildRuns = runs.workflow_runs.filter(r => r.name === 'pull-request-build');
+              if (buildRuns.length === 0) {
+                core.notice(`No pull-request-build run found for ${headSha} — skipping.`);
+                core.setOutput('should_triage', 'false');
+                return;
+              }
+              const latestBuild = buildRuns[0]; // listWorkflowRunsForRepo sorts newest first
+              if (latestBuild.status !== 'completed' || latestBuild.conclusion !== 'success') {
+                core.notice(`Latest build for ${headSha} is ${latestBuild.status}/${latestBuild.conclusion} — skipping.`);
+                core.setOutput('should_triage', 'false');
+                return;
+              }
+              triggerKind = 'ready_for_review';
+
+            } else if (eventName === 'issue_comment') {
+              const comment = context.payload.comment;
+              const prAuthor = pr.user.login;
+
+              // The commenter must be the PR author.
+              if (comment.user.login !== prAuthor) {
+                core.notice(`Comment is not from PR author (${comment.user.login} vs ${prAuthor}) — skipping.`);
+                core.setOutput('should_triage', 'false');
+                return;
+              }
+
+              // Build on head SHA must have passed.
+              const { data: runs } = await github.rest.actions.listWorkflowRunsForRepo({
+                owner, repo,
+                event: 'pull_request',
+                head_sha: headSha,
+                per_page: 20,
+              });
+              const buildRuns = runs.workflow_runs.filter(r => r.name === 'pull-request-build');
+              const latestBuild = buildRuns[0];
+              if (!latestBuild || latestBuild.conclusion !== 'success') {
+                core.notice(`No successful build for ${headSha} — skipping.`);
+                core.setOutput('should_triage', 'false');
+                return;
+              }
+
+              // Find a prior comment from any repo admin. We check each unique
+              // earlier commenter's permission level and cache results to avoid
+              // duplicate API calls.
+              const commentCreated = new Date(comment.created_at);
+              const { data: allComments } = await github.rest.issues.listComments({
+                owner, repo, issue_number: prNumber, per_page: 100,
+              });
+
+              const earlierComments = allComments.filter(c =>
+                new Date(c.created_at) < commentCreated &&
+                c.user.login !== prAuthor &&
+                c.user.type !== 'Bot'
+              );
+
+              const permCache = new Map();
+              let priorAdminComment = null;
+
+              for (const c of earlierComments) {
+                const login = c.user.login;
+                if (!permCache.has(login)) {
+                  try {
+                    const { data: perm } = await github.rest.repos.getCollaboratorPermissionLevel({
+                      owner, repo, username: login,
+                    });
+                    permCache.set(login, perm.permission);
+                  } catch (err) {
+                    // User isn't a collaborator (outside contributor). Endpoint 404s.
+                    permCache.set(login, 'none');
+                  }
+                }
+                if (permCache.get(login) === 'admin') {
+                  priorAdminComment = c;
+                  break;
+                }
+              }
+
+              if (!priorAdminComment) {
+                core.notice('No prior admin comment — skipping.');
+                core.setOutput('should_triage', 'false');
+                return;
+              }
+
+              triggerKind = 'author_responded';
+            }
+
+            core.setOutput('should_triage', 'true');
+            core.setOutput('pr_number', String(prNumber));
+            core.setOutput('head_sha', headSha);
+            core.setOutput('html_url', htmlUrl);
+            core.setOutput('trigger_kind', triggerKind);
+
+  triage:
+    needs: eligibility
+    if: needs.eligibility.outputs.should_triage == 'true'
+    runs-on: ubuntu-latest
+    environment: claude-triage
+
+    steps:
       - name: Checkout PR code
         uses: actions/checkout@v4
         with:
-          ref: ${{ steps.pr.outputs.head_sha }}
+          ref: ${{ needs.eligibility.outputs.head_sha }}
           fetch-depth: 0
 
       - name: Claude analyzes PR
@@ -51,53 +212,96 @@ jobs:
           claude_args: '--model claude-opus-4-7'
           prompt: |
             Read REVIEW_PROFILE.md for the user's review patterns.
-            Analyze PR #${{ steps.pr.outputs.number }} against those patterns.
+            Analyze PR #${{ needs.eligibility.outputs.pr_number }} against those patterns.
+
+            Trigger context: ${{ needs.eligibility.outputs.trigger_kind }}
+              - "build_passed": a fresh build just succeeded. Do a full triage.
+              - "ready_for_review": a draft was just marked ready. Do a full triage.
+              - "author_responded": the PR author replied to a prior admin comment.
+                Use `gh pr view` and `gh api` to fetch the full comment thread.
+                Evaluate whether the author's reply resolves the concerns that
+                were raised. If it does, recommend approve. If not, restate the
+                unresolved concern.
+
+            DO NOT post any comments on the PR.
+
+            Your final response must be a single JSON object with these fields
+            and nothing else (no prose, no code fences):
+              recommendation: "approve" | "request_changes" | "discuss"
+              suggestedResponse: questions or issues that need to be addressed before approval, formatted as HTML for email. Empty string if no issues.
+              confidence: "high" | "medium" | "low"
+
+      - name: Claude analyzes PR
+        id: claude
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: '--model claude-opus-4-7'
+          prompt: |
+            Read REVIEW_PROFILE.md for the user's review patterns.
+            Analyze PR #${{ needs.eligibility.outputs.pr_number }} against those patterns.
+
+            Trigger context: ${{ needs.eligibility.outputs.trigger_kind }}
+              - "build_passed": a fresh build just succeeded. Do a full triage.
+              - "ready_for_review": a draft was just marked ready. Do a full triage.
+              - "author_responded": the PR author replied to a prior admin comment.
+                Use `gh pr view` and `gh api` to fetch the full comment thread.
+                Evaluate whether the author's reply resolves the concerns that
+                were raised. If it does, recommend approve. If not, restate the
+                unresolved concern.
 
             DO NOT post any comments on the PR. Output only a JSON object
-            to a file at /tmp/triage.json with these fields:
+            to /tmp/triage.json with these fields:
               recommendation: "approve" | "request_changes" | "discuss"
-              suggestedResponse: any questions or issues that need to be addressed before approval. This will be sent as an email, so format it accordingly (e.g. use HTML).
+              suggestedResponse: any questions or issues that need to be addressed before approval. This will be sent as an email, so format it accordingly (e.g. use HTML). Leave empty if no issues.
               confidence: "high" | "medium" | "low"
 
       - name: Parse triage output
         id: parse
+        env:
+          RECOMMENDATION: ${{ fromJSON(steps.claude.outputs.structured_output).recommendation }}
+          CONFIDENCE: ${{ fromJSON(steps.claude.outputs.structured_output).confidence }}
+          SUGGESTED_RESPONSE: ${{ fromJSON(steps.claude.outputs.structured_output).suggestedResponse }}
+          HTML_URL: ${{ needs.eligibility.outputs.html_url }}
+          TRIGGER_KIND: ${{ needs.eligibility.outputs.trigger_kind }}
         run: |
-          RECOMMENDATION=$(jq -r .recommendation /tmp/triage.json)
-          CONFIDENCE=$(jq -r .confidence /tmp/triage.json)
           echo "recommendation=$RECOMMENDATION" >> $GITHUB_OUTPUT
           echo "confidence=$CONFIDENCE" >> $GITHUB_OUTPUT
 
-          # Pick link target and label based on recommendation.
-          # request_changes -> straight to files diff for line-level review.
-          # approve / discuss -> PR conversation page (merge/comment lives there).
           if [ "$RECOMMENDATION" = "request_changes" ]; then
-            LINK_URL="${{ steps.pr.outputs.html_url }}/files"
+            LINK_URL="$HTML_URL/files"
             LINK_LABEL="Open review page →"
           else
-            LINK_URL="${{ steps.pr.outputs.html_url }}"
+            LINK_URL="$HTML_URL"
             LINK_LABEL="Open PR →"
           fi
           echo "link_url=$LINK_URL" >> $GITHUB_OUTPUT
           echo "link_label=$LINK_LABEL" >> $GITHUB_OUTPUT
 
+          case "$TRIGGER_KIND" in
+            author_responded) SUBJECT_TAG="follow-up" ;;
+            ready_for_review) SUBJECT_TAG="ready for review" ;;
+            *)                SUBJECT_TAG="triage" ;;
+          esac
+          echo "subject_tag=$SUBJECT_TAG" >> $GITHUB_OUTPUT
+
+          # Build HTML body using env vars so shell quoting doesn't mangle it.
+          BODY_TEXT="${SUGGESTED_RESPONSE:-No issues found.}"
+          RECOMMENDATION_UPPER=$(echo "$RECOMMENDATION" | tr '[:lower:]' '[:upper:]')
           {
             echo "html_body<<EOF"
-            jq -r '
-              "<h2>Recommendation: " + (.recommendation | ascii_upcase) + "</h2>" +
-              "<p><strong>Confidence:</strong> " + .confidence + "</p>" +
-              "<p>" + .suggestedResponse + "</p>"
-            ' /tmp/triage.json
+            echo "<h2>Recommendation: $RECOMMENDATION_UPPER</h2>"
+            echo "<p><strong>Confidence:</strong> $CONFIDENCE</p>"
+            echo "<p>$BODY_TEXT</p>"
             echo EOF
           } >> $GITHUB_OUTPUT
 
       - name: Send email via Resend
         run: |
-          # Build the payload with jq so quotes, newlines, and backslashes
-          # in Claude's output are escaped correctly.
           PAYLOAD=$(jq -n \
             --arg from "Claude Triage <claude-triage@lmckenzie.com>" \
             --arg to "lloyd@lmckenzie.com" \
-            --arg subject "[JiraSpec triage] PR #${{ steps.pr.outputs.number }} — ${{ steps.parse.outputs.recommendation }}" \
+            --arg subject "[JiraSpec ${{ steps.parse.outputs.subject_tag }}] PR #${{ needs.eligibility.outputs.pr_number }} — ${{ steps.parse.outputs.recommendation }}" \
             --arg html "${{ steps.parse.outputs.html_body }} <p><a href='${{ steps.parse.outputs.link_url }}'>${{ steps.parse.outputs.link_label }}</a></p>" \
             '{from: $from, to: [$to], subject: $subject, html: $html}')
 
