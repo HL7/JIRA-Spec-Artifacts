@@ -16,26 +16,22 @@ run-name: >-
   }}
 
 on:
-  # Path 1: build just completed. Triage if the PR is no longer a draft.
   workflow_run:
     workflows: ["pull-request-build"]
     types: [completed]
 
-  # Path 2: draft was marked ready for review. Uses pull_request_target
-  # so fork PRs can run with full permissions.
   pull_request_target:
     types: [ready_for_review]
 
-  # Path 3: a comment was added.
   issue_comment:
     types: [created]
 
 permissions:
   contents: read
-  pull-requests: write   # claude-code-action needs this even though our prompt forbids commenting
-  issues: write          # claude-code-action needs this internally
-  actions: read          # needed to query workflow runs
-  id-token: write        # needed by claude-code-action even when using github_token (harmless)
+  pull-requests: write
+  issues: write
+  actions: read
+  id-token: write
 
 jobs:
   eligibility:
@@ -238,10 +234,6 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          # Supplying github_token makes the action skip OIDC + Claude GitHub
-          # App token exchange, which fails for fork-triggered workflow_run
-          # events. The built-in GITHUB_TOKEN has whatever permissions the
-          # top-level `permissions:` block grants, which is sufficient.
           github_token: ${{ secrets.GITHUB_TOKEN }}
           claude_args: >-
             --model claude-opus-4-7
@@ -262,13 +254,23 @@ jobs:
 
             DO NOT post any comments on the PR.
 
+            The suggestedResponse will be pasted verbatim into GitHub's
+            review submission box, which renders GitHub-flavored markdown.
+            Use markdown formatting — NOT HTML:
+              - **bold**, *italic*, `inline code`
+              - Numbered lists using "1." / "2." (markdown auto-numbers)
+              - Nested bullets indented with 2 spaces
+              - Fenced code blocks with ``` and language tag for XML samples
+              - Blank lines between paragraphs and between list items that
+                contain sub-items (this is what makes nesting render correctly
+                on GitHub)
+
             Think through your analysis step by step. Then, at the very end of
             your response, output a JSON object with these fields and nothing
             after it:
               recommendation: "approve" | "request_changes" | "discuss"
-              suggestedResponse: questions or issues that need to be addressed before approval, formatted as HTML for email. Empty string if no issues.
+              suggestedResponse: GitHub-flavored markdown describing questions or issues to address before approval. Empty string if no issues.
               confidence: "high" | "medium" | "low"
-              changeSummary: A detailed overview of the changes made in the PR, describing them in terms of the profiles and value sets being modified
 
       - name: Parse triage output
         id: parse
@@ -326,7 +328,6 @@ jobs:
           RECOMMENDATION=$(echo "$JSON_TEXT" | jq -r .recommendation)
           CONFIDENCE=$(echo "$JSON_TEXT" | jq -r .confidence)
           SUGGESTED_RESPONSE=$(echo "$JSON_TEXT" | jq -r .suggestedResponse)
-          CHANGE_SUMMARY=$(echo "$JSON_TEXT" | jq -r .changeSummary)
 
           echo "recommendation=$RECOMMENDATION" >> $GITHUB_OUTPUT
           echo "confidence=$CONFIDENCE" >> $GITHUB_OUTPUT
@@ -348,32 +349,65 @@ jobs:
           esac
           echo "subject_tag=$SUBJECT_TAG" >> $GITHUB_OUTPUT
 
-          if [ -z "$SUGGESTED_RESPONSE" ] || [ "$SUGGESTED_RESPONSE" = "null" ]; then
-            BODY_TEXT="No issues found."
-          else
-            BODY_TEXT="$SUGGESTED_RESPONSE"
-          fi
-          RECOMMENDATION_UPPER=$(echo "$RECOMMENDATION" | tr '[:lower:]' '[:upper:]')
-          {
-            echo "html_body<<HTMLEOF"
-            echo "<h2>Recommendation: $RECOMMENDATION_UPPER</h2>"
-            echo "<p><strong>Confidence:</strong> $CONFIDENCE</p>"
-            echo "<p>$BODY_TEXT</p>"
-            echo "<p><strong>Change Summary:</strong> $CHANGE_SUMMARY</p>"
-            echo "HTMLEOF"
-          } >> $GITHUB_OUTPUT
+          # Pass markdown through as a multi-line output with a unique delimiter
+          # to avoid collisions with anything in Claude's content.
+          echo "suggested_response_md<<SRMEOF_42" >> $GITHUB_OUTPUT
+          echo "$SUGGESTED_RESPONSE" >> $GITHUB_OUTPUT
+          echo "SRMEOF_42" >> $GITHUB_OUTPUT
 
       - name: Send email via Resend
         env:
-          HTML_BODY: ${{ steps.parse.outputs.html_body }}
+          SUGGESTED_RESPONSE_MD: ${{ steps.parse.outputs.suggested_response_md }}
+          CONFIDENCE: ${{ steps.parse.outputs.confidence }}
+          RECOMMENDATION: ${{ steps.parse.outputs.recommendation }}
           LINK_URL: ${{ steps.parse.outputs.link_url }}
           LINK_LABEL: ${{ steps.parse.outputs.link_label }}
           SUBJECT_TAG: ${{ steps.parse.outputs.subject_tag }}
-          RECOMMENDATION: ${{ steps.parse.outputs.recommendation }}
           PR_NUMBER: ${{ needs.eligibility.outputs.pr_number }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         run: |
-          FULL_HTML="$HTML_BODY <p><a href='$LINK_URL'>$LINK_LABEL</a></p>"
+          pip install --quiet --break-system-packages markdown
+
+          FULL_HTML=$(python3 <<'PY'
+          import os, html, markdown
+
+          recommendation = os.environ["RECOMMENDATION"].upper()
+          confidence = os.environ["CONFIDENCE"]
+          suggested_md = os.environ.get("SUGGESTED_RESPONSE_MD", "")
+          link_url = os.environ["LINK_URL"]
+          link_label = os.environ["LINK_LABEL"]
+
+          md = markdown.Markdown(extensions=["fenced_code", "tables", "sane_lists"])
+
+          has_content = suggested_md.strip() and suggested_md.strip().lower() != "null"
+          if has_content:
+              suggested_html = md.convert(suggested_md)
+              raw_for_copy = html.escape(suggested_md)
+              copy_block = (
+                  "<hr>"
+                  "<p><strong>Copy this into GitHub's review box "
+                  "(it renders as markdown):</strong></p>"
+                  "<pre style='background:#f6f8fa;padding:12px;border-radius:6px;"
+                  "white-space:pre-wrap;font-family:ui-monospace,Consolas,monospace;"
+                  "font-size:13px;line-height:1.45;'>"
+                  + raw_for_copy +
+                  "</pre>"
+              )
+          else:
+              suggested_html = "<p><em>No issues found.</em></p>"
+              copy_block = ""
+
+          body = (
+              f"<h2>Recommendation: {recommendation}</h2>"
+              f"<p><strong>Confidence:</strong> {confidence}</p>"
+              f"{suggested_html}"
+              f"<p><a href='{link_url}'>{link_label}</a></p>"
+              + copy_block
+          )
+          print(body)
+          PY
+          )
+
           SUBJECT="[JiraSpec $SUBJECT_TAG] PR #$PR_NUMBER — $RECOMMENDATION"
 
           PAYLOAD=$(jq -n \
