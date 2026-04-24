@@ -1,8 +1,3 @@
-# This workflow performs triage on JiraSpec PRs using Claude. It's triggered by three events:
-# 1. A successful build on a PR (via workflow_run)
-# 2. A draft PR being marked ready for review (via pull_request)
-# 3. The PR author responding to an admin comment (via issue_comment)
-# Based on the trigger and PR content, it generates a triage recommendation and sends it via email.
 name: Claude PR Triage (Private Email)
 run-name: >-
   Triage for ${{
@@ -334,13 +329,10 @@ jobs:
 
           if [ "$RECOMMENDATION" = "request_changes" ]; then
             LINK_URL="$HTML_URL/files"
-            LINK_LABEL="Open review page →"
           else
             LINK_URL="$HTML_URL"
-            LINK_LABEL="Open PR →"
           fi
           echo "link_url=$LINK_URL" >> $GITHUB_OUTPUT
-          echo "link_label=$LINK_LABEL" >> $GITHUB_OUTPUT
 
           case "$TRIGGER_KIND" in
             author_responded) SUBJECT_TAG="follow-up" ;;
@@ -349,8 +341,6 @@ jobs:
           esac
           echo "subject_tag=$SUBJECT_TAG" >> $GITHUB_OUTPUT
 
-          # Pass markdown through as a multi-line output with a unique delimiter
-          # to avoid collisions with anything in Claude's content.
           echo "suggested_response_md<<SRMEOF_42" >> $GITHUB_OUTPUT
           echo "$SUGGESTED_RESPONSE" >> $GITHUB_OUTPUT
           echo "SRMEOF_42" >> $GITHUB_OUTPUT
@@ -361,50 +351,28 @@ jobs:
           CONFIDENCE: ${{ steps.parse.outputs.confidence }}
           RECOMMENDATION: ${{ steps.parse.outputs.recommendation }}
           LINK_URL: ${{ steps.parse.outputs.link_url }}
-          LINK_LABEL: ${{ steps.parse.outputs.link_label }}
           SUBJECT_TAG: ${{ steps.parse.outputs.subject_tag }}
           PR_NUMBER: ${{ needs.eligibility.outputs.pr_number }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         run: |
-          pip install --quiet --break-system-packages markdown
-
-          FULL_HTML=$(python3 <<'PY'
-          import os, html, markdown
+          # Build a plain-text markdown email body.
+          BODY=$(python3 <<'PY'
+          import os
 
           recommendation = os.environ["RECOMMENDATION"].upper()
           confidence = os.environ["CONFIDENCE"]
           suggested_md = os.environ.get("SUGGESTED_RESPONSE_MD", "")
           link_url = os.environ["LINK_URL"]
-          link_label = os.environ["LINK_LABEL"]
-
-          md = markdown.Markdown(extensions=["fenced_code", "tables", "sane_lists"])
 
           has_content = suggested_md.strip() and suggested_md.strip().lower() != "null"
-          if has_content:
-              suggested_html = md.convert(suggested_md)
-              raw_for_copy = html.escape(suggested_md)
-              copy_block = (
-                  "<hr>"
-                  "<p><strong>Copy this into GitHub's review box "
-                  "(it renders as markdown):</strong></p>"
-                  "<pre style='background:#f6f8fa;padding:12px;border-radius:6px;"
-                  "white-space:pre-wrap;font-family:ui-monospace,Consolas,monospace;"
-                  "font-size:13px;line-height:1.45;'>"
-                  + raw_for_copy +
-                  "</pre>"
-              )
-          else:
-              suggested_html = "<p><em>No issues found.</em></p>"
-              copy_block = ""
+          body_text = suggested_md.strip() if has_content else "No issues found."
 
-          body = (
-              f"<h2>Recommendation: {recommendation}</h2>"
-              f"<p><strong>Confidence:</strong> {confidence}</p>"
-              f"{suggested_html}"
-              f"<p><a href='{link_url}'>{link_label}</a></p>"
-              + copy_block
-          )
-          print(body)
+          print(f"Recommendation: {recommendation}")
+          print(f"Confidence: {confidence}")
+          print()
+          print(body_text)
+          print()
+          print(link_url)
           PY
           )
 
@@ -414,8 +382,8 @@ jobs:
             --arg from "Claude Triage <claude-triage@lmckenzie.com>" \
             --arg to "lloyd@lmckenzie.com" \
             --arg subject "$SUBJECT" \
-            --arg html "$FULL_HTML" \
-            '{from: $from, to: [$to], subject: $subject, html: $html}')
+            --arg text "$BODY" \
+            '{from: $from, to: [$to], subject: $subject, text: $text}')
 
           curl -X POST https://api.resend.com/emails \
             -H "Authorization: Bearer $RESEND_API_KEY" \
