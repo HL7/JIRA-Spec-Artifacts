@@ -9,6 +9,7 @@ permissions:
   contents: read
   pull-requests: read
   actions: read   # needed to read the triggering workflow's metadata
+  id-token: write  # needed to authenticate to Resend using OIDC
 
 jobs:
   triage:
