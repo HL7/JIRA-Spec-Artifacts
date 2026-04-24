@@ -223,6 +223,33 @@ jobs:
                 were raised. If it does, recommend approve. If not, restate the
                 unresolved concern.
 
+            DO NOT post any comments on the PR.
+
+            Your final response must be a single JSON object with these fields
+            and nothing else (no prose, no code fences):
+              recommendation: "approve" | "request_changes" | "discuss"
+              suggestedResponse: questions or issues that need to be addressed before approval, formatted as HTML for email. Empty string if no issues.
+              confidence: "high" | "medium" | "low"
+
+      - name: Claude analyzes PR
+        id: claude
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: '--model claude-opus-4-7'
+          prompt: |
+            Read REVIEW_PROFILE.md for the user's review patterns.
+            Analyze PR #${{ needs.eligibility.outputs.pr_number }} against those patterns.
+
+            Trigger context: ${{ needs.eligibility.outputs.trigger_kind }}
+              - "build_passed": a fresh build just succeeded. Do a full triage.
+              - "ready_for_review": a draft was just marked ready. Do a full triage.
+              - "author_responded": the PR author replied to a prior admin comment.
+                Use `gh pr view` and `gh api` to fetch the full comment thread.
+                Evaluate whether the author's reply resolves the concerns that
+                were raised. If it does, recommend approve. If not, restate the
+                unresolved concern.
+
             DO NOT post any comments on the PR. Output only a JSON object
             to /tmp/triage.json with these fields:
               recommendation: "approve" | "request_changes" | "discuss"
@@ -231,37 +258,41 @@ jobs:
 
       - name: Parse triage output
         id: parse
+        env:
+          RECOMMENDATION: ${{ fromJSON(steps.claude.outputs.structured_output).recommendation }}
+          CONFIDENCE: ${{ fromJSON(steps.claude.outputs.structured_output).confidence }}
+          SUGGESTED_RESPONSE: ${{ fromJSON(steps.claude.outputs.structured_output).suggestedResponse }}
+          HTML_URL: ${{ needs.eligibility.outputs.html_url }}
+          TRIGGER_KIND: ${{ needs.eligibility.outputs.trigger_kind }}
         run: |
-          RECOMMENDATION=$(jq -r .recommendation /tmp/triage.json)
-          CONFIDENCE=$(jq -r .confidence /tmp/triage.json)
           echo "recommendation=$RECOMMENDATION" >> $GITHUB_OUTPUT
           echo "confidence=$CONFIDENCE" >> $GITHUB_OUTPUT
 
           if [ "$RECOMMENDATION" = "request_changes" ]; then
-            LINK_URL="${{ needs.eligibility.outputs.html_url }}/files"
+            LINK_URL="$HTML_URL/files"
             LINK_LABEL="Open review page →"
           else
-            LINK_URL="${{ needs.eligibility.outputs.html_url }}"
+            LINK_URL="$HTML_URL"
             LINK_LABEL="Open PR →"
           fi
           echo "link_url=$LINK_URL" >> $GITHUB_OUTPUT
           echo "link_label=$LINK_LABEL" >> $GITHUB_OUTPUT
 
-          # Subject prefix differs per trigger so your inbox shows context.
-          case "${{ needs.eligibility.outputs.trigger_kind }}" in
+          case "$TRIGGER_KIND" in
             author_responded) SUBJECT_TAG="follow-up" ;;
             ready_for_review) SUBJECT_TAG="ready for review" ;;
             *)                SUBJECT_TAG="triage" ;;
           esac
           echo "subject_tag=$SUBJECT_TAG" >> $GITHUB_OUTPUT
 
+          # Build HTML body using env vars so shell quoting doesn't mangle it.
+          BODY_TEXT="${SUGGESTED_RESPONSE:-No issues found.}"
+          RECOMMENDATION_UPPER=$(echo "$RECOMMENDATION" | tr '[:lower:]' '[:upper:]')
           {
             echo "html_body<<EOF"
-            jq -r '
-              "<h2>Recommendation: " + (.recommendation | ascii_upcase) + "</h2>" +
-              "<p><strong>Confidence:</strong> " + .confidence + "</p>" +
-              "<p>" + (.suggestedResponse // "No issues found.") + "</p>"
-            ' /tmp/triage.json
+            echo "<h2>Recommendation: $RECOMMENDATION_UPPER</h2>"
+            echo "<p><strong>Confidence:</strong> $CONFIDENCE</p>"
+            echo "<p>$BODY_TEXT</p>"
             echo EOF
           } >> $GITHUB_OUTPUT
 
