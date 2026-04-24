@@ -216,7 +216,9 @@ jobs:
 
             DO NOT post any comments on the PR.
 
-            Your final response must be a single JSON object with these fields:
+            Think through your analysis step by step. Then, at the very end of
+            your response, output a JSON object with these fields and nothing
+            after it:
               recommendation: "approve" | "request_changes" | "discuss"
               suggestedResponse: questions or issues that need to be addressed before approval, formatted as HTML for email. Empty string if no issues.
               confidence: "high" | "medium" | "low"
@@ -249,12 +251,36 @@ jobs:
             exit 1
           fi
 
-          # Strip markdown fences if Claude wrapped the JSON.
-          STRIPPED=$(echo "$CLAUDE_OUTPUT" | sed -e 's/```json//g' -e 's/```//g')
+          # Extract the last valid JSON object containing "recommendation"
+          # from Claude's output. Handles prose, fences, and bare JSON.
+          JSON_TEXT=$(echo "$CLAUDE_OUTPUT" | python3 -c '
+          import sys, re, json
+          text = sys.stdin.read()
+          # Match balanced {...} blocks, shallowest nesting. Good enough for our schema.
+          candidates = re.findall(r"\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}", text, re.DOTALL)
+          for candidate in reversed(candidates):
+              try:
+                  parsed = json.loads(candidate)
+                  if isinstance(parsed, dict) and "recommendation" in parsed:
+                      print(candidate)
+                      sys.exit(0)
+              except json.JSONDecodeError:
+                  continue
+          sys.exit(1)
+          ')
 
-          RECOMMENDATION=$(echo "$STRIPPED" | jq -r .recommendation)
-          CONFIDENCE=$(echo "$STRIPPED" | jq -r .confidence)
-          SUGGESTED_RESPONSE=$(echo "$STRIPPED" | jq -r .suggestedResponse)
+          if [ -z "$JSON_TEXT" ]; then
+            echo "ERROR: couldn'\''t extract valid JSON from Claude output."
+            exit 1
+          fi
+
+          echo "=== Extracted JSON ==="
+          echo "$JSON_TEXT"
+          echo "=== End extracted JSON ==="
+
+          RECOMMENDATION=$(echo "$JSON_TEXT" | jq -r .recommendation)
+          CONFIDENCE=$(echo "$JSON_TEXT" | jq -r .confidence)
+          SUGGESTED_RESPONSE=$(echo "$JSON_TEXT" | jq -r .suggestedResponse)
 
           echo "recommendation=$RECOMMENDATION" >> $GITHUB_OUTPUT
           echo "confidence=$CONFIDENCE" >> $GITHUB_OUTPUT
