@@ -22,24 +22,20 @@ on:
     types: [completed]
 
   # Path 2: draft was marked ready for review. Uses pull_request_target
-  # instead of pull_request so fork PRs can run with full permissions.
-  # Safe because we don't execute any code from the PR — only read files
-  # via Claude's Read tool and fetch metadata via gh.
+  # so fork PRs can run with full permissions.
   pull_request_target:
     types: [ready_for_review]
 
-  # Path 3: a comment was added. Triage if build passed, not a draft, an
-  # admin commented earlier, and this comment is from the PR author.
+  # Path 3: a comment was added.
   issue_comment:
     types: [created]
 
 permissions:
   contents: read
-  pull-requests: write   # required for claude-code-action's GitHub App auth,
-                         # even though our prompt forbids posting comments
-  issues: write          # required by the action's internals
+  pull-requests: write   # claude-code-action needs this even though our prompt forbids commenting
+  issues: write          # claude-code-action needs this internally
   actions: read          # needed to query workflow runs
-  id-token: write        # needed by claude-code-action
+  id-token: write        # needed by claude-code-action even when using github_token (harmless)
 
 jobs:
   eligibility:
@@ -69,8 +65,6 @@ jobs:
                 return;
               }
 
-              // The pull_requests array is empty for fork PRs. Look up the PR
-              // by head repo/branch instead.
               let prs = wr.pull_requests;
               if (!prs || prs.length === 0) {
                 const headOwner = wr.head_repository && wr.head_repository.owner
@@ -244,6 +238,11 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Supplying github_token makes the action skip OIDC + Claude GitHub
+          # App token exchange, which fails for fork-triggered workflow_run
+          # events. The built-in GITHUB_TOKEN has whatever permissions the
+          # top-level `permissions:` block grants, which is sufficient.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           claude_args: >-
             --model claude-opus-4-7
             --allowedTools "Read,Bash(gh:*),Glob,Grep"
