@@ -6,12 +6,12 @@
 name: Claude PR Triage (Private Email)
 run-name: >-
   Triage for ${{
-    github.event_name == 'pull_request' &&
+    (github.event_name == 'pull_request' || github.event_name == 'pull_request_target') &&
       format('PR #{0}: {1}', github.event.pull_request.number, github.event.pull_request.title) ||
     github.event_name == 'issue_comment' &&
       format('PR #{0} (comment by {1})', github.event.issue.number, github.event.comment.user.login) ||
     github.event_name == 'workflow_run' &&
-      format('build complete on {0}', github.event.workflow_run.head_branch) ||
+      format('build {0} on {1}', github.event.workflow_run.display_title, github.event.workflow_run.head_branch) ||
     'unknown'
   }}
 
@@ -21,9 +21,11 @@ on:
     workflows: ["pull-request-build"]
     types: [completed]
 
-  # Path 2: draft was marked ready for review. Triage if the most recent
-  # build on the head SHA passed.
-  pull_request:
+  # Path 2: draft was marked ready for review. Uses pull_request_target
+  # instead of pull_request so fork PRs can run with full permissions.
+  # Safe because we don't execute any code from the PR — only read files
+  # via Claude's Read tool and fetch metadata via gh.
+  pull_request_target:
     types: [ready_for_review]
 
   # Path 3: a comment was added. Triage if build passed, not a draft, an
@@ -33,9 +35,11 @@ on:
 
 permissions:
   contents: read
-  pull-requests: read
-  actions: read     # needed to query workflow runs
-  id-token: write   # needed by claude-code-action
+  pull-requests: write   # required for claude-code-action's GitHub App auth,
+                         # even though our prompt forbids posting comments
+  issues: write          # required by the action's internals
+  actions: read          # needed to query workflow runs
+  id-token: write        # needed by claude-code-action
 
 jobs:
   eligibility:
@@ -87,7 +91,7 @@ jobs:
               }
               prNumber = prs[0].number;
 
-            } else if (eventName === 'pull_request') {
+            } else if (eventName === 'pull_request_target') {
               prNumber = context.payload.pull_request.number;
 
             } else if (eventName === 'issue_comment') {
@@ -117,7 +121,7 @@ jobs:
             if (eventName === 'workflow_run') {
               triggerKind = 'build_passed';
 
-            } else if (eventName === 'pull_request') {
+            } else if (eventName === 'pull_request_target') {
               const { data: runs } = await github.rest.actions.listWorkflowRunsForRepo({
                 owner, repo,
                 event: 'pull_request',
@@ -221,6 +225,19 @@ jobs:
         with:
           ref: ${{ needs.eligibility.outputs.head_sha }}
           fetch-depth: 0
+
+      - name: Add PR context to run summary
+        env:
+          PR_NUMBER: ${{ needs.eligibility.outputs.pr_number }}
+          PR_URL: ${{ needs.eligibility.outputs.html_url }}
+          TRIGGER_KIND: ${{ needs.eligibility.outputs.trigger_kind }}
+        run: |
+          {
+            echo "## Triage run context"
+            echo ""
+            echo "- **PR:** [#$PR_NUMBER]($PR_URL)"
+            echo "- **Trigger:** $TRIGGER_KIND"
+          } >> $GITHUB_STEP_SUMMARY
 
       - name: Claude analyzes PR
         id: claude
