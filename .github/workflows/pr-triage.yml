@@ -200,6 +200,7 @@ jobs:
           claude_args: >-
             --model claude-opus-4-7
             --allowedTools "Read,Bash(gh:*),Glob,Grep"
+            --show_full_output true
           prompt: |
             Read REVIEW_PROFILE.md for the user's review patterns.
             Analyze PR #${{ needs.eligibility.outputs.pr_number }} against those patterns.
