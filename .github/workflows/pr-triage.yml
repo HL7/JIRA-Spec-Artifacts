@@ -42,7 +42,6 @@ jobs:
             const { owner, repo } = context.repo;
             let prNumber, headSha, htmlUrl;
 
-            // --- Determine which PR we're acting on and basic facts ---
             if (eventName === 'workflow_run') {
               const wr = context.payload.workflow_run;
               if (wr.conclusion !== 'success' || wr.event !== 'pull_request') {
@@ -59,7 +58,6 @@ jobs:
               prNumber = prs[0].number;
 
             } else if (eventName === 'pull_request') {
-              // Only the ready_for_review activity reaches us (per `on:` filter).
               prNumber = context.payload.pull_request.number;
 
             } else if (eventName === 'issue_comment') {
@@ -71,7 +69,6 @@ jobs:
               prNumber = context.payload.issue.number;
             }
 
-            // --- Fetch authoritative PR state ---
             const { data: pr } = await github.rest.pulls.get({
               owner, repo, pull_number: prNumber,
             });
@@ -85,15 +82,12 @@ jobs:
             headSha = pr.head.sha;
             htmlUrl = pr.html_url;
 
-            // --- Path-specific eligibility ---
             let triggerKind;
 
             if (eventName === 'workflow_run') {
-              // Build just passed AND PR is not a draft. Go.
               triggerKind = 'build_passed';
 
             } else if (eventName === 'pull_request') {
-              // Draft → ready. Confirm the latest build on head SHA passed.
               const { data: runs } = await github.rest.actions.listWorkflowRunsForRepo({
                 owner, repo,
                 event: 'pull_request',
@@ -106,7 +100,7 @@ jobs:
                 core.setOutput('should_triage', 'false');
                 return;
               }
-              const latestBuild = buildRuns[0]; // listWorkflowRunsForRepo sorts newest first
+              const latestBuild = buildRuns[0];
               if (latestBuild.status !== 'completed' || latestBuild.conclusion !== 'success') {
                 core.notice(`Latest build for ${headSha} is ${latestBuild.status}/${latestBuild.conclusion} — skipping.`);
                 core.setOutput('should_triage', 'false');
@@ -118,14 +112,12 @@ jobs:
               const comment = context.payload.comment;
               const prAuthor = pr.user.login;
 
-              // The commenter must be the PR author.
               if (comment.user.login !== prAuthor) {
                 core.notice(`Comment is not from PR author (${comment.user.login} vs ${prAuthor}) — skipping.`);
                 core.setOutput('should_triage', 'false');
                 return;
               }
 
-              // Build on head SHA must have passed.
               const { data: runs } = await github.rest.actions.listWorkflowRunsForRepo({
                 owner, repo,
                 event: 'pull_request',
@@ -140,9 +132,6 @@ jobs:
                 return;
               }
 
-              // Find a prior comment from any repo admin. We check each unique
-              // earlier commenter's permission level and cache results to avoid
-              // duplicate API calls.
               const commentCreated = new Date(comment.created_at);
               const { data: allComments } = await github.rest.issues.listComments({
                 owner, repo, issue_number: prNumber, per_page: 100,
@@ -166,7 +155,6 @@ jobs:
                     });
                     permCache.set(login, perm.permission);
                   } catch (err) {
-                    // User isn't a collaborator (outside contributor). Endpoint 404s.
                     permCache.set(login, 'none');
                   }
                 }
@@ -209,7 +197,10 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          claude_args: '--model claude-opus-4-7'
+          claude_args: >-
+            --model claude-opus-4-7
+            --allowedTools "Read,Bash(gh:*),Glob,Grep"
+            --show_full_output true
           prompt: |
             Read REVIEW_PROFILE.md for the user's review patterns.
             Analyze PR #${{ needs.eligibility.outputs.pr_number }} against those patterns.
@@ -234,22 +225,46 @@ jobs:
       - name: Parse triage output
         id: parse
         env:
-          CLAUDE_OUTPUT: ${{ steps.claude.outputs.structured_output }}
           HTML_URL: ${{ needs.eligibility.outputs.html_url }}
           TRIGGER_KIND: ${{ needs.eligibility.outputs.trigger_kind }}
         run: |
+          LOG_FILE="/home/runner/work/_temp/claude-execution-output.json"
+          if [ ! -f "$LOG_FILE" ]; then
+            echo "ERROR: Claude execution log not found at $LOG_FILE"
+            ls -la /home/runner/work/_temp/ || true
+            exit 1
+          fi
+
+          echo "=== Log file size ==="
+          wc -c "$LOG_FILE"
+
+          # The log is an array of event objects. The final assistant message
+          # contains Claude's last response, which should be our JSON.
+          CLAUDE_OUTPUT=$(jq -r '
+            [.[] | select(.type == "assistant") | .message.content[]?
+             | select(.type == "text") | .text] | last // empty
+          ' "$LOG_FILE")
+
           echo "=== Raw Claude output ==="
           echo "$CLAUDE_OUTPUT"
           echo "=== End raw output ==="
 
           if [ -z "$CLAUDE_OUTPUT" ]; then
-            echo "ERROR: structured_output is empty. The claude-code-action may expose its result under a different output name. Check the 'Claude analyzes PR' step logs above for the actual output names."
+            echo "ERROR: couldn't find assistant text in the log."
+            echo "First 2KB of log for inspection:"
+            head -c 2048 "$LOG_FILE"
             exit 1
           fi
 
-          RECOMMENDATION=$(echo "$CLAUDE_OUTPUT" | jq -r .recommendation)
-          CONFIDENCE=$(echo "$CLAUDE_OUTPUT" | jq -r .confidence)
-          SUGGESTED_RESPONSE=$(echo "$CLAUDE_OUTPUT" | jq -r .suggestedResponse)
+          # Strip markdown fences if Claude wrapped the JSON despite instructions.
+          JSON_TEXT=$(echo "$CLAUDE_OUTPUT" | sed -n '/^[[:space:]]*{/,/^[[:space:]]*}[[:space:]]*$/p')
+          if [ -z "$JSON_TEXT" ]; then
+            JSON_TEXT="$CLAUDE_OUTPUT"
+          fi
+
+          RECOMMENDATION=$(echo "$JSON_TEXT" | jq -r .recommendation)
+          CONFIDENCE=$(echo "$JSON_TEXT" | jq -r .confidence)
+          SUGGESTED_RESPONSE=$(echo "$JSON_TEXT" | jq -r .suggestedResponse)
 
           echo "recommendation=$RECOMMENDATION" >> $GITHUB_OUTPUT
           echo "confidence=$CONFIDENCE" >> $GITHUB_OUTPUT
@@ -271,7 +286,6 @@ jobs:
           esac
           echo "subject_tag=$SUBJECT_TAG" >> $GITHUB_OUTPUT
 
-          # jq -r returns literal "null" for null JSON fields; coerce to default.
           if [ -z "$SUGGESTED_RESPONSE" ] || [ "$SUGGESTED_RESPONSE" = "null" ]; then
             BODY_TEXT="No issues found."
           else
@@ -279,11 +293,11 @@ jobs:
           fi
           RECOMMENDATION_UPPER=$(echo "$RECOMMENDATION" | tr '[:lower:]' '[:upper:]')
           {
-            echo "html_body<<EOF"
+            echo "html_body<<HTMLEOF"
             echo "<h2>Recommendation: $RECOMMENDATION_UPPER</h2>"
             echo "<p><strong>Confidence:</strong> $CONFIDENCE</p>"
             echo "<p>$BODY_TEXT</p>"
-            echo EOF
+            echo "HTMLEOF"
           } >> $GITHUB_OUTPUT
 
       - name: Send email via Resend
