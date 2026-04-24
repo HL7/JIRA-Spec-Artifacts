@@ -216,8 +216,7 @@ jobs:
 
             DO NOT post any comments on the PR.
 
-            Your final response must be a single JSON object with these fields
-            and nothing else (no prose, no code fences):
+            Your final response must be a single JSON object with these fields:
               recommendation: "approve" | "request_changes" | "discuss"
               suggestedResponse: questions or issues that need to be addressed before approval, formatted as HTML for email. Empty string if no issues.
               confidence: "high" | "medium" | "low"
@@ -235,11 +234,6 @@ jobs:
             exit 1
           fi
 
-          echo "=== Log file size ==="
-          wc -c "$LOG_FILE"
-
-          # The log is an array of event objects. The final assistant message
-          # contains Claude's last response, which should be our JSON.
           CLAUDE_OUTPUT=$(jq -r '
             [.[] | select(.type == "assistant") | .message.content[]?
              | select(.type == "text") | .text] | last // empty
@@ -251,20 +245,16 @@ jobs:
 
           if [ -z "$CLAUDE_OUTPUT" ]; then
             echo "ERROR: couldn't find assistant text in the log."
-            echo "First 2KB of log for inspection:"
             head -c 2048 "$LOG_FILE"
             exit 1
           fi
 
-          # Strip markdown fences if Claude wrapped the JSON despite instructions.
-          JSON_TEXT=$(echo "$CLAUDE_OUTPUT" | sed -n '/^[[:space:]]*{/,/^[[:space:]]*}[[:space:]]*$/p')
-          if [ -z "$JSON_TEXT" ]; then
-            JSON_TEXT="$CLAUDE_OUTPUT"
-          fi
+          # Strip markdown fences if Claude wrapped the JSON.
+          STRIPPED=$(echo "$CLAUDE_OUTPUT" | sed -e 's/```json//g' -e 's/```//g')
 
-          RECOMMENDATION=$(echo "$JSON_TEXT" | jq -r .recommendation)
-          CONFIDENCE=$(echo "$JSON_TEXT" | jq -r .confidence)
-          SUGGESTED_RESPONSE=$(echo "$JSON_TEXT" | jq -r .suggestedResponse)
+          RECOMMENDATION=$(echo "$STRIPPED" | jq -r .recommendation)
+          CONFIDENCE=$(echo "$STRIPPED" | jq -r .confidence)
+          SUGGESTED_RESPONSE=$(echo "$STRIPPED" | jq -r .suggestedResponse)
 
           echo "recommendation=$RECOMMENDATION" >> $GITHUB_OUTPUT
           echo "confidence=$CONFIDENCE" >> $GITHUB_OUTPUT
