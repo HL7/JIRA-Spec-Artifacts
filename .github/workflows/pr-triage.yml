@@ -1,106 +1,391 @@
 name: Claude PR Triage (Private Email)
+run-name: >-
+  Triage for ${{
+    (github.event_name == 'pull_request' || github.event_name == 'pull_request_target') &&
+      format('PR #{0}: {1}', github.event.pull_request.number, github.event.pull_request.title) ||
+    github.event_name == 'issue_comment' &&
+      format('PR #{0} (comment by {1})', github.event.issue.number, github.event.comment.user.login) ||
+    github.event_name == 'workflow_run' &&
+      format('build {0} on {1}', github.event.workflow_run.display_title, github.event.workflow_run.head_branch) ||
+    'unknown'
+  }}
 
 on:
   workflow_run:
     workflows: ["pull-request-build"]
     types: [completed]
 
+  pull_request_target:
+    types: [ready_for_review]
+
+  issue_comment:
+    types: [created]
+
 permissions:
   contents: read
-  pull-requests: read
-  actions: read   # needed to read the triggering workflow's metadata
+  pull-requests: write
+  issues: write
+  actions: read
+  id-token: write
 
 jobs:
-  triage:
-    # Only run if validation succeeded AND it was triggered by a PR
-    if: >
-      github.event.workflow_run.conclusion == 'success' &&
-      github.event.workflow_run.event == 'pull_request'
+  eligibility:
     runs-on: ubuntu-latest
-    environment: claude-triage   # <-- gated environment, see below
+    outputs:
+      should_triage: ${{ steps.check.outputs.should_triage }}
+      pr_number: ${{ steps.check.outputs.pr_number }}
+      head_sha: ${{ steps.check.outputs.head_sha }}
+      html_url: ${{ steps.check.outputs.html_url }}
+      trigger_kind: ${{ steps.check.outputs.trigger_kind }}
 
     steps:
-      - name: Get PR number
-        id: pr
+      - name: Evaluate trigger eligibility
+        id: check
         uses: actions/github-script@v7
         with:
           script: |
-            const prs = context.payload.workflow_run.pull_requests;
-            if (!prs || prs.length === 0) {
-              core.setFailed('No PR associated with this workflow run');
+            const eventName = context.eventName;
+            const { owner, repo } = context.repo;
+            let prNumber, headSha, htmlUrl;
+
+            if (eventName === 'workflow_run') {
+              const wr = context.payload.workflow_run;
+              if (wr.conclusion !== 'success' || wr.event !== 'pull_request') {
+                core.notice(`workflow_run not eligible (conclusion=${wr.conclusion}, event=${wr.event})`);
+                core.setOutput('should_triage', 'false');
+                return;
+              }
+
+              let prs = wr.pull_requests;
+              if (!prs || prs.length === 0) {
+                const headOwner = wr.head_repository && wr.head_repository.owner
+                  ? wr.head_repository.owner.login
+                  : owner;
+                const { data: found } = await github.rest.pulls.list({
+                  owner, repo,
+                  state: 'open',
+                  head: `${headOwner}:${wr.head_branch}`,
+                });
+                prs = found;
+              }
+
+              if (!prs || prs.length === 0) {
+                core.notice(`No PR found for ${wr.head_branch} at ${wr.head_sha}`);
+                core.setOutput('should_triage', 'false');
+                return;
+              }
+              prNumber = prs[0].number;
+
+            } else if (eventName === 'pull_request_target') {
+              prNumber = context.payload.pull_request.number;
+
+            } else if (eventName === 'issue_comment') {
+              if (!context.payload.issue.pull_request) {
+                core.notice('issue_comment was on an issue, not a PR');
+                core.setOutput('should_triage', 'false');
+                return;
+              }
+              prNumber = context.payload.issue.number;
+            }
+
+            const { data: pr } = await github.rest.pulls.get({
+              owner, repo, pull_number: prNumber,
+            });
+
+            if (pr.draft) {
+              core.notice(`PR #${prNumber} is still a draft — skipping.`);
+              core.setOutput('should_triage', 'false');
               return;
             }
-            const pr = prs[0];
-            core.setOutput('number', pr.number);
-            core.setOutput('head_sha', pr.head.sha);
-            core.setOutput('html_url',
-              `https://github.com/${context.repo.owner}/${context.repo.repo}/pull/${pr.number}`);
 
+            headSha = pr.head.sha;
+            htmlUrl = pr.html_url;
+
+            let triggerKind;
+
+            if (eventName === 'workflow_run') {
+              triggerKind = 'build_passed';
+
+            } else if (eventName === 'pull_request_target') {
+              const { data: runs } = await github.rest.actions.listWorkflowRunsForRepo({
+                owner, repo,
+                event: 'pull_request',
+                head_sha: headSha,
+                per_page: 20,
+              });
+              const buildRuns = runs.workflow_runs.filter(r => r.name === 'pull-request-build');
+              if (buildRuns.length === 0) {
+                core.notice(`No pull-request-build run found for ${headSha} — skipping.`);
+                core.setOutput('should_triage', 'false');
+                return;
+              }
+              const latestBuild = buildRuns[0];
+              if (latestBuild.status !== 'completed' || latestBuild.conclusion !== 'success') {
+                core.notice(`Latest build for ${headSha} is ${latestBuild.status}/${latestBuild.conclusion} — skipping.`);
+                core.setOutput('should_triage', 'false');
+                return;
+              }
+              triggerKind = 'ready_for_review';
+
+            } else if (eventName === 'issue_comment') {
+              const comment = context.payload.comment;
+              const prAuthor = pr.user.login;
+
+              if (comment.user.login !== prAuthor) {
+                core.notice(`Comment is not from PR author (${comment.user.login} vs ${prAuthor}) — skipping.`);
+                core.setOutput('should_triage', 'false');
+                return;
+              }
+
+              const { data: runs } = await github.rest.actions.listWorkflowRunsForRepo({
+                owner, repo,
+                event: 'pull_request',
+                head_sha: headSha,
+                per_page: 20,
+              });
+              const buildRuns = runs.workflow_runs.filter(r => r.name === 'pull-request-build');
+              const latestBuild = buildRuns[0];
+              if (!latestBuild || latestBuild.conclusion !== 'success') {
+                core.notice(`No successful build for ${headSha} — skipping.`);
+                core.setOutput('should_triage', 'false');
+                return;
+              }
+
+              const commentCreated = new Date(comment.created_at);
+              const { data: allComments } = await github.rest.issues.listComments({
+                owner, repo, issue_number: prNumber, per_page: 100,
+              });
+
+              const earlierComments = allComments.filter(c =>
+                new Date(c.created_at) < commentCreated &&
+                c.user.login !== prAuthor &&
+                c.user.type !== 'Bot'
+              );
+
+              const permCache = new Map();
+              let priorAdminComment = null;
+
+              for (const c of earlierComments) {
+                const login = c.user.login;
+                if (!permCache.has(login)) {
+                  try {
+                    const { data: perm } = await github.rest.repos.getCollaboratorPermissionLevel({
+                      owner, repo, username: login,
+                    });
+                    permCache.set(login, perm.permission);
+                  } catch (err) {
+                    permCache.set(login, 'none');
+                  }
+                }
+                if (permCache.get(login) === 'admin') {
+                  priorAdminComment = c;
+                  break;
+                }
+              }
+
+              if (!priorAdminComment) {
+                core.notice('No prior admin comment — skipping.');
+                core.setOutput('should_triage', 'false');
+                return;
+              }
+
+              triggerKind = 'author_responded';
+            }
+
+            core.setOutput('should_triage', 'true');
+            core.setOutput('pr_number', String(prNumber));
+            core.setOutput('head_sha', headSha);
+            core.setOutput('html_url', htmlUrl);
+            core.setOutput('trigger_kind', triggerKind);
+
+  triage:
+    needs: eligibility
+    if: needs.eligibility.outputs.should_triage == 'true'
+    runs-on: ubuntu-latest
+    environment: claude-triage
+
+    steps:
       - name: Checkout PR code
         uses: actions/checkout@v4
         with:
-          ref: ${{ steps.pr.outputs.head_sha }}
+          ref: ${{ needs.eligibility.outputs.head_sha }}
           fetch-depth: 0
+
+      - name: Add PR context to run summary
+        env:
+          PR_NUMBER: ${{ needs.eligibility.outputs.pr_number }}
+          PR_URL: ${{ needs.eligibility.outputs.html_url }}
+          TRIGGER_KIND: ${{ needs.eligibility.outputs.trigger_kind }}
+        run: |
+          {
+            echo "## Triage run context"
+            echo ""
+            echo "- **PR:** [#$PR_NUMBER]($PR_URL)"
+            echo "- **Trigger:** $TRIGGER_KIND"
+          } >> $GITHUB_STEP_SUMMARY
 
       - name: Claude analyzes PR
         id: claude
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          claude_args: '--model claude-opus-4-7'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          claude_args: >-
+            --model claude-opus-4-7
+            --allowedTools "Read,Bash(gh:*),Glob,Grep"
+          show_full_output: true
           prompt: |
             Read REVIEW_PROFILE.md for the user's review patterns.
-            Analyze PR #${{ steps.pr.outputs.number }} against those patterns.
+            Analyze PR #${{ needs.eligibility.outputs.pr_number }} against those patterns.
 
-            DO NOT post any comments on the PR. Output only a JSON object
-            to a file at /tmp/triage.json with these fields:
+            Trigger context: ${{ needs.eligibility.outputs.trigger_kind }}
+              - "build_passed": a fresh build just succeeded. Do a full triage.
+              - "ready_for_review": a draft was just marked ready. Do a full triage.
+              - "author_responded": the PR author replied to a prior admin comment.
+                Use `gh pr view` and `gh api` to fetch the full comment thread.
+                Evaluate whether the author's reply resolves the concerns that
+                were raised. If it does, recommend approve. If not, restate the
+                unresolved concern.
+
+            DO NOT post any comments on the PR.
+
+            The suggestedResponse will be pasted verbatim into GitHub's
+            review submission box, which renders GitHub-flavored markdown.
+            Use markdown formatting — NOT HTML:
+              - **bold**, *italic*, `inline code`
+              - Numbered lists using "1." / "2." (markdown auto-numbers)
+              - Nested bullets indented with 2 spaces
+              - Fenced code blocks with ``` and language tag for XML samples
+              - Blank lines between paragraphs and between list items that
+                contain sub-items (this is what makes nesting render correctly
+                on GitHub)
+
+            Think through your analysis step by step. Then, at the very end of
+            your response, output a JSON object with these fields and nothing
+            after it:
               recommendation: "approve" | "request_changes" | "discuss"
-              suggestedResponse: any questions or issues that need to be addressed before approval. This will be sent as an email, so format it accordingly (e.g. use HTML).
+              suggestedResponse: GitHub-flavored markdown describing questions or issues to address before approval. Empty string if no issues.
               confidence: "high" | "medium" | "low"
 
       - name: Parse triage output
         id: parse
+        env:
+          HTML_URL: ${{ needs.eligibility.outputs.html_url }}
+          TRIGGER_KIND: ${{ needs.eligibility.outputs.trigger_kind }}
         run: |
-          RECOMMENDATION=$(jq -r .recommendation /tmp/triage.json)
-          CONFIDENCE=$(jq -r .confidence /tmp/triage.json)
+          LOG_FILE="/home/runner/work/_temp/claude-execution-output.json"
+          if [ ! -f "$LOG_FILE" ]; then
+            echo "ERROR: Claude execution log not found at $LOG_FILE"
+            ls -la /home/runner/work/_temp/ || true
+            exit 1
+          fi
+
+          CLAUDE_OUTPUT=$(jq -r '
+            [.[] | select(.type == "assistant") | .message.content[]?
+             | select(.type == "text") | .text] | last // empty
+          ' "$LOG_FILE")
+
+          echo "=== Raw Claude output ==="
+          echo "$CLAUDE_OUTPUT"
+          echo "=== End raw output ==="
+
+          if [ -z "$CLAUDE_OUTPUT" ]; then
+            echo "ERROR: couldn't find assistant text in the log."
+            head -c 2048 "$LOG_FILE"
+            exit 1
+          fi
+
+          JSON_TEXT=$(echo "$CLAUDE_OUTPUT" | python3 -c '
+          import sys, re, json
+          text = sys.stdin.read()
+          pattern = r"\{(?:[^{}]|\{(?:[^{}]|\{[^{}]*\})*\})*\}"
+          candidates = re.findall(pattern, text, re.DOTALL)
+          for candidate in reversed(candidates):
+              try:
+                  parsed = json.loads(candidate)
+                  if isinstance(parsed, dict) and "recommendation" in parsed:
+                      print(candidate)
+                      sys.exit(0)
+              except json.JSONDecodeError:
+                  continue
+          sys.exit(1)
+          ')
+
+          if [ -z "$JSON_TEXT" ]; then
+            echo "ERROR: couldn'\''t extract valid JSON from Claude output."
+            exit 1
+          fi
+
+          echo "=== Extracted JSON ==="
+          echo "$JSON_TEXT"
+          echo "=== End extracted JSON ==="
+
+          RECOMMENDATION=$(echo "$JSON_TEXT" | jq -r .recommendation)
+          CONFIDENCE=$(echo "$JSON_TEXT" | jq -r .confidence)
+          SUGGESTED_RESPONSE=$(echo "$JSON_TEXT" | jq -r .suggestedResponse)
+
           echo "recommendation=$RECOMMENDATION" >> $GITHUB_OUTPUT
           echo "confidence=$CONFIDENCE" >> $GITHUB_OUTPUT
 
-          # Pick link target and label based on recommendation.
-          # request_changes -> straight to files diff for line-level review.
-          # approve / discuss -> PR conversation page (merge/comment lives there).
           if [ "$RECOMMENDATION" = "request_changes" ]; then
-            LINK_URL="${{ steps.pr.outputs.html_url }}/files"
-            LINK_LABEL="Open review page →"
+            LINK_URL="$HTML_URL/files"
           else
-            LINK_URL="${{ steps.pr.outputs.html_url }}"
-            LINK_LABEL="Open PR →"
+            LINK_URL="$HTML_URL"
           fi
           echo "link_url=$LINK_URL" >> $GITHUB_OUTPUT
-          echo "link_label=$LINK_LABEL" >> $GITHUB_OUTPUT
 
-          {
-            echo "html_body<<EOF"
-            jq -r '
-              "<h2>Recommendation: " + (.recommendation | ascii_upcase) + "</h2>" +
-              "<p><strong>Confidence:</strong> " + .confidence + "</p>" +
-              "<p>" + .suggestedResponse + "</p>"
-            ' /tmp/triage.json
-            echo EOF
-          } >> $GITHUB_OUTPUT
+          case "$TRIGGER_KIND" in
+            author_responded) SUBJECT_TAG="follow-up" ;;
+            ready_for_review) SUBJECT_TAG="ready for review" ;;
+            *)                SUBJECT_TAG="triage" ;;
+          esac
+          echo "subject_tag=$SUBJECT_TAG" >> $GITHUB_OUTPUT
+
+          echo "suggested_response_md<<SRMEOF_42" >> $GITHUB_OUTPUT
+          echo "$SUGGESTED_RESPONSE" >> $GITHUB_OUTPUT
+          echo "SRMEOF_42" >> $GITHUB_OUTPUT
 
       - name: Send email via Resend
+        env:
+          SUGGESTED_RESPONSE_MD: ${{ steps.parse.outputs.suggested_response_md }}
+          CONFIDENCE: ${{ steps.parse.outputs.confidence }}
+          RECOMMENDATION: ${{ steps.parse.outputs.recommendation }}
+          LINK_URL: ${{ steps.parse.outputs.link_url }}
+          SUBJECT_TAG: ${{ steps.parse.outputs.subject_tag }}
+          PR_NUMBER: ${{ needs.eligibility.outputs.pr_number }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         run: |
-          # Build the payload with jq so quotes, newlines, and backslashes
-          # in Claude's output are escaped correctly.
+          # Build a plain-text markdown email body.
+          BODY=$(python3 <<'PY'
+          import os
+
+          recommendation = os.environ["RECOMMENDATION"].upper()
+          confidence = os.environ["CONFIDENCE"]
+          suggested_md = os.environ.get("SUGGESTED_RESPONSE_MD", "")
+          link_url = os.environ["LINK_URL"]
+
+          has_content = suggested_md.strip() and suggested_md.strip().lower() != "null"
+          body_text = suggested_md.strip() if has_content else "No issues found."
+
+          print(f"Recommendation: {recommendation}")
+          print(f"Confidence: {confidence}")
+          print()
+          print(body_text)
+          print()
+          print(link_url)
+          PY
+          )
+
+          SUBJECT="[JiraSpec $SUBJECT_TAG] PR #$PR_NUMBER — $RECOMMENDATION"
+
           PAYLOAD=$(jq -n \
             --arg from "Claude Triage <claude-triage@lmckenzie.com>" \
             --arg to "lloyd@lmckenzie.com" \
-            --arg subject "[JiraSpec triage] PR #${{ steps.pr.outputs.number }} — ${{ steps.parse.outputs.recommendation }}" \
-            --arg html "${{ steps.parse.outputs.html_body }} <p><a href='${{ steps.parse.outputs.link_url }}'>${{ steps.parse.outputs.link_label }}</a></p>" \
-            '{from: $from, to: [$to], subject: $subject, html: $html}')
+            --arg subject "$SUBJECT" \
+            --arg text "$BODY" \
+            '{from: $from, to: [$to], subject: $subject, text: $text}')
 
           curl -X POST https://api.resend.com/emails \
-            -H "Authorization: Bearer ${{ secrets.RESEND_API_KEY }}" \
+            -H "Authorization: Bearer $RESEND_API_KEY" \
             -H "Content-Type: application/json" \
             -d "$PAYLOAD"
