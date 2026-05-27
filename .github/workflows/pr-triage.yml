@@ -1,4 +1,4 @@
-name: Claude PR Triage (Private Email)
+name: Claude JiraSpec PR Triage
 run-name: >-
   Triage for ${{
     (github.event_name == 'pull_request' || github.event_name == 'pull_request_target') &&
@@ -230,6 +230,11 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Allow PRs from contributors without write access. The action's
+          # default is to refuse on read-only actors. Our use is read-only
+          # (allowedTools below + prompt forbids commenting), and first-time
+          # contributors require manual approval at the GitHub level.
+          allowed_non_write_users: "*"
           claude_args: >-
             --model claude-opus-4-7
             --allowedTools "Read,Bash(gh:*),Glob,Grep"
