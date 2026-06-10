@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/pddi/2023Jan" ciUrl="http://build.fhir.org/ig/HL7/PDDI-CDS" defaultVersion="1.0.0-ballot" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/PDDI-CDS" url="http://hl7.org/fhir/uv/pddi">
-<version code="current" url="http://build.fhir.org/ig/HL7/PDDI-CDS"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/pddi/2023Jan" ciUrl="https://build.fhir.org/ig/HL7/PDDI-CDS" defaultVersion="1.0.0" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/PDDI-CDS" url="http://hl7.org/fhir/uv/pddi">
+<version code="current" url="https://build.fhir.org/ig/HL7/PDDI-CDS"/>
+<version code="1.0.0" url="http://hl7.org/fhir/uv/pddi/STU1"/>
 <version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/pddi/2023Jan"/>
 <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/uv/pddi/2020Sep"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/uv/pddi/2018Sep"/>
@@ -8,10 +9,26 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="ActivityDefinition/ad101" key="ActivityDefinition-ad101" name="ActivityDefinition AD101"/>
+<artifact id="ActivityDefinition/ad102" key="ActivityDefinition-ad102" name="ActivityDefinition AD102"/>
+<artifact id="ActivityDefinition/ad201" key="ActivityDefinition-ad201" name="ActivityDefinition AD201"/>
+<artifact id="ActivityDefinition/ad202" key="ActivityDefinition-ad202" name="ActivityDefinition AD202"/>
+<artifact id="ActivityDefinition/ad203" key="ActivityDefinition-ad203" name="ActivityDefinition AD203"/>
+<artifact id="ActivityDefinition/ad204" key="ActivityDefinition-ad204" name="ActivityDefinition AD204"/>
+<artifact id="ActivityDefinition/ad205" key="ActivityDefinition-ad205" name="ActivityDefinition AD205"/>
+<artifact id="ActivityDefinition/ad206" key="ActivityDefinition-ad206" name="ActivityDefinition AD206"/>
+<artifact id="PlanDefinition/digoxin-cyclosporine-cds-select" key="PlanDefinition-digoxin-cyclosporine-cds-select" name="Digoxin Cyclosporine Order Select Recommendation"/>
+<artifact id="PlanDefinition/digoxin-cyclosporine-cds-sign" key="PlanDefinition-digoxin-cyclosporine-cds-sign" name="Digoxin Cyclosporine Order Sign Recommendation"/>
+<artifact id="Library/DigoxinCyclosporineCDSLogic" key="Library-DigoxinCyclosporineCDSLogic" name="Digoxin-cyclosporine CDS Logic"/>
 <artifact deprecated="true" id="CodeSystem/PDDICDS-indicator" key="PDDICDSIndicator" name="PDDICDSIndicator"/>
 <artifact deprecated="true" id="StructureDefinition/PDDICDS-requestgroup-action-indicator" key="PDDIRequestGroupActionIndicator" name="PDDIRequestGroupActionIndicator"/>
 <artifact deprecated="true" id="StructureDefinition/PDDICDS-valueset" key="PDDIValueSet" name="PDDIValueSet"/>
-<artifact id="CodeSystem/codesystem-PDDICDS-indicator" key="CodeSystem-codesystem-PDDICDS-indicator" name="codesystem-PDDICDS-indicator"/>
+<artifact id="StructureDefinition/pddi-cds-configuration-options" key="StructureDefinition-pddi-cds-configuration-options" name="Potential Drug-Drug Interaction (PDDI) Clinical Decision Support (CDS) Configuration Options"/>
+<artifact id="Library/PDDICDSCommon" key="Library-PDDICDSCommon" name="Potential Drug-Durg Interaction (PDDI) Clinical Decision Support (CDS) Common Logic"/>
+<artifact id="PlanDefinition/warfarin-nsaids-cds-select" key="PlanDefinition-warfarin-nsaids-cds-select" name="Warfarin NSAIDs Order Select Recommendation"/>
+<artifact id="PlanDefinition/warfarin-nsaids-cds-sign" key="PlanDefinition-warfarin-nsaids-cds-sign" name="Warfarin NSAIDs Order Sign Recommendation"/>
+<artifact id="Library/WarfarinNSAIDsCDSLogic" key="Library-WarfarinNSAIDsCDSLogic" name="Warfarin-NSAIDs CDS Logic"/>
+<artifact deprecated="true" id="CodeSystem/codesystem-PDDICDS-indicator" key="CodeSystem-codesystem-PDDICDS-indicator" name="codesystem-PDDICDS-indicator"/>
 <artifact id="Condition/condition-warfarin-nsaid-Hx-UGIB-prefetch" key="Condition-condition-warfarin-nsaid-Hx-UGIB-prefetch" name="condition-warfarin-nsaid-Hx-UGIB-prefetch"/>
 <artifact id="Encounter/encounter-digoxin-cyclosporine-context" key="Encounter-encounter-digoxin-cyclosporine-context" name="encounter-digoxin-cyclosporine-context"/>
 <artifact id="Encounter/encounter-digoxin-cyclosporine-prefetch" key="Encounter-encounter-digoxin-cyclosporine-prefetch" name="encounter-digoxin-cyclosporine-prefetch"/>
@@ -49,13 +66,18 @@
 <artifact id="Procedure/procedure-digoxin-cyclosporine-magnesium" key="Procedure-procedure-digoxin-cyclosporine-magnesium" name="procedure-digoxin-cyclosporine-magnesium"/>
 <artifact id="Procedure/procedure-digoxin-cyclosporine-potassium" key="Procedure-procedure-digoxin-cyclosporine-potassium" name="procedure-digoxin-cyclosporine-potassium"/>
 <artifact id="ValueSet/valueset-AAS" key="ValueSet-valueset-AAS" name="valueset-AAS"/>
-<artifact id="ValueSet/valueset-CYCS" key="ValueSet-valueset-CYCS" name="valueset-CYCS"/>
+<artifact id="ValueSet/valueset-AAS-example" key="ValueSet-valueset-AAS-example" name="valueset-AAS-example"/>
+<artifact deprecated="true" id="ValueSet/valueset-CYCS" key="ValueSet-valueset-CYCS" name="valueset-CYCS"/>
 <artifact id="ValueSet/valueset-Hx-UGIB-snomed" key="ValueSet-valueset-Hx-UGIB-snomed" name="valueset-Hx-UGIB-snomed"/>
 <artifact id="ValueSet/valueset-LOOPDIURETIC" key="ValueSet-valueset-LOOPDIURETIC" name="valueset-LOOPDIURETIC"/>
+<artifact id="ValueSet/valueset-LOOPDIURETIC-example" key="ValueSet-valueset-LOOPDIURETIC-example" name="valueset-LOOPDIURETIC-example"/>
 <artifact id="ValueSet/valueset-NSAIDS" key="ValueSet-valueset-NSAIDS" name="valueset-NSAIDS"/>
-<artifact id="ValueSet/valueset-PDDICDS-indicator" key="ValueSet-valueset-PDDICDS-indicator" name="valueset-PDDICDS-indicator"/>
+<artifact id="ValueSet/valueset-NSAIDS-example" key="ValueSet-valueset-NSAIDS-example" name="valueset-NSAIDS-example"/>
+<artifact deprecated="true" id="ValueSet/valueset-PDDICDS-indicator" key="ValueSet-valueset-PDDICDS-indicator" name="valueset-PDDICDS-indicator"/>
 <artifact id="ValueSet/valueset-PPIS" key="ValueSet-valueset-PPIS" name="valueset-PPIS"/>
+<artifact id="ValueSet/valueset-PPIS-example" key="ValueSet-valueset-PPIS-example" name="valueset-PPIS-example"/>
 <artifact id="ValueSet/valueset-SCS" key="ValueSet-valueset-SCS" name="valueset-SCS"/>
+<artifact id="ValueSet/valueset-SCS-example" key="ValueSet-valueset-SCS-example" name="valueset-SCS-example"/>
 <artifact id="ValueSet/valueset-aldosterone" key="ValueSet-valueset-aldosterone" name="valueset-aldosterone"/>
 <artifact id="ValueSet/valueset-aspirin" key="ValueSet-valueset-aspirin" name="valueset-aspirin"/>
 <artifact id="ValueSet/valueset-betamethasone" key="ValueSet-valueset-betamethasone" name="valueset-betamethasone"/>
@@ -140,15 +162,16 @@
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="cds-service-spec" name="CDS Service Specification"/>
-<page deprecated="true" key="home" name="Home" url="index"/>
-<page key="index" name="Implementation Guide for PDDI CDS (DRAFT)"/>
+<page key="changes" name="Changes"/>
+<page deprecated="true" key="home" name="OldHome" url="home"/>
+<page key="index" name="Home" url="index"/>
 <page key="knowledge-artifacts" name="Knowledge Representation for PDDI CDS"/>
 <page key="downloads" name="PDDI CDS – Downloads"/>
-<page key="profiles" name="Profiles defined as part of the PDDI CDS Implementation Guide"/>
+<page deprecated="true" key="profiles" name="Profiles defined as part of the PDDI CDS Implementation Guide"/>
 <page key="toc" name="Table of Contents"/>
 <page key="terminology" name="Terminology defined for the PDDI CDS Implementation Guide"/>
 <page deprecated="true" key="test-data" name="Test data" url="test-data"/>
 <page key="testdata" name="Test data defined as part of the PDDI CDS Implementation Guide"/>
 <page deprecated="true" key="use-case" name="Use Case" url="use-cases"/>
-<page key="use-cases" name="Use Case - a potential interaction between warfarin and non-steroidal anti-inflammatory drugs (NSAIDs)"/>
+<page key="use-cases" name="Use Case - Examples of NPDIs and PDDIs"/>
 </specification>
