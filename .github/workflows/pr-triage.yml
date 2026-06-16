@@ -41,7 +41,7 @@ jobs:
     steps:
       - name: Evaluate trigger eligibility
         id: check
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             const eventName = context.eventName;
@@ -206,7 +206,7 @@ jobs:
 
     steps:
       - name: Checkout PR code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: ${{ needs.eligibility.outputs.head_sha }}
           fetch-depth: 0
@@ -226,6 +226,12 @@ jobs:
 
       - name: Claude analyzes PR
         id: claude
+        # Note: anthropics/claude-code-action@v1 still bundles Node 20 via
+        # oven-sh/setup-bun. As of June 2026 GitHub runners default to Node 24
+        # and emit deprecation warnings; Node 20 is removed entirely in
+        # September 2026. We are waiting on Anthropic to ship a Node 24 build
+        # (tracked in anthropics/claude-code-action#1050). The @v1 tag will
+        # pick up the fix automatically once released — no change needed here.
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
