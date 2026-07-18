@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/quality-core/STU1" ciUrl="https://build.fhir.org/ig/HL7/fhir-us-quality-core" defaultVersion="1.0.0-ballot" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/fhir-us-quality-core" url="http://hl7.org/fhir/us/quality-core">
+<version code="current" url="https://build.fhir.org/ig/HL7/fhir-us-quality-core"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/us/quality-core/STU1"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="Observation/example-screening-assessment-10-minute-apgar-heart-rate" key="Observation-example-screening-assessment-10-minute-apgar-heart-rate" name="10 minute Apgar Heart Rate Observation Screening Assessment Example"/>
+<artifact id="Patient/example-2" key="Patient-example-2" name="65+ Female patient example"/>
+<artifact id="AdverseEvent/example" key="AdverseEvent-example" name="AdverseEvent example"/>
+<artifact id="AllergyIntolerance/example" key="AllergyIntolerance-example" name="AllergyIntolerance example"/>
+<artifact id="AllergyIntolerance/example-refuted" key="AllergyIntolerance-example-refuted" name="AllergyIntolerance refuted example"/>
+<artifact id="CarePlan/example" key="CarePlan-example" name="CarePlan example"/>
+<artifact id="CareTeam/example" key="CareTeam-example" name="CareTeam example"/>
+<artifact id="Communication/example" key="Communication-example" name="Communication example"/>
+<artifact id="Communication/negation-example" key="Communication-negation-example" name="Communication negation example"/>
+<artifact id="Communication/done-example" key="Communication-done-example" name="CommunicationDone example"/>
+<artifact id="Condition/example" key="Condition-example" name="Condition Encounter Diagnosis example"/>
+<artifact id="Condition/health-concern-example" key="Condition-health-concern-example" name="Condition Problems Health Concerns example"/>
+<artifact id="Condition/appendicitis-example" key="Condition-appendicitis-example" name="Condition example - appendicitis"/>
+<artifact id="Coverage/example" key="Coverage-example" name="Coverage example"/>
+<artifact id="Coverage/example-new" key="Coverage-example-new" name="Coverage example - Subscriber ID"/>
+<artifact id="Observation/example-obstetric-delivery" key="Observation-example-obstetric-delivery" name="Date and time of obstetric delivery example"/>
+<artifact id="Observation/example-delivery-date-estimate" key="Observation-example-delivery-date-estimate" name="Delivery date estimated example"/>
+<artifact id="DeviceRequest/example" key="DeviceRequest-example" name="DeviceRequest general example"/>
+<artifact id="DeviceRequest/negation-with-code-example" key="DeviceRequest-negation-with-code-example" name="DeviceRequest negation with code example"/>
+<artifact id="DeviceRequest/negation-example" key="DeviceRequest-negation-example" name="DeviceRequest negation with value set example"/>
+<artifact id="DeviceRequest/requested-example" key="DeviceRequest-requested-example" name="DeviceRequest positive example"/>
+<artifact id="DiagnosticReport/example" key="DiagnosticReport-example" name="DiagnosticReportLab example"/>
+<artifact id="DiagnosticReport/note-example" key="DiagnosticReport-note-example" name="DiagnosticReportNote example"/>
+<artifact id="Encounter/example" key="Encounter-example" name="Encounter example"/>
+<artifact id="Encounter/encounter-ed-example" key="Encounter-encounter-ed-example" name="Encounter example of emergency visit that escalated into inpatient patient"/>
+<artifact id="Observation/example-frailty" key="Observation-example-frailty" name="Frailty observation example"/>
+<artifact id="Observation/example-gestation" key="Observation-example-gestation" name="Gestation age at birth observation example"/>
+<artifact id="Observation/laboratory-result-observation-example-blood-glucose" key="Observation-laboratory-result-observation-example-blood-glucose" name="Glucose Laboratory Result Observation Example"/>
+<artifact id="Goal/example" key="Goal-example" name="Goal example"/>
+<artifact id="Observation/clinical-result-heart-rate-rhythm" key="Observation-clinical-result-heart-rate-rhythm" name="Heart rate rhythm clinical result observation example"/>
+<artifact id="Organization/example-1" key="Organization-example-1" name="Hospital Organization example"/>
+<artifact id="ImagingStudy/example" key="ImagingStudy-example" name="ImagingStudy example"/>
+<artifact id="Immunization/example" key="Immunization-example" name="Immunization general example"/>
+<artifact id="Immunization/negation-example-code" key="Immunization-negation-example-code" name="Immunization negation with code example"/>
+<artifact id="Immunization/negation-example" key="Immunization-negation-example" name="Immunization negation with value set example"/>
+<artifact id="Immunization/done-example" key="Immunization-done-example" name="Immunization positive example"/>
+<artifact id="Patient/infant-example" key="Patient-infant-example" name="Infant patient example"/>
+<artifact id="Location/example" key="Location-example" name="Location example"/>
+<artifact id="Medication/example" key="Medication-example" name="Medication example"/>
+<artifact id="MedicationAdministration/example" key="MedicationAdministration-example" name="MedicationAdministration general example"/>
+<artifact id="MedicationAdministration/negation-with-code-example" key="MedicationAdministration-negation-with-code-example" name="MedicationAdministration negation with code example"/>
+<artifact id="MedicationAdministration/negation-example" key="MedicationAdministration-negation-example" name="MedicationAdministration negation with value set example"/>
+<artifact id="MedicationAdministration/done-example" key="MedicationAdministration-done-example" name="MedicationAdministration positive example"/>
+<artifact id="MedicationDispense/example" key="MedicationDispense-example" name="MedicationDispense general example"/>
+<artifact id="MedicationDispense/negation-with-code-example" key="MedicationDispense-negation-with-code-example" name="MedicationDispense negation with code example"/>
+<artifact id="MedicationDispense/negation-example" key="MedicationDispense-negation-example" name="MedicationDispense negation with value set example"/>
+<artifact id="MedicationDispense/done-example" key="MedicationDispense-done-example" name="MedicationDispense positive example"/>
+<artifact id="MedicationRequest/negation-example-code" key="MedicationRequest-negation-example-code" name="MedicationProhibited using code example"/>
+<artifact id="MedicationRequest/negation-example" key="MedicationRequest-negation-example" name="MedicationProhibited using value set example"/>
+<artifact id="MedicationRequest/patient-reported-example" key="MedicationRequest-patient-reported-example" name="MedicationRequest Patient Reported Example"/>
+<artifact id="MedicationRequest/patient-requester-example" key="MedicationRequest-patient-requester-example" name="MedicationRequest Patient Requester Example"/>
+<artifact id="MedicationRequest/practitioner-ordered-example" key="MedicationRequest-practitioner-ordered-example" name="MedicationRequest Practitioner Ordered Example"/>
+<artifact id="MedicationRequest/example" key="MedicationRequest-example" name="MedicationRequest general example"/>
+<artifact id="MedicationRequest/requested-example" key="MedicationRequest-requested-example" name="MedicationRequest positive example"/>
+<artifact id="Observation/example-births" key="Observation-example-births" name="Number of full-term births obeservation example"/>
+<artifact id="Observation/example-parity" key="Observation-example-parity" name="Number of parity obeservation example"/>
+<artifact id="Observation/example-pregnancies" key="Observation-example-pregnancies" name="Number of pregnancies obeservation example"/>
+<artifact id="Observation/example-preterm-births" key="Observation-example-preterm-births" name="Number of preterm births obeservation example"/>
+<artifact id="NutritionOrder/example" key="NutritionOrder-example" name="NutrientOrder example"/>
+<artifact id="Observation/example-odh" key="Observation-example-odh" name="ODH Observation example"/>
+<artifact id="Observation/example" key="Observation-example" name="Observation example"/>
+<artifact id="Organization/example" key="Organization-example" name="Organization example"/>
+<artifact id="QuestionnaireResponse/phq-9-example" key="QuestionnaireResponse-phq-9-example" name="PHQ-9 QuestionnaireResponse Example"/>
+<artifact id="Patient/example" key="Patient-example" name="Patient example"/>
+<artifact id="ValueSet/us-quality-core-positive-event-status" key="ValueSet-us-quality-core-positive-event-status" name="Positive Event Status"/>
+<artifact id="ValueSet/us-quality-core-positive-medication-administration-status" key="ValueSet-us-quality-core-positive-medication-administration-status" name="Positive MedicationAdministration Status"/>
+<artifact id="ValueSet/us-quality-core-positive-medication-dispense-status" key="ValueSet-us-quality-core-positive-medication-dispense-status" name="Positive MedicationDispense Status"/>
+<artifact id="ValueSet/us-quality-core-positive-medication-request-status" key="ValueSet-us-quality-core-positive-medication-request-status" name="Positive MedicationRequest Status"/>
+<artifact id="ValueSet/us-quality-core-positive-request-status" key="ValueSet-us-quality-core-positive-request-status" name="Positive Request Status"/>
+<artifact id="ValueSet/us-quality-core-positive-task-status" key="ValueSet-us-quality-core-positive-task-status" name="Positive Task Status"/>
+<artifact id="Practitioner/example" key="Practitioner-example" name="Practitioner example"/>
+<artifact id="PractitionerRole/example" key="PractitionerRole-example" name="PractitionerRole example"/>
+<artifact id="Procedure/example" key="Procedure-example" name="Procedure general example"/>
+<artifact id="Procedure/done-example" key="Procedure-done-example" name="Procedure positive example"/>
+<artifact id="Procedure/negation-with-code-example" key="Procedure-negation-with-code-example" name="ProcedureNotDone with code example"/>
+<artifact id="Procedure/negation-example" key="Procedure-negation-example" name="ProcedureNotDone with value set example"/>
+<artifact id="RelatedPerson/example" key="RelatedPerson-example" name="RelatedPerson example"/>
+<artifact id="ServiceRequest/negation-example-code" key="ServiceRequest-negation-example-code" name="ServiceProhibited with code example"/>
+<artifact id="ServiceRequest/negation-example" key="ServiceRequest-negation-example" name="ServiceProhibited with value set example"/>
+<artifact id="ServiceRequest/myringotomy-example" key="ServiceRequest-myringotomy-example" name="ServiceRequest Myringotomy Procedure example"/>
+<artifact id="ServiceRequest/appropriateness-example" key="ServiceRequest-appropriateness-example" name="ServiceRequest appropriateness example"/>
+<artifact id="ServiceRequest/elective-example" key="ServiceRequest-elective-example" name="ServiceRequest elective example"/>
+<artifact id="ServiceRequest/example" key="ServiceRequest-example" name="ServiceRequest general example"/>
+<artifact id="ServiceRequest/proposal-example-code" key="ServiceRequest-proposal-example-code" name="ServiceRequest positive example with a code"/>
+<artifact id="ServiceRequest/proposal-example" key="ServiceRequest-proposal-example" name="ServiceRequest positive example with a value set"/>
+<artifact id="ServiceRequest/service-requested-example" key="ServiceRequest-service-requested-example" name="ServiceRequested appendix example"/>
+<artifact id="Task/example" key="Task-example" name="Task general example"/>
+<artifact id="Task/done-example" key="Task-done-example" name="Task positive example"/>
+<artifact id="Task/rejected-with-code-example" key="Task-rejected-with-code-example" name="TaskRejected example rejecting a proposal using a code"/>
+<artifact id="Task/rejected-example" key="Task-rejected-example" name="TaskRejected example rejecting a proposal using a value set"/>
+<artifact id="Task/negation-with-code-example" key="Task-negation-with-code-example" name="TaskRejected with code example"/>
+<artifact id="Task/negation-example" key="Task-negation-example" name="TaskRejected with value set example"/>
+<artifact id="StructureDefinition/us-quality-core-adverseevent" key="StructureDefinition-us-quality-core-adverseevent" name="US Quality Core AdverseEvent"/>
+<artifact id="StructureDefinition/us-quality-core-allergyintolerance" key="StructureDefinition-us-quality-core-allergyintolerance" name="US Quality Core AllergyIntolerance"/>
+<artifact id="StructureDefinition/us-quality-core-careplan" key="StructureDefinition-us-quality-core-careplan" name="US Quality Core CarePlan"/>
+<artifact id="StructureDefinition/us-quality-core-careteam" key="StructureDefinition-us-quality-core-careteam" name="US Quality Core CareTeam"/>
+<artifact id="CapabilityStatement/us-quality-core-client" key="CapabilityStatement-us-quality-core-client" name="US Quality Core Client CapabilityStatement"/>
+<artifact id="StructureDefinition/us-quality-core-communication" key="StructureDefinition-us-quality-core-communication" name="US Quality Core Communication"/>
+<artifact id="StructureDefinition/us-quality-core-communicationnotdone" key="StructureDefinition-us-quality-core-communicationnotdone" name="US Quality Core Communication Not Done"/>
+<artifact id="StructureDefinition/us-quality-core-communicationdone" key="StructureDefinition-us-quality-core-communicationdone" name="US Quality Core CommunicationDone"/>
+<artifact id="StructureDefinition/us-quality-core-condition-encounter-diagnosis" key="StructureDefinition-us-quality-core-condition-encounter-diagnosis" name="US Quality Core Condition Encounter Diagnosis"/>
+<artifact id="StructureDefinition/us-quality-core-condition-problems-health-concerns" key="StructureDefinition-us-quality-core-condition-problems-health-concerns" name="US Quality Core Condition Problems Health Concerns"/>
+<artifact id="StructureDefinition/us-quality-core-coverage" key="StructureDefinition-us-quality-core-coverage" name="US Quality Core Coverage"/>
+<artifact id="StructureDefinition/us-quality-core-deviceprohibited" key="StructureDefinition-us-quality-core-deviceprohibited" name="US Quality Core Device Prohibited"/>
+<artifact id="StructureDefinition/us-quality-core-devicerequest" key="StructureDefinition-us-quality-core-devicerequest" name="US Quality Core DeviceRequest"/>
+<artifact id="StructureDefinition/us-quality-core-devicerequested" key="StructureDefinition-us-quality-core-devicerequested" name="US Quality Core DeviceRequested"/>
+<artifact id="StructureDefinition/us-quality-core-diagnosis-present-on-admission" key="StructureDefinition-us-quality-core-diagnosis-present-on-admission" name="US Quality Core Diagnosis Present on Admission"/>
+<artifact id="StructureDefinition/us-quality-core-diagnosticreport-lab" key="StructureDefinition-us-quality-core-diagnosticreport-lab" name="US Quality Core DiagnosticReport Profile for Laboratory Results Reporting"/>
+<artifact id="StructureDefinition/us-quality-core-diagnosticreport-note" key="StructureDefinition-us-quality-core-diagnosticreport-note" name="US Quality Core DiagnosticReport Profile for Report and Note Exchange"/>
+<artifact id="StructureDefinition/us-quality-core-encounter" key="StructureDefinition-us-quality-core-encounter" name="US Quality Core Encounter"/>
+<artifact id="StructureDefinition/us-quality-core-goal" key="StructureDefinition-us-quality-core-goal" name="US Quality Core Goal"/>
+<artifact id="StructureDefinition/us-quality-core-imagingstudy" key="StructureDefinition-us-quality-core-imagingstudy" name="US Quality Core ImagingStudy"/>
+<artifact id="StructureDefinition/us-quality-core-immunization" key="StructureDefinition-us-quality-core-immunization" name="US Quality Core Immunization"/>
+<artifact id="StructureDefinition/us-quality-core-immunizationdone" key="StructureDefinition-us-quality-core-immunizationdone" name="US Quality Core Immunization Done"/>
+<artifact id="StructureDefinition/us-quality-core-immunizationnotdone" key="StructureDefinition-us-quality-core-immunizationnotdone" name="US Quality Core Immunization Not Done"/>
+<artifact id="StructureDefinition/us-quality-core-observation-lab" key="StructureDefinition-us-quality-core-observation-lab" name="US Quality Core Laboratory Result Observation"/>
+<artifact id="StructureDefinition/us-quality-core-location" key="StructureDefinition-us-quality-core-location" name="US Quality Core Location"/>
+<artifact id="StructureDefinition/us-quality-core-medication" key="StructureDefinition-us-quality-core-medication" name="US Quality Core Medication"/>
+<artifact id="StructureDefinition/us-quality-core-medicationprohibited" key="StructureDefinition-us-quality-core-medicationprohibited" name="US Quality Core Medication Prohibited"/>
+<artifact id="StructureDefinition/us-quality-core-medicationadministration" key="StructureDefinition-us-quality-core-medicationadministration" name="US Quality Core MedicationAdministration"/>
+<artifact id="StructureDefinition/us-quality-core-medicationadministrationdone" key="StructureDefinition-us-quality-core-medicationadministrationdone" name="US Quality Core MedicationAdministration Done"/>
+<artifact id="StructureDefinition/us-quality-core-medicationadministrationnotdone" key="StructureDefinition-us-quality-core-medicationadministrationnotdone" name="US Quality Core MedicationAdministration Not Done"/>
+<artifact id="StructureDefinition/us-quality-core-medicationdispense" key="StructureDefinition-us-quality-core-medicationdispense" name="US Quality Core MedicationDispense"/>
+<artifact id="StructureDefinition/us-quality-core-medicationdispensedeclined" key="StructureDefinition-us-quality-core-medicationdispensedeclined" name="US Quality Core MedicationDispense Declined"/>
+<artifact id="StructureDefinition/us-quality-core-medicationdispensedone" key="StructureDefinition-us-quality-core-medicationdispensedone" name="US Quality Core MedicationDispense Done"/>
+<artifact id="StructureDefinition/us-quality-core-medicationrequest" key="StructureDefinition-us-quality-core-medicationrequest" name="US Quality Core MedicationRequest"/>
+<artifact id="StructureDefinition/us-quality-core-medicationrequested" key="StructureDefinition-us-quality-core-medicationrequested" name="US Quality Core MedicationRequested"/>
+<artifact id="ValueSet/us-quality-core-negation-reason-codes" key="ValueSet-us-quality-core-negation-reason-codes" name="US Quality Core Negation Reason Codes"/>
+<artifact id="StructureDefinition/us-quality-core-nutritionorder" key="StructureDefinition-us-quality-core-nutritionorder" name="US Quality Core NutritionOrder"/>
+<artifact id="ValueSet/us-quality-core-observation-body-position" key="ValueSet-us-quality-core-observation-body-position" name="US Quality Core Observation Body Position"/>
+<artifact id="StructureDefinition/us-quality-core-observation-clinical-result" key="StructureDefinition-us-quality-core-observation-clinical-result" name="US Quality Core Observation Clinical Result"/>
+<artifact id="StructureDefinition/us-quality-core-observation-screening-assessment" key="StructureDefinition-us-quality-core-observation-screening-assessment" name="US Quality Core Observation Screening Assessment"/>
+<artifact id="StructureDefinition/us-quality-core-organization" key="StructureDefinition-us-quality-core-organization" name="US Quality Core Organization"/>
+<artifact id="StructureDefinition/us-quality-core-patient" key="StructureDefinition-us-quality-core-patient" name="US Quality Core Patient"/>
+<artifact id="StructureDefinition/us-quality-core-practitioner" key="StructureDefinition-us-quality-core-practitioner" name="US Quality Core Practitioner"/>
+<artifact id="StructureDefinition/us-quality-core-practitionerrole" key="StructureDefinition-us-quality-core-practitionerrole" name="US Quality Core PractitionerRole"/>
+<artifact id="ValueSet/us-quality-core-present-on-admission" key="ValueSet-us-quality-core-present-on-admission" name="US Quality Core Present On Admission Codes"/>
+<artifact id="StructureDefinition/us-quality-core-procedure" key="StructureDefinition-us-quality-core-procedure" name="US Quality Core Procedure"/>
+<artifact id="StructureDefinition/us-quality-core-proceduredone" key="StructureDefinition-us-quality-core-proceduredone" name="US Quality Core Procedure Done"/>
+<artifact id="StructureDefinition/us-quality-core-procedurenotdone" key="StructureDefinition-us-quality-core-procedurenotdone" name="US Quality Core Procedure Not Done"/>
+<artifact id="StructureDefinition/us-quality-core-questionnaireresponse" key="StructureDefinition-us-quality-core-questionnaireresponse" name="US Quality Core QuestionnaireResponse"/>
+<artifact id="StructureDefinition/us-quality-core-relatedperson" key="StructureDefinition-us-quality-core-relatedperson" name="US Quality Core RelatedPerson"/>
+<artifact id="ValueSet/us-quality-core-medication-dose-type" key="ValueSet-us-quality-core-medication-dose-type" name="US Quality Core SNOMED CT Dosage Codes"/>
+<artifact id="CapabilityStatement/us-quality-core-server" key="CapabilityStatement-us-quality-core-server" name="US Quality Core Server CapabilityStatement"/>
+<artifact id="StructureDefinition/us-quality-core-serviceprohibited" key="StructureDefinition-us-quality-core-serviceprohibited" name="US Quality Core Service Prohibited"/>
+<artifact id="StructureDefinition/us-quality-core-servicerequest" key="StructureDefinition-us-quality-core-servicerequest" name="US Quality Core ServiceRequest"/>
+<artifact id="StructureDefinition/us-quality-core-servicerequested" key="StructureDefinition-us-quality-core-servicerequested" name="US Quality Core ServiceRequested"/>
+<artifact id="StructureDefinition/us-quality-core-simple-observation" key="StructureDefinition-us-quality-core-simple-observation" name="US Quality Core Simple Observation"/>
+<artifact id="StructureDefinition/us-quality-core-task" key="StructureDefinition-us-quality-core-task" name="US Quality Core Task"/>
+<artifact id="StructureDefinition/us-quality-core-taskdone" key="StructureDefinition-us-quality-core-taskdone" name="US Quality Core Task Done"/>
+<artifact id="StructureDefinition/us-quality-core-taskrejected" key="StructureDefinition-us-quality-core-taskrejected" name="US Quality Core Task Rejected"/>
+<artifact id="StructureDefinition/us-quality-core-uscdi-quality-extension" key="StructureDefinition-us-quality-core-uscdi-quality-extension" name="US Quality Core USCDI+ Quality Extension"/>
+<artifact id="SearchParameter/us-quality-core-adverse-event-event" key="SearchParameter-us-quality-core-adverse-event-event" name="us-quality-core-adverse-event-event"/>
+<artifact id="SearchParameter/us-quality-core-adverse-event-recorded-date" key="SearchParameter-us-quality-core-adverse-event-recorded-date" name="us-quality-core-adverse-event-recorded-date"/>
+<artifact id="SearchParameter/us-quality-core-adverse-event-subject" key="SearchParameter-us-quality-core-adverse-event-subject" name="us-quality-core-adverse-event-subject"/>
+<artifact id="SearchParameter/us-quality-core-allergy-intolerance-patient" key="SearchParameter-us-quality-core-allergy-intolerance-patient" name="us-quality-core-allergy-intolerance-patient"/>
+<artifact id="SearchParameter/us-quality-core-care-plan-category" key="SearchParameter-us-quality-core-care-plan-category" name="us-quality-core-care-plan-category"/>
+<artifact id="SearchParameter/us-quality-core-care-plan-patient" key="SearchParameter-us-quality-core-care-plan-patient" name="us-quality-core-care-plan-patient"/>
+<artifact id="SearchParameter/us-quality-core-care-team-patient" key="SearchParameter-us-quality-core-care-team-patient" name="us-quality-core-care-team-patient"/>
+<artifact id="SearchParameter/us-quality-core-care-team-status" key="SearchParameter-us-quality-core-care-team-status" name="us-quality-core-care-team-status"/>
+<artifact id="SearchParameter/us-quality-core-communication-subject" key="SearchParameter-us-quality-core-communication-subject" name="us-quality-core-communication-subject"/>
+<artifact id="SearchParameter/us-quality-core-communication-topic" key="SearchParameter-us-quality-core-communication-topic" name="us-quality-core-communication-topic"/>
+<artifact id="SearchParameter/us-quality-core-condition-category" key="SearchParameter-us-quality-core-condition-category" name="us-quality-core-condition-category"/>
+<artifact id="SearchParameter/us-quality-core-condition-code" key="SearchParameter-us-quality-core-condition-code" name="us-quality-core-condition-code"/>
+<artifact id="SearchParameter/us-quality-core-condition-patient" key="SearchParameter-us-quality-core-condition-patient" name="us-quality-core-condition-patient"/>
+<artifact id="SearchParameter/us-quality-core-coverage-patient" key="SearchParameter-us-quality-core-coverage-patient" name="us-quality-core-coverage-patient"/>
+<artifact id="SearchParameter/us-quality-core-device-request-code" key="SearchParameter-us-quality-core-device-request-code" name="us-quality-core-device-request-code"/>
+<artifact id="SearchParameter/us-quality-core-device-request-do-not-perform" key="SearchParameter-us-quality-core-device-request-do-not-perform" name="us-quality-core-device-request-do-not-perform"/>
+<artifact id="SearchParameter/us-quality-core-device-request-patient" key="SearchParameter-us-quality-core-device-request-patient" name="us-quality-core-device-request-patient"/>
+<artifact id="SearchParameter/us-quality-core-diagnostic-report-category" key="SearchParameter-us-quality-core-diagnostic-report-category" name="us-quality-core-diagnostic-report-category"/>
+<artifact id="SearchParameter/us-quality-core-diagnostic-report-code" key="SearchParameter-us-quality-core-diagnostic-report-code" name="us-quality-core-diagnostic-report-code"/>
+<artifact id="SearchParameter/us-quality-core-diagnostic-report-date" key="SearchParameter-us-quality-core-diagnostic-report-date" name="us-quality-core-diagnostic-report-date"/>
+<artifact id="SearchParameter/us-quality-core-diagnostic-report-patient" key="SearchParameter-us-quality-core-diagnostic-report-patient" name="us-quality-core-diagnostic-report-patient"/>
+<artifact id="SearchParameter/us-quality-core-encounter-date" key="SearchParameter-us-quality-core-encounter-date" name="us-quality-core-encounter-date"/>
+<artifact id="SearchParameter/us-quality-core-encounter-id" key="SearchParameter-us-quality-core-encounter-id" name="us-quality-core-encounter-id"/>
+<artifact id="SearchParameter/us-quality-core-encounter-patient" key="SearchParameter-us-quality-core-encounter-patient" name="us-quality-core-encounter-patient"/>
+<artifact id="SearchParameter/us-quality-core-encounter-type" key="SearchParameter-us-quality-core-encounter-type" name="us-quality-core-encounter-type"/>
+<artifact id="SearchParameter/us-quality-core-goal-patient" key="SearchParameter-us-quality-core-goal-patient" name="us-quality-core-goal-patient"/>
+<artifact id="SearchParameter/us-quality-core-imaging-study-subject" key="SearchParameter-us-quality-core-imaging-study-subject" name="us-quality-core-imaging-study-subject"/>
+<artifact id="SearchParameter/us-quality-core-immunization-patient" key="SearchParameter-us-quality-core-immunization-patient" name="us-quality-core-immunization-patient"/>
+<artifact id="SearchParameter/us-quality-core-immunization-status" key="SearchParameter-us-quality-core-immunization-status" name="us-quality-core-immunization-status"/>
+<artifact id="SearchParameter/us-quality-core-medication-administration-code" key="SearchParameter-us-quality-core-medication-administration-code" name="us-quality-core-medication-administration-code"/>
+<artifact id="SearchParameter/us-quality-core-medication-administration-effective-time" key="SearchParameter-us-quality-core-medication-administration-effective-time" name="us-quality-core-medication-administration-effective-time"/>
+<artifact id="SearchParameter/us-quality-core-medication-administration-patient" key="SearchParameter-us-quality-core-medication-administration-patient" name="us-quality-core-medication-administration-patient"/>
+<artifact id="SearchParameter/us-quality-core-medication-administration-status" key="SearchParameter-us-quality-core-medication-administration-status" name="us-quality-core-medication-administration-status"/>
+<artifact id="SearchParameter/us-quality-core-medication-code" key="SearchParameter-us-quality-core-medication-code" name="us-quality-core-medication-code"/>
+<artifact id="SearchParameter/us-quality-core-medication-dispense-patient" key="SearchParameter-us-quality-core-medication-dispense-patient" name="us-quality-core-medication-dispense-patient"/>
+<artifact id="SearchParameter/us-quality-core-medication-dispense-status" key="SearchParameter-us-quality-core-medication-dispense-status" name="us-quality-core-medication-dispense-status"/>
+<artifact id="SearchParameter/us-quality-core-medication-request-do-not-perform" key="SearchParameter-us-quality-core-medication-request-do-not-perform" name="us-quality-core-medication-request-do-not-perform"/>
+<artifact id="SearchParameter/us-quality-core-medication-request-intent" key="SearchParameter-us-quality-core-medication-request-intent" name="us-quality-core-medication-request-intent"/>
+<artifact id="SearchParameter/us-quality-core-medication-request-patient" key="SearchParameter-us-quality-core-medication-request-patient" name="us-quality-core-medication-request-patient"/>
+<artifact id="SearchParameter/us-quality-core-nutrition-order-patient" key="SearchParameter-us-quality-core-nutrition-order-patient" name="us-quality-core-nutrition-order-patient"/>
+<artifact id="SearchParameter/us-quality-core-observation-category" key="SearchParameter-us-quality-core-observation-category" name="us-quality-core-observation-category"/>
+<artifact id="SearchParameter/us-quality-core-observation-code" key="SearchParameter-us-quality-core-observation-code" name="us-quality-core-observation-code"/>
+<artifact id="SearchParameter/us-quality-core-observation-date" key="SearchParameter-us-quality-core-observation-date" name="us-quality-core-observation-date"/>
+<artifact id="SearchParameter/us-quality-core-observation-patient" key="SearchParameter-us-quality-core-observation-patient" name="us-quality-core-observation-patient"/>
+<artifact id="SearchParameter/us-quality-core-observation-status" key="SearchParameter-us-quality-core-observation-status" name="us-quality-core-observation-status"/>
+<artifact id="SearchParameter/us-quality-core-patient-id" key="SearchParameter-us-quality-core-patient-id" name="us-quality-core-patient-id"/>
+<artifact id="SearchParameter/us-quality-core-procedure-date" key="SearchParameter-us-quality-core-procedure-date" name="us-quality-core-procedure-date"/>
+<artifact id="SearchParameter/us-quality-core-procedure-patient" key="SearchParameter-us-quality-core-procedure-patient" name="us-quality-core-procedure-patient"/>
+<artifact id="SearchParameter/us-quality-core-procedure-status" key="SearchParameter-us-quality-core-procedure-status" name="us-quality-core-procedure-status"/>
+<artifact id="SearchParameter/us-quality-core-questionnaire-response-patient" key="SearchParameter-us-quality-core-questionnaire-response-patient" name="us-quality-core-questionnaire-response-patient"/>
+<artifact id="SearchParameter/us-quality-core-questionnaire-response-questionnaire" key="SearchParameter-us-quality-core-questionnaire-response-questionnaire" name="us-quality-core-questionnaire-response-questionnaire"/>
+<artifact id="SearchParameter/us-quality-core-related-person-id" key="SearchParameter-us-quality-core-related-person-id" name="us-quality-core-related-person-id"/>
+<artifact id="SearchParameter/us-quality-core-related-person-patient" key="SearchParameter-us-quality-core-related-person-patient" name="us-quality-core-related-person-patient"/>
+<artifact id="SearchParameter/us-quality-core-service-request-authored" key="SearchParameter-us-quality-core-service-request-authored" name="us-quality-core-service-request-authored"/>
+<artifact id="SearchParameter/us-quality-core-service-request-category" key="SearchParameter-us-quality-core-service-request-category" name="us-quality-core-service-request-category"/>
+<artifact id="SearchParameter/us-quality-core-service-request-code" key="SearchParameter-us-quality-core-service-request-code" name="us-quality-core-service-request-code"/>
+<artifact id="SearchParameter/us-quality-core-service-request-do-not-perform" key="SearchParameter-us-quality-core-service-request-do-not-perform" name="us-quality-core-service-request-do-not-perform"/>
+<artifact id="SearchParameter/us-quality-core-service-request-id" key="SearchParameter-us-quality-core-service-request-id" name="us-quality-core-service-request-id"/>
+<artifact id="SearchParameter/us-quality-core-service-request-patient" key="SearchParameter-us-quality-core-service-request-patient" name="us-quality-core-service-request-patient"/>
+<artifact id="SearchParameter/us-quality-core-task-code" key="SearchParameter-us-quality-core-task-code" name="us-quality-core-task-code"/>
+<artifact id="SearchParameter/us-quality-core-task-patient" key="SearchParameter-us-quality-core-task-patient" name="us-quality-core-task-patient"/>
+<artifact id="SearchParameter/us-quality-core-task-status" key="SearchParameter-us-quality-core-task-status" name="us-quality-core-task-status"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="capability-statements" name="Capability Statements"/>
+<page key="changes" name="Changes"/>
+<page key="conformance" name="Conformance"/>
+<page key="us-quality-core-general-requirements" name="General Requirements"/>
+<page key="guidance" name="Guidance"/>
+<page key="must-support" name="Must Support"/>
+<page key="provenance" name="Provenance"/>
+<page key="relationship-with-uscore-qicore" name="Relationship with US Core and QI-Core"/>
+<page key="security" name="Security"/>
+<page key="toc" name="Table of Contents"/>
+<page key="downloads" name="US Quality Core Downloads"/>
+<page key="examples" name="US Quality Core Examples"/>
+<page key="extensions" name="US Quality Core Extensions"/>
+<page key="index" name="US Quality Core Implementation Guide"/>
+<page key="negation" name="US Quality Core Negation"/>
+<page key="profiles" name="US Quality Core Profiles"/>
+<page key="terminology" name="US Quality Core Terminology"/>
+<page key="uscdiquality" name="USCDI+ Quality"/>
+</specification>
