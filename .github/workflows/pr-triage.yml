@@ -4,6 +4,12 @@
 # Defines triggers and calls the shared reusable workflow. All triage logic
 # lives in HL7/fhir/.github/workflows/_pr-triage.yml.
 #
+# review_mode: "profile-only" — this repo's PRs aren't tied to individual
+# Jira ticket resolutions, so triage skips the Jira-ticket lookup and
+# ticket-alignment check entirely and evaluates strictly against
+# REVIEW_PROFILE.md (version deprecation, defaultVersion, naming
+# conventions, CI URL format, rename-vs-deprecate, etc).
+#
 # Setup requirements (one-time, in this repo):
 #   - claude-triage environment with secrets:
 #       ANTHROPIC_API_KEY, RESEND_API_KEY, JIRA_API_TOKEN
@@ -39,4 +45,5 @@ jobs:
     with:
       label: "JiraSpec"
       to: "lloyd@lmckenzie.com"
+      review_mode: "profile-only"
     secrets: inherit
