@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cqm/2025Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-cqm" defaultVersion="1.0.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/fhir-cqm" url="http://hl7.org/fhir/uv/cqm">
-<version code="current" url="http://build.fhir.org/ig/HL7/fhir-cqm"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cqm/2026May" ciUrl="https://build.fhir.org/ig/HL7/fhir-cqm" defaultVersion="1.0.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/fhir-cqm" url="http://hl7.org/fhir/uv/cqm">
+<version code="current" url="https://build.fhir.org/ig/HL7/fhir-cqm"/>
+<version code="2.0.0-ballot" url="http://hl7.org/fhir/uv/cqm/2026May"/>
 <version code="1.0.0" url="http://hl7.org/fhir/uv/cqm/STU1"/>
 <version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/cqm/2025Jan"/>
 <artifactPageExtension value="-definitions"/>
@@ -13,8 +14,14 @@
 <artifact id="ValueSet/age-stratified-example" key="ValueSet-age-stratified-example" name="Age Stratified Example Age Groups"/>
 <artifact id="ConceptMap/aggregate-method" key="ConceptMap-aggregate-method" name="Aggregate Method mapping"/>
 <artifact id="Library/BCSComponent" key="Library-BCSComponent" name="BCS Component Library"/>
+<artifact id="Measure/BedCapacityMeasure-daily" key="Measure-BedCapacityMeasure-daily" name="Bed Capacity Measure - Daily Reporting"/>
+<artifact id="Measure/BedCapacityMeasure-monthly" key="Measure-BedCapacityMeasure-monthly" name="Bed Capacity Measure - Monthly Reporting"/>
 <artifact id="Measure/BCSComponent" key="Measure-BCSComponent" name="Breast Cancer Screening"/>
 <artifact id="Bundle/measurereport-bundle-example" key="Bundle-bundle-example" name="Bundle example"/>
+<artifact id="Library/CAUTIElements" key="Library-CAUTIElements" name="CAUTI Elements"/>
+<artifact id="Library/CAUTIParameters" key="Library-CAUTIParameters" name="CAUTI Parameters"/>
+<artifact id="Library/CAUTIRate" key="Library-CAUTIRate" name="CAUTI Rate"/>
+<artifact id="Library/CAUTISIR" key="Library-CAUTISIR" name="CAUTI Standardized Infection Ratio (SIR)"/>
 <artifact id="Library/CCSComponent" key="Library-CCSComponent" name="CCS Component Library"/>
 <artifact id="CapabilityStatement/authoring-measure-repository" key="CapabilityStatement-authoring-measure-repository" name="CQF Measures Authoring Measure Repository Capability Statement"/>
 <artifact id="CapabilityStatement/publishable-measure-repository" key="CapabilityStatement-publishable-measure-repository" name="CQF Measures Publishable Measure Repository Capability Statement"/>
@@ -30,6 +37,7 @@
 <artifact id="StructureDefinition/cqm-computablemeasure" key="StructureDefinition-cqm-computablemeasure" name="CQM Computable Measure"/>
 <artifact id="StructureDefinition/cqm-cvmeasure" key="StructureDefinition-cqm-cvmeasure" name="CQM Continuous Variable Measure"/>
 <artifact deprecated="true" id="StructureDefinition/cqm-criteriaReference" key="StructureDefinition-cqm-criteriaReference" name="CQM Criteria Reference"/>
+<artifact id="StructureDefinition/cqm-datatype-timing" key="StructureDefinition-cqm-datatype-timing" name="CQM DataType Timing"/>
 <artifact deprecated="true" id="StructureDefinition/cqm-device-softwaresystem" key="StructureDefinition-cqm-device-softwaresystem" name="CQM Device"/>
 <artifact id="StructureDefinition/cqm-elmmeasure" key="StructureDefinition-cqm-elmmeasure" name="CQM ELM Measure"/>
 <artifact id="StructureDefinition/cqm-effectivePeriodAnchor" key="StructureDefinition-cqm-effectivePeriodAnchor" name="CQM Effective Period Anchor"/>
@@ -47,6 +55,8 @@
 <artifact id="StructureDefinition/cqm-publishablemeasure" key="StructureDefinition-cqm-publishablemeasure" name="CQM Publishable Measure"/>
 <artifact id="StructureDefinition/cqm-rateAggregation" key="StructureDefinition-cqm-rateAggregation" name="CQM Rate Aggregation"/>
 <artifact id="StructureDefinition/cqm-ratiomeasure" key="StructureDefinition-cqm-ratiomeasure" name="CQM Ratio Measure"/>
+<artifact id="StructureDefinition/cqm-renderMissingElements" key="StructureDefinition-cqm-renderMissingElements" name="CQM Render Missing Elements"/>
+<artifact id="StructureDefinition/cqm-reportingTiming" key="StructureDefinition-cqm-reportingTiming" name="CQM Reporting Timing"/>
 <artifact id="StructureDefinition/cqm-riskAdjustment" key="StructureDefinition-cqm-riskAdjustment" name="CQM Risk Adjustment"/>
 <artifact id="StructureDefinition/cqm-scoring" key="StructureDefinition-cqm-scoring" name="CQM Scoring"/>
 <artifact id="StructureDefinition/cqm-scoringPrecision" key="StructureDefinition-cqm-scoringPrecision" name="CQM Scoring Precision"/>
@@ -84,6 +94,8 @@
 <artifact id="Measure/EXM55-FHIR" key="Measure-EXM55-FHIR" name="EXM55 - Median Emergency Department Visit Duration"/>
 <artifact id="Library/EXM55" key="Library-EXM55-FHIR" name="EXM55 - Median Emergency Department Visit Duration Library (Example Continuous Variable Measure Library)"/>
 <artifact id="Library/EXMRatio" key="Library-EXMRatio-FHIR" name="EXMRatio - Example Ratio Measure Library"/>
+<artifact id="Measure/CAUTIRateExample" key="Measure-CAUTIRateExample" name="Example Catheter-Associated Urinary Tract Infection Rate"/>
+<artifact id="Measure/CAUTISIRExample" key="Measure-CAUTISIRExample" name="Example Catheter-Associated Urinary Tract Infection Standardized Infection Ratio (SIR)"/>
 <artifact id="Library/EXMComputableLibrary" key="Library-EXMComputableLibrary" name="Example Computable Library"/>
 <artifact id="Library/EXMExecutableLibrary" key="Library-EXMExecutableLibrary" name="Example Executable Library"/>
 <artifact id="Library/EXMLogic" key="Library-EXMLogic-FHIR" name="Example Logic Library"/>
@@ -93,8 +105,8 @@
 <artifact deprecated="true" id="Library/fhir-model-definition-FHIR2" key="Library-fhir-model-definition-FHIR2" name="FHIR Model Definition (STU2)"/>
 <artifact id="Library/HBPComponent" key="Library-HBPComponent" name="HBP Component Library"/>
 <artifact id="Library/Hospice" key="Library-Hospice" name="Hospice FHIR Library"/>
-<artifact id="ValueSet/iso-8601-derived-periods" key="ValueSet-iso-8601-derived-periods" name="ISO-8601-Derived Periods"/>
-<artifact id="CodeSystem/iso-8601-derived-periods" key="CodeSystem-iso-8601-derived-periods" name="ISO-8601-Derived Periods Codes"/>
+<artifact deprecated="true" id="ValueSet/iso-8601-derived-periods" key="ValueSet-iso-8601-derived-periods" name="ISO-8601-Derived Periods"/>
+<artifact deprecated="true" id="CodeSystem/iso-8601-derived-periods" key="CodeSystem-iso-8601-derived-periods" name="ISO-8601-Derived Periods Codes"/>
 <artifact id="ConceptMap/improvement-notations" key="ConceptMap-improvement-notations" name="Improvement Notation Mapping"/>
 <artifact id="Parameters/manifest" key="Parameters-manifest" name="Input Expansion Parameters"/>
 <artifact id="ValueSet/intended-venue" key="ValueSet-intended-venue" name="Intended Venue"/>
@@ -121,6 +133,9 @@
 <artifact id="Measure/PreventiveCareandWellnessPatientLevelLinearComposite" key="Measure-PreventiveCareandWellnessPatientLevelLinearComposite" name="Preventive Care and Wellness Patient-level Linear Composite"/>
 <artifact id="Measure/PreventiveCareandWellnessWeightedComposite" key="Measure-PreventiveCareandWellnessWeightedComposite" name="Preventive Care and Wellness Weighted Composite"/>
 <artifact id="Library/Quality-Program-Example" key="Library-Quality-Program-Example" name="Quality Program Example"/>
+<artifact id="Bundle/EmergencyCapacityReportingExample" key="Bundle-EmergencyCapacityReportingExample" name="Reporting Measure Change Scenario"/>
+<artifact id="SubscriptionTopic/covid-reporting-program-changes" key="SubscriptionTopic-covid-reporting-program-changes" name="Reporting Program Changes"/>
+<artifact id="Subscription/covid-reporting-changes" key="Subscription-covid-reporting-changes" name="Reporting Program Subscription listener"/>
 <artifact deprecated="true" id="Measure/measure-risk-adjustment-FHIR2" key="Measure-measure-risk-adjustment-FHIR2" name="Risk Adjustment FHIR DSTU2"/>
 <artifact deprecated="true" id="Library/risk-adjustment-FHIR2" key="Library-risk-adjustment-FHIR2" name="RiskAdjustment_FHIR2"/>
 <artifact id="SearchParameter/Library-contained-parameter-name" key="SearchParameter-Library-contained-parameter-name" name="Search Parameter - Library contained parameter name"/>
@@ -128,6 +143,8 @@
 <artifact id="SearchParameter/ValueSet-keyword" key="SearchParameter-ValueSet-keyword" name="Search Parameter - Valuset Keyword"/>
 <artifact id="ValueSet/subject-type" key="ValueSet-subject-type" name="Subject Type Value Set"/>
 <artifact id="Library/SupplementalDataElements" key="Library-SupplementalDataElements" name="Supplemental Data Elements"/>
+<artifact id="Library/SupportingEvidenceExample" key="Library-SupportingEvidenceExample" name="Supporting Evidence Example"/>
+<artifact id="Measure/SupportingEvidenceExample" key="Measure-SupportingEvidenceExample" name="Supporting Evidence Example Measure"/>
 <artifact id="Library/TJCOverall" key="Library-TJCOverall" name="TJC Overall Library"/>
 <artifact id="Library/TSCComponent" key="Library-TSCComponent" name="TSC Component Library"/>
 <artifact id="Measure/Terminology-FHIR" key="Measure-Terminology-FHIR" name="Terminology FHIR"/>
@@ -145,7 +162,7 @@
 <page key="composite-measures" name="Composites"/>
 <page key="downloads" name="Downloads"/>
 <page key="examples" name="Examples"/>
-<page key="extensions" name="Extensions"/>
+<page deprecated="true" key="extensions" name="Extensions"/>
 <page key="glossary" name="Glossary"/>
 <page key="introduction" name="Introduction"/>
 <page key="measure-repository-service" name="Measure Repository Service"/>

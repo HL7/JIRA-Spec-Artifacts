@@ -1,0 +1,42 @@
+# =============================================================================
+# Claude PR Triage — JIRA-Spec-Artifacts wrapper
+#
+# Defines triggers and calls the shared reusable workflow. All triage logic
+# lives in HL7/fhir/.github/workflows/_pr-triage.yml.
+#
+# Setup requirements (one-time, in this repo):
+#   - claude-triage environment with secrets:
+#       ANTHROPIC_API_KEY, RESEND_API_KEY, JIRA_API_TOKEN
+#   - REVIEW_PROFILE.md at the repo root
+# =============================================================================
+
+name: Claude JiraSpec PR Triage
+run-name: >-
+  JiraSpec triage for ${{
+    (github.event_name == 'pull_request' || github.event_name == 'pull_request_target') &&
+      format('PR #{0}: {1}', github.event.pull_request.number, github.event.pull_request.title) ||
+    github.event_name == 'issue_comment' &&
+      format('PR #{0} (comment by {1})', github.event.issue.number, github.event.comment.user.login) ||
+    github.event_name == 'workflow_run' &&
+      format('build {0} on {1}', github.event.workflow_run.display_title, github.event.workflow_run.head_branch) ||
+    'unknown'
+  }}
+
+on:
+  workflow_run:
+    workflows: ["pull-request-build"]
+    types: [completed]
+
+  pull_request_target:
+    types: [opened, synchronize, ready_for_review]
+
+  issue_comment:
+    types: [created]
+
+jobs:
+  triage:
+    uses: HL7/fhir/.github/workflows/_pr-triage.yml@master
+    with:
+      label: "JiraSpec"
+      to: "lloyd@lmckenzie.com"
+    secrets: inherit

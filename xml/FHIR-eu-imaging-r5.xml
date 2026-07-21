@@ -1,247 +1,386 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/imaging-r5/0.1.0-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/imaging-r5" defaultVersion="0.1.0-ballot" defaultWorkgroup="eu" gitUrl="https://github.com/HL7-eu/imaging-r5" url="http://hl7.eu/fhir/imaging-r5">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/imaging-r5/1.0.0-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/imaging-r5" defaultVersion="1.0.0-ballot" defaultWorkgroup="eu" gitUrl="https://github.com/HL7-eu/imaging-r5" url="http://hl7.eu/fhir/imaging-r5">
 <version code="current" url="https://build.fhir.org/ig/hl7-eu/imaging-r5"/>
-<version code="0.1.0-ballot" url="http://hl7.eu/fhir/imaging-r5/0.1.0-ballot"/>
+<version code="1.0.0-ballot" url="http://hl7.eu/fhir/imaging-r5/1.0.0-ballot"/>
+<version code="0.1.0-snapshot1" deprecated="true" url="http://hl7.eu/fhir/imaging-r5/0.1.0-snapshot1"/>
+<version code="0.1.0-ballot" deprecated="true" url="http://hl7.eu/fhir/imaging-r5/0.1.0-ballot"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="StructureDefinition/EHDSAddress" key="StructureDefinition-EHDSAddress" name="Address model"/>
-<artifact id="StructureDefinition/EHDSAlertFlag" key="StructureDefinition-EHDSAlertFlag" name="Alert flag model"/>
-<artifact id="StructureDefinition/EHDSAllergyIntolerance" key="StructureDefinition-EHDSAllergyIntolerance" name="Allergy intolerance model"/>
-<artifact id="StructureDefinition/EHDSAppointment" key="StructureDefinition-EHDSAppointment" name="Appointment model"/>
-<artifact id="StructureDefinition/EHDSAttachment" key="StructureDefinition-EHDSAttachment" name="Attachment model"/>
-<artifact id="StructureDefinition/EHDSAttachments" key="StructureDefinition-EHDSAttachments" name="Attachments"/>
-<artifact id="StructureDefinition/EHDSCarePlan" key="StructureDefinition-EHDSCarePlan" name="Care plan model"/>
-<artifact id="StructureDefinition/EHDSClinicalImpression" key="StructureDefinition-EHDSClinicalImpression" name="Clinical impression model"/>
-<artifact id="CodeSystem/codesystem-endpoint-terminology" key="CodeSystem-codesystem-endpoint-terminology" name="CodeSystem for terminology used in Endpoint resources in the EU Imaging IG."/>
-<artifact id="StructureDefinition/EHDSCondition" key="StructureDefinition-EHDSCondition" name="Condition model"/>
-<artifact id="StructureDefinition/EHDSCoverage" key="StructureDefinition-EHDSCoverage" name="Coverage model"/>
-<artifact id="StructureDefinition/EHDSDevice" key="StructureDefinition-EHDSDevice" name="Device model"/>
-<artifact id="StructureDefinition/EHDSDeviceUse" key="StructureDefinition-EHDSDeviceUse" name="Device use model"/>
-<artifact id="CodeSystem/codesystem-diagnostic-report-support-info" key="CodeSystem-codesystem-diagnostic-report-support-info" name="Diagnostic Report Support Info Code System"/>
-<artifact id="ValueSet/valueset-diagnosticreport-report-support-info" key="ValueSet-valueset-diagnosticreport-report-support-info" name="DiagnosticReport supportInfo codes"/>
-<artifact id="StructureDefinition/EHDSDispenseDecline" key="StructureDefinition-EHDSDispenseDecline" name="Dispense decline"/>
-<artifact id="StructureDefinition/ImReport" key="StructureDefinition-ImReport" name="Document Bundle for Imaging Report"/>
-<artifact id="StructureDefinition/im-composition-diagnosticReportReference" key="StructureDefinition-im-composition-diagnosticReportReference" name="Document DiagnosticReport Reference"/>
-<artifact id="StructureDefinition/EHDSDocumentHeader" key="StructureDefinition-EHDSDocumentHeader" name="Document header model"/>
-<artifact id="StructureDefinition/DocumentReferenceEu" key="StructureDefinition-DocumentReferenceEu" name="DocumentReferenceEu"/>
-<artifact id="StructureDefinition/EHDSDosaging" key="StructureDefinition-EHDSDosaging" name="Dosaging model"/>
-<artifact id="ValueSet/im-dose-length-units" key="ValueSet-im-dose-length-units" name="Dose Length Units"/>
-<artifact id="StructureDefinition/AllergyIntoleranceEu" key="StructureDefinition-AllergyIntoleranceEu" name="EU AllergyIntolerance"/>
-<artifact id="StructureDefinition/BodyStructureEu" key="StructureDefinition-BodyStructureEu" name="EU BodyStructure"/>
-<artifact id="StructureDefinition/CarePlanEu" key="StructureDefinition-CarePlanEu" name="EU CarePlan"/>
-<artifact id="StructureDefinition/CompositionEu" key="StructureDefinition-CompositionEu" name="EU Composition"/>
-<artifact id="StructureDefinition/ConditionEu" key="StructureDefinition-ConditionEu" name="EU Condition"/>
-<artifact id="StructureDefinition/EncounterEu" key="StructureDefinition-EncounterEu" name="EU Encounter"/>
-<artifact id="StructureDefinition/EndpointEu" key="StructureDefinition-EndpointEu" name="EU Endpoint"/>
-<artifact id="StructureDefinition/MedicationEu" key="StructureDefinition-MedicationEu" name="EU Medication"/>
-<artifact id="StructureDefinition/ObservationEu" key="StructureDefinition-ObservationEu" name="EU Observation"/>
-<artifact id="StructureDefinition/ProcedureEu" key="StructureDefinition-ProcedureEu" name="EU Procedure"/>
-<artifact id="StructureDefinition/quantity-eu" key="StructureDefinition-quantity-eu" name="EU Quantity"/>
-<artifact id="StructureDefinition/range-eu" key="StructureDefinition-range-eu" name="EU Range"/>
-<artifact id="StructureDefinition/SimpleQuantityEu" key="StructureDefinition-SimpleQuantityEu" name="EU SimpleQuantity"/>
-<artifact id="ValueSet/im-effective-dose-units" key="ValueSet-im-effective-dose-units" name="Effective Dose Units"/>
-<artifact id="StructureDefinition/EHDSEncounter" key="StructureDefinition-EHDSEncounter" name="Encounter model"/>
-<artifact id="StructureDefinition/EHDSEndpoint" key="StructureDefinition-EHDSEndpoint" name="Endpoint model"/>
-<artifact id="StructureDefinition/EHDSEpisodeOfCare" key="StructureDefinition-EHDSEpisodeOfCare" name="Episode of care model"/>
-<artifact id="StructureDefinition/ImFinding" key="StructureDefinition-ImFinding" name="Finding"/>
-<artifact id="StructureDefinition/EHDSFunctionalStatus" key="StructureDefinition-EHDSFunctionalStatus" name="Functional status"/>
-<artifact id="StructureDefinition/ImGestationalAgeObservation" key="StructureDefinition-ImGestationalAgeObservation" name="Gestational Age Observation"/>
-<artifact id="StructureDefinition/EHDSGoal" key="StructureDefinition-EHDSGoal" name="Goal model"/>
-<artifact id="ValueSet/im-gray-square-units" key="ValueSet-im-gray-square-units" name="Gray Square Units"/>
-<artifact id="StructureDefinition/EHDSGroup" key="StructureDefinition-EHDSGroup" name="Group model"/>
-<artifact id="CodeSystem/Hl7EuDocumentTypes" key="CodeSystem-Hl7EuDocumentTypes" name="HL7 EU Document Types"/>
-<artifact id="ValueSet/ImImagingManifestTypesEuVS" key="ValueSet-ImImagingManifestTypesEuVS" name="HL7 EU Imaging Manifest Types"/>
-<artifact id="ValueSet/ImImagingReportTypesEuVS" key="ValueSet-ImImagingReportTypesEuVS" name="HL7 EU Imaging Report Types"/>
-<artifact id="StructureDefinition/EHDSHealthProfessional" key="StructureDefinition-EHDSHealthProfessional" name="Health professional model"/>
-<artifact id="StructureDefinition/EHDSHospitalDischargeReport" key="StructureDefinition-EHDSHospitalDischargeReport" name="Hospital Discharge Report"/>
-<artifact id="StructureDefinition/EHDSHospitalDischargeReportHeader" key="StructureDefinition-EHDSHospitalDischargeReportHeader" name="Hospital Discharge Report header model"/>
-<artifact id="StructureDefinition/EHDSHumanName" key="StructureDefinition-EHDSHumanName" name="Human name model"/>
-<artifact id="StructureDefinition/ImImageIidViewerEndpoint" key="StructureDefinition-ImImageIidViewerEndpoint" name="IM Image Viewer Endpoint"/>
-<artifact id="StructureDefinition/ImOrder" key="StructureDefinition-ImOrder" name="IM Imaging Order"/>
-<artifact id="StructureDefinition/ImPatient" key="StructureDefinition-ImPatient" name="IM Imaging Patient"/>
-<artifact id="StructureDefinition/ImProcedure" key="StructureDefinition-ImProcedure" name="IM Imaging Procedure"/>
-<artifact id="StructureDefinition/ImImagingStudy" key="StructureDefinition-ImImagingStudy" name="IM Imaging Study"/>
-<artifact id="StructureDefinition/ImImagingStudyManifest" key="StructureDefinition-ImImagingStudyManifest" name="IM ImagingStudy Manifest"/>
-<artifact id="StructureDefinition/ImWadoEndpoint" key="StructureDefinition-ImWadoEndpoint" name="IM WADO Endpoint"/>
-<artifact id="StructureDefinition/ImImagingDevice" key="StructureDefinition-ImImagingDevice" name="Im Imaging Device"/>
-<artifact id="StructureDefinition/im-accession-number-identifier" key="StructureDefinition-im-accession-number-identifier" name="Imaging Accession Number Identifier"/>
-<artifact id="StructureDefinition/ImAdverseEvent" key="StructureDefinition-ImAdverseEvent" name="Imaging Adverse Event"/>
-<artifact id="StructureDefinition/ImComposition" key="StructureDefinition-ImComposition" name="Imaging Composition"/>
-<artifact id="ValueSet/im-imaging-device-type" key="ValueSet-im-imaging-device-type" name="Imaging Device Type"/>
-<artifact id="StructureDefinition/ImDiagnosticReport" key="StructureDefinition-ImDiagnosticReport" name="Imaging Diagnostic Report"/>
-<artifact id="StructureDefinition/ImKeyImageDocumentReference" key="StructureDefinition-ImKeyImageDocumentReference" name="Imaging Key Image Document Reference"/>
-<artifact id="ActorDefinition/ImManifestProvider" key="ActorDefinition-ImManifestProvider" name="Imaging Manifest Reports Provider/Creator"/>
-<artifact id="ValueSet/im-procedure-type" key="ValueSet-im-procedure-type" name="Imaging Procedure Type"/>
-<artifact id="StructureDefinition/im-sop-instance-uid-identifier" key="StructureDefinition-im-sop-instance-uid-identifier" name="Imaging SOP Class UID Identifier"/>
-<artifact id="StructureDefinition/ImImagingSelection" key="StructureDefinition-ImImagingSelection" name="Imaging Selection"/>
-<artifact id="StructureDefinition/ImSrInstanceImagingSelection" key="StructureDefinition-ImSrInstanceImagingSelection" name="Imaging Selection referring to a DICOM SR instance"/>
-<artifact id="ValueSet/im-imaging-study-performer-type" key="ValueSet-im-imaging-study-performer-type" name="Imaging Study Performer Type Value Set"/>
-<artifact id="ActorDefinition/ImReportProvider" key="ActorDefinition-ImReportProvider" name="Imaging Study Report Provider/Creator"/>
-<artifact id="StructureDefinition/EHDSImagingReportBody" key="StructureDefinition-EHDSImagingReportBody" name="Imaging report body model"/>
-<artifact id="StructureDefinition/EHDSImagingReportHeader" key="StructureDefinition-EHDSImagingReportHeader" name="Imaging report header model"/>
-<artifact id="StructureDefinition/EHDSImagingReport" key="StructureDefinition-EHDSImagingReport" name="Imaging report model"/>
-<artifact id="StructureDefinition/EHDSImagingStudy" key="StructureDefinition-EHDSImagingStudy" name="Imaging study model"/>
-<artifact id="StructureDefinition/EHDSImmunization" key="StructureDefinition-EHDSImmunization" name="Immunization model"/>
-<artifact id="StructureDefinition/EHDSInpatientEncounter" key="StructureDefinition-EHDSInpatientEncounter" name="Inpatient encounter model"/>
-<artifact id="StructureDefinition/instance-description" key="StructureDefinition-instance-description" name="Instance Description"/>
-<artifact id="StructureDefinition/ImKeyImageImagingSelection" key="StructureDefinition-ImKeyImageImagingSelection" name="Key images represented as an ImagingSelection"/>
-<artifact id="StructureDefinition/EHDSLaboratoryObservation" key="StructureDefinition-EHDSLaboratoryObservation" name="Laboratory observation model"/>
-<artifact id="StructureDefinition/EHDSLaboratoryOrder" key="StructureDefinition-EHDSLaboratoryOrder" name="Laboratory order"/>
-<artifact id="StructureDefinition/EHDSLaboratoryOrderBody" key="StructureDefinition-EHDSLaboratoryOrderBody" name="Laboratory order body model"/>
-<artifact id="StructureDefinition/EHDSLaboratoryOrderHeader" key="StructureDefinition-EHDSLaboratoryOrderHeader" name="Laboratory order header model"/>
-<artifact id="StructureDefinition/EHDSLaboratoryReportBody" key="StructureDefinition-EHDSLaboratoryReportBody" name="Laboratory report body model"/>
-<artifact id="StructureDefinition/EHDSLaboratoryReportHeader" key="StructureDefinition-EHDSLaboratoryReportHeader" name="Laboratory report header model"/>
-<artifact id="StructureDefinition/EHDSLaboratoryReport" key="StructureDefinition-EHDSLaboratoryReport" name="Laboratory report model"/>
-<artifact id="StructureDefinition/EHDSLocation" key="StructureDefinition-EHDSLocation" name="Location model"/>
-<artifact id="StructureDefinition/ImManifestIheMhdDocumentReference" key="StructureDefinition-ImManifestIheMhdDocumentReference" name="Manifest DocumentReference for MHD deployments"/>
-<artifact id="StructureDefinition/Manifest-ImManifestDocumentReference" key="StructureDefinition-Manifest-ImManifestDocumentReference" name="Manifest Obligations for ImManifestIheMhdDocumentReference"/>
-<artifact id="StructureDefinition/Manifest-EuAddress" key="StructureDefinition-Manifest-EuAddress" name="Manifest obligations for EuAddress"/>
-<artifact id="StructureDefinition/Manifest-EuBodyStructure" key="StructureDefinition-Manifest-EuBodyStructure" name="Manifest obligations for EuBodyStructure"/>
-<artifact id="StructureDefinition/Manifest-EuContactPoint" key="StructureDefinition-Manifest-EuContactPoint" name="Manifest obligations for EuContactPoint"/>
-<artifact id="StructureDefinition/Manifest-EuDevice" key="StructureDefinition-Manifest-EuDevice" name="Manifest obligations for EuDevice"/>
-<artifact id="StructureDefinition/Manifest-EuEndpoint" key="StructureDefinition-Manifest-EuEndpoint" name="Manifest obligations for EuEndpoint"/>
-<artifact id="StructureDefinition/Manifest-EuHumanName" key="StructureDefinition-Manifest-EuHumanName" name="Manifest obligations for EuHumanName"/>
-<artifact id="StructureDefinition/Manifest-EuLocation" key="StructureDefinition-Manifest-EuLocation" name="Manifest obligations for EuLocation"/>
-<artifact id="StructureDefinition/Manifest-EuOrganization" key="StructureDefinition-Manifest-EuOrganization" name="Manifest obligations for EuOrganization"/>
-<artifact id="StructureDefinition/Manifest-EuPatient" key="StructureDefinition-Manifest-EuPatient" name="Manifest obligations for EuPatient"/>
-<artifact id="StructureDefinition/Manifest-EuPatientAnimal" key="StructureDefinition-Manifest-EuPatientAnimal" name="Manifest obligations for EuPatientAnimal"/>
-<artifact id="StructureDefinition/Manifest-EuPractitioner" key="StructureDefinition-Manifest-EuPractitioner" name="Manifest obligations for EuPractitioner"/>
-<artifact id="StructureDefinition/Manifest-EuPractitionerRole" key="StructureDefinition-Manifest-EuPractitionerRole" name="Manifest obligations for EuPractitionerRole"/>
-<artifact id="StructureDefinition/Manifest-EuProcedure" key="StructureDefinition-Manifest-EuProcedure" name="Manifest obligations for EuProcedure"/>
-<artifact id="StructureDefinition/Manifest-EuServiceRequest" key="StructureDefinition-Manifest-EuServiceRequest" name="Manifest obligations for EuServiceRequest"/>
-<artifact id="StructureDefinition/Manifest-EuSpecimen" key="StructureDefinition-Manifest-EuSpecimen" name="Manifest obligations for EuSpecimen"/>
-<artifact id="StructureDefinition/Manifest-ImImageIidViewerEndpoint" key="StructureDefinition-Manifest-ImImageIidViewerEndpoint" name="Manifest obligations for ImImageIidViewerEndpoint"/>
-<artifact id="StructureDefinition/Manifest-ImImagingStudy" key="StructureDefinition-Manifest-ImImagingStudy" name="Manifest obligations for ImImagingStudy"/>
-<artifact id="StructureDefinition/Manifest-ImImagingStudyManifest" key="StructureDefinition-Manifest-ImImagingStudyManifest" name="Manifest obligations for ImImagingStudyManifest"/>
-<artifact id="StructureDefinition/Manifest-ImOrder" key="StructureDefinition-Manifest-ImOrder" name="Manifest obligations for ImOrder"/>
-<artifact id="StructureDefinition/Manifest-ImPatient" key="StructureDefinition-Manifest-ImPatient" name="Manifest obligations for ImPatient"/>
-<artifact id="StructureDefinition/Manifest-ImProcedure" key="StructureDefinition-Manifest-ImProcedure" name="Manifest obligations for ImProcedure"/>
-<artifact id="StructureDefinition/Manifest-ImWadoEndpoint" key="StructureDefinition-Manifest-ImWadoEndpoint" name="Manifest obligations for ImWadoEndpoint"/>
-<artifact id="ConceptMap/EHDSAddressMap" key="ConceptMap-EHDSAddressMap" name="Map for EHDSAddress"/>
-<artifact id="ConceptMap/EHDSAllergyIntoleranceMap" key="ConceptMap-EHDSAllergyIntoleranceMap" name="Map for EHDSAllergyIntolerance"/>
-<artifact id="ConceptMap/EHDSAttachmentMap" key="ConceptMap-EHDSAttachmentMap" name="Map for EHDSAttachment"/>
-<artifact id="ConceptMap/EHDSCarePlanMap" key="ConceptMap-EHDSCarePlanMap" name="Map for EHDSCarePlan"/>
-<artifact id="ConceptMap/EHDSConditionMap" key="ConceptMap-EHDSConditionMap" name="Map for EHDSCondition"/>
-<artifact id="ConceptMap/EHDSCoverageMap" key="ConceptMap-EHDSCoverageMap" name="Map for EHDSCoverage"/>
-<artifact id="ConceptMap/EHDSDeviceMap" key="ConceptMap-EHDSDeviceMap" name="Map for EHDSDevice"/>
-<artifact id="ConceptMap/EHDSEncounterMap" key="ConceptMap-EHDSEncounterMap" name="Map for EHDSEncounter"/>
-<artifact id="ConceptMap/EHDSEndpointMap" key="ConceptMap-EHDSEndpointMap" name="Map for EHDSEndpoint"/>
-<artifact id="ConceptMap/EHDSEpisodeOfCareMap" key="ConceptMap-EHDSEpisodeOfCareMap" name="Map for EHDSEpisodeOfCare"/>
-<artifact id="ConceptMap/EHDSHealthProfessionalMap" key="ConceptMap-EHDSHealthProfessionalMap" name="Map for EHDSHealthProfessional"/>
-<artifact id="ConceptMap/EHDSHumanNameMap" key="ConceptMap-EHDSHumanNameMap" name="Map for EHDSHumanName"/>
-<artifact id="ConceptMap/EHDSImagingReportMap" key="ConceptMap-EHDSImagingReportMap" name="Map for EHDSImagingReport"/>
-<artifact id="ConceptMap/EHDSImagingReportBodyMap" key="ConceptMap-EHDSImagingReportBodyMap" name="Map for EHDSImagingReportBody"/>
-<artifact id="ConceptMap/EHDSImagingReportHeaderMap" key="ConceptMap-EHDSImagingReportHeaderMap" name="Map for EHDSImagingReportHeader"/>
-<artifact id="ConceptMap/EHDSImagingStudyMap" key="ConceptMap-EHDSImagingStudyMap" name="Map for EHDSImagingStudy"/>
-<artifact id="ConceptMap/EHDSLocationMap" key="ConceptMap-EHDSLocationMap" name="Map for EHDSLocation"/>
-<artifact id="ConceptMap/EHDSMediaMap" key="ConceptMap-EHDSMediaMap" name="Map for EHDSMedia"/>
-<artifact id="ConceptMap/EHDSMedicationMap" key="ConceptMap-EHDSMedicationMap" name="Map for EHDSMedication"/>
-<artifact id="ConceptMap/EHDSMedicationAdministrationMap" key="ConceptMap-EHDSMedicationAdministrationMap" name="Map for EHDSMedicationAdministration"/>
-<artifact id="ConceptMap/EHDSObservationMap" key="ConceptMap-EHDSObservationMap" name="Map for EHDSObservation"/>
-<artifact id="ConceptMap/EHDSOrganizationMap" key="ConceptMap-EHDSOrganizationMap" name="Map for EHDSOrganization"/>
-<artifact id="ConceptMap/EHDSPatientMap" key="ConceptMap-EHDSPatientMap" name="Map for EHDSPatient"/>
-<artifact id="ConceptMap/EHDSProcedureMap" key="ConceptMap-EHDSProcedureMap" name="Map for EHDSProcedure"/>
-<artifact id="ConceptMap/EHDSRelatedPersonMap" key="ConceptMap-EHDSRelatedPersonMap" name="Map for EHDSRelatedPerson"/>
-<artifact id="ConceptMap/EHDSServiceRequestMap" key="ConceptMap-EHDSServiceRequestMap" name="Map for EHDSServiceRequest"/>
-<artifact id="ConceptMap/EHDSSpecimenMap" key="ConceptMap-EHDSSpecimenMap" name="Map for EHDSSpecimen"/>
-<artifact id="ConceptMap/EHDSSubstanceMap" key="ConceptMap-EHDSSubstanceMap" name="Map for EHDSSubstance"/>
-<artifact id="ConceptMap/EHDSTelecomMap" key="ConceptMap-EHDSTelecomMap" name="Map for EHDSTelecom"/>
-<artifact id="ValueSet/media-view" key="ValueSet-media-view" name="Media View types - placeholder for cross-version extension"/>
-<artifact id="StructureDefinition/EHDSMedia" key="StructureDefinition-EHDSMedia" name="Media model"/>
-<artifact id="StructureDefinition/CrossVersionMediaViewExtension" key="StructureDefinition-CrossVersionMediaViewExtension" name="Media.view extension"/>
-<artifact id="StructureDefinition/EHDSMedicationAdministration" key="StructureDefinition-EHDSMedicationAdministration" name="Medication administration model"/>
-<artifact id="StructureDefinition/EHDSMedicationDispense" key="StructureDefinition-EHDSMedicationDispense" name="Medication dispensation model"/>
-<artifact id="StructureDefinition/EHDSMedicationDispenseHeader" key="StructureDefinition-EHDSMedicationDispenseHeader" name="Medication dispense header"/>
-<artifact id="StructureDefinition/EHDSMedicationPrescriptionHeader" key="StructureDefinition-EHDSMedicationPrescriptionHeader" name="Medication prescription header model"/>
-<artifact id="StructureDefinition/EHDSMedicationPrescription" key="StructureDefinition-EHDSMedicationPrescription" name="Medication prescription model"/>
-<artifact id="StructureDefinition/EHDSMedication" key="StructureDefinition-EHDSMedication" name="Medicinal product model"/>
-<artifact id="CodeSystem/codesystem-missing-dicom-terminology" key="CodeSystem-codesystem-missing-dicom-terminology" name="Missing DICOM Terminology"/>
-<artifact id="StructureDefinition/EHDSObservation" key="StructureDefinition-EHDSObservation" name="Observation model"/>
-<artifact id="StructureDefinition/EHDSOrganization" key="StructureDefinition-EHDSOrganization" name="Organization model"/>
-<artifact id="StructureDefinition/EHDSPatient" key="StructureDefinition-EHDSPatient" name="Patient model"/>
-<artifact id="StructureDefinition/EHDSPatientSummaryBody" key="StructureDefinition-EHDSPatientSummaryBody" name="Patient summary body model"/>
-<artifact id="StructureDefinition/EHDSPatientSummaryHeader" key="StructureDefinition-EHDSPatientSummaryHeader" name="Patient summary header model"/>
-<artifact id="StructureDefinition/EHDSPatientSummary" key="StructureDefinition-EHDSPatientSummary" name="Patient summary model"/>
-<artifact id="StructureDefinition/PatientAnimalEu" key="StructureDefinition-PatientAnimalEu" name="Patient: Animal"/>
-<artifact id="ValueSet/periods-of-life-value-set" key="ValueSet-periods-of-life-value-set" name="Periods of Life"/>
-<artifact id="StructureDefinition/periods-of-life-extension" key="StructureDefinition-periods-of-life-extension" name="Periods of Life Extension"/>
-<artifact id="StructureDefinition/IheMhdEntryUUIDIdentifier" key="StructureDefinition-IheMhdEntryUUIDIdentifier" name="Placeholder for IHE MHD Entry UUID Identifier in FHIR R5."/>
-<artifact id="StructureDefinition/EHDSProcedure" key="StructureDefinition-EHDSProcedure" name="Procedure model"/>
-<artifact id="StructureDefinition/ImIheMhdDocumentReference" key="StructureDefinition-ImIheMhdDocumentReference" name="R5 DocumentReference for MHD deployments"/>
-<artifact id="StructureDefinition/ImRadiationDoseObservation" key="StructureDefinition-ImRadiationDoseObservation" name="Radiation Dose Observation"/>
-<artifact id="ValueSet/ImSectionEmptyReason" key="ValueSet-ImSectionEmptyReason" name="Reasons a section in an imaging report is empty."/>
-<artifact id="StructureDefinition/EHDSRelatedPerson" key="StructureDefinition-EHDSRelatedPerson" name="Related person model"/>
-<artifact id="StructureDefinition/RelatedPersonEu" key="StructureDefinition-RelatedPersonEu" name="RelatedPerson Eu"/>
-<artifact id="StructureDefinition/ImReportIheMhdDocumentReference" key="StructureDefinition-ImReportIheMhdDocumentReference" name="Report DocumentReference for MHD deployments"/>
-<artifact id="StructureDefinition/Report-ImReportDocumentReference" key="StructureDefinition-Report-ImReportDocumentReference" name="Report Obligations for ImReportIheMhdDocumentReference"/>
-<artifact id="StructureDefinition/EHDSReportHeader" key="StructureDefinition-EHDSReportHeader" name="Report header model"/>
-<artifact id="StructureDefinition/Report-EuAddress" key="StructureDefinition-Report-EuAddress" name="Report obligations for EuAddress"/>
-<artifact id="StructureDefinition/Report-EuAllergyIntolerance" key="StructureDefinition-Report-EuAllergyIntolerance" name="Report obligations for EuAllergyIntolerance"/>
-<artifact id="StructureDefinition/Report-EuAttachment" key="StructureDefinition-Report-EuAttachment" name="Report obligations for EuAttachment"/>
-<artifact id="StructureDefinition/Report-EuBodyStructure" key="StructureDefinition-Report-EuBodyStructure" name="Report obligations for EuBodyStructure"/>
-<artifact id="StructureDefinition/Report-EuCarePlan" key="StructureDefinition-Report-EuCarePlan" name="Report obligations for EuCarePlan"/>
-<artifact id="StructureDefinition/Report-EuCondition" key="StructureDefinition-Report-EuCondition" name="Report obligations for EuCondition"/>
-<artifact id="StructureDefinition/Report-EuContactPoint" key="StructureDefinition-Report-EuContactPoint" name="Report obligations for EuContactPoint"/>
-<artifact id="StructureDefinition/Report-EuCoverage" key="StructureDefinition-Report-EuCoverage" name="Report obligations for EuCoverage"/>
-<artifact id="StructureDefinition/Report-EuDevice" key="StructureDefinition-Report-EuDevice" name="Report obligations for EuDevice"/>
-<artifact id="StructureDefinition/Report-EuDocumentReference" key="StructureDefinition-Report-EuDocumentReference" name="Report obligations for EuDocumentReference"/>
-<artifact id="StructureDefinition/Report-EuEncounter" key="StructureDefinition-Report-EuEncounter" name="Report obligations for EuEncounter"/>
-<artifact id="StructureDefinition/Report-EuEpisodeOfCare" key="StructureDefinition-Report-EuEpisodeOfCare" name="Report obligations for EuEpisodeOfCare"/>
-<artifact id="StructureDefinition/Report-EuHumanName" key="StructureDefinition-Report-EuHumanName" name="Report obligations for EuHumanName"/>
-<artifact id="StructureDefinition/Report-EuLocation" key="StructureDefinition-Report-EuLocation" name="Report obligations for EuLocation"/>
-<artifact id="StructureDefinition/Report-EuMedication" key="StructureDefinition-Report-EuMedication" name="Report obligations for EuMedication"/>
-<artifact id="StructureDefinition/Report-EuMedicationAdministration" key="StructureDefinition-Report-EuMedicationAdministration" name="Report obligations for EuMedicationAdministration"/>
-<artifact id="StructureDefinition/Report-EuObservation" key="StructureDefinition-Report-EuObservation" name="Report obligations for EuObservation"/>
-<artifact id="StructureDefinition/Report-EuOrganization" key="StructureDefinition-Report-EuOrganization" name="Report obligations for EuOrganization"/>
-<artifact id="StructureDefinition/Report-EuPatient" key="StructureDefinition-Report-EuPatient" name="Report obligations for EuPatient"/>
-<artifact id="StructureDefinition/Report-EuPatientAnimal" key="StructureDefinition-Report-EuPatientAnimal" name="Report obligations for EuPatientAnimal"/>
-<artifact id="StructureDefinition/Report-EuPractitioner" key="StructureDefinition-Report-EuPractitioner" name="Report obligations for EuPractitioner"/>
-<artifact id="StructureDefinition/Report-EuPractitionerRole" key="StructureDefinition-Report-EuPractitionerRole" name="Report obligations for EuPractitionerRole"/>
-<artifact id="StructureDefinition/Report-EuProcedure" key="StructureDefinition-Report-EuProcedure" name="Report obligations for EuProcedure"/>
-<artifact id="StructureDefinition/Report-EuQuantity" key="StructureDefinition-Report-EuQuantity" name="Report obligations for EuQuantity"/>
-<artifact id="StructureDefinition/Report-EuRange" key="StructureDefinition-Report-EuRange" name="Report obligations for EuRange"/>
-<artifact id="StructureDefinition/Report-EuRelatedPerson" key="StructureDefinition-Report-EuRelatedPerson" name="Report obligations for EuRelatedPerson"/>
-<artifact id="StructureDefinition/Report-EuServiceRequest" key="StructureDefinition-Report-EuServiceRequest" name="Report obligations for EuServiceRequest"/>
-<artifact id="StructureDefinition/Report-EuSimpleQuantity" key="StructureDefinition-Report-EuSimpleQuantity" name="Report obligations for EuSimpleQuantity"/>
-<artifact id="StructureDefinition/Report-EuSpecimen" key="StructureDefinition-Report-EuSpecimen" name="Report obligations for EuSpecimen"/>
-<artifact id="StructureDefinition/Report-EuSubstance" key="StructureDefinition-Report-EuSubstance" name="Report obligations for EuSubstance"/>
-<artifact id="StructureDefinition/Report-ImAdverseEvent" key="StructureDefinition-Report-ImAdverseEvent" name="Report obligations for ImAdverseEvent"/>
-<artifact id="StructureDefinition/Report-ImComposition" key="StructureDefinition-Report-ImComposition" name="Report obligations for ImComposition"/>
-<artifact id="StructureDefinition/Report-ImDiagnosticReport" key="StructureDefinition-Report-ImDiagnosticReport" name="Report obligations for ImDiagnosticReport"/>
-<artifact id="StructureDefinition/Report-ImFinding" key="StructureDefinition-Report-ImFinding" name="Report obligations for ImFinding"/>
-<artifact id="StructureDefinition/Report-ImGestationalAgeObservation" key="StructureDefinition-Report-ImGestationalAgeObservation" name="Report obligations for ImGestationalAgeObservation"/>
-<artifact id="StructureDefinition/Report-ImImagingStudy" key="StructureDefinition-Report-ImImagingStudy" name="Report obligations for ImImagingStudy"/>
-<artifact id="StructureDefinition/Report-ImOrder" key="StructureDefinition-Report-ImOrder" name="Report obligations for ImOrder"/>
-<artifact id="StructureDefinition/Report-ImPatient" key="StructureDefinition-Report-ImPatient" name="Report obligations for ImPatient"/>
-<artifact id="StructureDefinition/Report-ImProcedure" key="StructureDefinition-Report-ImProcedure" name="Report obligations for ImProcedure"/>
-<artifact id="StructureDefinition/Report-ImRadiationDoseObservation" key="StructureDefinition-Report-ImRadiationDoseObservation" name="Report obligations for ImRadiationDoseObservation"/>
-<artifact id="StructureDefinition/Report-ImReport" key="StructureDefinition-Report-ImReport" name="Report obligations for ImReport"/>
-<artifact id="StructureDefinition/EHDSCommonHeader" key="StructureDefinition-EHDSCommonHeader" name="Resource header model"/>
-<artifact id="StructureDefinition/EHDSServiceRequest" key="StructureDefinition-EHDSServiceRequest" name="Service request model"/>
-<artifact id="StructureDefinition/EHDSSlot" key="StructureDefinition-EHDSSlot" name="Slot model"/>
-<artifact id="StructureDefinition/EHDSSpecimen" key="StructureDefinition-EHDSSpecimen" name="Specimen model"/>
-<artifact id="StructureDefinition/SpecimenEu" key="StructureDefinition-SpecimenEu" name="Specimen: Laboratory"/>
-<artifact id="StructureDefinition/im-study-instance-uid-identifier" key="StructureDefinition-im-study-instance-uid-identifier" name="Study Instance UID Identifier"/>
-<artifact id="StructureDefinition/EHDSSubstance" key="StructureDefinition-EHDSSubstance" name="Substance model"/>
-<artifact id="StructureDefinition/EHDSTask" key="StructureDefinition-EHDSTask" name="Task model"/>
-<artifact id="StructureDefinition/EHDSTelecom" key="StructureDefinition-EHDSTelecom" name="Telecom model"/>
+<artifact id="ActorDefinition/EuImagingReportConsumer" key="ActorDefinition-EuImagingReportConsumer" name="ActorDefinition: Imaging Report Consumer"/>
+<artifact id="ActorDefinition/EuImagingReportProducer" key="ActorDefinition-EuImagingReportProducer" name="ActorDefinition: Imaging Report Producer"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSAddress" key="StructureDefinition-EHDSAddress" name="Address model"/>
+<artifact id="StructureDefinition/AdverseEventEuImaging" key="StructureDefinition-AdverseEventEuImaging" name="AdverseEvent: Imaging Adverse Event"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSAlertFlag" key="StructureDefinition-EHDSAlertFlag" name="Alert flag model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSAllergyIntolerance" key="StructureDefinition-EHDSAllergyIntolerance" name="Allergy intolerance model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSAppointment" key="StructureDefinition-EHDSAppointment" name="Appointment model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSAttachment" key="StructureDefinition-EHDSAttachment" name="Attachment model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSAttachments" key="StructureDefinition-EHDSAttachments" name="Attachments"/>
+<artifact id="Binary/BinarySemistructuredReport" key="Binary-BinarySemistructuredReport" name="Binary Semistructured Report"/>
+<artifact id="Binary/BinaryStructuredReport" key="Binary-BinaryStructuredReport" name="Binary Structured Report"/>
+<artifact id="Binary/BinaryUnstructuredReport" key="Binary-BinaryUnstructuredReport" name="Binary Unstructured Report"/>
+<artifact id="StructureDefinition/BundleReportEuImaging" key="StructureDefinition-BundleReportEuImaging" name="Bundle: Imaging Report"/>
+<artifact id="StructureDefinition/BundleReportMinimalMetadataEuImaging" key="StructureDefinition-BundleReportMinimalMetadataEuImaging" name="Bundle: Imaging Report Minimal Metadata"/>
+<artifact id="Bundle/bundle-report-minimal-metadata-unstructured" key="Bundle-bundle-report-minimal-metadata-unstructured" name="Bundle: Imaging Report minimal metadata (unstructured example)"/>
+<artifact id="Bundle/bundle-report-semi-structured" key="Bundle-bundle-report-semi-structured" name="Bundle: Imaging Report semi-structured"/>
+<artifact id="Bundle/bundle-report-structured" key="Bundle-bundle-report-structured" name="Bundle: Imaging Report structured"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSCarePlan" key="StructureDefinition-EHDSCarePlan" name="Care plan model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSClinicalImpression" key="StructureDefinition-EHDSClinicalImpression" name="Clinical impression model"/>
+<artifact deprecated="true" id="CodeSystem/codesystem-endpoint-terminology" key="CodeSystem-codesystem-endpoint-terminology" name="CodeSystem for terminology used in Endpoint resources in the EU Imaging IG."/>
+<artifact id="StructureDefinition/CompositionEuImaging" key="StructureDefinition-CompositionEuImaging" name="Composition: Imaging Report"/>
+<artifact id="StructureDefinition/composition-obligation-eu-imaging" key="StructureDefinition-composition-obligation-eu-imaging" name="Composition: Imaging Report: Obligations"/>
+<artifact id="Composition/CompositionSemiStructured" key="Composition-CompositionSemiStructured" name="Composition: semi-structured"/>
+<artifact id="Composition/CompositionStructured" key="Composition-CompositionStructured" name="Composition: structured report"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSCondition" key="StructureDefinition-EHDSCondition" name="Condition model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSCoverage" key="StructureDefinition-EHDSCoverage" name="Coverage model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSDevice" key="StructureDefinition-EHDSDevice" name="Device model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSDeviceUse" key="StructureDefinition-EHDSDeviceUse" name="Device use model"/>
+<artifact id="StructureDefinition/DeviceEuImaging" key="StructureDefinition-DeviceEuImaging" name="Device: Imaging Device"/>
+<artifact id="StructureDefinition/DiagnosticReportEuImaging" key="StructureDefinition-DiagnosticReportEuImaging" name="DiagnosticReport: Imaging Report"/>
+<artifact id="StructureDefinition/DiagnosticReportEuImagingMinimalMetadata" key="StructureDefinition-DiagnosticReportEuImagingMinimalMetadata" name="DiagnosticReport: Imaging Report Minimal Metadata"/>
+<artifact id="StructureDefinition/diagnostic-report-obligation-eu-imaging" key="StructureDefinition-diagnostic-report-obligation-eu-imaging" name="DiagnosticReport: Imaging Report: Obligations"/>
+<artifact id="DiagnosticReport/DiagnosticReportSemiStructured" key="DiagnosticReport-DiagnosticReportSemiStructured" name="DiagnosticReport: semi-structured report"/>
+<artifact id="DiagnosticReport/DiagnosticReportStructured" key="DiagnosticReport-DiagnosticReportStructured" name="DiagnosticReport: structured report"/>
+<artifact id="DiagnosticReport/DiagnosticReportMinimalMetadata" key="DiagnosticReport-DiagnosticReportMinimalMetadata" name="DiagnosticReport: unstructured minimal metadata"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSDispenseDecline" key="StructureDefinition-EHDSDispenseDecline" name="Dispense decline"/>
+<artifact deprecated="true" id="StructureDefinition/ImReport" key="StructureDefinition-ImReport" name="Document Bundle for Imaging Report"/>
+<artifact deprecated="true" id="StructureDefinition/im-composition-diagnosticReportReference" key="StructureDefinition-im-composition-diagnosticReportReference" name="Document DiagnosticReport Reference"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSDocumentHeader" key="StructureDefinition-EHDSDocumentHeader" name="Document header model"/>
+<artifact id="StructureDefinition/DocumentReferenceKeyImageEuImaging" key="StructureDefinition-DocumentReferenceKeyImageEuImaging" name="DocumentReference: Key Image"/>
+<artifact id="DocumentReference/DocumentReferenceSemiStructured" key="DocumentReference-DocumentReferenceSemiStructured" name="DocumentReference: Renderable format semi-structured"/>
+<artifact id="DocumentReference/DocumentReferenceStructuredReport" key="DocumentReference-DocumentReferenceStructuredReport" name="DocumentReference: Renderable format structured"/>
+<artifact id="DocumentReference/RenderableFormatWithBasicMetadata" key="DocumentReference-RenderableFormatWithBasicMetadata" name="DocumentReference: Renderable format with basic metadata"/>
+<artifact id="DocumentReference/StructuredKeyImageRest" key="DocumentReference-StructuredKeyImageRest" name="DocumentReference: key image rest"/>
+<artifact id="DocumentReference/StructuredKeyImageStress" key="DocumentReference-StructuredKeyImageStress" name="DocumentReference: key image stress"/>
+<artifact id="DocumentReference/WMSIImage" key="DocumentReference-WMSIImage" name="DocumentReference: structured report WMSI image"/>
+<artifact deprecated="true" id="StructureDefinition/DocumentReferenceEu" key="StructureDefinition-DocumentReferenceEu" name="DocumentReferenceEu"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSDosaging" key="StructureDefinition-EHDSDosaging" name="Dosaging model"/>
+<artifact deprecated="true" id="ValueSet/im-dose-length-units" key="ValueSet-im-dose-length-units" name="Dose Length Units"/>
+<artifact id="CapabilityStatement/EehrxfImagingDocumentAccessProvider" key="CapabilityStatement-EehrxfImagingDocumentAccessProvider" name="EEHRxF Imaging Report Document Access Provider CapabilityStatement"/>
+<artifact id="CapabilityStatement/EehrxfImagingReportDocumentConsumer" key="CapabilityStatement-EehrxfImagingReportDocumentConsumer" name="EEHRxF Imaging Report Document Consumer CapabilityStatement"/>
+<artifact id="CapabilityStatement/EeehrxfImagingReportResourceAccessProvider" key="CapabilityStatement-EeehrxfImagingReportResourceAccessProvider" name="EEHRxF Imaging Report Resource Access Provider CapabilityStatement"/>
+<artifact id="CapabilityStatement/EeehrxfImagingReportResourceConsumer" key="CapabilityStatement-EeehrxfImagingReportResourceConsumer" name="EEHRxF Imaging Report Resource Consumer CapabilityStatement"/>
+<artifact id="StructureDefinition/DocumentReferenceImagingReport" key="StructureDefinition-DocumentReferenceImagingReport" name="EEHRxF MHD DocumentReference Profile for Imaging Reports"/>
+<artifact deprecated="true" id="StructureDefinition/AllergyIntoleranceEu" key="StructureDefinition-AllergyIntoleranceEu" name="EU AllergyIntolerance"/>
+<artifact deprecated="true" id="StructureDefinition/BodyStructureEu" key="StructureDefinition-BodyStructureEu" name="EU BodyStructure"/>
+<artifact deprecated="true" id="StructureDefinition/CarePlanEu" key="StructureDefinition-CarePlanEu" name="EU CarePlan"/>
+<artifact deprecated="true" id="StructureDefinition/CompositionEu" key="StructureDefinition-CompositionEu" name="EU Composition"/>
+<artifact deprecated="true" id="StructureDefinition/ConditionEu" key="StructureDefinition-ConditionEu" name="EU Condition"/>
+<artifact deprecated="true" id="StructureDefinition/EncounterEu" key="StructureDefinition-EncounterEu" name="EU Encounter"/>
+<artifact deprecated="true" id="StructureDefinition/EndpointEu" key="StructureDefinition-EndpointEu" name="EU Endpoint"/>
+<artifact deprecated="true" id="StructureDefinition/MedicationEu" key="StructureDefinition-MedicationEu" name="EU Medication"/>
+<artifact deprecated="true" id="StructureDefinition/ObservationEu" key="StructureDefinition-ObservationEu" name="EU Observation"/>
+<artifact deprecated="true" id="StructureDefinition/ProcedureEu" key="StructureDefinition-ProcedureEu" name="EU Procedure"/>
+<artifact deprecated="true" id="StructureDefinition/quantity-eu" key="StructureDefinition-quantity-eu" name="EU Quantity"/>
+<artifact deprecated="true" id="StructureDefinition/range-eu" key="StructureDefinition-range-eu" name="EU Range"/>
+<artifact deprecated="true" id="StructureDefinition/SimpleQuantityEu" key="StructureDefinition-SimpleQuantityEu" name="EU SimpleQuantity"/>
+<artifact deprecated="true" id="ValueSet/im-effective-dose-units" key="ValueSet-im-effective-dose-units" name="Effective Dose Units"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSEncounter" key="StructureDefinition-EHDSEncounter" name="Encounter model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSEndpoint" key="StructureDefinition-EHDSEndpoint" name="Endpoint model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSEpisodeOfCare" key="StructureDefinition-EHDSEpisodeOfCare" name="Episode of care model"/>
+<artifact id="StructureDefinition/care-plan-obligation-eu-imaging" key="StructureDefinition-care-plan-obligation-eu-imaging" name="EuCarePlan: Obligations"/>
+<artifact id="StructureDefinition/patient-obligation-eu-imaging" key="StructureDefinition-patient-obligation-eu-imaging" name="EuPatient: Obligations"/>
+<artifact id="StructureDefinition/AnatomicalRegionExtension" key="StructureDefinition-AnatomicalRegionExtension" name="Extension: Anatomical Region"/>
+<artifact id="StructureDefinition/DeviceAttesterExt" key="StructureDefinition-DeviceAttesterExt" name="Extension: Device Attester"/>
+<artifact id="StructureDefinition/HL7IDRCommunication" key="StructureDefinition-HL7IDRCommunication" name="Extension: HL7IDR Communication"/>
+<artifact id="StructureDefinition/HL7IDRComparisonStudy" key="StructureDefinition-HL7IDRComparisonStudy" name="Extension: HL7IDR DiagnosticReport Comparison Study"/>
+<artifact id="StructureDefinition/HL7IDRImagingProcedure" key="StructureDefinition-HL7IDRImagingProcedure" name="Extension: HL7IDR Imaging Procedure"/>
+<artifact id="StructureDefinition/HL7IDRImpression" key="StructureDefinition-HL7IDRImpression" name="Extension: HL7IDR Impression"/>
+<artifact id="StructureDefinition/HL7IDRFinding" key="StructureDefinition-HL7IDRFinding" name="Extension: HL7IDR KeyImage Finding"/>
+<artifact id="StructureDefinition/HL7IDRPatientHistory" key="StructureDefinition-HL7IDRPatientHistory" name="Extension: HL7IDR Patient History"/>
+<artifact id="StructureDefinition/HL7IDRRecommendation" key="StructureDefinition-HL7IDRRecommendation" name="Extension: HL7IDR Recommendation"/>
+<artifact id="StructureDefinition/ImagingStudyEuImagingInstanceDescription" key="StructureDefinition-ImagingStudyEuImagingInstanceDescription" name="Extension: Instance Description"/>
+<artifact id="StructureDefinition/NumberOfFrames" key="StructureDefinition-NumberOfFrames" name="Extension: Number of Frames"/>
+<artifact id="StructureDefinition/RadiationDose" key="StructureDefinition-RadiationDose" name="Extension: Radiation Dose"/>
+<artifact deprecated="true" id="StructureDefinition/ImFinding" key="StructureDefinition-ImFinding" name="Finding"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSFunctionalStatus" key="StructureDefinition-EHDSFunctionalStatus" name="Functional status"/>
+<artifact deprecated="true" id="StructureDefinition/ImGestationalAgeObservation" key="StructureDefinition-ImGestationalAgeObservation" name="Gestational Age Observation"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSGoal" key="StructureDefinition-EHDSGoal" name="Goal model"/>
+<artifact deprecated="true" id="ValueSet/im-gray-square-units" key="ValueSet-im-gray-square-units" name="Gray Square Units"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSGroup" key="StructureDefinition-EHDSGroup" name="Group model"/>
+<artifact deprecated="true" id="CodeSystem/Hl7EuDocumentTypes" key="CodeSystem-Hl7EuDocumentTypes" name="HL7 EU Document Types"/>
+<artifact deprecated="true" id="ValueSet/ImImagingManifestTypesEuVS" key="ValueSet-ImImagingManifestTypesEuVS" name="HL7 EU Imaging Manifest Types"/>
+<artifact deprecated="true" id="ValueSet/ImImagingReportTypesEuVS" key="ValueSet-ImImagingReportTypesEuVS" name="HL7 EU Imaging Report Types"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSHealthProfessional" key="StructureDefinition-EHDSHealthProfessional" name="Health professional model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSHospitalDischargeReport" key="StructureDefinition-EHDSHospitalDischargeReport" name="Hospital Discharge Report"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSHospitalDischargeReportHeader" key="StructureDefinition-EHDSHospitalDischargeReportHeader" name="Hospital Discharge Report header model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSHumanName" key="StructureDefinition-EHDSHumanName" name="Human name model"/>
+<artifact deprecated="true" id="StructureDefinition/ImImageIidViewerEndpoint" key="StructureDefinition-ImImageIidViewerEndpoint" name="IM Image Viewer Endpoint"/>
+<artifact deprecated="true" id="StructureDefinition/ImOrder" key="StructureDefinition-ImOrder" name="IM Imaging Order"/>
+<artifact deprecated="true" id="StructureDefinition/ImPatient" key="StructureDefinition-ImPatient" name="IM Imaging Patient"/>
+<artifact deprecated="true" id="StructureDefinition/ImProcedure" key="StructureDefinition-ImProcedure" name="IM Imaging Procedure"/>
+<artifact deprecated="true" id="StructureDefinition/ImImagingStudy" key="StructureDefinition-ImImagingStudy" name="IM Imaging Study"/>
+<artifact deprecated="true" id="StructureDefinition/ImImagingStudyManifest" key="StructureDefinition-ImImagingStudyManifest" name="IM ImagingStudy Manifest"/>
+<artifact deprecated="true" id="StructureDefinition/ImWadoEndpoint" key="StructureDefinition-ImWadoEndpoint" name="IM WADO Endpoint"/>
+<artifact id="StructureDefinition/AccessionNumberIdentifierEuImaging" key="StructureDefinition-AccessionNumberIdentifierEuImaging" name="Identifier: Accession Number"/>
+<artifact id="StructureDefinition/SopInstanceUidIdentifierEuImaging" key="StructureDefinition-SopInstanceUidIdentifierEuImaging" name="Identifier: SOP Instance UID"/>
+<artifact id="StructureDefinition/StudyInstanceUidIdentifierEuImaging" key="StructureDefinition-StudyInstanceUidIdentifierEuImaging" name="Identifier: Study Instance UID"/>
+<artifact deprecated="true" id="StructureDefinition/ImImagingDevice" key="StructureDefinition-ImImagingDevice" name="Im Imaging Device"/>
+<artifact deprecated="true" id="StructureDefinition/im-accession-number-identifier" key="StructureDefinition-im-accession-number-identifier" name="Imaging Accession Number Identifier"/>
+<artifact deprecated="true" id="StructureDefinition/ImAdverseEvent" key="StructureDefinition-ImAdverseEvent" name="Imaging Adverse Event"/>
+<artifact deprecated="true" id="StructureDefinition/ImComposition" key="StructureDefinition-ImComposition" name="Imaging Composition"/>
+<artifact deprecated="true" id="ValueSet/im-imaging-device-type" key="ValueSet-im-imaging-device-type" name="Imaging Device Type"/>
+<artifact deprecated="true" id="StructureDefinition/ImDiagnosticReport" key="StructureDefinition-ImDiagnosticReport" name="Imaging Diagnostic Report"/>
+<artifact deprecated="true" id="StructureDefinition/ImKeyImageDocumentReference" key="StructureDefinition-ImKeyImageDocumentReference" name="Imaging Key Image Document Reference"/>
+<artifact deprecated="true" id="ActorDefinition/ImManifestProvider" key="ActorDefinition-ImManifestProvider" name="Imaging Manifest Reports Provider/Creator"/>
+<artifact deprecated="true" id="StructureDefinition/im-sop-instance-uid-identifier" key="StructureDefinition-im-sop-instance-uid-identifier" name="Imaging SOP Class UID Identifier"/>
+<artifact deprecated="true" id="StructureDefinition/ImImagingSelection" key="StructureDefinition-ImImagingSelection" name="Imaging Selection"/>
+<artifact deprecated="true" id="StructureDefinition/ImSrInstanceImagingSelection" key="StructureDefinition-ImSrInstanceImagingSelection" name="Imaging Selection referring to a DICOM SR instance"/>
+<artifact deprecated="true" id="ActorDefinition/ImReportProvider" key="ActorDefinition-ImReportProvider" name="Imaging Study Report Provider/Creator"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSImagingReportBody" key="StructureDefinition-EHDSImagingReportBody" name="Imaging report body model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSImagingReportHeader" key="StructureDefinition-EHDSImagingReportHeader" name="Imaging report header model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSImagingReport" key="StructureDefinition-EHDSImagingReport" name="Imaging report model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSImagingStudy" key="StructureDefinition-EHDSImagingStudy" name="Imaging study model"/>
+<artifact id="StructureDefinition/SrInstanceImagingSelectionEuImaging" key="StructureDefinition-SrInstanceImagingSelectionEuImaging" name="ImagingSelection: DICOM SR Instance"/>
+<artifact id="StructureDefinition/ImagingSelectionEuImaging" key="StructureDefinition-ImagingSelectionEuImaging" name="ImagingSelection: General"/>
+<artifact id="StructureDefinition/ImagingSelectionKeyImageEuImaging" key="StructureDefinition-ImagingSelectionKeyImageEuImaging" name="ImagingSelection: Key Image"/>
+<artifact id="StructureDefinition/ImagingStudyEuImaging" key="StructureDefinition-ImagingStudyEuImaging" name="ImagingStudy: General"/>
+<artifact id="StructureDefinition/imaging-study-obligation-eu-imaging" key="StructureDefinition-imaging-study-obligation-eu-imaging" name="ImagingStudy: General: Obligations"/>
+<artifact id="ImagingStudy/ImagingStudySemiStructuredReport1" key="ImagingStudy-ImagingStudySemiStructuredReport1" name="ImagingStudy: semi-structured report 1"/>
+<artifact id="ImagingStudy/ImagingStudySemiStructuredReport2" key="ImagingStudy-ImagingStudySemiStructuredReport2" name="ImagingStudy: semi-structured report 2"/>
+<artifact id="ImagingStudy/ImagingStudStructuredReport" key="ImagingStudy-ImagingStudStructuredReport" name="ImagingStudy: structured-report study"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSImmunization" key="StructureDefinition-EHDSImmunization" name="Immunization model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSInpatientEncounter" key="StructureDefinition-EHDSInpatientEncounter" name="Inpatient encounter model"/>
+<artifact deprecated="true" id="StructureDefinition/instance-description" key="StructureDefinition-instance-description" name="Instance Description"/>
+<artifact deprecated="true" id="StructureDefinition/ImKeyImageImagingSelection" key="StructureDefinition-ImKeyImageImagingSelection" name="Key images represented as an ImagingSelection"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSLaboratoryObservation" key="StructureDefinition-EHDSLaboratoryObservation" name="Laboratory observation model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSLaboratoryOrder" key="StructureDefinition-EHDSLaboratoryOrder" name="Laboratory order"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSLaboratoryOrderBody" key="StructureDefinition-EHDSLaboratoryOrderBody" name="Laboratory order body model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSLaboratoryOrderHeader" key="StructureDefinition-EHDSLaboratoryOrderHeader" name="Laboratory order header model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSLaboratoryReportBody" key="StructureDefinition-EHDSLaboratoryReportBody" name="Laboratory report body model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSLaboratoryReportHeader" key="StructureDefinition-EHDSLaboratoryReportHeader" name="Laboratory report header model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSLaboratoryReport" key="StructureDefinition-EHDSLaboratoryReport" name="Laboratory report model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSLocation" key="StructureDefinition-EHDSLocation" name="Location model"/>
+<artifact deprecated="true" id="StructureDefinition/ImManifestIheMhdDocumentReference" key="StructureDefinition-ImManifestIheMhdDocumentReference" name="Manifest DocumentReference for MHD deployments"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-ImManifestDocumentReference" key="StructureDefinition-Manifest-ImManifestDocumentReference" name="Manifest Obligations for ImManifestIheMhdDocumentReference"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-EuAddress" key="StructureDefinition-Manifest-EuAddress" name="Manifest obligations for EuAddress"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-EuBodyStructure" key="StructureDefinition-Manifest-EuBodyStructure" name="Manifest obligations for EuBodyStructure"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-EuContactPoint" key="StructureDefinition-Manifest-EuContactPoint" name="Manifest obligations for EuContactPoint"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-EuDevice" key="StructureDefinition-Manifest-EuDevice" name="Manifest obligations for EuDevice"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-EuEndpoint" key="StructureDefinition-Manifest-EuEndpoint" name="Manifest obligations for EuEndpoint"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-EuHumanName" key="StructureDefinition-Manifest-EuHumanName" name="Manifest obligations for EuHumanName"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-EuLocation" key="StructureDefinition-Manifest-EuLocation" name="Manifest obligations for EuLocation"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-EuOrganization" key="StructureDefinition-Manifest-EuOrganization" name="Manifest obligations for EuOrganization"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-EuPatient" key="StructureDefinition-Manifest-EuPatient" name="Manifest obligations for EuPatient"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-EuPatientAnimal" key="StructureDefinition-Manifest-EuPatientAnimal" name="Manifest obligations for EuPatientAnimal"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-EuPractitioner" key="StructureDefinition-Manifest-EuPractitioner" name="Manifest obligations for EuPractitioner"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-EuPractitionerRole" key="StructureDefinition-Manifest-EuPractitionerRole" name="Manifest obligations for EuPractitionerRole"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-EuProcedure" key="StructureDefinition-Manifest-EuProcedure" name="Manifest obligations for EuProcedure"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-EuServiceRequest" key="StructureDefinition-Manifest-EuServiceRequest" name="Manifest obligations for EuServiceRequest"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-EuSpecimen" key="StructureDefinition-Manifest-EuSpecimen" name="Manifest obligations for EuSpecimen"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-ImImageIidViewerEndpoint" key="StructureDefinition-Manifest-ImImageIidViewerEndpoint" name="Manifest obligations for ImImageIidViewerEndpoint"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-ImImagingStudy" key="StructureDefinition-Manifest-ImImagingStudy" name="Manifest obligations for ImImagingStudy"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-ImImagingStudyManifest" key="StructureDefinition-Manifest-ImImagingStudyManifest" name="Manifest obligations for ImImagingStudyManifest"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-ImOrder" key="StructureDefinition-Manifest-ImOrder" name="Manifest obligations for ImOrder"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-ImPatient" key="StructureDefinition-Manifest-ImPatient" name="Manifest obligations for ImPatient"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-ImProcedure" key="StructureDefinition-Manifest-ImProcedure" name="Manifest obligations for ImProcedure"/>
+<artifact deprecated="true" id="StructureDefinition/Manifest-ImWadoEndpoint" key="StructureDefinition-Manifest-ImWadoEndpoint" name="Manifest obligations for ImWadoEndpoint"/>
+<artifact deprecated="true" id="ConceptMap/EHDSAddressMap" key="ConceptMap-EHDSAddressMap" name="Map for EHDSAddress"/>
+<artifact deprecated="true" id="ConceptMap/EHDSAllergyIntoleranceMap" key="ConceptMap-EHDSAllergyIntoleranceMap" name="Map for EHDSAllergyIntolerance"/>
+<artifact deprecated="true" id="ConceptMap/EHDSAttachmentMap" key="ConceptMap-EHDSAttachmentMap" name="Map for EHDSAttachment"/>
+<artifact deprecated="true" id="ConceptMap/EHDSCarePlanMap" key="ConceptMap-EHDSCarePlanMap" name="Map for EHDSCarePlan"/>
+<artifact deprecated="true" id="ConceptMap/EHDSConditionMap" key="ConceptMap-EHDSConditionMap" name="Map for EHDSCondition"/>
+<artifact deprecated="true" id="ConceptMap/EHDSCoverageMap" key="ConceptMap-EHDSCoverageMap" name="Map for EHDSCoverage"/>
+<artifact deprecated="true" id="ConceptMap/EHDSDeviceMap" key="ConceptMap-EHDSDeviceMap" name="Map for EHDSDevice"/>
+<artifact deprecated="true" id="ConceptMap/EHDSEncounterMap" key="ConceptMap-EHDSEncounterMap" name="Map for EHDSEncounter"/>
+<artifact deprecated="true" id="ConceptMap/EHDSEndpointMap" key="ConceptMap-EHDSEndpointMap" name="Map for EHDSEndpoint"/>
+<artifact deprecated="true" id="ConceptMap/EHDSEpisodeOfCareMap" key="ConceptMap-EHDSEpisodeOfCareMap" name="Map for EHDSEpisodeOfCare"/>
+<artifact deprecated="true" id="ConceptMap/EHDSHealthProfessionalMap" key="ConceptMap-EHDSHealthProfessionalMap" name="Map for EHDSHealthProfessional"/>
+<artifact deprecated="true" id="ConceptMap/EHDSHumanNameMap" key="ConceptMap-EHDSHumanNameMap" name="Map for EHDSHumanName"/>
+<artifact deprecated="true" id="ConceptMap/EHDSImagingReportMap" key="ConceptMap-EHDSImagingReportMap" name="Map for EHDSImagingReport"/>
+<artifact deprecated="true" id="ConceptMap/EHDSImagingReportBodyMap" key="ConceptMap-EHDSImagingReportBodyMap" name="Map for EHDSImagingReportBody"/>
+<artifact deprecated="true" id="ConceptMap/EHDSImagingReportHeaderMap" key="ConceptMap-EHDSImagingReportHeaderMap" name="Map for EHDSImagingReportHeader"/>
+<artifact deprecated="true" id="ConceptMap/EHDSImagingStudyMap" key="ConceptMap-EHDSImagingStudyMap" name="Map for EHDSImagingStudy"/>
+<artifact deprecated="true" id="ConceptMap/EHDSLocationMap" key="ConceptMap-EHDSLocationMap" name="Map for EHDSLocation"/>
+<artifact deprecated="true" id="ConceptMap/EHDSMediaMap" key="ConceptMap-EHDSMediaMap" name="Map for EHDSMedia"/>
+<artifact deprecated="true" id="ConceptMap/EHDSMedicationMap" key="ConceptMap-EHDSMedicationMap" name="Map for EHDSMedication"/>
+<artifact deprecated="true" id="ConceptMap/EHDSMedicationAdministrationMap" key="ConceptMap-EHDSMedicationAdministrationMap" name="Map for EHDSMedicationAdministration"/>
+<artifact deprecated="true" id="ConceptMap/EHDSObservationMap" key="ConceptMap-EHDSObservationMap" name="Map for EHDSObservation"/>
+<artifact deprecated="true" id="ConceptMap/EHDSOrganizationMap" key="ConceptMap-EHDSOrganizationMap" name="Map for EHDSOrganization"/>
+<artifact deprecated="true" id="ConceptMap/EHDSPatientMap" key="ConceptMap-EHDSPatientMap" name="Map for EHDSPatient"/>
+<artifact deprecated="true" id="ConceptMap/EHDSProcedureMap" key="ConceptMap-EHDSProcedureMap" name="Map for EHDSProcedure"/>
+<artifact deprecated="true" id="ConceptMap/EHDSRelatedPersonMap" key="ConceptMap-EHDSRelatedPersonMap" name="Map for EHDSRelatedPerson"/>
+<artifact deprecated="true" id="ConceptMap/EHDSServiceRequestMap" key="ConceptMap-EHDSServiceRequestMap" name="Map for EHDSServiceRequest"/>
+<artifact deprecated="true" id="ConceptMap/EHDSSpecimenMap" key="ConceptMap-EHDSSpecimenMap" name="Map for EHDSSpecimen"/>
+<artifact deprecated="true" id="ConceptMap/EHDSSubstanceMap" key="ConceptMap-EHDSSubstanceMap" name="Map for EHDSSubstance"/>
+<artifact deprecated="true" id="ConceptMap/EHDSTelecomMap" key="ConceptMap-EHDSTelecomMap" name="Map for EHDSTelecom"/>
+<artifact deprecated="true" id="ValueSet/media-view" key="ValueSet-media-view" name="Media View types - placeholder for cross-version extension"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSMedia" key="StructureDefinition-EHDSMedia" name="Media model"/>
+<artifact deprecated="true" id="StructureDefinition/CrossVersionMediaViewExtension" key="StructureDefinition-CrossVersionMediaViewExtension" name="Media.view extension"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSMedicationAdministration" key="StructureDefinition-EHDSMedicationAdministration" name="Medication administration model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSMedicationDispense" key="StructureDefinition-EHDSMedicationDispense" name="Medication dispensation model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSMedicationDispenseHeader" key="StructureDefinition-EHDSMedicationDispenseHeader" name="Medication dispense header"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSMedicationPrescriptionHeader" key="StructureDefinition-EHDSMedicationPrescriptionHeader" name="Medication prescription header model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSMedicationPrescription" key="StructureDefinition-EHDSMedicationPrescription" name="Medication prescription model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSMedication" key="StructureDefinition-EHDSMedication" name="Medicinal product model"/>
+<artifact id="Observation/ObservationAnchor" key="Observation-ObservationAnchor" name="Observation Anchor"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSObservation" key="StructureDefinition-EHDSObservation" name="Observation model"/>
+<artifact id="StructureDefinition/ObservationGestationalAgeEuImaging" key="StructureDefinition-ObservationGestationalAgeEuImaging" name="Observation: Gestational Age"/>
+<artifact id="StructureDefinition/ObservationFindingEuImaging" key="StructureDefinition-ObservationFindingEuImaging" name="Observation: Imaging Finding"/>
+<artifact id="StructureDefinition/observation-finding-obligation-eu-imaging" key="StructureDefinition-observation-finding-obligation-eu-imaging" name="Observation: Imaging Finding: Obligations"/>
+<artifact id="StructureDefinition/ObservationRadiationDoseEuImaging" key="StructureDefinition-ObservationRadiationDoseEuImaging" name="Observation: Radiation Dose"/>
+<artifact id="Observation/RestWmsi17" key="Observation-RestWmsi17" name="Observation: WMSI apex at rest - normal"/>
+<artifact id="Observation/StressWmsi17" key="Observation-StressWmsi17" name="Observation: WMSI apex under stress - normal"/>
+<artifact id="Observation/RestWmsi13" key="Observation-RestWmsi13" name="Observation: WMSI apical anterior at rest - normal"/>
+<artifact id="Observation/StressWmsi13" key="Observation-StressWmsi13" name="Observation: WMSI apical anterior under stress - normal"/>
+<artifact id="Observation/RestWmsi15" key="Observation-RestWmsi15" name="Observation: WMSI apical inferior at rest - normal"/>
+<artifact id="Observation/StressWmsi15" key="Observation-StressWmsi15" name="Observation: WMSI apical inferior under stress - normal"/>
+<artifact id="Observation/RestWmsi16" key="Observation-RestWmsi16" name="Observation: WMSI apical lateral at rest - normal"/>
+<artifact id="Observation/StressWmsi16" key="Observation-StressWmsi16" name="Observation: WMSI apical lateral under stress - normal"/>
+<artifact id="Observation/RestWmsi14" key="Observation-RestWmsi14" name="Observation: WMSI apical septum at rest - normal"/>
+<artifact id="Observation/StressWmsi14" key="Observation-StressWmsi14" name="Observation: WMSI apical septum under stress - normal"/>
+<artifact id="Observation/RestWmsi01" key="Observation-RestWmsi01" name="Observation: WMSI basal anterior at rest - hypokinetic"/>
+<artifact id="Observation/RestWmsi06" key="Observation-RestWmsi06" name="Observation: WMSI basal anterior lateral at rest - normal"/>
+<artifact id="Observation/StressWmsi06" key="Observation-StressWmsi06" name="Observation: WMSI basal anterior lateral under stress - normal"/>
+<artifact id="Observation/RestWmsi02" key="Observation-RestWmsi02" name="Observation: WMSI basal anterior septum at rest - normal"/>
+<artifact id="Observation/StressWmsi02" key="Observation-StressWmsi02" name="Observation: WMSI basal anterior septum under stress - normal"/>
+<artifact id="Observation/StressWmsi01" key="Observation-StressWmsi01" name="Observation: WMSI basal anterior under stress - hypokinetic"/>
+<artifact id="Observation/RestWmsi04" key="Observation-RestWmsi04" name="Observation: WMSI basal inferior at rest - normal"/>
+<artifact id="Observation/RestWmsi05" key="Observation-RestWmsi05" name="Observation: WMSI basal inferior lateral at rest - hypokinetic"/>
+<artifact id="Observation/StressWmsi05" key="Observation-StressWmsi05" name="Observation: WMSI basal inferior lateral under stress - mildly hypokinetic"/>
+<artifact id="Observation/RestWmsi03" key="Observation-RestWmsi03" name="Observation: WMSI basal inferior septum at rest - normal"/>
+<artifact id="Observation/StressWmsi03" key="Observation-StressWmsi03" name="Observation: WMSI basal inferior septum under stress - normal"/>
+<artifact id="Observation/StressWmsi04" key="Observation-StressWmsi04" name="Observation: WMSI basal inferior under stress - normal"/>
+<artifact id="Observation/RestWmsi07" key="Observation-RestWmsi07" name="Observation: WMSI mid anterior at rest - normal"/>
+<artifact id="Observation/RestWmsi12" key="Observation-RestWmsi12" name="Observation: WMSI mid anterior lateral at rest - normal"/>
+<artifact id="Observation/StressWmsi12" key="Observation-StressWmsi12" name="Observation: WMSI mid anterior lateral under stress - normal"/>
+<artifact id="Observation/RestWmsi08" key="Observation-RestWmsi08" name="Observation: WMSI mid anterior septum at rest - normal"/>
+<artifact id="Observation/StressWmsi08" key="Observation-StressWmsi08" name="Observation: WMSI mid anterior septum under stress - normal"/>
+<artifact id="Observation/StressWmsi07" key="Observation-StressWmsi07" name="Observation: WMSI mid anterior under stress - normal"/>
+<artifact id="Observation/RestWmsi10" key="Observation-RestWmsi10" name="Observation: WMSI mid inferior at rest - normal"/>
+<artifact id="Observation/RestWmsi11" key="Observation-RestWmsi11" name="Observation: WMSI mid inferior lateral at rest - normal"/>
+<artifact id="Observation/StressWmsi11" key="Observation-StressWmsi11" name="Observation: WMSI mid inferior lateral under stress - normal"/>
+<artifact id="Observation/RestWmsi09" key="Observation-RestWmsi09" name="Observation: WMSI mid inferior septum at rest - normal"/>
+<artifact id="Observation/StressWmsi09" key="Observation-StressWmsi09" name="Observation: WMSI mid inferior septum under stress - normal"/>
+<artifact id="Observation/StressWmsi10" key="Observation-StressWmsi10" name="Observation: WMSI mid inferior under stress - normal"/>
+<artifact id="Observation/BPObservation" key="Observation-BPObservation" name="Observation: patient blood pressure"/>
+<artifact id="Observation/HRObservation" key="Observation-HRObservation" name="Observation: patient heart rate"/>
+<artifact id="Observation/HeightObservation" key="Observation-HeightObservation" name="Observation: patient height"/>
+<artifact id="Observation/WeightObservation" key="Observation-WeightObservation" name="Observation: patient weight"/>
+<artifact id="StructureDefinition/observation-radiation-dose-obligation-eu-imaging" key="StructureDefinition-observation-radiation-dose-obligation-eu-imaging" name="ObservationRadiationDoseEuImaging: Obligations"/>
+<artifact id="OperationDefinition/DiagnosticReport-fhir-report" key="OperationDefinition-DiagnosticReport-fhir-report" name="OperationDefinition: $document on DiagnosticReport"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSOrganization" key="StructureDefinition-EHDSOrganization" name="Organization model"/>
+<artifact id="Organization/OrganizationSemiStructuredReport" key="Organization-OrganizationSemiStructuredReport" name="Organization: semi-structured"/>
+<artifact id="Organization/OrganizationStructuredReport" key="Organization-OrganizationStructuredReport" name="Organization: structured report"/>
+<artifact id="Organization/OrganizationUnstructuredReport" key="Organization-OrganizationUnstructuredReport" name="Organization: unstructured report"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSPatient" key="StructureDefinition-EHDSPatient" name="Patient model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSPatientSummaryBody" key="StructureDefinition-EHDSPatientSummaryBody" name="Patient summary body model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSPatientSummaryHeader" key="StructureDefinition-EHDSPatientSummaryHeader" name="Patient summary header model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSPatientSummary" key="StructureDefinition-EHDSPatientSummary" name="Patient summary model"/>
+<artifact deprecated="true" id="StructureDefinition/PatientAnimalEu" key="StructureDefinition-PatientAnimalEu" name="Patient: Animal"/>
+<artifact id="Patient/PatientSemiStructuredReport" key="Patient-PatientSemiStructuredReport" name="Patient: semi-structured report"/>
+<artifact id="Patient/PatientStructuredReport" key="Patient-PatientStructuredReport" name="Patient: structured report"/>
+<artifact id="Patient/PatientUnstructuredReport" key="Patient-PatientUnstructuredReport" name="Patient: unstructured report"/>
+<artifact deprecated="true" id="ValueSet/periods-of-life-value-set" key="ValueSet-periods-of-life-value-set" name="Periods of Life"/>
+<artifact deprecated="true" id="StructureDefinition/periods-of-life-extension" key="StructureDefinition-periods-of-life-extension" name="Periods of Life Extension"/>
+<artifact deprecated="true" id="StructureDefinition/IheMhdEntryUUIDIdentifier" key="StructureDefinition-IheMhdEntryUUIDIdentifier" name="Placeholder for IHE MHD Entry UUID Identifier in FHIR R5."/>
+<artifact id="Practitioner/PractitionerSemiStructuredReportAuthor" key="Practitioner-PractitionerSemiStructuredReportAuthor" name="Practitioner: semi-structured report."/>
+<artifact id="Practitioner/PractitionerStructuredReportAuthor" key="Practitioner-PractitionerStructuredReportAuthor" name="Practitioner: structured report"/>
+<artifact id="PractitionerRole/PractitionerRoleSemiStructuredReportAuthor" key="PractitionerRole-PractitionerRoleSemiStructuredReportAuthor" name="PractitionerRole: semi-structured"/>
+<artifact id="PractitionerRole/PractitionerRoleStructuredReportAuthor" key="PractitionerRole-PractitionerRoleStructuredReportAuthor" name="PractitionerRole: structured report"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSProcedure" key="StructureDefinition-EHDSProcedure" name="Procedure model"/>
+<artifact id="StructureDefinition/ProcedureEuImaging" key="StructureDefinition-ProcedureEuImaging" name="Procedure: Imaging Acquisition"/>
+<artifact id="StructureDefinition/procedure-obligation-eu-imaging" key="StructureDefinition-procedure-obligation-eu-imaging" name="ProcedureEuImaging: Obligations"/>
+<artifact deprecated="true" id="StructureDefinition/ImIheMhdDocumentReference" key="StructureDefinition-ImIheMhdDocumentReference" name="R5 DocumentReference for MHD deployments"/>
+<artifact deprecated="true" id="StructureDefinition/ImRadiationDoseObservation" key="StructureDefinition-ImRadiationDoseObservation" name="Radiation Dose Observation"/>
+<artifact deprecated="true" id="ValueSet/ImSectionEmptyReason" key="ValueSet-ImSectionEmptyReason" name="Reasons a section in an imaging report is empty."/>
+<artifact deprecated="true" id="StructureDefinition/EHDSRelatedPerson" key="StructureDefinition-EHDSRelatedPerson" name="Related person model"/>
+<artifact deprecated="true" id="StructureDefinition/RelatedPersonEu" key="StructureDefinition-RelatedPersonEu" name="RelatedPerson Eu"/>
+<artifact deprecated="true" id="StructureDefinition/ImReportIheMhdDocumentReference" key="StructureDefinition-ImReportIheMhdDocumentReference" name="Report DocumentReference for MHD deployments"/>
+<artifact deprecated="true" id="StructureDefinition/Report-ImReportDocumentReference" key="StructureDefinition-Report-ImReportDocumentReference" name="Report Obligations for ImReportIheMhdDocumentReference"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSReportHeader" key="StructureDefinition-EHDSReportHeader" name="Report header model"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuAddress" key="StructureDefinition-Report-EuAddress" name="Report obligations for EuAddress"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuAllergyIntolerance" key="StructureDefinition-Report-EuAllergyIntolerance" name="Report obligations for EuAllergyIntolerance"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuAttachment" key="StructureDefinition-Report-EuAttachment" name="Report obligations for EuAttachment"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuBodyStructure" key="StructureDefinition-Report-EuBodyStructure" name="Report obligations for EuBodyStructure"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuCarePlan" key="StructureDefinition-Report-EuCarePlan" name="Report obligations for EuCarePlan"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuCondition" key="StructureDefinition-Report-EuCondition" name="Report obligations for EuCondition"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuContactPoint" key="StructureDefinition-Report-EuContactPoint" name="Report obligations for EuContactPoint"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuCoverage" key="StructureDefinition-Report-EuCoverage" name="Report obligations for EuCoverage"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuDevice" key="StructureDefinition-Report-EuDevice" name="Report obligations for EuDevice"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuDocumentReference" key="StructureDefinition-Report-EuDocumentReference" name="Report obligations for EuDocumentReference"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuEncounter" key="StructureDefinition-Report-EuEncounter" name="Report obligations for EuEncounter"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuEpisodeOfCare" key="StructureDefinition-Report-EuEpisodeOfCare" name="Report obligations for EuEpisodeOfCare"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuHumanName" key="StructureDefinition-Report-EuHumanName" name="Report obligations for EuHumanName"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuLocation" key="StructureDefinition-Report-EuLocation" name="Report obligations for EuLocation"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuMedication" key="StructureDefinition-Report-EuMedication" name="Report obligations for EuMedication"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuMedicationAdministration" key="StructureDefinition-Report-EuMedicationAdministration" name="Report obligations for EuMedicationAdministration"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuObservation" key="StructureDefinition-Report-EuObservation" name="Report obligations for EuObservation"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuOrganization" key="StructureDefinition-Report-EuOrganization" name="Report obligations for EuOrganization"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuPatient" key="StructureDefinition-Report-EuPatient" name="Report obligations for EuPatient"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuPatientAnimal" key="StructureDefinition-Report-EuPatientAnimal" name="Report obligations for EuPatientAnimal"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuPractitioner" key="StructureDefinition-Report-EuPractitioner" name="Report obligations for EuPractitioner"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuPractitionerRole" key="StructureDefinition-Report-EuPractitionerRole" name="Report obligations for EuPractitionerRole"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuProcedure" key="StructureDefinition-Report-EuProcedure" name="Report obligations for EuProcedure"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuQuantity" key="StructureDefinition-Report-EuQuantity" name="Report obligations for EuQuantity"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuRange" key="StructureDefinition-Report-EuRange" name="Report obligations for EuRange"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuRelatedPerson" key="StructureDefinition-Report-EuRelatedPerson" name="Report obligations for EuRelatedPerson"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuServiceRequest" key="StructureDefinition-Report-EuServiceRequest" name="Report obligations for EuServiceRequest"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuSimpleQuantity" key="StructureDefinition-Report-EuSimpleQuantity" name="Report obligations for EuSimpleQuantity"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuSpecimen" key="StructureDefinition-Report-EuSpecimen" name="Report obligations for EuSpecimen"/>
+<artifact deprecated="true" id="StructureDefinition/Report-EuSubstance" key="StructureDefinition-Report-EuSubstance" name="Report obligations for EuSubstance"/>
+<artifact deprecated="true" id="StructureDefinition/Report-ImAdverseEvent" key="StructureDefinition-Report-ImAdverseEvent" name="Report obligations for ImAdverseEvent"/>
+<artifact deprecated="true" id="StructureDefinition/Report-ImComposition" key="StructureDefinition-Report-ImComposition" name="Report obligations for ImComposition"/>
+<artifact deprecated="true" id="StructureDefinition/Report-ImDiagnosticReport" key="StructureDefinition-Report-ImDiagnosticReport" name="Report obligations for ImDiagnosticReport"/>
+<artifact deprecated="true" id="StructureDefinition/Report-ImFinding" key="StructureDefinition-Report-ImFinding" name="Report obligations for ImFinding"/>
+<artifact deprecated="true" id="StructureDefinition/Report-ImGestationalAgeObservation" key="StructureDefinition-Report-ImGestationalAgeObservation" name="Report obligations for ImGestationalAgeObservation"/>
+<artifact deprecated="true" id="StructureDefinition/Report-ImImagingStudy" key="StructureDefinition-Report-ImImagingStudy" name="Report obligations for ImImagingStudy"/>
+<artifact deprecated="true" id="StructureDefinition/Report-ImOrder" key="StructureDefinition-Report-ImOrder" name="Report obligations for ImOrder"/>
+<artifact deprecated="true" id="StructureDefinition/Report-ImPatient" key="StructureDefinition-Report-ImPatient" name="Report obligations for ImPatient"/>
+<artifact deprecated="true" id="StructureDefinition/Report-ImProcedure" key="StructureDefinition-Report-ImProcedure" name="Report obligations for ImProcedure"/>
+<artifact deprecated="true" id="StructureDefinition/Report-ImRadiationDoseObservation" key="StructureDefinition-Report-ImRadiationDoseObservation" name="Report obligations for ImRadiationDoseObservation"/>
+<artifact deprecated="true" id="StructureDefinition/Report-ImReport" key="StructureDefinition-Report-ImReport" name="Report obligations for ImReport"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSCommonHeader" key="StructureDefinition-EHDSCommonHeader" name="Resource header model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSServiceRequest" key="StructureDefinition-EHDSServiceRequest" name="Service request model"/>
+<artifact id="StructureDefinition/ServiceRequestOrderEuImaging" key="StructureDefinition-ServiceRequestOrderEuImaging" name="ServiceRequest: Imaging Order"/>
+<artifact id="StructureDefinition/service-request-order-obligation-eu-imaging" key="StructureDefinition-service-request-order-obligation-eu-imaging" name="ServiceRequest: Imaging Order: Obligations"/>
+<artifact id="ServiceRequest/ComeBackNextYearServiceRequest" key="ServiceRequest-ComeBackNextYearServiceRequest" name="ServiceRequest: structured report recommendation"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSSlot" key="StructureDefinition-EHDSSlot" name="Slot model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSSpecimen" key="StructureDefinition-EHDSSpecimen" name="Specimen model"/>
+<artifact deprecated="true" id="StructureDefinition/SpecimenEu" key="StructureDefinition-SpecimenEu" name="Specimen: Laboratory"/>
+<artifact deprecated="true" id="StructureDefinition/im-study-instance-uid-identifier" key="StructureDefinition-im-study-instance-uid-identifier" name="Study Instance UID Identifier"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSSubstance" key="StructureDefinition-EHDSSubstance" name="Substance model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSTask" key="StructureDefinition-EHDSTask" name="Task model"/>
+<artifact deprecated="true" id="StructureDefinition/EHDSTelecom" key="StructureDefinition-EHDSTelecom" name="Telecom model"/>
+<artifact id="ValueSet/im-anatomical-region-valueset" key="ValueSet-im-anatomical-region-valueset" name="ValueSet: Anatomical Region"/>
+<artifact id="CodeSystem/codesystem-diagnostic-report-support-info" key="CodeSystem-codesystem-diagnostic-report-support-info" name="ValueSet: Diagnostic Report Support Info Code System"/>
+<artifact id="ValueSet/valueset-diagnosticreport-report-support-info" key="ValueSet-valueset-diagnosticreport-report-support-info" name="ValueSet: DiagnosticReport supportInfo codes"/>
+<artifact id="ValueSet/DeviceEuImagingType" key="ValueSet-DeviceEuImagingType" name="ValueSet: Imaging Device Type"/>
+<artifact id="ValueSet/im-procedure-type" key="ValueSet-im-procedure-type" name="ValueSet: Imaging Procedure Type"/>
+<artifact id="ValueSet/im-imaging-study-performer-type" key="ValueSet-im-imaging-study-performer-type" name="ValueSet: Imaging Study Performer Type Value Set"/>
+<artifact id="CodeSystem/codesystem-missing-dicom-terminology" key="CodeSystem-codesystem-missing-dicom-terminology" name="ValueSet: Missing DICOM Terminology"/>
+<artifact id="ValueSet/ImagingReportTypesEuVSEuImaging" key="ValueSet-ImagingReportTypesEuVSEuImaging" name="ValueSet: Radiology Report Types"/>
+<artifact id="ValueSet/SectionEmptyReasonEuImaging" key="ValueSet-SectionEmptyReasonEuImaging" name="ValueSet: Reasons a section in an imaging report is empty."/>
+<artifact id="ValueSet/valueset-diagnosticreport-notes" key="ValueSet-valueset-diagnosticreport-notes" name="ValueSet: Section codes used to label annotations."/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
-<page key="actors-and-transactions" name="Actors and Transactions"/>
 <page key="adapting" name="Adapting Guidelines for Country use"/>
 <page key="artifacts-intro" name="Artifacts"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="contributors" name="Authors and contributors"/>
 <page key="changes" name="Changes"/>
-<page key="contributors" name="Contributors"/>
-<page key="profiles" name="Deployment profiles"/>
-<page key="design-considerations" name="Design Considerations"/>
+<page key="copyright" name="Copyright"/>
+<page key="current-status" name="Current status"/>
+<page key="data-formats" name="Data formats"/>
+<page key="dependencies" name="Dependencies"/>
+<page deprecated="true" key="profiles" name="Deployment profiles"/>
+<page key="design-considerations" name="Design considerations"/>
+<page key="api" name="EU Health Data API for Imaging Reports"/>
+<page key="example-unstructured" name="Example report with renderable content and minimal metadata"/>
+<page key="example-semi-structured" name="Example semi structured report"/>
+<page key="example-structured" name="Example structured report"/>
+<page key="examples" name="Examples"/>
 <page key="index" name="Home"/>
-<page key="imaging-manifest" name="Imaging Manifest"/>
+<page deprecated="true" key="imaging-manifest" name="Imaging Manifest"/>
 <page key="imaging-report" name="Imaging Report"/>
-<page key="xtehr-mapping" name="Mapping to XtEHR Logical Model"/>
+<page key="artifacts-obligations" name="Obligations"/>
+<page key="patterns-and-guidelines" name="Patterns and Guidelines"/>
+<page key="references" name="References"/>
 <page key="artifacts-structural" name="Structural artifacts"/>
+<page key="actors-and-transactions" name="System actors"/>
 <page key="toc" name="Table of Contents"/>
-<page key="xtehr" name="XtEHR"/>
-<page key="xtehr-logical-model" name="XtEHR Logical Model"/>
+<page key="use-cases" name="Use Cases"/>
+<page key="xtehr-mapping" name="Xt-EHR mapping"/>
+<page deprecated="true" key="xtehr" name="XtEHR"/>
+<page deprecated="true" key="xtehr-logical-model" name="XtEHR Logical Model"/>
 </specification>
