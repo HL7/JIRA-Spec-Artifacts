@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/bulkdata/2025Sep" ciUrl="http://build.fhir.org/ig/HL7/bulk-data" defaultVersion="3.0.0" defaultWorkgroup="fhir-i" gitUrl="https://github.com/HL7/bulk-data" url="http://hl7.org/fhir/uv/bulkdata">
-<version code="current" url="http://build.fhir.org/ig/HL7/bulk-data"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/bulkdata/4.0.0-202609-ballot" ciUrl="https://build.fhir.org/ig/HL7/bulk-data" defaultVersion="3.0.0" defaultWorkgroup="fhir-i" gitUrl="https://github.com/HL7/bulk-data" url="http://hl7.org/fhir/uv/bulkdata">
+<version code="current" url="https://build.fhir.org/ig/HL7/bulk-data"/>
+<version code="4.0.0-ballot" url="http://hl7.org/fhir/uv/bulkdata/4.0.0-202609-ballot"/>
 <version code="3.0.0" url="http://hl7.org/fhir/uv/bulkdata/STU3"/>
 <version code="3.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/bulkdata/2025Sep"/>
 <version code="2.0.0" deprecated="true" url="http://hl7.org/fhir/uv/bulkdata/STU2"/>
@@ -15,14 +16,36 @@
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/bulk-cohort-group" key="StructureDefinition-bulk-cohort-group" name="Bulk Cohort Group"/>
 <artifact id="Group/BulkCohortGroupExample" key="Group-BulkCohortGroupExample" name="Bulk Cohort Group Example"/>
+<artifact id="StructureDefinition/BulkDataManifest" key="StructureDefinition-BulkDataManifest" name="Bulk Data Manifest"/>
+<artifact id="Binary/BulkDataManifestByTypeExample" key="Binary-BulkDataManifestByTypeExample" name="Bulk Data Manifest Example By Resource Type"/>
+<artifact id="Binary/BulkDataManifestOrganizedByPatientExample" key="Binary-BulkDataManifestOrganizedByPatientExample" name="Bulk Data Manifest Example Organized By Patient"/>
+<artifact id="Binary/BulkPublishManifestIncrementalUpdateExample" key="Binary-BulkPublishManifestIncrementalUpdateExample" name="Bulk Publish Incremental Update Manifest"/>
+<artifact id="StructureDefinition/BulkPublishManifest" key="StructureDefinition-BulkPublishManifest" name="Bulk Publish Manifest"/>
+<artifact id="Binary/BulkPublishManifestPendingRootExample" key="Binary-BulkPublishManifestPendingRootExample" name="Bulk Publish Manifest With Pending Update Chain"/>
+<artifact id="OperationDefinition/bulk-publish" key="OperationDefinition-bulk-publish" name="Bulk Publish Operation Definition"/>
+<artifact id="OperationDefinition/bulk-submit" key="OperationDefinition-bulk-submit" name="Bulk Submit Operation Definition"/>
+<artifact id="OperationOutcome/submit-status-resource-operationoutcome-example" key="OperationOutcome-submit-status-resource-operationoutcome-example" name="Bulk Submit Resource-Level Status OperationOutcome Example"/>
+<artifact id="StructureDefinition/BulkSubmitStatusManifest" key="StructureDefinition-BulkSubmitStatusManifest" name="Bulk Submit Status Manifest"/>
+<artifact id="Binary/BulkSubmitStatusManifestExample" key="Binary-BulkSubmitStatusManifestExample" name="Bulk Submit Status Manifest Example"/>
+<artifact id="OperationOutcome/submit-status-manifest-operationoutcome-example" key="OperationOutcome-submit-status-manifest-operationoutcome-example" name="Bulk Submit Status Manifest-Level OperationOutcome Example"/>
+<artifact id="OperationDefinition/bulk-submit-status" key="OperationDefinition-bulk-submit-status" name="Bulk Submit Status Operation Definition"/>
 <artifact id="CapabilityStatement/bulk-data" key="CapabilityStatement-bulk-data" name="Capability Statement"/>
+<artifact id="Bundle/deleted-resource-transaction-bundle-example" key="Bundle-deleted-resource-transaction-bundle-example" name="Deleted Resource Transaction Bundle Example"/>
+<artifact id="OperationOutcome/export-error-operationoutcome-example" key="OperationOutcome-export-error-operationoutcome-example" name="Export Error OperationOutcome Example"/>
+<artifact id="OperationDefinition/async" key="OperationDefinition-async" name="FHIR Asynchronous Bulk Interaction Pattern Operation Definition"/>
 <artifact id="OperationDefinition/group-export" key="OperationDefinition-group-export" name="Group Level Export Operation Definition"/>
 <artifact id="CodeSystem/include-associated-data" key="CodeSystem-include-associated-data" name="Include Associated Data Code System"/>
 <artifact id="ValueSet/include-associated-data" key="ValueSet-include-associated-data" name="Include Associated Data Value Set"/>
 <artifact id="StructureDefinition/member-filter" key="StructureDefinition-member-filter" name="Member Filter"/>
 <artifact id="StructureDefinition/members-refreshed" key="StructureDefinition-members-refreshed" name="Members Refreshed"/>
+<artifact id="Binary/BulkDataManifestMinimalExample" key="Binary-BulkDataManifestMinimalExample" name="Minimal Bulk Data Manifest"/>
+<artifact id="Binary/BulkPublishManifestMinimalExample" key="Binary-BulkPublishManifestMinimalExample" name="Minimal Bulk Publish Manifest"/>
 <artifact id="StructureDefinition/operation-not-supported" key="StructureDefinition-operation-not-supported" name="Operation Not Supported"/>
+<artifact id="Binary/BulkPublishManifestPagedExample" key="Binary-BulkPublishManifestPagedExample" name="Paged Bulk Publish Manifest"/>
+<artifact id="Binary/BulkPublishManifestPagedNextPageExample" key="Binary-BulkPublishManifestPagedNextPageExample" name="Paged Bulk Publish Manifest Next Page"/>
 <artifact id="OperationDefinition/patient-export" key="OperationDefinition-patient-export" name="Patient Level Export Operation Definition"/>
+<artifact id="Binary/BulkPublishManifestPendingStubExample" key="Binary-BulkPublishManifestPendingStubExample" name="Pending Bulk Publish Manifest Page"/>
+<artifact id="ValueSet/submission-status" key="ValueSet-submission-status" name="Submission Status Value Set"/>
 <artifact id="ValueSet/group-type-subset" key="ValueSet-group-type-subset" name="Subset of GroupType Value Set"/>
 <artifact id="OperationDefinition/export" key="OperationDefinition-export" name="System Level Export Operation Definition"/>
 <page key="NA" name="(NA)"/>
@@ -30,12 +53,17 @@
 <page deprecated="true" key="profiles" name="(profiles)"/>
 <page key="abbreviations" name="Abbreviations"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="async" name="Asynchronous Bulk Interaction Pattern"/>
 <page key="ImplementationGuide-hl7.fhir.uv.bulkdata" name="Bulk Data Implementation Guide Resource"/>
+<page key="publish-worked-example" name="Bulk Publish Worked Example"/>
 <page key="changes" name="Change Log"/>
 <page key="downloads" name="Downloads"/>
 <page key="export" name="Export"/>
 <page key="group" name="Groups"/>
 <page key="index" name="Home"/>
+<page key="publish" name="Publish"/>
 <page key="authorization" name="SMART Backend Services Authorization"/>
+<page key="submit" name="Submit"/>
 <page key="toc" name="Table of Contents"/>
+<page key="tools" name="Tools"/>
 </specification>
