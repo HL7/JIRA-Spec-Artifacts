@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/pocd/2021Sep" ciUrl="http://build.fhir.org/ig/HL7/uv-pocd" defaultVersion="0.3.0" defaultWorkgroup="dev" gitUrl="https://github.com/HL7/uv-pocd" url="http://hl7.org/fhir/uv/pocd">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/pocd/STU2" ciUrl="http://build.fhir.org/ig/HL7/uv-pocd" defaultVersion="1.0.0-ballot3" defaultWorkgroup="dev" gitUrl="https://github.com/HL7/uv-pocd" url="http://hl7.org/fhir/uv/pocd">
 <version code="current" url="http://build.fhir.org/ig/HL7/uv-pocd"/>
-<version code="0.3.0" url="http://hl7.org/fhir/uv/pocd/2021Sep"/>
+<version code="1.0.0-ballot3" url="http://hl7.org/fhir/uv/pocd/STU2"/>
+<version code="0.3.0" deprecated="true" url="http://hl7.org/fhir/uv/pocd/2021Sep"/>
 <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/uv/pocd/2018Sep"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/uv/pocd/2018Jan"/>
 <version code="0.1" deprecated="true"/>
@@ -13,6 +14,7 @@
 <artifact id="Device/BloodPressureVmdDevice" key="Device-BloodPressureVmdDevice" name="Blood Pressure VMD example"/>
 <artifact id="DeviceMetric/CVPSampleArrayDeviceMetric" key="DeviceMetric-CVPSampleArrayDeviceMetric" name="CVP Sample Array metric example"/>
 <artifact id="Observation/CVPSampleArrayObservation" key="Observation-CVPSampleArrayObservation" name="CVP Sample Array observation example"/>
+<artifact id="StructureDefinition/calibration" key="StructureDefinition-calibration" name="Calibration extension"/>
 <artifact id="StructureDefinition/ChannelDevice" key="StructureDefinition-ChannelDevice" name="Channel Device profile"/>
 <artifact id="StructureDefinition/CompoundNumericObservation" key="StructureDefinition-CompoundNumericObservation" name="Compound Numeric Observation profile"/>
 <artifact deprecated="true" key="Device" name="Device"/>
@@ -21,7 +23,6 @@
 <artifact deprecated="true" key="DeviceMetric" name="DeviceMetric"/>
 <artifact id="Device/ECGChannelDevice" key="Device-ECGChannelDevice" name="ECG Channel example"/>
 <artifact id="DeviceMetric/ECGSampleArrayDeviceMetric" key="DeviceMetric-ECGSampleArrayDeviceMetric" name="ECG Sample Array metric example"/>
-<artifact deprecated="true" key="Observation" name="Observation"/>
 <artifact id="Observation/ECGSampleArrayObservation" key="Observation-ECGSampleArrayObservation" name="ECG Sample Array observation example"/>
 <artifact id="Device/ECGVmdDevice" key="Device-ECGVmdDevice" name="ECG VMD example"/>
 <artifact id="StructureDefinition/EnumerationDeviceMetric" key="StructureDefinition-EnumerationDeviceMetric" name="Enumeration DeviceMetric profile"/>
@@ -32,7 +33,7 @@
 <artifact id="CodeSystem/kind-of-relation" key="CodeSystem-kind-of-relation" name="Kind of relation code system"/>
 <artifact id="ValueSet/kind-of-relation" key="ValueSet-kind-of-relation" name="Kind of relation value set"/>
 <artifact id="ValueSet/11073MDC-metric" key="ValueSet-11073MDC-metric" name="MDC Metric nomenclature"/>
-<artifact id="ValueSet/11073MDC-object" key="ValueSet-11073MDC-object" name="MDC Object infrastructure and Device nomenclature (ValueSet)"/>
+<artifact id="ValueSet/11073MDC-object" key="ValueSet-11073MDC-object" name="MDC Object infrastructure and Device nomenclature"/>
 <artifact id="ValueSet/11073MDC-dimension" key="ValueSet-11073MDC-dimension" name="MDC Unit of Measurement"/>
 <artifact id="StructureDefinition/MdsDevice" key="StructureDefinition-MdsDevice" name="MDS Device profile"/>
 <artifact id="CodeSystem/measurement-status" key="CodeSystem-measurement-status" name="Measurement status codes"/>
@@ -45,6 +46,7 @@
 <artifact id="Device/NBPVmdDevice" key="Device-NBPVmdDevice" name="NBP VMD example"/>
 <artifact id="StructureDefinition/NumericDeviceMetric" key="StructureDefinition-NumericDeviceMetric" name="Numeric DeviceMetric profile"/>
 <artifact id="StructureDefinition/NumericObservation" key="StructureDefinition-NumericObservation" name="Numeric Observation profile"/>
+<artifact deprecated="true" key="Observation" name="Observation"/>
 <artifact id="ValueSet/observation-interpretation" key="ValueSet-observation-interpretation" name="Observation interpretation codes"/>
 <artifact id="StructureDefinition/Observation" key="StructureDefinition-Observation" name="Observation profile"/>
 <artifact id="StructureDefinition/operating-cycles" key="StructureDefinition-operating-cycles" name="Operating cycles extension"/>
@@ -56,12 +58,15 @@
 <artifact id="Device/PhysioMonitorMdsDevice" key="Device-PhysioMonitorMdsDevice" name="Patient Monitor MDS example"/>
 <artifact id="StructureDefinition/Patient" key="StructureDefinition-Patient" name="Patient profile"/>
 <artifact id="StructureDefinition/Practitioner" key="StructureDefinition-Practitioner" name="Practitioner profile"/>
+<artifact id="StructureDefinition/reference-range" key="StructureDefinition-reference-range" name="Reference range extension"/>
+<artifact id="CodeSystem/reference-range-type" key="CodeSystem-reference-range-type" name="Reference range type code system"/>
+<artifact id="ValueSet/reference-range-type" key="ValueSet-reference-range-type" name="Reference range type value set"/>
 <artifact id="StructureDefinition/relation" key="StructureDefinition-relation" name="Relation extension"/>
 <artifact id="StructureDefinition/resolution" key="StructureDefinition-resolution" name="Resolution extension"/>
 <artifact id="DeviceMetric/RhythmStatusEnumerationDeviceMetric" key="DeviceMetric-RhythmStatusEnumerationDeviceMetric" name="Rhythm Status Enumeration metric example"/>
 <artifact id="Observation/RhythmStatusEnumerationObservation" key="Observation-RhythmStatusEnumerationObservation" name="Rhythm Status Enumeration observation example"/>
 <artifact id="CodeSystem/safety" key="CodeSystem-safety" name="Safety classification code system"/>
-<artifact id="ValueSet/safety" key="ValueSet-safety" name="Safety classification value set"/>
+<artifact id="ValueSet/safety-classification" key="ValueSet-safety" name="Safety classification value set"/>
 <artifact id="StructureDefinition/SampleArrayDeviceMetric" key="StructureDefinition-SampleArrayDeviceMetric" name="Sample Array DeviceMetric profile"/>
 <artifact id="StructureDefinition/SampleArrayObservation" key="StructureDefinition-SampleArrayObservation" name="Sample Array Observation profile"/>
 <artifact id="CapabilityStatement/ServerCapabilityStatement" key="CapabilityStatement-ServerCapabilityStatement" name="Server CapabilityStatement"/>
@@ -75,9 +80,11 @@
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="definitions" name="Abbreviations and Definitions"/>
+<page key="appendix" name="Appendix"/>
 <page key="artifacts" name="Artifact List"/>
 <page key="changes" name="Change Log"/>
 <page key="downloads" name="Downloads"/>
+<page key="messaging" name="FHIR Messaging"/>
 <page key="mappingv2" name="HL7 V2 Mapping"/>
 <page key="index" name="Home"/>
 <page key="mappingdim" name="Mapping from IEEE 11073-10201 DIM to FHIR"/>
