@@ -41,6 +41,12 @@ on:
 
 jobs:
   triage:
+    # Fork PRs can't pass claude-code-action's actor-write gate, so skip the
+    # pull_request_target trigger for them — they get triaged via the
+    # workflow_run path once pull-request-build completes (pre-Jul-2026 behavior).
+    if: >-
+      github.event_name != 'pull_request_target' ||
+      github.event.pull_request.head.repo.full_name == github.repository
     uses: HL7/fhir/.github/workflows/_pr-triage.yml@master
     with:
       label: "JiraSpec"
