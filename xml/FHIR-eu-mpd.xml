@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/mpd/0.1.0-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/mpd" defaultVersion="0.1.0-ballot" defaultWorkgroup="eu" url="http://hl7.eu/fhir/mpd" gitUrl="https://github.com/HL7-eu/mpd" >
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/mpd/0.1.0-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/mpd" defaultVersion="1.0.0" defaultWorkgroup="eu" gitUrl="https://github.com/HL7-eu/mpd" url="http://hl7.eu/fhir/mpd">
 <version code="current" url="https://build.fhir.org/ig/hl7-eu/mpd"/>
-<version code="0.1.0-ballot" url="http://hl7.eu/fhir/mpd/0.1.0-ballot"/>
+<version code="1.0.0" url="http://hl7.eu/fhir/mpd/1.0.0"/>
+<version deprecated="true" code="0.1.0-ballot" url="http://hl7.eu/fhir/mpd/0.1.0-ballot"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
@@ -32,13 +33,15 @@
 <artifact id="MedicationDispense/400D-dispense-1" key="MedicationDispense-400D-dispense-1" name="400D-dispense-1"/>
 <artifact id="MedicationDispense/400D-dispense-2" key="MedicationDispense-400D-dispense-2" name="400D-dispense-2"/>
 <artifact id="MedicationDispense/400E-refused-dispense" key="MedicationDispense-400E-refused-dispense" name="400E-refused-dispense"/>
-<artifact id="StructureDefinition/Prescription" key="StructureDefinition-Prescription" name="A - Prescription"/>
-<artifact id="StructureDefinition/Subject" key="StructureDefinition-Subject" name="A.1.1 Patient administrative data"/>
-<artifact id="StructureDefinition/MedicinalProduct" key="StructureDefinition-MedicinalProduct" name="A1.4 Identification of the prescribed product"/>
-<artifact id="StructureDefinition/Dispensation" key="StructureDefinition-Dispensation" name="B.1 Dispensation information (provided by the dispensing pharmacy)"/>
+<artifact deprecated="true" id="StructureDefinition/Prescription" key="StructureDefinition-Prescription" name="A - Prescription"/>
+<artifact deprecated="true" id="StructureDefinition/Subject" key="StructureDefinition-Subject" name="A.1.1 Patient administrative data"/>
+<artifact deprecated="true" id="StructureDefinition/MedicinalProduct" key="StructureDefinition-MedicinalProduct" name="A1.4 Identification of the prescribed product"/>
+<artifact deprecated="true" id="StructureDefinition/Dispensation" key="StructureDefinition-Dispensation" name="B.1 Dispensation information (provided by the dispensing pharmacy)"/>
+<artifact id="StructureDefinition/Dosage-eu-mpd" key="StructureDefinition-Dosage-eu-mpd" name="Dosage: MPD"/>
 <artifact id="StructureDefinition/Medication-eu-mpd" key="StructureDefinition-Medication-eu-mpd" name="Medication: MPD"/>
 <artifact id="StructureDefinition/MedicationDispense-eu-mpd" key="StructureDefinition-MedicationDispense-eu-mpd" name="MedicationDispense: MPD"/>
 <artifact id="StructureDefinition/MedicationRequest-eu-mpd" key="StructureDefinition-MedicationRequest-eu-mpd" name="MedicationRequest: MPD"/>
+<artifact id="ActorDefinition/actor-producer" key="ActorDefinition-actor-producer" name="Producer"/>
 <artifact id="PractitionerRole/doctor1" key="PractitionerRole-doctor1" name="doctor1"/>
 <artifact id="Organization/organization1" key="Organization-organization1" name="organization1"/>
 <artifact id="Organization/organization2" key="Organization-organization2" name="organization2"/>
@@ -57,15 +60,22 @@
 <page key="crossversionanalysis" name="Cross-version Analysis"/>
 <page key="dependencies" name="Dependencies"/>
 <page key="designchoices" name="Design Choices"/>
+<page key="dosagepatterns" name="Dosage Patterns"/>
 <page key="downloads" name="Downloads"/>
+<page key="map-ehdsdosage" name="EHDSDosage to FHIR DosageEuMpd Mapping"/>
+<page key="map-ehdsmedicationdispense" name="EHDSMedicationDispense to FHIR MedicationDispenseEuMpd Mapping"/>
+<page key="map-ehdsmedicationprescription" name="EHDSMedicationPrescription to FHIR MedicationRequestEuMpd Mapping"/>
 <page key="examples" name="Examples"/>
 <page key="index" name="Home"/>
+<page key="transactions" name="IHE Transactions"/>
 <page key="implementationnotes" name="Implementation Considerations"/>
 <page key="knownissues" name="Known Issues"/>
 <page key="logicalmodels" name="Logical Models"/>
-<page key="profiles" name="Mapping to Profiles"/>
+<page deprecated="true" key="profiles" name="Mapping to Profiles"/>
 <page key="medicationconcepts" name="Medication Concepts"/>
+<page key="modelmap" name="Model Map"/>
 <page key="scope" name="Scope and Content"/>
+<page key="searchparameters" name="Search Parameters"/>
 <page key="references" name="Source and Additional Information"/>
 <page key="toc" name="Table of Contents"/>
 <page key="terminology" name="Terminology Considerations"/>
