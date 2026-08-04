@@ -1,6 +1,8 @@
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/ps/1.0.0-ballot" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-ps" defaultVersion="1.0.0-ballot" defaultWorkgroup="au-core" gitUrl="https://github.com/hl7au/au-fhir-ps" url="http://hl7.org.au/fhir/ps">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org.au/fhir/ps/1.0.0-ballot" ciUrl="https://build.fhir.org/ig/hl7au/au-fhir-ps" defaultVersion="1.0.0" defaultWorkgroup="au-core" gitUrl="https://github.com/hl7au/au-fhir-ps" url="http://hl7.org.au/fhir/ps">
 	<version code="current" url="https://build.fhir.org/ig/hl7au/au-fhir-ps"/>  
-    <version code="1.0.0-ballot" url="http://hl7.org.au/fhir/ps/1.0.0-ballot"/>  
+    <version code="1.0.0" url="http://hl7.org.au/fhir/ps/1.0.0"/>  
+    <version code="1.0.0-preview" deprecated="true" url="http://hl7.org.au/fhir/ps/1.0.0-preview"/>  
+    <version code="1.0.0-ballot" deprecated="true" url="http://hl7.org.au/fhir/ps/1.0.0-ballot"/>  
     <version code="0.5.0-preview" deprecated="true" url="http://hl7.org.au/fhir/ps/0.5.0-preview"/>  
     <version code="0.4.0-draft" deprecated="true" url="http://hl7.org.au/fhir/ps/0.4.0-draft"/>  
     <version code="0.3.0-ballot" deprecated="true" url="http://hl7.org.au/fhir/ps/0.3.0-ballot"/>  
@@ -33,6 +35,7 @@
 	<artifact id="Bundle/aups-referral-endoconsult-curated" key="Bundle-aups-referral-endoconsult-curated" name="Joyce 28 October" />
 	<artifact id="Bundle/aups-referral-endoconsult-autogen" key="Bundle-aups-referral-endoconsult-autogen" name="Joyce 07 November 2024" />
 	<artifact id="Bundle/aups-gpvisit-retrieval" key="Bundle-aups-gpvisit-retrieval" name="Jeramy 27 May" />
+	<artifact id="Bundle/aups-patient-story" key="Bundle-aups-patient-story" name="Patient Story" />
 	<artifact id="StructureDefinition/au-ps-patient" key="StructureDefinition-au-ps-patient" name="AU PS Patient" />
 	<artifact id="Bundle/section-emptyreason" key="Bundle-section-emptyreason" name="Bundle - Section empty reason." deprecated="true"/>
 	<artifact id="Bundle/basicsummary" key="Bundle-basicsummary" name="Bundle - Basic summary." deprecated="true"/>
@@ -50,8 +53,8 @@
 	<page key="sex-and-gender" name="Sex and Gender"/>
 	<page key="aucdi" name="AUCDI"/>
 	<page key="relationship" name="Relationship With Other IGs"/>
-	<page key="comparison" name="Comparison With Other National and International IGs"/>
 	<page key="variance" name="AU Variance Statement"/>
+	<page key="comparison" name="Comparison With Other National and International IGs"/>
 	<page key="future" name="Future of AU Patient Summary"/>
 	<page key="usecase" name="Use Cases"/>
 	<page key="uc-interstate" name="Interstate GP Visit"/>
