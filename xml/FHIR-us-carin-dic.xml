@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/insurance-card/2022Jan" ciUrl="http://build.fhir.org/ig/HL7/carin-digital-insurance-card" defaultVersion="1.1.0" defaultWorkgroup="pie" gitUrl="https://github.com/HL7/carin-digital-insurance-card" url="http://hl7.org/fhir/us/insurance-card">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/insurance-card/2.0.0-202609-ballot" ciUrl="http://build.fhir.org/ig/HL7/carin-digital-insurance-card" defaultVersion="1.1.0" defaultWorkgroup="pie" gitUrl="https://github.com/HL7/carin-digital-insurance-card" url="http://hl7.org/fhir/us/insurance-card">
     <version code="current" url="http://build.fhir.org/ig/HL7/carin-digital-insurance-card"/>
+    <version code="2.0.0-ballot" url="http://hl7.org/fhir/us/insurance-card/2.0.0-202609-ballot"/>
     <version code="1.1.0" url="http://hl7.org/fhir/us/insurance-card/STU1.1"/>
     <version code="1.0.0" url="http://hl7.org/fhir/us/insurance-card/STU1"/>
-    <version code="0.1.0" url="http://hl7.org/fhir/us/insurance-card/2022Jan"/>
+    <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/insurance-card/2022Jan"/>
     <artifactPageExtension value="-definitions"/>
     <artifactPageExtension value="-examples"/>
     <artifactPageExtension value="-mappings"/>
@@ -12,6 +13,7 @@
     <artifact id="StructureDefinition/C4DIC-Barcode-extension" key="StructureDefinition-C4DIC-Barcode-extension" name="Barcode"/>
     <artifact id="StructureDefinition/C4DIC-BeneficiaryCostString-extension" key="StructureDefinition-C4DIC-BeneficiaryCostString-extension" name="Beneficiary Cost as String"/>
     <artifact deprecated="true" id="StructureDefinition/C4DIC-BeneficiaryCosts-extension" key="StructureDefinition-C4DIC-BeneficiaryCosts-extension" name="Beneficiary Costs"/>
+    <artifact id="StructureDefinition/benefit-limitation" key="StructureDefinition-benefit-limitation" name="Benefit Limitation Extension"/>
     <artifact id="CapabilityStatement/c4dic" key="CapabilityStatement-c4dic" name="C4DIC CapabilityStatement"/>
     <artifact id="ValueSet/C4DICContactTypeVS" key="ValueSet-C4DICContactTypeVS" name="C4DIC Contact Type"/>
     <artifact id="ValueSet/C4DICCopayTypeVS" key="ValueSet-C4DICCopayTypeVS" name="C4DIC Copay Type"/>
@@ -29,7 +31,10 @@
     <artifact id="StructureDefinition/C4DIC-CardIssueDate-extension" key="StructureDefinition-C4DIC-CardIssueDate-extension" name="Card Issue Date"/>
     <artifact id="StructureDefinition/C4DIC-ColorPalette-extension" key="StructureDefinition-C4DIC-ColorPalette-extension" name="Color Palette"/>
     <artifact id="Coverage/Example-Coverage1" key="Coverage-Example-Coverage1" name="Coverage Example 1"/>
+    <artifact id="Organization/ExampleIssuerOrg" key="Organization-ExampleIssuerOrg" name="Example Health Insurance Issuer"/>
+    <artifact id="InsurancePlan/SBCExampleHMO" key="InsurancePlan-SBCExampleHMO" name="Example SBC - Sample HMO Health Plan"/>
     <artifact id="Coverage/Example-Coverage-FSH" key="Coverage-Example-Coverage-FSH" name="Example-Coverage-FSH"/>
+    <artifact id="StructureDefinition/excluded-services" key="StructureDefinition-excluded-services" name="Excluded Services Extension"/>
     <artifact id="StructureDefinition/C4DIC-ForegroundColor-extension" key="StructureDefinition-C4DIC-ForegroundColor-extension" name="Foreground Color"/>
     <artifact id="StructureDefinition/C4DIC-HighlightColor-extension" key="StructureDefinition-C4DIC-HighlightColor-extension" name="Highlight Color"/>
     <artifact id="StructureDefinition/C4DIC-Logo-extension" key="StructureDefinition-C4DIC-Logo-extension" name="Logo"/>
@@ -38,20 +43,43 @@
     <artifact id="Organization/Example-PayerOrganization1" key="Organization-Example-PayerOrganization1" name="Payer Organization Example 1"/>
     <artifact id="StructureDefinition/C4DIC-PlanBeneficiaries-extension" key="StructureDefinition-C4DIC-PlanBeneficiaries-extension" name="Plan Beneficiaries"/>
     <artifact id="StructureDefinition/C4DIC-QRCode-extension" key="StructureDefinition-C4DIC-QRCode-extension" name="QR Code"/>
+    <artifact id="CodeSystem/sbc-benefit-category" key="CodeSystem-sbc-benefit-category" name="SBC Benefit Category Code System"/>
+    <artifact id="ValueSet/sbc-benefit-category" key="ValueSet-sbc-benefit-category" name="SBC Benefit Category Value Set"/>
+    <artifact id="StructureDefinition/sbc-insurance-plan" key="StructureDefinition-sbc-insurance-plan" name="SBC Insurance Plan Profile"/>
+    <artifact id="StructureDefinition/sbc-metadata" key="StructureDefinition-sbc-metadata" name="SBC Metadata Extension"/>
+    <artifact id="CodeSystem/sbc-plan-type" key="CodeSystem-sbc-plan-type" name="SBC Plan Type Code System"/>
+    <artifact id="ValueSet/sbc-plan-type" key="ValueSet-sbc-plan-type" name="SBC Plan Type Value Set"/>
     <artifact id="StructureDefinition/C4DIC-SupportingImage-extension" key="StructureDefinition-C4DIC-SupportingImage-extension" name="Supporting image"/>
     <page key="NA" name="(NA)"/>
     <page key="many" name="(many)"/>
     <page key="artifacts" name="Artifacts Summary"/>
+    <page key="Use_Case_Authorization" name="Authorization and Sharing"/>
     <page key="Authorization_Authentication_and_Registration" name="Authorization, Authentication and Registration"/>
     <page key="Background" name="Background"/>
+    <page key="Best_Practice" name="Best Practices"/>
     <page key="ImplementationGuide-hl7.fhir.us.insurance-card" name="CARIN Digital Insurance Card Implementation Guide"/>
     <page key="ChangeHistory" name="Change Notes"/>
+    <page key="Use_Case_IPS" name="Comparison with the International Patient Summary IG"/>
+    <page key="Use_Case_Consumer_Access_And_Exchange" name="Consumer Access and Exchange"/>
+    <page key="Use_Case_Consumer_Access" name="Consumer Access to their Insurance Card Data"/>
+    <page key="Use_Case_Distribution" name="Distribution of Insurance Card Data"/>
     <page key="downloads" name="Downloads"/>
     <page key="General_Guidance" name="General Guidance"/>
     <page key="index" name="Home"/>
+    <page key="narrative-conformance" name="Narrative Conformance"/>
+    <page key="Use_Case_Patient_Access_API" name="Patient Access API"/>
     <page key="Physical_Insurance_Card_Data_Elements" name="Physical Insurance Card Data Elements"/>
+    <page key="Use_Case_RTPBC" name="Real-Time Pharmacy Benefit Check"/>
+    <page key="Use_Case_Multiple_Coverages" name="Representing Multiple Types of Coverage for the Same Payer"/>
+    <page key="sbc-examples" name="SBC FHIR Examples"/>
+    <page key="sbc-profiles" name="SBC FHIR Profiles"/>
+    <page key="sbc-terminology" name="SBC FHIR Terminology"/>
+    <page key="sbc-mapping" name="SBC to FHIR Mapping"/>
     <page key="Search_Parameters" name="Search Parameters"/>
+    <page key="Use_Case_Summary_of_Benefits" name="Summary of Benefits and Coverage"/>
+    <page key="sbc" name="Summary of Benefits and Coverage (SBC) Integration"/>
+    <page key="Use_Case_Multiple_Cards" name="Support for Multiple Digital insurance Cards"/>
     <page key="toc" name="Table of Contents"/>
     <page deprecated="true" key="Terminology_Licensure" name="Terminology Licensure"/>
-    <page key="Use_Case" name="Use Case"/>
+    <page key="Use_Case" name="Use Cases"/>
 </specification>
