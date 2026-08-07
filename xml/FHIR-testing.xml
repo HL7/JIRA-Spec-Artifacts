@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/HL7/fhir-testing-ig" defaultVersion="current" defaultWorkgroup="fhir-i" gitUrl="https://github.com/HL7/fhir-testing-ig"  url="http://hl7.org/fhir/uv/testing">
+<version code="current" url="https://build.fhir.org/ig/HL7/fhir-testing-ig"/>
+<version code="0.1.0-snapshot1" url="http://hl7.org/fhir/uv/testing/0.1.0-snapshot1"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="CodeSystem/assert-direction-codes" key="CodeSystem-assert-direction-codes" name="Assertion Direction Type"/>
+<artifact id="ValueSet/assert-direction-codes" key="ValueSet-assert-direction-codes" name="Assertion Direction Type Value Set"/>
+<artifact id="CodeSystem/assert-manual-completion-codes" key="CodeSystem-assert-manual-completion-codes" name="Assertion Manual Completion Type"/>
+<artifact id="ValueSet/assert-manual-completion-codes" key="ValueSet-assert-manual-completion-codes" name="Assertion Manual Completion Type Value Set"/>
+<artifact id="CodeSystem/assert-operator-codes" key="CodeSystem-assert-operator-codes" name="Assertion Operator Type"/>
+<artifact id="ValueSet/assert-operator-codes" key="ValueSet-assert-operator-codes" name="Assertion Operator Type Value Set"/>
+<artifact id="CodeSystem/assert-response-code-types" key="CodeSystem-assert-response-code-types" name="Assertion Response Types"/>
+<artifact id="ValueSet/assert-response-code-types" key="ValueSet-assert-response-code-types" name="Assertion Response Types Value Set"/>
+<artifact id="TestPlan/example" key="TestPlan-example" name="Example Test Plan"/>
+<artifact id="CodeSystem/testplan-counttype" key="CodeSystem-testplan-counttype" name="Inventory Count Type"/>
+<artifact id="ValueSet/testplan-counttype" key="ValueSet-testplan-counttype" name="Inventory Count Type Value Set"/>
+<artifact id="TestScript/testscript-example-multisystem" key="TestScript-testscript-example-multisystem" name="Multisystem Test Script"/>
+<artifact id="StructureDefinition/shareabletestscript" key="StructureDefinition-shareabletestscript" name="Shareable Test Script"/>
+<artifact id="TestScript/2014-02-washington-ts" key="TestScript-2014-02-washington-ts" name="Terminology Connectathon #1 Test Script"/>
+<artifact id="TestPlan/tx-example" key="TestPlan-tx-example" name="Terminology Ecosystem Test Plan"/>
+<artifact id="StructureDefinition/TestPlan" key="StructureDefinition-TestPlan" name="Test Plan"/>
+<artifact id="CodeSystem/testplan-assertion-type" key="CodeSystem-testplan-assertion-type" name="Test Plan Assertion Type"/>
+<artifact id="ValueSet/testplan-assertion-type" key="ValueSet-testplan-assertion-type" name="Test Plan Assertion Type ValueSet"/>
+<artifact id="CodeSystem/testplan-script-language" key="CodeSystem-testplan-script-language" name="Test Plan Script Language"/>
+<artifact id="ValueSet/testplan-script-language" key="ValueSet-testplan-script-language" name="Test Plan Script Language Value Set"/>
+<artifact id="CodeSystem/testplan-status" key="CodeSystem-testplan-status" name="Test Plan Status"/>
+<artifact id="ValueSet/testplan-status" key="ValueSet-testplan-status" name="Test Plan Status Value Set"/>
+<artifact id="StructureDefinition/TestReport" key="StructureDefinition-TestReport" name="Test Report"/>
+<artifact id="CodeSystem/report-action-result-codes" key="CodeSystem-report-action-result-codes" name="Test Report Action Result"/>
+<artifact id="ValueSet/report-action-result-codes" key="ValueSet-report-action-result-codes" name="Test Report Action Result Value Set"/>
+<artifact id="CodeSystem/report-participant-type" key="CodeSystem-report-participant-type" name="Test Report Participant Type"/>
+<artifact id="ValueSet/report-participant-type" key="ValueSet-report-participant-type" name="Test Report Participant Type Value Set"/>
+<artifact id="CodeSystem/report-result-codes" key="CodeSystem-report-result-codes" name="Test Report Result"/>
+<artifact id="ValueSet/report-result-codes" key="ValueSet-report-result-codes" name="Test Report Result Value Set"/>
+<artifact id="CodeSystem/report-status-codes" key="CodeSystem-report-status-codes" name="Test Report Status"/>
+<artifact id="ValueSet/report-status-codes" key="ValueSet-report-status-codes" name="Test Report Status Value Set"/>
+<artifact id="StructureDefinition/TestScript" key="StructureDefinition-TestScript" name="Test Script"/>
+<artifact id="ValueSet/testscript-operation-codes" key="ValueSet-testscript-operation-codes" name="Test Script Operation Code Value Set"/>
+<artifact id="CodeSystem/http-operations" key="CodeSystem-http-operations" name="Test Script Request Method Code"/>
+<artifact id="ValueSet/http-operations" key="ValueSet-http-operations" name="Test Script Request Method Code Value Set"/>
+<artifact id="CodeSystem/testscript-scope-conformance-codes" key="CodeSystem-testscript-scope-conformance-codes" name="Test Script Scope Conformance Type"/>
+<artifact id="ValueSet/testscript-scope-conformance-codes" key="ValueSet-testscript-scope-conformance-codes" name="Test Script Scope Conformance Type Value Set"/>
+<artifact id="CodeSystem/testscript-scope-phase-codes" key="CodeSystem-testscript-scope-phase-codes" name="Test Script Scope Phase Type"/>
+<artifact id="ValueSet/testscript-scope-phase-codes" key="ValueSet-testscript-scope-phase-codes" name="Test Script Scope Phase Type Value Set"/>
+<artifact id="SearchParameter/TestPlan-context-quantity" key="SearchParameter-TestPlan-context-quantity" name="TestPlanContextQuantitySearchParam"/>
+<artifact id="SearchParameter/TestPlan-context" key="SearchParameter-TestPlan-context" name="TestPlanContextSearchParam"/>
+<artifact id="SearchParameter/TestPlan-context-type-quantity" key="SearchParameter-TestPlan-context-type-quantity" name="TestPlanContextTypeQuantitySearchParam"/>
+<artifact id="SearchParameter/TestPlan-context-type" key="SearchParameter-TestPlan-context-type" name="TestPlanContextTypeSearchParam"/>
+<artifact id="SearchParameter/TestPlan-context-type-value" key="SearchParameter-TestPlan-context-type-value" name="TestPlanContextTypeValueSearchParam"/>
+<artifact id="SearchParameter/TestPlan-date" key="SearchParameter-TestPlan-date" name="TestPlanDateSearchParam"/>
+<artifact id="SearchParameter/TestPlan-dependency" key="SearchParameter-TestPlan-dependency" name="TestPlanDependencySearchParam"/>
+<artifact id="SearchParameter/TestPlan-description" key="SearchParameter-TestPlan-description" name="TestPlanDescriptionSearchParam"/>
+<artifact id="SearchParameter/TestPlan-experimental" key="SearchParameter-TestPlan-experimental" name="TestPlanExperimentalSearchParam"/>
+<artifact id="SearchParameter/TestPlan-identifier" key="SearchParameter-TestPlan-identifier" name="TestPlanIdentifierSearchParam"/>
+<artifact id="SearchParameter/TestPlan-jurisdiction" key="SearchParameter-TestPlan-jurisdiction" name="TestPlanJurisdictionSearchParam"/>
+<artifact id="SearchParameter/TestPlan-name" key="SearchParameter-TestPlan-name" name="TestPlanNameSearchParam"/>
+<artifact id="SearchParameter/TestPlan-publisher" key="SearchParameter-TestPlan-publisher" name="TestPlanPublisherSearchParam"/>
+<artifact id="SearchParameter/TestPlan-runner" key="SearchParameter-TestPlan-runner" name="TestPlanRunnerSearchParam"/>
+<artifact id="SearchParameter/TestPlan-scope" key="SearchParameter-TestPlan-scope" name="TestPlanScopeSearchParam"/>
+<artifact id="SearchParameter/TestPlan-status" key="SearchParameter-TestPlan-status" name="TestPlanStatusSearchParam"/>
+<artifact id="SearchParameter/TestPlan-title" key="SearchParameter-TestPlan-title" name="TestPlanTitleSearchParam"/>
+<artifact id="SearchParameter/TestPlan-url" key="SearchParameter-TestPlan-url" name="TestPlanUrlSearchParam"/>
+<artifact id="SearchParameter/TestPlan-version" key="SearchParameter-TestPlan-version" name="TestPlanVersionSearchParam"/>
+<artifact id="TestReport/testreport-example" key="TestReport-testreport-example" name="TestReport Example"/>
+<artifact id="SearchParameter/TestReport-identifier" key="SearchParameter-TestReport-identifier" name="TestReportIdentifierSearchParam"/>
+<artifact id="SearchParameter/TestReport-issued" key="SearchParameter-TestReport-issued" name="TestReportIssuedSearchParam"/>
+<artifact id="SearchParameter/TestReport-participant" key="SearchParameter-TestReport-participant" name="TestReportParticipantSearchParam"/>
+<artifact id="SearchParameter/TestReport-result" key="SearchParameter-TestReport-result" name="TestReportResultSearchParam"/>
+<artifact id="SearchParameter/TestReport-status" key="SearchParameter-TestReport-status" name="TestReportStatusSearchParam"/>
+<artifact id="SearchParameter/TestReport-tester" key="SearchParameter-TestReport-tester" name="TestReportTesterSearchParam"/>
+<artifact id="SearchParameter/TestReport-testscript" key="SearchParameter-TestReport-testscript" name="TestReportTestscriptSearchParam"/>
+<artifact id="TestScript/testscript-example" key="TestScript-testscript-example" name="TestScript Example"/>
+<artifact id="TestScript/testscript-example-effective-period" key="TestScript-testscript-example-effective-period" name="TestScript Example Effective Period Test"/>
+<artifact id="TestScript/testscript-example-history" key="TestScript-testscript-example-history" name="TestScript Example History"/>
+<artifact id="TestScript/testscript-example-readcommon" key="TestScript-testscript-example-readcommon" name="TestScript Example Read Common"/>
+<artifact id="TestScript/testscript-example-readtest" key="TestScript-testscript-example-readtest" name="TestScript Example Read Test"/>
+<artifact id="TestScript/testscript-example-search" key="TestScript-testscript-example-search" name="TestScript Example Search"/>
+<artifact id="TestScript/testscript-example-update" key="TestScript-testscript-example-update" name="TestScript Example Update"/>
+<artifact id="SearchParameter/TestScript-artifact" key="SearchParameter-TestScript-artifact" name="TestScriptArtifactSearchParam"/>
+<artifact id="SearchParameter/TestScript-conformance" key="SearchParameter-TestScript-conformance" name="TestScriptConformanceSearchParam"/>
+<artifact id="SearchParameter/TestScript-context-quantity" key="SearchParameter-TestScript-context-quantity" name="TestScriptContextQuantitySearchParam"/>
+<artifact id="SearchParameter/TestScript-context" key="SearchParameter-TestScript-context" name="TestScriptContextSearchParam"/>
+<artifact id="SearchParameter/TestScript-context-type-quantity" key="SearchParameter-TestScript-context-type-quantity" name="TestScriptContextTypeQuantitySearchParam"/>
+<artifact id="SearchParameter/TestScript-context-type" key="SearchParameter-TestScript-context-type" name="TestScriptContextTypeSearchParam"/>
+<artifact id="SearchParameter/TestScript-context-type-value" key="SearchParameter-TestScript-context-type-value" name="TestScriptContextTypeValueSearchParam"/>
+<artifact id="SearchParameter/TestScript-date" key="SearchParameter-TestScript-date" name="TestScriptDateSearchParam"/>
+<artifact id="SearchParameter/TestScript-description" key="SearchParameter-TestScript-description" name="TestScriptDescriptionSearchParam"/>
+<artifact id="SearchParameter/TestScript-experimental" key="SearchParameter-TestScript-experimental" name="TestScriptExperimentalSearchParam"/>
+<artifact id="SearchParameter/TestScript-identifier" key="SearchParameter-TestScript-identifier" name="TestScriptIdentifierSearchParam"/>
+<artifact id="SearchParameter/TestScript-jurisdiction" key="SearchParameter-TestScript-jurisdiction" name="TestScriptJurisdictionSearchParam"/>
+<artifact id="SearchParameter/TestScript-name" key="SearchParameter-TestScript-name" name="TestScriptNameSearchParam"/>
+<artifact id="SearchParameter/TestScript-phase" key="SearchParameter-TestScript-phase" name="TestScriptPhaseSearchParam"/>
+<artifact id="SearchParameter/TestScript-publisher" key="SearchParameter-TestScript-publisher" name="TestScriptPublisherSearchParam"/>
+<artifact id="SearchParameter/TestScript-scope-artifact-conformance" key="SearchParameter-TestScript-scope-artifact-conformance" name="TestScriptScopeArtifactConformanceSearchParam"/>
+<artifact id="SearchParameter/TestScript-scope-artifact-phase" key="SearchParameter-TestScript-scope-artifact-phase" name="TestScriptScopeArtifactPhaseSearchParam"/>
+<artifact id="SearchParameter/TestScript-status" key="SearchParameter-TestScript-status" name="TestScriptStatusSearchParam"/>
+<artifact id="SearchParameter/TestScript-testscript-capability" key="SearchParameter-TestScript-testscript-capability" name="TestScriptTestscriptCapabilitySearchParam"/>
+<artifact id="SearchParameter/TestScript-title" key="SearchParameter-TestScript-title" name="TestScriptTitleSearchParam"/>
+<artifact id="SearchParameter/TestScript-url" key="SearchParameter-TestScript-url" name="TestScriptUrlSearchParam"/>
+<artifact id="SearchParameter/TestScript-version" key="SearchParameter-TestScript-version" name="TestScriptVersionSearchParam"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="index" name="Home Page"/>
+<page key="toc" name="Table of Contents"/>
+<page key="testing" name="Using Test Script"/>
+</specification>
