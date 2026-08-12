@@ -24,9 +24,9 @@ This repo manages JIRA specification artifact XML files for HL7 FHIR IGs. PRs ar
 **Diagnostic question to ask:** *"Will you potentially make a new release based on this version (e.g., a technical correction), or will all future fixes be in the next official release?"* If the answer is "no, all future work is in the next release," deprecate it.
 
 **Common failure modes caught:**
-- PR ships with a new official release but the ballot version that preceded it is still un-deprecated (PRs #1396, #1404, #1339, #1247, #1244, #1357, #1273, #1417, etc.)
-- PR deprecates all prior releases preemptively, including the only active release (#1338 — rejected)
-- Old official releases left active when a newer one is already out (#1347, #1279, #1249, #1239)
+- PR ships with a new official release but the ballot version that preceded it is still un-deprecated
+- PR deprecates all prior releases preemptively, including the only active release
+- Old official releases left active when a newer one is already out
 
 ---
 
@@ -35,8 +35,8 @@ This repo manages JIRA specification artifact XML files for HL7 FHIR IGs. PRs ar
 **The rule:** `defaultVersion` should point to the most recently published official release, never to a ballot or pre-release version if an official release exists.
 
 **Common failure modes:**
-- Ballot release is left as (or promoted to) `defaultVersion` (#1301, #1396)
-- Default version not updated after a new official release is added (#1405, #1424)
+- Ballot release is left as (or promoted to) `defaultVersion`
+- Default version not updated after a new official release is added
 
 ---
 
@@ -52,9 +52,9 @@ This repo manages JIRA specification artifact XML files for HL7 FHIR IGs. PRs ar
 | Pre-publication snapshot | `1.0.0-snapshot` |
 | CI build | no version suffix; reflected only in the `ciUrl` attribute |
 
-**Key invariant:** You should not jump from `2.0.0-ballot` to publishing `2.1.0` without first publishing `2.0.0`. If a `2.0.0` was never published, the next ballot is `2.0.0-ballot2`. (#1300, #1301)
+**Key invariant:** You should not jump from `2.0.0-ballot` to publishing `2.1.0` without first publishing `2.0.0`. If a `2.0.0` was never published, the next ballot is `2.0.0-ballot2`.
 
-**Ballot version must use the correct HL7 season segment** in the URL (e.g., `2025Sep`, not just a year). (#1301, #1300)
+**Ballot version must use the correct HL7 season segment** in the URL (e.g., `2025Sep`, not just a year).
 
 ---
 
@@ -98,6 +98,15 @@ When a brand-new spec XML file is added:
 ### 7. Do Not Commit the Workgroups File
 
 The shared `workgroups` file, or any other file that is not an update to a SPECS file or a specification file should never appear in a PR that is modifying a specific IG's spec. If it shows up in the diff, it must be removed before merge. (#1432)
+
+### 8. Version urls should follow naming conventions
+
+- The "current" version must always look like `http://build.fhir.org/ig/org/project` where the `org/project` parts are consistent with the organization and project of the Git url
+- All other versions must start with the specification url (e.g. `http://hl7.org/fhir/realm/project/`) with the remainder of the URL varying
+-- If the version is an official release (no suffix on the version number), the tail of the version url is the version.  E.g. `<version code="2.2.1" url="http://hl7.org/fhir/realm/project/2.2.1"/>`
+-- If the version is a ballot or snapshot release (there's a `-ballot` or `-snapshot` in the version number), the tail of the suffix is the same as the version, but with the year and month injected.  E.g. `<version code="1.1.0-ballot2" url="https://hl7.org/fhir/realm/project/1.0.0-202605-ballot2">`
+--- Historical versions (those prior September, 2026) followed a different syntax of `https://hl7.org/fhir/realm/project/yyyyMMM` or `https://hl7.org/fhir/realm/project/STU2.1-preview`
+
 
 ---
 
