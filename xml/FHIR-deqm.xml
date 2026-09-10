@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/deqm/2026May" ciUrl="https://build.fhir.org/ig/HL7/davinci-deqm" defaultVersion="1.0.0-ballot" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/davinci-deqm" url="http://hl7.org/fhir/uv/deqm">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/deqm/2026May" ciUrl="https://build.fhir.org/ig/HL7/davinci-deqm" defaultVersion="1.0.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/davinci-deqm" url="http://hl7.org/fhir/uv/deqm">
 <version code="current" url="https://build.fhir.org/ig/HL7/davinci-deqm"/>
-<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/deqm/2026May"/>
+<version code="1.0.0" url="http://hl7.org/fhir/uv/deqm/1.0.0"/>
+<version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/deqm/2026May"/>
 <version code="5.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2024Sep"/>
 <version code="4.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2023Jan"/>
 <version code="2.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2020Sep"/>
 <version code="2.0.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/STU2"/>
 <version code="1.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2020Feb"/>
-<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/STU1"/>
 <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2019May"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2018Sep"/>
 <version code="0.1" deprecated="true"/>
@@ -18,7 +18,7 @@
 <artifact id="MeasureReport/sde-example" key="MeasureReport-sde-example" name="Additional Supplemental Data Example"/>
 <artifact id="Bundle/sde-example-artifact-bundle" key="Bundle-sde-example-artifact-bundle" name="Additional Supplemental Data Example - Artifact Bundle"/>
 <artifact id="Bundle/sde-example-patient-data-bundle" key="Bundle-sde-example-patient-data-bundle" name="Additional Supplemental Data Example - Patient Bundle"/>
-<artifact id="OperationDefinition/bulk-submit-data" key="OperationDefinition-bulk-submit-data" name="Bulk Submit Data"/>
+<artifact deprecated="true" id="OperationDefinition/bulk-submit-data" key="OperationDefinition-bulk-submit-data" name="Bulk Submit Data"/>
 <artifact deprecated="true" id="CodeSystem/care-gap-reason" key="CodeSystem-care-gap-reason" name="Care Gap Reasons Code System"/>
 <artifact deprecated="true" id="ValueSet/care-gap-reason" key="ValueSet-care-gap-reason" name="Care Gap Reasons Value Set"/>
 <artifact deprecated="true" id="CodeSystem/care-gap-remark" key="CodeSystem-care-gap-remark" name="Care Gap Remark Code System"/>
@@ -26,7 +26,7 @@
 <artifact id="OperationDefinition/care-gaps" key="OperationDefinition-care-gaps" name="Care Gaps Operation"/>
 <artifact id="Parameters/col-collect-obs" key="Parameters-col-collect-obs" name="Col Collect Obs"/>
 <artifact deprecated="true" id="Parameters/col-submit-collect-obs" key="Parameters-col-submit-collect-obs" name="Col Submit Collect Obs"/>
-<artifact id="Parameters/col-submit-obs" key="Parameters-col-submit-obs" name="Col Submit Obs"/>
+<artifact id="Bundle/col-submit-obs" key="Parameters-col-submit-obs" name="Col Submit Obs"/>
 <artifact id="OperationDefinition/collect-data" key="OperationDefinition-collect-data" name="Collect Data"/>
 <artifact id="Condition/nhsn-iip-con101" key="Condition-nhsn-iip-con101" name="Condition nhsn-iip-con101"/>
 <artifact id="CapabilityStatement/consumer-client" key="CapabilityStatement-consumer-client" name="Consumer Client CapabilityStatement"/>
@@ -65,7 +65,7 @@
 <artifact deprecated="true" id="MedicationAdministration/medicationadministration01" key="MedicationAdministration-medicationadministration01" name="DEQM MedicationAdministration Example"/>
 <artifact deprecated="true" id="StructureDefinition/medicationadministration-deqm" key="StructureDefinition-medicationadministration-deqm" name="DEQM MedicationAdministration Profile"/>
 <artifact deprecated="true" id="StructureDefinition/organization-deqm" key="StructureDefinition-organization-deqm" name="DEQM Organization Profile"/>
-<artifact id="StructureDefinition/deqm-populationDescription" key="StructureDefinition-extension-populationDescription" name="DEQM Population Description"/>
+<artifact deprecated="true" id="StructureDefinition/deqm-populationDescription" key="StructureDefinition-extension-populationDescription" name="DEQM Population Description"/>
 <artifact deprecated="true" id="StructureDefinition/extension-populationReference" key="StructureDefinition-extension-populationReference" name="DEQM Population Reference Extension"/>
 <artifact deprecated="true" id="StructureDefinition/practitioner-deqm" key="StructureDefinition-practitioner-deqm" name="DEQM Practitioner Profile"/>
 <artifact id="StructureDefinition/deqm-reasonDetail" key="StructureDefinition-deqm-reasonDetail" name="DEQM Reason Detail"/>
@@ -100,38 +100,45 @@
 <artifact deprecated="true" key="ExampleScenario" name="ExampleScenario"/>
 <artifact id="Bundle/single-gaps-closed-indv-report01" key="Bundle-single-gaps-closed-indv-report01" name="Gaps Bundle Closed Individual MeasureReport01"/>
 <artifact id="Bundle/single-gaps-closed-indv-report02" key="Bundle-single-gaps-closed-indv-report02" name="Gaps Bundle Closed Individual MeasureReport02"/>
+<artifact id="Bundle/single-gaps-open-indv-report02" key="Bundle-single-gaps-open-indv-report02" name="Gaps Bundle Open Individual MeasureReport02"/>
 <artifact id="Bundle/single-gaps-open-indv-report01" key="Bundle-single-gaps-open-indv-report01" name="Gaps Bundle Open Individual MeasureReports"/>
 <artifact id="Composition/gaps-composition01" key="Composition-gaps-composition01" name="Gaps Composition01"/>
 <artifact id="Composition/gaps-composition02" key="Composition-gaps-composition02" name="Gaps Composition02"/>
 <artifact id="Composition/gaps-composition03" key="Composition-gaps-composition03" name="Gaps Composition03"/>
+<artifact id="Composition/gaps-composition04" key="Composition-gaps-composition04" name="Gaps Composition04"/>
 <artifact id="DetectedIssue/gaps-detectedissue01" key="DetectedIssue-gaps-detectedissue01" name="Gaps DetectedIssue01"/>
 <artifact id="DetectedIssue/gaps-detectedissue02" key="DetectedIssue-gaps-detectedissue02" name="Gaps DetectedIssue02"/>
 <artifact id="DetectedIssue/gaps-detectedissue03" key="DetectedIssue-gaps-detectedissue03" name="Gaps DetectedIssue03"/>
 <artifact id="DetectedIssue/gaps-detectedissue04" key="DetectedIssue-gaps-detectedissue04" name="Gaps DetectedIssue04"/>
 <artifact id="DetectedIssue/gaps-detectedissue05" key="DetectedIssue-gaps-detectedissue05" name="Gaps DetectedIssue05"/>
+<artifact id="DetectedIssue/gaps-detectedissue06" key="DetectedIssue-gaps-detectedissue06" name="Gaps DetectedIssue06"/>
+<artifact id="Encounter/gaps-encounter04" key="Encounter-gaps-encounter04" name="Gaps Encounter 04"/>
 <artifact id="Encounter/gaps-encounter01" key="Encounter-gaps-encounter01" name="Gaps Encounter01"/>
 <artifact id="Encounter/gaps-encounter02" key="Encounter-gaps-encounter02" name="Gaps Encounter02"/>
 <artifact id="Encounter/gaps-encounter03" key="Encounter-gaps-encounter03" name="Gaps Encounter03"/>
 <artifact id="Group/gaps-subject-group01" key="Group-gaps-subject-group01" name="Gaps Group01 subject"/>
 <artifact id="CapabilityStatement/gic-client" key="CapabilityStatement-gic-client" name="Gaps In Care Client CapabilityStatement"/>
 <artifact id="CapabilityStatement/gic-server" key="CapabilityStatement-gic-server" name="Gaps In Care Server CapabilityStatement"/>
+<artifact id="MeasureReport/gaps-indv-measurereport05" key="MeasureReport-gaps-indv-measurereport05" name="Gaps Individual Measure Report 05"/>
 <artifact id="MeasureReport/gaps-indv-measurereport01" key="MeasureReport-gaps-indv-measurereport01" name="Gaps Individual MeasureReport01"/>
 <artifact id="MeasureReport/gaps-indv-measurereport02" key="MeasureReport-gaps-indv-measurereport02" name="Gaps Individual MeasureReport02"/>
 <artifact id="MeasureReport/gaps-indv-measurereport03" key="MeasureReport-gaps-indv-measurereport03" name="Gaps Individual MeasureReport03"/>
 <artifact id="MeasureReport/gaps-indv-measurereport04" key="MeasureReport-gaps-indv-measurereport04" name="Gaps Individual MeasureReport04"/>
 <artifact id="Parameters/multiple-gaps-indv-report01" key="Parameters-multiple-gaps-indv-report01" name="Gaps Multiple Parameters Individual MeasureReports01"/>
 <artifact id="Parameters/multiple-gaps-indv-report02" key="Parameters-multiple-gaps-indv-report02" name="Gaps Multiple Parameters Individual MeasureReports02"/>
-<artifact id="Bundle/non-document-gaps-in-care" key="Bundle-non-document-gaps-in-care" name="Gaps Non-Document Gaps In Care Report"/>
+<artifact deprecated="true" id="Bundle/non-document-gaps-in-care" key="Bundle-non-document-gaps-in-care" name="Gaps Non-Document Gaps In Care Report"/>
 <artifact id="Parameters/single-gaps-closed-indv-report01" key="Parameters-single-gaps-closed-indv-report01" name="Gaps Parameters Closed Individual MeasureReport01"/>
 <artifact id="Parameters/single-gaps-closed-indv-report02" key="Parameters-single-gaps-closed-indv-report02" name="Gaps Parameters Closed Individual MeasureReport02"/>
 <artifact id="Parameters/single-gaps-open-indv-report01" key="Parameters-single-gaps-open-indv-report01" name="Gaps Parameters Open Individual MeasureReports"/>
 <artifact id="Patient/gaps-patient01" key="Patient-gaps-patient01" name="Gaps Patient01"/>
 <artifact id="Patient/gaps-patient02" key="Patient-gaps-patient02" name="Gaps Patient02"/>
+<artifact id="Patient/gaps-patient04" key="Patient-gaps-patient04" name="Gaps Patient04"/>
 <artifact id="Procedure/gaps-procedure01" key="Procedure-gaps-procedure01" name="Gaps Procedure01"/>
 <artifact id="Procedure/gaps-procedure02" key="Procedure-gaps-procedure02" name="Gaps Procedure02"/>
 <artifact id="MeasureReport/ratio-measurereport01" key="MeasureReport-ratio-measurereport01" name="Gaps Ratio MeasureReport01"/>
 <artifact id="Organization/gaps-organization-reportingvendor" key="Organization-gaps-organization-reportingvendor" name="Gaps Reporting Vendor Organization"/>
 <artifact id="Group/group01" key="Group-group01" name="Group01"/>
+<artifact id="Group/group02" key="Group-group02" name="Group02"/>
 <artifact id="GuidanceResponse/guidanceresponse01" key="GuidanceResponse-guidanceresponse01" name="Guidance Response Example"/>
 <artifact id="Measure/attestation-boolean-example" key="Measure-attestation-boolean-example" name="Immunization Registry Reporting"/>
 <artifact id="MeasureReport/indv-measurereport-patient-level-linear" key="MeasureReport-indv-measurereport-patient-level-linear" name="Indv MeasureReport - Patient-level linear"/>
@@ -168,11 +175,12 @@
 <artifact id="MeasureReport/summ-contained-supplemental" key="MeasureReport-summ-contained-supplemental" name="Measurereport with contained data"/>
 <artifact id="MedicationRequest/nhsn-iip-add101" key="MedicationRequest-nhsn-iip-add101" name="MedicationRequest nhsn-iip-add101"/>
 <artifact id="MedicationRequest/nhsn-iip-add101-10" key="MedicationRequest-nhsn-iip-add101-10" name="MedicationRequest nhsn-iip-add101-10"/>
-<artifact id="Parameters/mrp-submit-obs" key="Parameters-mrp-submit-obs" name="Mrp Submit Obs"/>
-<artifact id="Parameters/mrp-submit-task" key="Parameters-mrp-submit-task" name="Mrp Submit Task"/>
+<artifact id="Bundle/mrp-submit-obs" key="Parameters-mrp-submit-obs" name="Mrp Submit Obs"/>
+<artifact id="Bundle/mrp-submit-task" key="Parameters-mrp-submit-task" name="Mrp Submit Task"/>
 <artifact deprecated="true" id="MeasureReport/summary-multirate-measurereport" key="MeasureReport-summary-multirate-measurereport" name="Multi-rate Summary Measure Report Example"/>
 <artifact id="Bundle/multiple-indv-mrp-obs-report" key="Bundle-multiple-indv-mrp-obs-report" name="Multiple Indv Mrp Obs Report"/>
 <artifact id="Bundle/multiple-indv-mrp-task-report" key="Bundle-multiple-indv-mrp-task-report" name="Multiple Indv Mrp Task Report"/>
+<artifact id="Parameters/multi-measure-invited-obs" key="Parameters-multi-measure-invited-obs" name="Multiple Measure Invited Obs"/>
 <artifact id="Bundle/multiple-summ-report" key="Bundle-multiple-summ-report" name="Multiple Summ Report"/>
 <artifact deprecated="true" id="StructureDefinition/cqf-numeratorMembership" key="StructureDefinition-cqf-numeratorMembership" name="Numerator Membership"/>
 <artifact id="Observation/observation01" key="Observation-observation01" name="Observation01"/>
@@ -205,7 +213,7 @@
 <artifact id="Bundle/single-indv-vte-report-option1" key="Bundle-single-indv-vte-report-option1" name="Single Indv Vte Report Option 1"/>
 <artifact id="Bundle/single-indv-vte-report-option7" key="Bundle-single-indv-vte-report-option7" name="Single Indv Vte Report Option 7"/>
 <artifact id="MeasureReport/subjectlist-measurereport01" key="MeasureReport-subjectlist-measurereport01" name="Subject List MeasureReport01"/>
-<artifact id="OperationDefinition/submit-data" key="OperationDefinition-submit-data" name="Submit Data"/>
+<artifact deprecated="true" id="OperationDefinition/submit-data" key="OperationDefinition-submit-data" name="Submit Data"/>
 <artifact deprecated="true" id="MeasureReport/summ-attestation" key="MeasureReport-summ-attestation" name="Summ Attestation"/>
 <artifact id="MeasureReport/summary-measurereport-patient-level-linear" key="MeasureReport-summary-measurereport-patient-level-linear" name="Summ MeasureReport - Patient-level linear"/>
 <artifact id="MeasureReport/summary-measurereport-weighted-composite" key="MeasureReport-summary-measurereport-weighted-composite" name="Summ MeasureReport - Weighted Composite"/>
@@ -227,6 +235,7 @@
 <page key="capstatements" name="Capability Statements"/>
 <page key="change-notes" name="Change Notes"/>
 <page key="col" name="Colorectal Cancer Screening (COL)"/>
+<page key="conformance" name="Conformance Index"/>
 <page key="datax" name="Data Exchange"/>
 <page key="downloads" name="Downloads"/>
 <page key="usecases" name="Example Use Cases"/>
