@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/ebm-incubator/2026Sep" ciUrl="https://build.fhir.org/ig/HL7/ebm-incubator" defaultVersion="1.0.0-ballot" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/ebm-incubator" url="http://hl7.org/fhir/uv/ebm-incubator">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/HL7/ebm-incubator" defaultVersion="1.0.0-snapshot" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/ebm-incubator" url="http://hl7.org/fhir/uv/ebm-incubator">
 <version code="current" url="https://build.fhir.org/ig/HL7/ebm-incubator"/>
-<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/ebm-incubator/2026Sep"/>
+<version code="1.0.0-snapshot" url="http://hl7.org/fhir/uv/ebm-incubator/1.0.0-202609-snapshot"/>
+<version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/ebm-incubator/2026Sep"/>  
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
@@ -40,7 +41,7 @@
 <artifact deprecated="true" id="Citation/179597" key="Citation-179597" name="29694275 A regressive formula of perversity: Wertham and the women of comics."/>
 <artifact deprecated="true" id="Citation/179596" key="Citation-179596" name="29694302 Introduction: &#34;Suffering Sappho!&#34;: Lesbian content and queer female characters in comics."/>
 <artifact deprecated="true" id="Citation/179595" key="Citation-179595" name="30467172 Finding my inner Wonder Woman."/>
-<artifact id="Citation/example-for-parachute-rct" key="Citation-306957" name="30545967 Parachute use to prevent death and major trauma when jumping from aircraft: randomized controlled trial."/>
+<artifact id="PublicationRecord/example-for-parachute-rct" key="Citation-306957" name="30545967 Parachute use to prevent death and major trauma when jumping from aircraft: randomized controlled trial."/>
 <artifact deprecated="true" id="Citation/179594" key="Citation-179594" name="34871555 What Can Wonder Woman Teach Radiologists?"/>
 <artifact deprecated="true" id="Citation/33399" key="Citation-33399" name="35243488 Bariatric surgery and cardiovascular disease: a systematic review and meta-analysis."/>
 <artifact deprecated="true" id="Citation/179605" key="Citation-179605" name="36491989 Another Georgia Wonder Woman: She Does More Astounding Tricks Than Did Lula Hurst."/>
@@ -115,32 +116,34 @@
 <artifact deprecated="true" id="StructureDefinition/characteristic-timing" key="StructureDefinition-characteristic-timing" name="CharacteristicTiming"/>
 <artifact deprecated="true" id="StructureDefinition/characteristic-value-expression" key="StructureDefinition-characteristic-value-expression" name="CharacteristicValueExpression"/>
 <artifact deprecated="true" id="StructureDefinition/characteristic-value-uri" key="StructureDefinition-characteristic-value-uri" name="CharacteristicValueUri"/>
-<artifact id="StructureDefinition/Citation" key="StructureDefinition-Citation" name="Citation"/>
+<artifact id="StructureDefinition/PublicationRecord" key="StructureDefinition-Citation" name="PublicationRecord"/>
+<artifact id="ValueSet/publicationrecord-status-type" key="ValueSet-citation-status-type" name="PublicationRecord Status Type"/>
+<artifact id="CodeSystem/publicationrecord-status-type" key="CodeSystem-citation-status-type" name="PublicationRecord Status Type CodeSystem"/>
 <artifact deprecated="true" id="Citation/247416" key="Citation-247416" name="Citation for Composition: ComparativeEvidenceReport: Association of Bariatric Surgery vs Medical Obesity Treatment With Long-term Medical Complications and Obesity-Related Comorbidities (2018 Norwegian Cohort)"/>
 <artifact deprecated="true" id="Citation/58" key="Citation-58" name="Citation for FEvIR Evidence 55: 14-day mortality remdesivir vs placebo meta-analysis (ACTT-1, Wang et al, WHO SOLIDARITY)"/>
 <artifact deprecated="true" id="Citation/7638" key="Citation-7638" name="Citation for FEvIR Evidence 7637: Critically appraised summary of primary outcome of multi-platform RCT of anticoagulation for non-critically ill COVID-19"/>
-<artifact id="List/Citation-examples" key="List-Citation-examples" name="Citation-examples"/>
-<artifact id="List/Citation-operations" key="List-Citation-operations" name="Citation-operations"/>
-<artifact id="SearchParameter/Citation-classification-type" key="SearchParameter-Citation-classification-type" name="CitationClassification-typeSearchParam"/>
-<artifact id="SearchParameter/Citation-classification" key="SearchParameter-Citation-classification" name="CitationClassificationSearchParam"/>
-<artifact id="SearchParameter/Citation-classifier" key="SearchParameter-Citation-classifier" name="CitationClassifierSearchParam"/>
-<artifact id="SearchParameter/Citation-context-quantity" key="SearchParameter-Citation-context-quantity" name="CitationContext-quantitySearchParam"/>
-<artifact id="SearchParameter/Citation-context-type-quantity" key="SearchParameter-Citation-context-type-quantity" name="CitationContext-type-quantitySearchParam"/>
-<artifact id="SearchParameter/Citation-context-type-value" key="SearchParameter-Citation-context-type-value" name="CitationContext-type-valueSearchParam"/>
-<artifact id="SearchParameter/Citation-context-type" key="SearchParameter-Citation-context-type" name="CitationContext-typeSearchParam"/>
-<artifact id="SearchParameter/Citation-context" key="SearchParameter-Citation-context" name="CitationContextSearchParam"/>
-<artifact id="SearchParameter/Citation-date" key="SearchParameter-Citation-date" name="CitationDateSearchParam"/>
-<artifact id="SearchParameter/Citation-description" key="SearchParameter-Citation-description" name="CitationDescriptionSearchParam"/>
-<artifact id="SearchParameter/Citation-effective" key="SearchParameter-Citation-effective" name="CitationEffectiveSearchParam"/>
-<artifact id="SearchParameter/Citation-experimental" key="SearchParameter-Citation-experimental" name="CitationExperimentalSearchParam"/>
-<artifact id="SearchParameter/Citation-identifier" key="SearchParameter-Citation-identifier" name="CitationIdentifierSearchParam"/>
-<artifact id="SearchParameter/Citation-jurisdiction" key="SearchParameter-Citation-jurisdiction" name="CitationJurisdictionSearchParam"/>
-<artifact id="SearchParameter/Citation-name" key="SearchParameter-Citation-name" name="CitationNameSearchParam"/>
-<artifact id="SearchParameter/Citation-publisher" key="SearchParameter-Citation-publisher" name="CitationPublisherSearchParam"/>
-<artifact id="SearchParameter/Citation-status" key="SearchParameter-Citation-status" name="CitationStatusSearchParam"/>
-<artifact id="SearchParameter/Citation-title" key="SearchParameter-Citation-title" name="CitationTitleSearchParam"/>
-<artifact id="SearchParameter/Citation-url" key="SearchParameter-Citation-url" name="CitationUrlSearchParam"/>
-<artifact id="SearchParameter/Citation-version" key="SearchParameter-Citation-version" name="CitationVersionSearchParam"/>
+<artifact id="List/PublicationRecord-examples" key="List-Citation-examples" name="PublicationRecord-examples"/>
+<artifact id="List/PublicationRecord-operations" key="List-Citation-operations" name="PublicationRecord-operations"/>
+<artifact id="SearchParameter/PublicationRecord-classification-type" key="SearchParameter-Citation-classification-type" name="PublicationRecordClassification-typeSearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-classification" key="SearchParameter-Citation-classification" name="PublicationRecordClassificationSearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-classifier" key="SearchParameter-Citation-classifier" name="PublicationRecordClassifierSearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-context-quantity" key="SearchParameter-Citation-context-quantity" name="PublicationRecordContext-quantitySearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-context-type-quantity" key="SearchParameter-Citation-context-type-quantity" name="PublicationRecordContext-type-quantitySearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-context-type-value" key="SearchParameter-Citation-context-type-value" name="PublicationRecordContext-type-valueSearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-context-type" key="SearchParameter-Citation-context-type" name="PublicationRecordContext-typeSearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-context" key="SearchParameter-Citation-context" name="PublicationRecordContextSearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-date" key="SearchParameter-Citation-date" name="PublicationRecordDateSearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-description" key="SearchParameter-Citation-description" name="PublicationRecordDescriptionSearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-effective" key="SearchParameter-Citation-effective" name="PublicationRecordEffectiveSearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-experimental" key="SearchParameter-Citation-experimental" name="PublicationRecordExperimentalSearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-identifier" key="SearchParameter-Citation-identifier" name="PublicationRecordIdentifierSearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-jurisdiction" key="SearchParameter-Citation-jurisdiction" name="PublicationRecordJurisdictionSearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-name" key="SearchParameter-Citation-name" name="PublicationRecordNameSearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-publisher" key="SearchParameter-Citation-publisher" name="PublicationRecordPublisherSearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-status" key="SearchParameter-Citation-status" name="PublicationRecordStatusSearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-title" key="SearchParameter-Citation-title" name="PublicationRecordTitleSearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-url" key="SearchParameter-Citation-url" name="PublicationRecordUrlSearchParam"/>
+<artifact id="SearchParameter/PublicationRecord-version" key="SearchParameter-Citation-version" name="PublicationRecordVersionSearchParam"/>
 <artifact deprecated="true" id="StructureDefinition/cite-as" key="StructureDefinition-cite-as" name="CiteAs"/>
 <artifact deprecated="true" id="StructureDefinition/classification" key="StructureDefinition-classification" name="Classification"/>
 <artifact deprecated="true" id="ArtifactAssessment/179448" key="ArtifactAssessment-179448" name="Classification: Study Design for Association of Bariatric Surgery with Complications and Comorbidities JAMA 2018 Norwegian Cohort"/>
@@ -242,7 +245,7 @@
 <artifact deprecated="true" id="StructureDefinition/database-entry-citation" key="StructureDefinition-database-entry-citation" name="DatabaseEntryCitation"/>
 <artifact deprecated="true" id="Citation/179558" key="Citation-179558" name="DatabaseEntryCitation: ComparativeEvidenceReport: Association of Bariatric Surgery vs Medical Obesity Treatment With Long-term Medical Complications and Obesity-Related Comorbidities (2018 Norwegian Cohort)"/>
 <artifact deprecated="true" id="StructureDefinition/dataset-citation" key="StructureDefinition-dataset-citation" name="DatasetCitation"/>
-<artifact id="Citation/example-dataset-citation" key="Citation-179559" name="DatasetCitation: Extrachromosomal DNA Amplification Contributes to Small Cell Lung Cancer Heterogeneity and is Associated with Worse Outcomes"/>
+<artifact id="PublicationRecord/example-dataset-publicationrecord" key="Citation-179559" name="DatasetCitation: Extrachromosomal DNA Amplification Contributes to Small Cell Lung Cancer Heterogeneity and is Associated with Worse Outcomes"/>
 <artifact deprecated="true" id="StructureDefinition/date-as-rating" key="StructureDefinition-date-as-rating" name="DateAsRating"/>
 <artifact deprecated="true" id="ArtifactAssessment/181452" key="ArtifactAssessment-155969" name="DateOfFirstPublication Classification of FOI 153881 by Rachel Couban"/>
 <artifact deprecated="true" id="Evidence/318274" key="Evidence-318274" name="Death or Major Traumatic Injury 30 days after Impact comparing intervention vs. comparator"/>
@@ -479,7 +482,7 @@
 <artifact deprecated="true" id="EvidenceVariable/282880" key="EvidenceVariable-282880" name="NHANES SEQN Respondent Sequence Number"/>
 <artifact deprecated="true" id="Group/282899" key="Group-282899" name="NHANES WTSAF2YR Variable Definition"/>
 <artifact deprecated="true" id="EvidenceVariable/282898" key="EvidenceVariable-282898" name="NHANES WTSAF2YR: Fasting Subsample 2 Year MEC Weight"/>
-<artifact id="Citation/citation-example-research-doi" key="Citation-citation-example-research-doi" name="NInFEA Citation"/>
+<artifact id="PublicationRecord/publicationrecord-example-research-doi" key="Citation-citation-example-research-doi" name="NInFEA PublicationRecord"/>
 <artifact deprecated="true" id="Composition/342828" key="Composition-342828" name="NT-proBNP Study Data Dictionary"/>
 <artifact deprecated="true" id="StructureDefinition/net-effect-contribution" key="StructureDefinition-net-effect-contribution" name="NetEffectContribution"/>
 <artifact deprecated="true" id="Evidence/179591" key="Evidence-179591" name="NetEffectContribution: Additional GI surgical procedure for Example for GIN 2022"/>
@@ -627,8 +630,6 @@
 <artifact deprecated="true" id="Group/32139" key="Group-32139" name="RecommendationEligibilityCriteria: Eligibility Criteria for Bariatric Surgery (ADA Recommendation 8.16)"/>
 <artifact deprecated="true" id="StructureDefinition/recommendation-justification" key="StructureDefinition-recommendation-justification" name="RecommendationJustification"/>
 <artifact deprecated="true" id="StructureDefinition/recommendation-plan" key="StructureDefinition-recommendation-plan" name="RecommendationPlan"/>
-<artifact id="ValueSet/citation-status-type" key="ValueSet-citation-status-type" name="Citation Status Type"/>
-<artifact id="CodeSystem/citation-status-type" key="CodeSystem-citation-status-type" name="Citation Status Type CodeSystem"/>
 <artifact deprecated="true" id="StructureDefinition/relates-to" key="StructureDefinition-relates-to" name="RelatesTo"/>
 <artifact deprecated="true" id="StructureDefinition/relates-to-with-quotation" key="StructureDefinition-relates-to-with-quotation" name="RelatesToWithQuotation"/>
 <artifact deprecated="true" id="StructureDefinition/relative-outcome-importance" key="StructureDefinition-relative-outcome-importance" name="RelativeOutcomeImportance"/>
