@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/smart-scheduling-links/2026May" ciUrl="https://build.fhir.org/ig/HL7/smart-scheduling-links" defaultVersion="1.0.0-ballot" defaultWorkgroup="pa" gitUrl="https://github.com/HL7/smart-scheduling-links" url="http://hl7.org/fhir/uv/smart-scheduling-links">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/smart-scheduling-links/2026May" ciUrl="https://build.fhir.org/ig/HL7/smart-scheduling-links" defaultVersion="1.0.0" defaultWorkgroup="pa" gitUrl="https://github.com/HL7/smart-scheduling-links" url="http://hl7.org/fhir/uv/smart-scheduling-links">
 <version code="current" url="https://build.fhir.org/ig/HL7/smart-scheduling-links"/>
+<version code="1.0.0" url="http://hl7.org/fhir/uv/smart-scheduling-links/STU1"/>
 <version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/smart-scheduling-links/2026May"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -18,7 +19,7 @@
 <artifact id="HealthcareService/ExampleHealhCareService" key="HealthcareService-ExampleHealhCareService" name="ExampleHealhCareService"/>
 <artifact id="StructureDefinition/smart-scheduling-healthcare-service" key="StructureDefinition-smart-scheduling-healthcare-service" name="Healthcare Service"/>
 <artifact id="StructureDefinition/smart-scheduling-location" key="StructureDefinition-smart-scheduling-location" name="Location"/>
-<artifact id="CodeSystem/location-physical-type-cs" key="CodeSystem-location-physical-type-cs" name="Location Physical Type CodeSystem"/>
+<artifact deprecated="true" id="CodeSystem/location-physical-type-cs" key="CodeSystem-location-physical-type-cs" name="Location Physical Type CodeSystem"/>
 <artifact id="ValueSet/location-physical-type-vs" key="ValueSet-location-physical-type-vs" name="Location Physical Type ValueSet"/>
 <artifact id="Organization/c3453010-d1ae-4180-937e-86cc11292693" key="Organization-c3453010-d1ae-4180-937e-86cc11292693" name="Organization example"/>
 <artifact id="StructureDefinition/patient-type" key="StructureDefinition-patient-type" name="Patient Type"/>
@@ -30,10 +31,12 @@
 <artifact id="StructureDefinition/smart-scheduling-slot" key="StructureDefinition-smart-scheduling-slot" name="Slot"/>
 <artifact id="Slot/AcceptNewAndExistingPatients" key="Slot-AcceptNewAndExistingPatients" name="Slot Accepting New and Existing Patients"/>
 <artifact id="Slot/AcceptOnlyExistingPatients" key="Slot-AcceptOnlyExistingPatients" name="Slot Accepting Only Existing Patients"/>
+<artifact id="CodeSystem/temporary" key="CodeSystem-temporary" name="Temporary CodeSystem"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="change-log" name="Change Log"/>
+<page key="conformance" name="Conformance"/>
 <page key="downloads" name="Downloads"/>
 <page key="index" name="Home"/>
 <page key="specification" name="Specification"/>
