@@ -72,8 +72,7 @@
     </xsl:for-each>
     <xsl:copy>
       <xsl:apply-templates mode="familySpecs" select="@*"/>
-      <!-- Preserve the existing JIRA key while the LIVD artifact file uses its UV name. -->
-      <xsl:variable name="filename" select="if ($prefix = 'FHIR' and @key = 'us-livd') then 'FHIR-uv-livd.xml' else concat($prefix, '-', @key, '.xml')"/>
+      <xsl:variable name="filename" select="concat($prefix, '-', @key, '.xml')"/>
       <xsl:variable name="spec" select="document($filename, .)/specification" as="element(specification)?"/>
       <xsl:variable name="specKey" select="@key"/>
       <xsl:if test="not($spec)">
