@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/carin-rtpbc/2026May" ciUrl="http://build.fhir.org/ig/HL7/carin-rtpbc" defaultVersion="1.0.0" defaultWorkgroup="pharm" gitUrl="https://github.com/HL7/carin-rtpbc" url="http://hl7.org/fhir/us/carin-rtpbc">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/carin-rtpbc/2026May" ciUrl="http://build.fhir.org/ig/HL7/carin-rtpbc" defaultVersion="2.0.0" defaultWorkgroup="pharm" gitUrl="https://github.com/HL7/carin-rtpbc" url="http://hl7.org/fhir/us/carin-rtpbc">
 <version code="current" url="http://build.fhir.org/ig/HL7/carin-rtpbc"/>
+<version code="2.0.0" url="https://hl7.org/fhir/us/carin-rtpbc/STU2"/>
 <version code="2.0.0-ballot" url="http://hl7.org/fhir/us/carin-rtpbc/2026May"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/carin-rtpbc/STU1"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/carin-rtpbc/2020Feb"/>
@@ -18,7 +19,7 @@
 <artifact deprecated="true" id="Bundle/rtpbc-bundle-response-03-w-header" key="Bundle-rtpbc-bundle-response-03-w-header" name="Example RTPBC Response Bundle"/>
 <artifact deprecated="true" id="MessageHeader/rtpbc-response-message-header-01" key="MessageHeader-rtpbc-response-message-header-01" name="Example RTPBC Response MessageHeader"/>
 <artifact deprecated="true" id="Practitioner/rtpbc-practitioner-03" key="Practitioner-rtpbc-practitioner-03" name="Example US Core Practitioner as used in RTPBC"/>
-<artifact id="CodeSystem/ncpdp-formulary-status-temporary" key="CodeSystem-ncpdp-formulary-status-temporary" name="NCPDP Formulary Status Code System (Temporary)"/>
+<artifact deprecated="true" id="CodeSystem/ncpdp-formulary-status-temporary" key="CodeSystem-ncpdp-formulary-status-temporary" name="NCPDP Formulary Status Code System (Temporary)"/>
 <artifact id="CodeSystem/rtpbc-benefit-restriction-temporary" key="CodeSystem-rtpbc-benefit-restriction-temporary" name="RTPBC Benefit Restriction Code System (Temporary)"/>
 <artifact id="ValueSet/rtpbc-benefit-restriction" key="ValueSet-rtpbc-benefit-restriction" name="RTPBC Benefit Restriction Value Set"/>
 <artifact id="ValueSet/rtpbc-billing-unit" key="ValueSet-rtpbc-billing-unit" name="RTPBC Billing Unit Value Set"/>
@@ -96,7 +97,9 @@
 <artifact id="Claim/rtpbc-claim-non-phi-1" key="Claim-rtpbc-claim-non-phi-1" name="rtpbc-claim-non-phi-1"/>
 <artifact id="Claim/rtpbc-claim-non-phi-2" key="Claim-rtpbc-claim-non-phi-2" name="rtpbc-claim-non-phi-2"/>
 <artifact id="ClaimResponse/rtpbc-claim-response-01" key="ClaimResponse-rtpbc-claim-response-01" name="rtpbc-claim-response-01"/>
+<artifact id="ClaimResponse/rtpbc-claim-response-combined" key="ClaimResponse-rtpbc-claim-response-combined" name="rtpbc-claim-response-combined"/>
 <artifact id="ClaimResponse/rtpbc-claim-response-discount-card" key="ClaimResponse-rtpbc-claim-response-discount-card" name="rtpbc-claim-response-discount-card"/>
+<artifact id="ClaimResponse/rtpbc-claim-response-full-population" key="ClaimResponse-rtpbc-claim-response-full-population" name="rtpbc-claim-response-full-population"/>
 <artifact id="ClaimResponse/rtpbc-claim-response-not-covered" key="ClaimResponse-rtpbc-claim-response-not-covered" name="rtpbc-claim-response-not-covered"/>
 <artifact id="ClaimResponse/rtpbc-claim-response-price-source" key="ClaimResponse-rtpbc-claim-response-price-source" name="rtpbc-claim-response-price-source"/>
 <artifact id="Coverage/rtpbc-coverage-01" key="Coverage-rtpbc-coverage-01" name="rtpbc-coverage-01"/>
@@ -108,11 +111,18 @@
 <artifact id="Patient/rtpbc-patient-01" key="Patient-rtpbc-patient-01" name="rtpbc-patient-01"/>
 <artifact id="Patient/rtpbc-patient-03ps" key="Patient-rtpbc-patient-03ps" name="rtpbc-patient-03ps"/>
 <artifact id="Practitioner/rtpbc-practitioner-01" key="Practitioner-rtpbc-practitioner-01" name="rtpbc-practitioner-01"/>
+<artifact id="Bundle/rtpbc-via-intermediary-request-bundle-1" key="Bundle-rtpbc-via-intermediary-request-bundle-1" name="rtpbc-via-intermediary-request-bundle-1"/>
+<artifact id="Bundle/rtpbc-via-intermediary-request-bundle-2" key="Bundle-rtpbc-via-intermediary-request-bundle-2" name="rtpbc-via-intermediary-request-bundle-2"/>
+<artifact id="Bundle/rtpbc-via-intermediary-request-bundle-3" key="Bundle-rtpbc-via-intermediary-request-bundle-3" name="rtpbc-via-intermediary-request-bundle-3"/>
+<artifact id="Bundle/rtpbc-via-intermediary-response-bundle-1" key="Bundle-rtpbc-via-intermediary-response-bundle-1" name="rtpbc-via-intermediary-response-bundle-1"/>
+<artifact id="Bundle/rtpbc-via-intermediary-response-bundle-2" key="Bundle-rtpbc-via-intermediary-response-bundle-2" name="rtpbc-via-intermediary-response-bundle-2"/>
+<artifact id="Bundle/rtpbc-via-intermediary-response-bundle-3" key="Bundle-rtpbc-via-intermediary-response-bundle-3" name="rtpbc-via-intermediary-response-bundle-3"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="business_rules" name="Business Rules"/>
 <page key="capstatements" name="Capstatements"/>
+<page key="changelog" name="Changelog"/>
 <page key="conformance" name="Conformance"/>
 <page key="consumer_vs_provider_rtpbc" name="Consumer vs Provider Rtpbc"/>
 <page deprecated="true" key="cosumer-vs-provider" name="Consumer vs provider RTPBC" url="Consumer_vs_provider_RTPBC"/>
@@ -120,7 +130,7 @@
 <page key="error_handling" name="Error Handling"/>
 <page deprecated="true" key="error" name="Error handling" url="Error_handing"/>
 <page deprecated="true" key="examples" name="Examples" url="examples"/>
-<page key="history" name="History"/>
+<page deprecated="true" key="history" name="History"/>
 <page key="index" name="Home"/>
 <page key="information_content_and_fhir_resources" name="Information Content and Fhir Resources"/>
 <page deprecated="true" key="information" name="Information content and FHIR resources" url="Information_content_and_FHIR_resources"/>
