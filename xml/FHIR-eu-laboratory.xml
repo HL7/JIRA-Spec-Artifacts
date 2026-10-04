@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/laboratory/0.1.0-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/laboratory" defaultVersion="2.0.0" defaultWorkgroup="eu" gitUrl="https://github.com/HL7-eu/laboratory" url="http://hl7.eu/fhir/laboratory">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.eu/fhir/laboratory/0.1.0-ballot" ciUrl="https://build.fhir.org/ig/hl7-eu/laboratory" defaultVersion="2.1.0" defaultWorkgroup="eu" gitUrl="https://github.com/HL7-eu/laboratory" url="http://hl7.eu/fhir/laboratory">
 <version code="current" url="https://build.fhir.org/ig/hl7-eu/laboratory"/>
-<version code="2.0.0" url="http://hl7.eu/fhir/laboratory/2.0.0"/>
+<version code="2.1.0" url="http://hl7.eu/fhir/laboratory/2.1.0"/>
+<version code="2.0.0" deprecated="true" url="http://hl7.eu/fhir/laboratory/2.0.0"/>
 <version code="0.1.1" deprecated="true" url="http://hl7.eu/fhir/laboratory/0.1.1"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.eu/fhir/laboratory/0.1.0"/>
 <version code="0.1.0-ballot" deprecated="true" url="http://hl7.eu/fhir/laboratory/0.1.0-ballot"/>
@@ -50,13 +51,14 @@
 <artifact id="StructureDefinition/Device-specimen-eu-lab" key="StructureDefinition-Device-specimen-eu-lab" name="Device: Specimen"/>
 <artifact deprecated="true" id="ConceptMap/ConceptMap-eu-diagRptStatus2CompStatus" key="ConceptMap-ConceptMap-eu-diagRptStatus2CompStatus" name="DiagnosticReport to Composition status"/>
 <artifact id="StructureDefinition/DiagnosticReport-eu-lab" key="StructureDefinition-DiagnosticReport-eu-lab" name="DiagnosticReport: Laboratory Report"/>
+<artifact id="DiagnosticReport/dr-status-reason-media-example" key="DiagnosticReport-dr-status-reason-media-example" name="DiagnosticReport: corrected report with a status reason and additional data"/>
 <artifact id="DiagnosticReport/dr-lab-example" key="DiagnosticReport-dr-lab-example" name="DiagnosticReport: example"/>
 <artifact deprecated="true" id="StructureDefinition/composition-basedOn-order-or-requisition" key="StructureDefinition-composition-basedOn-order-or-requisition" name="Document Based On Order"/>
 <artifact deprecated="true" id="StructureDefinition/composition-diagnosticReportReference" key="StructureDefinition-composition-diagnosticReportReference" name="Document DiagnosticReport Reference"/>
 <artifact deprecated="true" id="StructureDefinition/HumanName-obl-eu-lab" key="StructureDefinition-HumanName-obl-eu-lab" name="Human Name Obligations"/>
 <artifact deprecated="true" id="StructureDefinition/HumanName-eu" key="StructureDefinition-HumanName-eu" name="HumanName (Eu)"/>
 <artifact deprecated="true" id="StructureDefinition/information-recipient" key="StructureDefinition-information-recipient" name="Information recipient"/>
-<artifact id="StructureDefinition/laboratory-accredited-eu" key="StructureDefinition-laboratory-accredited-eu" name="Laboratory Accredited"/>
+<artifact deprecated="true" id="StructureDefinition/laboratory-accredited-eu" key="StructureDefinition-laboratory-accredited-eu" name="Laboratory Accredited"/>
 <artifact id="ValueSet/lab-certifiedRefMaterial-eu-lab" key="ValueSet-lab-certifiedRefMaterial-eu-lab" name="Laboratory Certified Reference Material"/>
 <artifact id="ValueSet/lab-obsCode-eu-lab" key="ValueSet-lab-obsCode-eu-lab" name="Laboratory Code"/>
 <artifact id="ValueSet/lab-obsCode-loinc-eu-lab" key="ValueSet-lab-obsCode-loinc-eu-lab" name="Laboratory Code: LOINC"/>
@@ -71,7 +73,10 @@
 <artifact id="ValueSet/lab-medicalDevice-eu-lab" key="ValueSet-lab-medicalDevice-eu-lab" name="Medical Device"/>
 <artifact deprecated="true" id="ValueSet/lab-npu-vs" key="ValueSet-lab-npu-vs" name="NPU Laboratory Codes VS"/>
 <artifact deprecated="true" id="StructureDefinition/Observation-obl-eu-lab" key="StructureDefinition-Observation-obl-eu-lab" name="Observation Obligations"/>
+<artifact id="StructureDefinition/observation-reference-range-high-comparator" key="StructureDefinition-observation-reference-range-high-comparator" name="Observation Reference Range High Comparator"/>
+<artifact id="StructureDefinition/observation-reference-range-low-comparator" key="StructureDefinition-observation-reference-range-low-comparator" name="Observation Reference Range Low Comparator"/>
 <artifact id="StructureDefinition/Observation-resultslab-eu-lab" key="StructureDefinition-Observation-resultslab-eu-lab" name="Observation Results: laboratory"/>
+<artifact id="Observation/obs-focus-bdp-example" key="Observation-obs-focus-bdp-example" name="Observation: ABO group of a blood unit"/>
 <artifact id="Observation/obs-aerobic-culture" key="Observation-obs-aerobic-culture" name="Observation: Aerobic Culture example"/>
 <artifact id="Observation/obs-anaerobic-culture" key="Observation-obs-anaerobic-culture" name="Observation: Anaerobic Culture example"/>
 <artifact id="Observation/obs-gram-stain" key="Observation-obs-gram-stain" name="Observation: Gram Staining example"/>
@@ -85,8 +90,15 @@
 <artifact id="Observation/obs-org-id1" key="Observation-obs-org-id1" name="Observation: Staphylococcus aureus identified example"/>
 <artifact id="Observation/obs-org-id1-susc-2" key="Observation-obs-org-id1-susc-2" name="Observation: Staphylococcus aureus levoFLOXacin susceptibility example"/>
 <artifact id="Observation/obs-org-id1-susc-panel" key="Observation-obs-org-id1-susc-panel" name="Observation: Staphylococcus aureus susceptibility panel example"/>
+<artifact id="Observation/obs-status-reason-example" key="Observation-obs-status-reason-example" name="Observation: cancelled result with a status reason"/>
 <artifact id="Observation/4335db48-7090-45b3-a2c2-45b45f94a67c" key="Observation-4335db48-7090-45b3-a2c2-45b45f94a67c" name="Observation: certified reference material"/>
+<artifact id="Observation/obs-corrected-glucose-example" key="Observation-obs-corrected-glucose-example" name="Observation: corrected glucose result"/>
+<artifact id="Observation/obs-focus-substance-example" key="Observation-obs-focus-substance-example" name="Observation: potassium concentration of an infusion solution"/>
 <artifact id="Observation/d29b286d-b99c-410f-af4e-9455ea49d0af" key="Observation-d29b286d-b99c-410f-af4e-9455ea49d0af" name="Observation: ratio example"/>
+<artifact id="Observation/a9d31b0d-a2e2-4dd8-95c3-1b99f6c13d11" key="Observation-a9d31b0d-a2e2-4dd8-95c3-1b99f6c13d11" name="Observation: urinalysis panel reported as an attachment"/>
+<artifact id="Observation/a84be3b7-c986-4fdf-9ec5-bbe5f7f8de9e" key="Observation-a84be3b7-c986-4fdf-9ec5-bbe5f7f8de9e" name="Observation: urinalysis with a component reported as an attachment"/>
+<artifact id="Observation/60e4df2e-0a92-4474-8e24-27de6bc0e654" key="Observation-60e4df2e-0a92-4474-8e24-27de6bc0e654" name="Observation: urinalysis with a component without a result"/>
+<artifact id="Observation/56efe2cc-8eee-4c72-96d0-382507b3cfb3" key="Observation-56efe2cc-8eee-4c72-96d0-382507b3cfb3" name="Observation: urinalysis with differently reported components"/>
 <artifact id="Parameters/exp-params" key="Parameters-exp-params" name="Parameters for Terminology expansion using Snomed-CT international edition"/>
 <artifact deprecated="true" id="StructureDefinition/Patient-obl-eu-lab" key="StructureDefinition-Patient-obl-eu-lab" name="Patient Obligations"/>
 <artifact id="StructureDefinition/Patient-animal-eu-lab" key="StructureDefinition-Patient-animal-eu-lab" name="Patient: Animal"/>
@@ -101,6 +113,8 @@
 <artifact id="StructureDefinition/Quantity-eu-lab" key="StructureDefinition-Quantity-eu-lab" name="Quantity (Eu Lab)"/>
 <artifact id="StructureDefinition/Range-eu-lab" key="StructureDefinition-Range-eu-lab" name="Range (Eu Lab)"/>
 <artifact id="StructureDefinition/Ratio-eu-lab" key="StructureDefinition-Ratio-eu-lab" name="Ratio (Eu Lab)"/>
+<artifact id="ValueSet/reference-range-high-comparator" key="ValueSet-reference-range-high-comparator" name="Reference Range High Comparator"/>
+<artifact id="ValueSet/reference-range-low-comparator" key="ValueSet-reference-range-low-comparator" name="Reference Range Low Comparator"/>
 <artifact id="StructureDefinition/animal-specimen-eu-lab" key="StructureDefinition-animal-specimen-eu-lab" name="RelatedPerson: AnimalSpecimen"/>
 <artifact id="RelatedPerson/RelatedPerson-animal-example" key="RelatedPerson-RelatedPerson-animal-example" name="RelatedPerson: animal example"/>
 <artifact deprecated="true" id="StructureDefinition/ServiceRequest-obl-eu-lab" key="StructureDefinition-ServiceRequest-obl-eu-lab" name="ServiceRequest Obligations"/>
@@ -113,6 +127,9 @@
 <artifact id="ValueSet/lab-specimenType-eu-lab" key="ValueSet-lab-specimenType-eu-lab" name="Specimen Types"/>
 <artifact id="StructureDefinition/Specimen-eu-lab" key="StructureDefinition-Specimen-eu-lab" name="Specimen: Laboratory"/>
 <artifact id="Specimen/Specimen-animal-example" key="Specimen-Specimen-animal-example" name="Specimen: animal example"/>
+<artifact id="Specimen/Specimen-container-device-example" key="Specimen-Specimen-container-device-example" name="Specimen: container device example"/>
+<artifact id="Specimen/Specimen-focus-bdp-example" key="Specimen-Specimen-focus-bdp-example" name="Specimen: sample taken from a blood unit"/>
+<artifact id="Specimen/Specimen-collection-example" key="Specimen-Specimen-collection-example" name="Specimen: self collected capillary blood with a body site"/>
 <artifact deprecated="true" id="ValueSet/lab-result-standard-eu-lab" key="ValueSet-lab-result-standard-eu-lab" name="Standard Laboratory Codes"/>
 <artifact id="StructureDefinition/Substance-additive-eu-lab" key="StructureDefinition-specimen-additive-substance-eu-lab" name="Substance: Specimen Additive Substance"/>
 <artifact id="ValueSet/lab-speciesType-eu-vs" key="ValueSet-lab-speciesType-eu-vs" name="Types of species"/>
