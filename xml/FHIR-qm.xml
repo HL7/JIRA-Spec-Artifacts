@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cqm/2026May" ciUrl="https://build.fhir.org/ig/HL7/fhir-cqm" defaultVersion="1.0.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/fhir-cqm" url="http://hl7.org/fhir/uv/cqm">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cqm/2026May" ciUrl="https://build.fhir.org/ig/HL7/fhir-cqm" defaultVersion="2.0.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/fhir-cqm" url="http://hl7.org/fhir/uv/cqm">
 <version code="current" url="https://build.fhir.org/ig/HL7/fhir-cqm"/>
-<version code="2.0.0-ballot" url="http://hl7.org/fhir/uv/cqm/2026May"/>
-<version code="1.0.0" url="http://hl7.org/fhir/uv/cqm/STU1"/>
+<version code="2.0.0" url="http://hl7.org/fhir/uv/cqm/2.0.0"/>
+<version code="2.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/cqm/2026May"/>
+<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/uv/cqm/STU1"/>
 <version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/cqm/2025Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -52,6 +53,7 @@
 <artifact id="OperationDefinition/cqm-package" key="OperationDefinition-cqm-package" name="CQM Package"/>
 <artifact id="StructureDefinition/cqm-populationBasis" key="StructureDefinition-cqm-populationBasis" name="CQM Population Basis"/>
 <artifact id="StructureDefinition/cqm-proportionmeasure" key="StructureDefinition-cqm-proportionmeasure" name="CQM Proportion Measure"/>
+<artifact id="StructureDefinition/cqm-publishablelibrary" key="StructureDefinition-cqm-publishablelibrary" name="CQM Publishable Library"/>
 <artifact id="StructureDefinition/cqm-publishablemeasure" key="StructureDefinition-cqm-publishablemeasure" name="CQM Publishable Measure"/>
 <artifact id="StructureDefinition/cqm-rateAggregation" key="StructureDefinition-cqm-rateAggregation" name="CQM Rate Aggregation"/>
 <artifact id="StructureDefinition/cqm-ratiomeasure" key="StructureDefinition-cqm-ratiomeasure" name="CQM Ratio Measure"/>
@@ -74,6 +76,7 @@
 <artifact id="Library/CommonTerminologies" key="Library-CommonTerminologies" name="Common Terminology Library"/>
 <artifact id="ConceptMap/composite-measure-scoring" key="ConceptMap-composite-measure-scoring" name="Composite Measure Scoring mapping"/>
 <artifact id="ConceptMap/data-usages" key="ConceptMap-data-usages" name="Data Usage Mapping"/>
+<artifact id="OperationDefinition/cqm-data-requirements" key="OperationDefinition-cqm-data-requirements" name="DataRequirements"/>
 <artifact id="Device/software-system-example" key="Device-software-system-example" name="Device - Software System Example"/>
 <artifact id="Library/EXMAggregate" key="Library-EXMAggregate" name="EXM Aggregate"/>
 <artifact id="Library/EXMIA" key="Library-EXMIA" name="EXM Improvement Activities"/>
@@ -93,6 +96,7 @@
 <artifact id="Library/EXM146" key="Library-EXM146-FHIR" name="EXM146 - Example Proportion Measure Library"/>
 <artifact id="Measure/EXM55-FHIR" key="Measure-EXM55-FHIR" name="EXM55 - Median Emergency Department Visit Duration"/>
 <artifact id="Library/EXM55" key="Library-EXM55-FHIR" name="EXM55 - Median Emergency Department Visit Duration Library (Example Continuous Variable Measure Library)"/>
+<artifact id="Library/EXMCommon" key="Library-EXMCommon" name="EXMCommon"/>
 <artifact id="Library/EXMRatio" key="Library-EXMRatio-FHIR" name="EXMRatio - Example Ratio Measure Library"/>
 <artifact id="Measure/CAUTIRateExample" key="Measure-CAUTIRateExample" name="Example Catheter-Associated Urinary Tract Infection Rate"/>
 <artifact id="Measure/CAUTISIRExample" key="Measure-CAUTISIRExample" name="Example Catheter-Associated Urinary Tract Infection Standardized Infection Ratio (SIR)"/>
@@ -105,6 +109,14 @@
 <artifact deprecated="true" id="Library/fhir-model-definition-FHIR2" key="Library-fhir-model-definition-FHIR2" name="FHIR Model Definition (STU2)"/>
 <artifact id="Library/HBPComponent" key="Library-HBPComponent" name="HBP Component Library"/>
 <artifact id="Library/Hospice" key="Library-Hospice" name="Hospice FHIR Library"/>
+<artifact id="Measure/IGCohort" key="Measure-IGCohort" name="IG Cohort Measure"/>
+<artifact id="Library/IGCohort" key="Library-IGCohort" name="IG Cohort Measure Logic"/>
+<artifact id="Measure/IGContinuousVariable" key="Measure-IGContinuousVariable" name="IG Continuous Variable Measure"/>
+<artifact id="Library/IGContinuousVariable" key="Library-IGContinuousVariable" name="IG Continuous Variable Measure Logic"/>
+<artifact id="Measure/IGProportion" key="Measure-IGProportion" name="IG Proportion Measure"/>
+<artifact id="Library/IGProportion" key="Library-IGProportion" name="IG Proportion Measure Logic"/>
+<artifact id="Measure/IGRatio" key="Measure-IGRatio" name="IG Ratio Measure"/>
+<artifact id="Library/IGRatio" key="Library-IGRatio" name="IG Ratio Measure Logic"/>
 <artifact deprecated="true" id="ValueSet/iso-8601-derived-periods" key="ValueSet-iso-8601-derived-periods" name="ISO-8601-Derived Periods"/>
 <artifact deprecated="true" id="CodeSystem/iso-8601-derived-periods" key="CodeSystem-iso-8601-derived-periods" name="ISO-8601-Derived Periods Codes"/>
 <artifact id="ConceptMap/improvement-notations" key="ConceptMap-improvement-notations" name="Improvement Notation Mapping"/>
@@ -121,6 +133,46 @@
 <artifact id="ConceptMap/measure-types" key="ConceptMap-measure-types" name="Measure Type mapping"/>
 <artifact id="Measure/measure-cqm-publishable-example" key="Measure-measure-cqm-publishable-example" name="MeasureCQMPublishableExample"/>
 <artifact id="MeasureReport/testcase-example" key="MeasureReport-testcase-example" name="MeasureReport - Test Case Example"/>
+<artifact id="MeasureReport/IGCohort-ada" key="MeasureReport-IGCohort-ada" name="MeasureReport IGCohort Ada"/>
+<artifact id="MeasureReport/IGCohort-ben" key="MeasureReport-IGCohort-ben" name="MeasureReport IGCohort Ben"/>
+<artifact id="MeasureReport/IGCohort-cyd" key="MeasureReport-IGCohort-cyd" name="MeasureReport IGCohort Cyd"/>
+<artifact id="MeasureReport/IGCohort-dev" key="MeasureReport-IGCohort-dev" name="MeasureReport IGCohort Dev"/>
+<artifact id="MeasureReport/IGCohort-eve" key="MeasureReport-IGCohort-eve" name="MeasureReport IGCohort Eve"/>
+<artifact id="MeasureReport/IGCohort-fin" key="MeasureReport-IGCohort-fin" name="MeasureReport IGCohort Fin"/>
+<artifact id="MeasureReport/IGCohort-gus" key="MeasureReport-IGCohort-gus" name="MeasureReport IGCohort Gus"/>
+<artifact id="MeasureReport/IGCohort-hana" key="MeasureReport-IGCohort-hana" name="MeasureReport IGCohort Hana"/>
+<artifact id="MeasureReport/IGCohort-ivy" key="MeasureReport-IGCohort-ivy" name="MeasureReport IGCohort Ivy"/>
+<artifact id="MeasureReport/IGCohort-summary" key="MeasureReport-IGCohort-summary" name="MeasureReport IGCohort Summary"/>
+<artifact id="MeasureReport/IGContinuousVariable-ada" key="MeasureReport-IGContinuousVariable-ada" name="MeasureReport IGContinuousVariable Ada"/>
+<artifact id="MeasureReport/IGContinuousVariable-ben" key="MeasureReport-IGContinuousVariable-ben" name="MeasureReport IGContinuousVariable Ben"/>
+<artifact id="MeasureReport/IGContinuousVariable-cyd" key="MeasureReport-IGContinuousVariable-cyd" name="MeasureReport IGContinuousVariable Cyd"/>
+<artifact id="MeasureReport/IGContinuousVariable-dev" key="MeasureReport-IGContinuousVariable-dev" name="MeasureReport IGContinuousVariable Dev"/>
+<artifact id="MeasureReport/IGContinuousVariable-eve" key="MeasureReport-IGContinuousVariable-eve" name="MeasureReport IGContinuousVariable Eve"/>
+<artifact id="MeasureReport/IGContinuousVariable-fin" key="MeasureReport-IGContinuousVariable-fin" name="MeasureReport IGContinuousVariable Fin"/>
+<artifact id="MeasureReport/IGContinuousVariable-gus" key="MeasureReport-IGContinuousVariable-gus" name="MeasureReport IGContinuousVariable Gus"/>
+<artifact id="MeasureReport/IGContinuousVariable-hana" key="MeasureReport-IGContinuousVariable-hana" name="MeasureReport IGContinuousVariable Hana"/>
+<artifact id="MeasureReport/IGContinuousVariable-ivy" key="MeasureReport-IGContinuousVariable-ivy" name="MeasureReport IGContinuousVariable Ivy"/>
+<artifact id="MeasureReport/IGContinuousVariable-summary" key="MeasureReport-IGContinuousVariable-summary" name="MeasureReport IGContinuousVariable Summary"/>
+<artifact id="MeasureReport/IGProportion-ada" key="MeasureReport-IGProportion-ada" name="MeasureReport IGProportion Ada"/>
+<artifact id="MeasureReport/IGProportion-ben" key="MeasureReport-IGProportion-ben" name="MeasureReport IGProportion Ben"/>
+<artifact id="MeasureReport/IGProportion-cyd" key="MeasureReport-IGProportion-cyd" name="MeasureReport IGProportion Cyd"/>
+<artifact id="MeasureReport/IGProportion-dev" key="MeasureReport-IGProportion-dev" name="MeasureReport IGProportion Dev"/>
+<artifact id="MeasureReport/IGProportion-eve" key="MeasureReport-IGProportion-eve" name="MeasureReport IGProportion Eve"/>
+<artifact id="MeasureReport/IGProportion-fin" key="MeasureReport-IGProportion-fin" name="MeasureReport IGProportion Fin"/>
+<artifact id="MeasureReport/IGProportion-gus" key="MeasureReport-IGProportion-gus" name="MeasureReport IGProportion Gus"/>
+<artifact id="MeasureReport/IGProportion-hana" key="MeasureReport-IGProportion-hana" name="MeasureReport IGProportion Hana"/>
+<artifact id="MeasureReport/IGProportion-ivy" key="MeasureReport-IGProportion-ivy" name="MeasureReport IGProportion Ivy"/>
+<artifact id="MeasureReport/IGProportion-summary" key="MeasureReport-IGProportion-summary" name="MeasureReport IGProportion Summary"/>
+<artifact id="MeasureReport/IGRatio-ada" key="MeasureReport-IGRatio-ada" name="MeasureReport IGRatio Ada"/>
+<artifact id="MeasureReport/IGRatio-ben" key="MeasureReport-IGRatio-ben" name="MeasureReport IGRatio Ben"/>
+<artifact id="MeasureReport/IGRatio-cyd" key="MeasureReport-IGRatio-cyd" name="MeasureReport IGRatio Cyd"/>
+<artifact id="MeasureReport/IGRatio-dev" key="MeasureReport-IGRatio-dev" name="MeasureReport IGRatio Dev"/>
+<artifact id="MeasureReport/IGRatio-eve" key="MeasureReport-IGRatio-eve" name="MeasureReport IGRatio Eve"/>
+<artifact id="MeasureReport/IGRatio-fin" key="MeasureReport-IGRatio-fin" name="MeasureReport IGRatio Fin"/>
+<artifact id="MeasureReport/IGRatio-gus" key="MeasureReport-IGRatio-gus" name="MeasureReport IGRatio Gus"/>
+<artifact id="MeasureReport/IGRatio-hana" key="MeasureReport-IGRatio-hana" name="MeasureReport IGRatio Hana"/>
+<artifact id="MeasureReport/IGRatio-ivy" key="MeasureReport-IGRatio-ivy" name="MeasureReport IGRatio Ivy"/>
+<artifact id="MeasureReport/IGRatio-summary" key="MeasureReport-IGRatio-summary" name="MeasureReport IGRatio Summary"/>
 <artifact id="Library/moduledefinition-example" key="Library-moduledefinition-example" name="Module Definition Example Logic Library"/>
 <artifact id="Library/MultiRateExample" key="Library-MultiRateExample-FHIR" name="Multi Rate Example Logic Library"/>
 <artifact id="Measure/MultiRateExample-FHIR" key="Measure-MultiRateExample-FHIR" name="Multi-Rate Example Measure"/>
@@ -138,6 +190,7 @@
 <artifact id="Subscription/covid-reporting-changes" key="Subscription-covid-reporting-changes" name="Reporting Program Subscription listener"/>
 <artifact deprecated="true" id="Measure/measure-risk-adjustment-FHIR2" key="Measure-measure-risk-adjustment-FHIR2" name="Risk Adjustment FHIR DSTU2"/>
 <artifact deprecated="true" id="Library/risk-adjustment-FHIR2" key="Library-risk-adjustment-FHIR2" name="RiskAdjustment_FHIR2"/>
+<artifact id="Bundle/scoring-test-patients" key="Bundle-scoring-test-patients" name="Scoring Test Patients"/>
 <artifact id="SearchParameter/Library-contained-parameter-name" key="SearchParameter-Library-contained-parameter-name" name="Search Parameter - Library contained parameter name"/>
 <artifact id="SearchParameter/Library-expansion-identifier" key="SearchParameter-Library-expansion-identifier" name="Search Parameter - Library expansion identifier"/>
 <artifact id="SearchParameter/ValueSet-keyword" key="SearchParameter-ValueSet-keyword" name="Search Parameter - Valuset Keyword"/>
@@ -169,8 +222,8 @@
 <page key="operations" name="Operations"/>
 <page key="packaging" name="Packaging"/>
 <page key="profiles" name="Profiles"/>
-<page key="measure-conformance" name="QMs"/>
 <page key="index" name="Quality Measure Implementation Guide Homepage"/>
+<page key="measure-conformance" name="Quality Measures"/>
 <page key="toc" name="Table of Contents"/>
 <page key="terminology" name="Terminology"/>
 <page key="using-cql" name="Using CQL"/>

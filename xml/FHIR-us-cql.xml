@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/cql/2026May" ciUrl="http://build.fhir.org/ig/HL7/us-cql-ig" defaultVersion="1.0.0" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/us-cql-ig" url="http://hl7.org/fhir/us/cql">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/cql/2026May" ciUrl="http://build.fhir.org/ig/HL7/us-cql-ig" defaultVersion="2.0.0" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/us-cql-ig" url="http://hl7.org/fhir/us/cql">
 <version code="current" url="http://build.fhir.org/ig/HL7/us-cql-ig"/>
-<version code="2.0.0-ballot" url="http://hl7.org/fhir/us/cql/2026May"/>
-<version code="1.0.0" url="http://hl7.org/fhir/us/cql/Informative1"/>
+<version code="2.0.0" url="http://hl7.org/fhir/us/cql/2.0.0"/>
+<version code="2.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/cql/2026May"/>
+<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/cql/Informative1"/>
 <version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/cql/2025May"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -16,19 +17,24 @@
 <artifact deprecated="true" id="Questionnaire/MNACQuestionnaire" key="Questionnaire-MNACQuestionnaire" name="Example Medical Necessity For Authorization Of Catheters Questionnaire"/>
 <artifact id="Questionnaire/ExamplePatientAndCoverageQuestionnaire" key="Questionnaire-ExamplePatientAndCoverageQuestionnaire" name="Example Patient and Coverage Questionnaire"/>
 <artifact deprecated="true" id="Questionnaire/UPPARFQuestionnaire" key="Questionnaire-UPPARFQuestionnaire" name="Example Uniform Pharmacy Prior Authorization Request Form"/>
+<artifact id="Parameters/manifest" key="Parameters-manifest" name="Expansion Parameters"/>
 <artifact id="Library/ExamplePatientAndCoverageInitialExpressions" key="Library-ExamplePatientAndCoverageInitialExpressions" name="Expression Library for the Example Patient And Coverage Questionnaire"/>
 <artifact id="Library/GMTPInitialExpressions" key="Library-GMTPInitialExpressions" name="Expression Library for the Genetic/Molecular testing preauthorization Example"/>
 <artifact id="Library/MBODAInitialExpressions" key="Library-MBODAInitialExpressions" name="Expression Library for the Medical Benefit Outpatient Drug Authorization Example"/>
 <artifact id="Library/MNACInitialExpressions" key="Library-MNACInitialExpressions" name="Expression Library for the Medical Necessity For Authorization Of Catheters Example"/>
-<artifact id="Library/UPPARFInitialExpressions" key="Library-UPPARFInitialExpressions" name="Expression Library for the Uniform Pharmacy Prior Authorization Request Form Example"/>
-<artifact id="Parameters/manifest" key="Parameters-manifest" name="Input Expansion Parameters"/>
+<artifact deprecated="true" id="Library/UPPARFInitialExpressions" key="Library-UPPARFInitialExpressions" name="Expression Library for the Uniform Pharmacy Prior Authorization Request Form Example"/>
+<artifact id="Library/PriorAuthManifestExample" key="Library-PriorAuthManifestExample" name="Prior Authorization Example Version Manifest"/>
+<artifact id="Library/QICoreCommon" key="Library-QICoreCommon" name="QI Core Common"/>
+<artifact id="Library/QICoreCommonTests" key="Library-QICoreCommonTests" name="QI Core Common Tests"/>
 <artifact id="Library/QICore-ModelInfo" key="Library-QICore-ModelInfo" name="QI Core Model Information"/>
 <artifact id="Library/USCoreCommon" key="Library-USCoreCommon" name="US Core Common"/>
 <artifact id="Library/USCoreCommonTests" key="Library-USCoreCommonTests" name="US Core Common Tests"/>
 <artifact id="Library/USCoreElements" key="Library-USCoreElements" name="US Core Elements"/>
+<artifact id="Library/USCoreElementsTests" key="Library-USCoreElementsTests" name="US Core Elements Tests"/>
 <artifact id="Library/USCore-ModelInfo" key="Library-USCore-ModelInfo" name="US Core Model Information"/>
 <artifact id="Library/USCoreTests" key="Library-USCoreTests" name="US Core Tests"/>
-<artifact id="Parameters/uscore-7-0-0-modelinfo-settings" key="Parameters-uscore-7-0-0-modelinfo-settings" name="USCore700ModelInfoSettings"/>
+<artifact id="Parameters/uscore-6-1-0-modelinfo-settings" key="Parameters-uscore-6-1-0-modelinfo-settings" name="USCore610ModelInfoSettings"/>
+<artifact deprecated="true" id="Parameters/uscore-7-0-0-modelinfo-settings" key="Parameters-uscore-7-0-0-modelinfo-settings" name="USCore700ModelInfoSettings"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="patterns-allergy" name="Allergy Patterns"/>
@@ -36,6 +42,7 @@
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="authoring" name="Authoring Documentation"/>
 <page key="background" name="Background"/>
+<page key="c4bb-modelinfo" name="CARIN Blue Button Model Information"/>
 <page key="changes" name="Changes"/>
 <page key="patterns-claim" name="Claim Patterns"/>
 <page key="use-case-cds" name="Clinical Decision Support"/>
@@ -54,6 +61,7 @@
 <page key="patterns" name="Patterns"/>
 <page key="use-case-pa" name="Prior Authorization Questionnaire Use Case"/>
 <page key="use-case-ph" name="Public Health Case Reporting"/>
+<page key="qicore-modelinfo" name="QI Core Model Information"/>
 <page key="use-case-cqm" name="Quality Measurement and Reporting"/>
 <page key="query-management" name="Query Management"/>
 <page key="patterns-service" name="Service Patterns"/>
@@ -61,6 +69,7 @@
 <page key="testing" name="Testing"/>
 <page key="tooling-support" name="Tooling Support"/>
 <page key="uscore-modelinfo" name="US Core Model Information"/>
+<page key="unit-testing" name="Unit Testing Proposal"/>
 <page key="usage" name="Usage"/>
 <page key="use-cases" name="Use Cases"/>
 </specification>
