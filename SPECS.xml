@@ -27376,19 +27376,22 @@ defaultWorkgroup="ph">-->
                   name="Personal Healthcare Devices (FHIR)"
                   ballotUrl="http://hl7.org/fhir/uv/phd/2025Sep"
                   ciUrl="https://build.fhir.org/ig/HL7/phd"
-                  defaultVersion="2.0.0"
+                  defaultVersion="2.0.1"
                   defaultWorkgroup="dev"
                   gitUrl="https://github.com/HL7/PHD"
                   url="http://hl7.org/fhir/uv/phd">
       <version code="current" url="https://build.fhir.org/ig/HL7/phd"/>
-      <version code="2.0.0" url="http://hl7.org/fhir/uv/phd/STU2"/>
+      <version code="2.0.1" url="http://hl7.org/fhir/uv/phd/2.0.1"/>
+      <version code="2.0.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/uv/phd/STU2"/>
       <version code="2.0.0-ballot2"
                deprecated="true"
                url="http://hl7.org/fhir/uv/phd/2025Sep"/>
-      <version code="1.1.0" url="http://hl7.org/fhir/uv/phd/STU1.1"/>
       <version code="2.0.0-ballot"
                deprecated="true"
                url="http://hl7.org/fhir/uv/phd/2024Sep"/>
+      <version code="1.1.0" url="http://hl7.org/fhir/uv/phd/STU1.1"/>
       <version code="1.0.0"
                deprecated="true"
                url="http://hl7.org/fhir/uv/phd/STU1"/>
@@ -27949,7 +27952,6 @@ defaultWorkgroup="ph">-->
             key="FHIR-phd-Organization"
             name="Organization [deprecated]"
             spec="phd"/>
-      <page key="FHIR-phd-Organizations" name="Organizations" spec="phd"/>
       <page deprecated="true"
             key="FHIR-phd-overview"
             name="Overview [deprecated]"
@@ -28016,6 +28018,9 @@ defaultWorkgroup="ph">-->
       <page deprecated="true"
             key="FHIR-phd-Rtsa"
             name="Real Time Sample Array; Pleth wave [deprecated]"
+            spec="phd"/>
+      <page key="FHIR-phd-Organizations"
+            name="Referenced Organizations"
             spec="phd"/>
       <page key="FHIR-phd-RemotePatientMonitoringConsiderations"
             name="Remote Patient Monitoring Considerations"
