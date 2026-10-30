@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/rwi-pharma/2027Jan" ciUrl="http://build.fhir.org/ig/HL7/reg-workflow-pharma" defaultVersion="1.0.0-ballot" defaultWorkgroup="brr" gitUrl="https://github.com/HL7/reg-workflow-pharma" url="http://hl7.org/fhir/uv/rwi-pharma">
+<version code="current" url="https://build.fhir.org/ig/HL7/reg-workflow-pharma"/>
+<version code="1.0.0-ballot" url="http://hl7.org/fhir/uv/rwi-pharma/2027Jan"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="DocumentReference/docref-epi-annotated-v1" key="DocumentReference-docref-epi-annotated-v1" name="Annotated ePI v1 (proposal)"/>
+<artifact id="DocumentReference/docref-epi-annotated-v2" key="DocumentReference-docref-epi-annotated-v2" name="Annotated ePI v2 (regulator comments, round 1)"/>
+<artifact id="DocumentReference/docref-epi-annotated-v3" key="DocumentReference-docref-epi-annotated-v3" name="Annotated ePI v3 (counter-proposal, round 1)"/>
+<artifact id="DocumentReference/docref-epi-annotated-v4" key="DocumentReference-docref-epi-annotated-v4" name="Annotated ePI v4 (regulator comments, round 2)"/>
+<artifact id="DocumentReference/docref-epi-approved" key="DocumentReference-docref-epi-approved" name="Approved ePI"/>
+<artifact id="DocumentReference/docref-cta-decision" key="DocumentReference-docref-cta-decision" name="Authorisation decision"/>
+<artifact id="DocumentReference/docref-cta-application-form" key="DocumentReference-docref-cta-application-form" name="CTA application form"/>
+<artifact id="DocumentReference/docref-cta-cover-letter" key="DocumentReference-docref-cta-cover-letter" name="CTA cover letter"/>
+<artifact id="DocumentReference/docref-cta-validation-report" key="DocumentReference-docref-cta-validation-report" name="CTA validation report"/>
+<artifact id="DocumentReference/docref-var-change-description" key="DocumentReference-docref-var-change-description" name="Change description and justification"/>
+<artifact id="DocumentReference/docref-epi-clean-v1" key="DocumentReference-docref-epi-clean-v1" name="Clean ePI v1 (proposal)"/>
+<artifact id="DocumentReference/docref-epi-clean-v3" key="DocumentReference-docref-epi-clean-v3" name="Clean ePI v3 (counter-proposal, round 1)"/>
+<artifact id="DocumentReference/docref-epi-clean-v5" key="DocumentReference-docref-epi-clean-v5" name="Clean ePI v5 (agreed text)"/>
+<artifact id="ValueSet/eg-ctd-module-vs" key="ValueSet-eg-ctd-module-vs" name="Example CTD Module Value Set"/>
+<artifact id="CodeSystem/eg-ctd-section" key="CodeSystem-eg-ctd-section" name="Example CTD Section Code System"/>
+<artifact id="Endpoint/1005" key="Endpoint-1005" name="Example RWI Pharma interaction Endpoint with header"/>
+<artifact id="CodeSystem/rwipharma-business-status" key="CodeSystem-rwipharma-business-status" name="Example RWI-pharma Regulatory Business Status"/>
+<artifact id="CodeSystem/rwipharma-task-code" key="CodeSystem-rwipharma-task-code" name="Example RWI-pharma Task Code System"/>
+<artifact id="CodeSystem/rwipharma-task-input-output-type" key="CodeSystem-rwipharma-task-input-output-type" name="Example RWI-pharma Task Input and Output Types"/>
+<artifact id="ValueSet/rwipharma-ct-business-status-vs" key="ValueSet-rwipharma-ct-business-status-vs" name="Example Value Set RWI-Pharma Clinical Trial Business Status"/>
+<artifact id="ValueSet/rwipharma-ct-task-code-vs" key="ValueSet-rwipharma-ct-task-code-vs" name="Example Value Set RWI-Pharma Clinical Trial Task Codes"/>
+<artifact id="ValueSet/rwipharma-ct-task-input-type-vs" key="ValueSet-rwipharma-ct-task-input-type-vs" name="Example Value Set RWI-Pharma Clinical Trial Task Input Types"/>
+<artifact id="ValueSet/rwipharma-ct-task-output-type-vs" key="ValueSet-rwipharma-ct-task-output-type-vs" name="Example Value Set RWI-Pharma Clinical Trial Task Output Types"/>
+<artifact id="ValueSet/rwipharma-document-type-vs" key="ValueSet-rwipharma-document-type-vs" name="Example Value Set RWI-Pharma Document Types"/>
+<artifact id="ValueSet/rwipharma-icsr-business-status-vs" key="ValueSet-rwipharma-icsr-business-status-vs" name="Example Value Set RWI-Pharma ICSR Business Status"/>
+<artifact id="ValueSet/rwipharma-icsr-task-code-vs" key="ValueSet-rwipharma-icsr-task-code-vs" name="Example Value Set RWI-Pharma ICSR Task Codes"/>
+<artifact id="ValueSet/rwipharma-icsr-task-input-type-vs" key="ValueSet-rwipharma-icsr-task-input-type-vs" name="Example Value Set RWI-Pharma ICSR Task Input Types"/>
+<artifact id="ValueSet/rwipharma-icsr-task-output-type-vs" key="ValueSet-rwipharma-icsr-task-output-type-vs" name="Example Value Set RWI-Pharma ICSR Task Output Types"/>
+<artifact id="ValueSet/rwipharma-ma-business-status-vs" key="ValueSet-rwipharma-ma-business-status-vs" name="Example Value Set RWI-Pharma Market Authorization Business Status"/>
+<artifact id="ValueSet/rwipharma-ma-task-input-type-vs" key="ValueSet-rwipharma-ma-task-input-type-vs" name="Example Value Set RWI-Pharma Market Authorization Task Input Types"/>
+<artifact id="ValueSet/rwipharma-ma-task-output-type-vs" key="ValueSet-rwipharma-ma-task-output-type-vs" name="Example Value Set RWI-Pharma Market Authorization Task Output Types"/>
+<artifact id="ValueSet/rwipharma-ma-task-code-vs" key="ValueSet-rwipharma-ma-task-code-vs" name="Example Value Set RWI-Pharma Marketing Authorization Task Codes"/>
+<artifact id="ValueSet/rwipharma-task-input-type-vs" key="ValueSet-rwipharma-task-input-type-vs" name="Example Value Set RWI-Pharma Task Input Types"/>
+<artifact id="ValueSet/rwipharma-task-output-type-vs" key="ValueSet-rwipharma-task-output-type-vs" name="Example Value Set RWI-Pharma Task Output Types"/>
+<artifact id="Endpoint/1003" key="Endpoint-1003" name="Example basic RWI Pharma interaction Endpoint"/>
+<artifact id="DocumentReference/docref-icsr-2a-acklog" key="DocumentReference-docref-icsr-2a-acklog" name="ICSR acknowledgment log"/>
+<artifact id="DocumentReference/docref-icsr-2b-acklog" key="DocumentReference-docref-icsr-2b-acklog" name="ICSR acknowledgment log rejected"/>
+<artifact id="DocumentReference/docref-icsr-2b-resubmission-acklog" key="DocumentReference-docref-icsr-2b-resubmission-acklog" name="ICSR acknowledgment log resubmission"/>
+<artifact id="DocumentReference/docref-icsr-2b-resubmission" key="DocumentReference-docref-icsr-2b-resubmission" name="ICSR resubmission — case CH-SYNTHPHARMA-2026-000512"/>
+<artifact id="DocumentReference/docref-icsr-2b-validation-report" key="DocumentReference-docref-icsr-2b-validation-report" name="ICSR validation report"/>
+<artifact id="DocumentReference/docref-icsr-2a" key="DocumentReference-docref-icsr-2a" name="ICSR — case CH-SYNTHPHARMA-2026-000456"/>
+<artifact id="DocumentReference/docref-icsr-2b" key="DocumentReference-docref-icsr-2b" name="ICSR — case CH-SYNTHPHARMA-2026-000512"/>
+<artifact id="DocumentReference/docref-invoice" key="DocumentReference-docref-invoice" name="Invoice for Regulatory Submission Review"/>
+<artifact id="Organization/org-ema-srm-hmed" key="Organization-org-ema-srm-hmed" name="Organization Health Authority – Regulatory Review Division"/>
+<artifact id="Organization/org-synthpharma-ag" key="Organization-org-synthpharma-ag" name="Organization SynthPharma AG"/>
+<artifact id="Organization/1002" key="Organization-1002" name="Organization example with Endpoint"/>
+<artifact id="DocumentReference/docref-cta-protocol" key="DocumentReference-docref-cta-protocol" name="Protocol WD-201 v1.0"/>
+<artifact id="StructureDefinition/endpoint-subscription-notify" key="StructureDefinition-endpoint-subscription-notify" name="RWI Pharma Endpoint for FHIR Subscription Notifications"/>
+<artifact id="CodeSystem/rwi-pharma-demo" key="CodeSystem-rwi-pharma-demo" name="RWI Pharma Identifier Type Codes"/>
+<artifact id="StructureDefinition/rwi-pharma-organization" key="StructureDefinition-rwi-pharma-organization" name="RWI Pharma Organization"/>
+<artifact id="StructureDefinition/rwi-pharma-documentreference" key="StructureDefinition-rwi-pharma-documentreference" name="RWI Pharma Regulatory DocumentReference"/>
+<artifact id="StructureDefinition/rwi-pharma-task" key="StructureDefinition-rwi-pharma-task" name="RWI Pharma Regulatory Task"/>
+<artifact id="StructureDefinition/rwi-pharma-subscription" key="StructureDefinition-rwi-pharma-subscription" name="RWI Pharma Subscription"/>
+<artifact id="StructureDefinition/rwi-pharma-notification-bundle" key="StructureDefinition-rwi-pharma-notification-bundle" name="RWI Pharma Subscription Notification Bundle"/>
+<artifact id="StructureDefinition/rwi-pharma-subscription-status" key="StructureDefinition-rwi-pharma-subscription-status" name="RWI Pharma SubscriptionStatus"/>
+<artifact id="StructureDefinition/task-creation-with-organization-assigned-filter" key="StructureDefinition-task-creation-with-organization-assigned-filter" name="RWI Pharma Task Assignment and Creation With Organization Filter"/>
+<artifact id="StructureDefinition/task-status-change-with-identifier-filter" key="StructureDefinition-task-status-change-with-identifier-filter" name="RWI Pharma Task Status Change With Identifier Filter"/>
+<artifact id="ActorDefinition/rwipharma-applicant-client" key="ActorDefinition-rwipharma-applicant-client" name="RWI-pharma Applicant Client"/>
+<artifact id="CapabilityStatement/rwipharma-applicant-client" key="CapabilityStatement-rwipharma-applicant-client" name="RWI-pharma Applicant Client CapabilityStatement"/>
+<artifact id="ActorDefinition/rwipharma-notification-receiver" key="ActorDefinition-rwipharma-notification-receiver" name="RWI-pharma Notification Receiver"/>
+<artifact id="ActorDefinition/rwipharma-regulator-client" key="ActorDefinition-rwipharma-regulator-client" name="RWI-pharma Regulator Client"/>
+<artifact id="CapabilityStatement/rwipharma-regulator-client" key="CapabilityStatement-rwipharma-regulator-client" name="RWI-pharma Regulator Client CapabilityStatement"/>
+<artifact id="ActorDefinition/rwipharma-server" key="ActorDefinition-rwipharma-server" name="RWI-pharma Server"/>
+<artifact id="CapabilityStatement/rwipharma-server" key="CapabilityStatement-rwipharma-server" name="RWI-pharma Server CapabilityStatement"/>
+<artifact id="ValueSet/rwipharma-submission-type-vs" key="ValueSet-rwipharma-submission-type-vs" name="RWI-pharma Submission Types"/>
+<artifact id="DocumentReference/docref-cta-rfi" key="DocumentReference-docref-cta-rfi" name="Request for information"/>
+<artifact id="DocumentReference/docref-cta-rfi-response" key="DocumentReference-docref-cta-rfi-response" name="Response to request for information"/>
+<artifact id="Subscription/Subscription-TaskStatusChange-FullResource" key="Subscription-Subscription-TaskStatusChange-FullResource" name="Subscription for Task Status Change with Identifier Filter"/>
+<artifact id="Subscription/Subscription-TaskStatusChange-IdOnly" key="Subscription-Subscription-TaskStatusChange-IdOnly" name="Subscription for Task Status Change with Identifier Filter id-only"/>
+<artifact id="Bundle/eee72492-c236-41f7-a7ba-3af356204f4c" key="Bundle-eee72492-c236-41f7-a7ba-3af356204f4c" name="SubscriptionNotification Task ID Only"/>
+<artifact id="SubscriptionStatus/SubscriptionStatus-TaskStatusChange-QueryStatus" key="SubscriptionStatus-SubscriptionStatus-TaskStatusChange-QueryStatus" name="SubscriptionStatus $status Response for Task Status Change (id-only)"/>
+<artifact id="SubscriptionTopic/TaskCreationWithOrganizationAssignedFilter" key="SubscriptionTopic-TaskCreationWithOrganizationAssignedFilter" name="Task Assignment and Creation With Organization Filter"/>
+<artifact id="SearchParameter/Task-input" key="SearchParameter-Task-input" name="Task Input Reference"/>
+<artifact id="SubscriptionTopic/TaskStatusChangeWithIdentifierFilter" key="SubscriptionTopic-TaskStatusChangeWithIdentifierFilter" name="Task Status Change With Identifier Filter"/>
+<artifact id="CodeSystem/rwi-pharma-temporary" key="CodeSystem-rwi-pharma-temporary" name="Temporary and Experimental RWI Pharma Codes"/>
+<artifact id="ValueSet/eg-ctd-section-vs" key="ValueSet-eg-ctd-section-vs" name="Value Set Example CTD Section Code System"/>
+<artifact id="ValueSet/rwipharma-business-status-vs" key="ValueSet-rwipharma-business-status-vs" name="Value Set RWI-pharma Regulatory Business Status"/>
+<artifact id="DocumentReference/docref-var-application-form" key="DocumentReference-docref-var-application-form" name="Variation application form"/>
+<artifact id="DocumentReference/docref-var-approval-letter" key="DocumentReference-docref-var-approval-letter" name="Variation approval letter"/>
+<artifact id="DocumentReference/docref-var-cover-letter" key="DocumentReference-docref-var-cover-letter" name="Variation cover letter"/>
+<artifact id="DocumentReference/docref-var-validation-report" key="DocumentReference-docref-var-validation-report" name="Variation validation report"/>
+<artifact id="Binary/binary-1004" key="Binary-binary-1004" name="binary-1004"/>
+<artifact id="Binary/binary-1005" key="Binary-binary-1005" name="binary-1005"/>
+<artifact id="Binary/binary-1006" key="Binary-binary-1006" name="binary-1006"/>
+<artifact id="Binary/binary-cta-application-form" key="Binary-binary-cta-application-form" name="binary-cta-application-form"/>
+<artifact id="Binary/binary-cta-cover-letter" key="Binary-binary-cta-cover-letter" name="binary-cta-cover-letter"/>
+<artifact id="Binary/binary-cta-decision" key="Binary-binary-cta-decision" name="binary-cta-decision"/>
+<artifact id="Binary/binary-cta-protocol" key="Binary-binary-cta-protocol" name="binary-cta-protocol"/>
+<artifact id="Binary/binary-cta-rfi" key="Binary-binary-cta-rfi" name="binary-cta-rfi"/>
+<artifact id="Binary/binary-cta-rfi-response" key="Binary-binary-cta-rfi-response" name="binary-cta-rfi-response"/>
+<artifact id="Binary/binary-cta-validation-report" key="Binary-binary-cta-validation-report" name="binary-cta-validation-report"/>
+<artifact id="Binary/binary-epi-annotated-v1" key="Binary-binary-epi-annotated-v1" name="binary-epi-annotated-v1"/>
+<artifact id="Binary/binary-epi-annotated-v2" key="Binary-binary-epi-annotated-v2" name="binary-epi-annotated-v2"/>
+<artifact id="Binary/binary-epi-annotated-v3" key="Binary-binary-epi-annotated-v3" name="binary-epi-annotated-v3"/>
+<artifact id="Binary/binary-epi-annotated-v4" key="Binary-binary-epi-annotated-v4" name="binary-epi-annotated-v4"/>
+<artifact id="Binary/binary-epi-clean-v1" key="Binary-binary-epi-clean-v1" name="binary-epi-clean-v1"/>
+<artifact id="Binary/binary-epi-clean-v3" key="Binary-binary-epi-clean-v3" name="binary-epi-clean-v3"/>
+<artifact id="Binary/binary-epi-clean-v5" key="Binary-binary-epi-clean-v5" name="binary-epi-clean-v5"/>
+<artifact id="Binary/binary-icsr-2a-e2b-r2" key="Binary-binary-icsr-2a-e2b-r2" name="binary-icsr-2a-e2b-r2"/>
+<artifact id="Binary/binary-icsr-2a-e2b-r2-acklog" key="Binary-binary-icsr-2a-e2b-r2-acklog" name="binary-icsr-2a-e2b-r2-acklog"/>
+<artifact id="Binary/binary-icsr-2b-e2b-r2" key="Binary-binary-icsr-2b-e2b-r2" name="binary-icsr-2b-e2b-r2"/>
+<artifact id="Binary/binary-icsr-2b-e2b-r2-acklog" key="Binary-binary-icsr-2b-e2b-r2-acklog" name="binary-icsr-2b-e2b-r2-acklog"/>
+<artifact id="Binary/binary-icsr-2b-resubmission-e2b-r2" key="Binary-binary-icsr-2b-resubmission-e2b-r2" name="binary-icsr-2b-resubmission-e2b-r2"/>
+<artifact id="Binary/binary-icsr-2b-resubmission-e2b-r2-acklog" key="Binary-binary-icsr-2b-resubmission-e2b-r2-acklog" name="binary-icsr-2b-resubmission-e2b-r2-acklog"/>
+<artifact id="Binary/binary-icsr-2b-validation-report" key="Binary-binary-icsr-2b-validation-report" name="binary-icsr-2b-validation-report"/>
+<artifact id="Binary/binary-s1-acknowledgement" key="Binary-binary-s1-acknowledgement" name="binary-s1-acknowledgement"/>
+<artifact id="Binary/binary-s1-annotated-label" key="Binary-binary-s1-annotated-label" name="binary-s1-annotated-label"/>
+<artifact id="Binary/binary-s1-application-form" key="Binary-binary-s1-application-form" name="binary-s1-application-form"/>
+<artifact id="Binary/binary-s1-approval-letter" key="Binary-binary-s1-approval-letter" name="binary-s1-approval-letter"/>
+<artifact id="Binary/binary-s1-assessment-report" key="Binary-binary-s1-assessment-report" name="binary-s1-assessment-report"/>
+<artifact id="Binary/binary-s1-clean-label" key="Binary-binary-s1-clean-label" name="binary-s1-clean-label"/>
+<artifact id="Binary/binary-s1-cover-letter" key="Binary-binary-s1-cover-letter" name="binary-s1-cover-letter"/>
+<artifact id="Binary/binary-s1-invoice" key="Binary-binary-s1-invoice" name="binary-s1-invoice"/>
+<artifact id="Binary/binary-s1-list-of-questions" key="Binary-binary-s1-list-of-questions" name="binary-s1-list-of-questions"/>
+<artifact id="Binary/binary-s1-pack-mockup" key="Binary-binary-s1-pack-mockup" name="binary-s1-pack-mockup"/>
+<artifact id="Binary/binary-s1-payment-proof" key="Binary-binary-s1-payment-proof" name="binary-s1-payment-proof"/>
+<artifact id="Binary/binary-s1-questionnaire-response" key="Binary-binary-s1-questionnaire-response" name="binary-s1-questionnaire-response"/>
+<artifact id="Binary/binary-s1-stability-data-annex" key="Binary-binary-s1-stability-data-annex" name="binary-s1-stability-data-annex"/>
+<artifact id="Binary/binary-s1-validation-report" key="Binary-binary-s1-validation-report" name="binary-s1-validation-report"/>
+<artifact id="Binary/binary-var-application-form" key="Binary-binary-var-application-form" name="binary-var-application-form"/>
+<artifact id="Binary/binary-var-approval-letter" key="Binary-binary-var-approval-letter" name="binary-var-approval-letter"/>
+<artifact id="Binary/binary-var-change-description" key="Binary-binary-var-change-description" name="binary-var-change-description"/>
+<artifact id="Binary/binary-var-cover-letter" key="Binary-binary-var-cover-letter" name="binary-var-cover-letter"/>
+<artifact id="Binary/binary-var-validation-report" key="Binary-binary-var-validation-report" name="binary-var-validation-report"/>
+<artifact id="DocumentReference/doc1" key="DocumentReference-doc1" name="doc1"/>
+<artifact id="DocumentReference/doc2" key="DocumentReference-doc2" name="doc2"/>
+<artifact id="DocumentReference/doc3" key="DocumentReference-doc3" name="doc3"/>
+<artifact id="DocumentReference/doc4" key="DocumentReference-doc4" name="doc4"/>
+<artifact id="DocumentReference/doc5" key="DocumentReference-doc5" name="doc5"/>
+<artifact id="DocumentReference/doc6" key="DocumentReference-doc6" name="doc6"/>
+<artifact id="DocumentReference/doc7" key="DocumentReference-doc7" name="doc7"/>
+<artifact id="DocumentReference/doc8" key="DocumentReference-doc8" name="doc8"/>
+<artifact id="DocumentReference/docref-approval-letter" key="DocumentReference-docref-approval-letter" name="docref approval letter"/>
+<artifact id="DocumentReference/docref-assessment-report" key="DocumentReference-docref-assessment-report" name="docref assessment report"/>
+<artifact id="DocumentReference/docref-list-of-questions" key="DocumentReference-docref-list-of-questions" name="docref list of questions"/>
+<artifact id="DocumentReference/docref-payment-proof" key="DocumentReference-docref-payment-proof" name="docref payment proof"/>
+<artifact id="DocumentReference/docref-responses-qresponse" key="DocumentReference-docref-responses-qresponse" name="docref responses qresponse"/>
+<artifact id="DocumentReference/docref-stability-data-annex" key="DocumentReference-docref-stability-data-annex" name="docref stability data annex"/>
+<artifact id="DocumentReference/output-ack" key="DocumentReference-output-ack" name="output ack"/>
+<artifact id="DocumentReference/output-validation" key="DocumentReference-output-validation" name="output validation"/>
+<artifact id="Task/scenario1-01-initial-submission" key="Task-scenario1-01-initial-submission" name="scenario1 01 Type IB variation submitted"/>
+<artifact id="Task/scenario1-02-validation" key="Task-scenario1-02-validation" name="scenario1 02 Type IB variation validated"/>
+<artifact id="Task/scenario1-03-finance-invoice" key="Task-scenario1-03-finance-invoice" name="scenario1 03 invoice issued"/>
+<artifact id="Task/scenario1-04-finance-payment" key="Task-scenario1-04-finance-payment" name="scenario1 04 invoice paid"/>
+<artifact id="Task/scenario1-05-technical-question" key="Task-scenario1-05-technical-question" name="scenario1 05 questions issued"/>
+<artifact id="Task/scenario1-06-technical-response" key="Task-scenario1-06-technical-response" name="scenario1 06 questions answered"/>
+<artifact id="Task/scenario1-07-final-decision" key="Task-scenario1-07-final-decision" name="scenario1 07 Type IB variation approved"/>
+<artifact id="Task/scenario2a-01-icsr-submitted" key="Task-scenario2a-01-icsr-submitted" name="scenario2a 01 ICSR submitted"/>
+<artifact id="Task/scenario2a-02-icsr-accepted" key="Task-scenario2a-02-icsr-accepted" name="scenario2a 02 ICSR accepted"/>
+<artifact id="Task/scenario2a-03-icsr-complete" key="Task-scenario2a-03-icsr-complete" name="scenario2a 03 ICSR complete"/>
+<artifact id="Task/scenario2b-01-icsr-submitted" key="Task-scenario2b-01-icsr-submitted" name="scenario2b 01 ICSR submitted"/>
+<artifact id="Task/scenario2b-02-icsr-rejected" key="Task-scenario2b-02-icsr-rejected" name="scenario2b 02 ICSR rejected"/>
+<artifact id="Task/scenario2b-03-icsr-resubmitted" key="Task-scenario2b-03-icsr-resubmitted" name="scenario2b 03 ICSR resubmitted"/>
+<artifact id="Task/scenario2b-04-icsr-accepted" key="Task-scenario2b-04-icsr-accepted" name="scenario2b 04 ICSR resubmission accepted"/>
+<artifact id="Task/scenario2b-05-icsr-complete" key="Task-scenario2b-05-icsr-complete" name="scenario2b 05 ICSR resubmission complete"/>
+<artifact id="Task/scenario3-01-cta-submission" key="Task-scenario3-01-cta-submission" name="scenario3 01 clinical trial application submitted"/>
+<artifact id="Task/scenario3-02-cta-validated" key="Task-scenario3-02-cta-validated" name="scenario3 02 clinical trial application validated"/>
+<artifact id="Task/scenario3-03-cta-rfi" key="Task-scenario3-03-cta-rfi" name="scenario3 03 request for information issued"/>
+<artifact id="Task/scenario3-04-cta-rfi-response" key="Task-scenario3-04-cta-rfi-response" name="scenario3 04 request for information answered"/>
+<artifact id="Task/scenario3-05-cta-authorised" key="Task-scenario3-05-cta-authorised" name="scenario3 05 clinical trial authorised"/>
+<artifact id="Task/scenario4-01-variation-submitted" key="Task-scenario4-01-variation-submitted" name="scenario4 01 Type II variation submitted"/>
+<artifact id="Task/scenario4-02-variation-validated" key="Task-scenario4-02-variation-validated" name="scenario4 02 Type II variation validated"/>
+<artifact id="Task/scenario4-03-variation-under-assessment" key="Task-scenario4-03-variation-under-assessment" name="scenario4 03 Type II variation under assessment"/>
+<artifact id="Task/scenario4-04-labelling-comments-round1" key="Task-scenario4-04-labelling-comments-round1" name="scenario4 04 labelling comments round 1 issued"/>
+<artifact id="Task/scenario4-05-labelling-comments-round1-response" key="Task-scenario4-05-labelling-comments-round1-response" name="scenario4 05 labelling comments round 1 answered with a counter-proposal"/>
+<artifact id="Task/scenario4-06-labelling-comments-round2" key="Task-scenario4-06-labelling-comments-round2" name="scenario4 06 labelling comments round 2 issued"/>
+<artifact id="Task/scenario4-07-labelling-comments-round2-response" key="Task-scenario4-07-labelling-comments-round2-response" name="scenario4 07 labelling comments round 2 accepted"/>
+<artifact id="Task/scenario4-08-labelling-agreement" key="Task-scenario4-08-labelling-agreement" name="scenario4 08 labelling agreement requested"/>
+<artifact id="Task/scenario4-09-labelling-agreed" key="Task-scenario4-09-labelling-agreed" name="scenario4 09 labelling agreed"/>
+<artifact id="Task/scenario4-10-variation-approved" key="Task-scenario4-10-variation-approved" name="scenario4 10 Type II variation approved"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="architecture" name="Architecture"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="capability-requirements" name="Capability Requirements"/>
+<page key="rwipharmadocumentReference" name="DocumentReference"/>
+<page key="gettingstarted" name="Getting Started"/>
+<page key="index" name="Home"/>
+<page key="rwipharmainteractionpattern" name="Interaction Pattern"/>
+<page key="rwipharmasubscriptionNotificationAndStatus" name="Notification &amp; Status"/>
+<page key="subscriptions" name="Notifications"/>
+<page key="rwipharmaorganizationEndpoint" name="Organization &amp; Endpoint"/>
+<page key="rwipharmatask" name="RWI-pharma Task Structure"/>
+<page key="usecases-scenario-stability" name="Scenario 1: Stability Update"/>
+<page key="usecases-scenario-icsr" name="Scenario 2: ICSR Accepted, and Rejected then Resubmitted"/>
+<page key="usecases-scenario-cta" name="Scenario 3: Clinical Trial Application"/>
+<page key="usecases-scenario-label-negotiation" name="Scenario 4: Label Negotiation"/>
+<page key="rwipharmasubscription" name="Subscription"/>
+<page key="rwipharmasubscriptionTopic" name="SubscriptionTopic"/>
+<page key="toc" name="Table of Contents"/>
+<page key="terminology" name="Terminology"/>
+<page key="usecases-status-tracking" name="Tracking and Dashboards"/>
+<page key="usecases" name="Use Cases"/>
+<page key="workflow" name="Workflow"/>
+</specification>
