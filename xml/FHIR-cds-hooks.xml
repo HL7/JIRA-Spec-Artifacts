@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://cds-hooks.hl7.org/2026Jan" ciUrl="http://build.fhir.org/ig/HL7/cds-hooks" defaultVersion="2.0.1" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/cds-hooks-hl7-site" url="http://cds-hooks.hl7.org">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://cds-hooks.hl7.org/2026Jan" ciUrl="http://build.fhir.org/ig/HL7/cds-hooks" defaultVersion="3.0.0" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/cds-hooks-hl7-site" url="http://cds-hooks.hl7.org">
 <version code="current" url="http://build.fhir.org/ig/HL7/cds-hooks"/>
-<version code="3.0.0-ballot" url="http://cds-hooks.hl7.org/2026Jan"/>
-<version code="2.0.1" url="http://cds-hooks.hl7.org/STU2"/>
+<version code="3.0.0" url="http://cds-hooks.hl7.org/3.0.0"/>
+<version code="3.0.0-ballot" deprecated="true" url="http://cds-hooks.hl7.org/2026Jan"/>
+<version code="2.0.1" deprecated="true" url="http://cds-hooks.hl7.org/STU2"/>
 <version code="2.0" deprecated="true" url="http://cds-hooks.hl7.org/2.0"/>
 <version code="1.1" deprecated="true" url="https://cds-hooks.hl7.org/ballots/2020Sep"/>
 <version code="1.0" deprecated="true" url="http://cds-hooks.hl7.org/1.0"/>
@@ -12,6 +13,19 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/CDSHookContext" key="StructureDefinition-CDSHookContext" name="CDS Hook Specific Context (Logical Definition)"/>
+<artifact id="CodeSystem/CDSActionType" key="CodeSystem-CDSActionType" name="CDSActionType Codes"/>
+<artifact id="ValueSet/CDSActionType" key="ValueSet-CDSActionType" name="CDSActionType Codes ValueSet"/>
+<artifact id="StructureDefinition/CDSHooksServices" key="StructureDefinition-CDSHooksServices" name="CDSHooks Discovery Response (Logical Definition)"/>
+<artifact id="StructureDefinition/CDSHooksFeedback" key="StructureDefinition-CDSHooksFeedback" name="CDSHooks Feedback (Logical Definition)"/>
+<artifact id="StructureDefinition/CDSHooksRequest" key="StructureDefinition-CDSHooksRequest" name="CDSHooks Request (Logical Definition)"/>
+<artifact id="StructureDefinition/CDSHooksResponse" key="StructureDefinition-CDSHooksResponse" name="CDSHooks Response (Logical Definition)"/>
+<artifact id="StructureDefinition/CDSHooksElement" key="StructureDefinition-CDSHooksElement" name="CDSHooks Services Base Extensible Element"/>
+<artifact id="StructureDefinition/CDSHooksExtensions" key="StructureDefinition-CDSHooksExtensions" name="CDSHooks Services Extensions"/>
+<artifact id="ValueSet/CDSIndicator" key="ValueSet-CDSIndicator" name="CDSIndicator Codes ValueSet"/>
+<artifact id="CodeSystem/CDSLinkType" key="CodeSystem-CDSLinkType" name="CDSLinkType Codes"/>
+<artifact id="ValueSet/CDSLinkType" key="ValueSet-CDSLinkType" name="CDSLinkType Codes ValueSet"/>
+<artifact id="ValueSet/CDSSelectionBehavior" key="ValueSet-CDSSelectionBehavior" name="CDSSelectionBehavior Codes ValueSet"/>
 <artifact deprecated="true" key="Conformance" name="Conformance"/>
 <artifact deprecated="true" id="Hooks/appointment-book" key="Hooks-appointment-book" name="Hooks - Appointment Book"/>
 <artifact deprecated="true" id="Hooks/encounter-discharge" key="Hooks-encounter-discharge" name="Hooks - Encounter Discharge"/>
