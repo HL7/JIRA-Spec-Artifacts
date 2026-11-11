@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/identity-matching/2024SEP" ciUrl="http://build.fhir.org/ig/HL7/fhir-identity-matching-ig" defaultVersion="1.0.0" defaultWorkgroup="pa" gitUrl="https://github.com/HL7/fhir-identity-matching-ig" url="http://hl7.org/fhir/us/identity-matching">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/identity-matching/2024SEP" ciUrl="http://build.fhir.org/ig/HL7/fhir-identity-matching-ig" defaultVersion="2.0.0" defaultWorkgroup="pa" gitUrl="https://github.com/HL7/fhir-identity-matching-ig" url="http://hl7.org/fhir/us/identity-matching">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-identity-matching-ig"/>
-<version code="2.0.0-ballot" url="http://hl7.org/fhir/us/identity-matching/2024SEP"/>
-<version code="1.0.0" url="http://hl7.org/fhir/us/identity-matching/STU1"/>
+<version code="2.0.0" url="http://hl7.org/fhir/us/identity-matching/STU2"/>
+<version code="2.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/identity-matching/2024SEP"/>
+<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/identity-matching/STU1"/>
 <version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/identity-matching/2022May"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -16,22 +17,28 @@
 <artifact id="StructureDefinition/IDI-Patient" key="StructureDefinition-IDI-Patient" name="IDI Patient"/>
 <artifact id="StructureDefinition/IDI-Patient-L0" key="StructureDefinition-IDI-Patient-L0" name="IDI Patient L0"/>
 <artifact id="StructureDefinition/IDI-Patient-L1" key="StructureDefinition-IDI-Patient-L1" name="IDI Patient L1"/>
+<artifact id="StructureDefinition/IDI-Patient-L2" key="StructureDefinition-IDI-Patient-L2" name="IDI Patient L2"/>
 <artifact id="Parameters/IDIMatchInputParameters-Example" key="Parameters-IDIMatchInputParameters-Example" name="IDIMatchInputParameters-Example"/>
 <artifact id="Parameters/IDIMatchOutputParameters-Example" key="Parameters-IDIMatchOutputParameters-Example" name="IDIMatchOutputParameters-Example"/>
 <artifact id="CodeSystem/Identity-Identifier-cs" key="CodeSystem-Identity-Identifier-cs" name="Identity Identifier Code System"/>
 <artifact id="ValueSet/Identity-Identifier-vs" key="ValueSet-Identity-Identifier-vs" name="Identity Identifier Value Set"/>
-<artifact id="NamingSystem/Identity-HL7-Identifier" key="NamingSystem-Identity-HL7-Identifier" name="Identity-HL7-Identifier"/>
+<artifact deprecated="true" id="NamingSystem/Identity-HL7-Identifier" key="NamingSystem-Identity-HL7-Identifier" name="Identity-HL7-Identifier"/>
+<artifact id="NamingSystem/Identity-HL7-Person-Identifier" key="NamingSystem-Identity-HL7-Person-Identifier" name="Identity-HL7-Person-Identifier"/>
 <artifact id="Bundle/MATCHOperationResponse" key="Bundle-MATCHOperationResponse" name="MATCHOperationResponse"/>
+<artifact id="Patient/ExamplePatientINCOMPLETE" key="Patient-ExamplePatientINCOMPLETE" name="Patient-INCOMPLETE"/>
 <artifact id="Patient/ExamplePatientL0" key="Patient-ExamplePatientL0" name="Patient-L0"/>
 <artifact id="Patient/ExamplePatientL1" key="Patient-ExamplePatientL1" name="Patient-L1"/>
+<artifact id="Patient/ExamplePatientL2" key="Patient-ExamplePatientL2" name="Patient-L2"/>
 <artifact id="Patient/ExamplePatient" key="Patient-ExamplePatient" name="Patient1"/>
 <artifact id="Organization/abc-hospital" key="Organization-abc-hospital" name="abc-hospital"/>
 <artifact id="Organization/def-idp" key="Organization-def-idp" name="def-idp"/>
+<artifact id="RelatedPerson/patient-authorized-representative" key="RelatedPerson-patient-authorized-representative" name="patient-authorized-representative"/>
 <artifact id="Patient/patient-multi-digital-identifier" key="Patient-patient-multi-digital-identifier" name="patient-multi-digital-identifier"/>
 <artifact id="Organization/xyz-payer" key="Organization-xyz-payer" name="xyz-payer"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="changelog" name="Change Log"/>
 <page key="digital-identity" name="Digital Identity"/>
 <page key="downloads" name="Downloads"/>
 <page key="glossary" name="Glossary"/>

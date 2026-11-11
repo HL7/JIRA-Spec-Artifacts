@@ -1,0 +1,53 @@
+name: Publish to GitHub Pages
+
+# Runs ONLY when master changes — i.e. when a pull request is merged. Because
+# this is a push in the JiraSpec repository (which you administer), the run is
+# trusted and secrets.DEPLOY_KEY is available. Fork PRs never trigger this
+# workflow, so untrusted contributor code is never executed while the deploy
+# key is in scope.
+#
+# To guarantee "publish only on merge", protect master so the only way content
+# can reach it is through a merged pull request:
+#   Settings -> Branches -> Add rule for master -> Require a pull request
+#   before merging. (Optionally: Require branches to be up to date before
+#   merging, which forces the "Update branch" resync before a merge is allowed.)
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+
+# Never let two publishes overlap; run them one at a time in merge order.
+concurrency:
+  group: publish-gh-pages
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out master
+        uses: actions/checkout@v4
+
+      # Optional: uncomment and pin if the Ant build needs a specific JDK.
+      # - name: Set up JDK
+      #   uses: actions/setup-java@v4
+      #   with:
+      #     distribution: temurin
+      #     java-version: '17'
+
+      - name: Build
+        run: java -jar ./tools/ant/ant-launcher.jar
+
+      # JamesIves v4 has built-in SSH support via the `ssh-key` input, so the
+      # separate webfactory/ssh-agent step is gone. This also clears the
+      # Node 20 deprecation warning you were seeing from ssh-agent@v0.4.1.
+      # Same deploy key, same gh-pages branch, same json/ folder as before.
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: json
+          ssh-key: ${{ secrets.DEPLOY_KEY }}

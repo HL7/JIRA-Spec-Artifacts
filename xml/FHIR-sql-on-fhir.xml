@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/sql-on-fhir/3.0.0-202609-ballot" ciUrl="http://build.fhir.org/ig/HL7/sql-on-fhir" gitUrl="https://github.com/HL7/sql-on-fhir" defaultVersion="3.0.0-ballot" defaultWorkgroup="fhir-i" url="http://hl7.org/fhir/uv/sql-on-fhir">
+<version code="current" url="http://build.fhir.org/ig/HL7/sql-on-fhir"/>
+<version code="3.0.0-ballot" url="http://hl7.org/fhir/uv/sql-on-fhir/3.0.0-202609-ballot"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="Library/ActivePatientAddressesQuery" key="Library-ActivePatientAddressesQuery" name="Active Patient Addresses"/>
+<artifact id="Library/ActivePatientsView" key="Library-ActivePatientsView" name="Active Patients"/>
+<artifact id="ValueSet/AllSQLContentTypeCodes" key="ValueSet-AllSQLContentTypeCodes" name="All SQL Content Type Codes"/>
+<artifact id="Library/SqlOnFhirExample" key="Library-SqlOnFhirExample" name="Blood Pressure Trend Report"/>
+<artifact id="ViewDefinition/CodeSystemHierarchy" key="ViewDefinition-CodeSystemHierarchy" name="CodeSystem Hierarchy"/>
+<artifact id="ViewDefinition/ConditionFlat" key="ViewDefinition-ConditionFlat" name="Condition Flat"/>
+<artifact id="ViewDefinition/EncounterFlat" key="ViewDefinition-EncounterFlat" name="Encounter Flat"/>
+<artifact id="ValueSet/ExportOutputFormatCodes" key="ValueSet-ExportOutputFormatCodes" name="Export Output Format Codes"/>
+<artifact id="CodeSystem/ExportStatusCodes" key="CodeSystem-ExportStatusCodes" name="Export Status Code System"/>
+<artifact id="ValueSet/ExportStatusCodes" key="ValueSet-ExportStatusCodes" name="Export Status Codes"/>
+<artifact id="Library/OmopFhirPatientJoin" key="Library-OmopFhirPatientJoin" name="OMOP/FHIR Patient Match with Diagnoses"/>
+<artifact id="CodeSystem/OutputFormatCodes" key="CodeSystem-OutputFormatCodes" name="Output Format Code System"/>
+<artifact id="ValueSet/OutputFormatCodes" key="ValueSet-OutputFormatCodes" name="Output Format Codes"/>
+<artifact id="ViewDefinition/PatientAddresses" key="ViewDefinition-PatientAddresses" name="Patient Addresses"/>
+<artifact id="ViewDefinition/PatientDemographics" key="ViewDefinition-PatientDemographics" name="Patient Demographics"/>
+<artifact id="ViewDefinition/PatientNamesWithIndex" key="ViewDefinition-PatientNamesWithIndex" name="Patient Names with Index"/>
+<artifact id="ViewDefinition/PatientAndContactAddressUnion" key="ViewDefinition-PatientAndContactAddressUnion" name="Patient and Contact Address Union"/>
+<artifact id="ViewDefinition/QuestionnaireResponseItems" key="ViewDefinition-QuestionnaireResponseItems" name="Questionnaire Response Items"/>
+<artifact id="CodeSystem/SQLContentTypeCodes" key="CodeSystem-SQLContentTypeCodes" name="SQL Content Type Codes"/>
+<artifact id="OperationDefinition/SQLExport" key="OperationDefinition-SQLExport" name="SQL Export"/>
+<artifact id="CodeSystem/LibraryTypesCodes" key="CodeSystem-LibraryTypesCodes" name="SQL Library Types Code System"/>
+<artifact id="StructureDefinition/SQLQuery" key="StructureDefinition-SQLQuery" name="SQL Query Library"/>
+<artifact id="OperationDefinition/SQLRun" key="OperationDefinition-SQLRun" name="SQL Run"/>
+<artifact id="StructureDefinition/sql-text" key="StructureDefinition-sql-text" name="SQL Text"/>
+<artifact id="StructureDefinition/SQLView" key="StructureDefinition-SQLView" name="SQL View Library"/>
+<artifact id="ViewDefinition/ShareablePatientDemographics" key="ViewDefinition-ShareablePatientDemographics" name="Shareable Patient Demographics"/>
+<artifact id="StructureDefinition/ShareableViewDefinition" key="StructureDefinition-ShareableViewDefinition" name="Shareable View Definition"/>
+<artifact id="StructureDefinition/TabularViewDefinition" key="StructureDefinition-TabularViewDefinition" name="Tabular View Definition"/>
+<artifact id="ViewDefinition/UsCoreBloodPressures" key="ViewDefinition-UsCoreBloodPressures" name="US Core Blood Pressures"/>
+<artifact id="Library/UniquePatientAddressesQuery" key="Library-UniquePatientAddressesQuery" name="Unique Patient Addresses"/>
+<artifact id="StructureDefinition/ViewDefinition" key="StructureDefinition-ViewDefinition" name="View Definition"/>
+<artifact id="List/ViewDefinition-operations" key="List-ViewDefinition-operations" name="ViewDefinition Operations"/>
+<artifact id="SearchParameter/ViewDefinition-context-quantity" key="SearchParameter-ViewDefinition-context-quantity" name="ViewDefinitionContextQuantitySearchParam"/>
+<artifact id="SearchParameter/ViewDefinition-context" key="SearchParameter-ViewDefinition-context" name="ViewDefinitionContextSearchParam"/>
+<artifact id="SearchParameter/ViewDefinition-context-type-quantity" key="SearchParameter-ViewDefinition-context-type-quantity" name="ViewDefinitionContextTypeQuantitySearchParam"/>
+<artifact id="SearchParameter/ViewDefinition-context-type" key="SearchParameter-ViewDefinition-context-type" name="ViewDefinitionContextTypeSearchParam"/>
+<artifact id="SearchParameter/ViewDefinition-context-type-value" key="SearchParameter-ViewDefinition-context-type-value" name="ViewDefinitionContextTypeValueSearchParam"/>
+<artifact id="SearchParameter/ViewDefinition-date" key="SearchParameter-ViewDefinition-date" name="ViewDefinitionDateSearchParam"/>
+<artifact id="SearchParameter/ViewDefinition-description" key="SearchParameter-ViewDefinition-description" name="ViewDefinitionDescriptionSearchParam"/>
+<artifact id="SearchParameter/ViewDefinition-identifier" key="SearchParameter-ViewDefinition-identifier" name="ViewDefinitionIdentifierSearchParam"/>
+<artifact id="SearchParameter/ViewDefinition-jurisdiction" key="SearchParameter-ViewDefinition-jurisdiction" name="ViewDefinitionJurisdictionSearchParam"/>
+<artifact id="SearchParameter/ViewDefinition-name" key="SearchParameter-ViewDefinition-name" name="ViewDefinitionNameSearchParam"/>
+<artifact id="SearchParameter/ViewDefinition-profile" key="SearchParameter-ViewDefinition-profile" name="ViewDefinitionProfileSearchParam"/>
+<artifact id="SearchParameter/ViewDefinition-publisher" key="SearchParameter-ViewDefinition-publisher" name="ViewDefinitionPublisherSearchParam"/>
+<artifact id="SearchParameter/ViewDefinition-resource" key="SearchParameter-ViewDefinition-resource" name="ViewDefinitionResourceSearchParam"/>
+<artifact id="SearchParameter/ViewDefinition-status" key="SearchParameter-ViewDefinition-status" name="ViewDefinitionStatusSearchParam"/>
+<artifact id="SearchParameter/ViewDefinition-title" key="SearchParameter-ViewDefinition-title" name="ViewDefinitionTitleSearchParam"/>
+<artifact id="SearchParameter/ViewDefinition-url" key="SearchParameter-ViewDefinition-url" name="ViewDefinitionUrlSearchParam"/>
+<artifact id="SearchParameter/ViewDefinition-version" key="SearchParameter-ViewDefinition-version" name="ViewDefinitionVersionSearchParam"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="changes" name="Changes"/>
+<page key="contributing" name="Contributing"/>
+<page key="functional-model" name="Functional Model"/>
+<page key="glossary" name="Glossary"/>
+<page key="index" name="Home"/>
+<page key="operations" name="Operations"/>
+<page key="operations-capability" name="Operations Capability"/>
+<page key="operations-common" name="Operations Common"/>
+<page key="toc" name="Table of Contents"/>
+</specification>

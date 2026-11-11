@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/HL7/mapping-language-ig" defaultVersion="current" defaultWorkgroup="fhir-i" gitUrl="https://github.com/HL7/mapping-language-ig" url="http://hl7.org/fhir/uv/mapping-language">
+<version code="current" url="https://build.fhir.org/ig/HL7/mapping-language-ig"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="StructureMap/Comments" key="StructureMap-Comments" name="Comments"/>
+<artifact id="StructureMap/ConceptMapEmbedded" key="StructureMap-ConceptMapEmbedded" name="ConceptMapEmbedded"/>
+<artifact id="StructureMap/Constants" key="StructureMap-Constants" name="Constants"/>
+<artifact id="StructureMap/DependentGroup" key="StructureMap-DependentGroup" name="DependentGroup"/>
+<artifact id="StructureMap/DependentInline" key="StructureMap-DependentInline" name="DependentInline"/>
+<artifact id="StructureMap/DependentMultiGroup" key="StructureMap-DependentMultiGroup" name="DependentMultiGroup"/>
+<artifact id="StructureMap/MetadataExtended" key="StructureMap-MetadataExtended" name="Extended Metadata Example"/>
+<artifact id="StructureMap/FhirPathSourceAsVar" key="StructureMap-FhirPathSourceAsVar" name="FhirPathSourceAsVar"/>
+<artifact id="StructureMap/GroupBasic" key="StructureMap-GroupBasic" name="GroupBasic"/>
+<artifact id="StructureMap/GroupExtends" key="StructureMap-GroupExtends" name="GroupExtends"/>
+<artifact id="StructureMap/GroupTypePlus" key="StructureMap-GroupTypePlus" name="GroupTypePlus"/>
+<artifact id="StructureMap/GroupTypes" key="StructureMap-GroupTypes" name="GroupTypes"/>
+<artifact id="StructureMap/Imports" key="StructureMap-Imports" name="Imports"/>
+<artifact id="StructureMap/MetadataBasic" key="StructureMap-MetadataBasic" name="MetadataBasic"/>
+<artifact id="OperationDefinition/StructureMap-transform" key="OperationDefinition-StructureMap-transform" name="Model Instance Transformation"/>
+<artifact id="StructureMap/SimpleBatch" key="StructureMap-SimpleBatch" name="SimpleBatch"/>
+<artifact id="StructureMap/SimpleIdentity" key="StructureMap-SimpleIdentity" name="SimpleIdentity"/>
+<artifact id="StructureMap/SourceCardinality" key="StructureMap-SourceCardinality" name="SourceCardinality"/>
+<artifact id="StructureMap/SourceCheck" key="StructureMap-SourceCheck" name="SourceCheck"/>
+<artifact id="StructureMap/SourceCopy" key="StructureMap-SourceCopy" name="SourceCopy"/>
+<artifact id="StructureMap/SourceDefault" key="StructureMap-SourceDefault" name="SourceDefault"/>
+<artifact id="StructureMap/SourceListFirst" key="StructureMap-SourceListFirst" name="SourceListFirst"/>
+<artifact id="StructureMap/SourceListLast" key="StructureMap-SourceListLast" name="SourceListLast"/>
+<artifact id="StructureMap/SourceListNotFirst" key="StructureMap-SourceListNotFirst" name="SourceListNotFirst"/>
+<artifact id="StructureMap/SourceListNotLast" key="StructureMap-SourceListNotLast" name="SourceListNotLast"/>
+<artifact id="StructureMap/SourceListOnlyOne" key="StructureMap-SourceListOnlyOne" name="SourceListOnlyOne"/>
+<artifact id="StructureMap/SourceLog" key="StructureMap-SourceLog" name="SourceLog"/>
+<artifact id="StructureMap/SourceMultiple" key="StructureMap-SourceMultiple" name="SourceMultiple"/>
+<artifact id="StructureMap/SourceTypeFilter" key="StructureMap-SourceTypeFilter" name="SourceTypeFilter"/>
+<artifact id="StructureMap/SourceWhere" key="StructureMap-SourceWhere" name="SourceWhere"/>
+<artifact id="StructureMap/StructArrayToArray" key="StructureMap-StructArrayToArray" name="StructArrayToArray"/>
+<artifact id="StructureMap/StructArrayToProp" key="StructureMap-StructArrayToProp" name="StructArrayToProp"/>
+<artifact id="StructureMap/StructNestedToTop" key="StructureMap-StructNestedToTop" name="StructNestedToTop"/>
+<artifact id="StructureMap/StructPropToArray" key="StructureMap-StructPropToArray" name="StructPropToArray"/>
+<artifact id="StructureMap/StructTopToNested" key="StructureMap-StructTopToNested" name="StructTopToNested"/>
+<artifact id="StructureDefinition/StructureMap" key="StructureDefinition-StructureMap" name="Structure Map"/>
+<artifact id="CodeSystem/map-group-type-mode" key="CodeSystem-map-group-type-mode" name="Structure Map Group Type Mode"/>
+<artifact id="ValueSet/vs-map-group-type-mode" key="ValueSet-vs-map-group-type-mode" name="Structure Map Group Type Mode ValueSet"/>
+<artifact id="CodeSystem/map-input-mode" key="CodeSystem-map-input-mode" name="Structure Map Input Mode"/>
+<artifact id="ValueSet/vs-map-input-mode" key="ValueSet-vs-map-input-mode" name="Structure Map Input Mode ValueSet"/>
+<artifact id="CodeSystem/map-model-mode" key="CodeSystem-map-model-mode" name="Structure Map Model Mode"/>
+<artifact id="ValueSet/vs-map-model-mode" key="ValueSet-vs-map-model-mode" name="Structure Map Model Mode ValueSet"/>
+<artifact id="CodeSystem/map-source-list-mode" key="CodeSystem-map-source-list-mode" name="Structure Map Source List Mode"/>
+<artifact id="ValueSet/vs-map-source-list-mode" key="ValueSet-vs-map-source-list-mode" name="Structure Map Source List Mode ValueSet"/>
+<artifact id="CodeSystem/map-target-list-mode" key="CodeSystem-map-target-list-mode" name="Structure Map Target List Mode"/>
+<artifact id="ValueSet/vs-map-target-list-mode" key="ValueSet-vs-map-target-list-mode" name="Structure Map Target List Mode ValueSet"/>
+<artifact id="CodeSystem/map-transform" key="CodeSystem-map-transform" name="Structure Map Transform"/>
+<artifact id="ValueSet/vs-map-transform" key="ValueSet-vs-map-transform" name="Structure Map Transform ValueSet"/>
+<artifact id="SearchParameter/StructureMap-context-quantity" key="SearchParameter-StructureMap-context-quantity" name="StructureMapContextQuantitySearchParam"/>
+<artifact id="SearchParameter/StructureMap-context" key="SearchParameter-StructureMap-context" name="StructureMapContextSearchParam"/>
+<artifact id="SearchParameter/StructureMap-context-type-quantity" key="SearchParameter-StructureMap-context-type-quantity" name="StructureMapContextTypeQuantitySearchParam"/>
+<artifact id="SearchParameter/StructureMap-context-type" key="SearchParameter-StructureMap-context-type" name="StructureMapContextTypeSearchParam"/>
+<artifact id="SearchParameter/StructureMap-context-type-value" key="SearchParameter-StructureMap-context-type-value" name="StructureMapContextTypeValueSearchParam"/>
+<artifact id="SearchParameter/StructureMap-date" key="SearchParameter-StructureMap-date" name="StructureMapDateSearchParam"/>
+<artifact id="SearchParameter/StructureMap-description" key="SearchParameter-StructureMap-description" name="StructureMapDescriptionSearchParam"/>
+<artifact id="SearchParameter/StructureMap-experimental" key="SearchParameter-StructureMap-experimental" name="StructureMapExperimentalSearchParam"/>
+<artifact id="SearchParameter/StructureMap-identifier" key="SearchParameter-StructureMap-identifier" name="StructureMapIdentifierSearchParam"/>
+<artifact id="SearchParameter/StructureMap-jurisdiction" key="SearchParameter-StructureMap-jurisdiction" name="StructureMapJurisdictionSearchParam"/>
+<artifact id="SearchParameter/StructureMap-name" key="SearchParameter-StructureMap-name" name="StructureMapNameSearchParam"/>
+<artifact id="SearchParameter/StructureMap-produced" key="SearchParameter-StructureMap-produced" name="StructureMapProducedSearchParam"/>
+<artifact id="SearchParameter/StructureMap-publisher" key="SearchParameter-StructureMap-publisher" name="StructureMapPublisherSearchParam"/>
+<artifact id="SearchParameter/StructureMap-queried" key="SearchParameter-StructureMap-queried" name="StructureMapQueriedSearchParam"/>
+<artifact id="SearchParameter/StructureMap-source" key="SearchParameter-StructureMap-source" name="StructureMapSourceSearchParam"/>
+<artifact id="SearchParameter/StructureMap-status" key="SearchParameter-StructureMap-status" name="StructureMapStatusSearchParam"/>
+<artifact id="SearchParameter/StructureMap-target" key="SearchParameter-StructureMap-target" name="StructureMapTargetSearchParam"/>
+<artifact id="SearchParameter/StructureMap-title" key="SearchParameter-StructureMap-title" name="StructureMapTitleSearchParam"/>
+<artifact id="SearchParameter/StructureMap-url" key="SearchParameter-StructureMap-url" name="StructureMapUrlSearchParam"/>
+<artifact id="SearchParameter/StructureMap-version" key="SearchParameter-StructureMap-version" name="StructureMapVersionSearchParam"/>
+<artifact id="StructureMap/SyntaxBackticks" key="StructureMap-SyntaxBackticks" name="SyntaxBackticks"/>
+<artifact id="StructureMap/TargetMultiple" key="StructureMap-TargetMultiple" name="TargetMultiple"/>
+<artifact id="StructureMap/TargetSubelement" key="StructureMap-TargetSubelement" name="TargetSubelement"/>
+<artifact id="StructureMap/TransformAppend" key="StructureMap-TransformAppend" name="TransformAppend"/>
+<artifact id="StructureMap/TransformC" key="StructureMap-TransformC" name="TransformC"/>
+<artifact id="StructureMap/TransformCast" key="StructureMap-TransformCast" name="TransformCast"/>
+<artifact id="StructureMap/TransformCc" key="StructureMap-TransformCc" name="TransformCc"/>
+<artifact id="StructureMap/TransformCp" key="StructureMap-TransformCp" name="TransformCp"/>
+<artifact id="StructureMap/TransformCreate" key="StructureMap-TransformCreate" name="TransformCreate"/>
+<artifact id="StructureMap/TransformEvaluate" key="StructureMap-TransformEvaluate" name="TransformEvaluate"/>
+<artifact id="StructureMap/TransformEvaluate2" key="StructureMap-TransformEvaluate2" name="TransformEvaluate2"/>
+<artifact id="StructureMap/TransformEvaluateConcise" key="StructureMap-TransformEvaluateConcise" name="TransformEvaluateConcise"/>
+<artifact id="StructureMap/TransformId" key="StructureMap-TransformId" name="TransformId"/>
+<artifact id="StructureMap/TransformQty" key="StructureMap-TransformQty" name="TransformQty"/>
+<artifact id="StructureMap/TransformReference" key="StructureMap-TransformReference" name="TransformReference"/>
+<artifact id="StructureMap/TransformTranslate" key="StructureMap-TransformTranslate" name="TransformTranslate"/>
+<artifact id="StructureMap/TransformTruncate" key="StructureMap-TransformTruncate" name="TransformTruncate"/>
+<artifact id="StructureMap/TransformUuid" key="StructureMap-TransformUuid" name="TransformUuid"/>
+<artifact id="StructureMap/UsesAlias" key="StructureMap-UsesAlias" name="UsesAlias"/>
+<artifact id="StructureMap/UsesQueriedProduced" key="StructureMap-UsesQueriedProduced" name="UsesQueriedProduced"/>
+<artifact id="StructureMap/UsesSourceTarget" key="StructureMap-UsesSourceTarget" name="UsesSourceTarget"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="changes" name="Change Log"/>
+<page key="examples" name="FML Annotated Examples"/>
+<page key="grammar" name="FML Grammar"/>
+<page key="tutorial" name="FML Tutorial"/>
+<page key="index" name="Home"/>
+<page key="fml" name="Specification"/>
+<page key="toc" name="Table of Contents"/>
+<page key="transforms" name="Target Transform Functions"/>
+</specification>

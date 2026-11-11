@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/molecular-definition-data-types/2025Sep" ciUrl="http://build.fhir.org/ig/HL7/molecular-definition-data-types" defaultVersion="1.0.0-ballot1" defaultWorkgroup="cg" gitUrl="https://github.com/HL7/molecular-definition-data-types" url="http://hl7.org/fhir/uv/molecular-definition-data-types">
+<version code="current" url="http://build.fhir.org/ig/HL7/molecular-definition-data-types"/>
+<version code="1.0.0-ballot1" url="http://hl7.org/fhir/uv/molecular-definition-data-types/2025Sep"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/allele" key="StructureDefinition-allele" name="Allele"/>
+<artifact id="ValueSet/amino-acid-1letter-ambiguous" key="ValueSet-amino-acid-1letter-ambiguous" name="Amino Acid 1-letter Ambiguous Symbols ValueSet"/>
+<artifact id="ValueSet/amino-acid-1letter-unambiguous" key="ValueSet-amino-acid-1letter-unambiguous" name="Amino Acid 1-letter Unambiguous Symbols ValueSet"/>
+<artifact id="ValueSet/amino-acid-3letter-ambiguous" key="ValueSet-amino-acid-3letter-ambiguous" name="Amino Acid 3-letter Ambiguous Symbols ValueSet"/>
+<artifact id="ValueSet/amino-acid-3letter-unambiguous" key="ValueSet-amino-acid-3letter-unambiguous" name="Amino Acid 3-letter Unambiguous Symbols ValueSet"/>
+<artifact id="CodeSystem/amino-acid" key="CodeSystem-amino-acid" name="Amino Acid Symbols"/>
+<artifact id="CodeSystem/coordinate-origin" key="CodeSystem-coordinate-origin" name="Coordinate Origin"/>
+<artifact id="ValueSet/coordinate-origin" key="ValueSet-coordinate-origin" name="Coordinate Origin ValueSet"/>
+<artifact id="CodeSystem/encodings" key="CodeSystem-encodings" name="Encodings"/>
+<artifact id="StructureDefinition/genotype" key="StructureDefinition-genotype" name="Genotype"/>
+<artifact id="StructureDefinition/haplotype" key="StructureDefinition-haplotype" name="Haplotype"/>
+<artifact id="ValueSet/encodings" key="ValueSet-encodings" name="Molecular Definition Encodings ValueSet"/>
+<artifact id="CodeSystem/molecular-definition-focus" key="CodeSystem-molecular-definition-focus" name="Molecular Definition Focus"/>
+<artifact id="ValueSet/molecular-definition-focus" key="ValueSet-molecular-definition-focus" name="Molecular Definition Focus ValueSet"/>
+<artifact id="CodeSystem/molecule-type" key="CodeSystem-molecule-type" name="Molecule Type"/>
+<artifact id="ValueSet/molecule-type" key="ValueSet-molecule-type" name="Molecule Type ValueSet"/>
+<artifact id="CodeSystem/normalization-method" key="CodeSystem-normalization-method" name="Normalization Method"/>
+<artifact id="ValueSet/normalization-method" key="ValueSet-normalization-method" name="Normalization Method ValueSet"/>
+<artifact id="ValueSet/nucleotide-dna-1letter-ambiguous" key="ValueSet-nucleotide-dna-1letter-ambiguous" name="Nucleotide DNA 1-letter Ambiguous Symbols ValueSet"/>
+<artifact id="ValueSet/nucleotide-dna-1letter-with-n" key="ValueSet-nucleotide-dna-1letter-with-n" name="Nucleotide DNA 1-letter Unambiguous Symbols Including N ValueSet"/>
+<artifact id="ValueSet/nucleotide-dna-1letter-unambiguous" key="ValueSet-nucleotide-dna-1letter-unambiguous" name="Nucleotide DNA 1-letter Unambiguous Symbols ValueSet"/>
+<artifact id="CodeSystem/nucleotide-dna" key="CodeSystem-nucleotide-dna" name="Nucleotide DNA Symbols"/>
+<artifact id="ValueSet/nucleotide-rna-1letter-unambiguous" key="ValueSet-nucleotide-rna-1letter-unambiguous" name="Nucleotide RNA 1-letter Unambiguous Symbols ValueSet"/>
+<artifact id="CodeSystem/nucleotide-rna" key="CodeSystem-nucleotide-rna" name="Nucleotide RNA Symbols"/>
+<artifact id="StructureDefinition/sequence" key="StructureDefinition-sequence" name="Sequence"/>
+<artifact id="CodeSystem/strand-orientation" key="CodeSystem-strand-orientation" name="Strand Orientation"/>
+<artifact id="ValueSet/strand-orientation" key="ValueSet-strand-orientation" name="Strand Orientation ValueSet"/>
+<artifact id="CodeSystem/topology" key="CodeSystem-topology" name="Topology"/>
+<artifact id="ValueSet/topology" key="ValueSet-topology" name="Topology ValueSet"/>
+<artifact id="StructureDefinition/variation" key="StructureDefinition-variation" name="Variation"/>
+<artifact id="MolecularDefinition/example-allelesliced-cyp2c19-1016-cont" key="MolecularDefinition-example-allelesliced-cyp2c19-1016-cont" name="example-allelesliced-cyp2c19-1016-cont"/>
+<artifact id="MolecularDefinition/example-allelesliced-cyp2c19-1016g" key="MolecularDefinition-example-allelesliced-cyp2c19-1016g" name="example-allelesliced-cyp2c19-1016g"/>
+<artifact id="MolecularDefinition/example-allelesliced-cyp2c19-661a" key="MolecularDefinition-example-allelesliced-cyp2c19-661a" name="example-allelesliced-cyp2c19-661a"/>
+<artifact id="MolecularDefinition/example-allelesliced-cyp2c19-661g" key="MolecularDefinition-example-allelesliced-cyp2c19-661g" name="example-allelesliced-cyp2c19-661g"/>
+<artifact id="MolecularDefinition/example-allelesliced-cyp2c19-661g-coded" key="MolecularDefinition-example-allelesliced-cyp2c19-661g-coded" name="example-allelesliced-cyp2c19-661g-coded"/>
+<artifact id="MolecularDefinition/example-allelesliced-hla-121-a" key="MolecularDefinition-example-allelesliced-hla-121-a" name="example-allelesliced-hla-121-a"/>
+<artifact id="MolecularDefinition/example-allelesliced-hla-121-c" key="MolecularDefinition-example-allelesliced-hla-121-c" name="example-allelesliced-hla-121-c"/>
+<artifact id="MolecularDefinition/example-allelesliced-hla-123-c" key="MolecularDefinition-example-allelesliced-hla-123-c" name="example-allelesliced-hla-123-c"/>
+<artifact id="MolecularDefinition/example-allelesliced-hla-123-t" key="MolecularDefinition-example-allelesliced-hla-123-t" name="example-allelesliced-hla-123-t"/>
+<artifact id="MolecularDefinition/example-allelesliced-hla-126-a" key="MolecularDefinition-example-allelesliced-hla-126-a" name="example-allelesliced-hla-126-a"/>
+<artifact id="MolecularDefinition/example-allelesliced-hla-126-g" key="MolecularDefinition-example-allelesliced-hla-126-g" name="example-allelesliced-hla-126-g"/>
+<artifact id="MolecularDefinition/example-allelesliced-hla-144-a" key="MolecularDefinition-example-allelesliced-hla-144-a" name="example-allelesliced-hla-144-a"/>
+<artifact id="MolecularDefinition/example-allelesliced-hla-144-a-coded" key="MolecularDefinition-example-allelesliced-hla-144-a-coded" name="example-allelesliced-hla-144-a-coded"/>
+<artifact id="MolecularDefinition/example-allelesliced-hla-144-c" key="MolecularDefinition-example-allelesliced-hla-144-c" name="example-allelesliced-hla-144-c"/>
+<artifact id="MolecularDefinition/example-allelesliced-hla-98-c" key="MolecularDefinition-example-allelesliced-hla-98-c" name="example-allelesliced-hla-98-c"/>
+<artifact id="MolecularDefinition/example-allelesliced-hla-98-t" key="MolecularDefinition-example-allelesliced-hla-98-t" name="example-allelesliced-hla-98-t"/>
+<artifact id="MolecularDefinition/example-genomic-cyp2c19-accession" key="MolecularDefinition-example-genomic-cyp2c19-accession" name="example-genomic-cyp2c19-accession"/>
+<artifact id="DocumentReference/example-genomicfile-af1961831-url" key="DocumentReference-example-genomicfile-af1961831-url" name="example-genomicfile-af1961831-url"/>
+<artifact id="DocumentReference/example-genomicfile-cyp2c19-accession" key="DocumentReference-example-genomicfile-cyp2c19-accession" name="example-genomicfile-cyp2c19-accession"/>
+<artifact id="DocumentReference/example-genomicfile-cyp2c19-attached" key="DocumentReference-example-genomicfile-cyp2c19-attached" name="example-genomicfile-cyp2c19-attached"/>
+<artifact id="DocumentReference/example-genomicfile-cyp2c19-url" key="DocumentReference-example-genomicfile-cyp2c19-url" name="example-genomicfile-cyp2c19-url"/>
+<artifact id="DocumentReference/example-genomicfile-hla00001" key="DocumentReference-example-genomicfile-hla00001" name="example-genomicfile-hla00001"/>
+<artifact id="DocumentReference/example-genomicfile-mw7162561" key="DocumentReference-example-genomicfile-mw7162561" name="example-genomicfile-mw7162561"/>
+<artifact id="DocumentReference/example-genomicfile-nc00000714-url" key="DocumentReference-example-genomicfile-nc00000714-url" name="example-genomicfile-nc00000714-url"/>
+<artifact id="DocumentReference/example-genomicfile-nc00001010-url" key="DocumentReference-example-genomicfile-nc00001010-url" name="example-genomicfile-nc00001010-url"/>
+<artifact id="DocumentReference/example-genomicfile-ng0083843" key="DocumentReference-example-genomicfile-ng0083843" name="example-genomicfile-ng0083843"/>
+<artifact id="DocumentReference/example-genomicfile-nm0002513" key="DocumentReference-example-genomicfile-nm0002513" name="example-genomicfile-nm0002513"/>
+<artifact id="DocumentReference/example-genomicfile-nm0007694" key="DocumentReference-example-genomicfile-nm0007694" name="example-genomicfile-nm0007694"/>
+<artifact id="DocumentReference/example-genomicfile-nm0020245" key="DocumentReference-example-genomicfile-nm0020245" name="example-genomicfile-nm0020245"/>
+<artifact id="MolecularDefinition/example-genotype-cyp2c19-1002-and-3" key="MolecularDefinition-example-genotype-cyp2c19-1002-and-3" name="example-genotype-cyp2c19-1002-and-3"/>
+<artifact id="MolecularDefinition/example-genotype-hla-00001-and-2" key="MolecularDefinition-example-genotype-hla-00001-and-2" name="example-genotype-hla-00001-and-2"/>
+<artifact id="MolecularDefinition/example-haplotype-cyp2c19-1002" key="MolecularDefinition-example-haplotype-cyp2c19-1002" name="example-haplotype-cyp2c19-1002"/>
+<artifact id="MolecularDefinition/example-haplotype-cyp2c19-3002" key="MolecularDefinition-example-haplotype-cyp2c19-3002" name="example-haplotype-cyp2c19-3002"/>
+<artifact id="MolecularDefinition/example-haplotype-hla-00001" key="MolecularDefinition-example-haplotype-hla-00001" name="example-haplotype-hla-00001"/>
+<artifact id="MolecularDefinition/example-haplotype-hla-00002" key="MolecularDefinition-example-haplotype-hla-00002" name="example-haplotype-hla-00002"/>
+<artifact id="MolecularDefinition/example-sequence-a-aa-iupac" key="MolecularDefinition-example-sequence-a-aa-iupac" name="example-sequence-a-aa-iupac"/>
+<artifact id="MolecularDefinition/example-sequence-a-dna-iupac" key="MolecularDefinition-example-sequence-a-dna-iupac" name="example-sequence-a-dna-iupac"/>
+<artifact id="MolecularDefinition/example-sequence-c-dna-iupac" key="MolecularDefinition-example-sequence-c-dna-iupac" name="example-sequence-c-dna-iupac"/>
+<artifact id="MolecularDefinition/example-sequence-cgg" key="MolecularDefinition-example-sequence-cgg" name="example-sequence-cgg"/>
+<artifact id="MolecularDefinition/example-sequence-cyp2c19-accession" key="MolecularDefinition-example-sequence-cyp2c19-accession" name="example-sequence-cyp2c19-accession"/>
+<artifact id="MolecularDefinition/example-sequence-cyp2c19-attached" key="MolecularDefinition-example-sequence-cyp2c19-attached" name="example-sequence-cyp2c19-attached"/>
+<artifact id="MolecularDefinition/example-sequence-cyp2c19-concatenated-regions" key="MolecularDefinition-example-sequence-cyp2c19-concatenated-regions" name="example-sequence-cyp2c19-concatenated-regions"/>
+<artifact id="MolecularDefinition/example-sequence-cyp2c19-downstream-region" key="MolecularDefinition-example-sequence-cyp2c19-downstream-region" name="example-sequence-cyp2c19-downstream-region"/>
+<artifact id="MolecularDefinition/example-sequence-cyp2c19-gene-region" key="MolecularDefinition-example-sequence-cyp2c19-gene-region" name="example-sequence-cyp2c19-gene-region"/>
+<artifact id="MolecularDefinition/example-sequence-cyp2c19-upstream-region" key="MolecularDefinition-example-sequence-cyp2c19-upstream-region" name="example-sequence-cyp2c19-upstream-region"/>
+<artifact id="MolecularDefinition/example-sequence-cyp2c19-url" key="MolecularDefinition-example-sequence-cyp2c19-url" name="example-sequence-cyp2c19-url"/>
+<artifact id="MolecularDefinition/example-sequence-fmr1-cgg-20x-edited-contained" key="MolecularDefinition-example-sequence-fmr1-cgg-20x-edited-contained" name="example-sequence-fmr1-cgg-20x-edited-contained"/>
+<artifact id="MolecularDefinition/example-sequence-fmr1-cgg-20x-edited-referenced" key="MolecularDefinition-example-sequence-fmr1-cgg-20x-edited-referenced" name="example-sequence-fmr1-cgg-20x-edited-referenced"/>
+<artifact id="MolecularDefinition/example-sequence-fmr1-cgg-20x-repeat" key="MolecularDefinition-example-sequence-fmr1-cgg-20x-repeat" name="example-sequence-fmr1-cgg-20x-repeat"/>
+<artifact id="MolecularDefinition/example-sequence-hla000011" key="MolecularDefinition-example-sequence-hla000011" name="example-sequence-hla000011"/>
+<artifact id="MolecularDefinition/example-sequence-nc00000714-url" key="MolecularDefinition-example-sequence-nc00000714-url" name="example-sequence-nc00000714-url"/>
+<artifact id="MolecularDefinition/example-sequence-nm0007694-url" key="MolecularDefinition-example-sequence-nm0007694-url" name="example-sequence-nm0007694-url"/>
+<artifact id="MolecularDefinition/example-variation-cyp2c19-1015-spdi" key="MolecularDefinition-example-variation-cyp2c19-1015-spdi" name="example-variation-cyp2c19-1015-spdi"/>
+<artifact id="MolecularDefinition/example-variation-cyp2c19-1015-spdi-coded" key="MolecularDefinition-example-variation-cyp2c19-1015-spdi-coded" name="example-variation-cyp2c19-1015-spdi-coded"/>
+<artifact id="MolecularDefinition/example-variation-tri-allelic-ABCB1" key="MolecularDefinition-example-variation-tri-allelic-ABCB1" name="example-variation-tri-allelic-ABCB1"/>
+<artifact id="MolecularDefinition/example-variation-tri-allelic-ABCB1-coded" key="MolecularDefinition-example-variation-tri-allelic-ABCB1-coded" name="example-variation-tri-allelic-ABCB1-coded"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="index" name="Home"/>
+<page key="motivation" name="Motivation"/>
+<page key="toc" name="Table of Contents"/>
+<page key="use-cases" name="Use Cases"/>
+</specification>

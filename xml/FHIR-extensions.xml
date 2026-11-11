@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/extensions/5.1.0-ballot" ciUrl="http://build.fhir.org/ig/HL7/fhir-extensions" defaultVersion="5.3.0-ballot" defaultWorkgroup="fhir-i" gitUrl="https://github.com/HL7/fhir-extensions" url="http://hl7.org/fhir/extensions">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/extensions/5.1.0-ballot" ciUrl="http://build.fhir.org/ig/HL7/fhir-extensions" defaultVersion="5.3.0" defaultWorkgroup="fhir-i" gitUrl="https://github.com/HL7/fhir-extensions" url="http://hl7.org/fhir/extensions">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-extensions"/>
+<version code="5.3.0" url="http://hl7.org/fhir/extensions/5.3.0"/>
+<version code="5.3.0-ballot-tc1" url="http://hl7.org/fhir/extensions/5.3.0-ballot-tc1"/>
 <version code="5.3.0-ballot" url="http://hl7.org/fhir/extensions/5.3.0-ballot"/>
 <version code="5.2.0" url="http://hl7.org/fhir/extensions/5.2.0"/>
 <version code="5.2.0-ballot" url="http://hl7.org/fhir/extensions/5.2.0-ballot"/>
@@ -37,8 +39,10 @@
 <artifact id="StructureDefinition/iso21090-ADXP-unitType" key="StructureDefinition-iso21090-ADXP-unitType" name="ADXP Unit Type"/>
 <artifact id="StructureDefinition/allergyintolerance-abatement" key="StructureDefinition-allergyintolerance-abatement" name="Abatement"/>
 <artifact id="StructureDefinition/valueset-activityStatusDate" key="StructureDefinition-valueset-activityStatusDate" name="Activity Status Date"/>
+<artifact id="StructureDefinition/additionalImplicitRules" key="StructureDefinition-additionalImplicitRules" name="Additional Implicit Rules"/>
 <artifact id="StructureDefinition/additional-language" key="StructureDefinition-additional-language" name="Additional Language"/>
 <artifact id="StructureDefinition/additional-resource-compartment" key="StructureDefinition-additional-resource-compartment" name="Additional Resource Compartment"/>
+<artifact id="StructureDefinition/address-classification" key="StructureDefinition-address-classification" name="Address Classification"/>
 <artifact id="StructureDefinition/observation-geneticsAllele" key="StructureDefinition-observation-geneticsAllele" name="Allele"/>
 <artifact id="StructureDefinition/hla-genotyping-results-allele-database" key="StructureDefinition-hla-genotyping-results-allele-database" name="Allele Database"/>
 <artifact id="StructureDefinition/openEHR-administration" key="StructureDefinition-openEHR-administration" name="AllergyIntolerance Administration"/>
@@ -62,6 +66,7 @@
 <artifact id="StructureDefinition/elementdefinition-allowedUnits" key="StructureDefinition-elementdefinition-allowedUnits" name="Allowed Units"/>
 <artifact id="StructureDefinition/alternate-canonical" key="StructureDefinition-alternate-canonical" name="Alternate Canonical"/>
 <artifact id="StructureDefinition/alternate-codes" key="StructureDefinition-alternate-codes" name="Alternate Codes"/>
+<artifact id="StructureDefinition/alternate-hash" key="StructureDefinition-alternate-hash" name="Alternate Hash"/>
 <artifact id="StructureDefinition/alternate-reference" key="StructureDefinition-alternate-reference" name="Alternate Reference"/>
 <artifact id="StructureDefinition/cqf-alternativeExpression" key="StructureDefinition-cqf-alternativeExpression" name="Alternative expression"/>
 <artifact id="StructureDefinition/observation-geneticsAminoAcidChange" key="StructureDefinition-observation-geneticsAminoAcidChange" name="Amino Acid Change"/>
@@ -76,6 +81,7 @@
 <artifact id="StructureDefinition/artifactassessment-disposition" key="StructureDefinition-artifactassessment-disposition" name="Artifact Assessment Disposition"/>
 <artifact id="StructureDefinition/artifactassessment-workflowStatus" key="StructureDefinition-artifactassessment-workflowStatus" name="Artifact Assessment Workflow Status"/>
 <artifact id="StructureDefinition/artifact-author" key="StructureDefinition-artifact-author" name="Artifact Author"/>
+<artifact id="StructureDefinition/artifact-authoritativeSource" key="StructureDefinition-artifact-authoritativeSource" name="Artifact Authoritative Source"/>
 <artifact id="StructureDefinition/artifact-canonicalReference" key="StructureDefinition-artifact-canonicalReference" name="Artifact Canonical Reference"/>
 <artifact id="StructureDefinition/artifact-citeAs" key="StructureDefinition-artifact-citeAs" name="Artifact Cite As"/>
 <artifact id="StructureDefinition/cqf-artifactComment" key="StructureDefinition-cqf-artifactComment" name="Artifact Comment"/>
@@ -134,8 +140,11 @@
 <artifact id="StructureDefinition/elementdefinition-bestpractice-explanation" key="StructureDefinition-elementdefinition-bestpractice-explanation" name="Best Practice Explanation"/>
 <artifact id="StructureDefinition/elementdefinition-bindingName" key="StructureDefinition-elementdefinition-bindingName" name="Binding name"/>
 <artifact id="StructureDefinition/biologicallyderivedproduct-collection-procedure" key="StructureDefinition-biologicallyderivedproduct-collection-procedure" name="BiologicallyDerivedProduct Collection Procedure"/>
+<artifact id="StructureDefinition/biologicallyderivedproduct-intendedRecipient" key="StructureDefinition-biologicallyderivedproduct-intendedRecipient" name="BiologicallyDerivedProduct Intended Recipient"/>
 <artifact id="StructureDefinition/biologicallyderivedproduct-manipulation" key="StructureDefinition-biologicallyderivedproduct-manipulation" name="BiologicallyDerivedProduct Manipulation"/>
 <artifact id="StructureDefinition/biologicallyderivedproduct-processing" key="StructureDefinition-biologicallyderivedproduct-processing" name="BiologicallyDerivedProduct Processing"/>
+<artifact id="ValueSet/blinded-role" key="ValueSet-blinded-role" name="Blinded Role"/>
+<artifact id="StructureDefinition/blinded-role" key="StructureDefinition-blinded-role" name="BlindedRole"/>
 <artifact id="StructureDefinition/bodySite" key="StructureDefinition-bodySite" name="BodyStructure Reference"/>
 <artifact id="StructureDefinition/http-response-header" key="StructureDefinition-http-response-header" name="Bundle HTTP Response header"/>
 <artifact id="StructureDefinition/location-distance" key="StructureDefinition-location-distance" name="Bundle Location Distance"/>
@@ -212,6 +221,7 @@
 <artifact id="StructureDefinition/composition-section-subject" key="StructureDefinition-composition-section-subject" name="Composition Section Subject"/>
 <artifact id="StructureDefinition/cqm-ValidityPeriod" key="StructureDefinition-cqm-ValidityPeriod" name="Composition Validity Period"/>
 <artifact id="StructureDefinition/composition-clinicaldocument-versionNumber" key="StructureDefinition-composition-clinicaldocument-versionNumber" name="Composition Version Number"/>
+<artifact id="StructureDefinition/binding-concept-domain" key="StructureDefinition-binding-concept-domain" name="Concept Domain"/>
 <artifact id="CodeSystem/concept-map-equivalence" key="CodeSystem-concept-map-equivalence" name="Concept Map Equivalence Code System"/>
 <artifact id="ValueSet/concept-map-equivalence" key="ValueSet-concept-map-equivalence" name="Concept Map Equivalence Value Set"/>
 <artifact id="StructureDefinition/concept-bidirectional" key="StructureDefinition-concept-bidirectional" name="ConceptMap Bi-directional"/>
@@ -235,6 +245,7 @@
 <artifact id="StructureDefinition/consent-ResearchStudyContext" key="StructureDefinition-consent-ResearchStudyContext" name="Consent Research Study Context"/>
 <artifact id="StructureDefinition/consent-Transcriber" key="StructureDefinition-consent-Transcriber" name="Consent Transcriber"/>
 <artifact id="StructureDefinition/consent-Witness" key="StructureDefinition-consent-Witness" name="Consent Witness"/>
+<artifact id="StructureDefinition/patient-contactPriority" key="StructureDefinition-patient-contactPriority" name="Contact Priority"/>
 <artifact id="StructureDefinition/cqf-contactReference" key="StructureDefinition-cqf-contactReference" name="Contact Reference"/>
 <artifact id="StructureDefinition/cqf-contactAddress" key="StructureDefinition-cqf-contactAddress" name="Contact address"/>
 <artifact id="StructureDefinition/artifact-contactDetailReference" key="StructureDefinition-artifact-contactDetailReference" name="Contact detail reference"/>
@@ -269,7 +280,7 @@
 <artifact id="StructureDefinition/device-alertDetection" key="StructureDefinition-device-alertDetection" name="Device Alert Detection Extension"/>
 <artifact id="CodeSystem/devicealert-priority" key="CodeSystem-devicealert-priority" name="Device Alert Priority"/>
 <artifact id="StructureDefinition/device-commercialBrand" key="StructureDefinition-device-commercialBrand" name="Device Commercial Brand"/>
-<artifact id="StructureDefinition/device-conformsTo" key="StructureDefinition-device-conformsTo" name="Device ConformsTo"/>
+<artifact deprecated="true" id="StructureDefinition/device-conformsTo" key="StructureDefinition-device-conformsTo" name="Device ConformsTo"/>
 <artifact id="StructureDefinition/device-endpoint" key="StructureDefinition-device-endpoint" name="Device Endpoint"/>
 <artifact id="StructureDefinition/device-gateway" key="StructureDefinition-device-gateway" name="Device Gateway"/>
 <artifact id="StructureDefinition/device-implantStatus" key="StructureDefinition-device-implantStatus" name="Device Implantable Status"/>
@@ -281,11 +292,12 @@
 <artifact id="ValueSet/devicealert-activationState" key="ValueSet-devicealert-activationState" name="DeviceAlert Activation State Codes"/>
 <artifact id="ValueSet/devicealert-condition" key="ValueSet-devicealert-condition" name="DeviceAlert Condition Codes"/>
 <artifact id="ValueSet/devicealert-priority" key="ValueSet-devicealert-priority" name="DeviceAlert Priority Codes"/>
+<artifact id="StructureDefinition/DeviceDefinition-partVariableCount" key="StructureDefinition-DeviceDefinition-partVariableCount" name="DeviceDefinition Part Variable Count"/>
 <artifact id="StructureDefinition/devicerequest-patientInstruction" key="StructureDefinition-devicerequest-patientInstruction" name="DeviceRequest Patient Directions"/>
 <artifact id="StructureDefinition/diagnosticReport-addendumOf" key="StructureDefinition-diagnosticReport-addendumOf" name="DiagnosticReport Addendum Of"/>
 <artifact id="StructureDefinition/diagnosticReport-extends" key="StructureDefinition-diagnosticReport-extends" name="DiagnosticReport Extends"/>
 <artifact id="StructureDefinition/diagnosticReport-focus" key="StructureDefinition-diagnosticReport-focus" name="DiagnosticReport Focus"/>
-<artifact id="StructureDefinition/diagnosticreport-interpretationContext" key="StructureDefinition-diagnosticreport-interpretationContext" name="DiagnosticReport Interpretation Context"/>
+<artifact deprecated="true" id="StructureDefinition/diagnosticreport-interpretationContext" key="StructureDefinition-diagnosticreport-interpretationContext" name="DiagnosticReport Interpretation Context"/>
 <artifact id="StructureDefinition/diagnosticReport-locationPerformed" key="StructureDefinition-diagnosticReport-locationPerformed" name="DiagnosticReport Location Performed"/>
 <artifact id="StructureDefinition/diagnosticReport-replaces" key="StructureDefinition-diagnosticReport-replaces" name="DiagnosticReport Replaces"/>
 <artifact id="StructureDefinition/diagnosticReport-risk" key="StructureDefinition-diagnosticReport-risk" name="DiagnosticReport Risk"/>
@@ -302,13 +314,18 @@
 <artifact id="StructureDefinition/iso21090-EN-use" key="StructureDefinition-iso21090-EN-use" name="EN use"/>
 <artifact id="StructureDefinition/elementSource" key="StructureDefinition-elementSource" name="Element Source"/>
 <artifact id="StructureDefinition/encounter-associatedEncounter" key="StructureDefinition-encounter-associatedEncounter" name="Encounter Associated Encounter"/>
+<artifact id="ValueSet/encounter-link-type" key="ValueSet-encounter-link-type" name="Encounter Link Type"/>
+<artifact id="CodeSystem/encounter-link-type" key="CodeSystem-encounter-link-type" name="Encounter Link Type CodeSystem"/>
 <artifact id="StructureDefinition/encounter-modeOfArrival" key="StructureDefinition-encounter-modeOfArrival" name="Encounter Mode Of Arrival"/>
 <artifact id="StructureDefinition/encounter-reasonCancelled" key="StructureDefinition-encounter-reasonCancelled" name="Encounter Reason Cancelled"/>
+<artifact id="StructureDefinition/encounter-recordLinkage" key="StructureDefinition-encounter-recordLinkage" name="Encounter Record Linkage"/>
 <artifact id="StructureDefinition/cqf-encounterType" key="StructureDefinition-cqf-encounterType" name="Encounter type"/>
 <artifact id="StructureDefinition/endpoint-fhir-version" key="StructureDefinition-endpoint-fhir-version" name="Endpoint FHIR Version"/>
+<artifact id="StructureDefinition/entered-in-error-status" key="StructureDefinition-entered-in-error-status" name="Entered In Error Status"/>
 <artifact id="ValueSet/name-part-qualifier" key="ValueSet-name-part-qualifier" name="EntityNamePartQualifier"/>
 <artifact id="StructureDefinition/entryFormat" key="StructureDefinition-entryFormat" name="Entry format"/>
 <artifact id="StructureDefinition/workflow-episodeOfCare" key="StructureDefinition-workflow-episodeOfCare" name="Episode of care"/>
+<artifact id="SearchParameter/workflow-EpisodeOfCare" key="SearchParameter-workflow-EpisodeOfCare" name="EpisodeOfCare SearchParameter"/>
 <artifact id="StructureDefinition/elementdefinition-equivalence" key="StructureDefinition-elementdefinition-equivalence" name="Equivalence"/>
 <artifact id="StructureDefinition/event-location" key="StructureDefinition-event-location" name="Event Location"/>
 <artifact id="StructureDefinition/event-recorded" key="StructureDefinition-event-recorded" name="Event Recorded"/>
@@ -316,7 +333,9 @@
 <artifact id="StructureDefinition/event-statusReason" key="StructureDefinition-event-statusReason" name="Event status reason"/>
 <artifact id="StructureDefinition/evidence-variable-handling-detail" key="StructureDefinition-evidence-variable-handling-detail" name="EvidenceVariableHandlingDetail"/>
 <artifact id="StructureDefinition/cqf-expansionParameters" key="StructureDefinition-cqf-expansionParameters" name="Expansion Parameters"/>
+<artifact id="StructureDefinition/expression-coding" key="StructureDefinition-expression-coding" name="Expression Coding"/>
 <artifact id="StructureDefinition/extended-contact-availability" key="StructureDefinition-extended-contact-availability" name="Extended Contact Availability"/>
+<artifact id="StructureDefinition/external-communication" key="StructureDefinition-external-communication" name="External Communication"/>
 <artifact id="StructureDefinition/cqf-fhirQueryPattern" key="StructureDefinition-cqf-fhirQueryPattern" name="FHIR Query Pattern"/>
 <artifact deprecated="true" id="StructureMap/Account4to5" key="StructureMap-Account4to5" name="FML Conversion for Account: R4 to R5"/>
 <artifact deprecated="true" id="StructureMap/Account4Bto5" key="StructureMap-Account4Bto5" name="FML Conversion for Account: R4B to R5"/>
@@ -1050,7 +1069,9 @@
 <artifact id="StructureDefinition/goal-relationship" key="StructureDefinition-goal-relationship" name="Goal: Related Goal"/>
 <artifact id="StructureDefinition/elementdefinition-graphConstraint" key="StructureDefinition-elementdefinition-graphConstraint" name="Graph constraint"/>
 <artifact id="StructureDefinition/hla-genotyping-results-haploid" key="StructureDefinition-hla-genotyping-results-haploid" name="Haploid"/>
+<artifact id="StructureDefinition/healthcareservice-schedulable" key="StructureDefinition-healthcareservice-schedulable" name="HealthcareService Schedulable"/>
 <artifact id="StructureDefinition/language" key="StructureDefinition-language" name="Human Language"/>
+<artifact id="StructureDefinition/observation-human-transcribed" key="StructureDefinition-observation-human-transcribed" name="Human-Transcribed"/>
 <artifact id="ValueSet/name-assembly-order" key="ValueSet-name-assembly-order" name="HumanNameAssemblyOrder"/>
 <artifact id="StructureDefinition/identifier-checkDigit" key="StructureDefinition-identifier-checkDigit" name="ID Check digit"/>
 <artifact id="StructureDefinition/elementdefinition-identifier" key="StructureDefinition-elementdefinition-identifier" name="Identifier"/>
@@ -1071,6 +1092,8 @@
 <artifact id="StructureDefinition/cqf-inputParameters" key="StructureDefinition-cqf-inputParameters" name="Input parameters"/>
 <artifact id="StructureDefinition/workflow-instantiatesCanonical" key="StructureDefinition-workflow-instantiatesCanonical" name="Instantiates Canonical"/>
 <artifact id="StructureDefinition/workflow-instantiatesUri" key="StructureDefinition-workflow-instantiatesUri" name="Instantiates Uri"/>
+<artifact id="CodeSystem/integrity-check-algorithms" key="CodeSystem-integrity-check-algorithms" name="Integrity check algorithms CodeSystem"/>
+<artifact id="ValueSet/integrity-check-algorithms" key="ValueSet-integrity-check-algorithms" name="Integrity check algorithms ValueSet"/>
 <artifact id="StructureDefinition/intended-context" key="StructureDefinition-intended-context" name="Intended Context"/>
 <artifact id="StructureDefinition/observation-geneticsInterpretation" key="StructureDefinition-observation-geneticsInterpretation" name="Interpretation"/>
 <artifact id="StructureDefinition/patient-interpreterRequired" key="StructureDefinition-patient-interpreterRequired" name="Interpreter Required"/>
@@ -1106,6 +1129,12 @@
 <artifact id="ValueSet/measurereport-category" key="ValueSet-measurereport-category" name="Measure Report Category VS"/>
 <artifact id="StructureDefinition/measurereport-populationDescription" key="StructureDefinition-measurereport-populationDescription" name="Measure Report Population Description"/>
 <artifact id="StructureDefinition/cqf-measureInfo" key="StructureDefinition-cqf-measureInfo" name="Measure info"/>
+<artifact id="StructureDefinition/medication-characteristic" key="StructureDefinition-medication-characteristic" name="Medication Characteristic"/>
+<artifact id="CodeSystem/medication-characteristic-type" key="CodeSystem-medication-characteristic-type" name="Medication Characteristic Type"/>
+<artifact id="ValueSet/medication-characteristic-type" key="ValueSet-medication-characteristic-type" name="Medication Characteristic Type VS"/>
+<artifact id="StructureDefinition/medication-classification" key="StructureDefinition-medication-classification" name="Medication Classification"/>
+<artifact id="CodeSystem/medication-classification-type" key="CodeSystem-medication-classification-type" name="Medication Classification Type"/>
+<artifact id="ValueSet/medication-classification-type" key="ValueSet-medication-classification-type" name="Medication Classification Type VS"/>
 <artifact id="StructureDefinition/medication-manufacturer" key="StructureDefinition-medication-manufacturer" name="Medication Manufacturer"/>
 <artifact id="StructureDefinition/medication-manufacturingBatch" key="StructureDefinition-medication-manufacturingBatch" name="Medication Manufacturing Batch"/>
 <artifact id="StructureDefinition/medication-type" key="StructureDefinition-medication-type" name="Medication Type"/>
@@ -1133,6 +1162,7 @@
 <artifact id="ValueSet/narrative-language-control" key="ValueSet-narrative-language-control" name="Narrative Language Control ValueSet"/>
 <artifact id="StructureDefinition/narrativeLink" key="StructureDefinition-narrativeLink" name="Narrative Link"/>
 <artifact id="StructureDefinition/narrative-source-control" key="StructureDefinition-narrative-source-control" name="Narrative Source Control"/>
+<artifact id="StructureDefinition/no-fixed-address" key="StructureDefinition-no-fixed-address" name="No Fixed Address"/>
 <artifact id="StructureDefinition/structuredefinition-xml-no-order" key="StructureDefinition-structuredefinition-xml-no-order" name="No Order in XML"/>
 <artifact id="StructureDefinition/cqf-notDoneValueSet" key="StructureDefinition-cqf-notDoneValueSet" name="Not Done ValueSet"/>
 <artifact id="StructureDefinition/note" key="StructureDefinition-note" name="Note"/>
@@ -1171,7 +1201,9 @@
 <artifact id="StructureDefinition/operationoutcome-authority" key="StructureDefinition-operationoutcome-authority" name="OperationOutcome Authority for Rule"/>
 <artifact id="StructureDefinition/operationoutcome-issue-col" key="StructureDefinition-operationoutcome-issue-col" name="OperationOutcome Column of Issue"/>
 <artifact id="StructureDefinition/operationoutcome-detectedIssue" key="StructureDefinition-operationoutcome-detectedIssue" name="OperationOutcome Detected Clinical Issue"/>
+<artifact id="StructureDefinition/operationoutcome-instance-id" key="StructureDefinition-operationoutcome-instance-id" name="OperationOutcome Instance ID"/>
 <artifact id="StructureDefinition/operationoutcome-issue-line" key="StructureDefinition-operationoutcome-issue-line" name="OperationOutcome Line of Issue"/>
+<artifact id="StructureDefinition/operationoutcome-issue-context" key="StructureDefinition-operationoutcome-issue-context" name="OperationOutcome Message Context"/>
 <artifact id="StructureDefinition/operationoutcome-message-id" key="StructureDefinition-operationoutcome-message-id" name="OperationOutcome Message ID"/>
 <artifact id="StructureDefinition/operationoutcome-issue-server" key="StructureDefinition-operationoutcome-issue-server" name="OperationOutcome Server"/>
 <artifact id="StructureDefinition/operationoutcome-issue-slicetext" key="StructureDefinition-operationoutcome-issue-slicetext" name="OperationOutcome Slice Text"/>
@@ -1196,13 +1228,12 @@
 <artifact id="StructureDefinition/event-partOf" key="StructureDefinition-event-partOf" name="Part of"/>
 <artifact id="StructureDefinition/humanname-partner-name" key="StructureDefinition-humanname-partner-name" name="Partner Name"/>
 <artifact id="StructureDefinition/humanname-partner-prefix" key="StructureDefinition-humanname-partner-prefix" name="Partner Prefix"/>
-<artifact id="StructureDefinition/patient-adoptionInfo" key="StructureDefinition-patient-adoptionInfo" name="Patient Adoption Info"/>
+<artifact deprecated="true" id="StructureDefinition/patient-adoptionInfo" key="StructureDefinition-patient-adoptionInfo" name="Patient Adoption Info"/>
 <artifact id="StructureDefinition/patient-animal" key="StructureDefinition-patient-animal" name="Patient Animal"/>
 <artifact id="StructureDefinition/patient-birthPlace" key="StructureDefinition-patient-birthPlace" name="Patient Birth Place"/>
 <artifact id="StructureDefinition/patient-bornStatus" key="StructureDefinition-patient-bornStatus" name="Patient Born Status"/>
 <artifact id="StructureDefinition/patient-citizenship" key="StructureDefinition-patient-citizenship" name="Patient Citizenship"/>
 <artifact id="StructureDefinition/patient-congregation" key="StructureDefinition-patient-congregation" name="Patient Congregation"/>
-<artifact id="StructureDefinition/patient-contactPriority" key="StructureDefinition-patient-contactPriority" name="Patient Contact Priority"/>
 <artifact id="StructureDefinition/patient-disability" key="StructureDefinition-patient-disability" name="Patient Disability"/>
 <artifact id="StructureDefinition/patient-fetalStatus" key="StructureDefinition-patient-fetalStatus" name="Patient Fetal Status"/>
 <artifact id="StructureDefinition/patient-importance" key="StructureDefinition-patient-importance" name="Patient Importance"/>
@@ -1211,7 +1242,6 @@
 <artifact id="StructureDefinition/patient-mothersMaidenName" key="StructureDefinition-patient-mothersMaidenName" name="Patient Mother's Maiden Name"/>
 <artifact id="StructureDefinition/patient-multipleBirthTotal" key="StructureDefinition-patient-multipleBirthTotal" name="Patient Multiple Birth Total"/>
 <artifact id="StructureDefinition/patient-nationality" key="StructureDefinition-patient-nationality" name="Patient Nationality"/>
-<artifact id="StructureDefinition/no-fixed-address" key="StructureDefinition-no-fixed-address" name="Patient No Fixed Address"/>
 <artifact id="StructureDefinition/patient-preferenceType" key="StructureDefinition-patient-preferenceType" name="Patient Preference Type"/>
 <artifact id="StructureDefinition/patient-proficiency" key="StructureDefinition-patient-proficiency" name="Patient Proficiency"/>
 <artifact id="StructureDefinition/patient-relatedPerson" key="StructureDefinition-patient-relatedPerson" name="Patient Related Person"/>
@@ -1223,6 +1253,7 @@
 <artifact id="StructureDefinition/patient-unknownIdentity" key="StructureDefinition-patient-unknownIdentity" name="Patient/Person's identity is known"/>
 <artifact id="StructureDefinition/patient-birthTime" key="StructureDefinition-patient-birthTime" name="Patient/Person/RelatedPerson/Practitioner Birth Time"/>
 <artifact id="StructureDefinition/elementdefinition-pattern" key="StructureDefinition-elementdefinition-pattern" name="Pattern"/>
+<artifact id="StructureDefinition/perform-condition" key="StructureDefinition-perform-condition" name="Perform Condition"/>
 <artifact id="StructureDefinition/event-performerFunction" key="StructureDefinition-event-performerFunction" name="Performer function"/>
 <artifact id="StructureDefinition/request-performerOrder" key="StructureDefinition-request-performerOrder" name="Performer order"/>
 <artifact id="StructureDefinition/artifact-periodDuration" key="StructureDefinition-artifact-periodDuration" name="Period duration"/>
@@ -1307,8 +1338,11 @@
 <artifact id="StructureDefinition/questionnaire-unitOption" key="StructureDefinition-questionnaire-unitOption" name="QuestionnaireResponse Unit Option"/>
 <artifact id="StructureDefinition/questionnaire-unitValueSet" key="StructureDefinition-questionnaire-unitValueSet" name="QuestionnaireResponse Unit ValueSet"/>
 <artifact id="StructureDefinition/questionnaire-usageMode" key="StructureDefinition-questionnaire-usageMode" name="QuestionnaireResponse Usage Mode"/>
+<artifact id="StructureDefinition/rank" key="StructureDefinition-rank" name="Rank"/>
 <artifact id="StructureDefinition/workflow-reasonCode" key="StructureDefinition-workflow-reasonCode" name="Reason Code"/>
 <artifact id="StructureDefinition/workflow-reasonReference" key="StructureDefinition-workflow-reasonReference" name="Reason Reference"/>
+<artifact id="ValueSet/encounter-reasonCancelled" key="ValueSet-encounter-reasonCancelled" name="Reasons an Encounter was Cancelled"/>
+<artifact id="CodeSystem/encounter-reasonCancelled" key="CodeSystem-encounter-reasonCancelled" name="Reasons an Encounter was Cancelled CodeSystem"/>
 <artifact id="StructureDefinition/cqf-receivingOrganization" key="StructureDefinition-cqf-receivingOrganization" name="Receiving organization"/>
 <artifact id="StructureDefinition/cqf-receivingPerson" key="StructureDefinition-cqf-receivingPerson" name="Receiving person"/>
 <artifact id="StructureDefinition/cqf-recipientLanguage" key="StructureDefinition-cqf-recipientLanguage" name="Recipient language"/>
@@ -1393,6 +1427,7 @@
 <artifact id="StructureDefinition/structuredefinition-fmm" key="StructureDefinition-structuredefinition-fmm" name="StructureDefinition FMM Level"/>
 <artifact id="StructureDefinition/structuredefinition-normative-version" key="StructureDefinition-structuredefinition-normative-version" name="StructureDefinition First Normative Version"/>
 <artifact id="StructureDefinition/structuredefinition-hierarchy" key="StructureDefinition-structuredefinition-hierarchy" name="StructureDefinition Hierarchy"/>
+<artifact id="StructureDefinition/structuredefinition-implements" key="StructureDefinition-structuredefinition-implements" name="StructureDefinition Implements"/>
 <artifact id="StructureDefinition/structuredefinition-imposeProfile" key="StructureDefinition-structuredefinition-imposeProfile" name="StructureDefinition Imposes Profile"/>
 <artifact id="StructureDefinition/structuredefinition-inheritance-control" key="StructureDefinition-structuredefinition-inheritance-control" name="StructureDefinition Inheritance Control (for Extensions)"/>
 <artifact id="StructureDefinition/structuredefinition-interface" key="StructureDefinition-structuredefinition-interface" name="StructureDefinition Interface"/>
@@ -1406,6 +1441,8 @@
 <artifact id="StructureDefinition/rendering-styleSensitive" key="StructureDefinition-rendering-styleSensitive" name="Style sensitive"/>
 <artifact id="StructureDefinition/subscription-best-effort" key="StructureDefinition-subscription-best-effort" name="Subscription Best Effort"/>
 <artifact id="StructureDefinition/cqf-supportedCqlVersion" key="StructureDefinition-cqf-supportedCqlVersion" name="Supported CQL version"/>
+<artifact id="StructureDefinition/cqf-supportingEvidence" key="StructureDefinition-cqf-supportingEvidence" name="Supporting Evidence"/>
+<artifact id="StructureDefinition/cqf-supportingEvidenceDefinition" key="StructureDefinition-cqf-supportingEvidenceDefinition" name="Supporting Evidence Definition"/>
 <artifact id="StructureDefinition/workflow-supportingInfo" key="StructureDefinition-workflow-supportingInfo" name="Supporting info"/>
 <artifact id="StructureDefinition/elementdefinition-suppress" key="StructureDefinition-elementdefinition-suppress" name="Suppress"/>
 <artifact id="StructureDefinition/cqf-systemUserLanguage" key="StructureDefinition-cqf-systemUserLanguage" name="System user language"/>
@@ -1413,6 +1450,7 @@
 <artifact id="StructureDefinition/cqf-systemUserType" key="StructureDefinition-cqf-systemUserType" name="System user type"/>
 <artifact id="StructureDefinition/iso21090-TEL-address" key="StructureDefinition-iso21090-TEL-address" name="TEL address"/>
 <artifact id="StructureDefinition/targetConstraint" key="StructureDefinition-targetConstraint" name="Target Constraint"/>
+<artifact id="StructureDefinition/target-feature-assertion" key="StructureDefinition-target-feature-assertion" name="Target Feature Assertion"/>
 <artifact id="StructureDefinition/targetElement" key="StructureDefinition-targetElement" name="Target element"/>
 <artifact id="StructureDefinition/cqf-targetInvariant" key="StructureDefinition-cqf-targetInvariant" name="Target invariant"/>
 <artifact id="StructureDefinition/targetPath" key="StructureDefinition-targetPath" name="Target path"/>

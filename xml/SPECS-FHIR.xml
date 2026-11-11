@@ -13,15 +13,17 @@
   <specification key="cds-hooks" name="CDS Hooks"/>
   <specification key="cds-hooks-library" name="CDS Hooks Library"/>
   <specification key="cds-hooks-patient-view" name="CDS Hooks patient-view" deprecated="true"/>
+  <specification key="cds-hooks-clinical-reasoning" name="Using FHIR Clinical Reasoning with CDS Hooks"/>
   <specification key="smart" name="SMART on FHIR"/>
   <specification key="smart-web-messaging" name="SMART Web Messaging"/>
   <specification key="bulkdata" name="Bulk Data"/>
   <specification key="cdisc-lab" name="CDISC Lab"/>
   <specification key="cdisc-mapping" name="CDISC Mappings"/>
-  <specification key="cpg" name="Clinical Guidelines"/>
-  <specification key="cql" name="Clinical Quality Language"/>
+  <specification key="cpg" name="Clinical Guidelines (CPG)"/>
+  <specification key="cql" name="Clinical Quality Language (CQL)"/>
   <specification key="cow" name="Clinical Order Workflow"/>
-  <specification key="crmi" name="Canonical Resource Management Infrastructure"/>
+  <specification key="crmi" name="Canonical Resource Management Infrastructure (CRMI)"/>
+  <specification key="deqm" name="Data Exchange for Quality Measures (DEQM)"/>
   <specification key="dicom-sr" name="DICOM SR to FHIR Resource Mapping IG"/>
   <specification key="extensions" name="FHIR Extensions Pack"/>
   <specification key="fhir-for-fair" name="FHIR for FAIR"/>
@@ -31,14 +33,16 @@
   <specification key="ips" name="International Patient Summary"/>
   <specification key="ipa" name="International Patient Access"/>
   <specification key="ichom-breastcancer" name="ICHOM Patient Centered Outcomes Measure Set for Breast Cancer"/>
+  <specification key="livd" name="LOINC – IVD Test Code (LIVD)"/>
   <specification key="mhealth-framework" name="Mobile Health App Data Exchange Functional Requirements"/>
+  <specification key="molecular-definition-data-types" name="Molecular Definition Implementation Guide for Molecular Data Types"/>
   <specification key="order-catalog" name="Order Catalog"/>
   <specification key="patient-corrections" name="Patient Corrections"/>
   <specification key="pddi" name="Potential Drug-Drug Interaction (PDDI)"/>
   <specification key="phd" name="Personal Healthcare Devices"/>
   <specification key="phr" name="Personal Health Record"/>
   <specification key="pocd" name="Point of Care Devices"/>
-  <specification key="qm" name="Quality Measures"/>
+  <specification key="qm" name="Quality Measures (QM)"/>
   <specification key="radiation-dose-summary" name="Radiation Dose Summary for Diagnostic Procedures on FHIR"/>
   <specification key="rtls" name="Real Time Location Services"/>
   <specification key="saner" name="Situation Awareness for Novel Epidemic Response"/>
@@ -48,6 +52,7 @@
   <specification key="shorthand" name="Shorthand"/>
   <specification key="shc-vaccination" name="SMART Health Cards: Vaccination and Testing"/>
   <specification key="subscriptions-backport" name="FHIR R5 Subscriptions Backport"/>
+  <specification key="tmi" name="Terminology Module Incubator"/>
   <specification key="tools" name="Tooling Extensions"/>
   <specification key="vhdir" name="Validated Healthcare Directory"/>
   <specification key="us-core" name="US Core"/>
@@ -89,7 +94,7 @@
   <specification key="us-eltss" name="US Electronic Long-Term Services &amp; Supports (ELTSS)"/>
   <specification key="us-hai" name="US Healthcare Associated Infections"/>
   <specification key="us-hai-ltcf" name="US Healthcare Associated Infection Reports Long Term Care Facilities (HAI-LTCF)"/>
-  <specification key="us-livd" name="US LOINC – IVD Test Code (LIVD)"/>
+  <specification key="us-livd" name="US LOINC – IVD Test Code (LIVD)" deprecated="true"/>
   <specification key="us-mcode" name="US Minimal Common Oncology Data Elements (mCODE)"/>
   <specification key="us-medmorph" name="US Making EHR Data More available for Research and Public Health (MedMorph)"/>
   <specification key="us-central-cancer-registry-reporting" name="US Central Cancer Registry Reporting Content IG"/>
@@ -115,7 +120,7 @@
   <specification key="us-sdoh-cc" name="US SDOH Clinical Care" accelerator="gravity"/>
   <specification key="us-sirb" name="Single Institutional Review Board (sIRB)"/>
   <specification key="us-spl" name="US Structured Product Labeling Mapping"/>
-  <specification key="us-udap-security" name="US UDAP Security" accelerator="fast"/>
+  <specification key="us-udap-security" name="US UDAP Security" accelerator="fast" deprecated="true"/>
   <specification key="us-identity-matching" name="Interoperable Digital Identity and Patient Matching" accelerator="fast"/>
   <specification key="us-vitals" name="US Vital Signs with Qualifying Extensions"/>
   <specification key="us-vrdr" name="US Vital Records Death Reporting (VRDR)"/>
@@ -150,6 +155,7 @@
   <specification key="uv-vulcan-schedule" name="Clinical Study Schedule of Activities" accelerator="vulcan"/>
   <specification key="us-mcc" name="Multiple Chronic Condition Care Plan"/>
   <specification key="uv-emedicinal-product-info" name="Electronic Medicinal Product Information" accelerator="vulcan"/>
+  <specification key="uv-rwi-pharma" name="Regulatory Workflows and Interactions - pharma" accelerator="vulcan"/>
   <specification key="uv-cql" name="Using CQL With FHIR"/>
   <specification key="us-hsds" name="Human Services Directory"/>
   <specification key="ae-research-ig" name="Adverse Event Clinical Research" accelerator="vulcan"/>
@@ -157,24 +163,32 @@
   <specification key="v2mappings" name="HL7 Version 2 to FHIR"/>
   <specification key="us-ndh" name="National Directory of Healthcare Providers and Services (NDH)"/>
   <specification key="ibcm" name="International Birth And Child Model"/>
-  <specification key="us-pdmp" name="US Prescription Drug Monitoring Program (PDMP)"/> 
+  <specification key="us-pdmp" name="US Prescription Drug Monitoring Program (PDMP)"/>
   <specification key="eu-laboratory" name="EU Laboratory Report"/>
   <specification key="eu-extensions" name="EU Extensions"/>
   <specification key="eu-base" name="EU Base and Core (R4)"/>
   <specification key="eu-base-r5" name="EU Base and Core (R5)"/>
   <specification key="eu-r5-extensions" name="EU Extensions (R5)" deprecated="true"/>
-  <specification key="eu-imaging-r5" name="EU Imaging Study Report"/>
+  <specification key="eu-imaging-r5" name="EU Imaging Study Report (R5)"/>
+  <specification key="eu-imaging" name="EU Imaging Study Report (R4)"/>
+  <specification key="eu-imaging-manifest" name="EU Imaging Manifest and Access (IHE-MADO additions)"/>
   <specification key="eu-hdr" name="EU Hospital Discharge Report"/>
   <specification key="eu-mpd" name="EU Medication Prescription and Dispense (R4)"/>
   <specification key="eu-mpd-r5" name="EU Medication Prescription and Dispense (R5)"/>
+  <specification key="eu-health-data-api" name="EU Health Data API (R4)"/>
+  <specification key="eu-eps" name="EU Patient Summary (R4)"/>
+  <specification key="eu-cancer-common" name="EU Common Cancer Model (R4)"/>
   <specification key="us-resp-net" name="US Respiratory Virus Hospitalization Surveillance Network (RESP-NET) FHIR IG"/>
   <specification key="pharm-quality" name="Pharmaceutical Quality (Industry)"/>
   <specification key="ebm" name="Evidence Based Medicine FHIR implementation guide"/>
+  <specification key="ebm-incubator" name="Evidence Based Medicine Incubator FHIR implementation guide"/>
   <specification key="au-base" name="AU Base"/>
   <specification key="au-core" name="AU Core"/>
+  <specification key="au-encounter" name="AU Encounter Record"/>
   <specification key="au-erequesting" name="AU eRequesting"/>
   <specification key="au-pd" name="AU Provider Directory"/>
   <specification key="au-ps" name="AU Patient Summary"/>
+  <specification key="au-terminology" name="AU Terminology"/>
   <specification key="us-medication-rems" name="US Medication Risk Evaluation and Mitigation Strategies (REMS) FHIR IG"/>
   <specification key="cardx-htn-mng" name="CardX Hypertension Management" accelerator="codex"/>
   <specification key="termchangeset" name="Terminology Change Set Exchange"/>
@@ -190,5 +204,23 @@
   <specification key="us-pacio-toc" name="PACIO Transitions of Care Implementation Guide"/>
 	<specification key="omop" name="FHIR to OMOP FHIR IG"/>
   <specification key="cardx-cied" name="CardX - Cardiac Implantable Electronic Devices" accelerator="codex"/>
-  <specification key="pharmaceutical-research-protocol" name="Pharmaceutical Research Protocol"/>
+  <specification key="pharmaceutical-research-protocol" name="Clinical Study Protocol"/>
+  <specification key="us-consent-management" name="Scalable Consent Management" accelerator="fast"/>
+  <specification key="symptoms" name="Symptoms Data Standards"/>
+  <specification key="aitransparency" name="AI Transparency"/>
+  <specification key="oo-incubator" name="OO Incubator"/>
+  <specification key="immunization-incubator" name="Immunization Incubator"/>
+  <specification key="cg-incubator" name="Clinical Genomics Incubator"/>
+  <specification key="phenomics-exchange" name="Phenomics Exchange for Research and Diagnostics"/>
+  <specification key="smart-scheduling-links" name="SMART Scheduling Links"/>
+  <specification key="us-pcs" name="US Patient Care Summary (US-PCS)"/>
+  <specification key="us-darts" name="US De-Identification, Anonymization, Redaction Toolkit Services"/>
+  <specification key="fast-security" name="Security for Scalable Registration, Authentication, and Authorization" accelerator="fast"/>
+  <specification key="us-dapl" name="US De-Identified, Anonymized Profiles Library (DAPL)"/>
+  <specification key="pc-incubator" name="Patient Care Incubator"/>
+  <specification key="us-quality-core" name="US Quality Core Implementation Guide"/>
+  <specification key="testing" name="Testing Incubator IG"/>
+  <specification key="sql-on-fhir" name="SQL on FHIR"/>
+  <specification key="mapping-language" name="FHIR Mapping Language"/>
+  <specification key="api-incubator" name="FHIR-I API Incubator"/>
 </specifications>
