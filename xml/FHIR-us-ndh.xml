@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/ndh/2.0.0-202701-ballot" ciUrl="http://build.fhir.org/ig/HL7/fhir-us-ndh" defaultVersion="1.0.0" defaultWorkgroup="pa" gitUrl="https://github.com/HL7/fhir-us-ndh" url="http://hl7.org/fhir/us/ndh">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-us-ndh"/>
-<version code="1.0.0" url="http://hl7.org/fhir/us/ndh/STU1"/>
 <version code="2.0.0-ballot" url="http://hl7.org/fhir/us/ndh/2.0.0-202701-ballot"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/ndh/STU1"/>
 <version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/ndh/2023Sep"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -54,8 +54,8 @@
 <artifact id="Endpoint/DirectTrustEndpointReferrals" key="Endpoint-DirectTrustEndpointReferrals" name="DirectTrustEndpointReferrals"/>
 <artifact deprecated="true" id="CodeSystem/EmploymentStatusCS" key="CodeSystem-EmploymentStatusCS" name="Employment Status Code System"/>
 <artifact id="ValueSet/EmploymentStatusVS" key="ValueSet-EmploymentStatusVS" name="Employment Status Value Set"/>
-<artifact id="CodeSystem/NdhEndpointAccessControlMechanismCS" key="CodeSystem-EndpointAccessControlMechanismCS" name="Endpoint Access Control Mechanism Code System"/>
-<artifact id="ValueSet/EndpointAccessControlMechanismVS" key="ValueSet-EndpointAccessControlMechanismVS" name="Endpoint Access Control Mechanism Value Set"/>
+<artifact deprecated="true" id="CodeSystem/EndpointAccessControlMechanismCS" key="CodeSystem-EndpointAccessControlMechanismCS" name="Endpoint Access Control Mechanism Code System"/>
+<artifact deprecated="true" id="ValueSet/EndpointAccessControlMechanismVS" key="ValueSet-EndpointAccessControlMechanismVS" name="Endpoint Access Control Mechanism Value Set"/>
 <artifact deprecated="true" id="CodeSystem/EndpointCommonMimeTypeCS" key="CodeSystem-EndpointCommonMimeTypeCS" name="Endpoint Common MimeType Code System"/>
 <artifact deprecated="true" id="CodeSystem/EndpointConnectionTypeVersionCS" key="CodeSystem-EndpointConnectionTypeVersionCS" name="Endpoint Connection Type Version Code System"/>
 <artifact deprecated="true" id="ValueSet/EndpointConnectionTypeVersionVS" key="ValueSet-EndpointConnectionTypeVersionVS" name="Endpoint Connection Type Version Value Set"/>
@@ -68,13 +68,12 @@
 <artifact id="ValueSet/EndpointPayloadTypeVS" key="ValueSet-EndpointPayloadTypeVS" name="Endpoint Payload Type Value Set"/>
 <artifact deprecated="true" id="CodeSystem/EndpointPayloadTypeCS" key="CodeSystem-EndpointPayloadTypeCS" name="Endpoint Payload Types Code System"/>
 <artifact id="ValueSet/EndpointTestingMethodVS" key="ValueSet-EndpointTesingMethodVS" name="Endpoint Testing Method Value Set"/>
-<artifact id="SearchParameter/endpoint-access-control-mechanism" key="SearchParameter-endpoint-access-control-mechanism" name="Endpoint access-control-mechanism"/>
+<artifact deprecated="true" id="SearchParameter/endpoint-access-control-mechanism" key="SearchParameter-endpoint-access-control-mechanism" name="Endpoint access-control-mechanism"/>
 <artifact deprecated="true" id="ValueSet/EndpointCommonMimeTypeVS" key="ValueSet-EndpointCommonMimeTypeVS" name="Endpoint common mimetype Value Set"/>
 <artifact deprecated="true" id="SearchParameter/endpoint-connection-type-version" key="SearchParameter-endpoint-connection-type-version" name="Endpoint connection-type-version"/>
-<artifact id="SearchParameter/endpoint-dynamic-registration-trust-profile" key="SearchParameter-endpoint-dynamic-registration-trust-profile" name="Endpoint dynamic-registration-trust-profile"/>
+<artifact deprecated="true" id="SearchParameter/endpoint-dynamic-registration-trust-profile" key="SearchParameter-endpoint-dynamic-registration-trust-profile" name="Endpoint dynamic-registration-trust-profile"/>
 <artifact id="SearchParameter/endpoint-ihe-connection-type" key="SearchParameter-endpoint-ihe-connection-type" name="Endpoint ihe-connection-type"/>
 <artifact deprecated="true" id="SearchParameter/endpoint-nonfhir-usecase-type" key="SearchParameter-endpoint-nonfhir-usecase-type" name="Endpoint nonfhir-usecase-type"/>
-<artifact id="SearchParameter/endpoint-security-details" key="SearchParameter-endpoint-security-details" name="Endpoint security-details"/>
 <artifact deprecated="true" id="SearchParameter/endpoint-trust-framework-type" key="SearchParameter-endpoint-trust-framework-type" name="Endpoint trust-framework-type"/>
 <artifact deprecated="true" id="SearchParameter/endpoint-usecase-type" key="SearchParameter-endpoint-usecase-type" name="Endpoint usecase-type"/>
 <artifact deprecated="true" id="SearchParameter/endpoint-verification-status" key="SearchParameter-endpoint-verification-status" name="Endpoint verification-status"/>
@@ -145,7 +144,7 @@
 <artifact id="ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS" key="ValueSet-IndividualSpecialtyAndDegreeLicenseCertificateVS" name="Individual Specialties, Degrees, Licenses, and Certificates Value Set"/>
 <artifact id="ValueSet/IndividualSpecialtyVS" key="ValueSet-IndividualSpecialtyVS" name="Individual Specialty Value Set"/>
 <artifact deprecated="true" id="ValueSet/IndividualAndGroupSpecialtiesVS" key="ValueSet-IndividualAndGroupSpecialtiesVS" name="Individual and Group Specialties"/>
-<artifact deprecated="true" id="CodeSystem/insurance-benefit-type" key="CodeSystem-insurance-benefit-type" name="Insurance Benefit Type Code System"/>
+<artifact id="CodeSystem/NdhInsuranceBenefitTypeCS" key="CodeSystem-insurance-benefit-type" name="NDH Insurance Benefit Type Code System"/>
 <artifact deprecated="true" id="CodeSystem/InsurancePlanTypeCS" key="CodeSystem-InsurancePlanTypeCS" name="Insurance Plan Type Code System"/>
 <artifact deprecated="true" id="ValueSet/InsurancePlanTypeVS" key="ValueSet-InsurancePlanTypeVS" name="Insurance Plan Type Value Set"/>
 <artifact deprecated="true" id="CodeSystem/InsuranceProductTypeCS" key="CodeSystem-InsuranceProductTypeCS" name="Insurance Product Type Code System"/>
@@ -209,8 +208,8 @@
 <artifact deprecated="true" id="ValueSet/NdhDirectTrustEndpointUsecaseVS" key="ValueSet-NdhDirectTrustEndpointUsecaseVS" name="NDH Direct Trust Endpoint Usecase Value Set"/>
 <artifact deprecated="true" id="CodeSystem/NdhDirectTrustPayloadTypeCS" key="CodeSystem-NdhDirectTrustPayloadTypeCS" name="NDH Direct Trust Payload Type Code System"/>
 <artifact deprecated="true" id="ValueSet/NdhDirectTrustPayloadTypeVS" key="ValueSet-NdhDirectTrustPayloadTypeVS" name="NDH Direct Trust Payload Type Value Set"/>
-<artifact id="StructureDefinition/base-ext-dynamicRegistration" key="StructureDefinition-base-ext-dynamicRegistration" name="NDH Dynamic Registration"/>
-<artifact id="StructureDefinition/base-ext-endpointAccessControlMechanism" key="StructureDefinition-base-ext-endpointAccessControlMechanism" name="NDH Endpoint Access Control Mechanism"/>
+<artifact deprecated="true" id="StructureDefinition/base-ext-dynamicRegistration" key="StructureDefinition-base-ext-dynamicRegistration" name="NDH Dynamic Registration"/>
+<artifact deprecated="true" id="StructureDefinition/base-ext-endpointAccessControlMechanism" key="StructureDefinition-base-ext-endpointAccessControlMechanism" name="NDH Endpoint Access Control Mechanism"/>
 <artifact deprecated="true" id="StructureDefinition/base-ext-endpoint-connection-type-version" key="StructureDefinition-base-ext-endpoint-connection-type-version" name="NDH Endpoint Connection Type Version"/>
 <artifact id="CodeSystem/NdhEndpointEnvironmentCS" key="CodeSystem-NdhEndpointEnvironmentCS" name="NDH Endpoint Environment Code System"/>
 <artifact id="ValueSet/NdhEndpointEnvironmentVS" key="ValueSet-NdhEndpointEnvironmentVS" name="NDH Endpoint Environment Value Set"/>
@@ -240,7 +239,7 @@
 <artifact deprecated="true" id="OperationDefinition/ndhexport" key="OperationDefinition-ndhexport" name="NDH Export Operation"/>
 <artifact id="CodeSystem/NdhFhirEndpointUseCaseCS" key="CodeSystem-NdhFhirEndpointUseCaseCS" name="NDH FHIR Endpoint Use Case Code System"/>
 <artifact deprecated="true" id="ValueSet/NdhFhirEndpointUseCaseVS" key="ValueSet-NdhFhirEndpointUseCaseVS" name="NDH FHIR Endpoint Usecase Value Set"/>
-<artifact deprecated="true" id="StructureDefinition/base-ext-fhir-ig" key="StructureDefinition-base-ext-fhir-ig" name="NDH FHIR IG"/>
+<artifact id="StructureDefinition/base-ext-implementation-guide" key="StructureDefinition-base-ext-fhir-ig" name="NDH Implementation Guide Supported"/>
 <artifact id="StructureDefinition/base-ext-fundingSource" key="StructureDefinition-base-ext-fundingSource" name="NDH Funding Source"/>
 <artifact id="StructureDefinition/ndh-Group" key="StructureDefinition-ndh-Group" name="NDH Group"/>
 <artifact id="StructureDefinition/base-ext-hhs-exclusion-list" key="StructureDefinition-base-ext-hhs-exclusion-list" name="NDH HHS Exclusion List"/>
@@ -249,8 +248,6 @@
 <artifact deprecated="true" id="StructureDefinition/base-ext-healthcareservice-reference" key="StructureDefinition-base-ext-healthcareservice-reference" name="NDH Healthcareservice Reference"/>
 <artifact deprecated="true" id="CodeSystem/NdhIgActorCS" key="CodeSystem-IgActorCS" name="NDH IG Actor Code System"/>
 <artifact id="StructureDefinition/base-ext-identifier-status" key="StructureDefinition-base-ext-identifier-status" name="NDH Identifier Status"/>
-<artifact id="StructureDefinition/base-ext-implementation-guide" key="StructureDefinition-base-ext-implementation-guide" name="NDH Implementation Guide Supported"/>
-<artifact id="CodeSystem/NdhInsuranceBenefitTypeCS" key="CodeSystem-NdhInsuranceBenefitTypeCS" name="NDH Insurance Benefit Type Code System"/>
 <artifact deprecated="true" id="ValueSet/NdhCoverageTypeVS" key="ValueSet-NdhCoverageTypeVS" name="NDH Insurance Coverage Type Value Set"/>
 <artifact id="CodeSystem/NdhInsuranceStatusCS" key="CodeSystem-InsuranceStatusCS" name="NDH Insurance Status Code System"/>
 <artifact id="StructureDefinition/ndh-InsurancePlan" key="StructureDefinition-ndh-InsurancePlan" name="NDH InsurancePlan Profile"/>
@@ -272,8 +269,7 @@
 <artifact deprecated="true" id="CodeSystem/NdhPayerCharacteristicsCS" key="CodeSystem-NdhPayerCharacteristicsCS" name="NDH Payer Characteristics Code System"/>
 <artifact id="StructureDefinition/base-ext-paymentAccepted" key="StructureDefinition-base-ext-paymentAccepted" name="NDH Payment Accepted"/>
 <artifact id="StructureDefinition/ndh-Practitioner" key="StructureDefinition-ndh-Practitioner" name="NDH Practitioner Profile"/>
-<artifact deprecated="true" id="StructureDefinition/base-ext-practitioner-qualification" key="StructureDefinition-base-ext-practitioner-qualification" name="NDH Practitioner Qualification"/>
-<artifact id="StructureDefinition/base-ext-practitioner-qualification-scope" key="StructureDefinition-base-ext-practitioner-qualification-scope" name="NDH Practitioner Qualification Scope where valid and status"/>
+<artifact id="StructureDefinition/base-ext-practitioner-qualification-scope" key="StructureDefinition-base-ext-practitioner-qualification" name="NDH Practitioner Qualification Scope where valid and status"/>
 <artifact id="CodeSystem/NdhPractitionerRoleCS" key="CodeSystem-PractitionerRoleCS" name="NDH Practitioner Role Codes Code System"/>
 <artifact id="StructureDefinition/ndh-PractitionerRole" key="StructureDefinition-ndh-PractitionerRole" name="NDH PractitionerRole"/>
 <artifact deprecated="true" id="StructureDefinition/base-ext-qualification" key="StructureDefinition-base-ext-qualification" name="NDH Qualification"/>
@@ -281,15 +277,14 @@
 <artifact id="StructureDefinition/base-ext-rating-details" key="StructureDefinition-base-ext-rating-details" name="NDH Rating Details"/>
 <artifact id="StructureDefinition/base-ext-requiredDocument" key="StructureDefinition-base-ext-requiredDocument" name="NDH Required Document"/>
 <artifact id="CodeSystem/NdhVerificationStatusCS" key="CodeSystem-NdhVerificationStatusCS" name="NDH Resource Instance Verification Status Code System"/>
-<artifact id="StructureDefinition/base-ext-secureExchangeArtifacts" key="StructureDefinition-base-ext-secureExchangeArtifacts" name="NDH Secure Exchange Artifacts"/>
-<artifact id="CodeSystem/NdhSecureExchangeArtifactsCS" key="CodeSystem-NdhSecureExchangeArtifactsCS" name="NDH Secure Exchange Artifacts Code System"/>
-<artifact id="StructureDefinition/base-ext-security-details" key="StructureDefinition-base-ext-security-details" name="NDH Security Details"/>
-<artifact id="CapabilityStatement/ndh-server" key="CapabilityStatement-ndh-server" name="NDH Server Capability Statement"/>
+<artifact deprecated="true" id="StructureDefinition/base-ext-secureExchangeArtifacts" key="StructureDefinition-base-ext-secureExchangeArtifacts" name="NDH Secure Exchange Artifacts"/>
+<artifact deprecated="true" id="CodeSystem/NdhSecureExchangeArtifactsCS" key="CodeSystem-NdhSecureExchangeArtifactsCS" name="NDH Secure Exchange Artifacts Code System"/>
 <artifact deprecated="true" id="StructureDefinition/base-ext-ig-supported" key="StructureDefinition-base-ext-ig-supported" name="NDH Supported IG"/>
 <artifact deprecated="true" id="StructureDefinition/base-ext-supported-ig-actor" key="StructureDefinition-base-ext-supported-ig-actor" name="NDH Supported IG Actor"/>
 <artifact deprecated="true" id="StructureDefinition/base-ext-trustFramework" key="StructureDefinition-base-ext-trustFramework" name="NDH Trust Framework"/>
-<artifact id="CodeSystem/NdhTrustFrameworkTypeCS" key="CodeSystem-TrustFrameworkTypeCS" name="NDH Trust FrameworkType Code System"/>
-<artifact id="CodeSystem/NdhTrustProfileCS" key="CodeSystem-TrustProfileCS" name="NDH Trust Profile Code System"/>
+<artifact deprecated="true" id="CodeSystem/NdhTrustFrameworkTypeCS" key="CodeSystem-TrustFrameworkTypeCS" name="NDH Trust FrameworkType Code System"/>
+<artifact deprecated="true" id="CodeSystem/NdhTrustProfileCS" key="CodeSystem-TrustProfileCS" name="NDH Trust Profile Code System"/>
+<artifact id="CapabilityStatement/ndh-update-server" key="CapabilityStatement-ndh-update-server" name="NDH Update Server Capability Statement"/>
 <artifact deprecated="true" id="StructureDefinition/base-ext-usage-restriction" key="StructureDefinition-base-ext-usage-restriction" name="NDH Usage Restriction"/>
 <artifact id="StructureDefinition/ndh-Verification" key="StructureDefinition-ndh-Verification" name="NDH Verification"/>
 <artifact deprecated="true" id="CodeSystem/NdhVerificationCommunicationMethodCS" key="CodeSystem-NdhVerificationCommunicationMethodCS" name="NDH Verification Communication Method Code System"/>
@@ -304,7 +299,7 @@
 <artifact deprecated="true" id="StructureDefinition/base-ext-restrictFhirPath" key="StructureDefinition-base-ext-restrictFhirPath" name="NDH usage restriction fhir path"/>
 <artifact deprecated="true" id="CapabilityStatement/national-directory-api-base-expanded-server" key="CapabilityStatement-national-directory-api-base-expanded-server" name="National Directory API Base Expanded Server Capability Statement"/>
 <artifact deprecated="true" id="CapabilityStatement/national-directory-api-base-server" key="CapabilityStatement-national-directory-api-base-server" name="National Directory API Base Server Capability Statement"/>
-<artifact deprecated="true" id="CapabilityStatement/national-directory-api-server" key="CapabilityStatement-national-directory-api-server" name="National Directory API Capability Statement"/>
+<artifact id="CapabilityStatement/ndh-server" key="CapabilityStatement-national-directory-api-server" name="NDH Server Capability Statement"/>
 <artifact deprecated="true" id="StructureDefinition/ndh-ndapi-CareTeam" key="StructureDefinition-ndh-ndapi-CareTeam" name="National Directory API CareTeam Profile"/>
 <artifact deprecated="true" id="StructureDefinition/ndh-ndapi-Endpoint" key="StructureDefinition-ndh-ndapi-Endpoint" name="National Directory API Endpoint Profile"/>
 <artifact deprecated="true" id="StructureDefinition/ndh-ndapi-HealthcareService" key="StructureDefinition-ndh-ndapi-HealthcareService" name="National Directory API HealthcareService Profile"/>
@@ -410,15 +405,15 @@
 <artifact id="ValueSet/QualificationStatusVS" key="ValueSet-QualificationStatusVS" name="Qualification Status Value Set"/>
 <artifact id="Organization/SamplePayer" key="Organization-SamplePayer" name="Sample Payer Organization"/>
 <artifact deprecated="true" id="OperationDefinition/ndhschexport" key="OperationDefinition-ndhschexport" name="Scheduled NDH Export Operation"/>
-<artifact id="ValueSet/NdhSecureExchangeArtifactsVS" key="ValueSet-NdhSecureExchangeArtifactsVS" name="Secure Exchange Artifacts Value Set"/>
+<artifact deprecated="true" id="ValueSet/NdhSecureExchangeArtifactsVS" key="ValueSet-NdhSecureExchangeArtifactsVS" name="Secure Exchange Artifacts Value Set"/>
 <artifact id="StructureDefinition/base-ext-service-offered" key="StructureDefinition-base-ext-service-offered" name="Service Offered for a Group"/>
 <artifact id="Organization/SocialServiceHousingNetwork" key="Organization-SocialServiceHousingNetwork" name="SocialServiceHousingNetwork"/>
 <artifact deprecated="true" id="ValueSet/SpecialtiesVS" key="ValueSet-SpecialtiesVS" name="Specialties Value Set"/>
 <artifact id="ValueSet/SpecialtyAndDegreeLicenseCertificateVS" key="ValueSet-SpecialtyAndDegreeLicenseCertificateVS" name="Specialties, Degrees, Licenses, and Certificates Value Set"/>
 <artifact id="Location/StateOfCTLocation" key="Location-StateOfCTLocation" name="StateOfCTLocation"/>
 <artifact id="Organization/StateOfIllinoisLicBoard" key="Organization-StateOfIllinoisLicBoard" name="StateOfIllinoisLicBoard"/>
-<artifact id="ValueSet/TrustFrameworkTypeVS" key="ValueSet-TrustFrameworkTypeVS" name="Trust Framework Type Value Set"/>
-<artifact id="ValueSet/TrustProfileVS" key="ValueSet-TrustProfileVS" name="Trust Profile Value Set"/>
+<artifact deprecated="true" id="ValueSet/TrustFrameworkTypeVS" key="ValueSet-TrustFrameworkTypeVS" name="Trust Framework Type Value Set"/>
+<artifact deprecated="true" id="ValueSet/TrustProfileVS" key="ValueSet-TrustProfileVS" name="Trust Profile Value Set"/>
 <artifact deprecated="true" id="CodeSystem/ValidationTypeCS" key="CodeSystem-ValidationTypeCS" name="Validation Type Code System"/>
 <artifact deprecated="true" id="SearchParameter/verificationresult-attestation-communication-method" key="SearchParameter-verificationresult-attestation-communication-method" name="VerificationResult attestation-communication-method"/>
 <artifact deprecated="true" id="SearchParameter/verificationresult-attestation-onbehalfof" key="SearchParameter-verificationresult-attestation-onbehalfof" name="VerificationResult attestation-onbehalfof"/>
@@ -492,7 +487,8 @@
 <page deprecated="true" key="ndapi-capability" name="National Directory API Capability Satement"/>
 <page key="ndapi-examples" name="National Directory API Examples"/>
 <page key="ndapi-ig" name="National Directory API Implementation Guidance"/>
-<page key="ndapi-use-cases" name="National Directory API Use Cases"/>
+<page key="ndapi-use-cases" name="National Directory API Query Use Cases"/>
+<page key="ndapi-update-use-cases" name="National Directory API Update Use Cases"/>
 <page key="plannet-maps" name="Plan-Net Mappings"/>
 <page key="resourceRelationship" name="Resource Relationships"/>
 <page key="security" name="Security and Privacy Considerations"/>
