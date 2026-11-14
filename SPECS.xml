@@ -128723,6 +128723,39 @@ defaultWorkgroup="ph">-->
             spec="api-incubator"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  key="FHIR-incubators"
+                  name="FHIR Incubators (FHIR)"
+                  ciUrl="http://build.fhir.org/ig/HL7/fhir-incubators"
+                  defaultVersion="1.0.0-snapshot"
+                  defaultWorkgroup="fmg"
+                  url="http://hl7.org/fhir/uv/incubators"
+                  gitUrl="https://github.com/HL7/fhir-incubators">
+      <version code="current" url="http://build.fhir.org/ig/HL7/fhir-incubators"/>
+      <version code="1.0.0-snapshot"
+               url="http://hl7.org/fhir/uv/incubators/1.0.0-snapshot"/>
+      <artifactPageExtension value="-definitions"/>
+      <artifactPageExtension value="-examples"/>
+      <artifactPageExtension value="-mappings"/>
+      <artifact id="ValueSet/additional-resources"
+                key="FHIR-incubators-ValueSet-additional-resources"
+                name="Additional Resources - ValueSet"
+                spec="incubators"/>
+      <artifact id="CodeSystem/additional-resources"
+                key="FHIR-incubators-CodeSystem-additional-resources"
+                name="Additional Resources CodeSystem"
+                spec="incubators"/>
+      <page key="FHIR-incubators-NA" name="(NA)" spec="incubators"/>
+      <page key="FHIR-incubators-many" name="(many)" spec="incubators"/>
+      <page key="FHIR-incubators-artifacts"
+            name="Artifacts Summary"
+            spec="incubators"/>
+      <page key="FHIR-incubators-changelog" name="Change Log" spec="incubators"/>
+      <page key="FHIR-incubators-index" name="Home Page" spec="incubators"/>
+      <page key="FHIR-incubators-toc"
+            name="Table of Contents"
+            spec="incubators"/>
+   </specification>
+   <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="V2-core"
                   name="V2.x Message Specification (V2)"
                   defaultWorkgroup="inm"
