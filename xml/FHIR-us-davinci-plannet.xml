@@ -1,163 +1,212 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-drug-formulary/3.0.0-202701-ballot" ciUrl="http://build.fhir.org/ig/HL7/davinci-pdex-formulary" defaultVersion="2.1.0" defaultWorkgroup="pharm" gitUrl="https://github.com/HL7/davinci-pdex-formulary" url="http://hl7.org/fhir/us/davinci-drug-formulary">
-<version code="current" url="http://build.fhir.org/ig/HL7/davinci-pdex-formulary"/>
-<version code="3.0.0-ballot" url="http://hl7.org/fhir/us/davinci-drug-formulary/3.0.0-202701-ballot"/>
-<version code="2.1.0" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU2.1"/>
-<version code="2.0.1" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU2.0.1"/>
-<version code="2.0.0" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU2"/>
-<version code="1.2.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-drug-formulary/2022Jan"/>
-<version code="1.1.0" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU1.1"/>
-<version code="1.0.1" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU1.0.1"/>
-<version code="1.0.0" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU1"/>
-<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-drug-formulary/Jun2019"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-pdex-plan-net/2.0.0-202701-ballot" ciUrl="http://build.fhir.org/ig/HL7/davinci-pdex-plan-net" defaultVersion="1.2.0" defaultWorkgroup="fm" gitUrl="https://github.com/HL7/davinci-pdex-plan-net" url="http://hl7.org/fhir/us/davinci-pdex-plan-net">
+<version code="current" url="http://build.fhir.org/ig/HL7/davinci-pdex-plan-net"/>
+<version code="2.0.0-ballot" url="http://hl7.org/fhir/us/davinci-pdex-plan-net/2.0.0-202701-ballot"/>
+<version code="1.2.0" url="http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.2"/>
+<version code="1.1.0" url="http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1.1"/>
+<version code="1.0.0" url="http://hl7.org/fhir/us/davinci-pdex-plan-net/STU1"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-pdex-plan-net/2020Feb"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="StructureDefinition/usdf-AdditionalCoverageInformation-extension" key="StructureDefinition-usdf-AdditionalCoverageInformation-extension" name="Additional Coverage Information"/>
-<artifact id="StructureDefinition/usdf-AvailabilityPeriod-extension" key="StructureDefinition-usdf-AvailabilityPeriod-extension" name="Availability Period"/>
-<artifact id="StructureDefinition/usdf-AvailabilityStatus-extension" key="StructureDefinition-usdf-AvailabilityStatus-extension" name="Availability Status"/>
-<artifact deprecated="true" id="SearchParameter/Basic-code" key="SearchParameter-Basic-code" name="Basic-code"/>
-<artifact deprecated="true" id="SearchParameter/Basic-drug-tier" key="SearchParameter-DrugTier" name="Basic-drug-tier"/>
-<artifact deprecated="true" id="SearchParameter/Basic-formulary" key="SearchParameter-Basic-formulary" name="Basic-formulary"/>
-<artifact deprecated="true" id="SearchParameter/Basic-lastupdated" key="SearchParameter-Basic-lastupdated" name="Basic-lastupdated"/>
-<artifact deprecated="true" id="SearchParameter/Basic-period" key="SearchParameter-Basic-period" name="Basic-period"/>
-<artifact deprecated="true" id="SearchParameter/Basic-pharmacy-benefit-type" key="SearchParameter-Basic-pharmacy-benefit-type" name="Basic-pharmacy-benefit-type"/>
-<artifact deprecated="true" id="SearchParameter/Basic-pharmacy-type" key="SearchParameter-Basic-pharmacy-type" name="Basic-pharmacy-type"/>
-<artifact deprecated="true" id="SearchParameter/Basic-status" key="SearchParameter-Basic-status" name="Basic-status"/>
-<artifact deprecated="true" id="SearchParameter/Basic-subject" key="SearchParameter-Basic-subject" name="Basic-subject"/>
-<artifact id="ValueSet/BenefitCostTypeVS" key="ValueSet-BenefitCostTypeVS" name="Benefit type of cost"/>
-<artifact deprecated="true" id="CodeSystem/usdf-CoinsuranceOptionCS" key="CodeSystem-usdf-CoinsuranceOptionCS" name="Code for qualifier for coinsurance rate codes"/>
-<artifact id="CodeSystem/usdf-BenefitCostTypeCS-TEMPORARY-TRIAL-USE" key="CodeSystem-usdf-BenefitCostTypeCS" name="Codes for benefit type of cost"/>
-<artifact id="CodeSystem/usdf-InsuranceItemTypeCS" key="CodeSystem-usdf-InsuranceItemTypeCS" name="Codes for insurance item type"/>
-<artifact id="CodeSystem/usdf-DrugTierCS-TEMPORARY-TRIAL-USE" key="CodeSystem-usdf-DrugTierCS" name="Codes for medication drug tiers in health plans"/>
-<artifact id="CodeSystem/usdf-PharmacyBenefitTypeCS-TEMPORARY-TRIAL-USE" key="CodeSystem-usdf-PharmacyBenefitTypeCS-TEMPORARY-TRIAL-USE" name="Codes for pharmacy benefit types"/>
-<artifact deprecated="true" id="CodeSystem/usdf-CopayOptionCS" key="CodeSystem-usdf-CopayOptionCS" name="Codes for qualifier of copay amount"/>
-<artifact deprecated="true" id="CodeSystem/usdf-PlanTypeCS" key="CodeSystem-usdf-PlanTypeCS" name="Codes for type of plan"/>
-<artifact id="CodeSystem/usdf-PlanContactTypeCS-TEMPORARY-TRIAL-USE" key="CodeSystem-usdf-PlanContactTypeCS" name="Codes for type of plan contact"/>
-<artifact deprecated="true" id="CodeSystem/usdf-PharmacyTypeCS" key="CodeSystem-usdf-PharmacyTypeCS" name="Codes for types of pharmacies"/>
-<artifact id="CodeSystem/usdf-CostShareOptionCS-TEMPORARY-TRIAL-USE" key="CodeSystem-usdf-CostShareOptionCS-TEMPORARY-TRIAL-USE" name="Codes qualifying the type of cost share amount"/>
-<artifact deprecated="true" id="List/covplanV1002" key="List-covplanV1002" name="Coverage Plan V1002"/>
-<artifact deprecated="true" id="List/CoveragePlanV3001" key="List-CoveragePlanV3001" name="Coverage Plan V3001"/>
-<artifact deprecated="true" id="List/CoveragePlanV3002" key="List-CoveragePlanV3002" name="Coverage Plan V3002"/>
-<artifact deprecated="true" id="List/CoveragePlanV3004t" key="List-CoveragePlanV3004t" name="Coverage Plan V3004t"/>
-<artifact deprecated="true" id="StructureDefinition/usdf-DrugAlternatives-extension" key="StructureDefinition-usdf-DrugAlternatives-extension" name="Drug Alternatives"/>
-<artifact deprecated="true" id="StructureDefinition/usdf-DrugTierDefinition-extension" key="StructureDefinition-usdf-DrugTierDefinition-extension" name="Drug Tier Definition"/>
-<artifact id="StructureDefinition/usdf-DrugTierID-extension" key="StructureDefinition-usdf-DrugTierID-extension" name="Drug Tier ID"/>
-<artifact id="ValueSet/DrugTierVS" key="ValueSet-DrugTierVS" name="Drug tier of medication in health plan"/>
-<artifact deprecated="true" id="SearchParameter/DrugPlan" key="SearchParameter-DrugPlan" name="DrugPlan"/>
-<artifact deprecated="true" id="StructureDefinition/usdf-EmailPlanContact-extension" key="StructureDefinition-usdf-EmailPlanContact-extension" name="Email Plan Contact"/>
-<artifact id="StructureDefinition/usdf-Formulary" key="StructureDefinition-usdf-Formulary" name="Formulary"/>
-<artifact id="StructureDefinition/usdf-FormularyBulkDataGraphDefinition" key="StructureDefinition-usdf-FormularyBulkDataGraphDefinition" name="Formulary Bulk Data Graph Definition"/>
-<artifact deprecated="true" id="StructureDefinition/usdf-CoveragePlan" key="StructureDefinition-usdf-CoveragePlan" name="Formulary Coverage Plan"/>
-<artifact id="StructureDefinition/usdf-FormularyDrug" key="StructureDefinition-usdf-FormularyDrug" name="Formulary Drug"/>
-<artifact deprecated="true" id="MedicationKnowledge/formularydrugV1002" key="MedicationKnowledge-formularydrugV1002" name="Formulary Drug V1002"/>
-<artifact deprecated="true" id="MedicationKnowledge/FormularyDrugV3001" key="MedicationKnowledge-FormularyDrugV3001" name="Formulary Drug V3001"/>
-<artifact deprecated="true" id="MedicationKnowledge/FormularyDrugV3002" key="MedicationKnowledge-FormularyDrugV3002" name="Formulary Drug V3002"/>
-<artifact deprecated="true" id="MedicationKnowledge/cmsip9" key="MedicationKnowledge-cmsip9" name="Formulary Drug cmsip9"/>
-<artifact id="StructureDefinition/usdf-FormularyItem" key="StructureDefinition-usdf-FormularyItem" name="Formulary Item"/>
-<artifact id="StructureDefinition/usdf-FormularyReference-extension" key="StructureDefinition-usdf-FormularyReference-extension" name="Formulary Reference"/>
-<artifact deprecated="true" id="StructureDefinition/usdf-FormularyURL-extension" key="StructureDefinition-usdf-FormularyURL-extension" name="Formulary URL"/>
-<artifact id="InsurancePlan/FormularyD1002" key="InsurancePlan-FormularyD1002" name="FormularyD1002"/>
-<artifact id="InsurancePlan/FormularyD3001" key="InsurancePlan-FormularyD3001" name="FormularyD3001"/>
-<artifact id="InsurancePlan/FormularyD3002" key="InsurancePlan-FormularyD3002" name="FormularyD3002"/>
-<artifact id="InsurancePlan/FormularyD3004t" key="InsurancePlan-FormularyD3004t" name="FormularyD3004t"/>
-<artifact id="MedicationKnowledge/FormularyDrug-1000091" key="MedicationKnowledge-FormularyDrug-1000091" name="FormularyDrug-1000091"/>
-<artifact id="MedicationKnowledge/FormularyDrug-1049640" key="MedicationKnowledge-FormularyDrug-1049640" name="FormularyDrug-1049640"/>
-<artifact id="MedicationKnowledge/FormularyDrug-1541228" key="MedicationKnowledge-FormularyDrug-1541228" name="FormularyDrug-1541228"/>
-<artifact id="MedicationKnowledge/FormularyDrug-209459" key="MedicationKnowledge-FormularyDrug-209459" name="FormularyDrug-209459"/>
-<artifact deprecated="true" id="MedicationKnowledge/FormularyDrug-284520" key="MedicationKnowledge-FormularyDrug-284520" name="FormularyDrug-284520"/>
-<artifact id="MedicationKnowledge/FormularyDrug-314266" key="MedicationKnowledge-FormularyDrug-314266" name="FormularyDrug-314266"/>
-<artifact id="GraphDefinition/FormularyGraphDefinition" key="GraphDefinition-FormularyGraphDefinition" name="FormularyGraphDefinition"/>
-<artifact id="Basic/FormularyItem-D1002-1000091" key="Basic-FormularyItem-D1002-1000091" name="FormularyItem-D1002-1000091"/>
-<artifact id="Basic/FormularyItem-D1002-1049640" key="Basic-FormularyItem-D1002-1049640" name="FormularyItem-D1002-1049640"/>
-<artifact id="Basic/FormularyItem-D1002-209459" key="Basic-FormularyItem-D1002-209459" name="FormularyItem-D1002-209459"/>
-<artifact id="Basic/FormularyItem-D1002-284520" key="Basic-FormularyItem-D1002-284520" name="FormularyItem-D1002-284520"/>
-<artifact id="Basic/FormularyItem-D3001-1000091" key="Basic-FormularyItem-D3001-1000091" name="FormularyItem-D3001-1000091"/>
-<artifact id="Basic/FormularyItem-D3002-1000091" key="Basic-FormularyItem-D3002-1000091" name="FormularyItem-D3002-1000091"/>
-<artifact id="Basic/FormularyItem-D3004t-1049640" key="Basic-FormularyItem-D3004t-1049640" name="FormularyItem-D3004t-1049640"/>
-<artifact id="SearchParameter/FormularyItem-code" key="SearchParameter-FormularyItem-code" name="FormularyItem-code"/>
-<artifact id="SearchParameter/FormularyItem-drug-tier" key="SearchParameter-FormularyItem-drug-tier" name="FormularyItem-drug-tier"/>
-<artifact id="SearchParameter/FormularyItem-formulary" key="SearchParameter-FormularyItem-formulary" name="FormularyItem-formulary"/>
-<artifact id="SearchParameter/FormularyItem-lastupdated" key="SearchParameter-FormularyItem-lastupdated" name="FormularyItem-lastupdated"/>
-<artifact id="SearchParameter/FormularyItem-period" key="SearchParameter-FormularyItem-period" name="FormularyItem-period"/>
-<artifact id="SearchParameter/FormularyItem-pharmacy-benefit-type" key="SearchParameter-FormularyItem-pharmacy-benefit-type" name="FormularyItem-pharmacy-benefit-type"/>
-<artifact id="SearchParameter/FormularyItem-status" key="SearchParameter-FormularyItem-status" name="FormularyItem-status"/>
-<artifact id="SearchParameter/FormularyItem-subject" key="SearchParameter-FormularyItem-subject" name="FormularyItem-subject"/>
-<artifact deprecated="true" id="GraphDefinition/Formulary-GraphDefinition" key="GraphDefinition-Formulary-GraphDefinition" name="Formulary_GraphDefinition"/>
-<artifact id="StructureDefinition/insurance-plan-coverage" key="StructureDefinition-insurance-plan-coverage" name="Insurance Plan Coverage"/>
-<artifact id="StructureDefinition/usdf-InsurancePlanLocation" key="StructureDefinition-usdf-InsurancePlanLocation" name="Insurance Plan Location"/>
-<artifact id="ValueSet/InsuranceItemTypeVS" key="ValueSet-InsuranceItemTypeVS" name="Insurance item type"/>
-<artifact id="SearchParameter/InsurancePlan-coverage-area" key="SearchParameter-InsurancePlan-coverage-area" name="InsurancePlan-coverage-area"/>
-<artifact id="SearchParameter/InsurancePlan-coverage-type" key="SearchParameter-InsurancePlan-coverage-type" name="InsurancePlan-coverage-type"/>
-<artifact id="SearchParameter/InsurancePlan-formulary-coverage" key="SearchParameter-InsurancePlan-formulary-coverage" name="InsurancePlan-formulary-coverage"/>
-<artifact id="SearchParameter/InsurancePlan-identifier" key="SearchParameter-InsurancePlan-identifier" name="InsurancePlan-identifier"/>
-<artifact id="SearchParameter/InsurancePlan-lastupdated" key="SearchParameter-InsurancePlan-lastupdated" name="InsurancePlan-lastupdated"/>
-<artifact id="SearchParameter/InsurancePlan-name" key="SearchParameter-InsurancePlan-name" name="InsurancePlan-name"/>
-<artifact id="SearchParameter/InsurancePlan-period" key="SearchParameter-InsurancePlan-period" name="InsurancePlan-period"/>
-<artifact id="SearchParameter/InsurancePlan-status" key="SearchParameter-InsurancePlan-status" name="InsurancePlan-status"/>
-<artifact id="SearchParameter/InsurancePlan-type" key="SearchParameter-InsurancePlan-type" name="InsurancePlan-type"/>
-<artifact id="Coverage/InsurancePlanCoverageExample" key="Coverage-InsurancePlanCoverageExample" name="InsurancePlanCoverageExample"/>
-<artifact deprecated="true" id="StructureDefinition/usdf-MailOrder-extension" key="StructureDefinition-usdf-MailOrder-extension" name="Mail Order"/>
-<artifact deprecated="true" id="StructureDefinition/usdf-MarketingURL-extension" key="StructureDefinition-usdf-MarketingURL-extension" name="Marketing URL"/>
-<artifact id="SearchParameter/MedicationKnowledge-code" key="SearchParameter-MedicationKnowledge-code" name="MedicationKnowledge-code"/>
-<artifact id="SearchParameter/MedicationKnowledge-doseform" key="SearchParameter-MedicationKnowledge-doseform" name="MedicationKnowledge-doseform"/>
-<artifact id="SearchParameter/MedicationKnowledge-drug-name" key="SearchParameter-DrugName" name="MedicationKnowledge-drug-name"/>
-<artifact id="SearchParameter/MedicationKnowledge-lastupdated" key="SearchParameter-MedicationKnowledge-lastupdated" name="MedicationKnowledge-lastupdated"/>
-<artifact id="SearchParameter/MedicationKnowledge-status" key="SearchParameter-MedicationKnowledge-status" name="MedicationKnowledge-status"/>
-<artifact deprecated="true" id="StructureDefinition/usdf-Network-extension" key="StructureDefinition-usdf-Network-extension" name="Network"/>
-<artifact id="ValueSet/NonPackSemanticDrugVS" key="ValueSet-NonPackSemanticDrugVS" name="Non-Pack Semantic Drug Codes"/>
-<artifact id="StructureDefinition/usdf-PayerInsurancePlan" key="StructureDefinition-usdf-PayerInsurancePlan" name="Payer Insurance Plan"/>
-<artifact id="StructureDefinition/usdf-PayerInsurancePlanBulkDataGraphDefinition" key="StructureDefinition-usdf-PayerInsurancePlanBulkDataGraphDefinition" name="Payer Insurance Plan Bulk Data Graph Definition"/>
-<artifact id="InsurancePlan/PayerInsurancePlanA1002" key="InsurancePlan-PayerInsurancePlanA1002" name="PayerInsurancePlanA1002"/>
-<artifact id="InsurancePlan/PayerInsurancePlanA3001" key="InsurancePlan-PayerInsurancePlanA3001" name="PayerInsurancePlanA3001"/>
-<artifact id="InsurancePlan/PayerInsurancePlanA3002" key="InsurancePlan-PayerInsurancePlanA3002" name="PayerInsurancePlanA3002"/>
-<artifact id="InsurancePlan/PayerInsurancePlanA3004t" key="InsurancePlan-PayerInsurancePlanA3004t" name="PayerInsurancePlanA3004t"/>
-<artifact id="GraphDefinition/PayerInsurancePlanGraphDefinition" key="GraphDefinition-PayerInsurancePlanGraphDefinition" name="PayerInsurancePlanGraphDefinition"/>
-<artifact deprecated="true" id="GraphDefinition/PayerInsurancePlan-GraphDefinition" key="GraphDefinition-PayerInsurancePlan-GraphDefinition" name="PayerInsurancePlan_GraphDefinition"/>
-<artifact id="StructureDefinition/usdf-PharmacyBenefitType-extension" key="StructureDefinition-usdf-PharmacyBenefitType-extension" name="Pharmacy Benefit Type"/>
-<artifact deprecated="true" id="StructureDefinition/usdf-PharmacyType-extension" key="StructureDefinition-usdf-PharmacyType-extension" name="Pharmacy Type"/>
-<artifact id="ValueSet/PharmacyBenefitTypeVS" key="ValueSet-PharmacyBenefitTypeVS" name="Pharmacy benefit types"/>
-<artifact deprecated="true" id="StructureDefinition/usdf-PlanID-extension" key="StructureDefinition-usdf-PlanID-extension" name="Plan ID"/>
-<artifact deprecated="true" id="StructureDefinition/usdf-PlanIDType-extension" key="StructureDefinition-usdf-PlanIDType-extension" name="Plan ID Type"/>
-<artifact id="StructureDefinition/usdf-PriorAuthorization-extension" key="StructureDefinition-usdf-PriorAuthorization-extension" name="Prior Authorization"/>
-<artifact id="StructureDefinition/usdf-PriorAuthorizationNewStartsOnly-extension" key="StructureDefinition-usdf-PriorAuthorizationNewStartsOnly-extension" name="Prior Authorization New Starts Only"/>
-<artifact id="ValueSet/CoinsuranceOptionVS" key="ValueSet-CoinsuranceOptionVS" name="Qualifier for coinsurance rate"/>
-<artifact id="ValueSet/CopayOptionVS" key="ValueSet-CopayOptionVS" name="Qualifier of copay amount"/>
-<artifact id="StructureDefinition/usdf-QuantityLimit-extension" key="StructureDefinition-usdf-QuantityLimit-extension" name="Quantity Limit"/>
-<artifact id="StructureDefinition/usdf-QuantityLimitDetail-extension" key="StructureDefinition-usdf-QuantityLimitDetail-extension" name="Quantity Limit Detail"/>
-<artifact id="ValueSet/SemanticDrugVS" key="ValueSet-SemanticDrugVS" name="Semantic Drug Codes"/>
-<artifact id="ValueSet/SemanticDrugFormGroupVS" key="ValueSet-SemanticDrugFormGroupVS" name="Semantic Drug Form Group Codes"/>
+<artifact deprecated="true" id="CodeSystem/AcceptingPatientsCS" key="CodeSystem-AcceptingPatientsCS" name="Accepting Patients Codes"/>
+<artifact id="ValueSet/AcceptingPatientsVS" key="ValueSet-AcceptingPatientsVS" name="Accepting Patients Codes VS"/>
+<artifact deprecated="true" key="AcceptingPatients" name="AcceptingPatients"/>
+<artifact id="StructureDefinition/accessibility" key="StructureDefinition-accessibility" name="Accessibility"/>
+<artifact deprecated="true" id="CodeSystem/AccessibilityCS" key="CodeSystem-AccessibilityCS" name="Accessibility CS"/>
+<artifact id="ValueSet/AccessibilityVS" key="ValueSet-AccessibilityVS" name="Accessibility VS"/>
+<artifact id="Organization/Acme" key="Organization-Acme" name="Acme"/>
+<artifact id="Endpoint/AcmeOfCTPortalEndpoint" key="Endpoint-AcmeOfCTPortalEndpoint" name="AcmeOfCTPortalEndpoint"/>
+<artifact id="InsurancePlan/AcmeQHPBronze" key="InsurancePlan-AcmeQHPBronze" name="AcmeQHPBronze"/>
+<artifact id="InsurancePlan/AcmeQHPGold" key="InsurancePlan-AcmeQHPGold" name="AcmeQHPGold"/>
+<artifact id="Organization/AcmeofCTPremNet" key="Organization-AcmeofCTPremNet" name="AcmeofCTPremNet"/>
+<artifact id="Organization/AcmeofCTStdNet" key="Organization-AcmeofCTStdNet" name="AcmeofCTStdNet"/>
+<artifact id="PractitionerRole/AnonRole" key="PractitionerRole-AnonRole" name="AnonRole"/>
+<artifact id="Organization/BigBox" key="Organization-BigBox" name="BigBox"/>
+<artifact id="Organization/BurrClinic" key="Organization-BurrClinic" name="BurrClinic"/>
+<artifact id="OrganizationAffiliation/BurrClinicAffil" key="OrganizationAffiliation-BurrClinicAffil" name="BurrClinicAffil"/>
+<artifact id="HealthcareService/BurrClinicServices" key="HealthcareService-BurrClinicServices" name="BurrClinicServices"/>
+<artifact id="Organization/CancerClinic" key="Organization-CancerClinic" name="CancerClinic"/>
+<artifact id="Location/CancerClinicLoc" key="Location-CancerClinicLoc" name="CancerClinicLoc"/>
+<artifact id="HealthcareService/CancerClinicService" key="HealthcareService-CancerClinicService" name="CancerClinicService"/>
+<artifact id="StructureDefinition/communication-proficiency" key="StructureDefinition-communication-proficiency" name="Communication Proficiency"/>
+<artifact id="Organization/ConnHIE" key="Organization-ConnHIE" name="ConnHIE"/>
+<artifact id="OrganizationAffiliation/ConnHIEAffil" key="OrganizationAffiliation-ConnHIEAffil" name="ConnHIEAffil"/>
+<artifact id="StructureDefinition/contactpoint-availabletime" key="StructureDefinition-contactpoint-availabletime" name="Contactpoint Availabletime"/>
+<artifact id="Practitioner/Counselor" key="Practitioner-Counselor" name="Counselor"/>
+<artifact id="PractitionerRole/CounselorRole1" key="PractitionerRole-CounselorRole1" name="CounselorRole1"/>
+<artifact id="StructureDefinition/delivery-method" key="StructureDefinition-delivery-method" name="Delivery Method"/>
+<artifact deprecated="true" id="CodeSystem/DeliveryMethodCS" key="CodeSystem-DeliveryMethodCS" name="Delivery Methods"/>
+<artifact id="ValueSet/DeliveryMethodVS" key="ValueSet-DeliveryMethodVS" name="Delivery Methods VS"/>
+<artifact id="CodeSystem/EndpointConnectionTypeCS" key="CodeSystem-EndpointConnectionTypeCS" name="Endpoint Connection Types (additional)"/>
+<artifact id="ValueSet/EndpointConnectionTypeVS" key="ValueSet-EndpointConnectionTypeVS" name="Endpoint Connection Types VS"/>
+<artifact id="CodeSystem/EndpointPayloadTypeCS" key="CodeSystem-EndpointPayloadTypeCS" name="Endpoint Payload Types"/>
+<artifact id="ValueSet/EndpointPayloadTypeVS" key="ValueSet-EndpointPayloadTypeVS" name="Endpoint Payload Types VS"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-EndpointUseCase-extension" key="EndpointUseCase" name="Endpoint Use Case"/>
+<artifact id="StructureDefinition/endpoint-usecase" key="StructureDefinition-endpoint-usecase" name="Endpoint Usecase"/>
+<artifact id="ValueSet/EndpointUsecaseVS" key="ValueSet-EndpointUsecaseVS" name="Endpoint Usecases VS"/>
+<artifact id="Organization/HamiltonClinic" key="Organization-HamiltonClinic" name="HamiltonClinic"/>
+<artifact id="OrganizationAffiliation/HamiltonClinicAffil" key="OrganizationAffiliation-HamiltonClinicAffil" name="HamiltonClinicAffil"/>
+<artifact id="HealthcareService/HamiltonClinicServices" key="HealthcareService-HamiltonClinicServices" name="HamiltonClinicServices"/>
+<artifact id="Practitioner/HansSolo" key="Practitioner-HansSolo" name="HansSolo"/>
+<artifact id="Location/HansSoloClinic" key="Location-HansSoloClinic" name="HansSoloClinic"/>
+<artifact id="PractitionerRole/HansSoloRole1" key="PractitionerRole-HansSoloRole1" name="HansSoloRole1"/>
+<artifact id="HealthcareService/HansSoloService" key="HealthcareService-HansSoloService" name="HansSoloService"/>
+<artifact id="OrganizationAffiliation/HartfordOrthopedicAffil" key="OrganizationAffiliation-HartfordOrthopedicAffil" name="HartfordOrthopedicAffil"/>
+<artifact id="HealthcareService/HartfordOrthopedicServices" key="HealthcareService-HartfordOrthopedicServices" name="HartfordOrthopedicServices"/>
+<artifact id="Organization/HartfordOrthopedics" key="Organization-HartfordOrthopedics" name="HartfordOrthopedics"/>
+<artifact deprecated="true" id="CodeSystem/HealthcareServiceCategoryCS" key="CodeSystem-HealthcareServiceCategoryCS" name="Healthcare Service Category"/>
+<artifact id="ValueSet/HealthcareServiceCategoryVS" key="ValueSet-HealthcareServiceCategoryVS" name="Healthcare Service CategoryVS"/>
+<artifact id="StructureDefinition/healthcare-service-period" key="StructureDefinition-healthcare-service-period" name="HealthcareService Period"/>
+<artifact id="ValueSet/HealthcareServiceTypeVS" key="ValueSet-HealthcareServiceTypeVS" name="HealthcareService Types VS"/>
+<artifact id="HealthcareService/HospERService" key="HealthcareService-HospERService" name="HospERService"/>
+<artifact id="Location/HospLoc1" key="Location-HospLoc1" name="HospLoc1"/>
+<artifact id="Location/HospLoc2" key="Location-HospLoc2" name="HospLoc2"/>
+<artifact id="Organization/Hospital" key="Organization-Hospital" name="Hospital"/>
+<artifact id="ValueSet/IndividualSpecialtyAndDegreeLicenseCertificateVS" key="ValueSet-IndividualSpecialtyAndDegreeLicenseCertificateVS" name="Individual Specialties, Degrees, Licenses, and Certificates VS"/>
+<artifact id="ValueSet/IndividualAndGroupSpecialtiesVS" key="ValueSet-IndividualAndGroupSpecialtiesVS" name="Individual and Group Specialties"/>
+<artifact id="CodeSystem/InsurancePlanTypeCS" key="CodeSystem-InsurancePlanTypeCS" name="Insurance Plan Type"/>
+<artifact id="ValueSet/InsurancePlanTypeVS" key="ValueSet-InsurancePlanTypeVS" name="Insurance Plan TypeVS"/>
+<artifact deprecated="true" id="CodeSystem/InsuranceProductTypeCS" key="CodeSystem-InsuranceProductTypeCS" name="Insurance Product Type"/>
+<artifact id="ValueSet/InsuranceProductTypeVS" key="ValueSet-InsuranceProductTypeVS" name="Insurance Product Type VS"/>
+<artifact id="Practitioner/JoeSmith" key="Practitioner-JoeSmith" name="JoeSmith"/>
+<artifact id="PractitionerRole/JoeSmithRole1" key="PractitionerRole-JoeSmithRole1" name="JoeSmithRole1"/>
+<artifact id="PractitionerRole/JoeSmithRole2" key="PractitionerRole-JoeSmithRole2" name="JoeSmithRole2"/>
+<artifact id="PractitionerRole/JoeSmithRole3" key="PractitionerRole-JoeSmithRole3" name="JoeSmithRole3"/>
+<artifact id="CodeSystem/LanguageProficiencyCS" key="CodeSystem-LanguageProficiencyCS" name="Language Proficiency CS"/>
+<artifact id="ValueSet/LanguageProficiencyVS" key="ValueSet-LanguageProficiencyVS" name="Language Proficiency VS"/>
+<artifact id="StructureDefinition/location-period" key="StructureDefinition-location-period" name="Location Period"/>
+<artifact id="StructureDefinition/location-reference" key="StructureDefinition-location-reference" name="Location Reference"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-Location-reference-extension" key="LocationReference" name="Location- reference"/>
+<artifact id="ValueSet/MinEndpointConnectionTypeVS" key="ValueSet-MinEndpointConnectionTypeVS" name="Minimum Endpoint Connection Types VS"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-Network-reference-extension" key="FromNetwork" name="Netowrk - reference"/>
+<artifact id="StructureDefinition/network-reference" key="StructureDefinition-network-reference" name="Network Reference"/>
+<artifact id="ValueSet/NetworkTypeVS" key="ValueSet-NetworkTypeVS" name="Network Type VS"/>
+<artifact id="StructureDefinition/newpatients" key="NewPatients" name="New Patients"/>
+<artifact id="ValueSet/NonIndividualSpecialtiesVS" key="ValueSet-NonIndividualSpecialtiesVS" name="Non-Individual Specialties"/>
+<artifact id="ValueSet/NonIndividualSpecialtyAndDegreeLicenseCertificateVS" key="ValueSet-NonIndividualSpecialtyAndDegreeLicenseCertificateVS" name="Non-Individual Specialties, Degrees, Licenses, and Certificates VS"/>
+<artifact id="StructureDefinition/org-description" key="StructureDefinition-org-description" name="Org Description"/>
+<artifact deprecated="true" id="CodeSystem/OrganizationAffiliationRoleCS" key="CodeSystem-OrganizationAffiliationRoleCS" name="Organization Affiliation Role"/>
+<artifact id="CodeSystem/OrgTypeCS" key="CodeSystem-OrgTypeCS" name="Organization Type"/>
+<artifact id="ValueSet/OrgTypeVS" key="ValueSet-OrgTypeVS" name="Organization Type VS"/>
+<artifact id="ValueSet/OrganizationAffiliationRoleVS" key="ValueSet-OrganizationAffiliationRoleVS" name="OrganizationAffiliation Roles"/>
+<artifact deprecated="true" key="ParticipatingNetwork" name="ParticipatingNetwork"/>
+<artifact id="Organization/PharmChain" key="Organization-PharmChain" name="PharmChain"/>
+<artifact id="OrganizationAffiliation/PharmChainAffil1" key="OrganizationAffiliation-PharmChainAffil1" name="PharmChainAffil1"/>
+<artifact id="OrganizationAffiliation/PharmChainAffil2" key="OrganizationAffiliation-PharmChainAffil2" name="PharmChainAffil2"/>
+<artifact id="OrganizationAffiliation/PharmChainAffil3" key="OrganizationAffiliation-PharmChainAffil3" name="PharmChainAffil3"/>
+<artifact id="HealthcareService/PharmChainCompService" key="HealthcareService-PharmChainCompService" name="PharmChainCompService"/>
+<artifact id="HealthcareService/PharmChainMailService" key="HealthcareService-PharmChainMailService" name="PharmChainMailService"/>
+<artifact id="HealthcareService/PharmChainRetailService" key="HealthcareService-PharmChainRetailService" name="PharmChainRetailService"/>
+<artifact id="Location/PharmLoc1" key="Location-PharmLoc1" name="PharmLoc1"/>
+<artifact id="Location/PharmLoc2" key="Location-PharmLoc2" name="PharmLoc2"/>
+<artifact id="Location/PharmLoc3" key="Location-PharmLoc3" name="PharmLoc3"/>
+<artifact id="Location/PharmLoc4" key="Location-PharmLoc4" name="PharmLoc4"/>
+<artifact id="CapabilityStatement/plan-net-bulk-publish" key="CapabilityStatement-plan-net-bulk-publish" name="Plan-Net Bulk Publish CapabilityStatement (Draft)"/>
+<artifact id="CapabilityStatement/plan-net" key="CapabilityStatement-plan-net" name="Plan-Net CapabilityStatement"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-Endpoint" key="Endpoint" name="Plan-Net Endpoint"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-HealthcareService" key="HealthCareService" name="Plan-Net HealthcareService"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-InsurancePlan" key="InsurancePlan" name="Plan-Net InsurancePlan"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-Location" key="Location" name="Plan-Net Location"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-Network" key="Network" name="Plan-Net Network"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-Organization" key="Organization" name="Plan-Net Organization"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-OrganizationAffiliation" key="OrganizationAffiliation" name="Plan-Net OrganizationAffiliation"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-Practitioner" key="Practitioner" name="Plan-Net Practitioner"/>
+<artifact deprecated="true" id="StructureDefinition/plannet-PractitionerRole" key="PractitionerRole" name="Plan-Net PractitionerRole"/>
+<artifact id="CodeSystem/PlannetVerificationStatusCS" key="CodeSystem-PlannetVerificationStatusCS" name="Plannet Resource Instance Verification Status Code System"/>
+<artifact id="StructureDefinition/Plannet-Verification" key="StructureDefinition-Plannet-Verification" name="Plannet Verification"/>
+<artifact id="ValueSet/VerificationProcessVS" key="ValueSet-VerificationProcessVS" name="Plannet Verification Process Value Set"/>
+<artifact id="StructureDefinition/base-ext-verification-status" key="StructureDefinition-base-ext-verification-status" name="Plannet Verification Status"/>
+<artifact id="ValueSet/PlannetVerificationStatusVS" key="ValueSet-PlannetVerificationStatusVS" name="Plannet Verification Status Value Set"/>
+<artifact deprecated="true" id="SearchParameter/endpoint-organization" key="SearchParameter-endpoint-organization" name="Plannet_sp_endpoint_organization"/>
+<artifact deprecated="true" id="SearchParameter/healthcareservice-service-category" key="SearchParameter-healthcareservice-service-category" name="Plannet_sp_healthcareservice_category"/>
+<artifact deprecated="true" id="SearchParameter/healthcareservice-coverage-area" key="SearchParameter-healthcareservice-coverage-area" name="Plannet_sp_healthcareservice_coverage_area"/>
+<artifact id="SearchParameter/healthcareservice-delivery-method" key="SearchParameter-healthcareservice-delivery-method" name="Plannet_sp_healthcareservice_delivery_method"/>
+<artifact deprecated="true" id="SearchParameter/healthcareservice-endpoint" key="SearchParameter-healthcareservice-endpoint" name="Plannet_sp_healthcareservice_endpoint"/>
+<artifact deprecated="true" id="SearchParameter/healthcareservice-location" key="SearchParameter-healthcareservice-location" name="Plannet_sp_healthcareservice_location"/>
+<artifact deprecated="true" id="SearchParameter/healthcareservice-name" key="SearchParameter-healthcareservice-name" name="Plannet_sp_healthcareservice_name"/>
+<artifact deprecated="true" id="SearchParameter/healthcareservice-organization" key="SearchParameter-healthcareservice-organization" name="Plannet_sp_healthcareservice_organization"/>
+<artifact deprecated="true" id="SearchParameter/healthcareservice-specialty" key="SearchParameter-healthcareservice-specialty" name="Plannet_sp_healthcareservice_specialty"/>
+<artifact deprecated="true" id="SearchParameter/healthcareservice-service-type" key="SearchParameter-healthcareservice-service-type" name="Plannet_sp_healthcareservice_type"/>
+<artifact deprecated="true" id="SearchParameter/insuranceplan-administered-by" key="SearchParameter-insuranceplan-administered-by" name="Plannet_sp_insuranceplan_administered_by"/>
+<artifact id="SearchParameter/insuranceplan-coverage-area" key="SearchParameter-insuranceplan-coverage-area" name="Plannet_sp_insuranceplan_coverage_area"/>
+<artifact deprecated="true" id="SearchParameter/insuranceplan-identifier" key="SearchParameter-insuranceplan-identifier" name="Plannet_sp_insuranceplan_identifier"/>
+<artifact deprecated="true" id="SearchParameter/insuranceplan-name" key="SearchParameter-insuranceplan-name" name="Plannet_sp_insuranceplan_name"/>
+<artifact id="SearchParameter/insuranceplan-network" key="SearchParameter-insuranceplan-network" name="Plannet_sp_insuranceplan_network"/>
+<artifact deprecated="true" id="SearchParameter/insuranceplan-owned-by" key="SearchParameter-insuranceplan-owned-by" name="Plannet_sp_insuranceplan_owned_by"/>
+<artifact id="SearchParameter/insuranceplan-period" key="SearchParameter-insuranceplan-period" name="Plannet_sp_insuranceplan_period"/>
+<artifact id="SearchParameter/insuranceplan-plan-type" key="SearchParameter-insuranceplan-plan-type" name="Plannet_sp_insuranceplan_plan_type"/>
+<artifact deprecated="true" id="SearchParameter/insuranceplan-type" key="SearchParameter-insuranceplan-type" name="Plannet_sp_insuranceplan_type"/>
+<artifact deprecated="true" id="SearchParameter/location-address" key="SearchParameter-location-address" name="Plannet_sp_location_address"/>
+<artifact deprecated="true" id="SearchParameter/location-address-city" key="SearchParameter-location-address-city" name="Plannet_sp_location_address_city"/>
+<artifact deprecated="true" id="SearchParameter/location-address-postalcode" key="SearchParameter-location-address-postalcode" name="Plannet_sp_location_address_postalcode"/>
+<artifact deprecated="true" id="SearchParameter/location-address-state" key="SearchParameter-location-address-state" name="Plannet_sp_location_address_state"/>
+<artifact deprecated="true" id="SearchParameter/location-endpoint" key="SearchParameter-location-endpoint" name="Plannet_sp_location_endpoint"/>
+<artifact deprecated="true" id="SearchParameter/location-organization" key="SearchParameter-location-organization" name="Plannet_sp_location_organization"/>
+<artifact deprecated="true" id="SearchParameter/location-partof" key="SearchParameter-location-partof" name="Plannet_sp_location_partof"/>
+<artifact deprecated="true" id="SearchParameter/location-type" key="SearchParameter-location-type" name="Plannet_sp_location_type"/>
+<artifact id="SearchParameter/organization-coverage-area" key="SearchParameter-organization-coverage-area" name="Plannet_sp_network_coverage_area"/>
+<artifact deprecated="true" id="SearchParameter/organization-address" key="SearchParameter-organization-address" name="Plannet_sp_organization_address"/>
+<artifact deprecated="true" id="SearchParameter/organization-endpoint" key="SearchParameter-organization-endpoint" name="Plannet_sp_organization_endpoint"/>
+<artifact deprecated="true" id="SearchParameter/organization-name" key="SearchParameter-organization-name" name="Plannet_sp_organization_name"/>
+<artifact deprecated="true" id="SearchParameter/organization-partof" key="SearchParameter-organization-partof" name="Plannet_sp_organization_partof"/>
+<artifact id="SearchParameter/organization-period" key="SearchParameter-organization-period" name="Plannet_sp_organization_period"/>
+<artifact deprecated="true" id="SearchParameter/organization-type" key="SearchParameter-organization-type" name="Plannet_sp_organization_type"/>
+<artifact deprecated="true" id="SearchParameter/organizationaffiliation-endpoint" key="SearchParameter-organizationaffiliation-endpoint" name="Plannet_sp_organizationaffiliation_endpoint"/>
+<artifact deprecated="true" id="SearchParameter/organizationaffiliation-location" key="SearchParameter-organizationaffiliation-location" name="Plannet_sp_organizationaffiliation_location"/>
+<artifact deprecated="true" id="SearchParameter/organizationaffiliation-network" key="SearchParameter-organizationaffiliation-network" name="Plannet_sp_organizationaffiliation_network"/>
+<artifact deprecated="true" id="SearchParameter/organizationaffiliation-participating-organization" key="SearchParameter-organizationaffiliation-participating-organization" name="Plannet_sp_organizationaffiliation_participating_organization"/>
+<artifact id="SearchParameter/organizationaffiliation-period" key="SearchParameter-organizationaffiliation-period" name="Plannet_sp_organizationaffiliation_period"/>
+<artifact deprecated="true" id="SearchParameter/organizationaffiliation-primary-organization" key="SearchParameter-organizationaffiliation-primary-organization" name="Plannet_sp_organizationaffiliation_primary_organization"/>
+<artifact deprecated="true" id="SearchParameter/organizationaffiliation-role" key="SearchParameter-organizationaffiliation-role" name="Plannet_sp_organizationaffiliation_role"/>
+<artifact deprecated="true" id="SearchParameter/organizationaffiliation-service" key="SearchParameter-organizationaffiliation-service" name="Plannet_sp_organizationaffiliation_service"/>
+<artifact deprecated="true" id="SearchParameter/organizationaffiliation-specialty" key="SearchParameter-organizationaffiliation-specialty" name="Plannet_sp_organizationaffiliation_specialty"/>
+<artifact deprecated="true" id="SearchParameter/practitioner-family-name" key="SearchParameter-practitioner-family-name" name="Plannet_sp_practitioner_family_name"/>
+<artifact deprecated="true" id="SearchParameter/practitioner-given-name" key="SearchParameter-practitioner-given-name" name="Plannet_sp_practitioner_given_name"/>
+<artifact deprecated="true" id="SearchParameter/practitioner-name" key="SearchParameter-practitioner-name" name="Plannet_sp_practitioner_name"/>
+<artifact id="SearchParameter/practitioner-period" key="SearchParameter-practitioner-period" name="Plannet_sp_practitioner_period"/>
+<artifact deprecated="true" id="SearchParameter/practitionerrole-endpoint" key="SearchParameter-practitionerrole-endpoint" name="Plannet_sp_practitionerrole_endpoint"/>
+<artifact deprecated="true" id="SearchParameter/practitionerrole-location" key="SearchParameter-practitionerrole-location" name="Plannet_sp_practitionerrole_location"/>
+<artifact id="SearchParameter/practitionerrole-network" key="SearchParameter-practitionerrole-network" name="Plannet_sp_practitionerrole_network"/>
+<artifact deprecated="true" id="SearchParameter/practitionerrole-organization" key="SearchParameter-practitionerrole-organization" name="Plannet_sp_practitionerrole_organization"/>
+<artifact id="SearchParameter/practitionerrole-period" key="SearchParameter-practitionerrole-period" name="Plannet_sp_practitionerrole_period"/>
+<artifact deprecated="true" id="SearchParameter/practitionerrole-practitioner" key="SearchParameter-practitionerrole-practitioner" name="Plannet_sp_practitionerrole_practitioner"/>
+<artifact deprecated="true" id="SearchParameter/practitionerrole-role" key="SearchParameter-practitionerrole-role" name="Plannet_sp_practitionerrole_role"/>
+<artifact deprecated="true" id="SearchParameter/practitionerrole-service" key="SearchParameter-practitionerrole-service" name="Plannet_sp_practitionerrole_service"/>
+<artifact deprecated="true" id="SearchParameter/practitionerrole-specialty" key="SearchParameter-practitionerrole-specialty" name="Plannet_sp_practitionerrole_specialty"/>
+<artifact id="StructureDefinition/practitioner-period" key="StructureDefinition-practitioner-period" name="Practitioner Period"/>
+<artifact id="StructureDefinition/practitioner-qualification" key="StructureDefinition-practitioner-qualification" name="Practitioner Qualification"/>
+<artifact id="ValueSet/PractitionerRoleVS" key="ValueSet-PractitionerRoleVS" name="PractitionerRole Code VS"/>
+<artifact id="CodeSystem/ProviderRoleCS" key="CodeSystem-ProviderRoleCS" name="Provider Role Codes"/>
+<artifact id="StructureDefinition/qualification" key="StructureDefinition-qualification" name="Qualification"/>
+<artifact id="CodeSystem/QualificationStatusCS" key="CodeSystem-QualificationStatusCS" name="Qualification Status"/>
+<artifact id="ValueSet/QualificationStatusVS" key="ValueSet-QualificationStatusVS" name="Qualification Status VS"/>
+<artifact id="ValueSet/SpecialtiesVS" key="ValueSet-SpecialtiesVS" name="Specialties VS"/>
+<artifact id="ValueSet/SpecialtyAndDegreeLicenseCertificateVS" key="ValueSet-SpecialtyAndDegreeLicenseCertificateVS" name="Specialties, Degrees, Licenses, and Certificates VS"/>
 <artifact id="Location/StateOfCTLocation" key="Location-StateOfCTLocation" name="StateOfCTLocation"/>
-<artifact id="StructureDefinition/usdf-StepTherapyLimit-extension" key="StructureDefinition-usdf-StepTherapyLimit-extension" name="Step Therapy Limit"/>
-<artifact id="StructureDefinition/usdf-StepTherapyLimitNewStartsOnly-extension" key="StructureDefinition-usdf-StepTherapyLimitNewStartsOnly-extension" name="Step Therapy Limit New Starts Only"/>
-<artifact deprecated="true" id="StructureDefinition/usdf-SummaryURL-extension" key="StructureDefinition-usdf-SummaryURL-extension" name="Summary URL"/>
-<artifact deprecated="true" id="ValueSet/PharmacyTypeVS" key="ValueSet-PharmacyTypeVS" name="Type of pharmacies"/>
-<artifact deprecated="true" id="ValueSet/PlanTypeVS" key="ValueSet-PlanTypeVS" name="Type of plan"/>
-<artifact id="ValueSet/PlanContactTypeVS" key="ValueSet-PlanContactTypeVS" name="Type of plan contact"/>
-<artifact id="CapabilityStatement/usdf-server" key="CapabilityStatement-usdf-server" name="US Drug Formulary Server Capability Statement"/>
-<artifact id="Location/UnitedStatesLocation" key="Location-UnitedStatesLocation" name="UnitedStatesLocation"/>
-<artifact id="Organization/acme-payer" key="Organization-acme-payer" name="acme-payer"/>
-<artifact id="Patient/example" key="Patient-example" name="example"/>
+<artifact id="VerificationResult/Verify-JoeSmith" key="VerificationResult-Verify-JoeSmith" name="Verify-JoeSmith"/>
+<artifact id="StructureDefinition/via-intermediary" key="CViaIntermediary" name="Via Intermediary"/>
+<artifact deprecated="true" id="CodeSystem/VirtualModalitiesCS" key="CodeSystem-VirtualModalitiesCS" name="Virtual Modalities"/>
+<artifact id="ValueSet/VirtualModalitiesVS" key="ValueSet-VirtualModalitiesVS" name="Virtual Modalities VS"/>
+<artifact id="HealthcareService/VirtualCounselService" key="HealthcareService-VirtualCounselService" name="VirtualCounselService"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="background" name="Background"/>
-<page key="change_notes" name="Change Notes"/>
+<page key="ChangeHistory" name="Change History"/>
 <page key="confexpectations" name="Conformance Expectations"/>
-<page deprecated="true" key="credits" name="Credits"/>
 <page key="downloads" name="Downloads"/>
-<page deprecated="true" key="examples" name="Examples"/>
+<page key="examples" name="Examples"/>
 <page key="index" name="Home"/>
-<page key="security" name="Privacy, Safety, and Security"/>
+<page key="implementation" name="Implementation"/>
 <page deprecated="true" key="profiles" name="Profiles"/>
-<page key="project" name="Project and Participants"/>
-<page key="queries" name="Queries"/>
-<page key="reading" name="Reading this IG"/>
-<page key="search_parameters" name="Search Parameters"/>
-<page key="specification" name="Specification"/>
+<page key="project" name="Project"/>
+<page key="reading" name="Reading"/>
+<page key="security" name="Security"/>
 <page key="toc" name="Table of Contents"/>
-<page key="ImplementationGuide-hl7.fhir.us.davinci-drug-formulary" name="US Drug Formulary ImplementationGuide Resource"/>
-<page deprecated="true" key="use_cases_and_overview" name="Use Cases and Overview"/>
-<page deprecated="true" key="methodology" name="methodology"/>
+<page deprecated="true" key="codesystems" name="codesystems"/>
+<page deprecated="true" key="extensions" name="extensions"/>
+<page deprecated="true" key="searchparameters" name="searchparameters"/>
+<page deprecated="true" key="valuesets" name="valuesets"/>
 </specification>
