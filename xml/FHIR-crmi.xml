@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/crmi/2025Sep" ciUrl="https://build.fhir.org/ig/HL7/crmi-ig" defaultVersion="2.0.0" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/crmi-ig" url="http://hl7.org/fhir/uv/crmi">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/crmi/3.0.0-202701-ballot" ciUrl="https://build.fhir.org/ig/HL7/crmi-ig" defaultVersion="2.0.0" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/crmi-ig" url="http://hl7.org/fhir/uv/crmi">
 <version code="current" url="https://build.fhir.org/ig/HL7/crmi-ig"/>
+<version code="3.0.0-ballot" url="http://hl7.org/fhir/uv/crmi/3.0.0-202701-ballot"/>
 <version code="2.0.0" url="http://hl7.org/fhir/uv/crmi/STU2"/>
 <version code="2.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/crmi/2025Sep"/>
 <version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/uv/crmi/STU1"/>
@@ -15,6 +16,7 @@
 <artifact id="Questionnaire/shareable-example" key="Questionnaire-shareable-example" name="ANC.B5 Quick check Shareable Example"/>
 <artifact id="PlanDefinition/publishable-example" key="PlanDefinition-publishable-example" name="ANC.DT.01 Danger signs Publishable Example"/>
 <artifact id="PlanDefinition/shareable-example" key="PlanDefinition-shareable-example" name="ANC.DT.01 Danger signs Shareable Example"/>
+<artifact id="Library/ANCIND01" key="Library-ANCIND01" name="ANC.IND.01 Percentage of pregnant women with first ANC contact in the first trimester"/>
 <artifact id="Measure/publishable-example" key="Measure-publishable-example" name="ANC.IND.01 Publishable Percentage of pregnant women with first ANC contact in the first trimester"/>
 <artifact id="Measure/shareable-example" key="Measure-shareable-example" name="ANC.IND.01 Shareable Percentage of pregnant women with first ANC contact in the first trimester"/>
 <artifact id="CodeSystem/shareable-example" key="CodeSystem-shareable-example" name="ANCM Activity Codes (Shareable Example)"/>
@@ -37,8 +39,15 @@
 <artifact deprecated="true" id="StructureDefinition/artifact-versionPolicy" key="StructureDefinition-artifact-versionPolicy" name="Artifact Version Policy"/>
 <artifact deprecated="true" id="CodeSystem/artifact-version-policy-codes" key="CodeSystem-artifact-version-policy-codes" name="Artifact Version Policy Codes"/>
 <artifact deprecated="true" id="ValueSet/artifact-version-policy" key="ValueSet-artifact-version-policy" name="Artifact Version Policy Values"/>
+<artifact id="SearchParameter/artifact-composed-of" key="SearchParameter-artifact-composed-of" name="ArtifactComposedOf"/>
+<artifact id="SearchParameter/artifact-depends-on" key="SearchParameter-artifact-depends-on" name="ArtifactDependsOn"/>
+<artifact id="SearchParameter/artifact-derived-from" key="SearchParameter-artifact-derived-from" name="ArtifactDerivedFrom"/>
+<artifact id="SearchParameter/artifact-effective" key="SearchParameter-artifact-effective" name="ArtifactEffective"/>
+<artifact id="SearchParameter/artifact-predecessor" key="SearchParameter-artifact-predecessor" name="ArtifactPredecessor"/>
+<artifact id="SearchParameter/artifact-successor" key="SearchParameter-artifact-successor" name="ArtifactSuccessor"/>
 <artifact deprecated="true" id="CapabilityStatement/shareable-measure-repository" key="CapabilityStatement-shareable-measure-repository" name="CQF Measures Shareable Measure Repository Capability Statement"/>
 <artifact id="Device/cqf-tooling" key="Device-cqf-tooling" name="CQF Tooling Device"/>
+<artifact id="StructureDefinition/crmi-analysisException" key="StructureDefinition-crmi-analysisException" name="CRMI Analysis Exception"/>
 <artifact id="OperationDefinition/crmi-approve" key="OperationDefinition-crmi-approve" name="CRMI Approve Operation"/>
 <artifact id="OperationDefinition/crmi-artifact-diff" key="OperationDefinition-crmi-artifact-diff" name="CRMI Artifact Diff Operation"/>
 <artifact deprecated="true" id="StructureDefinition/crmi-artifact-signature" key="StructureDefinition-crmi-artifact-signature" name="CRMI Artifact Signature Extension"/>
@@ -182,7 +191,9 @@
 <artifact deprecated="true" id="StructureDefinition/cqf-definitionTerm" key="StructureDefinition-cqf-definitionTerm" name="Definition Term"/>
 <artifact id="ValueSet/dependency-role" key="ValueSet-dependency-role" name="Dependency Role"/>
 <artifact id="CodeSystem/dependency-role-codes" key="CodeSystem-dependency-role-codes" name="Dependency Role Codes"/>
+<artifact id="Library/manifest-reference-source-example" key="Library-manifest-reference-source-example" name="Diabetes Measures Manifest Example"/>
 <artifact deprecated="true" id="StructureDefinition/cqf-effectiveDataRequirements" key="StructureDefinition-cqf-effectiveDataRequirements" name="Effective Data Requirements"/>
+<artifact id="ConceptMap/encounter-type-to-class-example" key="ConceptMap-encounter-type-to-class-example" name="Encounter Type to Encounter Class Example"/>
 <artifact deprecated="true" id="StructureDefinition/cqf-endpointSupportsPost" key="StructureDefinition-cqf-endpointSupportsPost" name="Endpoint Supports POST"/>
 <artifact id="Group/ExampleCohortDefinition" key="Group-ExampleCohortDefinition" name="Example Cohort Definition"/>
 <artifact id="ValueSet/example-diabetes-grouper" key="ValueSet-example-diabetes-grouper" name="Example Diabetes Condition Grouper"/>
@@ -219,6 +230,7 @@
 <artifact deprecated="true" id="ValueSet/knowledge-capability" key="ValueSet-knowledge-capability" name="Knowledge Capability Values"/>
 <artifact deprecated="true" id="CodeSystem/knowledge-representation-level" key="CodeSystem-knowledge-representation-level" name="Knowledge Representation Level Codes"/>
 <artifact deprecated="true" id="ValueSet/knowledge-representation-level" key="ValueSet-knowledge-representation-level" name="Knowledge Representation Level Values"/>
+<artifact id="CodeSystem/mme-conversion-factors-example" key="CodeSystem-mme-conversion-factors-example" name="MME Conversion Factors Supplement Example"/>
 <artifact id="Parameters/manifest" key="Parameters-manifest" name="Manifest Parameters"/>
 <artifact deprecated="true" id="CapabilityStatement/measure-calculation-service-example" key="CapabilityStatement-measure-calculation-service-example" name="Measure Calculation Service Capability Statement Example"/>
 <artifact deprecated="true" id="CapabilityStatement/measure-terminology-service" key="CapabilityStatement-measure-terminology-service" name="Measure Terminology Service Capability Statement"/>
@@ -230,6 +242,7 @@
 <artifact deprecated="true" id="StructureDefinition/cqf-modelInfoSettings" key="StructureDefinition-cqf-modelInfoSettings" name="ModelInfo Settings"/>
 <artifact id="Library/OpioidCDSREC10ModuleConfiguration" key="Library-OpioidCDSREC10ModuleConfiguration" name="Module Configuration Example Library for Recommendation 10 (Endpoint-specific prefetch configuration)"/>
 <artifact deprecated="true" id="StructureDefinition/cqf-notDoneValueSet" key="StructureDefinition-cqf-notDoneValueSet" name="Not Done ValueSet"/>
+<artifact id="CodeSystem/organism-taxonomy-example" key="CodeSystem-organism-taxonomy-example" name="Organism Taxonomy Supplement Example"/>
 <artifact id="Library/outcome-manifest-example" key="Library-outcome-manifest-example" name="Outcome Manifest for ANCM Danger Signs Package"/>
 <artifact deprecated="true" id="OperationDefinition/PackageOperation" key="OperationDefinition-PackageOperation" name="Package Operation"/>
 <artifact deprecated="true" id="StructureDefinition/cqf-partOf" key="StructureDefinition-cqf-partOf" name="Part Of"/>
