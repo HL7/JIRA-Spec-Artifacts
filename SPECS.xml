@@ -7659,14 +7659,18 @@ defaultWorkgroup="ph">-->
                   name="Bulk Data (FHIR)"
                   ballotUrl="http://hl7.org/fhir/uv/bulkdata/4.0.0-202609-ballot"
                   ciUrl="https://build.fhir.org/ig/HL7/bulk-data"
-                  defaultVersion="3.0.0"
+                  defaultVersion="4.0.0"
                   defaultWorkgroup="fhir-i"
                   gitUrl="https://github.com/HL7/bulk-data"
                   url="http://hl7.org/fhir/uv/bulkdata">
       <version code="current" url="https://build.fhir.org/ig/HL7/bulk-data"/>
+      <version code="4.0.0" url="http://hl7.org/fhir/uv/bulkdata/4.0.0"/>
       <version code="4.0.0-ballot"
+               deprecated="true"
                url="http://hl7.org/fhir/uv/bulkdata/4.0.0-202609-ballot"/>
-      <version code="3.0.0" url="http://hl7.org/fhir/uv/bulkdata/STU3"/>
+      <version code="3.0.0"
+               deprecated="true"
+               url="http://hl7.org/fhir/uv/bulkdata/STU3"/>
       <version code="3.0.0-ballot"
                deprecated="true"
                url="http://hl7.org/fhir/uv/bulkdata/2025Sep"/>
@@ -7690,6 +7694,10 @@ defaultWorkgroup="ph">-->
       <artifactPageExtension value="-definitions"/>
       <artifactPageExtension value="-examples"/>
       <artifactPageExtension value="-mappings"/>
+      <artifact id="StructureDefinition/AsyncManifest"
+                key="FHIR-bulkdata-StructureDefinition-AsyncManifest"
+                name="Asynchronous Bulk Interaction Manifest"
+                spec="bulkdata"/>
       <artifact id="StructureDefinition/bulk-cohort-group"
                 key="FHIR-bulkdata-StructureDefinition-bulk-cohort-group"
                 name="Bulk Cohort Group"
@@ -7710,6 +7718,10 @@ defaultWorkgroup="ph">-->
                 key="FHIR-bulkdata-Binary-BulkDataManifestOrganizedByPatientExample"
                 name="Bulk Data Manifest Example Organized By Patient"
                 spec="bulkdata"/>
+      <artifact id="CapabilityStatement/bulk-publish"
+                key="FHIR-bulkdata-CapabilityStatement-bulk-publish"
+                name="Bulk Publish Capability Statement"
+                spec="bulkdata"/>
       <artifact id="Binary/BulkPublishManifestIncrementalUpdateExample"
                 key="FHIR-bulkdata-Binary-BulkPublishManifestIncrementalUpdateExample"
                 name="Bulk Publish Incremental Update Manifest"
@@ -7725,6 +7737,10 @@ defaultWorkgroup="ph">-->
       <artifact id="OperationDefinition/bulk-publish"
                 key="FHIR-bulkdata-OperationDefinition-bulk-publish"
                 name="Bulk Publish Operation Definition"
+                spec="bulkdata"/>
+      <artifact id="CapabilityStatement/bulk-submit"
+                key="FHIR-bulkdata-CapabilityStatement-bulk-submit"
+                name="Bulk Submit Capability Statement"
                 spec="bulkdata"/>
       <artifact id="OperationDefinition/bulk-submit"
                 key="FHIR-bulkdata-OperationDefinition-bulk-submit"
@@ -7750,9 +7766,9 @@ defaultWorkgroup="ph">-->
                 key="FHIR-bulkdata-OperationDefinition-bulk-submit-status"
                 name="Bulk Submit Status Operation Definition"
                 spec="bulkdata"/>
-      <artifact id="CapabilityStatement/bulk-data"
+      <artifact id="CapabilityStatement/bulk-export"
                 key="FHIR-bulkdata-CapabilityStatement-bulk-data"
-                name="Capability Statement"
+                name="Bulk Export Capability Statement"
                 spec="bulkdata"/>
       <artifact id="Bundle/deleted-resource-transaction-bundle-example"
                 key="FHIR-bulkdata-Bundle-deleted-resource-transaction-bundle-example"
@@ -7858,7 +7874,10 @@ defaultWorkgroup="ph">-->
             spec="bulkdata"/>
       <page key="FHIR-bulkdata-submit" name="Submit" spec="bulkdata"/>
       <page key="FHIR-bulkdata-toc" name="Table of Contents" spec="bulkdata"/>
-      <page key="FHIR-bulkdata-tools" name="Tools" spec="bulkdata"/>
+      <page deprecated="true"
+            key="FHIR-bulkdata-tools"
+            name="Tools [deprecated]"
+            spec="bulkdata"/>
    </specification>
    <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   key="FHIR-cdisc-lab"
