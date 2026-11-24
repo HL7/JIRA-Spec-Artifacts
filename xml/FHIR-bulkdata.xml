@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/bulkdata/4.0.0-202609-ballot" ciUrl="https://build.fhir.org/ig/HL7/bulk-data" defaultVersion="4.0.0" defaultWorkgroup="fhir-i" gitUrl="https://github.com/HL7/bulk-data" url="http://hl7.org/fhir/uv/bulkdata">
 <version code="current" url="https://build.fhir.org/ig/HL7/bulk-data"/>
-<version code="4.0.0" url="http://hl7.org/fhir/uv/bulkdata/STU4"/>
-<version code="4.0.0-ballot" url="http://hl7.org/fhir/uv/bulkdata/4.0.0-202609-ballot"/>
-<version code="3.0.0" url="http://hl7.org/fhir/uv/bulkdata/STU3"/>
+<version code="4.0.0" url="http://hl7.org/fhir/uv/bulkdata/4.0.0"/>
+<version code="4.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/bulkdata/4.0.0-202609-ballot"/>
+<version code="3.0.0" deprecated="true" url="http://hl7.org/fhir/uv/bulkdata/STU3"/>
 <version code="3.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/bulkdata/2025Sep"/>
 <version code="2.0.0" deprecated="true" url="http://hl7.org/fhir/uv/bulkdata/STU2"/>
 <version code="1.1.0" deprecated="true" url="http://hl7.org/fhir/uv/bulkdata/2021May"/>
@@ -21,7 +21,6 @@
 <artifact id="StructureDefinition/BulkDataManifest" key="StructureDefinition-BulkDataManifest" name="Bulk Data Manifest"/>
 <artifact id="Binary/BulkDataManifestByTypeExample" key="Binary-BulkDataManifestByTypeExample" name="Bulk Data Manifest Example By Resource Type"/>
 <artifact id="Binary/BulkDataManifestOrganizedByPatientExample" key="Binary-BulkDataManifestOrganizedByPatientExample" name="Bulk Data Manifest Example Organized By Patient"/>
-<artifact id="CapabilityStatement/bulk-export" key="CapabilityStatement-bulk-export" name="Bulk Export Capability Statement"/>
 <artifact id="CapabilityStatement/bulk-publish" key="CapabilityStatement-bulk-publish" name="Bulk Publish Capability Statement"/>
 <artifact id="Binary/BulkPublishManifestIncrementalUpdateExample" key="Binary-BulkPublishManifestIncrementalUpdateExample" name="Bulk Publish Incremental Update Manifest"/>
 <artifact id="StructureDefinition/BulkPublishManifest" key="StructureDefinition-BulkPublishManifest" name="Bulk Publish Manifest"/>
@@ -34,7 +33,7 @@
 <artifact id="Binary/BulkSubmitStatusManifestExample" key="Binary-BulkSubmitStatusManifestExample" name="Bulk Submit Status Manifest Example"/>
 <artifact id="OperationOutcome/submit-status-manifest-operationoutcome-example" key="OperationOutcome-submit-status-manifest-operationoutcome-example" name="Bulk Submit Status Manifest-Level OperationOutcome Example"/>
 <artifact id="OperationDefinition/bulk-submit-status" key="OperationDefinition-bulk-submit-status" name="Bulk Submit Status Operation Definition"/>
-<artifact deprecated="true" id="CapabilityStatement/bulk-data" key="CapabilityStatement-bulk-data" name="Capability Statement"/>
+<artifact id="CapabilityStatement/bulk-export" key="CapabilityStatement-bulk-data" name="Bulk Export Capability Statement"/>
 <artifact id="Bundle/deleted-resource-transaction-bundle-example" key="Bundle-deleted-resource-transaction-bundle-example" name="Deleted Resource Transaction Bundle Example"/>
 <artifact id="OperationOutcome/export-error-operationoutcome-example" key="OperationOutcome-export-error-operationoutcome-example" name="Export Error OperationOutcome Example"/>
 <artifact id="OperationDefinition/async" key="OperationDefinition-async" name="FHIR Asynchronous Bulk Interaction Pattern Operation Definition"/>
