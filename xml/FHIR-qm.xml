@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cqm/2026May" ciUrl="https://build.fhir.org/ig/HL7/fhir-cqm" defaultVersion="2.0.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/fhir-cqm" url="http://hl7.org/fhir/uv/cqm">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cqm/3.0.0-202701-ballot" ciUrl="https://build.fhir.org/ig/HL7/fhir-cqm" defaultVersion="2.0.0" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/fhir-cqm" url="http://hl7.org/fhir/uv/cqm">
 <version code="current" url="https://build.fhir.org/ig/HL7/fhir-cqm"/>
+<version code="3.0.0-ballot" url="http://hl7.org/fhir/uv/cqm/3.0.0-202701-ballot"/>
 <version code="2.0.0" url="http://hl7.org/fhir/uv/cqm/2.0.0"/>
 <version code="2.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/cqm/2026May"/>
 <version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/uv/cqm/STU1"/>
@@ -8,12 +9,14 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="Library/ANCCohort" key="Library-ANCCohort" name="ANC Cohort"/>
 <artifact id="Library/AdultOutpatientEncounters" key="Library-AdultOutpatientEncounters" name="Adult Outpatient Encounters Common Library"/>
 <artifact id="Library/AdvancedIllnessandFrailtyExclusion" key="Library-AdvancedIllnessandFrailtyExclusion" name="Advanced Illness and Frailty Exclusion Library"/>
 <artifact id="Library/AgeStratificationExample" key="Library-AgeStratificationExample" name="Age Stratification Example"/>
 <artifact id="Measure/age-stratified-example" key="Measure-age-stratified-example" name="Age Stratified Example"/>
 <artifact id="ValueSet/age-stratified-example" key="ValueSet-age-stratified-example" name="Age Stratified Example Age Groups"/>
 <artifact id="ConceptMap/aggregate-method" key="ConceptMap-aggregate-method" name="Aggregate Method mapping"/>
+<artifact id="Measure/ANCCohort" key="Measure-ANCCohort" name="Antenatal Care Cohort"/>
 <artifact id="Library/BCSComponent" key="Library-BCSComponent" name="BCS Component Library"/>
 <artifact id="Measure/BedCapacityMeasure-daily" key="Measure-BedCapacityMeasure-daily" name="Bed Capacity Measure - Daily Reporting"/>
 <artifact id="Measure/BedCapacityMeasure-monthly" key="Measure-BedCapacityMeasure-monthly" name="Bed Capacity Measure - Monthly Reporting"/>
@@ -60,6 +63,7 @@
 <artifact id="StructureDefinition/cqm-renderMissingElements" key="StructureDefinition-cqm-renderMissingElements" name="CQM Render Missing Elements"/>
 <artifact id="StructureDefinition/cqm-reportingTiming" key="StructureDefinition-cqm-reportingTiming" name="CQM Reporting Timing"/>
 <artifact id="StructureDefinition/cqm-riskAdjustment" key="StructureDefinition-cqm-riskAdjustment" name="CQM Risk Adjustment"/>
+<artifact id="StructureDefinition/cqm-scoreRange" key="StructureDefinition-cqm-scoreRange" name="CQM Score Range"/>
 <artifact id="StructureDefinition/cqm-scoring" key="StructureDefinition-cqm-scoring" name="CQM Scoring"/>
 <artifact id="StructureDefinition/cqm-scoringPrecision" key="StructureDefinition-cqm-scoringPrecision" name="CQM Scoring Precision"/>
 <artifact id="StructureDefinition/cqm-scoringUnit" key="StructureDefinition-cqm-scoringUnit" name="CQM Scoring Unit"/>
@@ -75,9 +79,17 @@
 <artifact id="Library/Common" key="Library-Common" name="Common Library"/>
 <artifact id="Library/CommonTerminologies" key="Library-CommonTerminologies" name="Common Terminology Library"/>
 <artifact id="ConceptMap/composite-measure-scoring" key="ConceptMap-composite-measure-scoring" name="Composite Measure Scoring mapping"/>
+<artifact id="Library/DEVComponent" key="Library-DEVComponent" name="DEV Component Library"/>
+<artifact id="Library/DFUComponent" key="Library-DFUComponent" name="DFU Component Library"/>
+<artifact id="Library/DHCComponent" key="Library-DHCComponent" name="DHC Component Library"/>
 <artifact id="ConceptMap/data-usages" key="ConceptMap-data-usages" name="Data Usage Mapping"/>
-<artifact id="OperationDefinition/cqm-data-requirements" key="OperationDefinition-cqm-data-requirements" name="DataRequirements"/>
+<artifact deprecated="true" id="OperationDefinition/cqm-data-requirements" key="OperationDefinition-cqm-data-requirements" name="DataRequirements"/>
 <artifact id="Device/software-system-example" key="Device-software-system-example" name="Device - Software System Example"/>
+<artifact id="Bundle/diabetes-care-test-patients" key="Bundle-diabetes-care-test-patients" name="Diabetes Care Test Patients"/>
+<artifact id="Measure/DiabetesCareWeightedComposite" key="Measure-DiabetesCareWeightedComposite" name="Diabetes Care Weighted Composite"/>
+<artifact id="Measure/DFUComponent" key="Measure-DFUComponent" name="Diabetes: Days to Follow-up After Hospital Discharge"/>
+<artifact id="Measure/DEVComponent" key="Measure-DEVComponent" name="Diabetes: Emergency Department Visits per 1,000 Patient-Months"/>
+<artifact id="Measure/DHCComponent" key="Measure-DHCComponent" name="Diabetes: Hemoglobin A1c (HbA1c) Poor Control (&gt; 9%)"/>
 <artifact id="Library/EXMAggregate" key="Library-EXMAggregate" name="EXM Aggregate"/>
 <artifact id="Library/EXMIA" key="Library-EXMIA" name="EXM Improvement Activities"/>
 <artifact id="Measure/EXMLogic-FHIR" key="Measure-EXMLogic-FHIR" name="EXM Measure"/>
@@ -133,6 +145,76 @@
 <artifact id="ConceptMap/measure-types" key="ConceptMap-measure-types" name="Measure Type mapping"/>
 <artifact id="Measure/measure-cqm-publishable-example" key="Measure-measure-cqm-publishable-example" name="MeasureCQMPublishableExample"/>
 <artifact id="MeasureReport/testcase-example" key="MeasureReport-testcase-example" name="MeasureReport - Test Case Example"/>
+<artifact id="MeasureReport/BCSComponent-iris" key="MeasureReport-BCSComponent-iris" name="MeasureReport BCS Iris"/>
+<artifact id="MeasureReport/BCSComponent-jack" key="MeasureReport-BCSComponent-jack" name="MeasureReport BCS Jack"/>
+<artifact id="MeasureReport/BCSComponent-kate" key="MeasureReport-BCSComponent-kate" name="MeasureReport BCS Kate"/>
+<artifact id="MeasureReport/BCSComponent-liam" key="MeasureReport-BCSComponent-liam" name="MeasureReport BCS Liam"/>
+<artifact id="MeasureReport/BCSComponent-mona" key="MeasureReport-BCSComponent-mona" name="MeasureReport BCS Mona"/>
+<artifact id="MeasureReport/BCSComponent-nate" key="MeasureReport-BCSComponent-nate" name="MeasureReport BCS Nate"/>
+<artifact id="MeasureReport/BCSComponent-olga" key="MeasureReport-BCSComponent-olga" name="MeasureReport BCS Olga"/>
+<artifact id="MeasureReport/BCSComponent-paul" key="MeasureReport-BCSComponent-paul" name="MeasureReport BCS Paul"/>
+<artifact id="MeasureReport/BCSComponent-quinn" key="MeasureReport-BCSComponent-quinn" name="MeasureReport BCS Quinn"/>
+<artifact id="MeasureReport/BCSComponent-rosa" key="MeasureReport-BCSComponent-rosa" name="MeasureReport BCS Rosa"/>
+<artifact id="MeasureReport/BCSComponent-sam" key="MeasureReport-BCSComponent-sam" name="MeasureReport BCS Sam"/>
+<artifact id="MeasureReport/BCSComponent-summary" key="MeasureReport-BCSComponent-summary" name="MeasureReport BCS Summary"/>
+<artifact id="MeasureReport/BCSComponent-tara" key="MeasureReport-BCSComponent-tara" name="MeasureReport BCS Tara"/>
+<artifact id="MeasureReport/BCSComponent-uma" key="MeasureReport-BCSComponent-uma" name="MeasureReport BCS Uma"/>
+<artifact id="MeasureReport/CCSComponent-iris" key="MeasureReport-CCSComponent-iris" name="MeasureReport CCS Iris"/>
+<artifact id="MeasureReport/CCSComponent-jack" key="MeasureReport-CCSComponent-jack" name="MeasureReport CCS Jack"/>
+<artifact id="MeasureReport/CCSComponent-kate" key="MeasureReport-CCSComponent-kate" name="MeasureReport CCS Kate"/>
+<artifact id="MeasureReport/CCSComponent-liam" key="MeasureReport-CCSComponent-liam" name="MeasureReport CCS Liam"/>
+<artifact id="MeasureReport/CCSComponent-mona" key="MeasureReport-CCSComponent-mona" name="MeasureReport CCS Mona"/>
+<artifact id="MeasureReport/CCSComponent-nate" key="MeasureReport-CCSComponent-nate" name="MeasureReport CCS Nate"/>
+<artifact id="MeasureReport/CCSComponent-olga" key="MeasureReport-CCSComponent-olga" name="MeasureReport CCS Olga"/>
+<artifact id="MeasureReport/CCSComponent-paul" key="MeasureReport-CCSComponent-paul" name="MeasureReport CCS Paul"/>
+<artifact id="MeasureReport/CCSComponent-quinn" key="MeasureReport-CCSComponent-quinn" name="MeasureReport CCS Quinn"/>
+<artifact id="MeasureReport/CCSComponent-rosa" key="MeasureReport-CCSComponent-rosa" name="MeasureReport CCS Rosa"/>
+<artifact id="MeasureReport/CCSComponent-sam" key="MeasureReport-CCSComponent-sam" name="MeasureReport CCS Sam"/>
+<artifact id="MeasureReport/CCSComponent-summary" key="MeasureReport-CCSComponent-summary" name="MeasureReport CCS Summary"/>
+<artifact id="MeasureReport/CCSComponent-tara" key="MeasureReport-CCSComponent-tara" name="MeasureReport CCS Tara"/>
+<artifact id="MeasureReport/CCSComponent-uma" key="MeasureReport-CCSComponent-uma" name="MeasureReport CCS Uma"/>
+<artifact id="MeasureReport/DEVComponent-alma" key="MeasureReport-DEVComponent-alma" name="MeasureReport DEV Alma"/>
+<artifact id="MeasureReport/DEVComponent-boris" key="MeasureReport-DEVComponent-boris" name="MeasureReport DEV Boris"/>
+<artifact id="MeasureReport/DEVComponent-cleo" key="MeasureReport-DEVComponent-cleo" name="MeasureReport DEV Cleo"/>
+<artifact id="MeasureReport/DEVComponent-dmitri" key="MeasureReport-DEVComponent-dmitri" name="MeasureReport DEV Dmitri"/>
+<artifact id="MeasureReport/DEVComponent-esme" key="MeasureReport-DEVComponent-esme" name="MeasureReport DEV Esme"/>
+<artifact id="MeasureReport/DEVComponent-felix" key="MeasureReport-DEVComponent-felix" name="MeasureReport DEV Felix"/>
+<artifact id="MeasureReport/DEVComponent-greta" key="MeasureReport-DEVComponent-greta" name="MeasureReport DEV Greta"/>
+<artifact id="MeasureReport/DEVComponent-hugo" key="MeasureReport-DEVComponent-hugo" name="MeasureReport DEV Hugo"/>
+<artifact id="MeasureReport/DEVComponent-summary" key="MeasureReport-DEVComponent-summary" name="MeasureReport DEV Summary"/>
+<artifact id="MeasureReport/DFUComponent-alma" key="MeasureReport-DFUComponent-alma" name="MeasureReport DFU Alma"/>
+<artifact id="MeasureReport/DFUComponent-boris" key="MeasureReport-DFUComponent-boris" name="MeasureReport DFU Boris"/>
+<artifact id="MeasureReport/DFUComponent-cleo" key="MeasureReport-DFUComponent-cleo" name="MeasureReport DFU Cleo"/>
+<artifact id="MeasureReport/DFUComponent-dmitri" key="MeasureReport-DFUComponent-dmitri" name="MeasureReport DFU Dmitri"/>
+<artifact id="MeasureReport/DFUComponent-esme" key="MeasureReport-DFUComponent-esme" name="MeasureReport DFU Esme"/>
+<artifact id="MeasureReport/DFUComponent-felix" key="MeasureReport-DFUComponent-felix" name="MeasureReport DFU Felix"/>
+<artifact id="MeasureReport/DFUComponent-greta" key="MeasureReport-DFUComponent-greta" name="MeasureReport DFU Greta"/>
+<artifact id="MeasureReport/DFUComponent-hugo" key="MeasureReport-DFUComponent-hugo" name="MeasureReport DFU Hugo"/>
+<artifact id="MeasureReport/DFUComponent-summary" key="MeasureReport-DFUComponent-summary" name="MeasureReport DFU Summary"/>
+<artifact id="MeasureReport/DHCComponent-alma" key="MeasureReport-DHCComponent-alma" name="MeasureReport DHC Alma"/>
+<artifact id="MeasureReport/DHCComponent-boris" key="MeasureReport-DHCComponent-boris" name="MeasureReport DHC Boris"/>
+<artifact id="MeasureReport/DHCComponent-cleo" key="MeasureReport-DHCComponent-cleo" name="MeasureReport DHC Cleo"/>
+<artifact id="MeasureReport/DHCComponent-dmitri" key="MeasureReport-DHCComponent-dmitri" name="MeasureReport DHC Dmitri"/>
+<artifact id="MeasureReport/DHCComponent-esme" key="MeasureReport-DHCComponent-esme" name="MeasureReport DHC Esme"/>
+<artifact id="MeasureReport/DHCComponent-felix" key="MeasureReport-DHCComponent-felix" name="MeasureReport DHC Felix"/>
+<artifact id="MeasureReport/DHCComponent-greta" key="MeasureReport-DHCComponent-greta" name="MeasureReport DHC Greta"/>
+<artifact id="MeasureReport/DHCComponent-hugo" key="MeasureReport-DHCComponent-hugo" name="MeasureReport DHC Hugo"/>
+<artifact id="MeasureReport/DHCComponent-summary" key="MeasureReport-DHCComponent-summary" name="MeasureReport DHC Summary"/>
+<artifact id="MeasureReport/DiabetesCareWeightedComposite-summary" key="MeasureReport-DiabetesCareWeightedComposite-summary" name="MeasureReport Diabetes Care Weighted Composite Summary"/>
+<artifact id="MeasureReport/HBPComponent-iris" key="MeasureReport-HBPComponent-iris" name="MeasureReport HBP Iris"/>
+<artifact id="MeasureReport/HBPComponent-jack" key="MeasureReport-HBPComponent-jack" name="MeasureReport HBP Jack"/>
+<artifact id="MeasureReport/HBPComponent-kate" key="MeasureReport-HBPComponent-kate" name="MeasureReport HBP Kate"/>
+<artifact id="MeasureReport/HBPComponent-liam" key="MeasureReport-HBPComponent-liam" name="MeasureReport HBP Liam"/>
+<artifact id="MeasureReport/HBPComponent-mona" key="MeasureReport-HBPComponent-mona" name="MeasureReport HBP Mona"/>
+<artifact id="MeasureReport/HBPComponent-nate" key="MeasureReport-HBPComponent-nate" name="MeasureReport HBP Nate"/>
+<artifact id="MeasureReport/HBPComponent-olga" key="MeasureReport-HBPComponent-olga" name="MeasureReport HBP Olga"/>
+<artifact id="MeasureReport/HBPComponent-paul" key="MeasureReport-HBPComponent-paul" name="MeasureReport HBP Paul"/>
+<artifact id="MeasureReport/HBPComponent-quinn" key="MeasureReport-HBPComponent-quinn" name="MeasureReport HBP Quinn"/>
+<artifact id="MeasureReport/HBPComponent-rosa" key="MeasureReport-HBPComponent-rosa" name="MeasureReport HBP Rosa"/>
+<artifact id="MeasureReport/HBPComponent-sam" key="MeasureReport-HBPComponent-sam" name="MeasureReport HBP Sam"/>
+<artifact id="MeasureReport/HBPComponent-summary" key="MeasureReport-HBPComponent-summary" name="MeasureReport HBP Summary"/>
+<artifact id="MeasureReport/HBPComponent-tara" key="MeasureReport-HBPComponent-tara" name="MeasureReport HBP Tara"/>
+<artifact id="MeasureReport/HBPComponent-uma" key="MeasureReport-HBPComponent-uma" name="MeasureReport HBP Uma"/>
 <artifact id="MeasureReport/IGCohort-ada" key="MeasureReport-IGCohort-ada" name="MeasureReport IGCohort Ada"/>
 <artifact id="MeasureReport/IGCohort-ben" key="MeasureReport-IGCohort-ben" name="MeasureReport IGCohort Ben"/>
 <artifact id="MeasureReport/IGCohort-cyd" key="MeasureReport-IGCohort-cyd" name="MeasureReport IGCohort Cyd"/>
@@ -173,6 +255,77 @@
 <artifact id="MeasureReport/IGRatio-hana" key="MeasureReport-IGRatio-hana" name="MeasureReport IGRatio Hana"/>
 <artifact id="MeasureReport/IGRatio-ivy" key="MeasureReport-IGRatio-ivy" name="MeasureReport IGRatio Ivy"/>
 <artifact id="MeasureReport/IGRatio-summary" key="MeasureReport-IGRatio-summary" name="MeasureReport IGRatio Summary"/>
+<artifact id="MeasureReport/PVSComponent-iris" key="MeasureReport-PVSComponent-iris" name="MeasureReport PVS Iris"/>
+<artifact id="MeasureReport/PVSComponent-jack" key="MeasureReport-PVSComponent-jack" name="MeasureReport PVS Jack"/>
+<artifact id="MeasureReport/PVSComponent-kate" key="MeasureReport-PVSComponent-kate" name="MeasureReport PVS Kate"/>
+<artifact id="MeasureReport/PVSComponent-liam" key="MeasureReport-PVSComponent-liam" name="MeasureReport PVS Liam"/>
+<artifact id="MeasureReport/PVSComponent-mona" key="MeasureReport-PVSComponent-mona" name="MeasureReport PVS Mona"/>
+<artifact id="MeasureReport/PVSComponent-nate" key="MeasureReport-PVSComponent-nate" name="MeasureReport PVS Nate"/>
+<artifact id="MeasureReport/PVSComponent-olga" key="MeasureReport-PVSComponent-olga" name="MeasureReport PVS Olga"/>
+<artifact id="MeasureReport/PVSComponent-paul" key="MeasureReport-PVSComponent-paul" name="MeasureReport PVS Paul"/>
+<artifact id="MeasureReport/PVSComponent-quinn" key="MeasureReport-PVSComponent-quinn" name="MeasureReport PVS Quinn"/>
+<artifact id="MeasureReport/PVSComponent-rosa" key="MeasureReport-PVSComponent-rosa" name="MeasureReport PVS Rosa"/>
+<artifact id="MeasureReport/PVSComponent-sam" key="MeasureReport-PVSComponent-sam" name="MeasureReport PVS Sam"/>
+<artifact id="MeasureReport/PVSComponent-summary" key="MeasureReport-PVSComponent-summary" name="MeasureReport PVS Summary"/>
+<artifact id="MeasureReport/PVSComponent-tara" key="MeasureReport-PVSComponent-tara" name="MeasureReport PVS Tara"/>
+<artifact id="MeasureReport/PVSComponent-uma" key="MeasureReport-PVSComponent-uma" name="MeasureReport PVS Uma"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessAllOrNothingComposite-iris" key="MeasureReport-PreventiveCareandWellnessAllOrNothingComposite-iris" name="MeasureReport Preventive Care and Wellness All-or-nothing Iris"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessAllOrNothingComposite-jack" key="MeasureReport-PreventiveCareandWellnessAllOrNothingComposite-jack" name="MeasureReport Preventive Care and Wellness All-or-nothing Jack"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessAllOrNothingComposite-kate" key="MeasureReport-PreventiveCareandWellnessAllOrNothingComposite-kate" name="MeasureReport Preventive Care and Wellness All-or-nothing Kate"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessAllOrNothingComposite-liam" key="MeasureReport-PreventiveCareandWellnessAllOrNothingComposite-liam" name="MeasureReport Preventive Care and Wellness All-or-nothing Liam"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessAllOrNothingComposite-mona" key="MeasureReport-PreventiveCareandWellnessAllOrNothingComposite-mona" name="MeasureReport Preventive Care and Wellness All-or-nothing Mona"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessAllOrNothingComposite-nate" key="MeasureReport-PreventiveCareandWellnessAllOrNothingComposite-nate" name="MeasureReport Preventive Care and Wellness All-or-nothing Nate"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessAllOrNothingComposite-olga" key="MeasureReport-PreventiveCareandWellnessAllOrNothingComposite-olga" name="MeasureReport Preventive Care and Wellness All-or-nothing Olga"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessAllOrNothingComposite-paul" key="MeasureReport-PreventiveCareandWellnessAllOrNothingComposite-paul" name="MeasureReport Preventive Care and Wellness All-or-nothing Paul"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessAllOrNothingComposite-quinn" key="MeasureReport-PreventiveCareandWellnessAllOrNothingComposite-quinn" name="MeasureReport Preventive Care and Wellness All-or-nothing Quinn"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessAllOrNothingComposite-rosa" key="MeasureReport-PreventiveCareandWellnessAllOrNothingComposite-rosa" name="MeasureReport Preventive Care and Wellness All-or-nothing Rosa"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessAllOrNothingComposite-sam" key="MeasureReport-PreventiveCareandWellnessAllOrNothingComposite-sam" name="MeasureReport Preventive Care and Wellness All-or-nothing Sam"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessAllOrNothingComposite-summary" key="MeasureReport-PreventiveCareandWellnessAllOrNothingComposite-summary" name="MeasureReport Preventive Care and Wellness All-or-nothing Summary"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessAllOrNothingComposite-tara" key="MeasureReport-PreventiveCareandWellnessAllOrNothingComposite-tara" name="MeasureReport Preventive Care and Wellness All-or-nothing Tara"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessAllOrNothingComposite-uma" key="MeasureReport-PreventiveCareandWellnessAllOrNothingComposite-uma" name="MeasureReport Preventive Care and Wellness All-or-nothing Uma"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessOpportunityComposite-iris" key="MeasureReport-PreventiveCareandWellnessOpportunityComposite-iris" name="MeasureReport Preventive Care and Wellness Opportunity Iris"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessOpportunityComposite-jack" key="MeasureReport-PreventiveCareandWellnessOpportunityComposite-jack" name="MeasureReport Preventive Care and Wellness Opportunity Jack"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessOpportunityComposite-kate" key="MeasureReport-PreventiveCareandWellnessOpportunityComposite-kate" name="MeasureReport Preventive Care and Wellness Opportunity Kate"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessOpportunityComposite-liam" key="MeasureReport-PreventiveCareandWellnessOpportunityComposite-liam" name="MeasureReport Preventive Care and Wellness Opportunity Liam"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessOpportunityComposite-mona" key="MeasureReport-PreventiveCareandWellnessOpportunityComposite-mona" name="MeasureReport Preventive Care and Wellness Opportunity Mona"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessOpportunityComposite-nate" key="MeasureReport-PreventiveCareandWellnessOpportunityComposite-nate" name="MeasureReport Preventive Care and Wellness Opportunity Nate"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessOpportunityComposite-olga" key="MeasureReport-PreventiveCareandWellnessOpportunityComposite-olga" name="MeasureReport Preventive Care and Wellness Opportunity Olga"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessOpportunityComposite-paul" key="MeasureReport-PreventiveCareandWellnessOpportunityComposite-paul" name="MeasureReport Preventive Care and Wellness Opportunity Paul"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessOpportunityComposite-quinn" key="MeasureReport-PreventiveCareandWellnessOpportunityComposite-quinn" name="MeasureReport Preventive Care and Wellness Opportunity Quinn"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessOpportunityComposite-rosa" key="MeasureReport-PreventiveCareandWellnessOpportunityComposite-rosa" name="MeasureReport Preventive Care and Wellness Opportunity Rosa"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessOpportunityComposite-sam" key="MeasureReport-PreventiveCareandWellnessOpportunityComposite-sam" name="MeasureReport Preventive Care and Wellness Opportunity Sam"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessOpportunityComposite-summary" key="MeasureReport-PreventiveCareandWellnessOpportunityComposite-summary" name="MeasureReport Preventive Care and Wellness Opportunity Summary"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessOpportunityComposite-tara" key="MeasureReport-PreventiveCareandWellnessOpportunityComposite-tara" name="MeasureReport Preventive Care and Wellness Opportunity Tara"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessOpportunityComposite-uma" key="MeasureReport-PreventiveCareandWellnessOpportunityComposite-uma" name="MeasureReport Preventive Care and Wellness Opportunity Uma"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessPatientLevelLinearComposite-iris" key="MeasureReport-PreventiveCareandWellnessPatientLevelLinearComposite-iris" name="MeasureReport Preventive Care and Wellness Patient-level Linear Iris"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessPatientLevelLinearComposite-jack" key="MeasureReport-PreventiveCareandWellnessPatientLevelLinearComposite-jack" name="MeasureReport Preventive Care and Wellness Patient-level Linear Jack"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessPatientLevelLinearComposite-kate" key="MeasureReport-PreventiveCareandWellnessPatientLevelLinearComposite-kate" name="MeasureReport Preventive Care and Wellness Patient-level Linear Kate"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessPatientLevelLinearComposite-liam" key="MeasureReport-PreventiveCareandWellnessPatientLevelLinearComposite-liam" name="MeasureReport Preventive Care and Wellness Patient-level Linear Liam"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessPatientLevelLinearComposite-mona" key="MeasureReport-PreventiveCareandWellnessPatientLevelLinearComposite-mona" name="MeasureReport Preventive Care and Wellness Patient-level Linear Mona"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessPatientLevelLinearComposite-nate" key="MeasureReport-PreventiveCareandWellnessPatientLevelLinearComposite-nate" name="MeasureReport Preventive Care and Wellness Patient-level Linear Nate"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessPatientLevelLinearComposite-olga" key="MeasureReport-PreventiveCareandWellnessPatientLevelLinearComposite-olga" name="MeasureReport Preventive Care and Wellness Patient-level Linear Olga"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessPatientLevelLinearComposite-paul" key="MeasureReport-PreventiveCareandWellnessPatientLevelLinearComposite-paul" name="MeasureReport Preventive Care and Wellness Patient-level Linear Paul"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessPatientLevelLinearComposite-quinn" key="MeasureReport-PreventiveCareandWellnessPatientLevelLinearComposite-quinn" name="MeasureReport Preventive Care and Wellness Patient-level Linear Quinn"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessPatientLevelLinearComposite-rosa" key="MeasureReport-PreventiveCareandWellnessPatientLevelLinearComposite-rosa" name="MeasureReport Preventive Care and Wellness Patient-level Linear Rosa"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessPatientLevelLinearComposite-sam" key="MeasureReport-PreventiveCareandWellnessPatientLevelLinearComposite-sam" name="MeasureReport Preventive Care and Wellness Patient-level Linear Sam"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessPatientLevelLinearComposite-summary" key="MeasureReport-PreventiveCareandWellnessPatientLevelLinearComposite-summary" name="MeasureReport Preventive Care and Wellness Patient-level Linear Summary"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessPatientLevelLinearComposite-tara" key="MeasureReport-PreventiveCareandWellnessPatientLevelLinearComposite-tara" name="MeasureReport Preventive Care and Wellness Patient-level Linear Tara"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessPatientLevelLinearComposite-uma" key="MeasureReport-PreventiveCareandWellnessPatientLevelLinearComposite-uma" name="MeasureReport Preventive Care and Wellness Patient-level Linear Uma"/>
+<artifact id="MeasureReport/PreventiveCareandWellnessWeightedComposite-summary" key="MeasureReport-PreventiveCareandWellnessWeightedComposite-summary" name="MeasureReport Preventive Care and Wellness Weighted Summary"/>
+<artifact id="MeasureReport/TSCComponent-iris" key="MeasureReport-TSCComponent-iris" name="MeasureReport TSC Iris"/>
+<artifact id="MeasureReport/TSCComponent-jack" key="MeasureReport-TSCComponent-jack" name="MeasureReport TSC Jack"/>
+<artifact id="MeasureReport/TSCComponent-kate" key="MeasureReport-TSCComponent-kate" name="MeasureReport TSC Kate"/>
+<artifact id="MeasureReport/TSCComponent-liam" key="MeasureReport-TSCComponent-liam" name="MeasureReport TSC Liam"/>
+<artifact id="MeasureReport/TSCComponent-mona" key="MeasureReport-TSCComponent-mona" name="MeasureReport TSC Mona"/>
+<artifact id="MeasureReport/TSCComponent-nate" key="MeasureReport-TSCComponent-nate" name="MeasureReport TSC Nate"/>
+<artifact id="MeasureReport/TSCComponent-olga" key="MeasureReport-TSCComponent-olga" name="MeasureReport TSC Olga"/>
+<artifact id="MeasureReport/TSCComponent-paul" key="MeasureReport-TSCComponent-paul" name="MeasureReport TSC Paul"/>
+<artifact id="MeasureReport/TSCComponent-quinn" key="MeasureReport-TSCComponent-quinn" name="MeasureReport TSC Quinn"/>
+<artifact id="MeasureReport/TSCComponent-rosa" key="MeasureReport-TSCComponent-rosa" name="MeasureReport TSC Rosa"/>
+<artifact id="MeasureReport/TSCComponent-sam" key="MeasureReport-TSCComponent-sam" name="MeasureReport TSC Sam"/>
+<artifact id="MeasureReport/TSCComponent-summary" key="MeasureReport-TSCComponent-summary" name="MeasureReport TSC Summary"/>
+<artifact id="MeasureReport/TSCComponent-tara" key="MeasureReport-TSCComponent-tara" name="MeasureReport TSC Tara"/>
+<artifact id="MeasureReport/TSCComponent-uma" key="MeasureReport-TSCComponent-uma" name="MeasureReport TSC Uma"/>
 <artifact id="Library/moduledefinition-example" key="Library-moduledefinition-example" name="Module Definition Example Logic Library"/>
 <artifact id="Library/MultiRateExample" key="Library-MultiRateExample-FHIR" name="Multi Rate Example Logic Library"/>
 <artifact id="Measure/MultiRateExample-FHIR" key="Measure-MultiRateExample-FHIR" name="Multi-Rate Example Measure"/>
@@ -183,6 +336,7 @@
 <artifact id="Measure/PreventiveCareandWellnessAllOrNothingComposite" key="Measure-PreventiveCareandWellnessAllOrNothingComposite" name="Preventive Care and Wellness All-Or-Nothing Composite"/>
 <artifact id="Measure/PreventiveCareandWellnessOpportunityComposite" key="Measure-PreventiveCareandWellnessOpportunityComposite" name="Preventive Care and Wellness Opportunity Composite"/>
 <artifact id="Measure/PreventiveCareandWellnessPatientLevelLinearComposite" key="Measure-PreventiveCareandWellnessPatientLevelLinearComposite" name="Preventive Care and Wellness Patient-level Linear Composite"/>
+<artifact id="Bundle/preventive-care-test-patients" key="Bundle-preventive-care-test-patients" name="Preventive Care and Wellness Test Patients"/>
 <artifact id="Measure/PreventiveCareandWellnessWeightedComposite" key="Measure-PreventiveCareandWellnessWeightedComposite" name="Preventive Care and Wellness Weighted Composite"/>
 <artifact id="Library/Quality-Program-Example" key="Library-Quality-Program-Example" name="Quality Program Example"/>
 <artifact id="Bundle/EmergencyCapacityReportingExample" key="Bundle-EmergencyCapacityReportingExample" name="Reporting Measure Change Scenario"/>

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-drug-formulary/2022Jan" ciUrl="http://build.fhir.org/ig/HL7/davinci-pdex-formulary" defaultVersion="2.1.0" defaultWorkgroup="pharm" gitUrl="https://github.com/HL7/davinci-pdex-formulary" url="http://hl7.org/fhir/us/davinci-drug-formulary">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-drug-formulary/3.0.0-202701-ballot" ciUrl="http://build.fhir.org/ig/HL7/davinci-pdex-formulary" defaultVersion="2.1.0" defaultWorkgroup="pharm" gitUrl="https://github.com/HL7/davinci-pdex-formulary" url="http://hl7.org/fhir/us/davinci-drug-formulary">
 <version code="current" url="http://build.fhir.org/ig/HL7/davinci-pdex-formulary"/>
+<version code="3.0.0-ballot" url="http://hl7.org/fhir/us/davinci-drug-formulary/3.0.0-202701-ballot"/>
 <version code="2.1.0" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU2.1"/>
 <version code="2.0.1" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU2.0.1"/>
 <version code="2.0.0" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU2"/>
-<version code="1.2.0" url="http://hl7.org/fhir/us/davinci-drug-formulary/2022Jan"/>
-<version code="1.1.0" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU1.1"/>
-<version code="1.0.1" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU1.0.1"/>
-<version code="1.0.0" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU1"/>
+<version code="1.2.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-drug-formulary/2022Jan"/>
+<version code="1.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU1.1"/>
+<version code="1.0.1" deprecated="true" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU1.0.1"/>
+<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-drug-formulary/STU1"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-drug-formulary/Jun2019"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
@@ -16,15 +17,6 @@
 <artifact id="StructureDefinition/usdf-AdditionalCoverageInformation-extension" key="StructureDefinition-usdf-AdditionalCoverageInformation-extension" name="Additional Coverage Information"/>
 <artifact id="StructureDefinition/usdf-AvailabilityPeriod-extension" key="StructureDefinition-usdf-AvailabilityPeriod-extension" name="Availability Period"/>
 <artifact id="StructureDefinition/usdf-AvailabilityStatus-extension" key="StructureDefinition-usdf-AvailabilityStatus-extension" name="Availability Status"/>
-<artifact id="SearchParameter/Basic-code" key="SearchParameter-Basic-code" name="Basic-code"/>
-<artifact id="SearchParameter/Basic-drug-tier" key="SearchParameter-DrugTier" name="Basic-drug-tier"/>
-<artifact id="SearchParameter/Basic-formulary" key="SearchParameter-Basic-formulary" name="Basic-formulary"/>
-<artifact id="SearchParameter/Basic-lastupdated" key="SearchParameter-Basic-lastupdated" name="Basic-lastupdated"/>
-<artifact id="SearchParameter/Basic-period" key="SearchParameter-Basic-period" name="Basic-period"/>
-<artifact id="SearchParameter/Basic-pharmacy-benefit-type" key="SearchParameter-Basic-pharmacy-benefit-type" name="Basic-pharmacy-benefit-type"/>
-<artifact deprecated="true" id="SearchParameter/Basic-pharmacy-type" key="SearchParameter-Basic-pharmacy-type" name="Basic-pharmacy-type"/>
-<artifact id="SearchParameter/Basic-status" key="SearchParameter-Basic-status" name="Basic-status"/>
-<artifact id="SearchParameter/Basic-subject" key="SearchParameter-Basic-subject" name="Basic-subject"/>
 <artifact id="ValueSet/BenefitCostTypeVS" key="ValueSet-BenefitCostTypeVS" name="Benefit type of cost"/>
 <artifact deprecated="true" id="CodeSystem/usdf-CoinsuranceOptionCS" key="CodeSystem-usdf-CoinsuranceOptionCS" name="Code for qualifier for coinsurance rate codes"/>
 <artifact id="CodeSystem/usdf-BenefitCostTypeCS-TEMPORARY-TRIAL-USE" key="CodeSystem-usdf-BenefitCostTypeCS" name="Codes for benefit type of cost"/>
@@ -65,7 +57,8 @@
 <artifact id="MedicationKnowledge/FormularyDrug-1049640" key="MedicationKnowledge-FormularyDrug-1049640" name="FormularyDrug-1049640"/>
 <artifact id="MedicationKnowledge/FormularyDrug-1541228" key="MedicationKnowledge-FormularyDrug-1541228" name="FormularyDrug-1541228"/>
 <artifact id="MedicationKnowledge/FormularyDrug-209459" key="MedicationKnowledge-FormularyDrug-209459" name="FormularyDrug-209459"/>
-<artifact id="MedicationKnowledge/FormularyDrug-284520" key="MedicationKnowledge-FormularyDrug-284520" name="FormularyDrug-284520"/>
+<artifact deprecated="true" id="MedicationKnowledge/FormularyDrug-284520" key="MedicationKnowledge-FormularyDrug-284520" name="FormularyDrug-284520"/>
+<artifact id="MedicationKnowledge/FormularyDrug-314266" key="MedicationKnowledge-FormularyDrug-314266" name="FormularyDrug-314266"/>
 <artifact id="GraphDefinition/FormularyGraphDefinition" key="GraphDefinition-FormularyGraphDefinition" name="FormularyGraphDefinition"/>
 <artifact id="Basic/FormularyItem-D1002-1000091" key="Basic-FormularyItem-D1002-1000091" name="FormularyItem-D1002-1000091"/>
 <artifact id="Basic/FormularyItem-D1002-1049640" key="Basic-FormularyItem-D1002-1049640" name="FormularyItem-D1002-1049640"/>
@@ -74,6 +67,15 @@
 <artifact id="Basic/FormularyItem-D3001-1000091" key="Basic-FormularyItem-D3001-1000091" name="FormularyItem-D3001-1000091"/>
 <artifact id="Basic/FormularyItem-D3002-1000091" key="Basic-FormularyItem-D3002-1000091" name="FormularyItem-D3002-1000091"/>
 <artifact id="Basic/FormularyItem-D3004t-1049640" key="Basic-FormularyItem-D3004t-1049640" name="FormularyItem-D3004t-1049640"/>
+<artifact id="SearchParameter/FormularyItem-code" key="SearchParameter-Basic-code" name="FormularyItem-code"/>
+<artifact id="SearchParameter/FormularyItem-drug-tier" key="SearchParameter-DrugTier" name="FormularyItem-drug-tier"/>
+<artifact id="SearchParameter/FormularyItem-formulary" key="SearchParameter-Basic-formulary" name="FormularyItem-formulary"/>
+<artifact id="SearchParameter/FormularyItem-lastupdated" key="SearchParameter-Basic-lastupdated" name="FormularyItem-lastupdated"/>
+<artifact id="SearchParameter/FormularyItem-period" key="SearchParameter-Basic-period" name="FormularyItem-period"/>
+<artifact id="SearchParameter/FormularyItem-pharmacy-benefit-type" key="SearchParameter-Basic-pharmacy-benefit-type" name="FormularyItem-pharmacy-benefit-type"/>
+<artifact id="SearchParameter/FormularyItem-pharmacy-type" key="SearchParameter-Basic-pharmacy-type" name="FormularyItem-pharmacy-type"/>
+<artifact id="SearchParameter/FormularyItem-status" key="SearchParameter-Basic-status" name="FormularyItem-status"/>
+<artifact id="SearchParameter/FormularyItem-subject" key="SearchParameter-Basic-subject" name="FormularyItem-subject"/>
 <artifact deprecated="true" id="GraphDefinition/Formulary-GraphDefinition" key="GraphDefinition-Formulary-GraphDefinition" name="Formulary_GraphDefinition"/>
 <artifact id="StructureDefinition/insurance-plan-coverage" key="StructureDefinition-insurance-plan-coverage" name="Insurance Plan Coverage"/>
 <artifact id="StructureDefinition/usdf-InsurancePlanLocation" key="StructureDefinition-usdf-InsurancePlanLocation" name="Insurance Plan Location"/>
